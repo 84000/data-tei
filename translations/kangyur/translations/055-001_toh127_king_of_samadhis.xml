@@ -21,6 +21,7 @@
                     Words of the Buddha </author>
                 <author role="translatorEng" ref="contributors.xml#person-142">Peter Alan Roberts</author>
                 <consultant role="advisor" ref="contributors.xml#person-147">Ling-Lung Chen</consultant>
+    <consultant role="projectManager" ref="contributors.xml#person-143">Emily Bower</consultant>
                 <editor role="reviser" ref="contributors.xml#person-143">Emily Bower</editor>
                 <editor role="reviser" ref="contributors.xml#person-232">Ben Gleason</editor>
                 <editor role="TEImarkupEditor" ref="contributors.xml#person-92">Laura Goetz</editor>
@@ -29,7 +30,7 @@
                 <sponsor ref="sponsors.xml#sponsor-8">anonymous</sponsor>
             </titleStmt>
             <editionStmt>
-                <edition>v 1.45.3 <date>2020</date>
+                <edition>v 1.45.4 <date>2020</date>
                 </edition>
             </editionStmt>
             <publicationStmt status="1">
@@ -65,7 +66,7 @@
 
             </sourceDesc>
             <notesStmt>
-                <note type="lastUpdated" date-time="2020-01-28T17:08:30.079Z" user="laura">28/01/2020 17:08:30</note>
+                <note type="lastUpdated" date-time="2020-07-10T11:53:08.644Z" user="admin">10/07/2020 11:53:08</note>
                 <note type="updated" update="text-version" value="v 1.34" date-time="2019-03-18T11:06:14.991Z" user="john">v 1.34 2018</note>
                 <note type="updated" update="text-version" value="v 1.35" date-time="2019-03-18T11:34:16.438Z" user="john">v 1.35 2018</note>
                 <note type="updated" update="text-version" value="v 1.37" date-time="2019-04-16T16:42:43.647Z" user="john">v 1.37 2018</note>
@@ -77,6 +78,7 @@
 <note type="updated" update="text-version" value="v 1.45.1" date-time="2019-10-07T10:27:24.685Z" user="admin">Publication statement updated</note>
 <note type="updated" update="text-version" value="v 1.45.2" date-time="2019-11-04T08:23:13.145Z" user="admin">Test RDF generation</note>
 <note type="updated" update="text-version" value="v 1.45.3" date-time="2020-01-28T17:13:00.005Z" user="laura">Added glossary entries for Meru and Sumeru the bodhisattvas</note>
+    <note type="updated" update="text-version" value="v 1.45.4" date-time="2020-07-10T11:53:06.171Z" user="andre">Corrections to definitions related to sangs rgyas kyi chos</note>
             </notesStmt>
             <!--<notesStmt>
                 <note type="lastUpdated">Last updated at 06/01/2018 at 14:00:24 by celso</note>
@@ -2484,7 +2486,7 @@
                     </lg>
                     <milestone unit="chunk" xml:id="UT22084-055-001-400"/>
                     <lg tid="208">
-                        <l>“The primary and secondary signs, the eighteen buddha qualities, </l>
+                        <l>“The primary and secondary signs, the eighteen qualities of a buddha, </l>
                         <l>The strengths, and the fearlessnesses that have been described by the
                             Guide</l>
                         <l>Will not be difficult to attain for one </l>
@@ -30957,17 +30959,18 @@
                             <term xml:lang="Bo-Ltn">a ti mug ta ka </term>
                             <term xml:lang="bo">ཨ་ཏི་མུག་ཏ་ཀ</term>
                             <term xml:lang="Sa-Ltn">atimuktaka</term>
-                            <term type="definition">Phanera variegata. One of the most beautiful and
+                            <term type="definition">
+                                <foreign type="term" xml:lang="la">Phanera variegata</foreign>. One of the most beautiful and
                                 aromatic of Indian trees, also known as orchid tree, mountain ebony,
                                 and camel’s foot tree.</term>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="term" xml:id="UT22084-055-001-5175">
-                            <term>distinct qualities of a buddha</term>
-                            <term xml:lang="Bo-Ltn">sangs rgyas gyi chos ma ’dres pa </term>
-                            <term xml:lang="bo">སངས་རྒྱས་གྱི་ཆོས་མ་འདྲེས་པ།</term>
-                            <term xml:lang="Sa-Ltn">āveṇika­buddha­dharma</term>
+                            <term>eighteen distinct qualities of a buddha</term>
+                            <term xml:lang="Bo-Ltn">sangs rgyas kyi chos ma ’dres pa bco brgyad</term>
+                            <term xml:lang="bo">སངས་རྒྱས་ཀྱི་ཆོས་མ་འདྲེས་པ་བཅོ་བརྒྱད།</term>
+                            <term xml:lang="Sa-Ltn">aṣṭa­daśāveṇika­buddha­dharma</term>
                             <term type="definition">There are eighteen such special qualities unique
                                 to a buddha. They are as follows: he never makes a mistake; he is
                                 never boisterous; he never forgets; his concentration never falters;
@@ -30983,6 +30986,8 @@
                                 or hindrance; and his knowledge and vision perceive the present
                                 without any attachment or hindrance.</term>
                             <term type="alternative">unique qualities of a buddha</term>
+                            <term type="alternative">eighteen qualities of a buddha</term>
+                            <term type="alternative">distinct qualities of a buddha</term>
                         </gloss>
                     </item>
                     <item>
@@ -31183,10 +31188,10 @@
                             <term xml:lang="Bo-Ltn">sangs rgyas kyi chos </term>
                             <term xml:lang="bo">སངས་རྒྱས་ཀྱི་ཆོས།</term>
                             <term xml:lang="Sa-Ltn">buddhadharmāḥ</term>
-                            <term type="definition">These qualities unique to a buddha are eighteen
-                                in number: the ten strengths; the four fearlessness; mindfulness of
-                                body, speech, and mind; and compassion.</term>
-                            <!--<term type="alternative" xml:lang="en">unique qualities of a buddha</term> This term actually refers to sangs rgyas kyi chos ma 'dres pa -->
+                            <term type="definition">The specific <term type="ignore">qualities of a buddha</term>; may sometimes be used as a general term, and sometimes referring to sets such as the ten strengths, the four fearlessnesses, the four discernments, the eighteen distinct qualities of a buddha, and so forth; or, more specifically, to another set of eighteen: the ten strengths; the four fearlessnesses; mindfulness of body, speech, and mind; and great compassion.</term>
+                            <term type="definition">Alternatively, in the context of this sūtra, see <ptr target="#UT22084-055-001-425"/>-<ptr target="#UT22084-055-001-429"/>.</term>
+                            <term type="alternative">qualities of a buddha</term>
+                            
                         </gloss>
                     </item>
                     <item>
