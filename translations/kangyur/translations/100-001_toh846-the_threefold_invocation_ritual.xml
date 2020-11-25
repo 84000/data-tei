@@ -22,7 +22,7 @@
     <consultant role="dharmaMaster" ref="contributors.xml#person-40">Chökyi Nyima Rinpoche</consultant>
             </titleStmt>
             <editionStmt>
-                <edition>v 1.1.7 <date>2020</date>
+                <edition>v 1.1.9 <date>2020</date>
                 </edition>
             </editionStmt>
             <publicationStmt status="1">
@@ -57,7 +57,7 @@
                 </bibl>
             </sourceDesc>
             <notesStmt>
-                <note type="lastUpdated" date-time="2020-06-25T05:02:12.448Z" user="admin">25/06/2020 05:02:12</note>
+                <note type="lastUpdated" date-time="2020-11-25T16:00:47.079Z" user="admin">25/11/2020 16:00:47</note>
 
                 <note type="updated" update="text-version" value="v 0.1.0" date-time="2019-10-10T08:04:08.457Z" user="andreas">v 0.1.0</note>
                 <note type="updated" update="translation-status" value="2.d" date-time="2019-12-19T07:26:19.082Z" user="andreas">2.d</note>
@@ -79,6 +79,8 @@
     <note type="updated" update="text-version" value="v 1.1.5" date-time="2020-05-28T13:20:29.012Z" user="laura">Added line to acknowledgement</note>
     <note type="updated" update="text-version" value="v 1.1.6" date-time="2020-06-18T18:18:20.361Z" user="celso">fixed bad apostrophes</note>
     <note type="updated" update="text-version" value="v 1.1.7" date-time="2020-06-25T05:02:10.541Z" user="mike">Typo corrected</note>
+    <note type="updated" update="text-version" value="1.1.8" date-time="2020-11-23T13:57:44.998Z" user="admin">Auto (TEI migration 2.0.0)</note>
+    <note type="updated" update="text-version" value="1.1.9" date-time="2020-11-25T16:00:42.569Z" user="celso">Updated pending links</note>
             </notesStmt>
         </fileDesc>
     </teiHeader>
@@ -106,7 +108,7 @@
             </div>
             <div type="introduction">
                 <head type="introduction" tid="5">Introduction</head>
-                <div type="section">
+                <div type="section" xml:id="UT22084-100-001-introduction-1">
                     <milestone unit="chunk" xml:id="UT22084-100-001-160"/>
                     <p tid="7">The Compendium of Incantations (<foreign xml:lang="Bo-Ltn">gzungs ’dus</foreign>) 
                         opens with the present work, <title xml:lang="en">The Threefold
@@ -133,7 +135,7 @@
                                     Threefold Ritual</title> (<title xml:lang="Bo-Ltn">rgyud gsum pa</title>) corresponds 
                                     to the first twenty-one stanzas in the present translation, and does not include 
                                     either the passage (<ptr target="#UT22084-100-001-36"/>) added from 
-                                    the <title xml:lang="Sa-Ltn">Lokottaraparivarta</title> (Toh 44-44)<!--Reference Toh 0044-44-->, 
+                                    the <title xml:lang="Sa-Ltn">Lokottaraparivarta</title> (Toh 44-44)<ref rend="pending" target="https://read.84000.co/translation/toh44-44.html"/>, 
                                     or the verses that follow (<ptr target="#UT22084-100-001-40"/>–<ptr target="#UT22084-100-001-46"/>).
                                     Lalou’s second Dunhuang witness, entitled <title xml:lang="en">An
                                     Invocation of the Great Deities and Nāgas</title> (<title xml:lang="Bo-Ltn">lha klu 
@@ -150,8 +152,7 @@
                             Threefold Invocation Ritual</title>, also
                         adds a passage of aspiration in prose from the <title xml:lang="Sa-Ltn">Lokottaraparivarta</title>, chapter 44 of the <title xml:lang="Sa-Ltn">Buddhāvataṃsaka­sūtra</title>,<note place="end" xml:id="UT22084-100-001-5" index="3"> We thank Ryan Damron for
                                 identifying this section of <title xml:lang="en">The Threefold
-                                    Invocation Ritual</title> as an excerpt from the <title xml:lang="Sa-Ltn">Lokottaraparivarta</title> (Toh 44-44)<!--Reference Toh
-                                0044-44-->. See <ptr target="#UT22084-100-001-37"/> for the location of this passage in
+                                    Invocation Ritual</title> as an excerpt from the <title xml:lang="Sa-Ltn">Lokottaraparivarta</title> (Toh 44-44)<ref rend="pending" target="https://read.84000.co/translation/toh44-44.html"/>. See <ptr target="#UT22084-100-001-37"/> for the location of this passage in
                             the Degé Kangyur <title xml:lang="Sa-Ltn">Buddhāvataṃsaka</title> itself.</note> and a concluding set of verses that are
                         not included in the Dunhuang witnesses. </p>
                     <milestone unit="chunk" xml:id="UT22084-100-001-8"/>
@@ -208,11 +209,11 @@
             <div type="translation">
                 <head type="translation" tid="12"> The Translation </head>
                 <head type="titleMain" tid="13">The Threefold Invocation Ritual</head>
-                <div type="section">
+                <div type="section" xml:id="UT22084-100-001-section-1">
                     <milestone unit="chunk" xml:id="UT22084-100-001-10"/>
                     <lg tid="14">
                         <l>
-                            <ref cRef="F.1.b" type="folio"/> I take refuge with sincere devotion and reverence</l>
+                            <ref cRef="F.1.b" type="folio" xml:id="UT22084-100-001-171"/> I take refuge with sincere devotion and reverence</l>
                         <l>In the highest guru, the unsurpassed Three Jewels, </l>
                         <l>And the greatest of them all, the sublime supreme lord.</l>
                     </lg>
@@ -250,7 +251,7 @@
                     </lg>
                     <milestone unit="chunk" xml:id="UT22084-100-001-16"/>
                     <lg tid="20">
-                        <l>Sugrīva, Pūrṇabhadra, Maṇibhadra, <ref cRef="F.2.a" type="folio"/>
+                        <l>Sugrīva, Pūrṇabhadra, Maṇibhadra, <ref cRef="F.2.a" type="folio" xml:id="UT22084-100-001-172"/>
                         </l>
                         <l>Kumbhakarṇa, Ghaṇṭākarṇa, Trikarṇa, Mahākarṇa,</l>
                         <l>Sañjñeya and Sañjaya,</l>
@@ -267,8 +268,7 @@
                                     reads <foreign xml:lang="Bo-Ltn" type="term">stong
                                         gsum</foreign> or Trisahasra. Marcelle Lalou translates this
                                     as Triśirṣaka, who is listed as a <foreign xml:lang="Sa-Ltn" type="term">nāgarāja</foreign> in Bendall’s edition of the
-                                        <title xml:lang="Sa-Ltn">Mahāmegha</title> (Toh 235)<!--Reference Toh
-                                    0235-->. Here, following Lalou’s lead, <foreign xml:lang="Bo-Ltn" type="term">stong gsum</foreign> has been
+                                        <title xml:lang="Sa-Ltn">Mahāmegha</title> (Toh 235)<ref rend="pending" target="https://read.84000.co/translation/toh235.html"/>. Here, following Lalou’s lead, <foreign xml:lang="Bo-Ltn" type="term">stong gsum</foreign> has been
                                     amended to <foreign xml:lang="Bo-Ltn" type="term">gdong
                                         gsum</foreign> or Triśirṣaka, “the three-faced
                                 one.”</note> Sāgara, Nanda, Upananda, </l>
@@ -341,7 +341,7 @@
                     <lg tid="30">
                         <l>Bhūtas, piśācas, local deities, and evil spirits; </l>
                         <l>All you wise ones who have entered the path of compassion, </l>
-                        <l>All you who are held by the hook of the <foreign xml:lang="Sa-Ltn" type="term">vidyāmantra</foreign>, listen to me. <ref cRef="F.2.b" type="folio"/> </l>
+                        <l>All you who are held by the hook of the <foreign xml:lang="Sa-Ltn" type="term">vidyāmantra</foreign>, listen to me. <ref cRef="F.2.b" type="folio" xml:id="UT22084-100-001-173"/> </l>
                     </lg>
                     <milestone unit="chunk" xml:id="UT22084-100-001-30"/>
                     <lg tid="31">
@@ -382,13 +382,13 @@
                     </lg>
                     <milestone unit="chunk" xml:id="UT22084-100-001-36"/>
                     <p tid="35">Approach,<note place="end" xml:id="UT22084-100-001-37" index="9"> This line begins a
-                        passage quoted from the <title xml:lang="Sa-Ltn">Lokottaraparivarta</title>, chapter forty-four of the <title xml:lang="Sa-Ltn">Buddhāvataṃsaka­sūtra</title> (Toh 44-44). <!--Reference
-                                Toh 0044-44--> See <title xml:lang="Bo-Ltn">’phags pa sangs rgyas phal
+                        passage quoted from the <title xml:lang="Sa-Ltn">Lokottaraparivarta</title>, chapter forty-four of the <title xml:lang="Sa-Ltn">Buddhāvataṃsaka­sūtra</title> (Toh 44-44). <ref rend="pending" target="https://read.84000.co/translation/toh44-44.html"/> See <title xml:lang="Bo-Ltn">’phags pa sangs rgyas phal
                                     po che zhes bya ba shin tu rgyas pa chen po’i mdo</title>, Degé Kangyur vol. 37 (phal chen, ga), ff.
-                        248.a.5–248.b.5. The pairing of phrases that is implied in the mention of “obverse and direct ways” toward the end of the passage, and is necessary to end up with the “ten teachings,” is not entirely obvious from the Tibetan but has been aided here by consulting the Chinese of the <title xml:lang="Sa-Ltn">Buddhāvataṃsaka</title>.</note> children of the Victors! Knowing that<note place="end" xml:id="UT22084-100-001-170" index="10">While the text here in the Degé Kangyur reads <foreign xml:lang="Bo-Ltn">mya ngan las ’das par bgyis la</foreign>, the equivalent phrase in the Degé text of the <title xml:lang="Sa-Ltn">Lokottaraparivarta</title> reads <foreign xml:lang="Bo-Ltn">mya ngan las ’das par shes par gyis la</foreign>.</note> we and all beings are already beyond suffering and thus not fearing that sentient beings will fail to transcend it, may we still insatiably cultivate the accumulations of merit and wisdom. May we know that things are intrinsically conditioned, yet not dismiss their characteristics. May we not reject the form body of a buddha, yet attain freedom from all attachment. May we be free from attachment to all phenomena, yet seek the wisdom that knows everything. May we completely purify all phenomena as buddha realms without depending on others, yet understand the space-like characteristic of buddha realms. May we never weary of bringing beings to maturity, yet never abandon the characteristics of lacking self-identity. May we magically display supernatural powers, yet never waver from the sphere of reality. May we not stop setting our mind on enlightenment, yet may omniscient wisdom arise in us. May we satisfy all beings by turning the wheel of the Dharma, yet not pass beyond the inexpressible nature of reality. May we <ref cRef="F.3.a" type="folio"/> demonstrate the magical emanations and blessings of a tathāgata, without nevertheless discarding the body of a bodhisattva, and yet in all the perceptions of beings may we appear and then display the great parinirvāṇa. Children of the Victors, uphold these aspects of the teachings and practice these obverse and direct ways of engaging in practice.<note place="end" xml:id="UT22084-100-001-38" index="11"> Tib.
+                        248.a.5–248.b.5. The pairing of phrases that is implied in the mention of “obverse and direct ways” toward the end of the passage, and is necessary to end up with the “ten teachings,” is not entirely obvious from the Tibetan but has been aided here by consulting the Chinese of the <title xml:lang="Sa-Ltn">Buddhāvataṃsaka</title>.</note> children of the Victors! Knowing that<note place="end" xml:id="UT22084-100-001-170" index="10">While the text here in the Degé Kangyur reads <foreign xml:lang="Bo-Ltn">mya ngan las ’das par bgyis la</foreign>, the equivalent phrase in the Degé text of the <title xml:lang="Sa-Ltn">Lokottaraparivarta</title> reads <foreign xml:lang="Bo-Ltn">mya ngan las ’das par shes par gyis la</foreign>.</note> we and all beings are already beyond suffering and thus not fearing that sentient beings will fail to transcend it, may we still insatiably cultivate the accumulations of merit and wisdom. May we know that things are intrinsically conditioned, yet not dismiss their characteristics. May we not reject the form body of a buddha, yet attain freedom from all attachment. May we be free from attachment to all phenomena, yet seek the wisdom that knows everything. May we completely purify all phenomena as buddha realms without depending on others, yet understand the space-like characteristic of buddha realms. May we never weary of bringing beings to maturity, yet never abandon the characteristics of lacking self-identity. May we magically display supernatural powers, yet never waver from the sphere of reality. May we not stop setting our mind on enlightenment, yet may omniscient wisdom arise in us. May we satisfy all beings by turning the wheel of the Dharma, yet not pass beyond the inexpressible nature of reality. May we <ref cRef="F.3.a" type="folio" xml:id="UT22084-100-001-174"/> demonstrate the magical emanations and blessings of a tathāgata, without nevertheless discarding the body of a bodhisattva, and yet in all the perceptions of beings may we appear and then display the great parinirvāṇa. Children of the Victors, uphold these aspects of the teachings and practice these obverse and direct ways of engaging in practice.<note place="end" xml:id="UT22084-100-001-38" index="11"> Tib.
                                     <foreign type="quote" xml:lang="Bo-Ltn">snrel zhir sgrub pa mngon par bsgrub par rnams nye bar
                                     sgrub pa</foreign>.</note> These ten teachings are the most excellent activity of a buddha. Children of the Victor, these are the awakened activity of a bodhisattva. The spontaneous activity of the bodhisattvas is independent of others and is the perfect attainment of unsurpassed awakening.<note place="end" xml:id="UT22084-100-001-39" index="12"> The section
-                                that is reproduced from the <title xml:lang="Sa-Ltn">Lokottaraparivarta</title><!--Reference Toh 0044--> ends
+                                that is reproduced from the <title xml:lang="Sa-Ltn">Lokottaraparivarta</title>
+                            <ref rend="pending" target="https://read.84000.co/translation/toh44-44.html"/> ends
                                 here.</note>
                     </p>
                     <milestone unit="chunk" xml:id="UT22084-100-001-40"/>
@@ -454,7 +454,7 @@
                         <l>We are faulted beings who are confused and act inappropriately—please
                             forgive us!</l>
                         <l>Those who know the time, vidyāmantra, and ritual, please be patient with
-                            us. <ref cRef="F.3.b" type="folio"/>
+                            us. <ref cRef="F.3.b" type="folio" xml:id="UT22084-100-001-175"/>
                         </l>
                         <l>We pray that the good fortune of this Dharma offering to the hosts of
                             gods </l>
@@ -470,7 +470,7 @@
             </div>
             <div type="listBibl">
                 <head type="listBibl" tid="45">Bibliography</head>
-                <div type="section">
+                <div type="section" xml:id="UT22084-100-001-listBibl-1">
                     <head type="section" tid="46">Source Texts</head>
                     <bibl xml:id="UT22084-100-001-47">
                         <title xml:lang="Bo-Ltn">’phags pa sangs rgyas phal po che zhes bya ba
@@ -488,7 +488,7 @@
                         Beijing: krung go’i bod rig pa dpe skrun khang (China Tibetology Publishing
                         House), 2006–2009, vol. 97, pp. 3–9.</bibl>
                 </div>
-                <div type="section">
+                <div type="section" xml:id="UT22084-100-001-listBibl-2">
                     <head type="section" tid="47">Works Cited</head>
                     <bibl xml:id="UT22084-100-001-50">Bendall, C. “The Mahāmegha Sūtra,” Journal of
                             the Royal Asiatic Society (1880), 286–311.</bibl>
@@ -745,8 +745,7 @@
                             <term xml:lang="Bo-Ltn">dkar sham </term>
                             <term xml:lang="bo">དཀར་ཤམ།</term>
                             <term xml:lang="Sa-Ltn">Gaurī</term>
-                            <term type="definition">A goddess; a rākṣasī in the <title xml:lang="Sa-Ltn">Mahā­māyūrī­vidyārājñī</title> (Toh 559). <!--Reference
-                                Toh 0559-->
+                            <term type="definition">A goddess; a rākṣasī in the <title xml:lang="Sa-Ltn">Mahā­māyūrī­vidyārājñī</title> (Toh 559). <ref rend="pending" target="https://read.84000.co/translation/toh559.html"/>
                             </term>
                         </gloss>
                     </item>
@@ -785,8 +784,7 @@
                             <term xml:lang="Bo-Ltn">gangs la gnas </term>
                             <term xml:lang="bo">གངས་ལ་གནས།</term>
                             <term xml:lang="Sa-Ltn">Haimavata</term>
-                            <term type="definition">Name of a yakṣa general in the <title xml:lang="Sa-Ltn">Mahā­māyūrī­vidyārājñī</title> (Toh 559). <!--Reference
-                                Toh 0559-->
+                            <term type="definition">Name of a yakṣa general in the <title xml:lang="Sa-Ltn">Mahā­māyūrī­vidyārājñī</title> (Toh 559). <ref rend="pending" target="https://read.84000.co/translation/toh559.html"/>
                             </term>
                         </gloss>
                     </item>
@@ -806,8 +804,7 @@
                             <term xml:lang="Bo-Ltn">sras ’phan </term>
                             <term xml:lang="bo">སྲས་འཕན།</term>
                             <term xml:lang="Sa-Ltn">Hārītī</term>
-                            <term type="definition">A yakṣiṇī; a rākṣasī in the <title xml:lang="Sa-Ltn">Mahā­māyūrī­vidyārājñī</title> (Toh 559). <!--Reference
-                                Toh 0559-->
+                            <term type="definition">A yakṣiṇī; a rākṣasī in the <title xml:lang="Sa-Ltn">Mahā­māyūrī­vidyārājñī</title> (Toh 559). <ref rend="pending" target="https://read.84000.co/translation/toh559.html"/>
                             </term>
                         </gloss>
                     </item>
@@ -856,8 +853,7 @@
                             <term xml:lang="Bo-Ltn">nag mo </term>
                             <term xml:lang="bo">ནག་མོ།</term>
                             <term xml:lang="Sa-Ltn">Kālī</term>
-                            <term type="definition">A goddess; a rākṣasī in the <title xml:lang="Sa-Ltn">Mahā­māyūrī­vidyārājñī</title> (Toh 559); <!--Reference
-                                Toh 0559--> one of Durgā’s attendants.</term>
+                            <term type="definition">A goddess; a rākṣasī in the <title xml:lang="Sa-Ltn">Mahā­māyūrī­vidyārājñī</title> (Toh 559); <ref rend="pending" target="https://read.84000.co/translation/toh559.html"/> one of Durgā’s attendants.</term>
                         </gloss>
                     </item>
                     <item>
@@ -899,7 +895,7 @@
                             <term xml:lang="bo">སྟོབས་པོ་ཆེ།</term>
                             <term xml:lang="Sa-Ltn">Mahābala</term>
                             <term type="definition">Listed as the great yakṣa general of Rājagṛha in
-                                the <title xml:lang="Sa-Ltn">Mahā­māyūrī­vidyārājñī</title> (Toh 559).<!--Reference Toh 0559-->
+                                the <title xml:lang="Sa-Ltn">Mahā­māyūrī­vidyārājñī</title> (Toh 559).<ref rend="pending" target="https://read.84000.co/translation/toh559.html"/>
                             </term>
                         </gloss>
                     </item>
@@ -970,7 +966,7 @@
                             <term xml:lang="bo">ནོར་བུ་བཟང་།</term>
                             <term xml:lang="Sa-Ltn">Maṇibhadra</term>
                             <term type="definition">Name of a yakṣa general; brother of Pūrṇabhadra
-                                in the <title xml:lang="Sa-Ltn">Mahā­māyūrī­vidyārājñī</title> (Toh 559).<!--Reference Toh 0559-->
+                                in the <title xml:lang="Sa-Ltn">Mahā­māyūrī­vidyārājñī</title> (Toh 559).<ref rend="pending" target="https://read.84000.co/translation/toh559.html"/>
                             </term>
                         </gloss>
                     </item>
@@ -980,8 +976,7 @@
                             <term xml:lang="Bo-Ltn">’od zer can </term>
                             <term xml:lang="bo">འོད་ཟེར་ཅན།</term>
                             <term xml:lang="Sa-Ltn">Mārīcī</term>
-                            <term type="definition">A goddess; a rākṣasī in the <title xml:lang="Sa-Ltn">Mahā­māyūrī­vidyārājñī</title> (Toh 559). <!--Reference
-                                Toh 0559-->
+                            <term type="definition">A goddess; a rākṣasī in the <title xml:lang="Sa-Ltn">Mahā­māyūrī­vidyārājñī</title> (Toh 559). <ref rend="pending" target="https://read.84000.co/translation/toh559.html"/>
                             </term>
                         </gloss>
                     </item>
@@ -1052,8 +1047,7 @@
                             <term xml:lang="Bo-Ltn">lnga len tshigs </term>
                             <term xml:lang="bo">ལྔ་ལེན་ཚིགས།</term>
                             <term xml:lang="Sa-Ltn">Pāñcālagaṇḍa</term>
-                            <term type="definition">Name of a yakṣa general in the <title xml:lang="Sa-Ltn">Mahā­māyūrī­vidyārājñī</title> (Toh 559). <!--Reference
-                                Toh 0559-->
+                            <term type="definition">Name of a yakṣa general in the <title xml:lang="Sa-Ltn">Mahā­māyūrī­vidyārājñī</title> (Toh 559). <ref rend="pending" target="https://read.84000.co/translation/toh559.html"/>
                             </term>
                         </gloss>
                     </item>
@@ -1072,8 +1066,7 @@
                             <term xml:lang="Bo-Ltn">lngas rtsen </term>
                             <term xml:lang="bo">ལྔས་རྩེན།</term>
                             <term xml:lang="Sa-Ltn">Pāñcika</term>
-                            <term type="definition">Name of a yakṣa general in the <title xml:lang="Sa-Ltn">Mahā­māyūrī­vidyārājñī</title> (Toh 559). <!--Reference
-                                Toh 0559-->
+                            <term type="definition">Name of a yakṣa general in the <title xml:lang="Sa-Ltn">Mahā­māyūrī­vidyārājñī</title> (Toh 559). <ref rend="pending" target="https://read.84000.co/translation/toh559.html"/>
                             </term>
                         </gloss>
                     </item>
@@ -1112,7 +1105,7 @@
                             <term xml:lang="bo">གང་པ་བཟང་པོ།</term>
                             <term xml:lang="Sa-Ltn">Pūrṇabhadra</term>
                             <term type="definition">Name of a yakṣa general; brother of Maṇibhadra
-                                in the <title xml:lang="Sa-Ltn">Mahā­māyūrī­vidyārājñī</title> (Toh 559).<!--Reference Toh 0559-->
+                                in the <title xml:lang="Sa-Ltn">Mahā­māyūrī­vidyārājñī</title> (Toh 559).<ref rend="pending" target="https://read.84000.co/translation/toh559.html"/>
                             </term>
                         </gloss>
                     </item>
@@ -1170,7 +1163,7 @@
                             <term xml:lang="Bo-Ltn">dung can </term>
                             <term xml:lang="bo">དུང་ཅན།</term>
                             <term xml:lang="Sa-Ltn">Śaṅkhinī</term>
-                            <term type="definition">A rākṣasī in the <title xml:lang="Sa-Ltn">Mahā­māyūrī­vidyārājñī</title> (Toh 559). <!--Reference Toh 0559-->
+                            <term type="definition">A rākṣasī in the <title xml:lang="Sa-Ltn">Mahā­māyūrī­vidyārājñī</title> (Toh 559). <ref rend="pending" target="https://read.84000.co/translation/toh559.html"/>
                             </term>
                         </gloss>
                     </item>
@@ -1189,8 +1182,7 @@
                             <term xml:lang="Bo-Ltn">bde ri </term>
                             <term xml:lang="bo">བདེ་རི།</term>
                             <term xml:lang="Sa-Ltn">Sātāgiri</term>
-                            <term type="definition">Name of a yakṣa general in the <title xml:lang="Sa-Ltn">Mahā­māyūrī­vidyārājñī</title> (Toh 559). <!--Reference
-                                Toh 0559-->
+                            <term type="definition">Name of a yakṣa general in the <title xml:lang="Sa-Ltn">Mahā­māyūrī­vidyārājñī</title> (Toh 559). <ref rend="pending" target="https://read.84000.co/translation/toh559.html"/>
                             </term>
                         </gloss>
                     </item>
@@ -1200,8 +1192,7 @@
                             <term xml:lang="Bo-Ltn">dpal gyi lha mo </term>
                             <term xml:lang="bo">དཔལ་གྱི་ལྷ་མོ།</term>
                             <term xml:lang="Sa-Ltn">Śrīmati</term>
-                            <term type="definition">A goddess; a yakṣiṇī in the <title xml:lang="Sa-Ltn">Mahā­māyūrī­vidyārājñī</title> (Toh 559). <!--Reference
-                                Toh 0559-->
+                            <term type="definition">A goddess; a yakṣiṇī in the <title xml:lang="Sa-Ltn">Mahā­māyūrī­vidyārājñī</title> (Toh 559). <ref rend="pending" target="https://read.84000.co/translation/toh559.html"/>
                             </term>
                         </gloss>
                     </item>
@@ -1402,4 +1393,361 @@
             </div>
         </back>
     </text>
+
+    <notes-cache xmlns="http://read.84000.co/ns/1.0" timestamp="2020-11-25T16:00:47.079Z" app-version="2.0.1">
+        <end-note id="UT22084-100-001-144" part-id="introduction" index="1"/>
+        <end-note id="UT22084-100-001-4" part-id="introduction" index="2"/>
+        <end-note id="UT22084-100-001-5" part-id="introduction" index="3"/>
+        <end-note id="UT22084-100-001-19" part-id="UT22084-100-001-section-1" index="4"/>
+        <end-note id="UT22084-100-001-20" part-id="UT22084-100-001-section-1" index="5"/>
+        <end-note id="UT22084-100-001-23" part-id="UT22084-100-001-section-1" index="6"/>
+        <end-note id="UT22084-100-001-32" part-id="UT22084-100-001-section-1" index="7"/>
+        <end-note id="UT22084-100-001-35" part-id="UT22084-100-001-section-1" index="8"/>
+        <end-note id="UT22084-100-001-37" part-id="UT22084-100-001-section-1" index="9"/>
+        <end-note id="UT22084-100-001-170" part-id="UT22084-100-001-section-1" index="10"/>
+        <end-note id="UT22084-100-001-38" part-id="UT22084-100-001-section-1" index="11"/>
+        <end-note id="UT22084-100-001-39" part-id="UT22084-100-001-section-1" index="12"/>
+        <end-note id="UT22084-100-001-43" part-id="UT22084-100-001-section-1" index="13"/>
+        <end-note id="UT22084-100-001-161" part-id="UT22084-100-001-section-1" index="14"/>
+    </notes-cache>
+    <milestones-cache xmlns="http://read.84000.co/ns/1.0" timestamp="2020-11-23T14:08:30.356Z" app-version="2.0.1">
+        <milestone id="UT22084-100-001-1" part-id="summary" index="1"/>
+        <milestone id="UT22084-100-001-2" part-id="acknowledgment" index="1"/>
+        <milestone id="UT22084-100-001-160" part-id="introduction" index="1"/>
+        <milestone id="UT22084-100-001-3" part-id="introduction" index="2"/>
+        <milestone id="UT22084-100-001-8" part-id="introduction" index="3"/>
+        <milestone id="UT22084-100-001-7" part-id="introduction" index="4"/>
+        <milestone id="UT22084-100-001-9" part-id="introduction" index="5"/>
+        <milestone id="UT22084-100-001-10" part-id="UT22084-100-001-section-1" index="1"/>
+        <milestone id="UT22084-100-001-11" part-id="UT22084-100-001-section-1" index="2"/>
+        <milestone id="UT22084-100-001-12" part-id="UT22084-100-001-section-1" index="3"/>
+        <milestone id="UT22084-100-001-13" part-id="UT22084-100-001-section-1" index="4"/>
+        <milestone id="UT22084-100-001-14" part-id="UT22084-100-001-section-1" index="5"/>
+        <milestone id="UT22084-100-001-15" part-id="UT22084-100-001-section-1" index="6"/>
+        <milestone id="UT22084-100-001-16" part-id="UT22084-100-001-section-1" index="7"/>
+        <milestone id="UT22084-100-001-17" part-id="UT22084-100-001-section-1" index="8"/>
+        <milestone id="UT22084-100-001-18" part-id="UT22084-100-001-section-1" index="9"/>
+        <milestone id="UT22084-100-001-21" part-id="UT22084-100-001-section-1" index="10"/>
+        <milestone id="UT22084-100-001-22" part-id="UT22084-100-001-section-1" index="11"/>
+        <milestone id="UT22084-100-001-24" part-id="UT22084-100-001-section-1" index="12"/>
+        <milestone id="UT22084-100-001-25" part-id="UT22084-100-001-section-1" index="13"/>
+        <milestone id="UT22084-100-001-26" part-id="UT22084-100-001-section-1" index="14"/>
+        <milestone id="UT22084-100-001-27" part-id="UT22084-100-001-section-1" index="15"/>
+        <milestone id="UT22084-100-001-28" part-id="UT22084-100-001-section-1" index="16"/>
+        <milestone id="UT22084-100-001-29" part-id="UT22084-100-001-section-1" index="17"/>
+        <milestone id="UT22084-100-001-30" part-id="UT22084-100-001-section-1" index="18"/>
+        <milestone id="UT22084-100-001-31" part-id="UT22084-100-001-section-1" index="19"/>
+        <milestone id="UT22084-100-001-33" part-id="UT22084-100-001-section-1" index="20"/>
+        <milestone id="UT22084-100-001-34" part-id="UT22084-100-001-section-1" index="21"/>
+        <milestone id="UT22084-100-001-36" part-id="UT22084-100-001-section-1" index="22"/>
+        <milestone id="UT22084-100-001-40" part-id="UT22084-100-001-section-1" index="23"/>
+        <milestone id="UT22084-100-001-41" part-id="UT22084-100-001-section-1" index="24"/>
+        <milestone id="UT22084-100-001-42" part-id="UT22084-100-001-section-1" index="25"/>
+        <milestone id="UT22084-100-001-44" part-id="UT22084-100-001-section-1" index="26"/>
+        <milestone id="UT22084-100-001-45" part-id="UT22084-100-001-section-1" index="27"/>
+        <milestone id="UT22084-100-001-46" part-id="UT22084-100-001-section-1" index="28"/>
+    </milestones-cache>
+    <folios-cache xmlns="http://read.84000.co/ns/1.0" timestamp="2020-11-25T16:00:47.079Z" app-version="2.0.1" tei-version="v-1.1.9-2020">
+        <folio-ref id="UT22084-100-001-171" resource-id="toh846" index-in-resource="1" index-in-sort="1" cRef-volume=""/>
+        <folio-ref id="UT22084-100-001-172" resource-id="toh846" index-in-resource="2" index-in-sort="2" cRef-volume=""/>
+        <folio-ref id="UT22084-100-001-173" resource-id="toh846" index-in-resource="3" index-in-sort="3" cRef-volume=""/>
+        <folio-ref id="UT22084-100-001-174" resource-id="toh846" index-in-resource="4" index-in-sort="4" cRef-volume=""/>
+        <folio-ref id="UT22084-100-001-175" resource-id="toh846" index-in-resource="5" index-in-sort="5" cRef-volume=""/>
+    </folios-cache>
+    <glossary-cache xmlns="http://read.84000.co/ns/1.0" timestamp="2020-11-23T17:10:48.026Z" app-version="2.0.1">
+        <gloss id="UT22084-100-001-67" index="1" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="4">
+            <location id="UT22084-100-001-12"/>
+        </gloss>
+        <gloss id="UT22084-100-001-68" index="2" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="10">
+            <location id="UT22084-100-001-18"/>
+        </gloss>
+        <gloss id="UT22084-100-001-69" index="3" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="7">
+            <location id="UT22084-100-001-17"/>
+        </gloss>
+        <gloss id="UT22084-100-001-70" index="4" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="6">
+            <location id="UT22084-100-001-11"/>
+            <location id="UT22084-100-001-41"/>
+        </gloss>
+        <gloss id="UT22084-100-001-71" index="5" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="9">
+            <location id="UT22084-100-001-7"/>
+            <location id="UT22084-100-001-17"/>
+        </gloss>
+        <gloss id="UT22084-100-001-72" index="6" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="11">
+            <location id="UT22084-100-001-11"/>
+        </gloss>
+        <gloss id="UT22084-100-001-73" index="7" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="5">
+            <location id="UT22084-100-001-22"/>
+            <location id="UT22084-100-001-89"/>
+            <location id="UT22084-100-001-95"/>
+        </gloss>
+        <gloss id="UT22084-100-001-74" index="8" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="7">
+            <location id="UT22084-100-001-24"/>
+        </gloss>
+        <gloss id="UT22084-100-001-57" index="9" timestamp="2020-11-23T17:10:48.026Z" word-count="4" letter-count="25">
+            <location id="UT22084-100-001-13"/>
+        </gloss>
+        <gloss id="UT22084-100-001-58" index="10" timestamp="2020-11-23T17:10:48.026Z" word-count="7" letter-count="47">
+        </gloss>
+        <gloss id="UT22084-100-001-75" index="11" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="12">
+            <location id="UT22084-100-001-17"/>
+        </gloss>
+        <gloss id="UT22084-100-001-76" index="12" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="8">
+            <location id="UT22084-100-001-14"/>
+            <location id="UT22084-100-001-90"/>
+        </gloss>
+        <gloss id="UT22084-100-001-77" index="13" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="5">
+            <location id="UT22084-100-001-22"/>
+        </gloss>
+        <gloss id="UT22084-100-001-59" index="14" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="6">
+            <location id="UT22084-100-001-28"/>
+        </gloss>
+        <gloss id="UT22084-100-001-78" index="15" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="5">
+            <location id="UT22084-100-001-22"/>
+        </gloss>
+        <gloss id="UT22084-100-001-79" index="16" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="11">
+            <location id="UT22084-100-001-16"/>
+        </gloss>
+        <gloss id="UT22084-100-001-80" index="17" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="5">
+            <location id="UT22084-100-001-13"/>
+            <location id="UT22084-100-001-20"/>
+            <location id="UT22084-100-001-60"/>
+        </gloss>
+        <gloss id="UT22084-100-001-81" index="18" timestamp="2020-11-23T17:10:48.026Z" word-count="3" letter-count="18">
+            <location id="UT22084-100-001-22"/>
+        </gloss>
+        <gloss id="UT22084-100-001-82" index="19" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="9">
+            <location id="UT22084-100-001-17"/>
+        </gloss>
+        <gloss id="UT22084-100-001-83" index="20" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="7">
+            <location id="UT22084-100-001-7"/>
+            <location id="UT22084-100-001-21"/>
+        </gloss>
+        <gloss id="UT22084-100-001-84" index="21" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="6">
+            <location id="UT22084-100-001-22"/>
+        </gloss>
+        <gloss id="UT22084-100-001-60" index="22" timestamp="2020-11-23T17:10:48.026Z" word-count="3" letter-count="15">
+            <location id="UT22084-100-001-18"/>
+            <location id="UT22084-100-001-20"/>
+        </gloss>
+        <gloss id="UT22084-100-001-85" index="23" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="5">
+            <location id="UT22084-100-001-12"/>
+            <location id="UT22084-100-001-116"/>
+        </gloss>
+        <gloss id="UT22084-100-001-86" index="24" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="5">
+            <location id="UT22084-100-001-13"/>
+        </gloss>
+        <gloss id="UT22084-100-001-87" index="25" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="8">
+            <location id="UT22084-100-001-8"/>
+            <location id="UT22084-100-001-15"/>
+        </gloss>
+        <gloss id="UT22084-100-001-88" index="26" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="10">
+            <location id="UT22084-100-001-17"/>
+        </gloss>
+        <gloss id="UT22084-100-001-89" index="27" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="4">
+            <location id="UT22084-100-001-7"/>
+            <location id="UT22084-100-001-22"/>
+        </gloss>
+        <gloss id="UT22084-100-001-90" index="28" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="10">
+            <location id="UT22084-100-001-14"/>
+        </gloss>
+        <gloss id="UT22084-100-001-61" index="29" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="7">
+            <location id="UT22084-100-001-28"/>
+        </gloss>
+        <gloss id="UT22084-100-001-91" index="30" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="6">
+            <location id="UT22084-100-001-12"/>
+            <location id="UT22084-100-001-79"/>
+            <location id="UT22084-100-001-87"/>
+            <location id="UT22084-100-001-88"/>
+            <location id="UT22084-100-001-91"/>
+        </gloss>
+        <gloss id="UT22084-100-001-92" index="31" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="11">
+            <location id="UT22084-100-001-16"/>
+        </gloss>
+        <gloss id="UT22084-100-001-62" index="32" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="9">
+            <location id="UT22084-100-001-28"/>
+        </gloss>
+        <gloss id="UT22084-100-001-93" index="33" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="8">
+            <location id="UT22084-100-001-15"/>
+        </gloss>
+        <gloss id="UT22084-100-001-94" index="34" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="8">
+            <location id="UT22084-100-001-15"/>
+        </gloss>
+        <gloss id="UT22084-100-001-95" index="35" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="8">
+            <location id="UT22084-100-001-24"/>
+        </gloss>
+        <gloss id="UT22084-100-001-96" index="36" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="9">
+            <location id="UT22084-100-001-16"/>
+        </gloss>
+        <gloss id="UT22084-100-001-97" index="37" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="9">
+            <location id="UT22084-100-001-8"/>
+            <location id="UT22084-100-001-15"/>
+        </gloss>
+        <gloss id="UT22084-100-001-98" index="38" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="10">
+            <location id="UT22084-100-001-8"/>
+            <location id="UT22084-100-001-15"/>
+        </gloss>
+        <gloss id="UT22084-100-001-99" index="39" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="8">
+            <location id="UT22084-100-001-18"/>
+        </gloss>
+        <gloss id="UT22084-100-001-100" index="40" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="10">
+            <location id="UT22084-100-001-16"/>
+            <location id="UT22084-100-001-114"/>
+        </gloss>
+        <gloss id="UT22084-100-001-101" index="41" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="6">
+            <location id="UT22084-100-001-7"/>
+            <location id="UT22084-100-001-22"/>
+        </gloss>
+        <gloss id="UT22084-100-001-102" index="42" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="9">
+            <location id="UT22084-100-001-7"/>
+            <location id="UT22084-100-001-17"/>
+        </gloss>
+        <gloss id="UT22084-100-001-63" index="43" timestamp="2020-11-23T17:10:48.026Z" word-count="2" letter-count="13">
+            <location id="UT22084-100-001-42"/>
+            <location id="UT22084-100-001-43"/>
+        </gloss>
+        <gloss id="UT22084-100-001-103" index="44" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="7">
+            <location id="UT22084-100-001-12"/>
+        </gloss>
+        <gloss id="UT22084-100-001-104" index="45" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="8">
+            <location id="UT22084-100-001-13"/>
+        </gloss>
+        <gloss id="UT22084-100-001-105" index="46" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="5">
+            <location id="UT22084-100-001-18"/>
+        </gloss>
+        <gloss id="UT22084-100-001-106" index="47" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="5">
+            <location id="UT22084-100-001-14"/>
+        </gloss>
+        <gloss id="UT22084-100-001-107" index="48" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="5">
+            <location id="UT22084-100-001-8"/>
+            <location id="UT22084-100-001-15"/>
+        </gloss>
+        <gloss id="UT22084-100-001-108" index="49" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="12">
+        </gloss>
+        <gloss id="UT22084-100-001-109" index="50" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="9">
+            <location id="UT22084-100-001-17"/>
+        </gloss>
+        <gloss id="UT22084-100-001-110" index="51" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="7">
+            <location id="UT22084-100-001-17"/>
+        </gloss>
+        <gloss id="UT22084-100-001-111" index="52" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="7">
+            <location id="UT22084-100-001-22"/>
+            <location id="UT22084-100-001-73"/>
+            <location id="UT22084-100-001-76"/>
+            <location id="UT22084-100-001-90"/>
+        </gloss>
+        <gloss id="UT22084-100-001-112" index="53" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="13">
+            <location id="UT22084-100-001-13"/>
+        </gloss>
+        <gloss id="UT22084-100-001-113" index="54" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="5">
+            <location id="UT22084-100-001-15"/>
+        </gloss>
+        <gloss id="UT22084-100-001-114" index="55" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="11">
+            <location id="UT22084-100-001-16"/>
+            <location id="UT22084-100-001-100"/>
+        </gloss>
+        <gloss id="UT22084-100-001-64" index="56" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="5">
+            <location id="UT22084-100-001-31"/>
+        </gloss>
+        <gloss id="UT22084-100-001-115" index="57" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="6">
+            <location id="UT22084-100-001-18"/>
+        </gloss>
+        <gloss id="UT22084-100-001-116" index="58" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="5">
+            <location id="UT22084-100-001-11"/>
+            <location id="UT22084-100-001-41"/>
+            <location id="UT22084-100-001-70"/>
+        </gloss>
+        <gloss id="UT22084-100-001-117" index="59" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="7">
+            <location id="UT22084-100-001-16"/>
+        </gloss>
+        <gloss id="UT22084-100-001-118" index="60" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="8">
+            <location id="UT22084-100-001-16"/>
+        </gloss>
+        <gloss id="UT22084-100-001-119" index="61" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="6">
+            <location id="UT22084-100-001-8"/>
+            <location id="UT22084-100-001-15"/>
+        </gloss>
+        <gloss id="UT22084-100-001-120" index="62" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="8">
+            <location id="UT22084-100-001-22"/>
+        </gloss>
+        <gloss id="UT22084-100-001-121" index="63" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="9">
+            <location id="UT22084-100-001-21"/>
+        </gloss>
+        <gloss id="UT22084-100-001-122" index="64" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="8">
+            <location id="UT22084-100-001-17"/>
+        </gloss>
+        <gloss id="UT22084-100-001-123" index="65" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="7">
+            <location id="UT22084-100-001-22"/>
+            <location id="UT22084-100-001-23"/>
+        </gloss>
+        <gloss id="UT22084-100-001-124" index="66" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="7">
+            <location id="UT22084-100-001-7"/>
+            <location id="UT22084-100-001-16"/>
+        </gloss>
+        <gloss id="UT22084-100-001-125" index="67" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="7">
+            <location id="UT22084-100-001-15"/>
+        </gloss>
+        <gloss id="UT22084-100-001-126" index="68" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="10">
+            <location id="UT22084-100-001-21"/>
+        </gloss>
+        <gloss id="UT22084-100-001-127" index="69" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="6">
+            <location id="UT22084-100-001-27"/>
+        </gloss>
+        <gloss id="UT22084-100-001-128" index="70" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="8">
+            <location id="UT22084-100-001-16"/>
+        </gloss>
+        <gloss id="UT22084-100-001-129" index="71" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="10">
+        </gloss>
+        <gloss id="UT22084-100-001-130" index="72" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="8">
+            <location id="UT22084-100-001-18"/>
+        </gloss>
+        <gloss id="UT22084-100-001-65" index="73" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="5">
+            <location id="UT22084-100-001-28"/>
+        </gloss>
+        <gloss id="UT22084-100-001-131" index="74" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="9">
+            <location id="UT22084-100-001-21"/>
+        </gloss>
+        <gloss id="UT22084-100-001-132" index="75" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="10">
+            <location id="UT22084-100-001-13"/>
+            <location id="UT22084-100-001-87"/>
+        </gloss>
+        <gloss id="UT22084-100-001-133" index="76" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="6">
+            <location id="UT22084-100-001-12"/>
+        </gloss>
+        <gloss id="UT22084-100-001-134" index="77" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="6">
+            <location id="UT22084-100-001-18"/>
+        </gloss>
+        <gloss id="UT22084-100-001-135" index="78" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="9">
+            <location id="UT22084-100-001-22"/>
+        </gloss>
+        <gloss id="UT22084-100-001-136" index="79" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="4">
+            <location id="UT22084-100-001-12"/>
+        </gloss>
+        <gloss id="UT22084-100-001-137" index="80" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="9">
+            <location id="UT22084-100-001-7"/>
+            <location id="UT22084-100-001-17"/>
+        </gloss>
+        <gloss id="UT22084-100-001-138" index="81" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="11">
+            <location id="UT22084-100-001-1"/>
+            <location id="UT22084-100-001-29"/>
+            <location id="UT22084-100-001-46"/>
+        </gloss>
+        <gloss id="UT22084-100-001-139" index="82" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="9">
+            <location id="UT22084-100-001-12"/>
+        </gloss>
+        <gloss id="UT22084-100-001-140" index="83" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="9">
+            <location id="UT22084-100-001-12"/>
+        </gloss>
+        <gloss id="UT22084-100-001-141" index="84" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="5">
+            <location id="UT22084-100-001-14"/>
+        </gloss>
+        <gloss id="UT22084-100-001-66" index="85" timestamp="2020-11-23T17:10:48.026Z" word-count="3" letter-count="21">
+            <location id="UT22084-100-001-30"/>
+        </gloss>
+        <gloss id="UT22084-100-001-142" index="86" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="4">
+            <location id="UT22084-100-001-12"/>
+        </gloss>
+        <gloss id="UT22084-100-001-143" index="87" timestamp="2020-11-23T17:10:48.026Z" word-count="1" letter-count="6">
+            <location id="UT22084-100-001-22"/>
+        </gloss>
+    </glossary-cache>
 </TEI>
