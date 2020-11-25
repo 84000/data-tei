@@ -33,7 +33,7 @@
     <consultant role="projectManager" ref="contributors.xml#person-305">Stefan Mang</consultant>
             </titleStmt>
             <editionStmt>
-                <edition>v 1.1.4 <date>2020</date>
+                <edition>v 1.1.6 <date>2020</date>
                 </edition>
             </editionStmt>
             <publicationStmt status="1">
@@ -68,7 +68,7 @@
                 </bibl>
             </sourceDesc>
             <notesStmt>
-                <note type="lastUpdated" date-time="2020-05-01T06:15:28.823Z" user="admin">01/05/2020 06:15:28</note>
+                <note type="lastUpdated" date-time="2020-11-25T15:59:33.092Z" user="admin">25/11/2020 15:59:33</note>
                 <note type="updated" update="text-version" value="" date-time="2019-04-01T07:36:02.112Z" user="john"/>
                 <note type="updated" update="translation-status" value="3" date-time="2019-04-01T07:36:02.112Z" user="john">3</note>
                 <note type="updated" update="translation-status" value="2.g" date-time="2019-09-13T08:57:04.119Z" user="john">2.g</note>
@@ -100,6 +100,8 @@
     <note type="updated" update="text-version" value="v 1.1.2" date-time="2020-05-01T06:14:25.352Z" user="mike">v 1.1.2</note>
     <note type="updated" update="text-version" value="v 1.1.3" date-time="2020-05-01T06:15:27.157Z" user="mike">minor typo corrected</note>
     <note type="updated" update="text-version" value="1.1.4" date-time="2020-08-28T14:25:09.395Z" user="celso">updated asterisks in Skt. glossary to type="semanticReconstruction"</note>
+    <note type="updated" update="text-version" value="1.1.5" date-time="2020-11-23T13:57:44.998Z" user="admin">Auto (TEI migration 2.0.0)</note>
+    <note type="updated" update="text-version" value="1.1.6" date-time="2020-11-25T15:59:28.576Z" user="celso">Updated pending links</note>
             </notesStmt>
         </fileDesc>
     </teiHeader>
@@ -131,7 +133,7 @@
             </div>
             <div type="introduction">
                 <head type="introduction" tid="5">Introduction</head>
-                <div type="section">
+                <div type="section" xml:id="UT22084-094-008-introduction-1">
                     <milestone unit="chunk" xml:id="UT22084-094-008-3"/>
                     <p tid="6">While the Buddha is dwelling on top of Mount Meru, along with the
                         goddess Tārā and an assembly of gods, Tārā warns the divine gathering about
@@ -155,8 +157,8 @@
                             of Vajratārā (Bhattacharyya 1925, p. 178) and <title xml:lang="en">The
                                 Incantation of Tārā</title> (Toh 729, <title xml:lang="Bo-Ltn">sgrol
                                 ma’i
-                            gzungs</title>)<!--Reference Toh 0729--><!--Reference Toh
-                                1001-->,
+                            gzungs</title>)<ref rend="pending" target="https://read.84000.co/translation/toh729.html"/>
+                            <ref rend="pending" target="https://read.84000.co/translation/toh1001.html"/>,
                             to give only two examples.</note> and (3) a praise to Tārā offered by
                         the assembled gods. In the third section, the gods praise Tārā as an
                         awakened protectress<note place="end" xml:id="UT22084-094-008-6" index="2">
@@ -204,11 +206,11 @@
                 <head type="translation" tid="13"> The Translation </head>
                 <head type="titleHon" tid="14">The Noble Sūtra</head>
                 <head type="titleMain" tid="15">Tārā Who Protects from the Eight Dangers</head>
-                <div type="section">
+                <div type="section" xml:id="UT22084-094-008-section-1">
                     <milestone unit="chunk" xml:id="UT22084-094-008-25"/>
                     <lg tid="16">
                         <l>
-                            <ref cRef="F.222.b" type="folio"/> Homage to the Three Jewels.</l>
+                            <ref cRef="F.222.b" type="folio" xml:id="UT22084-094-008-113"/> Homage to the Three Jewels.</l>
                         <l>Homage to the venerable lady Tārā.</l>
                         <l>Homage to the Blessed Śākyamuni.</l>
                     </lg>
@@ -222,7 +224,7 @@
                         <l>“Now that you have reached this jewel-like higher realm,</l>
                         <l>You should understand actions and their results:</l>
                         <l>Adhere to the good and abandon the bad,</l>
-                        <l>For those who engage in evil actions <ref cRef="F.223.a" type="folio"/>
+                        <l>For those who engage in evil actions <ref cRef="F.223.a" type="folio" xml:id="UT22084-094-008-114"/>
                         </l>
                         <l>Will plunge downward when they pass from this world.</l>
                     </lg>
@@ -299,7 +301,7 @@
                     <lg tid="27">
                         <l>“Their vidyāmantra becomes like the prattle of common folk, </l>
                         <l>And their absorption resembles the musings of a child. </l>
-                        <l>But if people without fault practice vidyāmantras, <ref cRef="F.223.b" type="folio"/>
+                        <l>But if people without fault practice vidyāmantras, <ref cRef="F.223.b" type="folio" xml:id="UT22084-094-008-115"/>
                         </l>
                         <l>They shall swiftly accomplish whatever they desire.</l>
                     </lg>
@@ -402,7 +404,7 @@
 
                     <p rend="mantra" tid="38">
                         <mantra xml:lang="Sa-Ltn">nama āryāvalobhayā narā bodhisattvā mahā­sattvāni
-                            adhiṣṭhānādhiṣṭhite mama sarva­karmāvaraṇa svabhāva­śuddhe <ref cRef="F.224.a" type="folio"/> viśuddhe śodhaya viśodhaya hūṁ phaṭ
+                            adhiṣṭhānādhiṣṭhite mama sarva­karmāvaraṇa svabhāva­śuddhe <ref cRef="F.224.a" type="folio" xml:id="UT22084-094-008-116"/> viśuddhe śodhaya viśodhaya hūṁ phaṭ
                             svāhā |</mantra>
                         <note place="end" xml:id="UT22084-094-008-52" index="11"> The fourth part of this incantation is a request to Tārā to purify
                             one’s obscurations. We have amended the first two beginning syllables
@@ -497,7 +499,7 @@
                     <milestone unit="chunk" xml:id="UT22084-094-008-67"/>
                     <p tid="48">The Blessed One then declared, “Sons and daughters of noble family
                         should write down this teaching, read it, recite it, understand it,
-                        contemplate it correctly, and explain it extensively to others.” <ref cRef="F.224.b" type="folio"/>
+                        contemplate it correctly, and explain it extensively to others.” <ref cRef="F.224.b" type="folio" xml:id="UT22084-094-008-117"/>
                     </p>
                     <p tid="49">At this point, the whole assembly rejoiced and offered praise. </p>
                     <milestone unit="chunk" xml:id="UT22084-094-008-69"/>
@@ -518,7 +520,7 @@
             </div>
             <div type="listBibl">
                 <head type="listBibl" tid="52">Bibliography</head>
-                <div type="section">
+                <div type="section" xml:id="UT22084-094-008-listBibl-1">
                     <head type="section" tid="53">Primary Sources</head>
                     <bibl xml:id="UT22084-094-008-74">
                         <title xml:lang="Bo-Ltn">’phags ma sgrol ma ’jigs pa brgyad las skyob pa’i
@@ -539,12 +541,12 @@
                     <bibl xml:id="UT22084-094-008-77">
                         <title xml:lang="Bo-Ltn">sgrol ma’i gzungs </title>[<title xml:lang="en">The
                             Incantation of Tārā</title>]. Toh 729, Degé Kangyur vol. 94 (rgyud,
-                        tsha), folio 222.a.<!--Reference Toh 0729-->
+                        tsha), folio 222.a.<ref rend="pending" target="https://read.84000.co/translation/toh729.html"/>
                     </bibl>
                     <bibl xml:id="UT22084-094-008-78">
                         <title xml:lang="Bo-Ltn">sgrol ma’i gzungs </title>[<title xml:lang="en">The
                             Incantation of Tārā</title>]. Toh 1001, Degé Kangyur vol. 102 (gzungs,
-                        waM), folio 160.a.<!--Reference Toh 1001-->
+                        waM), folio 160.a.<ref rend="pending" target="https://read.84000.co/translation/toh1001.html"/>
                     </bibl>
                     <bibl xml:id="UT22084-094-008-73">
                         <title xml:lang="Bo-Ltn">dam pa’i chos
@@ -558,7 +560,7 @@
                             Works</title>], vol. 16 (ma), folio 218.b. Lhasa: zhol par khang,
                         2000.</bibl>
                 </div>
-                <div type="section">
+                <div type="section" xml:id="UT22084-094-008-listBibl-2">
                     <head type="section" tid="54">Secondary Sources</head>
                     <bibl xml:id="UT22084-094-008-79">Beyer, Stephan. <title xml:lang="en">The Cult
                             of Tārā: Magic and Ritual in Tibet</title>. Berkeley: University of
@@ -751,4 +753,130 @@
             </div>
         </back>
     </text>
+
+    <notes-cache xmlns="http://read.84000.co/ns/1.0" timestamp="2020-11-25T15:59:33.092Z" app-version="2.0.1">
+        <end-note id="UT22084-094-008-5" part-id="introduction" index="1"/>
+        <end-note id="UT22084-094-008-6" part-id="introduction" index="2"/>
+        <end-note id="UT22084-094-008-7" part-id="introduction" index="3"/>
+        <end-note id="UT22084-094-008-109" part-id="introduction" index="4"/>
+        <end-note id="UT22084-094-008-23" part-id="introduction" index="5"/>
+        <end-note id="UT22084-094-008-35" part-id="UT22084-094-008-section-1" index="6"/>
+        <end-note id="UT22084-094-008-48" part-id="UT22084-094-008-section-1" index="7"/>
+        <end-note id="UT22084-094-008-49" part-id="UT22084-094-008-section-1" index="8"/>
+        <end-note id="UT22084-094-008-50" part-id="UT22084-094-008-section-1" index="9"/>
+        <end-note id="UT22084-094-008-51" part-id="UT22084-094-008-section-1" index="10"/>
+        <end-note id="UT22084-094-008-52" part-id="UT22084-094-008-section-1" index="11"/>
+        <end-note id="UT22084-094-008-54" part-id="UT22084-094-008-section-1" index="12"/>
+        <end-note id="UT22084-094-008-70" part-id="UT22084-094-008-section-1" index="13"/>
+    </notes-cache>
+    <milestones-cache xmlns="http://read.84000.co/ns/1.0" timestamp="2020-11-23T14:08:49.107Z" app-version="2.0.1">
+        <milestone id="UT22084-094-008-1" part-id="summary" index="1"/>
+        <milestone id="UT22084-094-008-2" part-id="acknowledgment" index="1"/>
+        <milestone id="UT22084-094-008-3" part-id="introduction" index="1"/>
+        <milestone id="UT22084-094-008-4" part-id="introduction" index="2"/>
+        <milestone id="UT22084-094-008-8" part-id="introduction" index="3"/>
+        <milestone id="UT22084-094-008-24" part-id="introduction" index="4"/>
+        <milestone id="UT22084-094-008-25" part-id="UT22084-094-008-section-1" index="1"/>
+        <milestone id="UT22084-094-008-26" part-id="UT22084-094-008-section-1" index="2"/>
+        <milestone id="UT22084-094-008-27" part-id="UT22084-094-008-section-1" index="3"/>
+        <milestone id="UT22084-094-008-28" part-id="UT22084-094-008-section-1" index="4"/>
+        <milestone id="UT22084-094-008-29" part-id="UT22084-094-008-section-1" index="5"/>
+        <milestone id="UT22084-094-008-30" part-id="UT22084-094-008-section-1" index="6"/>
+        <milestone id="UT22084-094-008-31" part-id="UT22084-094-008-section-1" index="7"/>
+        <milestone id="UT22084-094-008-32" part-id="UT22084-094-008-section-1" index="8"/>
+        <milestone id="UT22084-094-008-33" part-id="UT22084-094-008-section-1" index="9"/>
+        <milestone id="UT22084-094-008-34" part-id="UT22084-094-008-section-1" index="10"/>
+        <milestone id="UT22084-094-008-36" part-id="UT22084-094-008-section-1" index="11"/>
+        <milestone id="UT22084-094-008-38" part-id="UT22084-094-008-section-1" index="12"/>
+        <milestone id="UT22084-094-008-39" part-id="UT22084-094-008-section-1" index="13"/>
+        <milestone id="UT22084-094-008-40" part-id="UT22084-094-008-section-1" index="14"/>
+        <milestone id="UT22084-094-008-41" part-id="UT22084-094-008-section-1" index="15"/>
+        <milestone id="UT22084-094-008-43" part-id="UT22084-094-008-section-1" index="16"/>
+        <milestone id="UT22084-094-008-44" part-id="UT22084-094-008-section-1" index="17"/>
+        <milestone id="UT22084-094-008-45" part-id="UT22084-094-008-section-1" index="18"/>
+        <milestone id="UT22084-094-008-47" part-id="UT22084-094-008-section-1" index="19"/>
+        <milestone id="UT22084-094-008-53" part-id="UT22084-094-008-section-1" index="20"/>
+        <milestone id="UT22084-094-008-111" part-id="UT22084-094-008-section-1" index="21"/>
+        <milestone id="UT22084-094-008-57" part-id="UT22084-094-008-section-1" index="22"/>
+        <milestone id="UT22084-094-008-60" part-id="UT22084-094-008-section-1" index="23"/>
+        <milestone id="UT22084-094-008-61" part-id="UT22084-094-008-section-1" index="24"/>
+        <milestone id="UT22084-094-008-62" part-id="UT22084-094-008-section-1" index="25"/>
+        <milestone id="UT22084-094-008-63" part-id="UT22084-094-008-section-1" index="26"/>
+        <milestone id="UT22084-094-008-64" part-id="UT22084-094-008-section-1" index="27"/>
+        <milestone id="UT22084-094-008-65" part-id="UT22084-094-008-section-1" index="28"/>
+        <milestone id="UT22084-094-008-67" part-id="UT22084-094-008-section-1" index="29"/>
+        <milestone id="UT22084-094-008-69" part-id="UT22084-094-008-section-1" index="30"/>
+    </milestones-cache>
+    <folios-cache xmlns="http://read.84000.co/ns/1.0" timestamp="2020-11-23T14:08:49.107Z" app-version="2.0.1" tei-version="v-1.1.5-2020">
+        <folio-ref id="UT22084-094-008-113" resource-id="toh731" index-in-resource="1" index-in-sort="1" cRef-volume=""/>
+        <folio-ref id="UT22084-094-008-114" resource-id="toh731" index-in-resource="2" index-in-sort="2" cRef-volume=""/>
+        <folio-ref id="UT22084-094-008-115" resource-id="toh731" index-in-resource="3" index-in-sort="3" cRef-volume=""/>
+        <folio-ref id="UT22084-094-008-116" resource-id="toh731" index-in-resource="4" index-in-sort="4" cRef-volume=""/>
+        <folio-ref id="UT22084-094-008-117" resource-id="toh731" index-in-resource="5" index-in-sort="5" cRef-volume=""/>
+    </folios-cache>
+    <glossary-cache xmlns="http://read.84000.co/ns/1.0" timestamp="2020-11-23T17:11:42.617Z" app-version="2.0.1">
+        <gloss id="UT22084-094-008-96" index="1" timestamp="2020-11-23T17:11:42.617Z" word-count="2" letter-count="11">
+            <location id="UT22084-094-008-39"/>
+        </gloss>
+        <gloss id="UT22084-094-008-97" index="2" timestamp="2020-11-23T17:11:42.617Z" word-count="1" letter-count="5">
+            <location id="UT22084-094-008-4"/>
+            <location id="UT22084-094-008-64"/>
+            <location id="UT22084-094-008-98"/>
+        </gloss>
+        <gloss id="UT22084-094-008-98" index="3" timestamp="2020-11-23T17:11:42.617Z" word-count="2" letter-count="13">
+            <location id="UT22084-094-008-3"/>
+            <location id="UT22084-094-008-4"/>
+            <location id="UT22084-094-008-64"/>
+            <location id="UT22084-094-008-69"/>
+            <location id="UT22084-094-008-6"/>
+            <location id="UT22084-094-008-7"/>
+        </gloss>
+        <gloss id="UT22084-094-008-99" index="4" timestamp="2020-11-23T17:11:42.617Z" word-count="1" letter-count="9">
+            <location id="UT22084-094-008-60"/>
+        </gloss>
+        <gloss id="UT22084-094-008-100" index="5" timestamp="2020-11-23T17:11:42.617Z" word-count="1" letter-count="6">
+            <location id="UT22084-094-008-39"/>
+        </gloss>
+        <gloss id="UT22084-094-008-101" index="6" timestamp="2020-11-23T17:11:42.617Z" word-count="1" letter-count="6">
+            <location id="UT22084-094-008-57"/>
+        </gloss>
+        <gloss id="UT22084-094-008-110" index="7" timestamp="2020-11-23T17:11:42.617Z" word-count="2" letter-count="10">
+            <location id="UT22084-094-008-3"/>
+            <location id="UT22084-094-008-105"/>
+        </gloss>
+        <gloss id="UT22084-094-008-108" index="8" timestamp="2020-11-23T17:11:42.617Z" word-count="1" letter-count="11">
+            <location id="UT22084-094-008-65"/>
+        </gloss>
+        <gloss id="UT22084-094-008-107" index="9" timestamp="2020-11-23T17:11:42.617Z" word-count="1" letter-count="5">
+            <location id="UT22084-094-008-29"/>
+        </gloss>
+        <gloss id="UT22084-094-008-105" index="10" timestamp="2020-11-23T17:11:42.617Z" word-count="6" letter-count="29">
+            <location id="UT22084-094-008-26"/>
+        </gloss>
+        <gloss id="UT22084-094-008-106" index="11" timestamp="2020-11-23T17:11:42.617Z" word-count="1" letter-count="4">
+            <location id="UT22084-094-008-1"/>
+            <location id="UT22084-094-008-3"/>
+            <location id="UT22084-094-008-4"/>
+            <location id="UT22084-094-008-25"/>
+            <location id="UT22084-094-008-26"/>
+            <location id="UT22084-094-008-61"/>
+            <location id="UT22084-094-008-69"/>
+            <location id="UT22084-094-008-5"/>
+            <location id="UT22084-094-008-6"/>
+            <location id="UT22084-094-008-35"/>
+            <location id="UT22084-094-008-48"/>
+            <location id="UT22084-094-008-51"/>
+            <location id="UT22084-094-008-52"/>
+        </gloss>
+        <gloss id="UT22084-094-008-102" index="12" timestamp="2020-11-23T17:11:42.617Z" word-count="2" letter-count="14">
+            <location id="UT22084-094-008-57"/>
+        </gloss>
+        <gloss id="UT22084-094-008-103" index="13" timestamp="2020-11-23T17:11:42.617Z" word-count="1" letter-count="11">
+            <location id="UT22084-094-008-36"/>
+            <location id="UT22084-094-008-38"/>
+        </gloss>
+        <gloss id="UT22084-094-008-104" index="14" timestamp="2020-11-23T17:11:42.617Z" word-count="1" letter-count="4">
+            <location id="UT22084-094-008-30"/>
+        </gloss>
+    </glossary-cache>
 </TEI>
