@@ -30,7 +30,7 @@
         <editor role="TEImarkupEditor" ref="contributors.xml#person-92">Laura Goetz</editor>
       </titleStmt>
       <editionStmt>
-                <edition>v 1.0.3 <date>2020</date>
+                <edition>v 1.0.5 <date>2020</date>
                 </edition>
             </editionStmt>
       <publicationStmt status="1">
@@ -64,7 +64,7 @@
         </bibl>
       </sourceDesc>
       <notesStmt>
-        <note type="lastUpdated" date-time="2020-11-23T05:11:34.364Z" user="admin">23/11/2020 05:11:34</note>
+        <note type="lastUpdated" date-time="2020-11-25T16:03:48.009Z" user="admin">25/11/2020 16:03:48</note>
 
         <note type="updated" update="text-version" value="v 0.0.1" date-time="2019-12-20T12:56:48.575Z" user="admin">Automated version increment</note>
         <note type="updated" update="translation-status" value="2.d" date-time="2020-01-28T06:14:09.752Z" user="mike">2.d</note>
@@ -79,6 +79,8 @@
     <note type="updated" update="text-version" value="1.0.1" date-time="2020-10-24T19:32:02.598Z" user="john">Two or three minor corrections</note>
     <note type="updated" update="text-version" value="1.0.2" date-time="2020-11-07T01:48:08.313Z" user="laura">Corrected typo in glossary</note>
     <note type="updated" update="text-version" value="1.0.3" date-time="2020-11-23T05:11:32.399Z" user="mike">sanskrit typo corrected</note>
+    <note type="updated" update="text-version" value="1.0.4" date-time="2020-11-23T13:57:44.998Z" user="admin">Auto (TEI migration 2.0.0)</note>
+    <note type="updated" update="text-version" value="1.0.5" date-time="2020-11-25T16:03:43.472Z" user="celso">Updated pending links</note>
             </notesStmt>
     </fileDesc>
   </teiHeader>
@@ -109,7 +111,7 @@
       </div>
       <div type="introduction">
         <head type="introduction" tid="6">Introduction</head>
-        <div type="section">
+        <div type="section" xml:id="UT22084-057-003-introduction-1">
           <milestone unit="chunk" xml:id="UT22084-057-003-4"/>
           <p tid="7">
                         <title xml:lang="en">Cultivating Trust in the Great Vehicle</title> unfolds at
@@ -168,7 +170,8 @@
           <milestone unit="chunk" xml:id="UT22084-057-003-9"/>
           <p tid="12">A similar list of twenty-eight wrong views that bodhisattvas may fall into 
             can be found elsewhere in the Buddhist canon, in the 
-            <title xml:lang="Sa-Ltn">Abhidharma­samuccaya</title><!--Reference Toh 4049-->
+            <title xml:lang="Sa-Ltn">Abhidharma­samuccaya</title>
+                        <ref rend="pending" target="https://read.84000.co/translation/toh4049.html"/>
             by Asaṅga, the renowned Yogācāra scholar of fourth century India.<note place="end" index="1" xml:id="UT22084-057-003-10"> 
               For an English translation, see Asaṅga (2001),
               pp. 190–92.</note> Although the two lists are far from identical, their main themes
@@ -183,8 +186,10 @@
             this way be seen to provide a scriptural basis for the Indian Yogācāra school’s critique
             of perceived nihilistic interpretations of the Madhyamaka view associated with the
             influential Indian Buddhist philosopher Nāgārjuna (ca. second century). 
-            Although the Tibetan master Butön Rinchen Drup (<foreign xml:lang="Bo-Ltn">bu ston rin chen grub</foreign>, 1290–1364) noted that the sūtra was adopted by the Yogācāra school, it appears to have had far less impact on Buddhist scholarship than Yogācāra classics such as the <title xml:lang="Sa-Ltn">Abhidharma­samuccaya</title><!--Reference Toh 4049--> and <title xml:lang="Sa-Ltn">Yogācārabhūmi</title>.<!--Reference Toh 4035-->
-                        <note place="end" xml:id="UT22084-057-003-339">On Butön’s claim, see below <ptr target="#UT22084-057-003-17"/>. A search for plausible variants of the sūtra title in the Kangyur and Tengyur collections resulted in only a single quotation (using the modified title <title xml:lang="Bo-Ltn">dad pa rab tu bsgom pa’i mdo</title>): Dharmamitra quotes the work in his <title xml:lang="Sa-Ltn">Abhisamayālaṃkāra­kārikā­prajñā­pāramitopadeśa­śāstra­ṭīkā</title><!--Reference Toh 3796 F.96a7--> D 3796: vol. 87, folios 96.a7–96.b1.</note>   
+            Although the Tibetan master Butön Rinchen Drup (<foreign xml:lang="Bo-Ltn">bu ston rin chen grub</foreign>, 1290–1364) noted that the sūtra was adopted by the Yogācāra school, it appears to have had far less impact on Buddhist scholarship than Yogācāra classics such as the <title xml:lang="Sa-Ltn">Abhidharma­samuccaya</title>
+                        <ref rend="pending" target="https://read.84000.co/translation/toh4049.html"/> and <title xml:lang="Sa-Ltn">Yogācārabhūmi</title>.<ref rend="pending" target="https://read.84000.co/translation/toh4035.html"/>
+                        <note place="end" xml:id="UT22084-057-003-339">On Butön’s claim, see below <ptr target="#UT22084-057-003-17"/>. A search for plausible variants of the sūtra title in the Kangyur and Tengyur collections resulted in only a single quotation (using the modified title <title xml:lang="Bo-Ltn">dad pa rab tu bsgom pa’i mdo</title>): Dharmamitra quotes the work in his <title xml:lang="Sa-Ltn">Abhisamayālaṃkāra­kārikā­prajñā­pāramitopadeśa­śāstra­ṭīkā</title>
+                            <ref rend="pending" target="https://read.84000.co/translation/toh3796.html" inst="F.96a7"/> D 3796: vol. 87, folios 96.a7–96.b1.</note>   
             That said, we can detect in its criticisms of misguided interpretations of Madhyamaka doctrines a strain of polemicism that was famously articulated in such Yogācāra classics.
             Consider, as example, its criticism of the
             central Madhyamaka view of no claim or thesis (<foreign xml:lang="Sa-Ltn" type="term">pratijñā</foreign>):</p>
@@ -215,9 +220,10 @@
             very little scholarly attention.<note place="end" index="2" xml:id="UT22084-057-003-17">
               The only mention of this sūtra in English that we are aware of is a brief discussion
               found in Skilling (2000), pp. 323–24. Here, Skilling also mentions that “Kazunobu
-              Matsuda has written (in Japanese) about the sūtra with reference to the <title xml:lang="Sa-Ltn">Abhidharma­samuccaya</title><!--Reference Toh
-                                                  4049-->
-              and <title xml:lang="Sa-Ltn">Vyākhyāyukti</title><!--Reference Toh 4061--> in his ‘On
+              Matsuda has written (in Japanese) about the sūtra with reference to the <title xml:lang="Sa-Ltn">Abhidharma­samuccaya</title>
+                            <ref rend="pending" target="https://read.84000.co/translation/toh4049.html"/>
+              and <title xml:lang="Sa-Ltn">Vyākhyāyukti</title>
+                            <ref rend="pending" target="https://read.84000.co/translation/toh4061.html"/> in his ‘On
               the two unknown Sūtras adopted by the Yogācāra School, based on a passage found in the
               writings of Bu ston and Blo gros rgyal mtshan,’ in Zuihō Yamaguchi (ed.): <title xml:lang="en">Buddhism and Society in Tibet</title>, Tokyo 1986, pp. 269–89.”
               Unfortunately, we have been unable to consult Matsuda’s article for our work on this
@@ -243,17 +249,17 @@
         <head type="translation" tid="18"> The Translation </head>
         <head type="titleHon" tid="19">The Noble Great Vehicle Sūtra</head>
         <head type="titleMain" tid="20">Cultivating Trust in the Great Vehicle</head>
-        <div type="prologue">
+        <div type="prologue" xml:id="UT22084-057-003-prologue">
           <head type="prologue" tid="294">Prologue</head>
           <milestone unit="chunk" xml:id="UT22084-057-003-20"/>
           <p tid="21">
                         <ref cRef="B1" type="bampo"/>
-            <ref cRef="F.6.b" type="folio"/> Homage to all buddhas and bodhisattvas.</p>
+            <ref cRef="F.6.b" type="folio" xml:id="UT22084-057-003-340"/> Homage to all buddhas and bodhisattvas.</p>
           <lb/>
           <milestone unit="chunk" xml:id="UT22084-057-003-21"/>
           <p tid="22">Thus did I hear at one time. The Blessed One was dwelling in Rājagṛha at
             Vulture Peak Mountain together with a great bodhisattva saṅgha of bodhisattva great
-            beings <ref cRef="F.7.a" type="folio"/> who had gathered there from various buddha
+            beings <ref cRef="F.7.a" type="folio" xml:id="UT22084-057-003-341"/> who had gathered there from various buddha
             realms. Every one of them had conquered the demons and all adversaries. They were far
             removed from the fluctuations of the habitual tendencies of all disturbing emotions and
             subsidiary disturbing emotions. They had attained the level of great mastery where one can
@@ -275,7 +281,7 @@
             bodhisattva Always Following Trust, the bodhisattva Genuinely Entering Trust, the
             bodhisattva Leading towards Trust, the bodhisattva Destroying Doubt regarding Trust, the
             bodhisattva Teaching Trust, the bodhisattva Establishing Trust, the bodhisattva
-            Increasing Trust, <ref cRef="F.7.b" type="folio"/> the bodhisattva Training in Trust,
+            Increasing Trust, <ref cRef="F.7.b" type="folio" xml:id="UT22084-057-003-342"/> the bodhisattva Training in Trust,
             the bodhisattva Searching for the Vessel of Trust, and the bodhisattva great being Great
             Skillful Trust. There were also 1,250 monks in attendance, such as Mahākāśyapa. From all
             sides the Blessed One was surrounded by innumerable gods, nāgas, yakṣas, gandharvas,
@@ -313,13 +319,13 @@
             supplicated, “Blessed One, what are the characteristics of the bodhisattvas’ trust in
             the Great Vehicle that allows them to accomplish the Great Vehicle? How do bodhisattvas
             come to trust the Great Vehicle? Blessed One, what kinds of trust in the Great Vehicle
-            do bodhisattvas possess? <ref cRef="F.8.a" type="folio"/> And what kinds of benefits result from such trust in the Great Vehicle?”</p>
+            do bodhisattvas possess? <ref cRef="F.8.a" type="folio" xml:id="UT22084-057-003-343"/> And what kinds of benefits result from such trust in the Great Vehicle?”</p>
           <milestone unit="chunk" xml:id="UT22084-057-003-26"/>
           <p tid="26">The Blessed One replied, “Noble son, excellent! It is excellent that you have
             come here on behalf of limitless bodhisattvas to ask the Thus-Gone One about the meaning
             of this. Therefore, noble son, listen and I shall teach you.”</p>
         </div>
-        <div type="chapter">
+        <div type="chapter" xml:id="UT22084-057-003-chapter-1">
           <head type="chapter" tid="27">Chapter 1</head>
           <head type="chapterTitle" tid="295">The Characteristics of Trust</head>
           <milestone unit="chunk" xml:id="UT22084-057-003-27"/>
@@ -328,7 +334,7 @@
             clarity, (2) saturation, (3) qualities, (4) possession, (5) the basis, (6)
             transcendence, (7) the root, (8) protection, (9) the connection, (10) continuity, and
             (11) perfection.”</p>
-          <div type="section">
+          <div type="section" xml:id="UT22084-057-003-chapter-1-1">
             <head type="section" tid="29">1. Clarity </head>
             <milestone unit="chunk" xml:id="UT22084-057-003-28"/>
             <p tid="30">Great Skillful Trust said, “Blessed One, how is clarity a characteristic of
@@ -347,7 +353,7 @@
               regard.”</p>
             <milestone unit="chunk" xml:id="UT22084-057-003-31"/>
             <p tid="33">Then the bodhisattva Great Skillful Trust inquired, “Blessed One, how does a
-              novice <ref cRef="F.8.b" type="folio"/> bodhisattva, who is on the level of devoted
+              novice <ref cRef="F.8.b" type="folio" xml:id="UT22084-057-003-344"/> bodhisattva, who is on the level of devoted
               engagement and knows the Dharma but has not yet gained understanding, relinquish doubt
               about the profound and vast Dharma of the Great Vehicle? How is such a bodhisattva
               freed from the stain of doubt?”</p>
@@ -364,7 +370,7 @@
               how you should view the characteristic of clarity concerning the bodhisattvas’ trust
               in the Great Vehicle that allows them to accomplish the Great Vehicle.”</p>
           </div>
-          <div type="section">
+          <div type="section" xml:id="UT22084-057-003-chapter-1-2">
             <head type="section" tid="35">2. Saturation</head>
             <milestone unit="chunk" xml:id="UT22084-057-003-33"/>
             <p tid="36">The bodhisattva Great Skillful Trust said, “Blessed One, how is saturation a
@@ -375,7 +381,7 @@
               to the body and the mind becoming saturated with feelings of happiness. This happiness
               and well-being in turn come from the bodhisattvas’ trust in the Great Vehicle that
               allows them to accomplish the Great Vehicle. The happiness and well-being that are
-              connected to the bodhisattvas’ trust satisfy body and mind. <ref cRef="F.9.a" type="folio"/> In that way, they differ from the happiness and well-being that arise
+              connected to the bodhisattvas’ trust satisfy body and mind. <ref cRef="F.9.a" type="folio" xml:id="UT22084-057-003-345"/> In that way, they differ from the happiness and well-being that arise
               from the sense pleasures of those who revel in desire. The happiness and well-being
               experienced by beings who live in the form and formless realms similarly do not
               satisfy their bodies and minds. Why is that so? Their happiness and well-being do not
@@ -403,7 +409,7 @@
               all these many ways, when those who live in the form and formless realms arise from
               the state of equilibrium, that does not bring genuine peace. Since these states of
               equilibrium provide no genuine peace, they satisfy neither body nor mind in the way
-              that the Dharma-Vinaya of the noble ones does. <ref cRef="F.9.b" type="folio"/>
+              that the Dharma-Vinaya of the noble ones does. <ref cRef="F.9.b" type="folio" xml:id="UT22084-057-003-346"/>
                         </p>
             <milestone unit="chunk" xml:id="UT22084-057-003-37"/>
             <p tid="40">“On the other hand, the well-being that bodhisattvas feel when they have
@@ -423,7 +429,7 @@
               characteristic of saturation with respect to the bodhisattvas’ trust in the Great
               Vehicle that allows them to accomplish the Great Vehicle.”</p>
           </div>
-          <div type="section">
+          <div type="section" xml:id="UT22084-057-003-chapter-1-3">
             <head type="section" tid="41">3. Qualities</head>
             <milestone unit="chunk" xml:id="UT22084-057-003-38"/>
             <p tid="42">The bodhisattva Great Skillful Trust said, “Blessed One, it is wonderful to
@@ -437,7 +443,7 @@
               Great Vehicle?”</p>
             <milestone unit="chunk" xml:id="UT22084-057-003-40"/>
             <p tid="44">The Blessed One replied, “Noble son, the bodhisattvas practice trust in the
-              Great Vehicle with three qualities so that they can accomplish the Great Vehicle. <ref cRef="F.10.a" type="folio"/> They are the quality of conviction, the quality of
+              Great Vehicle with three qualities so that they can accomplish the Great Vehicle. <ref cRef="F.10.a" type="folio" xml:id="UT22084-057-003-347"/> They are the quality of conviction, the quality of
               transformation, and the quality of delight.”</p>
             <milestone unit="chunk" xml:id="UT22084-057-003-41"/>
             <p tid="45">Great Skillful Trust said, “Blessed One, how does one adopt the quality of
@@ -468,7 +474,7 @@
               transformations that occur when bodhisattvas feel the trust in the Great Vehicle that
               allows them to accomplish the Great Vehicle?”</p>
             <milestone unit="chunk" xml:id="UT22084-057-003-46"/>
-            <p tid="50">The Blessed One replied, “Noble son, <ref cRef="F.10.b" type="folio"/> the
+            <p tid="50">The Blessed One replied, “Noble son, <ref cRef="F.10.b" type="folio" xml:id="UT22084-057-003-348"/> the
               physical transformations that occur when bodhisattvas feel the trust in the Great
               Vehicle that allows them to accomplish the Great Vehicle are that the body hairs stand
               on end, that there is tingling, and that tears well up and flow from their eyes.”</p>
@@ -508,10 +514,10 @@
               bodhisattvas’ trust in the Great Vehicle that allows them to accomplish the Great
               Vehicle.”</p>
           </div>
-          <div type="section">
+          <div type="section" xml:id="UT22084-057-003-chapter-1-4">
             <head type="section" tid="57">4. Possession</head>
             <milestone unit="chunk" xml:id="UT22084-057-003-53"/>
-            <p tid="58">Great Skillful Trust asked, “Blessed One, <ref cRef="F.11.a" type="folio"/>
+            <p tid="58">Great Skillful Trust asked, “Blessed One, <ref cRef="F.11.a" type="folio" xml:id="UT22084-057-003-349"/>
               how is possession a characteristic of the bodhisattvas’ trust in the Great Vehicle
               that allows them to accomplish the Great Vehicle?”</p>
             <milestone unit="chunk" xml:id="UT22084-057-003-54"/>
@@ -536,7 +542,7 @@
               enumeration, comparison, example, or illustration would suffice. </p>
             <milestone unit="chunk" xml:id="UT22084-057-003-55"/>
             <p tid="60">“Why is that so? The reason is that all worldly roots of virtue are
-              associated with the disturbances of attachment and anger. <ref cRef="F.11.b" type="folio"/> They are associated with the disturbances of elation and dejection.
+              associated with the disturbances of attachment and anger. <ref cRef="F.11.b" type="folio" xml:id="UT22084-057-003-350"/> They are associated with the disturbances of elation and dejection.
               They are related to the disturbance of harboring doubt and uncertainty with regard to
               the truths. They are related to the disturbance that involves the limitless views that
               emerge from apprehending <distinct>I</distinct> and <distinct>mine</distinct>. They
@@ -563,7 +569,7 @@
               wisdom due to their link with the bodhisattvas’ trust in the Great Vehicle that allows
               them to accomplish the Great Vehicle are free from the disturbances that occur due to
               the causal sequence of the pollution of disturbing emotions, actions, and birth,
-              along with their effects. <ref cRef="F.12.a" type="folio"/> In this way, you should
+              along with their effects. <ref cRef="F.12.a" type="folio" xml:id="UT22084-057-003-351"/> In this way, you should
               understand that they are superior to worldly roots of virtue. </p>
             <milestone unit="chunk" xml:id="UT22084-057-003-58"/>
             <p tid="63">“Moreover, transcendent roots of virtue, which are obtained by observing the
@@ -588,7 +594,7 @@
               that are embraced by merit and wisdom due to their link with the bodhisattvas’ trust
               in the Great Vehicle are of unsurpassed power!”</p>
             <milestone unit="chunk" xml:id="UT22084-057-003-61"/>
-            <p tid="66">The Blessed One said, “Noble son, yes, indeed. <ref cRef="F.12.b" type="folio"/> As much as possible, bodhisattvas who strive for roots of virtue
+            <p tid="66">The Blessed One said, “Noble son, yes, indeed. <ref cRef="F.12.b" type="folio" xml:id="UT22084-057-003-352"/> As much as possible, bodhisattvas who strive for roots of virtue
               should apply themselves to possess such roots of virtue. These roots of virtue
               outshine all other roots of virtue, whether worldly or transcendent, and bestow all
               the splendors of the world. They accomplish the fruition and are even a necessary
@@ -596,7 +602,7 @@
               beyond exhaustion. Moreover, by means of the three vehicles, they allow limitless
               beings to leave all suffering behind and to find deliverance.”</p>
           </div>
-          <div type="section">
+          <div type="section" xml:id="UT22084-057-003-chapter-1-5">
             <head type="section" tid="67">5. The Basis</head>
             <milestone unit="chunk" xml:id="UT22084-057-003-62"/>
             <p tid="68">The bodhisattva Great Skillful Trust said, “Blessed One, how is the basis a
@@ -619,7 +625,7 @@
               beneficial, while that which is actually helpful is thought to be harmful. Similarly,
               they mistake the unpleasant for the pleasant and the pleasant for the unpleasant. In
               this way, they misunderstand what brings benefit and happiness, thinking that the
-              harmful is helpful and the helpful is harmful. <ref cRef="F.13.a" type="folio"/>
+              harmful is helpful and the helpful is harmful. <ref cRef="F.13.a" type="folio" xml:id="UT22084-057-003-353"/>
               Similarly, they think that misery is happiness and happiness is misery. </p>
             <milestone unit="chunk" xml:id="UT22084-057-003-65"/>
             <p tid="71">“The bodhisattvas, however, rely on their trust in the Great Vehicle and
@@ -640,11 +646,11 @@
               Vehicle benefits others on a vast scale due to their personal compassion. It performs
               limitless difficult deeds without any hesitation. Therefore, the basis for the
               bodhisattvas’ assistance is superior to the basis from which both supramundane and
-              mundane beings give assistance. <ref cRef="F.13.b" type="folio"/> This, noble son, is the
+              mundane beings give assistance. <ref cRef="F.13.b" type="folio" xml:id="UT22084-057-003-354"/> This, noble son, is the
               characteristic of the basis with respect to the bodhisattvas’ trust in the Great
               Vehicle that allows them to accomplish the Great Vehicle.”</p>
           </div>
-          <div type="section">
+          <div type="section" xml:id="UT22084-057-003-chapter-1-6">
             <head type="section" tid="73">6. Transcendence</head>
             <milestone unit="chunk" xml:id="UT22084-057-003-67"/>
             <p tid="74">The bodhisattva Great Skillful Trust said, “Blessed One, how is
@@ -669,7 +675,7 @@
               accomplish the Great Vehicle will continuously meet with buddhas and bodhisattvas in
               all their future lives. Therefore, bodhisattvas who apply themselves to listening to
               the Dharma and correctly reflecting on it will always take birth in circumstances
-              where they can perfect the accumulations for awakening. <ref cRef="F.14.a" type="folio"/> Noble son, since bodhisattvas transcend the higher realms by means of
+              where they can perfect the accumulations for awakening. <ref cRef="F.14.a" type="folio" xml:id="UT22084-057-003-355"/> Noble son, since bodhisattvas transcend the higher realms by means of
               this teaching, what need is there to speak of the lower realms?”</p>
             <milestone unit="chunk" xml:id="UT22084-057-003-71"/>
             <p tid="78">The bodhisattva Great Skillful Trust said, “Blessed One, please explain
@@ -696,7 +702,7 @@
             <p tid="81">The Blessed One replied, “No, noble son, they do not. You should not see it
               in that way. Bodhisattvas who are born in the lower realms through the power of
               aspiration have surpassed the happiness of the four states of concentration, and so
-              they abide joyfully. They are far beyond any worldly <term>knowledge</term> <ref cRef="F.14.b" type="folio"/> and even the lesser transcendent <term>knowledge</term>. As such, they have
+              they abide joyfully. They are far beyond any worldly <term>knowledge</term> <ref cRef="F.14.b" type="folio" xml:id="UT22084-057-003-356"/> and even the lesser transcendent <term>knowledge</term>. As such, they have
               entered the stream of the highest <term>knowledge</term>. Therefore, you should understand that
               they are striving for the well-being of beings. This is why I have said that if the
               stream of actions of a being is inconceivable, what need is there to consider that of
@@ -704,7 +710,7 @@
               the bodhisattvas’ trust in the Great Vehicle that allows them to accomplish the Great
               Vehicle.”</p>
           </div>
-          <div type="section">
+          <div type="section" xml:id="UT22084-057-003-chapter-1-7">
             <head type="section" tid="82">7. The Root</head>
             <milestone unit="chunk" xml:id="UT22084-057-003-75"/>
             <p tid="83">The bodhisattva Great Skillful Trust said, “Blessed One, how is the root a
@@ -724,7 +730,7 @@
               root with respect to the bodhisattvas’ trust in the Great Vehicle that allows them to
               accomplish the Great Vehicle.”</p>
           </div>
-          <div type="section">
+          <div type="section" xml:id="UT22084-057-003-chapter-1-8">
             <head type="section" tid="85">8. Protection</head>
             <milestone unit="chunk" xml:id="UT22084-057-003-77"/>
             <p tid="86">The bodhisattva Great Skillful Trust said, “Blessed One, how is protection a
@@ -733,7 +739,7 @@
             <milestone unit="chunk" xml:id="UT22084-057-003-78"/>
             <p tid="87">The Blessed One replied, “Noble son, when bodhisattvas have the trust in the
               Great Vehicle that allows them to accomplish the Great Vehicle, they are protected
-              because they abandon miserliness and no longer perpetuate it. <ref cRef="F.15.a" type="folio"/> They are protected because they abandon bad behavior and no longer
+              because they abandon miserliness and no longer perpetuate it. <ref cRef="F.15.a" type="folio" xml:id="UT22084-057-003-357"/> They are protected because they abandon bad behavior and no longer
               perpetuate it. They are protected because they abandon anger and no longer perpetuate
               it. They are protected because they abandon laziness and no longer perpetuate it. They
               are protected because they abandon distraction and no longer perpetuate it. They are
@@ -750,7 +756,7 @@
               characteristic of protection with respect to the bodhisattvas’ trust in the Great
               Vehicle that allows them to accomplish the Great Vehicle.”</p>
           </div>
-          <div type="section">
+          <div type="section" xml:id="UT22084-057-003-chapter-1-9">
             <head type="section" tid="89">9. Connection</head>
             <milestone unit="chunk" xml:id="UT22084-057-003-80"/>
             <p tid="90">The bodhisattva Great Skillful Trust said, “Blessed One, how is connection a
@@ -763,7 +769,7 @@
               down or stands up, sleeps or is awake, or is drunk or crazy, one will always maintain
               this trust in the Great Vehicle. Later, in other lifetimes, although the bodhisattvas
               may have forgotten their trust in the Great Vehicle, they will not give rise to any
-              inferior or inappropriate attitudes. <ref cRef="F.15.b" type="folio"/> Therefore, even
+              inferior or inappropriate attitudes. <ref cRef="F.15.b" type="folio" xml:id="UT22084-057-003-358"/> Therefore, even
               if they were to associate with negative spiritual friends, such as the hearers and
               solitary buddhas, they would not get carried away. That being the case, how could any
               non-Buddhist views lead them astray? At that time, with just a few favorable
@@ -775,7 +781,7 @@
               connection with respect to the bodhisattvas’ trust in the Great Vehicle that allows
               them to accomplish the Great Vehicle.”</p>
           </div>
-          <div type="section">
+          <div type="section" xml:id="UT22084-057-003-chapter-1-10">
             <head type="section" tid="92">10. Continuity</head>
             <milestone unit="chunk" xml:id="UT22084-057-003-82"/>
             <p tid="93">The bodhisattva Great Skillful Trust said, “Blessed One, how is continuity a
@@ -792,7 +798,7 @@
               This, noble son, is the characteristic of continuity with respect to the bodhisattvas’
               trust in the Great Vehicle that allows them to accomplish the Great Vehicle.”</p>
           </div>
-          <div type="section">
+          <div type="section" xml:id="UT22084-057-003-chapter-1-11">
             <head type="section" tid="95">11. Perfection </head>
             <milestone unit="chunk" xml:id="UT22084-057-003-84"/>
             <p tid="96">The bodhisattva Great Skillful Trust said, “Blessed One, how is perfection a
@@ -801,7 +807,7 @@
             <milestone unit="chunk" xml:id="UT22084-057-003-85"/>
             <p tid="97">The Blessed One replied, “Noble son, the characteristic of perfection with
               respect to the bodhisattvas’ trust in the Great Vehicle that allows them to accomplish
-              the Great Vehicle is fourfold and refers to <ref cRef="F.16.a" type="folio"/> perfect
+              the Great Vehicle is fourfold and refers to <ref cRef="F.16.a" type="folio" xml:id="UT22084-057-003-359"/> perfect
               origin, perfect boundlessness, perfect benefit, and perfect freedom from regret.</p>
             <milestone unit="chunk" xml:id="UT22084-057-003-86"/>
             <p tid="98">“Noble son, this differs from the trust that worldly non-Buddhists have
@@ -833,7 +839,7 @@
               Vehicle that allows them to accomplish the Great Vehicle. </p>
             <milestone unit="chunk" xml:id="UT22084-057-003-91"/>
             <p tid="102">“Moreover, as the bodhisattvas’ trust in the Great Vehicle benefits all
-              beings, it is perfect. Additionally, <ref cRef="F.16.b" type="folio"/> the
+              beings, it is perfect. Additionally, <ref cRef="F.16.b" type="folio" xml:id="UT22084-057-003-360"/> the
               bodhisattvas’ trust in the Great Vehicle that allows them to accomplish the Great
               Vehicle is perfect since it accomplishes all the boundless and inexhaustible qualities
               of the Buddha. This, noble son, is the characteristic of perfection with respect to
@@ -848,7 +854,7 @@
               characteristics.</trailer>
           </div>
         </div>
-        <div type="chapter">
+        <div type="chapter" xml:id="UT22084-057-003-chapter-2">
           <head type="chapter" tid="105">Chapter 2</head>
           <head type="chapterTitle" tid="296">Developing Trust</head>
           <milestone unit="chunk" xml:id="UT22084-057-003-94"/>
@@ -861,7 +867,7 @@
             Vehicle. Such trust develops based on (1) causes, (2) a companion, (3) examination, (4)
             behavior, (5) familiarity, (6) absence of weariness, (7) fulfillment, (8) composure, (9)
             insatiability, (10) solitude, and (11) determining that the teacher is genuine.”</p>
-          <div type="section">
+          <div type="section" xml:id="UT22084-057-003-chapter-2-1">
             <head type="section" tid="108">1. Causes</head>
             <milestone unit="chunk" xml:id="UT22084-057-003-96"/>
             <p tid="109">The bodhisattva Great Skillful Trust said, “Blessed One, how do causes
@@ -871,7 +877,7 @@
             <p tid="110">The Blessed One replied, “Noble son, bodhisattvas possess, from the very
               beginning, a seed of the virtuous Dharma of the Great Vehicle. Through the force of
               that predisposition for the pure Dharma, they naturally long for the Great Vehicle’s
-              teachings on compassion, <ref cRef="F.17.a" type="folio"/> and so trust develops based
+              teachings on compassion, <ref cRef="F.17.a" type="folio" xml:id="UT22084-057-003-361"/> and so trust develops based
               on that initial longing. Because of their interest in the Great Vehicle’s teachings on
               the profound and the vast, the bodhisattvas naturally sustain their longing, and so
               their trust develops. In the same way, bodhisattvas are naturally able to sustain
@@ -885,7 +891,7 @@
               bodhisattvas’ trust in the Great Vehicle that allows them to accomplish the Great
               Vehicle is developed based on causes.”</p>
           </div>
-          <div type="section">
+          <div type="section" xml:id="UT22084-057-003-chapter-2-2">
             <head type="section" tid="112">2. A Companion</head>
             <milestone unit="chunk" xml:id="UT22084-057-003-99"/>
             <p tid="113">The bodhisattva Great Skillful Trust said, “Blessed One, how does a
@@ -902,10 +908,10 @@
               serving and praising such spiritual friends, bodhisattvas engender the bodhisattvas’
               trust in the Great Vehicle that allows them to accomplish the Great Vehicle. This,
               noble son, is how bodhisattvas engender the trust in the Great Vehicle that allows
-              them to accomplish the Great Vehicle <ref cRef="F.17.b" type="folio"/> due to a
+              them to accomplish the Great Vehicle <ref cRef="F.17.b" type="folio" xml:id="UT22084-057-003-362"/> due to a
               companion.”</p>
           </div>
-          <div type="section">
+          <div type="section" xml:id="UT22084-057-003-chapter-2-3">
             <head type="section" tid="115">3. Examination</head>
             <milestone unit="chunk" xml:id="UT22084-057-003-101"/>
             <p tid="116">The bodhisattva Great Skillful Trust said, “Blessed One, how does
@@ -933,14 +939,14 @@
               view of silence, (27) the great view, and (28) the view of overt pride.<note place="end" index="7" xml:id="UT22084-057-003-104"> A similar, though not identical,
                 list of twenty-eight wrong views that bodhisattvas may fall into is found in the
                   <title xml:lang="Sa-Ltn">Abhidharma­samuccaya</title> (Asaṅga
-                2001).<!--Reference Toh 4049--> See also the introduction.</note>
+                2001).<ref rend="pending" target="https://read.84000.co/translation/toh4049.html"/> See also the introduction.</note>
                         </p>
             <milestone unit="chunk" xml:id="UT22084-057-003-105"/>
             <p tid="119">1. “Noble son, you may wonder what ‘the view of characteristics’ refers to.
               First, think of this statement: ‘Considering the essence of conditioned phenomena, I
               declare that phenomena do not exist.’ If one becomes attached to the literal meaning
               of that statement, one might insist that the phenomena stemming from pollution and the
-              phenomena stemming from purification are just nonexistent. <ref cRef="F.18.a" type="folio"/> Thus, one will apprehend their characteristic to be sheer
+              phenomena stemming from purification are just nonexistent. <ref cRef="F.18.a" type="folio" xml:id="UT22084-057-003-363"/> Thus, one will apprehend their characteristic to be sheer
               nonexistence. Taking phenomena to bear these characteristics, one will assume the view
               of nonexistence. That is why it is called <distinct>the view of
                 characteristics</distinct>.</p>
@@ -975,7 +981,7 @@
                 modification</distinct>.</p>
             <milestone unit="chunk" xml:id="UT22084-057-003-111"/>
             <p tid="125">9. “The view without escape, noble son, is based on the view based
-              on grasping oneself and others <ref cRef="F.18.b" type="folio"/> and the view based on
+              on grasping oneself and others <ref cRef="F.18.b" type="folio" xml:id="UT22084-057-003-364"/> and the view based on
               modification. With these views one will not even attain the awakening of the lower
               vehicle, let alone unsurpassed and completely perfect awakening. That is why this is called
                 <distinct>the view without escape</distinct>.</p>
@@ -1008,7 +1014,7 @@
             <milestone unit="chunk" xml:id="UT22084-057-003-117"/>
             <p tid="131">15. “The view of increasing demerit causes bodhisattvas who have the view
               of contempt and the view of hostility to give rise to many nonmeritorious factors.
-                <ref cRef="F.19.a" type="folio"/> That is why it is called <distinct>the view of
+                <ref cRef="F.19.a" type="folio" xml:id="UT22084-057-003-365"/> That is why it is called <distinct>the view of
                 increasing demerit</distinct>.</p>
             <milestone unit="chunk" xml:id="UT22084-057-003-118"/>
             <p tid="132">16. “Wrong view occurs when bodhisattvas who have a conceptual view of
@@ -1046,7 +1052,7 @@
                 view of fickleness</distinct>.</p>
             <milestone unit="chunk" xml:id="UT22084-057-003-124"/>
             <p tid="138">22. “The view of ridicule is when bodhisattvas, subscribing to the view
-              without claims and the view of fickleness, lack substance in what they propagate <ref cRef="F.19.b" type="folio"/> and are therefore continuously ridiculed by learned
+              without claims and the view of fickleness, lack substance in what they propagate <ref cRef="F.19.b" type="folio" xml:id="UT22084-057-003-366"/> and are therefore continuously ridiculed by learned
               people. That is why it is called <distinct>the view of ridicule</distinct>.</p>
             <milestone unit="chunk" xml:id="UT22084-057-003-125"/>
             <p tid="139">23. “The view of adulation occurs when bodhisattvas who have a conceptual
@@ -1079,7 +1085,7 @@
               do not constitute bondage in the world to the same degree as
               actions that oppose the Dharma.</p>
             <milestone unit="chunk" xml:id="UT22084-057-003-130"/>
-            <p tid="144">28. “The view of overt pride <ref cRef="F.20.a" type="folio"/> is a view
+            <p tid="144">28. “The view of overt pride <ref cRef="F.20.a" type="folio" xml:id="UT22084-057-003-367"/> is a view
               of strong pride in the extravagant view. This wrong view appears because one
               conceitedly takes the meaning of the Dharma of the Great Vehicle literally. That is
               why it is called <distinct>the view of overt pride</distinct>. </p>
@@ -1097,7 +1103,7 @@
               of examination. <ref cRef="B2" type="bampo"/>
                         </trailer>
           </div>
-          <div type="section">
+          <div type="section" xml:id="UT22084-057-003-chapter-2-4">
             <head type="section" tid="148">4. Behavior</head>
             <milestone unit="chunk" xml:id="UT22084-057-003-133"/>
             <p tid="149">The bodhisattva Great Skillful Trust said, “Blessed One, how does behavior
@@ -1113,12 +1119,12 @@
               son, is how bodhisattvas engender the trust in the Great Vehicle that allows them to
               accomplish the Great Vehicle by means of behavior.”</p>
           </div>
-          <div type="section">
+          <div type="section" xml:id="UT22084-057-003-chapter-2-5">
             <head type="section" tid="151">5. Familiarity</head>
             <milestone unit="chunk" xml:id="UT22084-057-003-135"/>
             <p tid="152">The bodhisattva Great Skillful Trust said, “Blessed One, how does
               familiarity develop the bodhisattvas’ trust in the Great Vehicle that allows them to
-              accomplish the Great Vehicle?” <ref cRef="F.20.b" type="folio"/>
+              accomplish the Great Vehicle?” <ref cRef="F.20.b" type="folio" xml:id="UT22084-057-003-368"/>
             </p>
             <milestone unit="chunk" xml:id="UT22084-057-003-136"/>
             <p tid="153">The Blessed One replied, “Noble son, the bodhisattvas’ trust in the Great
@@ -1130,7 +1136,7 @@
               Noble son, this sustained engagement is how bodhisattvas engender trust in the Great
               Vehicle that allows them to accomplish the Great Vehicle by means of familiarity.”</p>
           </div>
-          <div type="section">
+          <div type="section" xml:id="UT22084-057-003-chapter-2-6">
             <head type="section" tid="154">6. Absence of Weariness</head>
             <milestone unit="chunk" xml:id="UT22084-057-003-137"/>
             <p tid="155">The bodhisattva Great Skillful Trust said, “Blessed One, how does absence
@@ -1149,7 +1155,7 @@
               This, noble son, is how bodhisattvas engender the trust in the Great Vehicle that
               allows them to accomplish the Great Vehicle through an absence of weariness.”</p>
           </div>
-          <div type="section">
+          <div type="section" xml:id="UT22084-057-003-chapter-2-7">
             <head type="section" tid="157">7. Fulfillment</head>
             <milestone unit="chunk" xml:id="UT22084-057-003-139"/>
             <p tid="158">The bodhisattva Great Skillful Trust said, “Blessed One, how does
@@ -1158,7 +1164,7 @@
             <milestone unit="chunk" xml:id="UT22084-057-003-140"/>
             <p tid="159">The Blessed One replied, “Noble son, when bodhisattvas are totally untiring
               in their engagement and have formed a steady trust in the Great Vehicle, they can
-              quickly perfect the accumulations of merit <ref cRef="F.21.a" type="folio"/> and
+              quickly perfect the accumulations of merit <ref cRef="F.21.a" type="folio" xml:id="UT22084-057-003-369"/> and
               wisdom. Since the accumulations of merit and wisdom have been perfected and are
               perfectly stable through their roots of virtue, even a small circumstance for
               developing trust in the Great Vehicle can produce a deep faith in that vehicle, not to
@@ -1168,7 +1174,7 @@
               is how bodhisattvas engender the trust in the Great Vehicle that allows them to
               accomplish the Great Vehicle through fulfillment.”</p>
           </div>
-          <div type="section">
+          <div type="section" xml:id="UT22084-057-003-chapter-2-8">
             <head type="section" tid="160">8. Composure</head>
             <milestone unit="chunk" xml:id="UT22084-057-003-141"/>
             <p tid="161">The bodhisattva Great Skillful Trust said, “Blessed One, how does composure
@@ -1190,7 +1196,7 @@
             <milestone unit="chunk" xml:id="UT22084-057-003-143"/>
             <p tid="163">The bodhisattva Great Skillful Trust said, “Blessed One, please tell us,
               does this path of tranquility and insight pertain only to those bodhisattvas who have
-              gathered the accumulations, or <ref cRef="F.21.b" type="folio"/> does it also pertain
+              gathered the accumulations, or <ref cRef="F.21.b" type="folio" xml:id="UT22084-057-003-370"/> does it also pertain
               to those who have not?</p>
             <milestone unit="chunk" xml:id="UT22084-057-003-144"/>
             <p tid="164">The Blessed One replied, “Noble son, I teach that the path of tranquility
@@ -1201,7 +1207,7 @@
               accomplish the Great Vehicle by means of composure. Here, ‘composure’ is synonymous
               with ‘absorption.’ ”</p>
           </div>
-          <div type="section">
+          <div type="section" xml:id="UT22084-057-003-chapter-2-9">
             <head type="section" tid="165">9. Insatiability</head>
             <milestone unit="chunk" xml:id="UT22084-057-003-145"/>
             <p tid="166">The bodhisattva Great Skillful Trust said, “Blessed One, how does
@@ -1224,7 +1230,7 @@
               abide in tranquility and insight, they will naturally develop the trust in the Great
               Vehicle that allows them to accomplish the Great Vehicle. However, if their minds are
               not one-pointed, and if they fail to retain the teachings of the Great Vehicle, they
-              will not develop trust in the Great Vehicle. Noble son, <ref cRef="F.22.a" type="folio"/> all bodhisattvas who develop the trust in the Great Vehicle that
+              will not develop trust in the Great Vehicle. Noble son, <ref cRef="F.22.a" type="folio" xml:id="UT22084-057-003-371"/> all bodhisattvas who develop the trust in the Great Vehicle that
               allows them to accomplish the Great Vehicle do so based on comprehending the meaning
               of the Dharma with an undistracted mind. You should understand that this is the proper
               approach.”</p>
@@ -1241,7 +1247,7 @@
               bodhisattvas engender the trust in the Great Vehicle that allows them to accomplish
               the Great Vehicle by means of insatiability.”</p>
           </div>
-          <div type="section">
+          <div type="section" xml:id="UT22084-057-003-chapter-2-10">
             <head type="section" tid="171">10. Solitude</head>
             <milestone unit="chunk" xml:id="UT22084-057-003-150"/>
             <p tid="172">The bodhisattva Great Skillful Trust said, “Blessed One, how does solitude
@@ -1257,11 +1263,11 @@
               the Great Vehicle that allows them to accomplish the Great Vehicle is developed. They
               spend each moment, each instant and every period of every day and night, pursuing the
               qualities of the factors of awakening. Through pursuing their practice in solitude,
-              they gradually awaken to unsurpassed and perfect buddhahood. <ref cRef="F.22.b" type="folio"/> Compared to this, there is no better method to be found anywhere.
+              they gradually awaken to unsurpassed and perfect buddhahood. <ref cRef="F.22.b" type="folio" xml:id="UT22084-057-003-372"/> Compared to this, there is no better method to be found anywhere.
               This, noble son, this is how bodhisattvas engender the trust in the Great Vehicle that
               allows them to accomplish the Great Vehicle through solitude.”</p>
           </div>
-          <div type="section">
+          <div type="section" xml:id="UT22084-057-003-chapter-2-11">
             <head type="section" tid="174">11. Determining That the Teacher Is Genuine</head>
             <milestone unit="chunk" xml:id="UT22084-057-003-152"/>
             <p tid="175">The bodhisattva Great Skillful Trust said, “Blessed One, how does
@@ -1286,7 +1292,7 @@
               is how bodhisattvas engender the trust in the Great Vehicle that allows them to
               accomplish the Great Vehicle by determining that the teacher is genuine.”</p>
           </div>
-          <div type="section">
+          <div type="section" xml:id="UT22084-057-003-chapter-2-12">
             <head type="section" tid="178">The Ten Limitless Features</head>
             <milestone unit="chunk" xml:id="UT22084-057-003-155"/>
             <p tid="179">The bodhisattva Great Skillful Trust said, “Blessed One, which teaching of
@@ -1296,7 +1302,7 @@
             <p tid="180">The Blessed One replied, “Noble son, a bodhisattva who has gained trust in
               the Great Vehicle will engage with ten limitless features in order to achieve
               unsurpassed and completely perfect awakening. What are those ten? They are (1) the limitless
-              Dharma, (2) limitless profundity, <ref cRef="F.23.a" type="folio"/> (3) limitless
+              Dharma, (2) limitless profundity, <ref cRef="F.23.a" type="folio" xml:id="UT22084-057-003-373"/> (3) limitless
               statements, (4) limitless terms, (5) limitless beings, (6) limitless safeguarding, (7)
               limitless methods, (8) limitless greatness of the Jewels, (9) limitless fields, and
               (10) limitless activity.</p>
@@ -1327,7 +1333,7 @@
               beginning to the sufferings they experience there.</p>
             <milestone unit="chunk" xml:id="UT22084-057-003-162"/>
             <p tid="186">6. “ ‘Limitless safeguarding,’ noble son, refers to the Thus-Gone One’s
-              protection, since he shields others from harm, the lower realms, and personhood. <ref cRef="F.23.b" type="folio"/> It also refers to his protection through his body of
+              protection, since he shields others from harm, the lower realms, and personhood. <ref cRef="F.23.b" type="folio" xml:id="UT22084-057-003-374"/> It also refers to his protection through his body of
               teachings, as well as the limitless types of protection continuously offered to all
               the limitless beings.</p>
             <milestone unit="chunk" xml:id="UT22084-057-003-163"/>
@@ -1352,7 +1358,7 @@
               the obscurations of the disturbing emotions and cognition and because he performs no misdeeds.
               The Thus-Gone One is spontaneously accomplished since the continuity of buddha deeds
               are carried out uninterruptedly. The Thus-Gone One has great enjoyment because the
-              buddha realms are utterly pure and <ref cRef="F.24.a" type="folio"/> because he plays
+              buddha realms are utterly pure and <ref cRef="F.24.a" type="folio" xml:id="UT22084-057-003-375"/> because he plays
               in the great enjoyment of the Dharma. The Thus-Gone One is unstained since he is
               uncontaminated by any worldly phenomenon even though he appears in the world. The Thus-Gone
               One has great purpose because he continuously and uninterruptedly ripens and liberates
@@ -1377,7 +1383,7 @@
               in all the various types of greatness included within the Jewel of the Buddha, the
               Jewel of the Dharma, and the Jewel of the Saṅgha. In this way, I will truly obtain
               what should be gained. I have the fortune of attaining the greatness of the Jewel of
-              the Buddha <ref cRef="F.24.b" type="folio"/> and the greatness of the Jewel of the
+              the Buddha <ref cRef="F.24.b" type="folio" xml:id="UT22084-057-003-376"/> and the greatness of the Jewel of the
               Dharma. When I join the ranks of those bodhisattvas who have pure motivation and abide
               on the great levels, I will truly attain what should be obtained. I have the fortune
               of being equal to those bodhisattvas both in terms of thought and deed.’</p>
@@ -1396,7 +1402,7 @@
             <trailer tid="195">This concludes the second chapter on developing trust.</trailer>
           </div>
         </div>
-        <div type="chapter">
+        <div type="chapter" xml:id="UT22084-057-003-chapter-3">
           <head type="chapter" tid="196">Chapter 3</head>
           <head type="chapterTitle" tid="297">Classifications of Trust</head>
           <milestone unit="chunk" xml:id="UT22084-057-003-172"/>
@@ -1414,7 +1420,7 @@
             Consider how water collecting in a hoofprint is at first murky but later clears if it is
             left undisturbed and calm. Likewise, bodhisattvas who have gained trust in the Great
             Vehicle that allows them to accomplish the Great Vehicle may become attached to many
-            temporary activities, whereby their trust in the Great Vehicle is shaken. <ref cRef="F.25.a" type="folio"/> However, whenever they are freed from this attachment, it
+            temporary activities, whereby their trust in the Great Vehicle is shaken. <ref cRef="F.25.a" type="folio" xml:id="UT22084-057-003-377"/> However, whenever they are freed from this attachment, it
             no longer disturbs them, and they can once again focus one-pointedly on the Dharma of
             the Great Vehicle. At that point they will certainly be restored to their former state. </p>
           <milestone unit="chunk" xml:id="UT22084-057-003-175"/>
@@ -1448,7 +1454,7 @@
             are, they are as follows: precipitating trust, initiating trust, accepting and devoted
             trust, and interested trust. Precipitating trust is the trust in the Great Vehicle felt
             by those who naturally, from previous times, have created and familiarized themselves
-            with the roots of virtue. <ref cRef="F.25.b" type="folio"/> Initiating trust is the
+            with the roots of virtue. <ref cRef="F.25.b" type="folio" xml:id="UT22084-057-003-378"/> Initiating trust is the
             trust in the Great Vehicle caused by bodhisattvas’ arousal of the mind of unsurpassed
             and completely perfect awakening and their recollection of that mind of awakening after they have
             already aroused it. Accepting and devoted trust is the trust in the Great Vehicle
@@ -1476,7 +1482,7 @@
             Dharma is planted, and the trust caused by recollecting practice. ‘The trust caused by
             recollecting statements’ refers to the trust in the Great Vehicle that is summoned when
             one fondly recollects those bodhisattvas who are motivated by all gateways to the Great
-            Vehicle. ‘The trust caused by recollecting the ability to resolve doubts’ <ref cRef="F.26.a" type="folio"/> refers to the trust in the Great Vehicle that is summoned by
+            Vehicle. ‘The trust caused by recollecting the ability to resolve doubts’ <ref cRef="F.26.a" type="folio" xml:id="UT22084-057-003-379"/> refers to the trust in the Great Vehicle that is summoned by
             remembering how bodhisattvas who have heard much, memorized, and become learned are able
             to resolve doubts. ‘The trust caused by recollecting how the Dharma is planted’ refers
             to the trust in the Great Vehicle that is summoned by bringing to mind how the sacred Dharma is
@@ -1505,7 +1511,7 @@
           <milestone unit="chunk" xml:id="UT22084-057-003-183"/>
           <p tid="208">“There are four further types of trust. If you wonder what they are, they are
             as follows: the trust of recollecting disregard, the trust of recollecting subjugation,
-              <ref cRef="F.26.b" type="folio"/> the trust of recollecting enjoyment, and the trust
+              <ref cRef="F.26.b" type="folio" xml:id="UT22084-057-003-380"/> the trust of recollecting enjoyment, and the trust
             of delightfully recollecting the connection. ‘The trust of recollecting disregard’
             refers to the trust in the Great Vehicle gained by recollecting the practice of the six <term>perfections</term> when they are practiced without any regard for life or limb. ‘The trust of
             recollecting subjugation’ refers to the trust in the Great Vehicle gained by
@@ -1531,7 +1537,7 @@
             weariness. ‘The trust of recollecting happiness free from negative actions’ refers to
             the trust in the Great Vehicle caused by recollecting one’s connection with the
             accumulations, having abandoned all worries about personally being harmed as well as all
-            wishes for happiness. <ref cRef="F.27.a" type="folio"/>
+            wishes for happiness. <ref cRef="F.27.a" type="folio" xml:id="UT22084-057-003-381"/>
                     </p>
           <milestone unit="chunk" xml:id="UT22084-057-003-185"/>
           <p tid="210">“There are four further types of trust. If you wonder what they are, they are
@@ -1560,7 +1566,7 @@
             of recollecting one’s own perseverance’ refers to the trust in the Great Vehicle
             that is felt by bodhisattvas who are diligent in following a spiritual friend as they
             recollect their own pure perseverance in terms of paying respect to the spiritual friend
-            when approaching such a person <ref cRef="F.27.b" type="folio"/> and listening to the
+            when approaching such a person <ref cRef="F.27.b" type="folio" xml:id="UT22084-057-003-382"/> and listening to the
             Dharma and when subsequently practicing in accordance with the teaching received. ‘The
             trust of recollecting gratitude’ refers to the trust in the Great Vehicle that is felt
             by bodhisattvas who are diligent in following a spiritual friend as they recollect their
@@ -1588,7 +1594,7 @@
             pollution.</p>
           <milestone unit="chunk" xml:id="UT22084-057-003-188"/>
           <p tid="213">“In this way, noble son, the bodhisattva’s trust in the Great Vehicle takes
-            infinite forms. <ref cRef="F.28.a" type="folio"/> Based on these divisions, you should
+            infinite forms. <ref cRef="F.28.a" type="folio" xml:id="UT22084-057-003-383"/> Based on these divisions, you should
             understand that there are limitless types of trust in the Great Vehicle. One could not
             understand their extent even in one trillion eons. Noble son, you should understand that
             these are the classifications of the bodhisattvas’ trust in the Great Vehicle that allows
@@ -1596,7 +1602,7 @@
           <milestone unit="chunk" xml:id="UT22084-057-003-189"/>
           <trailer tid="214">This was the third chapter on the classifications of trust.</trailer>
         </div>
-        <div type="chapter">
+        <div type="chapter" xml:id="UT22084-057-003-chapter-4">
           <head type="chapter" tid="215">Chapter 4</head>
           <head type="chapterTitle" tid="298">The Benefits of Trust </head>
           <milestone unit="chunk" xml:id="UT22084-057-003-190"/>
@@ -1635,7 +1641,7 @@
           <milestone unit="chunk" xml:id="UT22084-057-003-198"/>
           <p tid="224">“Noble son, the bodhisattvas’ trust in the Great Vehicle that allows them to
             accomplish the Great Vehicle is far reaching because it leads to the purification of
-            buddha realms <ref cRef="F.28.b" type="folio"/> and the attainment of all buddha
+            buddha realms <ref cRef="F.28.b" type="folio" xml:id="UT22084-057-003-384"/> and the attainment of all buddha
             qualities.</p>
           <milestone unit="chunk" xml:id="UT22084-057-003-199"/>
           <p tid="225">“Noble son, the bodhisattvas’ trust in the Great Vehicle that allows them to
@@ -1674,7 +1680,7 @@
             eons.</p>
           <milestone unit="chunk" xml:id="UT22084-057-003-207"/>
           <p tid="233">“Noble son, the bodhisattvas’ trust in the Great Vehicle that allows them to
-            accomplish the Great Vehicle <ref cRef="F.29.a" type="folio"/> accords with the
+            accomplish the Great Vehicle <ref cRef="F.29.a" type="folio" xml:id="UT22084-057-003-385"/> accords with the
             fulfillment of the <term>perfection</term> of concentration because it leads to the attainment of
             the absorption that achieves the welfare of all beings. </p>
           <milestone unit="chunk" xml:id="UT22084-057-003-208"/>
@@ -1712,7 +1718,7 @@
           <milestone unit="chunk" xml:id="UT22084-057-003-215"/>
           <p tid="241">“Noble son, the bodhisattvas’ trust in the Great Vehicle that allows them to
             accomplish the Great Vehicle makes one become familiar with the practice because it
-            leads one to untiringly and diligently accrue vast amounts of merit day and night. <ref cRef="F.29.b" type="folio"/>
+            leads one to untiringly and diligently accrue vast amounts of merit day and night. <ref cRef="F.29.b" type="folio" xml:id="UT22084-057-003-386"/>
                     </p>
           <milestone unit="chunk" xml:id="UT22084-057-003-216"/>
           <p tid="242">“Noble son, the bodhisattvas’ trust in the Great Vehicle that allows them to
@@ -1752,7 +1758,7 @@
           <milestone unit="chunk" xml:id="UT22084-057-003-226"/>
           <p tid="252">“Trust in the Great Vehicle of the bodhisattvas should be viewed as a great
             treasure because it gathers, accumulates, and contains all perfect jewels of both
-            worldly and supramundane roots of virtue. <ref cRef="F.30.a" type="folio"/>
+            worldly and supramundane roots of virtue. <ref cRef="F.30.a" type="folio" xml:id="UT22084-057-003-387"/>
                     </p>
           <milestone unit="chunk" xml:id="UT22084-057-003-227"/>
           <p tid="253">“Trust in the Great Vehicle of the bodhisattvas should be viewed as a king
@@ -1789,7 +1795,7 @@
           <p tid="262">“Trust in the Great Vehicle of the bodhisattvas should be viewed as a
             bountiful harvest because it leads to conquering the obscurations of all beings.</p>
           <milestone unit="chunk" xml:id="UT22084-057-003-237"/>
-          <p tid="263">“Noble son, I clearly see that in the past, <ref cRef="F.30.b" type="folio"/>
+          <p tid="263">“Noble son, I clearly see that in the past, <ref cRef="F.30.b" type="folio" xml:id="UT22084-057-003-388"/>
             at the time of the perfect buddha Kāśyapa, right here in Rājagṛha, there lived an
             unfortunate woman who, being a sweeper, was the lowest in the village. One day she heard
             that the Buddha and his assembly of monks had been requested to visit a certain
@@ -1812,7 +1818,7 @@
             Thus-Gone One, the Blessed Vipaśyin. As he beheld him, he noticed his beautiful
             appearance and said, ‘Oh, the body of the Blessed Vipaśyin is beautifully adorned with
             the excellent signs and marks of a thus-gone one, a worthy one, a perfect buddha!’
-            Having in this way gained a moment of trust, he passed away. <ref cRef="F.31.a" type="folio"/> As a result of that trust he was born among the gods in the Yāma
+            Having in this way gained a moment of trust, he passed away. <ref cRef="F.31.a" type="folio" xml:id="UT22084-057-003-389"/> As a result of that trust he was born among the gods in the Yāma
             Heaven, and through that very cause he gradually progressed toward the liberation of
             unexcelled and completely perfect awakening.</p>
           <milestone unit="chunk" xml:id="UT22084-057-003-239"/>
@@ -1837,7 +1843,7 @@
             strength has interrupted all the suffering that pains us beings in hell and brought us
             happiness! His power is indeed great!’ After attaining a moment of trust in this way,
             they pass away and transmigrate. In accord with this cause they are born as gods and
-            gradually obtain trust in my teaching. <ref cRef="F.31.b" type="folio"/> Some of them
+            gradually obtain trust in my teaching. <ref cRef="F.31.b" type="folio" xml:id="UT22084-057-003-390"/> Some of them
             attain nirvāṇa through the vehicle of the hearers, some through the vehicle of the
             solitary buddhas, and some become destined for unsurpassed and completely perfect awakening through
             the Great Vehicle.</p>
@@ -1854,7 +1860,7 @@
             mention the benefits of a continuous and river-like trust in the vehicle of the
             bodhisattvas? They could hardly be listed, even if one had a trillion eons.”</p>
         </div>
-        <div type="chapter">
+        <div type="chapter" xml:id="UT22084-057-003-chapter-5">
           <head type="chapter" tid="269">Conclusion</head>
           <milestone unit="chunk" xml:id="UT22084-057-003-243"/>
           <p tid="270">Then, the bodhisattva Great Skillful Trust said to the Blessed One, “Blessed
@@ -1868,7 +1874,7 @@
           <p tid="271">When the Blessed One delivered this Dharma teaching, five thousand novice
             bodhisattvas developed the great acceptance that facilitates realization of the Dharma
             of the bodhisattvas, while in the assembled retinue the remainder of the novice
-            bodhisattvas, through their unwavering aspiration, <ref cRef="F.32.a" type="folio"/>
+            bodhisattvas, through their unwavering aspiration, <ref cRef="F.32.a" type="folio" xml:id="UT22084-057-003-391"/>
             developed acceptance that is like a flowing river of aspiration.</p>
           <milestone unit="chunk" xml:id="UT22084-057-003-245"/>
           <p tid="272">Then, the bodhisattva Great Skillful Trust said to the Blessed One, “Blessed
@@ -1890,7 +1896,7 @@
             thus-gone ones’ clothing. Pure discipline that is free from all obscurations is the
             thus-gone ones’ ornaments. Learning that is free from all obscurations is the thus-gone
             ones’ utensils, necessities, and goods. Concentrations, freedoms, absorptions, and
-            states of equilibrium that are free from all obscurations <ref cRef="F.32.b" type="folio"/> are the thus-gone ones’ perfume, garlands, and ointments. An
+            states of equilibrium that are free from all obscurations <ref cRef="F.32.b" type="folio" xml:id="UT22084-057-003-392"/> are the thus-gone ones’ perfume, garlands, and ointments. An
             indubitable discourse that contains the enjoyment of the complete Dharma that purifies
             all obscurations is the thus-gone ones’ song, dance, and music. The gates of
             recollection that are free from all obscurations are the thus-gone ones’ light. The
@@ -1914,7 +1920,7 @@
             from powerful cognition and the features of extreme purity. Such is the abode of the
             thus-gone ones, which supports limitless bodhisattvas. It is teeming with boundless
             gods, nāgas, yakṣas, gandharvas, asuras, garuḍas, kinnaras, mahoragas, humans, and
-            nonhumans. <ref cRef="F.33.a" type="folio"/> It is reinforced by the great joy and bliss
+            nonhumans. <ref cRef="F.33.a" type="folio" xml:id="UT22084-057-003-393"/> It is reinforced by the great joy and bliss
             of the taste of the Dharma. It is maintained by the activity of benefitting all beings
             and is free from any harm caused by disturbing emotions and subsidiary disturbing emotions. It is
             inaccessible to any demon. Superior to all other structures, it is designed through the
@@ -1939,7 +1945,7 @@
             meditation?”</p>
           <milestone unit="chunk" xml:id="UT22084-057-003-252"/>
           <p tid="279">The Blessed One replied, “Ānanda, whoever feels interest in this Dharma
-            teaching and reads, copies, <ref cRef="F.33.b" type="folio"/> recites, hears, chants,
+            teaching and reads, copies, <ref cRef="F.33.b" type="folio" xml:id="UT22084-057-003-394"/> recites, hears, chants,
             teaches elaborately and correctly, thoroughly contemplates, or applies it in meditation
             will create merit that is impossible to illustrate by any worldly merit or even by the
             merit of the hearers and solitary buddhas that transcends the world. Why is that?
@@ -1967,7 +1973,7 @@
           <p tid="283">The Blessed One replied, “Ānanda, for the above reasons you should know that
             this Dharma teaching is called <title xml:lang="en">Cultivating Trust in the Great
               Vehicle</title>. Remember it also under the name <title xml:lang="en">Engaging with
-              Trust in the Great Vehicle</title>. <ref cRef="F.34.a" type="folio"/> Remember it also
+              Trust in the Great Vehicle</title>. <ref cRef="F.34.a" type="folio" xml:id="UT22084-057-003-395"/> Remember it also
             under the name <title xml:lang="en">Increasing Trust in the Great Vehicle</title>.
             Remember it also under the name <title xml:lang="en">Liberation through Trust in the
               Great Vehicle</title>. Therefore, this Dharma teaching should be given the title
@@ -1980,7 +1986,7 @@
           <trailer tid="285">This completes the Great Vehicle sūtra “Cultivating Trust in the Great
             Vehicle.”</trailer>
         </div>
-        <div type="colophon">
+        <div type="colophon" xml:id="UT22084-057-003-colophon">
           <head type="colophon" tid="286">Colophon</head>
           <milestone unit="chunk" xml:id="UT22084-057-003-259"/>
           <p tid="287">It was clarified, written down, and finalized by the Indian scholars
@@ -1994,7 +2000,7 @@
       </div>
       <div type="listBibl">
         <head type="listBibl" tid="289">Bibliography</head>
-        <div type="section">
+        <div type="section" xml:id="UT22084-057-003-listBibl-1">
           <bibl xml:id="UT22084-057-003-260">
                         <title xml:lang="Bo-Ltn">’phags pa theg pa chen po la
               dad pa rab tu sgom pa ces bya ba theg pa chen po’i mdo</title> (<title xml:lang="Sa-Ltn">Ārya­mahā­yāna­prasāda­prabhāvana­nāma­mahā­yāna­sūtra</title>). Toh
@@ -2237,7 +2243,7 @@
                 have developed a degree of conviction that is not yet informed by direct experience.
                 The level of devoted engagement is said to comprise the first two of the five paths,
                 those of accumulation and preparation, which lead up to the path of seeing. This
-                level is also presented as the second of seven spiritual levels in the <title xml:lang="Sa-Ltn">Bodhisattvabhūmi</title>,<!--Reference Toh 4037--> which
+                level is also presented as the second of seven spiritual levels in the <title xml:lang="Sa-Ltn">Bodhisattvabhūmi</title>,<ref rend="pending" target="https://read.84000.co/translation/toh4037.html"/> which
                 follows the initial level of the spiritual potential (<foreign xml:lang="Sa-Ltn" type="term">gotrabhūmi</foreign>). </term>
 
             </gloss>
@@ -2764,4 +2770,693 @@
       </div>
     </back>
   </text>
+
+    <notes-cache xmlns="http://read.84000.co/ns/1.0" timestamp="2020-11-25T16:03:48.009Z" app-version="2.0.1">
+        <end-note id="UT22084-057-003-10" part-id="introduction" index="1"/>
+        <end-note id="UT22084-057-003-339" part-id="introduction" index="2"/>
+        <end-note id="UT22084-057-003-17" part-id="introduction" index="3"/>
+        <end-note id="UT22084-057-003-18" part-id="introduction" index="4"/>
+        <end-note id="UT22084-057-003-19" part-id="introduction" index="5"/>
+        <end-note id="UT22084-057-003-24" part-id="UT22084-057-003-prologue" index="6"/>
+        <end-note id="UT22084-057-003-88" part-id="UT22084-057-003-chapter-1" index="7"/>
+        <end-note id="UT22084-057-003-104" part-id="UT22084-057-003-chapter-2" index="8"/>
+    </notes-cache>
+    <milestones-cache xmlns="http://read.84000.co/ns/1.0" timestamp="2020-11-23T14:08:35.138Z" app-version="2.0.1">
+        <milestone id="UT22084-057-003-1" part-id="summary" index="1"/>
+        <milestone id="UT22084-057-003-2" part-id="acknowledgment" index="1"/>
+        <milestone id="UT22084-057-003-3" part-id="acknowledgment" index="2"/>
+        <milestone id="UT22084-057-003-4" part-id="introduction" index="1"/>
+        <milestone id="UT22084-057-003-5" part-id="introduction" index="2"/>
+        <milestone id="UT22084-057-003-6" part-id="introduction" index="3"/>
+        <milestone id="UT22084-057-003-7" part-id="introduction" index="4"/>
+        <milestone id="UT22084-057-003-8" part-id="introduction" index="5"/>
+        <milestone id="UT22084-057-003-9" part-id="introduction" index="6"/>
+        <milestone id="UT22084-057-003-11" part-id="introduction" index="7"/>
+        <milestone id="UT22084-057-003-12" part-id="introduction" index="8"/>
+        <milestone id="UT22084-057-003-13" part-id="introduction" index="9"/>
+        <milestone id="UT22084-057-003-14" part-id="introduction" index="10"/>
+        <milestone id="UT22084-057-003-15" part-id="introduction" index="11"/>
+        <milestone id="UT22084-057-003-16" part-id="introduction" index="12"/>
+        <milestone id="UT22084-057-003-20" part-id="UT22084-057-003-prologue" index="1"/>
+        <milestone id="UT22084-057-003-21" part-id="UT22084-057-003-prologue" index="2"/>
+        <milestone id="UT22084-057-003-22" part-id="UT22084-057-003-prologue" index="3"/>
+        <milestone id="UT22084-057-003-23" part-id="UT22084-057-003-prologue" index="4"/>
+        <milestone id="UT22084-057-003-25" part-id="UT22084-057-003-prologue" index="5"/>
+        <milestone id="UT22084-057-003-26" part-id="UT22084-057-003-prologue" index="6"/>
+        <milestone id="UT22084-057-003-27" part-id="UT22084-057-003-chapter-1" index="1"/>
+        <milestone id="UT22084-057-003-28" part-id="UT22084-057-003-chapter-1" index="2"/>
+        <milestone id="UT22084-057-003-30" part-id="UT22084-057-003-chapter-1" index="3"/>
+        <milestone id="UT22084-057-003-31" part-id="UT22084-057-003-chapter-1" index="4"/>
+        <milestone id="UT22084-057-003-32" part-id="UT22084-057-003-chapter-1" index="5"/>
+        <milestone id="UT22084-057-003-33" part-id="UT22084-057-003-chapter-1" index="6"/>
+        <milestone id="UT22084-057-003-34" part-id="UT22084-057-003-chapter-1" index="7"/>
+        <milestone id="UT22084-057-003-35" part-id="UT22084-057-003-chapter-1" index="8"/>
+        <milestone id="UT22084-057-003-36" part-id="UT22084-057-003-chapter-1" index="9"/>
+        <milestone id="UT22084-057-003-37" part-id="UT22084-057-003-chapter-1" index="10"/>
+        <milestone id="UT22084-057-003-38" part-id="UT22084-057-003-chapter-1" index="11"/>
+        <milestone id="UT22084-057-003-39" part-id="UT22084-057-003-chapter-1" index="12"/>
+        <milestone id="UT22084-057-003-40" part-id="UT22084-057-003-chapter-1" index="13"/>
+        <milestone id="UT22084-057-003-41" part-id="UT22084-057-003-chapter-1" index="14"/>
+        <milestone id="UT22084-057-003-42" part-id="UT22084-057-003-chapter-1" index="15"/>
+        <milestone id="UT22084-057-003-43" part-id="UT22084-057-003-chapter-1" index="16"/>
+        <milestone id="UT22084-057-003-44" part-id="UT22084-057-003-chapter-1" index="17"/>
+        <milestone id="UT22084-057-003-45" part-id="UT22084-057-003-chapter-1" index="18"/>
+        <milestone id="UT22084-057-003-46" part-id="UT22084-057-003-chapter-1" index="19"/>
+        <milestone id="UT22084-057-003-47" part-id="UT22084-057-003-chapter-1" index="20"/>
+        <milestone id="UT22084-057-003-48" part-id="UT22084-057-003-chapter-1" index="21"/>
+        <milestone id="UT22084-057-003-50" part-id="UT22084-057-003-chapter-1" index="22"/>
+        <milestone id="UT22084-057-003-51" part-id="UT22084-057-003-chapter-1" index="23"/>
+        <milestone id="UT22084-057-003-52" part-id="UT22084-057-003-chapter-1" index="24"/>
+        <milestone id="UT22084-057-003-53" part-id="UT22084-057-003-chapter-1" index="25"/>
+        <milestone id="UT22084-057-003-54" part-id="UT22084-057-003-chapter-1" index="26"/>
+        <milestone id="UT22084-057-003-55" part-id="UT22084-057-003-chapter-1" index="27"/>
+        <milestone id="UT22084-057-003-56" part-id="UT22084-057-003-chapter-1" index="28"/>
+        <milestone id="UT22084-057-003-57" part-id="UT22084-057-003-chapter-1" index="29"/>
+        <milestone id="UT22084-057-003-58" part-id="UT22084-057-003-chapter-1" index="30"/>
+        <milestone id="UT22084-057-003-59" part-id="UT22084-057-003-chapter-1" index="31"/>
+        <milestone id="UT22084-057-003-60" part-id="UT22084-057-003-chapter-1" index="32"/>
+        <milestone id="UT22084-057-003-61" part-id="UT22084-057-003-chapter-1" index="33"/>
+        <milestone id="UT22084-057-003-62" part-id="UT22084-057-003-chapter-1" index="34"/>
+        <milestone id="UT22084-057-003-63" part-id="UT22084-057-003-chapter-1" index="35"/>
+        <milestone id="UT22084-057-003-64" part-id="UT22084-057-003-chapter-1" index="36"/>
+        <milestone id="UT22084-057-003-65" part-id="UT22084-057-003-chapter-1" index="37"/>
+        <milestone id="UT22084-057-003-66" part-id="UT22084-057-003-chapter-1" index="38"/>
+        <milestone id="UT22084-057-003-67" part-id="UT22084-057-003-chapter-1" index="39"/>
+        <milestone id="UT22084-057-003-68" part-id="UT22084-057-003-chapter-1" index="40"/>
+        <milestone id="UT22084-057-003-69" part-id="UT22084-057-003-chapter-1" index="41"/>
+        <milestone id="UT22084-057-003-70" part-id="UT22084-057-003-chapter-1" index="42"/>
+        <milestone id="UT22084-057-003-71" part-id="UT22084-057-003-chapter-1" index="43"/>
+        <milestone id="UT22084-057-003-72" part-id="UT22084-057-003-chapter-1" index="44"/>
+        <milestone id="UT22084-057-003-73" part-id="UT22084-057-003-chapter-1" index="45"/>
+        <milestone id="UT22084-057-003-74" part-id="UT22084-057-003-chapter-1" index="46"/>
+        <milestone id="UT22084-057-003-75" part-id="UT22084-057-003-chapter-1" index="47"/>
+        <milestone id="UT22084-057-003-76" part-id="UT22084-057-003-chapter-1" index="48"/>
+        <milestone id="UT22084-057-003-77" part-id="UT22084-057-003-chapter-1" index="49"/>
+        <milestone id="UT22084-057-003-78" part-id="UT22084-057-003-chapter-1" index="50"/>
+        <milestone id="UT22084-057-003-79" part-id="UT22084-057-003-chapter-1" index="51"/>
+        <milestone id="UT22084-057-003-80" part-id="UT22084-057-003-chapter-1" index="52"/>
+        <milestone id="UT22084-057-003-81" part-id="UT22084-057-003-chapter-1" index="53"/>
+        <milestone id="UT22084-057-003-82" part-id="UT22084-057-003-chapter-1" index="54"/>
+        <milestone id="UT22084-057-003-83" part-id="UT22084-057-003-chapter-1" index="55"/>
+        <milestone id="UT22084-057-003-84" part-id="UT22084-057-003-chapter-1" index="56"/>
+        <milestone id="UT22084-057-003-85" part-id="UT22084-057-003-chapter-1" index="57"/>
+        <milestone id="UT22084-057-003-86" part-id="UT22084-057-003-chapter-1" index="58"/>
+        <milestone id="UT22084-057-003-87" part-id="UT22084-057-003-chapter-1" index="59"/>
+        <milestone id="UT22084-057-003-89" part-id="UT22084-057-003-chapter-1" index="60"/>
+        <milestone id="UT22084-057-003-90" part-id="UT22084-057-003-chapter-1" index="61"/>
+        <milestone id="UT22084-057-003-91" part-id="UT22084-057-003-chapter-1" index="62"/>
+        <milestone id="UT22084-057-003-92" part-id="UT22084-057-003-chapter-1" index="63"/>
+        <milestone id="UT22084-057-003-93" part-id="UT22084-057-003-chapter-1" index="64"/>
+        <milestone id="UT22084-057-003-94" part-id="UT22084-057-003-chapter-2" index="1"/>
+        <milestone id="UT22084-057-003-95" part-id="UT22084-057-003-chapter-2" index="2"/>
+        <milestone id="UT22084-057-003-96" part-id="UT22084-057-003-chapter-2" index="3"/>
+        <milestone id="UT22084-057-003-97" part-id="UT22084-057-003-chapter-2" index="4"/>
+        <milestone id="UT22084-057-003-98" part-id="UT22084-057-003-chapter-2" index="5"/>
+        <milestone id="UT22084-057-003-99" part-id="UT22084-057-003-chapter-2" index="6"/>
+        <milestone id="UT22084-057-003-100" part-id="UT22084-057-003-chapter-2" index="7"/>
+        <milestone id="UT22084-057-003-101" part-id="UT22084-057-003-chapter-2" index="8"/>
+        <milestone id="UT22084-057-003-102" part-id="UT22084-057-003-chapter-2" index="9"/>
+        <milestone id="UT22084-057-003-103" part-id="UT22084-057-003-chapter-2" index="10"/>
+        <milestone id="UT22084-057-003-105" part-id="UT22084-057-003-chapter-2" index="11"/>
+        <milestone id="UT22084-057-003-106" part-id="UT22084-057-003-chapter-2" index="12"/>
+        <milestone id="UT22084-057-003-107" part-id="UT22084-057-003-chapter-2" index="13"/>
+        <milestone id="UT22084-057-003-108" part-id="UT22084-057-003-chapter-2" index="14"/>
+        <milestone id="UT22084-057-003-109" part-id="UT22084-057-003-chapter-2" index="15"/>
+        <milestone id="UT22084-057-003-110" part-id="UT22084-057-003-chapter-2" index="16"/>
+        <milestone id="UT22084-057-003-111" part-id="UT22084-057-003-chapter-2" index="17"/>
+        <milestone id="UT22084-057-003-112" part-id="UT22084-057-003-chapter-2" index="18"/>
+        <milestone id="UT22084-057-003-113" part-id="UT22084-057-003-chapter-2" index="19"/>
+        <milestone id="UT22084-057-003-114" part-id="UT22084-057-003-chapter-2" index="20"/>
+        <milestone id="UT22084-057-003-115" part-id="UT22084-057-003-chapter-2" index="21"/>
+        <milestone id="UT22084-057-003-116" part-id="UT22084-057-003-chapter-2" index="22"/>
+        <milestone id="UT22084-057-003-117" part-id="UT22084-057-003-chapter-2" index="23"/>
+        <milestone id="UT22084-057-003-118" part-id="UT22084-057-003-chapter-2" index="24"/>
+        <milestone id="UT22084-057-003-119" part-id="UT22084-057-003-chapter-2" index="25"/>
+        <milestone id="UT22084-057-003-120" part-id="UT22084-057-003-chapter-2" index="26"/>
+        <milestone id="UT22084-057-003-121" part-id="UT22084-057-003-chapter-2" index="27"/>
+        <milestone id="UT22084-057-003-122" part-id="UT22084-057-003-chapter-2" index="28"/>
+        <milestone id="UT22084-057-003-123" part-id="UT22084-057-003-chapter-2" index="29"/>
+        <milestone id="UT22084-057-003-124" part-id="UT22084-057-003-chapter-2" index="30"/>
+        <milestone id="UT22084-057-003-125" part-id="UT22084-057-003-chapter-2" index="31"/>
+        <milestone id="UT22084-057-003-126" part-id="UT22084-057-003-chapter-2" index="32"/>
+        <milestone id="UT22084-057-003-127" part-id="UT22084-057-003-chapter-2" index="33"/>
+        <milestone id="UT22084-057-003-128" part-id="UT22084-057-003-chapter-2" index="34"/>
+        <milestone id="UT22084-057-003-129" part-id="UT22084-057-003-chapter-2" index="35"/>
+        <milestone id="UT22084-057-003-130" part-id="UT22084-057-003-chapter-2" index="36"/>
+        <milestone id="UT22084-057-003-131" part-id="UT22084-057-003-chapter-2" index="37"/>
+        <milestone id="UT22084-057-003-132" part-id="UT22084-057-003-chapter-2" index="38"/>
+        <milestone id="UT22084-057-003-133" part-id="UT22084-057-003-chapter-2" index="39"/>
+        <milestone id="UT22084-057-003-134" part-id="UT22084-057-003-chapter-2" index="40"/>
+        <milestone id="UT22084-057-003-135" part-id="UT22084-057-003-chapter-2" index="41"/>
+        <milestone id="UT22084-057-003-136" part-id="UT22084-057-003-chapter-2" index="42"/>
+        <milestone id="UT22084-057-003-137" part-id="UT22084-057-003-chapter-2" index="43"/>
+        <milestone id="UT22084-057-003-138" part-id="UT22084-057-003-chapter-2" index="44"/>
+        <milestone id="UT22084-057-003-139" part-id="UT22084-057-003-chapter-2" index="45"/>
+        <milestone id="UT22084-057-003-140" part-id="UT22084-057-003-chapter-2" index="46"/>
+        <milestone id="UT22084-057-003-141" part-id="UT22084-057-003-chapter-2" index="47"/>
+        <milestone id="UT22084-057-003-142" part-id="UT22084-057-003-chapter-2" index="48"/>
+        <milestone id="UT22084-057-003-143" part-id="UT22084-057-003-chapter-2" index="49"/>
+        <milestone id="UT22084-057-003-144" part-id="UT22084-057-003-chapter-2" index="50"/>
+        <milestone id="UT22084-057-003-145" part-id="UT22084-057-003-chapter-2" index="51"/>
+        <milestone id="UT22084-057-003-146" part-id="UT22084-057-003-chapter-2" index="52"/>
+        <milestone id="UT22084-057-003-147" part-id="UT22084-057-003-chapter-2" index="53"/>
+        <milestone id="UT22084-057-003-148" part-id="UT22084-057-003-chapter-2" index="54"/>
+        <milestone id="UT22084-057-003-149" part-id="UT22084-057-003-chapter-2" index="55"/>
+        <milestone id="UT22084-057-003-150" part-id="UT22084-057-003-chapter-2" index="56"/>
+        <milestone id="UT22084-057-003-151" part-id="UT22084-057-003-chapter-2" index="57"/>
+        <milestone id="UT22084-057-003-152" part-id="UT22084-057-003-chapter-2" index="58"/>
+        <milestone id="UT22084-057-003-153" part-id="UT22084-057-003-chapter-2" index="59"/>
+        <milestone id="UT22084-057-003-154" part-id="UT22084-057-003-chapter-2" index="60"/>
+        <milestone id="UT22084-057-003-155" part-id="UT22084-057-003-chapter-2" index="61"/>
+        <milestone id="UT22084-057-003-156" part-id="UT22084-057-003-chapter-2" index="62"/>
+        <milestone id="UT22084-057-003-157" part-id="UT22084-057-003-chapter-2" index="63"/>
+        <milestone id="UT22084-057-003-158" part-id="UT22084-057-003-chapter-2" index="64"/>
+        <milestone id="UT22084-057-003-159" part-id="UT22084-057-003-chapter-2" index="65"/>
+        <milestone id="UT22084-057-003-160" part-id="UT22084-057-003-chapter-2" index="66"/>
+        <milestone id="UT22084-057-003-161" part-id="UT22084-057-003-chapter-2" index="67"/>
+        <milestone id="UT22084-057-003-162" part-id="UT22084-057-003-chapter-2" index="68"/>
+        <milestone id="UT22084-057-003-163" part-id="UT22084-057-003-chapter-2" index="69"/>
+        <milestone id="UT22084-057-003-164" part-id="UT22084-057-003-chapter-2" index="70"/>
+        <milestone id="UT22084-057-003-165" part-id="UT22084-057-003-chapter-2" index="71"/>
+        <milestone id="UT22084-057-003-166" part-id="UT22084-057-003-chapter-2" index="72"/>
+        <milestone id="UT22084-057-003-167" part-id="UT22084-057-003-chapter-2" index="73"/>
+        <milestone id="UT22084-057-003-168" part-id="UT22084-057-003-chapter-2" index="74"/>
+        <milestone id="UT22084-057-003-169" part-id="UT22084-057-003-chapter-2" index="75"/>
+        <milestone id="UT22084-057-003-170" part-id="UT22084-057-003-chapter-2" index="76"/>
+        <milestone id="UT22084-057-003-171" part-id="UT22084-057-003-chapter-2" index="77"/>
+        <milestone id="UT22084-057-003-172" part-id="UT22084-057-003-chapter-3" index="1"/>
+        <milestone id="UT22084-057-003-173" part-id="UT22084-057-003-chapter-3" index="2"/>
+        <milestone id="UT22084-057-003-174" part-id="UT22084-057-003-chapter-3" index="3"/>
+        <milestone id="UT22084-057-003-175" part-id="UT22084-057-003-chapter-3" index="4"/>
+        <milestone id="UT22084-057-003-176" part-id="UT22084-057-003-chapter-3" index="5"/>
+        <milestone id="UT22084-057-003-177" part-id="UT22084-057-003-chapter-3" index="6"/>
+        <milestone id="UT22084-057-003-178" part-id="UT22084-057-003-chapter-3" index="7"/>
+        <milestone id="UT22084-057-003-179" part-id="UT22084-057-003-chapter-3" index="8"/>
+        <milestone id="UT22084-057-003-180" part-id="UT22084-057-003-chapter-3" index="9"/>
+        <milestone id="UT22084-057-003-181" part-id="UT22084-057-003-chapter-3" index="10"/>
+        <milestone id="UT22084-057-003-182" part-id="UT22084-057-003-chapter-3" index="11"/>
+        <milestone id="UT22084-057-003-183" part-id="UT22084-057-003-chapter-3" index="12"/>
+        <milestone id="UT22084-057-003-184" part-id="UT22084-057-003-chapter-3" index="13"/>
+        <milestone id="UT22084-057-003-185" part-id="UT22084-057-003-chapter-3" index="14"/>
+        <milestone id="UT22084-057-003-186" part-id="UT22084-057-003-chapter-3" index="15"/>
+        <milestone id="UT22084-057-003-187" part-id="UT22084-057-003-chapter-3" index="16"/>
+        <milestone id="UT22084-057-003-188" part-id="UT22084-057-003-chapter-3" index="17"/>
+        <milestone id="UT22084-057-003-189" part-id="UT22084-057-003-chapter-3" index="18"/>
+        <milestone id="UT22084-057-003-190" part-id="UT22084-057-003-chapter-4" index="1"/>
+        <milestone id="UT22084-057-003-191" part-id="UT22084-057-003-chapter-4" index="2"/>
+        <milestone id="UT22084-057-003-192" part-id="UT22084-057-003-chapter-4" index="3"/>
+        <milestone id="UT22084-057-003-193" part-id="UT22084-057-003-chapter-4" index="4"/>
+        <milestone id="UT22084-057-003-194" part-id="UT22084-057-003-chapter-4" index="5"/>
+        <milestone id="UT22084-057-003-195" part-id="UT22084-057-003-chapter-4" index="6"/>
+        <milestone id="UT22084-057-003-196" part-id="UT22084-057-003-chapter-4" index="7"/>
+        <milestone id="UT22084-057-003-197" part-id="UT22084-057-003-chapter-4" index="8"/>
+        <milestone id="UT22084-057-003-198" part-id="UT22084-057-003-chapter-4" index="9"/>
+        <milestone id="UT22084-057-003-199" part-id="UT22084-057-003-chapter-4" index="10"/>
+        <milestone id="UT22084-057-003-200" part-id="UT22084-057-003-chapter-4" index="11"/>
+        <milestone id="UT22084-057-003-201" part-id="UT22084-057-003-chapter-4" index="12"/>
+        <milestone id="UT22084-057-003-202" part-id="UT22084-057-003-chapter-4" index="13"/>
+        <milestone id="UT22084-057-003-203" part-id="UT22084-057-003-chapter-4" index="14"/>
+        <milestone id="UT22084-057-003-204" part-id="UT22084-057-003-chapter-4" index="15"/>
+        <milestone id="UT22084-057-003-205" part-id="UT22084-057-003-chapter-4" index="16"/>
+        <milestone id="UT22084-057-003-206" part-id="UT22084-057-003-chapter-4" index="17"/>
+        <milestone id="UT22084-057-003-207" part-id="UT22084-057-003-chapter-4" index="18"/>
+        <milestone id="UT22084-057-003-208" part-id="UT22084-057-003-chapter-4" index="19"/>
+        <milestone id="UT22084-057-003-209" part-id="UT22084-057-003-chapter-4" index="20"/>
+        <milestone id="UT22084-057-003-210" part-id="UT22084-057-003-chapter-4" index="21"/>
+        <milestone id="UT22084-057-003-211" part-id="UT22084-057-003-chapter-4" index="22"/>
+        <milestone id="UT22084-057-003-212" part-id="UT22084-057-003-chapter-4" index="23"/>
+        <milestone id="UT22084-057-003-213" part-id="UT22084-057-003-chapter-4" index="24"/>
+        <milestone id="UT22084-057-003-214" part-id="UT22084-057-003-chapter-4" index="25"/>
+        <milestone id="UT22084-057-003-215" part-id="UT22084-057-003-chapter-4" index="26"/>
+        <milestone id="UT22084-057-003-216" part-id="UT22084-057-003-chapter-4" index="27"/>
+        <milestone id="UT22084-057-003-217" part-id="UT22084-057-003-chapter-4" index="28"/>
+        <milestone id="UT22084-057-003-218" part-id="UT22084-057-003-chapter-4" index="29"/>
+        <milestone id="UT22084-057-003-219" part-id="UT22084-057-003-chapter-4" index="30"/>
+        <milestone id="UT22084-057-003-220" part-id="UT22084-057-003-chapter-4" index="31"/>
+        <milestone id="UT22084-057-003-221" part-id="UT22084-057-003-chapter-4" index="32"/>
+        <milestone id="UT22084-057-003-222" part-id="UT22084-057-003-chapter-4" index="33"/>
+        <milestone id="UT22084-057-003-223" part-id="UT22084-057-003-chapter-4" index="34"/>
+        <milestone id="UT22084-057-003-224" part-id="UT22084-057-003-chapter-4" index="35"/>
+        <milestone id="UT22084-057-003-225" part-id="UT22084-057-003-chapter-4" index="36"/>
+        <milestone id="UT22084-057-003-226" part-id="UT22084-057-003-chapter-4" index="37"/>
+        <milestone id="UT22084-057-003-227" part-id="UT22084-057-003-chapter-4" index="38"/>
+        <milestone id="UT22084-057-003-228" part-id="UT22084-057-003-chapter-4" index="39"/>
+        <milestone id="UT22084-057-003-229" part-id="UT22084-057-003-chapter-4" index="40"/>
+        <milestone id="UT22084-057-003-230" part-id="UT22084-057-003-chapter-4" index="41"/>
+        <milestone id="UT22084-057-003-231" part-id="UT22084-057-003-chapter-4" index="42"/>
+        <milestone id="UT22084-057-003-232" part-id="UT22084-057-003-chapter-4" index="43"/>
+        <milestone id="UT22084-057-003-233" part-id="UT22084-057-003-chapter-4" index="44"/>
+        <milestone id="UT22084-057-003-234" part-id="UT22084-057-003-chapter-4" index="45"/>
+        <milestone id="UT22084-057-003-235" part-id="UT22084-057-003-chapter-4" index="46"/>
+        <milestone id="UT22084-057-003-236" part-id="UT22084-057-003-chapter-4" index="47"/>
+        <milestone id="UT22084-057-003-237" part-id="UT22084-057-003-chapter-4" index="48"/>
+        <milestone id="UT22084-057-003-238" part-id="UT22084-057-003-chapter-4" index="49"/>
+        <milestone id="UT22084-057-003-239" part-id="UT22084-057-003-chapter-4" index="50"/>
+        <milestone id="UT22084-057-003-240" part-id="UT22084-057-003-chapter-4" index="51"/>
+        <milestone id="UT22084-057-003-241" part-id="UT22084-057-003-chapter-4" index="52"/>
+        <milestone id="UT22084-057-003-242" part-id="UT22084-057-003-chapter-4" index="53"/>
+        <milestone id="UT22084-057-003-243" part-id="UT22084-057-003-chapter-5" index="1"/>
+        <milestone id="UT22084-057-003-244" part-id="UT22084-057-003-chapter-5" index="2"/>
+        <milestone id="UT22084-057-003-245" part-id="UT22084-057-003-chapter-5" index="3"/>
+        <milestone id="UT22084-057-003-246" part-id="UT22084-057-003-chapter-5" index="4"/>
+        <milestone id="UT22084-057-003-247" part-id="UT22084-057-003-chapter-5" index="5"/>
+        <milestone id="UT22084-057-003-248" part-id="UT22084-057-003-chapter-5" index="6"/>
+        <milestone id="UT22084-057-003-249" part-id="UT22084-057-003-chapter-5" index="7"/>
+        <milestone id="UT22084-057-003-250" part-id="UT22084-057-003-chapter-5" index="8"/>
+        <milestone id="UT22084-057-003-251" part-id="UT22084-057-003-chapter-5" index="9"/>
+        <milestone id="UT22084-057-003-252" part-id="UT22084-057-003-chapter-5" index="10"/>
+        <milestone id="UT22084-057-003-253" part-id="UT22084-057-003-chapter-5" index="11"/>
+        <milestone id="UT22084-057-003-254" part-id="UT22084-057-003-chapter-5" index="12"/>
+        <milestone id="UT22084-057-003-255" part-id="UT22084-057-003-chapter-5" index="13"/>
+        <milestone id="UT22084-057-003-256" part-id="UT22084-057-003-chapter-5" index="14"/>
+        <milestone id="UT22084-057-003-257" part-id="UT22084-057-003-chapter-5" index="15"/>
+        <milestone id="UT22084-057-003-258" part-id="UT22084-057-003-chapter-5" index="16"/>
+        <milestone id="UT22084-057-003-259" part-id="UT22084-057-003-colophon" index="1"/>
+    </milestones-cache>
+    <folios-cache xmlns="http://read.84000.co/ns/1.0" timestamp="2020-11-25T16:03:48.009Z" app-version="2.0.1" tei-version="v-1.0.5-2020">
+        <folio-ref id="UT22084-057-003-340" resource-id="toh144" index-in-resource="1" index-in-sort="1" cRef-volume=""/>
+        <folio-ref id="UT22084-057-003-341" resource-id="toh144" index-in-resource="2" index-in-sort="2" cRef-volume=""/>
+        <folio-ref id="UT22084-057-003-342" resource-id="toh144" index-in-resource="3" index-in-sort="3" cRef-volume=""/>
+        <folio-ref id="UT22084-057-003-343" resource-id="toh144" index-in-resource="4" index-in-sort="4" cRef-volume=""/>
+        <folio-ref id="UT22084-057-003-344" resource-id="toh144" index-in-resource="5" index-in-sort="5" cRef-volume=""/>
+        <folio-ref id="UT22084-057-003-345" resource-id="toh144" index-in-resource="6" index-in-sort="6" cRef-volume=""/>
+        <folio-ref id="UT22084-057-003-346" resource-id="toh144" index-in-resource="7" index-in-sort="7" cRef-volume=""/>
+        <folio-ref id="UT22084-057-003-347" resource-id="toh144" index-in-resource="8" index-in-sort="8" cRef-volume=""/>
+        <folio-ref id="UT22084-057-003-348" resource-id="toh144" index-in-resource="9" index-in-sort="9" cRef-volume=""/>
+        <folio-ref id="UT22084-057-003-349" resource-id="toh144" index-in-resource="10" index-in-sort="10" cRef-volume=""/>
+        <folio-ref id="UT22084-057-003-350" resource-id="toh144" index-in-resource="11" index-in-sort="11" cRef-volume=""/>
+        <folio-ref id="UT22084-057-003-351" resource-id="toh144" index-in-resource="12" index-in-sort="12" cRef-volume=""/>
+        <folio-ref id="UT22084-057-003-352" resource-id="toh144" index-in-resource="13" index-in-sort="13" cRef-volume=""/>
+        <folio-ref id="UT22084-057-003-353" resource-id="toh144" index-in-resource="14" index-in-sort="14" cRef-volume=""/>
+        <folio-ref id="UT22084-057-003-354" resource-id="toh144" index-in-resource="15" index-in-sort="15" cRef-volume=""/>
+        <folio-ref id="UT22084-057-003-355" resource-id="toh144" index-in-resource="16" index-in-sort="16" cRef-volume=""/>
+        <folio-ref id="UT22084-057-003-356" resource-id="toh144" index-in-resource="17" index-in-sort="17" cRef-volume=""/>
+        <folio-ref id="UT22084-057-003-357" resource-id="toh144" index-in-resource="18" index-in-sort="18" cRef-volume=""/>
+        <folio-ref id="UT22084-057-003-358" resource-id="toh144" index-in-resource="19" index-in-sort="19" cRef-volume=""/>
+        <folio-ref id="UT22084-057-003-359" resource-id="toh144" index-in-resource="20" index-in-sort="20" cRef-volume=""/>
+        <folio-ref id="UT22084-057-003-360" resource-id="toh144" index-in-resource="21" index-in-sort="21" cRef-volume=""/>
+        <folio-ref id="UT22084-057-003-361" resource-id="toh144" index-in-resource="22" index-in-sort="22" cRef-volume=""/>
+        <folio-ref id="UT22084-057-003-362" resource-id="toh144" index-in-resource="23" index-in-sort="23" cRef-volume=""/>
+        <folio-ref id="UT22084-057-003-363" resource-id="toh144" index-in-resource="24" index-in-sort="24" cRef-volume=""/>
+        <folio-ref id="UT22084-057-003-364" resource-id="toh144" index-in-resource="25" index-in-sort="25" cRef-volume=""/>
+        <folio-ref id="UT22084-057-003-365" resource-id="toh144" index-in-resource="26" index-in-sort="26" cRef-volume=""/>
+        <folio-ref id="UT22084-057-003-366" resource-id="toh144" index-in-resource="27" index-in-sort="27" cRef-volume=""/>
+        <folio-ref id="UT22084-057-003-367" resource-id="toh144" index-in-resource="28" index-in-sort="28" cRef-volume=""/>
+        <folio-ref id="UT22084-057-003-368" resource-id="toh144" index-in-resource="29" index-in-sort="29" cRef-volume=""/>
+        <folio-ref id="UT22084-057-003-369" resource-id="toh144" index-in-resource="30" index-in-sort="30" cRef-volume=""/>
+        <folio-ref id="UT22084-057-003-370" resource-id="toh144" index-in-resource="31" index-in-sort="31" cRef-volume=""/>
+        <folio-ref id="UT22084-057-003-371" resource-id="toh144" index-in-resource="32" index-in-sort="32" cRef-volume=""/>
+        <folio-ref id="UT22084-057-003-372" resource-id="toh144" index-in-resource="33" index-in-sort="33" cRef-volume=""/>
+        <folio-ref id="UT22084-057-003-373" resource-id="toh144" index-in-resource="34" index-in-sort="34" cRef-volume=""/>
+        <folio-ref id="UT22084-057-003-374" resource-id="toh144" index-in-resource="35" index-in-sort="35" cRef-volume=""/>
+        <folio-ref id="UT22084-057-003-375" resource-id="toh144" index-in-resource="36" index-in-sort="36" cRef-volume=""/>
+        <folio-ref id="UT22084-057-003-376" resource-id="toh144" index-in-resource="37" index-in-sort="37" cRef-volume=""/>
+        <folio-ref id="UT22084-057-003-377" resource-id="toh144" index-in-resource="38" index-in-sort="38" cRef-volume=""/>
+        <folio-ref id="UT22084-057-003-378" resource-id="toh144" index-in-resource="39" index-in-sort="39" cRef-volume=""/>
+        <folio-ref id="UT22084-057-003-379" resource-id="toh144" index-in-resource="40" index-in-sort="40" cRef-volume=""/>
+        <folio-ref id="UT22084-057-003-380" resource-id="toh144" index-in-resource="41" index-in-sort="41" cRef-volume=""/>
+        <folio-ref id="UT22084-057-003-381" resource-id="toh144" index-in-resource="42" index-in-sort="42" cRef-volume=""/>
+        <folio-ref id="UT22084-057-003-382" resource-id="toh144" index-in-resource="43" index-in-sort="43" cRef-volume=""/>
+        <folio-ref id="UT22084-057-003-383" resource-id="toh144" index-in-resource="44" index-in-sort="44" cRef-volume=""/>
+        <folio-ref id="UT22084-057-003-384" resource-id="toh144" index-in-resource="45" index-in-sort="45" cRef-volume=""/>
+        <folio-ref id="UT22084-057-003-385" resource-id="toh144" index-in-resource="46" index-in-sort="46" cRef-volume=""/>
+        <folio-ref id="UT22084-057-003-386" resource-id="toh144" index-in-resource="47" index-in-sort="47" cRef-volume=""/>
+        <folio-ref id="UT22084-057-003-387" resource-id="toh144" index-in-resource="48" index-in-sort="48" cRef-volume=""/>
+        <folio-ref id="UT22084-057-003-388" resource-id="toh144" index-in-resource="49" index-in-sort="49" cRef-volume=""/>
+        <folio-ref id="UT22084-057-003-389" resource-id="toh144" index-in-resource="50" index-in-sort="50" cRef-volume=""/>
+        <folio-ref id="UT22084-057-003-390" resource-id="toh144" index-in-resource="51" index-in-sort="51" cRef-volume=""/>
+        <folio-ref id="UT22084-057-003-391" resource-id="toh144" index-in-resource="52" index-in-sort="52" cRef-volume=""/>
+        <folio-ref id="UT22084-057-003-392" resource-id="toh144" index-in-resource="53" index-in-sort="53" cRef-volume=""/>
+        <folio-ref id="UT22084-057-003-393" resource-id="toh144" index-in-resource="54" index-in-sort="54" cRef-volume=""/>
+        <folio-ref id="UT22084-057-003-394" resource-id="toh144" index-in-resource="55" index-in-sort="55" cRef-volume=""/>
+        <folio-ref id="UT22084-057-003-395" resource-id="toh144" index-in-resource="56" index-in-sort="56" cRef-volume=""/>
+    </folios-cache>
+    <glossary-cache xmlns="http://read.84000.co/ns/1.0" timestamp="2020-11-23T17:11:00.429Z" app-version="2.0.1">
+        <gloss id="UT22084-057-003-268" index="1" timestamp="2020-11-23T17:11:00.429Z" word-count="3" letter-count="26">
+            <location id="UT22084-057-003-118"/>
+            <location id="UT22084-057-003-158"/>
+            <location id="UT22084-057-003-249"/>
+            <location id="UT22084-057-003-269"/>
+            <location id="UT22084-057-003-276"/>
+        </gloss>
+        <gloss id="UT22084-057-003-269" index="2" timestamp="2020-11-23T17:11:00.429Z" word-count="3" letter-count="17">
+            <location id="UT22084-057-003-118"/>
+            <location id="UT22084-057-003-249"/>
+            <location id="UT22084-057-003-268"/>
+            <location id="UT22084-057-003-276"/>
+        </gloss>
+        <gloss id="UT22084-057-003-300" index="3" timestamp="2020-11-23T17:11:00.429Z" word-count="3" letter-count="17">
+            <location id="UT22084-057-003-22"/>
+        </gloss>
+        <gloss id="UT22084-057-003-270" index="4" timestamp="2020-11-23T17:11:00.429Z" word-count="1" letter-count="10">
+            <location id="UT22084-057-003-58"/>
+            <location id="UT22084-057-003-59"/>
+            <location id="UT22084-057-003-253"/>
+            <location id="UT22084-057-003-297"/>
+        </gloss>
+        <gloss id="UT22084-057-003-301" index="5" timestamp="2020-11-23T17:11:00.429Z" word-count="3" letter-count="22">
+            <location id="UT22084-057-003-22"/>
+        </gloss>
+        <gloss id="UT22084-057-003-302" index="6" timestamp="2020-11-23T17:11:00.429Z" word-count="1" letter-count="6">
+            <location id="UT22084-057-003-251"/>
+            <location id="UT22084-057-003-252"/>
+            <location id="UT22084-057-003-253"/>
+            <location id="UT22084-057-003-254"/>
+            <location id="UT22084-057-003-255"/>
+            <location id="UT22084-057-003-256"/>
+        </gloss>
+        <gloss id="UT22084-057-003-271" index="7" timestamp="2020-11-23T17:11:00.429Z" word-count="1" letter-count="5">
+            <location id="UT22084-057-003-22"/>
+            <location id="UT22084-057-003-249"/>
+            <location id="UT22084-057-003-257"/>
+        </gloss>
+        <gloss id="UT22084-057-003-303" index="8" timestamp="2020-11-23T17:11:00.429Z" word-count="1" letter-count="6">
+            <location id="UT22084-057-003-54"/>
+        </gloss>
+        <gloss id="UT22084-057-003-304" index="9" timestamp="2020-11-23T17:11:00.429Z" word-count="2" letter-count="11">
+            <location id="UT22084-057-003-22"/>
+        </gloss>
+        <gloss id="UT22084-057-003-272" index="10" timestamp="2020-11-23T17:11:00.429Z" word-count="1" letter-count="13">
+            <location id="UT22084-057-003-54"/>
+            <location id="UT22084-057-003-98"/>
+            <location id="UT22084-057-003-207"/>
+            <location id="UT22084-057-003-247"/>
+            <location id="UT22084-057-003-292"/>
+        </gloss>
+        <gloss id="UT22084-057-003-305" index="11" timestamp="2020-11-23T17:11:00.429Z" word-count="4" letter-count="32">
+            <location id="UT22084-057-003-22"/>
+        </gloss>
+        <gloss id="UT22084-057-003-273" index="12" timestamp="2020-11-23T17:11:00.429Z" word-count="2" letter-count="11">
+            <location id="UT22084-057-003-165"/>
+        </gloss>
+        <gloss id="UT22084-057-003-274" index="13" timestamp="2020-11-23T17:11:00.429Z" word-count="1" letter-count="9">
+            <location id="UT22084-057-003-51"/>
+            <location id="UT22084-057-003-98"/>
+            <location id="UT22084-057-003-206"/>
+            <location id="UT22084-057-003-292"/>
+        </gloss>
+        <gloss id="UT22084-057-003-275" index="14" timestamp="2020-11-23T17:11:00.429Z" word-count="1" letter-count="10">
+            <location id="UT22084-057-003-58"/>
+            <location id="UT22084-057-003-98"/>
+            <location id="UT22084-057-003-100"/>
+            <location id="UT22084-057-003-204"/>
+            <location id="UT22084-057-003-247"/>
+            <location id="UT22084-057-003-292"/>
+        </gloss>
+        <gloss id="UT22084-057-003-276" index="15" timestamp="2020-11-23T17:11:00.429Z" word-count="1" letter-count="9">
+            <location id="UT22084-057-003-9"/>
+            <location id="UT22084-057-003-118"/>
+            <location id="UT22084-057-003-158"/>
+            <location id="UT22084-057-003-249"/>
+            <location id="UT22084-057-003-268"/>
+            <location id="UT22084-057-003-269"/>
+        </gloss>
+        <gloss id="UT22084-057-003-306" index="16" timestamp="2020-11-23T17:11:00.429Z" word-count="2" letter-count="18">
+            <location id="UT22084-057-003-22"/>
+        </gloss>
+        <gloss id="UT22084-057-003-307" index="17" timestamp="2020-11-23T17:11:00.429Z" word-count="2" letter-count="10">
+            <location id="UT22084-057-003-22"/>
+        </gloss>
+        <gloss id="UT22084-057-003-277" index="18" timestamp="2020-11-23T17:11:00.429Z" word-count="3" letter-count="20">
+            <location id="UT22084-057-003-151"/>
+            <location id="UT22084-057-003-180"/>
+        </gloss>
+        <gloss id="UT22084-057-003-278" index="19" timestamp="2020-11-23T17:11:00.429Z" word-count="4" letter-count="20">
+            <location id="UT22084-057-003-35"/>
+            <location id="UT22084-057-003-37"/>
+            <location id="UT22084-057-003-55"/>
+            <location id="UT22084-057-003-56"/>
+        </gloss>
+        <gloss id="UT22084-057-003-308" index="20" timestamp="2020-11-23T17:11:00.429Z" word-count="3" letter-count="16">
+            <location id="UT22084-057-003-54"/>
+            <location id="UT22084-057-003-311"/>
+        </gloss>
+        <gloss id="UT22084-057-003-279" index="21" timestamp="2020-11-23T17:11:00.429Z" word-count="4" letter-count="28">
+            <location id="UT22084-057-003-74"/>
+        </gloss>
+        <gloss id="UT22084-057-003-309" index="22" timestamp="2020-11-23T17:11:00.429Z" word-count="4" letter-count="22">
+            <location id="UT22084-057-003-22"/>
+        </gloss>
+        <gloss id="UT22084-057-003-280" index="23" timestamp="2020-11-23T17:11:00.429Z" word-count="1" letter-count="9">
+            <location id="UT22084-057-003-22"/>
+            <location id="UT22084-057-003-249"/>
+            <location id="UT22084-057-003-257"/>
+            <location id="UT22084-057-003-308"/>
+        </gloss>
+        <gloss id="UT22084-057-003-281" index="24" timestamp="2020-11-23T17:11:00.429Z" word-count="1" letter-count="6">
+            <location id="UT22084-057-003-22"/>
+            <location id="UT22084-057-003-249"/>
+        </gloss>
+        <gloss id="UT22084-057-003-282" index="25" timestamp="2020-11-23T17:11:00.429Z" word-count="1" letter-count="10">
+            <location id="UT22084-057-003-98"/>
+            <location id="UT22084-057-003-203"/>
+            <location id="UT22084-057-003-292"/>
+        </gloss>
+        <gloss id="UT22084-057-003-310" index="26" timestamp="2020-11-23T17:11:00.429Z" word-count="3" letter-count="24">
+            <location id="UT22084-057-003-22"/>
+        </gloss>
+        <gloss id="UT22084-057-003-311" index="27" timestamp="2020-11-23T17:11:00.429Z" word-count="2" letter-count="10">
+            <location id="UT22084-057-003-280"/>
+            <location id="UT22084-057-003-299"/>
+        </gloss>
+        <gloss id="UT22084-057-003-312" index="28" timestamp="2020-11-23T17:11:00.429Z" word-count="3" letter-count="20">
+            <location id="UT22084-057-003-1"/>
+            <location id="UT22084-057-003-4"/>
+            <location id="UT22084-057-003-6"/>
+            <location id="UT22084-057-003-22"/>
+            <location id="UT22084-057-003-25"/>
+            <location id="UT22084-057-003-28"/>
+            <location id="UT22084-057-003-31"/>
+            <location id="UT22084-057-003-33"/>
+            <location id="UT22084-057-003-38"/>
+            <location id="UT22084-057-003-41"/>
+            <location id="UT22084-057-003-43"/>
+            <location id="UT22084-057-003-45"/>
+            <location id="UT22084-057-003-47"/>
+            <location id="UT22084-057-003-50"/>
+            <location id="UT22084-057-003-53"/>
+            <location id="UT22084-057-003-60"/>
+            <location id="UT22084-057-003-62"/>
+            <location id="UT22084-057-003-67"/>
+            <location id="UT22084-057-003-69"/>
+            <location id="UT22084-057-003-71"/>
+            <location id="UT22084-057-003-73"/>
+            <location id="UT22084-057-003-75"/>
+            <location id="UT22084-057-003-77"/>
+            <location id="UT22084-057-003-80"/>
+            <location id="UT22084-057-003-82"/>
+            <location id="UT22084-057-003-84"/>
+            <location id="UT22084-057-003-94"/>
+            <location id="UT22084-057-003-96"/>
+            <location id="UT22084-057-003-99"/>
+            <location id="UT22084-057-003-101"/>
+            <location id="UT22084-057-003-133"/>
+            <location id="UT22084-057-003-135"/>
+            <location id="UT22084-057-003-137"/>
+            <location id="UT22084-057-003-139"/>
+            <location id="UT22084-057-003-141"/>
+            <location id="UT22084-057-003-143"/>
+            <location id="UT22084-057-003-145"/>
+            <location id="UT22084-057-003-148"/>
+            <location id="UT22084-057-003-150"/>
+            <location id="UT22084-057-003-152"/>
+            <location id="UT22084-057-003-155"/>
+            <location id="UT22084-057-003-172"/>
+            <location id="UT22084-057-003-190"/>
+            <location id="UT22084-057-003-243"/>
+            <location id="UT22084-057-003-245"/>
+            <location id="UT22084-057-003-246"/>
+            <location id="UT22084-057-003-247"/>
+            <location id="UT22084-057-003-249"/>
+        </gloss>
+        <gloss id="UT22084-057-003-313" index="29" timestamp="2020-11-23T17:11:00.429Z" word-count="2" letter-count="11">
+            <location id="UT22084-057-003-22"/>
+            <location id="UT22084-057-003-136"/>
+        </gloss>
+        <gloss id="UT22084-057-003-330" index="30" timestamp="2020-11-23T17:11:00.429Z" word-count="5" letter-count="34">
+            <location id="UT22084-057-003-54"/>
+        </gloss>
+        <gloss id="UT22084-057-003-331" index="31" timestamp="2020-11-23T17:11:00.429Z" word-count="3" letter-count="13">
+            <location id="UT22084-057-003-54"/>
+            <location id="UT22084-057-003-239"/>
+        </gloss>
+        <gloss id="UT22084-057-003-332" index="32" timestamp="2020-11-23T17:11:00.429Z" word-count="7" letter-count="42">
+            <location id="UT22084-057-003-54"/>
+        </gloss>
+        <gloss id="UT22084-057-003-333" index="33" timestamp="2020-11-23T17:11:00.429Z" word-count="4" letter-count="26">
+            <location id="UT22084-057-003-54"/>
+            <location id="UT22084-057-003-237"/>
+            <location id="UT22084-057-003-322"/>
+        </gloss>
+        <gloss id="UT22084-057-003-314" index="34" timestamp="2020-11-23T17:11:00.429Z" word-count="2" letter-count="10">
+            <location id="UT22084-057-003-238"/>
+        </gloss>
+        <gloss id="UT22084-057-003-283" index="35" timestamp="2020-11-23T17:11:00.429Z" word-count="2" letter-count="13">
+            <location id="UT22084-057-003-68"/>
+            <location id="UT22084-057-003-72"/>
+            <location id="UT22084-057-003-73"/>
+            <location id="UT22084-057-003-278"/>
+        </gloss>
+        <gloss id="UT22084-057-003-315" index="36" timestamp="2020-11-23T17:11:00.429Z" word-count="2" letter-count="15">
+            <location id="UT22084-057-003-22"/>
+        </gloss>
+        <gloss id="UT22084-057-003-316" index="37" timestamp="2020-11-23T17:11:00.429Z" word-count="2" letter-count="16">
+            <location id="UT22084-057-003-22"/>
+        </gloss>
+        <gloss id="UT22084-057-003-284" index="38" timestamp="2020-11-23T17:11:00.429Z" word-count="1" letter-count="7">
+            <location id="UT22084-057-003-6"/>
+            <location id="UT22084-057-003-142"/>
+            <location id="UT22084-057-003-143"/>
+            <location id="UT22084-057-003-144"/>
+            <location id="UT22084-057-003-146"/>
+            <location id="UT22084-057-003-147"/>
+            <location id="UT22084-057-003-182"/>
+            <location id="UT22084-057-003-247"/>
+            <location id="UT22084-057-003-249"/>
+            <location id="UT22084-057-003-296"/>
+        </gloss>
+        <gloss id="UT22084-057-003-317" index="39" timestamp="2020-11-23T17:11:00.429Z" word-count="2" letter-count="19">
+            <location id="UT22084-057-003-22"/>
+        </gloss>
+        <gloss id="UT22084-057-003-318" index="40" timestamp="2020-11-23T17:11:00.429Z" word-count="1" letter-count="7">
+            <location id="UT22084-057-003-237"/>
+            <location id="UT22084-057-003-239"/>
+        </gloss>
+        <gloss id="UT22084-057-003-285" index="41" timestamp="2020-11-23T17:11:00.429Z" word-count="1" letter-count="7">
+            <location id="UT22084-057-003-22"/>
+            <location id="UT22084-057-003-249"/>
+        </gloss>
+        <gloss id="UT22084-057-003-286" index="42" timestamp="2020-11-23T17:11:00.429Z" word-count="1" letter-count="9">
+            <location id="UT22084-057-003-58"/>
+            <location id="UT22084-057-003-74"/>
+            <location id="UT22084-057-003-98"/>
+            <location id="UT22084-057-003-146"/>
+            <location id="UT22084-057-003-208"/>
+            <location id="UT22084-057-003-292"/>
+        </gloss>
+        <gloss id="UT22084-057-003-319" index="43" timestamp="2020-11-23T17:11:00.429Z" word-count="3" letter-count="21">
+            <location id="UT22084-057-003-22"/>
+        </gloss>
+        <gloss id="UT22084-057-003-287" index="44" timestamp="2020-11-23T17:11:00.429Z" word-count="4" letter-count="27">
+            <location id="UT22084-057-003-6"/>
+            <location id="UT22084-057-003-23"/>
+            <location id="UT22084-057-003-31"/>
+            <location id="UT22084-057-003-32"/>
+            <location id="UT22084-057-003-69"/>
+            <location id="UT22084-057-003-287"/>
+        </gloss>
+        <gloss id="UT22084-057-003-288" index="45" timestamp="2020-11-23T17:11:00.429Z" word-count="3" letter-count="16">
+            <location id="UT22084-057-003-158"/>
+            <location id="UT22084-057-003-166"/>
+        </gloss>
+        <gloss id="UT22084-057-003-320" index="46" timestamp="2020-11-23T17:11:00.429Z" word-count="1" letter-count="11">
+            <location id="UT22084-057-003-22"/>
+        </gloss>
+        <gloss id="UT22084-057-003-289" index="47" timestamp="2020-11-23T17:11:00.429Z" word-count="1" letter-count="8">
+            <location id="UT22084-057-003-22"/>
+            <location id="UT22084-057-003-249"/>
+        </gloss>
+        <gloss id="UT22084-057-003-321" index="48" timestamp="2020-11-23T17:11:00.429Z" word-count="1" letter-count="4">
+            <location id="UT22084-057-003-54"/>
+        </gloss>
+        <gloss id="UT22084-057-003-290" index="49" timestamp="2020-11-23T17:11:00.429Z" word-count="1" letter-count="4">
+            <location id="UT22084-057-003-22"/>
+            <location id="UT22084-057-003-249"/>
+            <location id="UT22084-057-003-308"/>
+            <location id="UT22084-057-003-281"/>
+        </gloss>
+        <gloss id="UT22084-057-003-291" index="50" timestamp="2020-11-23T17:11:00.429Z" word-count="1" letter-count="8">
+            <location id="UT22084-057-003-97"/>
+            <location id="UT22084-057-003-98"/>
+            <location id="UT22084-057-003-205"/>
+            <location id="UT22084-057-003-292"/>
+        </gloss>
+        <gloss id="UT22084-057-003-334" index="51" timestamp="2020-11-23T17:11:00.429Z" word-count="3" letter-count="17">
+            <location id="UT22084-057-003-54"/>
+        </gloss>
+        <gloss id="UT22084-057-003-292" index="52" timestamp="2020-11-23T17:11:00.429Z" word-count="1" letter-count="10">
+            <location id="UT22084-057-003-203"/>
+            <location id="UT22084-057-003-204"/>
+            <location id="UT22084-057-003-205"/>
+            <location id="UT22084-057-003-206"/>
+            <location id="UT22084-057-003-207"/>
+            <location id="UT22084-057-003-208"/>
+        </gloss>
+        <gloss id="UT22084-057-003-335" index="53" timestamp="2020-11-23T17:11:00.429Z" word-count="1" letter-count="8">
+            <location id="UT22084-057-003-21"/>
+            <location id="UT22084-057-003-237"/>
+            <location id="UT22084-057-003-238"/>
+            <location id="UT22084-057-003-239"/>
+            <location id="UT22084-057-003-337"/>
+        </gloss>
+        <gloss id="UT22084-057-003-336" index="54" timestamp="2020-11-23T17:11:00.429Z" word-count="7" letter-count="37">
+            <location id="UT22084-057-003-54"/>
+            <location id="UT22084-057-003-334"/>
+        </gloss>
+        <gloss id="UT22084-057-003-293" index="55" timestamp="2020-11-23T17:11:00.429Z" word-count="3" letter-count="18">
+            <location id="UT22084-057-003-158"/>
+            <location id="UT22084-057-003-179"/>
+            <location id="UT22084-057-003-195"/>
+        </gloss>
+        <gloss id="UT22084-057-003-322" index="56" timestamp="2020-11-23T17:11:00.429Z" word-count="1" letter-count="5">
+            <location id="UT22084-057-003-54"/>
+        </gloss>
+        <gloss id="UT22084-057-003-323" index="57" timestamp="2020-11-23T17:11:00.429Z" word-count="6" letter-count="33">
+            <location id="UT22084-057-003-22"/>
+            <location id="UT22084-057-003-246"/>
+            <location id="UT22084-057-003-248"/>
+        </gloss>
+        <gloss id="UT22084-057-003-294" index="58" timestamp="2020-11-23T17:11:00.429Z" word-count="3" letter-count="25">
+            <location id="UT22084-057-003-249"/>
+        </gloss>
+        <gloss id="UT22084-057-003-324" index="59" timestamp="2020-11-23T17:11:00.429Z" word-count="2" letter-count="15">
+            <location id="UT22084-057-003-22"/>
+        </gloss>
+        <gloss id="UT22084-057-003-295" index="60" timestamp="2020-11-23T17:11:00.429Z" word-count="1" letter-count="8">
+            <location id="UT22084-057-003-158"/>
+        </gloss>
+        <gloss id="UT22084-057-003-325" index="61" timestamp="2020-11-23T17:11:00.429Z" word-count="2" letter-count="14">
+            <location id="UT22084-057-003-22"/>
+        </gloss>
+        <gloss id="UT22084-057-003-326" index="62" timestamp="2020-11-23T17:11:00.429Z" word-count="3" letter-count="17">
+            <location id="UT22084-057-003-22"/>
+        </gloss>
+        <gloss id="UT22084-057-003-296" index="63" timestamp="2020-11-23T17:11:00.429Z" word-count="1" letter-count="11">
+            <location id="UT22084-057-003-142"/>
+            <location id="UT22084-057-003-143"/>
+            <location id="UT22084-057-003-144"/>
+            <location id="UT22084-057-003-146"/>
+            <location id="UT22084-057-003-147"/>
+            <location id="UT22084-057-003-182"/>
+            <location id="UT22084-057-003-247"/>
+            <location id="UT22084-057-003-249"/>
+            <location id="UT22084-057-003-284"/>
+        </gloss>
+        <gloss id="UT22084-057-003-327" index="64" timestamp="2020-11-23T17:11:00.429Z" word-count="2" letter-count="18">
+            <location id="UT22084-057-003-22"/>
+        </gloss>
+        <gloss id="UT22084-057-003-328" index="65" timestamp="2020-11-23T17:11:00.429Z" word-count="2" letter-count="16">
+            <location id="UT22084-057-003-22"/>
+        </gloss>
+        <gloss id="UT22084-057-003-297" index="66" timestamp="2020-11-23T17:11:00.429Z" word-count="6" letter-count="26">
+            <location id="UT22084-057-003-129"/>
+        </gloss>
+        <gloss id="UT22084-057-003-329" index="67" timestamp="2020-11-23T17:11:00.429Z" word-count="1" letter-count="8">
+            <location id="UT22084-057-003-238"/>
+            <location id="UT22084-057-003-314"/>
+        </gloss>
+        <gloss id="UT22084-057-003-337" index="68" timestamp="2020-11-23T17:11:00.429Z" word-count="3" letter-count="21">
+            <location id="UT22084-057-003-4"/>
+            <location id="UT22084-057-003-21"/>
+        </gloss>
+        <gloss id="UT22084-057-003-299" index="69" timestamp="2020-11-23T17:11:00.429Z" word-count="1" letter-count="5">
+            <location id="UT22084-057-003-22"/>
+            <location id="UT22084-057-003-249"/>
+            <location id="UT22084-057-003-308"/>
+        </gloss>
+        <gloss id="UT22084-057-003-338" index="70" timestamp="2020-11-23T17:11:00.429Z" word-count="2" letter-count="11">
+            <location id="UT22084-057-003-54"/>
+            <location id="UT22084-057-003-238"/>
+        </gloss>
+    </glossary-cache>
 </TEI>
