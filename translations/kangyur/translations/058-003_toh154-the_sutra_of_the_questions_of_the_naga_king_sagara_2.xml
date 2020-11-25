@@ -28,7 +28,7 @@
         <editor role="finalReviewer" ref="contributors.xml#person-262">David Higgins</editor>
       </titleStmt>
       <editionStmt>
-                <edition>v 1.1.2 <date>2020</date>
+                <edition>v 1.1.4 <date>2020</date>
                 </edition>
             </editionStmt>
       <publicationStmt status="1">
@@ -64,7 +64,7 @@
         </bibl>
       </sourceDesc>
       <notesStmt>
-        <note type="lastUpdated" date-time="2020-10-26T10:34:53.818Z" user="john">26/10/2020 10:34:53</note>
+        <note type="lastUpdated" date-time="2020-11-25T16:04:30.8Z" user="admin">25/11/2020 16:04:30</note>
         <note type="updated" update="text-version" value="" date-time="2019-09-25T06:25:58.148Z" user="andreas">0.1 2019</note>
         <note type="updated" update="text-version" value="v 0.1.1" date-time="2019-10-07T10:27:24.685Z" user="admin">Publication
           statement updated</note>
@@ -86,6 +86,8 @@
     <note type="updated" update="text-version" value="1.1.0" date-time="2020-10-07T15:16:17.108Z" user="john">Summary improved and various edits to the intro; Chinese titles of second Taishō added; some grammatical corrections to the text.</note>
     <note type="updated" update="text-version" value="1.1.1" date-time="2020-10-07T19:02:32.087Z" user="john">Tiny typo corrected.</note>
     <note type="updated" update="text-version" value="1.1.2" date-time="2020-10-26T10:38:23.462Z" user="john">Added some line breaks to divide topics</note>
+    <note type="updated" update="text-version" value="1.1.3" date-time="2020-11-23T13:57:44.998Z" user="admin">Auto (TEI migration 2.0.0)</note>
+    <note type="updated" update="text-version" value="1.1.4" date-time="2020-11-25T16:04:26.404Z" user="celso">Updated pending links</note>
             </notesStmt>
     </fileDesc>
   </teiHeader>
@@ -114,7 +116,7 @@
       </div>
       <div type="introduction">
         <head type="introduction" tid="6">Introduction</head>
-        <div type="section">
+        <div type="section" xml:id="UT22084-058-003-introduction-1">
           <milestone unit="chunk" xml:id="UT22084-058-003-3"/>
           <p tid="8">
                         <title xml:lang="en">The Questions of the Nāga King Sāgara</title> takes place in the unusual setting of the
@@ -131,11 +133,11 @@
           <milestone unit="chunk" xml:id="UT22084-058-003-4"/>
           <p tid="9">The Degé Kangyur contains three sūtras entitled <title xml:lang="en">The Questions of the Nāga King
               Sāgara</title>. They can be distinguished by their length, one being quite long (Toh 153, 164 folio
-            pages)<!--Reference Toh 0153-->, one medium-length, which is
+            pages)<ref rend="pending" target="https://read.84000.co/translation/toh153.html"/>, one medium-length, which is
             translated here (Toh 154, 14 folio pages), and one very short (<ref target="https://read.84000.co/translation/toh155.html">Toh 155</ref>, 1 folio page). All three of these are included
             as individual texts in the early ninth century Denkarma (<foreign xml:lang="Bo-Ltn">ldan dkar ma</foreign>) catalog,
-            confirming their status as independent scriptures in Tibet during the imperial period.<note place="end" index="1" xml:id="UT22084-058-003-5"> See Denkarma: 297.a.6<!--Reference Toh 4364 297.a--> (Toh 153),
-              299.a.5<!--Reference Toh 4364 299.a--> (Toh 154), and 300.a.2<!--Reference Toh 4364 300.a--> (Toh 155). See also
+            confirming their status as independent scriptures in Tibet during the imperial period.<note place="end" index="1" xml:id="UT22084-058-003-5"> See Denkarma: 297.a.6<ref rend="pending" target="https://read.84000.co/translation/toh4364.html" inst="297.a"/> (Toh 153),
+              299.a.5<ref rend="pending" target="https://read.84000.co/translation/toh4364.html" inst="299.a"/> (Toh 154), and 300.a.2<ref rend="pending" target="https://read.84000.co/translation/toh4364.html" inst="300.a"/> (Toh 155). See also
               Herrmann-Pfandt 2008: Toh 153 = no. 96 (p. 55), Toh 154 = no. 187 (p. 100), Toh 155 = no. 237 (p. 125). </note> Of
             these, Toh 155 appears to be unrelated to the other two. It seems apparent, however, that at some point in its textual
             life (presumably in India), Toh 154 was taken as an excerpt from Toh 153 and transmitted as an independent text. A large 
@@ -180,10 +182,10 @@
         <head type="translation" tid="13"> The Translation </head>
         <head type="titleHon" tid="14">The Noble Mahāyāna Sūtra</head>
         <head type="titleMain" tid="15">The Questions of the Nāga King Sāgara</head>
-        <div type="section">
+        <div type="section" xml:id="UT22084-058-003-section-1">
           <milestone unit="chunk" xml:id="UT22084-058-003-14"/>
           <p tid="18">
-                        <ref cRef="F.198.a" type="folio"/> Homage to all buddhas and bodhisattvas!</p>
+                        <ref cRef="F.198.a" type="folio" xml:id="UT22084-058-003-116"/> Homage to all buddhas and bodhisattvas!</p>
           <lb/>
           <milestone unit="chunk" xml:id="UT22084-058-003-16"/>
           <p tid="20">Thus did I hear at one time. The Blessed One was residing within the ocean in the realm of the nāga king
@@ -194,7 +196,7 @@
           <milestone unit="chunk" xml:id="UT22084-058-003-17"/>
           <p tid="21">Then the Blessed One, knowing the assembly in its entirety, spoke to the nāga king Sāgara, “Lord of nāgas,
             alas! The state of this world has been shaped by various kinds of karma. The predispositions to various kinds of karma
-            are in turn conditioned by a variety of mental apprehensions. <ref cRef="F.198.b" type="folio"/> This is also what
+            are in turn conditioned by a variety of mental apprehensions. <ref cRef="F.198.b" type="folio" xml:id="UT22084-058-003-117"/> This is also what
             causes the variety of beings.</p>
           <milestone unit="chunk" xml:id="UT22084-058-003-18"/>
           <p tid="22">“Lord of nāgas, consider all the various forms of the beings that are present here in this retinue and in
@@ -216,7 +218,7 @@
             uninterruptedly. Consider how even the great brahmā gods, who hold dominion over one million worlds, appear faded, and
             their eyes are blinded, when they look upon the body of a thus-gone one. Lord of nāgas, look at the forms, marks,
             bodies, and adornments of these bodhisattvas. Lord of nāgas, they are all beautifully produced by the performance of
-            virtuous actions. <ref cRef="F.199.a" type="folio"/>
+            virtuous actions. <ref cRef="F.199.a" type="folio" xml:id="UT22084-058-003-118"/>
           </p>
           <milestone unit="chunk" xml:id="UT22084-058-003-21"/>
           <p tid="25">“Lord of nāgas, this dominion of yours likewise arose from a great amount of merit. Lord of nāgas, all the
@@ -241,7 +243,7 @@
             unfortunate destinies, the lower realms, the unfavorable states. What is that one teaching? It is to contemplate
             virtuous qualities while thinking, ‘However I am now, it will pass just like the days go by.’<note place="end" index="6" xml:id="UT22084-058-003-26"> This translation is tentative. The Tibetan reads, <foreign xml:lang="Bo-Ltn" type="quote">bdag ji ltar gyur cing nyin zhag rnams ’gro zhig gu snyam du dge ba’i chos rnams la rab tu rtog
                 pa’o</foreign>.</note> By repeatedly contemplating virtuous qualities in this way, there will be no opportunity
-              <ref cRef="F.199.b" type="folio"/> for nonvirtuous thoughts and mental states to arise. Having abandoned nonvirtue
+              <ref cRef="F.199.b" type="folio" xml:id="UT22084-058-003-119"/> for nonvirtuous thoughts and mental states to arise. Having abandoned nonvirtue
             and being endowed with virtuous qualities in this way, such beings have a pure outlook and they will find company with
             the buddhas and bodhisattvas, and with the noble hearers and solitary buddhas.</p>
           <lb/>
@@ -260,7 +262,7 @@
             the tendency for aggression. They will be able to reduce disease. They will plant the seed for extending life. They
             will guard, protect, and shield nonhumans. They will sleep happily, awaken happily, and not have negative dreams. They
             will have the gods’ protection even when asleep. They will be free from animosity and the propensity for animosity.
-            And they will have no fear of the lower realms <ref cRef="F.200.a" type="folio"/> and, having died and transmigrated,
+            And they will have no fear of the lower realms <ref cRef="F.200.a" type="folio" xml:id="UT22084-058-003-120"/> and, having died and transmigrated,
             they will be born among the gods in the joyful celestial realms. Lord of nāgas, those who have forsaken killing will
             obtain those ten qualities of pacification. If they dedicate the roots of virtue of forsaking killing toward
             unexcelled and perfect awakening, then, because of those roots of virtue, when they attain awakening the power of
@@ -276,7 +278,7 @@
             leaving this body, they will be born among the gods in the joyful celestial realms. Lord of nāgas, those who have
             forsaken stealing they will obtain those ten qualities of confidence. If they dedicate the roots of virtue of
             forsaking stealing toward unexcelled and perfect awakening, then, because of those roots of virtue, knowing themselves
-            to possess the wisdom of a thus-gone one that is free of secondary disturbing emotions, <ref cRef="F.200.b" type="folio"/>
+            to possess the wisdom of a thus-gone one that is free of secondary disturbing emotions, <ref cRef="F.200.b" type="folio" xml:id="UT22084-058-003-121"/>
             they will fully awaken to unexcelled and perfect buddhahood. </p>
           <milestone unit="chunk" xml:id="UT22084-058-003-31"/>
           <p tid="33">“Lord of nāgas, those who have forsaken sexual misconduct will obtain four qualities that are praised by the
@@ -296,7 +298,7 @@
             that are praised by gods and humans. If they dedicate the roots of virtue of forsaking lying toward unexcelled and
             perfect awakening, then, because of those roots of virtue, their words will be in accord with the truth. </p>
           <milestone unit="chunk" xml:id="UT22084-058-003-33"/>
-          <p tid="35">“Lord of nāgas, those who have forsaken slander will obtain five qualities of indivisibility. <ref cRef="F.201.a" type="folio"/> What are these five qualities? They will obtain indestructible bodies because they
+          <p tid="35">“Lord of nāgas, those who have forsaken slander will obtain five qualities of indivisibility. <ref cRef="F.201.a" type="folio" xml:id="UT22084-058-003-122"/> What are these five qualities? They will obtain indestructible bodies because they
             have transcended the terror of being harmed by others. They will obtain unswerving retinues because they do not desire
             that which others own. They will obtain unwavering faith because they trust that karma bears fruit. They will be
             indivisible from the Dharma because they are dedicated to accomplishment. And they will obtain unshakable friendship
@@ -316,7 +318,7 @@
             these three? Because of their timely words they will certainly please the wise. Because they answer<note place="end" index="7" xml:id="UT22084-058-003-36"> Reading <foreign xml:lang="Bo-Ltn" type="term">glon</foreign> from S in place
               of <foreign xml:lang="Bo-Ltn" type="term">lon</foreign>.</note> questions so well, their minds will certainly reach
             the truth. And because they are genuine friends, they will certainly obtain the greatness of gods and humans. Lord of
-            nāgas, those who have forsaken meaningless talk <ref cRef="F.201.b" type="folio"/> will obtain those three complete
+            nāgas, those who have forsaken meaningless talk <ref cRef="F.201.b" type="folio" xml:id="UT22084-058-003-123"/> will obtain those three complete
             certainties. If they dedicate the roots of virtue of forsaking meaningless talk toward unexcelled and perfect
             awakening, then, because of those roots of virtue, they will become thus-gone ones who teach continuously and do not
             otherwise speak.</p>
@@ -336,7 +338,7 @@
             They will be inclined toward eliminating conflicts and quarrels. They will be inclined toward being honest, kind, and
             gentle. They will be renowned as noble beings. They will have greater ability to benefit all beings through such means
             as delighting in others’ happiness and having loving kindness. They will be honored by many beings since they delight
-            in others’ happiness and have much faith. And because they are kind and capable, <ref cRef="F.202.a" type="folio"/> it
+            in others’ happiness and have much faith. And because they are kind and capable, <ref cRef="F.202.a" type="folio" xml:id="UT22084-058-003-124"/> it
             will not be difficult to attain rebirth in the abode of Brahmā. Lord of nāgas, those who have forsaken malevolence
             will obtain those eight qualities that bring peace of mind. If they dedicate the roots of virtue of forsaking
             malevolence toward unexcelled and perfect awakening, then, because of those roots of virtue, they will become
@@ -361,7 +363,7 @@
               generosity (starting on <ptr target="#UT22084-058-003-53"/>: “Lord of nāgas, if bodhisattvas who have forsaken
               killing engage in generosity”) is absent from Toh 153. See the introduction (<ptr target="#UT22084-058-003-4"/>) for
               more information on this sūtra.</note> these paths of the ten virtues are the roots and foundations for all the
-            mundane and the supramundane excellence up to and including unexcelled and perfect awakening. Their opposites <ref cRef="F.202.b" type="folio"/> are the paths of the ten nonvirtues. If one has predominantly resorted to, cultivated,
+            mundane and the supramundane excellence up to and including unexcelled and perfect awakening. Their opposites <ref cRef="F.202.b" type="folio" xml:id="UT22084-058-003-125"/> are the paths of the ten nonvirtues. If one has predominantly resorted to, cultivated,
             and engaged in them to a great extent, that is cause for birth in the hell realms. If one has engaged in them to a
             middling extent, that is cause for birth in the realm of animals. If one has engaged in them to a lesser extent, then
             that is cause for birth in the realm of the Lord of Death. </p>
@@ -388,7 +390,7 @@
             attendants will be fractious and have bad characters. </p>
           <milestone unit="chunk" xml:id="UT22084-058-003-48"/>
           <p tid="47">“Those who use harsh words will be led to the hell realms, to the animal realm, or to the realm of the Lord
-            of Death. Even if they are subsequently born in the human realm, <ref cRef="F.203.a" type="folio"/> they will
+            of Death. Even if they are subsequently born in the human realm, <ref cRef="F.203.a" type="folio" xml:id="UT22084-058-003-126"/> they will
             experience two consequences: they will hear unpleasant speech and aggressive speech.</p>
           <milestone unit="chunk" xml:id="UT22084-058-003-49"/>
           <p tid="48">“Those who engage in meaningless talk will be led to the hell realms, to the animal realm, or to the realm
@@ -415,7 +417,7 @@
           <milestone unit="chunk" xml:id="UT22084-058-003-54"/>
           <p tid="53">“Lord of nāgas, if bodhisattvas who have forsaken stealing engage in generosity, then
             their wealth will increase. It will not be stolen, and they will become freely generous without consideration for any
-            of their possessions. <ref cRef="F.203.b" type="folio"/> And when they engage in bodhisattva activity, they will
+            of their possessions. <ref cRef="F.203.b" type="folio" xml:id="UT22084-058-003-127"/> And when they engage in bodhisattva activity, they will
             accomplish all the aspects of a buddha and so gain unexcelled qualities.</p>
           <milestone unit="chunk" xml:id="UT22084-058-003-55"/>
           <p tid="54">“Lord of nāgas, if bodhisattvas who have forsaken sexual misconduct engage in generosity, then their wealth
@@ -439,7 +441,7 @@
             in bodhisattva activity, they will be skilled at cutting through all doubts.</p>
           <milestone unit="chunk" xml:id="UT22084-058-003-60"/>
           <p tid="59">“Lord of nāgas, if bodhisattvas who have forsaken covetousness engage in generosity, then their wealth will
-            increase. It will not be stolen, and their minds will be inclined toward great pleasures and enjoyments. <ref cRef="F.204.a" type="folio"/> And when they engage in bodhisattva activity, they will aspire to the vast and they
+            increase. It will not be stolen, and their minds will be inclined toward great pleasures and enjoyments. <ref cRef="F.204.a" type="folio" xml:id="UT22084-058-003-128"/> And when they engage in bodhisattva activity, they will aspire to the vast and they
             will be renowned as mighty.</p>
           <milestone unit="chunk" xml:id="UT22084-058-003-61"/>
           <p tid="60">“Lord of nāgas, if bodhisattvas who have forsaken malevolence engage in generosity, then their wealth will
@@ -461,7 +463,7 @@
             then mindfulness, intelligence, understanding, modesty, and joy will be purified. If they are adorned with insight,
             then all degenerate views will be vanquished. If they are adorned with love, then there will be no anger toward any
             being. If they are adorned with compassion, then no beings will be abandoned. If they are adorned with joy, then one
-            will not be discouraged. <ref cRef="F.204.b" type="folio"/> If they are adorned with equanimity, then attachment and
+            will not be discouraged. <ref cRef="F.204.b" type="folio" xml:id="UT22084-058-003-129"/> If they are adorned with equanimity, then attachment and
             anger will be abandoned. If they are adorned with the means of attraction, then they will ripen all beings. If they
             are adorned with the applications of mindfulness, then one will become expert in the body, feelings, mind, and
             phenomena. If they are adorned with the correct relinquishments, then all nonvirtuous qualities will be abandoned and
@@ -481,7 +483,7 @@
             the paths of the ten virtues with these numerous distinctions.</p>
           <milestone unit="chunk" xml:id="UT22084-058-003-65"/>
           <p tid="64">“Lord of nāgas, comsider the following analogy: The earth is the foundation for all things established on the ground,
-            such as all villages, towns, cities, districts, regions, and kingdoms. <ref cRef="F.205.a" type="folio"/> It is the
+            such as all villages, towns, cities, districts, regions, and kingdoms. <ref cRef="F.205.a" type="folio" xml:id="UT22084-058-003-130"/> It is the
             basis for all grass, shrubs, herbs, forests, and farmland, and all seeds, sprouts, and harvests. It is where all
             sowing, ploughing, and cultivation take place. In the same way, lord of nāgas, the paths of the ten virtues are the
             basis for taking birth in the realms of gods and humans. They are the basis for everything from the path of learning
@@ -495,7 +497,7 @@
           <milestone unit="chunk" xml:id="UT22084-058-003-67"/>
           <trailer tid="66">This concludes the noble Great Vehicle sūtra “The Questions of the Nāga King Sāgara.”</trailer>
         </div>
-        <div type="colophon">
+        <div type="colophon" xml:id="UT22084-058-003-colophon">
           <head type="colophon" tid="67">Colophon</head>
           <milestone unit="chunk" xml:id="UT22084-058-003-68"/>
           <p tid="68">Translated, edited, and finalized, having been revised according to the new terminological register,
@@ -529,7 +531,7 @@
       </div>
       <div type="listBibl">
         <head type="listBibl" tid="71">Bibliography</head>
-        <div type="section">
+        <div type="section" xml:id="UT22084-058-003-listBibl-1">
           <bibl xml:id="UT22084-058-003-70">
                         <title xml:lang="Bo-Ltn">’phags pa klu’i rgyal po rgya mtshos zhus pa zhes bya ba theg
               pa chen po’i mdo</title> (<title xml:lang="Sa-Ltn">Ārya­sāgara­nāga­rāja­paripṛcchā­nāma­mahā­yāna­sūtra</title>).
@@ -546,11 +548,11 @@
             Stok no. 134, Stok Palace Kangyur, vol. 66 (mdo sde, ba), folios 282r–291v.</bibl>
           <bibl xml:id="UT22084-058-003-73">
                         <title xml:lang="Bo-Ltn">sgra sbyor bam po gnyis pa</title>. Toh. 4347, Degé Tengyur,
-            vol. 204 (sna tshogs, co), folios 131b–160a.<!--Reference Toh 4347-->
+            vol. 204 (sna tshogs, co), folios 131b–160a.<ref rend="pending" target="https://read.84000.co/translation/toh4347.html"/>
                     </bibl>
           <bibl xml:id="UT22084-058-003-74">Denkarma (<title xml:lang="Bo-Ltn">pho brang stod thang ldan [/ lhan] dkar gyi chos
               ’gyur ro cog gi dkar chag</title>). Degé Tengyur, vol. 206 (sna tshogs, jo), folios 294.b -
-            310.a.<!--Reference Toh 4364-->
+            310.a.<ref rend="pending" target="https://read.84000.co/translation/toh4364.html"/>
                     </bibl>
           <bibl xml:id="UT22084-058-003-75">Herrmann-Pfandt, Adelheid. <title xml:lang="de">Die lHan kar ma: ein früher Katalog
               der ins Tibetische übersetzten buddhistischen Texte</title>. Wien: Verlag der Österreichischen Akademie der
@@ -839,7 +841,7 @@
               <term xml:lang="Sa-Ltn">Jinamitra</term>
               <term type="definition">An Indian Kashmiri paṇḍita who was resident in Tibet during the late eighth and early ninth
                 centuries. He worked with several Tibetan translators on the translation of several sūtras. He is also the author
-                of the <title xml:lang="Sa-Ltn">Nyāya­bindu­piṇḍārtha</title> (Toh 4233)<!--Reference Toh 4233-->, which is
+                of the <title xml:lang="Sa-Ltn">Nyāya­bindu­piṇḍārtha</title> (Toh 4233)<ref rend="pending" target="https://read.84000.co/translation/toh4233.html"/>, which is
                 contained in the Tibetan Tengyur (<foreign xml:lang="Bo-Ltn">bstan ’gyur</foreign>) collection.</term>
               
             </gloss>
@@ -900,4 +902,257 @@
       </div>
     </back>
   </text>
+
+    <notes-cache xmlns="http://read.84000.co/ns/1.0" timestamp="2020-11-25T16:04:30.8Z" app-version="2.0.1">
+        <end-note id="UT22084-058-003-5" part-id="introduction" index="1"/>
+        <end-note id="UT22084-058-003-6" part-id="introduction" index="2"/>
+        <end-note id="UT22084-058-003-8" part-id="introduction" index="3"/>
+        <end-note id="UT22084-058-003-10" part-id="introduction" index="4"/>
+        <end-note id="UT22084-058-003-115" part-id="introduction" index="5"/>
+        <end-note id="UT22084-058-003-23" part-id="UT22084-058-003-section-1" index="6"/>
+        <end-note id="UT22084-058-003-26" part-id="UT22084-058-003-section-1" index="7"/>
+        <end-note id="UT22084-058-003-36" part-id="UT22084-058-003-section-1" index="8"/>
+        <end-note id="UT22084-058-003-38" part-id="UT22084-058-003-section-1" index="9"/>
+        <end-note id="UT22084-058-003-42" part-id="UT22084-058-003-section-1" index="10"/>
+    </notes-cache>
+    <milestones-cache xmlns="http://read.84000.co/ns/1.0" timestamp="2020-11-23T14:07:50.436Z" app-version="2.0.1">
+        <milestone id="UT22084-058-003-1" part-id="summary" index="1"/>
+        <milestone id="UT22084-058-003-2" part-id="acknowledgment" index="1"/>
+        <milestone id="UT22084-058-003-3" part-id="introduction" index="1"/>
+        <milestone id="UT22084-058-003-4" part-id="introduction" index="2"/>
+        <milestone id="UT22084-058-003-7" part-id="introduction" index="3"/>
+        <milestone id="UT22084-058-003-9" part-id="introduction" index="4"/>
+        <milestone id="UT22084-058-003-11" part-id="introduction" index="5"/>
+        <milestone id="UT22084-058-003-14" part-id="UT22084-058-003-section-1" index="1"/>
+        <milestone id="UT22084-058-003-16" part-id="UT22084-058-003-section-1" index="2"/>
+        <milestone id="UT22084-058-003-17" part-id="UT22084-058-003-section-1" index="3"/>
+        <milestone id="UT22084-058-003-18" part-id="UT22084-058-003-section-1" index="4"/>
+        <milestone id="UT22084-058-003-19" part-id="UT22084-058-003-section-1" index="5"/>
+        <milestone id="UT22084-058-003-20" part-id="UT22084-058-003-section-1" index="6"/>
+        <milestone id="UT22084-058-003-21" part-id="UT22084-058-003-section-1" index="7"/>
+        <milestone id="UT22084-058-003-24" part-id="UT22084-058-003-section-1" index="8"/>
+        <milestone id="UT22084-058-003-25" part-id="UT22084-058-003-section-1" index="9"/>
+        <milestone id="UT22084-058-003-27" part-id="UT22084-058-003-section-1" index="10"/>
+        <milestone id="UT22084-058-003-28" part-id="UT22084-058-003-section-1" index="11"/>
+        <milestone id="UT22084-058-003-29" part-id="UT22084-058-003-section-1" index="12"/>
+        <milestone id="UT22084-058-003-30" part-id="UT22084-058-003-section-1" index="13"/>
+        <milestone id="UT22084-058-003-31" part-id="UT22084-058-003-section-1" index="14"/>
+        <milestone id="UT22084-058-003-32" part-id="UT22084-058-003-section-1" index="15"/>
+        <milestone id="UT22084-058-003-33" part-id="UT22084-058-003-section-1" index="16"/>
+        <milestone id="UT22084-058-003-34" part-id="UT22084-058-003-section-1" index="17"/>
+        <milestone id="UT22084-058-003-35" part-id="UT22084-058-003-section-1" index="18"/>
+        <milestone id="UT22084-058-003-37" part-id="UT22084-058-003-section-1" index="19"/>
+        <milestone id="UT22084-058-003-39" part-id="UT22084-058-003-section-1" index="20"/>
+        <milestone id="UT22084-058-003-40" part-id="UT22084-058-003-section-1" index="21"/>
+        <milestone id="UT22084-058-003-41" part-id="UT22084-058-003-section-1" index="22"/>
+        <milestone id="UT22084-058-003-43" part-id="UT22084-058-003-section-1" index="23"/>
+        <milestone id="UT22084-058-003-44" part-id="UT22084-058-003-section-1" index="24"/>
+        <milestone id="UT22084-058-003-45" part-id="UT22084-058-003-section-1" index="25"/>
+        <milestone id="UT22084-058-003-46" part-id="UT22084-058-003-section-1" index="26"/>
+        <milestone id="UT22084-058-003-47" part-id="UT22084-058-003-section-1" index="27"/>
+        <milestone id="UT22084-058-003-48" part-id="UT22084-058-003-section-1" index="28"/>
+        <milestone id="UT22084-058-003-49" part-id="UT22084-058-003-section-1" index="29"/>
+        <milestone id="UT22084-058-003-50" part-id="UT22084-058-003-section-1" index="30"/>
+        <milestone id="UT22084-058-003-51" part-id="UT22084-058-003-section-1" index="31"/>
+        <milestone id="UT22084-058-003-52" part-id="UT22084-058-003-section-1" index="32"/>
+        <milestone id="UT22084-058-003-53" part-id="UT22084-058-003-section-1" index="33"/>
+        <milestone id="UT22084-058-003-54" part-id="UT22084-058-003-section-1" index="34"/>
+        <milestone id="UT22084-058-003-55" part-id="UT22084-058-003-section-1" index="35"/>
+        <milestone id="UT22084-058-003-56" part-id="UT22084-058-003-section-1" index="36"/>
+        <milestone id="UT22084-058-003-57" part-id="UT22084-058-003-section-1" index="37"/>
+        <milestone id="UT22084-058-003-58" part-id="UT22084-058-003-section-1" index="38"/>
+        <milestone id="UT22084-058-003-59" part-id="UT22084-058-003-section-1" index="39"/>
+        <milestone id="UT22084-058-003-60" part-id="UT22084-058-003-section-1" index="40"/>
+        <milestone id="UT22084-058-003-61" part-id="UT22084-058-003-section-1" index="41"/>
+        <milestone id="UT22084-058-003-62" part-id="UT22084-058-003-section-1" index="42"/>
+        <milestone id="UT22084-058-003-63" part-id="UT22084-058-003-section-1" index="43"/>
+        <milestone id="UT22084-058-003-64" part-id="UT22084-058-003-section-1" index="44"/>
+        <milestone id="UT22084-058-003-65" part-id="UT22084-058-003-section-1" index="45"/>
+        <milestone id="UT22084-058-003-66" part-id="UT22084-058-003-section-1" index="46"/>
+        <milestone id="UT22084-058-003-67" part-id="UT22084-058-003-section-1" index="47"/>
+        <milestone id="UT22084-058-003-68" part-id="UT22084-058-003-colophon" index="1"/>
+    </milestones-cache>
+    <folios-cache xmlns="http://read.84000.co/ns/1.0" timestamp="2020-11-23T14:07:50.436Z" app-version="2.0.1" tei-version="v-1.1.3-2020">
+        <folio-ref id="UT22084-058-003-116" resource-id="toh154" index-in-resource="1" index-in-sort="1" cRef-volume=""/>
+        <folio-ref id="UT22084-058-003-117" resource-id="toh154" index-in-resource="2" index-in-sort="2" cRef-volume=""/>
+        <folio-ref id="UT22084-058-003-118" resource-id="toh154" index-in-resource="3" index-in-sort="3" cRef-volume=""/>
+        <folio-ref id="UT22084-058-003-119" resource-id="toh154" index-in-resource="4" index-in-sort="4" cRef-volume=""/>
+        <folio-ref id="UT22084-058-003-120" resource-id="toh154" index-in-resource="5" index-in-sort="5" cRef-volume=""/>
+        <folio-ref id="UT22084-058-003-121" resource-id="toh154" index-in-resource="6" index-in-sort="6" cRef-volume=""/>
+        <folio-ref id="UT22084-058-003-122" resource-id="toh154" index-in-resource="7" index-in-sort="7" cRef-volume=""/>
+        <folio-ref id="UT22084-058-003-123" resource-id="toh154" index-in-resource="8" index-in-sort="8" cRef-volume=""/>
+        <folio-ref id="UT22084-058-003-124" resource-id="toh154" index-in-resource="9" index-in-sort="9" cRef-volume=""/>
+        <folio-ref id="UT22084-058-003-125" resource-id="toh154" index-in-resource="10" index-in-sort="10" cRef-volume=""/>
+        <folio-ref id="UT22084-058-003-126" resource-id="toh154" index-in-resource="11" index-in-sort="11" cRef-volume=""/>
+        <folio-ref id="UT22084-058-003-127" resource-id="toh154" index-in-resource="12" index-in-sort="12" cRef-volume=""/>
+        <folio-ref id="UT22084-058-003-128" resource-id="toh154" index-in-resource="13" index-in-sort="13" cRef-volume=""/>
+        <folio-ref id="UT22084-058-003-129" resource-id="toh154" index-in-resource="14" index-in-sort="14" cRef-volume=""/>
+        <folio-ref id="UT22084-058-003-130" resource-id="toh154" index-in-resource="15" index-in-sort="15" cRef-volume=""/>
+    </folios-cache>
+    <glossary-cache xmlns="http://read.84000.co/ns/1.0" timestamp="2020-11-23T17:07:42.363Z" app-version="2.0.1">
+        <gloss id="UT22084-058-003-82" index="1" timestamp="2020-11-23T17:07:42.363Z" word-count="3" letter-count="27">
+            <location id="UT22084-058-003-63"/>
+        </gloss>
+        <gloss id="UT22084-058-003-83" index="2" timestamp="2020-11-23T17:07:42.363Z" word-count="1" letter-count="5">
+            <location id="UT22084-058-003-16"/>
+            <location id="UT22084-058-003-21"/>
+            <location id="UT22084-058-003-66"/>
+        </gloss>
+        <gloss id="UT22084-058-003-84" index="3" timestamp="2020-11-23T17:07:42.363Z" word-count="4" letter-count="25">
+            <location id="UT22084-058-003-63"/>
+        </gloss>
+        <gloss id="UT22084-058-003-85" index="4" timestamp="2020-11-23T17:07:42.363Z" word-count="5" letter-count="35">
+            <location id="UT22084-058-003-40"/>
+        </gloss>
+        <gloss id="UT22084-058-003-106" index="5" timestamp="2020-11-23T17:07:42.363Z" word-count="1" letter-count="6">
+            <location id="UT22084-058-003-16"/>
+            <location id="UT22084-058-003-21"/>
+            <location id="UT22084-058-003-34"/>
+            <location id="UT22084-058-003-39"/>
+            <location id="UT22084-058-003-93"/>
+        </gloss>
+        <gloss id="UT22084-058-003-86" index="6" timestamp="2020-11-23T17:07:42.363Z" word-count="2" letter-count="23">
+            <location id="UT22084-058-003-63"/>
+        </gloss>
+        <gloss id="UT22084-058-003-87" index="7" timestamp="2020-11-23T17:07:42.363Z" word-count="1" letter-count="9">
+            <location id="UT22084-058-003-16"/>
+        </gloss>
+        <gloss id="UT22084-058-003-107" index="8" timestamp="2020-11-23T17:07:42.363Z" word-count="1" letter-count="8">
+            <location id="UT22084-058-003-7"/>
+            <location id="UT22084-058-003-68"/>
+        </gloss>
+        <gloss id="UT22084-058-003-88" index="9" timestamp="2020-11-23T17:07:42.363Z" word-count="6" letter-count="37">
+            <location id="UT22084-058-003-64"/>
+        </gloss>
+        <gloss id="UT22084-058-003-89" index="10" timestamp="2020-11-23T17:07:42.363Z" word-count="2" letter-count="14">
+            <location id="UT22084-058-003-63"/>
+        </gloss>
+        <gloss id="UT22084-058-003-90" index="11" timestamp="2020-11-23T17:07:42.363Z" word-count="4" letter-count="26">
+            <location id="UT22084-058-003-64"/>
+        </gloss>
+        <gloss id="UT22084-058-003-91" index="12" timestamp="2020-11-23T17:07:42.363Z" word-count="1" letter-count="9">
+            <location id="UT22084-058-003-16"/>
+            <location id="UT22084-058-003-21"/>
+            <location id="UT22084-058-003-66"/>
+        </gloss>
+        <gloss id="UT22084-058-003-92" index="13" timestamp="2020-11-23T17:07:42.363Z" word-count="1" letter-count="6">
+            <location id="UT22084-058-003-16"/>
+            <location id="UT22084-058-003-21"/>
+        </gloss>
+        <gloss id="UT22084-058-003-93" index="14" timestamp="2020-11-23T17:07:42.363Z" word-count="3" letter-count="17">
+            <location id="UT22084-058-003-20"/>
+        </gloss>
+        <gloss id="UT22084-058-003-108" index="15" timestamp="2020-11-23T17:07:42.363Z" word-count="1" letter-count="9">
+            <location id="UT22084-058-003-7"/>
+            <location id="UT22084-058-003-68"/>
+        </gloss>
+        <gloss id="UT22084-058-003-94" index="16" timestamp="2020-11-23T17:07:42.363Z" word-count="1" letter-count="7">
+            <location id="UT22084-058-003-16"/>
+            <location id="UT22084-058-003-21"/>
+        </gloss>
+        <gloss id="UT22084-058-003-95" index="17" timestamp="2020-11-23T17:07:42.363Z" word-count="3" letter-count="18">
+            <location id="UT22084-058-003-63"/>
+        </gloss>
+        <gloss id="UT22084-058-003-109" index="18" timestamp="2020-11-23T17:07:42.363Z" word-count="3" letter-count="13">
+            <location id="UT22084-058-003-40"/>
+            <location id="UT22084-058-003-41"/>
+            <location id="UT22084-058-003-43"/>
+            <location id="UT22084-058-003-44"/>
+            <location id="UT22084-058-003-45"/>
+            <location id="UT22084-058-003-46"/>
+            <location id="UT22084-058-003-47"/>
+            <location id="UT22084-058-003-48"/>
+            <location id="UT22084-058-003-49"/>
+            <location id="UT22084-058-003-50"/>
+            <location id="UT22084-058-003-51"/>
+            <location id="UT22084-058-003-52"/>
+        </gloss>
+        <gloss id="UT22084-058-003-96" index="19" timestamp="2020-11-23T17:07:42.363Z" word-count="1" letter-count="8">
+            <location id="UT22084-058-003-16"/>
+            <location id="UT22084-058-003-21"/>
+        </gloss>
+        <gloss id="UT22084-058-003-97" index="20" timestamp="2020-11-23T17:07:42.363Z" word-count="3" letter-count="19">
+            <location id="UT22084-058-003-63"/>
+        </gloss>
+        <gloss id="UT22084-058-003-110" index="21" timestamp="2020-11-23T17:07:42.363Z" word-count="1" letter-count="10">
+            <location id="UT22084-058-003-7"/>
+            <location id="UT22084-058-003-68"/>
+        </gloss>
+        <gloss id="UT22084-058-003-98" index="22" timestamp="2020-11-23T17:07:42.363Z" word-count="1" letter-count="4">
+            <location id="UT22084-058-003-3"/>
+            <location id="UT22084-058-003-16"/>
+            <location id="UT22084-058-003-17"/>
+            <location id="UT22084-058-003-18"/>
+            <location id="UT22084-058-003-19"/>
+            <location id="UT22084-058-003-20"/>
+            <location id="UT22084-058-003-21"/>
+            <location id="UT22084-058-003-24"/>
+            <location id="UT22084-058-003-25"/>
+            <location id="UT22084-058-003-27"/>
+            <location id="UT22084-058-003-29"/>
+            <location id="UT22084-058-003-30"/>
+            <location id="UT22084-058-003-31"/>
+            <location id="UT22084-058-003-32"/>
+            <location id="UT22084-058-003-33"/>
+            <location id="UT22084-058-003-34"/>
+            <location id="UT22084-058-003-35"/>
+            <location id="UT22084-058-003-37"/>
+            <location id="UT22084-058-003-39"/>
+            <location id="UT22084-058-003-40"/>
+            <location id="UT22084-058-003-41"/>
+            <location id="UT22084-058-003-43"/>
+            <location id="UT22084-058-003-52"/>
+            <location id="UT22084-058-003-53"/>
+            <location id="UT22084-058-003-54"/>
+            <location id="UT22084-058-003-55"/>
+            <location id="UT22084-058-003-56"/>
+            <location id="UT22084-058-003-57"/>
+            <location id="UT22084-058-003-58"/>
+            <location id="UT22084-058-003-59"/>
+            <location id="UT22084-058-003-60"/>
+            <location id="UT22084-058-003-61"/>
+            <location id="UT22084-058-003-62"/>
+            <location id="UT22084-058-003-63"/>
+            <location id="UT22084-058-003-64"/>
+            <location id="UT22084-058-003-65"/>
+            <location id="UT22084-058-003-66"/>
+            <location id="UT22084-058-003-67"/>
+            <location id="UT22084-058-003-42"/>
+            <location id="UT22084-058-003-111"/>
+        </gloss>
+        <gloss id="UT22084-058-003-99" index="23" timestamp="2020-11-23T17:07:42.363Z" word-count="2" letter-count="16">
+            <location id="UT22084-058-003-33"/>
+        </gloss>
+        <gloss id="UT22084-058-003-100" index="24" timestamp="2020-11-23T17:07:42.363Z" word-count="1" letter-count="7">
+            <location id="UT22084-058-003-18"/>
+            <location id="UT22084-058-003-33"/>
+            <location id="UT22084-058-003-57"/>
+            <location id="UT22084-058-003-58"/>
+        </gloss>
+        <gloss id="UT22084-058-003-111" index="25" timestamp="2020-11-23T17:07:42.363Z" word-count="1" letter-count="6">
+            <location id="UT22084-058-003-3"/>
+            <location id="UT22084-058-003-16"/>
+            <location id="UT22084-058-003-17"/>
+            <location id="UT22084-058-003-66"/>
+            <location id="UT22084-058-003-67"/>
+        </gloss>
+        <gloss id="UT22084-058-003-112" index="26" timestamp="2020-11-23T17:07:42.363Z" word-count="1" letter-count="5">
+            <location id="UT22084-058-003-16"/>
+            <location id="UT22084-058-003-21"/>
+        </gloss>
+        <gloss id="UT22084-058-003-101" index="27" timestamp="2020-11-23T17:07:42.363Z" word-count="3" letter-count="29">
+            <location id="UT22084-058-003-30"/>
+        </gloss>
+        <gloss id="UT22084-058-003-102" index="28" timestamp="2020-11-23T17:07:42.363Z" word-count="2" letter-count="10">
+            <location id="UT22084-058-003-64"/>
+        </gloss>
+        <gloss id="UT22084-058-003-105" index="29" timestamp="2020-11-23T17:07:42.363Z" word-count="1" letter-count="5">
+            <location id="UT22084-058-003-16"/>
+            <location id="UT22084-058-003-21"/>
+        </gloss>
+        <gloss id="UT22084-058-003-114" index="30" timestamp="2020-11-23T17:07:42.363Z" word-count="2" letter-count="8">
+            <location id="UT22084-058-003-7"/>
+            <location id="UT22084-058-003-68"/>
+        </gloss>
+    </glossary-cache>
 </TEI>
