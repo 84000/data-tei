@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../../../schema/current/translation.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<tei:TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -19,7 +19,7 @@
                 <consultant role="dharmaMaster" ref="contributors.xml#person-40">Chökyi Nyima Rinpoche</consultant>
             </titleStmt>
             <editionStmt>
-                <edition>v 1.1.10 <date>2020</date>
+                <edition>v 1.1.11 <date>2020</date>
                 </edition>
             </editionStmt>
             <publicationStmt status="1">
@@ -54,7 +54,7 @@
                 </bibl>
             </sourceDesc>
             <notesStmt>
-                <note type="lastUpdated" date-time="2020-12-03T09:29:16.41Z" user="admin">03/12/2020 09:29:16</note>
+                <note type="lastUpdated" date-time="2020-12-09T15:17:43.926Z" user="admin">09/12/2020 15:17:43</note>
 
                 <note type="updated" update="text-version" value="v 0.1.0" date-time="2019-10-10T08:04:08.457Z" user="andreas">v 0.1.0</note>
                 <note type="updated" update="translation-status" value="2.d" date-time="2019-12-19T07:26:19.082Z" user="andreas">2.d</note>
@@ -79,6 +79,7 @@
     <note type="updated" update="text-version" value="1.1.8" date-time="2020-11-23T13:57:44.998Z" user="admin">Auto (TEI migration 2.0.0)</note>
     <note type="updated" update="text-version" value="1.1.9" date-time="2020-11-25T16:00:42.569Z" user="celso">Updated pending links</note>
     <note type="updated" update="text-version" value="1.1.10" date-time="2020-12-03T09:29:11.946Z" user="line-tofte">Auto (update-contributors)</note>
+    <note type="updated" update="text-version" value="1.1.11" date-time="2020-12-09T15:17:39.429Z" user="andre">fixed some glossary entries and made them work.</note>
             </notesStmt>
         </fileDesc>
     </teiHeader>
@@ -524,7 +525,7 @@
                                 protectors.</term>
                         </gloss>
                     </item>
-                    <item>
+                    <!--<item>
                         <gloss type="term" xml:id="UT22084-100-001-58">
                             <term>eliminate improper ways of engaging in practice</term>
                             <term xml:lang="Bo-Ltn">snrel zhir sgrub pa mngon par bsgrub par rnams
@@ -532,7 +533,7 @@
                             <term xml:lang="bo">སྣྲེལ་ཞིར་སྒྲུབ་པ་མངོན་པར་བསྒྲུབ་པར་རྣམས་ཉེ་བར་སྒྲུབ་པ།</term>
                             <term xml:lang="Sa-Ltn"/>
                         </gloss>
-                    </item>
+                    </item>-->
                     <item>
                         <gloss type="term" xml:id="UT22084-100-001-59">
                             <term>garuḍa</term>
@@ -874,7 +875,7 @@
                             <term xml:lang="bo">ལུས་ངན་པོ།</term>
                             <term xml:lang="Sa-Ltn">Kubera</term>
                             <term type="definition">One of the great kings of the four directions,
-                                Kubera guards the northern quarter of the heavens. </term>
+                                Kubera guards the northern quarter of the heavens. Also known as Vaiśravaṇa.</term>
                         </gloss>
                     </item>
                     <item>
@@ -1041,10 +1042,10 @@
                     </item>
                     <item>
                         <gloss type="person" xml:id="UT22084-100-001-108">
-                            <term>Pāñcālagaṇḍa</term>
+                            <term>Pāñcāla­gaṇḍa</term>
                             <term xml:lang="Bo-Ltn">lnga len tshigs </term>
                             <term xml:lang="bo">ལྔ་ལེན་ཚིགས།</term>
-                            <term xml:lang="Sa-Ltn">Pāñcālagaṇḍa</term>
+                            <term xml:lang="Sa-Ltn">Pāñcāla­gaṇḍa</term>
                             <term type="definition">Name of a yakṣa general in the <title xml:lang="Sa-Ltn">Mahā­māyūrī­vidyārājñī</title> (Toh 559). <ref rend="pending" target="https://read.84000.co/translation/toh559.html"/>
                             </term>
                         </gloss>
@@ -1242,10 +1243,10 @@
                     </item>
                     <item>
                         <gloss type="person" xml:id="UT22084-100-001-129">
-                            <term>Triśirsaka</term>
+                            <term>Triśirṣaka</term>
                             <term xml:lang="Bo-Ltn">stong gsum </term>
                             <term xml:lang="bo">སྟོང་གསུམ།</term>
-                            <term xml:lang="Sa-Ltn">Triśirsaka</term>
+                            <term xml:lang="Sa-Ltn">Triśirṣaka</term>
                             <term type="definition">Name of a nāga king.</term>
                         </gloss>
                     </item>
@@ -1274,7 +1275,7 @@
                             <term xml:lang="bo">རྣམ་ཐོས་བུ།</term>
                             <term xml:lang="Sa-Ltn">Vaiśravaṇa</term>
                             <term type="definition">One of the eight guardians of the directions,
-                                <term type="ignore">Vaiśravaṇa</term> guards the northern quarter. </term>
+                                <term type="ignore">Vaiśravaṇa</term> guards the northern quarter. Also known as Kubera.</term>
                         </gloss>
                     </item>
                     <item>
@@ -1445,7 +1446,7 @@
         <milestone id="UT22084-100-001-45" part-id="UT22084-100-001-section-1" index="27"/>
         <milestone id="UT22084-100-001-46" part-id="UT22084-100-001-section-1" index="28"/>
     </milestones-cache>
-    <folios-cache xmlns="http://read.84000.co/ns/1.0" timestamp="2020-12-03T09:29:16.41Z" app-version="2.1.1" tei-version="v-1.1.10-2020">
+    <folios-cache xmlns="http://read.84000.co/ns/1.0" timestamp="2020-12-09T15:17:43.926Z" app-version="2.1.4" tei-version="v-1.1.11-2020">
         <folio-ref id="UT22084-100-001-171" resource-id="toh846" index-in-resource="1" index-in-sort="1" cRef-volume=""/>
         <folio-ref id="UT22084-100-001-172" resource-id="toh846" index-in-resource="2" index-in-sort="2" cRef-volume=""/>
         <folio-ref id="UT22084-100-001-173" resource-id="toh846" index-in-resource="3" index-in-sort="3" cRef-volume=""/>
@@ -1748,4 +1749,4 @@
             <location id="UT22084-100-001-22"/>
         </gloss>
     </glossary-cache>
-</TEI>
+</tei:TEI>
