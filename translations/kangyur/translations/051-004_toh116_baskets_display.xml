@@ -19,23 +19,23 @@
                     supervision of 84000: Translating the Words of the Buddha</author>
                 <author role="translatorEng" ref="contributors.xml#person-142">Peter Alan Roberts</author>
                 <consultant role="advisor" ref="contributors.xml#person-145">Tulku Yeshi</consultant>
-                <editor role="reviser" ref="contributors.xml#person-232">Ben Gleason</editor>
+                <editor role="proofreader" ref="contributors.xml#person-232">Ben Gleason</editor>
                 <editor role="reviser" ref="contributors.xml#person-143">Emily Bower</editor>
                 <editor role="TEImarkupEditor" ref="contributors.xml#person-253">Michael Engle</editor>
                 <consultant role="advisor" ref="contributors.xml#person-235">William Tuladhar-Douglas</consultant>
                 <consultant role="advisor" ref="contributors.xml#person-236">Charles Manson</consultant>
                 <consultant role="advisor" ref="contributors.xml#person-238">Sanjukta Gupta</consultant>
                 <consultant role="advisor" ref="contributors.xml#person-237">Richard Gombrich</consultant>
+    <consultant role="projectManager" ref="contributors.xml#person-143">Emily Bower</consultant>
                 <sponsor ref="sponsors.xml#sponsor-31">Tony Leung Chiu Wai and family</sponsor>
             </titleStmt>
             <editionStmt>
-                <edition>v 2.47 <date>2019</date>
+                <edition>v 2.47.7 <date>2020</date>
                 </edition>
             </editionStmt>
             <publicationStmt status="1">
                 <publisher>
-                    <name>84000: Translating the Words of the Buddha</name> is a global non-profit initiative that aims to
-                    translate all of the Buddha’s words into modern languages, and to make them available to everyone.</publisher>
+                    <name>84000: Translating the Words of the Buddha</name> is a global non-profit initiative to translate all the Buddha’s words into modern languages, and to make them available to everyone.</publisher>
                 <availability>
                     <licence>
                         <graphic url="http://i.creativecommons.org/l/by-nc-nd/2.0/88x31.png"/>
@@ -51,13 +51,12 @@
             <sourceDesc>
                 <bibl key="toh116" type="text">
                     <ref>Toh 116</ref>
-                    <biblScope>Degé Kangyur, vol. 51 (mdo sde, pa), folios 200.a-247.b</biblScope>
+                    <biblScope>Degé Kangyur, vol. 51 (mdo sde, pa), folios 200.a–247.b</biblScope>
                     <author role="translatorTib">Jinamitra</author>
                     <author role="translatorTib">Dānaśīla</author>
                     <author role="translatorTib">Yeshé Dé</author>
-                    <location count-pages="96">
-                        <start volume="51" page="401"/>
-                        <end volume="51" page="496"/>
+                    <location work="UT4CZ5369" count-pages="96">
+                        <volume number="51" start-page="399" end-page="494"/>
                     </location>
                 <idno parent-id="O1JC114941JC14668"/>
                 <idno source-id="O1JC114941JC11684" work="W22084"/>
@@ -65,9 +64,16 @@
             
             </sourceDesc>
             <notesStmt>
-                <note type="lastUpdated" date-time="2019-07-27T10:08:28.035Z" user="admin">27/07/2019 10:08:28</note>
+                <note type="lastUpdated" date-time="2021-01-04T21:46:30.723Z" user="admin">04/01/2021 21:46:30</note>
             <note type="updated" update="text-version" value="v 2.46" date-time="2019-06-18T02:52:27.743Z" user="celso">v 2.46 2019</note>
                 <note type="updated" update="text-version" value="v 2.47" date-time="2019-07-27T10:08:24.984Z" user="laura">v 2.47 2019</note>
+<note type="updated" update="text-version" value="v 2.47.1" date-time="2019-10-07T10:27:24.685Z" user="admin">Publication statement updated</note>
+<note type="updated" update="text-version" value="v 2.47.2" date-time="2019-12-20T12:56:48.575Z" user="admin">Automated version increment</note>
+    <note type="updated" update="text-version" value="2.47.3" date-time="2020-08-31T18:57:39.922Z" user="laura">edited acknowledgement</note>
+    <note type="updated" update="text-version" value="2.47.4" date-time="2020-11-23T13:57:44.998Z" user="admin">Auto (TEI migration 2.0.0)</note>
+    <note type="updated" update="text-version" value="2.47.5" date-time="2020-11-24T17:37:17.329Z" user="celso">Updated pending links</note>
+    <note type="updated" update="text-version" value="2.47.6" date-time="2020-12-11T14:06:50.919Z" user="admin">Auto (TEI migration 2.1.5)</note>
+    <note type="updated" update="text-version" value="2.47.7" date-time="2021-01-04T21:46:27.788Z" user="laura">Updated colophon to Bandé</note>
             </notesStmt>
         </fileDesc>
     </teiHeader>
@@ -97,12 +103,14 @@
                     elucidations.</p>
                 <p tid="3">This translation has been completed under the patronage and supervision of 84000: Translating the Words
                     of the Buddha.</p>
+                <lb/>
+                <milestone unit="chunk" xml:id="UT22084-051-004-1003"/>
                 <p tid="4" type="sponsor">The generous sponsorship of Tony Leung Chiu Wai and family for work on this sūtra is gratefully
                     acknowledged.</p>
             </div>
             <div type="introduction">
                 <head type="introduction" tid="692">Introduction</head>
-                <div type="section">
+                <div type="section" xml:id="UT22084-051-004-introduction-1">
                     <milestone unit="chunk" xml:id="UT22084-051-004-3"/>
                     <!-- TEST COMMENT -->
                     <p tid="5">The <title xml:lang="Sa-Ltn">Kāraṇḍavyūha </title>is an early Mantrayāna sūtra that is the source
@@ -114,7 +122,7 @@
                         even though he is also described as superior to all buddhas and therefore paradoxically has both a
                         subservient and dominant status. </p>
                 </div>
-                <div type="section">
+                <div type="section" xml:id="UT22084-051-004-introduction-2">
                     <head type="section" tid="693">The sūtra in India and its translations</head>
                     <milestone unit="chunk" xml:id="UT22084-051-004-4"/>
                     <p tid="6"> The appearance in writing of the <title xml:lang="Sa-Ltn">Kāraṇḍavyūha </title>probably dates to
@@ -144,7 +152,7 @@
                         fifteenth century, it is one of the last Sanskrit Buddhist sūtras. It has not been translated into
                         Tibetan.</p>
                 </div>
-                <div type="section">
+                <div type="section" xml:id="UT22084-051-004-introduction-3">
                     <head type="section" tid="694">Avalokiteśvara</head>
                     <milestone unit="chunk" xml:id="UT22084-051-004-7"/>
                     <p tid="10">Avalokiteśvara is noticeable by his absence in early sūtras where Mañjuśrī figures prominently. In
@@ -193,7 +201,7 @@
                             Miao-chan.<note place="end" xml:id="UT22084-051-004-504" index="6">Yü (2000), 293–350.</note>
                     </p>
                 </div>
-                <div type="section">
+                <div type="section" xml:id="UT22084-051-004-introduction-4">
                     <head type="section" tid="695">The Kāraṇḍavyūha in Tibetan Buddhism</head>
                     <milestone unit="chunk" xml:id="UT22084-051-004-11"/>
                     <p tid="14">
@@ -254,7 +262,7 @@
                         identification of Songtsen Gampo as an emanation of Avalokiteśvara; it has had a much greater impact on
                         Tibetan culture than the sūtra upon which it is based.</p>
                 </div>
-                <div type="section">
+                <div type="section" xml:id="UT22084-051-004-introduction-5">
                     <head type="section" tid="696">Translation of the title</head>
                     <milestone unit="chunk" xml:id="UT22084-051-004-17"/>
                     <p tid="20">The title of the sūtra is somewhat ambiguous. A <foreign type="term" xml:lang="Sa-Ltn">karaṇḍa</foreign> is usually a basket made of reeds. The <foreign type="term" xml:lang="Sa-Ltn">karaṇḍa</foreign> is frequently portrayed in the background of portraits of Indian <foreign type="term" xml:lang="Sa-Ltn">siddhas</foreign> as a large pot-bellied basket with a lid, containing
@@ -315,7 +323,7 @@
                         </foreign>means “supreme” or “best.” The influence of the contents of that chapter is also discernible in
                         this sūtra. </p>
                 </div>
-                <div type="section">
+                <div type="section" xml:id="UT22084-051-004-introduction-6">
                     <head type="section" tid="697">Oṁ maṇipadme hūṁ</head>
                     <milestone unit="chunk" xml:id="UT22084-051-004-21"/>
                     <p tid="27">The <title xml:lang="Sa-Ltn">Kāraṇḍavyūha</title>’s principal content is the introduction of the
@@ -354,7 +362,7 @@
                         <foreign type="term" xml:lang="Sa-Ltn">Maṇipadma</foreign> is therefore a compound and is a name for
                         Avalokiteśvara meaning “Jewel Lotus.” </p>
                 </div>
-                <div type="section">
+                <div type="section" xml:id="UT22084-051-004-introduction-7">
                     <head type="section" tid="698">Difficulties inherent in the ‌sūtra</head>
                     <milestone unit="chunk" xml:id="UT22084-051-004-24"/>
                     <p tid="30">The sūtra itself is rarely read in Tibet, other than in the annual ritual chanting of the Kangyur,
@@ -401,7 +409,7 @@
                         had earlier narrated how Avalokiteśvara, in the form of a handsome man, had converted all the rākṣasīs
                         from their cannibalistic ways to become devotees of Buddhism.</p>
                 </div>
-                <div type="section">
+                <div type="section" xml:id="UT22084-051-004-introduction-8">
                     <head type="section" tid="699">Problems arising from the Tibetan translation</head>
                     <milestone unit="chunk" xml:id="UT22084-051-004-29"/>
                     <p tid="35">The Tibetan translation occasionally transliterates the Sanskrit rather than attempting to find a
@@ -434,7 +442,7 @@
                         (see <!--2.7-->
                         <ptr target="#UT22084-051-004-143"/>), does make narrative sense.</p>
                 </div>
-                <div type="section">
+                <div type="section" xml:id="UT22084-051-004-introduction-9">
                     <head type="section" tid="700">The translation into English</head>
                     <milestone unit="chunk" xml:id="UT22084-051-004-33"/>
                     <p tid="39">Our aim was to make the most readable, accurate, and coherent version of the sūtra as it is
@@ -466,7 +474,7 @@
                         than attempting to do so in Tibetan or Sanskrit. Readers will find the variant readings in Tibetan and
                         Sanskrit in the notes if they wish. </p>
                 </div>
-                <div type="section">
+                <div type="section" xml:id="UT22084-051-004-introduction-10">
                     <head type="section" tid="701">Summary of the text</head>
                     <milestone unit="chunk" xml:id="UT22084-051-004-35"/>
                     <p tid="43">Buddha Śākyamuni is at Jetavana Monastery with many disciples. Lights shine upon the monastery and
@@ -584,7 +592,7 @@
                     <p tid="73">Ānanda departs and the sūtra concludes.</p>
                     <lb/>
                 </div>
-                <div type="section">
+                <div type="section" xml:id="UT22084-051-004-introduction-11">
                     <head type="section" tid="702">Outline of the sūtra</head>
                     <milestone unit="chunk" xml:id="UT22084-051-004-45"/>
                     <p tid="74">This outline is intended as a guide to the complicated narrative levels of the sūtra. </p>
@@ -937,11 +945,11 @@
                 <head type="translation" tid="703">The Translation</head>
                 <head type="titleHon" tid="704">The Noble Mahāyāna Sūtra</head>
                 <head type="titleMain" tid="705">The Basket’s Display</head>
-                <div type="chapter">
+                <div type="chapter" xml:id="UT22084-051-004-chapter-1">
                     <head type="chapter" tid="706">Part One</head>
                     <milestone unit="chunk" xml:id="UT22084-051-004-46"/>
                     <p tid="90">
-                        <ref cRef="F.200.a"/>
+                        <ref cRef="F.200.a" type="folio" xml:id="UT22084-051-004-1004"/>
                         <!--<modularPassage type="thusDid">-->Thus have I heard: One time the Bhagavat was staying, with a great
                         saṅgha of 1,250 bhikṣus and a multitude of bodhisattvas, at Jetavana, the monastery of Anāthapiṇḍada, in
                         Śrāvastī.<!--</modularPassage>-->
@@ -955,7 +963,7 @@
                             the Tibetan has <foreign type="term" xml:lang="Bo-Ltn">sbas</foreign> corrupted to <foreign type="term" xml:lang="Bo-Ltn">sban</foreign>.</note> Bodhisattva Mahāsattva Ākaśagarbha, Bodhisattva
                         Mahāsattva Sūryagarbha, Bodhisattva Mahāsattva Anikṣiptadhura, Bodhisattva Mahāsattva Ratnapāṇi,
                         Bodhisattva Mahāsattva Samantabhadra, Bodhisattva Mahāsattva Mahāsthāmaprāpta, Bodhisattva Mahāsattva
-                        Sarva­nīvaraṇa­viṣkambhin, Bodhisattva Mahāsattva Sarvaśūra, <ref cRef="F.200.b"/> Bodhisattva Mahāsattva
+                        Sarva­nīvaraṇa­viṣkambhin, Bodhisattva Mahāsattva Sarvaśūra, <ref cRef="F.200.b" type="folio" xml:id="UT22084-051-004-1005"/> Bodhisattva Mahāsattva
                         Bhaiṣajyasena, Bodhisattva Mahāsattva Avalokiteśvara, Bodhisattva Mahāsattva Vajrapāṇi, Bodhisattva
                         Mahāsattva Sāgaramati, Bodhisattva Mahāsattva Dharmadhara, Bodhisattva Mahāsattva Pṛthivīvaralocana,
                         Bodhisattva Mahāsattva Āśvāsahasta, and Bodhisattva Mahāsattva Maitreya.</p>
@@ -978,7 +986,7 @@
                         King Anavatapta, and many hundreds of thousands of other nāga kings were gathered there.</p>
                     <milestone unit="chunk" xml:id="UT22084-051-004-49"/>
                     <p tid="94">Many hundreds of thousands of gandharva kings had also assembled there. Gandharva King
-                        Dundubhisvara, Gandharva King Manojñasvara, <ref cRef="F.201.a"/> Gandharva King Sahasrabhuja, Gandharva
+                        Dundubhisvara, Gandharva King Manojñasvara, <ref cRef="F.201.a" type="folio" xml:id="UT22084-051-004-1006"/> Gandharva King Sahasrabhuja, Gandharva
                         King Sahāpati,<note place="end" xml:id="UT22084-051-004-522" index="24">According to the Cambridge. The Tibetan
                             has <foreign type="term" xml:lang="Bo-Ltn">blo gros chen po </foreign>(a translation of “Mahāmati,” a scribal error for “Sahāpati”). The Sāmaśrami and Vaidya have “Sahāṃpati.”</note> Gandharva King Śarīraprahlādana, Gandharva King
                         Nirnāditabhūrya, Gandharva King Alaṃkārabhūṣita, Gandharva King Kumāradarśana, Gandharva King Subāhuyukta,
@@ -997,7 +1005,7 @@
                         the apsaras named <term type="ignore">Amṛtabindu</term>, the apsaras named Pariśobhitakāyā, the apsaras named
                         Maṇiprasthanā, the apsaras named Cuḍakā, the apsaras named Mṛdukā, the apsaras named Pañcabhūryābhimukhā, the
                         apsaras named Ratikarā, the apsaras named Kañcanamālā, the apsaras named Nīlotpalā, the apsaras named
-                        Dharmābhimukhā, the apsaras named Sakrīḍā, <ref cRef="F.201.b"/> the apsaras named Kṛtsnākarā, the apsaras
+                        Dharmābhimukhā, the apsaras named Sakrīḍā, <ref cRef="F.201.b" type="folio" xml:id="UT22084-051-004-1007"/> the apsaras named Kṛtsnākarā, the apsaras
                         named Suvyūhamati, the apsaras named Keyūradharā, the apsaras named Dānaṃdadā, the apsaras named Śaśī, and
                         many hundreds of thousands<note place="end" xml:id="UT22084-051-004-525" index="27">According to the Sanskrit.
                             The Tibetan has only “hundreds.”</note> of other apsarases were gathered there.</p>
@@ -1038,7 +1046,7 @@
                         and many hundreds of thousands of other female nāgas were gathered there.</p>
                     <milestone unit="chunk" xml:id="UT22084-051-004-53"/>
                     <p tid="98">Many hundreds of thousands of female gandharvas had also gathered there. The female gandharva
-                        named Priyamukhā, the female gandharva named Priyaṃdadā, <ref cRef="F.202.a"/> the female gandharva named
+                        named Priyamukhā, the female gandharva named Priyaṃdadā, <ref cRef="F.202.a" type="folio" xml:id="UT22084-051-004-1008"/> the female gandharva named
                         Anādarśakā, the female gandharva named Vajraśrī, the female gandharva named Vajramālā, the female
                         gandharva named Sumālinī, the female gandharva named Vanaspati, the female gandharva named Śatapuṣpā, the
                         female gandharva named Mukulitā, the female gandharva named Ratnamālā, the female gandharva named
@@ -1067,7 +1075,7 @@
                         gandharva named Ratnāṅkurā, the female gandharva named Indraśrī, the female gandharva named Indramaghaśrī,
                         the female gandharva named Prajāpatinivāsinī, the female gandharva named Mṛgarājinī, the female gandharva
                         named Sphurantaśrī, the female gandharva named Jvalantaśikharā, the female gandharva named Rāgaparimuktā,
-                            <ref cRef="F.202.b"/> the female gandharva named Dveṣaparimuktā, the female gandharva named
+                            <ref cRef="F.202.b" type="folio" xml:id="UT22084-051-004-1009"/> the female gandharva named Dveṣaparimuktā, the female gandharva named
                         Mohaparimuktā, the female gandharva named Sujanaparivārā, the female gandharva named Ratnapīṭhā, the
                         female gandharva named Āgamanagamanā, the female gandharva named Agniprabhā, the female gandharva named
                         Candrabimbaprabhā, the female gandharva named Sūryalocanā, the female gandharva named Suvarṇāvabhāsā,<note place="end" xml:id="UT22084-051-004-550" index="52">According to the Tibetan and Cambridge. The Sāmaśrami and
@@ -1090,7 +1098,7 @@
                         named Kapilā, the female kiṃnara named Subhūṣaṇabhūṣitā, the female kiṃnara named Vistīrṇalalāṭā, the
                         female kiṃnara named Sujanaparisevitā, the female kiṃnara named Sahāpatī,<note place="end" xml:id="UT22084-051-004-557" index="59">According to the Sanskrit. The Tibetan has <foreign type="term" xml:lang="Bo-Ltn">blo gros chen mo</foreign>, a translation of “Mahāmati,” itself a scribal error of “Sahāpati.” The Sāmaśrami and Vaidya have “Sahāṃpati.”
                         </note>
-                        <ref cRef="F.203.a"/> the female kiṃnara named Ākāśarakṣitā, the female kiṃnara named Vyūharājendrā, the
+                        <ref cRef="F.203.a" type="folio" xml:id="UT22084-051-004-1010"/> the female kiṃnara named Ākāśarakṣitā, the female kiṃnara named Vyūharājendrā, the
                         female kiṃnara named Maṇicūḍā, the female kiṃnara named Maṇidhāriṇī, the female kiṃnara named Maṇirocanī,
                         the female kiṃnara named Vidvajjanaparisevitā, the female kiṃnara named Śatākārā,<note place="end" xml:id="UT22084-051-004-558" index="60">The Cambridge has <foreign type="term" xml:lang="Sa-Ltn">śatā</foreign>. The Tibetan has <foreign type="term" xml:lang="Bo-Ltn">bdog ma</foreign>, translated from a
                             corruption.</note> the female kiṃnara named Āyurdadā, the female kiṃnara named
@@ -1114,7 +1122,7 @@
                             <foreign type="term" xml:lang="Sa-Ltn">Nirgrantha</foreign> in its general meaning as “one with no
                             possessions.” The Tibetan has <foreign type="term" xml:lang="Bo-Ltn">gcer bu pa</foreign>, “naked
                             ones,” which would refer specifically to Jains, but that does not appear to be the meaning
-                            here.</note> had also gathered there. <ref cRef="F.203.b"/>
+                            here.</note> had also gathered there. <ref cRef="F.203.b" type="folio" xml:id="UT22084-051-004-1011"/>
                     </p>
                     <milestone unit="chunk" xml:id="UT22084-051-004-55"/>
                     <p tid="102">At the time of this great gathering, light rays shone in the great Avīci hell. Having shone
@@ -1151,7 +1159,7 @@
                             <foreign type="term" xml:lang="Sa-Ltn">Māndārava</foreign>, and <foreign type="term" xml:lang="Sa-Ltn">mahāmāndārava</foreign>. The author, in copying lists of flowers from earlier sutras, has placed
                             tree flowers on the pond. Tiger claw or Indian coral trees (<foreign type="term" xml:lang="la">Erythrina stricta</foreign>) are trees prized for their beauty and are believed to grow in
                             Indra’s paradise. The greater tiger claw tree is presumably <foreign type="term" xml:lang="la">Erythrina variegata</foreign>, which grows much taller.</note> and udumbara flowers.</p>
-                    <p tid="107">Moreover, there were a variety of tree blossoms: magnolia, <ref cRef="F.204.a"/> ashoka, oleander,
+                    <p tid="107">Moreover, there were a variety of tree blossoms: magnolia, <ref cRef="F.204.a" type="folio" xml:id="UT22084-051-004-1012"/> ashoka, oleander,
                         trumpet flower, mountain ebony, jasmine, and other beautiful tree blossoms.</p>
                     <p tid="108">The Jetavana Monastery appeared completely beautified.</p>
                     <lb/>
@@ -1171,7 +1179,7 @@
                         ground made of burning iron, which has become one raging flame in the shape of a reed basket. Within this
                         Avīci hell there is a pot from which comes the sound of wailing. Many hundreds of thousands of tens of
                         millions of hundreds of millions of beings have been thrown into that pot. Just as green or black mung
-                        beans are massed together in a water-filled vessel, rising and sinking as they are cooked, <ref cRef="F.204.b"/> that is how the beings in the great Avīci hell undergo physical suffering. Bhagavat,
+                        beans are massed together in a water-filled vessel, rising and sinking as they are cooked, <ref cRef="F.204.b" type="folio" xml:id="UT22084-051-004-1013"/> that is how the beings in the great Avīci hell undergo physical suffering. Bhagavat,
                         how did Bodhisattva Mahāsattva Avalokiteśvara enter the great Avīci hell?”</p>
                     <milestone unit="chunk" xml:id="UT22084-051-004-59"/>
                     <p tid="112">The Bhagavat answered him, “Noble son, Bodhisattva Mahāsattva Avalokiteśvara entered the great
@@ -1199,7 +1207,7 @@
                         handsome being, with his hair in a topknot, his body beautified by divine adornments, with an extremely
                         loving mind, and resembling a golden statue.<note place="end" xml:id="UT22084-051-004-577" index="79">According to the Sanskrit. The Tibetan omits “…with an extremely loving mind, and resembling a golden
                             statue.”</note>
-                        <ref cRef="F.205.a"/> That is the kind of being that arrived. The moment he arrived, lotus flowers the
+                        <ref cRef="F.205.a" type="folio" xml:id="UT22084-051-004-1014"/> That is the kind of being that arrived. The moment he arrived, lotus flowers the
                         size of cartwheels appeared, the pot burst open, and the inferno of fire was transformed into a pool.’</p>
                     <p tid="116">“Yamarāja wondered, ‘What deity has manifested this power? Is this a special result that has
                         occurred through the blessing of the deity Maheśvara, Nārāyaṇa, or some other deity? Have they descended
@@ -1222,7 +1230,7 @@
                         freedom from fear; who teaches the six perfections; who illuminates like the sun;<note place="end" xml:id="UT22084-051-004-580" index="82">According to the Cambridge and Tibetan. The Vaidya omits “who teaches
                             the six perfections; who illuminates like the sun…” The Tibetan translates this as “who creates perfect
                             eyes like the sun.”</note>
-                        <ref cRef="F.205.b"/> who creates the lamp of Dharma; whose perfectly supreme form is whatever form is
+                        <ref cRef="F.205.b" type="folio" xml:id="UT22084-051-004-1015"/> who creates the lamp of Dharma; whose perfectly supreme form is whatever form is
                         pleasing; who has the form of a gandharva; who has a form like a mountain of gold; who is deep like the
                         vast ocean; who has attained the ultimate yoga; who shows his own face; who has many hundreds of thousands
                         of samādhis; who brings true pleasure; who has a beautified body; who manifests as the supreme rishi;<note place="end" xml:id="UT22084-051-004-581" index="83">According to the Sanskrit. The Tibetan omits “who
@@ -1241,7 +1249,7 @@
                         accumulated within his body; who completely liberates pretas; and who has hundreds of thousands of
                         samādhis as numerous as atoms.’</p>
                     <p tid="120">“In that way, Yamarāja praised Avalokiteśvara with a particularly sacred praise. Then Yamarāja
-                        circumambulated him three times and departed.” <ref cRef="F.206.a"/>
+                        circumambulated him three times and departed.” <ref cRef="F.206.a" type="folio" xml:id="UT22084-051-004-1016"/>
                     </p>
                     <lb/>
                     <milestone unit="chunk" xml:id="UT22084-051-004-62"/>
@@ -1263,7 +1271,7 @@
                     <p tid="125">“Then they contemplated human existence.<note place="end" xml:id="UT22084-051-004-586" index="88">According to the Sanskrit. The Tibetan omits “Then they contemplated human existence.”</note> They
                         thought about saṃsāric existence in this way: ‘Oh! The humans in Jambudvīpa are happy. They can perfectly
                         enjoy cool shade. Happy are those humans in Jambudvīpa who are always supporting their parents and
-                        honoring them. <ref cRef="F.206.b"/> Happy are those good humans who always rely on a kalyāṇamitra. Those
+                        honoring them. <ref cRef="F.206.b" type="folio" xml:id="UT22084-051-004-1017"/> Happy are those good humans who always rely on a kalyāṇamitra. Those
                         who continuously learn the Mahāyāna are good contemplative beings. Those who follow the eightfold path are
                         good beings. Those who beat the <foreign type="term" xml:lang="Sa-Ltn"> dharmagaṇḍī </foreign>are good
                         beings. Those who repair dilapidated and ruined monasteries are good beings. Those who repair dilapidated,
@@ -1295,7 +1303,7 @@
                     <milestone unit="chunk" xml:id="UT22084-051-004-66"/>
                     <p tid="129">The Bhagavat replied, “Noble son, each day he completely ripens a million trillion beings. Noble
                         son, not even the tathāgatas have Bodhisattva Mahāsattva Avalokiteśvara’s prowess.”</p>
-                    <p tid="130">Sarva­nīvaraṇa­viṣkambhin asked him, “Bhagavat, how is that so?” <ref cRef="F.207.a"/>
+                    <p tid="130">Sarva­nīvaraṇa­viṣkambhin asked him, “Bhagavat, how is that so?” <ref cRef="F.207.a" type="folio" xml:id="UT22084-051-004-1018"/>
                     </p>
                     <p tid="131">The Bhagavat answered, “Noble son, there appeared in this world the Tathāgata, the arhat, the
                         samyaksaṃbuddha, perfect in wisdom and conduct, the sugata, the knower of the world, the unsurpassable guide who tamed beings, the
@@ -1326,7 +1334,7 @@
                                 which is lost in translation.</note>
                         </l>
                     </lg>
-                    <p tid="137">“Noble son, those are the words I heard Tathāgata Vipaśyin say. <ref cRef="F.207.b"/>
+                    <p tid="137">“Noble son, those are the words I heard Tathāgata Vipaśyin say. <ref cRef="F.207.b" type="folio" xml:id="UT22084-051-004-1019"/>
                     </p>
                     <lb/>
                     <milestone unit="chunk" xml:id="UT22084-051-004-70"/>
@@ -1348,7 +1356,7 @@
                     <milestone unit="chunk" xml:id="UT22084-051-004-72"/>
                     <p tid="142">“From within that assembly Bodhisattva Ratnapāṇi arose from his seat, bared one shoulder, and
                         kneeling on his right knee and facing Bhagavat Śikhin, placed his palms together and addressed these words
-                        to him: <ref cRef="F.208.a"/> ‘Bhagavat, why did this sign appear?’ </p>
+                        to him: <ref cRef="F.208.a" type="folio" xml:id="UT22084-051-004-1020"/> ‘Bhagavat, why did this sign appear?’ </p>
                     <p tid="143">“Bhagavat Śikhin replied, ‘Noble son, Bodhisattva Mahāsattva Avalokiteśvara is coming from the
                         realm of Sukhāvatī. I manifest this kind of sign when he is coming. When Bodhisattva Mahāsattva
                         Avalokiteśvara comes, a profusion of wish-granting trees appears, a profusion of mango trees appears, star
@@ -1367,7 +1375,7 @@
                     <p tid="145">“Bhagavat Śikhin answered, ‘Noble son, Bodhisattva Mahāsattva Avalokiteśvara is arriving, and
                         that is why these omens appear.’ </p>
                     <milestone unit="chunk" xml:id="UT22084-051-004-74"/>
-                    <p tid="146">“As the earth shook and it rained beautiful lotuses, <ref cRef="F.208.b"/> Bodhisattva Mahāsattva
+                    <p tid="146">“As the earth shook and it rained beautiful lotuses, <ref cRef="F.208.b" type="folio" xml:id="UT22084-051-004-1021"/> Bodhisattva Mahāsattva
                         Avalokiteśvara came to Bhagavat Śikhin. He was holding lotus flowers, each with a thousand petals and a
                         golden stem. He bowed down his head to the bhagavat’s feet and offered the lotuses to him. He said,
                         ‘Tathāgata Amitābha sends these flowers to you. The Tathagāta asks if you are in health, if you are at
@@ -1389,7 +1397,7 @@
                             Sanskrit. The Tibetan has “departed in one direction.”</note> and disappeared into the sky as a blazing
                         mass of fire. </p>
                     <p tid="150">“Then Bodhisattva Ratnapāṇi asked Bhagavat Śikhin, ‘Bhagavat, if I may ask for an answer to a
-                        question, how much merit has Bodhisattva Mahāsattva Avalokiteśvara accumulated?’ <ref cRef="F.209.a"/>
+                        question, how much merit has Bodhisattva Mahāsattva Avalokiteśvara accumulated?’ <ref cRef="F.209.a" type="folio" xml:id="UT22084-051-004-1022"/>
                     </p>
                     <milestone unit="chunk" xml:id="UT22084-051-004-76"/>
                     <p tid="151">“Bhagavat Śikhin replied, ‘If someone were for a deva’s eon to serve tathāgatas, arhats, and
@@ -1414,7 +1422,7 @@
                         buffalo, and cats, but, noble son, I cannot calculate Bodhisattva Mahāsattva Avalokiteśvara’s accumulation
                         of merit.</p>
                     <p tid="155">“ ‘Noble son, it is like this. As a comparison, if stūpas<note place="end" xml:id="UT22084-051-004-600" index="100">According to the Sanskrit. The Tibetan has “statues.”</note> for tathāgatas,
-                        arhats, and samyaksaṃbuddhas as numerous as atoms were made in divine gold and precious stones, <ref cRef="F.209.b"/> and in one day the relics were placed in them all, I can calculate the accumulation
+                        arhats, and samyaksaṃbuddhas as numerous as atoms were made in divine gold and precious stones, <ref cRef="F.209.b" type="folio" xml:id="UT22084-051-004-1023"/> and in one day the relics were placed in them all, I can calculate the accumulation
                         of that merit, but I cannot calculate Bodhisattva Mahāsattva Avalokiteśvara’s accumulation of merit.</p>
                     <p tid="156">“ ‘Noble son, it is like this. As a comparison, I can count the number of leaves in a forest of
                         agarwood trees, but I cannot calculate Bodhisattva Mahāsattva Avalokiteśvara’s accumulation of merit.</p>
@@ -1428,7 +1436,7 @@
                         alone bodhisattvas.’</p>
                     <p tid="159">“Bhagavat Śikhin said, ‘Noble son, even if all who are tathāgatas, arhats, and samyaksaṃbuddhas
                         like me were gathered in one place and provided for an eon with robes, food, bowls, bedding, seats,
-                        necessary medicine, and utensils, those tathāgatas, arhats, and samyaksaṃbuddhas <ref cRef="F.210.a"/>
+                        necessary medicine, and utensils, those tathāgatas, arhats, and samyaksaṃbuddhas <ref cRef="F.210.a" type="folio" xml:id="UT22084-051-004-1024"/>
                         would still not be able to calculate Bodhisattva Mahāsattva Avalokiteśvara’s accumulation of merit. So,
                         noble son, it is needless to say that I cannot do so all by myself in this world.</p>
                     <milestone unit="chunk" xml:id="UT22084-051-004-79"/>
@@ -1446,7 +1454,7 @@
                         be fulfilled?’</p>
                     <p tid="162">“Bhagavat Śikhin replied, ‘He completely ripens the many beings who circle in saṃsāra, teaches
                         them the path to enlightenment, and teaches the Dharma in whatever form a being can be taught through. He
-                        teaches the Dharma in the form of a tathāgata to beings who are to be taught by a tathāgata. <ref cRef="F.210.b"/> He teaches the Dharma in the form of a pratyekabuddha to beings who are to be taught
+                        teaches the Dharma in the form of a tathāgata to beings who are to be taught by a tathāgata. <ref cRef="F.210.b" type="folio" xml:id="UT22084-051-004-1025"/> He teaches the Dharma in the form of a pratyekabuddha to beings who are to be taught
                         by a pratyekabuddha. He teaches the Dharma in the form of an arhat to beings who are to be taught by an
                         arhat. He teaches the Dharma in the form of a bodhisattva to beings who are to be taught by a bodhisattva.
                         He teaches the Dharma in the form of Maheśvara to beings who are to be taught by Maheśvara. He teaches the
@@ -1462,7 +1470,7 @@
                         teaches the Dharma in the form of Vaiśravaṇa to beings who are to be taught by Vaiśravaṇa.<note place="end" xml:id="UT22084-051-004-601" index="101">According to the Sanskrit. The Tibetan has <foreign type="term" xml:lang="Bo-Ltn">ngal bso po</foreign>, the translation of <foreign type="term" xml:lang="Sa-Ltn">viśrama </foreign>(“tranquility”).</note> He teaches the Dharma in the form of a
                         king to beings who are to be taught by a king. He teaches the Dharma in the form of a paṇḍita to beings
                         who are to be taught by a paṇḍita. He teaches the Dharma in the form of a king’s soldier to beings who are
-                        to be taught by a king’s soldier. <ref cRef="F.211.a"/> He teaches the Dharma in the form of parents to
+                        to be taught by a king’s soldier. <ref cRef="F.211.a" type="folio" xml:id="UT22084-051-004-1026"/> He teaches the Dharma in the form of parents to
                         beings who are to be taught by their parents. He teaches the Dharma in whatever particular form a being
                         should be taught through. That, noble son, is how Bodhisattva Mahāsattva Avalokiteśvara completely ripens
                         beings and teaches them the Dharma of nirvāṇa.’</p>
@@ -1481,7 +1489,7 @@
                         Hearing it will purify them of the five actions with immediate results on death. At the time of death,
                         twelve tathāgatas will come and reassure them, saying, ‘Noble son, do not be afraid. You have heard the
                         precious king of the Mahāyāna sūtras, <title xml:lang="en">The Sūtra of the Basket’s Display</title>. You
-                        have prepared various paths for going to Sukhāvatī. <ref cRef="F.211.b"/> You have prepared various
+                        have prepared various paths for going to Sukhāvatī. <ref cRef="F.211.b" type="folio" xml:id="UT22084-051-004-1027"/> You have prepared various
                         parasols, various crowns, various earrings, and various necklaces.’ When that kind of omen appears, at
                         death they will go without impediment to Sukhāvatī.”</p>
                     <p tid="167">“ ‘Ratnapāṇi, in that way, Bodhisattva Mahāsattva Avalokiteśvara teaches the Dharma of nirvāṇa to
@@ -1517,7 +1525,7 @@
                         to this Dharma teaching on contemplating nirvāṇa, on turning the mind to nirvāṇa.’ Then Avalokiteśvara
                         taught them the Dharma. </p>
                     <milestone unit="chunk" xml:id="UT22084-051-004-86"/>
-                    <p tid="175">“Those beings sat before Bodhisattva Mahāsattva Avalokiteśvara and requested him, <ref cRef="F.212.a"/> ‘Show the path to blind beings! Be a protector and refuge to beings who have no
+                    <p tid="175">“Those beings sat before Bodhisattva Mahāsattva Avalokiteśvara and requested him, <ref cRef="F.212.a" type="folio" xml:id="UT22084-051-004-1028"/> ‘Show the path to blind beings! Be a protector and refuge to beings who have no
                         protector! Be a father and mother to those who do not have a father and mother! Be a lamp for the darkness
                         of the three lower existences! Be aware of us and show us, with great compassion, the path to
                             liberation.<note place="end" xml:id="UT22084-051-004-605" index="105">According to the Sanskrit.
@@ -1552,7 +1560,7 @@
                     </lg>
                     <milestone unit="chunk" xml:id="UT22084-051-004-89"/>
                     <p tid="180">“Bali offered a bejeweled throne to Bodhisattva Mahāsattva Avalokiteśvara and implored him, ‘Bhagavat,
-                        look with compassion upon those who like to perform bad actions, who lust after the wives of others, <ref cRef="F.212.b"/> who are dedicated to killing, who kill others, and who are old and dying. Be a refuge
+                        look with compassion upon those who like to perform bad actions, who lust after the wives of others, <ref cRef="F.212.b" type="folio" xml:id="UT22084-051-004-1029"/> who are dedicated to killing, who kill others, and who are old and dying. Be a refuge
                         to those who are weary of saṃsāra. You, lord, be our father and mother and show the path to we who are
                         bound in bondage.’</p>
                     <milestone unit="chunk" xml:id="UT22084-051-004-90"/>
@@ -1573,7 +1581,7 @@
                         mustard would grow perfectly for one harvest; and then if the men, women, boys, and girls were to load
                         that mustard into carts, bags, and baskets, onto camels, donkeys, and cattle, and collect the great
                         harvest together; and then if the donkeys and cattle threshed it to make a vast heap of mustard seeds,
-                            <ref cRef="F.213.a"/> noble son, I could count each one of those grains, but, noble son, I cannot
+                            <ref cRef="F.213.a" type="folio" xml:id="UT22084-051-004-1030"/> noble son, I could count each one of those grains, but, noble son, I cannot
                         calculate the accumulation of merit through that alms giving.</p>
                     <milestone unit="chunk" xml:id="UT22084-051-004-92"/>
                     <p tid="186">“ ‘Noble son, it is like this. As a comparison, the lower half of the supreme mountain Sumeru extends
@@ -1595,7 +1603,7 @@
                     <p tid="190">“ ‘What kind of gift did I, Bali, make, with my queens and retinue, that brought me bondage in
                         this lifetime? I made an offering to a bad recipient, and I am now experiencing the result of that action.
                         Even a handful of dust thrown toward an omniscient one transforms into amṛta, but I made my offerings not
-                        knowing that, <ref cRef="F.213.b"/> and made an offering to a petitioner who came to me in the form of a
+                        knowing that, <ref cRef="F.213.b" type="folio" xml:id="UT22084-051-004-1031"/> and made an offering to a petitioner who came to me in the form of a
                         dwarf. </p>
                     <milestone unit="chunk" xml:id="UT22084-051-004-94"/>
                     <p tid="191">“ ‘I had prepared offerings of elephant- and horse-drawn carts carrying diadems, earrings, and
@@ -1620,7 +1628,7 @@
                     <milestone unit="chunk" xml:id="UT22084-051-004-95"/>
                     <p tid="199">“ ‘At that time, I had invited a thousand kings, a hundred thousand brahmins, and many hundreds
                         of thousands of kṣatriyas, and I became arrogant on seeing<note place="end" xml:id="UT22084-051-004-610" index="110">According to the Sanskrit. The Tibetan has “I became astonished on having
-                            become…”</note> that I was their sole ruler. <ref cRef="F.214.a"/>
+                            become…”</note> that I was their sole ruler. <ref cRef="F.214.a" type="folio" xml:id="UT22084-051-004-1032"/>
                     </p>
                     <p tid="200">“ ‘I now confess my first bad action. I tore out the hearts of the kṣatriya wives, slaughtered
                         the boys and girls, bound all the great kṣatriyas in stocks<note place="end" xml:id="UT22084-051-004-611" index="111">According to the Sanskrit. The Tibetan translation is obscure.</note> and
@@ -1650,7 +1658,7 @@
                     <p tid="205">“ ‘They replied, “We are alive, Bhagavat.” </p>
                     <p tid="206">“ ‘Then the great hero destroyed all the doors and looked inside the copper cave. All the bound
                         kings saw Nārāyaṇa. They discussed among each other, saying, “Either the time has come for the asura king
-                        Bali to die, <ref cRef="F.214.b"/> or the time has come for us to be slain.” They said to each other, “It
+                        Bali to die, <ref cRef="F.214.b" type="folio" xml:id="UT22084-051-004-1033"/> or the time has come for us to be slain.” They said to each other, “It
                         is good if we die in battle, but it’s not good to die in chains. If we die in chains, the way of the
                         kṣatriyas will come to an end, but if we die on the battlefield, we will be reborn in the higher realms.” </p>
                     <p tid="207">“ ‘Then all the great kings returned to their own cities and made preparations with many
@@ -1681,7 +1689,7 @@
                         cause you an obstacle.”</p>
                     <p tid="220">“ ‘I asked him, “Bhagavat, how do you know that?”</p>
                     <p tid="221">“ ‘Śukra answered, “I know by seeing his signs and omens.” </p>
-                    <p tid="222">“ ‘I asked, “What can we do?” <ref cRef="F.215.a"/>
+                    <p tid="222">“ ‘I asked, “What can we do?” <ref cRef="F.215.a" type="folio" xml:id="UT22084-051-004-1034"/>
                     </p>
                     <p tid="223">“ ‘Nārāyaṇa thought, “If he thinks about this, he will definitely decide against making a gift,
                         so I will put divinely inspired speech into his mouth.” </p>
@@ -1710,7 +1718,7 @@
                         offering bowls discarded. The Pāṇḍavas and Kauravas took away the maidens. The Kauravas, Pāṇḍavas, and the
                             others<note place="end" xml:id="UT22084-051-004-618" index="118">According to the Sanskrit. The Tibetan
                             omits “and the others.”</note> took away the golden lion thrones, the divine parasols, the bejeweled
-                        shoes, the clothing, the jewelry, the bejeweled golden armlets, <ref cRef="F.215.b"/> and the tawny cows,
+                        shoes, the clothing, the jewelry, the bejeweled golden armlets, <ref cRef="F.215.b" type="folio" xml:id="UT22084-051-004-1035"/> and the tawny cows,
                         destroying the offering site.</p>
                     <p tid="237">“ ‘I, lord of the asuras, having been expelled from the offering site,<note place="end" xml:id="UT22084-051-004-619" index="119">According to the Sanskrit. The Tibetan omits “having been
                             expelled from the offering site.”</note> contemplated my situation and said, “I was about to make an
@@ -1743,7 +1751,7 @@
                         to the Dharma from Tathāgata Amitābha.’</p>
                     <milestone unit="chunk" xml:id="UT22084-051-004-106"/>
                     <p tid="243">“Then Bodhisattva Mahāsattva Avalokiteśvara made the following prophecy to Bali, the lord of the
-                        asuras: <ref cRef="F.216.a"/> ‘You, lord of the asuras, will become the Tathāgata, the arhat, the
+                        asuras: <ref cRef="F.216.a" type="folio" xml:id="UT22084-051-004-1036"/> ‘You, lord of the asuras, will become the Tathāgata, the arhat, the
                         samyaksaṃbuddha, perfect in wisdom and conduct, the sugata, the knower of the world, the unsurpassable
                         guide who tamed beings, the teacher of devas and humans, the buddha, the Bhagavat Śrī. You will guide all
                         the asuras. In your buddha realm there will not be the word <emph>desire</emph>, there will not be the
@@ -1771,7 +1779,7 @@
                         will be terrified. Yama’s guards<note place="end" xml:id="UT22084-051-004-627" index="127">According to
                             the Sanskrit. The Tibetan has only “others.”</note> will bind them with nooses and drag them away. When
                         their feet are cut through on the great road of razors, as they lift that foot another foot will replace
-                        it. <ref cRef="F.216.b"/> Numerous ravens, vultures, eagles, and dogs will devour them. They will experience the
+                        it. <ref cRef="F.216.b" type="folio" xml:id="UT22084-051-004-1037"/> Numerous ravens, vultures, eagles, and dogs will devour them. They will experience the
                         sensation of great suffering in the hells. When they step off the great road of razors, five hundred
                         thorns, each with sixteen spikes, will pierce each foot. They will cry out, “What have I, who delighted in
                         bad actions, done?”<note place="end" xml:id="UT22084-051-004-628" index="128">According to the Cambridge:
@@ -1799,7 +1807,7 @@
                         Therefore, great king, you must diligently create merit in this life.’</p>
                     <lb/>
                     <milestone unit="chunk" xml:id="UT22084-051-004-112"/>
-                    <p tid="255">“In that way Avalokiteśvara gave Bali the appropriate Dharma teaching. <ref cRef="F.217.a"/>
+                    <p tid="255">“In that way Avalokiteśvara gave Bali the appropriate Dharma teaching. <ref cRef="F.217.a" type="folio" xml:id="UT22084-051-004-1038"/>
                         Bodhisattva Mahāsattva Avalokiteśvara then told that great king, ‘I must leave, for today many are
                         gathering in the Jetavana Monastery.’<note place="end" xml:id="UT22084-051-004-629" index="129">This is
                             the Jetavana Monastery of Buddha Viśvabhū, and not the Jetavana Monastery in which Buddha Śākyamuni is
@@ -1822,7 +1830,7 @@
                         hung with hundreds of thousands of adornments, with many hundreds of thousands of strings of pearls, with
                         silk, with monastic robes,<note place="end" xml:id="UT22084-051-004-630" index="130">See <ptr target="#UT22084-051-004-565"/>.</note>
                         and with clusters of garlands. Their trunks were red, and their leaves were made of gold and silver. There
-                        were also many trees made of coral, many blossom-covered trees, <ref cRef="F.217.b"/> and pools that were
+                        were also many trees made of coral, many blossom-covered trees, <ref cRef="F.217.b" type="folio" xml:id="UT22084-051-004-1039"/> and pools that were
                         completely filled with flowers. </p>
                     <milestone unit="chunk" xml:id="UT22084-051-004-114"/>
                     <p tid="262">“Then Bodhisattva Gaganagañja asked Bhagavat Viśvabhū, ‘Bhagavat, is Bodhisattva Mahāsattva
@@ -1856,7 +1864,7 @@
                     </p>
                     <p tid="269">“ ‘Noble sons, it is like this: For example, I can count the drops in the vast ocean, but, noble
                         sons, I cannot calculate the accumulation of merit that comes from even one four-line verse<note place="end" xml:id="UT22084-051-004-636" index="136">See <ptr target="#UT22084-051-004-635"/>.</note> of the precious king of the
-                        Mahāyāna sūtras, <title xml:lang="en">The Sūtra of the Basket’s Display</title>. <ref cRef="F.218.a"/>
+                        Mahāyāna sūtras, <title xml:lang="en">The Sūtra of the Basket’s Display</title>. <ref cRef="F.218.a" type="folio" xml:id="UT22084-051-004-1040"/>
                     </p>
                     <milestone unit="chunk" xml:id="UT22084-051-004-118"/>
                     <p tid="270">“ ‘Noble sons, if tathāgatas, arhats, and samyaksaṃbuddhas as numerous as the grains of sand in
@@ -1883,7 +1891,7 @@
                         who defeat their adversaries.</p>
                     <milestone unit="chunk" xml:id="UT22084-051-004-120"/>
                     <p tid="275">“ ‘Those who always possess and remember the name of the precious king of the Mahāyāna
-                            sūtras,<title xml:lang="en"> The Sūtra of the Basket’s Display</title>, <ref cRef="F.218.b"/> will be
+                            sūtras,<title xml:lang="en"> The Sūtra of the Basket’s Display</title>, <ref cRef="F.218.b" type="folio" xml:id="UT22084-051-004-1041"/> will be
                         completely liberated from the suffering of saṃsāra and be completely liberated from birth, aging,
                         sickness, death, misery, lamentation, suffering, unhappiness, and conflict. Wherever they are reborn, in
                         every life they will remember their previous lives. Their bodies will have an aroma like gośīrṣa
@@ -1914,7 +1922,7 @@
                     <lb/>
                     <milestone unit="chunk" xml:id="UT22084-051-004-122"/>
                     <p tid="284">“Avalokiteśvara then manifested in the form of a brahmin and went among the devas in the
-                        Śuddhāvāsa realms. <ref cRef="F.219.a"/> Among those devas there was a deva named Sukuṇḍala who was poor
+                        Śuddhāvāsa realms. <ref cRef="F.219.a" type="folio" xml:id="UT22084-051-004-1042"/> Among those devas there was a deva named Sukuṇḍala who was poor
                         and suffering.</p>
                     <p tid="285">“Avalokiteśvara came to that deva in the form of the brahmin and said to him, ‘I’m hungry and
                         thirsty.’</p>
@@ -1940,7 +1948,7 @@
                         pools, many who have the qualities of right conduct and are worthy recipients for offerings, and there are
                         the miracles of Tathāgata Viśvabhū. Son of a deva, that is how pleasant that place is.’</p>
                     <p tid="295">“The deva then said, ‘Brahmin, you definitely speak the truth. Who are you? Are you a deva or a
-                        human? If you are a human you don’t seem to be one.’ <ref cRef="F.219.b"/>
+                        human? If you are a human you don’t seem to be one.’ <ref cRef="F.219.b" type="folio" xml:id="UT22084-051-004-1043"/>
                     </p>
                     <p tid="296">“The brahmin replied, ‘I am not a deva and I am not a human. I am one who has compassion for the
                         poor and the wretched. I am one who shows them the path to enlightenment. I am a bodhisattva.’</p>
@@ -1976,7 +1984,7 @@
                         drink. From now on we will not act like rākṣasīs, and we will keep the <foreign type="term" xml:lang="Sa-Ltn">upāsikā</foreign> vows.’<note place="end" xml:id="UT22084-051-004-646" index="146">According to the Sanskrit. The Tibetan omits “and we will keep the <foreign type="term" xml:lang="Sa-Ltn">upāsikā</foreign> vows.”</note> In this way the rākṣasīs took vows.</p>
                     <lb/>
                     <milestone unit="chunk" xml:id="UT22084-051-004-128"/>
-                    <p tid="304">“Bodhisattva Mahāsattva Avalokiteśvara then left the island of Siṃhala <ref cRef="F.220.a"/> and
+                    <p tid="304">“Bodhisattva Mahāsattva Avalokiteśvara then left the island of Siṃhala <ref cRef="F.220.a" type="folio" xml:id="UT22084-051-004-1044"/> and
                         went to a place where many hundreds of thousands of different kinds of insects lived within a cesspit in
                         the great city of Vārāṇasī. When Bodhisattva Mahāsattva Avalokiteśvara arrived there, he transformed
                         himself into the form of a bee that made a buzzing sound that was heard by the insects as the words,
@@ -2005,7 +2013,7 @@
                         all of this?’</p>
                     <p tid="309">“Among them there was one being who was many hundreds of thousands of years old. He was aged,
                         old, feeble, hunchbacked, and bent like a cow’s ear. He said to them, ‘Only Bodhisattva Mahāsattva
-                        Avalokiteśvara has this kind of power <ref cRef="F.220.b"/>, no other deity.’</p>
+                        Avalokiteśvara has this kind of power <ref cRef="F.220.b" type="folio" xml:id="UT22084-051-004-1045"/>, no other deity.’</p>
                     <p tid="310">“Those gathered there asked him, ‘What are the qualities of Bodhisattva Mahāsattva
                         Avalokiteśvara?’</p>
                     <milestone unit="chunk" xml:id="UT22084-051-004-131"/>
@@ -2025,7 +2033,7 @@
                         and wherever they are reborn, their bodies will be perfect.’</p>
                     <p tid="316">“The old man taught Avalokiteśvara’s special qualities in that way. Then those gathered there
                         returned to their homes, and the aged man, having taught them an appropriate Dharma, returned to his home,
-                        and Bodhisattva Mahāsattva Avalokiteśvara <ref cRef="F.221.a"/> vanished into the sky. </p>
+                        and Bodhisattva Mahāsattva Avalokiteśvara <ref cRef="F.221.a" type="folio" xml:id="UT22084-051-004-1046"/> vanished into the sky. </p>
                     <lb/>
                     <milestone unit="chunk" xml:id="UT22084-051-004-133"/>
                     <p tid="317">“While Bodhisattva Mahāsattva Avalokiteśvara was in the sky he thought, ‘It has been a long time
@@ -2049,7 +2057,7 @@
                         Seated,<note place="end" xml:id="UT22084-051-004-652" index="152">See <ptr target="#UT22084-051-004-651"/>.</note> he asked
                         Bodhisattva Mahāsattva Avalokiteśvara, ‘Are you tired? Are you weary?’</p>
                     <p tid="325">“He replied, ‘I am not tired and I am not weary.’</p>
-                    <p tid="326">“They talked with each other and then became silent. <ref cRef="F.221.b"/>
+                    <p tid="326">“They talked with each other and then became silent. <ref cRef="F.221.b" type="folio" xml:id="UT22084-051-004-1047"/>
                     </p>
                     <milestone unit="chunk" xml:id="UT22084-051-004-136"/>
                     <p tid="327">“Bhagavat Viśvabhū then began to teach upon the six perfections:</p>
@@ -2061,7 +2069,7 @@
                         to their own buddha realms.” </p>
                     <trailer tid="687">This completes part one of the precious king of the Mahāyāna sūtras, “<title xml:lang="en">The Sūtra of the Basket’s Display</title>.”</trailer>
                 </div>
-                <div type="chapter">
+                <div type="chapter" xml:id="UT22084-051-004-chapter-2">
                     <head type="chapter" tid="707">Part Two</head>
                     <milestone unit="chunk" xml:id="UT22084-051-004-137"/>
                     <p tid="331">Bodhisattva Sarva­nīvaraṇa­viṣkambhin then said to the Bhagavat, “Bhagavat, I request that you
@@ -2078,7 +2086,7 @@
                                 sbyin par byed pa</foreign>) and the Cambridge (<foreign type="term" xml:lang="Sa-Ltn">priyaṃdada</foreign>).</note> the samādhi named Vajra Victory Banner,<note place="end" xml:id="UT22084-051-004-658" index="158">According to the  Tibetan (<foreign type="term" xml:lang="Bo-Ltn">rdo rje rgyal mtshan</foreign>), Cambridge, and Sāmaśrami (<foreign type="term" xml:lang="Sa-Ltn">vajradhvaja</foreign>).</note> the samādhi named Viewing All Worlds,<note place="end" xml:id="UT22084-051-004-659" index="159">According to the Tibetan (<foreign type="term" xml:lang="Bo-Ltn">’jig rten
                                 thams cad la rnam par lta ba</foreign>), Cambridge, and Sāmaśrami (<foreign type="term" xml:lang="Sa-Ltn">sarvva­loka­dhātu­vyavalokana</foreign>).</note> the samādhi named Completely
                             Present,<note place="end" xml:id="UT22084-051-004-660" index="160">According to the Tibetan (<foreign type="term" xml:lang="Bo-Ltn">ma lus ’ongs ba</foreign>) and Sāmaśrami (<foreign type="term" xml:lang="Sa-Ltn">kṛtsangata</foreign>).</note>
-                        <ref cRef="F.222.a"/> the samādhi named Truly Bowing Down, the samādhi named Coiled at the Crown, the
+                        <ref cRef="F.222.a" type="folio" xml:id="UT22084-051-004-1048"/> the samādhi named Truly Bowing Down, the samādhi named Coiled at the Crown, the
                         samādhi named Supreme Illumination by the Moon,<note place="end" xml:id="UT22084-051-004-661" index="161">According to the Sanskrit. The Tibetan translates as “Supreme Eyes of the Moon.”</note> the samādhi named
                         Many Attendants, the samādhi named Divine Bright Earrings,<note place="end" xml:id="UT22084-051-004-662" index="162">According to the Sanskrit. The Tibetan has “Divine Eyes” (from a corruption
                             of <foreign type="term" xml:lang="Sa-Ltn">rocana</foreign> to <foreign type="term" xml:lang="Sa-Ltn">locana</foreign>).</note> the samādhi named Lamp of the Eon,<note place="end" xml:id="UT22084-051-004-663" index="163">According to the Sanskrit. The Tibetan translates as “The Continent of the
@@ -2104,7 +2112,7 @@
                                 (<foreign type="term" xml:lang="Bo-Ltn">klu bkod pa</foreign>), from a corruption of <foreign type="term" xml:lang="Sa-Ltn">nāmavyuha</foreign> to <foreign type="term" xml:lang="Sa-Ltn">nāgavyuha</foreign>.</note> the samādhi named Gaping Lion, the samādhi named Face of
                             Arcturus,<note place="end" xml:id="UT22084-051-004-673" index="173">Arcturus is the brightest star in
                             the northern sky.</note>
-                        <ref cRef="F.222.b"/> the samādhi named Approaching, the samādhi named Flash of Intelligence,<note place="end" xml:id="UT22084-051-004-674" index="174">According to the Sanskrit. Omitted in the
+                        <ref cRef="F.222.b" type="folio" xml:id="UT22084-051-004-1049"/> the samādhi named Approaching, the samādhi named Flash of Intelligence,<note place="end" xml:id="UT22084-051-004-674" index="174">According to the Sanskrit. Omitted in the
                             Tibetan.</note> the samādhi named Increasing Power of Mindfulness, the samādhi named Aspiration, the
                         samādhi named Carriage of Victory, and the samādhi named Teaching the Path.</p>
                     <milestone unit="chunk" xml:id="UT22084-051-004-139"/>
@@ -2135,7 +2143,7 @@
                             person “the merchants.”</note> fell into the water and swam to the shore. </p>
                     <milestone unit="chunk" xml:id="UT22084-051-004-141"/>
                     <p tid="338">“Five hundred rākṣasīs took on the form of maidens, and with a great cry came down to the shore.
-                        They gave us cotton robes. We put them on, wrung our clothes dry, <ref cRef="F.223.a"/> and went to sit
+                        They gave us cotton robes. We put them on, wrung our clothes dry, <ref cRef="F.223.a" type="folio" xml:id="UT22084-051-004-1050"/> and went to sit
                         under a large magnolia tree. Seated, we talked among ourselves, asking each other what we should do, but
                         we agreed that there was nothing we could do, and we became silent.</p>
                     <p tid="339">“The rākṣasīs came to us and said, ‘You who are not masters of a house, become masters. You who
@@ -2169,7 +2177,7 @@
                     <p tid="345">“So I<note place="end" xml:id="UT22084-051-004-686" index="186">At this point the narrative in
                             the original changes briefly from first to third person.</note> made the rākṣasī enter the sleep named
                         Ignorance’s Net, and I went out at night, armed with a sword<note place="end" xml:id="UT22084-051-004-687" index="187">According to the Sanskrit. The Tibetan has “sword that glowed like
-                            moonlight named ‘provision for me.’ ”</note> that glowed like moonlight. <ref cRef="F.223.b"/> I took
+                            moonlight named ‘provision for me.’ ”</note> that glowed like moonlight. <ref cRef="F.223.b" type="folio" xml:id="UT22084-051-004-1051"/> I took
                         the road that led south, and followed it until eventually I came to an iron fortress. I walked around it,
                         but could not find a door. However, there was a magnolia tree beside the iron fortress, and so I<note place="end" xml:id="UT22084-051-004-688" index="188">At this point the narrative changes back to first
                             person.</note> climbed up it. I made the sound of spitting, and the merchants inside heard me,<note place="end" xml:id="UT22084-051-004-689" index="189">… “inside [who] heard me” is absent in the
@@ -2195,7 +2203,7 @@
                         to the far shore.” ’</p>
                     <p tid="352">“Once the lamp had told me this, I went to lie down next to the rākṣasī. She awoke and asked me,
                         ‘Noble son, why is your body cold?’</p>
-                    <p tid="353">“I answered, ‘I went outside the town to defecate and urinate. <ref cRef="F.224.a"/> That’s why
+                    <p tid="353">“I answered, ‘I went outside the town to defecate and urinate. <ref cRef="F.224.a" type="folio" xml:id="UT22084-051-004-1052"/> That’s why
                         my body has become cold.’ And so she went back to sleep.</p>
                     <milestone unit="chunk" xml:id="UT22084-051-004-146"/>
                     <p tid="354">“At sunrise I got up and said to all the merchants, ‘Come with me. We are going outside the
@@ -2223,7 +2231,7 @@
                             repetitions.</note> We should go to him.’</p>
                     <p tid="367">“The merchants asked me, ‘On what day should we go?’</p>
                     <p tid="368">“I answered, ‘We should definitely leave in three days’ time. Each person should prepare
-                        provisions for the journey.’ <ref cRef="F.224.b"/>
+                        provisions for the journey.’ <ref cRef="F.224.b" type="folio" xml:id="UT22084-051-004-1053"/>
                     </p>
                     <p tid="369">“They promised they would and returned to town, each to their own home. </p>
                     <milestone unit="chunk" xml:id="UT22084-051-004-148"/>
@@ -2256,7 +2264,7 @@
                         Everyone had made his preparations, and at dawn on the third day we all left the city, coming out through
                         its gate. When we were outside, we agreed that not one of us would turn to look back at Siṃhala Island.
                         After we had made that agreement, we hurried as quickly as we could, and eventually reached the location
-                        of Bālāha, the king of horses. <ref cRef="F.225.a"/>
+                        of Bālāha, the king of horses. <ref cRef="F.225.a" type="folio" xml:id="UT22084-051-004-1054"/>
                     </p>
                     <p tid="380">“Bālāha, the king of horses, was enjoying the sarvaśetāna herb. When he had finished enjoying it,
                         he rolled back and forth on the golden sand and shook his body. When he shook his body, the island of
@@ -2285,7 +2293,7 @@
                         That is what my parents said to me. </p>
                     <milestone unit="chunk" xml:id="UT22084-051-004-153"/>
                     <p tid="387">“Sarva­nīvaraṇa­viṣkambhin, those are the sufferings I experienced when I was a head merchant.
-                            <ref cRef="F.225.b"/> Sarva­nīvaraṇa­viṣkambhin, it was like this: Bodhisattva Mahāsattva
+                            <ref cRef="F.225.b" type="folio" xml:id="UT22084-051-004-1055"/> Sarva­nīvaraṇa­viṣkambhin, it was like this: Bodhisattva Mahāsattva
                         Avalokiteśvara was Bālāha, the king of horses, and he rescued me from the fear of death.</p>
                     <lb/>
                     <p tid="388">“Sarva­nīvaraṇa­viṣkambhin, it is like this: I cannot calculate Bodhisattva Mahāsattva
@@ -2305,7 +2313,7 @@
                             rubies.<note place="end" xml:id="UT22084-051-004-697" index="197">According to the Sanskrit. The Tibetan
                             has “adorned by red lotuses,” presumably translating from a corruption of <foreign type="term" xml:lang="Sa-Ltn">padmarāga</foreign> to <foreign type="term" xml:lang="Sa-Ltn">padmarakta</foreign>.</note> There are seventy-seven such mountains, and on each of those
                         mountains live eighty thousand rishis. Those rishis have leaf huts<note place="end" xml:id="UT22084-051-004-698" index="198">According to the Sanskrit. The Tibetan omits “leaf huts.”</note> where there
-                        are wish-fulfilling trees with red trunks and gold and silver leaves that shine like jewels. <ref cRef="F.226.a"/> There are four pools near each wish-fulfilling tree. Some are filled with water that
+                        are wish-fulfilling trees with red trunks and gold and silver leaves that shine like jewels. <ref cRef="F.226.a" type="folio" xml:id="UT22084-051-004-1056"/> There are four pools near each wish-fulfilling tree. Some are filled with water that
                         has the eight qualities, and some are completely filled with divine flowers. The area around them is
                         completely adorned by wish-fulfilling trees that are divine coral trees hung with divine adornments; hung
                         with diadems and earrings; hung with one hundred and eight-string necklaces and sixty-four-string
@@ -2327,7 +2335,7 @@
                         astonished.”</p>
                     <p tid="394">The Bhagavat said, “Noble son, why are you astonished?”</p>
                     <p tid="395">Bodhisattva Sarva­nīvaraṇa­viṣkambhin said to the Bhagavat, “Bhagavat, if those kinds of things
-                        appear just because someone thinks of the name of the precious king of the Mahāyāna sūtras, <title xml:lang="en">The Sūtra of the Basket’s Display</title>, <ref cRef="F.226.b"/> then those who listen
+                        appear just because someone thinks of the name of the precious king of the Mahāyāna sūtras, <title xml:lang="en">The Sūtra of the Basket’s Display</title>, <ref cRef="F.226.b" type="folio" xml:id="UT22084-051-004-1057"/> then those who listen
                         to, cause to be written out,<note place="end" xml:id="UT22084-051-004-701" index="201">According to the
                             Sanskrit. The Tibetan omits “cause to be written out.”</note> possess, recite, study, and have their minds
                         completely focused on the precious king of the Mahāyāna sūtras, <title xml:lang="en">The Sūtra of the Basket’s
@@ -2356,7 +2364,7 @@
                     <p tid="400">“Sarva­nīvaraṇa­viṣkambhin, it is like this: Beyond the Kṛṣṇa pore there is a pore named
                         Ratnakuṇḍala. Many trillions of female gandharvas live within it. Those female gandharvas have excellent
                         figures; are beautiful and attractive; have magnificent, fair complexions; their bodies are adorned with
-                        divine jewelry; and they rival the apsarases. <ref cRef="F.227.a"/> Even though they have this beauty, they
+                        divine jewelry; and they rival the apsarases. <ref cRef="F.227.a" type="folio" xml:id="UT22084-051-004-1058"/> Even though they have this beauty, they
                         are not afflicted by the suffering of desire, they are not afflicted by the suffering of anger, and they
                         are not afflicted by the suffering of stupidity. Their bodies do not experience the sufferings that humans
                         do. </p>
@@ -2395,7 +2403,7 @@
                     </p>
                     <milestone unit="chunk" xml:id="UT22084-051-004-161"/>
                     <p tid="408">“Thus, noble son, no one can see or hear<note place="end" xml:id="UT22084-051-004-713" index="213">According to the Sanskrit. The Tibetan omits “or hear.”</note> Bodhisattva
-                        Mahāsattva Avalokiteśvara. <ref cRef="F.227.b"/> No tathāgata can see the body of his true nature,<note place="end" xml:id="UT22084-051-004-714" index="214">According to the Cambridge (<foreign type="term" xml:lang="Sa-Ltn">svabhāvakāyaṃ</foreign>) and the Tibetan (<foreign type="term" xml:lang="Bo-Ltn">rang bzhin gyi lus</foreign>). The Vaidya has <foreign type="term" xml:lang="Sa-Ltn">svabhāvakā</foreign> (“nature”).</note> let alone Samantabhadra or other bodhisattvas. </p>
+                        Mahāsattva Avalokiteśvara. <ref cRef="F.227.b" type="folio" xml:id="UT22084-051-004-1059"/> No tathāgata can see the body of his true nature,<note place="end" xml:id="UT22084-051-004-714" index="214">According to the Cambridge (<foreign type="term" xml:lang="Sa-Ltn">svabhāvakāyaṃ</foreign>) and the Tibetan (<foreign type="term" xml:lang="Bo-Ltn">rang bzhin gyi lus</foreign>). The Vaidya has <foreign type="term" xml:lang="Sa-Ltn">svabhāvakā</foreign> (“nature”).</note> let alone Samantabhadra or other bodhisattvas. </p>
                     <p tid="409">“Noble son, this bodhisattva mahāsattva is inconceivable. He manifests inconceivable<note place="end" xml:id="UT22084-051-004-715" index="215">According to the Tibetan. The Sanskrit omits
                             “inconceivable.”</note> miracles. He has completely ripened many trillions of beings. He has led those
                         beings onto the path to enlightenment. Having entered that path, they have gone to the realm of Sukhāvatī
@@ -2421,7 +2429,7 @@
                     <p tid="415">Then Sarva­nīvaraṇa­viṣkambhin asked the Bhagavat, “Bhagavat, when is Bodhisattva Mahāsattva
                         Avalokiteśvara coming?”</p>
                     <p tid="416">The Bhagavat laughed and said, “Noble son, it is not yet time for Bodhisattva Mahāsattva
-                        Avalokiteśvara to come. <ref cRef="F.228.a"/>
+                        Avalokiteśvara to come. <ref cRef="F.228.a" type="folio" xml:id="UT22084-051-004-1060"/>
                     </p>
                     <milestone unit="chunk" xml:id="UT22084-051-004-164"/>
                     <p tid="417">“Noble son, it is like this: Beyond that pore, there is a pore named Amṛtabindu.<note place="end" xml:id="UT22084-051-004-718" index="218">The Tibetan has only <foreign type="term" xml:lang="Bo-Ltn">bdud
@@ -2445,7 +2453,7 @@
                         completely filled with blue lotuses, red lotuses, night lotuses, white lotuses, fragrant water lilies,
                         tiger claw flowers, and great tiger claw flowers.<note place="end" xml:id="UT22084-051-004-720" index="220">See <ptr target="#UT22084-051-004-569"/>.</note> Along these walkways there are beautiful
                         wish-fulfilling trees that have red trunks and leaves made of silver and gold; are adorned with divine
-                        adornments; <ref cRef="F.228.b"/> are hung with diadems, earrings, garlands, one hundred and eight-string
+                        adornments; <ref cRef="F.228.b" type="folio" xml:id="UT22084-051-004-1061"/> are hung with diadems, earrings, garlands, one hundred and eight-string
                         and sixty-four-string necklaces; and are perfectly hung with armlets and a variety of other adornments. </p>
                     <p tid="421">“The bodhisattvas walk each evening along these walkways while thinking about various aspects of
                         the Mahāyāna. They think of nirvāṇa, they contemplate all the sufferings of saṃsāra, and after
@@ -2471,7 +2479,7 @@
                         and delightful divine celestial palaces of crystal and silver. Such are the celestial palaces that appear
                         there. </p>
                     <p tid="426">“The kiṃnaras relax in those celestial palaces and discuss the Dharma. Seated,<note place="end" xml:id="UT22084-051-004-723" index="223">According to the Sanskrit. The Tibetan translates as
-                            “rested.”</note> they talk about the Dharma. They talk about the perfection of generosity, <ref cRef="F.229.a"/> they talk about the perfection of conduct, they talk about the perfection of
+                            “rested.”</note> they talk about the Dharma. They talk about the perfection of generosity, <ref cRef="F.229.a" type="folio" xml:id="UT22084-051-004-1062"/> they talk about the perfection of conduct, they talk about the perfection of
                         patience, they talk about the perfection of diligence, they talk about the perfection of meditation, and
                         they talk about the perfection of wisdom. </p>
                     <milestone unit="chunk" xml:id="UT22084-051-004-168"/>
@@ -2497,7 +2505,7 @@
                     <milestone unit="chunk" xml:id="UT22084-051-004-170"/>
                     <p tid="430">“Noble son, the kiṃnaras who rejoice in the Dharma in that way continually remember the name of
                         Bodhisattva Mahāsattva Avalokiteśvara. Remembering his name, they receive all kinds of things. </p>
-                    <p tid="431">“Thus, noble son, it is difficult to find Bodhisattva Mahāsattva Avalokiteśvara, <ref cRef="F.229.b"/> who is the father and mother of all beings, who brings freedom from fear to all
+                    <p tid="431">“Thus, noble son, it is difficult to find Bodhisattva Mahāsattva Avalokiteśvara, <ref cRef="F.229.b" type="folio" xml:id="UT22084-051-004-1063"/> who is the father and mother of all beings, who brings freedom from fear to all
                         beings, who reveals the path to all beings, who is a kalyāṇamitra for all beings. Noble son, this is what
                         Bodhisattva Mahāsattva Avalokiteśvara is like. </p>
                     <p tid="432">“Noble son, it is difficult to obtain his name. Those who remember the name that is the
@@ -2518,7 +2526,7 @@
                         six-syllable vidyāmantra?”</p>
                     <p tid="438">The Bhagavat answered him, “Noble son, no one knows the six-syllable mahāvidyā. It is an
                         inconceivable yoga and therefore difficult to obtain. Even the tathāgatas do not know it, let alone the
-                        bodhisattvas. <ref cRef="F.230.a"/>
+                        bodhisattvas. <ref cRef="F.230.a" type="folio" xml:id="UT22084-051-004-1064"/>
                     </p>
                     <p tid="439">“Noble son, all the tathāgatas have spent sixteen eons wandering in search of this six-syllable
                         mahāvidyā, so therefore how could bodhisattvas know it? It is the supreme essence of Bodhisattva
@@ -2542,7 +2550,7 @@
                         bodhisattvas. </p>
                     <p tid="443">“ ‘Noble son, those who wear this six-syllable mahāvidyā on their body or on their throat<note place="end" xml:id="UT22084-051-004-730" index="230">According to the Sanskrit. The Tibetan omits “or on
                             their throat.”</note> will be known to have a body that is a vajra body, will be known to be a stūpa
-                        containing relics, and will be known to be the wisdom of ten million tathāgatas.’ <ref cRef="F.230.b"/>
+                        containing relics, and will be known to be the wisdom of ten million tathāgatas.’ <ref cRef="F.230.b" type="folio" xml:id="UT22084-051-004-1065"/>
                     </p>
                     <milestone unit="chunk" xml:id="UT22084-051-004-174"/>
                     <p tid="444">“A noble son or noble daughter who repeats the six-syllable mahāvidyā will have indestructible
@@ -2566,7 +2574,7 @@
                             hatred;<note place="end" xml:id="UT22084-051-004-732" index="232">According to the Sanskrit. The Tibetan
                             omits “which pacifies desire and hatred.”</note> which fills the treasury of the Dharma;<note place="end" xml:id="UT22084-051-004-733" index="233">According to the Cambridge (<foreign type="term" xml:lang="Sa-Ltn">dharma­gaṃjasya</foreign>) and Tibetan (<foreign type="term" xml:lang="Bo-Ltn">chos kyi mdzod</foreign>). The Vaidya has <foreign type="term" xml:lang="Sa-Ltn">dharma­rājasya</foreign> (“Dharma king”).</note> which uproots saṃsāra and the five existences;
                         which brings the hells and afflictions to an end; which takes those who have become animals to a higher
-                        existence; <ref cRef="F.231.a"/> which completes the taste of the Dharma; and which is the
+                        existence; <ref cRef="F.231.a" type="folio" xml:id="UT22084-051-004-1066"/> which completes the taste of the Dharma; and which is the
                             imperishable<note place="end" xml:id="UT22084-051-004-734" index="234">According to the Sanskrit.
                             The Tibetan omits “imperishable.”</note> teaching of omniscience.</p>
                     <milestone unit="chunk" xml:id="UT22084-051-004-176"/>
@@ -2588,7 +2596,7 @@
                             “the realm named Padmottama.”</note> He knows this six-syllable mahāvidyā.’</p>
                     <milestone unit="chunk" xml:id="UT22084-051-004-178"/>
                     <p tid="455">“Noble son, I went to Tathāgata Padmottama. I approached the realm of Tathāgata Padmottama,
-                        arrived there <ref cRef="F.231.b"/>, and bowed my head to the feet of Tathāgata Padmottama. I placed my
+                        arrived there <ref cRef="F.231.b" type="folio" xml:id="UT22084-051-004-1067"/>, and bowed my head to the feet of Tathāgata Padmottama. I placed my
                         palms together before him and said, ‘Bhagavat Padmottama, I must obtain this six-syllable mahāvidyā, which
                         purifies all bad karma merely by the remembrance of its name. I seek to obtain that which is difficult for
                         a bodhisattva to obtain. For that purpose I have been to many worlds, in distress. I have arrived here,
@@ -2611,7 +2619,7 @@
                         jujubes, horse gram, and so on; and the nāga kings sent rain at the appropriate times; and those grains
                         grew, ripened, and were harvested; if Jambudvīpa were made into one threshing floor, and the grain was
                         brought in carts, in animal loads, in bundles and baskets, and put on that threshing floor, trodden by
-                        oxen and donkeys, and made into one big heap; <ref cRef="F.232.a"/> then, noble son, I could count every
+                        oxen and donkeys, and made into one big heap; <ref cRef="F.232.a" type="folio" xml:id="UT22084-051-004-1068"/> then, noble son, I could count every
                         single grain, but, noble son, I cannot calculate the accumulation of merit that comes from repeating the
                         six-syllable mahāvidyā once. </p>
                     <milestone unit="chunk" xml:id="UT22084-051-004-181"/>
@@ -2646,7 +2654,7 @@
                             that would take.”</note> but, noble son, I cannot calculate the accumulation of merit that comes from
                         repeating the six-syllable mahāvidyā once. </p>
                     <milestone unit="chunk" xml:id="UT22084-051-004-183"/>
-                    <p tid="464">“ ‘Noble son, it is like this. <ref cRef="F.232.b"/> As a comparison, the ocean is 84,000 yojanas
+                    <p tid="464">“ ‘Noble son, it is like this. <ref cRef="F.232.b" type="folio" xml:id="UT22084-051-004-1069"/> As a comparison, the ocean is 84,000 yojanas
                         deep, and it has an immeasurable expanse, extending as far as Vaḍavāmukha. I can count all its drops of
                         water, which are the size of the tip of a hair, but, noble son, I cannot calculate the accumulation of
                         merit that comes from repeating the six-syllable mahāvidyā once. </p>
@@ -2676,7 +2684,7 @@
                     <p tid="469">“ ‘Noble son, I have entered the yoga of meditation through an inconceivable dhyāna. This is a
                         subtle Dharma, an imperceptible Dharma, an unknown Dharma; it is the attainment of the ultimate essence.
                         It has been established through the qualities of Bodhisattva Mahāsattva Avalokiteśvara’s skillfulness in
-                        methods. In that way, noble son, <ref cRef="F.233.a"/> I too obtained skillfulness in methods through the
+                        methods. In that way, noble son, <ref cRef="F.233.a" type="folio" xml:id="UT22084-051-004-1070"/> I too obtained skillfulness in methods through the
                         six-syllable mahāvidyā. </p>
                     <p tid="470">“ ‘Noble son, I also wandered through many hundreds of thousands of millions of tens of millions
                         of worlds, and then in front of Tathāgata Amitābha, with palms placed together, I wept because of my
@@ -2698,7 +2706,7 @@
                         mahāvidyā. The Tathāgata has traveled like this, noble son, so therefore give him the six-syllable queen
                         of mahāvidyās.”</p>
                     <milestone unit="chunk" xml:id="UT22084-051-004-188"/>
-                    <p tid="474">‘Then Bhagavat Bodhisattva Avalokiteśvara said, <ref cRef="F.233.b"/> “It should not be given to
+                    <p tid="474">‘Then Bhagavat Bodhisattva Avalokiteśvara said, <ref cRef="F.233.b" type="folio" xml:id="UT22084-051-004-1071"/> “It should not be given to
                         one who has not seen the maṇḍala.<note place="end" xml:id="UT22084-051-004-755" index="255">According to
                             the Sanskrit. The Tibetan has “through eight maṇḍalas” through a corruption in Sanskrit that has loss of
                             the negative and <foreign type="term" xml:lang="Sa-Ltn">adṛṣta</foreign> (“not-seen”) becoming
@@ -2732,7 +2740,7 @@
                     <milestone unit="chunk" xml:id="UT22084-051-004-191"/>
                     <p tid="481">“ ‘ “A noble son or noble daughter who wishes to enter that maṇḍala should write the names of the
                         entire lineage of his or her family and first of all cast those names into the maṇḍala. They will then all
-                        be freed from every human suffering <ref cRef="F.234.a"/> and will become bodhisattvas in their last life.
+                        be freed from every human suffering <ref cRef="F.234.a" type="folio" xml:id="UT22084-051-004-1072"/> and will become bodhisattvas in their last life.
                         They will also quickly attain the highest complete enlightenment, which is complete buddhahood. </p>
                     <p tid="482">“ ‘ “The <foreign type="term" xml:lang="Sa-Ltn">ācārya</foreign> should not give it to those who
                         are inappropriate. It should be bestowed upon those who aspire for it with faith, or bestowed upon those
@@ -2757,7 +2765,7 @@
                     <p tid="488">“Then Bodhisattva Mahāsattva Avalokiteśvara gave the six-syllable queen of mahāvidyās<note place="end" xml:id="UT22084-051-004-764" index="264">According to the Sanskrit. The Tibetan omits “queen
                             of.”</note> to the Tathāgata, the arhat, the Samyaksaṃbuddha Padmottama:</p>
                     <p rend="mantra" tid="638">
-                        <mantra xml:lang="Sa-Ltn">“Oṁ maṇipadme hūṁ</mantra>. <ref cRef="F.234.b"/>
+                        <mantra xml:lang="Sa-Ltn">“Oṁ maṇipadme hūṁ</mantra>. <ref cRef="F.234.b" type="folio" xml:id="UT22084-051-004-1073"/>
                         <ref cRef="B4" type="bampo"/>
                     </p>
                     <milestone unit="chunk" xml:id="UT22084-051-004-194"/>
@@ -2784,7 +2792,7 @@
                         those beings who, with higher motivation, possess this six-syllable mahāvidyā and repeat, listen to, and
                         contemplate it.”</p>
                     <p tid="495">The Bhagavat answered him, “Noble son, those who write out this six-syllable mahāvidyā are
-                        writing out the collection of eighty-four thousand Dharmas. <ref cRef="F.235.a"/> If stūpas<note place="end" xml:id="UT22084-051-004-767" index="267">According to the Sanskrit. The Tibetan has
+                        writing out the collection of eighty-four thousand Dharmas. <ref cRef="F.235.a" type="folio" xml:id="UT22084-051-004-1074"/> If stūpas<note place="end" xml:id="UT22084-051-004-767" index="267">According to the Sanskrit. The Tibetan has
                             “statues.”</note> were made from precious divine gold for tathāgatas, arhats, and samyaksaṃbuddhas
                         equal in number to atoms, and if in one day they were all filled with their relics, the result ripening
                         from that would only equal the result that ripens from one syllable of the six-syllable mahāvidyā, which
@@ -2805,7 +2813,7 @@
                         one hundred and eight samādhis.”</p>
                     <milestone unit="chunk" xml:id="UT22084-051-004-198"/>
                     <p tid="498">Bodhisattva Sarva­nīvaraṇa­viṣkambhin asked the Bhagavat, “Bhagavat, where can I go to obtain
-                        this mahāvidyā?” <ref cRef="F.235.b"/>
+                        this mahāvidyā?” <ref cRef="F.235.b" type="folio" xml:id="UT22084-051-004-1075"/>
                     </p>
                     <p tid="499">“Noble son, in the great city of Vārāṇasī there is a dharmabhāṇaka who possesses, recites, and is
                         completely focused on the six-syllable mahāvidyā.”</p>
@@ -2834,7 +2842,7 @@
                     <milestone unit="chunk" xml:id="UT22084-051-004-201"/>
                     <p tid="504">So Bodhisattva Mahāsattva Sarva­nīvaraṇa­viṣkambhin set forth accompanied by many hundreds of
                         thousands of lay bodhisattvas, monastics, boys, and girls. In order to make offerings to the
-                        dharmabhāṇaka, they brought divine parasols, divine shoes, diadems, earrings, garlands, armlets, <ref cRef="F.236.a"/> one hundred and eight-string and sixty-four-string necklaces for covering the
+                        dharmabhāṇaka, they brought divine parasols, divine shoes, diadems, earrings, garlands, armlets, <ref cRef="F.236.a" type="folio" xml:id="UT22084-051-004-1076"/> one hundred and eight-string and sixty-four-string necklaces for covering the
                         shoulders, ear adornments, and finger rings; and also various kinds of clothing: monastic robes,<note place="end" xml:id="UT22084-051-004-777" index="277">According to the Sanskrit. The Tibetan has “cloth
                             from China.” The Sāmaśrami and Vaidya follow this with <foreign type="term" xml:lang="Sa-Ltn">dhyuṣitāni</foreign>, which is not included in the Cambridge or Tibetan.</note> clothing commanded by
                         the vidyādharas, and Kaśika cloth; and also various flowers: blue lotuses, red lotuses, night lotuses,
@@ -2867,7 +2875,7 @@
                         accumulation of the treasure of amṛta. You are a repository within the human realm. The devas, nāgas,
                         yakṣas, asuras, garuḍas, kiṃnaras, mahoragas, humans, and nonhumans gather to listen to the Dharma from
                         you.</p>
-                    <p tid="509">“You teach a Dharma that is like a great vajra. <ref cRef="F.236.b"/> You liberate many beings
+                    <p tid="509">“You teach a Dharma that is like a great vajra. <ref cRef="F.236.b" type="folio" xml:id="UT22084-051-004-1077"/> You liberate many beings
                         who are bound in the bondage of saṃsāra. Meritorious are those beings who live in Vārāṇasī, can see you,
                         and always gather around you. The instant they see you, you burn up all their bad karma. You burn up all
                         bad karma like a fire burns a forest, just through being seen. The tathāgatas, arhats, and
@@ -2886,7 +2894,7 @@
                             complete enlightenment, so…”</note> so give me the seed for enlightenment! Give me the opportunity of
                         the Dharma! Give me the pure body of perfectly established forms!<note place="end" xml:id="UT22084-051-004-785" index="285">According to the Sanskrit. The Tibetan has “Give me the completely pure state
                             of great stability.”</note>
-                        <ref cRef="F.237.a"/> Give me a good reputation so that all beings say, ‘He has gained unwavering
+                        <ref cRef="F.237.a" type="folio" xml:id="UT22084-051-004-1078"/> Give me a good reputation so that all beings say, ‘He has gained unwavering
                         goodness!’ Thus, guru, give me the six-syllable queen of mahāvidyās, through which I will quickly achieve
                         the highest complete enlightenment and be a samyaksaṃbuddha! Turn the twelve wheels of the Dharma! Free
                         all beings from the suffering of saṃsāra! Give me the six-syllable queen of mahāvidyās that I have not
@@ -2918,7 +2926,7 @@
                             savages”), referring to the tribal people living in the mountains of present day Orissa. The Tibetan
                             is based on a similar version, but with the compound divided into two, “naked ones and mountain men”
                                 (<foreign type="term" xml:lang="Bo-Ltn">gcer bu pa dang ri mi</foreign>).</note> They take
-                        ordination in those orders, but those deities do not bring liberation; <ref cRef="F.237.b"/> they are not
+                        ordination in those orders, but those deities do not bring liberation; <ref cRef="F.237.b" type="folio" xml:id="UT22084-051-004-1079"/> they are not
                         protectors, nor is theirs the conduct that is to be followed. All the hosts of deities—Brahmā, Viṣṇu,
                         Maheśvara, Śakra, who is the lord of devas, Āditya, Candra, Vāyu, Varuṇa, Agni, Dharmarāja Yama, and the
                         four mahārājas—constantly request the six-syllable queen of mahāvidyās.” </p>
@@ -2940,7 +2948,7 @@
                         like the essence of rice. We take it home and fill our pots with rice and keep it in there. And then, in
                         accord with the sun, we dry it in the sun’s heat. When it is dried, we pound it with a pestle to remove
                         the chaff. What is the essence?<note place="end" xml:id="UT22084-051-004-792" index="292">According to the
-                            Sanskrit. The Tibetan omits “What is the essence?”</note> The essence is the rice. In that way, <ref cRef="F.238.a"/> all other yogas are like husks, and from among all yogas, the six-syllable queen of
+                            Sanskrit. The Tibetan omits “What is the essence?”</note> The essence is the rice. In that way, <ref cRef="F.238.a" type="folio" xml:id="UT22084-051-004-1080"/> all other yogas are like husks, and from among all yogas, the six-syllable queen of
                         mahāvidyās is like the rice. </p>
                     <milestone unit="chunk" xml:id="UT22084-051-004-210"/>
                     <p tid="519">“Noble son, the bodhisattvas produce merit in order to possess the six-syllable queen of
@@ -2967,7 +2975,7 @@
                     <p tid="523">The dharmabhāṇaka looked up into the sky and saw someone who had a body white as the autumn moon,
                         a crown of coiled hair, an omniscient buddha<note place="end" xml:id="UT22084-051-004-796" index="296">This is referring to Amitābha.</note> upon his head, and a beautiful lotus in his hand, and was
                         adorned with the splendor of lotuses.</p>
-                    <p tid="524">Then the dharmabhāṇaka said to Sarva­nīvaraṇa­viṣkambhin, <ref cRef="F.238.b"/> “Noble son, the
+                    <p tid="524">Then the dharmabhāṇaka said to Sarva­nīvaraṇa­viṣkambhin, <ref cRef="F.238.b" type="folio" xml:id="UT22084-051-004-1081"/> “Noble son, the
                         Bodhisattva Mahāsattva Avalokiteśvara has given permission for the six-syllable queen of mahāvidyās to be
                         given to you.”</p>
                     <milestone unit="chunk" xml:id="UT22084-051-004-212"/>
@@ -2992,7 +3000,7 @@
                     <milestone unit="chunk" xml:id="UT22084-051-004-214"/>
                     <p tid="532">Sarva­nīvaraṇa­viṣkambhin bowed his head to the feet of the dharmabhāṇaka and departed, having
                         obtained what he sought and with his wishes fulfilled. He went to the Jetavana Monastery, arrived there,
-                        bowed down to the feet of Bhagavat Śākyamuni, and sat to one side. <ref cRef="F.239.a"/>
+                        bowed down to the feet of Bhagavat Śākyamuni, and sat to one side. <ref cRef="F.239.a" type="folio" xml:id="UT22084-051-004-1082"/>
                     </p>
                     <p tid="533">Then the Bhagavat, the tathāgata, the arhat, the Samyaksaṃbuddha Śākyamuni asked, “Noble son, did
                         you find what you sought?”</p>
@@ -3034,7 +3042,7 @@
                     <milestone unit="chunk" xml:id="UT22084-051-004-217"/>
                     <p tid="541">“When those bodhisattvas have entered their many-storied palaces, they remember the six-syllable
                         mahāvidyā. When they remember it, they realize nirvāṇa. They see the seven tathāgatas that are at the
-                        level of nirvāṇa. They also see Bodhisattva Mahāsattva Avalokiteśvara. <ref cRef="F.239.b"/> When they see
+                        level of nirvāṇa. They also see Bodhisattva Mahāsattva Avalokiteśvara. <ref cRef="F.239.b" type="folio" xml:id="UT22084-051-004-1083"/> When they see
                         him, faith arises in their minds. After that has occurred, the bodhisattvas leave the many-storied
                         palaces. Then some go to their walkways; some go to the gardens of precious wish-granting jewels; some go
                         to the bathing pools; and some go to the sides of the mountains, which are made of precious ruby jewels. </p>
@@ -3058,7 +3066,7 @@
                             to the Sanskrit. The Tibetan has “ninety thousand.”</note> mountains in that pore. Some are made of
                         diamonds, some are made of silver, some are made of gold, some are made of precious sapphire jewels, some
                         are made of rubies, some are made of emeralds, and some are made of crystal. Those kings of mountains are
-                        like that. Each one has eighty thousand peaks, is adorned with various jewels, <ref cRef="F.240.a"/> and
+                        like that. Each one has eighty thousand peaks, is adorned with various jewels, <ref cRef="F.240.a" type="folio" xml:id="UT22084-051-004-1084"/> and
                         is extremely beautified by various delightful features. </p>
                     <p tid="547">“On the peaks there live gandharvas who continually play music, which emanates from that pore. </p>
                     <milestone unit="chunk" xml:id="UT22084-051-004-220"/>
@@ -3091,7 +3099,7 @@
                         hung with a variety of adornments. They are hung with diadems, earrings, garlands, armlets, and one hundred
                         and eight-string and sixty-four-string pearl necklaces. They are hung with Kaśika cloth. They have the
                         jingling sounds of silver and gold bells. </p>
-                    <p tid="551">“Pratyekabuddhas live on these kings of mountains. <ref cRef="F.240.b"/> They talk with each
+                    <p tid="551">“Pratyekabuddhas live on these kings of mountains. <ref cRef="F.240.b" type="folio" xml:id="UT22084-051-004-1085"/> They talk with each
                         other about the sūtras, the geyas, the vyākaraṇas, the gāthās, the udānas, the nidānas, the avadānas, the
                         itivṛttakas, the jātakas, the vaipulyas, the adbhūtadharmas, and the upadeśas.</p>
                     <lb/>
@@ -3117,7 +3125,7 @@
                             The Tibetan has “they face Jambudvīpa and teach the Dharma.”</note> They teach the six perfections: they
                         teach the perfection of generosity, they teach the perfection of conduct, they teach the perfection of
                         patience, they teach the perfection of diligence, they teach the perfection of meditation, and they teach
-                        the perfection of wisdom. <ref cRef="F.241.a"/> They teach various kinds of Dharma, continually teaching
+                        the perfection of wisdom. <ref cRef="F.241.a" type="folio" xml:id="UT22084-051-004-1086"/> They teach various kinds of Dharma, continually teaching
                         the humans who live in Jambudvīpa.</p>
                     <p tid="557">“Thus, noble son, they see the pores of Bodhisattva Mahāsattva Avalokiteśvara. They also see
                         deities such as devas, nāgas, yakṣas, asuras, garuḍas, kiṃnaras, mahoragas,<note place="end" xml:id="UT22084-051-004-815" index="315">According to the Sanskrit. The Tibetan omits mahoragas.</note> humans,
@@ -3136,7 +3144,7 @@
                     <p tid="561">The Bhagavat answered, “There are no more, noble son.”</p>
                     <p tid="562">Bodhisattva Sarva­nīvaraṇa­viṣkambhin asked the Bhagavat, “Bhagavat, is Bodhisattva Mahāsattva
                         Avalokiteśvara coming?”</p>
-                    <p tid="563">The Bhagavat said, “Bodhisattva Mahāsattva Avalokiteśvara <ref cRef="F.241.b"/> will come to this
+                    <p tid="563">The Bhagavat said, “Bodhisattva Mahāsattva Avalokiteśvara <ref cRef="F.241.b" type="folio" xml:id="UT22084-051-004-1087"/> will come to this
                         great monastery of Jetavana in order to see me, to bow down to me, to honor me, and to give a prophecy
                         concerning the deity Maheśvara in a realm within this universe.”<note place="end" xml:id="UT22084-051-004-816" index="316">According to the Sanskrit. The Tibetan omits “in a realm within this
                             universe.”</note>
@@ -3173,7 +3181,7 @@
                         instructed. I have accomplished the task.”</p>
                     <p tid="571">The Bhagavat gave his approval, saying, “Noble son, it is excellent that you have accomplished
                         the task. Excellent.” </p>
-                    <p tid="572">Then Bodhisattva Mahāsattva Avalokiteśvara offered lotus flowers to the Bhagavat <ref cRef="F.242.a"/> and said, “Bhagavat, the tathāgata Amitābha presents you with these lotus flowers and
+                    <p tid="572">Then Bodhisattva Mahāsattva Avalokiteśvara offered lotus flowers to the Bhagavat <ref cRef="F.242.a" type="folio" xml:id="UT22084-051-004-1088"/> and said, “Bhagavat, the tathāgata Amitābha presents you with these lotus flowers and
                         hopes you are not unwell, not fatigued, that you are in good health, and that life is pleasant.”</p>
                     <p tid="573">The Bhagavat accepted the lotuses and placed them on his left.</p>
                     <milestone unit="chunk" xml:id="UT22084-051-004-229"/>
@@ -3192,7 +3200,7 @@
                     <p tid="578">Then Bodhisattva Mahāsattva Avalokiteśvara asked the deva Maheśvara, “Noble son, why are you
                         silent?”</p>
                     <p tid="579">The deva Maheśvara answered, “I request the prophecy of my unsurpassable true enlightenment.”</p>
-                    <p tid="580">Avalokiteśvara said, “Noble son, in the world named Vivṛta, <ref cRef="F.242.b"/> you will be the
+                    <p tid="580">Avalokiteśvara said, “Noble son, in the world named Vivṛta, <ref cRef="F.242.b" type="folio" xml:id="UT22084-051-004-1089"/> you will be the
                         Tathāgata, the arhat, the samyaksaṃbuddha, perfect in wisdom and conduct, the sugata, the knower of the
                         world, the unsurpassable guide who tames beings, the teacher of gods and humans, the buddha, the Bhagavat
                             Bhasmeśvara.”<note place="end" xml:id="UT22084-051-004-821" index="321">“Lord of Ashes,” according to
@@ -3217,7 +3225,7 @@
                             for the Himalayas.</note> You will be the Tathāgata, the arhat, the samyaksaṃbuddha, perfect in wisdom and conduct, the sugata, the knower of the world, the unsurpassable guide who tames beings, the
                         teacher of gods and humans, the buddha, the Bhagavat Umeśvara.” </p>
                     <p tid="584">That was the prophecy that Umādevī received.</p>
-                    <p tid="585">The Bhagavat said, “Look, Sarva­nīvaraṇa­viṣkambhin, <ref cRef="F.243.a"/> Bodhisattva Mahāsattva
+                    <p tid="585">The Bhagavat said, “Look, Sarva­nīvaraṇa­viṣkambhin, <ref cRef="F.243.a" type="folio" xml:id="UT22084-051-004-1090"/> Bodhisattva Mahāsattva
                         Avalokiteśvara has given them prophecies of the highest complete enlightenment. This, noble son, is
                         entitled ‘the Maheśvara episode.’ ”<note place="end" xml:id="UT22084-051-004-826" index="326">“Noble son”
                             is from the Sanskrit, which makes it clear that this sentence is a continuation of Śākyamuni’s speech.
@@ -3263,7 +3271,7 @@
                         noble son, I cannot calculate Bodhisattva Mahāsattva Avalokiteśvara’s accumulation of merit.</p>
                     <milestone unit="chunk" xml:id="UT22084-051-004-235"/>
                     <p tid="590">“Noble son, it is like this: I can count each drop in the vast ocean, but, noble son, I cannot
-                        calculate Bodhisattva Mahāsattva Avalokiteśvara’s accumulation of merit. <ref cRef="F.243.b"/>
+                        calculate Bodhisattva Mahāsattva Avalokiteśvara’s accumulation of merit. <ref cRef="F.243.b" type="folio" xml:id="UT22084-051-004-1091"/>
                     </p>
                     <p tid="591">“Noble son, it is like this: I can count each leaf in a forest of agarwood trees, but, noble son,
                         I cannot calculate Bodhisattva Mahāsattva Avalokiteśvara’s accumulation of merit.</p>
@@ -3280,7 +3288,7 @@
                         tathāgatas would only equal the merit of the tip of one hair on the body of Bodhisattva Mahāsattva
                         Avalokiteśvara.</p>
                     <milestone unit="chunk" xml:id="UT22084-051-004-237"/>
-                    <p tid="594">“Sarva­nīvaraṇa­viṣkambhin, it is like this: Bodhisattva Mahāsattva Avalokiteśvara <ref cRef="F.244.a"/> has many hundreds of thousands of samādhis: the samādhi named Completely Defeating,
+                    <p tid="594">“Sarva­nīvaraṇa­viṣkambhin, it is like this: Bodhisattva Mahāsattva Avalokiteśvara <ref cRef="F.244.a" type="folio" xml:id="UT22084-051-004-1092"/> has many hundreds of thousands of samādhis: the samādhi named Completely Defeating,
                         the samādhi named Adorning, the samādhi named Unadorning, the samādhi named Lightning’s Illumination,<note place="end" xml:id="UT22084-051-004-835" index="335">According to the Sanskrit. The Tibetan translates as
                             “Eyes of Lightning.”</note> the samādhi named Being Patient, the samādhi named Great Brilliance, the
                         samādhi named Manifesting, the samādhi named Vajra Garland, the samādhi named Sublime Gift, the samādhi
@@ -3312,7 +3320,7 @@
                             Tamed,<note place="end" xml:id="UT22084-051-004-847" index="347">According to the Sanskrit. The Tibetan
                             omits.</note> the samādhi named Abode of Beings,<note place="end" xml:id="UT22084-051-004-848" index="348">According to the Tibetan. The Sanskrit omits.</note> the samādhi named
                         Creating Inexhaustibility, the samādhi named Extinguishing Avīci, the samādhi named Ocean Deep, the
-                        samādhi named Hundred Retinues, <ref cRef="F.244.b"/> and the samādhi named Teaching the Path.<note place="end" xml:id="UT22084-051-004-849" index="349">According to the Sanskrit. The Tibetan omits.</note>
+                        samādhi named Hundred Retinues, <ref cRef="F.244.b" type="folio" xml:id="UT22084-051-004-1093"/> and the samādhi named Teaching the Path.<note place="end" xml:id="UT22084-051-004-849" index="349">According to the Sanskrit. The Tibetan omits.</note>
                         Noble son, Bodhisattva Mahāsattva Avalokiteśvara has those samādhis. </p>
                     <milestone unit="chunk" xml:id="UT22084-051-004-238"/>
                     <p tid="595">“Sarva­nīvaraṇa­viṣkambhin, it is like this: When the Tathāgata, the arhat, the samyaksaṃbuddha,
@@ -3341,7 +3349,7 @@
                         Mahāsattva Avalokiteśvara was in the samādhi named Indra’s Intelligence.<note place="end" xml:id="UT22084-051-004-855" index="355">This paragraph only in the Tibetan.</note>
                     </p>
                     <p tid="600">“When Bodhisattva Mahāsattva Samantabhadra was in the samādhi named Indra’s Way,<note place="end" xml:id="UT22084-051-004-856" index="356">According to the Tibetan. The Vaidya has <foreign type="term" xml:lang="Sa-Ltn">bhadra­rāja</foreign> (“excellent king”), the Sāmaśrami has <foreign type="term" xml:lang="Sa-Ltn">rāja </foreign>(“king”), and the Cambridge has<foreign type="term" xml:lang="Sa-Ltn"> Indra­rāja</foreign> (“Indra king”).</note>
-                        <ref cRef="F.245.a"/> Bodhisattva Mahāsattva Avalokiteśvara was in the samādhi named Ocean Deep.</p>
+                        <ref cRef="F.245.a" type="folio" xml:id="UT22084-051-004-1094"/> Bodhisattva Mahāsattva Avalokiteśvara was in the samādhi named Ocean Deep.</p>
                     <milestone unit="chunk" xml:id="UT22084-051-004-241"/>
                     <p tid="601">“When Bodhisattva Mahāsattva Samantabhadra was in the samādhi named Intimidating Lion,
                         Bodhisattva Mahāsattva Avalokiteśvara was in the samādhi named Play of the Lion.</p>
@@ -3362,7 +3370,7 @@
                     <milestone unit="chunk" xml:id="UT22084-051-004-243"/>
                     <p tid="607">Sarva­nīvaraṇa­viṣkambhin said to the Bhagavat, “Bhagavat, I pray that you teach the precious
                         king of the Mahāyāna sūtras,<title xml:lang="en"> The Sūtra of the Basket’s Display</title>, so that we
-                        will enjoy and be satisfied by the taste of the Dharma.” <ref cRef="F.245.b"/>
+                        will enjoy and be satisfied by the taste of the Dharma.” <ref cRef="F.245.b" type="folio" xml:id="UT22084-051-004-1095"/>
                     </p>
                     <p tid="608">The Bhagavat replied, “Noble son, those who hear the precious king of the Mahāyāna sūtras, <title xml:lang="en">The Sūtra of the Basket’s Display</title>, will not have the obscuration of previous
                         karma. Those who, enamored of another’s wife, have sexual intercourse with her; those who have killed
@@ -3389,7 +3397,7 @@
                     <p tid="613">“Noble son, in that same way, this precious king of the Mahāyāna sūtras, <title xml:lang="en">The Sūtra of
                             the Basket’s Display</title>, burns up all bad karma. Those who hear the precious king of the
                         Mahāyāna sūtras, <title xml:lang="en">The Sūtra of the Basket’s Display</title>, will have happiness. Noble son,
-                        they should not be known as ordinary beings. <ref cRef="F.246.a"/> They should be seen as irreversible
+                        they should not be known as ordinary beings. <ref cRef="F.246.a" type="folio" xml:id="UT22084-051-004-1096"/> They should be seen as irreversible
                         bodhisattvas. When they die, twelve tathāgatas will come and reassure them, saying, ‘Do not be afraid,
                         noble son, do not be afraid. You have heard the precious king of the Mahāyāna sūtras, <title xml:lang="en">The Sūtra of
                             the Basket’s Display</title>. You will no longer continue in saṃsāra. You will never again see birth,
@@ -3418,7 +3426,7 @@
                     <p tid="619">The Bhagavat said, “Those who have incorrect conduct should not give ordination. They cannot even
                         make the announcement of the request for ordination, the intermediate motions, and the fourth.<note place="end" xml:id="UT22084-051-004-863" index="363">According to the Sanskrit. The Tibetan here is
                             particularly obscure: “They should not do the supplication and the fourth.” See also <ptr target="#UT22084-051-004-864"/>.</note>
-                        <ref cRef="F.246.b"/> What need is there to say more? Bhikṣus, a bhikṣu with incorrect conduct cannot
+                        <ref cRef="F.246.b" type="folio" xml:id="UT22084-051-004-1097"/> What need is there to say more? Bhikṣus, a bhikṣu with incorrect conduct cannot
                         establish the various locations for ordination, let alone make the fourth motion.<note place="end" xml:id="UT22084-051-004-864" index="364">The announcement that someone wishes to take ordination,
                             followed by three inquiries as to whether any bhikṣu present has an objection, are together called
                             “the four motions.”</note> They destroy the teaching. Those who have incorrect conduct should not
@@ -3447,7 +3455,7 @@
                         They will experience that kind of physical suffering. </p>
                     <milestone unit="chunk" xml:id="UT22084-051-004-251"/>
                     <p tid="625">“Those who use the food of the saṅgha to feed dogs will be reborn in a low caste, with defective
-                        faculties, crippled and hunchbacked, <ref cRef="F.247.a"/> and unable to look others in the face while
+                        faculties, crippled and hunchbacked, <ref cRef="F.247.a" type="folio" xml:id="UT22084-051-004-1098"/> and unable to look others in the face while
                         begging. When they die, they will be reborn with diseased bodies. They will have blood and pus dripping
                         from their bodies; the tendons in their bodies will shrink. When they stand up, red lumps of their flesh
                         will fall onto the ground, and their bones will be exposed. They will experience that kind of suffering
@@ -3473,7 +3481,7 @@
                     <milestone unit="chunk" xml:id="UT22084-051-004-254"/>
                     <p tid="628">“Bhikṣus, those who have the vows of training should have the three Dharma robes. One Dharma robe
                         is worn by the saṅgha so that there will be confidence in the saṅgha. The second robe is for when one goes
-                        to the king’s palace. <ref cRef="F.247.b"/> The third robe is for when one goes to the villages, towns,
+                        to the king’s palace. <ref cRef="F.247.b" type="folio" xml:id="UT22084-051-004-1099"/> The third robe is for when one goes to the villages, towns,
                         marketplaces, and hamlets. So the bhikṣus must have the three robes. </p>
                     <milestone unit="chunk" xml:id="UT22084-051-004-255"/>
                     <p tid="629">“Those bhikṣus who have good conduct, who have good qualities, and who have wisdom<note place="end" xml:id="UT22084-051-004-868" index="368">According to the Sanskrit. The Tibetan omits “and who
@@ -3498,10 +3506,10 @@
                     <milestone unit="chunk" xml:id="UT22084-051-004-257"/>
                     <trailer tid="636">The noble Mahāyāna sūtra, “<title xml:lang="en">The Basket’s Display</title>,” is concluded.</trailer>
                 </div>
-                <div type="colophon">
+                <div type="colophon" xml:id="UT22084-051-004-colophon">
                     <head type="colophon" tid="708">Colophon</head>
                     <milestone unit="chunk" xml:id="UT22084-051-004-1002"/>
-                    <p tid="637">Translated and revised by the Indian paṇḍitas Jinamitra and Dānaśīla, and by Yeshé Dé, the
+                    <p tid="637">Translated and revised by the Indian paṇḍitas Jinamitra and Dānaśīla, and by Bandé Yeshé Dé, the
                         translator and chief editor.</p>
                 </div>
             </div>
@@ -3512,7 +3520,7 @@
             </div>
             <div type="listBibl">
                 <head type="listBibl" tid="710">Bibliography</head>
-                <div type="section">
+                <div type="section" xml:id="UT22084-051-004-listBibl-1">
                     <head type="section" tid="711">Tibetan, Sanskrit, and Chinese texts</head>
                     <bibl xml:id="UT22084-051-004-258">
                         <title xml:lang="Bo-Ltn">’phags pa za ma tog bkod pa zhes bya ba theg pa chen po’i mdo</title>,<title xml:lang="Sa-Ltn"> Ārya­karaṇḍa­vyūha­nāma­mahā­yāna­sūtra.</title> Toh. 116, Degé Kangyur vol. 51
@@ -3535,42 +3543,62 @@
                             Original Manuscripts</title>. New Delhi: Aditya Prakashan, 1999.</bibl>
                     <lb/>
                     <bibl xml:id="UT22084-051-004-264">
-                        <title xml:lang="Bo-Ltn">’dul ba gzhi</title>, <title xml:lang="Sa-Ltn">Vinayavāstu</title>. Toh. 1, Degé
+                        <title xml:lang="Bo-Ltn">’dul ba gzhi</title>, <title xml:lang="Sa-Ltn">
+                            <ref target="https://read.84000.co/section/O1JC114941JC11495.html">Vinayavāstu</ref>
+                        </title>. Toh. 1, Degé
                         Kangyur, vols. 1–4 (’dul ba, ka – nga). </bibl>
                     <bibl xml:id="UT22084-051-004-265">
-                        <title xml:lang="Bo-Ltn">’dul ba rnam par ’byed pa</title>,<title xml:lang="Sa-Ltn">
-                            Vinaya­vibhaṅga</title>. Toh. 3, Degé Kangyur, vols. 5–8 (’dul ba, ca – nya). </bibl>
+                        <title xml:lang="Bo-Ltn">’dul ba rnam par ’byed pa</title>, <title xml:lang="Sa-Ltn">
+                            <ref rend="pending" target="https://read.84000.co/translation/toh3.html">Vinaya­vibhaṅga</ref>
+                        </title>. Toh. 3, Degé Kangyur, vols. 5–8 (’dul ba, ca – nya). </bibl>
                     <bibl xml:id="UT22084-051-004-266">
-                        <title xml:lang="Bo-Ltn">’phags pa shes rab kyi pha rol tu phyin pa brgyad stong pa</title>,<title xml:lang="Sa-Ltn"> Āryāṣṭa­sāhasrikā­prajñā­pāramitā</title> [<title xml:lang="en">Perfection of
+                        <title xml:lang="Bo-Ltn">’phags pa shes rab kyi pha rol tu phyin pa brgyad stong pa</title>, <title xml:lang="Sa-Ltn">
+                            <ref rend="pending" target="https://read.84000.co/translation/toh12.html">Āryāṣṭa­sāhasrikā­prajñā­pāramitā</ref>
+                        </title> [<title xml:lang="en">Perfection of
                             Wisdom in Eight Thousand Lines</title>]. Toh. 12, Degé Kangyur, vol. 33 (sher phyin brgyad stong, ka),
                         folios 1b–286a. </bibl>
                     <bibl xml:id="UT22084-051-004-267">
-                        <title xml:lang="Bo-Ltn">bcom ldan ’das ma shes rab kyi pha rol tu phyin pa’i snying po</title>,<title xml:lang="Sa-Ltn"> Bhagavatī­prajñā­pāramitā­hṛdaya </title>[<title xml:lang="en">Heart
+                        <title xml:lang="Bo-Ltn">bcom ldan ’das ma shes rab kyi pha rol tu phyin pa’i snying po</title>, <title xml:lang="Sa-Ltn">
+                            <ref rend="pending" target="https://read.84000.co/translation/toh21.html">Bhagavatī­prajñā­pāramitā­hṛdaya</ref>
+                        </title> [<title xml:lang="en">Heart
                         Sūtra</title>]. Toh. 21, Degé Kangyur, vol. 34 (sher phyin sna tshogs, ka), folios 144b–146a.</bibl>
                     <bibl xml:id="UT22084-051-004-268">
-                        <title xml:lang="Bo-Ltn">sangs rgyas phal po che zhes bya ba shin tu rgyas pa chen po’i mdo</title>,<title xml:lang="Sa-Ltn"> Buddhāvataṃsaka­sūtra.</title> Toh. 44, Degé Kangyur, vols. 35-38 (phal chen, ka -
+                        <title xml:lang="Bo-Ltn">sangs rgyas phal po che zhes bya ba shin tu rgyas pa chen po’i mdo</title>, <title xml:lang="Sa-Ltn">
+                            <ref target="https://read.84000.co/section/O1JC114941JC14666.html">Buddhāvataṃsaka­sūtra</ref>.</title> Toh. 44, Degé Kangyur, vols. 35-38 (phal chen, ka -
                         a). </bibl>
                     <bibl xml:id="UT22084-051-004-269">
-                        <title xml:lang="Bo-Ltn">dam pa’i chos pad ma dkar po zhes bya ba theg pa chen po’i mdo</title> (<title xml:lang="Sa-Ltn">Saddharma­puṇḍarīka­nāma­mahā­yāna­sūtra</title>) [<title xml:lang="en">Lotus
+                        <title xml:lang="Bo-Ltn">dam pa’i chos pad ma dkar po zhes bya ba theg pa chen po’i mdo</title>, <title xml:lang="Sa-Ltn">
+                            <ref target="https://read.84000.co/translation/toh113.html">Saddharma­puṇḍarīka­nāma­mahā­yāna­sūtra</ref>
+                        </title> [<title xml:lang="en">Lotus
                             Sūtra</title>]. Toh. 113, Degé Kangyur, vol. 51 (mdo sde, ja), folios 1b–180b. </bibl>
                     <bibl xml:id="UT22084-051-004-270">
                         <title xml:lang="Bo-Ltn">’phags pa bde ba can gyi bkod pa zhes bya ba theg pa chen po’i mdo</title>,
-                            <title xml:lang="Sa-Ltn">Ārya­sukhāvatī­vyūha­nāma­mahā­yāna­sūtra</title>. Toh. 115, Degé Kangyur
+                        <title xml:lang="Sa-Ltn">
+                            <ref target="https://read.84000.co/translation/toh115.html">Ārya­sukhāvatī­vyūha­nāma­mahā­yāna­sūtra</ref>
+                        </title>. Toh. 115, Degé Kangyur
                         vol. 51 (mdo sde, pa), folios 195b-200b [trans. Sakya Pandita Translation Group (2012), see below].</bibl>
                     <bibl xml:id="UT22084-051-004-271">
-                        <title xml:lang="Bo-Ltn">’phags pa dkon mchog gi za ma tog ces bya ba theg pa chen po’i mdo</title>,<title xml:lang="Sa-Ltn"> Ārya­ratna­karaṇḍa­nāma­mahā­yāna­sūtra </title>[<title xml:lang="en">The Basket of
+                        <title xml:lang="Bo-Ltn">’phags pa dkon mchog gi za ma tog ces bya ba theg pa chen po’i mdo</title>, <title xml:lang="Sa-Ltn">
+                            <ref rend="pending" target="https://read.84000.co/translation/toh117.html">Ārya­ratna­karaṇḍa­nāma­mahā­yāna­sūtra</ref>
+                        </title> [<title xml:lang="en">The Basket of
                             the Jewels Sūtra</title>]. Toh. 117, Degé Kangyur, vol.51 (mdo sde, ja), folios 248a–290a. </bibl>
                     <bibl xml:id="UT22084-051-004-272">
                         <title xml:lang="Bo-Ltn">’phags pa de bzhin gshegs pa thams cad kyi byin gyis rlabs kyi snying po gsang ba
-                            ring bsrel gyi za ma tog ces bya ba’i gzungs</title> (<title xml:lang="Sa-Ltn">Ārya­sarva­tathāgatā­dhiṣṭhāna­hṛdaya­guhya­dhātu­karaṇḍa­nāma­dhāraṇī</title>) [<title xml:lang="en">The Dhāraṇī Named The Relic Casket that is the Secret Essence of the Blessings of all the
+                            ring bsrel gyi za ma tog ces bya ba’i gzungs</title> (<title xml:lang="Sa-Ltn">
+                            <ref rend="pending" target="https://read.84000.co/translation/toh507.html">Ārya­sarva­tathāgatā­dhiṣṭhāna­hṛdaya­guhya­dhātu­karaṇḍa­nāma­dhāraṇī</ref>
+                        </title>) [<title xml:lang="en">The Dhāraṇī Named The Relic Casket that is the Secret Essence of the Blessings of all the
                             Tathāgatas</title>]. Toh. 507, Degé Kangyur, vol. 88 (rgyud ’bum, na), folios
                         1b–7b.</bibl>
                     <bibl xml:id="UT22084-051-004-273">
-                        <title xml:lang="Bo-Ltn">’phags pa lha mo skul byed ma zhes bya ba’i gzungs</title>, <title xml:lang="Sa-Ltn">Cunde­devī­nāma­dhāraṇī </title>[<title xml:lang="en">The Dhāraṇī Named Goddess
+                        <title xml:lang="Bo-Ltn">’phags pa lha mo skul byed ma zhes bya ba’i gzungs</title>, <title xml:lang="Sa-Ltn">
+                            <ref rend="pending" target="https://read.84000.co/translation/toh613.html">Cunde­devī­nāma­dhāraṇī</ref>
+                        </title> [<title xml:lang="en">The Dhāraṇī Named Goddess
                             Cunde</title>]. Toh. 613, Degé Kangyur, vol.91 (rgyud, ba), folios 46b–47a; Toh. 989, Degé Kangyur,
                         vol. 102 (gzungs, waṃ), folios 143a–143b.</bibl>
                     <bibl xml:id="UT22084-051-004-274">
-                        <title xml:lang="Bo-Ltn">’phags pa lha mo bskul byed ma zhes bya ba’i gzungs</title>, <title xml:lang="Sa-Ltn">Ārya­cuṇḍa­devī­nāma­dhāraṇī </title>[<title xml:lang="en">Goddess Cuṇḍa’s
+                        <title xml:lang="Bo-Ltn">’phags pa lha mo bskul byed ma zhes bya ba’i gzungs</title>, <title xml:lang="Sa-Ltn">
+                            <ref rend="pending" target="https://read.84000.co/translation/toh989.html">Ārya­cuṇḍa­devī­nāma­dhāraṇī</ref>
+                        </title> [<title xml:lang="en">Goddess Cuṇḍa’s
                             Dhāraṇī</title>]. Toh. 989, Degé Kangyur, vol. 102 (gzungs ’dus, waṃ), folios 143a–143b. </bibl>
                     <bibl xml:id="UT22084-051-004-275">
                         <title xml:lang="Bo-Ltn">sgra’i rnam par dbye ba bstan pa. </title>Peking number 5838, Peking Tengyur,
@@ -3587,14 +3615,16 @@
                             entitled Opening the Precious Casket</title>]. Toh. 3930, Degé Tengyur (dbu ma, ki), folios
                         96b1–116b7.</bibl>
                     <bibl xml:id="UT22084-051-004-279">
-                        <title xml:lang="en">The Dhāraṇī of Cundī, the mother of seventy million buddhas</title>, <title xml:lang="Sa-Ltn">Sapta­kotī­buddha­mātṛ­cundī­dhāraṇī</title>. Taisho vol. 20, 1077.</bibl>
+                        <title xml:lang="en">The Dhāraṇī of Cundī, the mother of seventy million buddhas</title>, <title xml:lang="Sa-Ltn">Sapta­kotī­buddha­mātṛ­cundī­dhāraṇī</title>. <ref target="https://cbetaonline.dila.edu.tw/en/T1077">Taisho 1077</ref>.</bibl>
                     <bibl xml:id="UT22084-051-004-280">Śūra. <title xml:lang="Bo-Ltn">legs par bshad pa rin po che za ma tog lta
-                            bu’i gtam</title>, <title xml:lang="Sa-Ltn">Subhāṣita­ratna­karaṇḍaka­kathā </title>[<title xml:lang="en">A Talk: A Precious Casket of Eloquence</title>]. Toh. 4168, Degé Tengyur, vol. 172
+                        bu’i gtam</title>, <title xml:lang="Sa-Ltn">
+                            <ref rend="pending" target="https://read.84000.co/translation/toh4168.html">Subhāṣita­ratna­karaṇḍaka­kathā</ref>
+                        </title> [<title xml:lang="en">A Talk: A Precious Casket of Eloquence</title>]. Toh. 4168, Degé Tengyur, vol. 172
                         (spring yig, ge), folios 178a–189b.</bibl>
                     <bibl xml:id="UT22084-051-004-281">Vasudeo, Ganesh, trans. and ed. <title xml:lang="Sa-Ltn">Skanda
                             Purāṇa</title>. Tagare, Delhi: Motilal Banarsidass, 1994.</bibl>
                 </div>
-                <div type="section">
+                <div type="section" xml:id="UT22084-051-004-listBibl-2">
                     <head type="section" tid="712">Secondary literature</head>
                     <bibl xml:id="UT22084-051-004-282">Appleton, Naomi. “The Story of the Horse King and the Merchant Siṃhala in
                         Buddhist Texts.” In <title xml:lang="en">Buddhist Studies Review, Journal of the UK Association of
@@ -3633,13 +3663,16 @@
                             Text Society’s Pali-English Dictionary.</title> London: Pali Text Society, 1979.</bibl>
                     <bibl xml:id="UT22084-051-004-297">Roberts, P. and Bower, E., trans. <title xml:lang="en">The White Lotus of
                             Compassion</title> (<title xml:lang="Bo-Ltn">snying rje pad ma dkar po zhes bya ba theg pa chen po’i
-                                mdo</title>, <title xml:lang="Sa-Ltn">Karuṇā­puṇḍarīka­nāma­mahā­yāna­sūtra </title>, Toh. 112). 84000: Translating the Words of the Buddha, 2018. (<ref target="http://read.84000.co/translation/toh113.html">read.84000.co</ref>).</bibl>
+                                mdo</title>, <title xml:lang="Sa-Ltn">Karuṇā­puṇḍarīka­nāma­mahā­yāna­sūtra </title>, Toh. 112). 84000: Translating the Words of the Buddha, 2021. (<ref target="http://read.84000.co/translation/toh112.html" rend="pending" inst="change 'forthcoming' to 'read.84000.co' see comment in line below">forthcoming</ref>).</bibl>
+                    <!--I think this is supposed to be Toh 113. See RRWorksheet "Published. When Toh 112 is published see if there is a chapter 
+                        in it dedicated to Mahāsthāmaprāpta (mthu chen thob). If there isn't, change this bibl Toh 113 and update i.6, n.5, and 
+                        RRWorksheet -CW-->
                     <bibl xml:id="UT22084-051-004-298">Rouse, W.H.D., trans. “Valāhassa-jātaka.” In <title xml:lang="en">The
                             Jātaka or Stories of the Buddha’s Former Births. </title>Pali Text Society Number 196, Vol. 2 (1895):
                         127.</bibl>
                     <bibl xml:id="UT22084-051-004-299">Sakya Pandita Translation Group, trans. <title xml:lang="en">The Display of
                             the Pure Land of Sukhāvatī</title> (<title xml:lang="Bo-Ltn">’phags pa bde ba can gyi bkod pa zhes bya
-                            ba theg pa chen po’i mdo</title>, <title xml:lang="Sa-Ltn">Ārya­sukhāvatī­vyūha­nāma­mahā­yāna­sūtra</title>, Toh. 115, see above). 84000 (2012).</bibl>
+                                ba theg pa chen po’i mdo</title>, <title xml:lang="Sa-Ltn">Ārya­sukhāvatī­vyūha­nāma­mahā­yāna­sūtra</title>, Toh. 115, see above). 84000: Translating the Words of the Buddha, 2011. (<ref target="http://read.84000.co/translation/toh115.html">read.84000.co</ref>).</bibl>
                     <bibl xml:id="UT22084-051-004-300">Schopen, Gregory. <title xml:lang="en">Figments and Fragments of Mahāyāna
                             Buddhism in India: More Collected Papers</title>. Honolulu: University of Hawaii Press, 2005.</bibl>
                     <bibl xml:id="UT22084-051-004-301">Studholme, Alexander. <title xml:lang="en">The Origins of Oṁ Maṇipadme Hūṃ:
@@ -5695,4 +5728,8 @@
             </div>
         </back>
     </text>
-</TEI>
+
+    
+    
+    
+    </TEI>
