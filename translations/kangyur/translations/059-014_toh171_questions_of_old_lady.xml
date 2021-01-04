@@ -23,13 +23,12 @@
             <editor role="TEImarkupEditor" ref="contributors.xml#person-306">Simeon Joffe</editor>
             </titleStmt>
             <editionStmt>
-                <edition>v 2.34 <date>2019</date>
+                <edition>v 2.34.5 <date>2020</date>
                 </edition>
             </editionStmt>
             <publicationStmt status="1">
                 <publisher>
-                    <name>84000: Translating the Words of the Buddha</name> is a global non-profit initiative that aims to
-                    translate all of the Buddha’s words into modern languages, and to make them available to everyone.</publisher>
+                    <name>84000: Translating the Words of the Buddha</name> is a global non-profit initiative to translate all the Buddha’s words into modern languages, and to make them available to everyone.</publisher>
                 <availability>
                     <licence>
                         <graphic url="http://i.creativecommons.org/l/by-nc-nd/2.0/88x31.png"/>
@@ -46,10 +45,11 @@
                 <bibl key="toh171" type="text">
                     <ref>Toh 171</ref>
                     <biblScope>Degé Kangyur, vol. 59 (mdo sde, ba), folios 310.b–314.a</biblScope>
-                    <author role="translatorTib">Unknown</author>
-                    <location count-pages="8">
-                        <start volume="59" page="622"/>
-                        <end volume="59" page="629"/>
+                    <author role="translatorTib">Jinamitra</author> 
+                    <author role="translatorTib">Dānaśīla</author> 
+                    <author role="translatorTib">Yeshé Dé</author>
+                    <location work="UT4CZ5369" count-pages="8">
+                        <volume number="59" start-page="620" end-page="627"/>
                     </location>
                 <idno parent-id="O1JC114941JC14668"/>
                 <idno source-id="O1JC114941JC11777" work="W22084"/>
@@ -57,8 +57,13 @@
             
             </sourceDesc>
             <notesStmt>
-                <note type="lastUpdated" date-time="2019-06-18T02:54:24.053Z" user="admin">18/06/2019 02:54:24</note>
+                <note type="lastUpdated" date-time="2021-01-04T22:19:44.499Z" user="admin">04/01/2021 22:19:44</note>
             <note type="updated" update="text-version" value="v 2.34" date-time="2019-06-18T02:54:21.031Z" user="celso">v 2.34 2019</note>
+<note type="updated" update="text-version" value="v 2.34.1" date-time="2019-10-07T10:27:24.685Z" user="admin">Publication statement updated</note>
+    <note type="updated" update="text-version" value="2.34.2" date-time="2020-11-18T18:31:38.146Z" user="laura">Changed "amongst" to "among" in a few places</note>
+    <note type="updated" update="text-version" value="2.34.3" date-time="2020-11-23T13:57:44.998Z" user="admin">Auto (TEI migration 2.0.0)</note>
+    <note type="updated" update="text-version" value="2.34.4" date-time="2020-12-11T14:06:50.919Z" user="admin">Auto (TEI migration 2.1.5)</note>
+    <note type="updated" update="text-version" value="2.34.5" date-time="2021-01-04T22:19:41.607Z" user="laura">Added translators to biblscope</note>
             </notesStmt>
         </fileDesc>
     </teiHeader>
@@ -89,14 +94,14 @@
             </div>
             <div type="introduction">
                 <head type="introduction" tid="50">Introduction</head>
-                <div type="section">
+                <div type="section" xml:id="UT22084-059-014-introduction-1">
                     <milestone unit="chunk" xml:id="UT22084-059-014-3"/>
                     <p tid="5">Considering the cultural norms of the time, the fact that the teaching contained in this sūtra was
                         given entirely to a laywoman and, moreover, to a very old and impoverished laywoman, makes it stand
                         apart.</p>
                     <p tid="6">The setting of this text is Vaiśalī, the ancient capital of the Licchavis and of the Vṛji
                         confederacy of which the Licchavi republic was a member. The old lady, whose name we are never told, asks
-                        the Buddha such profound questions that Ānanda realises this is no ordinary woman but one whose wisdom
+                        the Buddha such profound questions that Ānanda realizes this is no ordinary woman but one whose wisdom
                         comes from merit collected in past lifetimes. As it turns out, the Buddha reveals that she has been his
                         mother for five hundred lifetimes.</p>
                     <milestone unit="chunk" xml:id="UT22084-059-014-4"/>
@@ -130,15 +135,15 @@
                 <head type="translation" tid="51">The Translation</head>
                 <head type="titleHon" tid="52">The Noble Mahāyāna Sūtra</head>
                 <head type="titleMain" tid="53">The Questions of an Old Lady</head>
-                <div type="section">
+                <div type="section" xml:id="UT22084-059-014-section-1">
                     <milestone unit="chunk" xml:id="UT22084-059-014-7"/>
                     <p tid="10">
-                        <ref cRef="F.310.b"/>
+                        <ref cRef="F.310.b" type="folio" xml:id="UT22084-059-014-89"/>
                         <!--<modularPassage type="homage">-->Homage to all buddhas and bodhisattvas.<!--</modularPassage>-->
                     </p>
                     <lb/>
                     <milestone unit="chunk" xml:id="UT22084-059-014-8"/>
-                    <p tid="11">Thus did I hear at one time. When the Bhagavān was travelling in the land of Vṛji, he went to the
+                    <p tid="11">Thus did I hear at one time. When the Bhagavān was traveling in the land of Vṛji, he went to the
                         great city of Vaiśālī, together with a large saṅgha of one thousand two hundred and fifty bhikṣus and a
                         vast number of bodhisattva mahāsattvas. At that time, he came across an old woman from the city gathering
                         grass in the countryside. She was decrepit and had reached the end of her life-span, being one hundred and
@@ -148,7 +153,7 @@
                         endowed with supreme discipline and serenity, guarded, faultless, senses controlled, pure and clear like
                         the sea, unclouded, upright like a golden sacrificial post, radiant with splendor clear and distinct,
                         wonderfully adorned with the thirty-two signs of a great being. When she saw him, faith grew in her mind.
-                        Then full of devotion she approached <ref cRef="F.311.a"/> the Bhagavān, bowed her head at his feet,
+                        Then full of devotion she approached <ref cRef="F.311.a" type="folio" xml:id="UT22084-059-014-90"/> the Bhagavān, bowed her head at his feet,
                         circumambulated the Bhagavān three times and sat to one side. </p>
                     <milestone unit="chunk" xml:id="UT22084-059-014-10"/>
                     <p tid="13">Bowing with her palms together in the direction of the Bhagavān, the woman then asked him, “O
@@ -176,7 +181,7 @@
                     <p tid="16">She answered, “O Bhagavān, that fire comes into being owing to the power of a collection of
                         causes. It ceases and dies when it lacks the collection of causes.” </p>
                     <milestone unit="chunk" xml:id="UT22084-059-014-13"/>
-                    <p tid="17">The Bhagavān said, “Sister, likewise, all phenomena <ref cRef="F.311.b"/> come into being owing to
+                    <p tid="17">The Bhagavān said, “Sister, likewise, all phenomena <ref cRef="F.311.b" type="folio" xml:id="UT22084-059-014-91"/> come into being owing to
                         the power of a collection. They cease and die when they lack the collection. Whatever the phenomena, they
                         do not come from anywhere, nor do they go anywhere. Sister, it is as follows: although the eye
                         consciousness arises based upon the eye and form, the eye consciousness does not have a producer, nor
@@ -209,7 +214,7 @@
                     <milestone unit="chunk" xml:id="UT22084-059-014-16"/>
                     <p tid="20"> “Sister, likewise, all phenomena depend solely on conditions, i.e., ones such as ignorance,
                         craving, karma and consciousness. When these latter phenomena are present, the terms death and birth are
-                        designated. <ref cRef="F.312.a"/> That which is designated death and birth is also empty. It has no
+                        designated. <ref cRef="F.312.a" type="folio" xml:id="UT22084-059-014-92"/> That which is designated death and birth is also empty. It has no
                         coming. It has no going. No one makes it arise. It is not stopped by anybody. Sister, all phenomena are
                         inherently stopped. </p>
                     <milestone unit="chunk" xml:id="UT22084-059-014-17"/>
@@ -233,12 +238,12 @@
                         phenomena are inherently stopped.</p>
                     <milestone unit="chunk" xml:id="UT22084-059-014-19"/>
                     <p tid="23">“Sister, it is likewise when there are meritorious formative factors. That is to say, although
-                        bodies conducive to merit might result amongst gods and humans, in that case not even an atom is
-                        transferred from this world to the world beyond. However, due to the formative factors, <ref cRef="F.312.b"/> there are various kinds of rebirths. They are represented as physical bodies with
+                        bodies conducive to merit might result among gods and humans, in that case not even an atom is
+                        transferred from this world to the world beyond. However, due to the formative factors, <ref cRef="F.312.b" type="folio" xml:id="UT22084-059-014-93"/> there are various kinds of rebirths. They are represented as physical bodies with
                         their bases of cognition. </p>
                     <milestone unit="chunk" xml:id="UT22084-059-014-20"/>
                     <p tid="24">“It is likewise when there are demeritorious <term>formative factors</term>. That is to say,
-                        although bodies that are not meritorious result amongst hell beings, or in the animal state, or in the
+                        although bodies that are not meritorious result among hell beings, or in the animal state, or in the
                         world of the Lord of Death, or among the demigods, not even an atom is transferred in such a case from
                         this world to the world beyond. However, due to the formative factors there are various kinds of rebirths.
                         They are understood to be physical forms with their bases of cognition. </p>
@@ -254,19 +259,19 @@
                         virtue of the nāga-powers of nāgas alone. </p>
                     <milestone unit="chunk" xml:id="UT22084-059-014-22"/>
                     <p tid="26">“Sister, it is likewise when there are meritorious formative factors, that is to say, when
-                        meritorious bodies result amongst gods or humans. It is likewise, too, when there are demeritorious
-                        formative factors. That is to say, although bodies that are not meritorious result amongst hells beings or
+                        meritorious bodies result among gods or humans. It is likewise, too, when there are demeritorious
+                        formative factors. That is to say, although bodies that are not meritorious result among hells beings or
                         in the animal state or the world of the Lord of Death or among the demigods, in such cases the activity of
                         the formative factor is empty, the agent of the formative factor is empty and the fruits of the formative
                         factor are also empty. Sister, when there are formative factors for remaining static, consciousness will
-                        reincarnate amongst the beings of the formless realms. That on account of which the consciousness
-                        reincarnates amongst beings of the formless realms is empty, and the consciousness which reincarnates
-                        amongst the beings of the formless realms is empty too. Why is this so? Sister, it is because all
+                        reincarnate among the beings of the formless realms. That on account of which the consciousness
+                        reincarnates among beings of the formless realms is empty, and the consciousness which reincarnates
+                        among the beings of the formless realms is empty too. Why is this so? Sister, it is because all
                         phenomena are empty of essence. Even so phenomena are designated. The learned are not attached to them. As
                         they have no attachment they do not dispute. Having no disputes is the supreme quality of the religious
                         mendicant.”</p>
                     <milestone unit="chunk" xml:id="UT22084-059-014-23"/>
-                    <p tid="27">The woman said, <ref cRef="F.313.a"/> “Since the Bhagavān has taught the profound Dharma in this
+                    <p tid="27">The woman said, <ref cRef="F.313.a" type="folio" xml:id="UT22084-059-014-94"/> “Since the Bhagavān has taught the profound Dharma in this
                         way, O Bhagavān, I, too, have penetrated these teachings with the eye of wisdom and will never be of two
                         minds about them again. I have no doubts. O Bhagavān, earlier, as I hadn’t yet heard these teachings I did
                         have doubts. Now I am old, I am decrepit, I suffer, I am poor, I have no protector, I have no life and yet
@@ -290,7 +295,7 @@
                         in the doctrine of the Bhagavān, the tathāgata, arhat, perfectly complete Buddha Krakucchanda. At that
                         time, Ānanda, this woman was my mother. Because of her attachment she did not want to let me go, so I
                         stopped eating my one meal per day. Later, she agreed to let me go. Ānanda, it is because of the ripening
-                            <ref cRef="F.313.b"/> of that karma that she is as poor as she is. Ānanda, this is the last time she
+                            <ref cRef="F.313.b" type="folio" xml:id="UT22084-059-014-95"/> of that karma that she is as poor as she is. Ānanda, this is the last time she
                         will be poor. Ānanda, after death, this woman, who no longer craves a woman’s faculties, will obtain a
                         man’s faculties in the Sukhāvatī buddhafield of the bhagavān, the perfectly complete buddha Amitābha. Once
                         born there, she will make offerings to an innumerable, immeasurable, inconceivable number of buddhas;
@@ -328,7 +333,7 @@
                     <milestone unit="chunk" xml:id="UT22084-059-014-29"/>
                     <lg tid="36">
                         <l>“Having also heard the Dharma from them all, </l>
-                        <l>With a purified mind, she will become accomplished in the same fashion. <ref cRef="F.314.a"/>
+                        <l>With a purified mind, she will become accomplished in the same fashion. <ref cRef="F.314.a" type="folio" xml:id="UT22084-059-014-96"/>
                         </l>
                         <l>Remaining in the immovable, supreme mind of enlightenment, </l>
                         <l>She will cause‌ countless sentient beings to practice the Dharma.</l>
@@ -395,10 +400,10 @@
                         Bhagavān had taught.</p>
                     <lb/>
                     <milestone unit="chunk" xml:id="UT22084-059-014-39"/>
-                    <p tid="46">This completes the Noble Mahāyāna Sūtra, <title xml:lang="en">The Questions of an Old
-                        Lady</title>.</p>
+                    <trailer tid="46">This completes the Noble Mahāyāna Sūtra, “<title xml:lang="en">The Questions of an Old
+                        Lady</title>.”</trailer>
                 </div>
-                <div type="colophon">
+                <div type="colophon" xml:id="UT22084-059-014-colophon">
                     <head type="colophon" tid="54">Colophon</head>
                     <milestone unit="chunk" xml:id="UT22084-059-014-88"/>
                     <p tid="47">The translation was made, edited, and approved by the Indian preceptors Jinamitra and Dānaśīla and the chief editor and translator Bandé Yeshé Dé.</p>
@@ -422,7 +427,7 @@
             </div>
             <div type="listBibl">
                 <head type="listBibl" tid="57">Bibliography</head>
-                <div type="section">
+                <div type="section" xml:id="UT22084-059-014-listBibl-1">
                     <bibl xml:id="UT22084-059-014-42">
                         <title xml:lang="Bo-Ltn">’phags pa bgres mos zhus pa zhes bya theg pa chen po’i mdo</title> (<title xml:lang="Sa-Ltn">Ārya­mahallikā­paripṛcchā­nāma­mahā­yāna­sūtra</title>). Toh. 171, Degé Kangyur vol.
                         59 (mdo sde, ba), folios 310.b–314.a.</bibl>
@@ -831,4 +836,8 @@
             </div>
         </back>
     </text>
-</TEI>
+
+    
+    
+    
+    </TEI>
