@@ -30,15 +30,15 @@
         <editor role="TEImarkupEditor" ref="contributors.xml#person-92">Laura Goetz</editor>
       </titleStmt>
       <editionStmt>
-                <edition>v 0.1.1 <date>2020</date>
+                <edition>v 1.0.7 <date>2020</date>
                 </edition>
             </editionStmt>
-      <publicationStmt status="2">
-        <publisher>
+      <publicationStmt status="1">
+                <publisher>
                     <name>84000: Translating the Words of the Buddha</name> is a global non-profit
           initiative to translate all the Buddha’s words into modern languages, and to make them
           available to everyone. </publisher>
-        <availability>
+                <availability>
           <licence>
             <graphic url="http://i.creativecommons.org/l/by-nc-nd/2.0/88x31.png"/>
             <p>This work is provided under the protection of a Creative Commons CC BY-NC-ND
@@ -47,15 +47,18 @@
               or personal compensation. For full details, see the Creative Commons license.</p>
           </licence>
         </availability>
-        <idno xml:id="UT22084-057-003"/>
-        <note>An early mistake in the assigning of UT numbers within the 84000 project means that
+                <idno xml:id="UT22084-057-003"/>
+                <note>An early mistake in the assigning of UT numbers within the 84000 project means that
           these ids diverge slightly from the standard logic.</note>
-        <date>2020-07-08</date>
-      </publicationStmt>
+                <date>2020-10-23</date>
+            </publicationStmt>
       <sourceDesc>
         <bibl key="toh144" type="text">
           <ref>Toh 144</ref>
           <biblScope>Degé Kangyur, vol. 57 (mdo sde, pa), folios 6.b–34.a</biblScope>
+          <author role="translatorTib">Yeshé Dé</author>
+          <author role="translatorTib">Jinamitra</author>
+          <author role="translatorTib">Dānaśīla</author>
           <location work="UT4CZ5369" count-pages="56">
             <volume number="57" start-page="12" end-page="67"/>
           </location>
@@ -64,7 +67,7 @@
         </bibl>
       </sourceDesc>
       <notesStmt>
-        <note type="lastUpdated" date-time="2020-07-09T16:16:24.822Z" user="laura">09/07/2020 16:16:24</note>
+        <note type="lastUpdated" date-time="2021-01-04T22:01:55.478Z" user="admin">04/01/2021 22:01:55</note>
 
         <note type="updated" update="text-version" value="v 0.0.1" date-time="2019-12-20T12:56:48.575Z" user="admin">Automated version increment</note>
         <note type="updated" update="translation-status" value="2.d" date-time="2020-01-28T06:14:09.752Z" user="mike">2.d</note>
@@ -74,6 +77,15 @@
       
     <note type="updated" update="text-version" value="v 0.1.1" date-time="2020-07-10T09:43:50.242Z" user="mike">v 0.1.1</note>
     <note type="updated" update="translation-status" value="2" date-time="2020-07-10T09:43:50.242Z" user="mike">2</note>
+    <note type="updated" update="translation-status" value="1" date-time="2020-10-23T21:53:15.404Z" user="mike">1</note>
+    <note type="updated" update="text-version" value="1.0.0" date-time="2020-10-23T21:53:15.404Z" user="mike">First published version</note>
+    <note type="updated" update="text-version" value="1.0.1" date-time="2020-10-24T19:32:02.598Z" user="john">Two or three minor corrections</note>
+    <note type="updated" update="text-version" value="1.0.2" date-time="2020-11-07T01:48:08.313Z" user="laura">Corrected typo in glossary</note>
+    <note type="updated" update="text-version" value="1.0.3" date-time="2020-11-23T05:11:32.399Z" user="mike">sanskrit typo corrected</note>
+    <note type="updated" update="text-version" value="1.0.4" date-time="2020-11-23T13:57:44.998Z" user="admin">Auto (TEI migration 2.0.0)</note>
+    <note type="updated" update="text-version" value="1.0.5" date-time="2020-11-25T16:03:43.472Z" user="celso">Updated pending links</note>
+    <note type="updated" update="text-version" value="1.0.6" date-time="2020-12-11T14:06:50.919Z" user="admin">Auto (TEI migration 2.1.5)</note>
+    <note type="updated" update="text-version" value="1.0.7" date-time="2021-01-04T22:01:52.394Z" user="laura">Updated colophon to Bandé and added translators to biblscope</note>
             </notesStmt>
     </fileDesc>
   </teiHeader>
@@ -96,16 +108,15 @@
         <milestone unit="chunk" xml:id="UT22084-057-003-2"/>
         <p tid="4">Translated by the Dharmachakra Translation Committee under the guidance of Chokyi
           Nyima Rinpoche. The translation was produced by Andreas Doctor, who also wrote the
-          introduction. Thomas Doctor, Catherine Dalton, Ryan Damron, and David Higgins also
-          participated by comparing the draft translation with the original Tibetan and editing the
-          translation.</p>
+          introduction. Thomas Doctor, Catherine Dalton, and Ryan Damron subsequently compared 
+          the draft translation with the original Tibetan and edited it.</p>
         <milestone unit="chunk" xml:id="UT22084-057-003-3"/>
         <p tid="5">The translation was completed under the patronage and supervision of 84000:
           Translating the Words of the Buddha.</p>
       </div>
       <div type="introduction">
         <head type="introduction" tid="6">Introduction</head>
-        <div type="section">
+        <div type="section" xml:id="UT22084-057-003-introduction-1">
           <milestone unit="chunk" xml:id="UT22084-057-003-4"/>
           <p tid="7">
                         <title xml:lang="en">Cultivating Trust in the Great Vehicle</title> unfolds at
@@ -135,7 +146,7 @@
           <milestone unit="chunk" xml:id="UT22084-057-003-6"/>
           <p tid="9">It is noteworthy that Great Skillful Trust asks these questions from a
             beginner’s point of view. At several points the text appeals to those who are still on
-            the “level of devoted engagement,” which is a level that comprises the first two of the
+            the “level of devoted engagement,” a level that is said to comprise the first two of the
             five paths. These are the path of accumulation and the path of preparation, which
             precede the path of seeing, where one for the first time gains an actual experience of
             the empty nature of phenomena. Throughout the sūtra, the Buddha’s answers are thus
@@ -158,16 +169,18 @@
             chapter is the Buddha’s discussion of the third method for developing trust in the Great
             Vehicle, that of correctly assimilating the teachings into one’s own being beyond a mere
             intellectual understanding. In this section, the Buddha lists twenty-eight wrong views
-            that a bodhisattva may fall prey to by misunderstanding the teachings due to the
-            reifying tendency of conceptual thought and thus preventing an actual experience of the
+            that a bodhisattva may fall prey to, by misunderstanding the teachings due to the
+            reifying tendency of conceptual thought, and that may thus impede an actual experience of the
             meaning behind the words. </p>
           <milestone unit="chunk" xml:id="UT22084-057-003-9"/>
-          <p tid="12">Elsewhere in the Buddhist canon, we find a similar list of twenty-eight wrong
-            views that bodhisattvas may fall into in the <title xml:lang="Sa-Ltn">Abhidharma­samuccaya</title><!--Reference Toh
-                                                4049-->
-            by Asaṅga, the renowned Yogācāra scholar of fourth century India.<note place="end" index="1" xml:id="UT22084-057-003-10"> For an English translation, see Asaṅga (2001),
+          <p tid="12">A similar list of twenty-eight wrong views that bodhisattvas may fall into 
+            can be found elsewhere in the Buddhist canon, in the 
+            <title xml:lang="Sa-Ltn">Abhidharma­samuccaya</title>
+                        <ref rend="pending" target="https://read.84000.co/translation/toh4049.html"/>
+            by Asaṅga, the renowned Yogācāra scholar of fourth century India.<note place="end" index="1" xml:id="UT22084-057-003-10"> 
+              For an English translation, see Asaṅga (2001),
               pp. 190–92.</note> Although the two lists are far from identical, their main themes
-            are nevertheless similar. In sum, what the two lists argue is that one might get stuck
+            are nevertheless similar. Both lists summarize various ways in which one might get stuck
             on the words rather than the meaning and as a result develop a nihilistic metaphysical
             view of emptiness that construes it as sheer nonexistence. The text warns that such
             literalistic misinterpretations will prevent one from developing the immense qualities
@@ -177,13 +190,13 @@
                         <title xml:lang="en">Cultivating Trust in the Great Vehicle</title> can in
             this way be seen to provide a scriptural basis for the Indian Yogācāra school’s critique
             of perceived nihilistic interpretations of the Madhyamaka view associated with the
-            influential Indian Buddhist philosopher Nāgārjuna (ca. second century). Although the
-            extent to which this sūtra and the <title xml:lang="Sa-Ltn">Abhidharma­samuccaya</title>,<!--Reference Toh
-                                                4049-->
-            the <title xml:lang="Sa-Ltn">Yogācārabhūmi</title>,<!--Reference Toh 4035--> and other
-            Yogācāra classics may be related remains conjectural, it is hard not to detect the
-            persistent warnings against misinterpreting the Madhyamaka view in the sūtra’s
-            description of the twenty-eight wrong views. Consider, as example, its criticism of the
+            influential Indian Buddhist philosopher Nāgārjuna (ca. second century). 
+            Although the Tibetan master Butön Rinchen Drup (<foreign xml:lang="Bo-Ltn">bu ston rin chen grub</foreign>, 1290–1364) noted that the sūtra was adopted by the Yogācāra school, it appears to have had far less impact on Buddhist scholarship than Yogācāra classics such as the <title xml:lang="Sa-Ltn">Abhidharma­samuccaya</title>
+                        <ref rend="pending" target="https://read.84000.co/translation/toh4049.html"/> and <title xml:lang="Sa-Ltn">Yogācārabhūmi</title>.<ref rend="pending" target="https://read.84000.co/translation/toh4035.html"/>
+                        <note place="end" xml:id="UT22084-057-003-339">On Butön’s claim, see below <ptr target="#UT22084-057-003-17"/>. A search for plausible variants of the sūtra title in the Kangyur and Tengyur collections resulted in only a single quotation (using the modified title <title xml:lang="Bo-Ltn">dad pa rab tu bsgom pa’i mdo</title>): Dharmamitra quotes the work in his <title xml:lang="Sa-Ltn">Abhisamayālaṃkāra­kārikā­prajñā­pāramitopadeśa­śāstra­ṭīkā</title>
+                            <ref rend="pending" target="https://read.84000.co/translation/toh3796.html" inst="F.96a7"/> D 3796: vol. 87, folios 96.a7–96.b1.</note>   
+            That said, we can detect in its criticisms of misguided interpretations of Madhyamaka doctrines a strain of polemicism that was famously articulated in such Yogācāra classics.
+            Consider, as example, its criticism of the
             central Madhyamaka view of no claim or thesis (<foreign xml:lang="Sa-Ltn" type="term">pratijñā</foreign>):</p>
           <milestone unit="chunk" xml:id="UT22084-057-003-12"/>
           <q>“The view of no claim occurs when a bodhisattva who has a conceptual view of
@@ -201,20 +214,21 @@
           <p tid="15">In the fourth and final chapter of the sūtra, “The Benefits of Trust,” the
             Buddha explains the benefits reaped by a person who develops trust in the Great Vehicle.
             Trust is here presented as the primary factor that allows the practitioner to develop
-            all the qualities of wisdom, love, and power.</p>
+            all the altruistic qualities associated with compassion and wisdom.</p>
           <milestone unit="chunk" xml:id="UT22084-057-003-15"/>
           <p tid="16">At the end of the four main chapters of the sūtra, the Buddha predicts the
             swift attainment of the qualities of awakening for those who adopt this Dharma teaching.
-            As the Buddha ends his discourse, the entire world of gods and humans rejoices.</p>
+            As the Buddha concludes his discourse, the entire world of gods and humans rejoices.</p>
           <milestone unit="chunk" xml:id="UT22084-057-003-16"/>
           <p tid="17">Although <title xml:lang="en">Cultivating Trust in the Great Vehicle</title>
             discusses themes and practices central to the Great Vehicle, it has previously received
             very little scholarly attention.<note place="end" index="2" xml:id="UT22084-057-003-17">
               The only mention of this sūtra in English that we are aware of is a brief discussion
               found in Skilling (2000), pp. 323–24. Here, Skilling also mentions that “Kazunobu
-              Matsuda has written (in Japanese) about the sūtra with reference to the <title xml:lang="Sa-Ltn">Abhidharma­samuccaya</title><!--Reference Toh
-                                                  4049-->
-              and <title xml:lang="Sa-Ltn">Vyākhyāyukti</title><!--Reference Toh 406--> in his ‘On
+              Matsuda has written (in Japanese) about the sūtra with reference to the <title xml:lang="Sa-Ltn">Abhidharma­samuccaya</title>
+                            <ref rend="pending" target="https://read.84000.co/translation/toh4049.html"/>
+              and <title xml:lang="Sa-Ltn">Vyākhyāyukti</title>
+                            <ref rend="pending" target="https://read.84000.co/translation/toh4061.html"/> in his ‘On
               the two unknown Sūtras adopted by the Yogācāra School, based on a passage found in the
               writings of Bu ston and Blo gros rgyal mtshan,’ in Zuihō Yamaguchi (ed.): <title xml:lang="en">Buddhism and Society in Tibet</title>, Tokyo 1986, pp. 269–89.”
               Unfortunately, we have been unable to consult Matsuda’s article for our work on this
@@ -240,20 +254,20 @@
         <head type="translation" tid="18"> The Translation </head>
         <head type="titleHon" tid="19">The Noble Great Vehicle Sūtra</head>
         <head type="titleMain" tid="20">Cultivating Trust in the Great Vehicle</head>
-        <div type="prologue">
-          <head type="prologue" tid="294"/>
+        <div type="prologue" xml:id="UT22084-057-003-prologue">
+          <head type="prologue" tid="294">Prologue</head>
           <milestone unit="chunk" xml:id="UT22084-057-003-20"/>
           <p tid="21">
                         <ref cRef="B1" type="bampo"/>
-            <ref cRef="F.6.b" type="folio"/> Homage to all buddhas and bodhisattvas.</p>
+            <ref cRef="F.6.b" type="folio" xml:id="UT22084-057-003-340"/> Homage to all buddhas and bodhisattvas.</p>
           <lb/>
           <milestone unit="chunk" xml:id="UT22084-057-003-21"/>
           <p tid="22">Thus did I hear at one time. The Blessed One was dwelling in Rājagṛha at
             Vulture Peak Mountain together with a great bodhisattva saṅgha of bodhisattva great
-            beings <ref cRef="F.7.a" type="folio"/> who had gathered there from various buddha
+            beings <ref cRef="F.7.a" type="folio" xml:id="UT22084-057-003-341"/> who had gathered there from various buddha
             realms. Every one of them had conquered the demons and all adversaries. They were far
-            removed from the fluctuations of the habitual tendencies of all afflictions and
-            subsidiary afflictions. They had attained the level of great mastery where one can
+            removed from the fluctuations of the habitual tendencies of all disturbing emotions and
+            subsidiary disturbing emotions. They had attained the level of great mastery where one can
             demonstrate birth into existence at will. They had attained the power that springs from
             giving away their bodies and abodes throughout limitless eons. They had realized the
             limitless workings of the demons along with all obstacles. They knew the conduct that is
@@ -272,7 +286,7 @@
             bodhisattva Always Following Trust, the bodhisattva Genuinely Entering Trust, the
             bodhisattva Leading towards Trust, the bodhisattva Destroying Doubt regarding Trust, the
             bodhisattva Teaching Trust, the bodhisattva Establishing Trust, the bodhisattva
-            Increasing Trust, <ref cRef="F.7.b" type="folio"/> the bodhisattva Training in Trust,
+            Increasing Trust, <ref cRef="F.7.b" type="folio" xml:id="UT22084-057-003-342"/> the bodhisattva Training in Trust,
             the bodhisattva Searching for the Vessel of Trust, and the bodhisattva great being Great
             Skillful Trust. There were also 1,250 monks in attendance, such as Mahākāśyapa. From all
             sides the Blessed One was surrounded by innumerable gods, nāgas, yakṣas, gandharvas,
@@ -304,20 +318,19 @@
             novice bodhisattvas should develop firm trust in the Great Vehicle by proceeding with
             devoted engagement.”</p>
           <milestone unit="chunk" xml:id="UT22084-057-003-25"/>
-          <p tid="25">Then, inspired by the power and blessing of the Buddha, the bodhisattva Great
+          <p tid="25">At this point, inspired by the power and blessing of the Buddha, the bodhisattva Great
             Skillful Trust rose up from his seat, draped his upper robe over one shoulder, and knelt
             on his right knee. With his palms together he bowed toward the Blessed One and
             supplicated, “Blessed One, what are the characteristics of the bodhisattvas’ trust in
             the Great Vehicle that allows them to accomplish the Great Vehicle? How do bodhisattvas
             come to trust the Great Vehicle? Blessed One, what kinds of trust in the Great Vehicle
-            do bodhisattvas possess? <ref cRef="F.8.a" type="folio"/> And how many benefits are
-            there from such trust in the Great Vehicle?”</p>
+            do bodhisattvas possess? <ref cRef="F.8.a" type="folio" xml:id="UT22084-057-003-343"/> And what kinds of benefits result from such trust in the Great Vehicle?”</p>
           <milestone unit="chunk" xml:id="UT22084-057-003-26"/>
           <p tid="26">The Blessed One replied, “Noble son, excellent! It is excellent that you have
             come here on behalf of limitless bodhisattvas to ask the Thus-Gone One about the meaning
             of this. Therefore, noble son, listen and I shall teach you.”</p>
         </div>
-        <div type="chapter">
+        <div type="chapter" xml:id="UT22084-057-003-chapter-1">
           <head type="chapter" tid="27">Chapter 1</head>
           <head type="chapterTitle" tid="295">The Characteristics of Trust</head>
           <milestone unit="chunk" xml:id="UT22084-057-003-27"/>
@@ -326,13 +339,13 @@
             clarity, (2) saturation, (3) qualities, (4) possession, (5) the basis, (6)
             transcendence, (7) the root, (8) protection, (9) the connection, (10) continuity, and
             (11) perfection.”</p>
-          <div type="section">
+          <div type="section" xml:id="UT22084-057-003-chapter-1-1">
             <head type="section" tid="29">1. Clarity </head>
             <milestone unit="chunk" xml:id="UT22084-057-003-28"/>
             <p tid="30">Great Skillful Trust said, “Blessed One, how is clarity a characteristic of
               the bodhisattvas’ trust in the Great Vehicle that allows them to accomplish the Great
               Vehicle?”</p>
-            <p tid="31">The Blessed One replied, “Noble son, in this regard, the characteristic of
+            <p tid="31">The Blessed One replied, “In this regard, noble son, the characteristic of
               clarity refers to the absence of four kinds of stains. If you wonder what the four
               types of stains are, they are the stains of hostility, insecurity, apprehension, and
               doubt. </p>
@@ -345,27 +358,24 @@
               regard.”</p>
             <milestone unit="chunk" xml:id="UT22084-057-003-31"/>
             <p tid="33">Then the bodhisattva Great Skillful Trust inquired, “Blessed One, how does a
-              novice <ref cRef="F.8.b" type="folio"/> bodhisattva, who is on the level of devoted
+              novice <ref cRef="F.8.b" type="folio" xml:id="UT22084-057-003-344"/> bodhisattva, who is on the level of devoted
               engagement and knows the Dharma but has not yet gained understanding, relinquish doubt
               about the profound and vast Dharma of the Great Vehicle? How is such a bodhisattva
               freed from the stain of doubt?”</p>
             <milestone unit="chunk" xml:id="UT22084-057-003-32"/>
-            <p tid="34">The Blessed One replied, “Noble son, bodhisattvas are not freed from the
-              stain of doubt, or doubt regarding the profound and vast Dharma of the Great Vehicle,
-              until they understand reality. However, due to their interest, which is kindled by
-              other bodhisattvas, they are able to become free from the stain of doubt regarding the
-              profound and vast Dharma of the Great Vehicle. In this way, novice bodhisattvas who
+            <p tid="34">The Blessed One replied, “Noble son, 
+              bodhisattvas are not freed from the stain of doubt, or doubt regarding the profound and vast Dharma of the Great Vehicle through that knowledge which does not understand reality. However, due to their interest, which is kindled by other bodhisattvas, they are able to become free from the stain of doubt regarding the profound and vast Dharma of the Great Vehicle. In this way, novice bodhisattvas who
               are on the level of devoted engagement may consider the teachings of the profound and
               vast Dharma of the Great Vehicle to relate to the Thus-Gone One. In this way, they
               will think, ‘The Thus-Gone One imparted these teachings!’ and so they will feel
               devotion for the Thus-Gone One’s realization. In this way, they develop irreversible
               interest in the entire Dharma. Through the power of their interest that was kindled by
-              other bodhisattvas, they are without doubt, and thus freed from the stain of doubt,
-              regarding the profound and vast Dharma taught by the Thus-Gone One. Noble son, this is
+              other bodhisattvas, they will be without doubt, and thus freed from the stain of doubt
+              regarding the profound and vast Dharma taught by the Thus-Gone One. This, noble son, is
               how you should view the characteristic of clarity concerning the bodhisattvas’ trust
               in the Great Vehicle that allows them to accomplish the Great Vehicle.”</p>
           </div>
-          <div type="section">
+          <div type="section" xml:id="UT22084-057-003-chapter-1-2">
             <head type="section" tid="35">2. Saturation</head>
             <milestone unit="chunk" xml:id="UT22084-057-003-33"/>
             <p tid="36">The bodhisattva Great Skillful Trust said, “Blessed One, how is saturation a
@@ -376,7 +386,7 @@
               to the body and the mind becoming saturated with feelings of happiness. This happiness
               and well-being in turn come from the bodhisattvas’ trust in the Great Vehicle that
               allows them to accomplish the Great Vehicle. The happiness and well-being that are
-              connected to the bodhisattvas’ trust satisfy body and mind. <ref cRef="F.9.a" type="folio"/> In that way, they differ from the happiness and well-being that arise
+              connected to the bodhisattvas’ trust satisfy body and mind. <ref cRef="F.9.a" type="folio" xml:id="UT22084-057-003-345"/> In that way, they differ from the happiness and well-being that arise
               from the sense pleasures of those who revel in desire. The happiness and well-being
               experienced by beings who live in the form and formless realms similarly do not
               satisfy their bodies and minds. Why is that so? Their happiness and well-being do not
@@ -389,7 +399,7 @@
               their tendency to doubt and question the truths. They do not bring genuine peace
               because they involve the limitless views that emerge as soon as one apprehends
                 <distinct>I</distinct> and <distinct>mine</distinct>. They do not bring genuine
-              peace because they are the root of mistaken subsidiary afflictions, as well as
+              peace because they are the root of mistaken subsidiary disturbing emotions, as well as
               distraction, excitement, dullness, carelessness, and shamelessness. They do not bring
               genuine peace because they are the root of the various karmic actions of the five
               types of beings. They do not bring genuine peace because they are subsumed within the
@@ -397,14 +407,14 @@
             <milestone unit="chunk" xml:id="UT22084-057-003-36"/>
             <p tid="39">“Noble son, in this way, the physical and mental well-being that arise from
               the five sense pleasures do not bring genuine peace since they perpetuate the
-              continuity of cause and effect related to the afflictions of disturbing emotions,
+              continuity of cause and effect related to the pollution of disturbing emotions,
               actions, and rebirth. Therefore, they do not satisfy the body or the mind. You should
               understand that it is not only the happiness and well-being that arise from the sense
               pleasures of those who revel in desire that do not bring genuine peace. Just so, in
               all these many ways, when those who live in the form and formless realms arise from
               the state of equilibrium, that does not bring genuine peace. Since these states of
               equilibrium provide no genuine peace, they satisfy neither body nor mind in the way
-              that the Dharma-Vinaya of the noble ones does. <ref cRef="F.9.b" type="folio"/>
+              that the Dharma-Vinaya of the noble ones does. <ref cRef="F.9.b" type="folio" xml:id="UT22084-057-003-346"/>
                         </p>
             <milestone unit="chunk" xml:id="UT22084-057-003-37"/>
             <p tid="40">“On the other hand, the well-being that bodhisattvas feel when they have
@@ -413,18 +423,18 @@
               caused by doubt and uncertainty with regard to the truths. It is free from any
               disturbances caused by the limitless views that emerge from apprehending
                 <distinct>I</distinct> and <distinct>mine</distinct>. It is free from any
-              disturbances caused by the mistaken subsidiary afflictions, as well as distraction,
+              disturbances caused by the mistaken subsidiary disturbing emotions, as well as distraction,
               excitement, dullness, carelessness, and shamelessness. It is free from any
               disturbances caused by performing the various actions of the five types of beings. It
               is free from any disturbances subsumed within the truth of suffering. In this way,
               since it is free from any disturbances within the sequence of cause and effect of the
-              afflictions of disturbing emotions, actions, and birth, it is genuinely peaceful.
+              pollution of disturbing emotions, actions, and birth, it is genuinely peaceful.
               Since it is genuinely peaceful, it satisfies both the body and mind precisely in the
               way that the Dharma-Vinaya of the noble ones does. This, noble son, is the
               characteristic of saturation with respect to the bodhisattvas’ trust in the Great
               Vehicle that allows them to accomplish the Great Vehicle.”</p>
           </div>
-          <div type="section">
+          <div type="section" xml:id="UT22084-057-003-chapter-1-3">
             <head type="section" tid="41">3. Qualities</head>
             <milestone unit="chunk" xml:id="UT22084-057-003-38"/>
             <p tid="42">The bodhisattva Great Skillful Trust said, “Blessed One, it is wonderful to
@@ -438,7 +448,7 @@
               Great Vehicle?”</p>
             <milestone unit="chunk" xml:id="UT22084-057-003-40"/>
             <p tid="44">The Blessed One replied, “Noble son, the bodhisattvas practice trust in the
-              Great Vehicle with three qualities so that they can accomplish the Great Vehicle. <ref cRef="F.10.a" type="folio"/> They are the quality of conviction, the quality of
+              Great Vehicle with three qualities so that they can accomplish the Great Vehicle. <ref cRef="F.10.a" type="folio" xml:id="UT22084-057-003-347"/> They are the quality of conviction, the quality of
               transformation, and the quality of delight.”</p>
             <milestone unit="chunk" xml:id="UT22084-057-003-41"/>
             <p tid="45">Great Skillful Trust said, “Blessed One, how does one adopt the quality of
@@ -469,10 +479,10 @@
               transformations that occur when bodhisattvas feel the trust in the Great Vehicle that
               allows them to accomplish the Great Vehicle?”</p>
             <milestone unit="chunk" xml:id="UT22084-057-003-46"/>
-            <p tid="50">The Blessed One replied, “Noble son, <ref cRef="F.10.b" type="folio"/> the
+            <p tid="50">The Blessed One replied, “Noble son, <ref cRef="F.10.b" type="folio" xml:id="UT22084-057-003-348"/> the
               physical transformations that occur when bodhisattvas feel the trust in the Great
               Vehicle that allows them to accomplish the Great Vehicle are that the body hairs stand
-              on end, that there is tingling, and that tears well up and flow from the eyes.”</p>
+              on end, that there is tingling, and that tears well up and flow from their eyes.”</p>
             <milestone unit="chunk" xml:id="UT22084-057-003-47"/>
             <p tid="51">Great Skillful Trust replied, “Blessed One, what then are the mental
               transformations that arise when bodhisattvas feel the trust in the Great Vehicle that
@@ -481,7 +491,7 @@
             <p tid="52">The Blessed One replied, “Noble son, the mental transformation that occurs
               when bodhisattvas feel the trust in the Great Vehicle that allows them to accomplish
               the Great Vehicle is the presence of a perfect and all-pervading well-being that
-              emerges from the body. </p>
+              emanates from the body. </p>
             
             <p tid="53">“Noble son, this is how the quality of transformation engenders the
               bodhisattvas’ trust in the Great Vehicle that allows them to accomplish the Great
@@ -509,10 +519,10 @@
               bodhisattvas’ trust in the Great Vehicle that allows them to accomplish the Great
               Vehicle.”</p>
           </div>
-          <div type="section">
+          <div type="section" xml:id="UT22084-057-003-chapter-1-4">
             <head type="section" tid="57">4. Possession</head>
             <milestone unit="chunk" xml:id="UT22084-057-003-53"/>
-            <p tid="58">Great Skillful Trust asked, “Blessed One, <ref cRef="F.11.a" type="folio"/>
+            <p tid="58">Great Skillful Trust asked, “Blessed One, <ref cRef="F.11.a" type="folio" xml:id="UT22084-057-003-349"/>
               how is possession a characteristic of the bodhisattvas’ trust in the Great Vehicle
               that allows them to accomplish the Great Vehicle?”</p>
             <milestone unit="chunk" xml:id="UT22084-057-003-54"/>
@@ -537,17 +547,17 @@
               enumeration, comparison, example, or illustration would suffice. </p>
             <milestone unit="chunk" xml:id="UT22084-057-003-55"/>
             <p tid="60">“Why is that so? The reason is that all worldly roots of virtue are
-              associated with the disturbances of attachment and anger. <ref cRef="F.11.b" type="folio"/> They are associated with the disturbances of elation and dejection.
+              associated with the disturbances of attachment and anger. <ref cRef="F.11.b" type="folio" xml:id="UT22084-057-003-350"/> They are associated with the disturbances of elation and dejection.
               They are related to the disturbance of harboring doubt and uncertainty with regard to
               the truths. They are related to the disturbance that involves the limitless views that
               emerge from apprehending <distinct>I</distinct> and <distinct>mine</distinct>. They
               are related to the disturbance that is comprised of the mistaken subsidiary
-              afflictions, as well as distraction, excitement, dullness, carelessness, and
+              disturbing emotions, as well as distraction, excitement, dullness, carelessness, and
               shamelessness. They are related to the disturbance that consists in performing the
               various actions of the five types of beings. They are related to disturbance because
               they are subsumed within the truth of suffering. Noble son, in this way all worldly
               roots of virtue are associated with the disturbances of the causal sequence of the
-              afflictions of disturbing emotions, actions, and birth, along with their effects.</p>
+              pollution of disturbing emotions, actions, and birth, along with their effects.</p>
             <milestone unit="chunk" xml:id="UT22084-057-003-56"/>
             <p tid="61">“On the other hand, the roots of virtue that are embraced by merit and
               wisdom due to their link with the bodhisattvas’ trust in the Great Vehicle are free
@@ -556,21 +566,21 @@
               uncertainty with regard to the truths. They are free from the disturbances of the
               limitless views that emerge by apprehending <distinct>I</distinct> and
                 <distinct>mine</distinct>. They are free from the disturbances of the mistaken
-              subsidiary afflictions as well as distraction, excitement, dullness, carelessness, and
+              subsidiary disturbing emotions as well as distraction, excitement, dullness, carelessness, and
               shamelessness. They are free from the disturbances of performing the various actions
               of the five types of beings. </p>
             <milestone unit="chunk" xml:id="UT22084-057-003-57"/>
             <p tid="62">“Noble son, in this way, the roots of virtue that are embraced by merit and
               wisdom due to their link with the bodhisattvas’ trust in the Great Vehicle that allows
               them to accomplish the Great Vehicle are free from the disturbances that occur due to
-              the causal sequence of the afflictions of disturbing emotions, actions, and birth,
-              along with their effects. <ref cRef="F.12.a" type="folio"/> In this way, you should
+              the causal sequence of the pollution of disturbing emotions, actions, and birth,
+              along with their effects. <ref cRef="F.12.a" type="folio" xml:id="UT22084-057-003-351"/> In this way, you should
               understand that they are superior to worldly roots of virtue. </p>
             <milestone unit="chunk" xml:id="UT22084-057-003-58"/>
             <p tid="63">“Moreover, transcendent roots of virtue, which are obtained by observing the
               hearers’ and solitary buddhas’ discipline, absorption, <term>knowledge</term>, liberation, and
               liberated wisdom beyond learning, are surely not related to the disturbances of the
-              causal sequence of the afflictions consisting of disturbing emotions, actions, and
+              causal sequence of pollution consisting of disturbing emotions, actions, and
               birth, along with their effects. However, since they exclusively produce personal
               benefits, their scope is lesser, and they are, moreover, exhausted within the realm of
               nirvāṇa free from residual aggregates.</p>
@@ -589,15 +599,15 @@
               that are embraced by merit and wisdom due to their link with the bodhisattvas’ trust
               in the Great Vehicle are of unsurpassed power!”</p>
             <milestone unit="chunk" xml:id="UT22084-057-003-61"/>
-            <p tid="66">The Blessed One said, “Noble son, yes, indeed. <ref cRef="F.12.b" type="folio"/> As much as possible, bodhisattvas who strive for roots of virtue
+            <p tid="66">The Blessed One said, “Noble son, yes, indeed. <ref cRef="F.12.b" type="folio" xml:id="UT22084-057-003-352"/> As much as possible, bodhisattvas who strive for roots of virtue
               should apply themselves to possess such roots of virtue. These roots of virtue
               outshine all other roots of virtue, whether worldly or transcendent, and bestow all
               the splendors of the world. They accomplish the fruition and are even a necessary
-              cause for that. In the end, they accomplish unexcelled and perfect awakening that is
+              cause for that. In the end, they accomplish unexcelled and completely perfect awakening that is
               beyond exhaustion. Moreover, by means of the three vehicles, they allow limitless
               beings to leave all suffering behind and to find deliverance.”</p>
           </div>
-          <div type="section">
+          <div type="section" xml:id="UT22084-057-003-chapter-1-5">
             <head type="section" tid="67">5. The Basis</head>
             <milestone unit="chunk" xml:id="UT22084-057-003-62"/>
             <p tid="68">The bodhisattva Great Skillful Trust said, “Blessed One, how is the basis a
@@ -620,7 +630,7 @@
               beneficial, while that which is actually helpful is thought to be harmful. Similarly,
               they mistake the unpleasant for the pleasant and the pleasant for the unpleasant. In
               this way, they misunderstand what brings benefit and happiness, thinking that the
-              harmful is helpful and the helpful is harmful. <ref cRef="F.13.a" type="folio"/>
+              harmful is helpful and the helpful is harmful. <ref cRef="F.13.a" type="folio" xml:id="UT22084-057-003-353"/>
               Similarly, they think that misery is happiness and happiness is misery. </p>
             <milestone unit="chunk" xml:id="UT22084-057-003-65"/>
             <p tid="71">“The bodhisattvas, however, rely on their trust in the Great Vehicle and
@@ -641,11 +651,11 @@
               Vehicle benefits others on a vast scale due to their personal compassion. It performs
               limitless difficult deeds without any hesitation. Therefore, the basis for the
               bodhisattvas’ assistance is superior to the basis from which both supramundane and
-              mundane beings assist. <ref cRef="F.13.b" type="folio"/> This, noble son, is the
+              mundane beings give assistance. <ref cRef="F.13.b" type="folio" xml:id="UT22084-057-003-354"/> This, noble son, is the
               characteristic of the basis with respect to the bodhisattvas’ trust in the Great
               Vehicle that allows them to accomplish the Great Vehicle.”</p>
           </div>
-          <div type="section">
+          <div type="section" xml:id="UT22084-057-003-chapter-1-6">
             <head type="section" tid="73">6. Transcendence</head>
             <milestone unit="chunk" xml:id="UT22084-057-003-67"/>
             <p tid="74">The bodhisattva Great Skillful Trust said, “Blessed One, how is
@@ -670,7 +680,7 @@
               accomplish the Great Vehicle will continuously meet with buddhas and bodhisattvas in
               all their future lives. Therefore, bodhisattvas who apply themselves to listening to
               the Dharma and correctly reflecting on it will always take birth in circumstances
-              where they can perfect the accumulations for awakening. <ref cRef="F.14.a" type="folio"/> Noble son, since bodhisattvas transcend the higher realms by means of
+              where they can perfect the accumulations for awakening. <ref cRef="F.14.a" type="folio" xml:id="UT22084-057-003-355"/> Noble son, since bodhisattvas transcend the higher realms by means of
               this teaching, what need is there to speak of the lower realms?”</p>
             <milestone unit="chunk" xml:id="UT22084-057-003-71"/>
             <p tid="78">The bodhisattva Great Skillful Trust said, “Blessed One, please explain
@@ -680,15 +690,15 @@
             <p tid="79">The Blessed One replied, “Noble son, bodhisattvas who have attained trust in
               the Great Vehicle are certainly freed from the lower realms. In this way, bodhisattvas
               who have attained trust in the Great Vehicle will gradually go beyond those births
-              that are caused by karma and afflictions, those births that are dictated by karma
+              that are caused by karma and disturbing emotions, those births that are dictated by karma
               alone, and those births that serve only a lesser purpose for beings. Nevertheless,
               noble son, through this teaching, a bodhisattva understands that the higher realms are
               in fact the lower realms, while the lower realms are understood to be the higher
               realms. Why? Noble son, when a bodhisattva who lacks autonomy is born into the higher
-              realms with little scope for serving beings, that is considered the lower realms. On
-              the other hand, through the power of aspiration and motivated by great compassion and
+              realms with little scope for serving beings, these should then be considered to be the lower realms. On
+              the other hand, through the power of aspiration and motivated by their great compassion and
               the wish to guide beings, bodhisattvas may take birth among hell beings, animals, and
-              hungry spirits. When that happens, these should be considered the higher realms.”</p>
+              hungry spirits. When that happens, these should then be considered to be higher realms.”</p>
             <milestone unit="chunk" xml:id="UT22084-057-003-73"/>
             <p tid="80">The bodhisattva Great Skillful Trust said, “Blessed One, please tell me,
               when bodhisattvas are born among hell beings, animals, and hungry spirits through the
@@ -697,15 +707,15 @@
             <p tid="81">The Blessed One replied, “No, noble son, they do not. You should not see it
               in that way. Bodhisattvas who are born in the lower realms through the power of
               aspiration have surpassed the happiness of the four states of concentration, and so
-              they abide joyfully. They are far beyond any worldly <term>knowledge</term> <ref cRef="F.14.b" type="folio"/> and even the lesser transcendent <term>knowledge</term>. As such, they have
+              they abide joyfully. They are far beyond any worldly <term>knowledge</term> <ref cRef="F.14.b" type="folio" xml:id="UT22084-057-003-356"/> and even the lesser transcendent <term>knowledge</term>. As such, they have
               entered the stream of the highest <term>knowledge</term>. Therefore, you should understand that
               they are striving for the well-being of beings. This is why I have said that if the
               stream of actions of a being is inconceivable, what need is there to consider that of
-              a bodhisattva? Noble son, that is the characteristic of transcendence with respect to
+              a bodhisattva? This, noble son, is the characteristic of transcendence with respect to
               the bodhisattvas’ trust in the Great Vehicle that allows them to accomplish the Great
               Vehicle.”</p>
           </div>
-          <div type="section">
+          <div type="section" xml:id="UT22084-057-003-chapter-1-7">
             <head type="section" tid="82">7. The Root</head>
             <milestone unit="chunk" xml:id="UT22084-057-003-75"/>
             <p tid="83">The bodhisattva Great Skillful Trust said, “Blessed One, how is the root a
@@ -721,11 +731,11 @@
               their trust increases. In this regard all the bodhisattvas’ observations that produce
               faith contain seeds, and there are as many seeds as there are those observations.
               Therefore, the bodhisattvas’ trust in the Great Vehicle is said to be the root of all
-              the limitless qualities of the Buddha. Noble son, such is the characteristic of the
+              the limitless qualities of the Buddha. This, noble son, is the characteristic of the
               root with respect to the bodhisattvas’ trust in the Great Vehicle that allows them to
               accomplish the Great Vehicle.”</p>
           </div>
-          <div type="section">
+          <div type="section" xml:id="UT22084-057-003-chapter-1-8">
             <head type="section" tid="85">8. Protection</head>
             <milestone unit="chunk" xml:id="UT22084-057-003-77"/>
             <p tid="86">The bodhisattva Great Skillful Trust said, “Blessed One, how is protection a
@@ -734,24 +744,24 @@
             <milestone unit="chunk" xml:id="UT22084-057-003-78"/>
             <p tid="87">The Blessed One replied, “Noble son, when bodhisattvas have the trust in the
               Great Vehicle that allows them to accomplish the Great Vehicle, they are protected
-              because they abandon miserliness and no longer perpetuate it. <ref cRef="F.15.a" type="folio"/> They are protected because they abandon bad behavior and no longer
+              because they abandon miserliness and no longer perpetuate it. <ref cRef="F.15.a" type="folio" xml:id="UT22084-057-003-357"/> They are protected because they abandon bad behavior and no longer
               perpetuate it. They are protected because they abandon anger and no longer perpetuate
               it. They are protected because they abandon laziness and no longer perpetuate it. They
               are protected because they abandon distraction and no longer perpetuate it. They are
               protected because they abandon misguided intelligence and no longer perpetuate it.
-              Therefore, their minds are thoroughly guarded and protected against all afflictions,
-              subsidiary afflictions, and the agitations of adversaries.</p>
+              Therefore, their minds are thoroughly guarded and protected against all disturbing emotions,
+              subsidiary disturbing emotions, and the agitations of adversaries.</p>
             <milestone unit="chunk" xml:id="UT22084-057-003-79"/>
             <p tid="88">“Noble son, consider this analogy. A man dons strong armor in order to
               protect his body from getting wounded. Since he is protected by this armor, no enemy
               can harm him. Noble son, similarly, one may don the armor of the awakened mind that
               trusts the Great Vehicle so that one may accomplish the Great Vehicle. Thereby one is
-              well protected and well equipped, so that no adversarial afflictions, subsidiary
-              afflictions, or obscurations may inflict any harm. Noble son, such is the
+              well protected and well equipped, so that no adversarial disturbing emotions, subsidiary
+              disturbing emotions, or obscurations may inflict any harm. This, noble son, is the
               characteristic of protection with respect to the bodhisattvas’ trust in the Great
               Vehicle that allows them to accomplish the Great Vehicle.”</p>
           </div>
-          <div type="section">
+          <div type="section" xml:id="UT22084-057-003-chapter-1-9">
             <head type="section" tid="89">9. Connection</head>
             <milestone unit="chunk" xml:id="UT22084-057-003-80"/>
             <p tid="90">The bodhisattva Great Skillful Trust said, “Blessed One, how is connection a
@@ -764,7 +774,7 @@
               down or stands up, sleeps or is awake, or is drunk or crazy, one will always maintain
               this trust in the Great Vehicle. Later, in other lifetimes, although the bodhisattvas
               may have forgotten their trust in the Great Vehicle, they will not give rise to any
-              inferior or inappropriate attitudes. <ref cRef="F.15.b" type="folio"/> Therefore, even
+              inferior or inappropriate attitudes. <ref cRef="F.15.b" type="folio" xml:id="UT22084-057-003-358"/> Therefore, even
               if they were to associate with negative spiritual friends, such as the hearers and
               solitary buddhas, they would not get carried away. That being the case, how could any
               non-Buddhist views lead them astray? At that time, with just a few favorable
@@ -772,11 +782,11 @@
               accomplish the Great Vehicle, they will swiftly, forcefully, and steadily regain trust
               in the Great Vehicle. Their habitual tendency to trust the Great Vehicle that allows
               them to accomplish the Great Vehicle will only increase in future lives until they
-              attain unsurpassed and perfect awakening. This, noble son, is the characteristic of
+              attain unsurpassed and completely perfect awakening. This, noble son, is the characteristic of
               connection with respect to the bodhisattvas’ trust in the Great Vehicle that allows
               them to accomplish the Great Vehicle.”</p>
           </div>
-          <div type="section">
+          <div type="section" xml:id="UT22084-057-003-chapter-1-10">
             <head type="section" tid="92">10. Continuity</head>
             <milestone unit="chunk" xml:id="UT22084-057-003-82"/>
             <p tid="93">The bodhisattva Great Skillful Trust said, “Blessed One, how is continuity a
@@ -789,11 +799,11 @@
               Great Vehicle. One will also contemplate the Dharma and meditate on it. Noble son,
               bodhisattvas who apply themselves to hearing, contemplating, and meditating on the
               Dharma in this way will reap its fruits. As they apply themselves in this way while
-              motivated by the time of death, they attain a continuous trust in the Great Vehicle.
+              motivated by the approaching time of death, they attain a continuous trust in the Great Vehicle.
               This, noble son, is the characteristic of continuity with respect to the bodhisattvas’
               trust in the Great Vehicle that allows them to accomplish the Great Vehicle.”</p>
           </div>
-          <div type="section">
+          <div type="section" xml:id="UT22084-057-003-chapter-1-11">
             <head type="section" tid="95">11. Perfection </head>
             <milestone unit="chunk" xml:id="UT22084-057-003-84"/>
             <p tid="96">The bodhisattva Great Skillful Trust said, “Blessed One, how is perfection a
@@ -802,10 +812,10 @@
             <milestone unit="chunk" xml:id="UT22084-057-003-85"/>
             <p tid="97">The Blessed One replied, “Noble son, the characteristic of perfection with
               respect to the bodhisattvas’ trust in the Great Vehicle that allows them to accomplish
-              the Great Vehicle is fourfold and refers to <ref cRef="F.16.a" type="folio"/> perfect
+              the Great Vehicle is fourfold and refers to <ref cRef="F.16.a" type="folio" xml:id="UT22084-057-003-359"/> perfect
               origin, perfect boundlessness, perfect benefit, and perfect freedom from regret.</p>
             <milestone unit="chunk" xml:id="UT22084-057-003-86"/>
-            <p tid="98">“Noble son, this is different from the trust that worldly non-Buddhists have
+            <p tid="98">“Noble son, this differs from the trust that worldly non-Buddhists have
               in their own systems of learning, which is also a form of trust. The trust that the
               hearers and solitary buddhas have in their teachings is primarily for their own
               benefit, and it is therefore a lesser, imperfect type of trust that lacks the
@@ -823,7 +833,7 @@
             <milestone unit="chunk" xml:id="UT22084-057-003-89"/>
             <p tid="100">“Bodhisattvas, however, do not develop trust in this manner. They develop
               trust in the Buddha because he primarily brings benefit and happiness to all beings.
-              Therefore, in terms of its class, the bodhisattvas’ trust in the Great Vehicle that
+              Therefore, in terms of its rank, the bodhisattvas’ trust in the Great Vehicle that
               allows them to accomplish the Great Vehicle is broader in scope. Being broader in
               scope, it is superior. And because it is superior, it is perfect. </p>
             <milestone unit="chunk" xml:id="UT22084-057-003-90"/>
@@ -834,7 +844,7 @@
               Vehicle that allows them to accomplish the Great Vehicle. </p>
             <milestone unit="chunk" xml:id="UT22084-057-003-91"/>
             <p tid="102">“Moreover, as the bodhisattvas’ trust in the Great Vehicle benefits all
-              beings, it is perfect. Additionally, <ref cRef="F.16.b" type="folio"/> the
+              beings, it is perfect. Additionally, <ref cRef="F.16.b" type="folio" xml:id="UT22084-057-003-360"/> the
               bodhisattvas’ trust in the Great Vehicle that allows them to accomplish the Great
               Vehicle is perfect since it accomplishes all the boundless and inexhaustible qualities
               of the Buddha. This, noble son, is the characteristic of perfection with respect to
@@ -849,7 +859,7 @@
               characteristics.</trailer>
           </div>
         </div>
-        <div type="chapter">
+        <div type="chapter" xml:id="UT22084-057-003-chapter-2">
           <head type="chapter" tid="105">Chapter 2</head>
           <head type="chapterTitle" tid="296">Developing Trust</head>
           <milestone unit="chunk" xml:id="UT22084-057-003-94"/>
@@ -862,7 +872,7 @@
             Vehicle. Such trust develops based on (1) causes, (2) a companion, (3) examination, (4)
             behavior, (5) familiarity, (6) absence of weariness, (7) fulfillment, (8) composure, (9)
             insatiability, (10) solitude, and (11) determining that the teacher is genuine.”</p>
-          <div type="section">
+          <div type="section" xml:id="UT22084-057-003-chapter-2-1">
             <head type="section" tid="108">1. Causes</head>
             <milestone unit="chunk" xml:id="UT22084-057-003-96"/>
             <p tid="109">The bodhisattva Great Skillful Trust said, “Blessed One, how do causes
@@ -872,7 +882,7 @@
             <p tid="110">The Blessed One replied, “Noble son, bodhisattvas possess, from the very
               beginning, a seed of the virtuous Dharma of the Great Vehicle. Through the force of
               that predisposition for the pure Dharma, they naturally long for the Great Vehicle’s
-              teachings on compassion, <ref cRef="F.17.a" type="folio"/> and so trust develops based
+              teachings on compassion, <ref cRef="F.17.a" type="folio" xml:id="UT22084-057-003-361"/> and so trust develops based
               on that initial longing. Because of their interest in the Great Vehicle’s teachings on
               the profound and the vast, the bodhisattvas naturally sustain their longing, and so
               their trust develops. In the same way, bodhisattvas are naturally able to sustain
@@ -882,11 +892,11 @@
             <p tid="111">“The bodhisattvas naturally sustain an interest in the Great Vehicle’s
               teachings on generosity, and so their trust develops. In the same way, they naturally
               sustain interest in the Great Vehicle’s teachings on discipline, patience, diligence,
-              concentration, and <term>knowledge</term>, and so their trust develops. Noble son, this is how the
+              concentration, and <term>knowledge</term>, and so their trust develops. This, noble son, is how the
               bodhisattvas’ trust in the Great Vehicle that allows them to accomplish the Great
               Vehicle is developed based on causes.”</p>
           </div>
-          <div type="section">
+          <div type="section" xml:id="UT22084-057-003-chapter-2-2">
             <head type="section" tid="112">2. A Companion</head>
             <milestone unit="chunk" xml:id="UT22084-057-003-99"/>
             <p tid="113">The bodhisattva Great Skillful Trust said, “Blessed One, how does a
@@ -903,10 +913,10 @@
               serving and praising such spiritual friends, bodhisattvas engender the bodhisattvas’
               trust in the Great Vehicle that allows them to accomplish the Great Vehicle. This,
               noble son, is how bodhisattvas engender the trust in the Great Vehicle that allows
-              them to accomplish the Great Vehicle <ref cRef="F.17.b" type="folio"/> due to a
+              them to accomplish the Great Vehicle <ref cRef="F.17.b" type="folio" xml:id="UT22084-057-003-362"/> due to a
               companion.”</p>
           </div>
-          <div type="section">
+          <div type="section" xml:id="UT22084-057-003-chapter-2-3">
             <head type="section" tid="115">3. Examination</head>
             <milestone unit="chunk" xml:id="UT22084-057-003-101"/>
             <p tid="116">The bodhisattva Great Skillful Trust said, “Blessed One, how does
@@ -915,7 +925,7 @@
             <milestone unit="chunk" xml:id="UT22084-057-003-102"/>
             <p tid="117">The Blessed One replied, “Noble son, if bodhisattvas analyze the Dharma
               incorrectly because of taking the teachings too literally, it becomes impossible for
-              them to develop trust in the Great Vehicle. Instead, they must analyze correctly by
+              them to develop trust in the Great Vehicle. Instead, they must analyze it correctly by
               reflecting on the intended meaning rather than the words themselves. That is the
               proper way to develop trust in the Great Vehicle.</p>
             <milestone unit="chunk" xml:id="UT22084-057-003-103"/>
@@ -925,23 +935,23 @@
               not views, (3) the view that denigrates conventions, (4) the view that denigrates
               pollution, (5) the view that denigrates reality, (6) the view that undermines
               application, (7) the view based on grasping, (8) the view based on modification, (9)
-              the view that is without escape, (10) the view of irreproachability, (11) the view of
+              the view without escape, (10) the view of irreproachability, (11) the view of
               escape, (12) the view of obscurations, (13) the view of contempt, (14) the view of
               hostility, (15) the view of increasing demerit, (16) the wrong view, (17) the view of
-              pointless fatigue, (18) the view of increase, (19) the view of deception, (20) the
-              view of no claim, (21) the view of deceit, (22) the view of ridicule, (23) the view of
-              respect, (24) the view of denigration, (25) the view of stubborn delusion, (26) the
-              view of silence, (27) the great view, and (28) the view of manifest pride.<note place="end" index="7" xml:id="UT22084-057-003-104"> A similar, though not identical,
+              pointless fatigue, (18) the view of advancement, (19) the view of deception, (20) the
+              view of no claim, (21) the view of fickleness, (22) the view of ridicule, (23) the view of
+              adulation, (24) the view of denigration, (25) the view of stubborn delusion, (26) the
+              view of silence, (27) the great view, and (28) the view of overt pride.<note place="end" index="7" xml:id="UT22084-057-003-104"> A similar, though not identical,
                 list of twenty-eight wrong views that bodhisattvas may fall into is found in the
                   <title xml:lang="Sa-Ltn">Abhidharma­samuccaya</title> (Asaṅga
-                2001).<!--Reference Toh 4049--> See also the introduction.</note>
+                2001).<ref rend="pending" target="https://read.84000.co/translation/toh4049.html"/> See also the introduction.</note>
                         </p>
             <milestone unit="chunk" xml:id="UT22084-057-003-105"/>
             <p tid="119">1. “Noble son, you may wonder what ‘the view of characteristics’ refers to.
               First, think of this statement: ‘Considering the essence of conditioned phenomena, I
               declare that phenomena do not exist.’ If one becomes attached to the literal meaning
               of that statement, one might insist that the phenomena stemming from pollution and the
-              phenomena stemming from purification are just nonexistent. <ref cRef="F.18.a" type="folio"/> Thus, one will apprehend their characteristic to be sheer
+              phenomena stemming from purification are just nonexistent. <ref cRef="F.18.a" type="folio" xml:id="UT22084-057-003-363"/> Thus, one will apprehend their characteristic to be sheer
               nonexistence. Taking phenomena to bear these characteristics, one will assume the view
               of nonexistence. That is why it is called <distinct>the view of
                 characteristics</distinct>.</p>
@@ -970,16 +980,16 @@
                 based on grasping</distinct>.</p>
             <milestone unit="chunk" xml:id="UT22084-057-003-110"/>
             <p tid="124">8. “The view based on modification occurs when one declares the meaning
-              taught in the Great Vehicle discourses, announcing that all of these teachings point
-              out nonexistence. In this way, one modifies the meaning of the discourses into the
+              taught in the Great Vehicle discourses, announcing that all of these teachings demonstrate
+              nonexistence. In this way, one modifies the meaning of the discourses into the
               view of nonexistence. That is why it is called <distinct>the view based on
                 modification</distinct>.</p>
             <milestone unit="chunk" xml:id="UT22084-057-003-111"/>
-            <p tid="125">9. “The view that is without escape, noble son, is based on the view based
-              on grasping oneself and others <ref cRef="F.18.b" type="folio"/> and the view based on
+            <p tid="125">9. “The view without escape, noble son, is based on the view based
+              on grasping oneself and others <ref cRef="F.18.b" type="folio" xml:id="UT22084-057-003-364"/> and the view based on
               modification. With these views one will not even attain the awakening of the lower
-              vehicle, let alone unsurpassed and perfect awakening. That is why this is called
-                <distinct>the view that is without escape</distinct>.</p>
+              vehicle, let alone unsurpassed and completely perfect awakening. That is why this is called
+                <distinct>the view without escape</distinct>.</p>
             <milestone unit="chunk" xml:id="UT22084-057-003-112"/>
             <p tid="126">10. “The view of irreproachability arises from the view that adheres to the
               characteristic of nonexistence. Here one thinks, ‘Bodhisattvas are without wrongdoing
@@ -998,7 +1008,7 @@
             <p tid="129">13. “The view of contempt occurs when a bodhisattva who has a conceptual
               view of nonexistence develops contempt for the vehicle of the hearers, thinking,
               ‘These teachings are inferior! A bodhisattva should not meditate on them and should
-              not become learned in them! Bodhisattvas must remove themselves far from these
+              not become learned in them! Bodhisattvas must totally reject and distance themselves from these
               teachings!’ That is why it is called <distinct>the view of contempt</distinct>.</p>
             <milestone unit="chunk" xml:id="UT22084-057-003-116"/>
             <p tid="130">14. “The view of hostility occurs when a bodhisattva who has a conceptual
@@ -1009,7 +1019,7 @@
             <milestone unit="chunk" xml:id="UT22084-057-003-117"/>
             <p tid="131">15. “The view of increasing demerit causes bodhisattvas who have the view
               of contempt and the view of hostility to give rise to many nonmeritorious factors.
-                <ref cRef="F.19.a" type="folio"/> That is why it is called <distinct>the view of
+                <ref cRef="F.19.a" type="folio" xml:id="UT22084-057-003-365"/> That is why it is called <distinct>the view of
                 increasing demerit</distinct>.</p>
             <milestone unit="chunk" xml:id="UT22084-057-003-118"/>
             <p tid="132">16. “Wrong view occurs when bodhisattvas who have a conceptual view of
@@ -1024,13 +1034,13 @@
               results. That is why it is called <distinct>the view of pointless
               fatigue</distinct>.</p>
             <milestone unit="chunk" xml:id="UT22084-057-003-120"/>
-            <p tid="134">18. “The view of increase occurs when a bodhisattva who has a conceptual
+            <p tid="134">18. “The view of advancement occurs when a bodhisattva who has a conceptual
               view of nonexistence thinks, ‘A bodhisattva should lead large groups of people to this
               view and cause them to have faith, so that much merit is created.’ That is why it is
-              called <distinct>the view of increase</distinct>.</p>
+              called <distinct>the view of advancement</distinct>.</p>
             <milestone unit="chunk" xml:id="UT22084-057-003-121"/>
             <p tid="135">19. “The view of deception occurs when bodhisattvas who have the view of
-              increase, while intent on possessing merit, deceive both themselves and others with
+              advancement, while intent on possessing merit, deceive both themselves and others with
               respect to possessing merit. That is why it is called <distinct>the view of
                 deception</distinct>.</p>
             <milestone unit="chunk" xml:id="UT22084-057-003-122"/>
@@ -1040,24 +1050,24 @@
               anything myself.’ That is why it is called <distinct>the view without
                 claims</distinct>.</p>
             <milestone unit="chunk" xml:id="UT22084-057-003-123"/>
-            <p tid="137">21. “The view of deceit occurs when bodhisattvas who have a conceptual view
+            <p tid="137">21. “The view of fickleness occurs when bodhisattvas who have a conceptual view
               of nonexistence and do not take a position set forth their literal understanding of
               nonexistence in a way that is evasive and contradictory. Someone who is evasive and
-              contradictory is known as a deceitful speaker. That is why it is called <distinct>the
-                view of deceit</distinct>.</p>
+              contradictory is known as a fickle speaker. That is why it is called <distinct>the
+                view of fickleness</distinct>.</p>
             <milestone unit="chunk" xml:id="UT22084-057-003-124"/>
             <p tid="138">22. “The view of ridicule is when bodhisattvas, subscribing to the view
-              without claims and the view of deceit, lack substance in what they propagate <ref cRef="F.19.b" type="folio"/> and are therefore continuously ridiculed by learned
+              without claims and the view of fickleness, lack substance in what they propagate <ref cRef="F.19.b" type="folio" xml:id="UT22084-057-003-366"/> and are therefore continuously ridiculed by learned
               people. That is why it is called <distinct>the view of ridicule</distinct>.</p>
             <milestone unit="chunk" xml:id="UT22084-057-003-125"/>
-            <p tid="139">23. “The view of respect occurs when bodhisattvas who have a conceptual
+            <p tid="139">23. “The view of adulation occurs when bodhisattvas who have a conceptual
               view of nonexistence believe that their understanding is aligned with the views that
               were taught by the Thus-Gone One and believe that they are therefore venerating,
               respecting, and honoring the teacher by holding them. And yet, this is not a form of
-              veneration. This is what is meant by <distinct>respect</distinct>.</p>
+              veneration. That is why it is called a view of <distinct>adulation</distinct>.</p>
             <milestone unit="chunk" xml:id="UT22084-057-003-126"/>
             <p tid="140">24. “The view of denigration occurs when a bodhisattva who has the view of
-              respect in fact speaks ill of the Thus-Gone One rather than being constantly
+              adulation in fact speaks ill of the Thus-Gone One rather than being constantly
               respectful. That is why it is called <distinct>the view of denigration</distinct>.</p>
             <milestone unit="chunk" xml:id="UT22084-057-003-127"/>
             <p tid="141">25. “The view of stubborn delusion occurs when bodhisattvas who have a
@@ -1066,24 +1076,24 @@
               use logic and various other means to refute them. That is why it is called
                 <distinct>the view of stubborn delusion</distinct>.</p>
             <milestone unit="chunk" xml:id="UT22084-057-003-128"/>
-            <p tid="142">26. “ ‘The view of silence’ refers to a bodhisattva who has a view of firm
-              afflictions. That is why it is called <distinct>the view of silence</distinct>.</p>
+            <p tid="142">26. “ ‘The view of silence’ refers to a bodhisattva who has a view of persistent disturbing emotions. 
+              That is why it is called <distinct>the view of silence</distinct>.</p>
             <milestone unit="chunk" xml:id="UT22084-057-003-129"/>
             <p tid="143">27. “ ‘The great view’ refers to all the preceding twenty-six views;
               collectively they are termed <distinct>the great view</distinct>. Why is that so? Even
-              the sixty-two views that are rooted in the view of the transitory collection are not
+              the sixty-two views that are rooted in the view that a person is real are not
               nearly as unwholesome as these. Therefore, this is called <distinct>the great
                 view</distinct>. When bodhisattvas believe that non-Dharma is the Dharma and think
-              that the incorrect is correct, they begin to propagate wrong view. This will make them
+              that the incorrect is correct, they begin to propagate wrong views. This will make them
               karmically obscured for an infinitely long period, tied to the world because of having
-              discarded the Dharma. The views that spring from the root of the view of the
-              transitory collection do not constitute bondage in the world to the same degree as
+              discarded the Dharma. The views that spring from the root of the view that a person is real 
+              do not constitute bondage in the world to the same degree as
               actions that oppose the Dharma.</p>
             <milestone unit="chunk" xml:id="UT22084-057-003-130"/>
-            <p tid="144">28. “The view of manifest pride <ref cRef="F.20.a" type="folio"/> is a view
+            <p tid="144">28. “The view of overt pride <ref cRef="F.20.a" type="folio" xml:id="UT22084-057-003-367"/> is a view
               of strong pride in the extravagant view. This wrong view appears because one
               conceitedly takes the meaning of the Dharma of the Great Vehicle literally. That is
-              why it is called <distinct>the view of manifest pride</distinct>. </p>
+              why it is called <distinct>the view of overt pride</distinct>. </p>
             <milestone unit="chunk" xml:id="UT22084-057-003-131"/>
             <p tid="145">“Bodhisattvas who properly comprehend the key points of the Great
               Vehicle—points that are not meant to be taken literally—will not develop any of these
@@ -1098,7 +1108,7 @@
               of examination. <ref cRef="B2" type="bampo"/>
                         </trailer>
           </div>
-          <div type="section">
+          <div type="section" xml:id="UT22084-057-003-chapter-2-4">
             <head type="section" tid="148">4. Behavior</head>
             <milestone unit="chunk" xml:id="UT22084-057-003-133"/>
             <p tid="149">The bodhisattva Great Skillful Trust said, “Blessed One, how does behavior
@@ -1114,12 +1124,12 @@
               son, is how bodhisattvas engender the trust in the Great Vehicle that allows them to
               accomplish the Great Vehicle by means of behavior.”</p>
           </div>
-          <div type="section">
+          <div type="section" xml:id="UT22084-057-003-chapter-2-5">
             <head type="section" tid="151">5. Familiarity</head>
             <milestone unit="chunk" xml:id="UT22084-057-003-135"/>
             <p tid="152">The bodhisattva Great Skillful Trust said, “Blessed One, how does
               familiarity develop the bodhisattvas’ trust in the Great Vehicle that allows them to
-              accomplish the Great Vehicle?” <ref cRef="F.20.b" type="folio"/>
+              accomplish the Great Vehicle?” <ref cRef="F.20.b" type="folio" xml:id="UT22084-057-003-368"/>
             </p>
             <milestone unit="chunk" xml:id="UT22084-057-003-136"/>
             <p tid="153">The Blessed One replied, “Noble son, the bodhisattvas’ trust in the Great
@@ -1131,7 +1141,7 @@
               Noble son, this sustained engagement is how bodhisattvas engender trust in the Great
               Vehicle that allows them to accomplish the Great Vehicle by means of familiarity.”</p>
           </div>
-          <div type="section">
+          <div type="section" xml:id="UT22084-057-003-chapter-2-6">
             <head type="section" tid="154">6. Absence of Weariness</head>
             <milestone unit="chunk" xml:id="UT22084-057-003-137"/>
             <p tid="155">The bodhisattva Great Skillful Trust said, “Blessed One, how does absence
@@ -1150,7 +1160,7 @@
               This, noble son, is how bodhisattvas engender the trust in the Great Vehicle that
               allows them to accomplish the Great Vehicle through an absence of weariness.”</p>
           </div>
-          <div type="section">
+          <div type="section" xml:id="UT22084-057-003-chapter-2-7">
             <head type="section" tid="157">7. Fulfillment</head>
             <milestone unit="chunk" xml:id="UT22084-057-003-139"/>
             <p tid="158">The bodhisattva Great Skillful Trust said, “Blessed One, how does
@@ -1159,7 +1169,7 @@
             <milestone unit="chunk" xml:id="UT22084-057-003-140"/>
             <p tid="159">The Blessed One replied, “Noble son, when bodhisattvas are totally untiring
               in their engagement and have formed a steady trust in the Great Vehicle, they can
-              quickly perfect the accumulations of merit <ref cRef="F.21.a" type="folio"/> and
+              quickly perfect the accumulations of merit <ref cRef="F.21.a" type="folio" xml:id="UT22084-057-003-369"/> and
               wisdom. Since the accumulations of merit and wisdom have been perfected and are
               perfectly stable through their roots of virtue, even a small circumstance for
               developing trust in the Great Vehicle can produce a deep faith in that vehicle, not to
@@ -1169,7 +1179,7 @@
               is how bodhisattvas engender the trust in the Great Vehicle that allows them to
               accomplish the Great Vehicle through fulfillment.”</p>
           </div>
-          <div type="section">
+          <div type="section" xml:id="UT22084-057-003-chapter-2-8">
             <head type="section" tid="160">8. Composure</head>
             <milestone unit="chunk" xml:id="UT22084-057-003-141"/>
             <p tid="161">The bodhisattva Great Skillful Trust said, “Blessed One, how does composure
@@ -1183,7 +1193,7 @@
               they can now accurately teach the perfect Dharma of the Great Vehicle. This makes them
               genuinely inspired, and they develop a profound trust in the Great Vehicle that allows
               them to accomplish the Great Vehicle. The previous mental absorption of the
-              bodhisattva, coupled with this insight, now becomes a practice that is fueled by
+              bodhisattva coupled with this insight now becomes a practice that is fueled by
               tranquility and insight. Through this way of practicing, the bodhisattva gradually and
               genuinely accomplishes all qualities of the Buddha. Noble son, this is how
               bodhisattvas engender the trust in the Great Vehicle that allows them to accomplish
@@ -1191,7 +1201,7 @@
             <milestone unit="chunk" xml:id="UT22084-057-003-143"/>
             <p tid="163">The bodhisattva Great Skillful Trust said, “Blessed One, please tell us,
               does this path of tranquility and insight pertain only to those bodhisattvas who have
-              gathered the accumulations, or <ref cRef="F.21.b" type="folio"/> does it also pertain
+              gathered the accumulations, or <ref cRef="F.21.b" type="folio" xml:id="UT22084-057-003-370"/> does it also pertain
               to those who have not?</p>
             <milestone unit="chunk" xml:id="UT22084-057-003-144"/>
             <p tid="164">The Blessed One replied, “Noble son, I teach that the path of tranquility
@@ -1202,7 +1212,7 @@
               accomplish the Great Vehicle by means of composure. Here, ‘composure’ is synonymous
               with ‘absorption.’ ”</p>
           </div>
-          <div type="section">
+          <div type="section" xml:id="UT22084-057-003-chapter-2-9">
             <head type="section" tid="165">9. Insatiability</head>
             <milestone unit="chunk" xml:id="UT22084-057-003-145"/>
             <p tid="166">The bodhisattva Great Skillful Trust said, “Blessed One, how does
@@ -1225,7 +1235,7 @@
               abide in tranquility and insight, they will naturally develop the trust in the Great
               Vehicle that allows them to accomplish the Great Vehicle. However, if their minds are
               not one-pointed, and if they fail to retain the teachings of the Great Vehicle, they
-              will not develop trust in the Great Vehicle. Noble son, <ref cRef="F.22.a" type="folio"/> all bodhisattvas who develop the trust in the Great Vehicle that
+              will not develop trust in the Great Vehicle. Noble son, <ref cRef="F.22.a" type="folio" xml:id="UT22084-057-003-371"/> all bodhisattvas who develop the trust in the Great Vehicle that
               allows them to accomplish the Great Vehicle do so based on comprehending the meaning
               of the Dharma with an undistracted mind. You should understand that this is the proper
               approach.”</p>
@@ -1238,11 +1248,11 @@
               yet gathered the accumulations does not come close to the practice of those who are on
               the levels. It is not as complete as the practice of someone who has already gathered
               the accumulations. Noble son, the practice of someone who has already gathered the
-              accumulations approaches, merges with, and perfects the levels. Noble son, this is how
+              accumulations approaches, merges with, and perfects the levels. This, noble son, is how
               bodhisattvas engender the trust in the Great Vehicle that allows them to accomplish
               the Great Vehicle by means of insatiability.”</p>
           </div>
-          <div type="section">
+          <div type="section" xml:id="UT22084-057-003-chapter-2-10">
             <head type="section" tid="171">10. Solitude</head>
             <milestone unit="chunk" xml:id="UT22084-057-003-150"/>
             <p tid="172">The bodhisattva Great Skillful Trust said, “Blessed One, how does solitude
@@ -1250,7 +1260,7 @@
               the Great Vehicle?” </p>
             <milestone unit="chunk" xml:id="UT22084-057-003-151"/>
             <p tid="173">The Blessed One replied, “Noble son, bodhisattvas who attain the perfect
-              way of practice should not mingle or stay with householders or with the ordained.
+              way of practice should not mingle or cohabit with householders or with the ordained.
               Instead, they should set up residence in remote areas. Such individuals will stay
               alone, far from others, where they can practice continuously, aware and diligent.
               Those who stay in solitude can do proper practice while remaining mindful of the
@@ -1258,11 +1268,11 @@
               the Great Vehicle that allows them to accomplish the Great Vehicle is developed. They
               spend each moment, each instant and every period of every day and night, pursuing the
               qualities of the factors of awakening. Through pursuing their practice in solitude,
-              they gradually awaken to unsurpassed and perfect buddhahood. <ref cRef="F.22.b" type="folio"/> Compared to this, there is no better method to be found anywhere.
-              Noble son, this is how bodhisattvas engender the trust in the Great Vehicle that
+              they gradually awaken to unsurpassed and perfect buddhahood. <ref cRef="F.22.b" type="folio" xml:id="UT22084-057-003-372"/> Compared to this, there is no better method to be found anywhere.
+              This, noble son, this is how bodhisattvas engender the trust in the Great Vehicle that
               allows them to accomplish the Great Vehicle through solitude.”</p>
           </div>
-          <div type="section">
+          <div type="section" xml:id="UT22084-057-003-chapter-2-11">
             <head type="section" tid="174">11. Determining That the Teacher Is Genuine</head>
             <milestone unit="chunk" xml:id="UT22084-057-003-152"/>
             <p tid="175">The bodhisattva Great Skillful Trust said, “Blessed One, how does
@@ -1283,21 +1293,21 @@
               teachings of the Great Vehicle. The bodhisattvas who understand and realize this
               correctly will gain faith in the profound and secret teachings of the Great Vehicle.
               Even if they do not understand and realize these teachings, such bodhisattvas will
-              still gain a strong interest, which in turn will lead them to attain trust. Noble son,
-              this is how bodhisattvas engender the trust in the Great Vehicle that allows them to
+              still gain a strong interest, which in turn will lead them to attain trust. This, nobles son, 
+              is how bodhisattvas engender the trust in the Great Vehicle that allows them to
               accomplish the Great Vehicle by determining that the teacher is genuine.”</p>
           </div>
-          <div type="section">
+          <div type="section" xml:id="UT22084-057-003-chapter-2-12">
             <head type="section" tid="178">The Ten Limitless Features</head>
             <milestone unit="chunk" xml:id="UT22084-057-003-155"/>
             <p tid="179">The bodhisattva Great Skillful Trust said, “Blessed One, which teaching of
               the Great Vehicle does a bodhisattva who has gained trust in the Great Vehicle in
-              these ways contemplate in order to accomplish unsurpassed and perfect awakening?”</p>
+              these ways contemplate in order to accomplish unsurpassed and completely perfect awakening?”</p>
             <milestone unit="chunk" xml:id="UT22084-057-003-156"/>
             <p tid="180">The Blessed One replied, “Noble son, a bodhisattva who has gained trust in
               the Great Vehicle will engage with ten limitless features in order to achieve
-              unsurpassed and perfect awakening. What are those ten? They are (1) the limitless
-              Dharma, (2) limitless profundity, <ref cRef="F.23.a" type="folio"/> (3) limitless
+              unsurpassed and completely perfect awakening. What are those ten? They are (1) the limitless
+              Dharma, (2) limitless profundity, <ref cRef="F.23.a" type="folio" xml:id="UT22084-057-003-373"/> (3) limitless
               statements, (4) limitless terms, (5) limitless beings, (6) limitless safeguarding, (7)
               limitless methods, (8) limitless greatness of the Jewels, (9) limitless fields, and
               (10) limitless activity.</p>
@@ -1328,7 +1338,7 @@
               beginning to the sufferings they experience there.</p>
             <milestone unit="chunk" xml:id="UT22084-057-003-162"/>
             <p tid="186">6. “ ‘Limitless safeguarding,’ noble son, refers to the Thus-Gone One’s
-              protection, since he shields others from harm, the lower realms, and personhood. <ref cRef="F.23.b" type="folio"/> It also refers to his protection through his body of
+              protection, since he shields others from harm, the lower realms, and personhood. <ref cRef="F.23.b" type="folio" xml:id="UT22084-057-003-374"/> It also refers to his protection through his body of
               teachings, as well as the limitless types of protection continuously offered to all
               the limitless beings.</p>
             <milestone unit="chunk" xml:id="UT22084-057-003-163"/>
@@ -1350,27 +1360,27 @@
               great supernatural abilities. The body of the Thus-Gone One is inexhaustible because
               it is the body of nonabiding nirvāṇa and complete liberation as well as the permanent
               Dharma body. The Thus-Gone One is utterly free from misdeeds because he has abandoned
-              the obscurations of the afflictions and cognition and because he performs no misdeeds.
+              the obscurations of the disturbing emotions and cognition and because he performs no misdeeds.
               The Thus-Gone One is spontaneously accomplished since the continuity of buddha deeds
               are carried out uninterruptedly. The Thus-Gone One has great enjoyment because the
-              buddha realms are utterly pure and <ref cRef="F.24.a" type="folio"/> because he plays
+              buddha realms are utterly pure and <ref cRef="F.24.a" type="folio" xml:id="UT22084-057-003-375"/> because he plays
               in the great enjoyment of the Dharma. The Thus-Gone One is unstained since he is
-              unstained by any worldly phenomenon even though he appears in the world. The Thus-Gone
+              uncontaminated by any worldly phenomenon even though he appears in the world. The Thus-Gone
               One has great purpose because he continuously and uninterruptedly ripens and liberates
               limitless realms of beings.</p>
             <milestone unit="chunk" xml:id="UT22084-057-003-166"/>
-            <p tid="190">“The limitless greatness of the Jewel of the Dharma is, noble son, the
+            <p tid="190">“Noble son, the limitless greatness of the Jewel of the Dharma is the
               so-called <distinct>Dharma of the bodhisattvas</distinct>, which is neither Dharma nor
               not Dharma. It involves neither attachment nor an absence of attachment. It is neither
               saṃsāra nor nirvāṇa. The Dharma of the bodhisattvas does not abandon the apparent
-              phenomena of saṃsāra. Nevertheless, it is free from afflictions. It extends as far as
+              phenomena of saṃsāra. Nevertheless, it is totally devoid of pollution. It extends as far as
               space, as far as the realms of beings and the limit of reality. It is inexhaustible
               and extremely beneficial for all beings. It does not rest in saṃsāra, or in nirvāṇa,
               since it is based on bliss.</p>
             <milestone unit="chunk" xml:id="UT22084-057-003-167"/>
             <p tid="191">“The limitless greatness of the Jewel of the Saṅgha contains the
               bodhisattva Saṅgha, the Jewel of the Saṅgha for bodhisattvas. The greatness of this
-              Saṅgha is unsurpassed and perfect awakening. Thus, according to this principle, the
+              Saṅgha is unsurpassed and completely perfect awakening. Thus, according to this principle, the
               greatness of the Jewel of the Buddha and the Jewel of the bodhisattva Saṅgha should be
               viewed as equal.</p>
             <milestone unit="chunk" xml:id="UT22084-057-003-168"/>
@@ -1378,7 +1388,7 @@
               in all the various types of greatness included within the Jewel of the Buddha, the
               Jewel of the Dharma, and the Jewel of the Saṅgha. In this way, I will truly obtain
               what should be gained. I have the fortune of attaining the greatness of the Jewel of
-              the Buddha <ref cRef="F.24.b" type="folio"/> and the greatness of the Jewel of the
+              the Buddha <ref cRef="F.24.b" type="folio" xml:id="UT22084-057-003-376"/> and the greatness of the Jewel of the
               Dharma. When I join the ranks of those bodhisattvas who have pure motivation and abide
               on the great levels, I will truly attain what should be obtained. I have the fortune
               of being equal to those bodhisattvas both in terms of thought and deed.’</p>
@@ -1387,7 +1397,7 @@
               the pure buddha realms. Both the impure and the pure buddha realms are limitless. When
               the thus-gone ones dwell in the pure buddha realms, they experience these buddha
               realms as pure happiness, pure bliss, pure virtue, and pure ability. They continuously
-              relish in the great enjoyment of the Dharma. In the impure buddha realms, they teach
+              revel in the great enjoyment of the Dharma. In the impure buddha realms, they teach
               awakening in all possible ways, ripening those who are not yet ripened and liberating
               those who are already ripened.</p>
             <milestone unit="chunk" xml:id="UT22084-057-003-170"/>
@@ -1397,12 +1407,12 @@
             <trailer tid="195">This concludes the second chapter on developing trust.</trailer>
           </div>
         </div>
-        <div type="chapter">
+        <div type="chapter" xml:id="UT22084-057-003-chapter-3">
           <head type="chapter" tid="196">Chapter 3</head>
           <head type="chapterTitle" tid="297">Classifications of Trust</head>
           <milestone unit="chunk" xml:id="UT22084-057-003-172"/>
-          <p tid="197">Then the bodhisattva Great Skillful Trust said, “Blessed One, what different
-            aspects are there of the bodhisattvas’ trust in the Great Vehicle that allows them to
+          <p tid="197">Then the bodhisattva Great Skillful Trust said, “Blessed One, what are the different aspects 
+            of the bodhisattvas’ trust in the Great Vehicle that allow them to
             accomplish the Great Vehicle?”</p>
           <milestone unit="chunk" xml:id="UT22084-057-003-173"/>
           <p tid="198">The Blessed One replied, “Noble son, there are four aspects of the
@@ -1415,7 +1425,7 @@
             Consider how water collecting in a hoofprint is at first murky but later clears if it is
             left undisturbed and calm. Likewise, bodhisattvas who have gained trust in the Great
             Vehicle that allows them to accomplish the Great Vehicle may become attached to many
-            temporary activities, whereby their trust in the Great Vehicle is shaken. <ref cRef="F.25.a" type="folio"/> However, whenever they are freed from this attachment, it
+            temporary activities, whereby their trust in the Great Vehicle is shaken. <ref cRef="F.25.a" type="folio" xml:id="UT22084-057-003-377"/> However, whenever they are freed from this attachment, it
             no longer disturbs them, and they can once again focus one-pointedly on the Dharma of
             the Great Vehicle. At that point they will certainly be restored to their former state. </p>
           <milestone unit="chunk" xml:id="UT22084-057-003-175"/>
@@ -1449,9 +1459,9 @@
             are, they are as follows: precipitating trust, initiating trust, accepting and devoted
             trust, and interested trust. Precipitating trust is the trust in the Great Vehicle felt
             by those who naturally, from previous times, have created and familiarized themselves
-            with the roots of virtue. <ref cRef="F.25.b" type="folio"/> Initiating trust is the
+            with the roots of virtue. <ref cRef="F.25.b" type="folio" xml:id="UT22084-057-003-378"/> Initiating trust is the
             trust in the Great Vehicle caused by bodhisattvas’ arousal of the mind of unsurpassed
-            and perfect awakening and their recollection of that mind of awakening after they have
+            and completely perfect awakening and their recollection of that mind of awakening after they have
             already aroused it. Accepting and devoted trust is the trust in the Great Vehicle
             created when beings embrace and respect the bodhisattva who has accepted them.
             Interested trust is the trust in the Great Vehicle of the bodhisattvas felt by those who
@@ -1462,7 +1472,7 @@
             teaching, the trust of recollecting the increase of virtuous factors, and the trust of
             recollecting hopes and wishes. ‘The trust by seeing and hearing’ refers to gaining trust
             in the Great Vehicle when one sees or hears the buddhas’ and bodhisattvas’ forms or
-            lights. ‘The trust of recollecting the spread of the teaching’ refers to the trust in
+            radiance. ‘The trust of recollecting the spread of the teaching’ refers to the trust in
             the Great Vehicle that comes about by recollecting that beings ought to be ripened. ‘The
             trust of recollecting the increase of virtuous factors’ refers to the trust in the
             bodhisattva Great Vehicle caused by recollecting the continuous increase of one’s
@@ -1475,15 +1485,15 @@
             as follows: the trust caused by recollecting statements, the trust caused by
             recollecting the ability to resolve doubts, the trust caused by recollecting how the
             Dharma is planted, and the trust caused by recollecting practice. ‘The trust caused by
-            recollecting statements’ refers to the trust that is formed in the Great Vehicle when
+            recollecting statements’ refers to the trust in the Great Vehicle that is summoned when
             one fondly recollects those bodhisattvas who are motivated by all gateways to the Great
-            Vehicle. ‘The trust caused by recollecting the ability to resolve doubts’ <ref cRef="F.26.a" type="folio"/> refers to the trust in the Great Vehicle formed by
+            Vehicle. ‘The trust caused by recollecting the ability to resolve doubts’ <ref cRef="F.26.a" type="folio" xml:id="UT22084-057-003-379"/> refers to the trust in the Great Vehicle that is summoned by
             remembering how bodhisattvas who have heard much, memorized, and become learned are able
             to resolve doubts. ‘The trust caused by recollecting how the Dharma is planted’ refers
-            to the trust in the Great Vehicle caused by bringing to mind how the sacred Dharma is
+            to the trust in the Great Vehicle that is summoned by bringing to mind how the sacred Dharma is
             planted in the minds of others by reading aloud, reciting, explaining, and chanting the
             Dharma of the Great Vehicle to others. ‘The trust caused by recollecting practice’
-            refers to the trust in the Great Vehicle developed by recollecting how bodhisattvas
+            refers to the trust in the Great Vehicle that is summoned by recollecting how bodhisattvas
             diligently practice and accomplish the Dharma of the Great Vehicle.</p>
           <milestone unit="chunk" xml:id="UT22084-057-003-182"/>
           <p tid="207">“Noble son, there are four further types of trust. If you wonder what they
@@ -1494,19 +1504,19 @@
             trust one develops by observing bodhisattvas who have attained the tranquility and
             insight that is focused on the Dharma of the Great Vehicle. ‘The trust of engaging in
             physical activity embraced by skillful means’ refers to the trust in the Great Vehicle
-            one develops by observing how conscientious bodhisattvas offer advice and critique in
+            one develops by observing how conscientious bodhisattvas offer advice and constructive criticism in
             order to tame those bodhisattvas who are not conscientious in terms of their physical
             actions. ‘The trust of engaging in verbal activity embraced by skillful means’ refers to
             the trust in the Great Vehicle one obtains by observing how conscientious bodhisattvas
-            offer advice and critique in order to tame those bodhisattvas who are engaged in
+            offer advice and constructive criticism in order to tame those bodhisattvas who are engaged in
             misguided verbal activity. ‘The trust of engaging in mental activity embraced by
             skillful means’ refers to trust in the Great Vehicle created by observing how
-            conscientious bodhisattvas offer physical and verbal advice and critique in order to
+            conscientious bodhisattvas offer physical and verbal advice and constructive criticism in order to
             tame those bodhisattvas who are engaged in mistaken mental activity.</p>
           <milestone unit="chunk" xml:id="UT22084-057-003-183"/>
           <p tid="208">“There are four further types of trust. If you wonder what they are, they are
             as follows: the trust of recollecting disregard, the trust of recollecting subjugation,
-              <ref cRef="F.26.b" type="folio"/> the trust of recollecting enjoyment, and the trust
+              <ref cRef="F.26.b" type="folio" xml:id="UT22084-057-003-380"/> the trust of recollecting enjoyment, and the trust
             of delightfully recollecting the connection. ‘The trust of recollecting disregard’
             refers to the trust in the Great Vehicle gained by recollecting the practice of the six <term>perfections</term> when they are practiced without any regard for life or limb. ‘The trust of
             recollecting subjugation’ refers to the trust in the Great Vehicle gained by
@@ -1532,7 +1542,7 @@
             weariness. ‘The trust of recollecting happiness free from negative actions’ refers to
             the trust in the Great Vehicle caused by recollecting one’s connection with the
             accumulations, having abandoned all worries about personally being harmed as well as all
-            wishes for happiness. <ref cRef="F.27.a" type="folio"/>
+            wishes for happiness. <ref cRef="F.27.a" type="folio" xml:id="UT22084-057-003-381"/>
                     </p>
           <milestone unit="chunk" xml:id="UT22084-057-003-185"/>
           <p tid="210">“There are four further types of trust. If you wonder what they are, they are
@@ -1553,15 +1563,15 @@
           <milestone unit="chunk" xml:id="UT22084-057-003-186"/>
           <p tid="211">“There are four further types of trust. If you wonder what those four are,
             they are as follows: the trust of recollecting the perfect qualities of the master, the
-            trust of recollecting one’s own complete persistence, the trust of recollecting
+            trust of recollecting one’s own perseverance, the trust of recollecting
             gratitude, and the trust of recollecting the fulfillment of the master’s wishes. ‘The
             trust of recollecting the perfect qualities of the master’ refers to trust in the Great
             Vehicle that is felt by bodhisattvas who are diligent in following a spiritual friend as
             they recollect seeing the complete perfect qualities of the spiritual friend. ‘The trust
-            of recollecting one’s own complete persistence’ refers to the trust in the Great Vehicle
+            of recollecting one’s own perseverance’ refers to the trust in the Great Vehicle
             that is felt by bodhisattvas who are diligent in following a spiritual friend as they
-            recollect their own pure persistence in terms of paying respect to the spiritual friend
-            when approaching such a person <ref cRef="F.27.b" type="folio"/> and listening to the
+            recollect their own pure perseverance in terms of paying respect to the spiritual friend
+            when approaching such a person <ref cRef="F.27.b" type="folio" xml:id="UT22084-057-003-382"/> and listening to the
             Dharma and when subsequently practicing in accordance with the teaching received. ‘The
             trust of recollecting gratitude’ refers to the trust in the Great Vehicle that is felt
             by bodhisattvas who are diligent in following a spiritual friend as they recollect their
@@ -1574,7 +1584,7 @@
             they are as follows: the trust caused by recollecting how others were made happy, the
             trust caused by recollecting how others were freed from suffering, the trust caused by
             recollecting how others were not separated from happiness, and the trust caused by
-            recollecting how others are freed from affliction. ‘The trust caused by recollecting how
+            recollecting how others are freed from pollution. ‘The trust caused by recollecting how
             others were made happy’ refers to the trust in the Great Vehicle felt by bodhisattvas
             who diligently meditate on love as they recollect accomplishing the happiness of beings
             while motivated by the wish for their happiness. ‘The trust caused by recollecting how
@@ -1584,20 +1594,20 @@
             separated from happiness’ refers to the trust in the Great Vehicle felt by bodhisattvas
             who diligently meditate on joy as they recollect successfully ensuring that others are
             not separated from happiness. ‘The trust caused by recollecting how others are freed
-            from affliction’ refers to the trust in the Great Vehicle felt by bodhisattvas who
+            from pollution’ refers to the trust in the Great Vehicle felt by bodhisattvas who
             diligently meditate on equality as they recollect ensuring that beings are free from
-            affliction.</p>
+            pollution.</p>
           <milestone unit="chunk" xml:id="UT22084-057-003-188"/>
-          <p tid="213">“Noble son, in this way, the bodhisattva’s trust in the Great Vehicle takes
-            infinite forms. <ref cRef="F.28.a" type="folio"/> Based on these divisions, you should
+          <p tid="213">“In this way, noble son, the bodhisattva’s trust in the Great Vehicle takes
+            infinite forms. <ref cRef="F.28.a" type="folio" xml:id="UT22084-057-003-383"/> Based on these divisions, you should
             understand that there are limitless types of trust in the Great Vehicle. One could not
             understand their extent even in one trillion eons. Noble son, you should understand that
-            such are the classifications of the bodhisattvas’ trust in the Great Vehicle that allows
+            these are the classifications of the bodhisattvas’ trust in the Great Vehicle that allows
             them to accomplish the Great Vehicle.”</p>
           <milestone unit="chunk" xml:id="UT22084-057-003-189"/>
           <trailer tid="214">This was the third chapter on the classifications of trust.</trailer>
         </div>
-        <div type="chapter">
+        <div type="chapter" xml:id="UT22084-057-003-chapter-4">
           <head type="chapter" tid="215">Chapter 4</head>
           <head type="chapterTitle" tid="298">The Benefits of Trust </head>
           <milestone unit="chunk" xml:id="UT22084-057-003-190"/>
@@ -1636,7 +1646,7 @@
           <milestone unit="chunk" xml:id="UT22084-057-003-198"/>
           <p tid="224">“Noble son, the bodhisattvas’ trust in the Great Vehicle that allows them to
             accomplish the Great Vehicle is far reaching because it leads to the purification of
-            buddha realms <ref cRef="F.28.b" type="folio"/> and the attainment of all buddha
+            buddha realms <ref cRef="F.28.b" type="folio" xml:id="UT22084-057-003-384"/> and the attainment of all buddha
             qualities.</p>
           <milestone unit="chunk" xml:id="UT22084-057-003-199"/>
           <p tid="225">“Noble son, the bodhisattvas’ trust in the Great Vehicle that allows them to
@@ -1675,7 +1685,7 @@
             eons.</p>
           <milestone unit="chunk" xml:id="UT22084-057-003-207"/>
           <p tid="233">“Noble son, the bodhisattvas’ trust in the Great Vehicle that allows them to
-            accomplish the Great Vehicle <ref cRef="F.29.a" type="folio"/> accords with the
+            accomplish the Great Vehicle <ref cRef="F.29.a" type="folio" xml:id="UT22084-057-003-385"/> accords with the
             fulfillment of the <term>perfection</term> of concentration because it leads to the attainment of
             the absorption that achieves the welfare of all beings. </p>
           <milestone unit="chunk" xml:id="UT22084-057-003-208"/>
@@ -1685,13 +1695,13 @@
             exalted and unsurpassed wisdom that transcends the world.</p>
           <milestone unit="chunk" xml:id="UT22084-057-003-209"/>
           <p tid="235">“Noble son, the bodhisattvas’ trust in the Great Vehicle that allows them to
-            accomplish the Great Vehicle accords with assembling the accumulations because it leads
+            accomplish the Great Vehicle accords with gathering the accumulations because it leads
             to the genuine teaching that brings liberation to limitless groups of beings through the
             three vehicles.</p>
           <milestone unit="chunk" xml:id="UT22084-057-003-210"/>
           <p tid="236">“Noble son, the bodhisattvas’ trust in the Great Vehicle that allows them to
             accomplish the Great Vehicle accords with offering homage and service to the Thus-Gone
-            One because it leads to the growth of limitless merit and to laying hold of the merit of
+            One because it leads to the growth of limitless merit and to accruing the merit of
             the extraordinary buddha realms.</p>
           <milestone unit="chunk" xml:id="UT22084-057-003-211"/>
           <p tid="237">“Noble son, the bodhisattvas’ trust in the Great Vehicle that allows them to
@@ -1713,7 +1723,7 @@
           <milestone unit="chunk" xml:id="UT22084-057-003-215"/>
           <p tid="241">“Noble son, the bodhisattvas’ trust in the Great Vehicle that allows them to
             accomplish the Great Vehicle makes one become familiar with the practice because it
-            leads us to untiringly and diligently accrue vast amounts of merit day and night. <ref cRef="F.29.b" type="folio"/>
+            leads one to untiringly and diligently accrue vast amounts of merit day and night. <ref cRef="F.29.b" type="folio" xml:id="UT22084-057-003-386"/>
                     </p>
           <milestone unit="chunk" xml:id="UT22084-057-003-216"/>
           <p tid="242">“Noble son, the bodhisattvas’ trust in the Great Vehicle that allows them to
@@ -1748,12 +1758,12 @@
             roots of virtue of beings spring forth.</p>
           <milestone unit="chunk" xml:id="UT22084-057-003-225"/>
           <p tid="251">“Trust in the Great Vehicle of the bodhisattvas should be viewed as armor
-            because it protects from, and is unharmed by, all weapons of the enemies of afflictions
-            and subsidiary afflictions.</p>
+            because it protects from, and is unharmed by, all weapons of the enemies of disturbing emotions            
+            and subsidiary disturbing emotions.</p>
           <milestone unit="chunk" xml:id="UT22084-057-003-226"/>
           <p tid="252">“Trust in the Great Vehicle of the bodhisattvas should be viewed as a great
             treasure because it gathers, accumulates, and contains all perfect jewels of both
-            worldly and supramundane roots of virtue. <ref cRef="F.30.a" type="folio"/>
+            worldly and supramundane roots of virtue. <ref cRef="F.30.a" type="folio" xml:id="UT22084-057-003-387"/>
                     </p>
           <milestone unit="chunk" xml:id="UT22084-057-003-227"/>
           <p tid="253">“Trust in the Great Vehicle of the bodhisattvas should be viewed as a king
@@ -1761,18 +1771,18 @@
           <milestone unit="chunk" xml:id="UT22084-057-003-228"/>
           <p tid="254">“Trust in the Great Vehicle of the bodhisattvas should be viewed as a panacea
             because it functions as an antidote to the poisons that have long been linked with the
-            lower realms, ill will, unwholesome and negative actions, and afflictions.</p>
+            lower realms, ill will, unwholesome and negative actions, and disturbing emotions.</p>
           <milestone unit="chunk" xml:id="UT22084-057-003-229"/>
           <p tid="255">“Trust in the Great Vehicle of the bodhisattvas should be viewed as a vajra
             because it overcomes all the weapons aimed at trust that otherwise threaten to cut the
             roots of virtue.</p>
           <milestone unit="chunk" xml:id="UT22084-057-003-230"/>
           <p tid="256">“Trust in the Great Vehicle of the bodhisattvas should be viewed as water
-            because it counteracts the fires of wailing, suffering, unhappiness, quarrel, torment,
+            because it counteracts the fires of wailing, suffering, unhappiness, conflict, torment,
             and sorrow.</p>
           <milestone unit="chunk" xml:id="UT22084-057-003-231"/>
           <p tid="257">“Trust in the Great Vehicle of the bodhisattvas should be viewed as a fine
-            tool because it is an antidote to the enemies of afflictions that create unwanted
+            tool because it is an antidote to the enemies of disturbing emotions that create unwanted
             situations.</p>
           <milestone unit="chunk" xml:id="UT22084-057-003-232"/>
           <p tid="258">“Trust in the Great Vehicle of the bodhisattvas should be viewed as the moon
@@ -1790,7 +1800,7 @@
           <p tid="262">“Trust in the Great Vehicle of the bodhisattvas should be viewed as a
             bountiful harvest because it leads to conquering the obscurations of all beings.</p>
           <milestone unit="chunk" xml:id="UT22084-057-003-237"/>
-          <p tid="263">“Noble son, I clearly see that in the past, <ref cRef="F.30.b" type="folio"/>
+          <p tid="263">“Noble son, I clearly see that in the past, <ref cRef="F.30.b" type="folio" xml:id="UT22084-057-003-388"/>
             at the time of the perfect buddha Kāśyapa, right here in Rājagṛha, there lived an
             unfortunate woman who, being a sweeper, was the lowest in the village. One day she heard
             that the Buddha and his assembly of monks had been requested to visit a certain
@@ -1802,7 +1812,7 @@
             behold; he has such serene conduct and his followers are so graceful!’ Then, with this
             intense feeling of trust, she passed away. Now, because of this she was born in the
             Heaven of the Thirty-Three, and by this very cause she eventually achieved liberation in
-            unsurpassed and perfect awakening.</p>
+            unsurpassed and completely perfect awakening.</p>
           <milestone unit="chunk" xml:id="UT22084-057-003-238"/>
           <p tid="264">“Noble son, I clearly see that in the past, at the time of the perfect buddha
             Vipaśyin, right here in Rājagṛha, there lived a brahmin known as Hungry One. Hungry One
@@ -1813,9 +1823,9 @@
             Thus-Gone One, the Blessed Vipaśyin. As he beheld him, he noticed his beautiful
             appearance and said, ‘Oh, the body of the Blessed Vipaśyin is beautifully adorned with
             the excellent signs and marks of a thus-gone one, a worthy one, a perfect buddha!’
-            Having in this way gained a moment of trust, he passed away. <ref cRef="F.31.a" type="folio"/> As a result of that trust he was born among the gods in the Yāma
+            Having in this way gained a moment of trust, he passed away. <ref cRef="F.31.a" type="folio" xml:id="UT22084-057-003-389"/> As a result of that trust he was born among the gods in the Yāma
             Heaven, and through that very cause he gradually progressed toward the liberation of
-            unexcelled and perfect awakening.</p>
+            unexcelled and completely perfect awakening.</p>
           <milestone unit="chunk" xml:id="UT22084-057-003-239"/>
           <p tid="265">“Noble son, I clearly see that in the past, at the time of the perfect buddha
             Kāśyapa, right here in Rājagṛha, there lived five hundred non-Buddhists. With the
@@ -1838,15 +1848,15 @@
             strength has interrupted all the suffering that pains us beings in hell and brought us
             happiness! His power is indeed great!’ After attaining a moment of trust in this way,
             they pass away and transmigrate. In accord with this cause they are born as gods and
-            gradually obtain trust in my teaching. <ref cRef="F.31.b" type="folio"/> Some of them
+            gradually obtain trust in my teaching. <ref cRef="F.31.b" type="folio" xml:id="UT22084-057-003-390"/> Some of them
             attain nirvāṇa through the vehicle of the hearers, some through the vehicle of the
-            solitary buddhas, and some become destined for unsurpassed and perfect awakening through
+            solitary buddhas, and some become destined for unsurpassed and completely perfect awakening through
             the Great Vehicle.</p>
           <milestone unit="chunk" xml:id="UT22084-057-003-241"/>
           <p tid="267">“Noble son, again, I clearly see that when beings, who are beyond count, feel
             just a single moment of weak and inferior trust in the Great Vehicle of the Thus-Gone
             One, some of them will be turned away from the lower realms, while some of them will be
-            turned away from the body of affliction. When they relinquish that, they also attain
+            turned away from the body of defilement. When they relinquish that, they also attain
             mundane excellence. A weak and diminutive mind that trusts the Great Vehicle will also
             obtain all the excellence that is beyond the world.</p>
           <milestone unit="chunk" xml:id="UT22084-057-003-242"/>
@@ -1855,7 +1865,7 @@
             mention the benefits of a continuous and river-like trust in the vehicle of the
             bodhisattvas? They could hardly be listed, even if one had a trillion eons.”</p>
         </div>
-        <div type="chapter">
+        <div type="chapter" xml:id="UT22084-057-003-chapter-5">
           <head type="chapter" tid="269">Conclusion</head>
           <milestone unit="chunk" xml:id="UT22084-057-003-243"/>
           <p tid="270">Then, the bodhisattva Great Skillful Trust said to the Blessed One, “Blessed
@@ -1869,7 +1879,7 @@
           <p tid="271">When the Blessed One delivered this Dharma teaching, five thousand novice
             bodhisattvas developed the great acceptance that facilitates realization of the Dharma
             of the bodhisattvas, while in the assembled retinue the remainder of the novice
-            bodhisattvas, through their unwavering aspiration, <ref cRef="F.32.a" type="folio"/>
+            bodhisattvas, through their unwavering aspiration, <ref cRef="F.32.a" type="folio" xml:id="UT22084-057-003-391"/>
             developed acceptance that is like a flowing river of aspiration.</p>
           <milestone unit="chunk" xml:id="UT22084-057-003-245"/>
           <p tid="272">Then, the bodhisattva Great Skillful Trust said to the Blessed One, “Blessed
@@ -1891,7 +1901,7 @@
             thus-gone ones’ clothing. Pure discipline that is free from all obscurations is the
             thus-gone ones’ ornaments. Learning that is free from all obscurations is the thus-gone
             ones’ utensils, necessities, and goods. Concentrations, freedoms, absorptions, and
-            states of equilibrium that are free from all obscurations <ref cRef="F.32.b" type="folio"/> are the thus-gone ones’ perfume, garlands, and ointments. An
+            states of equilibrium that are free from all obscurations <ref cRef="F.32.b" type="folio" xml:id="UT22084-057-003-392"/> are the thus-gone ones’ perfume, garlands, and ointments. An
             indubitable discourse that contains the enjoyment of the complete Dharma that purifies
             all obscurations is the thus-gone ones’ song, dance, and music. The gates of
             recollection that are free from all obscurations are the thus-gone ones’ light. The
@@ -1915,9 +1925,9 @@
             from powerful cognition and the features of extreme purity. Such is the abode of the
             thus-gone ones, which supports limitless bodhisattvas. It is teeming with boundless
             gods, nāgas, yakṣas, gandharvas, asuras, garuḍas, kinnaras, mahoragas, humans, and
-            nonhumans. <ref cRef="F.33.a" type="folio"/> It is reinforced by the great joy and bliss
+            nonhumans. <ref cRef="F.33.a" type="folio" xml:id="UT22084-057-003-393"/> It is reinforced by the great joy and bliss
             of the taste of the Dharma. It is maintained by the activity of benefitting all beings
-            and is free from any harm caused by afflictions and subsidiary afflictions. It is
+            and is free from any harm caused by disturbing emotions and subsidiary disturbing emotions. It is
             inaccessible to any demon. Superior to all other structures, it is designed through the
             blessings of the thus-gone ones. Leading to liberation through mindfulness,
             intelligence, and great realization, it is the vehicle of tranquility and insight
@@ -1940,7 +1950,7 @@
             meditation?”</p>
           <milestone unit="chunk" xml:id="UT22084-057-003-252"/>
           <p tid="279">The Blessed One replied, “Ānanda, whoever feels interest in this Dharma
-            teaching and reads, copies, <ref cRef="F.33.b" type="folio"/> recites, hears, chants,
+            teaching and reads, copies, <ref cRef="F.33.b" type="folio" xml:id="UT22084-057-003-394"/> recites, hears, chants,
             teaches elaborately and correctly, thoroughly contemplates, or applies it in meditation
             will create merit that is impossible to illustrate by any worldly merit or even by the
             merit of the hearers and solitary buddhas that transcends the world. Why is that?
@@ -1968,7 +1978,7 @@
           <p tid="283">The Blessed One replied, “Ānanda, for the above reasons you should know that
             this Dharma teaching is called <title xml:lang="en">Cultivating Trust in the Great
               Vehicle</title>. Remember it also under the name <title xml:lang="en">Engaging with
-              Trust in the Great Vehicle</title>. <ref cRef="F.34.a" type="folio"/> Remember it also
+              Trust in the Great Vehicle</title>. <ref cRef="F.34.a" type="folio" xml:id="UT22084-057-003-395"/> Remember it also
             under the name <title xml:lang="en">Increasing Trust in the Great Vehicle</title>.
             Remember it also under the name <title xml:lang="en">Liberation through Trust in the
               Great Vehicle</title>. Therefore, this Dharma teaching should be given the title
@@ -1981,11 +1991,11 @@
           <trailer tid="285">This completes the Great Vehicle sūtra “Cultivating Trust in the Great
             Vehicle.”</trailer>
         </div>
-        <div type="colophon">
+        <div type="colophon" xml:id="UT22084-057-003-colophon">
           <head type="colophon" tid="286">Colophon</head>
           <milestone unit="chunk" xml:id="UT22084-057-003-259"/>
           <p tid="287">It was clarified, written down, and finalized by the Indian scholars
-            Jinamitra and Dānaśīla, the translator-editor Venerable Yeshé Dé, and others.</p>
+            Jinamitra and Dānaśīla, the translator-editor Bandé Yeshé Dé, and others.</p>
         </div>
       </div>
     </body>
@@ -1995,7 +2005,7 @@
       </div>
       <div type="listBibl">
         <head type="listBibl" tid="289">Bibliography</head>
-        <div type="section">
+        <div type="section" xml:id="UT22084-057-003-listBibl-1">
           <bibl xml:id="UT22084-057-003-260">
                         <title xml:lang="Bo-Ltn">’phags pa theg pa chen po la
               dad pa rab tu sgom pa ces bya ba theg pa chen po’i mdo</title> (<title xml:lang="Sa-Ltn">Ārya­mahā­yāna­prasāda­prabhāvana­nāma­mahā­yāna­sūtra</title>). Toh
@@ -2238,7 +2248,7 @@
                 have developed a degree of conviction that is not yet informed by direct experience.
                 The level of devoted engagement is said to comprise the first two of the five paths,
                 those of accumulation and preparation, which lead up to the path of seeing. This
-                level is also presented as the second of seven spiritual levels in the <title xml:lang="Sa-Ltn">Bodhisattvabhūmi</title>,<!--Reference Toh 4037--> which
+                level is also presented as the second of seven spiritual levels in the <title xml:lang="Sa-Ltn">Bodhisattvabhūmi</title>,<ref rend="pending" target="https://read.84000.co/translation/toh4037.html"/> which
                 follows the initial level of the spiritual potential (<foreign xml:lang="Sa-Ltn" type="term">gotrabhūmi</foreign>). </term>
 
             </gloss>
@@ -2311,7 +2321,7 @@
               <term xml:lang="Bo-Ltn">rin po che sna bdun </term>
               <term xml:lang="bo">རིན་པོ་ཆེ་སྣ་བདུན།</term>
               <term xml:lang="Sa-Ltn">saptaratna</term>
-              <term type="definition">The list of seven precious materials vary. They can be gold,
+              <term type="definition">The list of seven precious materials varies. They can be gold,
                 silver, turquoise, coral, pearl, emerald, and sapphire; or they may be ruby,
                 sapphire, beryl, emerald, diamond, pearls, and coral.</term>
             </gloss>
@@ -2339,12 +2349,11 @@
           </item>
           <item>
             <gloss type="term" xml:id="UT22084-057-003-297">
-              <term>transitory collection</term>
-              <term xml:lang="Bo-Ltn">’jig tshogs </term>
-              <term xml:lang="bo">འཇིག་ཚོགས།</term>
-              <term xml:lang="Sa-Ltn">satkāya</term>
-              <term type="definition">The <term type="ignore">transitory collection</term> of the five aggregates, the basis
-                for the view of a self or that which belongs to a self.</term>
+              <term>view that a person is real</term>
+              <term xml:lang="Bo-Ltn">’jig tshogs la lta ba </term>
+                            <term xml:lang="bo">འཇིག་ཚོགས་ལ་ལྟ་བ།</term>
+              <term xml:lang="Sa-Ltn">satkāyadṛṣṭi</term>
+              <term type="definition">The Tibetan is literally “the view of the destructible collection,” and the Sanskrit is “the view of the existing body.” Both refer to a view that identifies the existence of a self in relation to the five aggregates.</term>
             </gloss>
           </item>
           
@@ -2580,7 +2589,7 @@
               <term xml:lang="bo">བདུད།</term>
               <term xml:lang="Sa-Ltn">Māra </term>
               <term type="definition">The demon opposing the Buddha’s teaching; in the plural
-                (“māras”) it denotes all such nonhuman beings.</term>
+                (“<term type="ignore">māras</term>”) it denotes all such nonhuman beings.</term>
 
             </gloss>
           </item>
@@ -2745,7 +2754,7 @@
               <term>Vulture Peak Mountain</term>
               <term xml:lang="Bo-Ltn">bya rgod kyi phung po’i ri </term>
               <term xml:lang="bo">བྱ་རྒོད་ཀྱི་ཕུང་པོའི་རི།</term>
-              <term xml:lang="Sa-Ltn">Gṛdhrakūtaparvata</term>
+              <term xml:lang="Sa-Ltn">Gṛdhrakūṭaparvata</term>
               <term type="definition">The mountain, near to the city of Rājagṛha, where many Great
                 Vehicle teachings were delivered by the Buddha Śākyamuni.</term>
             </gloss>
@@ -2766,4 +2775,8 @@
       </div>
     </back>
   </text>
-</TEI>
+
+    
+    
+    
+    </TEI>
