@@ -25,11 +25,11 @@
                 <editor role="finalReviewer" ref="contributors.xml#person-289">Nathaniel Rich</editor>
                 <consultant role="projectManager" ref="contributors.xml#person-192">Tenpa Tsering</consultant>
                 <author role="translatorEng" ref="contributors.xml#person-193">Khentrul Gyurme Dorjee</author>
-                <author role="translatorEng" ref="contributors.xml#person-194">Davis A. Baltz</author>
+                <editor role="reviser" ref="contributors.xml#person-194">Davis A. Baltz</editor>
             </titleStmt>
 
             <editionStmt>
-                <edition>v 1.2.2 <date>2020</date>
+                <edition>v 1.2.8 <date>2020</date>
                 </edition>
             </editionStmt>
 
@@ -68,7 +68,7 @@
                 </bibl>
             </sourceDesc>
             <notesStmt>
-                <note type="lastUpdated" date-time="2020-07-01T05:45:56.945Z" user="admin">01/07/2020 05:45:56</note>
+                <note type="lastUpdated" date-time="2021-01-04T22:16:19.524Z" user="admin">04/01/2021 22:16:19</note>
 
                 <note type="updated" update="text-version" value="v 0.1.0" date-time="2019-11-20T08:43:04.615Z" user="andreas">v 0.1.0</note>
                 <note type="updated" update="translation-status" value="2.e" date-time="2019-11-20T08:43:15.64Z" user="andreas">2.e</note>
@@ -92,6 +92,12 @@
     <note type="updated" update="text-version" value="v 1.1.1" date-time="2020-06-18T18:53:29.034Z" user="celso">fixed bad apostrophes</note>
     <note type="updated" update="text-version" value="v 1.2.1" date-time="2020-06-25T16:42:59.43Z" user="john">Changes to i.1 and 1.19 and notes added</note>
     <note type="updated" update="text-version" value="v 1.2.2" date-time="2020-07-01T05:45:55.076Z" user="mike">acknowledgement name changed to Dorjee</note>
+    <note type="updated" update="text-version" value="v 1.2.3" date-time="2020-07-27T17:54:38.463Z" user="konchog">Various fixes in intro, translation, and glossary, per discussion with JC and others. See email for details.</note>
+    <note type="updated" update="text-version" value="1.2.4" date-time="2020-08-25T08:46:58.346Z" user="line-tofte">Auto (update-contributors)</note>
+    <note type="updated" update="text-version" value="1.2.5" date-time="2020-08-31T19:13:23.494Z" user="laura">edited acknowledgement</note>
+    <note type="updated" update="text-version" value="1.2.6" date-time="2020-11-23T13:57:44.998Z" user="admin">Auto (TEI migration 2.0.0)</note>
+    <note type="updated" update="text-version" value="1.2.7" date-time="2020-12-11T14:06:50.919Z" user="admin">Auto (TEI migration 2.1.5)</note>
+    <note type="updated" update="text-version" value="1.2.8" date-time="2021-01-04T22:16:16.585Z" user="laura">Updated colophon to Bandé</note>
             </notesStmt>
         </fileDesc>
     </teiHeader>
@@ -114,13 +120,14 @@
                 <head type="acknowledgment" tid="3">Acknowledgements</head>
                 <milestone unit="chunk" xml:id="UT22084-059-007-2"/>
                 <p tid="4">Translated by Tenpa Tsering, Khentrul Gyurme Dorjee, and Davis A. Baltz. The translation was edited by Ryan Damron
-                    and Andreas Doctor, who also wrote the introduction together. This translation
+                    and Andreas Doctor, who also wrote the introduction together.</p> 
+                <p tid="69">This translation
                     has been completed under the patronage and supervision of 84000: Translating the
                     Words of the Buddha.</p>
             </div>
             <div type="introduction">
                 <head type="introduction" tid="5">Introduction</head>
-                <div type="section">
+                <div type="section" xml:id="UT22084-059-007-introduction-1">
                     <milestone unit="chunk" xml:id="UT22084-059-007-3"/>
                     <p tid="7">
                         <title xml:lang="en">The Questions of Ratna­candra</title> is a sūtra
@@ -130,7 +137,7 @@
                         requests the Buddha Śākyamuni to reveal the names of the ten buddhas who dwell
                         in the ten directions. Ratna­candra has been told that hearing the names of
                         these ten buddhas guarantees one’s future awakening and so wishes to know
-                        them. The buddha confirms the transformative power of these ten names, and
+                        them. The Buddha confirms the transformative power of these ten names, and
                         during the course of the sūtra he discloses them and provides additional
                         details of these buddhas, their respective realms,
                         and their many unique qualities—including their cosmically long dispensations. 
@@ -231,10 +238,10 @@
                 <head type="translation" tid="11"> The Translation </head>
                 <head type="titleHon" tid="12">The Noble Great Vehicle Sūtra</head>
                 <head type="titleMain" tid="13">The Questions of Ratna­candra</head>
-                <div type="section">
+                <div type="section" xml:id="UT22084-059-007-section-1">
                     <milestone unit="chunk" xml:id="UT22084-059-007-14"/>
                     <p tid="17">
-                        <ref cRef="F.160.a" type="folio"/> Homage to the Omniscient One.</p>
+                        <ref cRef="F.160.a" type="folio" xml:id="UT22084-059-007-151"/> Homage to the Omniscient One.</p>
                     <lb/>
                     <milestone unit="chunk" xml:id="UT22084-059-007-15"/>
                     <p tid="18">Thus did I hear at one time. The Blessed One was residing in
@@ -247,13 +254,13 @@
                         being Dispeller of the Three Realms, the bodhisattva great being Ratnapāṇi,
                         the bodhisattva great being Vaidyarāja, the bodhisattva great being
                         Ratnākara, and the bodhisattva great being Joy and Sorrow. There were also
-                        many billions of gods, including the Four Great Kings, Śakra king of the
-                        gods along with his millions of divine attendants, and Brahmā lord of the
-                        Enduring world along with his millions of divine attendants from the Brahmā
+                        many billions of gods, including the Four Great Kings; Śakra, king of the
+                        gods, along with his millions of divine attendants; and Brahmā, lord of the
+                        Enduring world, along with his millions of divine attendants from the Brahmā
                         realm. There were also millions of nāgas, including the nāga king Sāgara,
                         the nāga king Anavatapta, the nāga king Elapatra, and the nāga king
                         Renowned<!--kun du grags-->. Along with them were millions of yakṣa generals, such as
-                        Āṭavaka, <ref cRef="F.160.b" type="folio"/> Sucīromā, Oṣadhi, and Gardabhaka. </p>
+                        Āṭavaka, <ref cRef="F.160.b" type="folio" xml:id="UT22084-059-007-152"/> Sucīromā, Oṣadhi, and Gardabhaka. </p>
                     <milestone unit="chunk" xml:id="UT22084-059-007-16"/>
                     <p tid="19">One morning the Blessed One put on his lower garments and monk’s
                         robes, took his alms bowl, and left for his alms round in Rājagṛha. At the
@@ -263,7 +270,7 @@
                         bells were tied onto the elephant, which was further ornamented with tassels
                         of golden brocade. As the prince emerged incense was burned, flower petals
                         were scattered, and banners and flags were unfurled. After riding through
-                        the city decorated with parasols and fences, beautified with precious trees,
+                        the city, which was decorated with parasols and fences, beautified with precious trees,
                         and encircled by seven pavilions, he rode out of the capital displaying
                         both royal wealth and power.</p>
                     <milestone unit="chunk" xml:id="UT22084-059-007-17"/>
@@ -280,7 +287,7 @@
                     <p tid="21">Upon seeing the Blessed One, Ratna­candra was moved to faith. Filled
                         with faith, he immediately alighted from the elephant and approached the
                         Blessed One. Prostrating at the feet of the Blessed One, he circumambulated
-                        him three times and sat to one side with deference and respect. <ref cRef="F.161.a" type="folio"/> Ratna­candra, son of King
+                        him three times and sat to one side with deference and respect. <ref cRef="F.161.a" type="folio" xml:id="UT22084-059-007-153"/> Ratna­candra, son of King
                         Bimbisāra, folded his palms together and bowed toward the Blessed One and
                         spoke to him, “O Blessed One, it is said
                         that a faithful noble son or daughter who has heard the names of the ten
@@ -305,14 +312,14 @@
                     <milestone unit="chunk" xml:id="UT22084-059-007-21"/>
                     <p tid="24">The Blessed One then said, “Prince, east of this buddha realm, past
                         countless, inconceivably many, limitless billions of buddha realms, there is
-                        a realm <ref cRef="F.161.b" type="folio"/> called Sorrowless. You may wonder how many boundless
+                        a realm <ref cRef="F.161.b" type="folio" xml:id="UT22084-059-007-154"/> called Sorrowless. You may wonder how many boundless
                         buddha realms one must pass through to reach that realm. Well, Prince,
                         suppose the entire trichiliocosm was completely filled with sand, all the
                         way to its summits. If a person were to remove the sand, grain by grain, and
                         place one grain of sand in each buddha realm toward the east until every
                         single grain of sand was placed in a buddha realm in that direction, one
                         would still not have reached the extent and limit of those buddha realms.
-                        The realm called Sorrowless lies further away than such boundless and
+                        The realm called Sorrowless lies farther away than such boundless and
                         countless billions of buddha realms. That realm is as flat as the palm of
                         the hand, is beautifully decorated with seven kinds of precious substances,
                         and has a ground made of gold. It is laid out in a checkered pattern and
@@ -329,7 +336,7 @@
                         great being, is like purified and refined gold adorned with precious
                         ornaments. Sitting beautifully amidst the gathering, he teaches a Dharma
                         that is virtuous in the beginning, virtuous in the middle, and virtuous in
-                        the end. <ref cRef="F.162.a" type="folio"/> He teaches as follows: ‘In this way the earth element will not become
+                        the end. <ref cRef="F.162.a" type="folio" xml:id="UT22084-059-007-155"/> He teaches as follows: ‘In this way the earth element will not become
                         nonexistent, nor will the water element, the fire element, or the wind
                         element. Likewise, Brahmā who is the lord of beings will not become nonexistent,
                         and the same applies to form, feeling, perception, formation, and
@@ -355,8 +362,8 @@
                     <milestone unit="chunk" xml:id="UT22084-059-007-149"/>
                     <p tid="27">“Prince, south of here, past as many countless billions of
                         buddha realms as mentioned before, there is a realm called <term>Joy</term>. That realm is as flat as the
-                        palm of the hand and has all the other qualities described above.<note place="end" xml:id="UT22084-059-007-25" index="7"> This and the
-                            subsequent statements that reference previously-mentioned material
+                        palm of the hand and has all the other qualities previously described.<note place="end" xml:id="UT22084-059-007-25" index="7"> This and the
+                            subsequent statements that reference previously mentioned material
                             represent intentional scribal elisions (<foreign xml:lang="Sa-Ltn" type="term">peyāla</foreign>) of repetitive passages, and likely
                             originate in the Sanskrit manuscript on which the Tibetan translation is
                             based. The reader is meant to revisit the first passage for the elided
@@ -364,7 +371,7 @@
                             section, which in the context of this text is the passage describing the
                             tenth buddha realm. Such scribal elisions are a common feature in Pali
                             and Sanskrit texts with lengthy passages of repetitive material.</note>
-                        <ref cRef="F.162.b" type="folio"/> There the thus-gone, worthy, perfect buddha Candanaśrī resides and
+                        <ref cRef="F.162.b" type="folio" xml:id="UT22084-059-007-156"/> There the thus-gone, worthy, perfect buddha Candanaśrī resides and
                         lives surrounded by a gathering of bodhisattvas who venerate him. He teaches
                         them a Dharma that is virtuous in the beginning, virtuous in the middle, and
                         virtuous in the end. He also teaches the same Dharma mentioned previously,
@@ -386,7 +393,7 @@
                         Dharma mentioned previously, up until ‘consciousness.’ Prince, any noble son
                         or daughter who hears the name of that thus-gone, worthy, perfect buddha
                         will never turn back from unsurpassed and perfect awakening and will
-                        experience that light. <ref cRef="F.163.a" type="folio"/>
+                        experience that light. <ref cRef="F.163.a" type="folio" xml:id="UT22084-059-007-157"/>
                     </p>
                     <milestone unit="chunk" xml:id="UT22084-059-007-28"/>
                     <p tid="29">“Prince, north of here, past as many countless billions of buddha realms as mentioned before,
@@ -410,7 +417,7 @@
                         Aśokaśrī resides and lives surrounded by a gathering of bodhisattvas who
                         venerate him. He teaches them the same Dharma mentioned previously, up until
                         ‘consciousness.’ Any noble son or daughter who hears his name will never turn back from unsurpassed and
-                        perfect awakening. <ref cRef="F.163.b" type="folio"/>
+                        perfect awakening. <ref cRef="F.163.b" type="folio" xml:id="UT22084-059-007-158"/>
                     </p>
                     <milestone unit="chunk" xml:id="UT22084-059-007-30"/>
                     <p tid="31">“Prince, southwest of here, past countless billions of buddha
@@ -432,7 +439,7 @@
                         ‘diligence,’ ‘concentration,’ ‘insight,’ ‘liberation,’ and ‘vision of the wisdom of
                         liberation.’ Prince, since that world is endowed with such sounds, it is
                         called Resounding. There the thus-gone, worthy, perfect buddha Kusumaśrī
-                        resides and lives <ref cRef="F.164.a" type="folio"/> surrounded by a gathering of bodhisattvas who
+                        resides and lives <ref cRef="F.164.a" type="folio" xml:id="UT22084-059-007-159"/> surrounded by a gathering of bodhisattvas who
                         venerate him. He teaches them the same Dharma mentioned previously, up until
                         ‘consciousness.’ Any noble son or daughter who hears his name will never turn back from unsurpassed and
                         perfect awakening and, like a flower, will be unstained by nonvirtuous
@@ -453,7 +460,7 @@
                         realm called Vast Expanse. Prince, what do you think? Why is that world
                         called Vast Expanse? It is because it is as flat as the palm of the hand and
                         it has no mountains, surrounding mountains, or great surrounding mountains.
-                        Since even the word <distinct>mountain</distinct> <ref cRef="F.164.b" type="folio"/> does not exist
+                        Since even the word <distinct>mountain</distinct> <ref cRef="F.164.b" type="folio" xml:id="UT22084-059-007-160"/> does not exist
                         in that buddha realm, it is called Vast Expanse. There the thus-gone,
                         worthy, perfect buddha Prabhāśrī resides and lives surrounded by a gathering
                         of bodhisattvas who venerate him. He teaches them the same Dharma mentioned
@@ -470,12 +477,12 @@
                         the sand, grain by grain, and place one grain of sand in each buddha realm
                         above until every single grain of sand was placed in a buddha realm in that
                         direction, one would still not have reached the extent and limit of those
-                        buddha realms. The realm Moonlit lies further away than such unfathomable and innumerable
+                        buddha realms. The realm Moonlit lies farther away than such unfathomable and innumerable
                         billions of buddha realms. That realm is as flat as the palm
                         of the hand, is beautifully decorated with seven kinds of precious
                         substances, and has a ground made of gold. It is laid out in a checkered
                         pattern and ornamented with precious trees. There are no hell beings,
-                        animals, hungry spirits, or asuras there, <ref cRef="F.165.a" type="folio"/> and it is free of
+                        animals, hungry spirits, or asuras there, <ref cRef="F.165.a" type="folio" xml:id="UT22084-059-007-161"/> and it is free of
                         grass, dried sticks, thorns, stones, pebbles, gravel, ravines, and
                         precipices. Instead, the ground is covered in flower petals. </p>
                     <milestone unit="chunk" xml:id="UT22084-059-007-35"/>
@@ -501,7 +508,7 @@
                         vision of the wisdom of liberation, will never turn back from unsurpassed
                         and perfect awakening.</p>
                     <milestone unit="chunk" xml:id="UT22084-059-007-37"/>
-                    <p tid="38">“Prince, long ago in the past, <ref cRef="F.165.b" type="folio"/> eons beyond calculation and
+                    <p tid="38">“Prince, long ago in the past, <ref cRef="F.165.b" type="folio" xml:id="UT22084-059-007-162"/> eons beyond calculation and
                         measure, there was an eon by the name of <term>Ratnākara</term>. In that eon appeared the
                         thus-gone, worthy, perfect buddha Sāgaraśrī. He was learned and venerable, a
                         blissful one, a knower of the world, a steersman who guides beings, an
@@ -522,7 +529,7 @@
                     <lb/>
                     <milestone unit="chunk" xml:id="UT22084-059-007-38"/>
                     <p tid="39">Ratna­candra, son of King Bimbisāra, then said to the Blessed
-                        One, <ref cRef="F.166.a" type="folio"/> “Blessed One, the lifespan of those thus-gone, worthy,
+                        One, <ref cRef="F.166.a" type="folio" xml:id="UT22084-059-007-163"/> “Blessed One, the lifespan of those thus-gone, worthy,
                         perfect buddhas is amazing! Blessed One, out of compassion for sentient
                         beings, those thus-gone ones intentionally live such long lives. Blessed
                         One, how much merit will noble sons or daughters generate if they keep the
@@ -544,7 +551,7 @@
                     <p tid="41">Then, in order to venerate this teaching and the ten thus-gone ones,
                         Śakra king of the gods, Brahmā lord of the Enduring world, the Four Great Kings, and the divine sons Īśvara, Maheśvara, Glorious Fortune, Tuṣita, and Santuṣita scattered divine
                         flowers and sandalwood powder upon the Thus-Gone One. Then they spoke these
-                        words: “Blessed One, any noble son or daughter who retains, <ref cRef="F.166.b" type="folio"/>
+                        words: “Blessed One, any noble son or daughter who retains, <ref cRef="F.166.b" type="folio" xml:id="UT22084-059-007-164"/>
                         carries, reads, and recites this teaching is <term type="ignore">worthy</term> of reverence. Blessed
                         One, merely holding this teaching in their hand, they will never turn back
                         from unsurpassed and perfect awakening. Blessed One, any noble son or
@@ -608,7 +615,7 @@
                     <milestone unit="chunk" xml:id="UT22084-059-007-50"/>
                     <lg tid="51">
                         <l>“All who recall the names </l>
-                        <l>Of these protectors of the world <ref cRef="F.167.a" type="folio"/>
+                        <l>Of these protectors of the world <ref cRef="F.167.a" type="folio" xml:id="UT22084-059-007-165"/>
                         </l>
                         <l>Will, in future times,</l>
                         <l>Become supreme among humans.</l>
@@ -687,16 +694,16 @@
                     <p tid="62">When the Blessed One had spoken these words, the youth Ratna­candra,
                         son of King Bimbisāra, along with all the bodhisattvas, monks, gods, humans,
                         asuras, and gandharvas, rejoiced in the Buddha’s teaching and offered
-                        praise. <ref cRef="F.167.b" type="folio"/>
+                        praise. <ref cRef="F.167.b" type="folio" xml:id="UT22084-059-007-166"/>
                     </p>
                     <trailer tid="63">This completes the noble Great Vehicle sūtra “<title xml:lang="en">The Questions of Ratna­candra</title>.”</trailer>
                 </div>
-                <div type="colophon">
+                <div type="colophon" xml:id="UT22084-059-007-colophon">
                     <head type="colophon" tid="64">Colophon</head>
                     <milestone unit="chunk" xml:id="UT22084-059-007-63"/>
-                    <p tid="65">The Indian scholar Viśuddha­siṃha and the translator Venerable Gewa
+                    <p tid="65">The Indian scholar Viśuddha­siṃha and the translator Bandé Gewa
                         Pal translated this. Later, the Indian scholar Vidyākara­siṃha and the
-                        editor-translator monk Devacandra edited and finalized it.</p>
+                        editor-translator Bandé Devacandra edited and finalized it.</p>
                 </div>
             </div>
         </body>
@@ -706,7 +713,7 @@
             </div>
             <div type="listBibl">
                 <head type="listBibl" tid="68">Bibliography</head>
-                <div type="section">
+                <div type="section" xml:id="UT22084-059-007-listBibl-1">
                     <bibl xml:id="UT22084-059-007-64">
                         <title xml:lang="Bo-Ltn">’phags pa rin chen
                         zla bas zhus pa zhes bya ba theg pa chen po’i mdo</title> (<title xml:lang="Sa-Ltn">Āryaratna­candra­paripṛcchā­nāma­mahāyāna­sūtra</title>).
@@ -870,7 +877,7 @@
                             <term xml:lang="Bo-Ltn">yan lag lnga</term>
                             <term xml:lang="bo">ཡན་ལག་ལྔ།</term>
                             <term xml:lang="Sa-Ltn"/>
-                            <term type="definition">The head, arms, and legs.</term>
+                            <term type="definition">Literally, “the five limbs,” i.e., the head, arms, and legs.</term>
                             <term type="alternative">five points</term>
                         </gloss>
                     </item>
@@ -1309,7 +1316,7 @@
                             <term xml:lang="Bo-Ltn">rgyal po chen po bzhi</term>
                             <term xml:lang="bo">རྒྱལ་པོ་ཆེན་པོ་བཞི།</term>
                             <term xml:lang="Sa-Ltn">caturmahārāja</term>
-                            <term type="definition">The powerful non-human guardian kings of the four quarters of this universe—Virūḍhaka, Virūpākṣa, Dhṛtarāṣṭra, and Vaiśravaṇa—who rule, respectively, over kumbhāṇḍas in the south, nāgas in the west, gandharvas in the east, and yakṣas in the north.</term>
+                            <term type="definition">The powerful nonhuman guardian kings of the four quarters of this universe—Virūḍhaka, Virūpākṣa, Dhṛtarāṣṭra, and Vaiśravaṇa—who rule, respectively, over kumbhāṇḍas in the south, nāgas in the west, gandharvas in the east, and yakṣas in the north.</term>
                         </gloss>
                     </item>
                     <item>
@@ -1487,4 +1494,8 @@
             </div>
         </back>
     </text>
-</TEI>
+
+    
+    
+    
+    </TEI>
