@@ -24,7 +24,7 @@
             <editor role="TEImarkupEditor" ref="contributors.xml#person-253">Michael Engle</editor>
             </titleStmt>
             <editionStmt>
-                <edition>v 1.48.7 <date>2020</date>
+                <edition>v 1.48.10 <date>2020</date>
                 </edition>
             </editionStmt>
             <publicationStmt status="1">
@@ -47,7 +47,7 @@
                     <ref>Toh 212</ref>
                     <biblScope>Degé Kangyur vol. 62 (mdo sde, tsha), folios 125.a–125.b<!--UT22084-062-012;--></biblScope>
                     <author role="translatorTib">Surendrabodhi</author>
-                    <author role="translatorTib">Venerable Yeshe De</author>
+                    <author role="translatorTib">Bandé Yeshé Dé</author>
                     <location work="UT4CZ5369" count-pages="2">
                         <volume number="62" start-page="249" end-page="250"/>
                     </location>
@@ -75,7 +75,7 @@
                 </bibl>
             </sourceDesc>
             <notesStmt>
-                <note type="lastUpdated" date-time="2020-06-18T16:28:19.531Z" user="admin">18/06/2020 16:28:19</note>
+                <note type="lastUpdated" date-time="2021-01-04T22:32:32.909Z" user="admin">04/01/2021 22:32:32</note>
             <note type="updated" update="text-version" value="v 1.45" date-time="2019-06-18T16:21:59.388Z" user="celso">v 1.45 2019</note>
                 <note type="updated" update="text-version" value="v 1.46" date-time="2019-08-09T16:59:29.348Z" user="celso">v 1.46 2019</note>
                 <note type="updated" update="text-version" value="v 1.47" date-time="2019-09-30T19:12:16.904Z" user="andre">Updated due to folio numbering correction</note>
@@ -88,6 +88,9 @@
     <note type="updated" update="text-version" value="v 1.48.5" date-time="2020-04-29T19:50:15.432Z" user="celso">Changed canonical ref from "waṃ" to "waM" (consistent to other 84000 pubs))</note>
     <note type="updated" update="text-version" value="v 1.48.6" date-time="2020-05-06T21:11:01.861Z" user="celso">edited note "by the 84000 Reading Room"</note>
     <note type="updated" update="text-version" value="v 1.48.7" date-time="2020-06-18T16:28:17.672Z" user="celso">fixed bad apostrophes and space before a note</note>
+    <note type="updated" update="text-version" value="1.48.8" date-time="2020-11-23T13:57:44.998Z" user="admin">Auto (TEI migration 2.0.0)</note>
+    <note type="updated" update="text-version" value="1.48.9" date-time="2020-12-11T14:06:50.919Z" user="admin">Auto (TEI migration 2.1.5)</note>
+    <note type="updated" update="text-version" value="1.48.10" date-time="2021-01-04T22:32:29.928Z" user="laura">Updated colophon to Bandé</note>
             </notesStmt>
         </fileDesc>
     </teiHeader>
@@ -131,7 +134,7 @@
             </div>
             <div type="introduction">
                 <head type="introduction" tid="24">Introduction</head>
-                <div type="section">
+                <div type="section" xml:id="UT22084-062-012-introduction-1">
                     <milestone unit="chunk" xml:id="UT22084-062-012-3"/>
                     <p tid="6">The topic of this sūtra, as is evident from its title, is the Buddhist doctrine of the dependent
                         arising of conditioned phenomena. This concept is considered by many Buddhists to be the essence of the
@@ -148,7 +151,7 @@
                         (<title xml:lang="Sa-Ltn">Pratītya­samutpādādi­vibhaṅga­nirdeśa­sūtra</title>, 
                         Toh 211).<note place="end" xml:id="UT22084-062-012-62" index="1"> For the first, see Reat (1993) and 
                             <ref target="http://read.84000.co/translation/UT22084-062-010.html">Dharmasāgara Translation Group
-                                (2018)</ref>; for the second, see <ref target="https://read.84000.co/translation/toh211.html">Bien (2020)</ref>. There is a famous commentary to the <title xml:lang="Sa-Ltn">Pratītya­samutpādādi­vibhaṅga­nirdeśa­sūtra </title>entitled the <title xml:lang="Sa-Ltn">Pratītya­samutpāda­vyākhyā</title>, attributed to Vasubhandu. For an overview of
+                                (2018)</ref>; for the second, see <ref target="https://read.84000.co/translation/toh211.html">Bien (2020)</ref>. There is a famous commentary to the <title xml:lang="Sa-Ltn">Pratītya­samutpādādi­vibhaṅga­nirdeśa­sūtra </title>entitled the <title xml:lang="Sa-Ltn">Pratītya­samutpāda­vyākhyā</title>, attributed to Vasubandhu. For an overview of
                             the content of this sūtra and its commentary, see Mejor (1997a, 1997b).</note>
                     </p>
                     <milestone unit="chunk" xml:id="UT22084-062-012-4"/>
@@ -224,18 +227,18 @@
                 <head type="translation" tid="25">The Translation</head>
                 <head type="titleHon" tid="26">The Noble Mahāyāna Sūtra on</head>
                 <head type="titleMain" tid="27">Dependent Arising</head>
-                <div type="section">
+                <div type="section" xml:id="UT22084-062-012-section-1">
                     <milestone unit="chunk" xml:id="UT22084-062-012-8"/>
                     <p tid="11">
-                        <ref cRef="F.125.a" key="toh212" type="folio"/>
+                        <ref cRef="F.125.a" key="toh212" type="folio" xml:id="UT22084-062-012-81"/>
                         <ref key="toh520">[F.41.a]</ref>
-                        <ref cRef="F.58.a" key="toh520" type="folio"/>
-                        <ref cRef="F.99.a" key="toh980" type="folio"/> Homage to all buddhas and bodhisattvas!
+                        <ref cRef="F.58.a" key="toh520" type="folio" xml:id="UT22084-062-012-82"/>
+                        <ref cRef="F.99.a" key="toh980" type="folio" xml:id="UT22084-062-012-83"/> Homage to all buddhas and bodhisattvas!
                     </p>
                     <lb/>
                     <milestone unit="chunk" xml:id="UT22084-062-012-9"/>
                     <p tid="12">Thus did I hear at one time. <ref key="toh520">[F.41.b]</ref>
-                        <ref cRef="F.58.b" key="toh520" type="folio"/> The Blessed One was in the Realm of the Thirty-Three Gods, seated on
+                        <ref cRef="F.58.b" key="toh520" type="folio" xml:id="UT22084-062-012-84"/> The Blessed One was in the Realm of the Thirty-Three Gods, seated on
                         the throne of Indra. With him were great hearers such as the venerable Aśvajit; bodhisattva mahāsattvas
                         such as noble Maitreya, noble Avalokiteśvara, and Vajrapāṇi, who were adorned with immeasurable precious
                         qualities; as well as various gods such as the great Brahmā, who is the lord of the Sahā world, Nārāyaṇa,
@@ -247,9 +250,9 @@
                         together, he then bowed toward the Blessed One and addressed to him these words: </p>
                     <milestone unit="chunk" xml:id="UT22084-062-012-11"/>
                     <p tid="14">“Blessed One, these gods all really wish to build a stūpa. Now that they are present in this
-                        entourage, please teach them the Dharma in such a way so that their merit of Brahmā <ref cRef="F.125.b" key="toh212" type="folio"/>
+                        entourage, please teach them the Dharma in such a way so that their merit of Brahmā <ref cRef="F.125.b" key="toh212" type="folio" xml:id="UT22084-062-012-85"/>
                         will increase, and the merit of the monks, nuns, laymen, and laywomen will increase much more than that of
-                        all types of beings in the world of gods, māras, and Brahmā, including renunciants and brahmins.”<ref cRef="F.99.b" key="toh980" type="folio"/>
+                        all types of beings in the world of gods, māras, and Brahmā, including renunciants and brahmins.”<ref cRef="F.99.b" key="toh980" type="folio" xml:id="UT22084-062-012-86"/>
                     </p>
                     <lb/>
                     <milestone unit="chunk" xml:id="UT22084-062-012-12"/>
@@ -269,7 +272,7 @@
                         <l>The Tathāgata has taught their cause,</l>
                         <l>And that which is their cessation; </l>
                         <l>Thus has proclaimed the Great Renunciant. <ref key="toh520">[F.42.a]</ref>
-                            <ref cRef="F.59.a" key="toh520" type="folio"/>
+                            <ref cRef="F.59.a" key="toh520" type="folio" xml:id="UT22084-062-012-87"/>
                         </l>
                     </lg>
                     <milestone unit="chunk" xml:id="UT22084-062-012-13"/>
@@ -291,11 +294,11 @@
                     <milestone unit="chunk" xml:id="UT22084-062-012-15"/>
                     <trailer tid="20">This concludes the Noble Mahāyāna Sūtra on Dependent Arising.</trailer>
                 </div>
-                <div type="colophon">
+                <div type="colophon" xml:id="UT22084-062-012-colophon">
                     <head type="colophon" tid="28">Colophon</head>
                     <milestone unit="chunk" xml:id="UT22084-062-012-79"/>
                     <p tid="21">Translated and edited by the Indian scholar Surendrabodhi and the principal editor and translator
-                        Venerable Yeshe Dé.<note place="end" xml:id="UT22084-062-012-78" index="18">Mention of the translators is
+                        Bandé Yeshé Dé.<note place="end" xml:id="UT22084-062-012-78" index="18">Mention of the translators is
                             omitted from the colophon in the versions Toh 520 and Toh 980 (see previous note). </note>
                     </p>
                 </div>
@@ -307,7 +310,7 @@
             </div>
             <div type="listBibl">
                 <head type="listBibl" tid="30">Bibliography</head>
-                <div type="section">
+                <div type="section" xml:id="UT22084-062-012-listBibl-1">
                     <head type="section" tid="31">Tibetan Texts</head>
                     <bibl xml:id="UT22084-062-012-16">
                         <title xml:lang="Bo-Ltn">’phags pa rten cing ’brel bar ’byung ba zhes bya ba theg pa chen po’i
@@ -333,7 +336,7 @@
                         zhib ’jug ste gnas kyi bka’ bstan dpe sdur khang (The Tibetan Tripiṭaka Collation Bureau of the China
                         Tibetology Research Center). 108 volumes. Beijing: krung go’i bod rig pa dpe skrun khang (China Tibetology
                         Publishing House), 2006-2009, vol. 88, p 187. Cf. also vol. 98, p 328.</bibl>
-                    <div type="section">
+                    <div type="section" xml:id="UT22084-062-012-listBibl-1-1">
                         <head type="section" tid="32">Works in English</head>
                         <bibl xml:id="UT22084-062-012-20">Bentor, Yael. “On The Indian Origins of the Tibetan Practice of
                             Depositing Relics and Dharanis in Stupas and Images.” In <title xml:lang="en">Journal of the American
@@ -352,10 +355,10 @@
                                 Seedling</ref>
                             </title> (<title xml:lang="Sa-Ltn">Śāli­stambha­sūtra</title>, Toh 210). 84000:
                             Translating the Words of the Buddha (2018). </bibl>
-                        <bibl xml:id="UT22084-062-012-24">Mejor, Mareck. “On the Formulation of <title xml:lang="Sa-Ltn">Pratītya­samutpāda</title>: Some Observations from Vasubhandu’s <title xml:lang="Sa-Ltn">Pratītya­samutpāda­vyākhyā</title>.” In Agata Bareja-Starzyńska and Mareck Mejor (eds.). <title xml:lang="en">Aspects of Buddhism</title>: Proceedings of the International Seminar on Buddhist
+                        <bibl xml:id="UT22084-062-012-24">Mejor, Mareck. “On the Formulation of <title xml:lang="Sa-Ltn">Pratītya­samutpāda</title>: Some Observations from Vasubandhu’s <title xml:lang="Sa-Ltn">Pratītya­samutpāda­vyākhyā</title>.” In Agata Bareja-Starzyńska and Mareck Mejor (eds.). <title xml:lang="en">Aspects of Buddhism</title>: Proceedings of the International Seminar on Buddhist
                             Studies (June, 1994). Warsaw: Instytut Orientalistyczny, Uniwersytet Warszawski (1997a), pp
                             125-138.</bibl>
-                        <bibl xml:id="UT22084-062-012-25">———. “On Vasubhandu’s <title xml:lang="Sa-Ltn">Pratītya­samutpāda­vyākhyā</title>.” In Agata Bareja-Starzyńska and Mareck Mejor (eds.). <title xml:lang="en">Aspects of Buddhism</title>: Proceedings of the International Seminar on Buddhist
+                        <bibl xml:id="UT22084-062-012-25">———. “On Vasubandhu’s <title xml:lang="Sa-Ltn">Pratītya­samutpāda­vyākhyā</title>.” In Agata Bareja-Starzyńska and Mareck Mejor (eds.). <title xml:lang="en">Aspects of Buddhism</title>: Proceedings of the International Seminar on Buddhist
                             Studies (June, 1994). Warsaw: Instytut Orientalistyczny, Uniwersytet Warszawski (1997b), pp
                             139-148.</bibl>
                         <bibl xml:id="UT22084-062-012-26">Miller, Robert. <title xml:lang="en">
@@ -687,4 +690,8 @@
             </div>
         </back>
     </text>
-</TEI>
+
+    
+    
+    
+    </TEI>
