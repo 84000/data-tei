@@ -28,7 +28,7 @@
     <consultant role="projectManager" ref="contributors.xml#person-185">Dr. Shenghai Li</consultant>
             </titleStmt>
                         <editionStmt>
-                <edition>v 1.1.4 <date>2020</date>
+                <edition>v 1.1.7 <date>2021</date>
                 </edition>
             </editionStmt>
                         <publicationStmt status="1">
@@ -68,7 +68,7 @@
                                 </bibl>
                         </sourceDesc>
                         <notesStmt>
-                                <note type="lastUpdated" date-time="2020-05-28T12:30:05.049Z" user="laura">28/05/2020 12:30:05</note>
+                                <note type="lastUpdated" date-time="2021-01-04T22:24:18.07Z" user="admin">04/01/2021 22:24:18</note>
                                 <note type="updated" update="translation-status" value="2.a" date-time="2019-04-30T10:19:53.284Z" user="mike">2.a</note>
                         <note type="updated" update="text-version" value="v 1.0" date-time="2019-05-06T11:01:15.765Z" user="andre">v 0.1 2019</note>
                 <note type="updated" update="text-version" value="v 1.01" date-time="2019-06-21T12:52:26.137Z" user="laura">v 1.01 2019</note>
@@ -85,6 +85,9 @@
 <note type="updated" update="text-version" value="v 1.1.2" date-time="2019-12-20T12:56:48.575Z" user="admin">Automated version increment</note>
 <note type="updated" update="text-version" value="v 1.1.3" date-time="2020-02-26T21:33:58.571Z" user="celso">fixed non-breaking spaces in ellipsis</note>
     <note type="updated" update="text-version" value="v 1.1.4" date-time="2020-05-28T13:13:24.209Z" user="laura">Added line to acknowledgement</note>
+    <note type="updated" update="text-version" value="1.1.5" date-time="2020-11-23T14:16:59.523Z" user="admin">Auto (TEI migration 2.0.0)</note>
+    <note type="updated" update="text-version" value="1.1.6" date-time="2020-12-11T14:06:50.919Z" user="admin">Auto (TEI migration 2.1.5)</note>
+    <note type="updated" update="text-version" value="1.1.7" date-time="2021-01-04T22:24:15.146Z" user="laura">Updated colophon to Bandé</note>
             </notesStmt>
                 </fileDesc>
         </teiHeader>
@@ -118,7 +121,7 @@
                         </div>
                         <div type="introduction">
                                 <head type="introduction" tid="5">Introduction</head>
-                                <div type="section">
+                                <div type="section" xml:id="UT22084-060-007-introduction-1">
                                         <tei:milestone unit="chunk" xml:id="UT22084-060-007-3"/>
                                         <p tid="7">The doctrinal term “aids to enlightenment”
                                                   (<foreign xml:lang="Sa-Ltn" type="term">bodhipakṣa</foreign>), 
@@ -304,10 +307,10 @@
                                 <head type="titleHon" tid="20">The Noble Mahāyāna Sūtra</head>
                                 <head type="titleMain" tid="21">The Teaching on the Aids to
                                         Enlightenment</head>
-                                <div type="section">
+                                <div type="section" xml:id="UT22084-060-007-section-1">
                                         <tei:milestone unit="chunk" xml:id="UT22084-060-007-23"/>
                                         <p tid="25">
-                        <ref cRef="F.240.b" type="folio"/> Homage to all buddhas and
+                        <ref cRef="F.240.b" type="folio" xml:id="UT22084-060-007-212"/> Homage to all buddhas and
                                                 bodhisattvas!</p>
                                         <lb/>
                                         <tei:milestone unit="chunk" xml:id="UT22084-060-007-24"/>
@@ -320,7 +323,7 @@
                                         <p tid="27">At that time, the Bhagavān said to Youthful
                                                 Mañjuśrī, “Mañjuśrī, having minds that are misguided
                                                 by the four errors, sentient beings do not see the
-                                                four truths of the noble ones <ref cRef="F.241.a" type="folio"/> as they really are,
+                                                four truths of the noble ones <ref cRef="F.241.a" type="folio" xml:id="UT22084-060-007-213"/> as they really are,
                                                 and therefore they do not transcend saṃsāra, which
                                                 is actually unreal.” </p>
                                         <tei:milestone unit="chunk" xml:id="UT22084-060-007-26"/>
@@ -366,7 +369,7 @@
                                         <tei:milestone unit="chunk" xml:id="UT22084-060-007-31"/>
                                         <p tid="34">“Through concepts of this kind, they acquire a
                                                 disenchantment induced by phenomenal
-                                                characteristics, <ref cRef="F.241.b" type="folio"/> and they  
+                                                characteristics, <ref cRef="F.241.b" type="folio" xml:id="UT22084-060-007-214"/> and they  
                                                 bring to mind notions induced by
                                                 phenomenal characteristics. With such thoughts, they think to themselves, 
                                                 ‘One who knows those phenomena is someone who knows suffering.’ </p>
@@ -393,7 +396,7 @@
                                                 turn away from them, and, having withdrawn from them,
                                                 they produce a mind of dislike.</p>
                                         <tei:milestone unit="chunk" xml:id="UT22084-060-007-173"/>
-                                        <p tid="38">“They think, ‘I am liberated from all suffering;
+                                        <p tid="100">“They think, ‘I am liberated from all suffering;
                                                 what more is there for me to do? I am an arhat.’
                                                 Based on this presumption, when at the time of death they see their
                                                 coming rebirth they become
@@ -402,7 +405,7 @@
                                                 mired in doubt, they are born in the great hells.
                                         </p>
                                         <tei:milestone unit="chunk" xml:id="UT22084-060-007-209"/>
-                                        <p tid="38">“Why is that so? It is because they conceive of all
+                                        <p tid="101">“Why is that so? It is because they conceive of all
                                                 those phenomena, which are actually
                                                 unproduced.”</p>
                                         <lb/>
@@ -414,7 +417,7 @@
                                         <p tid="40">The Bhagavān replied, “Mañjuśrī, whoever sees
                                                 all conditioned states as unproduced has understood
                                                 suffering. Whoever sees all phenomena as unarisen
-                                                has abandoned its origin. <ref cRef="F.242.a" type="folio"/>
+                                                has abandoned its origin. <ref cRef="F.242.a" type="folio" xml:id="UT22084-060-007-215"/>
                                                 Whoever sees all phenomena as having completely
                                                 passed into nirvāṇa has realized cessation. Whoever
                                                 sees all phenomena as having no existence has
@@ -458,7 +461,7 @@
                                         <tei:milestone unit="chunk" xml:id="UT22084-060-007-44"/>
                                         <p tid="46">“Mañjuśrī, bhikṣu Subhūti understands all
                                                 phenomena in such a way, and therefore he does not
-                                                come to prostrate at the feet of the Tathāgata. <ref cRef="F.242.b" type="folio"/>
+                                                come to prostrate at the feet of the Tathāgata. <ref cRef="F.242.b" type="folio" xml:id="UT22084-060-007-216"/>
                     </p>
                                         <tei:milestone unit="chunk" xml:id="UT22084-060-007-177"/>
                                         <p tid="47">“Why is that so? It is because it would be
@@ -506,7 +509,7 @@
                                         <tei:milestone unit="chunk" xml:id="UT22084-060-007-53"/>
                                         <p tid="55"> “Mañjuśrī, whoever understands mind to be no
                                                 more than a mere name is applying mindfulness that
-                                                carefully considers the mind. <ref cRef="F.243.a" type="folio"/>
+                                                carefully considers the mind. <ref cRef="F.243.a" type="folio" xml:id="UT22084-060-007-217"/>
                     </p>
                                         <tei:milestone unit="chunk" xml:id="UT22084-060-007-182"/>
                                         <p tid="56">“Mañjuśrī, whoever does not perceive virtuous,
@@ -595,7 +598,7 @@
                                         <tei:milestone unit="chunk" xml:id="UT22084-060-007-191"/>
                                         <p tid="70">“Mañjuśrī, whoever does not mentally let go of
                                                 any phenomenon due to being free from notions of far
-                                                or near has the faculty of effort. <ref cRef="F.243.b" type="folio"/>
+                                                or near has the faculty of effort. <ref cRef="F.243.b" type="folio" xml:id="UT22084-060-007-218"/>
                     </p>
                                         <tei:milestone unit="chunk" xml:id="UT22084-060-007-72"/>
                                         <p tid="71">“Mañjuśrī, whoever does not seek to bring to
@@ -657,7 +660,7 @@
                                                 or cleave to any phenomenon, and, acquiring the
                                                 impartiality of not seeing any phenomenon, attains
                                                 joy has the branch of enlightenment of right
-                                                impartiality. <ref cRef="F.244.a" type="folio"/>
+                                                impartiality. <ref cRef="F.244.a" type="folio" xml:id="UT22084-060-007-219"/>
                     </p>
                                         <tei:milestone unit="chunk" xml:id="UT22084-060-007-198"/>
                                         <p tid="83">“Mañjuśrī, this is how the seven branches of
@@ -702,7 +705,7 @@
                                         <p tid="88">“If those who just happen to hear this Dharma
                                                 teaching by the Bhagavān will successfully go forth
                                                 under the Tathāgata’s dispensation and do 
-                                                well, <ref cRef="F.244.b" type="folio"/> what more needs to
+                                                well, <ref cRef="F.244.b" type="folio" xml:id="UT22084-060-007-220"/> what more needs to
                                                 be said of those who, having listened to it,
                                                 have confidence and faith in it, and uphold it
                                                 accordingly? Indeed, those who
@@ -719,14 +722,14 @@
                                         <trailer tid="90">This concludes the Noble Mahāyāna Sūtra, “<title xml:lang="en">The Teaching on the Aids to
                                                 Enlightenment</title>.” </trailer>
                                 </div>
-                                        <div type="colophon">
+                                        <div type="colophon" xml:id="UT22084-060-007-colophon">
                                                 <head type="colophon" tid="91">Colophon</head>
                                                 <tei:milestone unit="chunk" xml:id="UT22084-060-007-93"/>
                                                 <p tid="92">This sūtra was translated, edited, and
                                                   finalized, based on revisions done according to the
                                                   language reform, by the Indian masters Jinamitra
                                                   and Jñānasiddhi, and by the chief editor and
-                                                  translator, the venerable Yeshé Dé.<note place="end" xml:id="UT22084-060-007-94" index="12"> Yongle,
+                                                  translator, Bandé Yeshé Dé.<note place="end" xml:id="UT22084-060-007-94" index="12"> Yongle,
                                                   Lithang, Kangxi, Choné, Narthang, and Lhasa add:
                                                   <foreign xml:lang="Bo-Ltn" type="quote">shlo ka
                                                   dgu bcu rtsa gnyis</foreign> (“ninety-two <foreign xml:lang="Sa-Ltn" type="term">śloka</foreign>”;
@@ -742,7 +745,7 @@
                         </div>
                         <div type="listBibl">
                                 <head type="listBibl" tid="95">Bibliography</head>
-                                <div type="section">
+                                <div type="section" xml:id="UT22084-060-007-listBibl-1">
                                         <head type="section" tid="96">Tibetan Texts</head>
                                         <bibl xml:id="UT22084-060-007-95">
                         <title xml:lang="Bo-Ltn">’phags pa byang chub kyi phyogs bstan pa zhes bya
@@ -765,7 +768,7 @@
                                                 Palace Kangyur (stog pho brang bris ma), vol. 60
                                                 (mdo sde, chi), folios 358.b–364.a.</bibl>
                                 </div>
-                                <div type="section">
+                                <div type="section" xml:id="UT22084-060-007-listBibl-2">
                                         <head type="section" tid="97">Chinese Text</head>
                                         <bibl xml:id="UT22084-060-007-98">
                         <title xml:lang="Zh-Ltn">Foshuo dacheng shanjian
@@ -775,7 +778,7 @@
                                                 no. 472, 514c–516b. Tokyo: Taishō issaikyō kankōkai,
                                                 1924–1932.</bibl>
                                 </div>
-                                <div type="section">
+                                <div type="section" xml:id="UT22084-060-007-listBibl-3">
                                         <head type="section" tid="98">Reference Works in Tibetan</head>
                                         <bibl xml:id="UT22084-060-007-100">
                         <title xml:lang="Sa-Ltn">Mahāvyutpatti</title> (<title xml:lang="Bo-Ltn">bye brag tu rtogs par byed pa</title>). Degé Tengyur, vol. 204 (sna tshogs, co), folios 1.1–131.a. See also Sakaki; and Braarvig.</bibl>
@@ -784,7 +787,7 @@
                                                   me long</title>. Beijing: mi rigs dpe skrun khang,
                                                 1997.</bibl>
                                 </div>
-                                <div type="section">
+                                <div type="section" xml:id="UT22084-060-007-listBibl-4">
                                         <head type="section" tid="0">Secondary Literature</head>
                                         <bibl xml:id="UT22084-060-007-205">Braarvig, Jens, et al., eds. 
                                                 <title xml:lang="en">
@@ -1454,4 +1457,8 @@
                         </div>
                 </back>
         </text>
-</tei:TEI>
+
+    
+    
+    
+    </tei:TEI>
