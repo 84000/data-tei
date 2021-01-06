@@ -19,15 +19,16 @@
                 <author role="translatorEng" ref="contributors.xml#person-207">James B. Apple</author>
                 
             <editor role="TEImarkupEditor" ref="contributors.xml#person-306">Simeon Joffe</editor>
+            
+    <consultant role="projectManager" ref="contributors.xml#person-207">James B. Apple Ph.D.</consultant>
             </titleStmt>
             <editionStmt>
-                <edition>v 1.15 <date>2019</date>
+                <edition>v 1.15.5 <date>2019</date>
                 </edition>
             </editionStmt>
             <publicationStmt status="1">
                 <publisher>
-                    <name>84000: Translating the Words of the Buddha</name> is a global non-profit initiative that aims to
-                    translate all of the Buddha’s words into modern languages, and to make them available to everyone.</publisher>
+                    <name>84000: Translating the Words of the Buddha</name> is a global non-profit initiative to translate all the Buddha’s words into modern languages, and to make them available to everyone.</publisher>
                 <availability>
                     <licence>
                         <graphic url="http://i.creativecommons.org/l/by-nc-nd/2.0/88x31.png"/>
@@ -43,11 +44,10 @@
             <sourceDesc>
                 <bibl key="toh194" type="text">
                     <ref>Toh 194</ref>
-                    <biblScope> Degé Kangyur, vol. 61 (mdo sde, tsa), folios 250.b – 251.a</biblScope>
+                    <biblScope> Degé Kangyur, vol. 61 (mdo sde, tsa), folios 250.b–251.a</biblScope>
                     <author role="translatorTib">Unknown</author>
-                    <location count-pages="2">
-                        <start volume="61" page="502"/>
-                        <end volume="61" page="503"/>
+                    <location work="UT4CZ5369" count-pages="2">
+                        <volume number="61" start-page="500" end-page="501"/>
                     </location>
                 <idno parent-id="O1JC114941JC14668"/>
                 <idno source-id="O1JC114941JC11817" work="W22084"/>
@@ -55,10 +55,15 @@
             
             </sourceDesc>
             <notesStmt>
-                <note type="lastUpdated" date-time="2019-06-21T14:36:12.689Z" user="admin">21/06/2019 14:36:12</note>
+                <note type="lastUpdated" date-time="2020-12-11T14:31:24.536Z" user="admin">11/12/2020 14:31:24</note>
             <note type="updated" update="text-version" value="v 1.12" date-time="2019-03-14T12:06:03.658Z" user="john">v 1.12 2016</note>
             <note type="updated" update="text-version" value="v 1.14" date-time="2019-06-18T16:19:12.035Z" user="celso">v 1.14 2019</note>
                 <note type="updated" update="text-version" value="v 1.15" date-time="2019-06-21T14:36:09.733Z" user="celso">v 1.15 2019</note>
+<note type="updated" update="text-version" value="v 1.15.1" date-time="2019-10-07T10:27:24.685Z" user="admin">Publication statement updated</note>
+<note type="updated" update="text-version" value="v 1.15.2" date-time="2019-12-20T12:56:48.575Z" user="admin">Automated version increment</note>
+    <note type="updated" update="text-version" value="1.15.3" date-time="2020-09-02T20:04:51.789Z" user="laura">minor edit to title tag (Sa-Ltn–en)</note>
+    <note type="updated" update="text-version" value="1.15.4" date-time="2020-11-23T13:57:44.998Z" user="admin">Auto (TEI migration 2.0.0)</note>
+    <note type="updated" update="text-version" value="1.15.5" date-time="2020-12-11T14:06:50.919Z" user="admin">Auto (TEI migration 2.1.5)</note>
             </notesStmt>
         </fileDesc>
     </teiHeader>
@@ -90,7 +95,7 @@
             </div>
             <div type="introduction">
                 <head type="introduction" tid="22">Introduction</head>
-                <div type="section">
+                <div type="section" xml:id="UT22084-061-014-introduction-1">
                     <milestone unit="chunk" xml:id="UT22084-061-014-3"/>
                     <p tid="4">At first glance, the <title xml:lang="Sa-Ltn">Jaya­mati­paripṛcchā­sūtra</title> (“The Sūtra of the
                         Inquiry of Jayamati”) appears to be a short Mahāyāna sūtra preserved in the Tibetan Kangyurs,<note place="end" index="1" xml:id="UT22084-061-014-68">On the necessity of employing the plural “Kangyurs”
@@ -111,7 +116,7 @@
                     <lb/>
                     <milestone unit="chunk" xml:id="UT22084-061-014-5"/>
                     <p tid="6">
-                        <title xml:lang="Sa-Ltn">The Inquiry of Jayamati</title> is listed in two early ninth century Tibetan
+                        <title xml:lang="en">The Inquiry of Jayamati</title> is listed in two early ninth century Tibetan
                         catalogs, the Lhenkarma (<title xml:lang="Bo-Ltn">lhan kar ma</title>),<note place="end" index="3" xml:id="UT22084-061-014-70">§236; see Herrmann-Pfandt (2008), p 124. The Lhenkarma is also sometimes
                             called the Denkarma (<title xml:lang="Bo-Ltn">ldan kar ma</title>).</note> and the Phangthangma
                             (<title xml:lang="Bo-Ltn">’phang thang ma</title>),<note place="end" index="4" xml:id="UT22084-061-014-71">Rdo (2003), p 18.</note> as the <title xml:lang="Sa-Ltn">Jayamati­paripṛcchā</title> (<title xml:lang="Bo-Ltn">rgyal ba’i blo gros kyis zhus pa</title>) in
@@ -239,11 +244,11 @@
                 <head type="translation" tid="23">The Translation</head>
                 <head type="titleHon" tid="24">The Noble Great Vehicle Sūtra</head>
                 <head type="titleMain" tid="25">The Inquiry of Jayamati</head>
-                <div type="section">
+                <div type="section" xml:id="UT22084-061-014-section-1">
                     <milestone unit="chunk" xml:id="UT22084-061-014-13"/>
                     <p tid="15">
                         <!--<modularPassage type="homage">-->
-                        <ref cRef="F.250.b"/> Homage to all buddhas and bodhisatvas! <!--</modularPassage>-->
+                        <ref cRef="F.250.b" type="folio" xml:id="UT22084-061-014-86"/> Homage to all buddhas and bodhisatvas! <!--</modularPassage>-->
                     </p>
                     <lb/>
                     <p tid="16">Thus I have heard at one time. The Bhagavān was residing at the grove of Anāthapiṇḍada in Jeta
@@ -258,7 +263,7 @@
                         (3) who desires heavenly rebirth should uphold moral conduct; (4) who desires wealth should increase
                         charity; (5) who desires beauty should cultivate patience; (6) who desires eloquence should pay respect to
                         the guru; (7) who desires memory should not have excessive pride; (8) who desires knowledge should
-                        frequently practice appropriate mindfulness; <ref cRef="F.251.a"/> (9) who desires liberation should
+                        frequently practice appropriate mindfulness; <ref cRef="F.251.a" type="folio" xml:id="UT22084-061-014-87"/> (9) who desires liberation should
                         abstain from all evil; (10) who desires to make all beings happy should generate the mind for awakening;
                         (11) who desires a sweet voice should speak truthfully; (12) who desires virtuous qualities should take
                         joy in solitude; (13) who desires the Dharma should attend to the spiritual friend; (14) who desires
@@ -274,7 +279,7 @@
                         by the Bhagavān. </p>
                     <lb/>
                     <milestone unit="chunk" xml:id="UT22084-061-014-16"/>
-                    <p tid="19">This completes the noble Mahāyāna sūtra, <title xml:lang="en">The Inquiry of Jayamati</title>.</p>
+                    <trailer tid="19">This completes the noble Mahāyāna sūtra, “<title xml:lang="en">The Inquiry of Jayamati</title>.”</trailer>
                     
                 </div>
                 <!--<div type="colophon">
@@ -288,7 +293,7 @@
             </div>
             <div type="listBibl">
                 <head type="listBibl" tid="28">Bibliography</head>
-                <div type="section">
+                <div type="section" xml:id="UT22084-061-014-listBibl-1">
                     <head type="section" tid="29">Indian Sūtras</head>
                     <bibl xml:id="UT22084-061-014-17">
                         <title xml:lang="Bo-Ltn">’phags pa rgyal ba’i blo gros zhes bya ba theg pa chen po’i mdo</title> (<title xml:lang="Sa-Ltn">Jayamati­nāma­mahā­yāna­sūtra</title>), Toh. 194, also entitled <title xml:lang="Bo-Ltn">’phags pa rgyal ba’i blo gros kyis zhus pa zhes bya ba theg pa chen po’i mdo</title>
@@ -312,14 +317,14 @@
                             mdo</title>, Toh. 132, translated by Śākyaprabha and Ratnarakṣita, Degé Kangyur, vol. 55 (mdo sde,
                         da), folios 253b-316b. For translations, see Lamotte 1965, 1998.</bibl>
                 </div>
-                <div type="section">
+                <div type="section" xml:id="UT22084-061-014-listBibl-2">
                     <head type="section" tid="30">Tibetan Indigenous Sources</head>
                     <bibl xml:id="UT22084-061-014-19">Rdo, Rta (ed.). (2003) <title xml:lang="Bo-Ltn">dkar chag ’phang thang ma /
                             sgra sbyor bam po gnyis pa</title>. Beijing: mi rigs dpe skrun khang.</bibl>
                     <bibl xml:id="UT22084-061-014-20">Pad dkar bzang po. Ed. Mi nyag mgon po (2006). <title xml:lang="Bo-Ltn">mdo
                             sde spyi’i rnam bzhag</title>. Beijing: mi rigs dpe skrun khang.</bibl>
                 </div>
-                <div type="section">
+                <div type="section" xml:id="UT22084-061-014-listBibl-3">
                     <head type="section" tid="31">Modern Sources</head>
                     <bibl xml:id="UT22084-061-014-21">Apple, James B. (2013a). “Redaction and Rhetoric in Mahāyāna Sūtras: The
                         Case of Jayamati.” Paper presented at the 223rd meeting of the American Oriental Society, Portland,
@@ -618,4 +623,8 @@
             </div>
         </back>
     </text>
-</TEI>
+
+    
+    
+    
+    </TEI>

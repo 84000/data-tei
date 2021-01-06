@@ -30,7 +30,7 @@
     <consultant role="projectManager" ref="contributors.xml#person-50">Dr. Andreas Doctor</consultant>
             </titleStmt>
             <editionStmt>
-                <edition>v 1.1.3 <date>2020</date>
+                <edition>v 1.1.7 <date>2020</date>
                 </edition>
             </editionStmt>
             <publicationStmt status="1">
@@ -54,7 +54,7 @@
             <sourceDesc>
                 <bibl key="toh522" type="text">
                     <ref>Toh 522</ref>
-                    <biblScope>Degé Kangyur, vol. 88 (rgyud ’bum, na), folios 59.a–60.b</biblScope><!-- bibl scope supplied in Docx -->
+                    <biblScope>Degé Kangyur, vol. 88 (rgyud ’bum, na), folios 42.a–43.b (in 1737 par phud printing), folios 59.a–60.b (in later printings)</biblScope><!-- bibl scope supplied in Docx -->
                     <location work="UT4CZ5369" count-pages="4">
                         <volume number="88" start-page="117" end-page="120"/>
                     </location>
@@ -76,7 +76,7 @@
                 </bibl>
             </sourceDesc>
             <notesStmt>
-                <note type="lastUpdated" date-time="2020-06-18T18:06:14.968Z" user="admin">18/06/2020 18:06:14</note>
+                <note type="lastUpdated" date-time="2020-12-11T15:47:06.724Z" user="admin">11/12/2020 15:47:06</note>
 
                 <note type="updated" update="text-version" value="v 0.1.0" date-time="2019-10-10T08:04:49.554Z" user="andreas">v 0.1.0</note>
                 <note type="updated" update="translation-status" value="2.d" date-time="2019-12-19T07:26:43.57Z" user="andreas">2.d</note>
@@ -93,6 +93,9 @@
 <note type="updated" update="text-version" value="v 1.1.1" date-time="2020-03-21T10:42:22.412Z" user="john">Proofread, first published version</note>
     <note type="updated" update="text-version" value="v 1.1.2" date-time="2020-05-28T13:20:07.933Z" user="laura">Added line to acknowledgement</note>
     <note type="updated" update="text-version" value="v 1.1.3" date-time="2020-06-18T18:06:13.117Z" user="celso">fixed bad apostrophes</note>
+    <note type="updated" update="text-version" value="1.1.5" date-time="2020-10-06T14:13:51.773Z" user="celso">added "the" to note 8</note>
+    <note type="updated" update="text-version" value="1.1.6" date-time="2020-11-23T13:57:44.998Z" user="admin">Auto (TEI migration 2.0.0)</note>
+    <note type="updated" update="text-version" value="1.1.7" date-time="2020-12-11T14:06:50.919Z" user="admin">Auto (TEI migration 2.1.5)</note>
             </notesStmt>
         </fileDesc>
     </teiHeader>
@@ -124,7 +127,7 @@
             </div>
             <div type="introduction">
                 <head type="introduction" tid="5">Introduction</head>
-                <div type="section">
+                <div type="section" xml:id="UT22084-088-016-introduction-1">
                     <milestone unit="chunk" xml:id="UT22084-088-016-3"/>
                     <p tid="7">
                         <title xml:lang="en">The Dhāraṇī of the Noble Tathāgatha Jñānolka
@@ -170,7 +173,7 @@
                         funeral liturgy, designed rather to liberate from lower
                         rebirth the recently deceased. </p>
                     <milestone unit="chunk" xml:id="UT22084-088-016-10"/>
-                    <p tid="12">The <title xml:lang="Sa-Ltn">Jñānolka­dhāraṇī</title> appears in the
+                    <p tid="34">The <title xml:lang="Sa-Ltn">Jñānolka­dhāraṇī</title> appears in the
                             Denkarma<note place="end" xml:id="UT22084-088-016-11" index="3">Denkarma, F.303.a.4; see also Yoshimura (1950), p. 154.</note> and
                             Phangthangma<note place="end" xml:id="UT22084-088-016-12" index="4">
                                 <title xml:lang="Bo-Ltn">dkar chag ’phang thang ma</title>,
@@ -187,7 +190,7 @@
                     </p>
                     
                     <milestone unit="chunk" xml:id="UT22084-088-016-55"/>
-                    <p tid="12">This translation is based on the two versions of the text preserved
+                    <p tid="35">This translation is based on the two versions of the text preserved
                         in the Degé Kangyur, in consultation with the versions in the
                         Comparative Edition (<title xml:lang="Bo-Ltn">dpe bsdur ma</title>) of the
                         Kangyur, and the text in the Stok Palace Kangyur. </p>
@@ -199,11 +202,12 @@
                 <head type="translation" tid="13"> The Translation </head>
                 <head type="titleMain" tid="14">The Dhāraṇī of the Tathāgata Jñānolka that Purifies
                     All Rebirths</head>
-                <div type="section">
+                <div type="section" xml:id="UT22084-088-016-section-1">
                     <milestone unit="chunk" xml:id="UT22084-088-016-16"/>
                     <p tid="18">
-                        <ref cRef="F.59.a" type="folio" key="toh522"/>
-                        <ref cRef="F.55.a" type="folio" key="toh848"/> <ref cRef="F.59.b" type="folio" key="toh522"/> Homage to the Omniscient One.<lb/>Homage to all the buddhas and
+                        <ref cRef="F.59.a" type="folio" key="toh522" xml:id="UT22084-088-016-62"/>
+                        <ref cRef="F.55.a" type="folio" key="toh848" xml:id="UT22084-088-016-63"/>
+                        <note index="8" place="end" xml:id="UT22084-088-016-61">In the <foreign xml:lang="Bo-Ltn" type="term">par phud</foreign> printing this text begins on F.42.a.</note> <ref cRef="F.59.b" type="folio" key="toh522" xml:id="UT22084-088-016-64"/> Homage to the Omniscient One.<lb/>Homage to all the buddhas and
                         bodhisattvas.<lb/>Homage to the blessed one, the tathāgata
                         Jñānolka.<lb/>Homage to the tathāgata Suvarṇa­prabhākūṭa­nirbhāsa.<lb/>Homage
                         to the tathāgata Satyavādin.<lb/>Homage to the tathāgata
@@ -217,14 +221,14 @@
                         upon lion thrones bedecked with jewels and the bodhisattvas seated within
                         palaces arrayed with banners bearing the rose apple insignia. </p>
                     <milestone unit="chunk" xml:id="UT22084-088-016-20"/>
-                    <p tid="21">The Sun and Moon each thought, “How can we obtain from these tathāgatas and bodhisattvas 
+                    <p tid="36">The Sun and Moon each thought, “How can we obtain from these tathāgatas and bodhisattvas 
                         the dhāraṇī mantra called <distinct>the wise one pervading the ten
                             directions,</distinct> which rises like the dawn to shine a light upon
                         all beings and dispel their thick darkness? With its power we could shine a
-                        light upon all sentient beings.” <ref cRef="F.60.a" type="folio" key="toh522"/>
-                        <ref cRef="F.55.b" type="folio" key="toh848"/> </p>
+                        light upon all sentient beings.” <ref cRef="F.60.a" type="folio" key="toh522" xml:id="UT22084-088-016-65"/>
+                        <ref cRef="F.55.b" type="folio" key="toh848" xml:id="UT22084-088-016-66"/> </p>
                     <milestone unit="chunk" xml:id="UT22084-088-016-56"/>
-                    <p tid="21">The tathāgatas and bodhisattvas perceived the
+                    <p tid="37">The tathāgatas and bodhisattvas perceived the
                         thoughts of the Sun and Moon and responded with the following dhāraṇī
                         mantra:</p>
                     <milestone unit="chunk" xml:id="UT22084-088-016-21"/>
@@ -252,9 +256,9 @@
                         obtaining these dhāraṇī mantra verses is much easier than reading and
                         retaining these verses in one’s mind. Sons of the lineage, it is far more
                         likely for a buddha to appear in the world than it is for these dhāraṇī
-                        mantra verses to appear in the world. <ref cRef="F.56.a" type="folio" key="toh848"/> </p>
+                        mantra verses to appear in the world. <ref cRef="F.56.a" type="folio" key="toh848" xml:id="UT22084-088-016-67"/> </p>
                     <milestone unit="chunk" xml:id="UT22084-088-016-57"/>
-                    <p tid="21">“Sons of the lineage, if one recites these dhāraṇī 
+                    <p tid="38">“Sons of the lineage, if one recites these dhāraṇī 
                         mantra verses three times a day and three times a
                         night for twenty-one days on behalf of those beings trapped for eons in
                         Avīci hell—namely, those who have committed the five inexpiable acts or who
@@ -263,11 +267,11 @@
                         liberation. This being the case even for them, it goes without saying that for human beings in
                         Jambudvīpa the same is true. </p>
                     <milestone unit="chunk" xml:id="UT22084-088-016-58"/>
-                    <p tid="21">“Whoever hears these dhāraṇī mantra verses shall truly know that
+                    <p tid="39">“Whoever hears these dhāraṇī mantra verses shall truly know that
                         we, the four tathāgatas, the four bodhisattvas, and the Sun and Moon,
-                        <ref cRef="F.60.b" type="folio" key="toh522"/> support them. </p>
+                        <ref cRef="F.60.b" type="folio" key="toh522" xml:id="UT22084-088-016-68"/> support them. </p>
                     <milestone unit="chunk" xml:id="UT22084-088-016-59"/>
-                    <p tid="21">“The dhāraṇī mantra verses are: </p>
+                    <p tid="40">“The dhāraṇī mantra verses are: </p>
                     <p rend="mantra" tid="24">
                         <mantra xml:lang="Sa-Ltn" type="dharani">dhunaṭi mahādhuṇati surusuru
                         svāhā śuklaviśōdhani taratara svāhā || jyōtipradīpe turuturu svāhā ||
@@ -307,7 +311,7 @@
             </div>
             <div type="listBibl">
                 <head type="listBibl" tid="29">Bibliography</head>
-                <div type="section">
+                <div type="section" xml:id="UT22084-088-016-listBibl-1">
                     <head type="section" tid="30">Source Texts</head>
                     <bibl xml:id="UT22084-088-016-28">
                         <title xml:lang="Bo-Ltn">’phags pa ye shes ta
@@ -341,7 +345,7 @@
                         la la zhes bya ba’i gzungs </title>(<title xml:lang="Sa-Ltn">Ārya­jñānolko­nāma­dhāraṇī­sarva­gati­pari­śodhanī</title>). Stok Palace Kangyur, vol. 102 (rgyud
                         ’bum, da) folios 42a–44a.</bibl>
                 </div>
-                <div type="section">
+                <div type="section" xml:id="UT22084-088-016-listBibl-2">
                     <head type="section" tid="31">Reference Works</head>
                     <bibl xml:id="UT22084-088-016-60">Denkarma (<title xml:lang="Bo-Ltn">pho brang stod thang ldan [lhan] dkar 
                         gyi chos ’gyur ro cog gi dkar chag</title>). Degé Tengyur, vol. 206 (sna tshogs, 
@@ -362,7 +366,7 @@
                             Denkar-Ma: An Oldest Catalogue of the Tibetan Buddhist Canons</title>.
                         Kyoto: Ryukoku University, 1950.</bibl>
                 </div>
-                <div type="section">
+                <div type="section" xml:id="UT22084-088-016-listBibl-3">
                     <head type="section" tid="32">Secondary Sources</head>
                     <bibl xml:id="UT22084-088-016-39">Leumann, Ernst.
                             “Die Jñānolka­dhāraṇī.” In <title xml:lang="de">Buddhistische Literatur: Nordarish und Deutsch: I. Teil: Nebenstüke,
@@ -461,4 +465,8 @@
             </div>   
         </back>
     </text>
-</TEI>
+
+    
+    
+    
+    </TEI>

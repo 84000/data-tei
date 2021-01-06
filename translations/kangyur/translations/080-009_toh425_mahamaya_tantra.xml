@@ -17,17 +17,17 @@
                     supervision of 84000: Translating the Words of the Buddha</author>
                 <author role="translatorEng" ref="contributors.xml#person-74">Ryan Damron</author>
                 <consultant role="advisor" ref="contributors.xml#person-61">Catherine Dalton</consultant>
+    <consultant role="projectManager" ref="contributors.xml#person-50">Dr. Andreas Doctor</consultant>
                 <editor role="reviser" ref="contributors.xml#person-50">Andreas Doctor</editor>
                 <editor role="TEImarkupEditor" ref="contributors.xml#person-306">Simeon Joffe</editor>
             </titleStmt>
             <editionStmt>
-                <edition>v 2.16 <date>2019</date>
+                <edition>v 2.16.3 <date>2019</date>
                 </edition>
             </editionStmt>
             <publicationStmt status="1">
                 <publisher>
-                    <name>84000: Translating the Words of the Buddha</name> is a global non-profit initiative that aims to
-                    translate all of the Buddha’s words into modern languages, and to make them available to everyone.</publisher>
+                    <name>84000: Translating the Words of the Buddha</name> is a global non-profit initiative to translate all the Buddha’s words into modern languages, and to make them available to everyone.</publisher>
                 <availability>
                     <p type="tantricRestriction">
                         <emph rend="bold">Warning:</emph> Readers are reminded that according to Vajrayāna Buddhist tradition there are
@@ -51,9 +51,8 @@
                     <biblScope>Degé Kangyur, vol. 80 (rgyud ’bum, nga), folios 167.a–171.a</biblScope>
                     <author role="translatorTib">Jinavara</author>
                     <author role="translatorTib">Gö Lhetsé</author>
-                    <location count-pages="9">
-                        <start volume="80" page="335"/>
-                        <end volume="80" page="343"/>
+                    <location work="UT4CZ5369" count-pages="9">
+                        <volume number="80" start-page="333" end-page="341"/>
                     </location>
                 <idno parent-id="O1JC114941JC21412"/>
                 <idno source-id="O1JC114941JC12129" work="W22084"/>
@@ -63,9 +62,12 @@
             
             </sourceDesc>
             <notesStmt>
-                <note type="lastUpdated" date-time="2019-06-21T14:47:52.355Z" user="admin">21/06/2019 14:47:52</note>
+                <note type="lastUpdated" date-time="2020-12-11T15:14:55.31Z" user="admin">11/12/2020 15:14:55</note>
             <note type="updated" update="text-version" value="v 2.15" date-time="2019-06-18T03:01:47.585Z" user="celso">v 2.15 2019</note>
                 <note type="updated" update="text-version" value="v 2.16" date-time="2019-06-21T14:47:49.341Z" user="celso">v 2.16 2019</note>
+<note type="updated" update="text-version" value="v 2.16.1" date-time="2019-10-07T10:27:24.685Z" user="admin">Publication statement updated</note>
+    <note type="updated" update="text-version" value="2.16.2" date-time="2020-11-23T13:57:44.998Z" user="admin">Auto (TEI migration 2.0.0)</note>
+    <note type="updated" update="text-version" value="2.16.3" date-time="2020-12-11T14:06:50.919Z" user="admin">Auto (TEI migration 2.1.5)</note>
             </notesStmt>
         </fileDesc>
     </teiHeader>
@@ -108,7 +110,7 @@
             </div>
             <div type="introduction">
                 <head type="introduction" tid="123">Introduction</head>
-                <div type="section">
+                <div type="section" xml:id="UT22084-080-009-introduction-1">
                     <milestone unit="chunk" xml:id="UT22084-080-009-3"/>
                     <p tid="4">The <title xml:lang="Sa-Ltn">Mahāmāyātantra</title>, named after its principal deity Mahāmāyā,
                         belongs to the class of Yoginītantras. According to the post-tenth-century classification scheme of the
@@ -186,7 +188,7 @@
                         polymath Tāranātha (1575–1634), who composed two commentaries and a practice manual for it.<note place="end" index="8" xml:id="UT22084-080-009-168">See <ptr target="#bibliography">bibliography</ptr>.</note>
                     </p>
                 </div>
-                <div type="section">
+                <div type="section" xml:id="UT22084-080-009-introduction-2">
                     <head type="section" tid="124">The Text</head>
                     <milestone unit="chunk" xml:id="UT22084-080-009-7"/>
                     <p tid="8">The <title xml:lang="Sa-Ltn">Mahāmāyātantra</title> describes, in verses both terse and enigmatic,
@@ -420,7 +422,7 @@
                         and, as we are told in the tantra’s final verse, be forever protected by Mahāmāyā, “the queen of the
                         yoginīs.”</p>
                 </div>
-                <div type="section">
+                <div type="section" xml:id="UT22084-080-009-introduction-3">
                     <head type="section" tid="125">About the Translation</head>
                     <milestone unit="chunk" xml:id="UT22084-080-009-21"/>
                     <p tid="30">This translation is based upon a comparative edition, made by the translators, of the Tibetan
@@ -443,7 +445,7 @@
                         language. Where possible we have clarified the text to make it more readable, but there remain passages
                         that are enigmatic and difficult to follow.</p>
                 </div>
-                <div type="section">
+                <div type="section" xml:id="UT22084-080-009-introduction-4">
                     <head type="section" tid="126">Note</head>
                     <milestone unit="chunk" xml:id="UT22084-080-009-23"/>
                     <p tid="32">In the translation, the numbers within square brackets preceded by F. indicate the folio numbers
@@ -455,12 +457,12 @@
             <div type="translation">
                 <head type="translation" tid="127"> The Translation</head>
                 <head type="titleMain" tid="128">The King of Tantras, the Glorious Mahāmāyā </head>
-                <div type="chapter">
+                <div type="chapter" xml:id="UT22084-080-009-chapter-1">
                     <head type="chapter" tid="129">Chapter 1</head>
                     <head type="chapterTitle" tid="130">The First Instruction</head>
                     <milestone unit="chunk" xml:id="UT22084-080-009-24"/>
                     <p tid="33">
-                        <ref cRef="F.167.a"/> Homage to the Glorious Vajraḍākinī!</p>
+                        <ref cRef="F.167.a" type="folio" xml:id="UT22084-080-009-223"/> Homage to the Glorious Vajraḍākinī!</p>
                     <lg tid="34">
                         <l>I pay homage to the protector of beings, Glorious Vajraḍākinī,</l>
                         <l>Universal sovereign of the ḍākinīs, the very essence of the five wisdoms and three bodies.</l>
@@ -473,7 +475,7 @@
                     <milestone unit="chunk" xml:id="UT22084-080-009-26"/>
                     <lg tid="36">
                         <l>Now, following that, I will explain the tantra called <title xml:lang="en">The Supreme Secret of the
-                                Secret Goddesses, the Vajraḍākinīs</title>. <ref cRef="F.167.b"/>
+                                Secret Goddesses, the Vajraḍākinīs</title>. <ref cRef="F.167.b" type="folio" xml:id="UT22084-080-009-224"/>
                         </l>
                     </lg>
                     <milestone unit="chunk" xml:id="UT22084-080-009-27"/>
@@ -559,7 +561,7 @@
                     <milestone unit="chunk" xml:id="UT22084-080-009-38"/>
                     <lg tid="48">
                         <l>One with <term type="ignore">knowledge</term> of yogic illusion is likewise free from disease—</l>
-                        <l>Yogīs revel in the form of the mantra’s syllables. <ref cRef="F.168.a"/>
+                        <l>Yogīs revel in the form of the mantra’s syllables. <ref cRef="F.168.a" type="folio" xml:id="UT22084-080-009-225"/>
                         </l>
                     </lg>
                     <milestone unit="chunk" xml:id="UT22084-080-009-39"/>
@@ -652,7 +654,7 @@
                     <milestone unit="chunk" xml:id="UT22084-080-009-50"/>
                     <lg tid="60">
                         <l>He is always at play and accomplishes the vajra yoginīs. [509]</l>
-                        <l>In a variety of forms the essential practice is revealed. <ref cRef="F.168.b"/>
+                        <l>In a variety of forms the essential practice is revealed. <ref cRef="F.168.b" type="folio" xml:id="UT22084-080-009-226"/>
                         </l>
                     </lg>
                     <milestone unit="chunk" xml:id="UT22084-080-009-51"/>
@@ -706,7 +708,7 @@
                     </lg>
                     <trailer tid="118">This completes the first instruction on the signs of spiritual attainment of “<title xml:lang="en">The Great Vidyā, Queen of the Yoginīs</title>.”</trailer>
                 </div>
-                <div type="chapter">
+                <div type="chapter" xml:id="UT22084-080-009-chapter-2">
                     <head type="chapter" tid="131">Chapter 2</head>
                     <head type="chapterTitle" tid="132">The Second Instruction</head>
                     <milestone unit="chunk" xml:id="UT22084-080-009-57"/>
@@ -745,7 +747,7 @@
                     <milestone unit="chunk" xml:id="UT22084-080-009-62"/>
                     <lg tid="72">
                         <l>The yogī who constantly meditates on this without interruption</l>
-                        <l>Is equal to Vajrasattva and gains accomplishment in a single month. <ref cRef="F.169.a"/>
+                        <l>Is equal to Vajrasattva and gains accomplishment in a single month. <ref cRef="F.169.a" type="folio" xml:id="UT22084-080-009-227"/>
                         </l>
                     </lg>
                     <milestone unit="chunk" xml:id="UT22084-080-009-63"/>
@@ -834,7 +836,7 @@
                                 latter could easily be translated as “buddhas,” the former is best rendered as “awakened
                                 ones.”</note>
                         </l>
-                        <l>They concentrate upon the pill and meditate on the singular nature of forms. <ref cRef="F.169.b"/>
+                        <l>They concentrate upon the pill and meditate on the singular nature of forms. <ref cRef="F.169.b" type="folio" xml:id="UT22084-080-009-228"/>
                         </l>
                     </lg>
                     <milestone unit="chunk" xml:id="UT22084-080-009-75"/>
@@ -854,7 +856,7 @@
                     <trailer tid="119">This completes the second instruction on the practice of “<title xml:lang="en">The Great
                         Vidyā, Queen of the Yoginīs</title>.”</trailer>
                 </div>
-                <div type="chapter">
+                <div type="chapter" xml:id="UT22084-080-009-chapter-3">
                     <head type="chapter" tid="133">Chapter 3</head>
                     <head type="chapterTitle" tid="134">The Third Instruction</head>
                     <milestone unit="chunk" xml:id="UT22084-080-009-77"/>
@@ -920,7 +922,7 @@
                     <p tid="95">Imagine that the goddess in the east has three eyes and holds a khaṭvāṅga and bell in her left
                         hands and a vajra and skull cup in her right hands. The goddess in the south wields a trident, a jewel, a
                         banner, and a jackal. The goddess in the west holds a bow, an arrow, a multi-colored lotus, and a skull
-                        cup. <ref cRef="F.170.a"/> The goddess in the north wields a sword, a noose, a hand drum, and a skull
+                        cup. <ref cRef="F.170.a" type="folio" xml:id="UT22084-080-009-229"/> The goddess in the north wields a sword, a noose, a hand drum, and a skull
                         cup.</p>
                     <lb/>
                     <milestone unit="chunk" xml:id="UT22084-080-009-86"/>
@@ -989,7 +991,7 @@
                     </lg>
                     <milestone unit="chunk" xml:id="UT22084-080-009-95"/>
                     <lg tid="105">
-                        <l>The one linked to the first syllable is united with <mantra type="syllable" xml:lang="Sa-Ltn">hrīḥ</mantra>. <ref cRef="F.170.b"/>
+                        <l>The one linked to the first syllable is united with <mantra type="syllable" xml:lang="Sa-Ltn">hrīḥ</mantra>. <ref cRef="F.170.b" type="folio" xml:id="UT22084-080-009-230"/>
                         </l>
                         <l>Apply the last of the syllables and fix in place the five seeds.</l>
                     </lg>
@@ -1052,14 +1054,15 @@
                         will no longer experience illness, aging, obstacles, or death. He will be forever protected from obstacles
                         by the queens among yoginīs.</p>
                     <lb/>
+                    <milestone unit="chunk" xml:id="UT22084-080-009-108"/>
                     <trailer tid="120">This completes the third instruction on the method of practice and ancillary activities,
-                        the supreme secret of secrets, that are the intent of the great vajraḍākinīs. <ref cRef="F.171.a"/>
+                        the supreme secret of secrets, that are the intent of the great vajraḍākinīs. <ref cRef="F.171.a" type="folio" xml:id="UT22084-080-009-231"/>
                     </trailer>
                     <lb/>
                     <milestone unit="chunk" xml:id="UT22084-080-009-104"/>
-                    <p tid="115">This completes the <title xml:lang="Sa-Ltn">Mahāmāyātantra</title>.</p>
+                    <trailer tid="115">This completes the “<title xml:lang="Sa-Ltn">Mahāmāyātantra</title>.”</trailer>
                 </div>
-                <div type="colophon">
+                <div type="colophon" xml:id="UT22084-080-009-colophon">
                     <head type="colophon" tid="135">Colophon</head>
                     <milestone unit="chunk" xml:id="UT22084-080-009-222"/>
                     <p tid="116">It was translated and edited by the Indian paṇḍita Jinavara and the great Tibetan translator Gö
@@ -1088,7 +1091,7 @@
             </div>
             <div type="listBibl">
                 <head type="listBibl" tid="138">Bibliography</head>
-                <div type="section">
+                <div type="section" xml:id="UT22084-080-009-listBibl-1">
                     <head type="section" tid="139">Sanskrit and Tibetan Sources</head>
                     <bibl xml:id="UT22084-080-009-109">
                         <title xml:lang="Bo-Ltn">dpal sgyu ’phrul chen po’i rgyud kyi rgyal po</title>. Toh. 425. Degé Kangyur,
@@ -1137,7 +1140,7 @@
                             po</title>. New Delhi: International Academy of Indian Culture, 1974. Translated as The Blue Annals,
                         see below.</bibl>
                 </div>
-                <div type="section">
+                <div type="section" xml:id="UT22084-080-009-listBibl-2">
                     <head type="section" tid="140">English Sources</head>
                     <bibl xml:id="UT22084-080-009-122">Dalton, Jacob (2004). “The Development of Perfection: The Interiorization
                         of Buddhist Ritual in the 8th and 9th Centuries.” Journal of Indian Philosophy 23 (2004): 1–30.</bibl>
@@ -1536,4 +1539,8 @@
             </div>
         </back>
     </text>
-</TEI>
+
+    
+    
+    
+    </TEI>

@@ -5,7 +5,7 @@
         <rng:ref name="TEI"/>
     </rng:start>
     <rng:define name="TEI">
-        <rng:element name="TEI" ns="http://www.tei-c.org/ns/1.0">
+        <rng:element xmlns:eft="http://read.84000.co/ns/1.0" name="TEI" ns="http://www.tei-c.org/ns/1.0">
             <!-- teiHeader -->
             <rng:element name="teiHeader">
                 <!-- fileDesc -->
@@ -135,13 +135,25 @@
                         <rng:element name="notesStmt">
                             <rng:zeroOrMore>
                                 <rng:element name="note">
-                                    <optional>
-                                        <rng:attribute name="type">
-                                            <rng:choice>
-                                                <rng:value>lastUpdated</rng:value>
-                                            </rng:choice>
-                                        </rng:attribute>
-                                    </optional>
+                                        <optional>
+                                            <attribute name="type">
+                                                <rng:choice>
+                                                    <rng:value>lastUpdated</rng:value>
+                                                </rng:choice>
+                                            </attribute>
+                                        </optional>
+                                        <optional>
+                                            <attribute name="date-time"/>
+                                        </optional>
+                                        <optional>
+                                            <attribute name="value"/>
+                                        </optional>
+                                        <optional>
+                                            <attribute name="user"/>
+                                        </optional>
+                                        <optional>
+                                            <attribute name="update"/>
+                                        </optional>
                                     <rng:text/>
                                 </rng:element>
                             </rng:zeroOrMore>
@@ -213,15 +225,74 @@
                                         <rng:value>about</rng:value>
                                     </rng:choice>
                                 </rng:attribute>
+                                <rng:attribute name="tid">
+                                    <rng:data type="integer"/>
+                                </rng:attribute>
                                 <rng:text/>
                             </rng:element>
-                            <rng:zeroOrMore>
+                            <rng:oneOrMore>
                                 <rng:element name="div">
                                     <rng:ref name="translation-section"/>
                                 </rng:element>
-                            </rng:zeroOrMore>
+                            </rng:oneOrMore>
                         </rng:element>
                     </optional>
+                    <rng:zeroOrMore>
+                        <rng:element name="div">
+                            <rng:attribute name="type">
+                                <rng:choice>
+                                    <rng:value>filter</rng:value>
+                                </rng:choice>
+                            </rng:attribute>
+                            <rng:attribute name="xml:id">
+                                <a:documentation>(identifier) provides a unique identifier for the element bearing the attribute.</a:documentation>
+                                <rng:data type="ID"/>
+                            </rng:attribute>
+                            <rng:element name="head">
+                                <rng:attribute name="type">
+                                    <rng:choice>
+                                        <rng:value>filter</rng:value>
+                                    </rng:choice>
+                                </rng:attribute>
+                                <rng:attribute name="tid">
+                                    <rng:data type="integer"/>
+                                </rng:attribute>
+                                <rng:text/>
+                            </rng:element>
+                            <rng:oneOrMore>
+                                <rng:element name="p">
+                                    <rng:ref name="paragraph"/>
+                                </rng:element>
+                            </rng:oneOrMore>
+                            <rng:oneOrMore>
+                                <rng:element name="eft:filter">
+                                    <rng:choice>
+                                        <rng:attribute name="max-pages">
+                                            <rng:data type="integer"/>
+                                        </rng:attribute>
+                                        <rng:attribute name="section-id">
+                                            <rng:data type="string"/>
+                                        </rng:attribute>
+                                        <rng:attribute name="text-id">
+                                            <rng:data type="string"/>
+                                        </rng:attribute>
+                                    </rng:choice>
+                                </rng:element>
+                            </rng:oneOrMore>
+                            <rng:zeroOrMore>
+                                <rng:element name="eft:display">
+                                    <rng:choice>
+                                        <rng:attribute name="key">
+                                            <rng:choice>
+                                                <rng:value>carousel</rng:value>
+                                                <rng:value>sidebar</rng:value>
+                                            </rng:choice>
+                                        </rng:attribute>
+                                    </rng:choice>
+                                </rng:element>
+                            </rng:zeroOrMore>
+                        </rng:element>
+                    </rng:zeroOrMore>
                 </rng:element>
             </rng:element>
         </rng:element>
@@ -243,6 +314,9 @@
                                     <rng:value>section</rng:value>
                                 </rng:choice>
                             </rng:attribute>
+                                <rng:attribute name="tid">
+                                    <rng:data type="integer"/>
+                                </rng:attribute>
                         </optional>
                         <rng:text/>
                     </rng:element>
@@ -315,6 +389,9 @@
                     <rng:value>chapter</rng:value>
                 </rng:choice>
             </rng:attribute>
+            <rng:attribute name="tid">
+                <rng:data type="integer"/>
+            </rng:attribute>
             <rng:text/>
         </rng:element>
         <rng:oneOrMore>
@@ -326,6 +403,9 @@
                             <rng:value>chapterTitle</rng:value>
                         </rng:choice>
                     </rng:attribute>
+                    <rng:attribute name="tid">
+                        <rng:data type="integer"/>
+                    </rng:attribute>
                     <rng:text/>
                 </rng:element>
                 <!-- section title -->
@@ -334,6 +414,9 @@
                         <rng:choice>
                             <rng:value>section</rng:value>
                         </rng:choice>
+                    </rng:attribute>
+                    <rng:attribute name="tid">
+                        <rng:data type="integer"/>
                     </rng:attribute>
                     <rng:text/>
                 </rng:element>
@@ -404,6 +487,9 @@
                                 </rng:choice>
                             </rng:attribute>
                         </optional>
+                        <rng:attribute name="tid">
+                            <rng:data type="integer"/>
+                        </rng:attribute>
                         <rng:text/>
                     </rng:element>
                 </optional>

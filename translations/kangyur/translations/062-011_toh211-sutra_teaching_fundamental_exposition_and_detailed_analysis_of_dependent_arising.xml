@@ -27,34 +27,20 @@
                 <editor role="TEImarkupEditor" ref="contributors.xml#person-95">Celso Wilkinson</editor>
                 <editor role="copyEditor" ref="contributors.xml#person-92">Laura Goetz</editor>
                 <editor role="copyEditor" ref="contributors.xml#person-249">Konchog Norbu</editor>
-                <editor role="copyEditor" ref="contributors.xml#person-92">Laura Goetz</editor>
-                <editor role="copyEditor" ref="contributors.xml#person-249">Konchog Norbu</editor>
                 <editor role="projectEditor" ref="contributors.xml#person-50">Dr. Andreas Doctor</editor>
                 <editor role="finalReviewer" ref="contributors.xml#person-139">Dr. John Canti</editor>
-
-
-
-
-
-
-
-            
-<consultant role="advisor" ref="contributors.xml#person-76">Wiesiek Mical</consultant>
+                <consultant role="advisor" ref="contributors.xml#person-76">Wiesiek Mical</consultant>
                 <consultant role="advisor" ref="contributors.xml#person-11">Leslie Kriesel</consultant>
                 <consultant role="advisor" ref="contributors.xml#person-7">Dr. Paul Hackett</consultant>
                 <consultant role="advisor" ref="contributors.xml#person-6">Geshe Dorji Damdul</consultant>
                 <consultant role="advisor" ref="contributors.xml#person-9">Dr. Shrikant Bahulkar</consultant>
                 <consultant role="advisor" ref="contributors.xml#person-37">Dr. Peter Skilling</consultant>
                 <consultant role="advisor" ref="contributors.xml#person-327">David Mellins, Dr.</consultant>
-    <consultant role="projectManager" ref="contributors.xml#person-5">Annie Bien</consultant>
-
-
-
-
-
-</titleStmt>
+                <consultant role="projectManager" ref="contributors.xml#person-5">Annie Bien</consultant>
+                <editor role="finalReviewer" ref="contributors.xml#person-74">Ryan Damron</editor>
+            </titleStmt>
             <editionStmt>
-                <edition>v 1.1.4 <date>2020</date>
+                <edition>v 1.1.7 <date>2020</date>
                 </edition>
             </editionStmt>
 
@@ -90,7 +76,7 @@
                 </bibl>
             </sourceDesc>
             <notesStmt>
-                <note type="lastUpdated" date-time="2020-05-28T12:32:15.343Z" user="laura">28/05/2020 12:32:15</note>
+                <note type="lastUpdated" date-time="2020-12-11T15:47:35.181Z" user="admin">11/12/2020 15:47:35</note>
 
                 <note type="updated" update="text-version" value="v 0.1.0" date-time="2019-11-28T08:33:49.738Z" user="john">v 0.1.0</note>
                 <note type="updated" update="translation-status" value="2.d" date-time="2020-01-28T06:17:47.228Z" user="mike">2.d</note>
@@ -103,6 +89,9 @@
 <note type="updated" update="text-version" value="v 1.1.2" date-time="2020-03-31T13:34:46.588Z" user="celso">edited acknowledgements</note>
     <note type="updated" update="text-version" value="v 1.1.3" date-time="2020-04-15T15:28:20.313Z" user="celso">removed space typo in folio ref</note>
     <note type="updated" update="text-version" value="v 1.1.4" date-time="2020-05-28T13:13:56.166Z" user="laura">Added line to acknowledgement</note>
+    <note type="updated" update="text-version" value="1.1.5" date-time="2020-11-23T13:57:44.998Z" user="admin">Auto (TEI migration 2.0.0)</note>
+    <note type="updated" update="text-version" value="1.1.6" date-time="2020-11-25T15:48:11.209Z" user="celso">Updated pending links</note>
+    <note type="updated" update="text-version" value="1.1.7" date-time="2020-12-11T14:06:50.919Z" user="admin">Auto (TEI migration 2.1.5)</note>
             </notesStmt>
         </fileDesc>
     </teiHeader>
@@ -128,7 +117,7 @@
             </div>
             <div type="introduction">
                 <head type="introduction" tid="3">Introduction</head>
-                <div type="section">
+                <div type="section" xml:id="UT22084-062-011-introduction-1">
                     <milestone unit="chunk" xml:id="UT22084-062-011-1"/>
                     <p tid="5">Dependent arising is one of the core teachings of Buddhism. The
                         canonical accounts of the Buddha’s awakening relate how at first he
@@ -166,7 +155,7 @@
                         links, the Buddha elucidates them with a detailed analysis, subdividing and defining each of
                         the twelve factors. </p>
                     <milestone unit="chunk" xml:id="UT22084-062-011-3"/>
-                    <p tid="7">The sūtra is today extant in Sanskrit as well as Chinese, Tibetan,
+                    <p tid="42">The sūtra is today extant in Sanskrit as well as Chinese, Tibetan,
                         Korean, and Mongolian translations. The Sanskrit is found as part of the
                             <title xml:lang="Sa-Ltn">Nidānasaṃyukta</title> collection.<note place="end" index="1" xml:id="UT22084-062-011-4"> The <title xml:lang="Sa-Ltn">Nidānasaṃyukta</title> is a collection of canonical texts that present the topic of causation. The collection is part of the <title xml:lang="Sa-Ltn">Saṃyuktāgama</title> of the Sarvāstivāda school. It has partially survived in Sanskrit in the form of manuscript fragments discovered in Central Asia. This collection was also translated in its entirety into Chinese (Taishō 99). 
                                 Many of the texts in the <title xml:lang="Sa-Ltn">Nidānasaṃyukta</title> (although not the sūtra translated here) are also included in the Pāli <title xml:lang="Pi-Ltn">Nidānasaṃyutta</title> collection of the <title xml:lang="Pi-Ltn">Saṃyuttanikāya</title>. For a Sanskrit
@@ -176,13 +165,15 @@
                         were written by Vasubandhu (fourth–fifth century <hi rend="small-caps">ce</hi>, Toh 3995<note place="end" index="2" xml:id="UT22084-062-011-5">
                                 <title xml:lang="Sa-Ltn">Pratītyasamutpādādivibhaṅganirdeśa</title>
                                     (<title xml:lang="Bo-Ltn">rten cing ’brel bar ’byung ba dang po ’i rnam par dbye ba bshad
-                                pa</title>).</note><!--Reference Toh 3995-->) and Guṇamati (sixth century <hi rend="small-caps">ce</hi>, Toh 3996<note place="end" index="3" xml:id="UT22084-062-011-6">
+                                pa</title>).</note>
+                        <ref rend="pending" target="https://read.84000.co/translation/toh3995.html"/>) and Guṇamati (sixth century <hi rend="small-caps">ce</hi>, Toh 3996<note place="end" index="3" xml:id="UT22084-062-011-6">
                                 <title xml:lang="Sa-Ltn">Pratītyasamutpādādivibhaṅganirdeśaṭīkā</title> (<title xml:lang="Bo-Ltn">rten cing ’brel bar ’byung ba dang po dang rnam par dbye ba
-                                    bstan pa’i rgya cher bshad pa</title>).</note><!--Reference Toh 3996-->). The text was translated several times into
+                                    bstan pa’i rgya cher bshad pa</title>).</note>
+                        <ref rend="pending" target="https://read.84000.co/translation/toh3996.html"/>). The text was translated several times into
                         Chinese, first by Kumārajīva in the early fifth century <hi rend="small-caps">ce</hi> (Taishō 123) and later by Hsüan-tsang in 661
                         <hi rend="small-caps">ce</hi> (Taishō 124). Apart from these two independent translations, the sūtra was also translated by Guṇabhadra in the the early fifth century CE as part of his translation of the <title xml:lang="Sa-Ltn">Saṃyuktāgama</title> (Taishō 99). </p>
                     <milestone unit="chunk" xml:id="UT22084-062-011-71"/>
-                    <p tid="7">The Tibetan translation has no colophon, so we do not know
+                    <p tid="43">The Tibetan translation has no colophon, so we do not know
                         when or by whom it was produced. It is, however,
                         included in the Denkarma inventory of translated texts, compiled at a date in the early ninth 
                         century thought to have been 812 <hi rend="small-caps">ce</hi>, so it must have been translated 
@@ -190,7 +181,7 @@
                             Denkarma, F.301.a.3. See also Herrmann-Pfandt (2008), 161–162, no. 297.</note>
                     </p>
                     <milestone unit="chunk" xml:id="UT22084-062-011-72"/>
-                    <p tid="7">This English translation is based on the Tibetan translation
+                    <p tid="44">This English translation is based on the Tibetan translation
                         in the Degé Kangyur in consultation with the Comparative Edition (Tib. <foreign xml:lang="Bo-Ltn">dpe bsdur
                             ma</foreign>). We also consulted the Sanskrit editions by Tripathi (1962) and Vaidya (Ānandajoti 2009). </p>
                 </div>
@@ -202,10 +193,10 @@
                 <head type="titleHon" tid="9">The Sūtra</head>
                 <head type="titleMain" tid="10">Teaching the Fundamental Exposition and Detailed
                     Analysis of Dependent Arising</head>
-                <div type="section">
+                <div type="section" xml:id="UT22084-062-011-section-1">
                     <milestone unit="chunk" xml:id="UT22084-062-011-10"/>
                     <p tid="14">
-                        <ref cRef="F.123.b" type="folio"/> Homage to the Three Jewels.<note place="end" index="5" xml:id="UT22084-062-011-11"> This phrase is
+                        <ref cRef="F.123.b" type="folio" xml:id="UT22084-062-011-73"/> Homage to the Three Jewels.<note place="end" index="5" xml:id="UT22084-062-011-11"> This phrase is
                                 omitted in Vaidya’s Sanskrit edition.</note>
                     </p>
                     <lb/>
@@ -242,7 +233,7 @@
                         either the past or the future. It is not knowing the inner, not knowing the
                         outer, and not knowing either the inner or the outer. It is not knowing
                         actions, not knowing their maturation, and not knowing either actions
-                        <ref cRef="F.124.a" type="folio"/> or their maturation. It is not knowing the Buddha, not knowing the
+                        <ref cRef="F.124.a" type="folio" xml:id="UT22084-062-011-74"/> or their maturation. It is not knowing the Buddha, not knowing the
                         Dharma, not knowing the Saṅgha. It is not knowing suffering, origin,
                         cessation, or the path. It is not knowing the causes and not knowing that
                         phenomena arise from causes. It is not knowing virtue and nonvirtue. It is
@@ -283,7 +274,7 @@
                     <p tid="24">“What are <distinct>the six sense sources</distinct> in the statement, ‘Through the
                         condition of name-and-form, the six sense sources arise’? There are six
                         inner sense sources: the inner sense sources of the eye, ear, nose, tongue,
-                        body, and mind. <ref cRef="F.124.b" type="folio"/> </p>
+                        body, and mind. <ref cRef="F.124.b" type="folio" xml:id="UT22084-062-011-75"/> </p>
                     <milestone unit="chunk" xml:id="UT22084-062-011-26"/>
                     <p tid="25">“What is <distinct>contact</distinct> in the statement, ‘Through the condition of the six
                         sense sources, contact arises’? There are six collections of contact: being
@@ -326,7 +317,7 @@
                         aging.
                     </p>
                     <milestone unit="chunk" xml:id="UT22084-062-011-33"/>
-                    <p tid="32">“What is <distinct>death</distinct>? <ref cRef="F.125.a" type="folio"/> <distinct>Death</distinct> is the departure or passing away
+                    <p tid="32">“What is <distinct>death</distinct>? <ref cRef="F.125.a" type="folio" xml:id="UT22084-062-011-76"/> <distinct>Death</distinct> is the departure or passing away
                         of each and every being from their respective class of sentient beings; it
                         is their disintegration, internal deterioration, loss of life, fading of
                         bodily warmth, cessation of the life faculty, discarding of the aggregates,
@@ -354,7 +345,7 @@
             </div>
             <div type="listBibl">
                 <head type="listBibl" tid="37">Bibliography</head>
-                <div type="section">
+                <div type="section" xml:id="UT22084-062-011-listBibl-1">
                     <bibl xml:id="UT22084-062-011-36">
                         <title xml:lang="Bo-Ltn">rten cing ’brel par ’byung ba dang po dang rnam par
                             dbye ba bstan pa zhes bya ba’i mdo</title> (<title xml:lang="Sa-Ltn">Pratītya­samutpādādivibhaṅga­nirdeśa­nāma­sūtra</title>). Toh 211, Degé Kangyur vol. 62 (mdo sde tsha), folios
@@ -378,7 +369,7 @@
                     <bibl xml:id="UT22084-062-011-39">Denkarma (<title xml:lang="Bo-Ltn">pho brang
                             stod thang ldan [/ lhan] dkar gyi chos ’gyur ro cog gi dkar
                         chag</title>). Toh 4364, Degé Tengyur vol. 206 (sna tshogs, jo), folios
-                        294.b–310.a. <!--Reference Toh 4364-->
+                        294.b–310.a. <ref rend="pending" target="https://read.84000.co/translation/toh4364.html"/>
                     </bibl>
                     <bibl xml:id="UT22084-062-011-40">Herrmann-Pfandt, Adelheid. <title xml:lang="de">Die lHan kar ma: ein früher Katalog der ins
                             Tibetische übersetzten buddhistischen Texte</title>. Wien: Verlag der Österreichischen Akademie der Wissenschaften,
@@ -633,4 +624,8 @@
             </div>
         </back>
     </text>
-</TEI>
+
+    
+    
+    
+    </TEI>

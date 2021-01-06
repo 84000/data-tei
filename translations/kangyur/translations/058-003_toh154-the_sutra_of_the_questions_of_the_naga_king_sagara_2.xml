@@ -1,865 +1,910 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../../../schema/current/translation.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader>
-        <fileDesc>
-            <titleStmt>
-                <title type="mainTitle" xml:lang="Bo-Ltn">klu’i rgyal po rgya mtshos zhus pa</title>
-                <title type="mainTitle" xml:lang="bo">ཀླུའི་རྒྱལ་པོ་རྒྱ་མཚོས་ཞུས་པ།</title>
-              <title type="mainTitle" xml:lang="Sa-Ltn">Sāgara­nāga­rāja­paripṛcchā</title>
-                <title type="mainTitle" xml:lang="en">The Questions of the Nāga King Sāgara (2)</title>
-                <title type="longTitle" xml:lang="Bo-Ltn">’phags pa klu’i rgyal po rgya mtshos zhus pa zhes bya ba theg pa chen po’i mdo</title>
-              <title xml:lang="bo" type="longTitle">འཕགས་པ་ཀླུའི་རྒྱལ་པོ་རྒྱ་མཚོས་ཞུས་པ་ཞེས་བྱ་བ་ཐེག་པ་ཆེན་པོའི་མདོ།</title>
-                <title type="longTitle" xml:lang="en">The Noble Great Vehicle Sūtra “The Questions of the Nāga King Sāgara”</title>
-                <title type="longTitle" xml:lang="Sa-Ltn">Ārya­sāgara­nāga­rāja­paripṛcchā­nāma­mahā­yāna­sūtra</title>
-                <title type="otherTitle" xml:lang="zh">Chinese Title</title>
-                <author role="translatorMain" ref="contributors.xml#team-9">Translated by the Dharmachakra Translation Committee<lb/>under the patronage and supervision of
-                    84000: Translating the Words of the Buddha.</author>
-                <editor role="associateEditor" ref="contributors.xml#person-289">Nathaniel Rich</editor>
-                <editor role="copyEditor" ref="contributors.xml#person-92">Laura Goetz</editor>
-                <editor role="reviser" ref="contributors.xml#person-50">Dr. Andreas Doctor</editor>
-                <editor role="reviser" ref="contributors.xml#person-337">Felin Chung</editor>
-                <editor role="projectEditor" ref="contributors.xml#person-50">Dr. Andreas Doctor</editor>
-                <editor role="TEImarkupEditor" ref="contributors.xml#person-95">Celso Wilkinson</editor>
-                <author role="translatorEng" ref="contributors.xml#person-60">Benjamin Ewing</author>
-                <consultant role="projectManager" ref="contributors.xml#person-50">Dr. Andreas Doctor</consultant>
-                <consultant role="dharmaMaster" ref="contributors.xml#person-40">Chokyi Nyima Rinpoche</consultant>
-            </titleStmt>
-            <editionStmt>
-                <edition>v 0.1.3 <date>2020</date>
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="mainTitle" xml:lang="Bo-Ltn">klu’i rgyal po rgya mtshos zhus pa</title>
+        <title type="mainTitle" xml:lang="bo">ཀླུའི་རྒྱལ་པོ་རྒྱ་མཚོས་ཞུས་པ།</title>
+        <title type="mainTitle" xml:lang="Sa-Ltn">Sāgara­nāga­rāja­paripṛcchā</title>
+        <title type="mainTitle" xml:lang="en">The Questions of the Nāga King Sāgara (2)</title>
+        <title type="longTitle" xml:lang="Bo-Ltn">’phags pa klu’i rgyal po rgya mtshos zhus pa zhes bya ba theg pa chen po’i
+          mdo</title>
+        <title xml:lang="bo" type="longTitle">འཕགས་པ་ཀླུའི་རྒྱལ་པོ་རྒྱ་མཚོས་ཞུས་པ་ཞེས་བྱ་བ་ཐེག་པ་ཆེན་པོའི་མདོ།</title>
+        <title type="longTitle" xml:lang="en">The Noble Great Vehicle Sūtra “The Questions of the Nāga King Sāgara”</title>
+        <title type="longTitle" xml:lang="Sa-Ltn">Ārya­sāgara­nāga­rāja­paripṛcchā­nāma­mahā­yāna­sūtra</title>
+        <title type="otherTitle" xml:lang="zh">Chinese Title</title>
+        <author role="translatorMain" ref="contributors.xml#team-9">Translated by the Dharmachakra Translation Committee<lb/>under
+          the patronage and supervision of 84000: Translating the Words of the Buddha.</author>
+        <editor role="associateEditor" ref="contributors.xml#person-289">Nathaniel Rich</editor>
+        <editor role="copyEditor" ref="contributors.xml#person-92">Laura Goetz</editor>
+        <editor role="reviser" ref="contributors.xml#person-50">Dr. Andreas Doctor</editor>
+        <editor role="reviser" ref="contributors.xml#person-337">Felin Chung</editor>
+        <editor role="projectEditor" ref="contributors.xml#person-50">Dr. Andreas Doctor</editor>
+        <editor role="TEImarkupEditor" ref="contributors.xml#person-95">Celso Wilkinson</editor>
+        <author role="translatorEng" ref="contributors.xml#person-60">Benjamin Ewing</author>
+        <consultant role="projectManager" ref="contributors.xml#person-50">Dr. Andreas Doctor</consultant>
+        <consultant role="dharmaMaster" ref="contributors.xml#person-40">Chokyi Nyima Rinpoche</consultant>
+        <editor role="finalReviewer" ref="contributors.xml#person-262">David Higgins</editor>
+      </titleStmt>
+      <editionStmt>
+                <edition>v 1.1.5 <date>2020</date>
                 </edition>
             </editionStmt>
-            <publicationStmt status="2">
+      <publicationStmt status="1">
                 <publisher>
                     <name>84000: Translating the Words of the Buddha</name> is a global non-profit initiative to translate all the
-                    Buddha’s words into modern languages, and to make them available to everyone. </publisher>
+          Buddha’s words into modern languages, and to make them available to everyone. </publisher>
                 <availability>
-                    <licence>
-                        <graphic url="http://i.creativecommons.org/l/by-nc-nd/2.0/88x31.png"/>
-                        <p>This work is provided under the
-                        protection of a Creative Commons CC BY-NC-ND (Attribution - Non-commercial - No-derivatives) 3.0
-                        copyright. It may be copied or printed for fair use, but only with full attribution, and not for
-                        commercial advantage or personal compensation. For full details, see the Creative Commons
-                        license.</p>
-                    </licence>
-                </availability>
+          <licence>
+            <graphic url="http://i.creativecommons.org/l/by-nc-nd/2.0/88x31.png"/>
+            <p>This work is provided under the protection of a Creative Commons CC BY-NC-ND (Attribution - Non-commercial -
+              No-derivatives) 3.0 copyright. It may be copied or printed for fair use, but only with full attribution, and not for
+              commercial advantage or personal compensation. For full details, see the Creative Commons license.</p>
+          </licence>
+        </availability>
                 <idno xml:id="UT22084-058-003"/>
-                <note>An early mistake in the assigning of UT numbers within the 84000 project means that these ids diverge slightly from the
-                    standard logic.</note>
-                <date>2020-05-28</date>
+                <note>An early mistake in the assigning of UT numbers within the 84000 project means that these ids diverge slightly from
+          the standard logic.</note>
+                <date>2020-10-06</date>
             </publicationStmt>
-            <sourceDesc>
-                <bibl key="toh154" type="text">
-                    <ref>Toh 154</ref>
-                    <biblScope>Degé Kangyur, vol. 58 (mdo sde, pha), folios 198.b–205.a</biblScope>
-                    <author role="translatorTib">Jinamitra</author>
-                    <author role="translatorTib">Danasila</author>
-                    <author role="translatorTib">Munivarman</author>
-                  <author role="translatorTib">Yeshé Dé</author>
-                    <location work="UT4CZ5369" count-pages="15">
-                        <volume number="58" start-page="395" end-page="409"/>
-                    </location>
-                    <idno parent-id="O1JC114941JC14668" work="http://read.84000.co/sections"/>
-                    <idno source-id="O1JC114941JC11750" work="W22084"/>
-                </bibl>
-            </sourceDesc>
-            <notesStmt>
-                <note type="lastUpdated" date-time="2020-06-09T15:52:15.555Z" user="admin">09/06/2020 15:52:15</note>
-                <note type="updated" update="text-version" value="" date-time="2019-09-25T06:25:58.148Z" user="andreas">0.1 2019</note>
-                <note type="updated" update="text-version" value="v 0.1.1" date-time="2019-10-07T10:27:24.685Z" user="admin">Publication statement
-                    updated</note>
-                <note type="updated" update="translation-status" value="2.b" date-time="2019-11-28T09:42:55.642Z" user="andreas">2.b</note>
-                <note type="updated" update="text-version" value="v 0.1.2" date-time="2019-12-20T12:56:48.575Z" user="admin">Automated version increment</note>
-                <note type="updated" update="translation-status" value="2.c" date-time="2020-01-28T06:26:17.404Z" user="mike">2.c</note>
-                <note type="updated" update="translation-status" value="2.b" date-time="2020-05-27T07:24:26.446Z" user="line-tofte">2.b</note>
-                <note type="updated" update="translation-status" value="2.a" date-time="2020-05-27T08:04:05.763Z" user="mike">2.a</note>
-            
-    <note type="updated" update="text-version" value="v 0.0.1" date-time="2020-06-09T15:51:35.136Z" user="mike">v 0.0.1</note>
-    <note type="updated" update="translation-status" value="2" date-time="2020-06-09T15:51:35.136Z" user="mike">2</note>
-    <note type="updated" update="text-version" value="v 0.1.3" date-time="2020-06-09T15:52:13.855Z" user="mike">v 0.1.3</note>
+      <sourceDesc>
+        <bibl key="toh154" type="text">
+          <ref>Toh 154</ref>
+          <biblScope>Degé Kangyur, vol. 58 (mdo sde, pha), folios 198.b–205.a</biblScope>
+          <author role="translatorTib">Jinamitra</author>
+          <author role="translatorTib">Danasila</author>
+          <author role="translatorTib">Munivarman</author>
+          <author role="translatorTib">Yeshé Dé</author>
+          <location work="UT4CZ5369" count-pages="15">
+            <volume number="58" start-page="395" end-page="409"/>
+          </location>
+          <idno parent-id="O1JC114941JC14668" work="http://read.84000.co/sections"/>
+          <idno source-id="O1JC114941JC11750" work="W22084"/>
+        </bibl>
+      </sourceDesc>
+      <notesStmt>
+        <note type="lastUpdated" date-time="2021-01-04T20:32:44.826Z" user="laura">04/01/2021 20:32:44</note>
+        <note type="updated" update="text-version" value="" date-time="2019-09-25T06:25:58.148Z" user="andreas">0.1 2019</note>
+        <note type="updated" update="text-version" value="v 0.1.1" date-time="2019-10-07T10:27:24.685Z" user="admin">Publication
+          statement updated</note>
+        <note type="updated" update="translation-status" value="2.b" date-time="2019-11-28T09:42:55.642Z" user="andreas">2.b</note>
+        <note type="updated" update="text-version" value="v 0.1.2" date-time="2019-12-20T12:56:48.575Z" user="admin">Automated
+          version increment</note>
+        <note type="updated" update="translation-status" value="2.c" date-time="2020-01-28T06:26:17.404Z" user="mike">2.c</note>
+        <note type="updated" update="translation-status" value="2.b" date-time="2020-05-27T07:24:26.446Z" user="line-tofte">2.b</note>
+        <note type="updated" update="translation-status" value="2.a" date-time="2020-05-27T08:04:05.763Z" user="mike">2.a</note>
+
+        <note type="updated" update="text-version" value="v 0.0.1" date-time="2020-06-09T15:51:35.136Z" user="mike">v 0.0.1</note>
+        <note type="updated" update="translation-status" value="2" date-time="2020-06-09T15:51:35.136Z" user="mike">2</note>
+        <note type="updated" update="text-version" value="v 0.1.3" date-time="2020-06-09T15:52:13.855Z" user="mike">v 0.1.3</note>
+        <note type="updated" update="text-version" value="0.1.4" date-time="2020-09-24T13:17:54.807Z" user="line-tofte">Auto
+          (update-contributors)</note>
+      
+    <note type="updated" update="translation-status" value="1" date-time="2020-10-06T09:18:15.149Z" user="mike">1</note>
+    <note type="updated" update="text-version" value="1.0.0" date-time="2020-10-06T09:18:15.149Z" user="mike">First published version</note>
+    <note type="updated" update="text-version" value="1.1.0" date-time="2020-10-07T15:16:17.108Z" user="john">Summary improved and various edits to the intro; Chinese titles of second Taishō added; some grammatical corrections to the text.</note>
+    <note type="updated" update="text-version" value="1.1.1" date-time="2020-10-07T19:02:32.087Z" user="john">Tiny typo corrected.</note>
+    <note type="updated" update="text-version" value="1.1.2" date-time="2020-10-26T10:38:23.462Z" user="john">Added some line breaks to divide topics</note>
+    <note type="updated" update="text-version" value="1.1.3" date-time="2020-11-23T13:57:44.998Z" user="admin">Auto (TEI migration 2.0.0)</note>
+    <note type="updated" update="text-version" value="1.1.4" date-time="2020-11-25T16:04:26.404Z" user="celso">Updated pending links</note>
+    <note type="updated" update="text-version" value="1.1.5" date-time="2020-12-11T14:06:50.919Z" user="admin">Auto (TEI migration 2.1.5)</note>
             </notesStmt>
-        </fileDesc>
-    </teiHeader>
-    <text>
-                <front>
-                        <div type="summary">
-                                <head type="summary" tid="1">Summary</head>
-                                <milestone unit="chunk" xml:id="UT22084-058-003-1"/>
-                                <p tid="2">
-                    <title xml:lang="en">The Questions of the Nāga King Sāgara</title> presents a discourse given by the Buddha Śākyamuni on the
-                                        importance of the causes and effects of actions. At the start of his teaching, the Buddha remarks how the variety of
-                                        forms that exist, and in fact all phenomena, come about as the result of virtuous and nonvirtuous actions. By
-                                        understanding this law of cause and effect and by taking great care to engage in virtue, one will avoid rebirth in the
-                                        lower realms and enter the path to perfect awakening. The bulk of the discourse, then, consists of the Buddha explaining
-                                        in great detail the advantages of engaging in each of the ten virtues and the problems associated with not engaging in
-                                        them.</p>
-                        </div>
-                        <div type="acknowledgment">
-                                <head type="acknowledgment" tid="3">Acknowledgements</head>
-                                <milestone unit="chunk" xml:id="UT22084-058-003-2"/>
-                                <p tid="4">Translated by the Dharmachakra Translation Committee under the supervision of Chokyi Nyima Rinpoche. The translation was
-                                        produced by Benjamin Ewing, who also wrote the introduction. Andreas Doctor compared the translation with the original
-                                        Tibetan and edited the text. Felin Chung consulted the Chinese versions.</p> 
-                                <p tid="5">The translation was completed under the patronage and supervision of 84000: Translating the Words of the Buddha.</p>
-                        </div>
-                        <div type="introduction">
-                                <head type="introduction" tid="6">Introduction</head>
-                                <div type="section">
-                                        <milestone unit="chunk" xml:id="UT22084-058-003-3"/>
-                                        <p tid="8">
-                        <title xml:lang="en">The Questions of the Nāga King Sāgara</title> takes place in the unusual setting of the nāga
-                                                king Sāgara’s court deep in the ocean. Here the Buddha gives a discourse on the importance of avoiding the ten
-                                                nonvirtuous deeds. The sūtra begins with the Buddha Śākyamuni explaining how everything, including all the
-                                                various forms of beings in the ocean and even the awakening of a buddha, is created through the law of cause and
-                                                effect. The Buddha explains the relationship between form and emptiness, showing how despite the essential
-                                                emptiness of all phenomena, beings appear in various shapes and sizes due to their former virtuous and
-                                                nonvirtuous actions. The remainder of the text concerns the ten nonvirtuous acts and the necessity of abandoning
-                                                them, which is done by means of the ten virtuous acts. First, the Buddha explains the various benefits of
-                                                abstaining from each of the nonvirtuous acts and shows how this will lead to awakening. He then describes the
-                                                perilous consequences of engaging in the nonvirtuous acts. Finally, the Buddha explains how incorporating
-                                                additional positive qualities while engaging in these virtuous acts will lead to even greater spiritual boons. </p>
-                                        <milestone unit="chunk" xml:id="UT22084-058-003-4"/>
-                                        <p tid="9">The Degé Kangyur contains three sūtras entitled <title xml:lang="en">The Questions of the Nāga King Sāgara</title>.
-                                                They can be distinguished by length with one being quite long (Toh 153, 164 folio pages)<!--Reference Toh
-                                                0153-->, one medium-length, which is translated here (Toh 154, 14 folio pages), and one very short (<ref target="https://read.84000.co/translation/toh155.html">Toh 155</ref>, 1
-                                                folio page). All three of these are included as individual texts in the early ninth
-                                                century Denkarma (<foreign xml:lang="Bo-Ltn">ldan dkar ma</foreign>) catalog, confirming their status as
-                                          independent scriptures in Tibet during the imperial period.<note place="end" index="1" xml:id="UT22084-058-003-5"> See Denkarma: 297.a.6<!--Reference Toh 4364 297.a--> (Toh 153),
-                                            299.a.5<!--Reference Toh 4364 299.a--> (Toh 154), and 300.a.2<!--Reference Toh 4364 300.a--> (Toh 155). See also Herrmann-Pfandt 2008: Toh 153 = no. 96 (p. 55), Toh
-                                                        154 = no. 187 (p. 100), Toh 155 = no. 237 (p. 125). </note> Of these, Toh 155 appears to be unrelated to
-                                                the other two. It seems apparent, however, that at some point in its textual life (presumably in India), Toh 154
-                                                was taken as an excerpt from Toh 153 and transmitted as an independent text. These two texts have a large number
-                                                of minor differences and one whole section that is unique to Toh 154,<note place="end" index="2" xml:id="UT22084-058-003-6"> Toh 154 contains a
-                                                        section of nearly two folios that is not included in Toh 153. We have noted this section in the
-                                                        translation.</note> but their shared provenance is nevertheless clear. </p>
-                                        <milestone unit="chunk" xml:id="UT22084-058-003-7"/>
-                                        <p tid="10">A further indication that the two texts had already circulated independently in India is that the two sūtras were
-                                                translated into Tibetan by different translation teams. Toh 153 was translated by Jinamitra, Prajñāvarma, and
-                                                Yeshé Dé while Toh 154 was translated by Jinamitra, Dānaśīla, Munivarman, and Yeshé Dé. Interestingly, in two
-                                                versions of the colophon to Toh 154 it is explicitly mentioned that this text is an extract from a larger
-                                                scripture, although Toh 153 is not specified as the source.<note place="end" index="3" xml:id="UT22084-058-003-8"> These two colophons are those of
-                                                        the Stok Palace and Shey Palace, which both belong to the Thempangma (<foreign xml:lang="Bo-Ltn">thems
-                                                                spang ma</foreign>) group of Kangyurs. S, Z: <foreign xml:lang="Bo-Ltn" type="quote">mdo che
-                                                                ba’i nang nas bkod pa snang ngo</foreign>.</note>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="summary">
+        <head type="summary" tid="1">Summary</head>
+        <milestone unit="chunk" xml:id="UT22084-058-003-1"/>
+        <p tid="2">
+                    <title xml:lang="en">The Questions of the Nāga King Sāgara</title> presents a discourse given by the Buddha
+          Śākyamuni on the importance of considering the effects caused by actions. At the start of his teaching, the Buddha remarks how
+          the variety of forms that exist, and in fact all phenomena, come about as the result of virtuous and nonvirtuous
+          actions. By understanding this law of cause and effect and by taking great care to engage in virtue, one will avoid
+          rebirth in the lower realms and enter the path to perfect awakening. In the rest of his discourse he explains in 
+          great detail the advantages of engaging in each of the ten virtues and the problems associated with
+          not engaging in them.</p>
+      </div>
+      <div type="acknowledgment">
+        <head type="acknowledgment" tid="3">Acknowledgements</head>
+        <milestone unit="chunk" xml:id="UT22084-058-003-2"/>
+        <p tid="4">Translated by the Dharmachakra Translation Committee under the supervision of Chokyi Nyima Rinpoche. The
+          translation was produced by Benjamin Ewing, who also wrote the introduction. Andreas Doctor compared the translation
+          with the original Tibetan and edited the text. Felin Chung consulted the Chinese versions.</p>
+        <p tid="5">The translation was completed under the patronage and supervision of 84000: Translating the Words of the
+          Buddha.</p>
+      </div>
+      <div type="introduction">
+        <head type="introduction" tid="6">Introduction</head>
+        <div type="section" xml:id="UT22084-058-003-introduction-1">
+          <milestone unit="chunk" xml:id="UT22084-058-003-3"/>
+          <p tid="8">
+                        <title xml:lang="en">The Questions of the Nāga King Sāgara</title> takes place in the unusual setting of the
+            nāga king Sāgara’s court deep in the ocean. Here the Buddha gives a discourse on the importance of avoiding the ten
+            nonvirtuous deeds. The sūtra begins with the Buddha Śākyamuni explaining how everything, including all the various
+            life forms of beings in the ocean and even the awakening of a buddha, is created through the law of cause and effect.
+            The Buddha explains the relationship between form and emptiness, showing how despite the essential emptiness of all
+            phenomena, beings appear in various shapes and sizes due to their former virtuous and nonvirtuous actions. The
+            remainder of the text concerns the ten nonvirtuous acts and the need to abandon them by practising instead
+            the ten virtuous acts. First, the Buddha explains the various benefits of abstaining from each of the nonvirtuous
+            acts and shows how this will lead to awakening. He then describes the perilous consequences of engaging in the
+            nonvirtuous acts. Finally, the Buddha explains how cultivating additional positive qualities while engaging in these
+            virtuous acts will lead to even greater spiritual boons. </p>
+          <milestone unit="chunk" xml:id="UT22084-058-003-4"/>
+          <p tid="9">The Degé Kangyur contains three sūtras entitled <title xml:lang="en">The Questions of the Nāga King
+              Sāgara</title>. They can be distinguished by their length, one being quite long (Toh 153, 164 folio
+            pages)<ref rend="pending" target="https://read.84000.co/translation/toh153.html"/>, one medium-length, which is
+            translated here (Toh 154, 14 folio pages), and one very short (<ref target="https://read.84000.co/translation/toh155.html">Toh 155</ref>, 1 folio page). All three of these are included
+            as individual texts in the early ninth century Denkarma (<foreign xml:lang="Bo-Ltn">ldan dkar ma</foreign>) catalog,
+            confirming their status as independent scriptures in Tibet during the imperial period.<note place="end" index="1" xml:id="UT22084-058-003-5"> See Denkarma: 297.a.6<ref rend="pending" target="https://read.84000.co/translation/toh4364.html" inst="297.a"/> (Toh 153),
+              299.a.5<ref rend="pending" target="https://read.84000.co/translation/toh4364.html" inst="299.a"/> (Toh 154), and 300.a.2<ref rend="pending" target="https://read.84000.co/translation/toh4364.html" inst="300.a"/> (Toh 155). See also
+              Herrmann-Pfandt 2008: Toh 153 = no. 96 (p. 55), Toh 154 = no. 187 (p. 100), Toh 155 = no. 237 (p. 125). </note> Of
+            these, Toh 155 appears to be unrelated to the other two. It seems apparent, however, that at some point in its textual
+            life (presumably in India), Toh 154 was taken as an excerpt from Toh 153 and transmitted as an independent text. A large 
+            number of minor differences and one whole section that is unique to 
+            Toh 154<note place="end" index="2" xml:id="UT22084-058-003-6"> Toh 154 contains a section of nearly two folios that is not included in Toh
+              153. We have noted this section in the translation.</note> distinguish these
+            two versions, but their shared provenance is nevertheless clear. </p>
+          <milestone unit="chunk" xml:id="UT22084-058-003-7"/>
+          <p tid="10">A further indication that the two texts had already circulated independently in India is that the two sūtras
+            were translated into Tibetan by different translation teams. Toh 153 was translated by Jinamitra, Prajñāvarma, and
+            Yeshé Dé while Toh 154 was translated by Jinamitra, Dānaśīla, Munivarman, and Yeshé Dé. Interestingly, in two versions
+            of the colophon to Toh 154 it is explicitly mentioned that this text is an extract from a larger scripture, although
+            Toh 153 is not specified as the source.<note place="end" index="3" xml:id="UT22084-058-003-8"> These two colophons are
+              those of the Stok Palace and Shey Palace, which both belong to the Thempangma (<foreign xml:lang="Bo-Ltn">thems
+                spang ma</foreign>) group of Kangyurs. S, Z: <foreign xml:lang="Bo-Ltn" type="quote">mdo che ba’i nang nas bkod pa
+                snang ngo</foreign>.</note>
                     </p>
-                                        <milestone unit="chunk" xml:id="UT22084-058-003-9"/>
-                                        <p tid="11">Both of these texts were transmitted from India to China, with the longer of the two appearing four hundred years
-                                                before the shorter. Toh 154 was translated into Chinese twice under two different titles (Taishō 600 and 601).
-                                                Taishō 600 was translated between 695 and 700 <hi rend="small-caps">ce</hi> by the Khotanese monk Śikṣānanda
-                                                (652–710 <hi rend="small-caps">ce</hi>) and appears under the title <title xml:lang="en">The Sūtra on the Path
-                                                        of the Ten Virtuous Actions</title>.<note place="end" index="4" xml:id="UT22084-058-003-10"> Chinese: <title xml:lang="zh">十善業道經</title>. This text has been
-                                                                translated into English from the Chinese at least three times: Saddhaloka 1996; Rulu 2012; and
-                                                                Wong, n.d.</note> Taishō 601 was translated into Chinese relatively late, between 980 and
-                                                1017 <hi rend="small-caps">ce</hi>. This translation was produced by Dānapāla (d. 1017 <hi rend="small-caps">ce</hi>), a monk from the area of Uḍḍiyāna in northwestern India who was one of the four chief Indian
-                                                translators during the Song dynasty. Given this information, we can surmise that Toh 154 was circulated as an
-                                                independent text in India prior to 695 <hi rend="small-caps">ce</hi> and subsequently transmitted to both China
-                                                and Tibet separately from Toh 153. It is difficult, however, to determine exactly when the split occurred. </p>
-                                        <milestone unit="chunk" xml:id="UT22084-058-003-11"/>
-                                        <p tid="12">This English translation was prepared based on the Tibetan translation in the Degé Kangyur in consultation with the Comparative Edition (Tib. <title xml:lang="Bo-Ltn">dpe bsdur ma</title>)
-                                                and the Stok Palace Kangyur. We also occasionally compared these sources to the two Chinese translations.</p>
-                                </div>
-                        </div>
-                </front>
-                <body>
-                        <div type="translation">
-                                <head type="translation" tid="13"> The Translation </head>
-                                <head type="titleHon" tid="14">The Noble Mahāyāna Sūtra</head>
-                                <head type="titleMain" tid="15">The Questions of the Nāga King Sāgara</head>
-                                <div type="section">
-                                <milestone unit="chunk" xml:id="UT22084-058-003-14"/>
-                                <p tid="18">
-                        <ref cRef="F.198.a" type="folio"/> Homage to all buddhas and bodhisattvas!</p>
-                                <lb/>  
-                                <milestone unit="chunk" xml:id="UT22084-058-003-16"/>
-                                <p tid="20">Thus did I hear at one time. The Blessed One was residing within the ocean in the realm of the nāga king Sāgara. He was
-                                        in the courtyard of the nāga king Sāgara together with a great monastic saṅgha of eight thousand monks and an assembly
-                                        of bodhisattva great beings gathered from the worlds of the ten directions, a vast number of whom had attained
-                                        supernatural knowledge. Also present there were Śakra, Brahmā, and the guardians of the world, and many trillions of
-                                        gods, nāgas, yakṣas, gandharvas, asuras, garuḍas, kiṃnaras, and mahoragas.</p>
-                                <milestone unit="chunk" xml:id="UT22084-058-003-17"/>
-                                <p tid="21">Then the Blessed One, knowing the assembly in its entirety, spoke to the nāga king Sāgara, “Lord of nāgas, alas! This world
-                                        is formed by a variety of actions. They are caused by a variety of mental apprehensions, which in turn are caused by a
-                                        variety of actions! <ref cRef="F.198.b" type="folio"/> This is also what causes the variety of beings.</p>
-                                <milestone unit="chunk" xml:id="UT22084-058-003-18"/>
-                                <p tid="22">“Lord of nāgas, consider all the various forms of the beings that are present here in this retinue and in this ocean as
-                                        well—all the diversity of beings that exist here. Lord of nāgas, all these beings are here in such variety due to the
-                                        variety of their previous engagement in virtue and nonvirtue through mental, physical, verbal, and conceptual actions.
-                                        The mind is formless, invisible, and ungraspable. In the same way, lord of nāgas, because all these forms of beings are
-                                        fabrications, their present characteristics have no owner, no ownership, and are ungraspable. Being simply a variety of
-                                        productions formed by whatever actions have been accumulated, they have no creator whatsoever.</p>
-                                <milestone unit="chunk" xml:id="UT22084-058-003-19"/>
-                                <p tid="23">“Lord of nāgas, in this way, all phenomena are inconceivable and have the essential quality of being illusory. Lord of nāgas,
-                                        since bodhisattvas are skilled in this regard, they understand that any phenomenon only comes to exist by virtue of
-                                        being constructed. Knowing this, they therefore engage in virtue. Then, because phenomena are constructed, when such
-                                        virtuous actions are performed, the resultant aggregates, elements, and sense sources are elegant, lovely to behold, and
-                                        beautiful. </p>
-                                <milestone unit="chunk" xml:id="UT22084-058-003-20"/>
-                                <p tid="24">“Lord of nāgas, the body of a thus-gone one is born from merits numbering in the trillions. This body, which is adorned with
-                                        marks, perfectly complete, and splendorous, outshines the worlds of gods and humans and remains uninterruptedly.
-                                        Consider how even the great brahmā gods, who hold dominion over one million worlds, are outshined and cannot see clearly
-                                        when they look upon the body of a thus-gone one. Lord of nāgas, look at the forms, marks, bodies, and adornments of
-                                        these bodhisattvas. Lord of nāgas, they are all beautifully produced by the performance of virtuous actions. <ref cRef="F.199.a" type="folio"/> </p>
-                                <milestone unit="chunk" xml:id="UT22084-058-003-21"/>
-                                <p tid="25">“Lord of nāgas, this dominion of yours likewise arose from a great amount of merit. Lord of nāgas, all the dominions of
-                                        Śakra, Brahmā, and the guardians of the world, and those of the gods, nāgas, yakṣas, gandharvas, asuras, garuḍas,
-                                        kiṃnaras, mahoragas, humans, and nonhumans, likewise arise from merit. Lord of nāgas, the various bodies within this
-                                        ocean—whether they are ugly and unshapely, shapely, large, and strong, or small and thin—all of those bodies are
-                                        products of the diversity of virtuous and nonvirtuous actions of mind, body, speech, and intellect that each individual
-                                        engaged in. </p>
-                                <p tid="26">“Lord of nāgas, because of this, it is said that ‘Beings must be confident in the way actions are appropriated, inherited,
-                                        shape beings’ birth, and ripen.’<note place="end" index="5" xml:id="UT22084-058-003-23"> This is a standardized formula that is
-                                                        very commonly repeated; a version is even found, for example, in the <title xml:lang="Pi-Ltn">Upajjhatthana Sutta</title> of the Pali Canon, as the fifth of the five
-                                                        recollections. These recollections are recited daily by many modern Theravāda Buddhists.</note>
+          <milestone unit="chunk" xml:id="UT22084-058-003-9"/>
+          <p tid="11">Both texts were transmitted from India to China, with the longer of the two (Toh 153) appearing four hundred
+            years before the shorter. Toh 154 was translated into Chinese twice under two different titles (Taishō 600 and 601).
+            Taishō 600 is a translation made between 695 and 700 <hi rend="small-caps">ce</hi> by the Khotanese monk Śikṣānanda (652–710
+              <hi rend="small-caps">ce</hi>) and appears under the title <title xml:lang="en">The Sūtra on the Path of the Ten
+                Virtuous Actions</title>.<note place="end" index="4" xml:id="UT22084-058-003-10"> Chinese: <title xml:lang="zh">十善業道經</title> (<title xml:lang="Zh-Ltn">Shishan ye dao jing</title>). 
+                This text has been translated into English from the Chinese at least three times: Saddhaloka 1996;
+              Rulu 2012; and Wong, n.d.</note> Taishō 601 is a translation made relatively late, between 980 and 1017 
+            <hi rend="small-caps">ce</hi>, by Dānapāla (d. 1017 <hi rend="small-caps">ce</hi>), a monk
+            from the area of Uḍḍiyāna in northwestern India who was one of the four chief Indian translators during the Song
+            dynasty; its title matches the Tibetan and Sanskrit title here.<note place="end" xml:id="UT22084-058-003-115" index="0">Chinese: 
+              <title xml:lang="zh">佛為娑伽羅龍王所說大乘經</title> (<title xml:lang="Zh-Ltn">Fo wei suo jia luo long wang suoshuo dasheng 
+                jing</title>).</note> Given this information, we can surmise that Toh 154 was circulating as an independent text in India prior to
+            695 <hi rend="small-caps">ce</hi> and that its subsequent transmission to both China and Tibet was also independent from Toh 153. It is
+            difficult, however, to determine exactly when the split occurred. </p>
+          <milestone unit="chunk" xml:id="UT22084-058-003-11"/>
+          <p tid="12">This English translation is based on the Tibetan translation in the Degé Kangyur in consultation
+            with the Comparative Edition (Tib. <title xml:lang="Bo-Ltn">dpe bsdur ma</title>) and the Stok Palace Kangyur. We also
+            occasionally compared these sources to the two Chinese translations.</p>
+        </div>
+      </div>
+    </front>
+    <body>
+      <div type="translation">
+        <head type="translation" tid="13"> The Translation </head>
+        <head type="titleHon" tid="14">The Noble Mahāyāna Sūtra</head>
+        <head type="titleMain" tid="15">The Questions of the Nāga King Sāgara</head>
+        <div type="section" xml:id="UT22084-058-003-section-1">
+          <milestone unit="chunk" xml:id="UT22084-058-003-14"/>
+          <p tid="18">
+                        <ref cRef="F.198.a" type="folio" xml:id="UT22084-058-003-116"/> Homage to all buddhas and bodhisattvas!</p>
+          <lb/>
+          <milestone unit="chunk" xml:id="UT22084-058-003-16"/>
+          <p tid="20">Thus did I hear at one time. The Blessed One was residing within the ocean in the realm of the nāga king
+            Sāgara. He was in the courtyard of the nāga king Sāgara together with a great monastic saṅgha of eight thousand monks
+            and an assembly of bodhisattva great beings who had assembled from the worlds of the ten directions, a vast number of
+            whom had attained supernatural knowledge. Also present there were Śakra, Brahmā, and the guardians of the world, and
+            many trillions of gods, nāgas, yakṣas, gandharvas, asuras, garuḍas, kiṃnaras, and mahoragas.</p>
+          <milestone unit="chunk" xml:id="UT22084-058-003-17"/>
+          <p tid="21">Then the Blessed One, knowing the assembly in its entirety, spoke to the nāga king Sāgara, “Lord of nāgas,
+            alas! The state of this world has been shaped by various kinds of karma. The predispositions to various kinds of karma
+            are in turn conditioned by a variety of mental apprehensions. <ref cRef="F.198.b" type="folio" xml:id="UT22084-058-003-117"/> This is also what
+            causes the variety of beings.</p>
+          <milestone unit="chunk" xml:id="UT22084-058-003-18"/>
+          <p tid="22">“Lord of nāgas, consider all the various forms of the beings that are present here in this retinue and in
+            this ocean as well—all the diversity of beings that exist here. Lord of nāgas, all these beings are here in such
+            variety due to the variety of their previous engagement in virtue and nonvirtue through activities of mind, body,
+            speech, and intellect. The mind is formless, invisible, and ungraspable. In the same way, lord of nāgas, because all
+            these forms of beings are fabrications, their present characteristics have no owner, no ownership, and are
+            ungraspable. Being simply a variety of productions formed by whatever karma has been accumulated, they have no creator
+            whatsoever.</p>
+          <milestone unit="chunk" xml:id="UT22084-058-003-19"/>
+          <p tid="23">“Lord of nāgas, in this way, all phenomena are inconceivable and have the essential quality of being
+            illusory. Lord of nāgas, since bodhisattvas are skilled in this regard, they understand that any phenomenon only comes
+            to exist by virtue of being constructed. Knowing this, they therefore engage in virtue. Then, because phenomena are
+            constructed, when such virtuous actions are performed, the resultant aggregates, elements, and sense sources are
+            elegant, lovely to behold, and beautiful. </p>
+          <milestone unit="chunk" xml:id="UT22084-058-003-20"/>
+          <p tid="24">“Lord of nāgas, the body of a thus-gone one is born from merits numbering in the trillions. This body, which
+            is adorned with marks, perfectly complete, and splendorous, outshines the worlds of gods and humans and prevails
+            uninterruptedly. Consider how even the great brahmā gods, who hold dominion over one million worlds, appear faded, and
+            their eyes are blinded, when they look upon the body of a thus-gone one. Lord of nāgas, look at the forms, marks,
+            bodies, and adornments of these bodhisattvas. Lord of nāgas, they are all beautifully produced by the performance of
+            virtuous actions. <ref cRef="F.199.a" type="folio" xml:id="UT22084-058-003-118"/>
+          </p>
+          <milestone unit="chunk" xml:id="UT22084-058-003-21"/>
+          <p tid="25">“Lord of nāgas, this dominion of yours likewise arose from a great amount of merit. Lord of nāgas, all the
+            dominions of Śakra, Brahmā, and the guardians of the world, and those of the gods, nāgas, yakṣas, gandharvas, asuras,
+            garuḍas, kiṃnaras, mahoragas, humans, and nonhumans, likewise arise from merit. Lord of nāgas, the various bodies
+            within this ocean—whether they are ugly and unshapely, shapely, large, and strong, or small and thin—all those
+            bodies are products of the diversity of virtuous and nonvirtuous actions of mind, body, speech, and intellect that
+            each individual engaged in. </p>
+          <p tid="26">“Lord of nāgas, because of this, it is said that ‘Beings must be confident in the way karma is appropriated
+            and inherited, shapes beings’ birth, and ripens.’<note place="end" index="5" xml:id="UT22084-058-003-23"> This is a
+              standardized formula that is very commonly repeated; a version is even found, for example, in the <title xml:lang="Pi-Ltn">Upajjhatthana Sutta</title> of the Pali Canon, as the fifth of the five recollections. These
+              recollections are recited daily by many modern Theravāda Buddhists.</note>
                     </p>
-                                <milestone unit="chunk" xml:id="UT22084-058-003-24"/>
-                                <p tid="27">“Lord of nāgas, you should train in this way. Being confident in the way actions are appropriated, inherited, and ripen, you
-                                        will become focused on producing virtuous qualities. You will not debase your view. You will not give rise to nihilist
-                                        or eternalist views. You will please those who are worthy of veneration and, having pleased them, you will also show
-                                        them respect. Then, because of that respect, the entire world, including the gods, will show their respect to you. </p>
-                                <milestone unit="chunk" xml:id="UT22084-058-003-25"/>
-                                <p tid="28">“Lord of nāgas, there is one teaching that severs, for all beings, all the paths that lead to the unfortunate destinies, the
-                                        lower realms, the unfree states. What is that one teaching? It is to contemplate virtuous qualities while thinking,
-                                        ‘However I am now, it will pass just like the days go by.’<note place="end" index="6" xml:id="UT22084-058-003-26"> This translation is tentative. The Tibetan
-                                                reads, <foreign xml:lang="Bo-Ltn" type="quote">bdag ji ltar gyur cing nyin zhag rnams ’gro zhig gu snyam du dge
-                                                        ba’i chos rnams la rab tu rtog pa’o</foreign>.</note> By repeatedly contemplating virtuous qualities in
-                                        this way, there will be no opportunity <ref cRef="F.199.b" type="folio"/> for nonvirtuous thoughts and mental states to arise. Having abandoned
-                                        nonvirtue and being endowed with virtuous qualities in this way, such beings have a pure outlook and they will find
-                                        company with the buddhas and bodhisattvas, and with the noble hearers and solitary buddhas.</p>
-                                <milestone unit="chunk" xml:id="UT22084-058-003-27"/>
-                                <p tid="29">“Lord of nāgas, what are those virtuous qualities? The virtuous qualities are the roots and foundations of the excellence of
-                                        gods and humans. They are the roots and foundations of the awakening of the hearers and solitary buddhas. They are the
-                                        roots and foundations of unexcelled and perfect awakening. </p>
-                                <milestone unit="chunk" xml:id="UT22084-058-003-28"/>
-                                <p tid="30">“What are those roots and foundations? They are the paths of the ten virtues. What are those paths of the ten virtues? They
-                                        are to forsake the following: killing, taking what was not given, sexual misconduct, lying, slander, harsh words,
-                                        meaningless talk, covetousness, malevolence, and wrong views. The abandonment of these constitutes the paths of the ten
-                                        virtues. They are the roots and foundations for both mundane and supramundane excellence. </p>
-                                <milestone unit="chunk" xml:id="UT22084-058-003-29"/>
-                                <p tid="31">“Lord of nāgas, those who have forsaken killing will obtain ten qualities of pacification. Those ten qualities are: they will
-                                        grant fearlessness to all beings; they will regard all beings with love; they will eliminate the tendency for
-                                        aggression; they will be able to reduce disease; they will plant the seed for extending life; they will guard, protect,
-                                        and shield nonhumans; they will sleep happily, awaken happily, and not have negative dreams; they will have the gods’
-                                        protection even when asleep; they will be free from animosity and the propensity for animosity; and they will have no
-                                        fear of the lower realms <ref cRef="F.200.a" type="folio"/> and, having died and transmigrated, they will be born among the gods in the joyful
-                                        celestial realms. Lord of nāgas, those who have forsaken killing will obtain those ten qualities of pacification. If
-                                        they dedicate the roots of virtue of forsaking killing toward unexcelled and perfect awakening, then, because of those
-                                        roots of virtue, when they attain awakening the power of their mind will be such that their lifespans become
-                                        limitless.</p>
-                                <milestone unit="chunk" xml:id="UT22084-058-003-30"/>
-                                <p tid="32">“Lord of nāgas, those who have forsaken taking what was not given will obtain ten qualities of confidence. Those ten
-                                        qualities are: they will have great wealth and that wealth will not be taken by kings, thieves, fire, water, enemies, or
-                                        neighbors; they will be well liked because they are pleasing to many beings; they will not have the secondary
-                                        afflictions; they will be trusted by those who have wealth; their praises will be sung in every direction and they will
-                                        not fear harm from adversaries anywhere; the words and verses of the praises of their virtue will be sublime; they will
-                                        not be timid, engaging with those around them without anxiety; they will obtain abundant life, power, beauty, happiness,
-                                        eloquence, resources, and wealth; they will be inclined toward expansive generosity; and after leaving this body, they
-                                        will be born among the gods in the joyful celestial realms. Lord of nāgas, those who have forsaken taking what was not
-                                        given will obtain those ten qualities of confidence. If they dedicate the roots of virtue of forsaking taking what was
-                                        not given toward unexcelled and perfect awakening, then, because of those roots of virtue, knowing themselves to possess
-                                        the wisdom of a thus-gone one that is free of secondary afflictions, <ref cRef="F.200.b" type="folio"/> they will fully awaken to unexcelled and
-                                        perfect buddhahood. </p>
-                                <milestone unit="chunk" xml:id="UT22084-058-003-31"/>
-                                <p tid="33">“Lord of nāgas, those who have forsaken sexual misconduct will obtain four qualities that are praised by the wise. Those four
-                                        qualities are: they will have restraint of the senses; they will overcome excitement; they will be praised by the whole
-                                        world; and they will not seduce married women. Lord of nāgas, those who have forsaken sexual misconduct will obtain
-                                        those four qualities that are praised by the wise. If they dedicate the roots of virtue of forsaking sexual misconduct
-                                        toward unexcelled and perfect awakening, then, because of those roots of virtue, they will obtain the sheathed genitals,
-                                        which are a mark of a great being.</p>
-                                <milestone unit="chunk" xml:id="UT22084-058-003-32"/>
-                                <p tid="34">“Lord of nāgas, those who have forsaken lying will obtain eight qualities that are praised by gods and humans. Those eight
-                                        qualities are: They will have a clean face with the scent of a blue lotus; they will be held as authoritative by all
-                                        beings; they will become singularly powerful because they are beloved by gods and humans; they will alleviate the fears
-                                        of spirits due to their assurances; they will be pure in body, speech, and mind because of their excellent altruism;
-                                        their happiness will increase because their words are free of confusion; their voices will be heard because their words
-                                        are worthy of being remembered; and they will be free of wrongdoing among gods and humans because they have obtained
-                                        insight. Lord of nāgas, those who have forsaken lying will obtain those eight qualities that are praised by gods and
-                                        humans. If they dedicate the roots of virtue of forsaking lying toward unexcelled and perfect awakening, then, because
-                                        of those roots of virtue, their words will be in accord with the truth. </p>
-                                <milestone unit="chunk" xml:id="UT22084-058-003-33"/>
-                                <p tid="35">“Lord of nāgas, those who have forsaken slander will obtain five qualities of indivisibility. <ref cRef="F.201.a" type="folio"/> Those five qualities
-                                        are: they will obtain indestructible bodies because they have transcended the terror of being harmed by others; they
-                                        will obtain unswerving retinues because they do not desire that which others own; they will obtain unwavering faith
-                                        because they trust that actions bear fruit; they will be indivisible from the Dharma because they are dedicated to
-                                        accomplishment; and they will obtain unshakable friendship because they are undeceiving. Lord of nāgas, those who have
-                                        forsaken slander will obtain those five qualities of indivisibility. If they dedicate the roots of virtue of forsaking
-                                        slander toward unexcelled and perfect awakening, then, because of those roots of virtue, they will become thus-gone ones
-                                        with an indivisible retinues; not even all the māras and opposing teachers will be able to divide the followers of such
-                                        thus-gone ones. </p>
-                                <milestone unit="chunk" xml:id="UT22084-058-003-34"/>
-                                <p tid="36">“Lord of nāgas, those who have forsaken harsh words will obtain eight purities of speech. Those eight are: timely speech,
-                                        beneficial speech, appropriate speech, gentle speech, comprehensible speech, audible speech, speech that pleases many
-                                        beings, and dignified speech. Lord of nāgas, those who have forsaken harsh words will obtain those eight purities of
-                                        speech. If they dedicate the roots of virtue of forsaking harsh words toward unexcelled and perfect awakening, then,
-                                        because of those roots of virtue, they will become thus-gone ones with voices that resound like Brahmā’s speech.</p>
-                                <milestone unit="chunk" xml:id="UT22084-058-003-35"/>
-                                <p tid="37">“Lord of nāgas, those who have forsaken meaningless talk will obtain three complete certainties. Those three are: because of
-                                        their timely words they will certainly please the wise; because they answer<note place="end" index="7" xml:id="UT22084-058-003-36"> Reading <foreign xml:lang="Bo-Ltn" type="term">glon</foreign> from S in place of <foreign xml:lang="Bo-Ltn" type="term">lon</foreign>.</note> questions so well, their minds will certainly reach the truth; and because they
-                                        are genuine friends, they will certainly obtain the greatness of gods and humans. Lord of nāgas, those who have forsaken
-                                        meaningless talk <ref cRef="F.201.b" type="folio"/> will obtain those three complete certainties. If they dedicate the roots of virtue of
-                                        forsaking meaningless talk toward unexcelled and perfect awakening, then, because of those roots of virtue, they will
-                                        become thus-gone ones who teach continuously and do not otherwise speak.</p>
-                                <milestone unit="chunk" xml:id="UT22084-058-003-37"/>
-                                <p tid="38">“Lord of nāgas, those who have forsaken covetousness will obtain five strengths. Those five are: because they do not have
-                                        impaired faculties they will obtain strength of body, speech, and mind; because they are unassailable by all enemies
-                                        they will obtain vast dominion over resources and power; due to the power of their merit, they will experience all the
-                                        vast pleasures and enjoyments; because they obtain the supreme joy<note place="end" index="8" xml:id="UT22084-058-003-38"> Reading <foreign xml:lang="Bo-Ltn" type="term">dga’ ba</foreign> from S, C, D: <foreign xml:lang="Bo-Ltn" type="term">dgab
-                                                pa</foreign>.</note> they will be honored by kings and lords; and because they lack any prior jealousy, the
-                                        wealth they obtain will be a hundred thousand times greater than what they wished for. Lord of nāgas, those who have
-                                        forsaken covetousness will obtain those five strengths. If they dedicate the roots of virtue of forsaking covetousness
-                                        toward unexcelled and perfect awakening, then, because of those roots of virtue, they will become the sole teachers,
-                                        thus-gone ones who are revered by the three worlds.</p>
-                                <milestone unit="chunk" xml:id="UT22084-058-003-39"/>
-                                <p tid="39">“Lord of nāgas, those who have forsaken malevolence will obtain eight qualities that bring peace of mind. Those eight
-                                        qualities are: they will be inclined toward nonviolence; they will be inclined toward pacifying malevolence; they will
-                                        be inclined toward eliminating conflicts and quarrels; they will be inclined toward being honest, kind, and gentle; they
-                                        will be renowned as noble beings; they will have greater ability to benefit all beings through such means as delighting
-                                        in others’ happiness and having loving kindness; they will be honored by many beings since they delight in others’
-                                        happiness and have much faith; and because they are kind and capable, <ref cRef="F.202.a" type="folio"/> it will not be difficult to attain
-                                        rebirth in the abode of Brahmā. Lord of nāgas, those who have forsaken malevolence will obtain those eight qualities
-                                        that bring peace of mind. If they dedicate the roots of virtue of forsaking malevolence toward unexcelled and perfect
-                                        awakening, then, because of those roots of virtue, they will become thus-gone ones with unobstructed minds whom one
-                                        never tires of seeing. </p>
-                                <milestone unit="chunk" xml:id="UT22084-058-003-40"/>
-                                <p tid="40">“Lord of nāgas, those who have forsaken wrong views will obtain ten excellent qualities. Those ten qualities are: their
-                                        thoughts will become virtuous and they find virtuous friends; because of trusting that actions bear fruit they do not
-                                        commit evil deeds even at the cost of their lives; they consider the Buddha to be their deity and they do not consider
-                                        anyone else to be their deity; they have a sincere view because they do not believe in wonders and luck; they associate
-                                        with gods and humans, but they do not associate with animals and those who live in the realm of the Lord of Death; they
-                                        obtain distinction by practicing virtue; they have entered the path of the noble ones because they do not follow false
-                                        paths; they are free from the belief in the transitory collection and they have abandoned all evil deeds; they have
-                                        unobscured insight because they have journeyed toward perfection and entered perfection; and they are free from unfree
-                                        states among gods and humans. Lord of nāgas, those who have forsaken wrong views will obtain those ten excellent
-                                        qualities. If they dedicate the roots of virtue of forsaking wrong views toward unexcelled and perfect awakening, then,
-                                        because of those roots of virtue, they will manifest all the qualities of a buddha; they will become thus-gone ones with
-                                        swift supernatural knowledge.</p>
-                                <milestone unit="chunk" xml:id="UT22084-058-003-41"/>
-                                <p tid="41">“Lord of nāgas,<note place="end" index="9" xml:id="UT22084-058-003-42"> The following section detailing the negative effects of engaging in the ten nonvirtuous
-                                  acts, until the beginning of the section on engaging with generosity (starting on <ptr target="#UT22084-058-003-53"/>: “Lord of nāgas, if
-                                                bodhisattvas who have forsaken killing engage in generosity”) is absent from Toh 153.
-                                  See the introduction (<ptr target="#UT22084-058-003-4"/>) for more information on this sūtra.</note> these paths of the ten virtues are the roots and
-                                        foundations for all the mundane and the supramundane excellence up to and including unexcelled and perfect awakening.
-                                        Their opposites <ref cRef="F.202.b" type="folio"/> are the paths of the ten nonvirtues. If one has predominantly resorted to, cultivated, and
-                                        engaged in them to a great extent, that is cause for birth in the hell realms. If one has engaged in them to a middling
-                                        extent, that is cause for birth in the realm of animals. If one has engaged in them to a lesser extent, then that is
-                                        cause for birth in the realm of the Lord of Death. </p>
-                                <milestone unit="chunk" xml:id="UT22084-058-003-43"/>
-                                <p tid="42">“Furthermore, lord of nāgas, those who have practiced, cultivated, and engaged in killing to a great extent will be led to
-                                        the hell realms, to the animal realm, or to the realm of the Lord of Death. Even if they are subsequently born in the
-                                        human realm, they will experience two consequences: their lives will be shortened, and they will be sickly.</p>
-                                <milestone unit="chunk" xml:id="UT22084-058-003-44"/>
-                                <p tid="43">“Those who take what was not given will be led to the hell realms, to the animal realm, or to the realm of the Lord of Death.
-                                        Even if they are subsequently born in the human realm, they will experience two consequences: they will have few
-                                        resources and their resources will be ordinary.</p>
-                                <milestone unit="chunk" xml:id="UT22084-058-003-45"/>
-                                <p tid="44">“Those who engage in sexual misconduct will be led to the hell realms, to the animal realm, or to the realm of the Lord of
-                                        Death. Even if they are subsequently born in the human realm, they will experience two consequences: their followers
-                                        will not be trustworthy, and their wives will be adversarial. </p>
-                                <milestone unit="chunk" xml:id="UT22084-058-003-46"/>
-                                <p tid="45">“Those who engage in lying will be led to the hell realms, to the animal realm, or to the realm of the Lord of Death. Even if
-                                        they are subsequently born in the human realm, they will experience two consequences: they will be greatly criticized,
-                                        and they will be deceived by others. </p>
-                                <milestone unit="chunk" xml:id="UT22084-058-003-47"/>
-                                <p tid="46">“Those who engage in slander will be led to the hell realms, to the animal realm, or to the realm of the Lord of Death. Even
-                                        if they are subsequently born in the human realm, they will experience two consequences: their followers will be in
-                                        discord and have bad characters. </p>
-                                <milestone unit="chunk" xml:id="UT22084-058-003-48"/>
-                                <p tid="47">“Those who use harsh words will be led to the hell realms, to the animal realm, or to the realm of the Lord of Death. Even if
-                                        they are subsequently born in the human realm, <ref cRef="F.203.a" type="folio"/> they will experience two consequences: they will hear
-                                        unpleasant speech and aggressive speech.</p>
-                                <milestone unit="chunk" xml:id="UT22084-058-003-49"/>
-                                <p tid="48">“Those who engage in meaningless talk will be led to the hell realms, to the animal realm, or to the realm of the Lord of
-                                        Death. Even if they are subsequently born in the human realm, they will experience two consequences: their words will
-                                        not be valued, and their eloquence will be inconsistent.</p>
-                                <milestone unit="chunk" xml:id="UT22084-058-003-50"/>
-                                <p tid="49">“Those who engage in covetousness will be led to the hell realms, to the animal realm, or to the realm of the Lord of Death.
-                                        Even if they are subsequently born in the human realm, they will experience two consequences: they will be insatiable,
-                                        and their desires will increase.</p>
-                                <milestone unit="chunk" xml:id="UT22084-058-003-51"/>
-                                <p tid="50">“Those who engage in malevolence will be led to the hell realms, to the animal realm, or to the realm of the Lord of Death.
-                                        Even if they are subsequently born in the human realm, they will experience two consequences: they will crave what is
-                                        unhelpful and others will do them harm.</p>
-                                <milestone unit="chunk" xml:id="UT22084-058-003-52"/>
-                                <p tid="51">“Those who hold wrong views will be led to the hell realms, to the animal realm, or to the realm of the Lord of Death. Even
-                                        if they are subsequently born in the human realm, they will experience two consequences: they will lapse into degenerate
-                                        views and they will be deceitful. Therefore, lord of nāgas, these ten nonvirtues will truly give rise to an immeasurably
-                                        great mass of suffering.</p>
-                                <milestone unit="chunk" xml:id="UT22084-058-003-53"/>
-                                <p tid="52">“Lord of nāgas, if bodhisattvas who have forsaken killing engage in generosity, then their wealth will increase. It will not
-                                        be stolen, and they will have long lives. And when they engage in bodhisattva activity, they will be free from any fear
-                                        of being harmed by others.</p>
-                                <milestone unit="chunk" xml:id="UT22084-058-003-54"/>
-                                <p tid="53">“Lord of nāgas, if bodhisattvas who have forsaken taking what has not been given engage in generosity, then their wealth will
-                                        increase. It will not be stolen, and they will become freely generous without consideration for any of their
-                                        possessions. <ref cRef="F.203.b" type="folio"/> And when they engage in bodhisattva activity, they will accomplish all the aspects of a buddha
-                                        and so gain unexcelled qualities.</p>
-                                <milestone unit="chunk" xml:id="UT22084-058-003-55"/>
-                                <p tid="54">“Lord of nāgas, if bodhisattvas who have forsaken sexual misconduct engage in generosity, then their wealth will increase. It
-                                        will not be stolen, and their wives will not be adulterous. And when they engage in bodhisattva activity, they will not
-                                        view any mother, child, or wife with hostility. </p>
-                                <milestone unit="chunk" xml:id="UT22084-058-003-56"/>
-                                <p tid="55">“Lord of nāgas, if bodhisattvas who have forsaken lying engage in generosity, then their wealth will increase. It will not be
-                                        stolen, and they will not be slandered but earnestly defended. And when they engage in bodhisattva activity, they will
-                                        act as they say, and they will keep their word. </p>
-                                <milestone unit="chunk" xml:id="UT22084-058-003-57"/>
-                                <p tid="56">“Lord of nāgas, if bodhisattvas who have forsaken slander engage in generosity, then their wealth will increase. It will not
-                                        be stolen, and their followers will not be divided. And when they engage in bodhisattva activity, they will gain
-                                        retinues of bodhisattvas because their outlook is harmonious. </p>
-                                <milestone unit="chunk" xml:id="UT22084-058-003-58"/>
-                                <p tid="57">“Lord of nāgas, if bodhisattvas who have forsaken harsh words engage in generosity, then their wealth will increase. It will
-                                        not be stolen, and their words will be heeded and respected. And when they engage in bodhisattva activity, no one in
-                                        their retinues will be discontent.</p>
-                                <milestone unit="chunk" xml:id="UT22084-058-003-59"/>
-                                <p tid="58">“Lord of nāgas, if bodhisattvas who have forsaken meaningless talk engage in generosity, then their wealth will increase. It
-                                        will not be stolen, and their words will become worth hearing and trustworthy. And when they engage in bodhisattva
-                                        activity, they will be skilled at cutting through all doubts.</p>
-                                <milestone unit="chunk" xml:id="UT22084-058-003-60"/>
-                                <p tid="59">“Lord of nāgas, if bodhisattvas who have forsaken covetousness engages in generosity, then their wealth will increase. It
-                                        will not be stolen, and their minds will be inclined toward great pleasures and enjoyments. <ref cRef="F.204.a" type="folio"/> And when they
-                                        engage in bodhisattva activity, they will aspire to the vast and they will be renowned as mighty.</p>
-                                <milestone unit="chunk" xml:id="UT22084-058-003-61"/>
-                                <p tid="60">“Lord of nāgas, if bodhisattvas who have forsaken malevolence engages in generosity, then their wealth will increase. It will
-                                        not be stolen. They will be beautiful, and they will delight and please many beings. And when they engage in bodhisattva
-                                        activity, they will have unobstructed intellect, unobstructed minds, and unimpaired faculties.</p>
-                                <milestone unit="chunk" xml:id="UT22084-058-003-62"/>
-                                <p tid="61">“Lord of nāgas, if bodhisattvas who have forsaken wrong views engages in generosity, then their wealth will increase. It will
-                                        not be stolen. They will have faith in the Buddha and be born into households with correct views. And when they engage
-                                        in bodhisattva activity, they will always behold the Buddha, listen to the Dharma, and serve the Saṅgha, while never
-                                        failing to generate the intent for awakening. </p>
-                                <milestone unit="chunk" xml:id="UT22084-058-003-63"/>
-                                <p tid="62">“Lord of nāgas, if these paths of the ten virtues are adorned with generosity in that way, one will reap great fortune. If
-                                        these paths of the ten virtues are adorned with discipline, then aspirations for all buddha qualities will be fulfilled.
-                                        If these paths of the ten virtues are adorned with patience, then the excellent major and minor marks, and the voice of
-                                        a buddha, will be perfected. Likewise, if they are adorned with diligence, then māras and opponents will be overcome and
-                                        all buddha qualities will be perfected. If they are adorned with concentration, then mindfulness, intelligence,
-                                        understanding, modesty, and joy will be purified. If they are adorned with insight, then all degenerate views will be
-                                        vanquished. If they are adorned with love, then there will be no anger toward any being. If they are adorned with
-                                        compassion, then no beings will be abandoned. If they are adorned with joy, then one will not be discouraged. <ref cRef="F.204.b" type="folio"/>
-                                        If they are adorned with equanimity, then attachment and anger will be abandoned. If they are adorned with the means of
-                                        attraction, then they will ripen all beings. If they are adorned with the applications of mindfulness, then one will
-                                        become expert in the body, feelings, mind, and phenomena. If they are adorned with the correct relinquishments, then all
-                                        nonvirtuous qualities will be abandoned and all virtuous qualities will be perfected. If they are adorned with the four
-                                        bases of miraculous power, then body and mind will be light. If they are adorned with the five faculties, then one’s
-                                        faith will be stable, diligence will blaze, there will be no delusion, one will be skilled at training the mind, and one
-                                        will be skilled at eliminating all afflictions. If they are endowed with the powers, then one will not be oppressed and
-                                        will overcome all poverty and misfortune. If they are adorned with the limbs of awakening, then all phenomena will be
-                                        comprehended exactly as they are. If they are adorned with the path, then true wisdom will be obtained. If they are
-                                        adorned with tranquility, then all afflictions will be vanquished. If they are adorned with insight, then there will be
-                                        the insight and wisdom of comprehending all phenomena exactly as they are. If they are adorned with skillful means, then
-                                        one will attain compounded and uncompounded happiness. </p>
-                                <milestone unit="chunk" xml:id="UT22084-058-003-64"/>
-                                <p tid="63">“Lord of nāgas, in short, by means of these paths of the ten virtues, the ten powers will be perfected. Everything from the
-                                        attainment of the four types of fearlessness and the eighteen unique qualities of a buddha up to the attainment of all
-                                        the qualities of a buddha will be perfected. Therefore, lord of nāgas, you must strive to adorn the paths of the ten
-                                        virtues with these numerous distinctions.</p>
-                                <milestone unit="chunk" xml:id="UT22084-058-003-65"/>
-                                <p tid="64">“Lord of nāgas, it is like this analogy: The earth is the foundation for all that is based on the ground, such as all
-                                        villages, towns, cities, districts, regions, and kingdoms. <ref cRef="F.205.a" type="folio"/> It is the basis for all grass, shrubs, herbs,
-                                        forests, and farmland, and all seeds, sprouts, and harvests. It is where all sowing, ploughing, and cultivation take
-                                        place. In the same way, lord of nāgas, the paths of the ten virtues are the basis for taking birth in the realms of gods
-                                        and humans. They are the basis for everything from the path of learning to achieving the fruition of no-more-learning,
-                                        and the awakening of the hearers and the solitary buddhas. They are also the basis for everything from all buddha and
-                                        bodhisattva acts all the way up to all buddha qualities.”</p>
-                                <milestone unit="chunk" xml:id="UT22084-058-003-66"/>
-                                <p tid="65">When the Blessed One had said these words, the nāga king Sāgara, the monks, the bodhisattvas, the whole assembly, and the
-                                        world with its gods, humans, asuras, and gandharvas rejoiced and praised the Blessed One’s words.</p>
-                                <milestone unit="chunk" xml:id="UT22084-058-003-67"/>
-                                <trailer tid="66">This concludes the noble Great Vehicle sūtra “The Questions of the Nāga King Sāgara.”</trailer>
-                             </div>
-                                <div type="colophon">
-                                        <head type="colophon" tid="67">Colophon</head>
-                                        <milestone unit="chunk" xml:id="UT22084-058-003-68"/>
-                                        <p tid="68">It was translated, edited, and finalized, having been revised according to the new terminological register, by the
-                                                Indian scholars Jinamitra, Dānaśīla, and Munivarman, and the chief editor-translator Venerable Yeshé Dé and
-                                                others.</p>
-                                </div>
-                        </div>
-                </body>
-                <back>
-                        <div type="notes">
-                                <head type="notes" tid="69">Notes</head>
-                                <list type="abbreviations">
-                                        <head type="abbreviations" tid="70">Abbreviations</head>
-                                        <item xml:id="UT22084-058-003-69">
-                                                <abbr>D</abbr>
-                                                <expan>Degé Kangyur</expan>
-                                        </item>
-                                        <item xml:id="UT22084-058-003-79">
-                                                <abbr>Z</abbr>
-                                                <expan>Shey Palace Kangyur</expan>
-                                        </item>
-                                        <item xml:id="UT22084-058-003-80">
-                                                <abbr>C</abbr>
-                                                <expan>Choné Kangyur</expan>
-                                        </item>
-                                        <item xml:id="UT22084-058-003-81">
-                                                <abbr>S</abbr>
-                                                <expan>Stok Palace Kangyur</expan>
-                                        </item>
-                                </list>
-                        </div>
-                        <div type="listBibl">
-                                <head type="listBibl" tid="71">Bibliography</head>
-                                <div type="section">
-                                        <bibl xml:id="UT22084-058-003-70">
-                        <title xml:lang="Bo-Ltn">’phags pa klu’i rgyal po rgya mtshos zhus pa zhes bya ba theg pa chen po’i mdo</title>
-                                                        (<title xml:lang="Sa-Ltn">Ārya­sāgara­nāga­rāja­paripṛcchā­nāma­mahā­yāna­sūtra</title>). Toh. 154, Degé
-                                                Kangyur, vol. 58 (mdo sde, pha), folios 198b–205a.</bibl>
-                                        <bibl xml:id="UT22084-058-003-71">
-                        <title xml:lang="Bo-Ltn">’phags pa klu’i rgyal po rgya mtshos zhus pa zhes bya ba theg pa chen po’i mdo</title>
-                                                        (<title xml:lang="Sa-Ltn">Ārya­sāgara­nāga­rāja­paripṛcchā­nāma­mahā­yāna­sūtra</title>). bka’ ’gyur (dpe bsdur
-                                                ma) [Comparative Edition of the Kangyur], krung go’i bod rig pa zhib ’jug ste gnas kyi bka’ bstan dpe sdur khang
-                                                (The Tibetan Tripitaka Collation Bureau of the China Tibetology Research Center). 108 volumes. Beijing: krung
-                                                go’i bod rig pa dpe skrun khang (China Tibetology Publishing House), 2006–2009, vol. 58, pp. 519–536. </bibl>
-                                        <bibl xml:id="UT22084-058-003-72">
-                        <title xml:lang="Bo-Ltn">’phags pa klu’i rgyal po rgya mtshos zhus pa zhes bya ba theg pa chen po’i mdo</title>
-                                                        (<title xml:lang="Sa-Ltn">Ārya­sāgara­nāga­rāja­paripṛcchā­nāma­mahā­yāna­sūtra</title>). Stok no. 134, Stok
-                                                Palace Kangyur, vol. 66 (mdo sde, ba), folios 282r–291v.</bibl>
-                                        <bibl xml:id="UT22084-058-003-73">
-                        <title xml:lang="Bo-Ltn">sgra sbyor bam po gnyis pa</title>. Toh. 4347, Degé Tengyur, vol. 204 (sna tshogs, co),
-                                                folios 131b–160a.<!--Reference Toh 4347-->
+          <milestone unit="chunk" xml:id="UT22084-058-003-24"/>
+          <p tid="27">“Lord of nāgas, you should train in this way. Being confident in the way karma is appropriated and inherited
+            and the way it ripens, you will become focused on producing virtuous qualities. You will not debase your view. You
+            will not give rise to nihilist or eternalist views. You will please those who are worthy of veneration and, having
+            pleased them, you will also show them respect. Then, because of that respect, the entire world, including the gods,
+            will show their respect to you. </p>
+          <milestone unit="chunk" xml:id="UT22084-058-003-25"/>
+          <p tid="28">“Lord of nāgas, there is one teaching that severs, for all beings, all the paths that lead to the
+            unfortunate destinies, the lower realms, the unfavorable states. What is that one teaching? It is to contemplate
+            virtuous qualities while thinking, ‘However I am now, it will pass just like the days go by.’<note place="end" index="6" xml:id="UT22084-058-003-26"> This translation is tentative. The Tibetan reads, <foreign xml:lang="Bo-Ltn" type="quote">bdag ji ltar gyur cing nyin zhag rnams ’gro zhig gu snyam du dge ba’i chos rnams la rab tu rtog
+                pa’o</foreign>.</note> By repeatedly contemplating virtuous qualities in this way, there will be no opportunity
+              <ref cRef="F.199.b" type="folio" xml:id="UT22084-058-003-119"/> for nonvirtuous thoughts and mental states to arise. Having abandoned nonvirtue
+            and being endowed with virtuous qualities in this way, such beings have a pure outlook and they will find company with
+            the buddhas and bodhisattvas, and with the noble hearers and solitary buddhas.</p>
+          <lb/>
+          <milestone unit="chunk" xml:id="UT22084-058-003-27"/>
+          <p tid="29">“Lord of nāgas, what are those virtuous qualities? The virtuous qualities are the roots and foundations of
+            the excellence of gods and humans. They are the roots and foundations of the awakening of the hearers and solitary
+            buddhas. They are the roots and foundations of unexcelled and perfect awakening. </p>
+          <milestone unit="chunk" xml:id="UT22084-058-003-28"/>
+          <p tid="30">“What are those roots and foundations? They are the paths of the ten virtues. What are those paths of the
+            ten virtues? They are to forsake the following: killing, stealing, sexual misconduct, lying, slander, harsh words,
+            meaningless talk, covetousness, malevolence, and wrong views. The abandonment of these constitutes the paths of the
+            ten virtues. They are the roots and foundations for both mundane and supramundane excellence. </p>
+          <milestone unit="chunk" xml:id="UT22084-058-003-29"/>
+          <p tid="31">“Lord of nāgas, those who have forsaken killing will obtain ten qualities of pacification. What are these
+            ten qualities? They will grant fearlessness to all beings. They will regard all beings with love. They will eliminate
+            the tendency for aggression. They will be able to reduce disease. They will plant the seed for extending life. They
+            will guard, protect, and shield nonhumans. They will sleep happily, awaken happily, and not have negative dreams. They
+            will have the gods’ protection even when asleep. They will be free from animosity and the propensity for animosity.
+            And they will have no fear of the lower realms <ref cRef="F.200.a" type="folio" xml:id="UT22084-058-003-120"/> and, having died and transmigrated,
+            they will be born among the gods in the joyful celestial realms. Lord of nāgas, those who have forsaken killing will
+            obtain those ten qualities of pacification. If they dedicate the roots of virtue of forsaking killing toward
+            unexcelled and perfect awakening, then, because of those roots of virtue, when they attain awakening the power of
+            their mind will be such that their lifespans become limitless.</p>
+          <milestone unit="chunk" xml:id="UT22084-058-003-30"/>
+          <p tid="32">“Lord of nāgas, those who have forsaken stealing will obtain ten qualities of confidence. What are these ten
+            qualities? They will have great wealth and that wealth will not be taken by kings, thieves, fire, water, enemies, or
+            neighbors. They will be well liked because they are pleasing to many beings. They will not have the secondary
+            disturbing emotions. They will be trusted by those who have wealth. Their praises will be sung in every direction and they
+            will not fear harm from adversaries anywhere. The words and verses of the praises of their virtue will be sublime.
+            They will not be timid, engaging with those around them without anxiety. They will obtain abundant life, power,
+            beauty, happiness, eloquence, resources, and wealth. They will be inclined toward expansive generosity. And after
+            leaving this body, they will be born among the gods in the joyful celestial realms. Lord of nāgas, those who have
+            forsaken stealing they will obtain those ten qualities of confidence. If they dedicate the roots of virtue of
+            forsaking stealing toward unexcelled and perfect awakening, then, because of those roots of virtue, knowing themselves
+            to possess the wisdom of a thus-gone one that is free of secondary disturbing emotions, <ref cRef="F.200.b" type="folio" xml:id="UT22084-058-003-121"/>
+            they will fully awaken to unexcelled and perfect buddhahood. </p>
+          <milestone unit="chunk" xml:id="UT22084-058-003-31"/>
+          <p tid="33">“Lord of nāgas, those who have forsaken sexual misconduct will obtain four qualities that are praised by the
+            wise. What are these four qualities? They will have restraint of the senses. They will overcome excitement. They will
+            be praised by the whole world. And they will not seduce married women. Lord of nāgas, those who have forsaken sexual
+            misconduct will obtain those four qualities that are praised by the wise. If they dedicate the roots of virtue of
+            forsaking sexual misconduct toward unexcelled and perfect awakening, then, because of those roots of virtue, they will
+            obtain the sheathed genitals, which are a mark of a great being.</p>
+          <milestone unit="chunk" xml:id="UT22084-058-003-32"/>
+          <p tid="34">“Lord of nāgas, those who have forsaken lying will obtain eight qualities that are praised by gods and
+            humans. What are these eight qualities? They will have a clean face with the scent of a blue lotus. They will be held
+            as authoritative by all beings. They will become singularly powerful because they are beloved by gods and humans. They
+            will alleviate the fears of spirits due to their assurances. They will be pure in body, speech, and mind because of
+            their excellent altruism. Their happiness will increase because their words are free of confusion. Their voices will
+            be heard because their words are worthy of being remembered. And they will be free of wrongdoing among gods and humans
+            because they have obtained insight. Lord of nāgas, those who have forsaken lying will obtain those eight qualities
+            that are praised by gods and humans. If they dedicate the roots of virtue of forsaking lying toward unexcelled and
+            perfect awakening, then, because of those roots of virtue, their words will be in accord with the truth. </p>
+          <milestone unit="chunk" xml:id="UT22084-058-003-33"/>
+          <p tid="35">“Lord of nāgas, those who have forsaken slander will obtain five qualities of indivisibility. <ref cRef="F.201.a" type="folio" xml:id="UT22084-058-003-122"/> What are these five qualities? They will obtain indestructible bodies because they
+            have transcended the terror of being harmed by others. They will obtain unswerving retinues because they do not desire
+            that which others own. They will obtain unwavering faith because they trust that karma bears fruit. They will be
+            indivisible from the Dharma because they are dedicated to accomplishment. And they will obtain unshakable friendship
+            because they are undeceiving. Lord of nāgas, those who have forsaken slander will obtain those five qualities of
+            indivisibility. If they dedicate the roots of virtue of forsaking slander toward unexcelled and perfect awakening,
+            then, because of those roots of virtue, they will become thus-gone ones with an indivisible retinues; not even all the
+            māras and opposing teachers will be able to divide the followers of such thus-gone ones. </p>
+          <milestone unit="chunk" xml:id="UT22084-058-003-34"/>
+          <p tid="36">“Lord of nāgas, those who have forsaken harsh words will obtain eight purities of speech. What are these
+            eight? They are timely speech, beneficial speech, appropriate speech, gentle speech, comprehensible speech, audible
+            speech, speech that pleases many beings, and dignified speech. Lord of nāgas, those who have forsaken harsh words will
+            obtain those eight purities of speech. If they dedicate the roots of virtue of forsaking harsh words toward unexcelled
+            and perfect awakening, then, because of those roots of virtue, they will become thus-gone ones with voices that
+            resound like Brahmā’s speech.</p>
+          <milestone unit="chunk" xml:id="UT22084-058-003-35"/>
+          <p tid="37">“Lord of nāgas, those who have forsaken meaningless talk will obtain three complete certainties. What are
+            these three? Because of their timely words they will certainly please the wise. Because they answer<note place="end" index="7" xml:id="UT22084-058-003-36"> Reading <foreign xml:lang="Bo-Ltn" type="term">glon</foreign> from S in place
+              of <foreign xml:lang="Bo-Ltn" type="term">lon</foreign>.</note> questions so well, their minds will certainly reach
+            the truth. And because they are genuine friends, they will certainly obtain the greatness of gods and humans. Lord of
+            nāgas, those who have forsaken meaningless talk <ref cRef="F.201.b" type="folio" xml:id="UT22084-058-003-123"/> will obtain those three complete
+            certainties. If they dedicate the roots of virtue of forsaking meaningless talk toward unexcelled and perfect
+            awakening, then, because of those roots of virtue, they will become thus-gone ones who teach continuously and do not
+            otherwise speak.</p>
+          <milestone unit="chunk" xml:id="UT22084-058-003-37"/>
+          <p tid="38">“Lord of nāgas, those who have forsaken covetousness will obtain five strengths. What are these five?
+            Because they do not have impaired faculties they will obtain strength of body, speech, and mind. Because they are
+            unassailable by all enemies they will obtain vast dominion over resources and power. Due to the power of their merit,
+            they will experience all the vast pleasures and enjoyments. Because they obtain the supreme joy<note place="end" index="8" xml:id="UT22084-058-003-38"> Reading <foreign xml:lang="Bo-Ltn" type="term">dga’ ba</foreign> from S, C,
+              D: <foreign xml:lang="Bo-Ltn" type="term">dgab pa</foreign>.</note> they will be honored by kings and lords. And
+            because they lack any prior jealousy, the wealth they obtain will be a hundred thousand times greater than what they
+            wished for. Lord of nāgas, those who have forsaken covetousness will obtain those five strengths. If they dedicate the
+            roots of virtue of forsaking covetousness toward unexcelled and perfect awakening, then, because of those roots of
+            virtue, they will become the sole teachers, thus-gone ones who are revered by the three worlds.</p>
+          <milestone unit="chunk" xml:id="UT22084-058-003-39"/>
+          <p tid="39">“Lord of nāgas, those who have forsaken malevolence will obtain eight qualities that bring peace of mind.
+            What are these eight? They will be inclined toward nonviolence. They will be inclined toward pacifying malevolence.
+            They will be inclined toward eliminating conflicts and quarrels. They will be inclined toward being honest, kind, and
+            gentle. They will be renowned as noble beings. They will have greater ability to benefit all beings through such means
+            as delighting in others’ happiness and having loving kindness. They will be honored by many beings since they delight
+            in others’ happiness and have much faith. And because they are kind and capable, <ref cRef="F.202.a" type="folio" xml:id="UT22084-058-003-124"/> it
+            will not be difficult to attain rebirth in the abode of Brahmā. Lord of nāgas, those who have forsaken malevolence
+            will obtain those eight qualities that bring peace of mind. If they dedicate the roots of virtue of forsaking
+            malevolence toward unexcelled and perfect awakening, then, because of those roots of virtue, they will become
+            thus-gone ones with unobstructed minds whom one never tires of seeing. </p>
+          <milestone unit="chunk" xml:id="UT22084-058-003-40"/>
+          <p tid="40">“Lord of nāgas, those who have forsaken wrong views will obtain ten excellent qualities. What are these ten?
+            Their thoughts will become virtuous and they find virtuous friends; because of trusting that actions bear fruit they
+            do not commit evil deeds even at the cost of their lives. They consider the Buddha to be their deity and they do not
+            consider anyone else to be their deity. They have a sincere view because they do not believe in wonders and luck. They
+            associate with gods and humans, but they do not associate with animals and those who live in the realm of the Lord of
+            Death. They obtain distinction by practicing virtue. They have entered the path of the noble ones because they do not
+            follow false paths. They are free from the belief in the transitory collection and they have abandoned all evil deeds.
+            They have unobscured insight because they have journeyed toward perfection and entered perfection; and they are free
+            from unfavorable states among gods and humans. Lord of nāgas, those who have forsaken wrong views will obtain those
+            ten excellent qualities. If they dedicate the roots of virtue of forsaking wrong views toward unexcelled and perfect
+            awakening, then, because of those roots of virtue, they will manifest all the qualities of a buddha. They will become
+            thus-gone ones with swift supernatural knowledge.</p>
+          <lb/>
+          <milestone unit="chunk" xml:id="UT22084-058-003-41"/>
+          <p tid="41">“Lord of nāgas,<note place="end" index="9" xml:id="UT22084-058-003-42"> The following section detailing the
+              negative effects of engaging in the ten nonvirtuous acts, until the beginning of the section on engaging with
+              generosity (starting on <ptr target="#UT22084-058-003-53"/>: “Lord of nāgas, if bodhisattvas who have forsaken
+              killing engage in generosity”) is absent from Toh 153. See the introduction (<ptr target="#UT22084-058-003-4"/>) for
+              more information on this sūtra.</note> these paths of the ten virtues are the roots and foundations for all the
+            mundane and the supramundane excellence up to and including unexcelled and perfect awakening. Their opposites <ref cRef="F.202.b" type="folio" xml:id="UT22084-058-003-125"/> are the paths of the ten nonvirtues. If one has predominantly resorted to, cultivated,
+            and engaged in them to a great extent, that is cause for birth in the hell realms. If one has engaged in them to a
+            middling extent, that is cause for birth in the realm of animals. If one has engaged in them to a lesser extent, then
+            that is cause for birth in the realm of the Lord of Death. </p>
+          <milestone unit="chunk" xml:id="UT22084-058-003-43"/>
+          <p tid="42">“Furthermore, lord of nāgas, those who have practiced, cultivated, and engaged in killing to a great extent
+            will be led to the hell realms, to the animal realm, or to the realm of the Lord of Death. Even if they are
+            subsequently born in the human realm, they will experience two consequences: their lives will be shortened, and they
+            will be sickly.</p>
+          <milestone unit="chunk" xml:id="UT22084-058-003-44"/>
+          <p tid="43">“Those who steal will be led to the hell realms, to the animal realm, or to the realm of
+            the Lord of Death. Even if they are subsequently born in the human realm, they will experience two consequences: they
+            will have few resources and their resources will be ordinary.</p>
+          <milestone unit="chunk" xml:id="UT22084-058-003-45"/>
+          <p tid="44">“Those who engage in sexual misconduct will be led to the hell realms, to the animal realm, or to the realm
+            of the Lord of Death. Even if they are subsequently born in the human realm, they will experience two consequences:
+            their followers will not be trustworthy, and their wives will be adversarial. </p>
+          <milestone unit="chunk" xml:id="UT22084-058-003-46"/>
+          <p tid="45">“Those who engage in lying will be led to the hell realms, to the animal realm, or to the realm of the Lord
+            of Death. Even if they are subsequently born in the human realm, they will experience two consequences: they will be
+            greatly criticized, and they will be deceived by others. </p>
+          <milestone unit="chunk" xml:id="UT22084-058-003-47"/>
+          <p tid="46">“Those who engage in slander will be led to the hell realms, to the animal realm, or to the realm of the
+            Lord of Death. Even if they are subsequently born in the human realm, they will experience two consequences: their
+            attendants will be fractious and have bad characters. </p>
+          <milestone unit="chunk" xml:id="UT22084-058-003-48"/>
+          <p tid="47">“Those who use harsh words will be led to the hell realms, to the animal realm, or to the realm of the Lord
+            of Death. Even if they are subsequently born in the human realm, <ref cRef="F.203.a" type="folio" xml:id="UT22084-058-003-126"/> they will
+            experience two consequences: they will hear unpleasant speech and aggressive speech.</p>
+          <milestone unit="chunk" xml:id="UT22084-058-003-49"/>
+          <p tid="48">“Those who engage in meaningless talk will be led to the hell realms, to the animal realm, or to the realm
+            of the Lord of Death. Even if they are subsequently born in the human realm, they will experience two consequences:
+            their words will not be valued, and their eloquence will be unreliable.</p>
+          <milestone unit="chunk" xml:id="UT22084-058-003-50"/>
+          <p tid="49">“Those who engage in covetousness will be led to the hell realms, to the animal realm, or to the realm of
+            the Lord of Death. Even if they are subsequently born in the human realm, they will experience two consequences: they
+            will be insatiable, and their desires will increase.</p>
+          <milestone unit="chunk" xml:id="UT22084-058-003-51"/>
+          <p tid="50">“Those who engage in malevolence will be led to the hell realms, to the animal realm, or to the realm of the
+            Lord of Death. Even if they are subsequently born in the human realm, they will experience two consequences: they will
+            crave what is unhelpful and others will do them harm.</p>
+          <milestone unit="chunk" xml:id="UT22084-058-003-52"/>
+          <p tid="51">“Those who hold wrong views will be led to the hell realms, to the animal realm, or to the realm of the Lord
+            of Death. Even if they are subsequently born in the human realm, they will experience two consequences: they will
+            lapse into degenerate views and they will be deceitful. Therefore, lord of nāgas, these ten nonvirtues will truly give
+            rise to an immeasurably great mass of suffering.</p>
+          <lb/>
+          <milestone unit="chunk" xml:id="UT22084-058-003-53"/>
+          <p tid="52">“Lord of nāgas, if bodhisattvas who have forsaken killing engage in generosity, then their wealth will
+            increase. It will not be stolen, and they will have long lives. And when they engage in bodhisattva activity, they
+            will be free from any fear of being harmed by others.</p>
+          <milestone unit="chunk" xml:id="UT22084-058-003-54"/>
+          <p tid="53">“Lord of nāgas, if bodhisattvas who have forsaken stealing engage in generosity, then
+            their wealth will increase. It will not be stolen, and they will become freely generous without consideration for any
+            of their possessions. <ref cRef="F.203.b" type="folio" xml:id="UT22084-058-003-127"/> And when they engage in bodhisattva activity, they will
+            accomplish all the aspects of a buddha and so gain unexcelled qualities.</p>
+          <milestone unit="chunk" xml:id="UT22084-058-003-55"/>
+          <p tid="54">“Lord of nāgas, if bodhisattvas who have forsaken sexual misconduct engage in generosity, then their wealth
+            will increase. It will not be stolen, and their wives will not be adulterous. And when they engage in bodhisattva
+            activity, they will not view any mother, child, or wife with hostility. </p>
+          <milestone unit="chunk" xml:id="UT22084-058-003-56"/>
+          <p tid="55">“Lord of nāgas, if bodhisattvas who have forsaken lying engage in generosity, then their wealth will
+            increase. It will not be stolen, and they will not be slandered but earnestly defended. And when they engage in
+            bodhisattva activity, they will act as they say, and they will keep their word. </p>
+          <milestone unit="chunk" xml:id="UT22084-058-003-57"/>
+          <p tid="56">“Lord of nāgas, if bodhisattvas who have forsaken slander engage in generosity, then their wealth will
+            increase. It will not be stolen, and their followers will not be divided. And when they engage in bodhisattva
+            activity, they will gain retinues of bodhisattvas because their harmonious attitude. </p>
+          <milestone unit="chunk" xml:id="UT22084-058-003-58"/>
+          <p tid="57">“Lord of nāgas, if bodhisattvas who have forsaken harsh words engage in generosity, then their wealth will
+            increase. It will not be stolen, and their words will be heeded and respected. And when they engage in bodhisattva
+            activity, no one in their retinues will be discontent.</p>
+          <milestone unit="chunk" xml:id="UT22084-058-003-59"/>
+          <p tid="58">“Lord of nāgas, if bodhisattvas who have forsaken meaningless talk engage in generosity, then their wealth
+            will increase. It will not be stolen, and their words will become worth hearing and trustworthy. And when they engage
+            in bodhisattva activity, they will be skilled at cutting through all doubts.</p>
+          <milestone unit="chunk" xml:id="UT22084-058-003-60"/>
+          <p tid="59">“Lord of nāgas, if bodhisattvas who have forsaken covetousness engage in generosity, then their wealth will
+            increase. It will not be stolen, and their minds will be inclined toward great pleasures and enjoyments. <ref cRef="F.204.a" type="folio" xml:id="UT22084-058-003-128"/> And when they engage in bodhisattva activity, they will aspire to the vast and they
+            will be renowned as mighty.</p>
+          <milestone unit="chunk" xml:id="UT22084-058-003-61"/>
+          <p tid="60">“Lord of nāgas, if bodhisattvas who have forsaken malevolence engage in generosity, then their wealth will
+            increase. It will not be stolen. They will be beautiful, and they will delight and please many beings. And when they
+            engage in bodhisattva activity, they will have unobstructed intellect, unobstructed minds, and unimpaired
+            faculties.</p>
+          <milestone unit="chunk" xml:id="UT22084-058-003-62"/>
+          <p tid="61">“Lord of nāgas, if bodhisattvas who have forsaken wrong views engage in generosity, then their wealth will
+            increase. It will not be stolen. They will have faith in the Buddha and be born into households with correct views.
+            And when they engage in bodhisattva activity, they will always behold the Buddha, listen to the Dharma, and serve the
+            Saṅgha, while never failing to generate the mind set on awakening. </p>
+          <lb/>
+          <milestone unit="chunk" xml:id="UT22084-058-003-63"/>
+          <p tid="62">“Lord of nāgas, if these paths of the ten virtues are adorned with generosity in that way, one will reap
+            great fortune. If these paths of the ten virtues are adorned with discipline, then aspirations for all buddha
+            qualities will be fulfilled. If these paths of the ten virtues are adorned with patience, then the excellent major and
+            minor marks, and the voice of a buddha, will be perfected. Likewise, if they are adorned with diligence, then māras
+            and opponents will be overcome and all buddha qualities will be perfected. If they are adorned with concentration,
+            then mindfulness, intelligence, understanding, modesty, and joy will be purified. If they are adorned with insight,
+            then all degenerate views will be vanquished. If they are adorned with love, then there will be no anger toward any
+            being. If they are adorned with compassion, then no beings will be abandoned. If they are adorned with joy, then one
+            will not be discouraged. <ref cRef="F.204.b" type="folio" xml:id="UT22084-058-003-129"/> If they are adorned with equanimity, then attachment and
+            anger will be abandoned. If they are adorned with the means of attraction, then they will ripen all beings. If they
+            are adorned with the applications of mindfulness, then one will become expert in the body, feelings, mind, and
+            phenomena. If they are adorned with the correct relinquishments, then all nonvirtuous qualities will be abandoned and
+            all virtuous qualities will be perfected. If they are adorned with the four bases of miraculous power, then body and
+            mind will be light. If they are adorned with the five faculties, then one’s faith will be stable, diligence will
+            blaze, there will be no delusion, one will be skilled at training the mind, and one will be skilled at eliminating all
+            disturbing emotions. If they are endowed with the powers, then one will not be oppressed and will overcome all poverty and
+            misfortune. If they are adorned with the limbs of awakening, then all phenomena will be comprehended exactly as they
+            are. If they are adorned with the path, then true wisdom will be obtained. If they are adorned with tranquility, then
+            all disturbing emotions will be vanquished. If they are adorned with insight, then there will be the insight and wisdom of
+            comprehending all phenomena exactly as they are. If they are adorned with skillful means, then one will attain
+            compounded and uncompounded happiness. </p>
+          <milestone unit="chunk" xml:id="UT22084-058-003-64"/>
+          <p tid="63">“Lord of nāgas, in short, by means of these paths of the ten virtues, the ten powers will be perfected.
+            Everything from the attainment of the four types of fearlessness and the eighteen unique qualities of a buddha up to
+            the attainment of all the qualities of a buddha will be perfected. Therefore, lord of nāgas, you must strive to adorn
+            the paths of the ten virtues with these numerous distinctions.</p>
+          <milestone unit="chunk" xml:id="UT22084-058-003-65"/>
+          <p tid="64">“Lord of nāgas, comsider the following analogy: The earth is the foundation for all things established on the ground,
+            such as all villages, towns, cities, districts, regions, and kingdoms. <ref cRef="F.205.a" type="folio" xml:id="UT22084-058-003-130"/> It is the
+            basis for all grass, shrubs, herbs, forests, and farmland, and all seeds, sprouts, and harvests. It is where all
+            sowing, ploughing, and cultivation take place. In the same way, lord of nāgas, the paths of the ten virtues are the
+            basis for taking birth in the realms of gods and humans. They are the basis for everything from the path of learning
+            to achieving the fruition of no-more-learning, and the awakening of the hearers and the solitary buddhas. They are
+            also the basis for everything from all buddha and bodhisattva deeds all the way up to all buddha qualities.”</p>
+          <milestone unit="chunk" xml:id="UT22084-058-003-66"/>
+          <lb/>
+          <p tid="65">When the Blessed One had spoken these words, the nāga king Sāgara, the monks, the bodhisattvas, the whole
+            assembly, and the world with its gods, humans, asuras, and gandharvas rejoiced and praised the Blessed One’s
+            words.</p>
+          <milestone unit="chunk" xml:id="UT22084-058-003-67"/>
+          <trailer tid="66">This concludes the noble Great Vehicle sūtra “The Questions of the Nāga King Sāgara.”</trailer>
+        </div>
+        <div type="colophon" xml:id="UT22084-058-003-colophon">
+          <head type="colophon" tid="67">Colophon</head>
+          <milestone unit="chunk" xml:id="UT22084-058-003-68"/>
+          <p tid="68">Translated, edited, and finalized, having been revised according to the new terminological register,
+            by the Indian scholars Jinamitra, Dānaśīla, and Munivarman, and the chief editor-translator Bandé Yeshé Dé and
+            others.</p>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="notes">
+        <head type="notes" tid="69">Notes</head>
+        <list type="abbreviations">
+          <head type="abbreviations" tid="70">Abbreviations</head>
+          <item xml:id="UT22084-058-003-69">
+            <abbr>D</abbr>
+            <expan>Degé Kangyur</expan>
+          </item>
+          <item xml:id="UT22084-058-003-79">
+            <abbr>Z</abbr>
+            <expan>Shey Palace Kangyur</expan>
+          </item>
+          <item xml:id="UT22084-058-003-80">
+            <abbr>C</abbr>
+            <expan>Choné Kangyur</expan>
+          </item>
+          <item xml:id="UT22084-058-003-81">
+            <abbr>S</abbr>
+            <expan>Stok Palace Kangyur</expan>
+          </item>
+        </list>
+      </div>
+      <div type="listBibl">
+        <head type="listBibl" tid="71">Bibliography</head>
+        <div type="section" xml:id="UT22084-058-003-listBibl-1">
+          <bibl xml:id="UT22084-058-003-70">
+                        <title xml:lang="Bo-Ltn">’phags pa klu’i rgyal po rgya mtshos zhus pa zhes bya ba theg
+              pa chen po’i mdo</title> (<title xml:lang="Sa-Ltn">Ārya­sāgara­nāga­rāja­paripṛcchā­nāma­mahā­yāna­sūtra</title>).
+            Toh. 154, Degé Kangyur, vol. 58 (mdo sde, pha), folios 198b–205a.</bibl>
+          <bibl xml:id="UT22084-058-003-71">
+                        <title xml:lang="Bo-Ltn">’phags pa klu’i rgyal po rgya mtshos zhus pa zhes bya ba theg
+              pa chen po’i mdo</title> (<title xml:lang="Sa-Ltn">Ārya­sāgara­nāga­rāja­paripṛcchā­nāma­mahā­yāna­sūtra</title>).
+            bka’ ’gyur (dpe bsdur ma) [Comparative Edition of the Kangyur], krung go’i bod rig pa zhib ’jug ste gnas kyi bka’
+            bstan dpe sdur khang (The Tibetan Tripitaka Collation Bureau of the China Tibetology Research Center). 108 volumes.
+            Beijing: krung go’i bod rig pa dpe skrun khang (China Tibetology Publishing House), 2006–2009, vol. 58, pp. 519–536. </bibl>
+          <bibl xml:id="UT22084-058-003-72">
+                        <title xml:lang="Bo-Ltn">’phags pa klu’i rgyal po rgya mtshos zhus pa zhes bya ba theg
+              pa chen po’i mdo</title> (<title xml:lang="Sa-Ltn">Ārya­sāgara­nāga­rāja­paripṛcchā­nāma­mahā­yāna­sūtra</title>).
+            Stok no. 134, Stok Palace Kangyur, vol. 66 (mdo sde, ba), folios 282r–291v.</bibl>
+          <bibl xml:id="UT22084-058-003-73">
+                        <title xml:lang="Bo-Ltn">sgra sbyor bam po gnyis pa</title>. Toh. 4347, Degé Tengyur,
+            vol. 204 (sna tshogs, co), folios 131b–160a.<ref rend="pending" target="https://read.84000.co/translation/toh4347.html"/>
                     </bibl>
-                                        <bibl xml:id="UT22084-058-003-74">Denkarma (<title xml:lang="Bo-Ltn">pho brang stod thang ldan [/ lhan] dkar gyi
-                                                        chos ’gyur ro cog gi dkar chag</title>). Degé Tengyur, vol. 206 (sna tshogs,
-                                          jo), folios 294.b - 310.a.<!--Reference Toh 4364-->
+          <bibl xml:id="UT22084-058-003-74">Denkarma (<title xml:lang="Bo-Ltn">pho brang stod thang ldan [/ lhan] dkar gyi chos
+              ’gyur ro cog gi dkar chag</title>). Degé Tengyur, vol. 206 (sna tshogs, jo), folios 294.b -
+            310.a.<ref rend="pending" target="https://read.84000.co/translation/toh4364.html"/>
                     </bibl>
-                                        <bibl xml:id="UT22084-058-003-75">Herrmann-Pfandt, Adelheid. <title xml:lang="de">Die lHan kar ma: ein früher Katalog der ins Tibetische
-                                                        übersetzten buddhistischen Texte</title>. Wien: Verlag der Österreichischen Akademie der
-                                                Wissenschaften, 2008.</bibl>
-                                        <bibl xml:id="UT22084-058-003-76">Rulu. <title xml:lang="en">Bodhisattva Precepts</title>. Bloomington: AuthorHouse, 2012.</bibl>
-                                        <bibl xml:id="UT22084-058-003-77">Saddhaloka Bhikkhu, trans. <title xml:lang="en">The Discourse on the Ten Wholesome Ways of
-                                                        Action</title>. Hong Kong: Yan Boon Remembrance Committee, 1996.</bibl>
-                                        <bibl xml:id="UT22084-058-003-78">Wong, Mou-lam, trans. <title xml:lang="en">Shih shan yeh tao ching = The Buddhabhasita Dasabhadra Karmamarga
-                                                        Sutra</title>. Translated by Sikshananda-Nanjio. Singapore: n.d.</bibl>
-                                </div>
-                        </div>
-                        <div type="glossary">
-<list type="glossary">
-    <item>
-      <gloss type="term" xml:id="UT22084-058-003-82">
-        <term>applications of mindfulness</term>
-        <term xml:lang="Bo-Ltn">dran pa nye bar gzhag pa </term>
-                            <term xml:lang="bo">དྲན་པ་ཉེ་བར་གཞག་པ།</term>
-        <term xml:lang="Sa-Ltn">smṛtyupasthāna</term>
-        <term type="definition">The application of mindfulness with regard to body, feelings, mind, and phenomena.</term>
-        <term type="alternative"> </term>
-      </gloss>
-    </item>
-    <item>
-      <gloss type="term" xml:id="UT22084-058-003-83">
-        <term>asura</term>
-        <term xml:lang="Bo-Ltn">lha ma yin </term>
-                            <term xml:lang="bo">ལྷ་མ་ཡིན།</term>
-        <term xml:lang="Sa-Ltn">asura</term>
-        <term type="definition">The <term type="ignore">asuras</term>, sometimes called the demi-gods, are the enemies of the gods, fighting with them for supremacy. They are powerful
-          beings who live around Mount Sumeru and are usually classified as belonging to the higher realms.</term>
-        <term type="alternative"> </term>
-      </gloss>
-    </item>
-    <item>
-      <gloss type="term" xml:id="UT22084-058-003-84">
-        <term>bases of miraculous power</term>
-        <term xml:lang="Bo-Ltn">rdzu ’phrul gyi rkang pa </term>
-                            <term xml:lang="bo">རྫུ་འཕྲུལ་གྱི་རྐང་པ།</term>
-        <term xml:lang="Sa-Ltn">ṛddhipāda</term>
-        <term type="definition">The four supports for supernatural abilities: determination, discernment, diligence, and meditative concentration.</term>
-        <term type="alternative"> </term>
-      </gloss>
-    </item>
-    <item>
-      <gloss type="term" xml:id="UT22084-058-003-85">
-        <term>belief in the transitory collection</term>
-        <term xml:lang="Bo-Ltn">’jig tshogs la lta ba </term>
-                            <term xml:lang="bo">འཇིག་ཚོགས་ལ་ལྟ་བ།</term>
-        <term xml:lang="Sa-Ltn">satkāyadṛṣṭi</term>
-        <term type="definition">This term refers to the mistaken view that identifies the self with the ultimately transient collection of mind and body.</term>
-        <term type="alternative"> </term>
-      </gloss>
-    </item>
-    <item>
-      <gloss type="term" xml:id="UT22084-058-003-86">
-        <term>correct relinquishments</term>
-        <term xml:lang="Bo-Ltn">yang dag par spong ba </term>
-                            <term xml:lang="bo">ཡང་དག་པར་སྤོང་བ།</term>
-        <term xml:lang="Sa-Ltn">samyakprahāṇa</term>
-        <term type="definition">This term refers to a list of four: relinquishing negative acts that have been committed and will be committed in the future,
-          and increasing current and future positive acts.</term>
-        <term type="alternative"> </term>
-      </gloss>
-    </item>
-    <item>
-      <gloss type="term" xml:id="UT22084-058-003-87">
-        <term>courtyard</term>
-        <term xml:lang="Bo-Ltn">’khor gyi khyams </term>
-                            <term xml:lang="bo">འཁོར་གྱི་ཁྱམས།</term>
-        <term xml:lang="Sa-Ltn">maṇḍalamāḍa</term>
-        <term type="definition">This term describes a circular open space or a space for assembly. </term>
-        <term type="alternative"> </term>
-      </gloss>
-    </item>
-    <item>
-      <gloss type="term" xml:id="UT22084-058-003-88">
-        <term>eighteen unique qualities of a buddha</term>
-        <term xml:lang="Bo-Ltn">sangs rgyas kyi chos ma ’dres pa bco brgyad </term>
-                            <term xml:lang="bo">སངས་རྒྱས་ཀྱི་ཆོས་མ་འདྲེས་པ་བཅོ་བརྒྱད།</term>
-        <term xml:lang="Sa-Ltn">aṣṭādaśāveṇika­buddha­dharma</term>
-        <term type="definition">Eighteen special features of a buddha’s physical state, realization, activity, and wisdom that are not shared by ordinary
-          beings.</term>
-      </gloss>
-    </item>
-    <item>
-      <gloss type="term" xml:id="UT22084-058-003-89">
-        <term>five faculties</term>
-        <term xml:lang="Bo-Ltn">dbang po lnga </term>
-                            <term xml:lang="bo">དབང་པོ་ལྔ།</term>
-        <term xml:lang="Sa-Ltn">pañcendriya</term>
-        <term type="definition">Faith, diligence, mindfulness, absorption, and knowledge.</term>
-        <term type="alternative"> </term>
-      </gloss>
-    </item>
-    <item>
-      <gloss type="term" xml:id="UT22084-058-003-90">
-        <term>four types of fearlessness</term>
-        <term xml:lang="Bo-Ltn">mi ’jigs pa bzhi </term>
-                            <term xml:lang="bo">མི་འཇིགས་པ་བཞི།</term>
-        <term xml:lang="Sa-Ltn">caturabhaya</term>
-        <term type="definition">Fearlessness in declaring that one has (1) awakened, (2) ceased all illusions, (3) taught the obstacles to awakening, and (4)
-          shown the way to liberation.</term>
-      </gloss>
-    </item>
-    <item>
-      <gloss type="term" xml:id="UT22084-058-003-91">
-        <term>gandharva</term>
-        <term xml:lang="Bo-Ltn">dri za </term>
-                            <term xml:lang="bo">དྲི་ཟ།</term>
-        <term xml:lang="Sa-Ltn">gandharva</term>
-        <term type="definition">
-                                <term type="ignore">Gandharvas</term>, literally “smell eaters,” are a class of spirits, sometimes described as celestial musicians.</term>
-        <term type="alternative"> </term>
-      </gloss>
-    </item>
-    <item>
-      <gloss type="term" xml:id="UT22084-058-003-92">
-        <term>garuḍa</term>
-        <term xml:lang="Bo-Ltn">nam mkha’ lding </term>
-                            <term xml:lang="bo">ནམ་མཁའ་ལྡིང་།</term>
-        <term xml:lang="Sa-Ltn">garuḍa</term>
-        <term type="definition">A mythical creature which is half bird, half man, and is the enemy of serpents.</term>
-        <term type="alternative"> </term>
-      </gloss>
-    </item>
-    <item>
-      <gloss type="term" xml:id="UT22084-058-003-93">
-        <term>great brahmā gods</term>
-        <term xml:lang="Bo-Ltn">tshangs pa chen po </term>
-                            <term xml:lang="bo">ཚངས་པ་ཆེན་པོ།</term>
-        <term xml:lang="Sa-Ltn">mahābrahmā</term>
-        <term type="definition">Gods from the higher subdivision of the world of Brahmā.</term>
-      </gloss>
-    </item>
-    <item>
-      <gloss type="term" xml:id="UT22084-058-003-94">
-        <term>kiṃnara</term>
-        <term xml:lang="Bo-Ltn">mi ’am ci </term>
-                            <term xml:lang="bo">མི་འམ་ཅི།</term>
-        <term xml:lang="Sa-Ltn">kiṃnara</term>
-        <term type="definition">A race of celestial musicians who are half human and half horse.</term>
-        <term type="alternative"> </term>
-      </gloss>
-    </item>
-    <item>
-      <gloss type="term" xml:id="UT22084-058-003-95">
-        <term>limbs of awakening</term>
-        <term xml:lang="Bo-Ltn">byang chub kyi yan lag </term>
-                            <term xml:lang="bo">བྱང་ཆུབ་ཀྱི་ཡན་ལག</term>
-        <term xml:lang="Sa-Ltn">bodhyaṅga</term>
-        <term type="definition">Recollection, analysis, diligence, joy, pliancy, absorption, and equanimity.</term>
-        <term type="alternative"> </term>
-      </gloss>
-    </item>
-    <item>
-      <gloss type="term" xml:id="UT22084-058-003-96">
-        <term>mahoraga</term>
-        <term xml:lang="Bo-Ltn">lto ’phye chen po </term>
-                            <term xml:lang="bo">ལྟོ་འཕྱེ་ཆེན་པོ།</term>
-        <term xml:lang="Sa-Ltn">mahoraga</term>
-        <term type="definition">Literally “large serpent.” A subterranean semi-divine being that takes the form of a large serpent, sometimes with a human torso
-          and head.</term>
-        <term type="alternative"> </term>
-      </gloss>
-    </item>
-    <item>
-      <gloss type="term" xml:id="UT22084-058-003-97">
-        <term>means of attraction</term>
-        <term xml:lang="Bo-Ltn">bsdu ba’i dngos po </term>
-                            <term xml:lang="bo">བསྡུ་བའི་དངོས་པོ།</term>
-        <term xml:lang="Sa-Ltn">saṃgrahavastu</term>
-        <term type="definition">This is generally given as a list of four qualities or methods for attracting students: generosity, kind talk, meaningful
-          actions, and practicing what one preaches.</term>
-        <term type="alternative"> </term>
-      </gloss>
-    </item>
-    <item>
-      <gloss type="term" xml:id="UT22084-058-003-98">
-        <term>nāga</term>
-        <term xml:lang="Bo-Ltn">klu </term>
-                            <term xml:lang="bo">ཀླུ།</term>
-        <term xml:lang="Sa-Ltn">nāga</term>
-        <term type="definition">A semidivine class of beings who live in subterranean aquatic environments where they are known to guard wealth and esoteric
-          teachings. <term type="ignore">Nāgas</term> are associated with serpents and often assume a snakelike appearance. In Buddhist art and in written accounts, <term type="ignore">nāgas</term> are regularly
-          portrayed as being half human and half snake, and, as mentioned in this sūtra, said to have the ability to change into human form. Some <term type="ignore">nāgas</term> are
-          Dharma protectors, but they can also bring retribution if they are disturbed. <term type="ignore">Nāgas</term> likewise fight one another, wage war, and destroy the lands of
-          others by causing lighting, hail, and flooding.</term>
-        <term type="alternative"> </term>
-      </gloss>
-    </item>
-    <item>
-      <gloss type="term" xml:id="UT22084-058-003-99">
-        <term>opposing teacher</term>
-        <term xml:lang="Bo-Ltn">phas kyi rgol ba </term>
-                            <term xml:lang="bo">ཕས་ཀྱི་རྒོལ་བ།</term>
-        <term xml:lang="Sa-Ltn">parapravādī</term>
-        <term type="definition">One who teaches a false doctrine.</term>
-        <term type="alternative"> </term>
-      </gloss>
-    </item>
-    <item>
-      <gloss type="term" xml:id="UT22084-058-003-100">
-        <term>retinue</term>
-        <term xml:lang="Bo-Ltn">g.yog </term>
-                            <term xml:lang="bo">གཡོག</term>
-        <term xml:lang="Sa-Ltn">parivāra</term>
-        <term type="definition">The Tibetan and Sanskrit terms both carry a dual sense of “servant” or “<term type="ignore">retinue</term>.”</term>
-        <term type="alternative"> </term>
-      </gloss>
-    </item>
-    <item>
-      <gloss type="term" xml:id="UT22084-058-003-101">
-        <term>secondary afflictions</term>
-        <term xml:lang="Bo-Ltn">nye ba’i nyon mongs </term>
-                            <term xml:lang="bo">ཉེ་བའི་ཉོན་མོངས།</term>
-        <term xml:lang="Sa-Ltn">upakleśa</term>
-        <term type="definition">These are “secondary” in the sense that they flow from the primary afflictions of desire, aversion, and ignorance. There appears
-          to be no set list.</term>
-        <term type="alternative"> </term>
-      </gloss>
-    </item>
-    <item>
-      <gloss type="term" xml:id="UT22084-058-003-102">
-        <term>ten powers</term>
-        <term xml:lang="Bo-Ltn">stobs bcu </term>
-                            <term xml:lang="bo">སྟོབས་བཅུ།</term>
-        <term xml:lang="Sa-Ltn">daśabala</term>
-        <term type="definition">The classical list of the Buddha’s <term type="ignore">ten powers</term>, which appears frequently throughout both Pali and Sanskrit sources, refers to the
-          following powers of knowing (<foreign xml:lang="Sa-Ltn" type="term">jñānabala</foreign>): 1. Knowing what is possible and what is impossible (<foreign xml:lang="Sa-Ltn" type="term">sthānāsthāna</foreign>). 2. Knowing the ripening of karma
-          (<foreign xml:lang="Sa-Ltn" type="term">karmavipāka</foreign>). 3. Knowing the various inclinations (<foreign xml:lang="Sa-Ltn" type="term">nānādhimukti</foreign>). 4. Knowing the various elements (<foreign type="term" xml:lang="Sa-Ltn">nānādhātu</foreign>). 5. Knowing the supreme and lesser
-          faculties (<foreign type="term" xml:lang="Sa-Ltn">indriya­parāpara</foreign>). 6. Knowing the paths that lead to all destinations (<foreign xml:lang="Sa-Ltn" type="term">sarvatra­gāminī­pratipad</foreign>). 7. Knowing the concentrations, liberations,
-          absorptions, and attainments (<foreign type="term" xml:lang="Sa-Ltn">dhyāna­vimokṣa­samādhi­samāpatti</foreign>). 8. Knowing the recollection of past existences (<foreign type="term" xml:lang="Sa-Ltn">pūrva­nivāsānusmṛti</foreign>). 9. Knowing death
-          and rebirth (<foreign xml:lang="Sa-Ltn" type="term">cyutyupapatti</foreign>). 10. Knowing the exhaustion of the defilements (<foreign type="term" xml:lang="Sa-Ltn">āsravakṣaya</foreign>).</term>
-      </gloss>
-    </item>
-    <!--<item>
+          <bibl xml:id="UT22084-058-003-75">Herrmann-Pfandt, Adelheid. <title xml:lang="de">Die lHan kar ma: ein früher Katalog
+              der ins Tibetische übersetzten buddhistischen Texte</title>. Wien: Verlag der Österreichischen Akademie der
+            Wissenschaften, 2008.</bibl>
+          <bibl xml:id="UT22084-058-003-76">Rulu. <title xml:lang="en">Bodhisattva Precepts</title>. Bloomington: AuthorHouse,
+            2012.</bibl>
+          <bibl xml:id="UT22084-058-003-77">Saddhaloka Bhikkhu, trans. <title xml:lang="en">The Discourse on the Ten Wholesome
+              Ways of Action</title>. Hong Kong: Yan Boon Remembrance Committee, 1996.</bibl>
+          <bibl xml:id="UT22084-058-003-78">Wong, Mou-lam, trans. <title xml:lang="en">Shih shan yeh tao ching = The Buddhabhasita
+              Dasabhadra Karmamarga Sutra</title>. Translated by Sikshananda-Nanjio. Singapore: n.d.</bibl>
+        </div>
+      </div>
+      <div type="glossary">
+        <list type="glossary">
+          <item>
+            <gloss type="term" xml:id="UT22084-058-003-82">
+              <term>applications of mindfulness</term>
+              <term xml:lang="Bo-Ltn">dran pa nye bar gzhag pa </term>
+              <term xml:lang="bo">དྲན་པ་ཉེ་བར་གཞག་པ།</term>
+              <term xml:lang="Sa-Ltn">smṛtyupasthāna</term>
+              <term type="definition">The application of mindfulness with regard to body, feelings, mind, and phenomena.</term>
+              
+            </gloss>
+          </item>
+          <item>
+            <gloss type="term" xml:id="UT22084-058-003-83">
+              <term>asura</term>
+              <term xml:lang="Bo-Ltn">lha ma yin </term>
+              <term xml:lang="bo">ལྷ་མ་ཡིན།</term>
+              <term xml:lang="Sa-Ltn">asura</term>
+              <term type="definition">The <term type="ignore">asuras</term>, sometimes called the demigods, are the enemies of
+                the gods, fighting with them for supremacy. They are powerful beings who live around Mount Sumeru and are usually
+                classified as belonging to the higher realms.</term>
+              
+            </gloss>
+          </item>
+          <item>
+            <gloss type="term" xml:id="UT22084-058-003-84">
+              <term>bases of miraculous power</term>
+              <term xml:lang="Bo-Ltn">rdzu ’phrul gyi rkang pa </term>
+              <term xml:lang="bo">རྫུ་འཕྲུལ་གྱི་རྐང་པ།</term>
+              <term xml:lang="Sa-Ltn">ṛddhipāda</term>
+              <term type="definition">The four supports for supernatural abilities: determination, discernment, diligence, and
+                meditative concentration.</term>
+              
+            </gloss>
+          </item>
+          <item>
+            <gloss type="term" xml:id="UT22084-058-003-85">
+              <term>belief in the transitory collection</term>
+              <term xml:lang="Bo-Ltn">’jig tshogs la lta ba </term>
+              <term xml:lang="bo">འཇིག་ཚོགས་ལ་ལྟ་བ།</term>
+              <term xml:lang="Sa-Ltn">satkāyadṛṣṭi</term>
+              <term type="definition">This term refers to the mistaken view that identifies the self with the ultimately transient
+                collection of mind and body.</term>
+              
+            </gloss>
+          </item>
+          <item>
+            <gloss type="term" xml:id="UT22084-058-003-86">
+              <term>correct relinquishments</term>
+              <term xml:lang="Bo-Ltn">yang dag par spong ba </term>
+              <term xml:lang="bo">ཡང་དག་པར་སྤོང་བ།</term>
+              <term xml:lang="Sa-Ltn">samyakprahāṇa</term>
+              <term type="definition">This term refers to a list of four: relinquishing negative acts that have been committed and
+                will be committed in the future, and increasing current and future positive acts.</term>
+              
+            </gloss>
+          </item>
+          <item>
+            <gloss type="term" xml:id="UT22084-058-003-87">
+              <term>courtyard</term>
+              <term xml:lang="Bo-Ltn">’khor gyi khyams </term>
+              <term xml:lang="bo">འཁོར་གྱི་ཁྱམས།</term>
+              <term xml:lang="Sa-Ltn">maṇḍalamāḍa</term>
+              <term type="definition">This term describes a circular open space or a space for assembly. </term>
+              
+            </gloss>
+          </item>
+          <item>
+            <gloss type="term" xml:id="UT22084-058-003-88">
+              <term>eighteen unique qualities of a buddha</term>
+              <term xml:lang="Bo-Ltn">sangs rgyas kyi chos ma ’dres pa bco brgyad </term>
+              <term xml:lang="bo">སངས་རྒྱས་ཀྱི་ཆོས་མ་འདྲེས་པ་བཅོ་བརྒྱད།</term>
+              <term xml:lang="Sa-Ltn">aṣṭādaśāveṇika­buddha­dharma</term>
+              <term type="definition">Eighteen special features of a buddha’s physical state, realization, activity, and wisdom
+                that are not shared by ordinary beings.</term>
+            </gloss>
+          </item>
+          <item>
+            <gloss type="term" xml:id="UT22084-058-003-89">
+              <term>five faculties</term>
+              <term xml:lang="Bo-Ltn">dbang po lnga </term>
+              <term xml:lang="bo">དབང་པོ་ལྔ།</term>
+              <term xml:lang="Sa-Ltn">pañcendriya</term>
+              <term type="definition">Faith, diligence, mindfulness, absorption, and knowledge.</term>
+              
+            </gloss>
+          </item>
+          <item>
+            <gloss type="term" xml:id="UT22084-058-003-90">
+              <term>four types of fearlessness</term>
+              <term xml:lang="Bo-Ltn">mi ’jigs pa bzhi </term>
+              <term xml:lang="bo">མི་འཇིགས་པ་བཞི།</term>
+              <term xml:lang="Sa-Ltn">caturabhaya</term>
+              <term type="definition">Fearlessness in declaring that one has (1) awakened, (2) ceased all illusions, (3) taught
+                the obstacles to awakening, and (4) shown the way to liberation.</term>
+            </gloss>
+          </item>
+          <item>
+            <gloss type="term" xml:id="UT22084-058-003-91">
+              <term>gandharva</term>
+              <term xml:lang="Bo-Ltn">dri za </term>
+              <term xml:lang="bo">དྲི་ཟ།</term>
+              <term xml:lang="Sa-Ltn">gandharva</term>
+              <term type="definition">
+                                <term type="ignore">Gandharvas</term>, literally “smell eaters,” are a class of spirits,
+                sometimes described as celestial musicians.</term>
+              
+            </gloss>
+          </item>
+          <item>
+            <gloss type="term" xml:id="UT22084-058-003-92">
+              <term>garuḍa</term>
+              <term xml:lang="Bo-Ltn">nam mkha’ lding </term>
+              <term xml:lang="bo">ནམ་མཁའ་ལྡིང་།</term>
+              <term xml:lang="Sa-Ltn">garuḍa</term>
+              <term type="definition">A mythical creature which is half bird, half man, and is the enemy of serpents.</term>
+              
+            </gloss>
+          </item>
+          <item>
+            <gloss type="term" xml:id="UT22084-058-003-93">
+              <term>great brahmā gods</term>
+              <term xml:lang="Bo-Ltn">tshangs pa chen po </term>
+              <term xml:lang="bo">ཚངས་པ་ཆེན་པོ།</term>
+              <term xml:lang="Sa-Ltn">mahābrahmā</term>
+              <term type="definition">Gods from the higher subdivision of the world of Brahmā.</term>
+            </gloss>
+          </item>
+          <item>
+            <gloss type="term" xml:id="UT22084-058-003-94">
+              <term>kiṃnara</term>
+              <term xml:lang="Bo-Ltn">mi ’am ci </term>
+              <term xml:lang="bo">མི་འམ་ཅི།</term>
+              <term xml:lang="Sa-Ltn">kiṃnara</term>
+              <term type="definition">A race of celestial musicians who are half human and half horse.</term>
+              
+            </gloss>
+          </item>
+          <item>
+            <gloss type="term" xml:id="UT22084-058-003-95">
+              <term>limbs of awakening</term>
+              <term xml:lang="Bo-Ltn">byang chub kyi yan lag </term>
+              <term xml:lang="bo">བྱང་ཆུབ་ཀྱི་ཡན་ལག</term>
+              <term xml:lang="Sa-Ltn">bodhyaṅga</term>
+              <term type="definition">Recollection, analysis, diligence, joy, pliancy, absorption, and equanimity.</term>
+              
+            </gloss>
+          </item>
+          <item>
+            <gloss type="term" xml:id="UT22084-058-003-96">
+              <term>mahoraga</term>
+              <term xml:lang="Bo-Ltn">lto ’phye chen po </term>
+              <term xml:lang="bo">ལྟོ་འཕྱེ་ཆེན་པོ།</term>
+              <term xml:lang="Sa-Ltn">mahoraga</term>
+              <term type="definition">Literally “large serpent.” A subterranean semi-divine being that takes the form of a large
+                serpent, sometimes with a human torso and head.</term>
+              
+            </gloss>
+          </item>
+          <item>
+            <gloss type="term" xml:id="UT22084-058-003-97">
+              <term>means of attraction</term>
+              <term xml:lang="Bo-Ltn">bsdu ba’i dngos po </term>
+              <term xml:lang="bo">བསྡུ་བའི་དངོས་པོ།</term>
+              <term xml:lang="Sa-Ltn">saṃgrahavastu</term>
+              <term type="definition">This is generally given as a list of four qualities or methods for attracting students:
+                generosity, kind talk, meaningful actions, and practicing what one preaches.</term>
+              
+            </gloss>
+          </item>
+          <item>
+            <gloss type="term" xml:id="UT22084-058-003-98">
+              <term>nāga</term>
+              <term xml:lang="Bo-Ltn">klu </term>
+              <term xml:lang="bo">ཀླུ།</term>
+              <term xml:lang="Sa-Ltn">nāga</term>
+              <term type="definition">A semidivine class of beings who live in subterranean aquatic environments where they are
+                known to guard wealth and esoteric teachings. <term type="ignore">Nāgas</term> are associated with serpents and
+                often assume a snakelike appearance. In Buddhist art and in written accounts, <term type="ignore">nāgas</term> are
+                regularly portrayed as being half human and half snake, and, as mentioned in this sūtra, said to have the ability
+                to change into human form. Some <term type="ignore">nāgas</term> are Dharma protectors, but they can also bring
+                retribution if they are disturbed. <term type="ignore">Nāgas</term> likewise fight one another, wage war, and
+                destroy the lands of others by causing lighting, hail, and flooding.</term>
+              
+            </gloss>
+          </item>
+          <item>
+            <gloss type="term" xml:id="UT22084-058-003-99">
+              <term>opposing teacher</term>
+              <term xml:lang="Bo-Ltn">phas kyi rgol ba </term>
+              <term xml:lang="bo">ཕས་ཀྱི་རྒོལ་བ།</term>
+              <term xml:lang="Sa-Ltn">parapravādī</term>
+              <term type="definition">One who teaches a false doctrine.</term>
+              
+            </gloss>
+          </item>
+          <item>
+            <gloss type="term" xml:id="UT22084-058-003-100">
+              <term>retinue</term>
+              <term xml:lang="Bo-Ltn">g.yog </term>
+              <term xml:lang="bo">གཡོག</term>
+              <term xml:lang="Sa-Ltn">parivāra</term>
+              <term type="definition">The Tibetan and Sanskrit terms both carry a dual sense of “servant” or “<term type="ignore">retinue</term>.”</term>
+              
+            </gloss>
+          </item>
+          <item>
+            <gloss type="term" xml:id="UT22084-058-003-101">
+              <term>secondary disturbing emotions</term>
+              <term xml:lang="Bo-Ltn">nye ba’i nyon mongs </term>
+              <term xml:lang="bo">ཉེ་བའི་ཉོན་མོངས།</term>
+              <term xml:lang="Sa-Ltn">upakleśa</term>
+              <term type="definition">These are “secondary” in the sense that they flow from the primary disturbing emotions of desire,
+                aversion, and ignorance. There appears to be no set list.</term>
+              
+            </gloss>
+          </item>
+          <item>
+            <gloss type="term" xml:id="UT22084-058-003-102">
+              <term>ten powers</term>
+              <term xml:lang="Bo-Ltn">stobs bcu </term>
+              <term xml:lang="bo">སྟོབས་བཅུ།</term>
+              <term xml:lang="Sa-Ltn">daśabala</term>
+              <term type="definition">The classical list of the Buddha’s <term type="ignore">ten powers</term>, which appears
+                frequently throughout both Pali and Sanskrit sources, refers to the following powers of knowing (<foreign xml:lang="Sa-Ltn" type="term">jñānabala</foreign>): (1) Knowing what is possible and what is impossible (<foreign xml:lang="Sa-Ltn" type="term">sthānāsthāna</foreign>), (2) Knowing the ripening of karma (<foreign xml:lang="Sa-Ltn" type="term">karmavipāka</foreign>), (3) Knowing the various inclinations (<foreign xml:lang="Sa-Ltn" type="term">nānādhimukti</foreign>), (4) Knowing the various elements (<foreign type="term" xml:lang="Sa-Ltn">nānādhātu</foreign>), (5) Knowing the supreme and lesser faculties (<foreign type="term" xml:lang="Sa-Ltn">indriya­parāpara</foreign>), (6) Knowing the paths that lead to all destinations (<foreign xml:lang="Sa-Ltn" type="term">sarvatra­gāminī­pratipad</foreign>), (7) Knowing the concentrations, liberations,
+                absorptions, and attainments (<foreign type="term" xml:lang="Sa-Ltn">dhyāna­vimokṣa­samādhi­samāpatti</foreign>), (8) Knowing the recollection of past existences (<foreign type="term" xml:lang="Sa-Ltn">pūrva­nivāsānusmṛti</foreign>), (9) Knowing death and rebirth (<foreign xml:lang="Sa-Ltn" type="term">cyutyupapatti</foreign>), and (10) Knowing the exhaustion of the defilements (<foreign type="term" xml:lang="Sa-Ltn">āsravakṣaya</foreign>).</term>
+            </gloss>
+          </item>
+          <!--<item>
       <gloss type="term" xml:id="UT22084-058-003-104">
         <term>vast</term>
         <term xml:lang="Bo-Ltn">mngon par ’phags pa </term><term xml:lang="bo">མངོན་པར་འཕགས་པ།</term>
         <term xml:lang="Sa-Ltn">abhyudgata</term>
         <term type="definition">This term refers generally to a large number, a great many. It can also mean “to rise above.”</term>
-        <term type="alternative"> </term>
+        
       </gloss>
     </item>-->
-    <item>
-      <gloss type="term" xml:id="UT22084-058-003-105">
-        <term>yakṣa</term>
-        <term xml:lang="Bo-Ltn">gnod sbyin </term>
-                            <term xml:lang="bo">གནོད་སྦྱིན།</term>
-        <term xml:lang="Sa-Ltn">yakṣa</term>
-        <term type="definition">A class of mostly malevolent spirits.</term>
-        <term type="alternative"> </term>
-      </gloss>
-    </item>
-    <item>
-      <gloss type="person" xml:id="UT22084-058-003-106">
-        <term>Brahmā</term>
-        <term xml:lang="Bo-Ltn">tshangs pa </term>
-                            <term xml:lang="bo">ཚངས་པ།</term>
-        <term xml:lang="Sa-Ltn">Brahmā</term>
-        <term type="definition">The creator god of the Hindu pantheon. </term>
-        <term type="alternative"> </term>
-      </gloss>
-    </item>
-    <item>
-      <gloss type="person" xml:id="UT22084-058-003-107">
-        <term>Dānaśīla</term>
-        <term xml:lang="Bo-Ltn">dA na shI la </term>
-                            <term xml:lang="bo">དཱ་ན་ཤཱི་ལ།</term>
-        <term xml:lang="Sa-Ltn">Dānaśīla</term>
-        <term type="definition">An Indian paṇḍita who was resident in Tibet during the late eighth and early ninth centuries.</term>
-        <term type="alternative"> </term>
-      </gloss>
-    </item>
-    <item>
-      <gloss type="person" xml:id="UT22084-058-003-108">
-        <term>Jinamitra </term>
-        <term xml:lang="Bo-Ltn">dzi na mi tra </term>
-                            <term xml:lang="bo">ཛི་ན་མི་ཏྲ།</term>
-        <term xml:lang="Sa-Ltn">Jinamitra</term>
-        <term type="definition">An Indian Kashmiri paṇḍita who was resident in Tibet during the late eighth and early ninth centuries. He worked with several
-          Tibetan translators on the translation of several sūtras. He is also the author of the <title xml:lang="Sa-Ltn">Nyāya­bindu­piṇḍārtha</title> (Toh
-          4233)<!--Reference Toh 4233-->, which is contained in the Tibetan Tengyur (<foreign xml:lang="Bo-Ltn">bstan ’gyur</foreign>) collection.</term>
-        <term type="alternative"> </term>
-      </gloss>
-    </item>
-    <item>
-      <gloss type="person" xml:id="UT22084-058-003-109">
-        <term>Lord of Death</term>
-        <term xml:lang="Bo-Ltn">gshin rje </term>
-                            <term xml:lang="bo">གཤིན་རྗེ།</term>
-        <term xml:lang="Sa-Ltn">Yama</term>
-        <term type="definition">The ruler of the lower realms.</term>
-        <term type="alternative"> </term>
-      </gloss>
-    </item>
-    <item>
-      <gloss type="person" xml:id="UT22084-058-003-110">
-        <term>Munivarman</term>
-        <term xml:lang="Bo-Ltn">mu ni bar ma </term>
-                            <term xml:lang="bo">མུ་ནི་བར་མ།</term>
-        <term xml:lang="Sa-Ltn">Munivarman</term>
-        <term type="definition">An Indian paṇḍita who was resident in Tibet during the late eighth and early ninth centuries.</term>
-        <term type="alternative"> </term>
-      </gloss>
-    </item>
-    <item>
-      <gloss type="person" xml:id="UT22084-058-003-111">
-        <term>Sāgara</term>
-        <term xml:lang="Bo-Ltn">rgya mtsho </term>
-                            <term xml:lang="bo">རྒྱ་མཚོ།</term>
-        <term xml:lang="Sa-Ltn">Sāgara</term>
-        <term type="definition">Literally meaning “ocean,” he is a king of the nāgas, a class of semidivine snake creatures.</term>
-        <term type="alternative"> </term>
-      </gloss>
-    </item>
-    <item>
-      <gloss type="person" xml:id="UT22084-058-003-112">
-        <term>Śakra</term>
-        <term xml:lang="Bo-Ltn">brgya byin </term>
-                            <term xml:lang="bo">བརྒྱ་བྱིན།</term>
-        <term xml:lang="Sa-Ltn">Śakra</term>
-        <term type="definition">An epithet for Indra, the king of the gods in Hindu mythology.</term>
-        <term type="alternative"> </term>
-      </gloss>
-    </item>
-    <item>
-      <gloss type="person" xml:id="UT22084-058-003-114">
-        <term>Yeshé Dé</term>
-        <term xml:lang="Bo-Ltn">ye shes sde </term>
-                            <term xml:lang="bo">ཡེ་ཤེས་སྡེ།</term>
-        <term xml:lang="Sa-Ltn"> </term>
-        <term type="definition">A prolific Tibetan translator active during the late eighth and early ninth centuries.</term>
-        <term type="alternative"> </term>
-      </gloss>
-    </item>
-  </list>
-</div>
-                </back>
-        </text>
-</TEI>
+          <item>
+            <gloss type="term" xml:id="UT22084-058-003-105">
+              <term>yakṣa</term>
+              <term xml:lang="Bo-Ltn">gnod sbyin </term>
+              <term xml:lang="bo">གནོད་སྦྱིན།</term>
+              <term xml:lang="Sa-Ltn">yakṣa</term>
+              <term type="definition">A class of mostly malevolent spirits.</term>
+              
+            </gloss>
+          </item>
+          <item>
+            <gloss type="person" xml:id="UT22084-058-003-106">
+              <term>Brahmā</term>
+              <term xml:lang="Bo-Ltn">tshangs pa </term>
+              <term xml:lang="bo">ཚངས་པ།</term>
+              <term xml:lang="Sa-Ltn">Brahmā</term>
+              <term type="definition">The creator god of the Hindu pantheon. </term>
+              
+            </gloss>
+          </item>
+          <item>
+            <gloss type="person" xml:id="UT22084-058-003-107">
+              <term>Dānaśīla</term>
+              <term xml:lang="Bo-Ltn">dA na shI la </term>
+              <term xml:lang="bo">དཱ་ན་ཤཱི་ལ།</term>
+              <term xml:lang="Sa-Ltn">Dānaśīla</term>
+              <term type="definition">An Indian paṇḍita who was resident in Tibet during the late eighth and early ninth
+                centuries.</term>
+              
+            </gloss>
+          </item>
+          <item>
+            <gloss type="person" xml:id="UT22084-058-003-108">
+              <term>Jinamitra </term>
+              <term xml:lang="Bo-Ltn">dzi na mi tra </term>
+              <term xml:lang="bo">ཛི་ན་མི་ཏྲ།</term>
+              <term xml:lang="Sa-Ltn">Jinamitra</term>
+              <term type="definition">An Indian Kashmiri paṇḍita who was resident in Tibet during the late eighth and early ninth
+                centuries. He worked with several Tibetan translators on the translation of several sūtras. He is also the author
+                of the <title xml:lang="Sa-Ltn">Nyāya­bindu­piṇḍārtha</title> (Toh 4233)<ref rend="pending" target="https://read.84000.co/translation/toh4233.html"/>, which is
+                contained in the Tibetan Tengyur (<foreign xml:lang="Bo-Ltn">bstan ’gyur</foreign>) collection.</term>
+              
+            </gloss>
+          </item>
+          <item>
+            <gloss type="person" xml:id="UT22084-058-003-109">
+              <term>Lord of Death</term>
+              <term xml:lang="Bo-Ltn">gshin rje </term>
+              <term xml:lang="bo">གཤིན་རྗེ།</term>
+              <term xml:lang="Sa-Ltn">Yama</term>
+              <term type="definition">The ruler of the lower realms.</term>
+              
+            </gloss>
+          </item>
+          <item>
+            <gloss type="person" xml:id="UT22084-058-003-110">
+              <term>Munivarman</term>
+              <term xml:lang="Bo-Ltn">mu ni bar ma </term>
+              <term xml:lang="bo">མུ་ནི་བར་མ།</term>
+              <term xml:lang="Sa-Ltn">Munivarman</term>
+              <term type="definition">An Indian paṇḍita who was resident in Tibet during the late eighth and early ninth
+                centuries.</term>
+              
+            </gloss>
+          </item>
+          <item>
+            <gloss type="person" xml:id="UT22084-058-003-111">
+              <term>Sāgara</term>
+              <term xml:lang="Bo-Ltn">rgya mtsho </term>
+              <term xml:lang="bo">རྒྱ་མཚོ།</term>
+              <term xml:lang="Sa-Ltn">Sāgara</term>
+              <term type="definition">Literally meaning “ocean,” he is a king of the nāgas, a class of semidivine snake
+                creatures.</term>
+              
+            </gloss>
+          </item>
+          <item>
+            <gloss type="person" xml:id="UT22084-058-003-112">
+              <term>Śakra</term>
+              <term xml:lang="Bo-Ltn">brgya byin </term>
+              <term xml:lang="bo">བརྒྱ་བྱིན།</term>
+              <term xml:lang="Sa-Ltn">Śakra</term>
+              <term type="definition">An epithet for Indra, the king of the gods in Hindu mythology.</term>
+              
+            </gloss>
+          </item>
+          <item>
+            <gloss type="person" xml:id="UT22084-058-003-114">
+              <term>Yeshé Dé</term>
+              <term xml:lang="Bo-Ltn">ye shes sde </term>
+              <term xml:lang="bo">ཡེ་ཤེས་སྡེ།</term>
+              <term xml:lang="Sa-Ltn"/>
+              <term type="definition">A prolific Tibetan translator active during the late eighth and early ninth
+                centuries.</term>
+            </gloss>
+          </item>
+        </list>
+      </div>
+    </back>
+  </text>
+
+    
+    
+    
+    </TEI>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../../../schema/current/translation.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<tei:TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -12,9 +12,10 @@
                 <author role="translatorMain" ref="contributors.xml#team-27"/>
             </titleStmt>
             <editionStmt>
-                <edition> </edition>
+                <edition>v 0.0.1 <date>2019</date>
+                </edition>
             </editionStmt>
-            <publicationStmt status="3">
+            <publicationStmt status="2.h">
                 <idno xml:id="UT22084-061-003"/>
                 <date/>
             </publicationStmt>
@@ -22,20 +23,23 @@
                 <bibl key="toh183" type="text">
                     <ref>Toh 183</ref>
                     <biblScope>vol.61, ff.95v-96v(pp.190-192)</biblScope>
-                    <location count-pages="3">
-                        <start volume="61" page="192"/>
-                        <end volume="61" page="194"/>
+                    <location work="UT4CZ5369" count-pages="3">
+                        <volume number="61" start-page="190" end-page="192"/>
                     </location>
                     <idno parent-id="O1JC114941JC14668" work="http://read.84000.co/sections"/>
                     <idno source-id="O1JC114941JC11800" work="W22084"/>
                 </bibl>
             </sourceDesc>
             <notesStmt>
-                <note type="lastUpdated">Last updated at 13/02/2019 at 08:35:06 by admin</note>
+                <note type="lastUpdated" date-time="2020-03-06T13:15:24.09Z" user="admin">06/03/2020 13:15:24</note>
+                <note type="updated" update="text-version" value="v 0.0.1" date-time="2019-12-20T12:44:26.954Z" user="admin">Automated version increment</note>
+            
+<note type="updated" update="text-version" value="v 0.0.1" date-time="2020-03-06T13:15:21.681Z" user="line-tofte">v 0.0.1</note>
+    <note type="updated" update="translation-status" value="2.h" date-time="2020-05-11T14:41:43.472Z" user="line-tofte">2.h</note>
             </notesStmt>
         </fileDesc>
     </teiHeader>
     <text>
         <front/>
     </text>
-</TEI>
+</tei:TEI>

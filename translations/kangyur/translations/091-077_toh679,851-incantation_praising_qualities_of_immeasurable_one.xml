@@ -35,7 +35,7 @@
     <consultant role="projectManager" ref="contributors.xml#person-50">Dr. Andreas Doctor</consultant>
             </titleStmt>
             <editionStmt>
-                <edition>v 1.1.2 <date>2020</date>
+                <edition>v 1.1.5 <date>2020</date>
                 </edition>
             </editionStmt>
             <publicationStmt status="1">
@@ -86,7 +86,7 @@
                 </bibl>
             </sourceDesc>
             <notesStmt>
-                <note type="lastUpdated" date-time="2020-05-28T13:20:28.611Z" user="admin">28/05/2020 13:20:28</note>
+                <note type="lastUpdated" date-time="2020-12-11T17:20:53.909Z" user="admin">11/12/2020 17:20:53</note>
 
                 <note type="updated" update="text-version" value="v 0.1.0" date-time="2019-10-10T08:00:38.886Z" user="andreas">v 0.1.0</note>
                 <note type="updated" update="translation-status" value="2.e" date-time="2019-12-19T07:23:31.512Z" user="andreas">2.e</note>
@@ -108,6 +108,9 @@
     <note type="updated" update="text-version" value="v 1.1.1" date-time="2020-05-07T17:21:11.901Z" user="john">First published edition.</note>
     <note type="updated" update="translation-status" value="1" date-time="2020-05-07T17:21:11.901Z" user="john">First published edition.</note>
     <note type="updated" update="text-version" value="v 1.1.2" date-time="2020-05-28T13:20:22.7Z" user="laura">Added line to acknowledgement</note>
+    <note type="updated" update="text-version" value="1.1.3" date-time="2020-11-23T13:57:44.998Z" user="admin">Auto (TEI migration 2.0.0)</note>
+    <note type="updated" update="text-version" value="1.1.4" date-time="2020-11-25T15:59:05.54Z" user="celso">Updated pending links</note>
+    <note type="updated" update="text-version" value="1.1.5" date-time="2020-12-11T14:06:50.919Z" user="admin">Auto (TEI migration 2.1.5)</note>
             </notesStmt>
         </fileDesc>
     </teiHeader>
@@ -134,7 +137,7 @@
                         </div>
                         <div type="introduction">
                                 <head type="introduction" tid="5">Introduction</head>
-                                <div type="section">
+                                <div type="section" xml:id="UT22084-091-077-introduction-1">
                                         <milestone unit="chunk" xml:id="UT22084-091-077-3"/>
                                         <p tid="6">
                                            <title xml:lang="en"> The Dhāraṇī Praising the Qualities of the Immeasurable One</title> 
@@ -243,10 +246,10 @@
                                 <head type="titleHon" tid="11">The Noble Dhāraṇī</head>
                                 <head type="titleMain" tid="12">Praising the Qualities of the Immeasurable
                                         One</head>
-                            <div type="section">
+                            <div type="section" xml:id="UT22084-091-077-section-1">
                                         <milestone unit="chunk" xml:id="UT22084-091-077-13"/>
                                 <p tid="13">
-                        <ref cRef="F.223.a" key="toh679" type="folio"/> <ref cRef="F.64.a" key="toh851" type="folio"/> Homage to the Three Jewels.</p>
+                        <ref cRef="F.223.a" key="toh679" type="folio" xml:id="UT22084-091-077-39"/> <ref cRef="F.64.a" key="toh851" type="folio" xml:id="UT22084-091-077-40"/> Homage to the Three Jewels.</p>
                                         <lb/>
                                         <milestone unit="chunk" xml:id="UT22084-091-077-14"/>
                                 <p rend="mantra" tid="15">
@@ -319,7 +322,7 @@
                         </div>
                         <div type="listBibl">
                                 <head type="listBibl" tid="20">Bibliography</head>
-                                <div type="section">
+                                <div type="section" xml:id="UT22084-091-077-listBibl-1">
                                         <head type="section" tid="21">Source Texts</head>
                                         <bibl xml:id="UT22084-091-077-20">
                         <title xml:lang="Bo-Ltn">’phags pa yon tan bsngags pa
@@ -353,7 +356,7 @@
                                                   2006–2009, vol. 97, pp. 161–63.
                                         </bibl>
                                 </div>
-                                <div type="section">
+                                <div type="section" xml:id="UT22084-091-077-listBibl-2">
                                         <head type="section" tid="22">Reference Works</head>
                                         <bibl xml:id="UT22084-091-077-24">Butön Rinchen Drup (bu ston rin chen grub). “gsang
                                                 sngags rgyud sde bzhi’i gzungs ’bum.” In <title xml:lang="en">The Collected Works of
@@ -368,8 +371,7 @@
                                     <bibl xml:id="UT22084-091-077-38">Denkarma (<title xml:lang="Bo-Ltn">pho brang stod thang ldan dkar gyi chos kyi ’gyur
                                         ro cog gi dkar chag</title>). Toh 4364, Degé Tengyur vol. 206
                                         (sna tshogs, jo), folios
-                                        294.b–310.a.<!--Reference Toh
-                                                  4364-->
+                                        294.b–310.a.<ref rend="pending" target="https://read.84000.co/translation/toh4364.html"/>
                     </bibl>
                                     <bibl xml:id="UT22084-091-077-26">Lancaster, Lewis R. <title xml:lang="en">
                             <ref target="http://www.acmuller.net/descriptive_catalogue/index.html">The Korean
@@ -451,4 +453,8 @@
                     </div>
                 </back>
     </text>
-</TEI>
+
+    
+    
+    
+    </TEI>
