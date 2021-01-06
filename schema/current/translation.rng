@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <grammar xmlns="http://relaxng.org/ns/structure/1.0" xmlns:teix="http://www.tei-c.org/ns/Examples" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes" ns="http://www.tei-c.org/ns/1.0"><!--
+<<<<<<< HEAD
 Schema generated from ODD source 2020-12-15T14:51:11Z. .
 TEI Edition: Version 4.1.0. Last updated on
 	19th August 2020, revision b414ba550
 TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.1.0/
+=======
+Schema generated from ODD source 2020-08-05T19:32:41Z. .
+TEI Edition: Version 4.0.0. Last updated on
+	13th February 2020, revision ccd19b0ba
+TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 4.0.0/
+>>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
   
 --><!---->
    <define name="macro.paraContent">
       <zeroOrMore>
          <choice>
+<<<<<<< HEAD
             <text/>
             <ref name="model.gLike"/>
             <ref name="model.phrase"/>
@@ -22,6 +30,19 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.1.0/
             <ref name="ref-canonical"/>
             <ref name="ref-other"/>
          </choice>
+=======
+              <text/>
+              <ref name="model.gLike"/>
+              <ref name="model.phrase"/>
+              <ref name="model.inter"/>
+              <ref name="model.global"/>
+              <ref name="lg"/>
+              <ref name="mantra"/>
+              <ref name="modPassage"/>
+              <ref name="canonDef"/>
+              <ref name="model.lLike"/>
+            </choice>
+>>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
       </zeroOrMore>
    </define>
    <define name="macro.phraseSeq">
@@ -40,6 +61,7 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.1.0/
    <define name="macro.specialPara">
       <zeroOrMore>
          <choice>
+<<<<<<< HEAD
             <text/>
             <ref name="model.gLike"/>
             <ref name="model.phrase"/>
@@ -52,6 +74,18 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.1.0/
             <ref name="ref-other"/>
             <ref name="ref-canonical"/>
          </choice>
+=======
+              <text/>
+              <ref name="model.gLike"/>
+              <ref name="model.phrase"/>
+              <ref name="model.inter"/>
+              <ref name="model.divPart"/>
+              <ref name="model.global"/>
+              <ref name="mantra"/>
+              <ref name="modPassage"/>
+              <ref name="canonDef"/>
+            </choice>
+>>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
       </zeroOrMore>
    </define>
    <define name="cache">
@@ -176,8 +210,12 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.1.0/
                <ref name="ptr"/>
                <ref name="endnote"/>
                <ref name="foreign"/>
+<<<<<<< HEAD
                <ref name="ref-canonical"/>
                <ref name="ref-other"/>
+=======
+               <ref name="ref"/>
+>>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
                <ref name="emph"/>
                <ref name="distinct"/>
                <ref name="q"/>
@@ -208,6 +246,7 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.1.0/
          </oneOrMore>
       </element>
    </define>
+<<<<<<< HEAD
    <define name="ref-canonical">
       <element name="ref">
          <attribute name="xml:id"/>
@@ -267,18 +306,29 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.1.0/
          <text/>
       </element>
    </define>
+=======
+>>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
    <define name="section-content">
       <zeroOrMore>
          <choice>
             <ref name="milestone"/>
             <ref name="paragraph"/>
             <ref name="q"/>
+<<<<<<< HEAD
             <ref name="head"/>
+=======
+>>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
             <ref name="lb"/>
             <ref name="lg"/>
             <ref name="list"/>
             <ref name="table"/>
+<<<<<<< HEAD
             <ref name="label"/>
+=======
+            <element name="label">
+               <data type="string"/>
+            </element>
+>>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
             <ref name="trailer"/>
          </choice>
       </zeroOrMore>
@@ -288,7 +338,10 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.1.0/
          <attribute name="type">
             <value>chapter</value>
          </attribute>
+<<<<<<< HEAD
          <attribute name="xml:id"/>
+=======
+>>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
          <optional>
             <attribute name="rend"/>
          </optional>
@@ -349,7 +402,11 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.1.0/
          </zeroOrMore>
          <ref name="section-content"/>
          <zeroOrMore>
+<<<<<<< HEAD
             <ref name="translation-subsection-lv3"/>
+=======
+            <ref name="translation-subsection-l3"/>
+>>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
          </zeroOrMore>
       </element>
    </define>
@@ -358,7 +415,10 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.1.0/
          <attribute name="type">
             <value>section</value>
          </attribute>
+<<<<<<< HEAD
          <attribute name="xml:id"/>
+=======
+>>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
          <optional>
             <attribute name="rend"/>
          </optional>
@@ -373,6 +433,7 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.1.0/
                <optional>
                   <attribute name="tid"/>
                </optional>
+<<<<<<< HEAD
                <optional>
                   <attribute name="key"/>
                </optional>
@@ -384,17 +445,25 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.1.0/
                      <ref name="title"/>
                   </choice>
                </oneOrMore>
+=======
+               <text/>
+>>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
             </element>
          </zeroOrMore>
          <ref name="section-content"/>
          <choice>
             <zeroOrMore>
+<<<<<<< HEAD
                <ref name="translation-subsection-lv3"/>
+=======
+               <ref name="translation-subsection-l3"/>
+>>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
             </zeroOrMore>
             <zeroOrMore>
                <ref name="translation-chapter"/>
             </zeroOrMore>
          </choice>
+<<<<<<< HEAD
       </element>
    </define>
    <define name="translation-subsection-lv3">
@@ -435,6 +504,8 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.1.0/
                </zeroOrMore>
             </choice>
          </oneOrMore>
+=======
+>>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
       </element>
    </define>
    <define name="translation-subsection-lv4">
@@ -514,7 +585,10 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.1.0/
          <attribute name="type">
             <value>section</value>
          </attribute>
+<<<<<<< HEAD
          <attribute name="xml:id"/>
+=======
+>>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
          <optional>
             <attribute name="prefix"/>
          </optional>
@@ -528,6 +602,7 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.1.0/
                      <optional>
                         <attribute name="tid"/>
                      </optional>
+<<<<<<< HEAD
                      <optional>
                         <attribute name="key"/>
                      </optional>
@@ -542,6 +617,15 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.1.0/
                   </element>
                </zeroOrMore>
                <ref name="section-content"/>
+=======
+                     <text/>
+                  </element>
+               </zeroOrMore>
+               <ref name="section-content"/>
+               <zeroOrMore>
+                  <ref name="translation-subsection-l4"/>
+               </zeroOrMore>
+>>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
             </choice>
          </oneOrMore>
          <zeroOrMore>
@@ -554,6 +638,7 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.1.0/
          <attribute name="type">
             <value>section</value>
          </attribute>
+<<<<<<< HEAD
          <attribute name="xml:id"/>
          <optional>
             <attribute name="prefix"/>
@@ -586,6 +671,25 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.1.0/
          </oneOrMore>
          <zeroOrMore>
             <ref name="translation-subsection-lv8"/>
+=======
+         <optional>
+            <attribute name="prefix"/>
+         </optional>
+         <zeroOrMore>
+            <element name="head">
+               <attribute name="type">
+                  <value>section</value>
+               </attribute>
+               <optional>
+                  <attribute name="tid"/>
+               </optional>
+               <text/>
+            </element>
+         </zeroOrMore>
+         <ref name="section-content"/>
+         <zeroOrMore>
+            <ref name="translation-subsection-l5"/>
+>>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
          </zeroOrMore>
       </element>
    </define>
@@ -594,7 +698,35 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.1.0/
          <attribute name="type">
             <value>section</value>
          </attribute>
+<<<<<<< HEAD
          <attribute name="xml:id"/>
+=======
+         <optional>
+            <attribute name="prefix"/>
+         </optional>
+         <zeroOrMore>
+            <element name="head">
+               <attribute name="type">
+                  <value>section</value>
+               </attribute>
+               <optional>
+                  <attribute name="tid"/>
+               </optional>
+               <text/>
+            </element>
+         </zeroOrMore>
+         <ref name="section-content"/>
+         <zeroOrMore>
+            <ref name="translation-subsection-l6"/>
+         </zeroOrMore>
+      </element>
+   </define>
+   <define name="translation-subsection-l6">
+      <element name="div">
+         <attribute name="type">
+            <value>section</value>
+         </attribute>
+>>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
          <optional>
             <attribute name="prefix"/>
          </optional>
@@ -622,6 +754,7 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.1.0/
                   </element>
                </zeroOrMore>
                <ref name="section-content"/>
+<<<<<<< HEAD
             </choice>
          </oneOrMore>
          <zeroOrMore>
@@ -742,6 +875,8 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.1.0/
                   </element>
                </zeroOrMore>
                <ref name="section-content"/>
+=======
+>>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
             </choice>
          </oneOrMore>
       </element>
@@ -984,42 +1119,60 @@ Suggested values include: 1] below; 2] bottom; 3] margin; 4] top; 5] opposite; 6
    <define name="model.hiLike">
       <choice>
          <ref name="hi"/>
+<<<<<<< HEAD
          <ref name="q"/>
+=======
+>>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
       </choice>
    </define>
    <define name="model.hiLike_alternation">
       <choice>
          <ref name="hi"/>
+<<<<<<< HEAD
          <ref name="q"/>
+=======
+>>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
       </choice>
    </define>
    <define name="model.hiLike_sequence">
       <ref name="hi"/>
+<<<<<<< HEAD
       <ref name="q"/>
+=======
+>>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
    </define>
    <define name="model.hiLike_sequenceOptional">
       <optional>
          <ref name="hi"/>
       </optional>
+<<<<<<< HEAD
       <optional>
          <ref name="q"/>
       </optional>
+=======
+>>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
    </define>
    <define name="model.hiLike_sequenceOptionalRepeatable">
       <zeroOrMore>
          <ref name="hi"/>
       </zeroOrMore>
+<<<<<<< HEAD
       <zeroOrMore>
          <ref name="q"/>
       </zeroOrMore>
+=======
+>>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
    </define>
    <define name="model.hiLike_sequenceRepeatable">
       <oneOrMore>
          <ref name="hi"/>
       </oneOrMore>
+<<<<<<< HEAD
       <oneOrMore>
          <ref name="q"/>
       </oneOrMore>
+=======
+>>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
    </define>
    <define name="model.emphLike">
       <choice>
@@ -1810,7 +1963,11 @@ Suggested values include: 1] below; 2] bottom; 3] margin; 4] top; 5] opposite; 6
    <define name="model.divGenLike">
       <notAllowed/>
    </define>
+<<<<<<< HEAD
    <define name="model.encodingDescPart">
+=======
+   <define name="model.resource">
+>>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
       <choice>
          <ref name="classDecl"/>
       </choice>
@@ -2188,12 +2345,15 @@ attributes @target and @cRef may be supplied on <sch:name/>.</sch:report>
                <text/>
             </attribute>
          </optional>
+<<<<<<< HEAD
          <optional>
             <attribute name="inst">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Provides instructions (typically just the folio number) for finding the URL of the specific milestone to be linked when the target of a pending unpublished text is published.</a:documentation>
                <text/>
             </attribute>
          </optional>
+=======
+>>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
          <empty/>
       </element>
    </define>
@@ -2253,8 +2413,11 @@ attributes @target and @cRef may be supplied on <sch:name/>.</sch:report>
             <choice>
                <text/>
                <ref name="foreign"/>
+<<<<<<< HEAD
                <ref name="note"/>
                <ref name="title"/>
+=======
+>>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
             </choice>
          </oneOrMore>
          <attribute name="type">
@@ -2272,8 +2435,11 @@ attributes @target and @cRef may be supplied on <sch:name/>.</sch:report>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
                <value>description</value>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+<<<<<<< HEAD
                <value>floating</value>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A floating header that is not the heading for any <code xmlns="http://www.w3.org/1999/xhtml">&lt;div&gt;</code> element.</a:documentation>
+=======
+>>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
                <value>table</value>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
                <value>translation</value>
@@ -2284,8 +2450,11 @@ attributes @target and @cRef may be supplied on <sch:name/>.</sch:report>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
                <value>sub</value>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">subtitle</a:documentation>
+<<<<<<< HEAD
                <value>author</value>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">If author is to be named in the heading, as with a preface for instance (see toh 113).</a:documentation>
+=======
+>>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
                <value>notes</value>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
                <value>section</value>
@@ -2619,7 +2788,10 @@ Elements 7.2.5. Speech Contents]</a:documentation>
                <ref name="model.inter"/>
                <ref name="model.global"/>
                <ref name="mantra"/>
+<<<<<<< HEAD
                <ref name="ref-canonical"/>
+=======
+>>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
             </choice>
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="NewODD-l-abstractModel-structure-l-constraint-report-5">
@@ -2643,10 +2815,17 @@ Elements 7.2.5. Speech Contents]</a:documentation>
             </choice>
          </oneOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="NewODD-lg-atleast1oflggapl-constraint-assert-3">
+<<<<<<< HEAD
             <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron" context="tei:lg">
                <sch:assert xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0" test="count(descendant::tei:lg|descendant::tei:l|descendant::tei:gap) &gt; 0">An lg element
         must contain at least one child l, lg, or gap element.</sch:assert>
             </sch:rule>
+=======
+            <rule context="tei:lg">
+               <sch:assert xmlns="http://www.tei-c.org/ns/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:rng="http://relaxng.org/ns/structure/1.0" test="count(descendant::tei:lg|descendant::tei:l|descendant::tei:gap) &gt; 0">An lg element
+        must contain at least one child l, lg, or gap element.</sch:assert>
+            </rule>
+>>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="NewODD-lg-abstractModel-structure-l-constraint-report-6">
             <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron" context="tei:lg">
@@ -2690,18 +2869,28 @@ Elements 7.2.5. Speech Contents]</a:documentation>
       <element name="teiHeader">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(TEI header) supplies descriptive and declarative metadata associated with a digital resource or set of resources. [2.1.1. The TEI Header and Its Components 15.1. Varieties of Composite Text]</a:documentation>
          <ref name="fileDesc"/>
+<<<<<<< HEAD
          <zeroOrMore>
             <choice>
                <ref name="encodingDesc"/>
                <ref name="profileDesc"/>
             </choice>
          </zeroOrMore>
+=======
+         <optional>
+            <ref name="profileDesc"/>
+         </optional>
+>>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
       </element>
    </define>
    <define name="fileDesc">
       <element name="fileDesc">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(file description) contains a full bibliographic description of an electronic file. [2.2. The File Description 2.1.1. The TEI Header and Its Components]</a:documentation>
+<<<<<<< HEAD
          <rng:group xmlns:rng="http://relaxng.org/ns/structure/1.0">
+=======
+         <group>
+>>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
             <ref name="titleStmt"/>
             <optional>
                <ref name="editionStmt"/>
@@ -2711,13 +2900,21 @@ Elements 7.2.5. Speech Contents]</a:documentation>
             <optional>
                <ref name="notesStmt"/>
             </optional>
+<<<<<<< HEAD
          </rng:group>
+=======
+         </group>
+>>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
       </element>
    </define>
    <define name="titleStmt">
       <element name="titleStmt">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(title statement) groups information about the title of a work and those responsible for its content. [2.2.1. The Title Statement 2.2. The File Description]</a:documentation>
+<<<<<<< HEAD
          <rng:group xmlns:rng="http://relaxng.org/ns/structure/1.0">
+=======
+         <group>
+>>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
             <zeroOrMore>
                <ref name="title"/>
             </zeroOrMore>
@@ -2757,6 +2954,7 @@ Elements 7.2.5. Speech Contents]</a:documentation>
                   </zeroOrMore>
                   <zeroOrMore>
                      <ref name="editor"/>
+<<<<<<< HEAD
                   </zeroOrMore>
                   <zeroOrMore>
                      <ref name="consultant"/>
@@ -2767,6 +2965,18 @@ Elements 7.2.5. Speech Contents]</a:documentation>
                </choice>
             </zeroOrMore>
          </rng:group>
+=======
+                  </zeroOrMore>
+                  <zeroOrMore>
+                     <ref name="consultant"/>
+                  </zeroOrMore>
+                  <zeroOrMore>
+                     <ref name="sponsor"/>
+                  </zeroOrMore>
+               </choice>
+            </zeroOrMore>
+         </group>
+>>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
       </element>
    </define>
    <define name="editionStmt">
@@ -2778,19 +2988,31 @@ Elements 7.2.5. Speech Contents]</a:documentation>
    <define name="edition">
       <element name="edition">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">describes the particularities of one edition of a text. [2.2.2. The Edition Statement]</a:documentation>
+<<<<<<< HEAD
          <rng:group xmlns:rng="http://relaxng.org/ns/structure/1.0">
+=======
+         <group>
+>>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
             <text/>
             <element name="date">
                <data type="gYear"/>
             </element>
+<<<<<<< HEAD
          </rng:group>
+=======
+         </group>
+>>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
       </element>
    </define>
    <define name="publicationStmt">
       <element name="publicationStmt">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(publication statement) groups information concerning the publication or distribution of an electronic or other text. [2.2.4. Publication, Distribution, Licensing, etc. 2.2. The File Description]</a:documentation>
          <choice>
+<<<<<<< HEAD
             <rng:group xmlns:rng="http://relaxng.org/ns/structure/1.0">
+=======
+            <group>
+>>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
                <element name="publisher">
                   <oneOrMore>
                      <choice>
@@ -2832,6 +3054,7 @@ Elements 7.2.5. Speech Contents]</a:documentation>
                   <element name="note">
                      <text/>
                   </element>
+<<<<<<< HEAD
                </zeroOrMore>
                <element name="date">
                   <data type="date"/>
@@ -2872,6 +3095,30 @@ Elements 7.2.5. Speech Contents]</a:documentation>
                   </choice>
                </zeroOrMore>
             </rng:group>
+=======
+               </zeroOrMore>
+               <element name="date">
+                  <data type="date"/>
+               </element>
+            </group>
+            <group>
+               <element name="idno">
+                  <attribute name="id" ns="http://www.w3.org/XML/1998/namespace">
+                     <data type="ID"/>
+                  </attribute>
+               </element>
+               <zeroOrMore>
+                  <choice>
+                     <element name="note">
+                        <text/>
+                     </element>
+                     <element name="date">
+                        <rng:empty xmlns:rng="http://relaxng.org/ns/structure/1.0"/>
+                     </element>
+                  </choice>
+               </zeroOrMore>
+            </group>
+>>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
          </choice>
          <attribute name="status">
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Identifies what stage the text is in preparation for publication.</a:documentation>
@@ -3030,6 +3277,7 @@ Elements 7.2.5. Speech Contents]</a:documentation>
          </choice>
       </element>
    </define>
+<<<<<<< HEAD
    <define name="encodingDesc">
       <element name="encodingDesc">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(encoding description) documents the relationship between an electronic text and the source or sources from which it was derived. [2.3. The Encoding Description 2.1.1. The TEI Header and Its Components]</a:documentation>
@@ -3101,6 +3349,8 @@ Elements 7.2.5. Speech Contents]</a:documentation>
          <empty/>
       </element>
    </define>
+=======
+>>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
    <define name="profileDesc">
       <element name="profileDesc">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(text-profile description) provides a detailed description of non-bibliographic aspects of a text, specifically the languages and sublanguages used, the situation in which it was produced, the participants and their setting. [2.4. The Profile Description 2.1.1. The TEI Header and Its Components]</a:documentation>
@@ -3115,9 +3365,12 @@ Elements 7.2.5. Speech Contents]</a:documentation>
          <optional>
             <ref name="keywords"/>
          </optional>
+<<<<<<< HEAD
          <optional>
             <ref name="catRef"/>
          </optional>
+=======
+>>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
       </element>
    </define>
    <define name="keywords">
@@ -3131,6 +3384,7 @@ Elements 7.2.5. Speech Contents]</a:documentation>
          </choice>
          <ref name="att.global.attributes"/>
          <empty/>
+<<<<<<< HEAD
       </element>
    </define>
    <define name="catRef">
@@ -3146,14 +3400,35 @@ Elements 7.2.5. Speech Contents]</a:documentation>
             </attribute>
          </optional>
          <empty/>
+=======
+>>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
       </element>
    </define>
    <define name="TEI">
       <element name="TEI">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(TEI document) contains a single TEI-conformant document, combining a single TEI header with one or more members of the model.resource class. Multiple <code xmlns="http://www.w3.org/1999/xhtml">&lt;TEI&gt;</code> elements may be combined within a <code xmlns="http://www.w3.org/1999/xhtml">&lt;TEI&gt;</code> (or <code xmlns="http://www.w3.org/1999/xhtml">&lt;teiCorpus&gt;</code>) element. [4. Default Text Structure 15.1. Varieties of Composite Text]</a:documentation>
+<<<<<<< HEAD
          <ref name="teiHeader"/>
          <ref name="text"/>
          <ref name="cache"/>
+=======
+         <group>
+            <ref name="teiHeader"/>
+            <choice>
+               <group>
+                  <oneOrMore>
+                     <ref name="model.resource"/>
+                  </oneOrMore>
+                  <zeroOrMore>
+                     <ref name="TEI"/>
+                  </zeroOrMore>
+               </group>
+               <oneOrMore>
+                  <ref name="TEI"/>
+               </oneOrMore>
+            </choice>
+         </group>
+>>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
          <sch:ns xmlns="http://www.tei-c.org/ns/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:rng="http://relaxng.org/ns/structure/1.0" prefix="tei" uri="http://www.tei-c.org/ns/1.0"/>
          <sch:ns xmlns="http://www.tei-c.org/ns/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:rng="http://relaxng.org/ns/structure/1.0" prefix="xs" uri="http://www.w3.org/2001/XMLSchema"/>
          <sch:ns xmlns="http://www.tei-c.org/ns/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:rng="http://relaxng.org/ns/structure/1.0" prefix="rng" uri="http://relaxng.org/ns/structure/1.0"/>
@@ -3184,6 +3459,7 @@ Elements 7.2.5. Speech Contents]</a:documentation>
       <element name="body">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(text body) contains the whole body of a single unitary text, excluding any front or back matter. [4. Default Text Structure]</a:documentation>
          <optional>
+<<<<<<< HEAD
             <choice>
                <element name="div">
                   <attribute name="type">
@@ -3239,6 +3515,23 @@ Elements 7.2.5. Speech Contents]</a:documentation>
                      <element name="head">
                         <attribute name="type">
                            <value>titleHon</value>
+=======
+            <element name="div">
+               <attribute name="type">
+                  <choice>
+                     <value>translation</value>
+                     <value>preface</value>
+                  </choice>
+               </attribute>
+               <optional>
+                  <attribute name="tid"/>
+               </optional>
+               <choice>
+                  <group>
+                     <element name="head">
+                        <attribute name="type">
+                           <value>preface</value>
+>>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
                         </attribute>
                         <optional>
                            <attribute name="tid"/>
@@ -3248,6 +3541,7 @@ Elements 7.2.5. Speech Contents]</a:documentation>
                         </optional>
                         <text/>
                      </element>
+<<<<<<< HEAD
                   </optional>
                   <element name="head">
                      <attribute name="type">
@@ -3309,6 +3603,17 @@ Elements 7.2.5. Speech Contents]</a:documentation>
                      <element name="div">
                         <attribute name="type">
                            <value>colophon</value>
+=======
+                     <ref name="section-content"/>
+                     <zeroOrMore>
+                        <ref name="translation-section"/>
+                     </zeroOrMore>
+                  </group>
+                  <group>
+                     <element name="head">
+                        <attribute name="type">
+                           <value>translation</value>
+>>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
                         </attribute>
                         <attribute name="xml:id"/>
                         <element name="head">
@@ -3335,9 +3640,98 @@ Elements 7.2.5. Speech Contents]</a:documentation>
                            <ref name="translation-section"/>
                         </zeroOrMore>
                      </element>
+<<<<<<< HEAD
                   </zeroOrMore>
                </element>
             </choice>
+=======
+                     <optional>
+                        <element name="head">
+                           <attribute name="type">
+                              <value>titleHon</value>
+                           </attribute>
+                           <optional>
+                              <attribute name="tid"/>
+                           </optional>
+                           <text/>
+                        </element>
+                     </optional>
+                     <element name="head">
+                        <attribute name="type">
+                           <value>titleMain</value>
+                        </attribute>
+                        <optional>
+                           <attribute name="tid"/>
+                        </optional>
+                        <text/>
+                     </element>
+                     <optional>
+                        <element name="head">
+                           <attribute name="type">
+                              <value>sub</value>
+                           </attribute>
+                           <optional>
+                              <attribute name="tid"/>
+                           </optional>
+                           <text/>
+                        </element>
+                     </optional>
+                     <zeroOrMore>
+                        <element name="div">
+                           <attribute name="type">
+                              <choice>
+                                 <value>prologue</value>
+                                 <value>homage</value>
+                              </choice>
+                           </attribute>
+                           <element name="head">
+                              <attribute name="type">
+                                 <choice>
+                                    <value>prologue</value>
+                                    <value>homage</value>
+                                 </choice>
+                              </attribute>
+                              <optional>
+                                 <attribute name="tid"/>
+                              </optional>
+                              <text/>
+                           </element>
+                           <ref name="section-content"/>
+                           <zeroOrMore>
+                              <ref name="translation-section"/>
+                           </zeroOrMore>
+                        </element>
+                     </zeroOrMore>
+                     <zeroOrMore>
+                        <ref name="translation-section"/>
+                     </zeroOrMore>
+                     <zeroOrMore>
+                        <ref name="translation-chapter"/>
+                     </zeroOrMore>
+                     <zeroOrMore>
+                        <element name="div">
+                           <attribute name="type">
+                              <value>colophon</value>
+                           </attribute>
+                           <element name="head">
+                              <attribute name="type">
+                                 <value>colophon</value>
+                              </attribute>
+                              <optional>
+                                 <attribute name="tid"/>
+                              </optional>
+                              <text/>
+                           </element>
+                           <ref name="section-content"/>
+                           <zeroOrMore>
+                              <ref name="translation-section"/>
+                           </zeroOrMore>
+                        </element>
+                     </zeroOrMore>
+                  </group>
+               </choice>
+            </element>
+>>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
          </optional>
       </element>
    </define>
@@ -3604,12 +3998,16 @@ Elements 7.2.5. Speech Contents]</a:documentation>
                               <attribute name="type">
                                  <value>section</value>
                               </attribute>
+<<<<<<< HEAD
                               <attribute name="xml:id"/>
+=======
+>>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
                               <optional>
                                  <element name="head">
                                     <attribute name="type">
                                        <value>section</value>
                                     </attribute>
+<<<<<<< HEAD
                                     <optional>
                                        <attribute name="tid"/>
                                     </optional>
@@ -3687,6 +4085,15 @@ Elements 7.2.5. Speech Contents]</a:documentation>
                                     </zeroOrMore>
                                  </element>
                               </zeroOrMore>
+=======
+                                    <optional>
+                                       <attribute name="tid"/>
+                                    </optional>
+                                    <text/>
+                                 </element>
+                              </optional>
+                              <ref name="section-content"/>
+>>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
                            </element>
                         </zeroOrMore>
                      </choice>
@@ -3712,9 +4119,12 @@ Elements 7.2.5. Speech Contents]</a:documentation>
                      <optional>
                         <attribute name="tid"/>
                      </optional>
+<<<<<<< HEAD
                      <optional>
                         <attribute name="key"/>
                      </optional>
+=======
+>>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
                      <text/>
                   </element>
                   <choice>
@@ -3747,7 +4157,10 @@ Elements 7.2.5. Speech Contents]</a:documentation>
                            <attribute name="type">
                               <value>section</value>
                            </attribute>
+<<<<<<< HEAD
                            <attribute name="xml:id"/>
+=======
+>>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
                            <oneOrMore>
                               <choice>
                                  <optional>
@@ -3758,6 +4171,7 @@ Elements 7.2.5. Speech Contents]</a:documentation>
                                        <optional>
                                           <attribute name="tid"/>
                                        </optional>
+<<<<<<< HEAD
                                        <optional>
                                           <attribute name="key"/>
                                        </optional>
@@ -3785,6 +4199,25 @@ Elements 7.2.5. Speech Contents]</a:documentation>
                                                 <data type="ID"/>
                                              </attribute>
                                              <text/>
+=======
+                                       <text/>
+                                    </element>
+                                 </optional>
+                                 <zeroOrMore>
+                                    <element name="list">
+                                       <attribute name="type">
+                                          <value>abbreviations</value>
+                                       </attribute>
+                                       <zeroOrMore>
+                                          <ref name="head"/>
+                                       </zeroOrMore>
+                                       <oneOrMore>
+                                          <element name="item">
+                                             <attribute name="id" ns="http://www.w3.org/XML/1998/namespace">
+                                                <data type="ID"/>
+                                             </attribute>
+                                             <text/>
+>>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
                                              <optional>
                                                 <ref name="abbr"/>
                                              </optional>
@@ -4164,7 +4597,11 @@ Elements 7.2.5. Speech Contents]</a:documentation>
    <define name="table">
       <element name="table">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains text displayed in tabular form, in rows and columns. [14.1.1. TEI Tables]</a:documentation>
+<<<<<<< HEAD
          <rng:group xmlns:rng="http://relaxng.org/ns/structure/1.0">
+=======
+         <group>
+>>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
             <zeroOrMore>
                <choice>
                   <ref name="model.headLike"/>
@@ -4173,31 +4610,56 @@ Elements 7.2.5. Speech Contents]</a:documentation>
             </zeroOrMore>
             <choice>
                <oneOrMore>
+<<<<<<< HEAD
                   <rng:group>
+=======
+                  <group>
+>>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
                      <ref name="row"/>
                      <zeroOrMore>
                         <ref name="model.global"/>
                      </zeroOrMore>
+<<<<<<< HEAD
                   </rng:group>
                </oneOrMore>
                <oneOrMore>
                   <rng:group>
+=======
+                  </group>
+               </oneOrMore>
+               <oneOrMore>
+                  <group>
+>>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
                      <ref name="model.graphicLike"/>
                      <zeroOrMore>
                         <ref name="model.global"/>
                      </zeroOrMore>
+<<<<<<< HEAD
                   </rng:group>
                </oneOrMore>
             </choice>
             <zeroOrMore>
                <rng:group>
+=======
+                  </group>
+               </oneOrMore>
+            </choice>
+            <zeroOrMore>
+               <group>
+>>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
                   <ref name="model.divBottom"/>
                   <zeroOrMore>
                      <ref name="model.global"/>
                   </zeroOrMore>
+<<<<<<< HEAD
                </rng:group>
             </zeroOrMore>
          </rng:group>
+=======
+               </group>
+            </zeroOrMore>
+         </group>
+>>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
          <ref name="att.typed.attributes"/>
          <attribute name="tid">
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Numbers the table in the text along with and in the same manner as paragraph, <code xmlns="http://www.w3.org/1999/xhtml">&lt;p&gt;</code>; and line group, <code xmlns="http://www.w3.org/1999/xhtml">&lt;l&gt;</code>, elements.</a:documentation>
@@ -4380,8 +4842,11 @@ Sample values include: </a:documentation>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Latin</a:documentation>
                <value>zh</value>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Chinese in Chinese script (Use Zh-Ltn if in Roman script)</a:documentation>
+<<<<<<< HEAD
                <value>ja</value>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Japanese in Japanese script (Use Ja-Ltn if in Roman script)</a:documentation>
+=======
+>>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
                <value>middle_indic-Ltn</value>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Middle Indic written in Roman script.</a:documentation>
                <value>mixed</value>
