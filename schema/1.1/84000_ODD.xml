@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
 <?xml-model href="defaultTEI.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <tei:TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0" xml:lang="en">
-=======
-<?xml-model href="SchemaToValidateODD.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0" xml:lang="en">
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -52,11 +47,7 @@
       <schemaSpec ident="NewODD" docLang="en" xml:lang="en">
         <moduleRef key="core" include="abbr author bibl biblScope date distinct editor emph expan foreign gloss graphic head hi item l label lb lg list milestone name note p ptr publisher q ref term title"/>
         <moduleRef key="tei" except=""/>
-<<<<<<< HEAD
         <moduleRef key="header" include="availability catRef category catDesc classDecl edition editionStmt encodingDesc fileDesc idno keywords licence notesStmt profileDesc publicationStmt sourceDesc taxonomy teiHeader textClass titleStmt"/>
-=======
-        <moduleRef key="header" include="availability catRef category catDesc edition editionStmt fileDesc idno keywords licence notesStmt profileDesc publicationStmt sourceDesc taxonomy teiHeader textClass titleStmt"/>
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
         <moduleRef key="textstructure" include="TEI back body div front text trailer"/>
         <moduleRef key="figures" include="cell table row"/>
         <classSpec type="atts" ident="att.breaking" mode="delete"/>
@@ -191,7 +182,6 @@
           </attList>
         </classSpec>
         <classSpec type="atts" ident="att.written" mode="delete"/>
-<<<<<<< HEAD
         <!--Modifications to Standard TEI Macros-->
         <macroSpec ident="macro.phraseSeq" mode="change">
           <content>
@@ -310,41 +300,6 @@
           </content>
         </macroSpec>
         <!--Added Macros to be Referenced in the Content Models of 84000's Schema's Elements-->
-=======
-        <macroSpec ident="macro.paraContent" mode="change">
-          <!--This is the default with the "mantra" element added-->
-          <content>
-            <alternate minOccurs="0" maxOccurs="unbounded">
-              <textNode/>
-              <classRef key="model.gLike"/>
-              <classRef key="model.phrase"/>
-              <classRef key="model.inter"/>
-              <classRef key="model.global"/>
-              <elementRef key="lg"/>
-              <elementRef key="mantra"/>
-              <elementRef key="modPassage"/>
-              <elementRef key="canonDef"/>
-              <classRef key="model.lLike"/>
-            </alternate>
-          </content>
-        </macroSpec>
-        <macroSpec ident="macro.specialPara" mode="change">
-          <!--This is the default with the "mantra" element added-->
-          <content>
-            <alternate maxOccurs="unbounded" minOccurs="0">
-              <textNode/>
-              <classRef key="model.gLike"/>
-              <classRef key="model.phrase"/>
-              <classRef key="model.inter"/>
-              <classRef key="model.divPart"/>
-              <classRef key="model.global"/>
-              <elementRef key="mantra"/>
-              <elementRef key="modPassage"/>
-              <elementRef key="canonDef"/>
-            </alternate>
-          </content>
-        </macroSpec>
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
         <macroSpec ident="endnote" mode="add">
           <content>
             <rng:element xmlns="http://relaxng.org/ns/structure/1.0" name="note">
@@ -417,25 +372,15 @@
                   </rng:choice>
                 </attribute>
               </rng:optional>
-<<<<<<< HEAD
               <rng:oneOrMore xmlns="http://relaxng.org/ns/structure/1.0">
                 <rng:choice>
                   <text/>
-=======
-              <oneOrMore xmlns="http://relaxng.org/ns/structure/1.0">
-                <rng:choice>
-                  <rng:text/>
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
                     <rng:ref name="title"/>
                     <rng:ref name="ptr"/>
                     <rng:ref name="endnote"/>
                     <rng:ref name="foreign"/>
-<<<<<<< HEAD
                     <rng:ref name="ref-canonical"/>
                     <rng:ref name="ref-other"/>
-=======
-                    <rng:ref name="ref"/>
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
                     <rng:ref name="emph"/>
                     <rng:ref name="distinct"/>
                     <rng:ref name="q"/>
@@ -455,25 +400,20 @@
                       <rng:optional>
                         <attribute name="ref"/>
                       </rng:optional>
-<<<<<<< HEAD
                       <rng:oneOrMore>
-=======
-                      <oneOrMore>
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
                         <rng:choice>
                           <rng:zeroOrMore>
                             <rng:ref name="foreign"/>
                           </rng:zeroOrMore>
                           <text/>
                         </rng:choice>
-                      </oneOrMore>
+                      </rng:oneOrMore>
                     </rng:element>
                 </rng:choice>
-              </oneOrMore>
+              </rng:oneOrMore>
             </rng:element>
           </content>
         </macroSpec>
-<<<<<<< HEAD
         <macroSpec ident="ref-canonical" mode="add">
           <content>
             <rng:element xmlns="http://relaxng.org/ns/structure/1.0" name="ref">
@@ -537,8 +477,6 @@
             </rng:element>
           </content>
         </macroSpec>
-=======
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
         <macroSpec ident="section-content" mode="add">
           <content>
             <rng:optional xmlns="http://relaxng.org/ns/structure/1.0">
@@ -547,21 +485,12 @@
                   <rng:ref name="milestone"/>
                   <rng:ref name="paragraph"/>
                   <rng:ref name="q"/>
-<<<<<<< HEAD
                   <rng:ref name="head"/>
-=======
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
                   <rng:ref name="lb"/>
                   <rng:ref name="lg"/>
                   <rng:ref name="list"/>
                   <rng:ref name="table"/>
-<<<<<<< HEAD
                   <rng:ref name="label"/>
-=======
-                  <rng:element name="label">
-                    <rng:data type="string"/>
-                  </rng:element>
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
                   <rng:ref name="trailer"/>
               </rng:choice>
               </rng:zeroOrMore>
@@ -576,10 +505,7 @@
                   <rng:value>chapter</rng:value>
                 </rng:choice>
               </attribute>
-<<<<<<< HEAD
               <attribute name="xml:id"/>
-=======
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
               <rng:optional>
                 <attribute name="rend"/>
               </rng:optional>
@@ -596,14 +522,10 @@
                 <rng:optional>
                   <attribute name="tid"/>
                 </rng:optional>
-<<<<<<< HEAD
                 <rng:optional>
                   <attribute name="key"/>
                 </rng:optional>
                 <text/>
-=======
-                <rng:text/>
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
               </rng:element>
               <rng:zeroOrMore>
                 <rng:choice>
@@ -617,7 +539,6 @@
                     <rng:optional>
                       <attribute name="tid"/>
                     </rng:optional>
-<<<<<<< HEAD
                     <rng:optional>
                       <attribute name="key"/>
                     </rng:optional>
@@ -627,9 +548,6 @@
                       <rng:ref name="foreign"/>
                       <rng:ref name="title"/>
                     </rng:choice>
-=======
-                    <rng:text/>
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
                   </rng:element>
                   <!-- section title -->
                   <rng:element name="head">
@@ -641,7 +559,6 @@
                     <rng:optional>
                       <attribute name="tid"/>
                     </rng:optional>
-<<<<<<< HEAD
                     <rng:optional>
                       <attribute name="key"/>
                     </rng:optional>
@@ -717,16 +634,6 @@
                 <rng:ref name="translation-chapter"/>
               </rng:zeroOrMore>
               </rng:choice>
-=======
-                    <rng:text/>
-                  </rng:element>
-                </rng:choice>
-              </rng:zeroOrMore>
-              <rng:ref name="section-content"/>
-              <rng:zeroOrMore>
-                <rng:ref name="translation-subsection-l3"/>
-              </rng:zeroOrMore>
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
             </rng:element>
           </content>
         </macroSpec>
@@ -739,21 +646,11 @@
                   <rng:value>section</rng:value>
                 </rng:choice>
               </attribute>
-<<<<<<< HEAD
               <attribute name="xml:id"/>
               <rng:optional>
                 <attribute name="prefix"/>
               </rng:optional>
               <rng:oneOrMore>
-=======
-              <rng:optional>
-                <attribute name="rend"/>
-              </rng:optional>
-              <rng:optional>
-                <attribute name="prefix"/>
-              </rng:optional>
-              <oneOrMore>
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
                 <rng:choice>
                   <rng:zeroOrMore>
                     <rng:element name="head">
@@ -765,7 +662,6 @@
                       <rng:optional>
                         <attribute name="tid"/>
                       </rng:optional>
-<<<<<<< HEAD
                       <rng:optional>
                         <attribute name="key"/>
                       </rng:optional>
@@ -832,25 +728,6 @@
               <rng:zeroOrMore>
                 <rng:ref name="translation-subsection-lv5"/>
               </rng:zeroOrMore>
-=======
-                      <rng:text/>
-                    </rng:element>
-                  </rng:zeroOrMore>
-                </rng:choice>
-              </oneOrMore>
-              <rng:ref name="section-content"/>
-              <!-- translation-subsections (trying to do this by just haveing the translation-section reference itself
-                                   creates an infinite recursion error in the generated documentation 
-                                   so it is needed to restate each level of sub-sectionings to generate documentation.)-->
-              <rng:choice>
-                <rng:zeroOrMore>
-                <rng:ref name="translation-subsection-l3"/>
-              </rng:zeroOrMore>
-              <rng:zeroOrMore>
-                <rng:ref name="translation-chapter"/>
-              </rng:zeroOrMore>
-              </rng:choice>
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
             </rng:element>
           </content>
         </macroSpec>
@@ -863,18 +740,11 @@
                   <rng:value>section</rng:value>
                 </rng:choice>
               </attribute>
-<<<<<<< HEAD
               <attribute name="xml:id"/>
               <rng:optional>
                 <attribute name="prefix"/>
               </rng:optional>
               <rng:oneOrMore>
-=======
-              <rng:optional>
-                <attribute name="prefix"/>
-              </rng:optional>
-              <oneOrMore>
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
                 <rng:choice>
                   <rng:zeroOrMore>
                     <rng:element name="head">
@@ -886,7 +756,6 @@
                       <rng:optional>
                         <attribute name="tid"/>
                       </rng:optional>
-<<<<<<< HEAD
                       <rng:optional>
                         <attribute name="key"/>
                       </rng:optional>
@@ -953,17 +822,6 @@
               <rng:zeroOrMore>
                 <rng:ref name="translation-subsection-lv7"/>
               </rng:zeroOrMore>
-=======
-                      <rng:text/>
-                    </rng:element>
-                  </rng:zeroOrMore>
-                  <rng:ref name="section-content"/>
-                  <rng:zeroOrMore>
-                    <rng:ref name="translation-subsection-l4"/>
-                  </rng:zeroOrMore>
-                </rng:choice>
-              </oneOrMore>
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
             </rng:element>
           </content>
         </macroSpec>
@@ -976,18 +834,11 @@
                   <rng:value>section</rng:value>
                 </rng:choice>
               </attribute>
-<<<<<<< HEAD
               <attribute name="xml:id"/>
               <rng:optional>
                 <attribute name="prefix"/>
               </rng:optional>
               <rng:oneOrMore>
-=======
-              <rng:optional>
-                <attribute name="prefix"/>
-              </rng:optional>
-              <oneOrMore>
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
                 <rng:choice>
                   <rng:zeroOrMore>
                     <rng:element name="head">
@@ -999,7 +850,6 @@
                       <rng:optional>
                         <attribute name="tid"/>
                       </rng:optional>
-<<<<<<< HEAD
                       <rng:optional>
                         <attribute name="key"/>
                       </rng:optional>
@@ -1112,16 +962,6 @@
               </rng:oneOrMore>
               <rng:zeroOrMore>
                 <rng:ref name="translation-subsection-lv10"/>
-=======
-                      <rng:text/>
-                    </rng:element>
-                  </rng:zeroOrMore>
-                </rng:choice>
-              </oneOrMore>
-              <rng:ref name="section-content"/>
-              <rng:zeroOrMore>
-                <rng:ref name="translation-subsection-l5"/>
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
               </rng:zeroOrMore>
             </rng:element>
           </content>
@@ -1135,18 +975,11 @@
                   <rng:value>section</rng:value>
                 </rng:choice>
               </attribute>
-<<<<<<< HEAD
               <attribute name="xml:id"/>
               <rng:optional>
                 <attribute name="prefix"/>
               </rng:optional>
               <rng:oneOrMore>
-=======
-              <rng:optional>
-                <attribute name="prefix"/>
-              </rng:optional>
-              <oneOrMore>
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
                 <rng:choice>
                   <rng:zeroOrMore>
                     <rng:element name="head">
@@ -1158,7 +991,6 @@
                       <rng:optional>
                         <attribute name="tid"/>
                       </rng:optional>
-<<<<<<< HEAD
                       <rng:optional>
                         <attribute name="key"/>
                       </rng:optional>
@@ -1177,16 +1009,6 @@
               </rng:oneOrMore>
               <rng:zeroOrMore>
                 <rng:ref name="translation-subsection-lv11"/>
-=======
-                      <rng:text/>
-                    </rng:element>
-                  </rng:zeroOrMore>
-                </rng:choice>
-              </oneOrMore>
-              <rng:ref name="section-content"/>
-              <rng:zeroOrMore>
-                <rng:ref name="translation-subsection-l6"/>
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
               </rng:zeroOrMore>
             </rng:element>
           </content>
@@ -1200,18 +1022,11 @@
                   <rng:value>section</rng:value>
                 </rng:choice>
               </attribute>
-<<<<<<< HEAD
               <attribute name="xml:id"/>
               <rng:optional>
                 <attribute name="prefix"/>
               </rng:optional>
               <rng:oneOrMore>
-=======
-              <rng:optional>
-                <attribute name="prefix"/>
-              </rng:optional>
-              <oneOrMore>
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
                 <rng:choice>
                   <rng:zeroOrMore>
                     <rng:element name="head">
@@ -1223,7 +1038,6 @@
                       <rng:optional>
                         <attribute name="tid"/>
                       </rng:optional>
-<<<<<<< HEAD
                       <rng:optional>
                         <attribute name="key"/>
                       </rng:optional>
@@ -1244,18 +1058,6 @@
               <!--<rng:zeroOrMore>
                 <rng:ref name="translation-subsection-lv12"/>
               </rng:zeroOrMore>-->
-=======
-                      <rng:text/>
-                    </rng:element>
-                  </rng:zeroOrMore>
-                  <rng:ref name="section-content"/>
-                  <!--Not needed yet-->
-                  <!--<rng:zeroOrMore>
-                    <rng:ref name="translation-subsection-l7"/>
-                  </rng:zeroOrMore>-->
-                </rng:choice>
-              </oneOrMore>
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
             </rng:element>
           </content>
         </macroSpec>
@@ -1501,19 +1303,15 @@
                       <rng:optional>
                         <attribute name="tid"/>
                       </rng:optional>
-<<<<<<< HEAD
                       <rng:optional>
                         <attribute name="key"/>
                       </rng:optional>
-=======
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
                       <rng:text/>
                     </rng:element>
                     <rng:choice>
                       <!-- single abbreviations list-->
                       <rng:zeroOrMore>
                         <rng:element name="list">
-<<<<<<< HEAD
                           <attribute name="type">
                             <rng:choice>
                               <rng:value>abbreviations</rng:value>
@@ -1578,22 +1376,14 @@
                       <!-- abbreviations -->
                       <rng:zeroOrMore>
                           <rng:element name="list">
-=======
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
                           <attribute name="type">
                             <rng:choice>
                               <rng:value>abbreviations</rng:value>
                             </rng:choice>
                           </attribute>
-<<<<<<< HEAD
                           <rng:zeroOrMore>
                             <rng:ref name="head"/>
                           </rng:zeroOrMore>
-=======
-                          <rng:oneOrMore>
-                            <rng:ref name="head"/>
-                          </rng:oneOrMore>
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
                           <rng:oneOrMore>
                             <!-- item -->
                             <rng:element name="item">
@@ -1603,25 +1393,16 @@
                               <rng:text/>
                               <!-- abbr -->
                               <rng:optional>
-<<<<<<< HEAD
                                 <rng:ref name="abbr"/> 
                               </rng:optional>
                               <!-- expan -->
                               <rng:optional>
                                 <rng:ref name="expan"/>
-=======
-                                <rng:ref name="abbr"> </rng:ref>
-                              </rng:optional>
-                              <!-- expan -->
-                              <rng:optional>
-                                <rng:ref name="expan"/>     
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
                               </rng:optional>
                             </rng:element>
                           </rng:oneOrMore>
                         </rng:element>
                       </rng:zeroOrMore>
-<<<<<<< HEAD
                           </rng:choice>
                         </rng:oneOrMore>
                       </rng:element>
@@ -1652,10 +1433,6 @@
                     </rng:element>
                     <!-- bibliography section -->
                     <rng:zeroOrMore>
-=======
-                      <!-- abbreviations sections -->
-                      <rng:zeroOrMore>
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
                       <rng:element name="div">
                         <attribute name="type">
                           <rng:choice>
@@ -1675,7 +1452,6 @@
                                 <rng:optional>
                                   <attribute name="tid"/>
                                 </rng:optional>
-<<<<<<< HEAD
                                 <rng:optional>
                                   <attribute name="key"/>
                                 </rng:optional>
@@ -1689,89 +1465,6 @@
                                 </rng:oneOrMore>
                               </rng:element>
                             </rng:optional>
-=======
-                                <rng:text/>
-                              </rng:element>
-                            </rng:optional>
-                      <!-- abbreviations -->
-                      <rng:zeroOrMore>
-                          <rng:element name="list">
-                          <attribute name="type">
-                            <rng:choice>
-                              <rng:value>abbreviations</rng:value>
-                            </rng:choice>
-                          </attribute>
-                          <rng:zeroOrMore>
-                            <rng:ref name="head"/>
-                          </rng:zeroOrMore>
-                          <rng:oneOrMore>
-                            <!-- item -->
-                            <rng:element name="item">
-                              <attribute name="id" ns="http://www.w3.org/XML/1998/namespace">
-                                <rng:data type="ID"/>
-                              </attribute>
-                              <rng:text/>
-                              <!-- abbr -->
-                              <rng:optional>
-                                <rng:ref name="abbr"/> 
-                              </rng:optional>
-                              <!-- expan -->
-                              <rng:optional>
-                                <rng:ref name="expan"/>
-                              </rng:optional>
-                            </rng:element>
-                          </rng:oneOrMore>
-                        </rng:element>
-                      </rng:zeroOrMore>
-                          </rng:choice>
-                        </rng:oneOrMore>
-                      </rng:element>
-                    </rng:zeroOrMore>
-                    </rng:choice>     
-                  </rng:element>
-                  <!-- bibliography -->
-                  <rng:element name="div">
-                    <attribute name="type">
-                      <rng:choice>
-                        <rng:value>listBibl</rng:value>
-                      </rng:choice>
-                    </attribute>
-                    <!-- head -->
-                    <rng:element name="head">
-                      <attribute name="type">
-                        <rng:choice>
-                          <rng:value>listBibl</rng:value>
-                        </rng:choice>
-                      </attribute>
-                      <rng:optional>
-                        <attribute name="tid"/>
-                      </rng:optional>
-                      <rng:text/>
-                    </rng:element>
-                    <!-- bibliography section -->
-                    <rng:zeroOrMore>
-                      <rng:element name="div">
-                        <attribute name="type">
-                          <rng:choice>
-                            <rng:value>section</rng:value>
-                          </rng:choice>
-                        </attribute>
-                        <rng:oneOrMore>
-                          <rng:choice>
-                            <rng:optional>
-                              <rng:element name="head">
-                                <attribute name="type">
-                                  <rng:choice>
-                                    <rng:value>section</rng:value>
-                                  </rng:choice>
-                                </attribute>
-                                <rng:optional>
-                                  <attribute name="tid"/>
-                                </rng:optional>
-                                <rng:text/>
-                              </rng:element>
-                            </rng:optional>
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
                             <rng:zeroOrMore>
                               <rng:ref name="p"/>
                             </rng:zeroOrMore>
@@ -1847,7 +1540,6 @@
                                         <rng:optional>
                                           <attribute name="tid"/>
                                         </rng:optional>
-<<<<<<< HEAD
                                         <rng:optional>
                                           <attribute name="key"/>
                                         </rng:optional>
@@ -1859,9 +1551,6 @@
                                             <rng:ref name="title"/>
                                           </rng:choice>
                                         </rng:oneOrMore>
-=======
-                                        <rng:text/>
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
                                       </rng:element>
                                     </rng:optional>
                                     <rng:zeroOrMore>
@@ -2044,12 +1733,9 @@
                         <rng:optional>
                           <attribute name="tid"/>
                         </rng:optional>
-<<<<<<< HEAD
                         <rng:optional>
                           <attribute name="key"/>
                         </rng:optional>
-=======
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
                         <rng:text/>
                       </rng:element>
                       <rng:optional>
@@ -2062,7 +1748,6 @@
                           <rng:optional>
                             <attribute name="tid"/>
                           </rng:optional>
-<<<<<<< HEAD
                           <rng:optional>
                             <attribute name="key"/>
                           </rng:optional>
@@ -2074,9 +1759,6 @@
                               <rng:ref name="title"/>
                             </rng:choice>
                           </rng:oneOrMore>
-=======
-                          <rng:text/>
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
                         </rng:element>
                       </rng:optional>
                       <!--prologue or homage-->
@@ -2096,14 +1778,7 @@
                                 <rng:value>homage</rng:value>
                               </rng:choice>
                             </attribute>
-<<<<<<< HEAD
                             <rng:ref name="head-content"/>
-=======
-                            <rng:optional>
-                              <attribute name="tid"/>
-                            </rng:optional>
-                            <rng:text/>
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
                           </rng:element>
                           <rng:oneOrMore>
                             <rng:choice>
@@ -2266,61 +1941,15 @@
           </classes>
           <content>
             <rng:optional xmlns="http://relaxng.org/ns/structure/1.0">
-<<<<<<< HEAD
               <rng:choice>
                 <!--CHOICE 1: preface / article -->
                 <rng:element name="div">
-=======
-              <!-- translation -->
-              <rng:element name="div">
-                <attribute name="type">
-                  <rng:choice>
-                    <rng:value>translation</rng:value>
-                    <rng:value>preface</rng:value>
-                  </rng:choice>
-                </attribute>
-                <rng:optional>
-                  <attribute name="tid"/>
-                </rng:optional>
-                <rng:choice>
-                  <!--CHOICE 1: for a preface text-->
-                  <rng:group>
-                    <rng:element name="head">
-                      <attribute name="type">
-                        <rng:choice>
-                          <rng:value>preface</rng:value>
-                        </rng:choice>
-                      </attribute>
-                      <rng:optional>
-                        <attribute name="tid"/>
-                      </rng:optional>
-                      <rng:text/>
-                    </rng:element>
-                    <rng:ref name="section-content"/>
-                    <!-- sections -->
-                    <rng:zeroOrMore>
-                      <rng:ref name="translation-section"/>
-                    </rng:zeroOrMore>  
-                  </rng:group>
-                <!--CHOICE 2: for the main translation-->
-               <rng:group>
-                 <rng:element name="head">
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
                   <attribute name="type">
                     <rng:choice>
                       <rng:value>article</rng:value>
                       <rng:value>preface</rng:value>
                     </rng:choice>
                   </attribute>
-<<<<<<< HEAD
-=======
-                  <rng:optional>
-                    <attribute name="tid"/>
-                  </rng:optional>
-                  <rng:text/>
-                </rng:element>
-                <rng:optional>
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
                   <rng:element name="head">
                     <attribute name="type">
                       <rng:choice>
@@ -2331,7 +1960,6 @@
                     <rng:optional>
                       <attribute name="tid"/>
                     </rng:optional>
-<<<<<<< HEAD
                     <rng:optional>
                       <attribute name="key"/>
                     </rng:optional>
@@ -2353,47 +1981,12 @@
                 
                 <!--CHOICE 2: for the main translation-->
                 <rng:element name="div">
-=======
-                    <rng:text/>
-                  </rng:element>
-                </rng:optional>
-                <rng:element name="head">
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
                   <attribute name="type">
                     <rng:value>translation</rng:value>
                   </attribute>
-<<<<<<< HEAD
                   <rng:element name="head">
                     <attribute name="type">
                       <rng:value>translation</rng:value>
-=======
-                  <rng:optional>
-                    <attribute name="tid"/>
-                  </rng:optional>
-                  <rng:text/>
-                </rng:element>
-                 <rng:optional>
-                   <rng:element name="head">
-                     <attribute name="type">
-                       <rng:choice>
-                         <rng:value>sub</rng:value>
-                       </rng:choice>
-                     </attribute>
-                     <rng:optional>
-                       <attribute name="tid"/>
-                     </rng:optional>
-                     <rng:text/>
-                   </rng:element>
-                 </rng:optional>
-                <!--prologue or homage-->
-                <rng:zeroOrMore>
-                  <rng:element name="div">
-                    <attribute name="type">
-                      <rng:choice>
-                        <rng:value>prologue</rng:value>
-                        <rng:value>homage</rng:value>
-                      </rng:choice>
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
                     </attribute>
                     <rng:optional>
                       <attribute name="tid"/>
@@ -2407,18 +2000,12 @@
                     <rng:element name="head">
                       <attribute name="type">
                         <rng:choice>
-<<<<<<< HEAD
                           <rng:value>titleHon</rng:value>
-=======
-                          <rng:value>prologue</rng:value>
-                          <rng:value>homage</rng:value>
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
                         </rng:choice>
                       </attribute>
                       <rng:optional>
                         <attribute name="tid"/>
                       </rng:optional>
-<<<<<<< HEAD
                       <rng:optional>
                         <attribute name="key"/>
                       </rng:optional>
@@ -2429,31 +2016,6 @@
                     <attribute name="type">
                       <rng:choice>
                         <rng:value>titleMain</rng:value>
-=======
-                      <rng:text/>
-                    </rng:element>
-                    <rng:ref name="section-content"/>
-                        <!-- sections -->
-                        <rng:zeroOrMore>
-                          <rng:ref name="translation-section"/>
-                        </rng:zeroOrMore>  
-                  </rng:element>
-                </rng:zeroOrMore>
-                <rng:zeroOrMore>
-                  <rng:ref name="translation-section"/>
-                </rng:zeroOrMore>
-                <rng:zeroOrMore>
-                  <rng:ref name="translation-chapter"/>
-                </rng:zeroOrMore>
-                <!--colophon, dedication, or epilogue-->
-                <rng:zeroOrMore>
-                  <rng:element name="div">
-                    <attribute name="type">
-                      <rng:choice>
-                        <rng:value>colophon</rng:value>
-                        <!--<rng:value>dedication</rng:value>
-                        <rng:value>epilogue</rng:value>-->
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
                       </rng:choice>
                     </attribute>
                     <rng:optional>
@@ -2507,10 +2069,10 @@
                     </rng:element>
                   </rng:zeroOrMore>
                   <rng:zeroOrMore>
-                    <rng:ref name="translation-section"/>
-                  </rng:zeroOrMore>
-                  <rng:zeroOrMore>
-                    <rng:ref name="translation-chapter"/>
+                    <rng:choice>
+                      <rng:ref name="translation-section"/>  
+                      <rng:ref name="translation-chapter"/>
+                    </rng:choice>
                   </rng:zeroOrMore>
                   <!--colophon, dedication, or epilogue-->
                   <rng:zeroOrMore>
@@ -2519,7 +2081,6 @@
                         <rng:choice>
                           <rng:value>colophon</rng:value>
                           <!--<rng:value>dedication</rng:value>
-<<<<<<< HEAD
                         <rng:value>epilogue</rng:value>-->
                         </rng:choice>
                       </attribute>
@@ -2556,26 +2117,6 @@
                   </rng:zeroOrMore>
                 </rng:element>
               </rng:choice>
-=======
-                          <rng:value>epilogue</rng:value>-->
-                        </rng:choice>
-                      </attribute>
-                      <rng:optional>
-                        <attribute name="tid"/>
-                      </rng:optional>
-                      <rng:text/>
-                    </rng:element>
-                    <rng:ref name="section-content"/>
-                        <!-- sections (some colophons have sections, for instance one each for both Sanskrit and Tibetan etc.) -->
-                        <rng:zeroOrMore>
-                          <rng:ref name="translation-section"/>
-                        </rng:zeroOrMore>
-                  </rng:element>
-                </rng:zeroOrMore>
-               </rng:group>
-                </rng:choice>
-              </rng:element>
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
             </rng:optional>
           </content>
           <exemplum>
@@ -2640,14 +2181,11 @@
             <attDef ident="rend" mode="delete"/> 
           </attList>
         </elementSpec>
-<<<<<<< HEAD
         <elementSpec ident="catDesc" module="header" mode="change">
           <content>
             <textNode/>
           </content>
         </elementSpec>
-=======
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
         <elementSpec ident="cell" mode="change">
           <classes mode="change">
             <memberOf key="att.global" mode="delete"/>
@@ -3384,12 +2922,9 @@
                         <rng:optional>
                           <attribute name="tid"/>
                         </rng:optional>
-<<<<<<< HEAD
                         <rng:optional>
                           <attribute name="key"/>
                         </rng:optional>
-=======
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
                         <rng:text/>
                       </rng:element>
                       <rng:zeroOrMore>
@@ -3442,12 +2977,9 @@
                         <rng:optional>
                           <attribute name="tid"/>
                         </rng:optional>
-<<<<<<< HEAD
                         <rng:optional>
                           <attribute name="key"/>
                         </rng:optional>
-=======
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
                         <rng:text/>
                       </rng:element>
                         <rng:ref name="milestone"/>
@@ -3475,12 +3007,9 @@
                     <rng:optional>
                       <attribute name="tid"/>
                     </rng:optional>
-<<<<<<< HEAD
                     <rng:optional>
                       <attribute name="key"/>
                     </rng:optional>
-=======
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
                     <rng:text/>
                   </rng:element>
                       <rng:ref name="section-content"/>
@@ -3509,12 +3038,9 @@
                         <rng:optional>
                           <attribute name="tid"/>
                         </rng:optional>
-<<<<<<< HEAD
                         <rng:optional>
                           <attribute name="key"/>
                         </rng:optional>
-=======
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
                         <rng:text/>
                       </rng:element>
                       <rng:ref name="section-content"/>
@@ -3526,10 +3052,7 @@
                               <rng:value>section</rng:value>
                             </rng:choice>
                           </attribute> 
-<<<<<<< HEAD
                           <attribute name="xml:id"/>
-=======
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
                               <rng:optional>
                                 <rng:element name="head">
                                   <attribute name="type">
@@ -3540,7 +3063,6 @@
                                   <rng:optional>
                                     <attribute name="tid"/>
                                   </rng:optional>
-<<<<<<< HEAD
                                   <rng:optional>
                                     <attribute name="key"/>
                                   </rng:optional>
@@ -3625,12 +3147,6 @@
                               </rng:zeroOrMore>
                             </rng:element>
                           </rng:zeroOrMore>
-=======
-                                  <rng:text/>
-                                </rng:element>
-                              </rng:optional>   
-                          <rng:ref name="section-content"/>
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
                         </rng:element>
                       </rng:zeroOrMore>
                     </rng:choice>
@@ -3785,19 +3301,12 @@
             <memberOf key="att.global" mode="delete"/>
             <memberOf key="att.placement" mode="delete"/>
           </classes>
-<<<<<<< HEAD
           <content>  
             <alternate minOccurs="1" maxOccurs="unbounded">
               <textNode/>
               <elementRef key="foreign"/>
               <elementRef key="note"/>
               <elementRef key="title"/>
-=======
-          <content>
-            <alternate minOccurs="1" maxOccurs="unbounded">
-              <textNode/>
-              <elementRef key="foreign"/>
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
             </alternate>
           </content>
           <attList>
@@ -3810,13 +3319,18 @@
                 <valItem ident="acknowledgment"/>
                 <valItem ident="abbreviations"/>
                 <valItem ident="description"/>
-<<<<<<< HEAD
                 <valItem ident="floating">
-                  <desc>A floating header that is not the heading for any <gi>div</gi> element.</desc>
+                  <desc>A floating header that is not the heading for any <gi>div</gi> element but still represents some structural division in the text.
+                  This was used in Toh 287 at 4.3 because the chapter needed to be divided into smaller pieces in order to be processed by the parser. The
+                  heading at 4.3 thus represents a structural division in the text but doesn't contain a <gi>div</gi> in the XML. If the heading is not
+                  a structural division use type="nonStructuralBreak"</desc>
                 </valItem>
-=======
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
                 <valItem ident="table"/>
+                <valItem ident="nonStructuralBreak">
+                  <desc>A heading that does not show a structural division and is not represented by a new parent <gi>div</gi> element. 
+                  Note that this will be displayed with a slightly smaller font than the regular heading and be held in square brackets. To 
+                  display the heading in the same manner as the other headings use type="floating"</desc>
+                </valItem>
                 <valItem ident="translation"/>
                 <valItem ident="titleHon">
                   <desc>Honorifics before the title proper, e.g., "The Noble Mahāyāna Sūtra..."</desc>
@@ -3825,12 +3339,9 @@
                 <valItem ident="sub">
                   <desc>subtitle</desc>
                 </valItem>
-<<<<<<< HEAD
                 <valItem ident="author">
                   <desc>If author is to be named in the heading, as with a preface for instance (see toh 113).</desc>
                 </valItem>
-=======
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
                 <valItem ident="notes"/>
                 <valItem ident="section"/>
                 <valItem ident="chapter"/>
@@ -4075,7 +3586,6 @@
             <memberOf key="att.global" mode="delete"/>
           </classes>
           <content>
-<<<<<<< HEAD
             <zeroOrMore xmlns="http://relaxng.org/ns/structure/1.0">
               <choice>
                 <text/>
@@ -4089,20 +3599,13 @@
               </choice>
             </zeroOrMore>
               <!--<alternate minOccurs="0" maxOccurs="unbounded">
-=======
-              <alternate minOccurs="0" maxOccurs="unbounded">
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
                 <textNode/>
                 <classRef key="model.gLike"/>
                 <classRef key="model.phrase"/>
                 <classRef key="model.inter"/>
                 <classRef key="model.global"/>
                 <elementRef key="mantra"/>
-<<<<<<< HEAD
               </alternate>-->
-=======
-              </alternate>
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
           </content>
           <exemplum>
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -4484,12 +3987,8 @@
               be indented. Multiple <gi>list</gi> elements in combination with these types to format
               an outline. <ref target="http://read.84000-translate.org/translation/toh116.html#UT22084-051-004-45">For example see this outline in Toh. 116</ref> and the XML markup in the example
               below. For further details on creating outlines <ref target="84000_ODD.html#index.xml-back.1_div.2_div.3">see Appendix B.3</ref>
-<<<<<<< HEAD
             <lb/>
                         </p>
-=======
-            </p>
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
             <p>A list may contain a &lt;head type="list"&gt; element to create a bold heading at the
               beginning before the first <gi>item</gi> in the list. Within each <gi>item</gi>, a
                 <gi>label</gi> element can be used to the same effect. See in the XML example below
@@ -4918,17 +4417,10 @@
           </classes>
           <content>
             <!-- publicationStmt -->
-<<<<<<< HEAD
             <!--two content models are placed here, (A) for translations and (B) for preface, knowledgebase, or placeholders. The placeholder content
                   model is less restrictive. They are divided with an "rng:choice" element-->
             <rng:choice>
               <!--(A) publicationStmt for translations-->
-=======
-            <!--two content models are placed here, one for translations and one for placeholders. The placeholder content
-                  model is less restrictive. They are divided with an "rng:choice" element-->
-            <rng:choice>
-              <!--publicationStmt for translations-->
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
               <rng:group>
                 <!-- publisher -->
                 <rng:element name="publisher">
@@ -4992,7 +4484,6 @@
                   <rng:data type="date"/>
                 </rng:element>
               </rng:group>
-<<<<<<< HEAD
               <!--(B) publicationStmt for placeholders, knowledgebase, and preface files-->
               <rng:group>
                 <rng:zeroOrMore>
@@ -5018,29 +4509,16 @@
                     </rng:element>
                   </rng:choice>
                   </rng:oneOrMore>
-=======
-              <!--publicationStmt for placeholders and preface files-->
-              <rng:group>
-                  <rng:element name="idno">
-                  <attribute xmlns="http://relaxng.org/ns/structure/1.0" name="id" ns="http://www.w3.org/XML/1998/namespace">
-                    <rng:data type="ID"/>
-                  </attribute>
-                </rng:element>
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
                 <rng:zeroOrMore>
                   <rng:choice>
                     <rng:element name="note">
                       <rng:text/>
                     </rng:element>
-<<<<<<< HEAD
                     <rng:element name="date">
                       <rng:optional>
                                                 <rng:data type="date"/>
                                             </rng:optional>
                     </rng:element>
-=======
-                    <rng:element name="date"/>
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
                   </rng:choice>
                 </rng:zeroOrMore>
               </rng:group>
@@ -5249,7 +4727,6 @@
                   For example, some of the folio refs for the Sanskrit in Toh. 11 are hidden in this
                   way, but there is a note about their availability in the text's introduction. See
                   the example below.</p>
-<<<<<<< HEAD
                 <p>The value "pending" is only used for references to be linked to other
                 84000 texts that are not yet published. The URL to the page of the unpublished texts should still be
                 applied to the @target attribute of the <gi>ref</gi>, e.g., target="https://read.84000.co/translation/toh9999.html"
@@ -5258,8 +4735,6 @@
                 Furthermore, if the reference points to a particular page in the unpublished text, e.g., a
                 folio number, this should be added as an <att>inst</att> attribute so that the appropriate
                 milestone can be located and added to the URL at the time the text is published. See example below.</p>
-=======
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
               </remarks>
             </attDef>
             <attDef ident="work" mode="add" usage="opt">
@@ -5274,7 +4749,6 @@
                   When the <att>work</att> attribute is present, the parser will create a link to
                   that work or leave the reference unlinked if the alternate work in not in the
                   database.</p>
-<<<<<<< HEAD
               </remarks>
             </attDef>
             <attDef ident="page" mode="add" usage="opt">
@@ -5297,16 +4771,6 @@
               </remarks>
             </attDef>
             <attDef ident="xml:id" mode="change" usage="opt"/>
-=======
-              </remarks>
-            </attDef>
-            <attDef ident="page" mode="add" usage="opt">
-              <desc>Specifies which page index for the linked eKangyur when the index is irregular.</desc>
-              <remarks>
-                                <p>Only to be used with irregular ref order. Further Documentation to be added shortly.</p>
-                            </remarks>
-            </attDef>
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
           </attList>
           <exemplum>
             <p>First, most commonly, the <gi>ref</gi> element is used to mark all folio references
@@ -5320,7 +4784,6 @@
               <p tid="81">
                 <ref cRef="F.1.b" type="folio"/>
                 <ref cRef="B1" type="bampo"/> I pay homage to all the buddhas and bodhisattvas.
-<<<<<<< HEAD
                 <!--...-->
               </p>
             </egXML>
@@ -5337,32 +4800,11 @@
                 <ref type="sanskrit">{S1}</ref> 
                 <ref type="chinese">{C1}</ref> 
                 I pay homage to all the buddhas and bodhisattvas.
-=======
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
                 <!--...-->
               </p>
             </egXML>
           </exemplum>
           <exemplum>
-<<<<<<< HEAD
-=======
-            <p>Folio/page reference numbers referring to additional language sources should be marked 
-            as such with the @type attribute. If there are a lot of these in order to distinguish these 
-            from the square brackets of the Tibetan refs, curly brackets will need to be used instead.
-            since the @cRef attribute will automatically display square ones, the reference should be 
-            placed with in the node and the @cRef should not be used:</p>
-            <egXML xmlns="http://www.tei-c.org/ns/Examples">
-              <p tid="81">
-                <ref cRef="F.1.b" type="folio"/>
-                <ref type="sanskrit">{S1}</ref> 
-                <ref type="chinese">{C1}</ref> 
-                I pay homage to all the buddhas and bodhisattvas.
-                <!--...-->
-              </p>
-            </egXML>
-          </exemplum>
-          <exemplum>
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
             <p>Note, there are some texts that are duplicated in multiple sections of the
               Kangyur. For example The Prophecy of Sri_Mahadevi is found twice in the Kangyur as
               Toh. 193 and 739. Theses are both word for word exactly the same, but the folio
@@ -5759,28 +5201,21 @@
             <p>For further details on tables see Topics: <ref target="84000_ODD.html#index.xml-back.1_div.2_div.5">Appendix B.5 Tables</ref>.</p>
           </remarks>
         </elementSpec>
-<<<<<<< HEAD
         <elementSpec ident="taxonomy" module="header" mode="change">
           <content>
             <elementRef key="category" minOccurs="0" maxOccurs="unbounded"/>
           </content>
         </elementSpec>
-=======
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
         <elementSpec ident="teiHeader" module="header" mode="change">
           <classes mode="change">
             <memberOf key="att.global" mode="delete"/>
           </classes>
           <content>
             <elementRef key="fileDesc"/>
-<<<<<<< HEAD
             <alternate minOccurs="0" maxOccurs="unbounded">
               <elementRef key="encodingDesc"/>
               <elementRef key="profileDesc"/>
             </alternate>
-=======
-            <elementRef key="profileDesc" minOccurs="0"/>
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
           </content>
           <exemplum>
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -6628,7 +6063,6 @@
               divisions in the summary or acknowledgements, these sections may disappear. It is
               particularly good to check the front material and the bibliography for anything
               unusual.</item>
-<<<<<<< HEAD
               <item>The template should generate a placeholder for sponsorship in the "Acknowledgements" section, 
                 this is just a placeholder for the sponsor so the editors and Line remember to check the sponsorship with Jing Rui before publication. 
                Please leave it as is unless instructions from management say otherwise.</item>
@@ -6655,14 +6089,6 @@
                 <p tid="5">[Sponsored by XXXXX.]</p>
               </egXML>
                             </item>
-=======
-              <item>The script will generate a placeholder for sponsorship in the "Acknowledgements" section, 
-                as the comment from the script will say, this is just a placeholder for the sponsor 
-                so the editors and Line remember to check the sponsorship with Jing Rui before publication. 
-                If there is already sponsorship mentioned in the acknowledgements, you can remove the 
-                placeholder, otherwise please just leave it as is, and Line or John will take care of 
-                this just prior to publication.</item>
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
             <item>When you first get to the <gi>body</gi> of the text, you may notice that the title
               has been repeated with two lines containing separate <gi>p</gi> and <gi>milestone</gi>
               tags. For example: <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -6704,11 +6130,7 @@
               </egXML> This is actually a placeholder from the template and should be removed, as
               the heading from the previous <gi>div</gi> element will provide the heading
               "Introduction" or "The Translation." </item>
-<<<<<<< HEAD
               <item>Most Kangyur texts begin with a short homage, typically this should be followed by a line break <gi>lb</gi> between the 
-=======
-              <item>All Kangyur texts begin with a homage, typically this should be followed by a line break <gi>lb</gi> between the 
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
               homage and the beginning of the text, which needs to be added manually:
               <egXML xmlns="http://www.tei-c.org/ns/Examples">
                 <milestone unit="chunk" xml:id="UT22084-044-005-11"/>
@@ -6720,7 +6142,6 @@
                 </p>
               </egXML>
                 <ref target="http://read.84000-translate.org/translation/toh85.html#UT22084-044-005-11">(Click here to see in Reading Room display)</ref>
-<<<<<<< HEAD
                 Occasionally there may be a long homage that necessitates its own section. In this case it may be appropriate to create a <gi>div</gi>
                 for the homage itself. The <gi>div</gi> and its accompanying <gi>head</gi> should both be type="homage". See for example in Toh 138:
                <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -6742,8 +6163,6 @@
                  </div>
                </egXML>
                 <ref target="http://read.84000-translate.org/translation/toh138.html#UT22084-056-006-23">(Click here to see in Reading Room display)</ref>
-=======
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
               </item>
             <item>If there were any italics that were missed in the copy editing phase, they will
               appear with a schema error in an element called "fix." You will need to manually fix
@@ -7062,12 +6481,6 @@
               <hi rend="bold">Other Issues to Check For while Editing the XML:</hi>
             </head>
             <list>
-<<<<<<< HEAD
-=======
-            <item>
-              <gi>note</gi>s cannot be left in headers or titles. Move these notes to an appropriate
-              place within the text itself.</item>
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
             <item> Within the notes section of the text the template and script will create an
               abbreviations section even if there isn't one. If there isn't any abbreviations
               section in the original docx. you can delete the abbreviations header but leave the
@@ -7280,11 +6693,8 @@
           </egXML>
           <p>Here in the web display both references will be visible but only the one without the
             "work" attribute will have a clickable link to the eKangyur.</p>
-<<<<<<< HEAD
           <p>To confirm that the W22084 folio is correct please use the <ref target="https://translator-tools.84000-translate.org/84000-data/translator-tools/data/dege_scan_checker.zip">Dege-scan checking script</ref>. Note, that BDRC, AIBS, and even the Vienna site are not reliable in terms
           of distinguishing the "par phud" vs "post par phud" pagination in Vol. 88.</p>
-=======
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
           <p>
                         <hi rend="bold">***Special Case for Volume 100, 101, 102, and 103 of the Degé Kangyur***</hi> These volumes are
           all misplaced by one volume in the eKangyur, so "volume 100" will be "volume 101" in the eKangyur, etc. If 
@@ -7364,7 +6774,6 @@
             to edit the Chinese from the table side by side with the Tibetan and Sanskrit, that is
             fine just be sure to move the Chinese column into the sixth place before you convert the
             file or else the cells will be applied incorrectly by the script.</item>
-<<<<<<< HEAD
                         </list>
                     </div>
           <div>
@@ -7372,10 +6781,6 @@
             <list>
             <item>
               When you receive a
-=======
-            <item>
-              <hi rend="bold">Using a Macro to Correct Initial Apostrophes:</hi> When you receive a
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
               glossary file in an Excel spreadsheet format, it’s likely there will be hidden apostrophes in the wylie
               column. This happens when a straight apostrophe is typed at the beginning of the word,
               as in the case of an a-chung prefix, "འ". Excel uses straight apostrophes to override
@@ -7422,17 +6827,12 @@
               open each sheet separately in Excel, and then run the macro separately for each.
             (Sorry this is such a long process, this is probably a good reason for us to do all the glossaries from 
             an MS Word template in the future.)</item>
-<<<<<<< HEAD
                         </list>
                     </div>
           <div>
             <head rend="bold">Transform the Glossary with the XSLT Script:</head>
             <list>
                             <item>
-=======
-            <item>
-              <hi rend="bold">Transform the Glossary with the XSLT Script:</hi> 
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
               This transformation may be done through the submissions form in the project management
               app, just the same way you converted the main text, (see instructions again at <ref target="84000_ODD.html#index.xml-back.1_div.1_div.2">A.2</ref>).
               Alternatively you may convert the file through oxgarage, (currently this is needed if 
@@ -7550,7 +6950,6 @@
                 <att>type</att> and <att>xml:lang</att> attributes as needed. For the template
             these tags should all be generated according to the styles used within the template (or it
             will tag them with &lt;fix&gt; if any italics were missed).</item>
-<<<<<<< HEAD
           </list>
           </div>
           <div>
@@ -7600,15 +6999,6 @@
             <item>
                                 <hi rend="bold">Delete Tibetan Field:</hi> Remember to delete Tibetan Unicode field after making a correction to the Wylie field. Otherwise the Tibetan Unicode
             will not be regenerated and the error will remain.</item>
-=======
-            <item>At this point all the basic editing for the Glossary should be complete. However, 
-            there is still some work to be done regarding how the glossary terms are being linked within the text.
-            However, this step is better done on step A.10 when you are going through and looking
-            at the web display. This section will also refer you to Appendix C which explicitly 
-            define the guidelines for how the Glossary terms are to be linked in the Reading Room.
-            However, don't worry about this yet, the guidelines will step you through that process when you reach that stage
-            at A.10 below.</item>
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
           </list>
             <lb/>
             <p>At this point all the basic editing for the Glossary should be complete. However, 
@@ -7739,10 +7129,7 @@
           <p>A few final things to look out for while going through your final run of the text:</p>
           <list>
             <item>Check for extra unwanted blank spaces.</item>
-<<<<<<< HEAD
             <item>Check the long title, main title in the translation, and title in trailer; check the use of the terms "Mahāyāna" vs. "Great Vehicle" is this consistent? It's fine if varying terms are used in the notes and introduction but these instances in the translation itself should be consistent.</item>
-=======
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
             <item>Double check links and make sure they go to the right places.</item>
             <item>Make sure links aren't missing. Sometimes if the little "#" is missing or
               misplaced in the "target" attribute in the <gi>ptr</gi>s then the reference won't
@@ -7774,11 +7161,8 @@
                 this character here: <code>’</code> (They look the same but they are not. Notice with the Unicode identifier at the bottom of the screen in Oxygen)</item>
             </list>
             </item>
-<<<<<<< HEAD
             <item>For any links created with the <gi>ref</gi> element be sure that none of the links were accidently set to forward the reader to a page on collaboration or
               in one of the editor view modes. This can be checked by doing a simple search for "view-mode" and "read.84000-translate.org".</item>
-=======
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
             <item>Within the text's introduction and body <gi>note</gi>s should always be flush with the preceding character with no space between them.
               Occasionally, the <gi>note</gi> element may be separated by a linebreak in the XML when it is formatted or when it originally 
               went through the script. To correct these instances you can search the regular expression: <code>\s+&lt;note place="end"</code>
@@ -8180,7 +7564,6 @@
         
         <div>
           <head>Cross References and Links</head>
-<<<<<<< HEAD
           <div>
             <head>Internal Links Created with the <gi>ptr</gi> Element:</head>
             <list>
@@ -8364,538 +7747,6 @@
               <note>** Alternate common designations in brackets.</note>
               <note>*** Reordered to match v. 171cd.</note>
             </table>
-=======
-            <div>
-                        <head>Internal Links Created with the <gi>ptr</gi> Element:</head> 
-            <list>
-              <item>
-                                <label rend="bold">Milestones:</label>
-          <p>Cross references in the text that refer to milestones will be added using a
-              <gi>ptr</gi> element with the "target" attribute. The value of the target should be a
-            hashmark ("#") followed by the xml:id value of the milestone that is to be linked. For
-            example: <egXML xmlns="http://www.tei-c.org/ns/Examples"> See <ptr target="#UT22084-060-005-1"/><!--2.3-->. </egXML> The milestone number as it appears
-            on the webpage may be listed as a comment afterwards, but the parser will automatically
-            show the milestone number in the web display. This way even if the milestones shift
-            around it will still display and link to the correct milestone on the web page. </p>
-              <p>
-                One important point about adding references to the introduction. When you mark up introductions 
-                with internal <gi>ptr</gi> references to the translation, even if the translator has used source-text 
-                folio references (e.g F.108.a) for the cross-reference, it would be helpful if you could replace them by links to the relevant milestone in the translation. 
-                For most readers that will make much more sense. Of course the translators have no choice, because at the time they put such cross-references in there are no milestones.</p>
-                  <p>If you can’t identify exactly the passage and its milestone, you can of course leave it as the folio reference, 
-                  and John or someone will make the change during final editing. And, of course, if the reference is really all (and only) 
-                  about a Tibetan passage in the source text, and the translation is irrelevant, a folio reference makes more sense.
-              </p>
-                                <lb/>
-                            </item>
-          
-          <item>
-                                <label rend="bold">Notes and Bibliography:</label>
-          <p>Notes and Bibliography entries work in exactly the same way:, for the target attribute,
-            simply use the xml:id value contained in the <gi>note</gi> or <gi>bibl</gi> element that
-            needs to be linked. You can also link to the general bibliography section with the
-            target value "#bibliography." For example:</p>
-          <egXML xmlns="http://www.tei-c.org/ns/Examples">
-            <note>See <ptr target="#bibliography">bibliography</ptr>
-            </note>
-          </egXML>
-                            </item>
-                        </list>
-                    </div>
-          
-          <div>
-            <head>External Links Created with the <gi>ref</gi> Element:</head>
-            <list>
-                            <item>
-                                <label rend="bold">Links to Other Texts or Web Addresses:</label>
-          <p>If there is a link to a milestone in a different text, rather than using a
-            <gi>ptr</gi>, the <gi>ref</gi> element is used, which should also have a "target"
-            attribute followed by the URL address of the text, followed by a hash tag, followed by
-            the xml:id of the milestone in that other text. For example:</p>
-          <egXML xmlns="http://www.tei-c.org/ns/Examples">
-            <note place="end" xml:id="UT22084-055-001-1485" index="586"> Unidentified Indian musical
-              instrument. It appears in two lists of instruments in the <title xml:lang="Sa-Ltn">Lalita­vistara­sūtra</title> (see <title xml:lang="en">The Play in Full</title>
-              <ref target="http://read.84000.co/translation/UT22084-046-001.html#UT22084-046-001-973">15.39</ref><!--toh. 95--> and <ref target="http://read.84000.co/translation/UT22084-046-001.html#UT22084-046-001-1001">15.67</ref><!--toh. 95-->) with a stringed instrument preceding and following it,
-              but some recent Tibetan-English dictionaries have “cymbals.”</note>
-          </egXML>
-                            </item>
-          <item>
-            <p>Links to other websites can be made with the <gi>ref</gi> element in the same
-            manner:</p>
-          <egXML xmlns="http://www.tei-c.org/ns/Examples"> Kyoto: Educational Department of the West
-            Hongwanji, 1924. <ref target="http://web.mit.edu/stclair/www/smaller.html">web.mit.edu</ref>
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
-          </egXML>
-                            </item>
-          <item>***If a <gi>ref</gi> is needed to create a link inside a <gi>title</gi> element, it needs to be wrapped INSIDE the <gi>title</gi> element not the other way
-          around, if a <gi>title</gi> is wrapped inside a <gi>ref</gi> it will disappear in the Reading Room display.</item>
-            <item>***Don't forget, when you create a link to another 84000 text, use the public distribution URL (http://read.84000.co) NOT the collaboration URL; 
-            the general readership doesn't have a password to collaboration.</item>
-            </list>
-          </div>
-          <div>
-            <head>Linking to Dunhuang Texts on the IDP (International Dunhuang Project) Website</head>
-            <list>
-              <item>Often texts will cite Dunhuang texts. These texts are referenced using the IDP's abbreviations, e.g."IOL Tib J 149", "IOL Tib J 705", etc... The page
-                for the specific text can be found by <ref target="http://idp.bl.uk/">entering the abbreviation directly into the IDP's search bar here</ref> (on the left side where
-                  it says "Search the IDP Database"). You should check that the page exists and if it is publicly available. However there is an issue with linking
-                directly with this page. If you open the page it will use an URL with an id number in it such as <code>http://idp.bl.uk/database/oo_scroll_h.a4d?uid=1846009887;bst=1;recnum=5001;index=1;img=1</code>
-              It seems the part of the URL "uid" shifts so this link will become dead. Instead this alternative URL should be used:
-              <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                http://idp.bl.uk/database/oo_loader.a4d?pm=[ENTER THE IDP ABBREVIATIION HERE];img=1
-              </egXML>
-                So for example if you want to link to "IOL Tib J 149", then use this URL <code>http://idp.bl.uk/database/oo_loader.a4d?pm=IOL Tib J 149;img=1</code>.
-                This will ensure the link remains stable. For an example, see <ref target="https://read.84000-translate.org/translation/toh196.html#link-to-UT22084-061-016-78">this note, n.35 from TOH 196</ref>.
-              </item>
-            </list>
-          </div>
-        <div>
-          <head>Mark Anticipated Links to as yet Unpublished Kangyur/Tengyur Texts with a Comment:</head>
-          <list>  
-            <item>
-             <p> When another Kangyur/Tengyur text is referenced that has not yet been published, since we don't have a URL for that text,
-              a coded comment should be added that follows a format that is searchable later. This code is as follows:
-              <egXML xmlns="http://www.tei-c.org/ns/Examples"><!--Reference Toh ####--></egXML>
-              The code must follow this exact format up to the fourth digit of the Toh number. However after this fourth digit, any further information
-              that will help the markup editor find the proper section to be linked may be added, such as the folio number, <code>&lt;!--Reference Toh #### F.11.a--&gt;</code>
-              or chapter number for a Vinaya text, <code>&lt;!--Reference Toh #### F.11.a--&gt;</code> and so forth.</p>
-              <p>These references will then be searched and updated according to the markup editor's guidelines <ref target="84000_ODD.html#index.xml-back.1_div.1_div.11">(Appendix A.11)</ref> 
-                whenever the markup for a text is completed.</p>
-              <p>In the 84000 translator guidelines, we are encouraging translators to mark cross references with their own tags following this format. However,
-              they may neglect doing this and so the copy editors are also encouraged to add these and the markup editors
-              may add them as well.</p>
-              <p>We don't need to be obsessive about these comments marking up every possible nuance of a reference to another text,
-                but we should think from the perspective of the reader and when a URL link would be convenient or helpful
-                it should be added particularly inside the introduction, notes, glossary, or bibliography.</p>
-            </item>
-                        </list>
-        
-          <p>
-                        <ref target="http://read.84000-translate.org/translation/toh361.html#link-to-UT22084-077-002-623">(See how this example is displayed in reading room.)</ref>
-                    </p>
-          <p>As you can see a <gi>table</gi> contains an optional heading and a series of <gi>row</gi>s.
-            Each <gi>row</gi> in turn contains a series of <gi>cells</gi> representing the way they are to 
-            be rendered from left to right. Add the very bottom of the table after the final <gi>row</gi>, 
-            any <gi>note</gi>s may be placed here regarding the table itself. In the example above there are
-            three such <gi>note</gi>s marked by asterisks. These are not endnotes, as they do not
-            have the <att>place</att>="end" attribute, so they will be rendered at the bottom of the table rather
-            than becoming additional endnotes. Optionally, paragraphs <gi>p</gi> may be placed at the bottom of the table
-            in a similar manner, still within the <gi>table</gi> but after the final <gi>row</gi>.</p>
-          <p>Currently there is no need to distinguish how the table should be rendered,
-            but as this becomes necessary, any rendition information should be supplied using the global <att>rend</att> 
-            attribute, at the table, row, or cell level as appropriate. Currently no <att>type</att> is
-            being used, but this may be added to the schema and documentation when it becomes necessary.
-            Cells and rows should be assigned <att>role</att>="label" if they are considered to be the label or heading
-            in which the subsequent <gi>cell</gi>s are considered to be data relevant to that label. If a <gi>row</gi>
-            contains the <att>role</att>="label" attribute, then all of its child <gi>cell</gi>s will be considered
-            to be "label"s as well. These labels will be rendered in bold type in the HTML web display.</p>
-          <p>Note, when marking up <gi>table</gi>s the markup editor should check that the table renders properly
-            in the reading room's web display. In addition, the table needs to be checked in the ebook display as well.
-            This can be done by adding the code: <code>?viewmode=epub</code> to the very end of the url address on the
-            utilities page. In truth, the tables are not compatible with the ebook format, so the parser will instead display 
-            them as a bulleted list. The information in this list should be presented in a complete and eloquently readable way,
-            otherwise the parser should be updated.</p>
-        </div>
-        <div>
-          <head>Mantras</head>
-          <label rend="bold">Documenting all mantras with <gi>mantra</gi> tags.</label>
-          <p>
-            The tags used for mantras are a bit complicated because our final markup as it is found in the 
-            final XML needs to document all of the strings of mantra, but not all the mantra’s text will necessarily
-            be italicized, as in some cases mantras will be translated into English with leftover fragments of foreign
-            italicized terms in the form of seed syllables or untranslatable words (Hung! Phet! etc...). Therefore, as a general
-            rule all mantras, whether in the main text or notes should be marked by a <gi>mantra</gi> tag, however,
-            the italics will be determined by the parser according to the <att>xml:lang</att> attributes in the mantra
-            element: if the value is "en" or "mixed" the mantra won't be italicized, but with any other language
-            value all the text within the <gi>mantra</gi> tag will be italicized. In the case of a mixed translated English/Sanskrit
-            mantra, the Sanskrit fragments within the parent <gi>mantra</gi> need to be additionally marked up with &lt;foreign xml:lang="Sa-Ltn"&gt;
-            elements in order to render the italics. See examples below in "a. General Scenarios."         
-          </p>
-          <label rend="bold">Tagging mantras with styles in MS Word</label>
-          <p>
-            To help stream line this process the mantras will be partially marked up by styles converted from the copyeditor template in MS Word, however
-            because MS Word can't layer multiple character styles, we can't tag the foreign fragments and the mantras at the same
-            time. To resolve this conundrum, we have come up with the following solution: If the mantra is full and complete in 
-            one language, it can be tagged with the appropriate style in the template, but if the mantra is mixed, then just the 
-            italicized fragments should be tagged with a "Fragment-in-MixedMantra" style. This will in turn create a <gi>foreign</gi>
-            element that contains a <att>type</att>="FragmentinMixedMantra" attribute. Then since "FragmentinMixedMantra" is not a valid type 
-            value in our schema it will show up as an error, which will signal you to
-            wrap the whole mantra in a &lt;mantra xml:lang="mixed"&gt; tag. Finally after these mixed mantras have been wrapped in
-            &lt;mantra xml:lang="mixed"&gt; tags from their beginning to end, all of the type="FragmentinMixedMantra" attributes can be 
-            removed with the refactoring tool: Within the Tools --&gt; XML Refactoring tool, use the "Delete Attribute" opperation, 
-            then for element enter in: <code>mantra/foreign[@type="FragmentinMixedMantra"]</code> and for the attribute enter in: <code>type</code>
-            This will insure that only the <att>type</att> attributes will be removed that have the value "FragmentinMixedMantra"
-            and it will also only remove those of <gi>foreign</gi> elements within <gi>mantra</gi>s, this way it will ensure that all
-            of them have first been properly wrapped in &lt;mantra xml:lang="mixed"&gt; elements. 
-          </p>
-          <label rend="bold">Placing some mantras in indented blocks.</label>
-          <p>
-            In terms of style, whenever there is a formally declared mantra, it will often be placed into an indented block
-            paragraph. This is not configured by the <gi>mantra</gi> tag, but rather by adding a <att>rend</att>="mantra" attribute to the parent <gi>p</gi> or <gi>lg</gi>
-            element which is to be rendered as an indented block by the parser. However, this will not always the case,
-            depending on the length, frequency, and context of the mantra, the translator and/or copy editors may wish to 
-            place the mantras in regular paragraphs or verses. This is a stylistic choice that will vary from case to case.
-            All of the <att>rend</att>="mantra" attributes will be created by the script wherever the "Mantra-Block" or "Mantra-Block-Verse"
-            paragraph style is used within the copyeditor's template. So in general, this will be dealt with in the copyediting 
-            phase and markup editors will not need to apply these <att>rend</att> attributes, but you should be aware how this markup works.
-          </p>
-          <label rend="bold">Dhāraṇis and seed syllables.</label>
-          <p>Seed syllables that are mentioned in the text for the purposes of visualization or explanation should also 
-          be marked up as <gi>mantra</gi>s, but they need to be distinguished with the <att>type</att>="syllable" attribute
-          (see example below a.iv).</p>
-          <p>
-            For all dhāraṇis, that is if a string or phrase is declared to be a dhāraṇi by either the text itself or the 
-            translator, then these should be tagged in the same way, but a <att>type</att>="dharani" attribute should be 
-            added to the <gi>mantra</gi> element. Currently "dhāraṇi" styles have not been added to the template, instead
-            copy editors are informed to make a comment whenever dharanis are present. The markup editor need to add the
-            appropriate <att>type</att>="dharani" so be sure to keep an eye out for this while going through the mantras
-            in the XML. There are also some mantras self described as "vidyā", "vidyāmantra", "secret mantra", etc. in some texts (see Toh 270, 543) which can be tagged in the same way.
-          </p>
-          <p>See below examples for all the scenarios in which <gi>mantra</gi> markup occurs and how to properly mark 
-          them up:</p>
-          <label rend="bold">a. General Scenarios:</label>
-          <list>
-            <item>
-              <p>i. When the complete mantra in Sanskrit is contained in the main text:</p>
-              <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                <lg tid="30">
-                  <l>“There are mantra syllables for this,</l>
-                  <l>So please listen to me, Lord of the World!</l>
-                </lg>
-                <p rend="mantra" tid="464">
-                  <mantra xml:lang="Sa-Ltn">syād yathedam siddhe susiddhe satve are araṇe bale mahābale
-                    jambhe jaṭile akhane makhane khakhane kharaṭṭe kharaṅge haripiṅgale temiṅgile temiṅgile temiṅgile
-                    temiṅgile nimaṃgalye svāhā | </mantra>
-                </p>
-              </egXML>
-              <p>*<gi>mantra</gi> tag will be italicized by parser.
-                <lb/>*<att>rend</att> attribute in the parent <gi>p</gi> or <gi>lg</gi> will determine if the mantra is indented as a block.</p>
-              <p>
-                                <ref target="http://read.84000-translate.org/translation/toh558.html#UT22084-090-002-29">(See how this example is rendered in the Reading Room).</ref>
-                            </p>
-            </item>
-            <item>
-              <p>ii. When there is mixed translated English/Sanskrit mantra with a note that contains the complete mantra in Sanskrit:</p>
-              <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                <lg rend="mantra" tid="1456">
-                  <l>“In the east, ‘<mantra xml:lang="mixed">
-                                            <foreign xml:lang="Sa-Ltn">Oṁ</foreign>, bring 
-                    downfall! Pātanī, <foreign xml:lang="Sa-Ltn">svāhā</foreign> to you!’
-                    <note place="end" xml:id="UT22084-079-008-2057" index="639">Skt., <mantra xml:lang="Sa-Ltn">oṁ pāta pātanīsvāhā</mantra>.</note>
-                                        </mantra>
-                                    </l>
-                    <!--...-->
-                 </lg>
-              </egXML>
-              <p>*Mixed mantra is placed in &lt;mantra xml:lang="mixed"&gt; tags (need to be applied by markup editor since MS Word can't double wrap tags).
-                <lb/>*Note, the language values that are included in xml:lang=“mixed” are all declared by its child <gi>foreign</gi> elements with the exception of the default “en” English.
-                <lb/>*Italics will be determined by the <gi>foreign</gi> tags and not the parent <gi>mantra</gi> tag.
-                <lb/>*Any left over type="FragmentinMixedMantra" tags are to be removed with the refactoring tool after completing mantra markup.
-              </p>
-              <p>
-                                <ref target="http://read.84000-translate.org/translation/toh381.html#UT22084-079-008-2056">(See how this example is rendered in the Reading Room).</ref>
-                            </p>
-            </item>
-            <item>
-              <p>iii. When the complete mantra in Skt is contained in the text and spans notes:</p>
-              <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                <l>On the eyes, <mantra xml:lang="Sa-Ltn">oṁ tuttāre<note place="end" xml:id="UT22084-079-008-532" index="116"> The Degé
-                  (90a.3) has <foreign type="quote" xml:lang="Sa-Ltn">ture</foreign> (<foreign type="quote" xml:lang="Bo-Ltn">tu re</foreign>)
-                  in this position.</note> svāhā</mantra>.</l>
-              </egXML>
-              <p>*Note,  When a fragment of a mantra is mentioned in a note quoting an alternate source, do not use a 
-                use a <gi>mantra</gi> elment instead use a &lt;foreign type="quote"&gt;. However if it is a complete
-                mantra within the note then the <gi>mantra</gi> element should be used.</p>
-              <p>
-                                <ref target="http://read.84000-translate.org/translation/toh381.html#UT22084-079-008-532">(See how this example is rendered in the Reading Room).</ref>
-                            </p>
-            </item>
-            <item>
-              <p>iv. A syllable referred to in isolation in the text:</p>
-              <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                <lg tid="440">
-                  <l>“He should visualize a sun disk</l>
-                  <l>With blazing light rays,</l>
-                  <l>And at its center the syllable <mantra xml:lang="Sa-Ltn" type="syllable">hrīḥ</mantra>,</l>
-                  <l>Shining with red light. {2.4.15}</l>
-                </lg>
-              </egXML>
-              <p>
-                                <ref target="http://read.84000-translate.org/translation/toh381.html#UT22084-079-008-542">(See how this example is rendered in the Reading Room).</ref>
-                            </p>
-            </item>
-            <item>
-              <p>note. In general, with English/mixed mantras we should include the final period or exclamation mark within the tag, as the mantra is usually a complete sentence and sometimes spans more than one sentences so it makes sense to include them for consistency. However, if the mantra is entirely in Sanskrit, then this punctuation should be excluded if possible. Quotations at the boundaries of the mantra should be excluded from the tag wherever possible.</p>
-            </item>
-          </list>
-          <label rend="bold">b. Unusual Scenarios:</label>
-          <list>
-            <item>
-              <p>i. A mantra spans multiple lines of a verse (Toh. 544 1.37):</p>
-              <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                <lg rend="mantra" tid="314">
-                  <mantra xml:lang="Sa-Ltn">
-                    <l>eraṇḍasya vane kāko gaṅgātīram upasthitaḥ |</l>                 
-                    <l>pibatu dūtaḥ pānīyaṃ viśalyā bhavatu gurviṇī ||</l>
-                  </mantra>
-                </lg>
-              </egXML>
-              <p>*Note in this scenario the <gi>mantra</gi> element may wrap around the <gi>l</gi> but
-                if the mantra is contained in a single line, then it should go inside the <gi>l</gi>.
-                <lb/>-Note that for &lt;lg rend="mantra"&gt; element the parser will also display this as an 
-                indented block.</p>
-              <p>
-                                <ref target="http://read.84000-translate.org/translation/toh544.html#UT22084-089-001-55">(See how this example is rendered in the Reading Room).</ref>
-                            </p>
-            </item>
-            <item>
-              <p>ii. A mantra has Sanskrit mixed with Tibetan words:</p>
-              <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                <mantra xml:lang="mixed">
-                                    <foreign xml:lang="Sa-Ltn">Oṁ āḥ hūṁ vajra guru padma</foreign>
-                                    <foreign xml:lang="Bo-Ltn">thöthreng tsal</foreign>
-                                    <foreign xml:lang="Sa-Ltn">vajra samaya jaḥ siddhi phala hūṁ āḥ</foreign>
-                                </mantra>
-              </egXML>
-              <p>(There is not yet a published example of this, but we may see this when we start publishing Nyingma texts).</p>
-            </item>
-            <item>
-              <p>iii. A mantra is entirely translated into English (Toh. 544 1.38):</p>
-              <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                <lg rend="mantra" tid="316">
-                  <mantra xml:lang="en">
-                    <l>The crow in a thicket of palma christi </l>
-                    <l>Roosting on the bank of Ganges— </l>
-                    <l>The messenger—may he drink water! </l>
-                    <l>May the pregnant woman be delivered of her child!</l>
-                  </mantra>
-                </lg>
-              </egXML>
-              <p>*Since the mantra is all in English it will not be italicized by the &lt;mantra xml:lang="en"&gt; tag.</p>
-              <p>
-                                <ref target="http://read.84000-translate.org/translation/toh544.html#UT22084-089-001-56">(See how this example is rendered in the Reading Room).</ref>
-                            </p>
-            </item>
-            <item>
-              <p>iv. 4) When a text explicitly defines a string to be a dhāraṇi (or other designation "vidyā", etc...), this should be indicated by a @type=”dharani”, @type=”vidyā” attribute in the <gi>mantra</gi> element:</p>
-              <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                <p><!--...-->
-                samyaksaṃbuddhas gathered there,
-                and those tathāgatas recited this dhāraṇī:</p>
-                <p rend="mantra" tid="640">
-                  <mantra type="dharani" xml:lang="Sa-Ltn">Namaḥ saptanām saṃyak­saṃbuddha­koṭinām tadyathā Oṁ cale 
-                    cule cunde<note place="end" xml:id="UT22084-051-004-798" index="298">According to the Tibetan 
-                      and Cambridge. The Vaidya and Sāmaśrami have <foreign type="quote" xml:lang="Sa-Ltn">cunye.</foreign>
-                  </note> svāhā</mantra>.
-                </p>
-                <p>Note, this sort of classification can be a bit ambiguous. I've recently added other terms that were self-declared in texts such 
-                as "vidyā" "vidyā mantra" "secret mantra" (only used the latter when it was distinguished in the same text from other "mantra"s).
-                At some point we could ask a specialist in the topic about which classifications are necessary or useful and update our markup as such.</p>
-              </egXML>
-              <p>
-                                <ref target="http://read.84000-translate.org/translation/toh116.html#UT22084-051-004-215">(See how this example is rendered in the Reading Room).</ref>
-                            </p>
-            </item>
-          </list>
-          <label rend="bold">c. Character Style Tags</label>
-          <p>The following character style tags in the Copyeditor's Template will be converted into the following markup by the conversion script:</p>
-          <list>
-            <item>Mantra-Full-English           --&gt; &lt;mantra xml:lang="en"&gt;</item>   
-            <item>Mantra-Full-Sanskrit          --&gt; &lt;mantra xml:lang="Sa-Ltn"&gt;</item>
-            <item>Mantra-Full-Tibetan           --&gt; &lt;mantra xml:lang="Bo-Ltn"&gt;</item>
-            <item>Sa-Fragment-in-MixedMantra    --&gt; &lt;foreign xml:lang="Sa-Ltn" type="FragmentinMixedMantra"&gt;</item>
-            <item>Ti-Fragment-in-MixedMantra    --&gt; &lt;foreign xml:lang="Bo-Ltn" type="FragmentinMixedMantra"&gt;</item>
-            <item>Mantra-Syllable-Sanskrit      --&gt; &lt;mantra xml:lang="Sa-Ltn" type="syllable"&gt;</item>
-            <item>Mantra-Syllable-Tibetan       --&gt; &lt;mantra xml:lang="Bo-Ltn" type="syllable"&gt;</item>
-            <item>Mantra-Other                  --&gt; &lt;mantra xml:lang="input-value" type="input-value"&gt;</item>
-          </list>
-          <label rend="bold">d. Paragraph Style</label>
-          <p>The following paragraph style tags in the Copyeditor's Template will be converted into the following markup by the conversion script:</p>
-          <list>
-            <item>Mantra Block             --&gt;  &lt;p rend="mantra"&gt;</item>
-            <item>Mantra Block-Verse       --&gt;  &lt;lg rend="mantra"&gt;</item>
-          </list>
-          <label rend="bold">e. Blocking glossary terms from linking to Sanskrit/foreign mantras.</label>
-          <p>Optionally a @rend="ignoreGlossary" attribut may be added to any <gi>mantra</gi> element. Typically we want to do this for any Mantra
-          left in untranslated Sanskrit since the complex spelling declinations will cause the terms to be linked inconsistently. However
-          it is likely appropriate to leave such terms linked when the mantra has been translated into English. Know that in either case, @rend="ignoreGlossary"
-          will block the entire mantra from linking; or terms can instead be blocked individually by adding &lt;term type="ignore"&gt; tags. </p>
-          <label rend="bold">f. Regarding Homages</label>
-          <p>Typically, the homage preceding just before a mantra should not be included in the mantra tag nor
-            the indented paragraph. This can sometimes be confusing since separate homages sometimes appear as part
-            of the mantra proper. All of this should be worked out earlier in the workflow by the editors and 
-            copy editors, but in case you need to confirm this, here are some guidelines concerning the mantras
-            and their homages given by Wiesiek Mical:</p>
-          <p>Most of the time there is no ambiguity.  There are three things to look for when deciding whether the 
-            homage is part of the mantra or not, each of the three usually sufficient on its own to decide:</p>
-          <list>
-            <item>1) The presence of tadyathā. If it is there, then the homage that precedes it is not part of the mantra, 
-              as in this mantra of Mahāśvetā (all examples quoted below are from the Mañjuśrīmūlakalpa):
-              <lb/>
-              <hi rend="bold">Sanskrit Source:</hi>
-              <lb/>
-              <hi rend="italic">namaḥ samantabuddhānām acintyādbhutarūpiṇām / tadyathā / oṁ śvete śrīvapuḥ svāhā //</hi>
-              <lb/>
-              <hi rend="bold">In Translation:</hi>
-              <lb/>
-              Homage to all the buddhas whose forms are wondrous and inconceivable! The [vidyā] is:
-              <lb/>
-              &lt;mantra&gt;Oṁ, you with the white splendorous body! Svāhā!&lt;/mantra&gt;
-              <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                <lg tid="266">
-                  <l>“Homage to all the buddhas,</l>
-                  <l>Whose forms are wondrous and inconceivable!</l>
-                  <l>The next <term>vidyā</term> is:</l>
-                </lg>
-                <p rend="mantra" tid="267">“<mantra xml:lang="mixed" type="vidya">
-                                        <foreign xml:lang="Sa-Ltn">Oṁ</foreign>, you with the white, splendorous
-                  body! <foreign xml:lang="Sa-Ltn">Svāhā</foreign>!</mantra>
-                                </p>
-                            </egXML>
-              <p>
-                                <ref target="https://read.84000-translate.org/translation/toh52.html#UT22084-088-038-586">See in Reading Room</ref>
-                            </p>
-            </item>
-            <item>2) But the tadyathā is not always there, as in this heart mantra of Mañjuśrī:
-              <lb/>
-              <hi rend="bold">Sanskrit Source</hi>
-              <lb/>
-              <hi rend="italic">namaḥ sarvabuddhānām / oṁ maṁ //</hi>
-              <lb/>
-              <hi rend="bold">In Translation</hi>
-              <lb/>
-              “Homage be to all the buddhas!
-              <lb/>
-              &lt;mantra&gt;Oṁ maṁ!&lt;/mantra&gt;
-              <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                <p tid="50"> “Homage to all the buddhas! </p>
-                <p rend="mantra" tid="51">“<mantra xml:lang="Sa-Ltn">Oṁ maṁ</mantra>!”</p>
-              </egXML>
-              <p>
-                                <ref target="https://read.84000-translate.org/translation/toh52.html#UT22084-088-038-61">See in Reading Room</ref>
-                            </p>
-              It is almost a rule (exceptions are few) that the homage begins with namaḥ, and the mantra that follows it begins with oṁ, so the oṁ will usually marks the beginning of the mantra.
-            </item>
-            <item>3) The third criterion to go by is that the homage addresses the buddhas (or the buddhas and bodhisattvas) in general, whereas the mantra addresses the deity—both examples given above make this clear, even though, in the second, Mañjuśrī is not addressed by name.
-              <lb/>
-              The above three criteria may be used to decide that the homage is not part of the mantra. So how to know when the homage is part of the mantra?
-              <lb/>
-              The main criterion is that the homage in such cases will typically begin with oṁ and address specifically the deity of the mantra (not the buddhas in general). This is illustrated by the example quoted by Celso—Oṁ, homage to Cakravartin, the invincible uṣṇīṣa of the tathāgatas, invisible at the top of their head, (oṁ namo • apratihata­tathāgatoṣṇīṣāya • anavalokita­mūrdhni cakra­varti)—where the homage addresses the uṣṇīṣa king Cakravartin, i.e. the deity that this mantra is invoking. The homage is therefore part of the mantra.
-              <lb/>
-              Even if the oṁ is missing (due to textual corruptions?), if the homage specifically addresses the deity, it still should be treated as part of the mantra:
-              <lb/>
-              <hi rend="bold">Sanskrit Source</hi>
-              <lb/>
-              <hi rend="italic">namo bhagavate • apratihatoṣṇīṣāya / ehi ehi bhagavan dharmarāja / pratīccheyam arghyaṃ… //</hi>
-              <lb/>
-              <hi rend="bold">In Translation</hi>
-              <lb/>
-              &lt;mantra&gt;Homage to the blessed, invincible uṣṇīṣa! Come, come, o blessed Dharma lord! Take this welcome-offering… &lt;/mantra&gt;
-              <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                <p rend="mantra" tid="10116">“<mantra xml:lang="mixed">Homage to the blessed,
-                  invincible <term ref="UT22084-088-038-15836">uṣṇīṣa</term>! Come, come,
-                  O blessed Dharma lord! Take this welcome offering of water, fragrances,
-                  flowers, incense, refreshments, and lamps, and protect me! <foreign xml:lang="Sa-Ltn">Svāhā</foreign> to you, one of invincible strength
-                  and power!</mantra>
-                                </p>
-              </egXML>
-              <p>
-                                <ref target="https://read.84000-translate.org/translation/toh52.html#UT22084-088-038-5198">See in Reading Room</ref>
-                            </p>
-              Also, there are innumerable mantras that consist entirely of homage. In these cases, the presence or absence of oṁ is often the only differentiator between a mantra and just homage. For example, oṁ namaḥ śivāya is a mantra, and namaḥ śivāya on its own would by just homage.
-            </item>
-          </list>
-        </div>
-        <div>
-          <head>Punctuation</head>
-          <list>
-              <item>
-                            <hi rend="bold">Ellipses:</hi> Ellipses are to be made with three periods and non-breaking spaces (U+00A0) before each of the periods.
-                It will look like this: <code>watch out for . . . the rabbit</code>, however <hi rend="bold">please do not copy and paste the ellipsis from here</hi>, 
-                there is a problem with this ODD being transferred into the readable HTML format, and so the non-breaking spaces have been changed to regular ones.
-                Instead, <ref target="https://drive.google.com/file/d/1dV2yLATYg6qu4uRe8HCtG9HM9hk6gHqs/view?usp=sharing">you may copy the ellipsis from this text file saved on google drive</ref>
-                (Don't open the file from Google docs, this will also change them into regular spaces). When you paste the ellipsis into the TEI and place the cursor in front of each
-                space the first three spaces should all be non-breaking and it will display "U+00A0" in the bottom right corner of the Oxygen window. Note that the fourth space 
-                after the last period should be a regular space (U+0020) so it is still possible to have a break before the next word. Ellipses should be entered in this format by the copyeditors, they will 
-                be carried through the scripts so you shouldn't worry about them unless you notice that they were entered in an improper format. In Oxygen, if you place the cursor before
-                any space or character it will show you the unicode at the bottom of the screen. If you need to correct any ellipses paste them in from <ref target="https://drive.google.com/file/d/1dV2yLATYg6qu4uRe8HCtG9HM9hk6gHqs/view?usp=sharing">the text file</ref>.</item>
-            <item>
-                            <hi rend="bold">Soft Hyphen:</hi> See guidelines for soft hyphens in <ref target="84000_ODD.html#index.xml-back.1_div.5">Appendix E</ref>.</item>
-          </list>
-        </div>
-        <div>
-          <head>Abbreviations Section</head>
-          <p>As for when Kangyur abbreviations should be used here is a note from John:</p>
-          <p>I see this as needing an adapted approach, depending on the number and kind of notes, in several steps:</p>
-          <list>
-            <item>1) I think in texts where there aren’t many notes about variants in different Kangyurs — let’s say a maximum of about 10 notes — it's probably easier for our readers if we simply spell out “Degé Kangyur” or “Stok Palace Kangyur” each time.</item>
-            <item>2) If there are more notes than that, but they almost all refer to one Kangyur, we could say “Degé Kangyur” the first time and just “Degé” in subsequent mentions, and an abbreviations list is unnecessary.</item>
-            <item> 3) If there are quite a lot of notes and they refer to several different Kangyurs, or the Chinese, Sanskrit versions, etc., then we should definitely have an abbreviations list and use the sigla alone in all such notes.
-            </item>        
-          </list>
-          <p>This should be covered by the editors, but they may not have created an abbreviations section. If there are a lot for sigla 
-            used in the notes (situation 3 above), but there is not abbreviations section, then please create one modeled on other texts.</p>
-          <p>When the abbreviations for alternative Kangyur editions are used, you should <ref target="https://www.istb.univie.ac.at/kanjur/rktsneu/sigla/">follow the Vienna system</ref>.</p>
-          <p>Sigla with supscript letters should use the &lt;hi rend="subscript"&gt; tag, using the matching case used in the official sigla,
-          e.g., <egXML xmlns="http://www.tei-c.org/ns/Examples">K<hi rend="subscript">Y</hi>
-                        </egXML>.
-          </p>
-<<<<<<< HEAD
-=======
-          <p>Note, if there is an ampersand "&amp;" in the url address this will be read incorrectly
-            in the TEI. The ampersand character itself should be replaced by the ampersand character
-            code "&amp;amp;". The link should now work properly.</p>
-                    </div>
-                </div>
-        
-        
-        <div>
-          <head>Tables</head>
-          <p>Occasionally translators may present a table in their translation. Tables can be used anywhere in the text
-          or even contained within an endnote. The XSL script should be equipped to convert tables from the DOCX document
-          to the TEI XML; however, attributes need to be applied to the <gi>table</gi>s, <gi>row</gi>s, and <gi>cell</gi>s 
-          manually (see for example the <att>role</att>="label" attributes found in the <gi>row</gi>s in the XML sample below).
-          Also each table should be checked against the original DOCX to assure that there weren't any errors 
-          in the conversion process. So far there have note been many tables in 84000 publications but here is one example
-          from <ref target="http://read.84000-translate.org/translation/toh361.html#link-to-UT22084-077-002-623">TOH 361</ref>:
-                    </p>
-          <egXML xmlns="http://www.tei-c.org/ns/Examples">
-            <table tid="111">
-              <head type="table">Deity Families</head>
-              <row role="label">
-                <cell>Verses</cell>
-                <cell>Aspect</cell>
-                <cell>Vajrasattva</cell>
-                <cell>Mahāsattva</cell>
-                <cell>Bodhisattva</cell>
-                <cell>Samayasattva</cell>
-                <cell>Vajrayoga</cell>
-                <cell>Kālacakra</cell>
-              </row>
-              <row>
-                <cell role="label">161–63</cell>
-                <cell role="label">cakra</cell>
-                <cell>secret</cell>
-                <cell>navel</cell>
-                <cell>heart</cell>
-                <cell>throat</cell>
-                <cell>forehead</cell>
-                <cell>crown</cell>
-              </row>
-              <row>
-                <cell role="label">164–69</cell>
-                <cell role="label">purifies*</cell>
-                <cell>threefold existence</cell>
-                <cell>passion</cell>
-                <cell>hatred</cell>
-                <cell>delusion</cell>
-                <cell>anger</cell>
-                <cell>attachment</cell>
-              </row>
-              <note>* Tentative interpretation.</note>
-              <note>** Alternate common designations in brackets.</note>
-              <note>*** Reordered to match v. 171cd.</note>
-            </table>
           </egXML>
           <p>
                         <ref target="http://read.84000-translate.org/translation/toh361.html#link-to-UT22084-077-002-623">(See how this example is displayed in reading room.)</ref>
@@ -9267,7 +8118,6 @@
           e.g., <egXML xmlns="http://www.tei-c.org/ns/Examples">K<hi rend="subscript">Y</hi>
                         </egXML>.
           </p>
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
         </div>
         <div>
           <head>Appendices: Sanskrit and Other Appendices</head>
@@ -10055,11 +8905,7 @@
         </list>
       </div>
       <div>
-<<<<<<< HEAD
         <head>XPath Codes and Other Useful Tips for Using the oXygen XML Editor:</head>
-=======
-        <head>Useful Tips for Using the oXygen XML Editor:</head>
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
       <list>
         <item>  
           <label>
@@ -10094,7 +8940,6 @@
         </item>
         <item>
                         <label>
-<<<<<<< HEAD
                             <hi rend="bold">XPath Codes</hi>
                         </label>
         <list>
@@ -10105,8 +8950,6 @@
                     </item>
         <item>
                         <label>
-=======
->>>>>>> 0c31abded4c6222a1be845d04bc4afad0e9b2929
                             <hi rend="bold">Searching through the Text</hi>
                         </label>
         <list>
