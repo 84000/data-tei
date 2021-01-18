@@ -536,18 +536,7 @@
                         <rng:value>chapterTitle</rng:value>
                       </rng:choice>
                     </attribute>
-                    <rng:optional>
-                      <attribute name="tid"/>
-                    </rng:optional>
-                    <rng:optional>
-                      <attribute name="key"/>
-                    </rng:optional>
-                    <rng:choice>
-                      <rng:text/>
-                      <rng:ref name="endnote"/>
-                      <rng:ref name="foreign"/>
-                      <rng:ref name="title"/>
-                    </rng:choice>
+                    <rng:ref name="head-content"/>
                   </rng:element>
                   <!-- section title -->
                   <rng:element name="head">
@@ -556,20 +545,7 @@
                         <rng:value>section</rng:value>
                       </rng:choice>
                     </attribute>
-                    <rng:optional>
-                      <attribute name="tid"/>
-                    </rng:optional>
-                    <rng:optional>
-                      <attribute name="key"/>
-                    </rng:optional>
-                    <rng:oneOrMore>
-                      <rng:choice>
-                      <rng:text/>
-                      <rng:ref name="endnote"/>
-                      <rng:ref name="foreign"/>
-                      <rng:ref name="title"/>
-                    </rng:choice>
-                    </rng:oneOrMore>
+                    <rng:ref name="head-content"/>
                   </rng:element>
                 </rng:choice>
               </rng:zeroOrMore>
@@ -583,51 +559,13 @@
         <macroSpec ident="translation-section" mode="add">
           <content>
             <rng:element xmlns="http://relaxng.org/ns/structure/1.0" name="div">
-              <attribute name="type">
-                <rng:choice>
-                  <rng:value>section</rng:value>
-                </rng:choice>
-              </attribute>
-              <attribute name="xml:id"/>
-              <rng:optional>
-                <attribute name="rend"/>
-              </rng:optional>
-              <rng:optional>
-                <attribute name="prefix"/>
-              </rng:optional>
-              <rng:oneOrMore>
-                <rng:choice>
-                  <rng:zeroOrMore>
-                    <rng:element name="head">
-                      <attribute name="type">
-                        <rng:choice>
-                          <rng:value>section</rng:value>
-                        </rng:choice>
-                      </attribute>
-                      <rng:optional>
-                        <attribute name="tid"/>
-                      </rng:optional>
-                      <rng:optional>
-                        <attribute name="key"/>
-                      </rng:optional>
-                      <rng:oneOrMore>
-                        <rng:choice>
-                          <rng:text/>
-                          <rng:ref name="endnote"/>
-                          <rng:ref name="foreign"/>
-                          <rng:ref name="title"/>
-                        </rng:choice>
-                      </rng:oneOrMore>
-                    </rng:element>
-                  </rng:zeroOrMore>
-                </rng:choice>
-              </rng:oneOrMore>
+              <rng:ref name="translation-section-head-content"/>
               <rng:ref name="section-content"/>
               <!-- translation-subsections (trying to do this by just haveing the translation-section reference itself
                                    creates an infinite recursion error in the generated documentation 
                                    so it is needed to restate each level of sub-sectionings to generate documentation.)-->
               <rng:choice>
-                <rng:zeroOrMore>
+              <rng:zeroOrMore>
                 <rng:ref name="translation-subsection-lv3"/>
               </rng:zeroOrMore>
               <rng:zeroOrMore>
@@ -637,93 +575,55 @@
             </rng:element>
           </content>
         </macroSpec>
-        <!--3rd level subsection (3 levels of <div/>s<)-->
+        <macroSpec ident="translation-section-head-content" mode="add">
+          <content>
+            <!--Note - this begins with the initial attributes of the div of that section. It is included here to reduce redundancy in the nested
+              sections rendered in the macros that follow it.-->
+            <rng:attribute name="type">
+              <rng:choice>
+                <rng:value>section</rng:value>
+              </rng:choice>
+            </rng:attribute>
+            <rng:attribute name="xml:id"/>
+            <rng:optional>
+              <rng:attribute name="rend"/>
+            </rng:optional>
+            <rng:optional>
+              <rng:attribute name="prefix"/>
+            </rng:optional>
+            <rng:oneOrMore>
+              <rng:choice>
+                <rng:zeroOrMore>
+                  <rng:element name="head">
+                    <rng:attribute name="type">
+                      <rng:choice>
+                        <rng:value>section</rng:value>
+                      </rng:choice>
+                    </rng:attribute>
+                    <rng:ref name="head-content"/>
+                  </rng:element>
+                </rng:zeroOrMore>
+              </rng:choice>
+            </rng:oneOrMore>
+          </content>
+        </macroSpec>
+        <!--3rd LEVEL SUBSECTION (3 levels of <div/>s<)-->
         <macroSpec ident="translation-subsection-lv3" mode="add">
           <content>
             <rng:element xmlns="http://relaxng.org/ns/structure/1.0" name="div">
-              <attribute name="type">
-                <rng:choice>
-                  <rng:value>section</rng:value>
-                </rng:choice>
-              </attribute>
-              <attribute name="xml:id"/>
-              <rng:optional>
-                <attribute name="prefix"/>
-              </rng:optional>
-              <rng:oneOrMore>
-                <rng:choice>
-                  <rng:zeroOrMore>
-                    <rng:element name="head">
-                      <attribute name="type">
-                        <rng:choice>
-                          <rng:value>section</rng:value>
-                        </rng:choice>
-                      </attribute>
-                      <rng:optional>
-                        <attribute name="tid"/>
-                      </rng:optional>
-                      <rng:optional>
-                        <attribute name="key"/>
-                      </rng:optional>
-                      <rng:oneOrMore>
-                        <rng:choice>
-                          <rng:text/>
-                          <rng:ref name="endnote"/>
-                          <rng:ref name="foreign"/>
-                          <rng:ref name="title"/>
-                        </rng:choice>
-                      </rng:oneOrMore>
-                    </rng:element>
-                  </rng:zeroOrMore>
+                  <rng:ref name="translation-section-head-content"/>
                   <rng:ref name="section-content"/>
                   <rng:zeroOrMore>
                     <rng:ref name="translation-subsection-lv4"/>
                   </rng:zeroOrMore>
-                </rng:choice>
-              </rng:oneOrMore>
             </rng:element>
           </content>
         </macroSpec>
-        <!--4th level subsection (4 levels of <div/>s<)-->
+        <!--4th LEVEL SUBSECTION (4 levels of <div/>s<)-->
         <macroSpec ident="translation-subsection-lv4" mode="add">
           <content>
             <rng:element xmlns="http://relaxng.org/ns/structure/1.0" name="div">
-              <attribute name="type">
-                <rng:choice>
-                  <rng:value>section</rng:value>
-                </rng:choice>
-              </attribute>
-              <attribute name="xml:id"/>
-              <rng:optional>
-                <attribute name="prefix"/>
-              </rng:optional>
-              <rng:oneOrMore>
-                <rng:choice>
-                  <rng:zeroOrMore>
-                    <rng:element name="head">
-                      <attribute name="type">
-                        <rng:choice>
-                          <rng:value>section</rng:value>
-                        </rng:choice>
-                      </attribute>
-                      <rng:optional>
-                        <attribute name="tid"/>
-                      </rng:optional>
-                      <rng:optional>
-                        <attribute name="key"/>
-                      </rng:optional>
-                      <rng:oneOrMore>
-                        <rng:choice>
-                          <rng:text/>
-                          <rng:ref name="endnote"/>
-                          <rng:ref name="foreign"/>
-                          <rng:ref name="title"/>
-                        </rng:choice>
-                      </rng:oneOrMore>
-                    </rng:element>
-                  </rng:zeroOrMore>
-                </rng:choice>
-              </rng:oneOrMore>
+              <rng:ref name="translation-section-head-content"/>
               <rng:ref name="section-content"/>
               <rng:zeroOrMore>
                 <rng:ref name="translation-subsection-lv5"/>
@@ -731,46 +631,11 @@
             </rng:element>
           </content>
         </macroSpec>
-        <!--5th level subsection (5 levels of <div/>s<)-->
+        <!--5th LEVEL SUBSECTION (5 levels of <div/>s<)-->
         <macroSpec ident="translation-subsection-lv5" mode="add">
           <content>
             <rng:element xmlns="http://relaxng.org/ns/structure/1.0" name="div">
-              <attribute name="type">
-                <rng:choice>
-                  <rng:value>section</rng:value>
-                </rng:choice>
-              </attribute>
-              <attribute name="xml:id"/>
-              <rng:optional>
-                <attribute name="prefix"/>
-              </rng:optional>
-              <rng:oneOrMore>
-                <rng:choice>
-                  <rng:zeroOrMore>
-                    <rng:element name="head">
-                      <attribute name="type">
-                        <rng:choice>
-                          <rng:value>section</rng:value>
-                        </rng:choice>
-                      </attribute>
-                      <rng:optional>
-                        <attribute name="tid"/>
-                      </rng:optional>
-                      <rng:optional>
-                        <attribute name="key"/>
-                      </rng:optional>
-                      <rng:oneOrMore>
-                        <rng:choice>
-                          <rng:text/>
-                          <rng:ref name="endnote"/>
-                          <rng:ref name="foreign"/>
-                          <rng:ref name="title"/>
-                        </rng:choice>
-                      </rng:oneOrMore>
-                    </rng:element>
-                  </rng:zeroOrMore>
-                </rng:choice>
-              </rng:oneOrMore>
+              <rng:ref name="translation-section-head-content"/>
               <rng:ref name="section-content"/>
               <rng:zeroOrMore>
                 <rng:ref name="translation-subsection-lv6"/>
@@ -778,282 +643,72 @@
             </rng:element>
           </content>
         </macroSpec>
-        <!--6th level subsection (6 levels of <div/>s<)-->
+        <!--6th LEVEL SUBSECTION (6 levels of <div/>s<)-->
         <macroSpec ident="translation-subsection-lv6" mode="add">
           <content>
             <rng:element xmlns="http://relaxng.org/ns/structure/1.0" name="div">
-              <attribute name="type">
-                <rng:choice>
-                  <rng:value>section</rng:value>
-                </rng:choice>
-              </attribute>
-              <attribute name="xml:id"/>
-              <rng:optional>
-                <attribute name="prefix"/>
-              </rng:optional>
-              <rng:oneOrMore>
-                <rng:choice>
-                  <rng:zeroOrMore>
-                    <rng:element name="head">
-                      <attribute name="type">
-                        <rng:choice>
-                          <rng:value>section</rng:value>
-                        </rng:choice>
-                      </attribute>
-                      <rng:optional>
-                        <attribute name="tid"/>
-                      </rng:optional>
-                      <rng:optional>
-                        <attribute name="key"/>
-                      </rng:optional>
-                      <rng:oneOrMore>
-                        <rng:choice>
-                          <rng:text/>
-                          <rng:ref name="endnote"/>
-                          <rng:ref name="foreign"/>
-                          <rng:ref name="title"/>
-                        </rng:choice>
-                      </rng:oneOrMore>
-                    </rng:element>
-                  </rng:zeroOrMore>
-                  <rng:ref name="section-content"/>
-                </rng:choice>
-              </rng:oneOrMore>
+              <rng:ref name="translation-section-head-content"/>
+              <rng:ref name="section-content"/>
               <rng:zeroOrMore>
                 <rng:ref name="translation-subsection-lv7"/>
               </rng:zeroOrMore>
             </rng:element>
           </content>
         </macroSpec>
-        <!--7th level subsection (7 levels of <div/>s<)-->
+        <!--7th LEVEL SUBSECTION (7 levels of <div/>s<)-->
         <macroSpec ident="translation-subsection-lv7" mode="add">
           <content>
             <rng:element xmlns="http://relaxng.org/ns/structure/1.0" name="div">
-              <attribute name="type">
-                <rng:choice>
-                  <rng:value>section</rng:value>
-                </rng:choice>
-              </attribute>
-              <attribute name="xml:id"/>
-              <rng:optional>
-                <attribute name="prefix"/>
-              </rng:optional>
-              <rng:oneOrMore>
-                <rng:choice>
-                  <rng:zeroOrMore>
-                    <rng:element name="head">
-                      <attribute name="type">
-                        <rng:choice>
-                          <rng:value>section</rng:value>
-                        </rng:choice>
-                      </attribute>
-                      <rng:optional>
-                        <attribute name="tid"/>
-                      </rng:optional>
-                      <rng:optional>
-                        <attribute name="key"/>
-                      </rng:optional>
-                      <rng:oneOrMore>
-                        <rng:choice>
-                          <rng:text/>
-                          <rng:ref name="endnote"/>
-                          <rng:ref name="foreign"/>
-                          <rng:ref name="title"/>
-                        </rng:choice>
-                      </rng:oneOrMore>
-                    </rng:element>
-                  </rng:zeroOrMore>
-                  <rng:ref name="section-content"/>
-                </rng:choice>
-              </rng:oneOrMore>
+              <rng:ref name="translation-section-head-content"/>
+              <rng:ref name="section-content"/>  
               <rng:zeroOrMore>
                 <rng:ref name="translation-subsection-lv8"/>
               </rng:zeroOrMore>
             </rng:element>
           </content>
         </macroSpec>
-        <!--8th level subsection (8 levels of <div/>s<)-->
+        <!--8th LEVEL SUBSECTION (8 levels of <div/>s<)-->
         <macroSpec ident="translation-subsection-lv8" mode="add">
           <content>
             <rng:element xmlns="http://relaxng.org/ns/structure/1.0" name="div">
-              <attribute name="type">
-                <rng:choice>
-                  <rng:value>section</rng:value>
-                </rng:choice>
-              </attribute>
-              <attribute name="xml:id"/>
-              <rng:optional>
-                <attribute name="prefix"/>
-              </rng:optional>
-              <rng:oneOrMore>
-                <rng:choice>
-                  <rng:zeroOrMore>
-                    <rng:element name="head">
-                      <attribute name="type">
-                        <rng:choice>
-                          <rng:value>section</rng:value>
-                        </rng:choice>
-                      </attribute>
-                      <rng:optional>
-                        <attribute name="tid"/>
-                      </rng:optional>
-                      <rng:optional>
-                        <attribute name="key"/>
-                      </rng:optional>
-                      <rng:oneOrMore>
-                        <rng:choice>
-                          <rng:text/>
-                          <rng:ref name="endnote"/>
-                          <rng:ref name="foreign"/>
-                          <rng:ref name="title"/>
-                        </rng:choice>
-                      </rng:oneOrMore>
-                    </rng:element>
-                  </rng:zeroOrMore>
-                  <rng:ref name="section-content"/>
-                </rng:choice>
-              </rng:oneOrMore>
+              <rng:ref name="translation-section-head-content"/>      
+              <rng:ref name="section-content"/>
               <rng:zeroOrMore>
                 <rng:ref name="translation-subsection-lv9"/>
               </rng:zeroOrMore>
             </rng:element>
           </content>
         </macroSpec>
-        <!--9th level subsection (9 levels of <div/>s<)-->
+        <!--9th LEVEL SUBSECTION (9 levels of <div/>s<)-->
         <macroSpec ident="translation-subsection-lv9" mode="add">
           <content>
             <rng:element xmlns="http://relaxng.org/ns/structure/1.0" name="div">
-              <attribute name="type">
-                <rng:choice>
-                  <rng:value>section</rng:value>
-                </rng:choice>
-              </attribute>
-              <attribute name="xml:id"/>
-              <rng:optional>
-                <attribute name="prefix"/>
-              </rng:optional>
-              <rng:oneOrMore>
-                <rng:choice>
-                  <rng:zeroOrMore>
-                    <rng:element name="head">
-                      <attribute name="type">
-                        <rng:choice>
-                          <rng:value>section</rng:value>
-                        </rng:choice>
-                      </attribute>
-                      <rng:optional>
-                        <attribute name="tid"/>
-                      </rng:optional>
-                      <rng:optional>
-                        <attribute name="key"/>
-                      </rng:optional>
-                      <rng:oneOrMore>
-                        <rng:choice>
-                          <rng:text/>
-                          <rng:ref name="endnote"/>
-                          <rng:ref name="foreign"/>
-                          <rng:ref name="title"/>
-                        </rng:choice>
-                      </rng:oneOrMore>
-                    </rng:element>
-                  </rng:zeroOrMore>
-                  <rng:ref name="section-content"/>
-                </rng:choice>
-              </rng:oneOrMore>
+              <rng:ref name="translation-section-head-content"/>
+              <rng:ref name="section-content"/>
               <rng:zeroOrMore>
                 <rng:ref name="translation-subsection-lv10"/>
               </rng:zeroOrMore>
             </rng:element>
           </content>
         </macroSpec>
-        <!--10th level subsection (10 levels of <div/>s<)-->
+        <!--10th LEVEL SUBSECTION (10 levels of <div/>s<)-->
         <macroSpec ident="translation-subsection-lv10" mode="add">
           <content>
             <rng:element xmlns="http://relaxng.org/ns/structure/1.0" name="div">
-              <attribute name="type">
-                <rng:choice>
-                  <rng:value>section</rng:value>
-                </rng:choice>
-              </attribute>
-              <attribute name="xml:id"/>
-              <rng:optional>
-                <attribute name="prefix"/>
-              </rng:optional>
-              <rng:oneOrMore>
-                <rng:choice>
-                  <rng:zeroOrMore>
-                    <rng:element name="head">
-                      <attribute name="type">
-                        <rng:choice>
-                          <rng:value>section</rng:value>
-                        </rng:choice>
-                      </attribute>
-                      <rng:optional>
-                        <attribute name="tid"/>
-                      </rng:optional>
-                      <rng:optional>
-                        <attribute name="key"/>
-                      </rng:optional>
-                      <rng:oneOrMore>
-                        <rng:choice>
-                          <rng:text/>
-                          <rng:ref name="endnote"/>
-                          <rng:ref name="foreign"/>
-                          <rng:ref name="title"/>
-                        </rng:choice>
-                      </rng:oneOrMore>
-                    </rng:element>
-                  </rng:zeroOrMore>
-                  <rng:ref name="section-content"/>
-                </rng:choice>
-              </rng:oneOrMore>
+              <rng:ref name="translation-section-head-content"/>  
+              <rng:ref name="section-content"/>
               <rng:zeroOrMore>
                 <rng:ref name="translation-subsection-lv11"/>
               </rng:zeroOrMore>
             </rng:element>
           </content>
         </macroSpec>
-        <!--11th level subsection (11 levels of <div/>s<)-->
+        <!--11th LEVEL SUBSECTION (11 levels of <div/>s<)-->
         <macroSpec ident="translation-subsection-lv11" mode="add">
           <content>
             <rng:element xmlns="http://relaxng.org/ns/structure/1.0" name="div">
-              <attribute name="type">
-                <rng:choice>
-                  <rng:value>section</rng:value>
-                </rng:choice>
-              </attribute>
-              <attribute name="xml:id"/>
-              <rng:optional>
-                <attribute name="prefix"/>
-              </rng:optional>
-              <rng:oneOrMore>
-                <rng:choice>
-                  <rng:zeroOrMore>
-                    <rng:element name="head">
-                      <attribute name="type">
-                        <rng:choice>
-                          <rng:value>section</rng:value>
-                        </rng:choice>
-                      </attribute>
-                      <rng:optional>
-                        <attribute name="tid"/>
-                      </rng:optional>
-                      <rng:optional>
-                        <attribute name="key"/>
-                      </rng:optional>
-                      <rng:oneOrMore>
-                        <rng:choice>
-                          <rng:text/>
-                          <rng:ref name="endnote"/>
-                          <rng:ref name="foreign"/>
-                          <rng:ref name="title"/>
-                        </rng:choice>
-                      </rng:oneOrMore>
-                    </rng:element>
-                  </rng:zeroOrMore>
-                  <rng:ref name="section-content"/>
-                </rng:choice>
-              </rng:oneOrMore>
+              <rng:ref name="translation-section-head-content"/>  
+              <rng:ref name="section-content"/>
               <!--12th level not yet needed-->
               <!--<rng:zeroOrMore>
                 <rng:ref name="translation-subsection-lv12"/>
@@ -1300,13 +955,7 @@
                           <rng:value>notes</rng:value>
                         </rng:choice>
                       </attribute>
-                      <rng:optional>
-                        <attribute name="tid"/>
-                      </rng:optional>
-                      <rng:optional>
-                        <attribute name="key"/>
-                      </rng:optional>
-                      <rng:text/>
+                      <rng:ref name="head-content"/>
                     </rng:element>
                     <rng:choice>
                       <!-- single abbreviations list-->
@@ -1357,20 +1006,7 @@
                                     <rng:value>section</rng:value>
                                   </rng:choice>
                                 </attribute>
-                                <rng:optional>
-                                  <attribute name="tid"/>
-                                </rng:optional>
-                                <rng:optional>
-                                  <attribute name="key"/>
-                                </rng:optional>
-                                <rng:oneOrMore>
-                                  <rng:choice>
-                                    <rng:text/>
-                                    <rng:ref name="endnote"/>
-                                    <rng:ref name="foreign"/>
-                                    <rng:ref name="title"/>
-                                  </rng:choice>
-                                </rng:oneOrMore>
+                                <rng:ref name="head-content"/>
                               </rng:element>
                             </rng:optional>
                       <!-- abbreviations -->
@@ -1423,13 +1059,7 @@
                           <rng:value>listBibl</rng:value>
                         </rng:choice>
                       </attribute>
-                      <rng:optional>
-                        <attribute name="tid"/>
-                      </rng:optional>
-                      <rng:optional>
-                        <attribute name="key"/>
-                      </rng:optional>
-                      <rng:text/>
+                      <rng:ref name="head-content"/>
                     </rng:element>
                     <!-- bibliography section -->
                     <rng:zeroOrMore>
@@ -1449,20 +1079,7 @@
                                     <rng:value>section</rng:value>
                                   </rng:choice>
                                 </attribute>
-                                <rng:optional>
-                                  <attribute name="tid"/>
-                                </rng:optional>
-                                <rng:optional>
-                                  <attribute name="key"/>
-                                </rng:optional>
-                                <rng:oneOrMore>
-                                  <rng:choice>
-                                    <rng:text/>
-                                    <rng:ref name="endnote"/>
-                                    <rng:ref name="foreign"/>
-                                    <rng:ref name="title"/>
-                                  </rng:choice>
-                                </rng:oneOrMore>
+                                <rng:ref name="head-content"/>
                               </rng:element>
                             </rng:optional>
                             <rng:zeroOrMore>
@@ -1537,20 +1154,7 @@
                                             <rng:value>section</rng:value>
                                           </rng:choice>
                                         </attribute>
-                                        <rng:optional>
-                                          <attribute name="tid"/>
-                                        </rng:optional>
-                                        <rng:optional>
-                                          <attribute name="key"/>
-                                        </rng:optional>
-                                        <rng:oneOrMore>
-                                          <rng:choice>
-                                            <rng:text/>
-                                            <rng:ref name="endnote"/>
-                                            <rng:ref name="foreign"/>
-                                            <rng:ref name="title"/>
-                                          </rng:choice>
-                                        </rng:oneOrMore>
+                                        <rng:ref name="head-content"/>
                                       </rng:element>
                                     </rng:optional>
                                     <rng:zeroOrMore>
@@ -1730,13 +1334,7 @@
                             <rng:value>appendix</rng:value>
                           </rng:choice>
                         </attribute>
-                        <rng:optional>
-                          <attribute name="tid"/>
-                        </rng:optional>
-                        <rng:optional>
-                          <attribute name="key"/>
-                        </rng:optional>
-                        <rng:text/>
+                        <rng:ref name="head-content"/>
                       </rng:element>
                       <rng:optional>
                         <rng:element name="head">
@@ -1745,20 +1343,7 @@
                               <rng:value>titleMain</rng:value>
                             </rng:choice>
                           </attribute>
-                          <rng:optional>
-                            <attribute name="tid"/>
-                          </rng:optional>
-                          <rng:optional>
-                            <attribute name="key"/>
-                          </rng:optional>
-                          <rng:oneOrMore>
-                            <rng:choice>
-                              <rng:text/>
-                              <rng:ref name="endnote"/>
-                              <rng:ref name="foreign"/>
-                              <rng:ref name="title"/>
-                            </rng:choice>
-                          </rng:oneOrMore>
+                          <rng:ref name="head-content"/>
                         </rng:element>
                       </rng:optional>
                       <!--prologue or homage-->
@@ -1957,20 +1542,7 @@
                         <rng:value>preface</rng:value>
                       </rng:choice>
                     </attribute>
-                    <rng:optional>
-                      <attribute name="tid"/>
-                    </rng:optional>
-                    <rng:optional>
-                      <attribute name="key"/>
-                    </rng:optional>
-                    <rng:oneOrMore>
-                      <rng:choice>
-                        <rng:text/>
-                        <rng:ref name="endnote"/>
-                        <rng:ref name="foreign"/>
-                        <rng:ref name="title"/>
-                      </rng:choice>
-                    </rng:oneOrMore>
+                    <rng:ref name="head-content"/>
                   </rng:element>
                   <rng:ref name="section-content"/>
                   <!-- sections -->
@@ -2080,8 +1652,6 @@
                       <attribute name="type">
                         <rng:choice>
                           <rng:value>colophon</rng:value>
-                          <!--<rng:value>dedication</rng:value>
-                        <rng:value>epilogue</rng:value>-->
                         </rng:choice>
                       </attribute>
                       <attribute name="xml:id"/>
@@ -2089,24 +1659,9 @@
                         <attribute name="type">
                           <rng:choice>
                             <rng:value>colophon</rng:value>
-                            <!--<rng:value>dedication</rng:value>
-                          <rng:value>epilogue</rng:value>-->
-                          </rng:choice>
+                            </rng:choice>
                         </attribute>
-                        <rng:optional>
-                          <attribute name="tid"/>
-                        </rng:optional>
-                        <rng:optional>
-                          <attribute name="key"/>
-                        </rng:optional>
-                        <rng:oneOrMore>
-                                                    <rng:choice>
-                          <rng:text/>
-                          <rng:ref name="endnote"/>
-                          <rng:ref name="foreign"/>
-                          <rng:ref name="title"/>
-                        </rng:choice>
-                                                </rng:oneOrMore>
+                        <rng:ref name="head-content"/>
                       </rng:element>
                       <rng:ref name="section-content"/>
                       <!-- sections (some colophons have sections, for instance one each for both Sanskrit and Tibetan etc.) -->
@@ -2903,7 +2458,7 @@
           </classes>
           <content>
             <rng:group xmlns="http://relaxng.org/ns/structure/1.0">
-              <!--summary-->
+              <!--SUMMARY-->
               <rng:optional>
                 <rng:element name="div">
                   <attribute name="type">
@@ -2919,28 +2474,14 @@
                             <rng:value>summary</rng:value>
                           </rng:choice>
                         </attribute>
-                        <rng:optional>
-                          <attribute name="tid"/>
-                        </rng:optional>
-                        <rng:optional>
-                          <attribute name="key"/>
-                        </rng:optional>
-                        <rng:text/>
+                        <rng:ref name="head-content"/>
                       </rng:element>
-                      <rng:zeroOrMore>
-                        <rng:ref name="milestone"/>
-                      </rng:zeroOrMore>
-                      <rng:zeroOrMore>
-                        <rng:ref name="paragraph"/>
-                      </rng:zeroOrMore>
-                      <rng:zeroOrMore>
-                        <rng:ref name="lg"/>
-                      </rng:zeroOrMore>
+                      <rng:ref name="section-content"/>
                     </rng:choice>
                   </rng:oneOrMore>
                 </rng:element>
               </rng:optional>
-              <!--chinese summary-->
+              <!--CHINESE SUMMARY-->
               <rng:optional>
                 <rng:element name="div">
                   <attribute name="type">
@@ -2953,12 +2494,10 @@
                       <rng:value>zh</rng:value>
                     </rng:choice>
                   </attribute>
-                      <rng:zeroOrMore>
-                        <rng:ref name="paragraph"/>
-                      </rng:zeroOrMore>
+                  <rng:ref name="section-content"/>
                 </rng:element>
               </rng:optional>
-              <!-- acknowledgment -->
+              <!-- AKNOWLEDGEMENT -->
               <rng:optional>
                 <rng:element name="div">
                   <attribute name="type">
@@ -2974,23 +2513,14 @@
                             <rng:value>acknowledgment</rng:value>
                           </rng:choice>
                         </attribute>
-                        <rng:optional>
-                          <attribute name="tid"/>
-                        </rng:optional>
-                        <rng:optional>
-                          <attribute name="key"/>
-                        </rng:optional>
-                        <rng:text/>
+                        <rng:ref name="head-content"/>
                       </rng:element>
-                        <rng:ref name="milestone"/>
-                        <rng:ref name="paragraph"/>
-                        <rng:ref name="lg"/>
-                        <rng:ref name="lb"/>
+                      <rng:ref name="section-content"/>
                     </rng:choice>
                   </rng:oneOrMore>
                 </rng:element>
               </rng:optional>
-              <!--preface-->
+              <!--PREFACE-->
               <rng:zeroOrMore>
                 <rng:element name="div">
                   <attribute name="type">
@@ -3004,13 +2534,7 @@
                         <rng:value>preface</rng:value>
                       </rng:choice>
                     </attribute>
-                    <rng:optional>
-                      <attribute name="tid"/>
-                    </rng:optional>
-                    <rng:optional>
-                      <attribute name="key"/>
-                    </rng:optional>
-                    <rng:text/>
+                    <rng:ref name="head-content"/>
                   </rng:element>
                       <rng:ref name="section-content"/>
                       <!-- sections -->
@@ -3035,16 +2559,10 @@
                             <rng:value>introduction</rng:value>
                           </rng:choice>
                         </attribute>
-                        <rng:optional>
-                          <attribute name="tid"/>
-                        </rng:optional>
-                        <rng:optional>
-                          <attribute name="key"/>
-                        </rng:optional>
-                        <rng:text/>
+                        <rng:ref name="head-content"/>
                       </rng:element>
                       <rng:ref name="section-content"/>
-                      <!-- sections -->
+                      <!-- SUBSECTIONS -->
                       <rng:zeroOrMore>
                         <rng:element name="div">
                           <attribute name="type">
@@ -3060,24 +2578,11 @@
                                       <rng:value>section</rng:value>
                                     </rng:choice>
                                   </attribute>
-                                  <rng:optional>
-                                    <attribute name="tid"/>
-                                  </rng:optional>
-                                  <rng:optional>
-                                    <attribute name="key"/>
-                                  </rng:optional>
-                                  <rng:oneOrMore>
-                                    <rng:choice>
-                                      <rng:text/>
-                                      <rng:ref name="endnote"/>
-                                      <rng:ref name="foreign"/>
-                                      <rng:ref name="title"/>
-                                    </rng:choice>
-                                  </rng:oneOrMore>
+                                  <rng:ref name="head-content"/>
                                 </rng:element>
                               </rng:optional>   
                           <rng:ref name="section-content"/>
-                          <!--3rd level sections-->
+                          <!--3rd LEVEL SUBSECTIONS-->
                           <rng:zeroOrMore>
                             <rng:element name="div">
                               <attribute name="type">
@@ -3093,24 +2598,11 @@
                                       <rng:value>section</rng:value>
                                     </rng:choice>
                                   </attribute>
-                                  <rng:optional>
-                                    <attribute name="tid"/>
-                                  </rng:optional>
-                                  <rng:optional>
-                                    <attribute name="key"/>
-                                  </rng:optional>
-                                  <rng:oneOrMore>
-                                    <rng:choice>
-                                      <rng:text/>
-                                      <rng:ref name="endnote"/>
-                                      <rng:ref name="foreign"/>
-                                      <rng:ref name="title"/>
-                                    </rng:choice>
-                                  </rng:oneOrMore>
+                                  <rng:ref name="head-content"/>
                                 </rng:element>
                               </rng:optional>   
                               <rng:ref name="section-content"/>
-                              <!--4th level sections-->
+                              <!--4th LEVEL SUBSECTIONS-->
                               <rng:zeroOrMore>
                                 <rng:element name="div">
                                   <attribute name="type">
@@ -3126,20 +2618,7 @@
                                           <rng:value>section</rng:value>
                                         </rng:choice>
                                       </attribute>
-                                      <rng:optional>
-                                        <attribute name="tid"/>
-                                      </rng:optional>
-                                      <rng:optional>
-                                        <attribute name="key"/>
-                                      </rng:optional>
-                                      <rng:oneOrMore>
-                                        <rng:choice>
-                                          <rng:text/>
-                                          <rng:ref name="endnote"/>
-                                          <rng:ref name="foreign"/>
-                                          <rng:ref name="title"/>
-                                        </rng:choice>
-                                      </rng:oneOrMore>
+                                      <rng:ref name="head-content"/>
                                     </rng:element>
                                   </rng:optional>   
                                   <rng:ref name="section-content"/>
@@ -3310,7 +2789,7 @@
             </alternate>
           </content>
           <attList>
-            <attDef ident="type" mode="change" usage="req">
+            <attDef ident="type" mode="change" usage="opt">
               <desc>classifies the head according to the 84000 typology.</desc>
               <valList type="closed" mode="replace">
                 <valItem ident="summary"/>
@@ -3319,17 +2798,11 @@
                 <valItem ident="acknowledgment"/>
                 <valItem ident="abbreviations"/>
                 <valItem ident="description"/>
-                <valItem ident="floating">
-                  <desc>A floating header that is not the heading for any <gi>div</gi> element but still represents some structural division in the text.
-                  This was used in Toh 287 at 4.3 because the chapter needed to be divided into smaller pieces in order to be processed by the parser. The
-                  heading at 4.3 thus represents a structural division in the text but doesn't contain a <gi>div</gi> in the XML. If the heading is not
-                  a structural division use type="nonStructuralBreak"</desc>
-                </valItem>
                 <valItem ident="table"/>
                 <valItem ident="nonStructuralBreak">
                   <desc>A heading that does not show a structural division and is not represented by a new parent <gi>div</gi> element. 
                   Note that this will be displayed with a slightly smaller font than the regular heading and be held in square brackets. To 
-                  display the heading in the same manner as the other headings use type="floating"</desc>
+                  display the heading in the same manner as the other headings without brackets, leave the <gi>head</gi> elemant without a type attribute.</desc>
                 </valItem>
                 <valItem ident="translation"/>
                 <valItem ident="titleHon">
@@ -7629,7 +7102,7 @@
             </list>
           </div>
           <div>
-            <head>Marking Anticipated Links to as yet Unpublished Kangyur/Tengyur Texts:</head>
+            <head>Pending Links to as yet Unpublished Kangyur/Tengyur Texts:</head>
             <list>
               <item>
                 <p> When another Kangyur/Tengyur text is referenced that has not yet been published, the editors have been instructed to enter a coded comment in the form:
@@ -7678,6 +7151,13 @@
               <item>Please read <ref target="https://docs.google.com/document/d/1MYuPmHhuuh15KsrWgqivajwDUj40PJFPN3PYxcXGNSs/edit?usp=sharing">these additional style guidelines</ref> concerning how and when to embed these internal/external links. There are important points here about
               arranging the bibliography entries and how to cite other texts consistently. The guidelines are placed here in a separate google doc so that we may 
               edit and collaborated on these guidelines as we move forward.</item>
+            </list>
+          </div>
+          <div>
+            <head>Activating Pending Links:</head>
+            <list>
+              <item>When a text is published and changed to status="1", any cross references to it may be checked from the <ref target="https://utilities.84000-translate.org/cross-references.html">cross-reference app in Utilities</ref>. These links will need to be individually updated in their respective texts.
+                There are important style guidelines to be followed when doing so. Please read the <ref target="https://docs.google.com/document/d/1MYuPmHhuuh15KsrWgqivajwDUj40PJFPN3PYxcXGNSs/edit#heading=h.87zkl0dkgoti">style guidelines in the googledoc here</ref> before updating them. </item>
             </list>
           </div>
           <div>

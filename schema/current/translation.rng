@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <grammar xmlns="http://relaxng.org/ns/structure/1.0" xmlns:teix="http://www.tei-c.org/ns/Examples" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes" ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2021-01-07T21:59:28Z. .
+Schema generated from ODD source 2021-01-12T21:26:52Z. .
 TEI Edition: Version 4.1.0. Last updated on
 	19th August 2020, revision b414ba550
 TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.1.0/
@@ -313,37 +313,13 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.1.0/
                   <attribute name="type">
                      <value>chapterTitle</value>
                   </attribute>
-                  <optional>
-                     <attribute name="tid"/>
-                  </optional>
-                  <optional>
-                     <attribute name="key"/>
-                  </optional>
-                  <choice>
-                     <text/>
-                     <ref name="endnote"/>
-                     <ref name="foreign"/>
-                     <ref name="title"/>
-                  </choice>
+                  <ref name="head-content"/>
                </element>
                <element name="head">
                   <attribute name="type">
                      <value>section</value>
                   </attribute>
-                  <optional>
-                     <attribute name="tid"/>
-                  </optional>
-                  <optional>
-                     <attribute name="key"/>
-                  </optional>
-                  <oneOrMore>
-                     <choice>
-                        <text/>
-                        <ref name="endnote"/>
-                        <ref name="foreign"/>
-                        <ref name="title"/>
-                     </choice>
-                  </oneOrMore>
+                  <ref name="head-content"/>
                </element>
             </choice>
          </zeroOrMore>
@@ -355,37 +331,7 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.1.0/
    </define>
    <define name="translation-section">
       <element name="div">
-         <attribute name="type">
-            <value>section</value>
-         </attribute>
-         <attribute name="xml:id"/>
-         <optional>
-            <attribute name="rend"/>
-         </optional>
-         <optional>
-            <attribute name="prefix"/>
-         </optional>
-         <zeroOrMore>
-            <element name="head">
-               <attribute name="type">
-                  <value>section</value>
-               </attribute>
-               <optional>
-                  <attribute name="tid"/>
-               </optional>
-               <optional>
-                  <attribute name="key"/>
-               </optional>
-               <oneOrMore>
-                  <choice>
-                     <text/>
-                     <ref name="endnote"/>
-                     <ref name="foreign"/>
-                     <ref name="title"/>
-                  </choice>
-               </oneOrMore>
-            </element>
-         </zeroOrMore>
+         <ref name="translation-section-head-content"/>
          <ref name="section-content"/>
          <choice>
             <zeroOrMore>
@@ -397,76 +343,38 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.1.0/
          </choice>
       </element>
    </define>
+   <define name="translation-section-head-content">
+      <attribute name="type">
+         <value>section</value>
+      </attribute>
+      <attribute name="xml:id"/>
+      <optional>
+         <attribute name="rend"/>
+      </optional>
+      <optional>
+         <attribute name="prefix"/>
+      </optional>
+      <zeroOrMore>
+         <element name="head">
+            <attribute name="type">
+               <value>section</value>
+            </attribute>
+            <ref name="head-content"/>
+         </element>
+      </zeroOrMore>
+   </define>
    <define name="translation-subsection-lv3">
       <element name="div">
-         <attribute name="type">
-            <value>section</value>
-         </attribute>
-         <attribute name="xml:id"/>
-         <optional>
-            <attribute name="prefix"/>
-         </optional>
-         <oneOrMore>
-            <choice>
-               <zeroOrMore>
-                  <element name="head">
-                     <attribute name="type">
-                        <value>section</value>
-                     </attribute>
-                     <optional>
-                        <attribute name="tid"/>
-                     </optional>
-                     <optional>
-                        <attribute name="key"/>
-                     </optional>
-                     <oneOrMore>
-                        <choice>
-                           <text/>
-                           <ref name="endnote"/>
-                           <ref name="foreign"/>
-                           <ref name="title"/>
-                        </choice>
-                     </oneOrMore>
-                  </element>
-               </zeroOrMore>
-               <ref name="section-content"/>
-               <zeroOrMore>
-                  <ref name="translation-subsection-lv4"/>
-               </zeroOrMore>
-            </choice>
-         </oneOrMore>
+         <ref name="translation-section-head-content"/>
+         <ref name="section-content"/>
+         <zeroOrMore>
+            <ref name="translation-subsection-lv4"/>
+         </zeroOrMore>
       </element>
    </define>
    <define name="translation-subsection-lv4">
       <element name="div">
-         <attribute name="type">
-            <value>section</value>
-         </attribute>
-         <attribute name="xml:id"/>
-         <optional>
-            <attribute name="prefix"/>
-         </optional>
-         <zeroOrMore>
-            <element name="head">
-               <attribute name="type">
-                  <value>section</value>
-               </attribute>
-               <optional>
-                  <attribute name="tid"/>
-               </optional>
-               <optional>
-                  <attribute name="key"/>
-               </optional>
-               <oneOrMore>
-                  <choice>
-                     <text/>
-                     <ref name="endnote"/>
-                     <ref name="foreign"/>
-                     <ref name="title"/>
-                  </choice>
-               </oneOrMore>
-            </element>
-         </zeroOrMore>
+         <ref name="translation-section-head-content"/>
          <ref name="section-content"/>
          <zeroOrMore>
             <ref name="translation-subsection-lv5"/>
@@ -475,34 +383,7 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.1.0/
    </define>
    <define name="translation-subsection-lv5">
       <element name="div">
-         <attribute name="type">
-            <value>section</value>
-         </attribute>
-         <attribute name="xml:id"/>
-         <optional>
-            <attribute name="prefix"/>
-         </optional>
-         <zeroOrMore>
-            <element name="head">
-               <attribute name="type">
-                  <value>section</value>
-               </attribute>
-               <optional>
-                  <attribute name="tid"/>
-               </optional>
-               <optional>
-                  <attribute name="key"/>
-               </optional>
-               <oneOrMore>
-                  <choice>
-                     <text/>
-                     <ref name="endnote"/>
-                     <ref name="foreign"/>
-                     <ref name="title"/>
-                  </choice>
-               </oneOrMore>
-            </element>
-         </zeroOrMore>
+         <ref name="translation-section-head-content"/>
          <ref name="section-content"/>
          <zeroOrMore>
             <ref name="translation-subsection-lv6"/>
@@ -511,39 +392,8 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.1.0/
    </define>
    <define name="translation-subsection-lv6">
       <element name="div">
-         <attribute name="type">
-            <value>section</value>
-         </attribute>
-         <attribute name="xml:id"/>
-         <optional>
-            <attribute name="prefix"/>
-         </optional>
-         <oneOrMore>
-            <choice>
-               <zeroOrMore>
-                  <element name="head">
-                     <attribute name="type">
-                        <value>section</value>
-                     </attribute>
-                     <optional>
-                        <attribute name="tid"/>
-                     </optional>
-                     <optional>
-                        <attribute name="key"/>
-                     </optional>
-                     <oneOrMore>
-                        <choice>
-                           <text/>
-                           <ref name="endnote"/>
-                           <ref name="foreign"/>
-                           <ref name="title"/>
-                        </choice>
-                     </oneOrMore>
-                  </element>
-               </zeroOrMore>
-               <ref name="section-content"/>
-            </choice>
-         </oneOrMore>
+         <ref name="translation-section-head-content"/>
+         <ref name="section-content"/>
          <zeroOrMore>
             <ref name="translation-subsection-lv7"/>
          </zeroOrMore>
@@ -551,39 +401,8 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.1.0/
    </define>
    <define name="translation-subsection-lv7">
       <element name="div">
-         <attribute name="type">
-            <value>section</value>
-         </attribute>
-         <attribute name="xml:id"/>
-         <optional>
-            <attribute name="prefix"/>
-         </optional>
-         <oneOrMore>
-            <choice>
-               <zeroOrMore>
-                  <element name="head">
-                     <attribute name="type">
-                        <value>section</value>
-                     </attribute>
-                     <optional>
-                        <attribute name="tid"/>
-                     </optional>
-                     <optional>
-                        <attribute name="key"/>
-                     </optional>
-                     <oneOrMore>
-                        <choice>
-                           <text/>
-                           <ref name="endnote"/>
-                           <ref name="foreign"/>
-                           <ref name="title"/>
-                        </choice>
-                     </oneOrMore>
-                  </element>
-               </zeroOrMore>
-               <ref name="section-content"/>
-            </choice>
-         </oneOrMore>
+         <ref name="translation-section-head-content"/>
+         <ref name="section-content"/>
          <zeroOrMore>
             <ref name="translation-subsection-lv8"/>
          </zeroOrMore>
@@ -591,39 +410,8 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.1.0/
    </define>
    <define name="translation-subsection-lv8">
       <element name="div">
-         <attribute name="type">
-            <value>section</value>
-         </attribute>
-         <attribute name="xml:id"/>
-         <optional>
-            <attribute name="prefix"/>
-         </optional>
-         <oneOrMore>
-            <choice>
-               <zeroOrMore>
-                  <element name="head">
-                     <attribute name="type">
-                        <value>section</value>
-                     </attribute>
-                     <optional>
-                        <attribute name="tid"/>
-                     </optional>
-                     <optional>
-                        <attribute name="key"/>
-                     </optional>
-                     <oneOrMore>
-                        <choice>
-                           <text/>
-                           <ref name="endnote"/>
-                           <ref name="foreign"/>
-                           <ref name="title"/>
-                        </choice>
-                     </oneOrMore>
-                  </element>
-               </zeroOrMore>
-               <ref name="section-content"/>
-            </choice>
-         </oneOrMore>
+         <ref name="translation-section-head-content"/>
+         <ref name="section-content"/>
          <zeroOrMore>
             <ref name="translation-subsection-lv9"/>
          </zeroOrMore>
@@ -631,39 +419,8 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.1.0/
    </define>
    <define name="translation-subsection-lv9">
       <element name="div">
-         <attribute name="type">
-            <value>section</value>
-         </attribute>
-         <attribute name="xml:id"/>
-         <optional>
-            <attribute name="prefix"/>
-         </optional>
-         <oneOrMore>
-            <choice>
-               <zeroOrMore>
-                  <element name="head">
-                     <attribute name="type">
-                        <value>section</value>
-                     </attribute>
-                     <optional>
-                        <attribute name="tid"/>
-                     </optional>
-                     <optional>
-                        <attribute name="key"/>
-                     </optional>
-                     <oneOrMore>
-                        <choice>
-                           <text/>
-                           <ref name="endnote"/>
-                           <ref name="foreign"/>
-                           <ref name="title"/>
-                        </choice>
-                     </oneOrMore>
-                  </element>
-               </zeroOrMore>
-               <ref name="section-content"/>
-            </choice>
-         </oneOrMore>
+         <ref name="translation-section-head-content"/>
+         <ref name="section-content"/>
          <zeroOrMore>
             <ref name="translation-subsection-lv10"/>
          </zeroOrMore>
@@ -671,39 +428,8 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.1.0/
    </define>
    <define name="translation-subsection-lv10">
       <element name="div">
-         <attribute name="type">
-            <value>section</value>
-         </attribute>
-         <attribute name="xml:id"/>
-         <optional>
-            <attribute name="prefix"/>
-         </optional>
-         <oneOrMore>
-            <choice>
-               <zeroOrMore>
-                  <element name="head">
-                     <attribute name="type">
-                        <value>section</value>
-                     </attribute>
-                     <optional>
-                        <attribute name="tid"/>
-                     </optional>
-                     <optional>
-                        <attribute name="key"/>
-                     </optional>
-                     <oneOrMore>
-                        <choice>
-                           <text/>
-                           <ref name="endnote"/>
-                           <ref name="foreign"/>
-                           <ref name="title"/>
-                        </choice>
-                     </oneOrMore>
-                  </element>
-               </zeroOrMore>
-               <ref name="section-content"/>
-            </choice>
-         </oneOrMore>
+         <ref name="translation-section-head-content"/>
+         <ref name="section-content"/>
          <zeroOrMore>
             <ref name="translation-subsection-lv11"/>
          </zeroOrMore>
@@ -711,39 +437,8 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.1.0/
    </define>
    <define name="translation-subsection-lv11">
       <element name="div">
-         <attribute name="type">
-            <value>section</value>
-         </attribute>
-         <attribute name="xml:id"/>
-         <optional>
-            <attribute name="prefix"/>
-         </optional>
-         <oneOrMore>
-            <choice>
-               <zeroOrMore>
-                  <element name="head">
-                     <attribute name="type">
-                        <value>section</value>
-                     </attribute>
-                     <optional>
-                        <attribute name="tid"/>
-                     </optional>
-                     <optional>
-                        <attribute name="key"/>
-                     </optional>
-                     <oneOrMore>
-                        <choice>
-                           <text/>
-                           <ref name="endnote"/>
-                           <ref name="foreign"/>
-                           <ref name="title"/>
-                        </choice>
-                     </oneOrMore>
-                  </element>
-               </zeroOrMore>
-               <ref name="section-content"/>
-            </choice>
-         </oneOrMore>
+         <ref name="translation-section-head-content"/>
+         <ref name="section-content"/>
       </element>
    </define>
    <define name="att.canonical.attributes">
@@ -2257,57 +1952,57 @@ attributes @target and @cRef may be supplied on <name/>.</report>
                <ref name="title"/>
             </choice>
          </oneOrMore>
-         <attribute name="type">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">classifies the head according to the 84000 typology.</a:documentation>
-            <choice>
-               <value>summary</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>introduction</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>appendix</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>acknowledgment</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>abbreviations</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>description</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>floating</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A floating header that is not the heading for any <code xmlns="http://www.w3.org/1999/xhtml">&lt;div&gt;</code> element but still represents some structural division in the text. This was used in Toh 287 at 4.3 because the chapter needed to be divided into smaller pieces in order to be processed by the parser. The heading at 4.3 thus represents a structural division in the text but doesn't contain a <code xmlns="http://www.w3.org/1999/xhtml">&lt;div&gt;</code> in the XML. If the heading is not a structural division use type="nonStructuralBreak"</a:documentation>
-               <value>table</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>nonStructuralBreak</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A heading that does not show a structural division and is not represented by a new parent <code xmlns="http://www.w3.org/1999/xhtml">&lt;div&gt;</code> element. Note that this will be displayed with a slightly smaller font than the regular heading and be held in square brackets. To display the heading in the same manner as the other headings use type="floating"</a:documentation>
-               <value>translation</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>titleHon</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Honorifics before the title proper, e.g., "The Noble Mahāyāna Sūtra..."</a:documentation>
-               <value>titleMain</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>sub</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">subtitle</a:documentation>
-               <value>author</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">If author is to be named in the heading, as with a preface for instance (see toh 113).</a:documentation>
-               <value>notes</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>section</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>chapter</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>list</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>listBibl</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>chapterTitle</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>prologue</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>preface</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>homage</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-            </choice>
-         </attribute>
+         <optional>
+            <attribute name="type">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">classifies the head according to the 84000 typology.</a:documentation>
+               <choice>
+                  <value>summary</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>introduction</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>appendix</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>acknowledgment</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>abbreviations</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>description</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>table</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>nonStructuralBreak</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A heading that does not show a structural division and is not represented by a new parent <code xmlns="http://www.w3.org/1999/xhtml">&lt;div&gt;</code> element. Note that this will be displayed with a slightly smaller font than the regular heading and be held in square brackets. To display the heading in the same manner as the other headings without brackets, leave the <code xmlns="http://www.w3.org/1999/xhtml">&lt;head&gt;</code> elemant without a type attribute.</a:documentation>
+                  <value>translation</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>titleHon</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Honorifics before the title proper, e.g., "The Noble Mahāyāna Sūtra..."</a:documentation>
+                  <value>titleMain</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>sub</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">subtitle</a:documentation>
+                  <value>author</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">If author is to be named in the heading, as with a preface for instance (see toh 113).</a:documentation>
+                  <value>notes</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>section</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>chapter</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>list</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>listBibl</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>chapterTitle</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>prologue</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>preface</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>homage</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               </choice>
+            </attribute>
+         </optional>
          <optional>
             <attribute name="tid">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
@@ -3201,20 +2896,7 @@ Elements 7.2.5. Speech Contents]</a:documentation>
                            <value>preface</value>
                         </choice>
                      </attribute>
-                     <optional>
-                        <attribute name="tid"/>
-                     </optional>
-                     <optional>
-                        <attribute name="key"/>
-                     </optional>
-                     <oneOrMore>
-                        <choice>
-                           <text/>
-                           <ref name="endnote"/>
-                           <ref name="foreign"/>
-                           <ref name="title"/>
-                        </choice>
-                     </oneOrMore>
+                     <ref name="head-content"/>
                   </element>
                   <ref name="section-content"/>
                   <zeroOrMore>
@@ -3317,20 +2999,7 @@ Elements 7.2.5. Speech Contents]</a:documentation>
                            <attribute name="type">
                               <value>colophon</value>
                            </attribute>
-                           <optional>
-                              <attribute name="tid"/>
-                           </optional>
-                           <optional>
-                              <attribute name="key"/>
-                           </optional>
-                           <oneOrMore>
-                              <choice>
-                                 <text/>
-                                 <ref name="endnote"/>
-                                 <ref name="foreign"/>
-                                 <ref name="title"/>
-                              </choice>
-                           </oneOrMore>
+                           <ref name="head-content"/>
                         </element>
                         <ref name="section-content"/>
                         <zeroOrMore>
@@ -3497,23 +3166,9 @@ Elements 7.2.5. Speech Contents]</a:documentation>
                            <attribute name="type">
                               <value>summary</value>
                            </attribute>
-                           <optional>
-                              <attribute name="tid"/>
-                           </optional>
-                           <optional>
-                              <attribute name="key"/>
-                           </optional>
-                           <text/>
+                           <ref name="head-content"/>
                         </element>
-                        <zeroOrMore>
-                           <ref name="milestone"/>
-                        </zeroOrMore>
-                        <zeroOrMore>
-                           <ref name="paragraph"/>
-                        </zeroOrMore>
-                        <zeroOrMore>
-                           <ref name="lg"/>
-                        </zeroOrMore>
+                        <ref name="section-content"/>
                      </choice>
                   </oneOrMore>
                </element>
@@ -3526,9 +3181,7 @@ Elements 7.2.5. Speech Contents]</a:documentation>
                   <attribute name="xml:lang">
                      <value>zh</value>
                   </attribute>
-                  <zeroOrMore>
-                     <ref name="paragraph"/>
-                  </zeroOrMore>
+                  <ref name="section-content"/>
                </element>
             </optional>
             <optional>
@@ -3542,18 +3195,9 @@ Elements 7.2.5. Speech Contents]</a:documentation>
                            <attribute name="type">
                               <value>acknowledgment</value>
                            </attribute>
-                           <optional>
-                              <attribute name="tid"/>
-                           </optional>
-                           <optional>
-                              <attribute name="key"/>
-                           </optional>
-                           <text/>
+                           <ref name="head-content"/>
                         </element>
-                        <ref name="milestone"/>
-                        <ref name="paragraph"/>
-                        <ref name="lg"/>
-                        <ref name="lb"/>
+                        <ref name="section-content"/>
                      </choice>
                   </oneOrMore>
                </element>
@@ -3567,13 +3211,7 @@ Elements 7.2.5. Speech Contents]</a:documentation>
                      <attribute name="type">
                         <value>preface</value>
                      </attribute>
-                     <optional>
-                        <attribute name="tid"/>
-                     </optional>
-                     <optional>
-                        <attribute name="key"/>
-                     </optional>
-                     <text/>
+                     <ref name="head-content"/>
                   </element>
                   <ref name="section-content"/>
                   <zeroOrMore>
@@ -3592,13 +3230,7 @@ Elements 7.2.5. Speech Contents]</a:documentation>
                            <attribute name="type">
                               <value>introduction</value>
                            </attribute>
-                           <optional>
-                              <attribute name="tid"/>
-                           </optional>
-                           <optional>
-                              <attribute name="key"/>
-                           </optional>
-                           <text/>
+                           <ref name="head-content"/>
                         </element>
                         <ref name="section-content"/>
                         <zeroOrMore>
@@ -3612,20 +3244,7 @@ Elements 7.2.5. Speech Contents]</a:documentation>
                                     <attribute name="type">
                                        <value>section</value>
                                     </attribute>
-                                    <optional>
-                                       <attribute name="tid"/>
-                                    </optional>
-                                    <optional>
-                                       <attribute name="key"/>
-                                    </optional>
-                                    <oneOrMore>
-                                       <choice>
-                                          <text/>
-                                          <ref name="endnote"/>
-                                          <ref name="foreign"/>
-                                          <ref name="title"/>
-                                       </choice>
-                                    </oneOrMore>
+                                    <ref name="head-content"/>
                                  </element>
                               </optional>
                               <ref name="section-content"/>
@@ -3640,20 +3259,7 @@ Elements 7.2.5. Speech Contents]</a:documentation>
                                           <attribute name="type">
                                              <value>section</value>
                                           </attribute>
-                                          <optional>
-                                             <attribute name="tid"/>
-                                          </optional>
-                                          <optional>
-                                             <attribute name="key"/>
-                                          </optional>
-                                          <oneOrMore>
-                                             <choice>
-                                                <text/>
-                                                <ref name="endnote"/>
-                                                <ref name="foreign"/>
-                                                <ref name="title"/>
-                                             </choice>
-                                          </oneOrMore>
+                                          <ref name="head-content"/>
                                        </element>
                                     </optional>
                                     <ref name="section-content"/>
@@ -3668,20 +3274,7 @@ Elements 7.2.5. Speech Contents]</a:documentation>
                                                 <attribute name="type">
                                                    <value>section</value>
                                                 </attribute>
-                                                <optional>
-                                                   <attribute name="tid"/>
-                                                </optional>
-                                                <optional>
-                                                   <attribute name="key"/>
-                                                </optional>
-                                                <oneOrMore>
-                                                   <choice>
-                                                      <text/>
-                                                      <ref name="endnote"/>
-                                                      <ref name="foreign"/>
-                                                      <ref name="title"/>
-                                                   </choice>
-                                                </oneOrMore>
+                                                <ref name="head-content"/>
                                              </element>
                                           </optional>
                                           <ref name="section-content"/>
@@ -3711,13 +3304,7 @@ Elements 7.2.5. Speech Contents]</a:documentation>
                      <attribute name="type">
                         <value>notes</value>
                      </attribute>
-                     <optional>
-                        <attribute name="tid"/>
-                     </optional>
-                     <optional>
-                        <attribute name="key"/>
-                     </optional>
-                     <text/>
+                     <ref name="head-content"/>
                   </element>
                   <choice>
                      <zeroOrMore>
@@ -3757,20 +3344,7 @@ Elements 7.2.5. Speech Contents]</a:documentation>
                                        <attribute name="type">
                                           <value>section</value>
                                        </attribute>
-                                       <optional>
-                                          <attribute name="tid"/>
-                                       </optional>
-                                       <optional>
-                                          <attribute name="key"/>
-                                       </optional>
-                                       <oneOrMore>
-                                          <choice>
-                                             <text/>
-                                             <ref name="endnote"/>
-                                             <ref name="foreign"/>
-                                             <ref name="title"/>
-                                          </choice>
-                                       </oneOrMore>
+                                       <ref name="head-content"/>
                                     </element>
                                  </optional>
                                  <zeroOrMore>
@@ -3811,13 +3385,7 @@ Elements 7.2.5. Speech Contents]</a:documentation>
                      <attribute name="type">
                         <value>listBibl</value>
                      </attribute>
-                     <optional>
-                        <attribute name="tid"/>
-                     </optional>
-                     <optional>
-                        <attribute name="key"/>
-                     </optional>
-                     <text/>
+                     <ref name="head-content"/>
                   </element>
                   <zeroOrMore>
                      <element name="div">
@@ -3832,20 +3400,7 @@ Elements 7.2.5. Speech Contents]</a:documentation>
                                     <attribute name="type">
                                        <value>section</value>
                                     </attribute>
-                                    <optional>
-                                       <attribute name="tid"/>
-                                    </optional>
-                                    <optional>
-                                       <attribute name="key"/>
-                                    </optional>
-                                    <oneOrMore>
-                                       <choice>
-                                          <text/>
-                                          <ref name="endnote"/>
-                                          <ref name="foreign"/>
-                                          <ref name="title"/>
-                                       </choice>
-                                    </oneOrMore>
+                                    <ref name="head-content"/>
                                  </element>
                               </optional>
                               <zeroOrMore>
@@ -3913,20 +3468,7 @@ Elements 7.2.5. Speech Contents]</a:documentation>
                                                 <attribute name="type">
                                                    <value>section</value>
                                                 </attribute>
-                                                <optional>
-                                                   <attribute name="tid"/>
-                                                </optional>
-                                                <optional>
-                                                   <attribute name="key"/>
-                                                </optional>
-                                                <oneOrMore>
-                                                   <choice>
-                                                      <text/>
-                                                      <ref name="endnote"/>
-                                                      <ref name="foreign"/>
-                                                      <ref name="title"/>
-                                                   </choice>
-                                                </oneOrMore>
+                                                <ref name="head-content"/>
                                              </element>
                                           </optional>
                                           <zeroOrMore>
@@ -4094,33 +3636,14 @@ Elements 7.2.5. Speech Contents]</a:documentation>
                         <attribute name="type">
                            <value>appendix</value>
                         </attribute>
-                        <optional>
-                           <attribute name="tid"/>
-                        </optional>
-                        <optional>
-                           <attribute name="key"/>
-                        </optional>
-                        <text/>
+                        <ref name="head-content"/>
                      </element>
                      <optional>
                         <element name="head">
                            <attribute name="type">
                               <value>titleMain</value>
                            </attribute>
-                           <optional>
-                              <attribute name="tid"/>
-                           </optional>
-                           <optional>
-                              <attribute name="key"/>
-                           </optional>
-                           <oneOrMore>
-                              <choice>
-                                 <text/>
-                                 <ref name="endnote"/>
-                                 <ref name="foreign"/>
-                                 <ref name="title"/>
-                              </choice>
-                           </oneOrMore>
+                           <ref name="head-content"/>
                         </element>
                      </optional>
                      <zeroOrMore>
