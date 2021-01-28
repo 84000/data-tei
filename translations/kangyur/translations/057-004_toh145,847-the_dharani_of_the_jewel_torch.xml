@@ -34,7 +34,7 @@
                 <sponsor ref="sponsors.xml#sponsor-47">Make and Wang Xiao Juan (馬珂和王曉娟)</sponsor>
             </titleStmt>
             <editionStmt>
-                <edition>v 1.4.1 <date>2020</date>
+                <edition>v 1.4.2 <date>2020</date>
                 </edition>
             </editionStmt>
 
@@ -81,7 +81,7 @@
                 </bibl>
             </sourceDesc>
             <notesStmt>
-                <note type="lastUpdated" date-time="2021-01-28T18:27:39.977Z" user="admin">28/01/2021 18:27:39</note>
+                <note type="lastUpdated" date-time="2021-01-28T19:17:44.634Z" user="admin">28/01/2021 19:17:44</note>
                 <note type="updated" update="translation-status" value="2.d" date-time="2019-07-02T13:19:52.294Z" user="john">2.d</note>
                 <note type="updated" update="translation-status" value="2.c" date-time="2019-09-13T09:10:31.38Z" user="john">2.c</note>
                 <note type="updated" update="text-version" value="v 0.1.0" date-time="2019-10-19T07:20:48.166Z" user="andreas">v 0.1.0</note>
@@ -125,6 +125,7 @@
     <note type="updated" update="text-version" value="1.3.4" date-time="2021-01-15T06:30:24.131Z" user="mike">1.3.4</note>
     <note type="updated" update="text-version" value="1.4.0" date-time="2021-01-28T17:53:11.858Z" user="john">Further edits to glossary and 2.165-179.</note>
     <note type="updated" update="text-version" value="1.4.1" date-time="2021-01-28T18:27:36.911Z" user="john">Glossary edit</note>
+    <note type="updated" update="text-version" value="1.4.2" date-time="2021-01-28T19:17:41.573Z" user="john">Glossary edits and troubleshooting.</note>
             </notesStmt>
         </fileDesc>
     </teiHeader>
@@ -6610,18 +6611,20 @@
                     </item>
                     <item>
                         <gloss type="term" xml:id="UT22084-057-004-908">
-                            <term>altruistic mind</term>
+                            <term>excellent intention</term>
                             <term xml:lang="Bo-Ltn">lhag pa’i bsam pa </term>
                             <term xml:lang="bo">ལྷག་པའི་བསམ་པ།</term>
                             <term xml:lang="Sa-Ltn"/>
                         </gloss>
                     </item>
                     <item>
-                        <gloss type="term" xml:id="UT22084-057-004-909">
-                            <term>Anuttarika</term>
-                            <term xml:lang="Bo-Ltn">bla na med </term>
+                        <gloss xml:id="UT22084-057-004-909" type="term" mode="match">
+                            <term>One for whom there is no surpassing</term>
+                            <term xml:lang="Bo-Ltn">bla na med</term>
                             <term xml:lang="bo">བླ་ན་མེད།</term>
                             <term xml:lang="Sa-Ltn">Anuttarika</term>
+                            <term type="definition">See <ptr target="#UT22084-057-004-13167"/>.</term>
+                            <term type="alternative">those for whom there is no surpassing</term>
                         </gloss>
                     </item>
                     <item>
@@ -6705,7 +6708,7 @@
                     </item>
                     <item>
                         <gloss type="term" xml:id="UT22084-057-004-919">
-                            <term>authentic access to the Dharma</term>
+                            <term>pure access to the Dharma</term>
                             <term xml:lang="Bo-Ltn">rnam par dag pa’i sgo </term>
                             <term xml:lang="bo">རྣམ་པར་དག་པའི་སྒོ།</term>
                             <term xml:lang="Sa-Ltn"/>
@@ -6759,6 +6762,7 @@
                             <term xml:lang="Bo-Ltn">sems dang po bskyed pa’i byang chub sems dpa’ </term>
                             <term xml:lang="bo">སེམས་དང་པོ་བསྐྱེད་པའི་བྱང་ཆུབ་སེམས་དཔའ།</term>
                             <term xml:lang="Sa-Ltn"/>
+                            <term type="alternative">bodhisattvas who have generated the initial thought of awakening</term>
                         </gloss>
                     </item>
                     <item>
@@ -6767,6 +6771,7 @@
                             <term xml:lang="Bo-Ltn">gzhon nur gyur pa’i byang chub sems dpa’ </term>
                             <term xml:lang="bo">གཞོན་ནུར་གྱུར་པའི་བྱང་ཆུབ་སེམས་དཔའ།</term>
                             <term xml:lang="Sa-Ltn"/>
+                            <term type="alternative">bodhisattvas who are still youths</term>
                         </gloss>
                     </item>
                     <item>
@@ -6838,7 +6843,7 @@
                     </item>
                     <item>
                         <gloss type="term" xml:id="UT22084-057-004-934">
-                            <term>category of the beginning bodhisattva</term>
+                            <term>category of beginner bodhisattva</term>
                             <term xml:lang="Bo-Ltn">las dang po pa’i byang chub sems dpa’ rnam par
                                 gzhag pa </term>
                             <term xml:lang="bo">ལས་དང་པོ་པའི་བྱང་ཆུབ་སེམས་དཔའ་རྣམ་པར་གཞག་པ།</term>
@@ -6852,6 +6857,7 @@
                                 par gzhag pa </term>
                             <term xml:lang="bo">རྣལ་འབྱོར་སྤྱོད་པའི་བྱང་ཆུབ་སེམས་དཔའ་རྣམ་པར་གཞག་པ།</term>
                             <term xml:lang="Sa-Ltn"/>
+                            <term type="alternative">category of bodhisattvas who engage in yogic practice</term>
                         </gloss>
                     </item>
                     <item>
@@ -6861,6 +6867,7 @@
                                 rnam par gzhag pa </term>
                             <term xml:lang="bo">སེམས་དང་པོ་བསྐྱེད་པའི་བྱང་ཆུབ་སེམས་དཔའ་རྣམ་པར་གཞག་པ།</term>
                             <term xml:lang="Sa-Ltn"/>
+                            <term type="alternative">category of bodhisattvas who have generated the initial thought of awakening</term>
                         </gloss>
                     </item>
                     <item>
@@ -6870,18 +6877,9 @@
                                 dpa’ rnam par gzhag pa </term>
                             <term xml:lang="bo">སྦྱོར་བ་ཕུན་སུམ་ཚོགས་པའི་བྱང་ཆུབ་སེམས་དཔའ་རྣམ་པར་གཞག་པ།</term>
                             <term xml:lang="Sa-Ltn"/>
+                            <term type="alternative">category of bodhisattvas who have perfected application</term>
                         </gloss>
                     </item>
-                    <!--<item>
-                        <gloss type="term" xml:id="UT22084-057-004-938">
-                            <term>category of the bodhisattva who has perfected application</term>
-                            <term xml:lang="Bo-Ltn">sbyor ba phun sum tshogs pa’i byang chub sems
-                                dpa’ rnam par gzhag pa </term>
-                            <term xml:lang="bo"
-                                >སྦྱོར་བ་ཕུན་སུམ་ཚོགས་པའི་བྱང་ཆུབ་སེམས་དཔའ་རྣམ་པར་གཞག་པ།</term>
-                            <term xml:lang="Sa-Ltn"/>
-                        </gloss>
-                    </item> doubled -->
                     <item>
                         <gloss type="term" xml:id="UT22084-057-004-939">
                             <term>category of the bodhisattva who has perfected intention</term>
@@ -6889,6 +6887,7 @@
                                 dpa’ rnam par gzhag pa </term>
                             <term xml:lang="bo">བསམ་པ་ཕུན་སུམ་ཚོགས་པའི་བྱང་ཆུབ་སེམས་དཔའ་རྣམ་པར་གཞག་པ།</term>
                             <term xml:lang="Sa-Ltn"/>
+                            <term type="alternative">category of bodhisattvas who have perfected intention</term>
                         </gloss>
                     </item>
                     <item>
@@ -6898,6 +6897,7 @@
                                 rnam par gzhag pa </term>
                             <term xml:lang="bo">དབང་བསྐུར་བ་ཐོབ་པའི་བྱང་ཆུབ་སེམས་དཔའ་རྣམ་པར་གཞག་པ།</term>
                             <term xml:lang="Sa-Ltn"/>
+                            <term type="alternative">category of bodhisattvas who have received consecration</term>
                         </gloss>
                     </item>
                     <item>
@@ -6907,6 +6907,7 @@
                                 par gzhag pa </term>
                             <term xml:lang="bo">སྐྱེ་བར་སྐྱེས་པའི་བྱང་ཆུབ་སེམས་དཔའ་རྣམ་པར་གཞག་པ།</term>
                             <term xml:lang="Sa-Ltn"/>
+                            <term type="alternative">category of bodhisattvas who have taken rebirth</term>
                         </gloss>
                     </item>
                     <item>
@@ -6916,6 +6917,7 @@
                                 gzhag pa </term>
                             <term xml:lang="bo">རྒྱལ་ཚབ་ཀྱི་བྱང་ཆུབ་སེམས་དཔའ་རྣམ་པར་གཞག་པ།</term>
                             <term xml:lang="Sa-Ltn"/>
+                            <term type="alternative">category of bodhisattvas who are regents</term>
                         </gloss>
                     </item>
                     <item>
@@ -6925,6 +6927,7 @@
                                 gzhag pa </term>
                             <term xml:lang="bo">ཕྱིར་མི་ལྡོག་པའི་བྱང་ཆུབ་སེམས་དཔའ་རྣམ་པར་གཞག་པ།</term>
                             <term xml:lang="Sa-Ltn"/>
+                            <term type="alternative">category of bodhisattvas who are irreversible</term>
                         </gloss>
                     </item>
                     <item>
@@ -6934,6 +6937,7 @@
                                 par gzhag pa </term>
                             <term xml:lang="bo">གཞོན་ནུར་གྱུར་པའི་བྱང་ཆུབ་སེམས་དཔའ་རྣམ་པར་གཞག་པ།</term>
                             <term xml:lang="Sa-Ltn"/>
+                            <term type="alternative">category of bodhisattvas who are still youths</term>
                         </gloss>
                     </item>
                     <item>
@@ -7328,7 +7332,7 @@
                     </item>
                     <item>
                         <gloss type="term" xml:id="UT22084-057-004-990">
-                            <term>imagination</term>
+                            <term>imagining</term>
                             <term xml:lang="Bo-Ltn">yongs su rtog pa </term>
                             <term xml:lang="bo">ཡོངས་སུ་རྟོག་པ།</term>
                             <term xml:lang="Sa-Ltn"/>
@@ -7781,14 +7785,6 @@
                         </gloss>
                     </item>
                     <item>
-                        <gloss type="term" xml:id="UT22084-057-004-1042">
-                            <term>possesses the quality</term>
-                            <term xml:lang="Bo-Ltn">chos can du gyur </term>
-                            <term xml:lang="bo">ཆོས་ཅན་དུ་གྱུར།</term>
-                            <term xml:lang="Sa-Ltn"/>
-                        </gloss>
-                    </item>
-                    <item>
                         <gloss type="term" xml:id="UT22084-057-004-1043">
                             <term>possible and impossible</term>
                             <term xml:lang="Bo-Ltn">gnas dang mi gnas </term>
@@ -7832,7 +7828,7 @@
                     </item>-->
                     <item>
                         <gloss type="term" xml:id="UT22084-057-004-1048">
-                            <term>ratiocination</term>
+                            <term>conceptualizing</term>
                             <term xml:lang="Bo-Ltn">rnam par rtog pa </term>
                             <term xml:lang="bo">རྣམ་པར་རྟོག་པ།</term>
                             <term xml:lang="Sa-Ltn"/>
@@ -8050,9 +8046,9 @@
                     </item>
                     <item>
                         <gloss type="term" xml:id="UT22084-057-004-1074">
-                            <term>those with long hair</term>
-                            <term xml:lang="Bo-Ltn">ral pa’i ring </term>
-                            <term xml:lang="bo">རལ་པའི་རིང་།</term>
+                            <term>those with long matted hair</term>
+                            <term xml:lang="Bo-Ltn">ral pa ring </term>
+                            <term xml:lang="bo">རལ་པ་རིང་།</term>
                             <term xml:lang="Sa-Ltn">dīrghajaṭa</term>
                         </gloss>
                     </item>
@@ -8137,11 +8133,13 @@
                         </gloss>
                     </item>
                     <item>
-                        <gloss type="term" xml:id="UT22084-057-004-1085">
-                            <term>Uttarika</term>
-                            <term xml:lang="Bo-Ltn">bla na yod </term>
+                        <gloss xml:id="UT22084-057-004-1085" type="term" mode="match">
+                            <term>One for whom there is surpassing</term>
+                            <term xml:lang="Bo-Ltn">bla na yod</term>
                             <term xml:lang="bo">བླ་ན་ཡོད།</term>
                             <term xml:lang="Sa-Ltn">Uttarika</term>
+                            <term type="definition">See <ptr target="#UT22084-057-004-13167"/>.</term>
+                            <term type="alternative">those for whom there is surpassing</term>
                         </gloss>
                     </item>
                     <item>
@@ -8196,11 +8194,13 @@
                         </gloss>
                     </item>-->
                     <item>
-                        <gloss type="term" xml:id="UT22084-057-004-1092">
-                            <term>vow of eternal chastity</term>
-                            <term xml:lang="Bo-Ltn">gzhon nu’i brtul zhugs </term>
+                        <gloss xml:id="UT22084-057-004-1092" type="term" mode="match">
+                            <term>Vowed to ascetic discipline from youth</term>
+                            <term xml:lang="Bo-Ltn">gzhon nu’i brtul zhugs</term>
                             <term xml:lang="bo">གཞོན་ནུའི་བརྟུལ་ཞུགས།</term>
                             <term xml:lang="Sa-Ltn">kumāravrata</term>
+                            <term type="definition">May also refer to practitioners who deliberately act like children; 
+                                see <ptr target="#UT22084-057-004-1317"/>.</term>
                         </gloss>
                     </item>
                     <item>
