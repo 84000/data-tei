@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../../../schema/current/translation.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<tei:TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -34,7 +34,7 @@
                 <sponsor ref="sponsors.xml#sponsor-47">Make and Wang Xiao Juan (馬珂和王曉娟)</sponsor>
             </titleStmt>
             <editionStmt>
-                <edition>v 1.3.4 <date>2020</date>
+                <edition>v 1.4.0 <date>2020</date>
                 </edition>
             </editionStmt>
 
@@ -81,7 +81,7 @@
                 </bibl>
             </sourceDesc>
             <notesStmt>
-                <note type="lastUpdated" date-time="2021-01-15T06:30:27.184Z" user="admin">15/01/2021 06:30:27</note>
+                <note type="lastUpdated" date-time="2021-01-28T17:53:16.074Z" user="admin">28/01/2021 17:53:16</note>
                 <note type="updated" update="translation-status" value="2.d" date-time="2019-07-02T13:19:52.294Z" user="john">2.d</note>
                 <note type="updated" update="translation-status" value="2.c" date-time="2019-09-13T09:10:31.38Z" user="john">2.c</note>
                 <note type="updated" update="text-version" value="v 0.1.0" date-time="2019-10-19T07:20:48.166Z" user="andreas">v 0.1.0</note>
@@ -123,6 +123,7 @@
     <note type="updated" update="text-version" value="1.3.2" date-time="2021-01-03T19:20:56.865Z" user="john">Further editing and notes</note>
     <note type="updated" update="text-version" value="1.3.3" date-time="2021-01-03T19:25:18.032Z" user="john">1.3.3</note>
     <note type="updated" update="text-version" value="1.3.4" date-time="2021-01-15T06:30:24.131Z" user="mike">1.3.4</note>
+    <note type="updated" update="text-version" value="1.4.0" date-time="2021-01-28T17:53:11.858Z" user="john">Further edits to glossary and 2.165-179.</note>
             </notesStmt>
         </fileDesc>
     </teiHeader>
@@ -4497,8 +4498,8 @@
                         <l>Of all the outsider tīrthikas there are, no matter how numerous,</l>
                         <l>And use the unbearable difficulty of achieving those harsh austerities</l>
                         <l>To train those tīrthikas to abandon their misery.<note place="end" xml:id="UT22084-057-004-1312" index="0">For 
-                            an analysis of the terms and concepts in the eight stanzas from this one down to
-                            <ptr target="#UT22084-057-004-624"/> to this point, regarding different kinds 
+                            an analysis of the terms and concepts, in the eight stanzas starting from this one down to
+                            <ptr target="#UT22084-057-004-624"/> regarding different kinds 
                             of language, the various terms that are componds of the Sanskrit <foreign xml:lang="Sa-Ltn">pada</foreign>, 
                             and their uses in this and other sūtras, see Pagel (2007), pp. 67–68.</note>
                         </l>
@@ -4531,39 +4532,36 @@
                             <foreign xml:lang="Sa-Ltn">mānuṣamantrapada</foreign>; the Tibetan (<foreign xml:lang="Bo-Ltn">mi skad tshig</foreign>) 
                             makes no mention of mantra.</note>
                         </l>
-                        <l>Some they teach using etymologies of universally applicable words,</l>
-                        <l>Some they teach by means of the etymologies of divine words,</l>
-                        <l>And some using nāga etymologies and yakṣa etymologies.</l>
+                        <l>Or using words for interpreting universally understood language;</l>
+                        <l>Some they teach using words for interpreting the language of gods,</l>
+                        <l>And some using words for interpreting nāgas and words for interpreting yakṣas.</l>
                     </lg>
                     <milestone unit="chunk" xml:id="UT22084-057-004-622"/>
                     <lg tid="533">
                         <l>“ ‘And for some, using the words of rākṣasa, bhūta, and piśāca evil
                             spirits,</l>
                         <l>And gandharvas, kumbhāṇḍas, and mahoragas,</l>
-                        <l>And the words of kiṃnaras, asuras, and garuḍas,</l>
+                        <l>And the words of kinnaras, asuras, and garuḍas,</l>
                         <l>They reveal the truth and lead them to liberation.</l>
                     </lg>
-                    <milestone unit="chunk" xml:id="UT22084-057-004-623"/>
-                    <lg tid="534">
-                        <l>“ ‘Knowing truth and how etymologies work,</l>
-                        <l>They teach the inconceivable ultimate reality</l>
-                        <l>Of the Dharma teachings of the Victor, without omission,</l>
-                        <l>Through knowing the path of words. <ref cRef="F.70.b" key="toh145" type="folio" xml:id="UT22084-057-004-2720"/>
-                        </l>
-                    </lg>
                     <milestone unit="chunk" xml:id="UT22084-057-004-624"/>
-                    <lg tid="535">
-                        <l>“ ‘Such is their magical display of meditative 
-                            absorptions.’ ” <ref cRef="F.43.a" key="toh847" type="folio" xml:id="UT22084-057-004-2721"/>
+                    <lg tid="534">
+                        <l>“ ‘Knowing truth and how to use words that interpret, they teach,</l>
+                        <l>Through knowing the path of speech, the inconceivable ultimate nature </l>
+                        <l>Of all the Dharma teachings of the Victor, without exception. <ref cRef="F.70.b" key="toh145" type="folio" xml:id="UT22084-057-004-2720"/>
+                        </l>
+                        <l>Their magical display of meditative absorptions is like this.<note place="end" xml:id="UT22084-057-004-1332">
+                            The Sanskrit of the Śikṣā­samuccaya reads: <foreign type="quote" xml:lang="Sa-Ltn">te yatha­satya nirukti­vidhi­jñā evam aśeṣata ye jina­dharmā | dharmam acintiya vākya­patha­jñā deśayi eṣa samādhi­vikurvā</foreign>. 
+                            Bendall 1902, p. 333.</note> <ref cRef="F.43.a" key="toh847" type="folio" xml:id="UT22084-057-004-2721"/>
+                            <ref cRef="B4" type="bampo"/>
                         </l>
                     </lg>
                     <milestone unit="chunk" xml:id="UT22084-057-004-625"/>
                     <lg tid="537">
-                        <l>“ ‘They make all beings
-                            perfect</l>
-                        <l>The absorption of <distinct>highest bliss</distinct>, </l>
-                        <l>And they emanate inconceivable light rays.</l>
-                        <l>Emanating light rays, they train sentient beings.</l>
+                        <l>“ ‘As they accomplish with regard to all beings</l>
+                        <l>The absorption of <distinct>beings’ highest bliss</distinct>, </l>
+                        <l>They emanate inconceivable light rays,</l>
+                        <l>And emanating light rays, they train sentient beings.</l>
                     </lg>
                     <milestone unit="chunk" xml:id="UT22084-057-004-626"/>
                     <lg tid="538">
@@ -4574,20 +4572,21 @@
                     </lg>
                     <milestone unit="chunk" xml:id="UT22084-057-004-627"/>
                     <lg tid="539">
-                        <l>“ ‘Displaying buddhas to all humans,</l>
-                        <l>Displaying the Dharma as well though not teaching it,</l>
-                        <l>And displaying the body of the Victor, a stūpa,</l>
-                        <l>The light rays that are beautiful to behold will thus become
-                            manifest.</l>
+                        <l>“ ‘Displaying the buddhas to all humans,</l>
+                        <l>Displaying the Dharma as well and not displaying it,<note place="end" xml:id="UT22084-057-004-1333">
+                            The meaning of this line is not very clear and there may be an error. The Degé Kangyur here reads: <foreign xml:lang="Bo-Ltn" type="quote">mi rnams kun la sangs rgyas yongs bstan cing / chos kyang yongs bstan de la ma bstan cing</foreign>, with only minor variants in other Kangyurs. However the Sanskrit of the Śikṣā­samuccaya reads <foreign type="quote" xml:lang="Sa-Ltn">darśayi buddha vidarśayi dharmaṃ saṃgha nidarśayi mārga narāṇām</foreign> (Bendall 1902, p. 333), and the Tibetan translation of the same verse in the <title xml:lang="Sa-Ltn">Avataṃsaka</title> is <foreign xml:lang="Bo-Ltn" type="quote">sangs rgyas bstan te chos rnams lam bstan te / dge ’dun bstan nas mi rnams lam  bstan te</foreign> (Degé Kangyur vol. 35, phal po che, ka, F.227.a.7): “Displaying the buddhas, displaying their dharmas and the path, displaying their saṅghas, they show all humans the way.”</note>
+                        </l>
+                        <l>And displaying for their worship the images of the Victors,</l>
+                        <l>Light rays beautiful to behold will thus be perfected.</l>
                     </lg>
                     <milestone unit="chunk" xml:id="UT22084-057-004-628"/>
                     <lg tid="540">
-                        <l>“ ‘Sending forth the so-called <distinct>light-making light
+                        <l>“ ‘Sending forth  what are called <distinct>illuminating light
                                 rays</distinct>
                         </l>
-                        <l>That put to shame even the light rays of the gods,</l>
+                        <l>That eclipse even the light rays of the gods,</l>
                         <l>Illuminating all particles and darkness,</l>
-                        <l>The world-enhancing lights illuminate everything.</l>
+                        <l>These lights that bring benefit to the world illuminate everything.</l>
                     </lg>
                     <milestone unit="chunk" xml:id="UT22084-057-004-629"/>
                     <lg tid="541">
@@ -8266,6 +8265,14 @@
                         </gloss>
                     </item>
                     <item>
+                        <gloss type="term" xml:id="UT22084-057-004-1331">
+                            <term>path of speech</term>
+                            <term xml:lang="Bo-Ltn">tshig lam </term>
+                            <term xml:lang="bo">ཚིག་ལམ།</term>
+                            <term xml:lang="Sa-Ltn">vākyapatha</term>
+                         </gloss>
+                    </item>
+                    <item>
                         <gloss type="term" xml:id="UT22084-057-004-1321">
                             <term>direct words</term>
                             <term xml:lang="Bo-Ltn">drang tshig </term>
@@ -8341,6 +8348,37 @@
                             <term xml:lang="Bo-Ltn">rdo rje’i tshig </term>
                             <term xml:lang="bo">རྡོ་རྗེའི་ཚིག</term>
                             <term xml:lang="Sa-Ltn">vajrapada</term>
+                            <term type="definition">One of ten different kinds of verbal phrase or statement 
+                                (Skt. <foreign xml:lang="Sa-Ltn">pada</foreign>) mentioned in this text.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-057-004-1330">
+                            <term>words for interpreting</term>
+                            <term xml:lang="Bo-Ltn">nges tshig</term>
+                            <term xml:lang="bo">ངེས་ཚིག</term>
+                            <term xml:lang="Sa-Ltn">nirukti­pada</term>
+                            <term type="definition">One of ten different kinds of verbal phrase or statement 
+                                (Skt. <foreign xml:lang="Sa-Ltn">pada</foreign>) mentioned in this text.</term>
+                            <term type="alternative">words that interpret</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-057-004-1329">
+                            <term>words for interpreting the language of gods</term>
+                            <term xml:lang="Bo-Ltn">lha tshig nges tshig</term>
+                            <term xml:lang="bo">ལྷ་ཚིག་ངེས་ཚིག</term>
+                            <term xml:lang="Sa-Ltn">deva­nirukti­pada</term>
+                            <term type="definition">One of ten different kinds of verbal phrase or statement 
+                                (Skt. <foreign xml:lang="Sa-Ltn">pada</foreign>) mentioned in this text.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-057-004-1327">
+                            <term>words for interpreting universally understood language</term>
+                            <term xml:lang="Bo-Ltn">kun la ’jug pa’i tshig nges tshig</term>
+                            <term xml:lang="bo">ཀུན་ལ་འཇུག་པའི་ཚིག་ངེས་ཚིག</term>
+                            <term xml:lang="Sa-Ltn">sarva­praveśa­nirukti­pada</term>
                             <term type="definition">One of ten different kinds of verbal phrase or statement 
                                 (Skt. <foreign xml:lang="Sa-Ltn">pada</foreign>) mentioned in this text.</term>
                         </gloss>
@@ -9567,4 +9605,4 @@
     
     
     
-    </TEI>
+    </tei:TEI>
