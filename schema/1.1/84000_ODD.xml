@@ -308,6 +308,9 @@
                 <rng:data type="integer"/>
               </attribute>
                             </rng:optional>
+              <rng:optional>
+                                <attribute name="key"/>
+              </rng:optional>
               <attribute name="place">
                 <rng:choice>
                   <rng:value>end</rng:value>
@@ -416,25 +419,34 @@
         </macroSpec>
         <macroSpec ident="ref-canonical" mode="add">
           <content>
-            <rng:element xmlns="http://relaxng.org/ns/structure/1.0" name="ref">
-              <attribute name="xml:id"/>
-              <attribute name="type">
-                <choice>
-                  <value>folio</value>
-                  <value>volume</value>
-                </choice>
-              </attribute>
-              <attribute name="cRef"/>
-              <optional>
-                <attribute name="key"/>
-              </optional>
-              <optional>
-                <attribute name="work"/>
-              </optional>
-              <optional>
-                <attribute name="page"/>
-              </optional>
-              <text/>
+            <rng:element name="ref">
+              <rng:attribute name="id" ns="http://www.w3.org/XML/1998/namespace">
+                <rng:data type="ID"/>
+              </rng:attribute>
+              <rng:attribute name="type">
+                <rng:choice>
+                  <rng:value>folio</rng:value>
+                  <rng:value>volume</rng:value>
+                </rng:choice>
+              </rng:attribute>
+              <rng:attribute name="cRef"/>
+              <rng:optional>
+                <rng:attribute name="key"/>
+              </rng:optional>
+              <rng:optional>
+                <rng:attribute name="rend">
+                  <rng:choice>
+                    <rng:value>blank</rng:value>
+                  </rng:choice>
+                </rng:attribute>
+              </rng:optional>
+              <rng:optional>
+                <rng:attribute name="work"/>
+              </rng:optional>
+              <rng:optional>
+                <rng:attribute name="page"/>
+              </rng:optional>
+              <rng:text/>
             </rng:element>
           </content>
         </macroSpec>
@@ -505,7 +517,9 @@
                   <rng:value>chapter</rng:value>
                 </rng:choice>
               </attribute>
-              <attribute name="xml:id"/>
+              <rng:attribute name="id" ns="http://www.w3.org/XML/1998/namespace">
+                <rng:data type="ID"/>
+              </rng:attribute>
               <rng:optional>
                 <attribute name="rend"/>
               </rng:optional>
@@ -584,7 +598,9 @@
                 <rng:value>section</rng:value>
               </rng:choice>
             </rng:attribute>
-            <rng:attribute name="xml:id"/>
+            <rng:attribute name="id" ns="http://www.w3.org/XML/1998/namespace">
+              <rng:data type="ID"/>
+            </rng:attribute>
             <rng:optional>
               <rng:attribute name="rend"/>
             </rng:optional>
@@ -960,7 +976,8 @@
                     <rng:choice>
                       <!-- single abbreviations list-->
                       <rng:zeroOrMore>
-                        <rng:element name="list">
+                        <rng:choice>
+                          <rng:element name="list">
                           <attribute name="type">
                             <rng:choice>
                               <rng:value>abbreviations</rng:value>
@@ -987,6 +1004,8 @@
                             </rng:element>
                           </rng:oneOrMore>
                         </rng:element>
+                        <rng:ref name="milestone"/>
+                        </rng:choice>
                       </rng:zeroOrMore>
                       <!-- abbreviations sections -->
                       <rng:zeroOrMore>
@@ -996,7 +1015,9 @@
                             <rng:value>section</rng:value>
                           </rng:choice>
                         </attribute>
-                        <attribute name="xml:id"/>
+                        <rng:attribute name="id" ns="http://www.w3.org/XML/1998/namespace">
+                <rng:data type="ID"/>
+              </rng:attribute>
                         <rng:oneOrMore>
                           <rng:choice>
                             <rng:optional>
@@ -1069,7 +1090,9 @@
                             <rng:value>section</rng:value>
                           </rng:choice>
                         </attribute>
-                        <attribute name="xml:id"/>
+                        <rng:attribute name="id" ns="http://www.w3.org/XML/1998/namespace">
+                <rng:data type="ID"/>
+              </rng:attribute>
                         <rng:oneOrMore>
                           <rng:choice>
                             <rng:optional>
@@ -1084,6 +1107,9 @@
                             </rng:optional>
                             <rng:zeroOrMore>
                               <rng:ref name="p"/>
+                            </rng:zeroOrMore>
+                            <rng:zeroOrMore>
+                              <rng:ref name="milestone"/>
                             </rng:zeroOrMore>
                             <rng:zeroOrMore>
                               <rng:ref name="hi"/>
@@ -1144,7 +1170,9 @@
                                     <rng:value>section</rng:value>
                                   </rng:choice>
                                 </attribute>
-                                <attribute name="xml:id"/>
+                                <rng:attribute name="id" ns="http://www.w3.org/XML/1998/namespace">
+                <rng:data type="ID"/>
+              </rng:attribute>
                                 <rng:oneOrMore>
                                   <rng:choice>
                                     <rng:optional>
@@ -1159,6 +1187,12 @@
                                     </rng:optional>
                                     <rng:zeroOrMore>
                                       <rng:ref name="lb"/>
+                                    </rng:zeroOrMore>
+                                    <rng:zeroOrMore>
+                                      <rng:ref name="p"/>
+                                    </rng:zeroOrMore>
+                                    <rng:zeroOrMore>
+                                      <rng:ref name="milestone"/>
                                     </rng:zeroOrMore>
                                     <rng:zeroOrMore>
                                       <rng:element name="bibl">
@@ -1355,7 +1389,9 @@
                               <rng:value>homage</rng:value>
                             </rng:choice>
                           </attribute>
-                          <attribute name="xml:id"/>
+                          <rng:attribute name="id" ns="http://www.w3.org/XML/1998/namespace">
+                <rng:data type="ID"/>
+              </rng:attribute>
                           <rng:element name="head">
                             <attribute name="type">
                               <rng:choice>
@@ -1623,7 +1659,9 @@
                           <rng:value>homage</rng:value>
                         </rng:choice>
                       </attribute>
-                      <attribute name="xml:id"/>
+                      <rng:attribute name="id" ns="http://www.w3.org/XML/1998/namespace">
+                <rng:data type="ID"/>
+              </rng:attribute>
                       <rng:element name="head">
                         <attribute name="type">
                           <rng:choice>
@@ -1654,7 +1692,9 @@
                           <rng:value>colophon</rng:value>
                         </rng:choice>
                       </attribute>
-                      <attribute name="xml:id"/>
+                      <rng:attribute name="id" ns="http://www.w3.org/XML/1998/namespace">
+                <rng:data type="ID"/>
+              </rng:attribute>
                       <rng:element name="head">
                         <attribute name="type">
                           <rng:choice>
@@ -1962,9 +2002,6 @@
           </remarks>
         </elementSpec>
         <elementSpec ident="div" module="textstructure" mode="change">
-          <classes mode="change">
-            <memberOf key="att.global" mode="delete"/>
-          </classes>
           <attList>
             <attDef ident="type" mode="change" usage="req">
               <desc>These are the divs for 84000 translations - used in the front, body or
@@ -2422,6 +2459,13 @@
                 </p>
               </remarks>
             </attDef>
+            <attDef ident="key" mode="add" usage="opt">
+              <remarks>
+                <p>Used to specify when an segment of foreign text is intended to appear in one version of a text but not another.
+                  This is useful when there are slight variations in a mantra or dharani. For example a segment of a dharani maybe arranged to appear in one form Toh 676, but with a variation in Toh 850, which is another version of the same text.
+                  The keys are defined in the <gi>sourceDesc</gi> of every 84000 published text.</p>
+              </remarks>
+            </attDef>
           </attList>
           <exemplum>
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -2570,7 +2614,9 @@
                               <rng:value>section</rng:value>
                             </rng:choice>
                           </attribute> 
-                          <attribute name="xml:id"/>
+                          <rng:attribute name="id" ns="http://www.w3.org/XML/1998/namespace">
+                <rng:data type="ID"/>
+              </rng:attribute>
                               <rng:optional>
                                 <rng:element name="head">
                                   <attribute name="type">
@@ -2590,7 +2636,9 @@
                                   <rng:value>section</rng:value>
                                 </rng:choice>
                               </attribute> 
-                              <attribute name="xml:id"/>
+                              <rng:attribute name="id" ns="http://www.w3.org/XML/1998/namespace">
+                                <rng:data type="ID"/>
+                              </rng:attribute>
                               <rng:optional>
                                 <rng:element name="head">
                                   <attribute name="type">
@@ -2610,7 +2658,9 @@
                                       <rng:value>section</rng:value>
                                     </rng:choice>
                                   </attribute> 
-                                  <attribute name="xml:id"/>
+                                  <rng:attribute name="id" ns="http://www.w3.org/XML/1998/namespace">
+                <rng:data type="ID"/>
+              </rng:attribute>
                                   <rng:optional>
                                     <rng:element name="head">
                                       <attribute name="type">
@@ -3068,7 +3118,7 @@
                 <ref name="model.global"/>
                 <ref name="mantra"/>
                 <ref name="ref-canonical"/>
-                <ref name="other"/>
+                <ref name="ref-other"/>
               </choice>
             </zeroOrMore>
               <!--<alternate minOccurs="0" maxOccurs="unbounded">
@@ -3549,6 +3599,13 @@
               </valList>
             </attDef>
             <attDef ident="xml:id" mode="delete"/>
+            <attDef ident="key">
+              <remarks>
+                <p>Used to specify when a mantra or segment of a mantra is intended to appear in one version of a text but not another.
+                  For example a mantra maybe arranged to appear in Toh 676, but not in Toh 850, which is another version of the same text.
+                  The keys are defined in the <gi>sourceDesc</gi> of every 84000 published text.</p>
+              </remarks>
+            </attDef>
           </attList>
           <exemplum>
             <p>Here is a simple example of a complete mantra in Sanskrit contained in the main text.
@@ -3704,6 +3761,13 @@
               <remarks>
                 <p>if <att>type</att> = 'update' then this is the value of the update. This is
                   automated by the forms in operations.</p>
+              </remarks>
+            </attDef>
+            <attDef ident="key" mode="add" usage="opt">
+              <remarks>
+                <p>Used to specify when an endnote is intended to appear in one version of a text but not another.
+                For example a note maybe arranged to appear in Toh 676, but not in Toh 850, which is another version of the same text.
+                The keys are defined in the <gi>sourceDesc</gi> of every 84000 published text.</p>
               </remarks>
             </attDef>
           </attList>
@@ -4153,12 +4217,6 @@
           </remarks>
         </elementSpec>
         <elementSpec ident="ref" module="core" mode="change">
-          <classes mode="change">
-            <memberOf key="att.global" mode="delete"/>
-          </classes>
-          <content>
-            <textNode/>
-          </content>
           <attList>
             <attDef ident="type" mode="change" usage="opt">
               <desc>Identifies the type of a reference</desc>
@@ -4187,11 +4245,18 @@
                   See the example below.</p>
               </remarks>
             </attDef>
-            <attDef ident="rend" mode="add" usage="opt">
+            <attDef ident="rend" mode="change" usage="opt">
               <desc>Identifies how this reference will be displayed in the reading room.</desc>
               <valList type="closed">
-                <valItem ident="hidden"/>
-                <valItem ident="pending"/>
+                <valItem ident="hidden">
+                  <desc>A folio reference that is to be hidden in the general display but preserved in the TEI.</desc>
+                </valItem>
+                <valItem ident="pending">
+                  <desc>A link to a Kangyur text that has not yet been published by 84000.</desc>
+                </valItem>
+                <valItem ident="blank">
+                  <desc>The corresponding folio in the eKangyur is blank.</desc>
+                </valItem>
               </valList>
               <remarks>
                 <p>If it has the value "hidden" it will not be displayed in the reading room. This
@@ -4208,6 +4273,7 @@
                 Furthermore, if the reference points to a particular page in the unpublished text, e.g., a
                 folio number, this should be added as an <att>inst</att> attribute so that the appropriate
                 milestone can be located and added to the URL at the time the text is published. See example below.</p>
+                <p>The value "blank" is used if the corresponding folio in the eKangyur is blank. This should not be linked in the Reading Room view, and a note should be added to the grayed out reference, e.g., "This folio of the Degé Kangyur is blank." See <ref target="https://read.84000-translate.org/translation/toh287.html#UT22084-068-021-26">for example Toh 287</ref>.</p>
               </remarks>
             </attDef>
             <attDef ident="work" mode="add" usage="opt">
@@ -4243,7 +4309,7 @@
                 reference just links to the front page of the text, then do not use the <att>inst</att> attribute.</p>
               </remarks>
             </attDef>
-            <attDef ident="xml:id" mode="change" usage="opt"/>
+            <!--<attDef ident="xml:id" mode="change" usage="opt"/>-->
           </attList>
           <exemplum>
             <p>First, most commonly, the <gi>ref</gi> element is used to mark all folio references
@@ -5825,6 +5891,18 @@
               and vice-versa. Sometimes the page breaks between the folios will be in the same place
               in the eKangyur but often they are different so you may need to go in and find them
               all manually if they were not written in by the translator.</item>
+              <item>As a final note on the subject of folio references, on rare occasions there are blank folio pages
+              in the Degé appearing in the middle of texts. These blank pages will be matched with blank pages in the 
+              eKangyur; however, the reader generates a segment of preceding and following text from the nearest
+              folio pages and this may be confusing to the reader when the folio reference is clicked in the web display. 
+              Therefore it is preferable to add a @rend="blank" attribute to any blank folios, which will suppress the link,
+              and then add a note simply explaining that the page is blank. For example here is such a case in Toh 287:
+              <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                What difference is there <ref cRef="F.82.b" rend="blank" type="folio" xml:id="UT22084-068-021-100028"/>
+                                    <note place="end" xml:id="UT22084-068-021-102194">This folio of the Degé Kangyur is blank.</note> ...
+              </egXML>
+                <ref target="https://read.84000-translate.org/translation/toh287.html#UT22084-068-021-26">See how this is displayed in the Reading Room.</ref>
+              </item>
           </list>
                     </div>
           <div>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <grammar xmlns="http://relaxng.org/ns/structure/1.0" xmlns:teix="http://www.tei-c.org/ns/Examples" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes" ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2021-01-12T21:26:52Z. .
+Schema generated from ODD source 2021-02-04T19:37:36Z. .
 TEI Edition: Version 4.1.0. Last updated on
 	19th August 2020, revision b414ba550
 TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.1.0/
@@ -113,6 +113,9 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.1.0/
                <data type="integer"/>
             </attribute>
          </optional>
+         <optional>
+            <attribute name="key"/>
+         </optional>
          <attribute name="place">
             <value>end</value>
          </attribute>
@@ -210,7 +213,9 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.1.0/
    </define>
    <define name="ref-canonical">
       <element name="ref">
-         <attribute name="xml:id"/>
+         <attribute name="id" ns="http://www.w3.org/XML/1998/namespace">
+            <data type="ID"/>
+         </attribute>
          <attribute name="type">
             <choice>
                <value>folio</value>
@@ -220,6 +225,11 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.1.0/
          <attribute name="cRef"/>
          <optional>
             <attribute name="key"/>
+         </optional>
+         <optional>
+            <attribute name="rend">
+               <value>blank</value>
+            </attribute>
          </optional>
          <optional>
             <attribute name="work"/>
@@ -288,7 +298,9 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.1.0/
          <attribute name="type">
             <value>chapter</value>
          </attribute>
-         <attribute name="xml:id"/>
+         <attribute name="id" ns="http://www.w3.org/XML/1998/namespace">
+            <data type="ID"/>
+         </attribute>
          <optional>
             <attribute name="rend"/>
          </optional>
@@ -347,7 +359,9 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.1.0/
       <attribute name="type">
          <value>section</value>
       </attribute>
-      <attribute name="xml:id"/>
+      <attribute name="id" ns="http://www.w3.org/XML/1998/namespace">
+         <data type="ID"/>
+      </attribute>
       <optional>
          <attribute name="rend"/>
       </optional>
@@ -1629,6 +1643,12 @@ Suggested values include: 1] below; 2] bottom; 3] margin; 4] top; 5] opposite; 6
                </choice>
             </attribute>
          </optional>
+         <optional>
+            <attribute name="key">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <text/>
+            </attribute>
+         </optional>
          <empty/>
       </element>
    </define>
@@ -1827,7 +1847,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
    <define name="ref">
       <element name="ref">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(reference) defines a reference to another location, possibly modified by additional text or comment. [3.6. Simple Links and Cross-References 16.1. Links]</a:documentation>
-         <text/>
+         <ref name="macro.paraContent"/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="NewODD-ref-refAtts-constraint-report-4">
             <rule context="tei:ref">
                <report xmlns:rng="http://relaxng.org/ns/structure/1.0" test="@target and @cRef">Only one of the
@@ -1836,7 +1856,21 @@ attributes @target and @cRef may be supplied on <name/>.</report>
             </rule>
          </pattern>
          <ref name="att.cReferencing.attributes"/>
+         <ref name="att.global.attribute.xmllang"/>
+         <ref name="att.global.attribute.xmlid"/>
          <ref name="att.pointing.attributes"/>
+         <optional>
+            <attribute name="rend">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(rendition) Identifies how this reference will be displayed in the reading room.</a:documentation>
+               <list>
+                  <oneOrMore>
+                     <data type="token">
+                        <param name="pattern">[^\p{C}\p{Z}]+</param>
+                     </data>
+                  </oneOrMore>
+               </list>
+            </attribute>
+         </optional>
          <optional>
             <attribute name="type">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Identifies the type of a reference</a:documentation>
@@ -1858,17 +1892,6 @@ attributes @target and @cRef may be supplied on <name/>.</report>
             <attribute name="key">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Identifies the Toh. number of the text to which a folio reference is linked to. </a:documentation>
                <text/>
-            </attribute>
-         </optional>
-         <optional>
-            <attribute name="rend">
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Identifies how this reference will be displayed in the reading room.</a:documentation>
-               <choice>
-                  <value>hidden</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                  <value>pending</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               </choice>
             </attribute>
          </optional>
          <optional>
@@ -2074,6 +2097,12 @@ attributes @target and @cRef may be supplied on <name/>.</report>
          </optional>
          <optional>
             <attribute name="value">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <text/>
+            </attribute>
+         </optional>
+         <optional>
+            <attribute name="key">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
                <text/>
             </attribute>
@@ -2317,6 +2346,7 @@ Elements 7.2.5. Speech Contents]</a:documentation>
                <ref name="model.global"/>
                <ref name="mantra"/>
                <ref name="ref-canonical"/>
+               <ref name="ref-other"/>
             </choice>
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="NewODD-l-abstractModel-structure-l-constraint-report-5">
@@ -2967,7 +2997,9 @@ Elements 7.2.5. Speech Contents]</a:documentation>
                               <value>homage</value>
                            </choice>
                         </attribute>
-                        <attribute name="xml:id"/>
+                        <attribute name="id" ns="http://www.w3.org/XML/1998/namespace">
+                           <data type="ID"/>
+                        </attribute>
                         <element name="head">
                            <attribute name="type">
                               <choice>
@@ -2994,7 +3026,9 @@ Elements 7.2.5. Speech Contents]</a:documentation>
                         <attribute name="type">
                            <value>colophon</value>
                         </attribute>
-                        <attribute name="xml:id"/>
+                        <attribute name="id" ns="http://www.w3.org/XML/1998/namespace">
+                           <data type="ID"/>
+                        </attribute>
                         <element name="head">
                            <attribute name="type">
                               <value>colophon</value>
@@ -3083,6 +3117,26 @@ Elements 7.2.5. Speech Contents]</a:documentation>
       </report>
             </rule>
          </pattern>
+         <ref name="att.global.attribute.xmllang"/>
+         <optional>
+            <attribute name="xml:id">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(identifier) provides a unique identifier for the element bearing the attribute.</a:documentation>
+               <data type="ID"/>
+            </attribute>
+         </optional>
+         <optional>
+            <attribute name="rend">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(rendition) indicates how the element in question was rendered or presented in the source text.</a:documentation>
+               <list>
+                  <oneOrMore>
+                     <choice>
+                        <value>ignoreGlossary</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Glossary terms found in the text in this division will not be linked to the glossary in the 84000 Reading Room.</a:documentation>
+                     </choice>
+                  </oneOrMore>
+               </list>
+            </attribute>
+         </optional>
          <attribute name="type">
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">These are the divs for 84000 translations - used in the front, body or back.</a:documentation>
             <choice>
@@ -3238,7 +3292,9 @@ Elements 7.2.5. Speech Contents]</a:documentation>
                               <attribute name="type">
                                  <value>section</value>
                               </attribute>
-                              <attribute name="xml:id"/>
+                              <attribute name="id" ns="http://www.w3.org/XML/1998/namespace">
+                                 <data type="ID"/>
+                              </attribute>
                               <optional>
                                  <element name="head">
                                     <attribute name="type">
@@ -3253,7 +3309,9 @@ Elements 7.2.5. Speech Contents]</a:documentation>
                                     <attribute name="type">
                                        <value>section</value>
                                     </attribute>
-                                    <attribute name="xml:id"/>
+                                    <attribute name="id" ns="http://www.w3.org/XML/1998/namespace">
+                                       <data type="ID"/>
+                                    </attribute>
                                     <optional>
                                        <element name="head">
                                           <attribute name="type">
@@ -3268,7 +3326,9 @@ Elements 7.2.5. Speech Contents]</a:documentation>
                                           <attribute name="type">
                                              <value>section</value>
                                           </attribute>
-                                          <attribute name="xml:id"/>
+                                          <attribute name="id" ns="http://www.w3.org/XML/1998/namespace">
+                                             <data type="ID"/>
+                                          </attribute>
                                           <optional>
                                              <element name="head">
                                                 <attribute name="type">
@@ -3308,35 +3368,40 @@ Elements 7.2.5. Speech Contents]</a:documentation>
                   </element>
                   <choice>
                      <zeroOrMore>
-                        <element name="list">
-                           <attribute name="type">
-                              <value>abbreviations</value>
-                           </attribute>
-                           <oneOrMore>
-                              <ref name="head"/>
-                           </oneOrMore>
-                           <oneOrMore>
-                              <element name="item">
-                                 <attribute name="id" ns="http://www.w3.org/XML/1998/namespace">
-                                    <data type="ID"/>
-                                 </attribute>
-                                 <text/>
-                                 <optional>
-                                    <ref name="abbr"/>
-                                 </optional>
-                                 <optional>
-                                    <ref name="expan"/>
-                                 </optional>
-                              </element>
-                           </oneOrMore>
-                        </element>
+                        <choice>
+                           <element name="list">
+                              <attribute name="type">
+                                 <value>abbreviations</value>
+                              </attribute>
+                              <oneOrMore>
+                                 <ref name="head"/>
+                              </oneOrMore>
+                              <oneOrMore>
+                                 <element name="item">
+                                    <attribute name="id" ns="http://www.w3.org/XML/1998/namespace">
+                                       <data type="ID"/>
+                                    </attribute>
+                                    <text/>
+                                    <optional>
+                                       <ref name="abbr"/>
+                                    </optional>
+                                    <optional>
+                                       <ref name="expan"/>
+                                    </optional>
+                                 </element>
+                              </oneOrMore>
+                           </element>
+                           <ref name="milestone"/>
+                        </choice>
                      </zeroOrMore>
                      <zeroOrMore>
                         <element name="div">
                            <attribute name="type">
                               <value>section</value>
                            </attribute>
-                           <attribute name="xml:id"/>
+                           <attribute name="id" ns="http://www.w3.org/XML/1998/namespace">
+                              <data type="ID"/>
+                           </attribute>
                            <oneOrMore>
                               <choice>
                                  <optional>
@@ -3392,7 +3457,9 @@ Elements 7.2.5. Speech Contents]</a:documentation>
                         <attribute name="type">
                            <value>section</value>
                         </attribute>
-                        <attribute name="xml:id"/>
+                        <attribute name="id" ns="http://www.w3.org/XML/1998/namespace">
+                           <data type="ID"/>
+                        </attribute>
                         <oneOrMore>
                            <choice>
                               <optional>
@@ -3405,6 +3472,9 @@ Elements 7.2.5. Speech Contents]</a:documentation>
                               </optional>
                               <zeroOrMore>
                                  <ref name="p"/>
+                              </zeroOrMore>
+                              <zeroOrMore>
+                                 <ref name="milestone"/>
                               </zeroOrMore>
                               <zeroOrMore>
                                  <ref name="hi"/>
@@ -3460,7 +3530,9 @@ Elements 7.2.5. Speech Contents]</a:documentation>
                                     <attribute name="type">
                                        <value>section</value>
                                     </attribute>
-                                    <attribute name="xml:id"/>
+                                    <attribute name="id" ns="http://www.w3.org/XML/1998/namespace">
+                                       <data type="ID"/>
+                                    </attribute>
                                     <oneOrMore>
                                        <choice>
                                           <optional>
@@ -3473,6 +3545,12 @@ Elements 7.2.5. Speech Contents]</a:documentation>
                                           </optional>
                                           <zeroOrMore>
                                              <ref name="lb"/>
+                                          </zeroOrMore>
+                                          <zeroOrMore>
+                                             <ref name="p"/>
+                                          </zeroOrMore>
+                                          <zeroOrMore>
+                                             <ref name="milestone"/>
                                           </zeroOrMore>
                                           <zeroOrMore>
                                              <element name="bibl">
@@ -3654,7 +3732,9 @@ Elements 7.2.5. Speech Contents]</a:documentation>
                                  <value>homage</value>
                               </choice>
                            </attribute>
-                           <attribute name="xml:id"/>
+                           <attribute name="id" ns="http://www.w3.org/XML/1998/namespace">
+                              <data type="ID"/>
+                           </attribute>
                            <element name="head">
                               <attribute name="type">
                                  <choice>
@@ -3941,6 +4021,12 @@ Sample values include: </a:documentation>
                   <value>syllable</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
                </choice>
+            </attribute>
+         </optional>
+         <optional>
+            <attribute name="key">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <text/>
             </attribute>
          </optional>
          <empty/>
