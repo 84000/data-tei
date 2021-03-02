@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../../../schema/current/translation.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<tei:TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -23,10 +23,10 @@
                 <editor role="TEImarkupEditor" ref="contributors.xml#person-108">André Rodrigues</editor>
             </titleStmt>
             <editionStmt>
-                <edition>v 0.1.9 <date>2019</date>
+                <edition>v 0.1.10 <date>2019</date>
                 </edition>
             </editionStmt>
-            <publicationStmt status="2.a">
+            <publicationStmt status="2">
                 <publisher>
                     <name>84000: Translating the Words of the Buddha</name> is a global non-profit initiative to translate all the Buddha’s words into modern languages, and to make them available to everyone. </publisher>
                 <availability>
@@ -45,6 +45,8 @@
                 <bibl key="toh347" type="text">
                     <ref>Toh 347</ref>
                     <biblScope>Degé Kangyur, vol. 76 (mdo sde, vol. a’), folios 1a−22a</biblScope>
+                    <author role="translatorTib">Jinamitra</author>
+                    <author role="translatorTib">Devacandra</author>
                     <location work="UT4CZ5369" count-pages="42">
                         <volume number="76" start-page="2" end-page="43"/>
                     </location>
@@ -53,7 +55,7 @@
                 </bibl>
             </sourceDesc>
             <notesStmt>
-                <note type="lastUpdated" date-time="2021-02-21T12:36:44.551Z" user="andre">21/02/2021 12:36:44</note>
+                <note type="lastUpdated" date-time="2021-03-02T22:28:56.404Z" user="admin">02/03/2021 22:28:56</note>
                 <note type="updated" update="text-version" value="v 0.1.0" date-time="2019-12-04T09:08:48.745Z" user="andreas">v 0.1.0</note>
                 <note type="updated" update="translation-status" value="2.f" date-time="2019-12-04T09:08:48.745Z" user="andreas">2.f</note>
                 <note type="updated" update="translation-status" value="2.g" date-time="2020-01-27T13:06:34.46Z" user="mike">2.g</note>
@@ -73,6 +75,8 @@
                 <note type="updated" update="text-version" value="0.1.8" date-time="2021-02-01T19:44:27.691Z" user="mike">Auto (update-publication-status)</note>
             
     <note type="updated" update="text-version" value="0.1.9" date-time="2021-02-17T19:07:19.807Z" user="andre">Auto (update-titles)</note>
+    <note type="updated" update="translation-status" value="2" date-time="2021-03-02T22:28:50.418Z" user="mike">2</note>
+    <note type="updated" update="text-version" value="0.1.10" date-time="2021-03-02T22:28:50.418Z" user="mike">Auto (update-publication-status)</note>
             </notesStmt>
         </fileDesc>
     </teiHeader>
@@ -82,7 +86,7 @@
                 <head type="summary" tid="1">Summary</head>
                 <milestone unit="chunk" xml:id="UT22084-076-001-1"/>
                 <p tid="2">In Śrāvastī, at Prince Jeta’s Grove, several elder monks in the Buddha’s assembly cannot agree on
-                    which human quality is most valuable and beneficial: beauty, diligence, artistry, or wisdom. They
+                    which human quality is most valuable and beneficial: beauty, diligence, artistry, or insight. They
                     ask the Buddha, who replies that merit, which gives rise to all the qualities they have noted, is of
                     most benefit to beings. To illustrate this point, he tells the story of a past life in which he was
                     born as Puṇyabala (“Power of Merit”), with four older brothers who were each named after their most
@@ -135,7 +139,7 @@
                                 past lives, in which the Buddha is either the protagonist of the story or a witness to
                                 other events. See Appleton 2010, 3–6; and Rothenberg 1990, 4–5.</note> Another
                         difference is that avadānas typically concern realized beings’ past <distinct>human</distinct>
-                        lives, not those of animals or nonhumans, as is the case in many jātaka tales. Finally, while
+                        lives, not those as animals or nonhumans, as is the case in many jātaka tales. Finally, while
                         jātaka stories had wide popular appeal, with plots, characters, and motifs drawn from pan-Indian
                         folklore, the avadānas seem to have been originally intended primarily for monastics, as
                         suggested by their frequent references to attendant monks, their moral tone, and their specific
@@ -166,7 +170,7 @@
                                 Saṅgha) tradition, which some scholars have regarded as a precursor of Mahāyāna
                                 Buddhism.</note>--> version), and their journey to a foreign land in order to test
                         their differing theories, is shared by at least three other Buddhist texts that are each much
-                        shorter in length than the <title xml:lang="Sa-Ltn">Puṇyabalāvadāna</title>. These texts are the
+                        shorter in length than the <title xml:lang="Sa-Ltn">Puṇya­balāvadāna</title>. These texts are the
                             <title xml:lang="Sa-Ltn">Puṇyavanta Jātaka</title>, which forms a chapter of the <title xml:lang="Sa-Ltn">Mahāvastu</title>;<note place="end" xml:id="UT22084-076-001-14"> For an
                                 English translation, see Jones 1956, vol. 3, pp. 31–39. For an edited Sanskrit version,
                                 see Marciniak 2019, vol. 3, pp. 42–48 </note> a Tocharian version of the Puṇyavanta
@@ -176,29 +180,28 @@
                                 but Sieg and Siegling 1921 (p.2 n.1) note that the version they consulted contains only
                                 a versified version of the <title xml:lang="Sa-Ltn">Mahāvastu</title> story.</note> Apart from their shared narrative outline,
                         these texts are not only notably different in composition and content from one another, but also
-                        from the <title xml:lang="Sa-Ltn">Puṇyabalāvadāna</title>. While the dialog and ensuing
-                        adventures of the five young men are the focus of the <title xml:lang="Sa-Ltn">Puṇyabalāvadāna</title> and of the<title xml:lang="Sa-Ltn"> Puṇyavanta Jātaka</title> in
+                        from the <title xml:lang="Sa-Ltn">Puṇya­balāvadāna</title>. While the dialog and ensuing
+                        adventures of the five young men are the focus of the <title xml:lang="Sa-Ltn">Puṇya­balāvadāna</title> and of the<title xml:lang="Sa-Ltn"> Puṇyavanta Jātaka</title> in
                         the <title xml:lang="Sa-Ltn">Mahāvastu</title>, the Tocharian version devotes more than
                         three-quarters of its content to the stories and dialogs preceding the young men’s journey,
                         giving only seven and a half lines to their actual adventures.<note place="end" xml:id="UT22084-076-001-17"> See Lane 1947, 33.</note>
                     </p>
                     <milestone unit="chunk" xml:id="UT22084-076-001-18"/>
-                    <p tid="15">The characters also differ among these works. The protagonist Puṇyabala in our avadāna is named
-                        Puṇyavanta in the other works (or its equivalent Punyavaṃ in the Tocharian version) and likewise
+                    <p tid="15">The characters also differ among these works. The protagonist in our avadāna, Puṇyabala, is named Puṇyavanta in the other works (or its equivalent Punyavaṃ in the Tocharian version) and likewise
                         Rūpabala is Rūpavanta in the other works. Moreover, in the <title xml:lang="Sa-Ltn">Mahāvastu</title> version, the young prince’s companions are said to be ministers’ sons
                         (Skt. <foreign xml:lang="Sa-Ltn" type="term">amātyaputrā</foreign>) who are of the same age,
                         whereas they are referred to as princes (Tib. <foreign xml:lang="Bo-Ltn" type="term">gzhon
                             nu</foreign>, Skt. <foreign xml:lang="Sa-Ltn" type="term">kumāra</foreign>; Tocharian
                             <foreign xml:lang="Pi-Ltn" type="term">mäñcuṣke</foreign>) belonging to the same
-                        royal family in both the Tocharian tale and the <title xml:lang="Sa-Ltn">Puṇyabalāvadāna</title>. The concluding correspondences drawn between the past characters and
+                        royal family in both the Tocharian tale and the <title xml:lang="Sa-Ltn">Puṇya­balāvadāna</title>. The concluding correspondences drawn between the past characters and
                         their present incarnations are largely similar, except that Śilpavanta becomes one of the
-                        Buddha’s ten leading disciples, Aniruddha (Pāli <foreign xml:lang="Pi-Ltn">Anuruddha</foreign>), in the <title xml:lang="Sa-Ltn">Puṇyabalāvadāna</title> and Tocharian tale but becomes a lesser known disciple, Rāśtrapāla
+                        Buddha’s ten leading disciples, Aniruddha (Pāli <foreign xml:lang="Pi-Ltn">Anuruddha</foreign>), in the <title xml:lang="Sa-Ltn">Puṇya­balāvadāna</title> and Tocharian tale but becomes a lesser known disciple, Rāśtrapāla
                         (Pāli <foreign xml:lang="Pi-Ltn">Raṭhapāla</foreign>), in the <title xml:lang="Sa-Ltn">Mahāvastu</title> tale.</p>
                     <milestone unit="chunk" xml:id="UT22084-076-001-19"/>
                     <p tid="16">An interesting narrative difference between these works is that the <title xml:lang="Sa-Ltn">Mahāvastu</title> version of the exploits of Rūpavanta, Prajñāvanta, and Puṇyavanta
-                        contains erotic intrigues or escapades that are absent in the <title xml:lang="Sa-Ltn">Puṇyabalāvadāna</title> and the Tocharian tale, though the latter does describe at some
+                        contains erotic intrigues or escapades that are absent in the <title xml:lang="Sa-Ltn">Puṇya­balāvadāna</title> and the Tocharian tale, though the latter does describe at some
                         length a nocturnal liaison between a painter and a mechanical maiden, as an illustration of the
-                        perils of artistry offered by the wise Prajñāvanta. In general, the <title xml:lang="Sa-Ltn">Puṇyabalāvadāna</title> gives comparatively little consideration to the feats of the other
+                        perils of artistry offered by the wise Prajñāvanta. In general, the <title xml:lang="Sa-Ltn">Puṇya­balāvadāna</title> gives comparatively little consideration to the feats of the other
                         princes, which are each summarized in only a line or two and devotes far more attention than the
                         other works to explaining and illustrating the benefits of merit-making through the lens of
                         Puṇyabala’s life. In the <title xml:lang="Sa-Ltn">Mahāvastu</title> narrative, it is not through
@@ -206,7 +209,7 @@
                         but rather by generally making an agreeable impression on them, and especially by not falling
                         prey to the sexual advances of the love-smitten princess—because he remains sound asleep! It is
                         for these rather passive successes that the king rewards Puṇyavanta with the princess’s hand in
-                        marriage and makes him heir to the throne. In the <title xml:lang="Sa-Ltn">Puṇyabalāvadāna</title>, by contrast, it is only through a series of arduous merit-making
+                        marriage and makes him heir to the throne. In the <title xml:lang="Sa-Ltn">Puṇya­balāvadāna</title>, by contrast, it is only through a series of arduous merit-making
                         tasks—including living in poverty, giving wealth to the poor, giving his limbs and blood to an
                         amputee, and making the aspiration to gain spiritual awakening so that he can liberate all
                         beings from saṃsāra—that Puṇyabala’s efforts bear fruit. Even then, it is only upon gaining the
@@ -215,14 +218,14 @@
                         vested interest, that Puṇyabala finally gains prosperity, kingship, and the assurance of future
                         awakening to buddhahood. </p>
                     <milestone unit="chunk" xml:id="UT22084-076-001-20"/>
-                    <p tid="17">Of the works considered, it is only the <title xml:lang="Sa-Ltn">Puṇyabalāvadāna</title> that
+                    <p tid="17">Of the works considered, it is only the <title xml:lang="Sa-Ltn">Puṇya­balāvadāna</title> that
                         treats the ideal of merit in systematic detail and argues for its alleged superiority over the
                         other virtues. Significantly, the Tocharian tale devotes well over half its content to extolling
-                        wisdom, giving relatively short shrift to merit. The <title xml:lang="Sa-Ltn">Mahāvastu</title>
+                        insight, giving relatively short shrift to merit. The <title xml:lang="Sa-Ltn">Mahāvastu</title>
                         story gives only cursory treatment to each of the five prized qualities and seems to be invested
                         far more in plot developments than in ethical and didactic considerations. Taken together, all
                         these structural and thematic differences between the versions of this story consulted reinforce
-                        our general impression that the <title xml:lang="Sa-Ltn">Puṇyabalāvadāna</title> was primarily
+                        our general impression that the <title xml:lang="Sa-Ltn">Puṇya­balāvadāna</title> was primarily
                         intended as a morality tale for a Buddhist monastic audience. It is perhaps worth noting that
                         there are several jātaka tales featuring a King Puṇyabala who is renowned for his generosity,
                         but these otherwise bear little resemblance to the Puṇyavanta narrative.</p>
@@ -240,7 +243,7 @@
                                 Śroṇakoṭīviṃśa (Pāli:
                             <foreign xml:lang="Pi-Ltn">Soṇa Koḷivisa</foreign>) perseveres in
                                 pursuing his goals despite numerous obstacles.</note> Venerable Aniruddha argues
-                        that it is artistic skill, and venerable Śāriputra argues that it is wisdom. When they cannot
+                        that it is artistic skill, and venerable Śāriputra argues that it is insight. When they cannot
                         resolve their disagreement, they ask the Buddha. The Buddha tells them that merit is the best
                         human quality, as it underpins all the others. He then tells a story from one of his past lives
                         to illustrate this claim. </p>
@@ -298,10 +301,9 @@
                         attain the highest goals in life if he or she strives to benefit others with pure intention.</p>
                     <milestone unit="chunk" xml:id="UT22084-076-001-31"/>
                     <p tid="26">The colophon of the text states that it was translated from Sanskrit into Tibetan by the
-                        imperial-era translators Jinamitra, the Kashmiri<foreign xml:lang="Sa-Ltn" type="term">
-                            scholar</foreign>, and the Tibetan Devacandra (eighth to ninth centuries). Jinamitra was
+                        imperial-era translators Jinamitra, the Kashmiri scholar, and the Tibetan Devacandra (eighth to ninth centuries). Jinamitra was
                         active in Tibet at the end of the eighth century or during the first decades of the ninth.<note place="end" xml:id="UT22084-076-001-32">
-                            Germano 2000, 251.</note> The <title xml:lang="Sa-Ltn">Puṇyabalāvadāna</title>’s inclusion in the Denkarma Catalog indicates that it was
+                            Germano 2000, 251.</note> The <title xml:lang="Sa-Ltn">Puṇya­balāvadāna</title>’s inclusion in the Denkarma Catalog indicates that it was
                         translated in the early period, prior to that imperial catalog’s compilation in 812. In this
                         catalog, the text is grouped within the category of Hīnayāna sūtras (Tib. <foreign xml:lang="Bo-Ltn" type="term">theg pa chung ngu’i sde</foreign>).<note place="end" xml:id="UT22084-076-001-33">
                             Denkarma, 300.b.7. See also Herrmann-Pfandt 2008, 155–56, no. 283.</note> Indeed, its cast
@@ -321,7 +323,7 @@
                         Puṇyabala.</title>
                     </p>
                     <milestone unit="chunk" xml:id="UT22084-076-001-37"/>
-                    <p tid="28">Kazuo Kano has noted that a Sanskrit version of the <title xml:lang="Sa-Ltn">Puṇyabalāvadāna</title> that once belonged to the Indian scholar Atiśa Dīpaṃkaraśrījñāna is
+                    <p tid="28">Kazuo Kano has noted that a Sanskrit version of the <title xml:lang="Sa-Ltn">Puṇya­balāvadāna</title> that once belonged to the Indian scholar Atiśa Dīpaṃkaraśrījñāna is
                         currently stored in the Potala Palace in Lhasa. Unfortunately, however, this text along with the
                         many other Sanskrit and Tibetan texts in the Potala collection remain unavailable to scholars at
                         this time.<note place="end" xml:id="UT22084-076-001-38"> Kano 2015, 99.</note>
@@ -493,10 +495,10 @@
                                 editions, reading
                             <foreign xml:lang="Bo-Ltn" type="term">bzo</foreign>.</note> is the most valuable quality of humans.” </p>
                     <milestone unit="chunk" xml:id="UT22084-076-001-69"/>
-                    <p tid="58">And Venerable Śāriputra said, “Venerable ones, wisdom<note place="end" xml:id="UT22084-076-001-70">
+                    <p tid="58">And Venerable Śāriputra said, “Venerable ones, insight<!--<note place="end" xml:id="UT22084-076-001-70">
                             The term <foreign xml:lang="Bo-Ltn" type="term">shes
                                 rab</foreign> (Skt. <foreign xml:lang="Sa-Ltn" type="term">prajñā</foreign>) here refers to the knowledge
-                                or insight gained through study, contemplation, and meditation.</note> is the most
+                                or insight gained through study, contemplation, and meditation.</note>--> is the most
                         valuable quality of humans.”</p>
                     <milestone unit="chunk" xml:id="UT22084-076-001-71"/>
                     <p tid="59">They then said, “Venerable ones, since we have all understood things differently and cannot come
@@ -552,7 +554,7 @@
                         said, ‘Venerable ones, good looks are the most valuable quality of humans.’ Venerable
                         Śroṇakoṭīviṃśa said, ‘Venerable ones, diligence is the most valuable quality of humans.’
                         Venerable Aniruddha said, ‘Venerable ones, being skilled in arts and crafts is the most valuable
-                        quality of humans.’ And Venerable Śāriputra said, ‘Venerable ones, wisdom alone is the most
+                        quality of humans.’ And Venerable Śāriputra said, ‘Venerable ones, insight alone is the most
                         valuable quality of humans.’ Noble One, this is how we deliberated about the matter. Since we
                         venerable ones were all in disagreement, and each examined things differently, we decided to
                         come before the Blessed One and ask about this very issue. We resolved to accept whatever advice
@@ -564,7 +566,7 @@
                     <milestone unit="chunk" xml:id="UT22084-076-001-81"/>
                     <lg tid="68">
                         <l>“Good looks, skill in arts and crafts,</l>
-                        <l>Diligence, wisdom, and all the other qualities that</l>
+                        <l>Diligence, insight, and all the other qualities that</l>
                         <l>Sentient beings possess have arisen from merit. <ref cRef="F.4.a" type="folio" xml:id="UT22084-076-001-381"/>
                         </l>
                         <l>Therefore, merit is most important.” </l>
@@ -867,29 +869,29 @@
                     </lg>
                     <milestone unit="chunk" xml:id="UT22084-076-001-130"/>
                     <p tid="110">“After Śilpavanta said this, the wise one (Prajñāvanta) gave a little chuckle and said, ‘Nothing
-                        is a more valuable quality for humans than wisdom—neither good looks, nor diligence, nor
-                        artistry is as useful. Why? Those with impaired wisdom may be handsome, but their
+                        is a more valuable quality for humans than insight—neither good looks, nor diligence, nor
+                        artistry is as useful. Why? Those with impaired insight may be handsome, but their
                             attractiveness<note place="end" xml:id="UT22084-076-001-131">
                             The Degé edition here reads <foreign xml:lang="Bo-Ltn" type="term">’dzem pa</foreign>
                             (to avoid), whereas the Narthang, Lhasa, and Stok Palace
                                 editions read <foreign xml:lang="Bo-Ltn" type="term">mdzes pa</foreign> (beauty, beautiful). In the translation we have followed the
-                                latter.</note> is conditional. They may be diligent, but without wisdom they will
-                        not achieve their goals. And without wisdom, they cannot learn a craft.<note place="end" xml:id="UT22084-076-001-132"> The grammar in this paragraph up to this point is unclear and
-                                the translation is therefore tentative.</note> Therefore, wisdom alone accomplishes
+                                latter.</note> is conditional. They may be diligent, but without insight they will
+                        not achieve their goals. And without insight, they cannot learn a craft.<note place="end" xml:id="UT22084-076-001-132"> The grammar in this paragraph up to this point is unclear and
+                                the translation is therefore tentative.</note> Therefore, insight alone accomplishes
                         all goals, and it is the most valuable quality of humans. </p>
                     <milestone unit="chunk" xml:id="UT22084-076-001-133"/>
                     <lg tid="111">
-                        <l>“ ‘Moreover, by way of wisdom one will acquire good looks and skills,</l>
+                        <l>“ ‘Moreover, by way of insight one will acquire good looks and skills,</l>
                         <l>As well as diligence and wealth.</l>
                         <l>People will obtain excellence and great happiness.</l>
-                        <l>Everything is obtained by way of wisdom.’</l>
+                        <l>Everything is obtained by way of insight.’</l>
                     </lg>
                     <milestone unit="chunk" xml:id="UT22084-076-001-134"/>
                     <p tid="112">“After Prajñāvanta said this, Prince Puṇyabala smiled. When he spoke, it was as if the power of
-                        merit itself flowed from his mouth: ‘Without wisdom, all these things—good looks, artistry, and
-                        diligence—are not valuable qualities. But those who have accomplished them by way of wisdom
+                        merit itself flowed from his mouth: ‘Without insight, all these things—good looks, artistry, and
+                        diligence—are not valuable qualities. But those who have accomplished them by way of insight
                         receive their associated fruits and reap their benefits. This is plainly true. Yet you cannot
-                        acquire wisdom without merit; and therefore, merit alone is the most valuable quality of humans.
+                        acquire insight without merit; and therefore, merit alone is the most valuable quality of humans.
                         Merit is the one fundamental source <ref cRef="F.9.b" type="folio" xml:id="UT22084-076-001-392"/> of the goals of attractiveness, honorableness,
                         delightfulness, pleasantness, and congeniality. I cannot even begin to describe the full extent
                         of merit’s positive qualities, but to give you an inkling of them, let me at least explain a
@@ -903,7 +905,7 @@
                     </lg>
                     <milestone unit="chunk" xml:id="UT22084-076-001-136"/>
                     <lg tid="114">
-                        <l>“ ‘Those with merit obtain wisdom.</l>
+                        <l>“ ‘Those with merit obtain insight.</l>
                         <l>Due to merit, they master poetry.</l>
                         <l>Those with merit obtain dignity.</l>
                         <l>Those with merit obtain good births. </l>
@@ -1047,7 +1049,7 @@
                     <p tid="134">“Thus spoke Prince Puṇyabala. But because of their biased perspectives, the others did not accept
                         his words. So Puṇyabala spoke to them again: <ref cRef="F.10.b" type="folio" xml:id="UT22084-076-001-394"/> ‘Hey! Come now! Let’s go to a faraway
                         land, dressed in disguise. That way, we can learn which is the most valuable quality of humans:
-                        good looks, diligence, artistry, wisdom, or merit.’</p>
+                        good looks, diligence, artistry, insight, or merit.’</p>
                     <milestone unit="chunk" xml:id="UT22084-076-001-158"/>
                     <p tid="135">“The other princes agreed to Puṇyabala’s proposal, exclaiming, ‘Let’s do it!’ Thus, without
                         hesitating or even telling their father, they set out for a faraway kingdom in another land, and
@@ -1235,10 +1237,10 @@
                             (remained), but we have followed the reading in the Narthang,
                                 Lhasa, and Stok Palace editions, which read <foreign xml:lang="Bo-Ltn" type="term">yol</foreign> (passed).</note> the east and descended
                         toward the east. But even as the other shadows descended toward the east, the shadow of the
-                            <foreign xml:lang="Sa-Ltn" type="term">aśoka</foreign> tree did not leave Prince Puṇyabala’s
+                            aśoka tree did not leave Prince Puṇyabala’s
                         body. </p>
                     <milestone unit="chunk" xml:id="UT22084-076-001-188"/>
-                    <p tid="160">“All the pleasure garden’s flower and fruit trees <ref cRef="F.14.a" type="folio" xml:id="UT22084-076-001-401"/> inclined toward the <foreign xml:lang="Sa-Ltn" type="term">aśoka</foreign> tree, and each of them bowed. Deer and birds
+                    <p tid="160">“All the pleasure garden’s flower and fruit trees <ref cRef="F.14.a" type="folio" xml:id="UT22084-076-001-401"/> inclined toward the aśoka tree, and each of them bowed. Deer and birds
                         delightful to behold<note place="end" xml:id="UT22084-076-001-189">
                             The Degé reads <foreign xml:lang="Bo-Ltn" type="quote">mthong na yid du ’ong zhing</foreign> (delightful to
                                 behold, and), but this translation follows the Yongle, Lithang, Kangxi, and Choné
@@ -1494,7 +1496,7 @@
                     </lg>
                     <milestone unit="chunk" xml:id="UT22084-076-001-225"/>
                     <lg tid="193">
-                        <l>“ ‘Because of merit, you become a supreme god in the Heaven of Joy. </l>
+                        <l>“ ‘Because of merit, you become a supreme god in the Tuṣita Heaven. </l>
                         <l>The same is true for the Heaven of Delighting in Emanations.</l>
                         <l>Because of merit, you will become a Lord of the Desire Realm.</l>
                         <l>Similarly, you become a god in the Heaven of Making Use of Others’ Emanations.</l>
@@ -1577,7 +1579,7 @@
                     <p tid="203">“Monks, do not think that King Puṇyabala at that time was anyone other than me. I am the one who
                         became a bodhisattva at that time. King Puṇyabala’s father, King Dyūtibala, is now none other
                         than King Śuddhodana; King Śuddhodana was King Dyūtibala at that time. Queen Vibhūṣitā is now
-                        none other than Queen Mahāmāyā. The good-looking prince (Rūpabala) is now none other than my
+                        none other than Queen Mahāmāyādevi.<note place="end" xml:id="UT22084-076-001-421">“Queen” is added here for the sake of clarification.</note> The good-looking prince (Rūpabala) is now none other than my
                         aunt’s son, the monk Nanda. The diligent one (Vīryavanta) is now none other than the monk
                         Śroṇakoṭīviṃśa. The artistic one (Śilpavanta) is now none other than the monk Aniruddha. The
                         wise one (Prajñāvanta) is now none other than the monk Śāriputra. Śakra, the lord of the gods,
@@ -1666,12 +1668,12 @@
                     <milestone unit="chunk" xml:id="UT22084-076-001-249"/>
                     <p tid="215">“Having considered things in this way, he thought of his remaining possessions. He saw that
                         nothing remained aside from the clothing he was wearing, the umbrella, the pair of sandals, and
-                        the five <foreign xml:lang="Sa-Ltn" type="term">paṇa</foreign> of cowrie shells, and that he had
-                        lost everything else gambling. He then thought, ‘If I offer my five <foreign xml:lang="Sa-Ltn" type="term">paṇa</foreign> of cowrie shells and my upper garment, I may die of hunger. But
+                        the five paṇa of cowrie shells, and that he had
+                        lost everything else gambling. He then thought, ‘If I offer my five paṇa of cowrie shells and my upper garment, I may die of hunger. But
                         if I do not offer them, I will certainly enter the next life without merit, and there I will
                         again experience the suffering of poverty. If only there were some way to neither starve to
                         death nor exhaust my merit!’ He thought further, ‘But I would rather die of hunger than enter
-                        the next world without merit. Therefore, I must offer my five <foreign xml:lang="Sa-Ltn" type="term">paṇa</foreign> of cowrie shells and my upper garment.’</p>
+                        the next world without merit. Therefore, I must offer my five paṇa of cowrie shells and my upper garment.’</p>
                     <milestone unit="chunk" xml:id="UT22084-076-001-250"/>
                     <p tid="216">“While he was thinking this, the Dharma preacher uttered another verse:</p>
                     <milestone unit="chunk" xml:id="UT22084-076-001-251"/>
@@ -1685,8 +1687,7 @@
                     <p tid="218">“When he heard this verse, Dyūtajaya thought, ‘He said, “Perform merit quickly!” I should make an
                         offering immediately!’ Thus it happened that this gambler, wretched due to poverty but with
                         strong devotion, approached the Dharma preacher’s lion throne and held his umbrella over his
-                        head. <ref cRef="F.20.a" type="folio" xml:id="UT22084-076-001-413"/> Then he left his sandals near the Dharma preacher’s feet, scattered his five
-                            <foreign xml:lang="Sa-Ltn" type="term">paṇa</foreign> of cowrie shells before the Dharma
+                        head. <ref cRef="F.20.a" type="folio" xml:id="UT22084-076-001-413"/> Then he left his sandals near the Dharma preacher’s feet, scattered his five paṇa of cowrie shells before the Dharma
                         preacher’s feet, removed the upper garment from his body, and used it to cover the Dharma
                         preacher’s feet. All his bodily hair stood on end, and he developed faith. Touching the
                         teacher’s feet, he established a powerful aspiration of faith: ‘Due to these virtuous roots, the
@@ -1782,10 +1783,10 @@
                     <p tid="231">“Monks, do not think that the gambler who became a king at that place and time was someone else.
                         Dyūtajaya, that very same person, later became King Puṇyabala. <ref cRef="F.21.b" type="folio" xml:id="UT22084-076-001-416"/> After hearing the
                         Dharma, because his mind developed faith, this person offered the Dharma preacher his umbrella,
-                        sandals, upper garment, and five <foreign xml:lang="Sa-Ltn" type="term">paṇa</foreign> of cowrie
+                        sandals, upper garment, and five paṇa of cowrie
                         shells. The results of these karmic deeds were that five lots of treasure appeared, and he was
                         crowned as a king with dominion over his realm in that very lifetime. The ripening of that karma
-                        also led him to become the king of Tuṣita thirty-six times, king of the Yāma Heaven thirty-six
+                        also led him to become the king of Tuṣita thirty-six times, king of the Heaven Free from Strife thirty-six
                         times, king of the Heaven of the Thirty-Three thirty-six times, and king of the Heaven of the Four
                         Great Kings thirty-six times. Many hundreds of times he was a universal monarch, victorious in
                         the four directions, a Dharma king who lived by the Dharma and possessed a universal monarch’s
@@ -1855,7 +1856,7 @@
                 <div type="colophon" xml:id="UT22084-076-001-colophon">
                     <head type="colophon" tid="239">Colophon</head>
                     <milestone unit="chunk" xml:id="UT22084-076-001-280"/>
-                    <p tid="240">This work was translated and finalized by the Indian <foreign xml:lang="Sa-Ltn" type="term">ācārya</foreign> Jinamitra and the great editor and translator, Bandé Devacandra.</p>
+                    <p tid="240">This work was translated and finalized by the Indian ācārya Jinamitra and the great editor and translator, Bandé Devacandra.</p>
                 </div>
             </div>
         </body>
@@ -1872,17 +1873,17 @@
                             chag</title> [Denkarma]. Toh 4364, Degé Tengyur, vol. 206 (sna tshogs, jo), folios
                         294.b–310.a.</bibl>
                     <bibl xml:id="UT22084-076-001-282">
-                        <title xml:lang="Bo-Ltn">bsod nams kyi stobs kyi rtogs pa brjod pa</title> (<title xml:lang="Sa-Ltn">Puṇyabalāvadāna</title>). Toh 347, Degé Kangyur vol. 76 (mdo sde, aH),
+                        <title xml:lang="Bo-Ltn">bsod nams kyi stobs kyi rtogs pa brjod pa</title> (<title xml:lang="Sa-Ltn">Puṇya­balāvadāna</title>). Toh 347, Degé Kangyur vol. 76 (mdo sde, aH),
                         1a–22a. Degé: Degé Publishing House.</bibl>
                     <bibl xml:id="UT22084-076-001-283">
-                        <title xml:lang="Bo-Ltn">bsod nams kyi stobs kyi rtogs pa brjod pa</title> (<title xml:lang="Sa-Ltn">Puṇyabalāvadāna</title>). bka’ ’gyur (dpe bsdur ma) [Comparative Edition
+                        <title xml:lang="Bo-Ltn">bsod nams kyi stobs kyi rtogs pa brjod pa</title> (<title xml:lang="Sa-Ltn">Puṇya­balāvadāna</title>). bka’ ’gyur (dpe bsdur ma) [Comparative Edition
                         of the Kangyur], krung go’i bod rig pa zhib ’jug ste gnas kyi bka’ bstan dpe sdur khang (The
                         Tibetan Tripitaka Collation Bureau of the China Tibetology Research Center). 108 volumes.
                         Beijing: krung go’i bod rig pa dpe skrun khang (China Tibetology Publishing House), 2006–2009,
                         vol. 76, pp. 21–69.</bibl>
                     <bibl xml:id="UT22084-076-001-284">
                         <title xml:lang="Bo-Ltn">bsod nams kyi stobs kyi rtogs pa brjod pa</title>
-                        (<title xml:lang="Sa-Ltn">Puṇyabalāvadāna</title>).
+                        (<title xml:lang="Sa-Ltn">Puṇya­balāvadāna</title>).
                         Lhasa Kangyur, vol. 76, 5–72. Lha sa: Zhol bka’ ’gyur par khang,
                             1994–.
                     </bibl>
@@ -1919,17 +1920,53 @@
                         2007.</bibl>
                     <bibl xml:id="UT22084-076-001-295">Oldenburg, Sergei F. <title xml:lang="en">Buddhist Legends. Part I. Bhadrakalpāvadāna
                             Jātakamālā</title>. St. Petersburg, 1894.</bibl>
-                    <bibl xml:id="UT22084-076-001-296">Rothenberg, Bonnie Lynne. “Kṣemendra’s <title xml:lang="Sa-Ltn">Bodhisattvāvadānakalpalatā</title>: A Textcritical Edition and Translation of Chapters One
+                    <bibl xml:id="UT22084-076-001-296">Rothenberg, Bonnie Lynne. “Kṣemendra’s <title xml:lang="Sa-Ltn">Bodhisattvāvadāna­kalpalatā</title>: A Textcritical Edition and Translation of Chapters One
                         to Five.” PhD diss., University of Wisconsin-Madison, 1990.</bibl>
                     <bibl xml:id="UT22084-076-001-297">Sieg, E. and W. Siegling. <title xml:lang="de">Tocharische Sprachreste, I. Band:
                             Die Texte</title>. Berlin: Walter de Gruyter &amp; Co., 1921. </bibl>
-                    <bibl xml:id="UT22084-076-001-298">Straube, Martin. “Studien zur <title xml:lang="Sa-Ltn">Bodhisattvāvadānakalpalatā</title>:
+                    <bibl xml:id="UT22084-076-001-298">Straube, Martin. “Studien zur <title xml:lang="Sa-Ltn">Bodhisattvāvadāna­kalpalatā</title>:
                         Texte und Quellen der Parallelen zu Haribhattas Jātakamālā.” PhD diss., Universität Marburg,
                         2008. </bibl>
                 </div>
             </div>
             <div type="glossary">
                 <list type="glossary">
+                    <item>
+                        <gloss type="term" xml:id="UT22084-076-001-422">
+                            <term>nāga</term>
+                            <term xml:lang="Bo-Ltn">klu</term>
+                            <term xml:lang="bo">ཀླུ།</term>
+                            <term xml:lang="Sa-Ltn">nāga</term>
+                            <term type="definition">A semidivine class of beings who live in subterranean aquatic environments where they are known to guard wealth and esoteric teachings. Nāgas are associated with serpents and often assume a snakelike appearance. In Buddhist art and in written accounts, nāgas are regularly portrayed as being half human and half snake, and are said to have the ability to change into human form. Some nāgas are Dharma protectors, but they can also bring retribution if they are disturbed.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-076-001-423">
+                            <term>asura</term>
+                            <term xml:lang="Bo-Ltn">lha ma yin</term>
+                            <term xml:lang="bo">ལྷ་མ་ཡིན།</term>
+                            <term xml:lang="Sa-Ltn">asura</term>
+                            <term type="definition">One of the six classes of sentient beings. The asuras are engendered and dominated by envy, ambition, and hostility and are described as being incessantly embroiled in disputes with the gods (deva). They are frequently portrayed in brahmanical mythology as having a disruptive effect on cosmological and social harmony.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-076-001-424">
+                            <term>yakṣa</term>
+                            <term xml:lang="Bo-Ltn">gnod sbyin</term>
+                            <term xml:lang="bo">གནོད་སྦྱིན།</term>
+                            <term xml:lang="Sa-Ltn">yakṣa</term>
+                            <term type="definition">A class of semi-divine beings that haunt or protect natural places and cities. They can be malevolent or benevolent, and are known for bestowing wealth and worldly boons.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-076-001-425">
+                            <term>mahoraga</term>
+                            <term xml:lang="Bo-Ltn">lto ’phye chen po</term>
+                            <term xml:lang="bo">ལྟོ་འཕྱེ་ཆེན་པོ།</term>
+                            <term xml:lang="Sa-Ltn">mahoraga</term>
+                            <term type="definition">Literally “large serpent.” A semi-divine being that takes the form of a large serpent, sometimes with a human torso and head. They are a class of subterranean geomantic spirits whose movement through the seasons and months of the year is deemed significant for construction projects.</term>
+                        </gloss>
+                    </item>
                     <item>
                         <gloss type="term" xml:id="UT22084-076-001-418">
                             <term>paṇa</term>
@@ -2016,7 +2053,8 @@
                             <term>everlasting </term>
                             <term xml:lang="Bo-Ltn">g.yung drung </term>
                             <term xml:lang="bo">གཡུང་དྲུང་།</term>
-                            <term xml:lang="Sa-Ltn">svastika, sanātana</term>
+                            <term xml:lang="Sa-Ltn">svastika</term>
+                            <term xml:lang="Sa-Ltn">sanātana</term>
                             <term type="definition">In this text, it is a description of the ultimate and
                                 quasi-synonymous with nirvāṇa.</term>
                         </gloss>
@@ -2090,7 +2128,7 @@
                             <term xml:lang="bo">བསོད་ནམས།</term>
                             <term xml:lang="Sa-Ltn">puṇya</term>
                             <term type="definition">In this text, merit is established as the most prized possession of
-                                human beings, more than good looks, diligence, artistry, and wisdom. In Buddhism more
+                                human beings, more than good looks, diligence, artistry, and insight. In Buddhism more
                                 generally, merit refers to the wholesome tendencies imprinted in the mind as a result of
                                 positive and skillful thoughts, words, and actions that ripen in the experience of
                                 happiness and well-being. According to the Mahāyāna, it is important to dedicate the
@@ -2128,7 +2166,7 @@
                             <term type="definition">In this text, it refers to the most worthwhile quality a human being
                                 can have. Through stories from past lives, the Buddha establishes that merit is the most
                                 prized possession of human beings, more than good looks, diligence, artistry, and
-                                wisdom.</term>
+                                insight.</term>
                         </gloss>
                     </item>
                     <item>
@@ -2147,7 +2185,7 @@
                             <term xml:lang="Bo-Ltn">yi dags </term>
                             <term xml:lang="bo">ཡི་དགས།</term>
                             <term xml:lang="Sa-Ltn">preta</term>
-                            <term type="definition">Denizens of the preta realm.</term>
+                            <term type="definition">One of the five or six classes of sentient beings, considered to be the karmic fruition of past miserliness. In Sanskrit, literally “the departed”; they are analagous to the ancestral spirits of Vedic tradition, the pitṛs, who starve without the offerings of descendants. They live in the realm of Yama, the Lord of Death. They are particularly known to suffer from great hunger and thirst and the inability to acquire sustenance. </term>
                         </gloss>
                     </item>
                     <item>
@@ -2228,11 +2266,12 @@
                     </item>
                     <item>
                         <gloss type="term" xml:id="UT22084-076-001-325">
-                            <term>wisdom</term>
+                            <term>insight</term>
                             <term xml:lang="Bo-Ltn">shes rab </term>
                             <term xml:lang="bo">ཤེས་རབ།</term>
                             <term xml:lang="Sa-Ltn">prajñā</term>
-                            <term type="definition">Insight into ultimate truth.</term>
+                            <term type="definition">This term here refers to the knowledge
+                                or wisdom gained through study, contemplation, and meditation.</term>
                         </gloss>
                     </item>
                     <item>
@@ -2245,15 +2284,14 @@
                                 insects. It is one of the insignia of royalty</term>
                         </gloss>
                     </item>
-                    <item>
+                    <!--<item>
                         <gloss type="person" xml:id="UT22084-076-001-327">
                             <term>Anāthapiṇḍika</term>
-                            <term xml:lang="Bo-Ltn">mgon med zas sbyin </term>
-                            <term xml:lang="bo">མགོན་མེད་ཟས་སྦྱིན།</term>
+                            <term xml:lang="Bo-Ltn">mgon med zas sbyin </term><term xml:lang="bo">མགོན་མེད་ཟས་སྦྱིན།</term>
                             <term xml:lang="Sa-Ltn">anāthapiṇḍika</term>
                             <term type="definition">The Buddha’s disciple.</term>
                         </gloss>
-                    </item>
+                    </item>-->
                     <item>
                         <gloss type="person" xml:id="UT22084-076-001-328">
                             <term>Aniruddha</term>
@@ -2288,7 +2326,8 @@
                             <term xml:lang="bo">རྒྱན་པོ་རྒྱལ་བ་པ།</term>
                             <term xml:lang="Sa-Ltn">dyūtajaya</term>
                             <term type="definition">“Winner at Dice,” a previous life of Prince Puṇyabala and the Buddha
-                                himself. </term>
+                                himself. Also called King Jaya.</term>
+                            <term type="alternative">King Jaya</term>
                         </gloss>
                     </item>
                     <item>
@@ -2339,10 +2378,10 @@
                     </item>
                     <item>
                         <gloss type="person" xml:id="UT22084-076-001-337">
-                            <term>Queen Mahāmāyā</term>
-                            <term xml:lang="Bo-Ltn">sgyu ’phrul chen mo </term>
-                            <term xml:lang="bo">སྒྱུ་འཕྲུལ་ཆེན་མོ།</term>
-                            <term xml:lang="Sa-Ltn">mahāmāyādevī</term>
+                            <term>Mahāmāyādevi</term>
+                            <term xml:lang="Bo-Ltn">lha mo sgyu ’phrul chen mo </term>
+                            <term xml:lang="bo">ལྷ་མོ་སྒྱུ་འཕྲུལ་ཆེན་མོ།</term>
+                            <term xml:lang="Sa-Ltn">Mahāmāyādevi</term>
                             <term type="definition">The mother of the Buddha.</term>
                         </gloss>
                     </item>
@@ -2404,7 +2443,7 @@
                             <term xml:lang="bo">ཤེས་རབ་ལྡན།</term>
                             <term xml:lang="Sa-Ltn">prajñāvān</term>
                             <term type="definition">“Wise,” the wise one; Prince Puṇyabala’s brother who exemplifies
-                                wisdom.</term>
+                                insight.</term>
                         </gloss>
                     </item>
                     <!--<item>
@@ -2445,7 +2484,7 @@
                             <term xml:lang="Bo-Ltn">gzugs stobs </term>
                             <term xml:lang="bo">གཟུགས་སྟོབས།</term>
                             <term xml:lang="Sa-Ltn">rūpabala</term>
-                            <term type="definition">“Attractive Looking,” the good looking one; Prince Puṇyabala’s
+                            <term type="definition">“Power of Beauty,” the good looking one; Prince Puṇyabala’s
                                 oldest brother, who exemplifies beauty.</term>
                         </gloss>
                     </item>
@@ -2516,10 +2555,10 @@
                             <term xml:lang="Bo-Ltn">de bzhin gshegs pa </term>
                             <term xml:lang="bo">དེ་བཞིན་གཤེགས་པ།</term>
                             <term xml:lang="Sa-Ltn">tathāgata</term>
-                            <term type="definition">One of the standard epithets of Buddha Śākyamuni. The expression is
+                            <term type="definition">One of the standard epithets of the Buddha Śākyamuni. The expression is
                                 interpreted in different ways, but in general it means one who has thus gone (Skt.
                                     <foreign xml:lang="Sa-Ltn" type="term">tathā</foreign> + <foreign xml:lang="Sa-Ltn" type="term">gata</foreign>) or one who has thus come (Skt.
-                                    <foreign xml:lang="Sa-Ltn" type="term">tathā</foreign> + <foreign xml:lang="Sa-Ltn" type="term">āgata</foreign>).</term>
+                                <foreign xml:lang="Sa-Ltn" type="term">tathā</foreign> + <foreign xml:lang="Sa-Ltn" type="term">āgata</foreign>). The etymology of this term remains unclear and has, over the centuries, been variously interpreted as one who understands (<foreign xml:lang="Sa-Ltn" type="term">gata</foreign>) the way things are (<foreign xml:lang="Sa-Ltn" type="term">tathā</foreign>), one who has come (<foreign xml:lang="Sa-Ltn" type="term">gata</foreign>) into the world like other buddhas of the past, or one who (<foreign xml:lang="Sa-Ltn" type="term">gata</foreign>) has gone to nirvāṇa like other buddhas of the past.</term>
                         </gloss>
                     </item>
                     <item>
@@ -2529,7 +2568,7 @@
                             <term xml:lang="bo">དབང་བྱེད།</term>
                             <term xml:lang="Sa-Ltn">vaśavartin</term>
                             <term type="definition">The king of gods in the Heaven of Making Use of Others’ Emanations
-                                (Skt. <foreign xml:lang="Sa-Ltn">Paranirmitavaśavartin</foreign>).</term>
+                                (Skt. <foreign xml:lang="Sa-Ltn">Paranirmita­vaśavartin</foreign>).</term>
                         </gloss>
                     </item>
                     <item>
@@ -2556,7 +2595,16 @@
                             <term xml:lang="Bo-Ltn">rnam par rgyal ba </term>
                             <term xml:lang="bo">རྣམ་པར་རྒྱལ་བ།</term>
                             <term xml:lang="Sa-Ltn">vijaya</term>
-                            <term type="definition">“Triumphant,” Dyūtajaya's son.</term>
+                            <term type="definition">“Triumphant,” Dyūtajaya’s son.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="person" xml:id="UT22084-076-001-420">
+                            <term>Brahmā</term>
+                            <term xml:lang="Bo-Ltn">tshangs pa</term>
+                            <term xml:lang="bo">ཚངས་པ།</term>
+                            <term xml:lang="Sa-Ltn">Brahmā</term>
+                            <term type="definition"> One of the primary deities of the Brahmanical pantheon, Brahmā occupies an important place as one of two deities (the other being Indra / Śakra) who are said to have first exhorted the Buddha Śākyamuni to teach the Dharma. The particular heavens over which Brahmā rules are some of the most sought-after realms of higher rebirth in Buddhist literature.</term>
                         </gloss>
                     </item>
                     <item>
@@ -2615,13 +2663,14 @@
                     </item>
                     <item>
                         <gloss type="place" xml:id="UT22084-076-001-363">
-                            <term>Heaven of Joy</term>
+                            <term>Tuṣita Heaven</term>
                             <term xml:lang="Bo-Ltn">dga’ ldan </term>
                             <term xml:lang="bo">དགའ་ལྡན།</term>
                             <term xml:lang="Sa-Ltn">tuṣita</term>
-                            <term type="definition">The fourth level of the heavens of the realm of desire, and the last
+                            <term type="definition">Literally “Heaven of Joy.” The fourth level of the heavens of the realm of desire, and the last
                                 stopping place of a buddha before his descent and reincarnation on earth. According to
                                 Buddhist cosmology, it is presently the abode of the future Buddha Maitreya.</term>
+                            <term type="alternative">Tuṣita</term>
                         </gloss>
                     </item>
                     <item>
@@ -2751,4 +2800,4 @@
             </div>
         </back>
     </text>
-</TEI>
+</tei:TEI>
