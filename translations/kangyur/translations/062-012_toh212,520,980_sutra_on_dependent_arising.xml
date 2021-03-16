@@ -24,7 +24,7 @@
             <editor role="TEImarkupEditor" ref="contributors.xml#person-253">Michael Engle</editor>
             </titleStmt>
             <editionStmt>
-                <edition>v 1.48.11 <date>2021</date>
+                <edition>v 1.48.12 <date>2021</date>
                 </edition>
             </editionStmt>
             <publicationStmt status="1">
@@ -75,7 +75,7 @@
                 </bibl>
             </sourceDesc>
             <notesStmt>
-                <note type="lastUpdated" date-time="2021-02-10T19:43:58.587Z" user="admin">10/02/2021 19:43:58</note>
+                <note type="lastUpdated" date-time="2021-03-16T16:00:34.598Z" user="admin">16/03/2021 16:00:34</note>
             <note type="updated" update="text-version" value="v 1.45" date-time="2019-06-18T16:21:59.388Z" user="celso">v 1.45 2019</note>
                 <note type="updated" update="text-version" value="v 1.46" date-time="2019-08-09T16:59:29.348Z" user="celso">v 1.46 2019</note>
                 <note type="updated" update="text-version" value="v 1.47" date-time="2019-09-30T19:12:16.904Z" user="andre">Updated due to folio numbering correction</note>
@@ -92,6 +92,7 @@
     <note type="updated" update="text-version" value="1.48.9" date-time="2020-12-11T14:06:50.919Z" user="admin">Auto (TEI migration 2.1.5)</note>
     <note type="updated" update="text-version" value="1.48.10" date-time="2021-01-04T22:32:29.928Z" user="laura">Updated colophon to Bandé</note>
     <note type="updated" update="text-version" value="1.48.11" date-time="2021-02-10T19:43:55.716Z" user="celso">"scholar" to "preceptor" in colophon</note>
+    <note type="updated" update="text-version" value="1.48.12" date-time="2021-03-16T16:00:31.697Z" user="celso">Note with @key added explaining the folio shift in toh520</note>
             </notesStmt>
         </fileDesc>
     </teiHeader>
@@ -227,14 +228,26 @@
                 <div type="section" xml:id="UT22084-062-012-section-1">
                     <milestone unit="chunk" xml:id="UT22084-062-012-8"/>
                     <p tid="11">
+                        <ref key="toh520" work="W22084" cRef="F.41.a"/> 
                         <ref cRef="F.125.a" key="toh212" type="folio" xml:id="UT22084-062-012-81"/>
-                        <ref key="toh520">[F.41.a]</ref>
                         <ref cRef="F.58.a" key="toh520" type="folio" xml:id="UT22084-062-012-82"/>
-                        <ref cRef="F.99.a" key="toh980" type="folio" xml:id="UT22084-062-012-83"/> Homage to all buddhas and bodhisattvas!
+                        <ref cRef="F.99.a" key="toh980" type="folio" xml:id="UT22084-062-012-83"/>
+                        <note place="end" xml:id="UT22084-062-012-88">
+                            <p key="toh520" tid="33">A two sets of folio references have been included in this translation due to a discrepancy 
+                                in volume 88 (<foreign xml:lang="Bo-Ltn">rgyud ’bum</foreign>, <foreign xml:lang="Bo-Ltn">na</foreign>) of the Degé Kangyur between the 1737 <foreign xml:lang="Bo-Ltn">par 
+                                    phud</foreign> printings and the late (post <foreign xml:lang="Bo-Ltn">par phud</foreign>) printings. In the latter case, 
+                                an extra work, <title xml:lang="Sa-Ltn">Bodhi­maṇḍasyālaṃkāra­lakṣa­dhāraṇī</title> (Toh 508, <title xml:lang="Bo-Ltn">byang chub 
+                                    snying po’i rgyan ’bum gyi gzungs</title>), was added as the second text in the volume, 
+                                thereby displacing the pagination of all the following texts in the same volume 
+                                by 17 folios. Since the eKangyur follows the later printing, both references 
+                                have been provided, with the highlighted one linking to the eKangyur viewer.</p>
+                            <p key="toh212" tid="34">In the Toh 520 version of the text there is a slight discrepancy in the folio numbering between the 1737 <foreign xml:lang="Bo-Ltn">par phud</foreign> printings and the late (post <foreign xml:lang="Bo-Ltn">par phud</foreign>) printings of the Degé Kangyur. Although the discrepancy is irrelevant here, further details concerning this may be found in <ref target="https://read.84000.co/translation/toh520.html#end-note-UT22084-062-012-88">note 16</ref> of the Toh 520 version of this text.</p>
+                            <p key="toh980" tid="35">In the Toh 520 version of the text there is a slight discrepancy in the folio numbering between the 1737 <foreign xml:lang="Bo-Ltn">par phud</foreign> printings and the late (post <foreign xml:lang="Bo-Ltn">par phud</foreign>) printings of the Degé Kangyur. Although the discrepancy is irrelevant here, further details concerning this may be found in <ref target="https://read.84000.co/translation/toh520.html#end-note-UT22084-062-012-88">note 16</ref> of the Toh 520 version of this text.</p>
+                        </note> Homage to all buddhas and bodhisattvas!
                     </p>
                     <lb/>
                     <milestone unit="chunk" xml:id="UT22084-062-012-9"/>
-                    <p tid="12">Thus did I hear at one time. <ref key="toh520">[F.41.b]</ref>
+                    <p tid="12">Thus did I hear at one time. <ref key="toh520" work="W22084" cRef="F.41.b"/>
                         <ref cRef="F.58.b" key="toh520" type="folio" xml:id="UT22084-062-012-84"/> The Blessed One was in the Realm of the Thirty-Three Gods, seated on
                         the throne of Indra. With him were great hearers such as the venerable Aśvajit; bodhisattva mahāsattvas
                         such as noble Maitreya, noble Avalokiteśvara, and Vajrapāṇi, who were adorned with immeasurable precious
@@ -268,7 +281,7 @@
                         <l>“All phenomena that arise from causes, </l>
                         <l>The Tathāgata has taught their cause,</l>
                         <l>And that which is their cessation; </l>
-                        <l>Thus has proclaimed the Great Renunciant. <ref key="toh520">[F.42.a]</ref>
+                        <l>Thus has proclaimed the Great Renunciant. <ref key="toh520" work="W22084" cRef="F.42.a"/>
                             <ref cRef="F.59.a" key="toh520" type="folio" xml:id="UT22084-062-012-87"/>
                         </l>
                     </lg>
