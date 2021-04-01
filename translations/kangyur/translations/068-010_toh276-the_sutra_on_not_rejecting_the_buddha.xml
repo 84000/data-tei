@@ -1,0 +1,951 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schema/current/translation.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="mainTitle" xml:lang="Bo-Ltn">sangs rgyas mi spang pa</title>
+                <title type="mainTitle" xml:lang="Sa-Ltn">Buddhākṣepaṇa</title>
+                <title type="mainTitle" xml:lang="bo">སངས་རྒྱས་མི་སྤང་པ།</title>
+                <title type="mainTitle" xml:lang="en">Not Forsaking the Buddha</title>
+                <title type="longTitle" xml:lang="Bo-Ltn">’phags pa sangs rgyas mi spang ba zhes bya ba theg pa chen po’i mdo</title>
+                <title type="longTitle" xml:lang="bo">འཕགས་པ་སངས་རྒྱས་མི་སྤང་བ་ཞེས་བྱ་བ་ཐེག་པ་ཆེན་པོའི་མདོ།</title>
+                <title type="longTitle" xml:lang="Sa-Ltn">Ārya­buddhākṣepaṇa­nāma­mahāyāna­sūtra</title>
+                <title type="longTitle" xml:lang="en">The Noble Great Vehicle Sūtra “Not Forsaking the Buddha”</title>
+                <author role="translatorMain" ref="contributors.xml#team-9">Translated by the Dharmachakra Translation Committee
+                    under the patronage and supervision of 84000: Translating the Words of the Buddha
+                </author>
+                <editor role="associateEditor" ref="contributors.xml#person-289">Nathaniel Rich</editor>
+                <editor role="copyEditor" ref="contributors.xml#person-252">Dion Blundell</editor>
+                <editor role="projectEditor" ref="contributors.xml#person-51">James Duncan Gentry</editor>
+                <author role="translatorEng" ref="contributors.xml#person-313">Laura Dainty</author>
+                <consultant role="projectManager" ref="contributors.xml#person-50">Andreas Doctor</consultant>
+                <editor role="projectEditor" ref="contributors.xml#person-139">John Canti</editor>
+                <editor role="TEImarkupEditor" ref="contributors.xml#person-92">Laura Goetz</editor>
+            </titleStmt>
+            <editionStmt>
+                <edition>v 0.2.1 <date>2021</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt status="2.a">
+                <publisher>
+                    <name>84000: Translating the Words of the Buddha</name> is a global non-profit initiative to translate all the Buddha’s
+                    words into modern languages, and to make them available to everyone. </publisher>
+                <availability>
+                    <licence>
+                        <graphic url="http://i.creativecommons.org/l/by-nc-nd/2.0/88x31.png"/>
+                        <p>This work is provided under the protection of a Creative Commons CC BY-NC-ND (Attribution - Non-commercial -
+                            No-derivatives) 3.0 copyright. It may be copied or printed for fair use, but only with full attribution, and not for
+                            commercial advantage or personal compensation. For full details, see the Creative Commons license.</p>
+                    </licence>
+                </availability>
+                <idno xml:id="UT22084-068-010"/>
+                <note>An early mistake in the assigning of UT numbers within the 84000 project means that these ids diverge slightly from the standard
+                    logic.</note>
+                <date>2021-03-29</date>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl key="toh276" type="text">
+                    <ref>Toh 276</ref>
+                    <biblScope>Degé Kangyur, vol. 68 (mdo sde, ya), folios 44.b–49.b</biblScope>
+                    <author role="translatorTib">Jinamitra</author>
+                    <author role="translatorTib">Prajñāvarman</author>
+                    <author role="translatorTib">Yeshé Dé</author>
+                    <location work="UT4CZ5369" count-pages="11">
+                        <volume number="68" start-page="88" end-page="98"/>
+                    </location>
+                    <idno parent-id="O1JC114941JC14668" work="http://read.84000.co/sections"/>
+                    <idno source-id="O1JC114941JC11937" work="W22084"/>
+                </bibl>
+            </sourceDesc>
+            <notesStmt>
+                <note type="lastUpdated" date-time="2021-04-01T18:50:20.209Z" user="admin">01/04/2021 18:50:20</note>
+                <note type="updated" update="text-version" value="" date-time="2019-09-24T06:30:31.269Z" user="andreas">0.1 2019</note>
+                <note type="updated" update="text-version" value="v 0.1.1" date-time="2019-10-07T10:27:24.685Z" user="admin">Publication statement
+                    updated</note>
+                <note type="updated" update="translation-status" value="2.e" date-time="2019-11-04T09:42:20.507Z" user="andreas">2.e</note>
+                <note type="updated" update="text-version" value="v 0.1.2" date-time="2019-12-20T12:56:48.575Z" user="admin">Automated version
+                    increment</note>
+                <note type="updated" update="translation-status" value="2.f" date-time="2020-01-27T13:12:05.354Z" user="mike">2.f</note>
+                <note type="updated" update="translation-status" value="2.e" date-time="2020-04-03T14:29:18.575Z" user="line-tofte">2.e</note>
+                <note type="updated" update="translation-status" value="2.d" date-time="2020-04-14T14:57:49.128Z" user="line-tofte">2.d</note>
+                <note type="updated" update="translation-status" value="2.c" date-time="2020-04-20T10:12:03.912Z" user="line-tofte">2.c</note>
+                <note type="updated" update="text-version" value="0.1.3" date-time="2021-03-08T08:55:47.342Z" user="line-tofte">Auto
+                    (update-contributors)</note>
+                <note type="updated" update="text-version" value="0.1.4" date-time="2021-03-08T08:56:02.258Z" user="line-tofte">Auto
+                    (update-contributors)</note>
+                <note type="updated" update="text-version" value="0.1.5" date-time="2021-03-08T11:49:11.157Z" user="line-tofte">Auto
+                    (update-contributors)</note>
+                <note type="updated" update="translation-status" value="2.b" date-time="2021-03-10T08:09:56.839Z" user="line-tofte">2.b</note>
+                <note type="updated" update="text-version" value="0.1.6" date-time="2021-03-10T08:09:56.839Z" user="line-tofte">Auto
+                    (update-publication-status)</note>
+                <note type="updated" update="text-version" value="0.1.7" date-time="2021-03-29T09:37:20.298Z" user="mike">Auto
+                    (update-contributors)</note>
+                <note type="updated" update="translation-status" value="2.a" date-time="2021-03-29T09:37:41.044Z" user="mike">2.a</note>
+                <note type="updated" update="text-version" value="0.1.8" date-time="2021-03-29T09:37:41.044Z" user="mike">Auto
+                    (update-publication-status)</note>
+                <note type="updated" update="text-version" value="0.1.9" date-time="2021-03-29T09:38:48.321Z" user="mike">Auto
+                    (update-publication-status)</note>
+            
+    <note type="updated" update="text-version" value="0.2.1" date-time="2021-04-01T18:50:17.241Z" user="john">Added a para to intro, edited glossary and text.</note>
+            </notesStmt>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <!--Note the "Contents" outline from the Word DOCX has not been included in the script. If the 
+                    Outline to the text is quite complex, it is recommended that you paste the outlined contents from the DOCX here as a comment for
+                    markup’s reference. The actual table of contents will be generated in the Reading Room by the parser.-->
+        <front>
+            <div type="summary">
+                <head type="summary" tid="1">Summary</head>
+                <milestone unit="chunk" xml:id="UT22084-068-010-1"/>
+                <p tid="2">This discourse takes place while the Buddha Śākyamuni is on Vulture Peak Mountain with a large community of monks, along
+                    with numerous bodhisattvas. Ten of the bodhisattvas present in the retinue have become discouraged after failing to attain dhāraṇī
+                    despite exerting themselves for seven years. The bodhisattva Undaunted therefore requests the Buddha to bestow upon them an
+                    instruction that will enable them to generate wisdom. In response, the Buddha reveals the cause of their inability to attain
+                    dhāraṇī—a specific negative act they performed in the past—and he goes on to explain the importance of respecting Dharma teachers
+                    and reveal how these ten bodhisattvas can purify their karmic obscurations.</p>
+            </div>
+            <div type="acknowledgment">
+                <head type="acknowledgment" tid="3">Acknowledgements</head>
+                <milestone unit="chunk" xml:id="UT22084-068-010-2"/>
+                <p tid="4">Translated by the Dharmachakra Translation Committee under the supervision of Chokyi Nyima Rinpoche. The translation was
+                    produced by Laura Dainty. Andreas Doctor compared the translation with the original Tibetan and edited the text.</p>
+                <p tid="68">The translation was completed under the patronage and supervision of 84000: Translating the Words of the Buddha.</p>
+            </div>
+            <div type="introduction">
+                <head type="introduction" tid="5">Introduction</head>
+                <div type="section" xml:id="UT22084-068-010-introduction-1">
+                    <milestone unit="chunk" xml:id="UT22084-068-010-3"/>
+                    <p tid="6">
+                        <title xml:lang="en">Not Forsaking the Buddha</title> takes place at Vulture Peak Mountain in Rājagṛha, where the
+                        Buddha is accompanied by a large community of monks and numerous bodhisattvas. Ten of these bodhisattvas have recently turned
+                        away from the teaching because they have failed to make progress despite exerting themselves for seven years. However, a
+                        devoted bodhisattva called Undaunted requests the Buddha to give these ten bodhisattvas an instruction that will enable them
+                        to generate insight and wisdom. In response, the Buddha relates the past events that caused these bodhisattvas’ inability to
+                        make spiritual progress: in a distant past, in another world, these ten bodhisattvas had wrongly accused another Dharma
+                        teacher of having flawed discipline. As a result of this negative act, for many lifetimes afterward they were reborn in the
+                        lower realms. Only after suffering in the lower realms for a long time had they purified enough of their former negative
+                        action to once again attain human rebirth and go forth as monks. Still, due to the lingering obscuration created by their
+                        former negative act, they were unable to attain any results of their practice for seven hundred lifetimes. Now, however, the
+                        Buddha explains that if they chant a certain dhāraṇī and train for one week by recalling the qualities of the buddhas, their
+                        remaining obscurations will be purified. The bodhisattvas practice accordingly and are finally able to make progress on the
+                        path. Following this instruction, the Buddha completes the discourse by explaining several other bodhisattva trainings that
+                        further support spiritual progress and secure the welfare of beings. </p>
+                    <milestone unit="chunk" xml:id="UT22084-068-010-128"/>
+                    <p tid="69">The potential obstacles and pitfalls that practitioners of all levels may encounter on their path 
+                        are mentioned in many sūtras, particularly in the context of future degenerate times when the Dharma is in the process 
+                        of decline. Not many canonical texts, however, focus primarily on bodhisattvas who have become disheartened, as this one does. 
+                        Again, while many sūtras speak of the attainment of a stage of realization after which progress toward awakening becomes
+                        irreversible, there are few concrete examples of what kinds of reversal bodhisattvas may face before they reach such an elevated
+                    stage. The bodhisattvas described here provide such an example, although the fact that surprisingly they are described 
+                    nevertheless as “bodhisattva great beings” suggests that this term is not necessarily correlated with irreversibility. 
+                    This text is particularly valuable, too, for the details it prescribes for remedying and overcoming such reversals. In 
+                    these respects it has some similarities with one of the few other sūtras on a similar theme, <title xml:lang="en">Inspiring
+                        Determination</title> (<title xml:lang="Sa-Ltn">Adhyāśaya­saṃcodana</title>, Toh 
+                        69).<note place="end" xml:id="UT22084-068-010-129">See Blazing Wisdom Translation Group (tr.), 
+                            <title xml:lang="en">
+                                <ref target="https://read.84000.co/translation/toh69.html#UT22084-043-006-121">Inspiring
+                                Determination</ref>
+                            </title>, 84000: Translating the Words of the Buddha, 2021.</note>
+                    </p>
+                    <milestone unit="chunk" xml:id="UT22084-068-010-4"/>
+                    <p tid="70">To our knowledge, no Sanskrit version of this sūtra exists. In addition to the Tibetan translation the sūtra was
+                        translated twice into Chinese. The first of these translations (Taishō 811) was produced sometime near the end of the third
+                        century <hi rend="small-caps">ce</hi> by the Indo-Scythian monk Dharmarakṣa (ca. 233–310 <hi rend="small-caps">ce</hi>). With
+                        this Chinese translation, we thus have a <foreign xml:lang="la" type="term">terminus ante quem</foreign> for the composition
+                        of this sūtra, which places it relatively early in the formative period of the literature of the Great Vehicle in India. The
+                        second Chinese translation (Taishō 831) was produced in the early sixth century (ca. 508–35 <hi rend="small-caps">ce</hi>) by
+                        the prolific Indian translator Bodhiruci.<note place="end" xml:id="UT22084-068-010-5"> Taishō 811 is <title xml:lang="zh">佛說決定總持經</title> (<title xml:lang="Zh-Ltn">Foshuo jueding zong chi jing</title>); Taishō 831 is <title xml:lang="zh">謗佛經</title> (<title xml:lang="Zh-Ltn">Bang fojing</title>).</note>
+                    </p>
+                    <milestone unit="chunk" xml:id="UT22084-068-010-6"/>
+                    <p tid="8">The Tibetan translation, according to the colophon, was produced by the Indian preceptors Jinamitra and Prajñāvarman and
+                        the Tibetan translator-editor Yeshé Dé. This suggests that the translation can be dated to the late eighth or early ninth
+                        century, which is also supported by the text’s inclusion in the early ninth-century Denkarma (<foreign xml:lang="Bo-Ltn" type="term">ldan dkar ma</foreign>) catalog.<note place="end" xml:id="UT22084-068-010-7"> The Denkarma catalog is dated to
+                            ca. 812 <hi rend="small-caps">ce</hi>. Denkarma, folio 299.a.7. See also Herrmann-Pfandt 2008, p. 105, no. 198.</note> In
+                        producing this translation, we have based our work on the Degé Kangyur xylograph, while consulting the Comparative Edition
+                            (<foreign xml:lang="Bo-Ltn" type="term">dpe bsdur ma</foreign>) and the Stok Palace manuscript Kangyur.</p>
+                </div>
+            </div>
+        </front>
+        <body>
+            <div type="translation">
+                <head type="translation" tid="9"> The Translation </head>
+                <head type="titleHon" tid="10">The Noble Great Vehicle Sūtra</head>
+                <head type="titleMain" tid="11">Not Forsaking the Buddha </head>
+                <div type="section" xml:id="UT22084-068-010-section-1">
+                    <milestone unit="chunk" xml:id="UT22084-068-010-8"/>
+                    <p tid="12">
+                        <ref cRef="F.44.b" type="folio" xml:id="UT22084-068-010-111"/> Homage to all buddhas and bodhisattvas!</p>
+                    <lb/>
+                    <milestone unit="chunk" xml:id="UT22084-068-010-9"/>
+                    <p tid="13">Thus did I hear at one time. The Blessed One was on Vulture Peak Mountain in Rājagṛha, together with a great saṅgha of
+                        1,250 monks and eighty thousand bodhisattvas. At that time, the bodhisattva great being Aśokadatta was present in the
+                        assembly, as were the bodhisattva great being Vanquisher of the Darkness of Sorrow, the bodhisattva great being Light of
+                        Wisdom, the bodhisattva great being Roaring Thunder Cloud from Brahmā, the bodhisattva great being Glorious Blooming Flower of
+                        Precious Qualities, the bodhisattva great being Born from the Lion’s Virtues and Moving with a Thunder Roar, the bodhisattva
+                        great being Renowned Brilliant Light, the bodhisattva great being Aiming for Accomplishment of Limitless Wisdom Array, <ref cRef="F.45.a" type="folio" xml:id="UT22084-068-010-112"/> the bodhisattva great being Renowned Blooming Flower of
+                        Limitless Precious Qualities, and the bodhisattva great being Intelligent Light of Insight Displaying Eloquence.<note place="end" xml:id="UT22084-068-010-10"> Translation here based on the reading of the Comparative Edition and Degé:
+                                <foreign xml:lang="Bo-Ltn" type="quote">shes rab kyi snang bas stobs pa bstan pa’i blo gros</foreign>. The Stok Palace
+                            reads <foreign xml:lang="Bo-Ltn" type="quote">shes rab kyi snang bas spobs pa brtan pa’i blo gros</foreign>.</note>
+                    </p>
+                    <milestone unit="chunk" xml:id="UT22084-068-010-11"/>
+                    <p tid="14">These ten bodhisattva great beings who were present in the assembly had exerted themselves for seven years with the
+                        aim of attaining dhāraṇī. However, although seven years had passed, they had not even attained mental equipoise, let alone
+                        dhāraṇī. For seven years, they had avoided dullness and sleep and exerted themselves in sitting and walking. They had exerted
+                        themselves in relinquishing all thoughts of desire. Nevertheless, they had not achieved their goal and had not attained
+                        dhāraṇī; and thus, feeling discouraged, they had offered back their precepts and lapsed. All of them, having thus assented to
+                        the shortcomings of householder life, had simply turned their backs on the teaching.</p>
+                    <milestone unit="chunk" xml:id="UT22084-068-010-12"/>
+                    <p tid="15">At that time, King Ajātaśatru was also present in the assembly. The Blessed One had already dispelled the king’s
+                        regrets. With his regrets dispelled, for seven days the king had engaged in generosity and pardoned all prisoners. After
+                        having engaged in generosity for seven days, the king had returned to the Blessed One, together with seventy million other
+                        beings, to listen to the Dharma. The ten noble sons who had assented to the shortcomings of householder life and turned their
+                        backs on the teaching had also come to the assembly.</p>
+                    <milestone unit="chunk" xml:id="UT22084-068-010-13"/>
+                    <p tid="16">At this point, the bodhisattva great being Undaunted also joined the assembly. He had attained dhāraṇī. For countless
+                        eons he had possessed the acceptance of phenomena that is consistent with reality and had attained the acceptance that
+                        phenomena are nonarising. He was endowed with various forms of eloquence. He was expert in accomplishing all gateways to
+                        wisdom and the Dharma, and, in order to explain the Dharma, he was skilled concerning beings’ mindsets, intentions, and
+                        interests. <ref cRef="F.45.b" type="folio" xml:id="UT22084-068-010-113"/>
+                    </p>
+                    <milestone unit="chunk" xml:id="UT22084-068-010-14"/>
+                    <p tid="17">The bodhisattva great being Undaunted rose from his seat, draped his shawl over one shoulder, knelt on his right knee,
+                        and bowed with joined palms toward the Blessed One. He then said to the Blessed One, “Blessed One, these ten noble sons
+                        exerted themselves for seven years with the aim of attaining dhāraṇī, yet they did not accomplish their goal, and so they have
+                        left the teaching and profess to having taken up the householder life. This being so, Blessed One, I beseech you to please
+                        bestow upon these noble sons an instruction that will enable them to swiftly attain wisdom.”</p>
+                    <milestone unit="chunk" xml:id="UT22084-068-010-15"/>
+                    <p tid="18">The Blessed One replied to the bodhisattva great being Undaunted, “Noble son, these individuals have not heard the
+                        Dharma discourse called <title xml:lang="en">Not Forsaking the Buddha</title>, and so they have ended up forsaking the Buddha.
+                        That is why these noble sons have failed to swiftly develop in their understanding.”</p>
+                    <milestone unit="chunk" xml:id="UT22084-068-010-16"/>
+                    <p tid="19">The bodhisattva great being Undaunted then addressed the following verses to the Blessed One:</p>
+                    <milestone unit="chunk" xml:id="UT22084-068-010-29"/>
+                    <lg tid="20">
+                        <l>“Illuminating Dharma King,</l>
+                        <l>Sun of humans, I request you to teach</l>
+                        <l>The conduct that bodhisattvas engage in<note place="end" xml:id="UT22084-068-010-17"> Translated based on Degé: <foreign xml:lang="Bo-Ltn" type="term">las spyod pa</foreign>. Stok: <foreign xml:lang="Bo-Ltn" type="term">las sbyong
+                                    ba</foreign>.</note>—</l>
+                        <l>Please explain that conduct.</l>
+                    </lg>
+                    <milestone unit="chunk" xml:id="UT22084-068-010-18"/>
+                    <lg tid="21">
+                        <l>“Your intelligence is boundless and exalted;<note place="end" xml:id="UT22084-068-010-19"> Translated based on Stok Palace:
+                                    <foreign xml:lang="Bo-Ltn" type="quote">dpag med khyad par ’phags pa’i blo gros pa</foreign>. Degé: <foreign xml:lang="Bo-Ltn" type="quote">dpag med khyab par ’phags pa’i blo grags pa</foreign>.</note>
+                        </l>
+                        <l>Unimpeded Buddha, your ten powers are unmatched.</l>
+                        <l>You are free from the three realms of existence and beyond conceptual constructs—</l>
+                        <l>Buddha, you have taught the stainless conduct of bodhisattvas.</l>
+                    </lg>
+                    <milestone unit="chunk" xml:id="UT22084-068-010-20"/>
+                    <lg tid="22">
+                        <l>“Master of immeasurable wisdom, I ask you.</l>
+                        <l>Dispeller of doubts, I ask you.</l>
+                        <l>Matchless Blessed One, I ask you.</l>
+                        <l>What is the proper conduct of bodhisattvas?</l>
+                    </lg>
+                    <milestone unit="chunk" xml:id="UT22084-068-010-21"/>
+                    <lg tid="23">
+                        <l>“Victor, tamer of demons, Blissful One,</l>
+                        <l>You liberate beings from all the afflictions.</l>
+                        <l>You compassionately tame the afflictions and show the path to awakening; <ref cRef="F.46.a" type="folio" xml:id="UT22084-068-010-114"/>
+                        </l>
+                        <l>Please explain that noble teaching.</l>
+                    </lg>
+                    <milestone unit="chunk" xml:id="UT22084-068-010-22"/>
+                    <lg tid="24">
+                        <l>“Your teaching is excellent in terms of its clarity, source, and relevance.</l>
+                        <l>Tirelessly, you eliminate existence and overcome its states.</l>
+                        <l>Excellent mendicant, your perfect speech dispels all doubts.</l>
+                        <l>Victorious blissful one, you teach all the modes of stainless conduct.</l>
+                    </lg>
+                    <milestone unit="chunk" xml:id="UT22084-068-010-23"/>
+                    <lg tid="25">
+                        <l>“Over hundreds of past lives, you accrued virtuous qualities.</l>
+                        <l>You diligently dedicated all for the benefit and happiness of beings.</l>
+                        <l>For long you relinquished jewels, elephants, and horses,</l>
+                        <l>And the company of women and children as well.<note place="end" xml:id="UT22084-068-010-24"> Stok offers an alternative for
+                                this line: “And many forms of carelessness and even your head” (<foreign xml:lang="Bo-Ltn" type="quote">bag med tshogs
+                                    dang dbu yang spangs mdzad pa</foreign>).</note>
+                        </l>
+                    </lg>
+                    <milestone unit="chunk" xml:id="UT22084-068-010-25"/>
+                    <lg tid="26">
+                        <l>“Delighting in patience and discipline, you ardently practiced the virtues of discipline.</l>
+                        <l>You joyfully pursued intelligence and took on austerities and hardships.</l>
+                        <l>In the pursuit<note place="end" xml:id="UT22084-068-010-26"> Translated based on Degé:<foreign xml:lang="Bo-Ltn" type="term"> tshol bas</foreign>. Stok Palace: <foreign xml:lang="Bo-Ltn" type="term">phul bas</foreign>
+                            </note> of
+                            good qualities, you endured hundreds of sufferings.</l>
+                        <l>Victor, there is no doubt that you have attained all this.</l>
+                    </lg>
+                    <milestone unit="chunk" xml:id="UT22084-068-010-27"/>
+                    <lg tid="27">
+                        <l>“You are skilled in conduct and have relinquished all doubts.</l>
+                        <l>You are free of the defects of the three stains and all faults. </l>
+                        <l>You have entered all existences.</l>
+                        <l>Protector, please explain the proper conduct of supreme awakening!”</l>
+                    </lg>
+                    <milestone unit="chunk" xml:id="UT22084-068-010-28"/>
+                    <p tid="28">The Blessed One then addressed the bodhisattva great being Undaunted: “Noble son, none of these ten bodhisattvas has
+                        in fact forsaken the Buddha.”</p>
+                    <p tid="29">The bodhisattva great being then asked, “Blessed One, what do you mean by saying that they have not forsaken the
+                        Buddha?”</p>
+                    <milestone unit="chunk" xml:id="UT22084-068-010-30"/>
+                    <p tid="30">The Blessed One replied, “Noble son, in a bygone age, thirty eons ago, in a world called Mirage, a thus-gone one named
+                        Roar of Vision appeared. In the period after this thus-gone one had passed into parinirvāṇa, these ten noble sons were born as
+                        the sons of householders who were like great śāla trees. At that time, these ten noble sons commissioned the building of five
+                        hundred temples. In each of those temples, a thousand monks resided. Noble son, at that time there was a Dharma teacher named
+                        Pratibhānakūṭa who had attained dhāraṇī and was teaching the Dharma. <ref cRef="F.46.b" type="folio" xml:id="UT22084-068-010-115"/>
+                    </p>
+                    <milestone unit="chunk" xml:id="UT22084-068-010-31"/>
+                    <p tid="31">“Noble son, the Dharma teacher Pratibhānakūṭa would accomplish the eloquence of five thousand Buddhas while seated on
+                        the Dharma seat, as eight hundred million gods applied themselves diligently in worshiping his body. Through just one of his
+                        Dharma discourses, seventy thousand beings would be established in irreversible progress toward unexcelled and perfect
+                        awakening, and ten thousand beings would attain the fruition of stream enterer.</p>
+                    <milestone unit="chunk" xml:id="UT22084-068-010-32"/>
+                    <p tid="32">“Noble son, at that time there was a king named Candradatta. He had great respect for the Dharma, and so he and five
+                        hundred women venerated that Dharma teacher with song and music. He scattered many types of precious flowers over that monk,
+                        anointed him with sandalwood ointment, and swathed him in five hundred brocades. Furthermore, the king venerated him with
+                        every type of delightful service. In this way, he served that Dharma teacher with perfect offerings for seven days.</p>
+                    <milestone unit="chunk" xml:id="UT22084-068-010-33"/>
+                    <p tid="33">“However, those sons of the householder accused that monk of flawed discipline. As that action ripened, they were born
+                        in the hells for ninety thousand years. Then, for five hundred consecutive lifetimes they were born in the human realm as
+                        ṣaṇḍhas, as barbarians, and into families with wrong views. After that, for six hundred lifetimes they were born blind and
+                        mute. Then, for seven hundred lifetimes they went forth and remained ordained for the rest of their lives, but they died
+                        without having attained dhāraṇī. That is the karmic obscuration veiling these noble sons.</p>
+                    <milestone unit="chunk" xml:id="UT22084-068-010-34"/>
+                    <p tid="34">“Noble son, you should therefore trust this and understand it. Having heard this Dharma discourse, you should never
+                        speak of a Dharma teacher having flawed discipline, even if you witness it in person, let alone hear word of it. </p>
+                    <milestone unit="chunk" xml:id="UT22084-068-010-35"/>
+                    <p tid="35">“Noble son, if one person were to pluck out the eyes of all beings, and another were to take a disparaging view of a
+                        Dharma teacher, the latter would commit an act of even graver negativity than the former. If one person were to bind all
+                        beings in fetters, and another were to turn his back on meeting a Dharma teacher, <ref cRef="F.47.a" type="folio" xml:id="UT22084-068-010-116"/> the unmeritorious act committed by the former would be nowhere near even a hundredth part
+                        of the severity of the act committed by the latter. It would be nowhere near even a thousandth, or a one hundred thousandth
+                        part. No number, fraction, quantity, analogy, or comparison would come close. Why is that? Because whoever denigrates a Dharma
+                        teacher denigrates the Buddha. If you wish to honor the Buddha, you should honor a Dharma teacher. If you wish to worship the
+                        Buddha, you should worship a Dharma teacher. If you wish to pay homage to the Buddha, you should pay homage to a Dharma
+                        teacher.</p>
+                    <milestone unit="chunk" xml:id="UT22084-068-010-36"/>
+                    <p tid="36">“Why is that? It is because the state of omniscience arises from the bodhisattvas—and the blessed buddhas arise from
+                        the bodhisattvas. Since that takes place on the basis of the bodhisattvas’ arousing of the mind of awakening, one should not
+                        say that bodhisattvas are afflicted beings who indulge in pleasures. One should not say that they ever fail to observe pure
+                        conduct. Although they are absorbed in the formless absorptions one should not say that they enter the formless states. Why
+                        not? Because bodhisattvas do not take rebirth under the sway of afflictions; rather, bodhisattvas take rebirth through the
+                        power of aspirations. They are beyond all childish behavior. If you wanted to point out the afflictions of a bodhisattva, it
+                        would be no different from wanting to point out the physical form of space.</p>
+                    <milestone unit="chunk" xml:id="UT22084-068-010-37"/>
+                    <p tid="37">“Noble son, as an analogy, as the chief of all nāgas, the nāga king Anavatapta is counted as one of the nāgas.
+                        Nevertheless, he is not afflicted by the three troubles of nāgas. What are the three ways in which he is not afflicted? Hot
+                        sand does not fall on his head, he does not find himself in the company of the bodies of those who grieve,<note place="end" xml:id="UT22084-068-010-38"> Translation tentative. Degé: <foreign xml:lang="Bo-Ltn" type="quote">skyo ba po’i lus dang
+                                lhan cig tu kun tu mi gnas pa</foreign>. Phukdrak MS offers an alternative: <foreign xml:lang="Bo-Ltn" type="quote">skye ba po’i las dang lhan cig tu kun tu mi gnas pa</foreign>. While there seems to be consensus in classical sources
+                            that two of the three troubles nāgas encounter are hot sandstorms and the attacks of garuḍas, it is less clear what the
+                            remaining terror is. Lamotte (p. 244, note 500) cites <title xml:lang="Bo-Ltn">Tch’ang a han</title> to say that the third
+                            suffering Anavatapta does not have to endure is a violent wind blowing in his palace. The <title xml:lang="Sa-Ltn">
+                                <ref rend="pending" target="https://read.84000.co/translation/toh559.html">Mahā­māyūrī­vidyā­rājñī</ref>
+                            </title> (folio
+                            107.a) specifies that the third difficulty is the threat of royal punishment.</note> and he is not subject to the terror of garuḍas. Noble son, these three
+                        troubles of the nāgas do not afflict Anavatapta. <ref cRef="F.47.b" type="folio" xml:id="UT22084-068-010-117"/> Noble son, in
+                        the same way, even though bodhisattva great beings may engage in frolicking and all manner of joys, it must be said that they
+                        are not overcome by the desire, affliction, or suffering within the three existences.</p>
+                    <milestone unit="chunk" xml:id="UT22084-068-010-39"/>
+                    <p tid="38">“Noble son, as another analogy, there is a type of animal known as <distinct>fisher</distinct> that moves about in the
+                        water and looks into the water but does not die there. Noble son, likewise, bodhisattva great beings may move about in cyclic
+                        existence, but while engaging in the conduct of childish beings, they in fact pursue the conduct of wisdom. Having taken up
+                        the Dharma, they do not become confused. They live alongside childish beings, but they do not experience the sufferings of the
+                        three existences. Therefore, bodhisattva great beings will protect themselves.”</p>
+                    <lb/>
+                    <milestone unit="chunk" xml:id="UT22084-068-010-40"/>
+                    <p tid="39">The Blessed One then spoke the following verses:</p>
+                    <lg tid="40">
+                        <l>“If someone wishes to worship the Blissful One</l>
+                        <l>And pay homage to him,</l>
+                        <l>They should worship the blissful one’s offspring here.</l>
+                        <l>This is the supreme act of worshiping the victors.</l>
+                    </lg>
+                    <milestone unit="chunk" xml:id="UT22084-068-010-41"/>
+                    <lg tid="41">
+                        <l>“All my<note place="end" xml:id="UT22084-068-010-42">Translated based on Degé: <foreign xml:lang="Bo-Ltn" type="term">nga
+                                    yi</foreign>. Stok Palace: <foreign xml:lang="Bo-Ltn" type="term">mi yi</foreign>.</note> clothes, my alms bowl,
+                            sitting mat,</l>
+                        <l>Bedding, and walkway—</l>
+                        <l>I give all of them</l>
+                        <l>To those striving for awakening.</l>
+                    </lg>
+                    <milestone unit="chunk" xml:id="UT22084-068-010-43"/>
+                    <lg tid="42">
+                        <l>“All the buddhas, those supreme humans,</l>
+                        <l>Have surely arisen from such beings.</l>
+                        <l>So worship them in the very same way</l>
+                        <l>As you would worship the buddhas.</l>
+                    </lg>
+                    <milestone unit="chunk" xml:id="UT22084-068-010-44"/>
+                    <lg tid="43">
+                        <l>“These are the guardians and adepts;</l>
+                        <l>They give sight to those who are blind.</l>
+                        <l>They show the path to those who are lost</l>
+                        <l>And guide them to the deathless state.</l>
+                    </lg>
+                    <milestone unit="chunk" xml:id="UT22084-068-010-45"/>
+                    <lg tid="44">
+                        <l>“Even if beings were to joyfully give them</l>
+                        <l>All types of wealth in a constant stream,</l>
+                        <l>That would not be enough to match </l>
+                        <l>Their all beginning to rely on the mind of awakening.”</l>
+                    </lg>
+                    <milestone unit="chunk" xml:id="UT22084-068-010-47"/>
+                    <p tid="46">The bodhisattva great being Undaunted <ref cRef="F.48.a" type="folio" xml:id="UT22084-068-010-118"/> then addressed
+                        the Blessed One: “Blessed One, is there an instruction through which these bodhisattvas can purify their karmic
+                        obscuration?”</p>
+                    <milestone unit="chunk" xml:id="UT22084-068-010-48"/>
+                    <p tid="47">The Blessed One replied, “Yes, there is. Undaunted, these noble sons should go forth as monks and recite these dhāraṇī
+                        mantra words:</p>
+                    <milestone unit="chunk" xml:id="UT22084-068-010-49"/>
+                    <p rend="mantra" tid="48">
+                        <mantra type="dharani" xml:lang="Sa-Ltn">syād yathedam: accha acchavati anāvile akleśe akṛte anāyūhe ave
+                            aparājite bhavatu aṅgama yutājñāva prakṣipe nirgate ugrahe huhume cavale sade same samade yoti nayo
+                            pariśodhi</mantra>.<note place="end" xml:id="UT22084-068-010-50"> Following the 84000 guidelines, this dhāraṇī has been
+                            transcribed as it appears in Degé.</note>
+                    </p>
+                    <milestone unit="chunk" xml:id="UT22084-068-010-51"/>
+                    <p tid="49">“Noble sons or daughters should recite these dhāraṇī mantra words. For seven days they should train in the absorption
+                        of recalling the buddhas in a way that is free from grasping, free from settling, free from form, free from concepts, free
+                        from sensory experience, free from diversion, free from action, free from contamination, free from indifference, free from the
+                        five aggregates, and free from impatience. If they do that, they will encounter a thousand buddhas in the ten directions, and
+                        they will be compelled to confess their stains.”</p>
+                    <milestone unit="chunk" xml:id="UT22084-068-010-52"/>
+                    <p tid="50">“Accordingly, these noble sons went forth as monks and recited those secret mantra words. For seven days, free from
+                        grasping and the rest, they exerted themselves by training in the absorption of recalling the buddhas. Thereby they came to
+                        see the thousand buddhas and confessed their karmic obscuration. At that very point, these noble sons attained the dhāraṇī
+                        called <distinct>gateway to the wisdom that accomplishes all</distinct>. They reduced their time in cyclic existence by thirty
+                        eons, and were established in irreversible progress toward unexcelled and perfect awakening.</p>
+                    <milestone unit="chunk" xml:id="UT22084-068-010-53"/>
+                    <p tid="51">“Undaunted, the king Candradatta, who had worshiped that Dharma teacher, is now the thus-gone, <ref cRef="F.48.b" type="folio" xml:id="UT22084-068-010-119"/> worthy, and perfect buddha Amitāyus. At that time, he was the king
+                        Candradatta. The Dharma teacher Pratibhānakūṭa is now the thus-gone, worthy, and perfect buddha Akṣobhya. At that time, he was
+                        the Dharma teacher Pratibhānakūṭa. The ten sons of householders like great śāla trees are now these noble sons. At that time,
+                        they were the ten sons of householders like great śāla trees who accused the Dharma teacher Pratibhānakūṭa of having flawed
+                        discipline.</p>
+                    <milestone unit="chunk" xml:id="UT22084-068-010-54"/>
+                    <p tid="52">“Therefore, noble son, no matter how bodhisattvas may be living, do not view them as mistaken, even at the cost of
+                        your life. Why not? Because, noble son, there are four qualities that purify the awakening of bodhisattvas. What are those
+                        four qualities? Training in emptiness, being free of animosity toward anyone, always gathering what is beneficial for
+                        bodhisattvas, and authentically manifesting the gift of the Dharma without having thoughts of material gain. Noble son, these
+                        four qualities purify the awakening of<note place="end" xml:id="UT22084-068-010-55">Translated based on Stok Palace: <foreign xml:lang="Bo-Ltn" type="term">kyi</foreign>. Degé: <foreign xml:lang="Bo-Ltn" type="term">kyis</foreign>.</note>
+                        bodhisattva great beings.”</p>
+                    <lb/>
+                    <milestone unit="chunk" xml:id="UT22084-068-010-56"/>
+                    <p tid="53">The Blessed One then expressed these same points in the following verses:</p>
+                    <lg tid="54">
+                        <l>“The victors have taught that interest in emptiness</l>
+                        <l>Is the first path by which bodhisattvas are purified.</l>
+                        <l>Those who remain constantly heedful of this</l>
+                        <l>Will attain awakening and illuminate the world.</l>
+                    </lg>
+                    <milestone unit="chunk" xml:id="UT22084-068-010-57"/>
+                    <lg tid="55">
+                        <l>“Always being sincere toward all beings,</l>
+                        <l>Never wishing to speak down to anyone,</l>
+                        <l>And relinquishing pride and being patient with others—</l>
+                        <l>This is the second path of purification.</l>
+                    </lg>
+                    <milestone unit="chunk" xml:id="UT22084-068-010-58"/>
+                    <lg tid="56">
+                        <l>“To give all pleasing and untainted objects</l>
+                        <l>To those who strive for perfect awakening, <ref cRef="F.49.a" type="folio" xml:id="UT22084-068-010-120"/>
+                        </l>
+                        <l>Without wishing for anything in return—</l>
+                        <l>This is the third path to perfect awakening.</l>
+                    </lg>
+                    <milestone unit="chunk" xml:id="UT22084-068-010-59"/>
+                    <lg tid="57">
+                        <l>“When a compassionate person gives the Dharma</l>
+                        <l>Constantly and correctly to others without hopes of material gain,</l>
+                        <l>And keeps a loving heart with pure intention—</l>
+                        <l>This is the fourth path of purification<note place="end" xml:id="UT22084-068-010-60">Translated based on Stok Palace,
+                                Lithang, Choné, and Narthang: <foreign xml:lang="Bo-Ltn" type="term">sbyong ba</foreign>. Degé: <foreign xml:lang="Bo-Ltn" type="term">spyod pa</foreign>.</note> by the learned.</l>
+                    </lg>
+                    <milestone unit="chunk" xml:id="UT22084-068-010-61"/>
+                    <p tid="58">“Noble son, furthermore, bodhisattva great beings who apply themselves to dhāraṇī should stay in an isolated place.
+                        They should go to listen to the Dharma. They should wear clean clothes. They should stay on their own. They should observe the
+                        four types of conduct. They should have the wish and inclination to practice various forms of generosity toward Dharma
+                        teachers. They should have veneration for the Three Jewels. They should not let others influence them. They should never feel
+                        discouraged. They should cultivate diligence constantly, be unwavering, never part from the recollection of the buddhas, train
+                        thoroughly in nonobservation and the lack of characteristics, and practice what they preach. They should have faith in the
+                        buddhas. They should become skilled in confession, rejoicing, and dedication. They should not behave imprudently. They should
+                        live in places that are free of danger, and where the teachers and preceptors are present. They should uphold what they have
+                        been taught. They should apply these teachings without becoming weary.”</p>
+                    <milestone unit="chunk" xml:id="UT22084-068-010-62"/>
+                    <p tid="59">When the Blessed One gave this Dharma discourse, thirty thousand beings who had not previously given rise to the mind
+                        of awakening now gave rise to the mind of awakening. Five thousand beings gained the pure vision of Dharma that is dust free
+                        and stainless with regard to all phenomena. Thirty thousand bodhisattvas gained the acceptance that phenomena are
+                        nonarising.</p>
+                    <milestone unit="chunk" xml:id="UT22084-068-010-63"/>
+                    <p tid="60">The Blessed One then said,<note place="end" xml:id="UT22084-068-010-64"> Although the Tibetan does not specify that
+                            the text continues with the Buddha’s direct speech at this point, it seems most likely from the context that this is the
+                            case. We have therefore added the phrase “The Blessed One then said.”</note> “Hearing this Dharma discourse is something
+                        that is cherished dearly by bodhisattva great beings. If one person, for as many eons as there are grains of sand in the
+                        Ganges River, were to fill the trichiliocosm with the seven precious substances and present them as gifts to the Three Jewels,
+                            <ref cRef="F.49.b" type="folio" xml:id="UT22084-068-010-121"/> while another person were to listen to this Dharma
+                        discourse, the latter will have made the best choice. If one person, for a thousand eons, were to engage in the five
+                        perfections excluding the perfection of insight, while another person were to listen to this Dharma discourse, the latter will
+                        have made the best choice. If one person were to serve, venerate, respect, and worship a thousand buddhas in the morning, at
+                        noon, and in the evening, while another were to listen to this Dharma discourse, the latter will have made the best
+                        choice.</p>
+                    <milestone unit="chunk" xml:id="UT22084-068-010-65"/>
+                    <p tid="61">“Noble sons, it is for these reasons that I have entrusted you with this Dharma discourse, so that you may preserve
+                        it, carry it, read it aloud, teach it, and copy it. You must preserve this teaching of mine, even at the cost of life and
+                        limb.”</p>
+                    <milestone unit="chunk" xml:id="UT22084-068-010-66"/>
+                    <p tid="62">When the Blessed One had said this, the bodhisattva Undaunted, the other bodhisattvas, the monks, and the entire
+                        retinue, as well as the world with its gods, humans, asuras, and <foreign xml:lang="Sa-Ltn" type="term">gandharvas</foreign>, rejoiced and praised what the Blessed One had said.</p>
+                    <milestone unit="chunk" xml:id="UT22084-068-010-67"/>
+                    <trailer tid="63">This concludes the noble Great Vehicle sūtra “Not Forsaking the Buddha.“</trailer>
+                </div>
+                <div type="colophon" xml:id="UT22084-068-010-colophon">
+                    <head type="colophon" tid="64">Colophon</head>
+                    <milestone unit="chunk" xml:id="UT22084-068-010-68"/>
+                    <p tid="65">Translated, proofed, and finalized by the Indian preceptors Jinamitra and Prajñāvarman, the chief editor and
+                        translator Venerable Yeshé Dé, and others.</p>
+                </div>
+            </div>
+        </body>
+        <back>
+            <div type="notes">
+                <head type="notes" tid="66">Notes</head>
+            </div>
+            <div type="listBibl">
+                <head type="listBibl" tid="67">Bibliography</head>
+                <div type="section" xml:id="UT22084-068-010-listBibl-1">
+                    <bibl xml:id="UT22084-068-010-69">
+                        <title xml:lang="Bo-Ltn">sangs rgyas mi spang ba</title> (<title xml:lang="Sa-Ltn">Buddhākṣepaṇa</title>). Toh 118, Degé Kangyur vol. 68 (mdo sde, ya), folios 44.b–49.b.</bibl>
+                    <bibl xml:id="UT22084-068-010-70">
+                        <title xml:lang="Bo-Ltn">sangs rgyas mi spang ba</title>. bka’ ’gyur (dpe bsdur ma) [Comparative
+                        Edition of the Kangyur], krung go’i bod rig pa zhib ’jug ste gnas kyi bka’ bstan dpe sdur khang (The Tibetan Tripitaka
+                        Collation Bureau of the China Tibetology Research Center). 108 volumes. Beijing: krung go’i bod rig pa dpe skrun khang (China
+                        Tibetology Publishing House), 2006–9, vol. 68, 126–38.</bibl>
+                    <bibl xml:id="UT22084-068-010-71">
+                        <title xml:lang="Bo-Ltn">’phags pa sangs rgyas mi spang ba zhes bya ba theg pa chen po’i
+                            mdo</title>. Stok Palace Kangyur vol. 62, pp. 687–703.</bibl>
+                    <bibl xml:id="UT22084-068-010-72">
+                        <title xml:lang="Bo-Ltn">rig sngags kyi rgyal mo rma bya chen mo</title> (<title xml:lang="Sa-Ltn">Mahā­māyūrī­vidyā­rājñī</title>). Toh 559, Degé Kangyur vol. 90 (<foreign xml:lang="Bo-Ltn" type="term">rgyud ’bum, pha</foreign>), folios 87.b–117.a.</bibl>
+                    <bibl xml:id="UT22084-068-010-73">Denkarma (<title xml:lang="Bo-Ltn">pho brang stod thang ldan [/ lhan] dkar gyi chos ’gyur ro cog
+                            gi dkar chag</title>). Degé Tengyur, vol. 206 (sna tshogs, jo), folios 294.b–310.a. </bibl>
+                    <bibl xml:id="UT22084-068-010-74">Herrmann-Pfandt, Adelheid. <title xml:lang="de">Die lHan kar ma: ein früher Katalog der ins
+                            Tibetische übersetzten buddhistischen Texte</title>. Vienna: Verlag der Österreichischen Akademie der Wissenschaften,
+                        2008.</bibl>
+                    <bibl xml:id="UT22084-068-010-75">Lamotte, Étienne. <title xml:lang="en">The Treatise on the Great Virtue of Wisdom of Nāgārjuna
+                            </title>(<title xml:lang="Sa-Ltn">Mahā­prajñā­pāramitā­śāstra</title>), Vol. I. Translated from the French, <title xml:lang="fr">Le Traité de la Grande Vertu de Sagesse de Nāgārjuna</title> (<title xml:lang="Sa-Ltn">Mahā­prajñā­pāramitā­śāstra</title>), by Gelongma Karma Migme Chodron. Unpublished manuscript. 2001. </bibl>
+                </div>
+            </div>
+            <div type="glossary">
+                <list type="glossary">
+                    <item>
+                        <gloss type="term" xml:id="UT22084-068-010-76">
+                            <term>absorption </term>
+                            <term xml:lang="Bo-Ltn">ting nge ’dzin </term>
+                            <term xml:lang="bo">ཏིང་ངེ་འཛིན།</term>
+                            <term xml:lang="Sa-Ltn">samādhi</term>
+                            <term type="definition">A synonym for meditation, this refers to the state of deep meditative 
+                                immersion that results from different modes of Buddhist practice.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-068-010-77">
+                            <term>dhāraṇī</term>
+                            <term xml:lang="Bo-Ltn">gzungs </term>
+                            <term xml:lang="bo">གཟུངས།</term>
+                            <term xml:lang="Sa-Ltn">dhāraṇī</term>
+                            <term type="definition">This term has several meanings. Often it refers to a ritual incantation that usually encapsulates
+                                the meaning of a longer text. In this sense it is considered to assist in the retention of the text and imbue the one
+                                who recites it with a variety of desired powers. At other times this term carries the meaning of “holding” or
+                                “retaining,” and so it is frequently used in reference to memory and learning. In the context of this text, the term
+                                carries both of these meanings. Finally, this term can also be applied as a classificatory term to Buddhist scriptures
+                                that contain one or more such incantations.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-068-010-78">
+                            <term>mendicant</term>
+                            <term xml:lang="Bo-Ltn">dge sbyong </term>
+                            <term xml:lang="bo">དགེ་སྦྱོང་།</term>
+                            <term xml:lang="Sa-Ltn">śramaṇa</term>
+                            <term type="definition">A term used broadly to denote a spiritual seeker.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-068-010-79">
+                            <term>śāla tree </term>
+                            <term xml:lang="Bo-Ltn">shing sA la </term>
+                            <term xml:lang="bo">ཤིང་སཱ་ལ།</term>
+                            <term xml:lang="Sa-Ltn">śāla</term>
+                            <term type="definition">A hardwood tree that is widespread on the Indian subcontinent.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-068-010-80">
+                            <term>ṣaṇḍha</term>
+                            <term xml:lang="Bo-Ltn">za ma </term>
+                            <term xml:lang="bo">ཟ་མ།</term>
+                            <term xml:lang="Sa-Ltn">ṣaṇḍha</term>
+                            <term type="definition">Someone whose sexual organs (or part of them) have been removed, or who is sexually impotent for
+                                some other reason.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-068-010-81">
+                            <term>seven precious substances</term>
+                            <term xml:lang="Bo-Ltn">rin po che sna bdun </term>
+                            <term xml:lang="bo">རིན་པོ་ཆེ་སྣ་བདུན།</term>
+                            <term xml:lang="Sa-Ltn">saptaratna</term>
+                            <term type="definition">Seven precious jewels, of which there are varying enumerations. One source lists them as lotus
+                                ruby, star sapphire, lapis lazuli, emerald, diamond, mother of pearl, and coral.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-068-010-82">
+                            <term>stream enterer</term>
+                            <term xml:lang="Bo-Ltn">rgyun du zhugs pa </term>
+                            <term xml:lang="bo">རྒྱུན་དུ་ཞུགས་པ།</term>
+                            <term xml:lang="Sa-Ltn">śrotāpanna</term>
+                            <term type="definition">A person who has entered the stream of practice that leads to nirvāṇa. The first of the four
+                                attainments on the path of the hearers.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-068-010-83">
+                            <term>ten powers</term>
+                            <term xml:lang="Bo-Ltn">stobs bcu </term>
+                            <term xml:lang="bo">སྟོབས་བཅུ།</term>
+                            <term xml:lang="Sa-Ltn">daśabala</term>
+                            <term type="definition">Although the various sources have some variation of these ten powers, one classical list of the
+                                Buddha’s ten powers, which appears frequently throughout both Pāli and Sanskrit sources, refers to the following
+                                powers of knowing (<foreign xml:lang="Sa-Ltn" type="term">jñānabala</foreign>): (1) knowing what is possible and what
+                                is impossible (<foreign xml:lang="Sa-Ltn" type="term">sthānāsthāna</foreign>), (2) knowing the ripening of karma
+                                    (<foreign xml:lang="Sa-Ltn" type="term">karmavipāka</foreign>), (3) knowing the various inclinations (<foreign xml:lang="Sa-Ltn" type="term">nānādhimukti</foreign>), (4) knowing the various elements (<foreign xml:lang="Sa-Ltn" type="term">nānādhātu</foreign>), (5) knowing the supreme and lesser faculties (<foreign xml:lang="Sa-Ltn" type="term">indriya­parāpara</foreign>), (6) knowing the paths that lead to all destinations
+                                    (<foreign xml:lang="Sa-Ltn" type="term">sarvatragāminīpratipad</foreign>), (7) knowing the concentrations,
+                                liberations, absorptions, and attainments (<foreign xml:lang="Sa-Ltn" type="term">dhyāna­vimokṣa­samādhi­samāpatti</foreign>), (8) knowing the recollection of past existences (<foreign xml:lang="Sa-Ltn" type="term">pūrva­nivāsānusmṛti</foreign>), (9) knowing death and rebirth (<foreign xml:lang="Sa-Ltn" type="term">cyutyupapatti</foreign>), and (10) knowing the exhaustion of the defilements
+                                    (<foreign xml:lang="Sa-Ltn" type="term">āsravakṣaya</foreign>).</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-068-010-84">
+                            <term>the acceptance of phenomena that is consistent with reality</term>
+                            <term xml:lang="Bo-Ltn">rjes su mthun pa’i chos kyi bzod pa </term>
+                            <term xml:lang="bo">རྗེས་སུ་མཐུན་པའི་ཆོས་ཀྱི་བཟོད་པ།</term>
+                            <term xml:lang="Sa-Ltn">ānulomika­dharma­kṣanti</term>
+                            <term type="definition">A realization characteristic of the sixth ground of bodhisattvas, arising as a result of analysis
+                                of the essential nature of phenomena.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-068-010-85">
+                            <term>the acceptance that phenomena are nonarising</term>
+                            <term xml:lang="Bo-Ltn">mi skye ba’i chos la bzod pa </term>
+                            <term xml:lang="bo">མི་སྐྱེ་བའི་ཆོས་ལ་བཟོད་པ།</term>
+                            <term xml:lang="Sa-Ltn">anutpattika­dharma­kṣānti</term>
+                            <term type="definition">An attainment characteristic of the effortless and spontaneous wakefulness of the eighth ground of
+                                the bodhisattvas.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-068-010-86">
+                            <term>three existences</term>
+                            <term xml:lang="Bo-Ltn">srid pa gsum </term>
+                            <term xml:lang="bo">སྲིད་པ་གསུམ།</term>
+                            <term xml:lang="Sa-Ltn">tribhava</term>
+                            <term type="definition">Usually synonymous with the three realms of desire, form, and formlessness. Sometimes it means the
+                                realm of devas above, humans on the ground, and nāgas below ground.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="person" xml:id="UT22084-068-010-87">
+                            <term>Aiming for Accomplishment of Limitless Wisdom Array</term>
+                            <term xml:lang="Bo-Ltn">ye shes kyi bkod pa mtha’ yas pa bsgrub pa la sems pa </term>
+                            <term xml:lang="bo">ཡེ་ཤེས་ཀྱི་བཀོད་པ་མཐའ་ཡས་པ་བསྒྲུབ་པ་ལ་སེམས་པ།</term>
+                            <term xml:lang="Sa-Ltn"/>
+                            <term type="definition">A great bodhisattva.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="person" xml:id="UT22084-068-010-88">
+                            <term>Ajātaśatru </term>
+                            <term xml:lang="Bo-Ltn">ma skyes dgra </term>
+                            <term xml:lang="bo">མ་སྐྱེས་དགྲ།</term>
+                            <term xml:lang="Sa-Ltn">Ajātaśatru </term>
+                            <term type="definition">King of Magadha and son of king Bimbisāra. He reigned during the last ten years of the Buddha’s
+                                life and about twenty years after. He overthrew his father and through invasion expanded the kingdom of Magadha. After
+                                his father’s death, he became tormented with guilt and regret, converted to Buddhism, and supported the Buddha and his
+                                community.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="person" xml:id="UT22084-068-010-89">
+                            <term>Akṣobhya</term>
+                            <term xml:lang="Bo-Ltn">mi ’khrugs pa </term>
+                            <term xml:lang="bo">མི་འཁྲུགས་པ།</term>
+                            <term xml:lang="Sa-Ltn">Akṣobhya</term>
+                            <term type="definition">One of the five tathāgatas. </term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="person" xml:id="UT22084-068-010-90">
+                            <term>Amitāyus</term>
+                            <term xml:lang="Bo-Ltn">tshe dpag tu med pa </term>
+                            <term xml:lang="bo">ཚེ་དཔག་ཏུ་མེད་པ།</term>
+                            <term xml:lang="Sa-Ltn">Amitāyus</term>
+                            <term type="definition">The Buddha of Boundless Life, one of the three deities of longevity.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="person" xml:id="UT22084-068-010-91">
+                            <term>Anavatapta</term>
+                            <term xml:lang="Bo-Ltn">ma dros pa </term>
+                            <term xml:lang="bo">མ་དྲོས་པ།</term>
+                            <term xml:lang="Sa-Ltn">Anavatapta</term>
+                            <term type="definition">The king of nāgas.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="person" xml:id="UT22084-068-010-92">
+                            <term>Aśokadatta</term>
+                            <term xml:lang="Bo-Ltn">mya ngan med kyis byin pa </term>
+                            <term xml:lang="bo">མྱ་ངན་མེད་ཀྱིས་བྱིན་པ།</term>
+                            <term xml:lang="Sa-Ltn">Aśokadatta</term>
+                            <term type="definition">A great bodhisattva.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="person" xml:id="UT22084-068-010-93">
+                            <term>Born from the Lion’s Virtues and Moving with a Thunder Roar</term>
+                            <term xml:lang="Bo-Ltn">seng ge’i yon tan las byung ba ’drug gi nga ros gro ba </term>
+                            <term xml:lang="bo">སེང་གེའི་ཡོན་ཏན་ལས་བྱུང་བ་འདྲུག་གི་ང་རོས་གྲོ་བ།</term>
+                            <term xml:lang="Sa-Ltn"/>
+                            <term type="definition">A great bodhisattva.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="person" xml:id="UT22084-068-010-94">
+                            <term>Candradatta</term>
+                            <term xml:lang="Bo-Ltn">zla bas byin pa </term>
+                            <term xml:lang="bo">ཟླ་བས་བྱིན་པ།</term>
+                            <term xml:lang="Sa-Ltn"> Candradatta</term>
+                            <term type="definition">A king in an age prior to that of the Buddha Śākyamuni.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="person" xml:id="UT22084-068-010-95">
+                            <term>Glorious Blooming Flower of Precious Qualities</term>
+                            <term xml:lang="Bo-Ltn">yon tan rin po che’i me tog kun du rgyas pa’i gzi brjid </term>
+                            <term xml:lang="bo">ཡོན་ཏན་རིན་པོ་ཆེའི་མེ་ཏོག་ཀུན་དུ་རྒྱས་པའི་གཟི་བརྗིད།</term>
+                            <term xml:lang="Sa-Ltn"/>
+                            <term type="definition">A great bodhisattva.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="person" xml:id="UT22084-068-010-96">
+                            <term>Intelligent Light of Insight Displaying Eloquence</term>
+                            <term xml:lang="Bo-Ltn">shes rab kyi snang bas stobs pa bstan pa’i blo gros </term>
+                            <term xml:lang="bo">ཤེས་རབ་ཀྱི་སྣང་བས་སྟོབས་པ་བསྟན་པའི་བློ་གྲོས།</term>
+                            <term xml:lang="Sa-Ltn"/>
+                            <term type="definition">A great bodhisattva.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="person" xml:id="UT22084-068-010-97">
+                            <term>Jinamitra </term>
+                            <term xml:lang="Bo-Ltn">dzi na mi tra </term>
+                            <term xml:lang="bo">ཛི་ན་མི་ཏྲ།</term>
+                            <term xml:lang="Sa-Ltn">Jinamitra</term>
+                            <term type="definition">An Indian Kashmiri preceptor who was resident in Tibet during the late eighth and early ninth
+                                centuries. He worked with several Tibetan translators on the translation of various sūtras. He is also the author of
+                                the <title xml:lang="Sa-Ltn">
+                                    <ref rend="pending" target="https://read.84000.co/translation/toh4233.html">Nyāya­bindu­piṇḍārtha</ref>
+                                </title>, which is contained in the Tibetan Tengyur (<foreign xml:lang="Bo-Ltn" type="term">bstan ’gyur</foreign>) collection.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="person" xml:id="UT22084-068-010-98">
+                            <term>Light of Wisdom</term>
+                            <term xml:lang="Bo-Ltn">ye shes kyi ’od </term>
+                            <term xml:lang="bo">ཡེ་ཤེས་ཀྱི་འོད།</term>
+                            <term xml:lang="Sa-Ltn"/>
+                            <term type="definition">A great bodhisattva.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="person" xml:id="UT22084-068-010-99">
+                            <term>Prajñāvarman</term>
+                            <term xml:lang="Bo-Ltn">pradz+nyA war+ma </term>
+                            <term xml:lang="bo">པྲཛྙཱ་ཝརྨ།</term>
+                            <term xml:lang="Sa-Ltn">Prajñāvarman</term>
+                            <term type="definition">An Indian Bengali preceptor resident in Tibet during the late eighth and early ninth centuries.
+                                Arriving in Tibet by invitation from the Tibetan king, he assisted in the translation of numerous canonical
+                                scriptures. He is also the author of a few philosophical commentaries contained in the Tibetan Tengyur (<foreign xml:lang="Bo-Ltn" type="term">bstan ’gyur</foreign>) collection.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="person" xml:id="UT22084-068-010-100">
+                            <term>Pratibhānakūṭa</term>
+                            <term xml:lang="Bo-Ltn">spobs pa brtsegs pa </term>
+                            <term xml:lang="bo">སྤོབས་པ་བརྩེགས་པ།</term>
+                            <term xml:lang="Sa-Ltn">Pratibhānakūṭa</term>
+                            <term type="definition">A great bodhisattva.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="person" xml:id="UT22084-068-010-101">
+                            <term>Renowned Blooming Flower of Limitless Precious Qualities</term>
+                            <term xml:lang="Bo-Ltn">yon tan rin po che mtha’ yas pa’i me tog kun du rgyas pa’i rnam par sgrags pa grags pa </term>
+                            <term xml:lang="bo">ཡོན་ཏན་རིན་པོ་ཆེ་མཐའ་ཡས་པའི་མེ་ཏོག་ཀུན་དུ་རྒྱས་པའི་རྣམ་པར་སྒྲགས་པ་གྲགས་པ།</term>
+                            <term xml:lang="Sa-Ltn"/>
+                            <term type="definition">A great bodhisattva.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="person" xml:id="UT22084-068-010-102">
+                            <term>Renowned Brilliant Light</term>
+                            <term xml:lang="Bo-Ltn">’od kyi gzi brjid rnam par bsgrags pa grags pa </term>
+                            <term xml:lang="bo">འོད་ཀྱི་གཟི་བརྗིད་རྣམ་པར་བསྒྲགས་པ་གྲགས་པ།</term>
+                            <term xml:lang="Sa-Ltn"/>
+                            <term type="definition">A great bodhisattva.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="person" xml:id="UT22084-068-010-103">
+                            <term>Roar of Vision</term>
+                            <term xml:lang="Bo-Ltn">rnam par gzigs pa’i nga ro </term>
+                            <term xml:lang="bo">རྣམ་པར་གཟིགས་པའི་ང་རོ།</term>
+                            <term xml:lang="Sa-Ltn"/>
+                            <term type="definition">The name of a thus-gone one in a world system called Mirage that existed thirty eons ago.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="person" xml:id="UT22084-068-010-104">
+                            <term>Roaring Thunder Cloud from Brahmā</term>
+                            <term xml:lang="Bo-Ltn">tshangs pa las byung ba ’brug dbyangs sprin gyi nga ro </term>
+                            <term xml:lang="bo">ཚངས་པ་ལས་བྱུང་བ་འབྲུག་དབྱངས་སྤྲིན་གྱི་ང་རོ།</term>
+                            <term xml:lang="Sa-Ltn"/>
+                            <term type="definition">A great bodhisattva.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="person" xml:id="UT22084-068-010-105">
+                            <term>Undaunted</term>
+                            <term xml:lang="Bo-Ltn">bag tsha ba med par gnas pa </term>
+                            <term xml:lang="bo">བག་ཚ་བ་མེད་པར་གནས་པ།</term>
+                            <term xml:lang="Sa-Ltn"/>
+                            <term type="definition">A great bodhisattva.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="person" xml:id="UT22084-068-010-106">
+                            <term>Vanquisher of the Darkness of Sorrow</term>
+                            <term xml:lang="Bo-Ltn">mya ngan gyi mun pa thams cad nges par ’joms pa </term>
+                            <term xml:lang="bo">མྱ་ངན་གྱི་མུན་པ་ཐམས་ཅད་ངེས་པར་འཇོམས་པ།</term>
+                            <term xml:lang="Sa-Ltn"/>
+                            <term type="definition">A great bodhisattva.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="person" xml:id="UT22084-068-010-107">
+                            <term>Yeshé Dé</term>
+                            <term xml:lang="Bo-Ltn">ye shes sde </term>
+                            <term xml:lang="bo">ཡེ་ཤེས་སྡེ།</term>
+                            <term xml:lang="Sa-Ltn"/>
+                            <term type="definition">A prolific Tibetan translator active during the late eighth and early ninth centuries.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="place" xml:id="UT22084-068-010-108">
+                            <term>Mirage</term>
+                            <term xml:lang="Bo-Ltn">smig sgyu can </term>
+                            <term xml:lang="bo">སྨིག་སྒྱུ་ཅན།</term>
+                            <term xml:lang="Sa-Ltn"/>
+                            <term type="definition">A world system that existed thirty eons ago.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="place" xml:id="UT22084-068-010-109">
+                            <term>Rājagṛha</term>
+                            <term xml:lang="Bo-Ltn">rgyal po’i khab </term>
+                            <term xml:lang="bo">རྒྱལ་པོའི་ཁབ།</term>
+                            <term xml:lang="Sa-Ltn">Rājagṛha</term>
+                            <term type="definition">The ancient capital of Magadha; the site where many Great Vehicle sūtras take place.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="place" xml:id="UT22084-068-010-110">
+                            <term>Vulture Peak</term>
+                            <term xml:lang="Bo-Ltn">bya rgod kyi phung po </term>
+                            <term xml:lang="bo">བྱ་རྒོད་ཀྱི་ཕུང་པོ།</term>
+                            <term xml:lang="Sa-Ltn">Gṛdhrakūṭa</term>
+                            <term type="definition">A mountain near Rājagṛha (modern Rajgir) where many Great Vehicle teachings were delivered by the
+                                Buddha Śākyamuni.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-068-010-122">
+                            <term>nāga</term>
+                            <term xml:lang="Bo-Ltn">klu </term>
+                            <term xml:lang="bo">ཀླུ།</term>
+                            <term xml:lang="Sa-Ltn">nāga</term>
+                            <term type="definition">A semidivine class of beings who live in subterranean aquatic environments and who are known to
+                                hoard wealth and esoteric teachings. They are associated with snakes and serpents.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-068-010-123">
+                            <term>garuḍa</term>
+                            <term xml:lang="Bo-Ltn">nam mkha’ lding </term>
+                            <term xml:lang="bo">ནམ་མཁའ་ལྡིང་།</term>
+                            <term xml:lang="Sa-Ltn">garuḍa</term>
+                            <term type="definition">A kind of semidivine bird. They are traditionally enemies of the nāgas. In the Vedas, they are
+                                said to have brought nectar from the heavens to earth.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-068-010-124">
+                            <term>five aggregates</term>
+                            <term xml:lang="Bo-Ltn">phung po lnga</term>
+                            <term xml:lang="bo">ཕུང་པོ་ལྔ།</term>
+                            <term xml:lang="Sa-Ltn">pañcaskandha</term>
+                            <term type="definition">The basic components out of which the world and the personal self are formed, usually listed as a
+                                set of five: form, feeling, perception, formation, and consciousness.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-068-010-125">
+                            <term>five perfections</term>
+                            <term xml:lang="Bo-Ltn">pha rol tu phyin pa lnga</term>
+                            <term xml:lang="bo">ཕ་རོལ་ཏུ་ཕྱིན་པ་ལྔ།</term>
+                            <term xml:lang="Sa-Ltn">pañcapāramitā</term>
+                            <term type="definition">Generosity, discipline, patient acceptance, diligence, and concentration: the six perfections excluding the perfection of insight.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-068-010-126">
+                            <term>asura</term>
+                            <term xml:lang="Bo-Ltn">lha ma yin</term>
+                            <term xml:lang="bo">ལྷ་མ་ཡིན།</term>
+                            <term xml:lang="Sa-Ltn">asura</term>
+                            <term type="definition">One of the six classes of living beings, asuras 
+                                are sometimes included among the gods and sometimes among the
+                                animals. They are engendered and dominated by envy, ambition, and hostility and are metaphorically described as being
+                                incessantly embroiled in disputes with the gods (<foreign xml:lang="Sa-Ltn">devas</foreign>). They are frequently
+                                portrayed in brahmanical mythology as having a disruptive effect on cosmological and social harmony.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-068-010-127">
+                            <term>gandharva</term>
+                            <term xml:lang="Bo-Ltn">dri za </term>
+                            <term xml:lang="bo">དྲི་ཟ།</term>
+                            <term xml:lang="Sa-Ltn">gandharva</term>
+                            <term type="definition">A class of semidivine beings sometimes known as “celestial musicians.”</term>
+                        </gloss>
+                    </item>
+                </list>
+            </div>
+        </back>
+    </text>
+</TEI>
