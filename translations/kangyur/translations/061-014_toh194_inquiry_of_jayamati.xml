@@ -23,7 +23,7 @@
     <consultant role="projectManager" ref="contributors.xml#person-207">James B. Apple Ph.D.</consultant>
             </titleStmt>
             <editionStmt>
-                <edition>v 1.15.5 <date>2019</date>
+                <edition>v 1.15.6 <date>2021</date>
                 </edition>
             </editionStmt>
             <publicationStmt status="1">
@@ -55,7 +55,7 @@
             
             </sourceDesc>
             <notesStmt>
-                <note type="lastUpdated" date-time="2021-01-08T10:33:22.668Z" user="admin">08/01/2021 10:33:22</note>
+                <note type="lastUpdated" date-time="2021-04-13T16:30:24.061Z" user="admin">13/04/2021 16:30:24</note>
             <note type="updated" update="text-version" value="v 1.12" date-time="2019-03-14T12:06:03.658Z" user="john">v 1.12 2016</note>
             <note type="updated" update="text-version" value="v 1.14" date-time="2019-06-18T16:19:12.035Z" user="celso">v 1.14 2019</note>
                 <note type="updated" update="text-version" value="v 1.15" date-time="2019-06-21T14:36:09.733Z" user="celso">v 1.15 2019</note>
@@ -64,6 +64,7 @@
     <note type="updated" update="text-version" value="1.15.3" date-time="2020-09-02T20:04:51.789Z" user="laura">minor edit to title tag (Sa-Ltn–en)</note>
     <note type="updated" update="text-version" value="1.15.4" date-time="2020-11-23T13:57:44.998Z" user="admin">Auto (TEI migration 2.0.0)</note>
     <note type="updated" update="text-version" value="1.15.5" date-time="2020-12-11T14:06:50.919Z" user="admin">Auto (TEI migration 2.1.5)</note>
+    <note type="updated" update="text-version" value="1.15.6" date-time="2021-04-13T16:30:21.1Z" user="celso">fixed mislabled xml:lang on chinese, added pending links</note>
             </notesStmt>
         </fileDesc>
     </teiHeader>
@@ -182,8 +183,9 @@
                     <milestone unit="chunk" xml:id="UT22084-061-014-8"/>
                     <p tid="10">Be that as it may, the doctrinal content of the <title xml:lang="Sa-Ltn">Jaya­mati­paripṛcchā</title>, including all nineteen prescriptions found among vulgate Tibetan
                         Kangyurs, is actually contained within the much older version of Kumārajīva’s early fifth century Chinese
-                        translation of the <title xml:lang="Sa-Ltn">Śūraṃgama­samādhi­sūtra</title>, the <title xml:lang="Zh-Ltn">Shoulengyan sanmei jing</title>, 首楞嚴三昧經 (Taishō. no. 642, 15), as well as the later ninth century
-                        Tibetan translation of the <title xml:lang="Sa-Ltn">Śūraṃgama­samādhi­sūtra</title>. This intertextual
+                        translation of the <title xml:lang="Sa-Ltn">Śūraṃgama­samādhi­sūtra</title>, the <title xml:lang="Zh-Ltn">Shoulengyan sanmei jing</title>, <title xml:lang="zh">首楞嚴三昧經</title> (Taishō. no. 642, 15), as well as the later ninth century
+                        Tibetan translation of the <title xml:lang="Sa-Ltn">Śūraṃgama­samādhi­sūtra</title>
+                        <ref rend="pending" target="https://read.84000.co/translation/toh132.html" inst="add note"/>. This intertextual
                         relation between the <title xml:lang="Sa-Ltn">Jaya­mati­paripṛcchā­sūtra</title> and <title xml:lang="Sa-Ltn">Śūraṃgama­samādhi­sūtra</title> has not been noticed before, either by traditional
                         Buddhist scholars or by modern Buddhist studies scholars. Versions in French and English of the
                         corresponding content are located in section 153 of Étienne Lamotte’s translation of the <title xml:lang="Sa-Ltn">Śūraṃgama­samādhi­sūtra</title>,<note place="end" xml:id="UT22084-061-014-79">Lamotte, French (1965) pp 255-6; English (1998), pp 225-6.</note> under
@@ -198,7 +200,8 @@
                         prescriptions are delivered by the Buddha to the <foreign xml:lang="Sa-Ltn" type="term">bodhisatva</foreign> Jayamati. The
                             <title xml:lang="Sa-Ltn">Śūraṃgama­samādhi­sūtra</title>, on the other hand, attributes the
                         prescriptions to Jayamati. After Jayamati proclaims the nineteen prescriptions in the <title xml:lang="Sa-Ltn">Śūraṃgama­samādhi­sūtra</title>, the Buddha responds to Jayamati, corresponding to
-                        section 154 of Lamotte’s <title xml:lang="Sa-Ltn">Śūraṃgama­samādhi­sūtra</title> translation,<note place="end" xml:id="UT22084-061-014-80">Lamotte (1998), pp 226-7.</note> with a
+                        section 154 of Lamotte’s <title xml:lang="Sa-Ltn">Śūraṃgama­samādhi­sūtra</title> translation,<note place="end" xml:id="UT22084-061-014-80">Lamotte (1998), pp 226-7.<ref rend="pending" target="https://read.84000.co/translation/toh132.html" inst="locate, edit note as appropriate"/>
+                        </note> with a
                         proclamation advocating the practice of the <title xml:lang="Sa-Ltn">Śūraṃgama­samādhi</title>,
                         emphasizing how this <foreign type="term" xml:lang="Sa-Ltn">samādhi</foreign> encompasses and goes beyond
                         the qualities that the bodhisatva Jayamati had declared.</p>
@@ -217,8 +220,8 @@
                         the <title xml:lang="Sa-Ltn">Śūraṃgama­samādhi­sūtra</title>. Most modern scholars theorize that the
                             <title xml:lang="Sa-Ltn">Śūraṃgama­samādhi­sūtra</title> is one of the oldest Mahāyāna sūtras<note place="end" xml:id="UT22084-061-014-81">Lamotte (1998), p 41.</note> due to its listing in
                         Chinese catalogs as being translated several times before Kumārajīva’s fifth century Chinese version,
-                        including the non-extant second century <title xml:lang="Zh-Ltn">Shoulengyan jing</title>, 首楞嚴經, of Lokakṣema
-                        (支讖, 185 c.e.) and the lost third century translation of Zhi Qian (支謙).<note place="end" xml:id="UT22084-061-014-82">See Hureau (2010), p 1224, and Nattier (2008), p 75.</note> Although we
+                        including the non-extant second century <title xml:lang="Zh-Ltn">Shoulengyan jing</title>, <title xml:lang="zh">首楞嚴經</title>, of Lokakṣema
+                        (<foreign xml:lang="zh">支讖</foreign>, 185 c.e.) and the lost third century translation of Zhi Qian (<foreign xml:lang="zh">支謙</foreign>).<note place="end" xml:id="UT22084-061-014-82">See Hureau (2010), p 1224, and Nattier (2008), p 75.</note> Although we
                         are unable to verify that these early, but lost, Chinese versions included the section that corresponds
                         with the <title xml:lang="Sa-Ltn">Jaya­mati­paripṛcchā­sūtra</title>, we can still infer that the content
                         of the <title xml:lang="Sa-Ltn">Jaya­mati­paripṛcchā­sūtra</title> with its nineteen prescriptions must go
@@ -311,11 +314,12 @@
                         khang (China Tibetology Publishing House), 2006–9, vol. 61 (mdo sde, tsa), pp. 681-683.</bibl>
                     <bibl xml:id="UT22084-061-014-18">
                         <title xml:lang="Sa-Ltn">Śūraṃgama­samādhi­nāma­mahā­yāna­sūtra</title>:<lb/>
-                        <title xml:lang="zh">Shoulengyan sanmei jing</title>, 首楞嚴三昧經 (Taishō 642, 15), translated by Kumārajīva
+                        <title xml:lang="Zh-Ltn">Shoulengyan sanmei jing</title>, <title xml:lang="zh">首楞嚴三昧經</title> (Taishō 642, 15), translated by Kumārajīva
                         (402-412 c.e.). <lb/>
                         <title xml:lang="Bo-Ltn">’phags pa dpa’ bar ’gro ba’i ting nge ’dzin zhes bya ba theg pa chen po’i
                             mdo</title>, Toh. 132, translated by Śākyaprabha and Ratnarakṣita, Degé Kangyur, vol. 55 (mdo sde,
-                        da), folios 253b-316b. For translations, see Lamotte 1965, 1998.</bibl>
+                        da), folios 253b-316b. For translations, see Lamotte 1965, 1998.<ref rend="pending" target="https://read.84000.co/translation/toh132.html" inst="write 'see ___ below', and add to div 'modern sources'"/>
+                    </bibl>
                 </div>
                 <div type="section" xml:id="UT22084-061-014-listBibl-2">
                     <head type="section" tid="30">Tibetan Indigenous Sources</head>
