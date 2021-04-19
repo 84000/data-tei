@@ -21,10 +21,10 @@
                 <editor role="reviser" ref="contributors.xml#person-50">Andreas Doctor</editor>
                 <editor role="TEImarkupEditor" ref="contributors.xml#person-306">Simeon Joffe</editor>
                 <consultant role="dharmaMaster" ref="contributors.xml#person-40">Chökyi Nyima Rinpoche</consultant>
-    <consultant role="projectManager" ref="contributors.xml#person-50">Dr. Andreas Doctor</consultant>
+                <consultant role="projectManager" ref="contributors.xml#person-50">Dr. Andreas Doctor</consultant>
             </titleStmt>
             <editionStmt>
-                <edition>v 2.28.6 <date>2021</date>
+                <edition>v 2.28.7 <date>2021</date>
                 </edition>
             </editionStmt>
             <publicationStmt status="1">
@@ -66,7 +66,7 @@
 
             </sourceDesc>
             <notesStmt>
-                <note type="lastUpdated" date-time="2021-02-02T02:40:19.085Z" user="admin">02/02/2021 02:40:19</note>
+                <note type="lastUpdated" date-time="2021-04-19T17:55:22.496Z" user="admin">19/04/2021 17:55:22</note>
             <note type="updated" update="text-version" value="v 2.2" date-time="2019-06-15T08:48:11.464Z" user="john">v 2.2 2016</note>
             <note type="updated" update="text-version" value="v 2.21" date-time="2019-06-15T17:07:15.498Z" user="celso">v 2.21 2019</note>
                 <note type="updated" update="text-version" value="v 2.22" date-time="2019-06-21T14:48:33.698Z" user="celso">v 2.22 2019</note>
@@ -85,6 +85,7 @@
     <note type="updated" update="text-version" value="2.28.4" date-time="2020-11-23T14:16:59.523Z" user="admin">Auto (TEI migration 2.0.0)</note>
     <note type="updated" update="text-version" value="2.28.5" date-time="2020-12-11T13:27:29.626Z" user="admin">Auto (TEI migration 2.1.5)</note>
     <note type="updated" update="text-version" value="2.28.6" date-time="2021-02-02T02:40:15.821Z" user="celso">updated quote style in PDFs</note>
+    <note type="updated" update="text-version" value="2.28.7" date-time="2021-04-19T17:55:19.213Z" user="celso">Added some &lt;ptr&gt;s to citations in intro, added pending links</note>
             </notesStmt>
         </fileDesc>
     </teiHeader>
@@ -195,9 +196,9 @@ Appendix: Sanskrit text-->
                     <milestone unit="chunk" xml:id="UT22084-080-015-6"/>
                     <p tid="8">The CMT appears to have drawn on a number of earlier scriptures,
                         including the <title xml:lang="Sa-Ltn">Guhya­samāja­tantra</title> (Toh
-                        442), the <title xml:lang="Sa-Ltn">He­vajra­tantra</title> (Toh 417), the
-                            <title xml:lang="Sa-Ltn">Siddhaika­vīra­tantra</title> (Toh 544),<note place="end" xml:id="UT22084-080-015-2142">Cf. Dharmachakra
-                            (2016).</note> and the <title xml:lang="Sa-Ltn">Citta­viśuddhi­prakaraṇa</title> of Āryadeva (Toh 1804). In turn, it
+                        442)<ref rend="pending" target="https://read.84000.co/translation/toh442.html" inst="add note, add bibl"/>, the <title xml:lang="Sa-Ltn">He­vajra­tantra</title> (Toh 417),<ref rend="pending" target="https://read.84000.co/translation/toh417.html" inst="add note, add bibl"/> the
+                        <title xml:lang="Sa-Ltn">Siddhaika­vīra­tantra</title> (Toh 544),<note place="end" xml:id="UT22084-080-015-2142">Cf. <ref target="https://read.84000.co/translation/toh544.html">Dharmachakra
+                                (2016)</ref>.</note> and the <title xml:lang="Sa-Ltn">Citta­viśuddhi­prakaraṇa</title> of Āryadeva (Toh 1804).<ref rend="pending" target="https://read.84000.co/translation/toh1804.html" inst="add note, add bibl"/> In turn, it
                         influenced other works, such as the <title xml:lang="Sa-Ltn">Vidyā­dhara­vinoda­tantra</title>.<note place="end" xml:id="UT22084-080-015-2143">Cf. Isaacson (2006).</note>
                         However, among all the works devoted to the deity Caṇḍa­mahā­roṣaṇa, the CMT
                         is unquestionably the most important. Other works centered on this deity
@@ -213,8 +214,9 @@ Appendix: Sanskrit text-->
                         name, Acala, he has a tantra devoted to himself, the <title xml:lang="Sa-Ltn">Acalakalpa</title>. This is one of the core
                         Kriyātantras of the Tathāgatakula group, predating the CMT by a few or even
                         several hundred years. The name Acala is also found in the <title xml:lang="Sa-Ltn">Vairocanābhi­sambodhi</title>
-                        <note place="end" xml:id="UT22084-080-015-2145">Cf. Isaacson
-                            (2010).</note> (Toh 494), one of the two known Caryātantra texts extant
+                        (Toh 494),<note place="end" xml:id="UT22084-080-015-2145">Cf. Isaacson
+                            (2010).<ref rend="pending" inst="add bibl" target="https://read.84000.co/translation/toh494.html"/>
+                        </note> one of the two known Caryātantra texts extant
                         in Sanskrit.<note place="end" xml:id="UT22084-080-015-2146">The
                             Tibetan Kangyur contains eight Caryātantras, Toh 494–501.</note>
                         Although the cult of this deity under the name Caṇḍa­mahā­roṣaṇa was more or
@@ -308,7 +310,7 @@ Appendix: Sanskrit text-->
                             <l>By passion, passion is killed; </l>
                             <l>A conflagration is killed by fire.</l>
                             <l>One should destroy poison with poison,</l>
-                            <l>Applying the instructions. (CMT, 12.6)</l>
+                            <l>Applying the instructions. (CMT, <ptr target="#UT22084-080-015-454"/><!--12.6-->)</l>
                         </lg>
                     </q>
                     <milestone unit="chunk" xml:id="UT22084-080-015-13"/>
@@ -409,7 +411,8 @@ Appendix: Sanskrit text-->
                             <l>Women are heaven, women are the Dharma, </l>
                             <l>And women are truly the supreme austerity.</l>
                             <l>Women are the Buddha, women are the Saṅgha,</l>
-                            <l>Women are the <term>Perfection of Wisdom</term>‌. (CMT, 8.14)</l>
+                            <l>Women are the <term>Perfection of Wisdom</term>‌. (CMT, <!--8.14-->
+                                <ptr target="#UT22084-080-015-290"/>)</l>
                         </lg>
                     </q>
                     <milestone unit="chunk" xml:id="UT22084-080-015-19"/>
@@ -422,7 +425,8 @@ Appendix: Sanskrit text-->
                             <l>For a woman, the man is a deity;</l>
                             <l>For a man, the woman is a deity.</l>
                             <l>They should honor each other</l>
-                            <l>By uniting the vajra and the lotus. (CMT, 10.9)</l>
+                            <l>By uniting the vajra and the lotus. (CMT, <!--10.9-->
+                                <ptr target="#UT22084-080-015-350"/>)</l>
                         </lg>
                     </q>
                     <milestone unit="chunk" xml:id="UT22084-080-015-20"/>
@@ -7630,8 +7634,10 @@ Appendix: Sanskrit text-->
                         ‘Wheel of Life’ from a New Source.” <title xml:lang="en">Journal of the
                             Royal Asiatic Society of Great Britain and Ireland (New Series)</title>
                         29, no. 3 (July 1897), pp 463–70. </bibl>
-                    <bibl xml:id="UT22084-080-015-860">Dharmachakra Translation Committee. <title xml:lang="en">The Tantra of Siddhaikavīra</title> (Toh 544). 84000:
-                        Translating the Words of the Buddha, 2016. <ref target="http://read.84000.co/translation/UT22084-089-001.html">read.84000.co</ref>
+                    <bibl xml:id="UT22084-080-015-860">Dharmachakra Translation Committee. <title xml:lang="en">
+                            <ref target="http://read.84000.co/translation/UT22084-089-001.html">The Tantra of Siddhaikavīra</ref>
+                        </title> (Toh 544). 84000:
+                        Translating the Words of the Buddha, 2016.
                     </bibl>
                     <bibl xml:id="UT22084-080-015-861">Gäng, Peter, trans. <title xml:lang="de">Das
                             Tantra des Grausig-Groß-Schreklichen</title>. Berlin: Stechapfel,
