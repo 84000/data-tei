@@ -34,7 +34,7 @@
                 <sponsor ref="sponsors.xml#sponsor-2">George Gu, May E. Ho Gu, Likai Gu, Tiffany Tai, Lillian Gu, Jerry Yen, E. E. Ho, Minda and Miin Ho, Chung Da, and Beiying Ho</sponsor>
             </titleStmt>
             <editionStmt>
-                <edition>v 1.30.8 <date>2021</date>
+                <edition>v 1.30.9 <date>2021</date>
                 </edition>
             </editionStmt>
 <publicationStmt status="1">
@@ -69,7 +69,7 @@
                 </bibl>
             </sourceDesc>
            <notesStmt>
-               <note type="lastUpdated" date-time="2021-03-12T18:53:44.963Z" user="admin">12/03/2021 18:53:44</note>
+               <note type="lastUpdated" date-time="2021-04-22T15:42:09.286Z" user="admin">22/04/2021 15:42:09</note>
             <note type="updated" update="text-version" value="v 1.22" date-time="2019-03-14T11:09:33.397Z" user="john">v 1.22 2019</note>
             <note type="updated" update="text-version" value="v 1.23" date-time="2019-03-16T12:08:02.666Z" user="john">v 1.23 2019</note>
             <note type="updated" update="text-version" value="v 1.25" date-time="2019-05-08T10:40:36.639Z" user="mike">v 1.25 2019</note>
@@ -89,6 +89,7 @@
     <note type="updated" update="text-version" value="1.30.6" date-time="2021-01-04T22:34:33.637Z" user="laura">Updated colophon to Bandé</note>
     <note type="updated" update="text-version" value="1.30.7" date-time="2021-02-01T21:19:00.604Z" user="celso">individual liberation changed to "prātimokṣa</note>
     <note type="updated" update="text-version" value="1.30.8" date-time="2021-03-12T18:53:41.993Z" user="celso">Non-breaking spaces before dandas</note>
+    <note type="updated" update="text-version" value="1.30.9" date-time="2021-04-22T15:42:05.949Z" user="celso">added @xml:lang tag to  a few Chinese strings that were missing it</note>
             </notesStmt>
         </fileDesc>
     </teiHeader>
@@ -125,8 +126,8 @@
                         <title xml:lang="en">The Jewel Cloud</title> is a very rich and closely packed
                         Mahāyāna sūtra. Evidence of its authority in India can be found in many
                         philosophical commentaries; for example, it is
-                        cited three times in the <title xml:lang="Sa-Ltn">Sūtrasamuccaya</title> (Toh 3934), which is attributed to Nāgārjuna,
-                        and repeatedly throughout Śāntideva’s <title xml:lang="Sa-Ltn">Śikṣāsamuccaya</title> (Toh 3940). Citations and references,
+                        cited three times in the <title xml:lang="Sa-Ltn">Sūtrasamuccaya</title> (Toh 3934)<ref rend="pending" inst="add note" target="https://read.84000.co/translation/toh3934.html"/>, which is attributed to Nāgārjuna,
+                        and repeatedly throughout Śāntideva’s <title xml:lang="Sa-Ltn">Śikṣāsamuccaya</title> (Toh 3940)<ref rend="pending" inst="add note, there are also many citations in the notes we should consider adding cross refs for each but only if it seems reasonable and useful" target="https://read.84000.co/translation/toh3940.html"/>. Citations and references,
                         sometimes at central junctures, are also found in the works of authors such
                         as Bhāviveka (circa 500–78), Candrakīrti (seventh century), Śāntarakṣita
                         (725–88), and Kamalaśīla (eighth century).<note place="end" xml:id="UT22084-064-001-4"> For details
@@ -139,7 +140,7 @@
                         translation: Taishō 658, translated by Mandrasena in 503 <hi rend="small-caps">ce</hi>; Taishō 659,
                         translated by Maṇḍalasena and Saṅghabhara in the sixth century;<note place="end" xml:id="UT22084-064-001-5"> This attribution is tentative. Regarding Taishō 659,
                             Jonathan Silk (2010, p. 900) writes, “translated by *Maṇḍalasena
-                            (Mantuoluoxian 曼陀羅仙) and *Saṅghabhara (? Sengjiapoluo 僧伽婆羅).” </note>
+                            (Mantuoluoxian <foreign xml:lang="zh">曼陀羅仙</foreign>) and *Saṅghabhara (? Sengjiapoluo <foreign xml:lang="zh">僧伽婆羅</foreign>).” </note>
                         Taishō 660, translated by Dharmaruci in 693 <hi rend="small-caps">ce</hi>; and Taishō 489, translated
                         by Dharmarakṣa and Weijing in 1019–23 <hi rend="small-caps">ce</hi>. </p>
                     <milestone unit="chunk" xml:id="UT22084-064-001-6"/>
@@ -153,7 +154,9 @@
                         Tshalpa (<foreign xml:lang="Bo-Ltn" type="term">tshal pa</foreign>) group
                         (such as the Degé), the translators are listed as
                         Rinchen Tso and Chönyi Tsultrim,<note place="end" xml:id="UT22084-064-001-969">Chönyi Tsultrim was the translator of ten 
-                            or so important sūtras including the <title xml:lang="Sa-Ltn">Aṣṭa­sāhasrikā­prajñā­pāramitā</title> (Toh 12), 
+                            or so important sūtras including the <title xml:lang="Sa-Ltn">
+                                <ref rend="pending" target="https://read.84000.co/translation/toh12.html" inst="add bibl">Aṣṭa­sāhasrikā­prajñā­pāramitā</ref>
+                            </title> (Toh 12), 
                             the <title xml:lang="Sa-Ltn">
                                 <ref target="http://read.84000.co/translation/toh176.html">Samādhi­rāja</ref>
                             </title> 
@@ -164,7 +167,9 @@
                                 <ref target="http://read.84000.co/translation/toh179.html">Saṃvṛti­paramārtha­satya­nirdeśa</ref>
                             </title> 
                             (Toh 179); Rinchen Tso is credited as having translated, apart from <title xml:lang="en">The Jewel
-                                Cloud</title>, only one other sūtra, the <title xml:lang="Sa-Ltn">Sarva­dharma­pravṛtti­nirdeśa</title> (Toh
+                                Cloud</title>, only one other sūtra, the <title xml:lang="Sa-Ltn">
+                                <ref rend="pending" target="https://read.84000.co/translation/toh180.html" inst="add bibl">Sarva­dharma­pravṛtti­nirdeśa</ref>
+                            </title> (Toh
                             180).</note> while Kangyurs of the Thempangma (<foreign xml:lang="Bo-Ltn" type="term">them spangs ma</foreign>) line, instead of Rinchen Tso, name “the great editor and Lotsawa, Bandé Vairocanarakṣita.”<note place="end" xml:id="UT22084-064-001-959">
                             In this context, referring almost certainly to the great eighth–ninth century Tibetan translator (<foreign xml:lang="Bo-Ltn">lo chen</foreign>) Vairotsana. There is another, later Vairocanarakṣita, a twelfth century Indian scholar and yogi who spent his later years in Tibet, introducing there and translating mainly tantric and Mahāmudrā texts. He was not a contemporary of Chönyi Tsultrim and as an Indian would not have been referred to as <foreign xml:lang="Bo-Ltn">zhu chen lo tsa ba</foreign>.</note> Moreover, whereas the colophons of the
                                 Tshalpa group state that the translators “translated, edited, and finalized” the
@@ -185,7 +190,9 @@
                             of <title xml:lang="en">The Jewel Cloud</title> in the compilation of 
                             the <title xml:lang="Sa-Ltn">Mahāvyutpatti</title>, see Pagel 2007. See also Scherrer-Schaub
                             2002, especially pp. 302–4. The
-                                <title xml:lang="Sa-Ltn">Mahāvyutpatti</title> is included in the
+                            <title xml:lang="Sa-Ltn">
+                                <ref rend="pending" target="https://read.84000.co/translation/toh4346.html">Mahāvyutpatti</ref>
+                            </title> is included in the
                             Tibetan Tengyur (Toh 4346). </note> For several sets of qualities and names listed in the sūtra’s introduction (<ptr target="#UT22084-064-001-33"/> to <ptr target="#UT22084-064-001-35"/>) most of the items appear
                         in the <title xml:lang="Sa-Ltn">Mahāvyutpatti</title> almost precisely
                         in the same sequence. Several other lists, too, of dhāraṇīs, samādhis, etc., in
@@ -200,7 +207,9 @@
                         imperial decree, in the year 814 <hi rend="small-caps">ce</hi>, and these translators’ work on <title xml:lang="en">The Jewel Cloud</title>—whether it was being translated for the first time or, more likely,
                         an earlier translation was being revised—is explicitly stated to have coincided with the preparation of 
                         a companion text to the <title xml:lang="Sa-Ltn">Mahāvyutpatti</title> known as the <title xml:lang="en">Drajor Bampo Nyipa</title> (<title xml:lang="Bo-Ltn">sgra sbyor bam po gnyis
-                            pa</title>, or <title xml:lang="Sa-Ltn">Madhyavyutpatti</title>).<note place="end" xml:id="UT22084-064-001-970">Along with its specific mention of the translation and revision of <title xml:lang="en">The Jewel Cloud</title>, the introduction to the <title xml:lang="en">Drajor Bampo Nyipa</title> also mentions the <title xml:lang="Sa-Ltn">Laṅkāvātarasūtra</title>. The <title xml:lang="en">Drajor Bampo Nyipa</title> is included in the
+                            pa</title>, or <title xml:lang="Sa-Ltn">Madhyavyutpatti</title>).<note place="end" xml:id="UT22084-064-001-970">Along with its specific mention of the translation and revision of <title xml:lang="en">The Jewel Cloud</title>, the introduction to the <title xml:lang="en">Drajor Bampo Nyipa</title> also mentions the <title xml:lang="Sa-Ltn">Laṅkāvātarasūtra</title>. The <title xml:lang="en">
+                                <ref rend="pending" target="https://read.84000.co/translation/toh4347.html">Drajor Bampo Nyipa</ref>
+                            </title> is included in the
                                 Tibetan Tengyur (Toh 4347). </note> This was the manual of translation techniques and charter of officially sanctioned practice promulgated at the time, and in its
                         introduction both figures are listed by their Sanskrit names, Ratnarakṣita and Dharmatāśīla,
                         along with the honorific title of “Tibetan preceptors” (<foreign xml:lang="Bo-Ltn" type="term">bod kyi mkhan po</foreign>).<note place="end" xml:id="UT22084-064-001-971"> The dating of the <title xml:lang="en">Drajor Bampo Nyipa</title> is complex. Its final form corresponds to what is known as the third imperial decree, or “authoritative decision” (<foreign xml:lang="Bo-Ltn">bkas bcad</foreign>), of 814, but there was at least one earlier promulgation, and probably two, the second most likely between 783 and 795, and the first dating back as far as the middle of the eighth century or possibly even earlier. See Scherrer-Schaub 2002, pp. 292–3, 302–3, 327. </note> </p>
@@ -958,7 +967,7 @@
                         the discourses, who are the specialists in the discipline, and who are the
                         specialists in the lists?<note place="end" xml:id="UT22084-064-001-112"> The last three categories
                             indicate that certain members of the saṅgha focused on mastering a
-                            particular section (<foreign xml:lang="Bo-Ltn" type="term">piṭaka</foreign>) among the three sections of the Dharma (sūtra,
+                            particular section (<foreign xml:lang="Sa-Ltn" type="term">piṭaka</foreign>) among the three sections of the Dharma (sūtra,
                             vinaya, abhidharma). However, there is no passage corresponding to the third of these in the Buddha’s answers.</note>
                     </p>
                     <milestone unit="chunk" xml:id="UT22084-064-001-113"/>
@@ -1021,7 +1030,7 @@
                         the inhabitants of foreign cities and lands. Through this giving of the Dharma
                         they do not become arrogant.<note place="end" xml:id="UT22084-064-001-118"> This sentence 
                             seems to reflect the following citation from the sūtra presented in 
-                            the <title xml:lang="Sa-Ltn">Śikṣasamuccaya</title>: <foreign xml:lang="Bo-Ltn" type="quote">tena ca 
+                            the <title xml:lang="Sa-Ltn">Śikṣasamuccaya</title>: <foreign xml:lang="Sa-Ltn" type="quote">tena ca 
                                 dānena nonnato bhavati</foreign>. Mahoney’s edition
                             of the Sanskrit text of Śāntideva’s <title xml:lang="Sa-Ltn">Śikṣasamuccaya</title> (see bibliography) is the source
                             of all the citations from the sūtra subsequently presented in notes.
@@ -7297,26 +7306,31 @@
                         Buddhica, vol. I (St. Pétersbourg: Commissionnaires de l’Académie Impériale
                         des Sciences, 1897–1902)]. Oxford, North Canterbury: Indica et Buddhica,
                         2003. <ref target="http://gretil.sub.uni-goettingen.de/gretil/1_sanskr/6_sastra/3_phil/buddh/sanssr_au.htm">E-text input</ref> by Mirek Rozehnahl and Jens Braarvig. Accessed (2018) through
-                        GRETIL—Göttingen Register of Electronic Texts in Indian Languages. English translation: see Goodman, below.</bibl>
+                        GRETIL—Göttingen Register of Electronic Texts in Indian Languages. English translation: see Goodman, below.<ref rend="pending" target="https://read.84000.co/translation/toh3940.html" inst="add bibl to western translations"/>
+                    </bibl>
                 </div>
                 <div type="section" xml:id="UT22084-064-001-listBibl-2">
                     <head type="section" tid="718">Tibetan Secondary References</head>
                     <bibl xml:id="UT22084-064-001-972">
                         <title xml:lang="Sa-Ltn">Mahāvyutpatti</title> (Tib.
                         <title xml:lang="Bo-Ltn">[sgra] bye brag tu rtogs [par] byed [pa] chen po /mo</title>). Toh 4346. Degé Tengyur, vol.
-                        204 (lugs kyi bstan bcos, co), folios 1.a–131.a. See also Sakaki, and Braarvig, below.</bibl>
+                        204 (lugs kyi bstan bcos, co), folios 1.a–131.a. See also Sakaki, and Braarvig, below.<ref rend="pending" inst="add bibl to western translation" target="https://read.84000.co/translation/toh4346.html"/>
+                    </bibl>
                     <bibl xml:id="UT22084-064-001-973">
                         <title xml:lang="en">Drajor Bampo Nyipa</title> (<title xml:lang="Bo-Ltn">sgra sbyor bam po gnyis pa</title>, Skt. <title xml:lang="Sa-Ltn">Madhavyutpatti</title>). Toh 4347. Degé Tengyur, vol.
-                        204 (lugs kyi bstan bcos, co), folios 131.a–160.a. See also Braarvig, below.</bibl>
+                        204 (lugs kyi bstan bcos, co), folios 131.a–160.a. See also Braarvig, below.<ref rend="pending" inst="add bibl to western translation" target="https://read.84000.co/translation/toh4347.html"/>
+                    </bibl>
                     <bibl xml:id="UT22084-064-001-794">Butön Rinchen Drup (<foreign xml:lang="Bo-Ltn">bu ston rin chen grub</foreign>). <title xml:lang="Bo-Ltn">chos kyi ’byung gnas gsung  rab rin po che’i gter mdzod</title>. In: gsung ’bum (zhol par ma/ ldi lir bskyar par brgyab pa), vol 24 (ya), pp. 633–1055. New Delhi: International Academy of Indian Culture, 1965–1971. English translations: see Obermiller, and Stein and Zangpo, below. </bibl>
                     <bibl xml:id="UT22084-064-001-796">De’u José (<foreign xml:lang="Bo-Ltn">lde’u jo sras</foreign>). <title xml:lang="Bo-Ltn">lde’u chos ’byung</title>.
                         Lhasa: bod ljongs mi dmangs dpe skrun khang, 1987.</bibl>
                     <bibl xml:id="UT22084-064-001-792">Kamalaśīla. <title xml:lang="en">Stages of Meditation II</title> (Tib.
                             <title xml:lang="Bo-Ltn">sgom pa’i rim pa [bar ma]</title>, Skt. <title xml:lang="Sa-Ltn">Bhavanakrama</title>). Toh 3916. Degé Tengyur, vol.
-                        119 (dbu ma, ki), folios 42.a–55.b.</bibl>
+                        119 (dbu ma, ki), folios 42.a–55.b.<ref rend="pending" inst="add bibl to western translation" target="https://read.84000.co/translation/toh3916.html"/>
+                    </bibl>
                     <bibl xml:id="UT22084-064-001-793">———. <title xml:lang="en">Stages of Meditation III</title>. (Tib.
                             <title xml:lang="Bo-Ltn">sgom pa’i rim pa [tha ma]</title>, Skt. <title xml:lang="Sa-Ltn">Bhavanakrama</title>). Toh 3916. Degé Tengyur vol. 110
-                        (dbu ma, ki), folios 55.b–68.b.</bibl>
+                        (dbu ma, ki), folios 55.b–68.b.<ref rend="pending" inst="add bibl to western translation" target="https://read.84000.co/translation/toh3916.html"/>
+                    </bibl>
                     <bibl xml:id="UT22084-064-001-958">Kongtrul Lodrö Thaye (kong sprul blo gros
                             mtha’ yas).  <title xml:lang="Bo-Ltn">theg pa chen po rgyud bla
                             ma’i bstan bcos snying po’i don mngon sum lam gyi bshad pa srol dang
