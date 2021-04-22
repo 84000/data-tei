@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../../../schema/current/translation.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<tei:TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -32,7 +32,7 @@
                 <editor role="reviser" ref="contributors.xml#person-187">Steven Rhodes</editor>
             </titleStmt>
             <editionStmt>
-                <edition>v 1.0.8 <date>2021</date>
+                <edition>v 1.0.9 <date>2021</date>
                 </edition>
             </editionStmt>
             <publicationStmt status="1">
@@ -43,11 +43,11 @@
                 <availability>
                     <licence>
                         <graphic url="http://i.creativecommons.org/l/by-nc-nd/2.0/88x31.png"/>
-                        <tei:p>This work is provided under the protection of a Creative Commons CC
+                        <p>This work is provided under the protection of a Creative Commons CC
                             BY-NC-ND (Attribution - Non-commercial - No-derivatives) 3.0 copyright.
                             It may be copied or printed for fair use, but only with full
                             attribution, and not for commercial advantage or personal compensation.
-                            For full details, see the Creative Commons license.</tei:p>
+                            For full details, see the Creative Commons license.</p>
                     </licence>
                 </availability>
                 <idno xml:id="UT22084-072-036"/>
@@ -67,7 +67,7 @@
                 </bibl>
             </sourceDesc>
             <notesStmt>
-                <note type="lastUpdated" date-time="2021-02-04T21:29:39.651Z" user="admin">04/02/2021 21:29:39</note>
+                <note type="lastUpdated" date-time="2021-04-22T16:01:24.048Z" user="admin">22/04/2021 16:01:24</note>
 
                 <note type="updated" update="text-version" value="v 0.0.1" date-time="2019-12-20T12:56:48.575Z" user="admin">Automated version
                     increment</note>
@@ -100,6 +100,7 @@
     <note type="updated" update="text-version" value="1.0.6" date-time="2020-12-11T14:06:50.919Z" user="admin">Auto (TEI migration 2.1.5)</note>
     <note type="updated" update="text-version" value="1.0.7" date-time="2021-01-04T22:45:15.271Z" user="laura">Updated colophon and intro to Bandé</note>
     <note type="updated" update="text-version" value="1.0.8" date-time="2021-02-04T21:29:36.697Z" user="celso">fixed bad link</note>
+    <note type="updated" update="text-version" value="1.0.9" date-time="2021-04-22T16:01:20.858Z" user="celso">added @xml:lang tag to  a few Chinese strings that were missing it, removed namespace prefix "tei:" from some of the elements</note>
             </notesStmt>
         </fileDesc>
     </teiHeader>
@@ -108,7 +109,7 @@
             <div type="summary">
                 <head type="summary" tid="1">Summary</head>
                 <milestone unit="chunk" xml:id="UT22084-072-036-1"/>
-                <tei:p tid="2">
+                <p tid="2">
                     <title xml:lang="en">The Rite for the Protocols Associated with Carrying
                         the Ringing Staff</title> is a short text that deals with the practical
                     matters relating to the use of the mendicant’s staff known in Sanskrit as a
@@ -117,26 +118,26 @@
                     ceremoniously takes up the ringing staff in front of his monastic teacher. The
                     text then provides a list of twenty-five rules governing the proper use of the
                     staff. The rules stipulate how a Buddhist monk should or should not handle it in
-                    his daily life, especially when he goes on alms rounds and when he travels. </tei:p>
+                    his daily life, especially when he goes on alms rounds and when he travels. </p>
             </div>
             <div type="acknowledgment">
                 <head type="acknowledgment" tid="3">Acknowledgements</head>
                 <milestone unit="chunk" xml:id="UT22084-072-036-2"/>
-                <tei:p tid="4">This translation was produced by the Sarasvatī Translation Team. Its members
+                <p tid="4">This translation was produced by the Sarasvatī Translation Team. Its members
                     acknowledge the help of Peter Skilling, who provided copies of several
                     publications related to the ringing staff and made helpful comments on an
                     earlier version of this translation. They are grateful for the help provided by an
                     anonymous reviewer, a vinaya scholar. They also acknowledge with love and gratitude 
                     the privilege of having had, as team editor, Steven Rhodes, who passed 
-                    away in 2017.</tei:p>
-                <tei:p tid="53">The translation was completed under the patronage and supervision of
-                    84000: Translating the Words of the Buddha.</tei:p>
+                    away in 2017.</p>
+                <p tid="53">The translation was completed under the patronage and supervision of
+                    84000: Translating the Words of the Buddha.</p>
             </div>
             <div type="introduction">
                 <head type="introduction" tid="6">Introduction</head>
                 <div type="section" xml:id="UT22084-072-036-introduction-1">
                     <milestone unit="chunk" xml:id="UT22084-072-036-3"/>
-                    <tei:p tid="7">The renunciant’s staff is a religious implement shared by the ascetic
+                    <p tid="7">The renunciant’s staff is a religious implement shared by the ascetic
                         cultures of Brahmanism, Buddhism, Jainism, and other Indian traditions.<note place="end" xml:id="UT22084-072-036-4"> For references and a
                             survey of the renunciant’s staff in the Brahmanical tradition, see
                             Olivelle (2011), pp. 231–48.</note> The practice of ascetics carrying a
@@ -156,7 +157,7 @@
                             See also Buswell and Lopez (2014), s.v. “khakkhara”; Beer (2003), pp.
                             184–85; and <ref target="http://www.buddhism-dict.net/ddb/">Digital
                                 Dictionary of Buddhism</ref>, accessed June 10, 2016, s.v.
-                            “khakkhara”/“錫杖,” where references to Japanese and Chinese dictionaries
+                            “khakkhara”/“<foreign type="term" xml:lang="zh">錫杖</foreign>,” where references to Japanese and Chinese dictionaries
                             of Buddhism are provided.</note> The canonical Vinaya texts of the
                         Sarvāstivāda tradition, such as the <title xml:lang="Sa-Ltn">Vinayavastu</title> 
                         and the <title xml:lang="Sa-Ltn">Vinayasūtra</title> of Guṇaprabha, mention the
@@ -166,9 +167,9 @@
                             (2018), <title xml:lang="en">The Chapter on Going Forth</title>, 
                             <ref target="https://read.84000.co/translation/toh1-1.html#UT22084-001-001-2210">6.6</ref>.</note> 
                         These texts provide neither a focused discussion of the staff
-                        nor a list of rules governing its use. </tei:p>
+                        nor a list of rules governing its use. </p>
                     <milestone unit="chunk" xml:id="UT22084-072-036-8"/>
-                    <tei:p tid="8"> Two sūtras in the General Sūtra section of the Kangyur are focused
+                    <p tid="8"> Two sūtras in the General Sūtra section of the Kangyur are focused
                         on the single subject of the ringing staff. The 
                         <title xml:lang="en">
                             <ref target="https://read.84000.co/translation/UT22084-072-035.html">Sūtra
@@ -180,9 +181,9 @@
                             Associated with Carrying the Ringing Staff</title> (Toh 336), which is
                         translated in the following pages, sets forth a simple ritual for a monk to
                         receive a ringing staff along with twenty-five dharmas (<foreign xml:lang="Bo-Ltn" type="term">chos</foreign>), or rules, stipulating how
-                        the staff is to be properly utilized.</tei:p>
+                        the staff is to be properly utilized.</p>
                     <milestone unit="chunk" xml:id="UT22084-072-036-9"/>
-                    <tei:p tid="9">In most modern Buddhist cultures, the ringing staff has been reduced
+                    <p tid="9">In most modern Buddhist cultures, the ringing staff has been reduced
                         to a mere ritual artifact. From the contents of the twenty-five rules, it
                         appears that the use of the staff was once associated with several practical
                         purposes: (A) protection against animals (no. 1), (B) a walking aid (no. 2),
@@ -194,16 +195,16 @@
                         how the staff should and should not be used. We find in these rules a
                         concern for the positive image of the Buddhist saṅgha, as they also define
                         proper behavior surrounding a religious instrument that is recognized as
-                        symbolically powerful. </tei:p>
+                        symbolically powerful. </p>
                     <milestone unit="chunk" xml:id="UT22084-072-036-10"/>
-                    <tei:p tid="10">
+                    <p tid="10">
                         <title xml:lang="en">The Rite for the Protocols Associated with
                             Carrying the Ringing Staff</title> does not contain the common framework
                         expected of a text belonging to the sūtra genre. Rather, it looks like a
                         supplementary text dealing with practical matters. One single text in the
                         Taishō edition of the Chinese Tripiṭaka includes materials found in both Toh
                         335 and Toh 336. The <title xml:lang="Zh-Ltn">De daoti cheng xizhang
-                            jing</title> (得道梯橙錫杖經, Taishō 785) was translated in the Eastern Jin
+                            jing</title> (<title xml:lang="zh">得道梯橙錫杖經</title>, Taishō 785) was translated in the Eastern Jin
                         Dynasty (317–420 <hi rend="small-caps">ce</hi>). It contains a Chinese
                         version of the <title xml:lang="en">Sūtra on the Rattling Staff</title> that
                         concludes with the rejoicing of the teaching’s audience.<note place="end" xml:id="UT22084-072-036-11">Taishō 785 XVII 725a14.</note> It
@@ -220,9 +221,9 @@
                         the <title xml:lang="en">Sūtra on the Rattling Staff</title> as belonging to
                         the same text. At the same time, the translator of the Chinese version also
                         tells us that an independently circulated version of the twenty-five rules
-                        enjoyed canonical status. </tei:p>
+                        enjoyed canonical status. </p>
                     <milestone unit="chunk" xml:id="UT22084-072-036-13"/>
-                    <tei:p tid="11">Between the two lists of twenty-five rules in the Chinese, the list
+                    <p tid="11">Between the two lists of twenty-five rules in the Chinese, the list
                         in the appendix is closer to the list in the Tibetan translation. Although
                         significant differences remain, the list in the Chinese appendix and the
                         list in the Tibetan translation follow the same order with just one
@@ -249,9 +250,9 @@
                             the Ringing Staff</title> most likely based on the list in the Chinese
                         appendix. More research on the available Tibetan textual witnesses is
                         required before we can speak more conclusively about the nature of that
-                        dependence and the transmission of the Tibetan text.</tei:p>
+                        dependence and the transmission of the Tibetan text.</p>
                     <milestone unit="chunk" xml:id="UT22084-072-036-18"/>
-                    <tei:p tid="12">The list in the Chinese sūtra has an order and a structure of its
+                    <p tid="12">The list in the Chinese sūtra has an order and a structure of its
                             own,<note place="end" xml:id="UT22084-072-036-19"> The list
                             in the Chinese sūtra groups its items into a list of ten, which is then
                             followed by three lists of five items.</note> and several of its rules
@@ -263,10 +264,10 @@
                             Because they are difficult to interpret, items 3 and 19 of the list in
                             the Chinese sūtra are not discussed.</note> The list in the Chinese
                         sūtra is discussed only when it sheds light on the interpretation of the
-                        items in the other two lists.</tei:p>
+                        items in the other two lists.</p>
                     <milestone unit="chunk" xml:id="UT22084-072-036-21"/>
-                    <tei:p tid="13">The present translation is based on the Degé Kangyur, with reference
-                        to variants in other versions noted in the Comparative Edition (<foreign xml:lang="Bo-Ltn">dpe bsdur ma</foreign>). </tei:p>
+                    <p tid="13">The present translation is based on the Degé Kangyur, with reference
+                        to variants in other versions noted in the Comparative Edition (<foreign xml:lang="Bo-Ltn">dpe bsdur ma</foreign>). </p>
                 </div>
             </div>
         </front>
@@ -278,101 +279,101 @@
                     the Ringing Staff</head>
                 <div type="section" xml:id="UT22084-072-036-section-1">
                     <milestone unit="chunk" xml:id="UT22084-072-036-22"/>
-                    <tei:p tid="17">
+                    <p tid="17">
                         <ref cRef="F.274.a" type="folio" xml:id="UT22084-072-036-68"/> One who wishes to take up the
                         ringing staff <ref cRef="F.274.b" type="folio" xml:id="UT22084-072-036-69"/> should kneel before an
                         honorable one and say three times, “Honorable one, I request your attention.
                         Today, I, named so-and-so, request you, honorable one, to be my teacher for
-                        carrying the ringing staff.”</tei:p>
+                        carrying the ringing staff.”</p>
                     <milestone unit="chunk" xml:id="UT22084-072-036-23"/>
-                    <tei:p tid="18">The honorable one then says, “Pay attention. <term>Venerable one</term>, after
+                    <p tid="18">The honorable one then says, “Pay attention. <term>Venerable one</term>, after
                         generating the mind aspiring for unsurpassed awakening, will you take up the
-                        ringing staff and utilize it properly?</tei:p>
+                        ringing staff and utilize it properly?</p>
                     <milestone unit="chunk" xml:id="UT22084-072-036-24"/>
-                    <tei:p tid="19">“Do not hold it with dirty hands. When entering a dwelling of the
+                    <p tid="19">“Do not hold it with dirty hands. When entering a dwelling of the
                         saṅgha, do not rest it with its head and lower tip removed.<note place="end" xml:id="UT22084-072-036-25"> The Tibetan text permits more
                             than one reading. It can also be read, “When entering the dwelling of
                             the saṅgha, do not leave it with its head and lower tip sticking
                             out.”</note> When entering the homes of householders, point the lower
-                        tip behind you. </tei:p>
+                        tip behind you. </p>
                     <milestone unit="chunk" xml:id="UT22084-072-036-26"/>
-                    <tei:p tid="20"> “In the morning, when conditions are right for you to go to the
+                    <p tid="20"> “In the morning, when conditions are right for you to go to the
                         home of a householder to beg for alms, rattle the staff three times at their
                         door. If no one responds when you rattle it three times, you should rattle
                         it five times. If no one responds when you rattle it five times, you should
                         rattle it seven times. If no one responds when you rattle it seven times,
                         you should proceed to another household and rattle it seven times. If you
                         are satisfied after having gone to seven households, then in that case say
-                        three times, ‘I shall eat.’</tei:p>
+                        three times, ‘I shall eat.’</p>
                     <lb/>
                     <milestone unit="chunk" xml:id="UT22084-072-036-27"/>
-                    <tei:p tid="21">“There are twenty-five rules associated with carrying the rattling
-                        staff:</tei:p>
+                    <p tid="21">“There are twenty-five rules associated with carrying the rattling
+                        staff:</p>
                     <list type="section">
                         <item>
-                            <tei:p tid="28">1. “Carry it to guard against snakes on the
-                            ground.</tei:p>
+                            <p tid="28">1. “Carry it to guard against snakes on the
+                            ground.</p>
                         </item>
                         <item>
-                            <tei:p tid="29">2. “Carry it because you are elderly.<note place="end" xml:id="UT22084-072-036-28">Translated in accordance
+                            <p tid="29">2. “Carry it because you are elderly.<note place="end" xml:id="UT22084-072-036-28">Translated in accordance
                                     with the Yongle, Kangxi, and Choné editions, reading <foreign xml:lang="Bo-Ltn">rgas pa</foreign> instead of <foreign xml:lang="Bo-Ltn">rgal ba</foreign>.</note>
-                            </tei:p>
+                            </p>
                         </item>
                         <item>
-                            <tei:p tid="30">3. “Carry it to collect alms.</tei:p>
+                            <p tid="30">3. “Carry it to collect alms.</p>
                         </item>
 
                         <item>
-                            <tei:p tid="31">4. “Should you see a buddha image when entering or
+                            <p tid="31">4. “Should you see a buddha image when entering or
                                 exiting, make some sound with it.<note place="end" xml:id="UT22084-072-036-29">Taishō 785 XVII 725c10–11: <foreign xml:lang="zh" type="quote">為出入見佛像不得使頭有聲</foreign>. “Do not
                                     make any sound with its head when you see a buddha image at the
                                     time of exiting and entering.” The version in the Phukdrak
                                     Kangyur agrees with the Chinese here. It reads, “Should you see
                                     a buddha image when entering or exiting, do not make any sound
                                     with it.”</note>
-                            </tei:p>
+                            </p>
                         </item>
                         <item>
-                            <tei:p tid="32">5. “Do not go among the saṅgha while carrying a rattling
-                                staff.</tei:p>
+                            <p tid="32">5. “Do not go among the saṅgha while carrying a rattling
+                                staff.</p>
                         </item>
                         <item>
-                            <tei:p tid="33">6. “Do not walk about carrying a ringing staff after
-                                noon.</tei:p>
+                            <p tid="33">6. “Do not walk about carrying a ringing staff after
+                                noon.</p>
                         </item>
                         <item>
-                            <tei:p tid="34">7. “Do not rest it on your shoulders hanging on to its two
-                                ends.</tei:p>
+                            <p tid="34">7. “Do not rest it on your shoulders hanging on to its two
+                                ends.</p>
                         </item>
                         <item>
-                            <tei:p tid="35">8. “Do not carry it on your shoulders.<note place="end" xml:id="UT22084-072-036-30">Taishō 725c13: <foreign xml:lang="zh" type="quote">不得橫著膝上以懸兩頭</foreign>. “Do not
+                            <p tid="35">8. “Do not carry it on your shoulders.<note place="end" xml:id="UT22084-072-036-30">Taishō 725c13: <foreign xml:lang="zh" type="quote">不得橫著膝上以懸兩頭</foreign>. “Do not
                                     place it across your knees and hang things from its two
                                     ends.”</note>
-                            </tei:p>
+                            </p>
                         </item>
                         <item>
-                            <tei:p tid="36">9. “Do not turn it around with your hands.<note place="end" xml:id="UT22084-072-036-31">Translated in
+                            <p tid="36">9. “Do not turn it around with your hands.<note place="end" xml:id="UT22084-072-036-31">Translated in
                                     accordance with the Lithang, Narthang, Choné, and Zhol editions,
                                     reading <foreign xml:lang="Bo-Ltn">skyog pa</foreign> instead of
                                         <foreign xml:lang="Bo-Ltn">dkyog
                             pa</foreign>.</note>
-                            </tei:p>
+                            </p>
                         </item>
                         <item>
-                            <tei:p tid="37">10. “Do not go into toilets carrying a rattling
-                            staff.</tei:p>
+                            <p tid="37">10. “Do not go into toilets carrying a rattling
+                            staff.</p>
                         </item>
                         <item>
-                            <tei:p tid="38">11. “Do not follow the <term>preceptor</term> or other
+                            <p tid="38">11. “Do not follow the <term>preceptor</term> or other
                                 ordination masters when they are carrying ringing staffs.<note place="end" xml:id="UT22084-072-036-32">Taishō
                                     725c14–15: <foreign xml:lang="zh" type="quote">不得復持在三師前後﹐已杖出不得復杖隨</foreign>. “Do not carry the rattling
                                     staff in front of or behind the three masters of an ordination
                                     ceremony. When they leave with ringing staffs, do not carry your
                                     ringing staff and follow them.”</note>
-                            </tei:p>
+                            </p>
                         </item>
                         <item>
-                            <tei:p tid="39">12. “Do not take up a ringing staff and then follow a
+                            <p tid="39">12. “Do not take up a ringing staff and then follow a
                                 group of four or more persons carrying ringing staffs.<note place="end" xml:id="UT22084-072-036-33">Taishō
                                     725c16–17: <foreign xml:lang="zh" type="quote">若四人俱行﹐一人已持﹐不得復持隨</foreign>. “If four people are traveling
                                     together and one is already holding a ringing staff, do not
@@ -382,14 +383,14 @@
                                     it is not permissible for anyone but the elder to hold the
                                     ringing staff.”</note>
                                 <ref cRef="F.275.a" type="folio" xml:id="UT22084-072-036-70"/>
-                            </tei:p>
+                            </p>
                         </item>
                         <item>
-                            <tei:p tid="40">13. “Do not let your ringing staff be away from your body
-                                when visiting the home of a patron.</tei:p>
+                            <p tid="40">13. “Do not let your ringing staff be away from your body
+                                when visiting the home of a patron.</p>
                         </item>
                         <item>
-                            <tei:p tid="41">14. “Go to the door of a patron and rattle the staff three
+                            <p tid="41">14. “Go to the door of a patron and rattle the staff three
                                 times. If no one responds, you should rattle it five times. If no
                                 one responds when you rattle it five times, you should rattle it
                                 seven times. If no one responds when you rattle it seven times, you
@@ -397,32 +398,32 @@
                                     725c18–19: <foreign xml:lang="zh" type="quote">至人門戶時﹐當三抖擻﹐不出應當更至餘家</foreign>. “Rattle it three times at
                                     the door. If no one responds, you should proceed to another
                                     household.”</note>
-                            </tei:p>
+                            </p>
                         </item>
                         <item>
-                            <tei:p tid="42">15. “When the patron answers the door, lean the rattling
+                            <p tid="42">15. “When the patron answers the door, lean the rattling
                                 staff against your right arm and rest it there.<note place="end" xml:id="UT22084-072-036-35">Taishō 725c19–20:
                                         <foreign xml:lang="zh" type="quote">主人出﹐應當杖著左肘挾之</foreign>.
                                     “When the patron answers the door, you should clasp it in the
                                     crook of your left arm.”</note>
-                            </tei:p>
+                            </p>
                         </item>
                         <item>
-                            <tei:p tid="43">16. “Do not let it touch the ground when put in a
-                                dwelling.</tei:p>
+                            <p tid="43">16. “Do not let it touch the ground when put in a
+                                dwelling.</p>
                         </item>
                         <item>
-                            <tei:p tid="44">17. “Always put it by your bed.</tei:p>
+                            <p tid="44">17. “Always put it by your bed.</p>
                         </item>
                         <item>
-                            <tei:p tid="45">18. “Clean it from time to time.</tei:p>
+                            <p tid="45">18. “Clean it from time to time.</p>
                         </item>
                         <item>
-                            <tei:p tid="46">19. “Keep the head of the ringing staff
-                            straight.</tei:p>
+                            <p tid="46">19. “Keep the head of the ringing staff
+                            straight.</p>
                         </item>
                         <item>
-                            <tei:p tid="47">20. “During alms rounds, do not allow it to be taken away
+                            <p tid="47">20. “During alms rounds, do not allow it to be taken away
                                 from you by novice monks or householders.<note place="end" xml:id="UT22084-072-036-36">The Tibetan text permits
                                     more than one reading. It can also be read as, “When going for
                                     alms rounds, do not be parted from a novice monk or a
@@ -432,29 +433,29 @@
                                     found in the Chinese sūtra states the preference for receiving
                                     the ringing staff from a novice monk if a novice monk is
                                     available. Taishō 725c25–26: <foreign xml:lang="zh" type="quote">杖欲出時當從沙彌邊受﹐若無沙彌白衣亦得</foreign>. </note>
-                            </tei:p>
+                            </p>
                         </item>
                         <item>
-                            <tei:p tid="48">21. “Take the ringing staff with you when spending the
-                                night in a place of sick people.</tei:p>
+                            <p tid="48">21. “Take the ringing staff with you when spending the
+                                night in a place of sick people.</p>
                         </item>
                         <item>
-                            <tei:p tid="49">22. “Take the ringing staff with you when you go to see
-                                someone off on a long journey.</tei:p>
+                            <p tid="49">22. “Take the ringing staff with you when you go to see
+                                someone off on a long journey.</p>
                         </item>
                         <item>
-                            <tei:p tid="50">23. “Take the ringing staff with you when you go off to
+                            <p tid="50">23. “Take the ringing staff with you when you go off to
                                 welcome someone from a long journey and you might need to go and
                                 stay there with them.<note place="end" xml:id="UT22084-072-036-37">Items 23 and 24 are presented in
                                     reverse order in the Chinese. Taishō 726a1–2: <foreign xml:lang="zh" type="quote">二十三者遠請行宿應得暮杖。二十四者遠迎來者應得暮杖</foreign>.</note>
-                            </tei:p>
+                            </p>
                         </item>
                         <item>
-                            <tei:p tid="51">24. “Take the ringing staff with you when you need to go
-                                to places unknown.</tei:p>
+                            <p tid="51">24. “Take the ringing staff with you when you need to go
+                                to places unknown.</p>
                         </item>
                         <item>
-                            <tei:p tid="52">25. “In order to draw another person close to you, touch
+                            <p tid="52">25. “In order to draw another person close to you, touch
                                 that person with it and make designs on the ground.”<note place="end" xml:id="UT22084-072-036-38">Taishō
                                     726a2–3: <foreign xml:lang="zh" type="quote">常當自近不得指人若畫地作字</foreign>. “Always keep it close to you;
                                     neither point it at others nor use it to draw on the ground or
@@ -467,7 +468,7 @@
                                     person or make designs on the ground” (<foreign xml:lang="Bo-Ltn">gzhal</foreign> [<distinct>sic</distinct>]
                                         <foreign xml:lang="Bo-Ltn">la reg cing sa la ri mo bri bar
                                         mi bya’o</foreign>).</note>
-                            </tei:p>
+                            </p>
                         </item>
                     </list>
                     <milestone unit="chunk" xml:id="UT22084-072-036-39"/>
@@ -640,4 +641,4 @@
     
     
     
-    </tei:TEI>
+    </TEI>
