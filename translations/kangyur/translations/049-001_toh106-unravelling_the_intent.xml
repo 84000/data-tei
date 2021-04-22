@@ -29,7 +29,7 @@
                 <sponsor ref="sponsors.xml#sponsor-22">Qiang Li (李强) and Ya Wen (文雅)</sponsor>
             </titleStmt>
             <editionStmt>
-                <edition>v 1.0.6 <date>2021</date>
+                <edition>v 1.0.7 <date>2021</date>
                 </edition>
             </editionStmt>
             <publicationStmt status="1">
@@ -60,7 +60,7 @@
                 </bibl>
             </sourceDesc>
             <notesStmt>
-                <note type="lastUpdated" date-time="2021-04-22T13:42:39.353Z" user="admin">22/04/2021 13:42:39</note>
+                <note type="lastUpdated" date-time="2021-04-22T14:42:24.284Z" user="admin">22/04/2021 14:42:24</note>
                 <note type="updated" update="text-version" value="v 0.0.1" date-time="2019-12-20T12:56:48.575Z" user="admin">Automated version increment</note>
                 <note type="updated" update="translation-status" value="2.f" date-time="2020-01-27T13:10:46.047Z" user="mike">2.f</note>
                 <note type="updated" update="translation-status" value="2.e" date-time="2020-04-22T07:12:37.281Z" user="line-tofte">2.e</note>
@@ -89,6 +89,7 @@
     <note type="updated" update="text-version" value="1.0.4" date-time="2021-02-01T20:56:42.54Z" user="celso">changed definition for prātimokṣa</note>
     <note type="updated" update="text-version" value="1.0.5" date-time="2021-03-30T20:10:36.272Z" user="celso">A few corrections made that were flagged by the TM editor</note>
     <note type="updated" update="text-version" value="1.0.6" date-time="2021-04-22T13:42:35.24Z" user="celso">added @xml:lang to Chinese strings, added nonbreak spaces to ellipses</note>
+    <note type="updated" update="text-version" value="1.0.7" date-time="2021-04-22T14:42:20.986Z" user="andre">Corrections applied to markup of gloss entries without  instances</note>
             </notesStmt>
         </fileDesc>
     </teiHeader>
@@ -4892,7 +4893,7 @@
                         By striving to accomplish this level, they will succeed.</p>
                     
                     <p tid="510">5. “Although the fourth level is accomplished through this practice, the fifth level is
-                        not, because the bodhisattvas are still unable to fully <term>examine</term><!--<note place="end" xml:id="UT22084-049-001-779" index="292">
+                        not, because the bodhisattvas are still unable to fully <term ref="UT22084-049-001-1721">examine</term><!--<note place="end" xml:id="UT22084-049-001-779" index="292">
                             <foreign xml:lang="Bo-Ltn" type="term">rnam par dpyad</foreign>; <foreign xml:lang="Sa-Ltn" type="term">vicārita</foreign>/<foreign xml:lang="Sa-Ltn" type="term">vicāraṇa</foreign>.</note>--> the truths or settle in superior equanimity regarding saṃsāra
                         and nirvāṇa, which they exclusively reject or focus upon, respectively. They are still unable to
                         practice the awakening factors in conjunction with skillful means. By striving to accomplish
@@ -6855,33 +6856,6 @@
                             <term xml:lang="Sa-Ltn">yāvat</term>
                             <term xml:lang="Sa-Ltn">tāvatā</term>
                             <term xml:lang="Sa-Ltn">tāvat</term>
-                        </gloss>
-                    </item>
-                    <!-- <item>
-                        <gloss type="term" xml:id="UT22084-049-001-1291">
-                            <term/>
-                            <term xml:lang="Bo-Ltn"/>
-                            <term xml:lang="Sa-Ltn"/>
-                            <term type="definition">nose, smell, olfactory consciousness; tongue, taste, gustative
-                                consciousness; body, touch, tactile consciousness; mind, mental objects, mental
-                                consciousness.</term>
-                        </gloss>
-                    </item>-->
-                    <!--<item>
-                        <gloss type="term" xml:id="UT22084-049-001-1292">
-                            <term/>
-                            <term xml:lang="Bo-Ltn"/>
-                            <term xml:lang="Sa-Ltn"/>
-                            <term type="definition"/>
-                        </gloss>
-                    </item>-->
-                    <item>
-                        <gloss type="term" xml:id="UT22084-049-001-1293">
-                            <term>(the one having an) inconceivable condition </term>
-                            <term xml:lang="Bo-Ltn">rnam par gzhag pa bsam gyis mi khyab pa </term>
-                            <term xml:lang="bo">རྣམ་པར་གཞག་པ་བསམ་གྱིས་མི་ཁྱབ་པ།</term>
-                            <term xml:lang="Sa-Ltn">acintyavyavasthānaḥ</term>
-                            <term type="definition">Mahāvyutpatti 359. </term>
                         </gloss>
                     </item>
                     <item>
@@ -9586,14 +9560,6 @@
                         </gloss>
                     </item>
                     <item>
-                        <gloss type="term" xml:id="UT22084-049-001-1579">
-                            <term>point where phenomena end</term>
-                            <term xml:lang="Bo-Ltn">dngos po’i mtha’  </term>
-                            <term xml:lang="bo">དངོས་པོའི་མཐའ །</term>
-                            <term xml:lang="Sa-Ltn">vastanta</term>
-                        </gloss>
-                    </item>
-                    <item>
                         <gloss type="term" xml:id="UT22084-049-001-1580">
                             <term>point where phenomena end</term>
                             <term xml:lang="Bo-Ltn">dngos po’i mtha’ </term>
@@ -9715,7 +9681,7 @@
                     </item>
                     <item>
                         <gloss type="term" xml:id="UT22084-049-001-1593">
-                            <term>producing or bringing about a new existence</term>
+                            <term>producing or bringing about a [new] existence</term>
                             <term xml:lang="Bo-Ltn">lus mngon par ’grub cing ’byung bar ’gyur ba </term>
                             <term xml:lang="bo">ལུས་མངོན་པར་འགྲུབ་ཅིང་འབྱུང་བར་འགྱུར་བ།</term>
                             <term xml:lang="Sa-Ltn">ātmabhāvam abhinirvartayanti</term>
@@ -9811,6 +9777,7 @@
                             <term xml:lang="Bo-Ltn">rnam par smin pa’i ’bras bu </term>
                             <term xml:lang="bo">རྣམ་པར་སྨིན་པའི་འབྲས་བུ།</term>
                             <term xml:lang="Sa-Ltn">vipākaphala</term>
+                            <term type="alternative">results produced by the maturation of their karma</term>
                         </gloss>
                     </item>
                     <item>
