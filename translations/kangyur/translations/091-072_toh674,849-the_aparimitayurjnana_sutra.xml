@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../../../schema/current/translation.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<tei:TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -30,10 +30,10 @@
                 <editor role="TEImarkupEditor" ref="contributors.xml#person-108">André Rodrigues</editor>
             </titleStmt>
             <editionStmt>
-                <edition>v 0.0.12 <date>2019</date>
+                <edition>v 0.1.1 <date>2021</date>
                 </edition>
             </editionStmt>
-            <publicationStmt status="2.a">
+            <publicationStmt status="2">
                 <publisher>
                     <name>84000: Translating the Words of the Buddha</name> is a global non-profit initiative to
                     translate all the Buddha’s words into modern languages, and to make them available to everyone. </publisher>
@@ -72,7 +72,7 @@
                 </bibl>
             </sourceDesc>
             <notesStmt>
-                <note type="lastUpdated" date-time="2021-04-19T12:30:53.487Z" user="admin">19/04/2021 12:30:53</note>
+                <note type="lastUpdated" date-time="2021-04-22T08:38:20.448Z" user="john">22/04/2021 08:38:20</note>
 
                 <note type="updated" update="text-version" value="v 0.0.1" date-time="2019-12-20T12:56:48.575Z" user="admin">Automated version increment</note>
                 <note type="updated" update="translation-status" value="2.d" date-time="2020-01-28T06:24:26.507Z" user="mike">2.d</note>
@@ -94,6 +94,10 @@
                 <note type="updated" update="text-version" value="0.0.11" date-time="2021-04-10T10:50:57.209Z" user="andre">Auto (update-titles)</note>
             
     <note type="updated" update="text-version" value="0.0.12" date-time="2021-04-19T12:30:50.414Z" user="andre">markup concluded</note>
+    <note type="updated" update="text-version" value="0.0.11" date-time="2021-04-19T12:31:09.335Z" user="line-tofte">0.0.11</note>
+    <note type="updated" update="text-version" value="0.0.12" date-time="2021-04-19T12:31:12.485Z" user="andre">0.0.12</note>
+    <note type="updated" update="translation-status" value="2" date-time="2021-04-22T08:56:10.586Z" user="john">2</note>
+    <note type="updated" update="text-version" value="0.1.1" date-time="2021-04-22T08:56:10.586Z" user="john">Markup checked, further edits made.</note>
             </notesStmt>
         </fileDesc>
     </teiHeader>
@@ -149,20 +153,22 @@
                         basis for a wide range of tantra practices, particularly among the higher levels of tantra, in
                         the form of sādhanas of Aparimitāyus.</p>
                     <milestone unit="chunk" xml:id="UT22084-091-072-7"/>
-                    <p tid="11">The text has also survived in a large number of Sanskrit manuscripts (mostly Nepalese);
+                    <p tid="11">The text has also survived in a large number of Sanskrit manuscripts (mostly later Nepalese ones);
                         in two Chinese translations; and in a different—perhaps earlier—Tibetan translation, represented
-                        by most of the very numerous manuscripts found in the caves of Dunhuang.</p>
+                        by most of the very numerous manuscripts found in the caves of Dunhuang, where a Khotanese
+                        manuscript was also found.</p>
                     <milestone unit="chunk" xml:id="UT22084-091-072-8"/>
-                    <p tid="12">All Kangyurs include two versions of the sūtra, similar in most respects but differing
+                    <p tid="12">All Kangyurs include two major versions of the sūtra, similar in most respects but differing
                         mainly in the presence or absence of one phrase in the repeated dhāraṇī. The background of the
                         existence of these two versions is discussed below. The version translated here is the best
                         known and most widely used of the two, and seems to represent Sanskrit source texts brought to
-                        Tibet in the later translation period. </p>
+                        Tibet in the later translation period. Even this version, however, is found in two near duplicate copies
+                    in the Degé and other Kangyurs, with one word in the dhāraṇī consistently differing between the copies.</p>
                     <milestone unit="chunk" xml:id="UT22084-091-072-9"/>
-                    <p tid="13">The other version, <title xml:lang="en">The Aparimitāyur­jñāna Sūtra</title> (2), Toh
+                    <p tid="13">The other major version, <title xml:lang="en">The Aparimitāyur­jñāna Sūtra</title> (2), Toh
                             675<ref rend="pending" target="https://read.84000.co/translation/toh675.html"/>, appears to
                         be derived from the same translation, but the dhāraṇī it contains is the shorter one, matching
-                        those found in the Chinese translations, a Dunhuang manuscript in Khotanese, and the earlier
+                        those found in the Chinese translations, the Dunhuang manuscript in Khotanese, and the earlier
                         Tibetan translation represented by the majority of the very numerous Dunhuang manuscripts in
                         Tibetan. </p>
                     <milestone unit="chunk" xml:id="UT22084-091-072-10"/>
@@ -178,7 +184,7 @@
                     </p>
                     <milestone unit="chunk" xml:id="UT22084-091-072-13"/>
                     <p tid="15">In a similar vein, the fact that so many manuscript copies of this text have been found
-                        in the Dunhuang caves is that their production by scribes there was commissioned on behalf of
+                        in the Dunhuang caves is due to their production by scribes there having been commissioned on behalf of
                         Trisong Detsen’s grandson, Ralpachen (who reigned in the early ninth century) in order to ensure
                         for the king the longevity that the text itself promises.</p>
                 </div>
@@ -189,7 +195,7 @@
                         lengths. The shortest version of his name is Aparimitāyus. The medium-length version is
                         Aparimitāyur­jñāna (“Immeasurable Longevity and Wisdom”), and figures in the title of the sūtra.
                         The longest form of the name, also in the sūtra, is Aparimitāyur­jñāna­suviniścita­tejo­rāja
-                        (“The Blazing King Who Is Completely Certain of Immeasurable Longevity and Wisdom”). </p>
+                        (“The Blazing King Who Is Completely Certain of Immeasurable Longevity and Wisdom”).<note place="end" xml:id="UT22084-091-072-360">There are several spellings of this name in Tibetan found in the canonical texts. Here in version (1) of the sūtra in the Degé (Toh 674 and 849) and in most other Kangyurs it is <foreign xml:lang="Bo-Ltn">tshe dang ye shes dpag tu med pa shin tu rnam par nges pa’i gzi brjid kyi rgyal po</foreign>, while in version (2) of the sūtra (Toh 675) in most Kangyurs and in the Dunhuang texts it is <foreign xml:lang="Bo-Ltn">tshe dang ye shes dpag tu med pa shin tu rnam par gdon mi za ba’i rgyal po</foreign>. In the Lhasa Kangyur, however, version (2) has the spelling <foreign xml:lang="Bo-Ltn">tshe dang ye shes dpag tu med pa shin tu rnam par nges pa gdon mi za ba’i rgyal po</foreign>. The longest form of the equivalent name in <title xml:lang="en">The Root Manual of the Rites of Mañjuśrī</title> (Toh 543, <ref target="https://read.84000.co/translation/toh543.html#UT22084-088-038-3692">27.27</ref>) is <foreign xml:lang="Bo-Ltn">tshe dang ye shes dpag tu med pa rnam par nges pa’i dbang po’i rgyal po</foreign>.</note> </p>
                     <milestone unit="chunk" xml:id="UT22084-091-072-15"/>
                     <p tid="18">The shortest name, Aparimitāyus, is translated into Tibetan as Tsepamé (<foreign xml:lang="Bo-Ltn">tshe dpag med</foreign> or, in full, <foreign xml:lang="Bo-Ltn">tshe dpag
                             tu med pa</foreign>). Tsepamé, however, is also the Tibetan translation of Amitāyus, an
@@ -213,12 +219,9 @@
                         other was “Amitāyus of Sukhāvatī” (<foreign xml:lang="Bo-Ltn">de ba can gyi tshe dpag
                             med</foreign>), also sometimes known as “Amitāyus of the Drum of Immortality” (<foreign xml:lang="Bo-Ltn">’chi med rnga sgra’i tshe dpag med</foreign>, Dundubhisvara-Amitāyus),
                         both of whom can be identified with Amitābha.<note place="end" xml:id="UT22084-091-072-18"> The
-                            epithet Dundubhisvara is a particular feature of another Kangyur text, the <title xml:lang="Sa-Ltn">Aparimitāyur­jñānahrdayadhāraṇī</title> (Toh 676<ref target="https://read.84000.co/translation/toh676.html"/>) that, despite its misleading
-                            title, clearly features Amitābha-Amitāyus. See this text and its introduction, Dharmachakra
-                            Translation Committee (2021), <title xml:lang="en">The Dhāraṇī “Essence of Immeasurable
-                                Longevity and Wisdom,”</title>
-                            <ref target="https://read.84000.co/translation/toh676.html#UT22084-091-074-19">i.8</ref> and
-                                <ref target="https://read.84000.co/translation/toh676.html#UT22084-091-074-35">1.12–14</ref>.</note>
+                            epithet Dundubhisvara is a particular feature of another Kangyur text, the 
+                            <title xml:lang="Sa-Ltn">Aparimitāyur­jñānahrdayadhāraṇī</title> (Toh 676) that, despite its misleading
+                            title, clearly features Amitābha-Amitāyus. See <ptr target="#UT22084-091-072-27"/> below for more details.</note>
                     </p>
                     <milestone unit="chunk" xml:id="UT22084-091-072-19"/>
                     <p tid="20">Aparimitāyur­jñāna is therefore presented here as quite distinct from the Amitāyus or
@@ -234,7 +237,8 @@
                         reborn. </p>
                     <milestone unit="chunk" xml:id="UT22084-091-072-21"/>
                     <p tid="21">Of the few other mentions specifically of Aparimitāyur­jñāna in the canonical texts, one
-                        appears to be in <title xml:lang="en">The Root Manual of the Rites of Mañjuśrī</title> (<title xml:lang="Sa-Ltn">Mañjuśrīmūlakalpa</title>, Toh 543),<note place="end" xml:id="UT22084-091-072-306">See <ref target="https://read.84000.co/translation/toh543.html">Dharmachakra Translation Committee</ref>, 2020.</note> in which the Buddha Śākyamuni
+                        appears to be in <title xml:lang="en">The Root Manual of the Rites of Mañjuśrī</title> (<title xml:lang="Sa-Ltn">Mañjuśrīmūlakalpa</title>, 
+                        Toh 543), in which the Buddha Śākyamuni
                         tells of a buddha with the names Aparimitāyur­jñānarāja and Amitāyurjñānaviniścayarājendra, who
                         has taught the king of vidyās that consists of a single letter. His pure realm is called
                         Amitavyūhavatī, or simply Amitāyus.<note place="end" xml:id="UT22084-091-072-22"> Dharmachakra
@@ -242,20 +246,24 @@
                         buddhafields in the eastern direction present in the assembly.<note place="end" xml:id="UT22084-091-072-23"> Dharmachakra Translation Committee (2020), chapter 1, <ref target="https://read.84000.co/translation/toh543.html#UT22084-088-038-96">1.36</ref>.</note>
                     </p>
                     <milestone unit="chunk" xml:id="UT22084-091-072-24"/>
-                    <p tid="22">Another, perhaps more significant, mention comes in the <title xml:lang="Sa-Ltn">Sarva­durgati­pariśodhana­tantra</title> (Toh 483<ref rend="pending" target="https://read.84000.co/translation/toh483.html"/> and 485<ref rend="pending" target="https://read.84000.co/translation/toh485.html"/>).<note place="end" xml:id="UT22084-091-072-25"> See <title xml:lang="Sa-Ltn">Sarva­durgati­pariśodhana­tantra</title>, Degé Kangyur vol. 85: Toh 483, F.83.a<ref rend="pending" target="https://read.84000.co/translation/toh483.html" inst="link to F.83.a"/> et seq., and Toh 485, F.114.a<ref rend="pending" target="https://read.84000.co/translation/toh485.html" inst="link to F.114.a"/> et seq.;
-                            for Sanskrit see Skorupski 1983, pp. 186–88. The two versions (Skorupski labels them A and
-                            B) correspond to the early and later translation periods, and the mantra cited in this
-                            paragraph is the one from the later translation, version B. The mantra in version A is the
-                            same except that the word <foreign xml:lang="Sa-Ltn" type="term">karaṇi</foreign> is added
-                            before the final <foreign xml:lang="Sa-Ltn" type="term">svāhā</foreign>.</note> One of the
+                    <p tid="22">Another, perhaps more significant, mention comes in the <title xml:lang="Sa-Ltn">Sarva­durgati­pariśodhana­tantra</title> (Toh 483<ref rend="pending" target="https://read.84000.co/translation/toh483.html"/> and 485<ref rend="pending" target="https://read.84000.co/translation/toh485.html"/>). One of the
                         many secondary maṇḍalas described in that influential Yogatantra work, widely used in funerary
                         rites, is that of a tathāgata whose full name is given as
                         Aparimitāyuḥpuṇyajñānasambhāratejorāja, but who is referred to as Amitāyus in the several
                         commentaries. He is invoked to protect from untimely death, and his mantra, <mantra xml:lang="Sa-Ltn">oṁ puṇye puṇye mahā-puṇye aparimitāyuḥ-puṇye jñāna-sambhāropacite
                             svāhā</mantra>, bears a striking resemblance to the central section of the repeated dhāraṇī
-                        of the present text, as well as to the dhāraṇī of <title xml:lang="en">The Essence of
-                            Aparimitāyus</title> (Toh 673a<ref rend="pending" target="https://read.84000.co/translation/toh673a.html"/>). Its possible relationship to the
-                        present text is discussed further in the introductions to Toh 673a<ref rend="pending" target="https://read.84000.co/translation/toh673a.html"/> and to <title xml:lang="en">The
+                        of the present text, as well as to the dhāraṇī of <title xml:lang="en">The Essence of Aparimitāyus</title> 
+                        (Toh 673a<ref rend="pending" target="https://read.84000.co/translation/toh673a.html"/>).<note place="end" xml:id="UT22084-091-072-25"> See 
+                            <title xml:lang="Sa-Ltn">Sarva­durgati­pariśodhana­tantra</title>, Degé Kangyur vol. 85: Toh 483, 
+                            F.83.a<ref rend="pending" target="https://read.84000.co/translation/toh483.html" inst="link to F.83.a"/> et seq., 
+                            and Toh 485, F.114.a<ref rend="pending" target="https://read.84000.co/translation/toh485.html" inst="link to F.114.a"/> et seq.;
+                            for Sanskrit see Skorupski 1983, pp. 186–88. The two versions (Skorupski labels them A and
+                            B) correspond to the early and later translation periods, and the mantra cited in this
+                            paragraph is the one from the later translation, version B. The mantra in version A is the
+                            same except that the word <foreign xml:lang="Sa-Ltn" type="term">karaṇi</foreign> is added
+                            before the final <foreign xml:lang="Sa-Ltn" type="term">svāhā</foreign>.</note> Its possible relationship to the
+                        present text is discussed further in the introductions to Toh 673a<ref rend="pending" target="https://read.84000.co/translation/toh673a.html"/> 
+                        and to <title xml:lang="en">The
                             Aparimitāyur­jñāna Sūtra</title> (2), Toh 675<ref rend="pending" target="https://read.84000.co/translation/toh675.html"/>.<note place="end" xml:id="UT22084-091-072-26"> See Roberts and Bower (2021a) <title xml:lang="en">The Essence
                                 of Aparimitāyus</title> x.xx<ref rend="pending" target="https://read.84000.co/translation/toh673a.html"/>, and Roberts and Bower (2021b)
                                 <title xml:lang="en">The Aparimitāyur­jñāna Sūtra</title> (2) x.xx<ref rend="pending" target="https://read.84000.co/translation/toh675.html"/> (forthcoming).</note>
@@ -264,7 +272,11 @@
                     <p tid="23">The only other mention in the Kangyur of the tathāgata known as Aparimitāyur­jñāna is,
                         misleadingly, in the title of the text that follows the two versions of this sūtra in the Tantra
                         section. Often confused with the present text, it is <title xml:lang="en">The Dhāraṇī “The
-                            Essence of Immeasurable Longevity and Wisdom”</title> (<ref target="https://read.84000.co/translation/toh676.html">Toh 676</ref>, <title xml:lang="Sa-Ltn">Aparimitāyur­jñānahṛdaya-nāma-dhāraṇī</title>),<note place="end" xml:id="UT22084-091-072-28"> See <ref target="https://read.84000.co/translation/toh676.html">Dharmachakra Translation Committee</ref> (2021).</note> but that work proves to be
+                            Essence of Immeasurable Longevity and Wisdom”</title> (<ref target="https://read.84000.co/translation/toh676.html">Toh 676</ref>, <title xml:lang="Sa-Ltn">Aparimitāyur­jñānahṛdaya-nāma-dhāraṇī</title>),<note place="end" xml:id="UT22084-091-072-28"> See this text and its introduction, Dharmachakra
+                                Translation Committee (2021), <title xml:lang="en">The Dhāraṇī “Essence of Immeasurable
+                                    Longevity and Wisdom,”</title>
+                                <ref target="https://read.84000.co/translation/toh676.html#UT22084-091-074-19">i.8</ref> and
+                                <ref target="https://read.84000.co/translation/toh676.html#UT22084-091-074-35">1.12–14</ref>.</note> but that work proves to be
                         concerned solely with the “other” Amitāyus (or Aparimitāyus) to be identified with Amitābha, in
                         Sukhāvatī. It shares no content with <title xml:lang="en">The Aparimitāyur­jñāna Sūtra</title>,
                         has an entirely different dhāraṇī, and—despite the title—the name Aparimitāyur­jñāna does not
@@ -273,7 +285,8 @@
                         that these two buddhas were already identified with each other by the time of the compilation of
                         the Kangyurs—as indeed they are in the Buddhist traditions of East Asia.</p>
                     <milestone unit="chunk" xml:id="UT22084-091-072-29"/>
-                    <p tid="24">Sometimes, Amitābha is classified as the <foreign xml:lang="Sa-Ltn" type="term">nirmāṇakāya</foreign> and “Amitāyus” as the <foreign xml:lang="Sa-Ltn" type="term">saṃbhogakāya</foreign> form of the same buddha, although there is no indication that
+                    <p tid="24">Sometimes, Amitābha is classified as the <foreign xml:lang="Sa-Ltn" type="term">nirmāṇakāya</foreign> 
+                        and Amitāyus as the <foreign xml:lang="Sa-Ltn" type="term">saṃbhogakāya</foreign> form of the same buddha, although there is no indication that
                         Aparimitāyus is in <foreign xml:lang="Sa-Ltn" type="term">saṃbhogakāya</foreign> form in the
                         present sūtra. In fact, there is no description of him at all—except perhaps that the
                         appellation <foreign xml:lang="Sa-Ltn" type="term">tejorāja</foreign>, “blazing king,” might be
@@ -287,10 +300,10 @@
                     <milestone unit="chunk" xml:id="UT22084-091-072-30"/>
                     <p tid="26">Two translations of this text into Chinese were made, one by Facheng (Taishō 936) in the
                         early ninth century, and the other by Fatian (Taishō 937) in the late tenth century.<note place="end" xml:id="UT22084-091-072-31">
-                            <title xml:lang="zh">大乘無量壽經</title> (Taishō 936, <title xml:lang="Zh-Ltn">Dacheng wuliang
-                                shou jing</title>); and <title xml:lang="zh">佛說大乘聖無量壽決定光明王如來陀羅尼經</title> (Taishō 937,
-                                <title xml:lang="Zh-Ltn">Fo shuo dacheng sheng wuliang shou jueding guangming wang rulai
-                                tuoluoni jing</title>).</note>
+                            Taishō 936, <title xml:lang="Zh-Ltn">Dacheng wuliang
+                                shou jing</title> (<title xml:lang="zh">大乘無量壽經</title>); and Taishō 937, <title xml:lang="Zh-Ltn">Fo shuo dacheng 
+                                    sheng wuliang shou jueding guangming wang rulai tuoluoni jing</title> 
+                            (<title xml:lang="zh">佛說大乘聖無量壽決定光明王如來陀羅尼經</title>).</note>
                     </p>
                     <milestone unit="chunk" xml:id="UT22084-091-072-32"/>
                     <p tid="27">There are many surviving manuscripts of the text in Sanskrit, but none that can be
@@ -318,7 +331,7 @@
                     <p tid="29">There are two different but closely related versions of <title xml:lang="en">The
                             Aparimitāyur­jñāna Sūtra</title> in most Kangyurs. We have called them <title xml:lang="en">The Aparimitāyur­jñāna Sūtra</title> (1) and (2), and in keeping with the tradition
                         established by editors of all Kangyurs we have translated and published them separately, despite
-                        their similarity. They are placed consecutively in the Tantra Collection, and within that
+                        their similarity. They are placed consecutively in the Tantra Collection; and within that
                         section, according to Situ Panchen’s original catalog of the Degé Kangyur, they are placed in
                         the subdivision of the Action (Kriyā) Tantras that corresponds to the principal deity (<foreign xml:lang="Bo-Ltn" type="term">rigs kyi gtso bo</foreign>) of the Padma (lotus) family. Their
                         Degé recensions are cataloged as Toh 674 and 675<ref rend="pending" target="https://read.84000.co/translation/toh675.html"/>, respectively. </p>
@@ -347,12 +360,12 @@
                     <p tid="31">To return to our discussion of the more significant differences between the two major
                         variants, versions (1) and (2), the principal distinction lies again mainly in the repeated
                         dhāraṇī, but in this case is a marked difference in its length and composition. In the present
-                        version, <title xml:lang="en">The Aparimitāyur­jñāna Sūtra</title> (1), Toh 674 / 849, the
+                        version, <title xml:lang="en">The Aparimitāyur­jñāna Sūtra</title> (1), Toh 674 and 849, the
                         middle part of the dhāraṇī comprises a phrase beginning “<foreign xml:lang="Sa-Ltn">oṁ puṇye
                             puṇye </foreign>. . .” that is not present in the other version, <title xml:lang="en">The
                             Aparimitāyur­jñāna Sūtra</title> (2), Toh 675<ref rend="pending" target="https://read.84000.co/translation/toh675.html"/>, although the rest of the dhāraṇī
                         is almost the same. It is on that basis that the catalog of the Degé Kangyur distinguishes the
-                        two texts by calling this one (Toh 674 / 849) the “three <mantra xml:lang="Sa-Ltn" type="syllable">oṁ</mantra>” version (because the repeated dhāraṇī also contains two other
+                        two texts by calling this one (Toh 674 and 849) the “three <mantra xml:lang="Sa-Ltn" type="syllable">oṁ</mantra>” version (because the repeated dhāraṇī also contains two other
                         phrases beginning with <foreign xml:lang="Sa-Ltn">oṁ</foreign>), while the other one (Toh
                             675<ref rend="pending" target="https://read.84000.co/translation/toh675.html"/>) it calls
                         the “two <foreign xml:lang="Sa-Ltn">oṁ</foreign>, no <mantra xml:lang="Sa-Ltn" type="syllable">puṇye</mantra>” version.<note place="end" xml:id="UT22084-091-072-40"> Degé Kangyur, vol.
@@ -380,23 +393,29 @@
                     <milestone unit="chunk" xml:id="UT22084-091-072-45"/>
                     <p tid="34">Apart from the composition of the dhāraṇī, there are a few other relatively minor
                         differences between Toh 674 and 675<ref rend="pending" target="https://read.84000.co/translation/toh675.html"/>:</p>
-                    <list type="bullet">
+                    <list type="bullet" rend="dots">
                         <item>
-                            <p tid="35">• The name <foreign xml:lang="Bo-Ltn">tshe dpag tu med pa</foreign>
+                            <p tid="153">The name <foreign xml:lang="Bo-Ltn">tshe dpag tu med pa</foreign>
                                 (Aparimitāyus), which occurs a number of times here in Toh 674, is given its longer form
                                 in Toh 675<ref rend="pending" target="https://read.84000.co/translation/toh675.html"/>:
                                     <foreign xml:lang="Bo-Ltn">tshe dang ye shes dpag tu med pa</foreign>
                                 (Aparimitāyur­jñāna). </p>
                         </item>
                         <item>
-                            <p tid="36">• The name of Aparimitāyur­jñāna’s realm here in Toh 674 is <foreign xml:lang="Bo-Ltn">yon tan dpag tu med pa sogs pa</foreign>
+                            <p tid="154">The Tibetan rendering of the longest form of the name Aparimitāyur­jñāna­suviniścita­tejo­rāja is 
+                                <foreign xml:lang="Bo-Ltn">tshe dang ye shes dpag tu med pa shin tu rnam par nges pa’i gzi brjid kyi rgyal po</foreign> 
+                                in Toh 674, while in Toh 675 it is <foreign xml:lang="Bo-Ltn">tshe dang ye shes dpag tu med pa shin tu rnam par 
+                                    gdon mi za ba’i rgyal po</foreign>.<note place="end" xml:id="UT22084-091-072-361">See also <ptr target="#UT22084-091-072-360"/>.</note> </p>
+                        </item>
+                        <item>
+                            <p tid="36">The name of Aparimitāyur­jñāna’s realm here in Toh 674 is <foreign xml:lang="Bo-Ltn">yon tan dpag tu med pa sogs pa</foreign>
                                 <note place="end" xml:id="UT22084-091-072-46"> But see also note 37.</note> (Aparimita­guṇa­saṃcaya,
                                 “Accumulation of Immeasurable Qualities”), but in Toh 675<ref rend="pending" target="https://read.84000.co/translation/toh675.html"/> the first mention of it is
                                 just <foreign xml:lang="Bo-Ltn">yon tan dpag tu med pa</foreign> (Aparimitaguṇa,
                                 “Immeasurable Qualities”). </p>
                         </item>
                         <item>
-                            <p tid="37">• Its second mention in Toh 675<ref rend="pending" target="https://read.84000.co/translation/toh675.html"/>, however, not only gives it
+                            <p tid="37">Its second mention in Toh 675<ref rend="pending" target="https://read.84000.co/translation/toh675.html"/>, however, not only gives it
                                 in full, as in Toh 674, but also prefixes it with the words <foreign xml:lang="Bo-Ltn">bde ba can</foreign> (Sukhāvatī), somewhat confusingly identifying this realm with
                                 that of the “other” Amitāyus who is Amitābha, and perhaps confirming that the conflation
                                 of these two buddhas (see above) occurred at an early date in Tibet.<note place="end" xml:id="UT22084-091-072-48"> This mention of Sukhāvatī (<foreign xml:lang="Bo-Ltn">bde ba can</foreign>) is, however, not present in the Dunhuang
@@ -404,7 +423,7 @@
                             </p>
                         </item>
                         <item>
-                            <p tid="38">• Finally, Toh 674 has a curious concluding line that is not present in Toh
+                            <p tid="38">Finally, Toh 674 has a curious concluding line that is not present in Toh
                                     675<ref rend="pending" target="https://read.84000.co/translation/toh675.html"/>: in
                                 addition to the beings in the world being overjoyed and rejoicing at the Buddha’s words,
                                 the Buddha himself is said to be pleased or delighted (<foreign xml:lang="Bo-Ltn" type="term">dgyes pa</foreign>). This appears to be the result of the Sanskrit
@@ -431,8 +450,7 @@
                         translators are widely agreed to be the translators of the text that follows immediately after
                         the two versions of <title xml:lang="en">The Aparimitāyur­jñāna Sūtra</title> in the Kangyur,
                             <title xml:lang="en">The Dhāraṇī “Essence of Immeasurable Longevity and Wisdom”</title>
-                            (<ref target="https://read.84000.co/translation/toh676.html">Toh 676</ref>), which (as
-                        mentioned above) is not closely related to <title xml:lang="en">The Aparimitāyur­jñāna
+                        (Toh 676), which (as mentioned in <ptr target="#UT22084-091-072-27"/> above) is not closely related to <title xml:lang="en">The Aparimitāyur­jñāna
                             Sūtra</title> despite its title; and one possibility is that this attribution of <title xml:lang="en">The Aparimitāyur­jñāna Sūtra</title> to those translators might have been an
                         error brought about by the proximity of the texts and their confusingly similar titles. A look
                         at the page concerned in the catalog of the Narthang Kangyur reinforces suspicions of an
@@ -441,13 +459,14 @@
                         into problems for this entry, which coincides with a folio break. Indeed, the catalog not only
                         appears to attribute both versions of <title xml:lang="en">The Aparimitāyur­jñāna Sūtra</title>
                         to these translators, but also omits naming these (or any) translators for the following text,
-                            <title xml:lang="en">The Dhāraṇī “Essence of Aparimitāyur­jñāna”</title> (<ref target="https://read.84000.co/translation/toh676.html">Toh 676</ref>), which all the other
+                            <title xml:lang="en">The Dhāraṇī “Essence of Aparimitāyur­jñāna”</title> (Toh 676), which all the other
                         catalogs agree in attributing to them. </p>
                     <milestone unit="chunk" xml:id="UT22084-091-072-53"/>
                     <p tid="41">On the other hand, the evidence provided by Minling Terchen’s lineage record carries
                         considerably more weight. As well as naming the same two translators mentioned above, it details
-                        the several different sequences of lineage holders through whom the text of the “three <mantra xml:lang="Sa-Ltn" type="syllable">oṁ</mantra> version” (i.e. Toh 674)<note place="end" xml:id="UT22084-091-072-54"> Minling Terchen’s lineage record mentions the “shorter, two
-                                <mantra xml:lang="Sa-Ltn" type="syllable">oṁ</mantra> version with no <mantra xml:lang="Sa-Ltn" type="syllable">puṇyai</mantra> in the middle” but makes no statement
+                        the several different sequences of lineage holders through whom the text of the “three <mantra xml:lang="Sa-Ltn" type="syllable">oṁ</mantra> version” (i.e. Toh 674)<note place="end" xml:id="UT22084-091-072-54"> While Minling Terchen’s lineage record does also mention the “shorter, two
+                                <mantra xml:lang="Sa-Ltn" type="syllable">oṁ</mantra> version with no <mantra xml:lang="Sa-Ltn" type="syllable">puṇyai</mantra> 
+                            in the middle,” it unfortunately makes no statement
                             about its provenance.</note> came to Tibet, mostly including the sequence: Jetari; one or
                         more of the masters known as Vajrāsana(pati); and Bari Lotsāwa Rinchen Drak (1040–1111), the
                         second holder of the Sakya Throne. Abhayākaragupta (d. 1125, who may have been one of the
@@ -466,7 +485,7 @@
                     <p tid="42">We also know with little doubt (as discussed more fully in the introduction to <title xml:lang="en">The Aparimitāyur­jñāna Sūtra</title> (2), Toh 675<ref rend="pending" target="https://read.84000.co/translation/toh675.html"/>) that at least one version of the
                         sūtra was translated during the early translation period. Both the early ninth century Denkarma
                             (<title xml:lang="Bo-Ltn">ldan dkar ma</title>) and Phangthangma (<title xml:lang="Bo-Ltn">phang thang ma</title>) inventories of translated texts mention, respectively, texts
-                        entitled <title xml:lang="en">The Dhāraṇī of Limitless Life</title> (<title xml:lang="Bo-Ltn">tshe dpag tu med pa’i gzungs</title>, 110 <foreign xml:lang="Sa-Ltn" type="term">ślokas</foreign> in length) and <title xml:lang="en">Limitless Life</title> (<title xml:lang="Bo-Ltn">tshe dpag tu med pa</title>, 120 <foreign xml:lang="Sa-Ltn" type="term">ślokas</foreign>), both probably referring to a version of this text; in both inventories
+                        entitled <title xml:lang="en">The Dhāraṇī of Aparimitāyus</title> (<title xml:lang="Bo-Ltn">tshe dpag tu med pa’i gzungs</title>, 110 <foreign xml:lang="Sa-Ltn" type="term">ślokas</foreign> in length) and <title xml:lang="en">Aparimitāyus</title> (<title xml:lang="Bo-Ltn">tshe dpag tu med pa</title>, 120 <foreign xml:lang="Sa-Ltn" type="term">ślokas</foreign>), both probably referring to a version of this text; in both inventories
                         it is placed in the category “miscellaneous long and short dhāraṇīs” (<foreign xml:lang="Bo-Ltn">gzungs che phra sna tshogs</foreign>).<note place="end" xml:id="UT22084-091-072-56">
                             Denkarma, folio 302a.4; Phangthangma, folio 10 (p. 25). </note> Material evidence, too, of
                         the existence of translations in the early period is provided by the very large number of
@@ -507,8 +526,9 @@
                             675<ref rend="pending" target="https://read.84000.co/translation/toh675.html"/>), Ngawang
                         Kunga Sönam writes that Ngorchen Kunga Zangpo mentioned seeing three Sanskrit manuscripts of the
                         sūtra, all of which were the “three <mantra xml:lang="Sa-Ltn" type="syllable">oṁ</mantra>”
-                        version. While there is little doubt that this “three <mantra xml:lang="Sa-Ltn" type="syllable">oṁ</mantra>” version of the text is indeed authentic to its source, Ngorchen’s claim that
-                        it is the <emph>only</emph> authentic version is explicitly refuted by Tāranātha, who reports
+                        version. While there is little doubt that this “three <mantra xml:lang="Sa-Ltn" type="syllable">oṁ</mantra>” 
+                        version of the text is indeed authentic to its source, Ngorchen’s claim that
+                        it is the <emph>only</emph> authentic version is explicitly refuted and dismissed by Tāranātha, who reports
                         seeing, on a visit to Narthang, several Sanskrit manuscripts of the sūtra, of which one was
                         clearly the “two <mantra xml:lang="Sa-Ltn" type="syllable">oṁ</mantra>” version. The veracity of
                         Tāranātha’s report can be indirectly confirmed by Sten Konow’s 1916 comparison of two versions,
@@ -536,12 +556,12 @@
                     <milestone unit="chunk" xml:id="UT22084-091-072-65"/>
                     <p tid="47">Both versions, therefore, can be considered authentic; and although the compilers and
                         editors of the many Kangyurs do not seem to have noted their reasons, there must have been
-                        enough consensus on this point despite any of the controversies for both to have been preserved
+                        enough consensus on this point—despite all the controversies—for both to have been preserved
                         in all Kangyurs. </p>
                     <milestone unit="chunk" xml:id="UT22084-091-072-66"/>
                     <p tid="48">The story of these two different versions may seem already complex enough, but there is
                         more to be explored. Apart from the differences in the dhāraṇī, the other differences (listed
-                        above) between the two versions in the Kangyurs are relatively so minor that these two
+                        above at <ptr target="#UT22084-091-072-45"/>) between the two versions in the Kangyurs are relatively so minor that these two
                         translations seem most unlikely to have been made independently, even allowing for the
                         possibility that the Sanskrit texts they were made from were very similar. The most obvious
                         explanation might be that the later translation was based on the earlier, adapting it to conform
@@ -566,7 +586,10 @@
                         in poor health or facing other difficulties, and to practitioners more generally in order to
                         ensure longevity, and so on. Recitation by the monks or nuns in a monastery is also commissioned
                         for the same reasons. According to the <title xml:lang="Bo-Ltn">Padma Kathang</title>, the
-                        eighth century Tibetan king, Trisong Detsen, was advised to recite this text daily (along with
+                        eighth century Tibetan king, Trisong Detsen, was advised to recite this text<note place="end" xml:id="UT22084-091-072-365">Or, rather,
+                            Toh 675, given the conjectures in the preceding section and especially the fact that only  
+                            “two <mantra xml:lang="Sa-Ltn" type="syllable">oṁ</mantra>” versions of the text can be confirmed to
+                        have existed before the late eleventh century.</note> daily (along with
                         the other works known as the “ten royal sūtras”), as a result of which the king’s life is said
                         to have been prolonged by thirteen years beyond the limit predicted by astrological
                         reckoning.</p>
@@ -582,8 +605,8 @@
                         Library in London, and a similar number in the Bibliothèque Nationale in Paris. Some five
                         hundred further copies remain in libraries in China, many have found their way to Japan, and
                         there are some two hundred in St. Petersburg.<note place="end" xml:id="UT22084-091-072-69"> See
-                            Dotson 2016; and also van Schaik, Sam, “The Whereabouts of the Tibetan Manuscripts from
-                            Dunhuang,” <ref target="https://earlytibet.com/about/whereabouts/">https://earlytibet.com/about/whereabouts/</ref> .</note>
+                            Dotson 2016; and also van Schaik, Sam, “<ref target="https://earlytibet.com/about/whereabouts/">The Whereabouts of the Tibetan Manuscripts from
+                            Dunhuang</ref>.”</note>
                     </p>
                     <milestone unit="chunk" xml:id="UT22084-091-072-70"/>
                     <p tid="52">In the context of tantric practice, the Tibetan canonical literature contains a number
@@ -666,7 +689,7 @@
                             and Urga Kangyurs have the correct <foreign xml:lang="Bo-Ltn" type="term">sogs pa</foreign>
                             (Choné vol. 15, ba, F.281b.4; Urga vol. 101, e, F.57b.3). Toh 675 omits altogether <foreign xml:lang="Bo-Ltn" type="term">[la] sogs pa</foreign> (<foreign xml:lang="Sa-Ltn" type="term">saṃcaya</foreign>), the final part of the realm’s name, but in the Dunhuang
                             manuscripts it is present, sometimes with and sometimes without <foreign xml:lang="Bo-Ltn" type="term">la</foreign>, and in the archaic orthography <foreign xml:lang="Bo-Ltn" type="term">scogs pa</foreign>. </note> There, the tathāgata, arhat, perfectly awakened
-                        buddha Aparimitāyur­jñāna­suviniścita­tejo­rāja resides, lives, and remains, teaching the Dharma
+                        buddha Aparimitāyur­jñāna­suviniścita­tejo­rāja<note xml:id="UT22084-091-072-366" place="end">See <ptr target="#UT22084-091-072-360"/>.</note> resides, lives, and remains, teaching the Dharma
                         to beings.</p>
                     <milestone unit="chunk" xml:id="UT22084-091-072-81"/>
                     <p tid="61">“Listen, Mañjuśrī Kumārabhūta, the lives of humans in this Jambudvīpa are short; their
@@ -675,19 +698,23 @@
                         called ‘Uttering the Praise of the Qualities<note place="end" xml:id="UT22084-091-072-82"> From
                             the Sanskrit <foreign xml:lang="Sa-Ltn" type="term">guṇavarṇa</foreign>, which was
                             translated into Tibetan as “qualities and praise” (<foreign xml:lang="Bo-Ltn" type="term">yon tan dang bsngags pa</foreign>).</note> of the Tathāgata Aparimitāyus,’<note place="end" xml:id="UT22084-091-072-83"> According to Toh 674 and the Nepalese Sanskrit. In
-                            the Dunhuang Khotanese and in Toh 675<ref rend="pending" target="https://read.84000.co/translation/toh675.html"/>, Aparimitāyus is lengthened to
+                            the Khotanese and in Toh 675<ref rend="pending" target="https://read.84000.co/translation/toh675.html"/> (but not in the Dunhuang Tibetan manuscripts), Aparimitāyus is lengthened to
                             Aparimitāyur­jñāna.</note> and even those who hear or recite its title only, up to those who
-                        write a copy, keep it at home, offer flowers, perfume, incense, and garlands<note place="end" xml:id="UT22084-091-072-84"> The Sanskrit reads “who continually make offerings of flowers,
+                        write a copy, keep it at home, offer flowers, perfume, incense, and garlands to it,<note place="end" xml:id="UT22084-091-072-84"> The Nepalese 
+                            Sanskrit reads “who recite it and continually make offerings of flowers,
                             perfume, incense, garlands, ointments, powders, robes, parasols, banners, bells, and
-                            flags.”</note> to it, and recite it, will, when their lifespan is ending, still be able to
+                            flags.”</note> will, when their lifespan is ending, still be able to
                         live to a hundred years. <ref cRef="F.212.a" type="folio" key="toh674" xml:id="UT22084-091-072-85"/>
                     </p>
                     <milestone unit="chunk" xml:id="UT22084-091-072-86"/>
-                    <p tid="62">“Mañjuśrī, the lifespan of beings who hear, possess, or recite the one hundred and eight
+                    <p tid="62">“Mañjuśrī, the lifespan of beings who hear<note place="end" xml:id="UT22084-091-072-362">The Nepalese Sanskrit texts 
+                        read <foreign xml:lang="Sa-Ltn">śroṣyanti dhārayiṣyanti vācayiṣyanti</foreign>, “hear, keep, or recite,” while the 
+                        Dunhuang Tibetan manuscripts mostly read <foreign xml:lang="Bo-Ltn">’dzin par ’gyur ba</foreign>, “hold.”</note> the one hundred and eight
                             names<note place="end" xml:id="UT22084-091-072-87"> One hundred and eight names for this
                             buddha are not given in this sūtra or in any other. This mention might possibly refer to
                             another, lost sūtra, or perhaps be a corruption of repeating these actions 108 times.
-                            Alternatively, and most plausibly for this “three <mantra xml:lang="Sa-Ltn" type="syllable">oṁ</mantra>” version, it could also be a peculiarly worded reference to the dhāraṇī
+                            Alternatively, and most plausibly for this “three <mantra xml:lang="Sa-Ltn" type="syllable">oṁ</mantra>” 
+                                version, it could also be a peculiarly worded reference to the dhāraṇī
                             having 108 syllables, which is the case if the two instances of the final and initial
                                 <mantra xml:lang="Sa-Ltn" type="syllable">a</mantra> in the Tibetan transliteration are
                             elided into <mantra xml:lang="Sa-Ltn" type="syllable">ā</mantra> as they should be according
@@ -695,18 +722,26 @@
                             versions). Indeed, in the paragraph that follows and in <ptr target="#UT22084-091-072-94"/>,
                             “the one hundred and eight names” seems to refer to the dhāraṇī, and could therefore be
                             interpreted as “the-one-hundred-and-eight-syllable appellation” of Buddha Aparimitāyus. On
-                            the other hand, in the “two <mantra xml:lang="Sa-Ltn" type="syllable">oṁ</mantra>”’ versions
+                            the other hand, in the “two <mantra xml:lang="Sa-Ltn" type="syllable">oṁ</mantra>” versions
                             of the text (Toh 675<ref rend="pending" target="https://read.84000.co/translation/toh675.html"/>, the Dunhuang manuscripts, and
                             all the Chinese versions), the dhāraṇī only has 77 syllables, yet this mention is present
-                            nevertheless. The possible discrepancy was used by some Sarma authors (see introduction to
+                            nevertheless (though only in the equivalent of the following paragraph, not in this one). The possible 
+                            discrepancy was used by some Sarma authors (see introduction to
                             Toh 675<ref rend="pending" target="https://read.84000.co/translation/toh675.html" inst="link to introduction"/>) as proof that the “two <mantra xml:lang="Sa-Ltn" type="syllable">oṁ</mantra>” dhāraṇī was incomplete, but they may not have been aware of
                             the existence of Sanskrit manuscripts and Chinese translations featuring the “two <mantra xml:lang="Sa-Ltn" type="syllable">oṁ</mantra>” version. </note> of the tathāgata
                         Aparimitāyur­jñāna­suviniścita­tejo­rāja will be lengthened. Those beings whose lifespan is
                         coming to an end, <ref cRef="F.58.a" type="folio" key="toh849" xml:id="UT22084-091-072-88"/> who
-                        hear, possess, and recite those names, will also have their lifespan lengthened. </p>
+                        keep<note place="end" xml:id="UT22084-091-072-363">Toh 674 and 675 both have <foreign xml:lang="Bo-Ltn">’chang bar ’gyur ba</foreign> 
+                            here, but as in the preceding 
+                            sentence, the Nepalese Sanskrit texts read <foreign xml:lang="Sa-Ltn">śroṣyanti dhārayiṣyanti vācayiṣyanti</foreign>, 
+                            “hear, keep, or recite.” Many of the Dunhuang Tibetan manuscripts seem to omit this sentence entirely.</note> those 
+                        names, will also have their lifespan lengthened. </p>
                     <milestone unit="chunk" xml:id="UT22084-091-072-89"/>
                     <p tid="63">“Therefore, Mañjuśrī, the noble sons or noble daughters who wish to have long lives, and
-                        who hear, possess, write, or cause to be written the one hundred and eight names of the
+                        who hear, write, or cause to be written<note place="end" xml:id="UT22084-091-072-364">The Nepalese Sanskrit texts 
+                            read <foreign xml:lang="Sa-Ltn">śroṣyanti likhiṣyanti</foreign>, 
+                            “hear or write.” The Tibetan version of the Druptap Küntü adds, at the end of these verbs, <foreign xml:lang="Bo-Ltn">klog 
+                                par gyur pa</foreign>, “or recite,” not present in any of the canonical versions. </note> the one hundred and eight names of the
                         tathāgata Aparimitāyus, will obtain these qualities and benefits.</p>
                     <milestone unit="chunk" xml:id="UT22084-091-072-90"/>
                     <p rend="mantra" tid="64">
@@ -1118,10 +1153,30 @@
                                 675<ref rend="pending" target="https://read.84000.co/translation/toh675.html"/> (as well
                             as for this version in the Lithang and Choné Kangyurs), the Tibetan reads simply <foreign xml:lang="Bo-Ltn" type="term">mdo sde ’di</foreign>, “this sūtra.”</note> is written or
                         caused to be written,<note place="end" xml:id="UT22084-091-072-152"> The phrase “or caused to be
-                            written” is omitted in the Tibetan.</note> that place will be a stūpa<note place="end" xml:id="UT22084-091-072-153"> For an analysis of the use of this phrase in various Mahāyāna
-                            sūtras, see Schopen 2005, pp. 25–62. </note> and worthy of veneration. Those birds and
-                        animals born in the animal realm who happen to hear this <title xml:lang="Sa-Ltn">Aparimitāyur­jñāna Sūtra</title> will all become perfectly awakened in the highest, most
-                        complete awakening. </p>
+                            written” is omitted in the Tibetan.</note> that place will be a stūpa<note place="end" xml:id="UT22084-091-072-153"> The phrase 
+                                <foreign xml:lang="Sa-Ltn">sa pṛthivīpradeśaś caityabhūto bhavet</foreign> (here rendered in Tibetan 
+                                <foreign xml:lang="Bo-Ltn">sa phyogs de yang mchod rten du ’gyur te</foreign>) is to be found in a number 
+                                of texts, including the <title xml:lang="Sa-Ltn">Vajra­cchedikā</title> 
+                                (Toh 16<ref rend="pending" target="https://read.84000.co/translation/toh16.html"/>), 
+                                <title xml:lang="Sa-Ltn">Aṣṭa­sāhasrikā</title> 
+                                (Toh 12<ref rend="pending" target="https://read.84000.co/translation/toh12.html"/>), 
+                                <title xml:lang="Sa-Ltn">Kāśyapa­parivarta</title> 
+                                (Toh 87<ref rend="pending" target="https://read.84000.co/translation/toh87.html"/>), 
+                                and <title xml:lang="Sa-Ltn">Suvarṇa­bhāsottama­sūtra</title>s 
+                                (Toh 555-7<ref rend="pending" target="https://read.84000.co/translation/toh555.html"/>
+                            <ref rend="pending" target="https://read.84000.co/translation/toh556.html"/>
+                            <ref rend="pending" target="https://read.84000.co/translation/toh557.html"/>). 
+                                In his detailed analysis of the use of the phrase, Schopen suggests (in essence) that it should probably be 
+                                understood as meaning that the place where the written text in question is to be found becomes “like a stūpa” 
+                                in the sense of being no less worthy of veneration than a monument housing or representing the relics of a 
+                                tathāgata’s body, as set out in <title xml:lang="en">The Teaching of Vimalakīrti</title> 
+                                (<title xml:lang="Sa-Ltn">Vimala­kīrti­nirdeśa</title>, Toh 176) 
+                                <ref target="https://read.84000.co/translation/toh176.html#UT22084-060-005-442">12.2–5</ref>, 
+                                and in <title xml:lang="en">The White Lotus of the Good Dharma</title> (<title xml:lang="Sa-Ltn">Saddharma­puṇḍarīka</title>, 
+                                Toh 113) <ref target="https://read.84000.co/translation/toh113.html?view-mode=editor#UT22084-051-001-1684">10.28–9</ref>. 
+                                See Schopen 2005, pp. 25–62. </note> and worthy of veneration. Those birds and
+                        animals born in the animal realm who happen to hear this <title xml:lang="Sa-Ltn">Aparimitāyur­jñāna Sūtra</title> will 
+                        all become perfectly awakened in the highest, most complete awakening. </p>
                     <milestone unit="chunk" xml:id="UT22084-091-072-154"/>
                     <p rend="mantra" tid="108">
                         <mantra type="dharani" xml:lang="Sa-Ltn" key="toh674"><!--{1}-->oṁ namo
@@ -1389,7 +1444,7 @@
                         <bibl xml:id="UT22084-091-072-196">Konow, Sten. “The Aparimitāyuḥ Sūtra. The Old Khotanese
                             Version together with the Sanskrit Text and the Tibetan Translation.” In <title xml:lang="en">Manuscript Remains of Buddhist Literature found in Eastern
                                 Turkestan</title>, vol. 1, edited by A.F. Rudolf Hoernle, pp. 289–329. Oxford: The
-                            Clarendon Press, 1916. Can be seen online at <ref target="https://archive.org/details/dli.csl.6226/page/n323/mode/2up">Internet
+                            Clarendon Press, 1916. Online: see <ref target="https://archive.org/details/dli.csl.6226/page/n323/mode/2up">Internet
                                 Archive.</ref>
                         </bibl>
                         <bibl xml:id="UT22084-091-072-197">Leumann, Ernst. <title xml:lang="de">Zur nordarischen Sprache
@@ -1468,14 +1523,21 @@
                         <bibl xml:id="UT22084-091-072-210">British Library: <lb/>IOL Tib J <ref target="http://idp.bl.uk/database/oo_loader.a4d?pm=IOL%20Tib%20J%20310.4;img=1">310.4</ref>
                             <lb/>IOL Tib J <ref target="http://idp.bl.uk/database/oo_loader.a4d?pm=IOL%20Tib%20J%20310.1208;img=1">310.1208</ref>
                             <lb/>IOL Tib J <ref target="http://idp.bl.uk/database/oo_loader.a4d?pm=IOL%20Tib%20J%20310.1209;img=1">310.1209</ref>
-                            <lb/>IOL Tib J <ref target="http://idp.bl.uk/database/oo_loader.a4d?pm=IOL%20Tib%20J%20310.1210;img=1">310.1210</ref> (or <ref target="http://idp.bl.uk/database/stitched.a4d?recnum=12514">complete text</ref>)</bibl>
-                        <bibl xml:id="UT22084-091-072-211">Vienna Kanjur and Tenjur Resources:<lb/>IOL Tib J <ref target="https://www.istb.univie.ac.at/kanjur/rktsneu/digit/afficheLVP.php?vol=308&amp;beg=3">308</ref>
-                            <lb/>IOL Tib J <ref target="https://www.istb.univie.ac.at/kanjur/rktsneu/digit/afficheLVP.php?vol=309&amp;beg=3">309</ref>
-                            <lb/>IOL Tib J <ref target="https://www.istb.univie.ac.at/kanjur/rktsneu/digit/afficheIDP.php?vol=5315&amp;beg=3">463</ref>
-                            <lb/>IOL Tib J <ref target="https://www.istb.univie.ac.at/kanjur/rktsneu/digit/afficheIDP.php?vol=4426&amp;beg=1">790</ref>
-                            <lb/>Pelliot collection <ref target="https://www.istb.univie.ac.at/kanjur/rktsneu/digit/afficheBNF.php?vol=PT98&amp;beg=33">PT 98</ref>
-                            <lb/>Pelliot Collection <ref target="https://www.istb.univie.ac.at/kanjur/rktsneu/digit/afficheBNF.php?vol=PT105&amp;beg=5">PT 105</ref>
-                            <lb/>IDP vol. 5315<lb/>IDP vol. <ref target="https://www.istb.univie.ac.at/kanjur/rktsneu/digit/afficheIDP.php?vol=4426&amp;beg=1">4426</ref>
+                            <lb/>IOL Tib J <ref target="http://idp.bl.uk/database/oo_loader.a4d?pm=IOL%20Tib%20J%20310.1210;img=1">310.1210</ref> 
+                            (or <ref target="http://idp.bl.uk/database/stitched.a4d?recnum=12514">complete text</ref>)</bibl>
+                        <bibl xml:id="UT22084-091-072-211">Vienna Kanjur and Tenjur Resources:<lb/>
+                            IOL Tib J <ref target="https://www.istb.univie.ac.at/kanjur/rktsneu/digit/afficheLVP.php?vol=308&amp;beg=3">308</ref>
+                            <lb/>
+                            IOL Tib J <ref target="https://www.istb.univie.ac.at/kanjur/rktsneu/digit/afficheLVP.php?vol=309&amp;beg=3">309</ref>
+                            <lb/>
+                            IOL Tib J <ref target="https://www.istb.univie.ac.at/kanjur/rktsneu/digit/afficheIDP.php?vol=5315&amp;beg=3">463</ref>
+                            <lb/>
+                            IOL Tib J <ref target="https://www.istb.univie.ac.at/kanjur/rktsneu/digit/afficheIDP.php?vol=4426&amp;beg=1">790</ref>
+                            <lb/>
+                            Pelliot collection <ref target="https://www.istb.univie.ac.at/kanjur/rktsneu/digit/afficheBNF.php?vol=PT98&amp;beg=33">PT 98</ref>
+                            <lb/>
+                            Pelliot Collection <ref target="https://www.istb.univie.ac.at/kanjur/rktsneu/digit/afficheBNF.php?vol=PT105&amp;beg=5">PT 105</ref>
+                            <lb/>
                         </bibl>
                         <bibl xml:id="UT22084-091-072-212">Schøyen Collection<lb/>
                             <ref target="https://www.schoyencollection.com/media/djcatalog2/images/item/5/boundless-life-mahayana-sutra-ms-2100.1_f.jpg">MS2100</ref>
@@ -2428,4 +2490,4 @@
             </div>
         </back>
     </text>
-</TEI>
+</tei:TEI>
