@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../../../schema/current/translation.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<tei:TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -34,7 +34,7 @@
           Mathes</consultant>
       </titleStmt>
       <editionStmt>
-                <edition>v 1.2.12 <date>2021</date>
+                <edition>v 1.2.13 <date>2021</date>
                 </edition>
             </editionStmt>
       <publicationStmt status="1">
@@ -73,7 +73,7 @@
         </bibl>
       </sourceDesc>
       <notesStmt>
-        <note type="lastUpdated" date-time="2021-02-04T21:07:57.607Z" user="admin">04/02/2021 21:07:57</note>
+        <note type="lastUpdated" date-time="2021-06-29T14:56:21.921Z" user="admin">29/06/2021 14:56:21</note>
         <note type="updated" update="translation-status" value="2.c" date-time="2019-03-09T11:25:03.735Z" user="john">2.c</note>
         <note type="updated" update="translation-status" value="2.b" date-time="2019-04-01T22:16:45.194Z" user="john">2.b</note>
         <note type="updated" update="text-version" value="" date-time="2019-04-03T11:49:31.802Z" user="andre"/>
@@ -109,6 +109,7 @@
     <note type="updated" update="text-version" value="1.2.10" date-time="2021-01-26T20:12:32.863Z" user="celso">corrected a mislabed foreign tag</note>
     <note type="updated" update="text-version" value="1.2.11" date-time="2021-02-02T02:30:24.628Z" user="celso">updated quote style in PDFs</note>
     <note type="updated" update="text-version" value="1.2.12" date-time="2021-02-04T21:07:54.644Z" user="celso">fixed invalid pending link (no need to update associated files)</note>
+    <note type="updated" update="text-version" value="1.2.13" date-time="2021-06-29T14:56:18.728Z" user="andre">Upgrade to a definition supplied by Wiesek.</note>
             </notesStmt>
     </fileDesc>
   </teiHeader>
@@ -2600,7 +2601,10 @@
               <term xml:lang="Bo-Ltn">dga’ bral dga’ ba </term>
               <term xml:lang="bo">དགའ་བྲལ་དགའ་བ།</term>
               <term xml:lang="Sa-Ltn">viramānanda</term>
-              <term type="definition">The third joy.</term>
+                <term type="definition">The third joy, interpreted as <distinct>intense <term type="ignore">joy</term>
+                                </distinct> in the Kālacakra system, where it supplants the <distinct>
+                                    <term type="ignore">joy</term> of cessation</distinct> of the Yoginī Tantra. While both these meanings can be derived from the Sanskrit <foreign xml:lang="Sa-Ltn">viramānanda</foreign>, the Tibetan <foreign xml:lang="Bo-Ltn">dga’ bral dga’ ba</foreign> seems to reflect only the <distinct>
+                                    <term type="ignore">joy</term> of cessation</distinct>.</term>
             </gloss>
           </item>
           <item>
@@ -4752,4 +4756,4 @@
     
     
     
-    </TEI>
+    </tei:TEI>
