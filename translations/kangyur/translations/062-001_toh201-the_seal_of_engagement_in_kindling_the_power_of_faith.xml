@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../../../schema/current/translation.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<tei:TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -48,8 +48,9 @@
             <sourceDesc>
                 <bibl key="toh201" type="text">
                     <ref>Toh 201</ref>
-                    <biblScope>vol.62, ff.1r-63r(pp.1-125)</biblScope>
-                    <author role="translatorTib"/>
+                    <biblScope>Degé Kangyur, vol. 62 (mdo sde, tsha), Folios 1b–63a</biblScope><!--vol.62, ff.1r-63r(pp.1-125)-->
+                    <author role="translatorTib">Surendrabodhi</author>
+                    <author role="translatorTib">Yeshé Dé</author>
                     <location work="UT4CZ5369" count-pages="124">
                         <volume number="62" start-page="2" end-page="125"/>
                     </location>
@@ -58,7 +59,7 @@
                 </bibl>
             </sourceDesc>
             <notesStmt>
-                <note type="lastUpdated" date-time="2021-06-24T09:36:00.296Z" user="admin">24/06/2021 09:36:00</note>
+                <note type="lastUpdated" date-time="2021-06-27T09:57:42.633Z" user="andre">27/06/2021 09:57:42</note>
 
                 <note type="updated" update="text-version" value="v 0.0.1" date-time="2019-12-20T12:56:48.575Z" user="admin">Automated version increment</note>
                 <note type="updated" update="translation-status" value="2.d" date-time="2020-01-28T06:17:19.779Z" user="mike">2.d</note>
@@ -131,25 +132,23 @@
                     and to cast the buddhas as supernatural, cosmic beings. </p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-5"/>
                 <p tid="8">No complete Sanskrit manuscript of the sūtra remains, but the text is cited several times in Indian
-                    works. According to the <fix>Sūtrasamuccaya</fix>,<note place="end" xml:id="UT22084-062-001-6"> The <fix>Sūtrasamuccaya</fix>
+                    works. According to the <title xml:lang="Sa-Ltn">Sūtrasamuccaya</title>,<note place="end" xml:id="UT22084-062-001-6"> The <title xml:lang="Sa-Ltn">Sūtrasamuccaya</title>
                         is attributed to a certain Nāgārjuna, but it is unclear whether this refers to the famous
                         Nāgārjuna who flourished around the first and second centuries. See Skilling 2013, p. 203, no.
                         51.</note> which cites <title xml:lang="en">The Seal of Engagement in Awakening the Power of
                         Faith</title> five times, the sūtra belongs to the Buddhāvataṃsaka family of scriptures.<note place="end" xml:id="UT22084-062-001-7"> On this attribution, see Skilling 2013. In the Chinese Taishō canon, the sūtra (T.
                         305) is likewise grouped together with the Buddhāvataṃsaka collection of scriptures.</note> In
                     the Degé Kangyur, however, the sūtra is not included in the Buddhāvataṃsaka section, but instead is
-                    found in the general sūtra section (<fix>mdo sde</fix>). Due to the inclusion of the sūtra in the
-                        <fix>Sūtrasamuccaya</fix>, Skilling and Saerji have dated the text to circa 150-250 CE, but this
+                    found in the general sūtra section (<foreign xml:lang="Sa-Ltn">mdo sde</foreign>). Due to the inclusion of the sūtra in the
+                    <title xml:lang="Sa-Ltn">Sūtrasamuccaya</title>, Skilling and Saerji have dated the text to circa 150-250 <hi rend="small-caps">CE</hi>, but this
                     dating is tentative and not conclusive.<note place="end" xml:id="UT22084-062-001-8"> Skilling 2013, p. 216. Skilling and Saerji
                         also mention that this dating is uncertain (p. 203, no. 51).</note> The sūtra is also briefly
-                    quoted four times by Śāntideva (seventh century) in his <title xml:lang="Sa-Ltn">Śikṣāsamuccaya
-                            <fix>and </fix>
-                    </title>two times in the <fix>Bhāvanākrama</fix> by Kamalaśīla (eigth
+                    quoted four times by Śāntideva (seventh century) in his <title xml:lang="Sa-Ltn">Śikṣāsamuccaya</title> and two times in the <title xml:lang="Sa-Ltn">Bhāvanākrama</title> by Kamalaśīla (eigth
                         century).<note place="end" xml:id="UT22084-062-001-9"> See Skilling 2013, p. 215. For this English translation only the
                         Sanskrit passages in the <title xml:lang="Sa-Ltn">Śikṣāsamuccaya</title> were consulted. We have
                         identified these passages in notes to the translation. The edited Sanskrit of these four
                         passages are found in Bendall 1971. See also Mahoney (et al.) 2003.</note> In Chinese, we find a
-                    complete translation (T. 305, <fix>Hsin li ju yin fa men ching</fix>, 信力入印法門經), dated to 504 CE, by
+                    complete translation (T. 305, <title xml:lang="Zh-Ltn">Hsin li ju yin fa men ching</title>, <title xml:lang="zh">信力入印法門經</title>), dated to 504 <hi rend="small-caps">CE</hi>, by
                     the Kashmiri translator Dharmaruci. The Tibetan translation is attributed to the Indian preceptor
                     Surendrabodhi and the prolific translator Yeshé Dé, who both were active in Tibet in the late eighth
                     and early ninth centuries. As such, we can date the Tibetan translation to the late eighth to early
@@ -163,18 +162,13 @@
         <body>
             <div type="translation">
                 <head type="translation" tid="9"> The Translation </head>
-                <head type="titleHon" tid="10">The Noble Great Vehicle Sūtra “The Seal of Engagement in Awakening the Power of
-                    Faith”</head>
-                <head type="titleMain" tid="11">[F.1.b] [B1]</head>
-                <!--In the rare case that there is initial text before the first chapter begins, the script will place the
-                        text here. However, this will cause the two headings for the "Honorific Title" and "Main Title" to be duplicated below
-                        as <p> elements. Markup Editors, please delete these initial duplicated <p> elements along with their milestones and delete this comment.-->
-                <milestone unit="chunk" xml:id="UT22084-062-001-11"/>
-                <p tid="12">The Noble Great Vehicle Sūtra “The Seal of Engagement in Awakening the Power of Faith”</p>
-                <milestone unit="chunk" xml:id="UT22084-062-001-12"/>
-                <p tid="13">[F.1.b] [B1]</p>
+                <head type="titleHon" tid="10">The Noble Great Vehicle Sūtra</head>
+                <head type="titleMain" tid="11">The Seal of Engagement in Awakening the Power of Faith</head>
+                <div type="section" xml:id="UT22084-062-001-section-1">
                 <milestone unit="chunk" xml:id="UT22084-062-001-13"/>
-                <p tid="14">Homage to all buddhas and bodhisattvas!</p>
+                <p tid="14">
+                        <ref cRef="F.1.b" type="folio" xml:id="UT22084-062-001-711"/> <ref cRef="B1" type="bampo"/> Homage to all buddhas and bodhisattvas!</p>
+                    <lb/>
                 <milestone unit="chunk" xml:id="UT22084-062-001-14"/>
                 <p tid="15">Thus did I hear at one time. The Blessed One was dwelling in an abode of the thus-gone ones, a
                     secluded Dharma hermitage, a luminous mansion. This mansion had amassed gatherings of ornaments of
@@ -182,7 +176,7 @@
                     The indestructible ground was ornamented with flowers studded with every type of precious gem and
                     decorated with a lattice of jewels that shone immaculately. A vast ocean of precious gems of myriad
                     colors glimmered brilliantly; it was formed out of the kings of precious gems that rained down in an
-                    unceasing shower. [F.2.a] There were rivers swirling with a variety of flowers with jeweled stems
+                    unceasing shower. <ref cRef="F.2.a" type="folio" xml:id="UT22084-062-001-712"/> There were rivers swirling with a variety of flowers with jeweled stems
                     and branches. The land was arrayed with webs of every kind of flower, incense, and gem. Resplendent
                     with all these adornments, this environment had been emanated due to the blessings of the Buddha. </p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-15"/>
@@ -196,7 +190,7 @@
                     banner” jewels, architraves, and windows, and decorated with tufts of silk. There were also many
                     scattered flowers of various types: mandārava, mahāmandārava, mañjuṣaka, mahāmañjuṣaka, roca,
                     mahāroca, cakra, mahācakra, jasmine, agarwood, aloe, valla aloe, surabhi, dhanuṣkārika, ravishing
-                    divine blue lotus flowers, pink lotuses, [F.2.b] water lilies, and white lotuses, and other large
+                    divine blue lotus flowers, pink lotuses, <ref cRef="F.2.b" type="folio" xml:id="UT22084-062-001-713"/> water lilies, and white lotuses, and other large
                     flowers. </p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-16"/>
                 <p tid="17">On a lion throne at the center of this arrangement sat the Blessed One, unattached and with utterly
@@ -216,7 +210,7 @@
                     display. He possessed boundless wisdom. He never parted from, nor dwelled in, the knowledge that is
                     supreme in every respect. He was skilled at displaying, simultaneously within all the infinite
                     universes, the process of dwelling in the supreme Heaven of Joy, dying and passing on, being born,
-                    departing, practicing austerities, going to the seat of awakening, vanquishing the demons, [F.3.a]
+                    departing, practicing austerities, going to the seat of awakening, vanquishing the demons, <ref cRef="F.3.a" type="folio" xml:id="UT22084-062-001-714"/>
                     fully awakening, turning the wheel of Dharma, and passing into parinirvāṇa, as well as the remaining
                     and disappearance of the Dharma. </p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-17"/>
@@ -239,7 +233,7 @@
                 <milestone unit="chunk" xml:id="UT22084-062-001-20"/>
                 <p tid="21">“(1) One can find inspiration by thinking, ‘I will live by a motivation, thereby inspiring others
                     toward that motivation.’ In this case, <distinct>motivation</distinct> means to have undivided trust
-                    in specific aspects of the different roots of virtue undertaken. [F.3.b] </p>
+                    in specific aspects of the different roots of virtue undertaken. <ref cRef="F.3.b" type="folio" xml:id="UT22084-062-001-715"/> </p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-21"/>
                 <p tid="22">“(2) One can find inspiration by thinking, ‘I will live by a higher motivation, thereby inspiring
                     others toward such motivation.’ In this case, <distinct>higher motivation</distinct> means to focus
@@ -271,7 +265,7 @@
                     different from a viewpoint—thereby inspiring others to understand emptiness, which is no different
                     from a viewpoint.’ In this case, <distinct>emptiness, which is no different from a
                         viewpoint</distinct>, refers to the nature of viewpoints. How is this? It is because emptiness
-                    is nothing other than the nature of any viewpoint. [F.4.a] Since there is no other nature of
+                    is nothing other than the nature of any viewpoint. <ref cRef="F.4.a" type="folio" xml:id="UT22084-062-001-716"/> Since there is no other nature of
                     viewpoints apart from emptiness, emptiness is the nature of any viewpoint. By knowing that the
                     nature of any viewpoint is emptiness, one knows the emptiness of all phenomena. </p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-28"/>
@@ -286,12 +280,7 @@
                 <milestone unit="chunk" xml:id="UT22084-062-001-29"/>
                 <p tid="30">“(3) One can find inspiration by thinking, ‘I will live by understanding what it means to be free
                     from elaboration—which is no different from elaboration—thereby inspiring others to be free from
-                    elaboration, which is no different from elaboration.’ In this case, <distinct>being
-                        </distinct>
-                    <fix>free from elaboration</fix>
-                    <distinct>, which is no different from
-                        </distinct>
-                    <fix>elaboration</fix>, refers to the nature of elaboration. How is this? It is
+                    elaboration, which is no different from elaboration.’ In this case, <distinct>being free from elaboration, which is no different from elaboration</distinct>, refers to the nature of elaboration. How is this? It is
                     because being free from elaboration is nothing other than the nature of elaboration. Therefore,
                     since being free from elaboration is nothing other than the nature of elaboration, the nature of
                     elaboration is being free from elaboration. By understanding that the nature of elaboration is being
@@ -300,8 +289,7 @@
                 <p tid="31">“(4) One can find inspiration by thinking, ‘I will live by understanding the absence of subtracting
                     and adding—which is no different from subtracting and adding —thereby inspiring others to understand
                     the absence of subtracting and absence of adding, which are no different from subtracting and
-                    adding.’ [F.4.b] In this case, <fix>the absence of</fix>
-                    <distinct> subtracting and adding, which is
+                    adding.’ <ref cRef="F.4.b" type="folio" xml:id="UT22084-062-001-717"/> In this case, <distinct>the absence of subtracting and adding, which is
                         no different from subtracting and adding</distinct>, refers to the nature of subtracting and
                     adding. How is this? It is because the absence of subtracting and the absence of adding are nothing
                     other than the nature of subtracting and adding. Therefore, since the absence of subtracting and the
@@ -320,7 +308,6 @@
                     than the nature of acceptance and rejection, the nature of acceptance and rejection is
                     non-acceptance and non-rejection. By understanding that the nature of acceptance and rejection is
                     the absence of acceptance and rejection, there is no acceptance or rejection of anything. </p>
-                <milestone unit="chunk" xml:id="UT22084-062-001-32"/>
                 <p tid="33">“Mañjuśrī, these five ways to find inspiration prepare one for the first bodhisattva level.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-33"/>
                 <p tid="34">“Mañjuśrī, there are also five other ways of finding inspiration that prepare one for the first
@@ -328,7 +315,7 @@
                 <milestone unit="chunk" xml:id="UT22084-062-001-34"/>
                 <p tid="35">“(1) One can find inspiration by thinking, ‘I will live by understanding the unconditioned—which is
                     no different from the conditioned—thereby inspiring others to understand the unconditioned, which is
-                    no different from the conditioned.’ [F.5.a] In this case, <distinct>the unconditioned, which is no
+                    no different from the conditioned.’ <ref cRef="F.5.a" type="folio" xml:id="UT22084-062-001-718"/> In this case, <distinct>the unconditioned, which is no
                         different from the conditioned</distinct>, refers to the nature of the conditioned. How is this?
                     It is because the unconditioned is nothing other than the nature of the conditioned. Therefore,
                     since the unconditioned is nothing other than the nature of the conditioned, the nature of the
@@ -356,7 +343,7 @@
                     different from observation—thereby inspiring others to understand non-observation, which is no
                     different from observation.’ In this case, <distinct>non-observation, which is no different from
                         observation</distinct>, refers to the nature of observation. How is this? It is because
-                    non-observation is nothing other than the nature of observation. [F.5.b] Therefore, since
+                    non-observation is nothing other than the nature of observation. <ref cRef="F.5.b" type="folio" xml:id="UT22084-062-001-719"/> Therefore, since
                     non-observation is nothing other than the nature of observation, the nature of observation is
                     non-observation. By understanding that the nature of observation is non-observation, there is no
                     observation of anything. </p>
@@ -368,7 +355,6 @@
                     impartiality is nothing other than the nature of being partial. Therefore, since impartiality is
                     nothing other than the nature being partial, the nature of being partial is impartiality. By
                     understanding that the nature of being partial is impartiality, no phenomena are partial. </p>
-                <milestone unit="chunk" xml:id="UT22084-062-001-39"/>
                 <p tid="40">“Mañjuśrī, these five ways of finding inspiration will prepare one for the first bodhisattva
                     level.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-40"/>
@@ -388,7 +374,7 @@
                 <p tid="43">“(2) One can find inspiration by thinking, ‘I will live by understanding non-existence—which is no
                     different from existence—thereby inspiring others to understand non-existence, which is no different
                     from existence.’ In this case, <distinct>non-existence, which is no different from
-                        existence</distinct>, refers to the nature of existence. How is this? [F.6.a] It is because
+                        existence</distinct>, refers to the nature of existence. How is this? <ref cRef="F.6.a" type="folio" xml:id="UT22084-062-001-720"/> It is because
                     non-existence is nothing other than the nature of existence. Therefore, since non-existence is
                     nothing other than the nature of existence, the nature of existence is non-existence. By
                     understanding that the nature of existence is non-existence, one understands that all phenomena are
@@ -416,9 +402,8 @@
                     saṃsāra.’ In this case, <distinct>nirvāṇa, which is no different from saṃsāra</distinct>, refers to
                     the nature of saṃsāra. How is this? It is because nirvāṇa is nothing other than the nature of
                     saṃsāra. Therefore, since nirvāṇa is nothing other than the nature of saṃsāra, the nature of saṃsāra
-                    is nirvāṇa. [F.6.b] By understanding that the nature of saṃsāra is nirvāṇa, one understands that all
+                    is nirvāṇa. <ref cRef="F.6.b" type="folio" xml:id="UT22084-062-001-721"/> By understanding that the nature of saṃsāra is nirvāṇa, one understands that all
                     phenomena are nirvāṇa. </p>
-                <milestone unit="chunk" xml:id="UT22084-062-001-47"/>
                 <p tid="47">“Mañjuśrī, these five ways of finding inspiration prepare one for the first bodhisattva level.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-48"/>
                 <p tid="48">“Mañjuśrī, there are also five other ways of finding inspiration that prepare one for the first
@@ -445,7 +430,7 @@
                 <p tid="51">“(3) One can find inspiration by thinking, ‘I will live by knowing—which is no different from
                     unknowing—thereby inspiring others toward knowing, which is no different from unknowing.’ In this
                     case, <distinct>knowing, which is no different from unknowing</distinct>, refers to the nature of
-                    unknowing. How is this? [F.7.a] It is because knowing is nothing other than the nature of unknowing.
+                    unknowing. How is this? <ref cRef="F.7.a" type="folio" xml:id="UT22084-062-001-722"/> It is because knowing is nothing other than the nature of unknowing.
                     Therefore, since knowing is nothing other than the nature of unknowing, the nature of unknowing is
                     knowing. By understanding that the nature of unknowing is knowing, one knows all phenomena. </p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-52"/>
@@ -465,7 +450,6 @@
                     since the absence of cognition is nothing other than the nature of cognition, the nature of
                     cognition is the absence of cognition. By understanding that the nature of cognition is the absence
                     of cognition, there is no cognition of anything. </p>
-                <milestone unit="chunk" xml:id="UT22084-062-001-54"/>
                 <p tid="54">“Mañjuśrī, these five ways of finding inspiration prepare one for the first bodhisattva level.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-55"/>
                 <p tid="55">“Mañjuśrī, there are also five other ways of finding inspiration that prepare one for the first
@@ -473,7 +457,7 @@
                 <milestone unit="chunk" xml:id="UT22084-062-001-56"/>
                 <p tid="56">“(1) One can find inspiration by thinking, ‘I will live by understanding the absence of names—which
                     is no different from names—thereby inspiring others to understand the absence of names, which is no
-                    different from names.’ In this case, [F.7.b] <distinct>the absence of names, which is no different
+                    different from names.’ In this case, <ref cRef="F.7.b" type="folio" xml:id="UT22084-062-001-723"/> <distinct>the absence of names, which is no different
                         from names</distinct>, refers to the nature of names. How is this? It is because the absence of
                     names is nothing other than the nature of names. Therefore, since the absence of names is nothing
                     other than the nature of names, the nature of names is the absence of names. By understanding that
@@ -503,7 +487,7 @@
                     of gathered causes and conditions.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-59"/>
                 <p tid="59">“(4) One can find inspiration by thinking, ‘I will live by understanding the inseparability of
-                    divisions, thereby inspiring others to understand the inseparability of divisions.’ [F.8.a] In this
+                    divisions, thereby inspiring others to understand the inseparability of divisions.’ <ref cRef="F.8.a" type="folio" xml:id="UT22084-062-001-724"/> In this
                     case, <distinct>the inseparability of divisions</distinct> refers to the nature of divisions. How is
                     this? It is because inseparability is nothing other than the nature of divisions. Therefore, since
                     inseparability is nothing other than the nature of divisions, the nature of divisions is
@@ -518,7 +502,6 @@
                     nothing other than the nature of letters, the nature of letters is the absence of letters. By
                     understanding that the nature of letters is the absence of letters, there are no letters regarding
                     any phenomena. </p>
-                <milestone unit="chunk" xml:id="UT22084-062-001-61"/>
                 <p tid="61">“Mañjuśrī, these five ways of finding inspiration prepare one for the first bodhisattva level.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-62"/>
                 <p tid="62">“Mañjuśrī, there are also five other ways of finding inspiration that prepare one for the first
@@ -532,7 +515,8 @@
                     the nature of excessive pride. Therefore, since the absence of excessive pride is nothing other than
                     the nature of excessive pride, the nature of excessive pride is the absence of excessive pride. By
                     understanding that the nature of excessive pride is the absence of excessive pride, there is no
-                    excessive pride with regard to anything. [F.8.b]</p>
+                    excessive pride with regard to anything. <ref cRef="F.8.b" type="folio" xml:id="UT22084-062-001-725"/>
+                    </p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-64"/>
                 <p tid="64">“(2) One can find inspiration by thinking, ‘I will live by understanding the absence of
                     self-praise—which is no different from self-praise—thereby inspiring others to understand the
@@ -564,13 +548,12 @@
                     is the intrinsic nature. </p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-67"/>
                 <p tid="67">“(5) One can find inspiration by thinking, ‘I will live by the true view—which is no different from
-                    wrong view—[F.9.a] thereby inspiring others toward the true view, which is no different from wrong
+                    wrong view—<ref cRef="F.9.a" type="folio" xml:id="UT22084-062-001-726"/> thereby inspiring others toward the true view, which is no different from wrong
                     view.’ In this case, <distinct>the true view, which is no different from wrong view</distinct>,
                     refers to the nature of wrong view. How is this? It is because the true view is nothing other than
                     the nature of wrong view. Therefore, since the true view is nothing other than the nature of wrong
                     view, the nature of wrong view is the true view. By understanding that the nature of wrong view is
                     the true view, everything is the true view. </p>
-                <milestone unit="chunk" xml:id="UT22084-062-001-68"/>
                 <p tid="68">“Mañjuśrī, these five ways of finding inspiration prepare one for the first bodhisattva level.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-69"/>
                 <p tid="69">“Mañjuśrī, there are also five other ways of finding inspiration that prepare one for the first
@@ -594,7 +577,7 @@
                     everything.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-72"/>
                 <p tid="72">“(3) One can find inspiration by thinking, ‘I will live by understanding non-clinging—which is no
-                    different from clinging—thereby establishing others [F.9.b] in non-clinging, which is no different
+                    different from clinging—thereby establishing others <ref cRef="F.9.b" type="folio" xml:id="UT22084-062-001-727"/> in non-clinging, which is no different
                     from clinging.’ In this case, <distinct>non-clinging, which is no different from
                     clinging</distinct>, refers to the nature of clinging. How is this? It is because non-clinging is
                     nothing other than the nature of clinging. Therefore, since non-clinging is nothing other than the
@@ -616,11 +599,10 @@
                     of meditation. Therefore, since non-meditation is nothing other than the nature of meditation, the
                     nature of meditation is non-meditation. By understanding that the nature of meditation is
                     non-meditation, everything is non-meditation. </p>
-                <milestone unit="chunk" xml:id="UT22084-062-001-75"/>
                 <p tid="75">“Mañjuśrī, these five ways of finding inspiration prepare one for the first bodhisattva level.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-76"/>
                 <p tid="76">“Mañjuśrī, there are also five other ways of finding inspiration that prepare one for the first
-                    bodhisattva level. [F.10.a] What are the five, you may ask? </p>
+                    bodhisattva level. <ref cRef="F.10.a" type="folio" xml:id="UT22084-062-001-728"/> What are the five, you may ask? </p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-77"/>
                 <p tid="77">“(1) One can find inspiration by thinking, ‘I will live by understanding the middle way—which is no
                     different from extremes—thereby inspiring others toward the middle way, which is no different from
@@ -647,7 +629,7 @@
                     the barren woman’s child. Therefore, since what is not the barren woman’s child is nothing other
                     than the nature of the barren woman’s child, the nature of the barren woman’s child is what is not
                     the barren woman’s child. By understanding that the nature of what is not the barren woman’s child
-                    is the barren woman’s child, [10b] everything is equal to a barren woman’s child. </p>
+                    is the barren woman’s child, <ref cRef="F.10.b" type="folio" xml:id="UT22084-062-001-833"/> everything is equal to a barren woman’s child. </p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-80"/>
                 <p tid="80">“(4) One can find inspiration by thinking, ‘I will live by understanding mirages—which are no
                     different from non-mirages—thereby inspiring others to understand mirages, which are no different
@@ -664,7 +646,6 @@
                     nothing other than the nature of wrong view. Therefore, since the true view is nothing other than
                     the nature of wrong view, the nature of wrong view is the true view. By understanding that the
                     nature of wrong view is the true view, everything is the true view. </p>
-                <milestone unit="chunk" xml:id="UT22084-062-001-82"/>
                 <p tid="82">“Mañjuśrī, these five ways of finding inspiration prepare one for the first bodhisattva level.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-83"/>
                 <p tid="83">“Mañjuśrī, there are also five other ways of finding inspiration that prepare one for the first
@@ -674,7 +655,7 @@
                     different from ignorance—thereby inspiring others to understand awareness, which is no different
                     from ignorance.’ In this case, <distinct>awareness, which is no different from ignorance</distinct>,
                     refers to the nature of ignorance. How is this? It is because awareness is nothing other than the
-                    nature of ignorance. [F.11.a] Therefore, since awareness is nothing other than the nature of
+                    nature of ignorance. <ref cRef="F.11.a" type="folio" xml:id="UT22084-062-001-729"/> Therefore, since awareness is nothing other than the nature of
                     ignorance, the nature of ignorance is awareness. By understanding that the nature of ignorance is
                     awareness, everything is awareness.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-85"/>
@@ -700,7 +681,7 @@
                         from delusion</distinct>, refers to the nature of delusion. How is this? It is because freedom
                     from delusion is nothing other than the nature of delusion. Therefore, since freedom from delusion
                     is nothing other than the nature of delusion, the nature of delusion is freedom from delusion. By
-                    understanding that the nature of delusion is freedom from delusion, [F.11.b] there is no delusion
+                    understanding that the nature of delusion is freedom from delusion, <ref cRef="F.11.b" type="folio" xml:id="UT22084-062-001-730"/> there is no delusion
                     concerning anything. </p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-88"/>
                 <p tid="88">“(5) One can find inspiration by thinking, ‘I will live by understanding freedom from rebirth—which
@@ -710,7 +691,6 @@
                     rebirth is nothing other than the nature of rebirth. Therefore, since freedom from rebirth is
                     nothing other than the nature of rebirth, the nature of rebirth is freedom from rebirth. By
                     understanding that the nature of rebirth is freedom from rebirth, there is no rebirth of anything. </p>
-                <milestone unit="chunk" xml:id="UT22084-062-001-89"/>
                 <p tid="89">“Mañjuśrī, these five ways of finding inspiration prepare one for the first bodhisattva level.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-90"/>
                 <p tid="90">“Mañjuśrī, there are also five other ways of finding inspiration that prepare one for the first
@@ -728,9 +708,9 @@
                 <milestone unit="chunk" xml:id="UT22084-062-001-93"/>
                 <p tid="93">“(3) One can find inspiration by thinking, ‘I will live by understanding meaningful behavior as a way
                     of magnetizing, thereby inspiring others toward meaningful behavior as a way of magnetizing.’ In
-                    this case, <distinct>meaningful behavior as a way of magnetizing <fix>refers</fix>
-                    </distinct> to
-                    love and compassion. [F.12.a]</p>
+                    this case, <distinct>meaningful behavior as a way of magnetizing</distinct> refers to
+                    love and compassion. <ref cRef="F.12.a" type="folio" xml:id="UT22084-062-001-731"/>
+                    </p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-94"/>
                 <p tid="94">“(4) One can find inspiration by thinking, ‘I will live by understanding practicing what one preaches
                     as a way of magnetizing, thereby inspiring others toward practicing what one preaches as a way of
@@ -740,7 +720,6 @@
                 <p tid="95">“(5) One can find inspiration by thinking, ‘I will live by composition, thereby inspiring others to
                     compose.’ In this case, <distinct>composition</distinct> refers to the motivation as well as the act
                     carried out. </p>
-                <milestone unit="chunk" xml:id="UT22084-062-001-96"/>
                 <p tid="96">“Mañjuśrī, these five ways of finding inspiration prepare one for the first bodhisattva level.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-97"/>
                 <p tid="97">“Mañjuśrī, there are also five other ways of finding inspiration that prepare one for the first
@@ -764,8 +743,7 @@
                 <milestone unit="chunk" xml:id="UT22084-062-001-102"/>
                 <p tid="102">“(5) One can find inspiration by thinking, ‘I will live by mental restraint, thereby inspiring others
                     to have mental restraint.’ In this case, <distinct>mental restraint</distinct> refers to giving up
-                    covetousness, ill will, and wrong view. [F.12.b] </p>
-                <milestone unit="chunk" xml:id="UT22084-062-001-103"/>
+                    covetousness, ill will, and wrong view. <ref cRef="F.12.b" type="folio" xml:id="UT22084-062-001-732"/> </p>
                 <p tid="103">“Mañjuśrī, these five ways of finding inspiration prepare one for the first bodhisattva level.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-104"/>
                 <p tid="104">“Mañjuśrī, there are also five other ways of finding inspiration that prepare one for the first
@@ -790,15 +768,15 @@
                 <p tid="109">“(5) One can find inspiration by thinking, ‘I will live by recollection of discipline, thereby
                     inspiring others to recollect discipline.’ In this case, <distinct>recollection of
                         discipline</distinct> refers to engaging with everything as sameness. </p>
-                <milestone unit="chunk" xml:id="UT22084-062-001-110"/>
                 <p tid="110">“Mañjuśrī, these five ways of finding inspiration prepare one for the first bodhisattva level.
-                    [B2]</p>
+                    <ref cRef="B2" type="bampo"/>
+                    </p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-111"/>
                 <p tid="111">“Mañjuśrī, there are also five other ways of finding inspiration that prepare one for the first
                     bodhisattva level. What are the five, you may ask? </p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-112"/>
                 <p tid="112">“(1) One can find inspiration by thinking, ‘I will live by discernment of impermanence, thereby
-                    inspiring others toward discernment of impermanence.’ [F.13.a] In this case, <distinct>discernment
+                    inspiring others toward discernment of impermanence.’ <ref cRef="F.13.a" type="folio" xml:id="UT22084-062-001-733"/> In this case, <distinct>discernment
                         of impermanence</distinct> refers to transcending all desire associated with the desire, form,
                     and formless realms. </p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-113"/>
@@ -817,7 +795,6 @@
                 <p tid="116">“(5) One can find inspiration by thinking, ‘I will live by Dharma practice, thereby inspiring others
                     to practice the Dharma.’ In this case, <distinct>Dharma practice</distinct> refers to relying on the
                     Dharma. </p>
-                <milestone unit="chunk" xml:id="UT22084-062-001-117"/>
                 <p tid="117">“Mañjuśrī, these five ways of finding inspiration prepare one for the first bodhisattva level.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-118"/>
                 <p tid="118">“Mañjuśrī, there are also five other ways of finding inspiration that prepare one for the first
@@ -831,7 +808,7 @@
                     inspiring others to keep their discipline intact.’ In this case, <distinct>keeping one’s discipline
                         intact</distinct> means not to exaggerate about other vehicles.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-121"/>
-                <p tid="121">“(3) One can find inspiration by thinking, ‘I will live by flawless discipline, [F.13.b] thereby
+                <p tid="121">“(3) One can find inspiration by thinking, ‘I will live by flawless discipline, <ref cRef="F.13.b" type="folio" xml:id="UT22084-062-001-734"/> thereby
                     inspiring others to have flawless discipline.’ In this case, <distinct>flawless
                         discipline</distinct> means to have abandoned all faults.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-122"/>
@@ -842,7 +819,6 @@
                 <p tid="123">“(5) One can find inspiration by thinking, ‘I will live by well-kept discipline, thereby inspiring
                     others to keep their discipline well.’ In this case, <distinct>well-kept discipline</distinct> means
                     to perceive all bodhisattvas as guides. </p>
-                <milestone unit="chunk" xml:id="UT22084-062-001-124"/>
                 <p tid="124">“Mañjuśrī, these five ways of finding inspiration prepare one for the first bodhisattva level.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-125"/>
                 <p tid="125">“Mañjuśrī, there are also five other ways of finding inspiration that prepare one for the first
@@ -859,7 +835,7 @@
                 <milestone unit="chunk" xml:id="UT22084-062-001-128"/>
                 <p tid="128">“(3) One can find inspiration by thinking, ‘I will live by the discipline of contentment, thereby
                     inspiring others to keep the discipline of contentment.’ In this case, <distinct>the discipline of
-                        contentment</distinct> [F.14.a] means to have abandoned attachment.</p>
+                        contentment</distinct> <ref cRef="F.14.a" type="folio" xml:id="UT22084-062-001-735"/> means to have abandoned attachment.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-129"/>
                 <p tid="129">“(4) One can find inspiration by thinking, ‘I will live by the discipline of solitude, thereby
                     inspiring others to keep the discipline of solitude.’ In this case, <distinct>the discipline of
@@ -869,7 +845,6 @@
                     place, thereby inspiring others to keep the discipline of living in a remote place.’ In this case,
                         <distinct>the discipline of living in a remote place</distinct> means to perceive that all
                     phenomena are beyond being central or peripheral. </p>
-                <milestone unit="chunk" xml:id="UT22084-062-001-131"/>
                 <p tid="131">“Mañjuśrī, these five ways of finding inspiration prepare one for the first bodhisattva level.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-132"/>
                 <p tid="132">“Mañjuśrī, there are also five other ways of finding inspiration that prepare one for the first
@@ -890,13 +865,12 @@
                 <milestone unit="chunk" xml:id="UT22084-062-001-136"/>
                 <p tid="136">“(4) One can find inspiration by thinking, ‘I will live by the discipline of insight, thereby
                     inspiring others to keep the discipline of insight.’ In this case, <distinct>the discipline of
-                        insight</distinct> [F.14.b] means to be insatiable in establishing all beings in the roots of
+                        insight</distinct> <ref cRef="F.14.b" type="folio" xml:id="UT22084-062-001-736"/> means to be insatiable in establishing all beings in the roots of
                     virtue.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-137"/>
                 <p tid="137">“(5) One can find inspiration by thinking, ‘I will live by the discipline free of garrulousness,
                     thereby inspiring others to keep the discipline free of garrulousness.’ In this case, <distinct>the
                         discipline free of garrulousness</distinct> means to be noble in all regards. </p>
-                <milestone unit="chunk" xml:id="UT22084-062-001-138"/>
                 <p tid="138">“Mañjuśrī, these five ways of finding inspiration prepare one for the first bodhisattva level.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-139"/>
                 <p tid="139">“Mañjuśrī, there are also five other ways of finding inspiration that prepare one for the first
@@ -919,13 +893,13 @@
                 <p tid="143">“(4) One can find inspiration by thinking, ‘I will live by the discipline of upholding the sacred
                     Dharma, thereby inspiring others toward the discipline of upholding the sacred Dharma.’ In this
                     case, <distinct>the discipline of upholding the sacred Dharma</distinct> means to be devoted to
-                    emptiness. [F.15.a]</p>
+                    emptiness. <ref cRef="F.15.a" type="folio" xml:id="UT22084-062-001-737"/>
+                    </p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-144"/>
                 <p tid="144">“(5) One can find inspiration by thinking, ‘I will live by the discipline of the buddhas’ absorption,
                     thereby inspiring others toward the discipline of the buddhas’ absorption.’ In this case,
                         <distinct>the discipline of the buddhas’ absorption</distinct> means to be unprejudiced toward
                     all beings. </p>
-                <milestone unit="chunk" xml:id="UT22084-062-001-145"/>
                 <p tid="145">“Mañjuśrī, these five ways of finding inspiration prepare one for the first bodhisattva level.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-146"/>
                 <p tid="146">“Mañjuśrī, there are also five other ways of finding inspiration that prepare one for the first
@@ -949,8 +923,8 @@
                 <milestone unit="chunk" xml:id="UT22084-062-001-151"/>
                 <p tid="151">“(5) One can find inspiration by thinking, ‘I will live by skill in ascertainment, thereby inspiring
                     others toward skill in ascertainment.’ In this case, <distinct>to have skill in
-                        ascertainment</distinct> is to penetrate the ineffability of all phenomena. [F.15.b]</p>
-                <milestone unit="chunk" xml:id="UT22084-062-001-152"/>
+                        ascertainment</distinct> is to penetrate the ineffability of all phenomena. <ref cRef="F.15.b" type="folio" xml:id="UT22084-062-001-738"/>
+                    </p>
                 <p tid="152">“Mañjuśrī, these five ways of finding inspiration prepare one for the first bodhisattva level.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-153"/>
                 <p tid="153">“Mañjuśrī, there are also five other ways of finding inspiration that prepare one for the first
@@ -975,13 +949,12 @@
                 <p tid="158">“(5) One can find inspiration by thinking, ‘I will live by discernment of my own confusion, thereby
                     inspiring others to discern their own confusion.’ In this case, <distinct>discernment of one’s own
                         confusion</distinct> means to comprehend one’s mind. </p>
-                <milestone unit="chunk" xml:id="UT22084-062-001-159"/>
                 <p tid="159">“Mañjuśrī, these five ways of finding inspiration prepare one for the first bodhisattva level.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-160"/>
                 <p tid="160">“Mañjuśrī, there are also five other ways of finding inspiration that prepare one for the first
                     bodhisattva level. What are the five, you may ask? </p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-161"/>
-                <p tid="161">“(1) One can find inspiration by thinking, ‘I will live by safeguarding others’ minds, [F.16.a]
+                <p tid="161">“(1) One can find inspiration by thinking, ‘I will live by safeguarding others’ minds, <ref cRef="F.16.a" type="folio" xml:id="UT22084-062-001-739"/>
                     thereby inspiring others to safeguard others’ minds.’ In this case, <distinct>safeguarding others’
                         minds</distinct> means to non-aggressively expose someone’s confusion.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-162"/>
@@ -1000,21 +973,20 @@
                 <p tid="165">“(5) One can find inspiration by thinking, ‘I will dwell nowhere at all, thereby inspiring others
                     toward nothing whatsoever. In this case, <distinct>nowhere at all</distinct> means to have no
                     observation with regard to the body. </p>
-                <milestone unit="chunk" xml:id="UT22084-062-001-166"/>
                 <p tid="166">“Mañjuśrī, these five ways of finding inspiration prepare one for the first bodhisattva level.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-167"/>
                 <p tid="167">“Mañjuśrī, there are also five other ways of finding inspiration that prepare one for the first
                     bodhisattva level. What are the five, you may ask? </p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-168"/>
                 <p tid="168">“(1) One can find inspiration by thinking, ‘I will live by acceptance regarding the unborn, thereby
-                    inspiring others toward acceptance regarding the unborn. In this case, <fix>acceptance
-                        regarding</fix>
-                    <distinct> the unborn</distinct> means to actualize cessation.</p>
+                    inspiring others toward acceptance regarding the unborn. In this case, <distinct>acceptance
+                        regarding the unborn</distinct> means to actualize cessation.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-169"/>
                 <p tid="169">“(2) One can find inspiration by thinking, ‘I will live by acceptance regarding the absence of
                     cessation, thereby inspiring others toward acceptance regarding the absence of cessation.’ In this
                     case, <distinct>acceptance regarding the absence of cessation</distinct> means to actualize
-                    non-origination. [F.16.b]</p>
+                    non-origination. <ref cRef="F.16.b" type="folio" xml:id="UT22084-062-001-740"/>
+                    </p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-170"/>
                 <p tid="170">“(3) One can find inspiration by thinking, ‘I will live by mindfulness of the body, thereby inspiring
                     others to be mindful of the body.’ In this case, <distinct>mindfulness of the body</distinct> means
@@ -1027,7 +999,6 @@
                 <p tid="172">“(5) One can find inspiration by thinking, ‘I will live by mindfulness of the mind, thereby inspiring
                     others to be mindful of the mind.’ In this case, <distinct>mindfulness of the mind</distinct> means
                     to discern mind as being like an illusion because it is without any foundation.</p>
-                <milestone unit="chunk" xml:id="UT22084-062-001-173"/>
                 <p tid="173">“Mañjuśrī, these five ways of finding inspiration prepare one for the first bodhisattva level.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-174"/>
                 <p tid="174">“Mañjuśrī, there are also five other ways of finding inspiration that prepare one for the first
@@ -1046,13 +1017,12 @@
                     refers to the understanding that properly comprehends all phenomena.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-178"/>
                 <p tid="178">“(4) One can find inspiration by thinking, ‘I will live by the power of mindfulness, thereby
-                    inspiring others toward the power of mindfulness.’ [F.17.a] In this case, <distinct>the power of
+                    inspiring others toward the power of mindfulness.’ <ref cRef="F.17.a" type="folio" xml:id="UT22084-062-001-741"/> In this case, <distinct>the power of
                         mindfulness</distinct> refers to carrying out wholesome actions.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-179"/>
                 <p tid="179">“(5) One can find inspiration by thinking, ‘I will live by the power of absorption, thereby inspiring
                     others toward the power of absorption.’ In this case, <distinct>the power of absorption</distinct>
                     refers to the liberation of mind. </p>
-                <milestone unit="chunk" xml:id="UT22084-062-001-180"/>
                 <p tid="180">“Mañjuśrī, these five ways of finding inspiration prepare one for the first bodhisattva level.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-181"/>
                 <p tid="181">“Mañjuśrī, there are also five other ways of finding inspiration that prepare one for the first
@@ -1077,10 +1047,9 @@
                 <p tid="186">“(5) One can find inspiration by thinking, ‘I will live by the strength of mindfulness, thereby
                     inspiring others toward the strength of mindfulness.’ In this case, <distinct>the strength of
                         mindfulness</distinct> refers to retaining all of the Buddha’s qualities. </p>
-                <milestone unit="chunk" xml:id="UT22084-062-001-187"/>
                 <p tid="187">“Mañjuśrī, these five ways of finding inspiration prepare one for the first bodhisattva level.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-188"/>
-                <p tid="188">“Mañjuśrī, [F.17.b] there are also five other ways of finding inspiration that prepare one for the
+                <p tid="188">“Mañjuśrī, <ref cRef="F.17.b" type="folio" xml:id="UT22084-062-001-742"/> there are also five other ways of finding inspiration that prepare one for the
                     first bodhisattva level. What are the five, you may ask? </p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-189"/>
                 <p tid="189">“(1) One can find inspiration by thinking, ‘I will live by the strength of absorption, thereby
@@ -1105,14 +1074,13 @@
                     awakening, thereby inspiring others toward diligence as a branch of perfect awakening.’ In this
                     case, <distinct>the diligence that is a branch of perfect awakening </distinct>refers to the
                     understanding that properly comprehends all phenomena. </p>
-                <milestone unit="chunk" xml:id="UT22084-062-001-194"/>
                 <p tid="194">“Mañjuśrī, these five ways of finding inspiration prepare one for the first bodhisattva level.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-195"/>
                 <p tid="195">“Mañjuśrī, there are also five other ways of finding inspiration that prepare one for the first
                     bodhisattva level. What are the five, you may ask? </p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-196"/>
                 <p tid="196">“(1) One can find inspiration by thinking, ‘I will live by joy as a branch of perfect awakening,
-                    [F.18.a] thereby inspiring others toward joy as a branch of perfect awakening.’ In this case,
+                    <ref cRef="F.18.a" type="folio" xml:id="UT22084-062-001-743"/> thereby inspiring others toward joy as a branch of perfect awakening.’ In this case,
                         <distinct>the joy that is a branch of perfect awakening</distinct> refers to absorption and
                     equipoise.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-197"/>
@@ -1135,7 +1103,6 @@
                 <p tid="200">“(5) One can find inspiration by thinking, ‘I will live by right view, thereby inspiring others
                     toward right view.’ In this case, <distinct>right view</distinct> refers to engaging with what is
                     unchanging. </p>
-                <milestone unit="chunk" xml:id="UT22084-062-001-201"/>
                 <p tid="201">“Mañjuśrī, these five ways of finding inspiration prepare one for the first bodhisattva level.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-202"/>
                 <p tid="202">“Mañjuśrī, there are also five other ways of finding inspiration that prepare one for the first
@@ -1143,7 +1110,8 @@
                 <milestone unit="chunk" xml:id="UT22084-062-001-203"/>
                 <p tid="203">“(1) One can find inspiration by thinking, ‘I will live by right thought, thereby inspiring others
                     toward right thought.’ In this case, <distinct>right thought</distinct> refers to the abandonment of
-                    thoughts, ideas, and concepts. [F.18.b]</p>
+                    thoughts, ideas, and concepts. <ref cRef="F.18.b" type="folio" xml:id="UT22084-062-001-744"/>
+                    </p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-204"/>
                 <p tid="204">“(2) One can find inspiration by thinking, ‘I will live by right speech, thereby inspiring others
                     toward right speech.’ In this case, <distinct>right speech</distinct> refers to discerning the
@@ -1160,7 +1128,6 @@
                 <p tid="207">“(5) One can find inspiration by thinking, ‘I will live by right effort, thereby inspiring others
                     toward right effort.’ In this case, <distinct>right effort</distinct> means to leave this side and
                     go to the other shore. </p>
-                <milestone unit="chunk" xml:id="UT22084-062-001-208"/>
                 <p tid="208">“Mañjuśrī, these five ways of finding inspiration prepare one for the first bodhisattva level.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-209"/>
                 <p tid="209">“Mañjuśrī, there are also five other ways of finding inspiration that prepare one for the first
@@ -1175,7 +1142,7 @@
                     composure without ideation.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-212"/>
                 <p tid="212">“(3) One can find inspiration by thinking, ‘I will live by the mind of awakening, thereby inspiring
-                    others toward the mind of awakening.’ [F.19.a] In this case, <distinct>the mind of
+                    others toward the mind of awakening.’ <ref cRef="F.19.a" type="folio" xml:id="UT22084-062-001-745"/> In this case, <distinct>the mind of
                         awakening</distinct> refers to the attainment of inconceivable wisdom.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-213"/>
                 <p tid="213">“(4) One can find inspiration by thinking, ‘I will live by the training of the mind of awakening,
@@ -1188,7 +1155,6 @@
                     affliction. How is this? It is because wisdom is nothing other than the nature of affliction.
                     Therefore, since wisdom is nothing other than the nature of affliction, the nature of affliction is
                     wisdom. By this wisdom, which is the nature of affliction, everything is understood. </p>
-                <milestone unit="chunk" xml:id="UT22084-062-001-215"/>
                 <p tid="215">“Mañjuśrī, these five ways of finding inspiration prepare one for the first bodhisattva level.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-216"/>
                 <p tid="216">“Mañjuśrī, there are also five other ways of finding inspiration that prepare one for the first
@@ -1203,7 +1169,7 @@
                         discipline</distinct> means to bring beings with faulty discipline to maturity.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-219"/>
                 <p tid="219">“(3) One can find inspiration by thinking, ‘I will live by the perfection of patience, thereby
-                    inspiring others toward the perfection of patience.’ [F.19.b] In this case, <distinct>the perfection
+                    inspiring others toward the perfection of patience.’ <ref cRef="F.19.b" type="folio" xml:id="UT22084-062-001-746"/> In this case, <distinct>the perfection
                         of patience</distinct> means to bring beings with a malicious attitude to maturity.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-220"/>
                 <p tid="220">“(4) One can find inspiration by thinking, ‘I will live by the perfection of diligence, thereby
@@ -1213,7 +1179,6 @@
                 <p tid="221">“(5) One can find inspiration by thinking, ‘I will live by the perfection of concentration, thereby
                     inspiring others toward the perfection of concentration.’ In this case, <distinct>the perfection of
                         concentration</distinct> means to bring beings whose minds are distracted to maturity. </p>
-                <milestone unit="chunk" xml:id="UT22084-062-001-222"/>
                 <p tid="222">“Mañjuśrī, these five ways of finding inspiration prepare one for the first bodhisattva level.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-223"/>
                 <p tid="223">“Mañjuśrī, there are also five other ways of finding inspiration that prepare one for the first
@@ -1230,7 +1195,8 @@
                 <p tid="226">“(3) One can find inspiration by thinking, ‘I will live by the accumulation of merit, thereby
                     inspiring others to accumulate merit.’ In this case, <distinct>the accumulation of merit</distinct>
                     means to offer bodhisattvas wealth and veneration, as well as to chant praises and eulogies of them
-                    in every direction. [F.20.a]</p>
+                    in every direction. <ref cRef="F.20.a" type="folio" xml:id="UT22084-062-001-747"/>
+                    </p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-227"/>
                 <p tid="227">“(4) One can find inspiration by thinking, ‘I will live by the accumulation of wisdom, thereby
                     inspiring others to accumulate wisdom.’ In this case, <distinct>the accumulation of
@@ -1240,7 +1206,6 @@
                 <p tid="228">“(5) One can find inspiration by thinking, ‘I will live by the accumulation of tranquility, thereby
                     inspiring others to accumulate tranquility.’ In this case, <distinct>the accumulation of
                         tranquility</distinct> means to be free from thinking in relating to everything as sameness. </p>
-                <milestone unit="chunk" xml:id="UT22084-062-001-229"/>
                 <p tid="229">“Mañjuśrī, these five ways of finding inspiration prepare one for the first bodhisattva level.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-230"/>
                 <p tid="230">“Mañjuśrī, there are also five other ways of finding inspiration that prepare one for the first
@@ -1263,9 +1228,8 @@
                     beings in the accumulation of merit.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-235"/>
                 <p tid="235">“(5) One can find inspiration by thinking, ‘I will live by concentration, thereby inspiring others
-                    toward concentration.’ [F.20.b] In this case, <distinct>concentration</distinct> means not to dwell
+                    toward concentration.’ <ref cRef="F.20.b" type="folio" xml:id="UT22084-062-001-748"/> In this case, <distinct>concentration</distinct> means not to dwell
                     on any reference point. </p>
-                <milestone unit="chunk" xml:id="UT22084-062-001-236"/>
                 <p tid="236">“Mañjuśrī, these five ways of finding inspiration prepare one for the first bodhisattva level.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-237"/>
                 <p tid="237">“Mañjuśrī, there are also five other ways of finding inspiration that prepare one for the first
@@ -1289,7 +1253,6 @@
                     of perfect recall.<note place="end" xml:id="UT22084-062-001-242"> There are only four items in this list in all versions of the
                         text.</note>
                 </p>
-                <milestone unit="chunk" xml:id="UT22084-062-001-243"/>
                 <p tid="242">“Mañjuśrī, these five ways of finding inspiration prepare one for the first bodhisattva level.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-244"/>
                 <p tid="243">“Mañjuśrī, there are also five other ways of finding inspiration that prepare one for the first
@@ -1300,7 +1263,7 @@
                     connections between phenomena</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-246"/>
                 <p tid="245">“(2) One can find inspiration by thinking, ‘I will live by stability, thereby inspiring others to be
-                    stable. In this case, <distinct>stability</distinct> [F.21.a] refers to excellence in behavior and
+                    stable. In this case, <distinct>stability</distinct> <ref cRef="F.21.a" type="folio" xml:id="UT22084-062-001-749"/> refers to excellence in behavior and
                     ritual conduct.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-247"/>
                 <p tid="246">“(3) One can find inspiration by thinking, ‘I will live by realization, thereby inspiring others
@@ -1314,7 +1277,6 @@
                 <p tid="248">“(5) One can find inspiration by thinking, ‘I will live by quelling obsessions, thereby inspiring
                     others to quell obsessions.’ In this case, <distinct>quelling obsessions</distinct> means to confess
                     to the blemishes of wrongdoing and from then onward to refrain from things that are non-virtuous. </p>
-                <milestone unit="chunk" xml:id="UT22084-062-001-250"/>
                 <p tid="249">“Mañjuśrī, these five ways of finding inspiration prepare one for the first bodhisattva level.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-251"/>
                 <p tid="250">“Mañjuśrī, there are also five other ways of finding inspiration that prepare one for the first
@@ -1334,7 +1296,7 @@
                     praise.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-255"/>
                 <p tid="254">“(4) One can find inspiration by thinking, ‘I will live by not praising myself or disparaging others,
-                    thereby inspiring others not to praise themselves or disparage others.’ [F.21.b] In this case, the
+                    thereby inspiring others not to praise themselves or disparage others.’ <ref cRef="F.21.b" type="folio" xml:id="UT22084-062-001-750"/> In this case, the
                     meaning of <distinct>not praising oneself nor disparaging others</distinct> is as follows.
                         <distinct>Not praising oneself</distinct> means not to exaggerate the qualities one has.
                         <distinct>Not disparaging others</distinct> means not to disregard others’ genuine
@@ -1343,7 +1305,6 @@
                 <p tid="255">“(5) One can find inspiration by thinking, ‘I will live by what is genuine, thereby inspiring others
                     toward what is genuine.’ In this case, <distinct>what is genuine</distinct> means to be free of
                     ideas about anything, not to entertain any ideas. </p>
-                <milestone unit="chunk" xml:id="UT22084-062-001-257"/>
                 <p tid="256">“Mañjuśrī, these five ways of finding inspiration prepare one for the first bodhisattva level.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-258"/>
                 <p tid="257">“Mañjuśrī, there are also five other ways of finding inspiration that prepare one for the first
@@ -1351,7 +1312,7 @@
                 <milestone unit="chunk" xml:id="UT22084-062-001-259"/>
                 <p tid="258">“(1) One can find inspiration by thinking, ‘I will live by overcoming the continuity of habitual
                     tendencies, thereby inspiring others to overcome the continuity of habitual tendencies.’ In this
-                    case, <fix>overcoming the continuity of habitual tendencies</fix> means to condemn past childish
+                    case, <distinct>overcoming the continuity of habitual tendencies</distinct> means to condemn past childish
                     behavior and not desire the level of the hearers or solitary buddhas.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-260"/>
                 <p tid="259">“(2) One can find inspiration by thinking, ‘I will live by the abandonment of attachment and anger,
@@ -1365,11 +1326,11 @@
                 <milestone unit="chunk" xml:id="UT22084-062-001-262"/>
                 <p tid="261">“(4) One can find inspiration by thinking, ‘I will live by honesty, thereby inspiring others to be
                     honest.’ In this case, <distinct>honesty</distinct> means not to have any concept regarding the path
-                    of the noble ones. [F.22.a]</p>
+                    of the noble ones. <ref cRef="F.22.a" type="folio" xml:id="UT22084-062-001-751"/>
+                    </p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-263"/>
                 <p tid="262">“(5) One can find inspiration by thinking, ‘I will live by not frowning, thereby inspiring others not
                     to frown.’ In this case, <distinct>not frowning</distinct> means to be free of anger. </p>
-                <milestone unit="chunk" xml:id="UT22084-062-001-264"/>
                 <p tid="263">“Mañjuśrī, these five ways of finding inspiration prepare one for the first bodhisattva level.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-265"/>
                 <p tid="264">“Mañjuśrī, there are also five other ways of finding inspiration that prepare one for the first
@@ -1396,8 +1357,7 @@
                 <p tid="269">“(5) One can find inspiration by thinking, ‘I will live by understanding the realm of phenomena,
                     thereby inspiring others to understand the realm of phenomena.’ In this case,
                         <distinct>understanding the realm of phenomena</distinct> means to understand that all phenomena
-                    are indivisible and inseparable from the realm of phenomena. [F.22.b] </p>
-                <milestone unit="chunk" xml:id="UT22084-062-001-271"/>
+                    are indivisible and inseparable from the realm of phenomena. <ref cRef="F.22.b" type="folio" xml:id="UT22084-062-001-752"/> </p>
                 <p tid="270">“Mañjuśrī, these five ways of finding inspiration prepare one for the first bodhisattva level.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-272"/>
                 <p tid="271">“Mañjuśrī, there are also five other ways of finding inspiration that prepare one for the first
@@ -1423,14 +1383,13 @@
                 <p tid="276">“(5) One can find inspiration by thinking, ‘I will live by freedom from demonic behavior, thereby
                     inspiring others to be free from demonic behavior.’ In this case, <distinct>freedom from demonic
                         behavior</distinct> means understanding of the view. </p>
-                <milestone unit="chunk" xml:id="UT22084-062-001-278"/>
                 <p tid="277">“Mañjuśrī, these five ways of finding inspiration prepare one for the first bodhisattva level.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-279"/>
                 <p tid="278">“Mañjuśrī, there are also five other ways of finding inspiration that prepare one for the first
                     bodhisattva level. What are the five, you may ask? </p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-280"/>
                 <p tid="279">“(1) One can find inspiration by thinking, ‘I will live by taking refuge in the Buddha, thereby
-                    inspiring others to take refuge in the Buddha.’ [F.23.a] In this case, <distinct>taking refuge in
+                    inspiring others to take refuge in the Buddha.’ <ref cRef="F.23.a" type="folio" xml:id="UT22084-062-001-753"/> In this case, <distinct>taking refuge in
                         the Buddha</distinct> means to not transgress the precepts of the Thus-Gone One.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-281"/>
                 <p tid="280">“(2) One can find inspiration by thinking, ‘I will live by taking refuge in the Dharma, thereby
@@ -1448,7 +1407,6 @@
                 <p tid="283">“(5) One can find inspiration by thinking, ‘I will live by freedom from resentment, thereby inspiring
                     others to be free of resentment.’ In this case, <distinct>freedom from resentment</distinct> refers
                     to the pacification of mental torment. </p>
-                <milestone unit="chunk" xml:id="UT22084-062-001-285"/>
                 <p tid="284">“Mañjuśrī, these five ways of finding inspiration prepare one for the first bodhisattva level.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-286"/>
                 <p tid="285">“Mañjuśrī, there are also five other ways of finding inspiration that prepare one for the first
@@ -1462,7 +1420,7 @@
                     others to avoid flattery.’ In this case, <distinct>avoiding flattery</distinct> means to give up any
                     expectation of gain in the course of bringing beings to maturity.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-289"/>
-                <p tid="288">“(3) One can find inspiration by thinking, ‘I will live by not engaging in extortion, [F.23.b]
+                <p tid="288">“(3) One can find inspiration by thinking, ‘I will live by not engaging in extortion, <ref cRef="F.23.b" type="folio" xml:id="UT22084-062-001-754"/>
                     thereby inspiring others not to engage in extortion.’ In this case, <distinct>not engaging in
                         extortion</distinct> refers to practicing austerity, having the qualities of an ascetic, and
                     devoting oneself to the tradition of the noble ones.</p>
@@ -1471,13 +1429,13 @@
                     toward a pure livelihood.’ In this case, <distinct>pure livelihood</distinct> means a willingness to
                     undergo any sort of suffering and relinquish everything pleasant in order to uphold the sacred
                     Dharma.</p>
-                <milestone unit="chunk" xml:id="UT22084-062-001-291"/>
                 <p tid="290">“(5) One can find inspiration by thinking, ‘I will live by delight in solitude, thereby inspiring
                     others to delight in solitude.’ In this case, <distinct>delight in solitude</distinct> means to
                     gladly shun busyness. </p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-292"/>
                 <p tid="291">“Mañjuśrī, these five ways of finding inspiration prepare one for the first bodhisattva level.
-                    [B3]</p>
+                    <ref cRef="B3" type="bampo"/>
+                    </p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-293"/>
                 <p tid="292">“Mañjuśrī, there are also five other ways of finding inspiration that prepare one for the first
                     bodhisattva level. What are the five, you may ask? </p>
@@ -1494,7 +1452,8 @@
                 <milestone unit="chunk" xml:id="UT22084-062-001-296"/>
                 <p tid="295">“(3) One can find inspiration by thinking, ‘I will live by a calm mind, thereby inspiring others to
                     have a calm mind.’ In this case, <distinct>a calm mind</distinct> refers to a mind free of distress.
-                    [F.24.a]</p>
+                    <ref cRef="F.24.a" type="folio" xml:id="UT22084-062-001-755"/>
+                    </p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-297"/>
                 <p tid="296">“(4) One can find inspiration by thinking, ‘I will live by the pursuit of the accumulation of
                     tranquility, thereby inspiring others to pursue the accumulation of tranquility.’ In this case,
@@ -1505,7 +1464,6 @@
                     inspiring others not to be overly lax in their discipline.’ In this case, <distinct>discipline that
                         is not overly lax</distinct> means to transcend corruption of one’s ritual conduct, discipline,
                     and view. </p>
-                <milestone unit="chunk" xml:id="UT22084-062-001-299"/>
                 <p tid="298">“Mañjuśrī, these five ways of finding inspiration prepare one for the first bodhisattva level.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-300"/>
                 <p tid="299">“Mañjuśrī, there are also five other ways of finding inspiration that prepare one for the first
@@ -1525,15 +1483,15 @@
                 <milestone unit="chunk" xml:id="UT22084-062-001-304"/>
                 <p tid="303">“(4) One can find inspiration by thinking, ‘I will live by a pledge to be a student of all beings,
                     thereby inspiring others to pledge to be students of all other beings.’<note place="end" xml:id="UT22084-062-001-305"> This
-                        passage is quoted in Śāntideva’s <fix>Śikṣāsamuccaya</fix>. See Bendall 1971, p.
+                        passage is quoted in Śāntideva’s <title xml:lang="Sa-Ltn">Śikṣāsamuccaya</title>. See Bendall 1971, p.
                         153.16-18.</note> In this case, <distinct>pledging to be a student of all beings</distinct>
-                    means that one does whatever needs to be done. [F.24.b]</p>
+                    means that one does whatever needs to be done. <ref cRef="F.24.b" type="folio" xml:id="UT22084-062-001-756"/>
+                    </p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-306"/>
                 <p tid="304">“(5) One can find inspiration by thinking, ‘I will live by prostrating and paying reverence to
                     objects of veneration, thereby inspiring others to prostrate and pay reverence to objects of
                     veneration.’ In this case, <distinct>prostrating and paying reverence to objects of
                         veneration</distinct> refers to being without pride when relating to all beings. </p>
-                <milestone unit="chunk" xml:id="UT22084-062-001-307"/>
                 <p tid="305">“Mañjuśrī, these five ways of finding inspiration prepare one for the first bodhisattva level.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-308"/>
                 <p tid="306">“Mañjuśrī, there are also five other ways of finding inspiration that prepare one for the first
@@ -1554,7 +1512,8 @@
                 <milestone unit="chunk" xml:id="UT22084-062-001-311"/>
                 <p tid="309">“(3) One can find inspiration by thinking, ‘I will live by respecting Dharma teachers, thereby
                     inspiring others to respect Dharma teachers.’ In this case, <distinct>respecting Dharma
-                        teachers</distinct> means to regard such Dharma teachers as one’s guides. [F.25.a]</p>
+                        teachers</distinct> means to regard such Dharma teachers as one’s guides. <ref cRef="F.25.a" type="folio" xml:id="UT22084-062-001-757"/>
+                    </p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-312"/>
                 <p tid="310">“(4) One can find inspiration by thinking, ‘I will live by avoiding harsh language, thereby inspiring
                     others to avoid harsh language.’ In this case, <distinct>avoiding harsh language</distinct> means
@@ -1563,7 +1522,6 @@
                 <p tid="311">“(5) One can find inspiration by thinking, ‘I will live by avoiding ill will, thereby inspiring
                     others to avoid ill will.’ In this case, <distinct>avoiding ill will</distinct> means to engage in
                     proper conduct. </p>
-                <milestone unit="chunk" xml:id="UT22084-062-001-314"/>
                 <p tid="312">“Mañjuśrī, these five ways of finding inspiration prepare one for the first bodhisattva level.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-315"/>
                 <p tid="313">“Mañjuśrī, there are also five other ways of finding inspiration that prepare one for the first
@@ -1588,8 +1546,7 @@
                 <p tid="318">“(5) One can find inspiration by thinking, ‘I will live by the mind of awakening, thereby inspiring
                     others toward the mind of awakening.’ In this case, <distinct>the mind of awakening</distinct> means
                     to be motivated, exert oneself, persevere, take hold of the mind, and rest—all in order to preserve
-                    the Buddha’s qualities so that they are not squandered. [F.25.b] </p>
-                <milestone unit="chunk" xml:id="UT22084-062-001-321"/>
+                    the Buddha’s qualities so that they are not squandered. <ref cRef="F.25.b" type="folio" xml:id="UT22084-062-001-758"/> </p>
                 <p tid="319">“Mañjuśrī, these five ways of finding inspiration prepare one for the first bodhisattva level.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-322"/>
                 <p tid="320">“Mañjuśrī, there are also five other ways of finding inspiration that prepare one for the first
@@ -1602,8 +1559,7 @@
                 <milestone unit="chunk" xml:id="UT22084-062-001-324"/>
                 <p tid="322">“(2) One can find inspiration by thinking, ‘I will live by correct understanding of the teachings,
                     thereby inspiring others toward correct understanding of the teachings.’ In this case,
-                        <distinct>correct understanding of </distinct>
-                    <fix>the teachings</fix> refers to the wisdom that
+                    <distinct>correct understanding of the teachings</distinct> refers to the wisdom that
                     understands the entirety of the Buddha’s teachings.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-325"/>
                 <p tid="323">“(3) One can find inspiration by thinking, ‘I will live by correctly understanding language, thereby
@@ -1619,8 +1575,7 @@
                 <p tid="325">“(5) One can find inspiration by thinking, ‘I will live by eloquence, thereby inspiring others to be
                     eloquent.’ In this case, <distinct>eloquence</distinct> is the ability to carry out the blessing and
                     explanation of the Buddha’s teachings. In other words, this eloquence will not run out even if one
-                    continues teaching until the end of the eon. [F.26.a] </p>
-                <milestone unit="chunk" xml:id="UT22084-062-001-328"/>
+                    continues teaching until the end of the eon. <ref cRef="F.26.a" type="folio" xml:id="UT22084-062-001-759"/> </p>
                 <p tid="326">“Mañjuśrī, these five ways of finding inspiration prepare one for the first bodhisattva level.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-329"/>
                 <p tid="327">“Mañjuśrī, there are also five other ways of finding inspiration that prepare one for the first
@@ -1647,11 +1602,10 @@
                     beings, thereby inspiring others to be loving while observing sentient beings.’ In this case,
                         <distinct>being loving when observing sentient beings</distinct> means to be impartial toward
                     all beings. </p>
-                <milestone unit="chunk" xml:id="UT22084-062-001-335"/>
                 <p tid="333">“Mañjuśrī, these five ways of finding inspiration prepare one for the first bodhisattva level.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-336"/>
                 <p tid="334">“Mañjuśrī, there are also five other ways of finding inspiration that prepare one for the first
-                    bodhisattva level. [F.26.b] What are the five, you may ask? </p>
+                    bodhisattva level. <ref cRef="F.26.b" type="folio" xml:id="UT22084-062-001-760"/> What are the five, you may ask? </p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-337"/>
                 <p tid="335">“(1) One can find inspiration by thinking, ‘I will live by an unaggressive attitude, thereby
                     inspiring others to have an unaggressive attitude.’ In this case, <distinct>an unaggressive
@@ -1663,8 +1617,7 @@
                 <milestone unit="chunk" xml:id="UT22084-062-001-339"/>
                 <p tid="337">“(3) One can find inspiration by thinking, ‘I will live by being loving when observing the teachings,
                     thereby inspiring others to be loving when observing the teachings.’ In this case, <distinct>being
-                        loving when observing </distinct>
-                    <fix>the teachings</fix> means to be free from reference point
+                        loving when observing the teachings</distinct> means to be free from reference point
                     regarding anything and also to not form any thoughts about them.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-340"/>
                 <p tid="338">“(4) One can find inspiration by thinking, ‘I will live by the initial accumulation of merit, thereby
@@ -1676,7 +1629,7 @@
                     insight; bringing beings to maturity through the four ways of magnetizing; being in harmony with the
                     level of mind of all beings; not adhering to the Lesser Vehicle; compassionately endeavoring in all
                     beings’ roots of virtue; completely mastering the perfections of generosity, discipline, patience,
-                    diligence, concentration, and insight; [F.27.a] upholding the sacred Dharma; and exerting oneself in
+                    diligence, concentration, and insight; <ref cRef="F.27.a" type="folio" xml:id="UT22084-062-001-761"/> upholding the sacred Dharma; and exerting oneself in
                     the training that derives from the roots of insight, as well as the accumulations of merit and
                     wisdom—all without bias for any being.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-341"/>
@@ -1684,7 +1637,6 @@
                     others toward amazing perception.’ In this case, <distinct>amazing perception</distinct> refers to
                     perceiving everything as nondual, and to have the idea that one is ready to undertake any sort of
                     activity. </p>
-                <milestone unit="chunk" xml:id="UT22084-062-001-342"/>
                 <p tid="340">“Mañjuśrī, these five ways of finding inspiration prepare one for the first bodhisattva level. </p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-343"/>
                 <p tid="341">“Mañjuśrī, there are also five other ways of finding inspiration that prepare one for the first
@@ -1706,12 +1658,12 @@
                 <milestone unit="chunk" xml:id="UT22084-062-001-347"/>
                 <p tid="345">“(4) One can find inspiration by thinking, ‘I will live according to the way of phenomena, thereby
                     inspiring others toward the way of phenomena.’ In this case, <distinct>the way of
-                        phenomena</distinct> refers to the fact that all phenomena are unmoving. [F.27.b]</p>
+                        phenomena</distinct> refers to the fact that all phenomena are unmoving. <ref cRef="F.27.b" type="folio" xml:id="UT22084-062-001-762"/>
+                    </p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-348"/>
                 <p tid="346">“(5) One can find inspiration by thinking, ‘I will live by the Dharma, thereby inspiring others
                     toward the Dharma.’ In this case, <distinct>the Dharma</distinct> refers that which is inseparable
                     and beyond abiding. </p>
-                <milestone unit="chunk" xml:id="UT22084-062-001-349"/>
                 <p tid="347">“Mañjuśrī, these five ways of finding inspiration prepare one for the first bodhisattva level.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-350"/>
                 <p tid="348">“Mañjuśrī, there are also five other ways of finding inspiration that prepare one for the first
@@ -1733,7 +1685,8 @@
                 <p tid="351">“(3) One can find inspiration by thinking, ‘I will live by the wisdom known as “the inconceivable
                     thus-gone one,” thereby inducing in others the wisdom known as “the inconceivabe thus-gone one.” ’
                     In this case, <distinct>the inconceivable thus-gone one</distinct> means to abide by the principles
-                    of proper attitude and the way of guiding beings. [F.28.a]</p>
+                    of proper attitude and the way of guiding beings. <ref cRef="F.28.a" type="folio" xml:id="UT22084-062-001-763"/>
+                    </p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-354"/>
                 <p tid="352">“(4) One can find inspiration by thinking, ‘I will live by the fact that form is devoid of
                     characteristics, thereby inducing in others the fact that form is devoid of characteristics.’ Why is
@@ -1745,7 +1698,6 @@
                 <p tid="353">“(5) One can find inspiration by thinking, ‘I will live by skill in means, thereby inspiring others
                     to have skill in means.’ In this case, <distinct>skill in means</distinct> refers to the
                     comprehension of all phenomena. </p>
-                <milestone unit="chunk" xml:id="UT22084-062-001-356"/>
                 <p tid="354">“Mañjuśrī, these five ways of finding inspiration prepare one for the first bodhisattva level.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-357"/>
                 <p tid="355">“Mañjuśrī, there are also five other ways of finding inspiration that prepare one for the first
@@ -1764,7 +1716,8 @@
                     inspiring others toward actions derived from insight.’ In this case, <distinct>actions derived from
                         insight</distinct> means that one engages in wholesome qualities. Alternatively,
                         <distinct>actions derived from insight</distinct> can refer to inspiring others toward insight.
-                    [F.28.b]</p>
+                    <ref cRef="F.28.b" type="folio" xml:id="UT22084-062-001-764"/>
+                    </p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-361"/>
                 <p tid="359">“(4) One can find inspiration by thinking, ‘I will live by absorption, thereby inspiring others
                     toward absorption.’ In this case, <distinct>absorption</distinct> refers to resting evenly without
@@ -1773,7 +1726,6 @@
                 <p tid="360">“(5) One can find inspiration by thinking, ‘I will live by the discernment of reality, thereby
                     inspiring others toward the discernment of reality.’ In this case, <distinct>the discernment of
                         reality</distinct> refers to engaging in deeds and actions. </p>
-                <milestone unit="chunk" xml:id="UT22084-062-001-363"/>
                 <p tid="361">“Mañjuśrī, these five ways of finding inspiration prepare one for the first bodhisattva level.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-364"/>
                 <p tid="362">“Mañjuśrī, there are also five other ways of finding inspiration that prepare one for the first
@@ -1795,7 +1747,7 @@
                 <milestone unit="chunk" xml:id="UT22084-062-001-367"/>
                 <p tid="365">“(3) One can find inspiration by thinking, ‘I will live by the preeminent practice of making
                     offerings to the Buddha, thereby inspiring others toward the preeminent practice of making offerings
-                    to the Buddha.’ [F.29.a] In this case, <distinct>the preeminent practice of making offerings to the
+                    to the Buddha.’ <ref cRef="F.29.a" type="folio" xml:id="UT22084-062-001-765"/> In this case, <distinct>the preeminent practice of making offerings to the
                         Buddha</distinct> means to follow and apprentice oneself to bodhisattvas who are devoted to the
                     Great Vehicle, to serve them, give them wealth, and venerate them. It also means that as much as
                     possible, one should embody the Great Vehicle and be generous.</p>
@@ -1814,7 +1766,6 @@
                     nothing other than the nature of views. Therefore, since there is no other nature of views than
                     emptiness, emptiness is the nature of views. By knowing that the nature of views is emptiness, all
                     phenomena are empty. </p>
-                <milestone unit="chunk" xml:id="UT22084-062-001-370"/>
                 <p tid="368">“Mañjuśrī, these five ways of finding inspiration prepare one for the first bodhisattva level.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-371"/>
                 <p tid="369">“Mañjuśrī, there are also five other ways of finding inspiration that prepare one for the first
@@ -1822,17 +1773,18 @@
                 <milestone unit="chunk" xml:id="UT22084-062-001-372"/>
                 <p tid="370">“(1) One can find inspiration by thinking, ‘I will live by the difficulty in perceiving all
                     phenomena, thereby inspiring others about the difficulty in perceiving all phenomena.’ In this case,
-                        <fix>the difficulty in perceiving all phenomena</fix> is due to the nature of causes and
-                    conditions. [F.29.b]</p>
+                        <distinct>the difficulty in perceiving all phenomena</distinct> is due to the nature of causes and
+                    conditions. <ref cRef="F.29.b" type="folio" xml:id="UT22084-062-001-766"/>
+                    </p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-373"/>
                 <p tid="371">“(2) One can find inspiration by thinking, ‘I will live by the difficulty in realizing all phenomena,
-                    thereby inspiring others about the difficulty in realizing all phenomena.’ In this case, <fix>the
-                        difficulty in realizing all phenomena</fix> is due to the fact that their nature cannot be
+                    thereby inspiring others about the difficulty in realizing all phenomena.’ In this case, <distinct>the
+                        difficulty in realizing all phenomena</distinct> is due to the fact that their nature cannot be
                     observed or brought to mind.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-374"/>
                 <p tid="372">“(3) One can find inspiration by thinking, ‘I will live by the difficulty in knowing all phenomena,
-                    thereby inspiring others about the difficulty in knowing all phenomena.’ In this case, <fix>the
-                        difficulty in knowing all phenomena</fix> is due to the realization that knowledge and the
+                    thereby inspiring others about the difficulty in knowing all phenomena.’ In this case, <distinct>the
+                        difficulty in knowing all phenomena</distinct> is due to the realization that knowledge and the
                     objects of knowledge are the same.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-375"/>
                 <p tid="373">“(4) One can find inspiration by thinking, “I will live by the non-defilement of all phenomena,
@@ -1843,7 +1795,6 @@
                     thereby inspiring others about the inexhaustibility of all phenomena. In this case, <distinct>all
                         phenomena are inexhaustible</distinct> because they have no essence to use as an analogy or
                     referent. </p>
-                <milestone unit="chunk" xml:id="UT22084-062-001-377"/>
                 <p tid="375">“Mañjuśrī, these five ways of finding inspiration prepare one for the first bodhisattva level.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-378"/>
                 <p tid="376">“Mañjuśrī, there are also five other ways of finding inspiration that prepare one for the first
@@ -1857,7 +1808,8 @@
                 <p tid="378">“(2) One can find inspiration by thinking, ‘I will live by the indivisibility of the four truths of
                     the noble ones, thereby inspiring others about the indivisibility of the four truths of the noble
                     ones.’ In this case, <distinct>the indivisibility of the four truths of the noble ones</distinct>
-                    refers to inner purity. [F.30.a]</p>
+                    refers to inner purity. <ref cRef="F.30.a" type="folio" xml:id="UT22084-062-001-767"/>
+                    </p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-381"/>
                 <p tid="379">“(3) One can find inspiration by thinking, ‘I will live by understanding the indivisibility of
                     ignorance and formations, thereby inspiring others to understand the indivisibility of ignorance and
@@ -1883,19 +1835,18 @@
                 <milestone unit="chunk" xml:id="UT22084-062-001-384"/>
                 <p tid="382">“Mañjuśrī, in the same way, while the thus-gone, worthy, perfect Buddha, does not emerge or cease,
                     and has no center or periphery, beings nevertheless form concepts such as ‘small,’ ‘medium,’ and
-                    ‘vast.’ [F.30.b] In this way distinctions are made such as, ‘This is the Vehicle of Hearers. This is
+                    ‘vast.’ <ref cRef="F.30.b" type="folio" xml:id="UT22084-062-001-768"/> In this way distinctions are made such as, ‘This is the Vehicle of Hearers. This is
                     the Vehicle of Solitary Buddhas. This is the Great Vehicle that is available to all beings.’ While
                     the Thus-Gone One indeed has no thoughts or concepts, he nonetheless has unique qualities that allow
                     him to function spontaneously and without thought.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-385"/>
                 <p tid="383">“Mañjuśrī, consider the analogy of sunlight. Due to location and perspective, there can be a variety
-                    of different types of shade. However, since sunlight has unique qualities, it shines without
+                    of different types of shade. However, since sunlight has <term type="ignore">unique qualities</term>, it shines without
                     thoughts or concepts. In the same way, Mañjuśrī, due to the various ideas and perspectives of
                     sentient beings, several types of wisdom of the thus-gone, worthy, perfect Buddha, come about. While
                     the Thus-Gone One himself has no thoughts or concepts, he nonetheless has unique qualities that
                     allow him to function spontaneously and without thought. In this sense, there is no such thing as
                         <distinct>vehicle</distinct> or <distinct>non-vehicle</distinct>. </p>
-                <milestone unit="chunk" xml:id="UT22084-062-001-386"/>
                 <p tid="384">“Mañjuśrī, these five ways of finding inspiration prepare one for the first bodhisattva level.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-387"/>
                 <p tid="385">“Mañjuśrī, there are also five other ways of finding inspiration that prepare one for the first
@@ -1909,7 +1860,7 @@
                     illuminate the Dharma, thereby inspiring others about insight concerning the gateways that
                     illuminate the Dharma.’ In this case, Mañjuśrī, <distinct>insight concerning the gateways that
                         illuminate the Dharma</distinct> comes about through four factors. Which four, you may ask?
-                    Faith, conscientiousness, intention, and altruism. [F.31.a] Mañjuśrī, the bodhisattvas’ insight
+                    Faith, conscientiousness, intention, and altruism. <ref cRef="F.31.a" type="folio" xml:id="UT22084-062-001-769"/> Mañjuśrī, the bodhisattvas’ insight
                     concerning the gateways that illuminate the Dharma comes about through these four factors. It is by
                     means of insight concerning the gateways that illuminate the Dharma that bodhisattvas eliminate all
                     downfalls into unfortunate existences within the lower realms.</p>
@@ -1934,14 +1885,13 @@
                     discipline.’ In this case, Mañjuśrī, <distinct>insight immersed in the inexhaustible spirit of
                         discipline</distinct> is that which enables bodhisattvas to bring beings with faulty discipline
                     to maturity. </p>
-                <milestone unit="chunk" xml:id="UT22084-062-001-393"/>
                 <p tid="391">“Mañjuśrī, these five ways of finding inspiration prepare one for the first bodhisattva level.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-394"/>
-                <p tid="392">“Mañjuśrī, there are also five other ways of finding inspiration [F.31.b] that prepare one for the
+                <p tid="392">“Mañjuśrī, there are also five other ways of finding inspiration <ref cRef="F.31.b" type="folio" xml:id="UT22084-062-001-770"/> that prepare one for the
                     first bodhisattva level. What are the five, you may ask? </p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-395"/>
                 <p tid="393">“(1) One can find inspiration by thinking, ‘I will live by meditative seclusion, thereby inspiring
-                    others toward meditative seclusion.’ In this case, <fix>meditative seclusion</fix> means being
+                    others toward meditative seclusion.’ In this case, <distinct>meditative seclusion</distinct> means being
                     solitary in body and mind, and being undaunted in cultivating all roots of virtue.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-396"/>
                 <p tid="394">“(2) One can find inspiration by thinking, ‘I will live by the intrinsic nature of the conditioned,
@@ -1962,13 +1912,12 @@
                     others toward correct perception.’ In this case, <distinct>correct perception</distinct> means to
                     relate to things without the characteristics of dual or nondual. How is this? It is because
                     non-duality is nothing other than the nature of duality. Since non-duality is nothing other than the
-                    nature of duality, the nature of duality is non-duality. [F.32.a] To relate in this way is referred
+                    nature of duality, the nature of duality is non-duality. <ref cRef="F.32.a" type="folio" xml:id="UT22084-062-001-771"/> To relate in this way is referred
                     to as ‘correct perception.’</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-399"/>
                 <p tid="397">“(5) One can find inspiration by thinking, ‘I will live by freedom from anger, thereby inspiring
                     others to be free of anger.’ In this case, <distinct>freedom from anger</distinct> means to relate
                     to all beings with helpful things and deeds. </p>
-                <milestone unit="chunk" xml:id="UT22084-062-001-400"/>
                 <p tid="398">“Mañjuśrī, these five ways of finding inspiration prepare one for the first bodhisattva level.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-401"/>
                 <p tid="399">“Mañjuśrī, there are also five other ways of finding inspiration that prepare one for the first
@@ -1994,10 +1943,9 @@
                     with respect to all phenomena.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-406"/>
                 <p tid="404">“(5) One can find inspiration by thinking, ‘I will live by correct understanding of the meaning,
-                    thereby inspiring others toward correct understanding of the meaning.’ [F.32.b] In this case,
+                    thereby inspiring others toward correct understanding of the meaning.’ <ref cRef="F.32.b" type="folio" xml:id="UT22084-062-001-772"/> In this case,
                         <distinct>correct understanding of the meaning</distinct> means to teach the analysis of all
                     phenomena. </p>
-                <milestone unit="chunk" xml:id="UT22084-062-001-407"/>
                 <p tid="405">“Mañjuśrī, these five ways of finding inspiration prepare one for the first bodhisattva level.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-408"/>
                 <p tid="406">“Mañjuśrī, there are also five other ways of finding inspiration that prepare one for the first
@@ -2022,14 +1970,13 @@
                 <milestone unit="chunk" xml:id="UT22084-062-001-413"/>
                 <p tid="411">“(5) One can find inspiration by thinking, ‘I will live by steadfastness, thereby inspiring others to
                     be steadfast.’ In this case, <distinct>steadfastness</distinct> refers to carrying out the precepts. </p>
-                <milestone unit="chunk" xml:id="UT22084-062-001-414"/>
                 <p tid="412">“Mañjuśrī, these five ways of finding inspiration prepare one for the first bodhisattva level.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-415"/>
                 <p tid="413">“Mañjuśrī, there are also five other ways of finding inspiration that prepare one for the first
                     bodhisattva level. What are the five, you may ask? </p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-416"/>
                 <p tid="414">“(1) One can find inspiration by thinking, ‘I will live by realization, thereby inspiring others
-                    toward realization.’ [F.33.a] In this case, <distinct>realization</distinct> refers to comprehension
+                    toward realization.’ <ref cRef="F.33.a" type="folio" xml:id="UT22084-062-001-773"/> In this case, <distinct>realization</distinct> refers to comprehension
                     of the intended meaning of the sūtras.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-417"/>
                 <p tid="415">“(2) One can find inspiration by thinking, ‘I will live by insight, thereby inspiring others toward
@@ -2047,7 +1994,6 @@
                 <p tid="418">“(5) One can find inspiration by thinking, ‘I will live by skill in means, thereby inspiring others
                     toward skill in means.’ In this case, <distinct>skill in means</distinct> is the comprehension of
                     all phenomena. </p>
-                <milestone unit="chunk" xml:id="UT22084-062-001-421"/>
                 <p tid="419">“Mañjuśrī, these five ways of finding inspiration prepare one for the first bodhisattva level.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-422"/>
                 <p tid="420">“Mañjuśrī, there are also five other ways of finding inspiration that prepare one for the first
@@ -2064,7 +2010,8 @@
                 <milestone unit="chunk" xml:id="UT22084-062-001-425"/>
                 <p tid="423">“(3) One can find inspiration by thinking, ‘I will live by defiling behavior, thereby inspiring
                     others toward defiling behavior.’ In this case, <distinct>defiling behavior</distinct> means
-                    relating to something with a conceptual attitude. [F.33.b]</p>
+                    relating to something with a conceptual attitude. <ref cRef="F.33.b" type="folio" xml:id="UT22084-062-001-774"/>
+                    </p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-426"/>
                 <p tid="424">“(4) One can find inspiration by thinking, ‘I will live by undefiling behavior, thereby inspiring
                     others about undefiling behavior.’ In this case, <distinct>undefiling behavior</distinct> means the
@@ -2073,7 +2020,6 @@
                 <p tid="425">“(5) One can find inspiration by thinking, ‘I will live by limited practices, thereby inspiring
                     others about limited practices.’ In this case, <distinct>limited practices</distinct> refers to the
                     nature of marks. </p>
-                <milestone unit="chunk" xml:id="UT22084-062-001-428"/>
                 <p tid="426">“Mañjuśrī, these five ways of finding inspiration prepare one for the first bodhisattva level.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-429"/>
                 <p tid="427">“Mañjuśrī, there are also five other ways of finding inspiration that prepare one for the first
@@ -2097,9 +2043,8 @@
                     perfections.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-434"/>
                 <p tid="432">“(5) One can find inspiration by thinking, ‘I will live by the absence of limitations, thereby
-                    inspiring others toward the absence of limitations. [F.34.a] In this case, <distinct>the absence of
+                    inspiring others toward the absence of limitations. <ref cRef="F.34.a" type="folio" xml:id="UT22084-062-001-775"/> In this case, <distinct>the absence of
                         limitations</distinct> refers to the perfection of insight.</p>
-                <milestone unit="chunk" xml:id="UT22084-062-001-435"/>
                 <p tid="433">“Mañjuśrī, these five ways of finding inspiration prepare one for the first bodhisattva level.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-436"/>
                 <p tid="434">“Mañjuśrī, there are also five other ways of finding inspiration that prepare one for the first
@@ -2124,11 +2069,11 @@
                 <p tid="439">“(5) One can find inspiration by thinking, ‘I will live by the accumulations, thereby inspiring
                     others toward the accumulations.’ In this case, <distinct>the accumulations</distinct> refers to the
                     five perfections. </p>
-                <milestone unit="chunk" xml:id="UT22084-062-001-442"/>
                 <p tid="440">“Mañjuśrī, these five ways of finding inspiration prepare one for the first bodhisattva level.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-443"/>
                 <p tid="441">“Mañjuśrī, there are also five other ways of finding inspiration that prepare one for the first
-                    bodhisattva level. What are the five, you may ask? [F.34.b]</p>
+                    bodhisattva level. What are the five, you may ask? <ref cRef="F.34.b" type="folio" xml:id="UT22084-062-001-776"/>
+                    </p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-444"/>
                 <p tid="442">“(1) One can find inspiration by thinking, ‘I will live by disciplining my body, thereby inspiring
                     others to discipline their bodies.’ In this case, <distinct>disciplining one’s body</distinct> means
@@ -2150,8 +2095,7 @@
                     honest.’ In this case, <distinct>honesty</distinct> means to be unbiased toward all beings. Since an
                     unbiased attitude toward all beings is inseparable from the realm of phenomena, all phenomena become
                     indistinguishable within that. </p>
-                <milestone unit="chunk" xml:id="UT22084-062-001-449"/>
-                <p tid="447">“Mañjuśrī, these five ways of finding inspiration prepare one for the first bodhisattva level. [B4] </p>
+                <p tid="447">“Mañjuśrī, these five ways of finding inspiration prepare one for the first bodhisattva level. <ref cRef="B4" type="bampo"/> </p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-450"/>
                 <p tid="448">“Mañjuśrī, there are also five other ways of finding inspiration that prepare one for the first
                     bodhisattva level. What are the five, you may ask? </p>
@@ -2160,7 +2104,7 @@
                     others to curb their laziness.’ In this case, <distinct>curbing one’s laziness</distinct> means to
                     be dauntless in every virtuous endeavor.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-452"/>
-                <p tid="450">“(2) One can find inspiration by thinking, ‘I will live by worshiping the Buddha, [F.35.a] thereby
+                <p tid="450">“(2) One can find inspiration by thinking, ‘I will live by worshiping the Buddha, <ref cRef="F.35.a" type="folio" xml:id="UT22084-062-001-777"/> thereby
                     inspiring others to worship the Buddha.’ In this case, <distinct>worshiping the Buddha</distinct>
                     means to worship those who, thanks to their blessings, teach the Dharma that leads to buddhahood;
                     this is worshiping the thus-gone ones.</p>
@@ -2176,7 +2120,6 @@
                 <p tid="453">“(5) One can find inspiration by thinking, ‘I will live by mental conduct, thereby inspiring others
                     toward mental conduct.’ In this case, <distinct>mental conduct</distinct> means to purify all
                     beings’ faults of mind.</p>
-                <milestone unit="chunk" xml:id="UT22084-062-001-456"/>
                 <p tid="454">“Mañjuśrī, these five ways of finding inspiration prepare one for the first bodhisattva level. </p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-457"/>
                 <p tid="455">“Mañjuśrī, there are also five other ways of finding inspiration that prepare one for the first
@@ -2189,7 +2132,7 @@
                 <milestone unit="chunk" xml:id="UT22084-062-001-459"/>
                 <p tid="457">“(2) One can find inspiration by thinking, ‘I will live by conviction in the thus-gone ones’
                     permanence, thereby inspiring others to have conviction in the thus-gone ones’ permanence.’ In this
-                    case, [F.35.b] the thus-gone ones are <distinct>permanent</distinct> due to their
+                    case, <ref cRef="F.35.b" type="folio" xml:id="UT22084-062-001-778"/> the thus-gone ones are <distinct>permanent</distinct> due to their
                     indivisibility.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-460"/>
                 <p tid="458">“(3) One can find inspiration by thinking, ‘I will live by conviction in the thus-gone ones’ quality
@@ -2206,7 +2149,6 @@
                     immutability, thereby inspiring others to have conviction in the thus-gone ones’ immutability.’ In
                     this case, the thus-gone ones are <distinct>immutable</distinct> because their bodies are limitless.
                     This is due to the fact that their limitless bodies are beyond classification. </p>
-                <milestone unit="chunk" xml:id="UT22084-062-001-463"/>
                 <p tid="461">“Mañjuśrī, these five ways of finding inspiration prepare one for the first bodhisattva level.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-464"/>
                 <p tid="462">“Mañjuśrī, there are also five other ways of finding inspiration that prepare one for the first
@@ -2219,7 +2161,7 @@
                     suffering.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-466"/>
                 <p tid="464">“(2) One can find inspiration by thinking, ‘I will live by the absence of characteristics of all
-                    things, thereby inspiring others about the absence of characteristics of all things.’ [F.36.a] In
+                    things, thereby inspiring others about the absence of characteristics of all things.’ <ref cRef="F.36.a" type="folio" xml:id="UT22084-062-001-779"/> In
                     this case, <distinct>the absence of characteristics of all things</distinct> refers to the nature
                     devoid of characteristics. How is this? It is because thinking is essentially nonexistent. </p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-467"/>
@@ -2234,7 +2176,6 @@
                 <p tid="467">“(5) One can find inspiration by thinking, ‘I will live by taking refuge in the Saṅgha, thereby
                     inspiring others to take refuge in the Saṅgha.’ In this case, <distinct>taking refuge in the
                         Saṅgha</distinct> means to abandon attachment and anger. </p>
-                <milestone unit="chunk" xml:id="UT22084-062-001-470"/>
                 <p tid="468">“Mañjuśrī, these five ways of finding inspiration prepare one for the first bodhisattva level.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-471"/>
                 <p tid="469">“Mañjuśrī, there are also five other ways of finding inspiration that prepare one for the first
@@ -2250,7 +2191,8 @@
                 <milestone unit="chunk" xml:id="UT22084-062-001-474"/>
                 <p tid="472">“(3) One can find inspiration by thinking, ‘I will live by understanding equipoise, thereby inspiring
                     others to understand equipoise.’ In this case, <distinct>equipoise</distinct> refers to engaging in
-                    the very essence of reference points. [F.36.b]</p>
+                    the very essence of reference points. <ref cRef="F.36.b" type="folio" xml:id="UT22084-062-001-780"/>
+                    </p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-475"/>
                 <p tid="473">“(4) One can find inspiration by thinking, ‘I will live by undivided Dharma, thereby inspiring others
                     toward undivided Dharma.’ In this case, <distinct>undivided Dharma</distinct> refers to
@@ -2259,7 +2201,6 @@
                 <p tid="474">“(5) One can find inspiration by thinking, ‘I will live by following a stable spiritual friend,
                     thereby inspiring others to follow stable spiritual friends.’ In this case, <distinct>a stable
                         spiritual friend</distinct> refers to a spiritual friend who is undeceiving. </p>
-                <milestone unit="chunk" xml:id="UT22084-062-001-477"/>
                 <p tid="475">“Mañjuśrī, these five ways of finding inspiration prepare one for the first bodhisattva level.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-478"/>
                 <p tid="476">“Mañjuśrī, there are also five other ways of finding inspiration that prepare one for the first
@@ -2282,8 +2223,7 @@
                 <milestone unit="chunk" xml:id="UT22084-062-001-483"/>
                 <p tid="481">“(5) One can find inspiration by thinking, ‘I will live by abandoning attachment, thereby inspiring
                     others to abandon attachment.’ In this case, <distinct>abandoning attachment</distinct> means to
-                    prevent unwholesome karma from arising in the future. [F.37.a] </p>
-                <milestone unit="chunk" xml:id="UT22084-062-001-484"/>
+                    prevent unwholesome karma from arising in the future. <ref cRef="F.37.a" type="folio" xml:id="UT22084-062-001-781"/> </p>
                 <p tid="482">“Mañjuśrī, these five ways of finding inspiration prepare one for the first bodhisattva level.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-485"/>
                 <p tid="483">“Mañjuśrī, there are also five other ways of finding inspiration that prepare one for the first
@@ -2309,13 +2249,12 @@
                 <p tid="488">“(5) One can find inspiration by thinking, ‘I will live by conviction in emptiness, thereby inspiring
                     others to have conviction in emptiness.’ In this case, <distinct>emptiness</distinct> refers to the
                     nature of any view. There is no emptiness other than the nature of views.</p>
-                <milestone unit="chunk" xml:id="UT22084-062-001-491"/>
                 <p tid="489">“Mañjuśrī, these five ways of finding inspiration prepare one for the first bodhisattva level.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-492"/>
                 <p tid="490">“Mañjuśrī, there are also five other ways of finding inspiration that prepare one for the first
                     bodhisattva level. What are the five, you may ask? </p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-493"/>
-                <p tid="491">“(1) One can find inspiration by thinking, ‘I will live by unobscured and liberated wisdom, [F.37.b]
+                <p tid="491">“(1) One can find inspiration by thinking, ‘I will live by unobscured and liberated wisdom, <ref cRef="F.37.b" type="folio" xml:id="UT22084-062-001-782"/>
                     thereby inspiring others toward unobscured and liberated wisdom.’ In this case, <distinct>unobscured
                         and liberated wisdom</distinct> refers to the purification of duality and non-duality.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-494"/>
@@ -2338,11 +2277,11 @@
                     mentation, mind, and consciousness, thereby inspiring others to have the conviction that buddhahood
                     is free of mentation, mind, and consciousness.’ In this case, <distinct>buddhahood is free of mind,
                         cognition, and consciousness</distinct> due to the attainment of spontaneous wisdom. </p>
-                <milestone unit="chunk" xml:id="UT22084-062-001-498"/>
                 <p tid="496">“Mañjuśrī, these five ways of finding inspiration prepare one for the first bodhisattva level.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-499"/>
                 <p tid="497">“Mañjuśrī, there are also five other ways of finding inspiration that prepare one for the first
-                    bodhisattva level. What are the five, you may ask? [F.38.a]</p>
+                    bodhisattva level. What are the five, you may ask? <ref cRef="F.38.a" type="folio" xml:id="UT22084-062-001-783"/>
+                    </p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-500"/>
                 <p tid="498">“(1) One can find inspiration by thinking, ‘I will live by the way of magnetizing born of generosity,
                     thereby inspiring others toward the way of magnetizing born of generosity.’ In this case,
@@ -2366,7 +2305,6 @@
                 <p tid="502">“(5) One can find inspiration by thinking, ‘I will live by application, thereby inspiring others
                     toward application.’ In this case, <distinct>application</distinct> refers to carrying out
                     everything that is wholesome. </p>
-                <milestone unit="chunk" xml:id="UT22084-062-001-505"/>
                 <p tid="503">“Mañjuśrī, these five ways of finding inspiration prepare one for the first bodhisattva level.”</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-506"/>
                 <p tid="504">Then Mañjuśrīkumārabhūta, aware that the Blessed One’s talk had ended, addressed the bodhisattva
@@ -2374,7 +2312,7 @@
                     of the blessed buddhas like? What is the unimpeded knowledge of the blessed buddhas like? How is it
                     that the blessed buddhas are foremost in bringing beings to maturity? What are the manifestations of
                     the blessed buddhas like? What does it mean to be undaunted in the purification of the realms of the
-                    blessed buddhas? [F.38.b] What are the blessed buddhas’ limitless bodies like? What are the blessed
+                    blessed buddhas? <ref cRef="F.38.b" type="folio" xml:id="UT22084-062-001-784"/> What are the blessed buddhas’ limitless bodies like? What are the blessed
                     buddhas’ objects? What is the spontaneous wisdom of the buddhas like? What about the blessed buddhas
                     is inconceivable? What is the blessed buddhas’ quality of being all-seeing? What is the blessed
                     buddhas’ renown? How are the blessed buddhas indivisible and non-abiding? How are the blessed
@@ -2391,7 +2329,7 @@
                     are visible to the sighted. Similarly, O son of the victorious one, I ask this now for the sake of
                     bodhisattva great beings who have gathered the accumulations of merit and wisdom to an unfathomable
                     degree. I ask this for the sake of those who for countless eons have taken birth as hell beings or
-                    animals, [F.39.a] or within the realms of hungry spirits or the Lord of Death, and now in this life
+                    animals, <ref cRef="F.39.a" type="folio" xml:id="UT22084-062-001-785"/> or within the realms of hungry spirits or the Lord of Death, and now in this life
                     continue to experience that karma. I ask for the sake of those who may see, hear, or serve—those for
                     whom it will be meaningful—please teach! O son of the victorious one, unexcelled and perfect
                     awakening is not mentioned to those who lack interest in this discourse on the Dharma. O son of the
@@ -2413,7 +2351,7 @@
                     appearances,’ the thus-gone ones unimpededly manifest in the color of the king of precious jewels
                     known as ‘the gathering of all appearances.’ For those who are tamed by the color of the mighty king
                     of precious jewels, the thus-gone ones unimpededly manifest in the color of the mighty king of
-                    precious jewels. [F.39.b] For those who are tamed by the color of the king of precious jewels known
+                    precious jewels. <ref cRef="F.39.b" type="folio" xml:id="UT22084-062-001-786"/> For those who are tamed by the color of the king of precious jewels known
                     as ‘filament,’ the thus-gone ones unimpededly manifest in the color of the king of precious jewels
                     known as ‘filament.’ For those who are tamed by the color of the king of precious jewels known as
                     ‘the lion-maned,’ the thus-gone ones unimpededly manifest in the color of the king of precious
@@ -2435,7 +2373,7 @@
                     beryl, the thus-gone ones unimpededly manifest in the color of the king of precious jewels known as
                     beryl. For those who are tamed by the color of the king of precious jewels known as sapphire, the
                     thus-gone ones unimpededly manifest in the color of the king of precious jewels known as sapphire.
-                    [F.40.a] For those who are tamed by the color of the king of precious jewels known as ‘deep blue’,
+                    <ref cRef="F.40.a" type="folio" xml:id="UT22084-062-001-787"/> For those who are tamed by the color of the king of precious jewels known as ‘deep blue’,
                     the thus-gone ones unimpededly manifest in the color of the king of precious jewels known as ‘deep
                     blue.’</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-512"/>
@@ -2459,7 +2397,7 @@
                     known as ‘light of the sky’ pearl. </p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-513"/>
                 <p tid="511">“For those who are tamed by the color of the king of precious jewels known as ‘light proclaiming the
-                    boundless, ocean-like accumulation of merit,’ [F.40.b] the thus-gone ones unimpededly manifest in
+                    boundless, ocean-like accumulation of merit,’ <ref cRef="F.40.b" type="folio" xml:id="UT22084-062-001-788"/> the thus-gone ones unimpededly manifest in
                     the color of the king of precious jewels known as ‘light proclaiming the boundless, ocean-like
                     accumulation of merit.’ For those who are tamed by the color of the king of precious jewels known as
                     ‘proclaiming the boundless, ocean-like accumulation of wisdom,’ the thus-gone ones unimpededly
@@ -2481,7 +2419,7 @@
                     ocean of liberation.’ </p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-514"/>
                 <p tid="512">“For those who are tamed by the color of the king of precious jewels known as ‘proclaiming the
-                    boundless ocean of correct understandings,’ [F.41.a] the thus-gone ones unimpededly manifest in the
+                    boundless ocean of correct understandings,’ <ref cRef="F.41.a" type="folio" xml:id="UT22084-062-001-789"/> the thus-gone ones unimpededly manifest in the
                     color of the king of precious jewels known as ‘proclaiming the boundless ocean of correct
                     understandings.’ For those who are tamed by the color of the king of precious jewels known as
                     ‘proclaiming the boundless ocean of super-knowledge,’ the thus-gone ones unimpededly manifest in the
@@ -2502,7 +2440,7 @@
                     entering the state of the thus-gone,’ the thus-gone ones unimpededly manifest in the color of the
                     king of precious jewels known as ‘proclaiming the boundless ocean of entering the state of being
                     thus-gone.’ For those who are tamed by the color of the king of precious jewels known as
-                    ‘proclaiming the boundless ocean of engaing with beings’ intentions and actions,’ [F.41.b] the
+                    ‘proclaiming the boundless ocean of engaing with beings’ intentions and actions,’ <ref cRef="F.41.b" type="folio" xml:id="UT22084-062-001-790"/> the
                     thus-gone ones unimpededly manifest in the color of the king of precious jewels known as
                     ‘proclaiming the boundless ocean of engaging with beings’ intentions and actions.’ </p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-515"/>
@@ -2523,7 +2461,7 @@
                     as ‘proclaiming the boundless ocean of arousing indefatigable resolve.’ For those who are tamed by
                     the color of the king of precious jewels known as ‘proclaiming the boundless ocean of inseparable
                     wisdom,’ the thus-gone ones unimpededly manifest in the color of the king of precious jewels known
-                    as ‘proclaiming the boundless ocean of inseparable wisdom.’ [F.42.a] How is this? It is because they
+                    as ‘proclaiming the boundless ocean of inseparable wisdom.’ <ref cRef="F.42.a" type="folio" xml:id="UT22084-062-001-791"/> How is this? It is because they
                     possess the unique qualities.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-516"/>
                 <p tid="514">“Mañjuśrī, consider this analogy. With the aid of other implements, an infinite variety of activities
@@ -2549,7 +2487,7 @@
                     individual instances of the boundless ocean of the levels,<note place="end" xml:id="UT22084-062-001-518"> Here it seems the key
                         term is absent in all the editions of the text. Based on the previous lists in the text, we have
                         entered “boundless ocean of the levels”.</note> as many as there are atoms in every realm.
-                    [F.42.b] Similarly, in a single instant, they have unimpeded knowledge of the various ways of
+                    <ref cRef="F.42.b" type="folio" xml:id="UT22084-062-001-792"/> Similarly, in a single instant, they have unimpeded knowledge of the various ways of
                     showing the individual instances of the boundless ocean of dhāraṇīs, as many as there are atoms in
                     every realm. Similarly, in a single instant, they have unimpeded knowledge of the various ways of
                     showing the individual instances of the boundless ocean of absorptions, as many as there are atoms
@@ -2571,7 +2509,7 @@
                     bodhisattva, as many as there are atoms in every realm. Similarly, in a single instant, they have
                     unimpeded knowledge of the various ways of demonstrating the individual instances of the boundless
                     ocean of entrances to the state of the thus-gone, as many as there are atoms in every realm.
-                    Similarly, in a single instant, [F.43.a] they have unimpeded knowledge of the various ways of
+                    Similarly, in a single instant, <ref cRef="F.43.a" type="folio" xml:id="UT22084-062-001-793"/> they have unimpeded knowledge of the various ways of
                     demonstrating the individual instances of the boundless ocean of entrances to realms, as many as
                     there are atoms in every realm. Similarly, in a single instant, they have unimpeded knowledge of the
                     various ways of demonstrating the individual instances of the boundless ocean of ways of engaging
@@ -2593,7 +2531,7 @@
                 <milestone unit="chunk" xml:id="UT22084-062-001-520"/>
                 <p tid="517">“Mañjuśrī, the thus-gone ones are foremost in bringing beings to maturity. A thus-gone one’s crown
                     protuberance fills space throughout every continent in every world-system in all the infinite
-                    universes in the ten directions, [F.43.b] in a way that is unhindered, unobstructed, and
+                    universes in the ten directions, <ref cRef="F.43.b" type="folio" xml:id="UT22084-062-001-794"/> in a way that is unhindered, unobstructed, and
                     indivisible. As thus-gone ones are foremost in bringing beings to maturity, they remain until the
                     end of the eon. Mañjuśrī, the Thus-gone One’s hair-coils fills space throughout every continent in
                     every world-system in all the infinite universes in the ten directions, in a way that is unhindered,
@@ -2609,7 +2547,7 @@
                     unhindered, unobstructed, and indivisible. As thus-gone ones are foremost in bringing beings to
                     maturity, they remain until the end of the eon. In the same way, all of the Thus-gone One’s
                     belongings fill space throughout every continent in every world-system in all the infinite universes
-                    in the ten directions, in a way that is unhindered, unobstructed, and indivisible. [F.44.a] As
+                    in the ten directions, in a way that is unhindered, unobstructed, and indivisible. <ref cRef="F.44.a" type="folio" xml:id="UT22084-062-001-795"/> As
                     thus-gone ones are foremost in bringing beings to maturity, they remain until the end of the eon.
                     How is this? It is because they possess unique qualities. They possess unique qualities because they
                     are blessed with the power of aspiration. Mañjuśrī, this was an overview of the way the thus-gone
@@ -2627,7 +2565,7 @@
                     this because the thus-gone ones possess unique qualities. Various beings—whether gods, nāgas,
                     yakṣas, gandharva, asuras, garuḍas, kinnaras, mahoragas, Śakra, Brahma, world protectors, humans,
                     non-humans, or bodhisattvas— can directly see the thus-gone ones present right in front of them
-                    precisely in accord with their particular inclinations and ways of being guided. [F.44.b] How is
+                    precisely in accord with their particular inclinations and ways of being guided. <ref cRef="F.44.b" type="folio" xml:id="UT22084-062-001-796"/> How is
                     this? It is because they possess the unique qualities.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-522"/>
                 <p tid="519">“Mañjuśrī, consider this analogy. At midnight on the night of the fifteenth day of the waxing moon,
@@ -2650,7 +2588,7 @@
                     incalculable, ocean-like accumulation of wisdom. Certain of these ocean-like quantities of
                     world-systems they purify with the wisdom that specifically shows the incalculable, ocean-like
                     perfections. Certain of these ocean-like quantities of world-systems they purify with the wisdom
-                    that specifically shows the incalculable, ocean-like levels. [F.45.a] Certain of these ocean-like
+                    that specifically shows the incalculable, ocean-like levels. <ref cRef="F.45.a" type="folio" xml:id="UT22084-062-001-797"/> Certain of these ocean-like
                     quantities of world-systems they purify with the wisdom that specifically shows the incalculable,
                     ocean-like dhāraṇīs. Certain of these ocean-like quantities of world-systems they purify with the
                     wisdom that specifically the incalculable, ocean-like absorptions. Certain of these ocean-like
@@ -2672,7 +2610,7 @@
                     actions. Certain of these ocean-like quantities of world-systems they purify with the wisdom that
                     specifically shows the incalculable, ocean-like entrance into world-systems. Certain of these
                     ocean-like quantities of world-systems they purify with the wisdom that specifically shows the
-                    incalculable, ocean-like entrance into eons. [F.45.b] Certain of these ocean-like quantities of
+                    incalculable, ocean-like entrance into eons. <ref cRef="F.45.b" type="folio" xml:id="UT22084-062-001-798"/> Certain of these ocean-like quantities of
                     world-systems they purify with the wisdom that specifically shows the incalculable, ocean-like
                     display of the three times. Certain of these ocean-like quantities of world-systems they purify with
                     the wisdom that specifically shows the incalculable, ocean-like entrance into the three times.
@@ -2695,7 +2633,7 @@
                     having achieved the state of actually seeing the Buddha. Or take an ocean-like quantity of
                     world-systems—as many as there are atoms in fifty world-systems. All atoms there would be far fewer
                     than the much more numerous assemblies of bodhisattvas, each with its ocean of bodhisattvas with an
-                    boundless, ocean-like accumulation of wisdom, [F.46.a] each and every one of them having achieved
+                    boundless, ocean-like accumulation of wisdom, <ref cRef="F.46.a" type="folio" xml:id="UT22084-062-001-799"/> each and every one of them having achieved
                     the state of actually seeing the Buddha. Or take an ocean-like quantity of world-systems—as many as
                     there are atoms in fifty world-systems. All atoms there would be far fewer than the much more
                     numerous assemblies of bodhisattvas, each with its ocean of bodhisattvas with boundless, ocean-like
@@ -2715,7 +2653,7 @@
                     more numerous assembly of bodhisattvas, each with its ocean of bodhisattvas with boundless,
                     ocean-like liberations, each and every one of them having achieved the state of actually seeing the
                     Buddha. Or take an ocean-like quantity of world-systems—as many as there are atoms in fifty
-                    world-systems. All atoms there would be far fewer [F.46.b] than the much more numerous assembly of
+                    world-systems. All atoms there would be far fewer <ref cRef="F.46.b" type="folio" xml:id="UT22084-062-001-800"/> than the much more numerous assembly of
                     bodhisattvas, each with its ocean of bodhisattvas with boundless, ocean-like correct understandings,
                     each and every one of them having achieved the state of actually seeing the Buddha. Or take an
                     ocean-like quantity of world-systems—as many as there are atoms in fifty world-systems. All atoms
@@ -2736,7 +2674,7 @@
                     bodhisattvas, each with its ocean of bodhisattvas who all have their unique accumulations of wisdom
                     and, being blessed with the power of their unique accumulations of wisdom, have all achieved the
                     state of actually seeing the Thus-gone One. Or take an ocean-like quantity of world-systems—as many
-                    as there are atoms in fifty world-systems. All atoms there would be far fewer [F.47.a] than the much
+                    as there are atoms in fifty world-systems. All atoms there would be far fewer <ref cRef="F.47.a" type="folio" xml:id="UT22084-062-001-801"/> than the much
                     more numerous assemblies of bodhisattvas, each with its ocean of bodhisattvas who all have their
                     unique perfections and, being blessed with the power of their unique perfections, have all achieved
                     the state of actually seeing the Thus-gone One. Or take an ocean-like quantity of world-systems—as
@@ -2754,7 +2692,7 @@
                     state of actually seeing the Thus-gone One. Or take an ocean-like quantity of world-systems—as many
                     as there are atoms in fifty world-systems. All atoms there would be far fewer than the much more
                     numerous assemblies of bodhisattvas, each with its ocean of bodhisattvas who all have their unique
-                    liberations and, being blessed with the power of their unique liberations, [F.47.b] have all
+                    liberations and, being blessed with the power of their unique liberations, <ref cRef="F.47.b" type="folio" xml:id="UT22084-062-001-802"/> have all
                     achieved the state of actually seeing the Thus-gone One. Or take an ocean-like quantity of
                     world-systems—as many as there are atoms in fifty world-systems. All atoms there would be far fewer
                     than the much more numerous assemblies of bodhisattvas, each with its ocean of bodhisattvas who all
@@ -2772,7 +2710,7 @@
                 <p tid="523">“Mañjuśrī, the same could be said about the supports, amazing conceptions, behaviors, spiritual
                     friends, ways of arousing diligence, ways of finding inspiration, activities to bring beings to
                     maturity, disciplines, prophecies, entrances into the state of a bodhisattva, entrances into the
-                    state of the thus-gone, [F.48.a] engagement with beings’ intentions and actions, entrances into
+                    state of the thus-gone, <ref cRef="F.48.a" type="folio" xml:id="UT22084-062-001-803"/> engagement with beings’ intentions and actions, entrances into
                     world-systems, entrances into eons, ways of displaying the three times, entrances into the three
                     times, ways of arousing indefatigable resolve, indivisible wisdoms, dhāraṇīs, awakened guides, ways
                     of arousing excellent attitudes, qualities of excellent conduct, achievements of great compassion,
@@ -2785,7 +2723,7 @@
                     the mind of awakening, inconceivable qualities, skills in allegory, skills in wisdom discernment,
                     manners of equipoise, spheres of totality, liberations, super-knowledges, qualities of awareness,
                     emancipations, groves, jewel decorations, ways of engendering an unwavering mind, ways of not
-                    forsaking altruism, [F.48.b] entrances into ocean-like wisdom, jewel-like bodhisattva abodes, ways
+                    forsaking altruism, <ref cRef="F.48.b" type="folio" xml:id="UT22084-062-001-804"/> entrances into ocean-like wisdom, jewel-like bodhisattva abodes, ways
                     of arousing vajra-like mind, great vehicle armor, great compositions, compositions grounded in
                     experience, resolute faiths, prophecies, ways of dedicating roots of virtue, ways of realizing
                     wisdom, ways of engendering a vast attitude beyond center and periphery, treasures, precepts,
@@ -2797,7 +2735,7 @@
                     world-system, habits, ways of grasping, emphases, accomplishments, certainty regarding the Buddha’s
                     teachings, vehicles, qualities of immutability, qualities that define them as bodhisattvas, paths of
                     renunciation, titles they have achieved as sublime beings, paths, degrees along the path, path
-                    accumulations, trainings on the path, [F.49.a] and path arrangements. </p>
+                    accumulations, trainings on the path, <ref cRef="F.49.a" type="folio" xml:id="UT22084-062-001-805"/> and path arrangements. </p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-527"/>
                 <p tid="524">“The thus-gone ones have no thoughts or concepts. How is this? It is because they have achieved
                     spontaneous wisdom. Mañjuśrī, consider the analogy of the sun’s orb, which appears in any bowl
@@ -2808,7 +2746,8 @@
                     behold the Thus-gone One. The thus-gone ones have no thoughts or concepts, and yet they have the
                     unique quality of unhindered bodies, and so this sort of activity unfolds non-conceptually and
                     spontaneously. Mañjuśrī, this was an overview of the thus-gone ones’ infinite bodies. It could not
-                    be described in all its detail even if we remained until the end of the eon. [B5]</p>
+                    be described in all its detail even if we remained until the end of the eon. <ref cRef="B5" type="bampo"/>
+                    </p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-528"/>
                 <p tid="525">“Mañjuśrī, the thus-gone ones’ objects must be described by means of analogy. Why is this? Because
                     when a learned being uses analogies, the meaning can be grasped. So consider this analogy, Mañjuśrī.
@@ -2816,7 +2755,7 @@
                     sides and is covered in lotus petals. On that lake there is someone speedily driving an iron chariot
                     that has thousand-spoked wheels and is pulled by an extraordinary horse that can run faster than a
                     garuḍa can fly. As the fast chariot rolls along its wheels do not touch the water, nor do the
-                    horse’s hooves damage the lotus petals. [F.49.b] Then as this chariot is speeding along, a venomous
+                    horse’s hooves damage the lotus petals. <ref cRef="F.49.b" type="folio" xml:id="UT22084-062-001-806"/> Then as this chariot is speeding along, a venomous
                     snake emerges from the great lake and in a single moment it circles the chariot ten times. Mañjuśrī,
                     in the same amount of time that the venomous snake takes to circle the chariot once, the monk Ānanda
                     can expound on—and cause others to understand—ten Dharma topics. In the same time that it takes the
@@ -2837,7 +2776,7 @@
                     nonetheless has certain unique qualities that allow such things to happen, non-conceptually and
                     spontaneously. Similarly, Mañjuśrī, in a single moment in time, in all the infinite world-systems
                     throughout the ten directions, an immeasurable amount of activities unfold from the thus-gone,
-                    worthy, perfect buddhas, [F.50.a] due to the act of bringing others to maturation. All the while
+                    worthy, perfect buddhas, <ref cRef="F.50.a" type="folio" xml:id="UT22084-062-001-807"/> due to the act of bringing others to maturation. All the while
                     though, the thus-gone ones have no thoughts or concepts, and yet such non-conceptual and spontaneous
                     activity unfolds because of their unique qualities. </p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-530"/>
@@ -2857,7 +2796,7 @@
                     has no thoughts or concepts, he nonetheless has unique qualities that allow for such activity to
                     unfold non-conceptually and spontaneously. </p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-532"/>
-                <p tid="529">“Mañjuśrī, consider the analogy of the rain that falls uniformly from clouds. [F.50.b] As it descends
+                <p tid="529">“Mañjuśrī, consider the analogy of the rain that falls uniformly from clouds. <ref cRef="F.50.b" type="folio" xml:id="UT22084-062-001-808"/> As it descends
                     it takes on various colors and scents due to the specific things it touches. The clouds have no
                     thoughts or concepts, and yet their unique qualities make all of this occur non-conceptually and
                     spontaneously. Similarly, Mañjuśrī, the Thus-gone One’s realm of phenomena is uniform, and yet this
@@ -2865,8 +2804,8 @@
                     Thus-gone One has no thoughts or concepts and yet, due to his unique qualities, such activity can
                     unfold non-conceptually and spontaneously.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-533"/>
-                <p tid="530">“Mañjuśrī, consider the analogy of the precious <fix>vaśirāja</fix> gem.<note place="end" xml:id="UT22084-062-001-534"> As
-                        reported in the <fix>Gandhavyūha</fix>, the <fix>vaśirāja</fix> gemstone has the power to reveal
+                <p tid="530">“Mañjuśrī, consider the analogy of the precious <foreign xml:lang="Sa-Ltn">vaśirāja</foreign> gem.<note place="end" xml:id="UT22084-062-001-534"> As
+                        reported in the <title xml:lang="Sa-Ltn">Gandhavyūha</title>, the <foreign xml:lang="Sa-Ltn">vaśirāja</foreign> gemstone has the power to reveal
                         various features and qualities of the sun and moon.</note> Wherever it might appear, there is no
                     iron, nor anything made of iron. Why is this? It is because it possesses unique qualities. In the
                     same way, Mañjuśrī, wherever the Thus-gone One resides, there will not be any light from fires,
@@ -2877,7 +2816,7 @@
                     paths of the ten unwholesome actions. There will be no afflictions. There will be no quarrels. There
                     will be no rival communities such as the carakas, parivrājakas, nirgranthas, and ājīvikas. The
                     thus-gone ones indeed have no thoughts or concepts, and yet since they have unique qualities and are
-                    not attached to objects, [F.51.a] such activity can unfold non-conceptually and spontaneously.
+                    not attached to objects, <ref cRef="F.51.a" type="folio" xml:id="UT22084-062-001-809"/> such activity can unfold non-conceptually and spontaneously.
                     Mañjuśrī, this was an overview of the thus-gone ones’ objects. It could not be described in all its
                     detail even if we remained until the end of the eon.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-535"/>
@@ -2902,7 +2841,7 @@
                 <milestone unit="chunk" xml:id="UT22084-062-001-538"/>
                 <p tid="534">“Mañjuśrī, consider this analogy. It is based on the earth and in dependence on the earth that every
                     seed, blade of grass, shrub, herb, and tree can grow, develop, and flourish. The earth has no
-                    thoughts or concepts, [F.51.b] and yet it possesses unique qualities that allow for such things to
+                    thoughts or concepts, <ref cRef="F.51.b" type="folio" xml:id="UT22084-062-001-810"/> and yet it possesses unique qualities that allow for such things to
                     unfold non-conceptually and spontaneously. Similarly, Mañjuśrī, it is based on the thus-gone ones,
                     and in dependence on the thus-gone ones, that the roots of virtue of all beings in every universe
                     throughout the ten directions—both mundane and supramundane, and even those of rival communities,
@@ -2921,7 +2860,7 @@
                 <p tid="536">“Mañjuśrī, consider the analogy of the king of gems, the wish-fulfilling jewel, which can fulfill all
                     the wishes of every being. The precious wish-fulfilling jewel has no thoughts or concepts, and yet
                     it possesses unique qualities, thus all of this can unfold non-conceptually and spontaneously.
-                    Similarly, Mañjuśrī, gods, humans, asuras, and bodhisattvas who long for Dharma teachings [F.52.a]
+                    Similarly, Mañjuśrī, gods, humans, asuras, and bodhisattvas who long for Dharma teachings <ref cRef="F.52.a" type="folio" xml:id="UT22084-062-001-811"/>
                     will seek out the thus-gone ones and hear such Dharma teachings from them. The thus-gone ones have
                     no thoughts or concepts, yet they possess unique qualities, and so such activity can unfold
                     non-conceptually and spontaneously. Mañjuśrī, this was an overview of the thus-gone ones’
@@ -2942,7 +2881,7 @@
                     remain until the end of the eon. Similar as well is the boundless, ocean-like quantity of unique
                     demonstrations of the various perfections, which transcend classification; arise unimpededly,
                     unobstructedly, and identically, moment by moment; expansively pervade the entirety of space, and
-                    remain until the end of the eon. [F.52.b] Similar as well is the boundless, ocean-like quantity of
+                    remain until the end of the eon. <ref cRef="F.52.b" type="folio" xml:id="UT22084-062-001-812"/> Similar as well is the boundless, ocean-like quantity of
                     unique demonstrations of the various levels, which transcend classification; arise unimpededly,
                     unobstructedly, and identically, moment by moment; expansively pervade the entirety of space; and
                     remain until the end of the eon. Similar as well is the boundless, ocean-like quantity of unique
@@ -2961,7 +2900,7 @@
                     unique demonstrations of the various super-knowledges, which transcend classification; arise
                     unimpededly, unobstructedly, and identically, moment by moment; expansively pervade the entirety of
                     space; and remain until the end of the eon. Similar as well is the boundless, ocean-like quantity of
-                    unique demonstrations of the various aspirations, which transcend classification; [F.53.a] arise
+                    unique demonstrations of the various aspirations, which transcend classification; <ref cRef="F.53.a" type="folio" xml:id="UT22084-062-001-813"/> arise
                     unimpededly, unobstructedly, and identically, moment by moment; expansively pervade the entirety of
                     space; and remain until the end of the eon. Similar as well is the boundless, ocean-like quantity of
                     unique demonstrations of the various ways of engendering diligence, which transcend classification;
@@ -2981,7 +2920,7 @@
                     classification; arise unimpededly, unobstructedly, and identically, moment by moment; expansively
                     pervade the entirety of space; and remain until the end of the eon. Similar as well is the
                     boundless, ocean-like quantity of unique demonstrations of the various entrances into world-systems,
-                    which transcend classification; [F.53.b] arise unimpededly, unobstructedly, and identically, moment
+                    which transcend classification; <ref cRef="F.53.b" type="folio" xml:id="UT22084-062-001-814"/> arise unimpededly, unobstructedly, and identically, moment
                     by moment; expansively pervade the entirety of space; and remain until the end of the eon. Similar
                     as well is the boundless, ocean-like quantity of unique demonstrations of the various entrances into
                     eons, which transcend classification; arise unimpededly, unobstructedly, and identically, moment by
@@ -3004,7 +2943,7 @@
                     was an overview of the thus-gone ones’ quality of being all-seeing. It could not be described in all
                     its detail even if we remained until the end of the eon.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-544"/>
-                <p tid="540">“Mañjuśrī, next is the thus-gone ones’ renown. [F.54.a] Mañjuśrī, the thus-gone ones pervade every
+                <p tid="540">“Mañjuśrī, next is the thus-gone ones’ renown. <ref cRef="F.54.a" type="folio" xml:id="UT22084-062-001-815"/> Mañjuśrī, the thus-gone ones pervade every
                     atom, every continent, and every world-system in all the infinite universes throughout the ten
                     directions—in an ocean-like amount of world-systems equal to the amount of atoms in all
                     world-systems. In a single moment of mind, on each continent in every world-system, they have an
@@ -3022,7 +2961,7 @@
                 <p tid="541">“Mañjuśrī, next is the thus-gone ones’ quality of being indivisible and non-abiding. Mañjuśrī, the
                     Thus-gone One is separate from this world-system, and yet does not abide in another world-system.
                     The Thus-gone One is separate from this continent, and yet does not abide in another continent. The
-                    Thus-gone One is separate from this home, and yet does not abide in another home. [F.54.b] The
+                    Thus-gone One is separate from this home, and yet does not abide in another home. <ref cRef="F.54.b" type="folio" xml:id="UT22084-062-001-816"/> The
                     Thus-gone One is separate from this class of gods, and yet does not abide in another class of gods.
                     The Thus-gone One is separate from this birth in the state of an animal, and yet does not abide in
                     another animal state. The Thus-gone One is separate from this existence as a hungry spirit, and yet
@@ -3044,7 +2983,7 @@
                     they are to be guided. For instance, certain gods, humans, and bodhisattvas might perceive a
                     specific teaching on the boundless, ocean-like accumulation of merit emerging from the crown
                     protuberance. Others might perceive a specific teaching on the boundless, ocean-like accumulation of
-                    wisdom. Others might perceive a specific teaching on the boundless, ocean-like perfections. [F.55.a]
+                    wisdom. Others might perceive a specific teaching on the boundless, ocean-like perfections. <ref cRef="F.55.a" type="folio" xml:id="UT22084-062-001-817"/>
                     Others might perceive a specific teaching on the boundless, ocean-like levels. Others might perceive
                     a specific teaching on the boundless, ocean-like dhāraṇīs. Others might perceive a specific teaching
                     on the boundless, ocean-like absorptions. Others might perceive a specific teaching on the
@@ -3064,7 +3003,7 @@
                     might perceive a specific teaching on the boundless, ocean-like ways of arousing indefatigable
                     resolve. </p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-548"/>
-                <p tid="544">“Certain gods, humans, and bodhisattvas [F.55.b] might perceive a specific teaching on the boundless,
+                <p tid="544">“Certain gods, humans, and bodhisattvas <ref cRef="F.55.b" type="folio" xml:id="UT22084-062-001-818"/> might perceive a specific teaching on the boundless,
                     ocean-like inseparable wisdom emerging from the crown protuberance. Similarly, in any given moment
                     of mind, gods, humans, and bodhisattvas might perceive—precisely in accord with their wishes and
                     ways of being guided—an ocean-like variety of specific Dharma teachings emerging from the hair coil,
@@ -3083,7 +3022,7 @@
                     thousand leagues in height. Certain bodhisattvas measure ten million leagues in height, while other
                     bodhisattvas measure one hundred million, two hundred million, three hundred million, four hundred
                     million, or five hundred million leagues in height. Some bodhisattvas measure one billion leagues in
-                    height. Other bodhisattvas measure ten billion leagues in height, [F.56.a] while there are still
+                    height. Other bodhisattvas measure ten billion leagues in height, <ref cRef="F.56.a" type="folio" xml:id="UT22084-062-001-819"/> while there are still
                     other bodhisattvas who measure one hundred billion, two hundred billion, three hundred billion, four
                     hundred billion, or five hundred billion leagues in height. On every continent in all of the
                     infinite world-systems throughout the ten directions, all of them simultaneously see the Thus-gone
@@ -3107,7 +3046,7 @@
                     world-system—the ocean-like quantity of light rays that emit from the Thus-gone One’s body
                     proclaiming the bodhisattva conduct are still far more. In each moment of mind, an ocean-like
                     quantity of light rays, as many as there are atoms in all realms, emit from the Thus-gone One’s
-                    crown protuberance and hair coil, as well as from each of his major marks, [F.56.b] excellent signs,
+                    crown protuberance and hair coil, as well as from each of his major marks, <ref cRef="F.56.b" type="folio" xml:id="UT22084-062-001-820"/> excellent signs,
                     and pores of his skin. A portion of this ocean-like quantity of light rays proclaims the boundless,
                     ocean-like accumulation of merit. Another portion of this ocean-like quantity of light rays
                     proclaims the boundless, ocean-like accumulation of wisdom. Another portion of this ocean-like
@@ -3132,7 +3071,7 @@
                     the three times. Another portion of this ocean-like quantity of light rays proclaims the boundless,
                     ocean-like displays of the three times. Another portion of this ocean-like quantity of light rays
                     proclaims the boundless, ocean-like ways of arousing indefatigable resolve. Another portion of this
-                    ocean-like quantity of light rays proclaims the boundless ocean of various wisdoms. [F.57.a] All of
+                    ocean-like quantity of light rays proclaims the boundless ocean of various wisdoms. <ref cRef="F.57.a" type="folio" xml:id="UT22084-062-001-821"/> All of
                     these arise unimpededly, unobstructedly, and identically, expansively pervade the entirety of space,
                     and remain until the end of the eon. Mañjuśrī, this was an overview of the abodes where the
                     thus-gone ones bring beings to maturity. They could not be described in all their detail even if we
@@ -3155,7 +3094,7 @@
                     ocean-like quantity are brought to maturity through the wisdom that specifically expresses the
                     boundless ocean of the various liberations. Other beings among this ocean-like quantity are brought
                     to maturity through the wisdom that specifically expresses the boundless ocean of the various
-                    correct understandings. [F.57.b] Other beings among this ocean-like quantity are brought to maturity
+                    correct understandings. <ref cRef="F.57.b" type="folio" xml:id="UT22084-062-001-822"/> Other beings among this ocean-like quantity are brought to maturity
                     through the wisdom that specifically expresses the boundless ocean of the various super-knowledges.
                     Other beings among this ocean-like quantity are brought to maturity through the wisdom that
                     specifically expresses the boundless ocean of the various aspirations. Other beings among this
@@ -3179,7 +3118,7 @@
                     wisdom that specifically expresses the boundless ocean of wisdoms that manifest in the form of
                     emanated beings, emanated realms, emanated Dharma, emanated bodies, emanated aspirations, emanated
                     domains, emanated wisdoms, emanated super-knowledges, emanated miracles, and emanated powers.
-                    [F.58.a] Mañjuśrī, this was an overview of the way the thus-gone ones are fearless in bringing
+                    <ref cRef="F.58.a" type="folio" xml:id="UT22084-062-001-823"/> Mañjuśrī, this was an overview of the way the thus-gone ones are fearless in bringing
                     beings to maturity. It could not be described in all its detail even if we remained until the end of
                     the eon.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-553"/>
@@ -3197,12 +3136,12 @@
                     relying on any other teacher, as there are atoms in every world-system. Then say that another son or
                     daughter of noble family one day offered a single meal to a monk. The latter would create
                     incalculably greater merit than the former.<note place="end" xml:id="UT22084-062-001-555"> The preceding two paragraphs are
-                        quoted in Śāntideva’s <fix>Śikṣāsamuccaya</fix>. See Bendall 1971, p. 87.4-13.</note>
+                        quoted in Śāntideva’s <title xml:lang="Sa-Ltn">Śikṣāsamuccaya</title>. See Bendall 1971, p. 87.4-13.</note>
                 </p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-556"/>
                 <p tid="551">“Otherwise, Mañjuśrī, say that a son or daughter of noble family, on a daily basis for an ocean-like
                     span of eons numbering the same amount as sand in the Ganges, gave flavorsome, divine food as well
-                    as divine garments to as many monks as there are atoms in every world-system. [F.58.b] Then say that
+                    as divine garments to as many monks as there are atoms in every world-system. <ref cRef="F.58.b" type="folio" xml:id="UT22084-062-001-824"/> Then say that
                     another son or daughter of noble family one day offered a single meal to someone guided by faith.
                     The latter would create incalculably greater merit than the former.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-557"/>
@@ -3226,7 +3165,7 @@
                 <milestone unit="chunk" xml:id="UT22084-062-001-560"/>
                 <p tid="555">“Otherwise, Mañjuśrī, say that a son or daughter of noble family, on a daily basis for an ocean-like
                     span of eons numbering the same amount as sand in the Ganges, gave flavorsome, divine food as well
-                    as divine garments to as many stream-enterers as there are atoms in every world-system. [F.59.a]
+                    as divine garments to as many stream-enterers as there are atoms in every world-system. <ref cRef="F.59.a" type="folio" xml:id="UT22084-062-001-825"/>
                     Mañjuśrī, suppose that another son or daughter of noble family one day offered a single meal to a
                     once-returner. The latter would create incalculably greater merit than the former.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-561"/>
@@ -3250,12 +3189,12 @@
                 <milestone unit="chunk" xml:id="UT22084-062-001-564"/>
                 <p tid="559">“Otherwise, Mañjuśrī, say that a son or daughter of noble family, on a daily basis for an ocean-like
                     span of eons numbering the same amount as sand in the Ganges, gave flavorsome, divine food as well
-                    as divine garments to as many solitary buddhas as there are atoms in every world-system. [59b]
+                    as divine garments to as many solitary buddhas as there are atoms in every world-system. <ref cRef="F.59.b" type="folio" xml:id="UT22084-062-001-834"/>
                     Mañjuśrī, suppose that another son or daughter of noble family simply saw a painting or a statue of
                     the Buddha. If in doing so the latter would create incalculably greater merit than the former, no
                     need to mention how incalculably greater the merit created would be if he or she showed respect to,
                     or offered flowers, incense, fragrances, or candles to the image.<note place="end" xml:id="UT22084-062-001-565"> This paragraph
-                        is quoted in Śāntideva’s <fix>Śikṣāsamuccaya</fix>. See Bendall 1971, p. 311.6-12</note>
+                        is quoted in Śāntideva’s <title xml:lang="Sa-Ltn">Śikṣāsamuccaya</title>. See Bendall 1971, p. 311.6-12</note>
                 </p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-566"/>
                 <p tid="560">“Otherwise, Mañjuśrī, say that a son or daughter of noble family, on a daily basis for an ocean-like
@@ -3274,7 +3213,7 @@
                     bodhisattva, and then one day so much as offered a single meal. The latter would create incalculably
                     greater merit than the former.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-568"/>
-                <p tid="562">“Otherwise, Mañjuśrī, say that a son or daughter of noble family, [F.60.a] on a daily basis for an
+                <p tid="562">“Otherwise, Mañjuśrī, say that a son or daughter of noble family, <ref cRef="F.60.a" type="folio" xml:id="UT22084-062-001-826"/> on a daily basis for an
                     ocean-like span of eons numbering the same amount as sand in the Ganges, gave flavorsome, divine
                     food as well as divine garments to the blessed Buddha and as many ‘elephant-cart riding’
                     bodhisattvas as there are atoms in every world-system. Mañjuśrī, suppose that another son or
@@ -3300,7 +3239,7 @@
                     greater merit than the former.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-571"/>
                 <p tid="565">“Otherwise, Mañjuśrī, say that a son or daughter of noble family, on a daily basis for an ocean-like
-                    span of eons numbering the same amount as sand in the Ganges, [F.60.b] gave flavorsome, divine food
+                    span of eons numbering the same amount as sand in the Ganges, <ref cRef="F.60.b" type="folio" xml:id="UT22084-062-001-827"/> gave flavorsome, divine food
                     as well as divine garments to as many bodhisattvas who ‘proceed due to the miraculous powers of the
                     Thus-gone One’ as there are atoms in every world-system. Mañjuśrī, suppose that another son or
                     daughter of noble family records this discourse on the Dharma in writing, organizes to have it
@@ -3322,7 +3261,7 @@
                     possessions. Then say that another son or daughter of noble family developed an abusive attitude and
                     then berated, spoke harshly to, or disturbed a bodhisattva. The latter would create incalculably
                     more negativity than the former. Mañjuśrī, if a son or daughter of noble family, for whatever
-                    reason, feels contempt for and criticizes a bodhisattva, [F.61.a] that non-virtuous action will
+                    reason, feels contempt for and criticizes a bodhisattva, <ref cRef="F.61.a" type="folio" xml:id="UT22084-062-001-828"/> that non-virtuous action will
                     result in him or her being reborn in the Great Howling Hell. There he or she will have a body that
                     is five hundred leagues tall with five hundred heads. Each head will have five hundred mouths, each
                     mouth will have five hundred tongues, and each tongue will be plowed by five hundred plows. </p>
@@ -3343,7 +3282,7 @@
                     contempt, for whatever reason, became angry, abused it, spoke unpleasantly about it, and deprecated
                     it. The latter would create incalculably more negativity than the former. Why is this? It is because
                     bodhisattvas are destined to become thus-gone ones— in that way the family line of the buddhas
-                    remains intact. Whoever denigrates a bodhisattva [F.61.b] forsakes the Dharma. There is no other
+                    remains intact. Whoever denigrates a bodhisattva <ref cRef="F.61.b" type="folio" xml:id="UT22084-062-001-829"/> forsakes the Dharma. There is no other
                     Dharma besides the bodhisattvas who foster the Dharma in others; bodhisattvas are the Dharma. </p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-576"/>
                 <p tid="570">“Mañjuśrī, say that a son or daughter of noble family became angry and locked all beings in all the
@@ -3355,8 +3294,8 @@
                 <p tid="571">“Mañjuśrī, say that a son or daughter of noble family robbed the possessions of every being in the
                     world. Then say someone else disparaged any bodhisattva. The latter would create incalculably more
                     negativity than the former.<note place="end" xml:id="UT22084-062-001-578"> The preceding two paragraphs are quoted in Śāntideva’s
-                            <fix>Śikṣāsamuccaya</fix>. See Bendall 1971, p. 86.1-6.</note>
-                </p>
+                            <title xml:lang="Sa-Ltn">Śikṣāsamuccaya</title>. See Bendall 1971, p. 86.1-6.</note>
+                    </p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-579"/>
                 <p tid="572">“Mañjuśrī, consider this analogy. Mount Meru, the king of mountains, is so tall, wide, and immense
                     that it outshines every other mountain. It is radiant, clear, and brilliant. Similarly, Mañjuśrī,
@@ -3371,7 +3310,7 @@
                     family developed conviction in the basis for the absence of the aggregates. The latter would create
                     incalculably more merit than the former. </p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-581"/>
-                <p tid="574">“Mañjuśrī, [F.62.a] say every being developed conviction in the basis for the absence of the
+                <p tid="574">“Mañjuśrī, <ref cRef="F.62.a" type="folio" xml:id="UT22084-062-001-830"/> say every being developed conviction in the basis for the absence of the
                     aggregates. Then say that another son or daughter of noble family became devoted to this Dharma
                     discourse, recorded it in writing, arranged to have it recorded in writing, recited it, arranged to
                     have it recited, or even kept and venerated a written version of it, honoring it with candles,
@@ -3393,11 +3332,11 @@
                     bodhisattva. The latter would create incalculably more negativity than the former. Why is this? It
                     is because bodhisattvas are destined to become the blessed buddhas, while stūpas—as well as
                     everything pleasurable in the whole world and in all the divine existences—come from the buddhas.
-                    [F.62.b] Since buddhas themselves develop from bodhisattvas, to disrespect a bodhisattva is to
+                    <ref cRef="F.62.b" type="folio" xml:id="UT22084-062-001-831"/> Since buddhas themselves develop from bodhisattvas, to disrespect a bodhisattva is to
                     disrespect every buddha. To respect a bodhisattva, then, is to respect every buddha. If you want to
-                    make the most unexcelled offering to all the buddhas, make offerings to the bodhisattvas.<note place="end" xml:id="UT22084-062-001-584"> This paragraph is quoted in Śāntideva’s <fix>Śikṣāsamuccaya</fix>. See Bendall
+                    make the most unexcelled offering to all the buddhas, make offerings to the bodhisattvas.<note place="end" xml:id="UT22084-062-001-584"> This paragraph is quoted in Śāntideva’s <title xml:lang="Sa-Ltn">Śikṣāsamuccaya</title>. See Bendall
                         1971, p. 86.6-12.</note>
-                </p>
+                    </p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-585"/>
                 <p tid="577">“Mañjuśrī, say there was city where there resided a number of bodhisattvas as high as one billion,
                     ten billion, one trillion, or an immeasurable and incalculable number. If they nonetheless did not
@@ -3414,7 +3353,7 @@
                     disturbances would in fact occur in that city. Why is that? It is because any karma that he or she
                     might have to be reborn into immediate retribution for an inexpressible, incalculable number of
                     eons, as well as the karma he or she might have to suffer through the lower realms for ten, twenty,
-                    or thirty eons, would be experienced already in this life. [F.63.a] Through such disturbances, that
+                    or thirty eons, would be experienced already in this life. <ref cRef="F.63.a" type="folio" xml:id="UT22084-062-001-832"/> Through such disturbances, that
                     karma would be purified. How so? It would be due to the great amount of merit that he or she had
                     accumulated.</p>
                 <milestone unit="chunk" xml:id="UT22084-062-001-586"/>
@@ -3430,8 +3369,9 @@
                 <milestone unit="chunk" xml:id="UT22084-062-001-588"/>
                 <p tid="580">This concludes the noble Great Vehicle sūtra <title xml:lang="en">The Seal of Engagement in Awakening
                         the Power of Faith</title>.</p>
-                <div type="colophon" xml:id="UT22084-062-001-colophon">
-                    <head tid="581">Colophon</head>
+                </div>
+                <div type="colophon" xml:id="UT22084-062-001-section-1-c">
+                    <head type="colophon" tid="581">Colophon</head>
                     <milestone unit="chunk" xml:id="UT22084-062-001-589"/>
                     <p tid="582">This was translated, edited, and finalized by the Indian preceptor Surendrabodhi and the
                         translator-editor, Bandé Yeshé Dé.</p>
@@ -3441,24 +3381,14 @@
         <back>
             <div type="notes">
                 <head type="notes" tid="583">Notes</head>
-                <list type="abbreviations">
-                    <head tid="584">Abbreviations</head>
-                    <fix/>
-                    <!-- In this section, markup editors need to move the expanded form of the
-                            abbreviation out of the "abbr" element and put it into the "expan" element. Delete
-                           this comment and the "fix" tag when you are done. If there are no abbreviations in 
-                            this text, then delete this entire "list" element, but leave the "div" and "head"
-                            entitled "notes"-->
-                </list>
             </div>
             <div type="listBibl">
                 <head type="listBibl" tid="585">Bibliography</head>
                 <div type="section" xml:id="UT22084-062-001-listBibl-1">
-                    <head tid="586">Tibetan Texts</head>
+                    <head type="section" tid="586">Tibetan Texts</head>
                     <bibl xml:id="UT22084-062-001-590">
                         <title xml:lang="Bo-Ltn">’phags pa dad pa’i stobs bskyed pa la ’jug pa’i phyag rgya zhes bya
-                            ba theg pa chen po’i mdo</title>
-                        <fix>. </fix>Tôh 201, Degé Kangyur vol. 62 (mdo sde, tsha),
+                            ba theg pa chen po’i mdo</title>. Toh 201, Degé Kangyur vol. 62 (mdo sde, tsha),
                         folios 1b–63a.</bibl>
                     <bibl xml:id="UT22084-062-001-591">
                         <title xml:lang="Bo-Ltn">’phags pa dad pa’i stobs bskyed pa la ’jug pa’i phyag rgya zhes bya
@@ -3467,32 +3397,29 @@
                         Tripitaka Collation Bureau of the China Tibetology Research Center). 108 volumes. Beijing: krung
                         go’i bod rig pa dpe skrun khang (China Tibetology Publishing House), 2006–9, vol. 62,
                         3–145.</bibl>
-                    <bibl xml:id="UT22084-062-001-592">Denkarma (<fix>pho brang stod thang ldan [/ lhan] dkar gyi chos 'gyur ro cog gi dkar
-                            chag</fix>). Degé Tengyur, vol. 206 (sna tshogs, jo), folios 294.b - 310.a.</bibl>
+                    <bibl xml:id="UT22084-062-001-592">Denkarma (<title xml:lang="Bo-Ltn">pho brang stod thang ldan [/ lhan] dkar gyi chos 'gyur ro cog gi dkar
+                            chag</title>). Degé Tengyur, vol. 206 (sna tshogs, jo), folios 294.b - 310.a.</bibl>
                 </div>
                 <div type="section" xml:id="UT22084-062-001-listBibl-2">
-                    <head tid="587">Secondary Sources </head>
+                    <head type="section" tid="587">Secondary Sources </head>
                     <bibl xml:id="UT22084-062-001-593">Bendall, Cecil, and W.H.D. Rouse, eds. <title xml:lang="en">Śiksā Samuccaya: A Compendium of
                         </title>
                     </bibl>
                     <bibl xml:id="UT22084-062-001-594">
-                        <title xml:lang="en">Buddhist Doctrine</title>
-                        <fix>.</fix> Delhi: Motilal Barnarsidass,
+                        <title xml:lang="en">Buddhist Doctrine</title>. Delhi: Motilal Barnarsidass,
                         1971.</bibl>
                     <bibl xml:id="UT22084-062-001-595">Clayton, Barbra R. <title xml:lang="en">Moral Theory in Śāntideva’s Śikṣāsamuccaya</title>.
                         Abingdon: Routledge, 2006.</bibl>
                     <bibl xml:id="UT22084-062-001-596">Edgerton, Franklin. <title xml:lang="en">Buddhist Hybrid Sanskrit Grammar and
                             Dictionary</title>. New Haven: Yale Univ. Press, 1953.</bibl>
-                    <bibl xml:id="UT22084-062-001-597">Herrmann-Pfandt, Adelheid. <fix>Die lHan kar ma: ein früher Katalog der ins Tibetische
-                            übersetzten buddhistischen Texte</fix>. Wien: Verlag der österreichischen Akademie der
+                    <bibl xml:id="UT22084-062-001-597">Herrmann-Pfandt, Adelheid. <title xml:lang="de">Die lHan kar ma: ein früher Katalog der ins Tibetische
+                            übersetzten buddhistischen Texte</title>. Wien: Verlag der österreichischen Akademie der
                         Wissenschaften, 2008.</bibl>
-                    <bibl xml:id="UT22084-062-001-598">Mahoney, Richard, and Jens Braarvig, and Cecil Bendall, eds. <title xml:lang="en">Śikṣāsamuccaya of Śāntideva: Sanskrit Text</title>
-                        <fix>.</fix> Oxford: Indica et Buddhica,
+                    <bibl xml:id="UT22084-062-001-598">Mahoney, Richard, and Jens Braarvig, and Cecil Bendall, eds. <title xml:lang="en">Śikṣāsamuccaya of Śāntideva: Sanskrit Text</title>. Oxford: Indica et Buddhica,
                         2003.</bibl>
                     <bibl xml:id="UT22084-062-001-599">Skilling Peter, and Saerji. “The Circulation of the Buddhāvataṃsaka in India.” Annual Report
                         of The International Research Institute for Advanced Buddhology at Soka University for the
                         Academic Year 2012, Volume XVI, 2013, pp. 193-216.</bibl>
-                    <bibl xml:id="UT22084-062-001-600">Notes</bibl>
                 </div>
             </div>
             <div type="glossary">
@@ -3503,7 +3430,7 @@
                 <term xml:lang="Bo-Ltn">ting nge ’dzin </term>
                             <term xml:lang="bo">ཏིང་ངེ་འཛིན།</term>
                 <term xml:lang="Sa-Ltn">samādhi</term>
-                <term type="definition">A state of deep mediative immersion. </term>
+                <term type="definition">A state of deep meditative immersion. </term>
             </gloss>
         </item>
         <item>
@@ -3513,7 +3440,7 @@
                             <term xml:lang="bo">ཀུན་ཏུ་འཚོ་བ་པ།</term>
                 <term xml:lang="Sa-Ltn">Ājīvika </term>
                 <term type="definition">A follower of a non-Buddhist mendicant movement founded by Makkhali Gosāla
-                    (fifth century BCE). The Ājīvikas adhered to a fatalist world-view according to which all beings
+                    (fifth century <hi rend="small-caps">BCE</hi>). The Ājīvikas adhered to a fatalist world-view according to which all beings
                     eventually reach spiritual accomplishment by fate, rather than their own actions.</term>
             </gloss>
         </item>
@@ -3618,10 +3545,10 @@
         </item>
         <item>
             <gloss type="term" xml:id="UT22084-062-001-613">
-                <term>cyclic existence</term>
+                <term>saṃsāra</term>
                 <term xml:lang="Bo-Ltn">’khor ba </term>
                             <term xml:lang="bo">འཁོར་བ།</term>
-                <term xml:lang="Sa-Ltn">saṁsāra</term>
+                <term xml:lang="Sa-Ltn">saṃsāra</term>
                 <term type="definition">The continuum of repeated birth and death.</term>
             </gloss>
         </item>
@@ -3631,7 +3558,7 @@
                 <term xml:lang="Bo-Ltn">kun nas nyon mong ba </term>
                             <term xml:lang="bo">ཀུན་ནས་ཉོན་མོང་བ།</term>
                 <term xml:lang="Sa-Ltn">saṃkleśa</term>
-                <term type="definition">The defilments of causality and emotional states the perpetuate our experience
+                <term type="definition">The defilements of causality and emotional states the perpetuate our experience
                     of saṃsāra.</term>
             </gloss>
         </item>
@@ -3699,15 +3626,14 @@
             </gloss>
         </item>
         <item>
-            <gloss type="term" xml:id="UT22084-062-001-621">
-                <term>disturbing emotion</term>
-                <term xml:lang="Bo-Ltn">nyon mongs pa </term>
+                        <gloss xml:id="UT22084-062-001-621" type="term" mode="match">
+                            <term>affliction</term>
+                            <term xml:lang="Bo-Ltn">nyon mongs pa</term>
                             <term xml:lang="bo">ཉོན་མོངས་པ།</term>
-                <term xml:lang="Sa-Ltn">kleśa</term>
-                <term type="definition">A type of mental imperfection, the most basic afflictions being attachment,
-                    aversion and confusion.</term>
-            </gloss>
-        </item>
+                            <term xml:lang="Sa-Ltn">kleśa</term>
+                            <term type="definition">A type of mental imperfection, the most basic afflictions being attachment, aversion and confusion.</term>
+                        </gloss>
+                    </item>
         <item>
             <gloss type="term" xml:id="UT22084-062-001-622">
                 <term>eloquence</term>
@@ -3726,15 +3652,6 @@
                 <term xml:lang="Sa-Ltn">śūnyatā</term>
                 <term type="definition">The absence of independent, singular, and permanent existence; one of the three
                     gateways to liberation.</term>
-            </gloss>
-        </item>
-        <item>
-            <gloss type="term" xml:id="UT22084-062-001-624">
-                <term>English</term>
-                <term xml:lang="Bo-Ltn">Tibetan </term>
-                            <term xml:lang="bo">ཊིབེཏན།</term>
-                <term xml:lang="Sa-Ltn">Sanskrit</term>
-                <term type="definition">Definition</term>
             </gloss>
         </item>
         <item>
@@ -3862,8 +3779,8 @@
         <item>
             <gloss type="term" xml:id="UT22084-062-001-637">
                 <term>great being</term>
-                <term xml:lang="Bo-Ltn">sems pa chen po </term>
-                            <term xml:lang="bo">སེམས་པ་ཆེན་པོ།</term>
+                <term xml:lang="Bo-Ltn">sems dpa’ chen po </term>
+                            <term xml:lang="bo">སེམས་དཔའ་ཆེན་པོ།</term>
                 <term xml:lang="Sa-Ltn">mahāsattva</term>
                 <term type="definition">An alternate name for a bodhisattva.</term>
             </gloss>
@@ -3931,9 +3848,9 @@
         </item>
         <item>
             <gloss type="term" xml:id="UT22084-062-001-644">
-                <term>irreversibility</term>
-                <term xml:lang="Bo-Ltn">phyir mi ldog pa nyid </term>
-                            <term xml:lang="bo">ཕྱིར་མི་ལྡོག་པ་ཉིད།</term>
+                <term>non-regression</term>
+                <term xml:lang="Bo-Ltn">phyir mi ldog pa</term>
+                            <term xml:lang="bo">ཕྱིར་མི་ལྡོག་པ།</term>
                 <term xml:lang="Sa-Ltn">avaivartikatva</term>
                 <term type="definition">A stage in the bodhisattva path where the practitioner will never turn
                     back.</term>
@@ -3945,7 +3862,7 @@
                 <term xml:lang="Bo-Ltn">las </term>
                             <term xml:lang="bo">ལས།</term>
                 <term xml:lang="Sa-Ltn">karman</term>
-                <term type="definition">Meaning "action" in its most basic sense, <fix>karma</fix> is an important
+                <term type="definition">Meaning "action" in its most basic sense, <foreign xml:lang="Sa-Ltn">karma</foreign> is an important
                     concept in Buddhist philosophy as the cumulative force of previous physcial, verbal, and mental
                     acts, which determines present experience and will determine future existences.</term>
             </gloss>
@@ -4011,11 +3928,12 @@
         </item>
         <item>
             <gloss type="term" xml:id="UT22084-062-001-652">
-                <term>meaningful behavior; behaving meaningfully</term>
+                <term>meaningful behavior</term>
                 <term xml:lang="Bo-Ltn">don spyod pa </term>
                             <term xml:lang="bo">དོན་སྤྱོད་པ།</term>
                 <term xml:lang="Sa-Ltn">arthacarya</term>
                 <term type="definition">One of the four ways of magnetizing disciples.</term>
+                <term type="alternative">behaving meaningfully</term>
             </gloss>
         </item>
         <item>
@@ -4264,7 +4182,7 @@
                 <term xml:lang="Bo-Ltn">dge ba’i bshes gnyen </term>
                             <term xml:lang="bo">དགེ་བའི་བཤེས་གཉེན།</term>
                 <term xml:lang="Sa-Ltn">kalyāṇamitra</term>
-                <term type="definition">A personal tutor on spiritual matters; a spritual guide.</term>
+                <term type="definition">A personal tutor on spiritual matters; a spiritual guide.</term>
             </gloss>
         </item>
         <item>
@@ -4328,7 +4246,7 @@
                 <term xml:lang="Sa-Ltn">śamatha</term>
                 <term type="definition">One of the basic forms of Buddhist meditation, which focuses on calming the
                     mind. Often presented as part of a pair of meditation techniques, with the other technique being
-                    “insight” (<fix>vipaśyana</fix>).</term>
+                    “insight” (<foreign xml:lang="Sa-Ltn">vipaśyana</foreign>).</term>
             </gloss>
         </item>
         <item>
@@ -4370,16 +4288,15 @@
                     to the thunderbolt held by the god Indra; also denotes indestructibility.</term>
             </gloss>
         </item>
-        <item>
+        <!--<item>
             <gloss type="term" xml:id="UT22084-062-001-688">
                 <term>venerable</term>
-                <term xml:lang="Bo-Ltn">tshe dang ldan pa </term>
-                            <term xml:lang="bo">ཚེ་དང་ལྡན་པ།</term>
+                <term xml:lang="Bo-Ltn">tshe dang ldan pa </term><term xml:lang="bo">ཚེ་དང་ལྡན་པ།</term>
                 <term xml:lang="Sa-Ltn">āyuṣmat</term>
                 <term type="definition">Literally “long-lived.” A title used as a form of respect for an ordained
                     monk.</term>
             </gloss>
-        </item>
+        </item>-->
         <item>
             <gloss type="term" xml:id="UT22084-062-001-689">
                 <term>world-system</term>
@@ -4411,8 +4328,12 @@
                     causing harm and destruction.</term>
             </gloss>
         </item>
-        <item>
-            <gloss xml:id="UT22084-062-001-692">
+        
+                    
+                    
+                    
+                    <item>
+            <gloss type="person" xml:id="UT22084-062-001-692">
                 <term>Ānanda </term>
                 <term xml:lang="Bo-Ltn">kun dga’ bo </term>
                             <term xml:lang="bo">ཀུན་དགའ་བོ།</term>
@@ -4421,7 +4342,7 @@
             </gloss>
         </item>
         <item>
-            <gloss xml:id="UT22084-062-001-693">
+            <gloss type="person" xml:id="UT22084-062-001-693">
                 <term>Brahmā</term>
                 <term xml:lang="Bo-Ltn">tshangs pa </term>
                             <term xml:lang="bo">ཚངས་པ།</term>
@@ -4433,16 +4354,7 @@
             </gloss>
         </item>
         <item>
-            <gloss xml:id="UT22084-062-001-694">
-                <term>English</term>
-                <term xml:lang="Bo-Ltn">Tibetan </term>
-                            <term xml:lang="bo">ཊིབེཏན།</term>
-                <term xml:lang="Sa-Ltn">Sanskrit</term>
-                <term type="definition">Definition</term>
-            </gloss>
-        </item>
-        <item>
-            <gloss xml:id="UT22084-062-001-695">
+            <gloss type="person" xml:id="UT22084-062-001-695">
                 <term>Mañjuśrī</term>
                 <term xml:lang="Bo-Ltn">jam dpal </term>
                             <term xml:lang="bo">ཇམ་དཔལ།</term>
@@ -4452,7 +4364,7 @@
             </gloss>
         </item>
         <item>
-            <gloss xml:id="UT22084-062-001-696">
+            <gloss type="person" xml:id="UT22084-062-001-696">
                 <term>Mañjuśrīkumārabhūta</term>
                 <term xml:lang="Bo-Ltn">’jam dpal gzhon nur gyur pa </term>
                             <term xml:lang="bo">འཇམ་དཔལ་གཞོན་ནུར་གྱུར་པ།</term>
@@ -4462,7 +4374,7 @@
             </gloss>
         </item>
         <item>
-            <gloss xml:id="UT22084-062-001-697">
+            <gloss type="person" xml:id="UT22084-062-001-697">
                 <term>Maudgalyāyana </term>
                 <term xml:lang="Bo-Ltn">maud gal gyi bu </term>
                             <term xml:lang="bo">མཽད་གལ་གྱི་བུ།</term>
@@ -4472,7 +4384,7 @@
             </gloss>
         </item>
         <item>
-            <gloss xml:id="UT22084-062-001-698">
+            <gloss type="person" xml:id="UT22084-062-001-698">
                 <term>Śakra</term>
                 <term xml:lang="Bo-Ltn">brgya byin </term>
                             <term xml:lang="bo">བརྒྱ་བྱིན།</term>
@@ -4482,17 +4394,17 @@
             </gloss>
         </item>
         <item>
-            <gloss xml:id="UT22084-062-001-699">
-                <term>Samanatabhadra</term>
+            <gloss type="person" xml:id="UT22084-062-001-699">
+                <term>Samantabhadra</term>
                 <term xml:lang="Bo-Ltn">kun tu bzang po </term>
                             <term xml:lang="bo">ཀུན་ཏུ་བཟང་པོ།</term>
-                <term xml:lang="Sa-Ltn">Samanatabhadra</term>
+                <term xml:lang="Sa-Ltn">Samantabhadra</term>
                 <term type="definition">A well-known bodhisattva who often figures in the Great Vehicle
                     teachings.</term>
             </gloss>
         </item>
         <item>
-            <gloss xml:id="UT22084-062-001-700">
+            <gloss type="person" xml:id="UT22084-062-001-700">
                 <term>Śāriputra </term>
                 <term xml:lang="Bo-Ltn">sha’a ri’i bu </term>
                             <term xml:lang="bo">ཤའ་རིའི་བུ།</term>
@@ -4502,7 +4414,7 @@
             </gloss>
         </item>
         <item>
-            <gloss xml:id="UT22084-062-001-701">
+            <gloss type="person" xml:id="UT22084-062-001-701">
                 <term>Surendrabodhi </term>
                 <term xml:lang="Bo-Ltn">su ren dra bo dhi </term>
                             <term xml:lang="bo">སུ་རེན་དྲ་བོ་དྷི།</term>
@@ -4512,7 +4424,7 @@
             </gloss>
         </item>
         <item>
-            <gloss xml:id="UT22084-062-001-702">
+            <gloss type="person" xml:id="UT22084-062-001-702">
                 <term>Yeshé Dé </term>
                 <term xml:lang="Bo-Ltn"> ye shes sde </term>
                             <term xml:lang="bo">ཡེ་ཤེས་སྡེ།</term>
@@ -4603,4 +4515,4 @@
             </div>
         </back>
     </text>
-</TEI>
+</tei:TEI>

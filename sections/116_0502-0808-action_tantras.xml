@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../schema/current/section.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc type="section">
             <titleStmt>
@@ -20,7 +20,7 @@
                 </bibl>
             </sourceDesc>
             <notesStmt>
-                <note type="lastUpdated" date-time="2021-01-19T09:47:22.029Z" user="john">19/01/2021 09:47:22</note>
+                <note type="lastUpdated" date-time="2021-06-01T09:06:19.037Z" user="admin">01/06/2021 09:06:19</note>
             </notesStmt>
         </fileDesc>
     </teiHeader>
@@ -41,7 +41,8 @@
         <body>
             <div type="about">
                 <head type="about" tid="32">Action tantras</head>
-                <div type="section" xml:id="O1JC114941JC21415-about-1">
+                <xi:include href="/db/apps/84000-data/tei/knowledgebase/action_tantras_kangyur_section.xml" xpointer="EFT-KB-ACTION-TANTRAS-KANGYUR-SECTION-article-1"/>
+                <!--<div type="section" xml:id="O1JC114941JC21415-about-1">
                     <milestone unit="chunk" xml:id="O1JC114941JC21415-1"/>
                     <p tid="3">This, the lowest of the three classes of outer tantra, constitutes the largest group of tantras in the
                         Kangyur, with 308 titles. Tantras of this class emphasize external purity and ritual, and are often aimed
@@ -214,7 +215,7 @@
                         different Action tantra practices. The best known is probably the <title xml:lang="en">Tantra of the
                             Questions of Subāhu</title> (Toh 805, not to be confused with the <title xml:lang="en">Sūtra of the
                             Questions of Subāhu</title>, Toh 70).</p>
-                </div>
+                </div>-->
             </div>
         </body>
     </text>

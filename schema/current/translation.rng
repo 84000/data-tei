@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <grammar xmlns="http://relaxng.org/ns/structure/1.0" xmlns:teix="http://www.tei-c.org/ns/Examples" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes" ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2021-02-04T19:37:36Z. .
-TEI Edition: Version 4.1.0. Last updated on
-	19th August 2020, revision b414ba550
-TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.1.0/
+Schema generated from ODD source 2021-06-16T14:43:02Z. .
+TEI Edition: Version 4.2.2. Last updated on
+	9th April 2021, revision 609a109b1
+TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.2.2/
   
 --><!---->
    <define name="macro.paraContent">
@@ -21,6 +21,15 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.1.0/
             <ref name="canonDef"/>
             <ref name="ref-canonical"/>
             <ref name="ref-other"/>
+         </choice>
+      </zeroOrMore>
+   </define>
+   <define name="macro.limitedContent">
+      <zeroOrMore>
+         <choice>
+            <text/>
+            <ref name="model.limitedPhrase"/>
+            <ref name="model.inter"/>
          </choice>
       </zeroOrMore>
    </define>
@@ -106,15 +115,51 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.1.0/
          </attribute>
       </zeroOrMore>
    </define>
+   <define name="bibl-section-content">
+      <zeroOrMore>
+         <choice>
+            <element name="head">
+               <attribute name="type">
+                  <value>section</value>
+               </attribute>
+               <ref name="head-content"/>
+            </element>
+            <ref name="p"/>
+            <ref name="milestone"/>
+            <ref name="hi"/>
+            <ref name="lb"/>
+            <element name="bibl">
+               <attribute name="id" ns="http://www.w3.org/XML/1998/namespace">
+                  <data type="ID"/>
+               </attribute>
+               <oneOrMore>
+                  <choice>
+                     <ref name="title"/>
+                     <ref name="foreign"/>
+                     <ref name="lb"/>
+                     <ref name="ptr"/>
+                     <ref name="ref-other"/>
+                     <ref name="hi"/>
+                     <ref name="note"/>
+                     <element name="author">
+                        <data type="string"/>
+                     </element>
+                     <element name="date">
+                        <data type="string"/>
+                     </element>
+                     <text/>
+                  </choice>
+               </oneOrMore>
+            </element>
+         </choice>
+      </zeroOrMore>
+   </define>
    <define name="endnote">
       <element name="note">
          <optional>
             <attribute name="index">
                <data type="integer"/>
             </attribute>
-         </optional>
-         <optional>
-            <attribute name="key"/>
          </optional>
          <attribute name="place">
             <value>end</value>
@@ -134,9 +179,6 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.1.0/
    <define name="head-content">
       <optional>
          <attribute name="tid"/>
-      </optional>
-      <optional>
-         <attribute name="key"/>
       </optional>
       <choice>
          <data type="string">
@@ -290,6 +332,7 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.1.0/
             <ref name="table"/>
             <ref name="label"/>
             <ref name="trailer"/>
+            <ref name="media"/>
          </choice>
       </zeroOrMore>
    </define>
@@ -317,7 +360,21 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.1.0/
             <optional>
                <attribute name="key"/>
             </optional>
-            <text/>
+            <choice>
+               <data type="string">
+                  <param name="minLength">1</param>
+               </data>
+               <interleave>
+                  <oneOrMore>
+                     <choice>
+                        <ref name="endnote"/>
+                        <ref name="title"/>
+                        <ref name="foreign"/>
+                     </choice>
+                  </oneOrMore>
+                  <text/>
+               </interleave>
+            </choice>
          </element>
          <zeroOrMore>
             <choice>
@@ -545,6 +602,8 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.1.0/
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Chinese written in Roman script</a:documentation>
                <value>bo</value>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Tibetan in Tibetan script (Use Bo-Ltn if in Roman script or Wylie) </a:documentation>
+               <value>cs</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Czech</a:documentation>
                <value>de</value>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">German (Deutsch)</a:documentation>
                <value>el</value>
@@ -555,12 +614,16 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.1.0/
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">French</a:documentation>
                <value>it</value>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Italian</a:documentation>
-               <value>la</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Latin</a:documentation>
-               <value>zh</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Chinese in Chinese script (Use Zh-Ltn if in Roman script)</a:documentation>
                <value>ja</value>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Japanese in Japanese script (Use Ja-Ltn if in Roman script)</a:documentation>
+               <value>la</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Latin</a:documentation>
+               <value>nl</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Dutch; Flemish</a:documentation>
+               <value>ru</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Russian</a:documentation>
+               <value>zh</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Chinese in Chinese script (Use Zh-Ltn if in Roman script)</a:documentation>
                <value>middle_indic-Ltn</value>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Middle Indic written in Roman script.</a:documentation>
                <value>mixed</value>
@@ -576,6 +639,26 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.1.0/
             <data type="ID"/>
          </attribute>
       </optional>
+   </define>
+   <define name="att.internetMedia.attributes">
+      <ref name="att.internetMedia.attribute.mimeType"/>
+   </define>
+   <define name="att.internetMedia.attribute.mimeType">
+      <optional>
+         <attribute name="mimeType">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(MIME media type) specifies the applicable multimedia internet mail extension (MIME) media type</a:documentation>
+            <list>
+               <oneOrMore>
+                  <data type="token">
+                     <param name="pattern">[^\p{C}\p{Z}]+</param>
+                  </data>
+               </oneOrMore>
+            </list>
+         </attribute>
+      </optional>
+   </define>
+   <define name="att.media.attributes">
+      <ref name="att.internetMedia.attributes"/>
    </define>
    <define name="att.resourced.attributes">
       <ref name="att.resourced.attribute.url"/>
@@ -593,24 +676,28 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.1.0/
       <optional>
          <attribute name="place">
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">specifies where this item is placed.
-Suggested values include: 1] below; 2] bottom; 3] margin; 4] top; 5] opposite; 6] overleaf; 7] above; 8] end; 9] inline; 10] inspace</a:documentation>
+Suggested values include: 1] top; 2] bottom; 3] margin; 4] opposite; 5] overleaf; 6] above; 7] right; 8] below; 9] left; 10] end; 11] inline; 12] inspace</a:documentation>
             <list>
                <oneOrMore>
                   <choice>
-                     <value>below</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">below the line</a:documentation>
+                     <value>top</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">at the top of the page</a:documentation>
                      <value>bottom</value>
                      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">at the foot of the page</a:documentation>
                      <value>margin</value>
                      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">in the margin (left, right, or both)</a:documentation>
-                     <value>top</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">at the top of the page</a:documentation>
                      <value>opposite</value>
                      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">on the opposite, i.e. facing, page</a:documentation>
                      <value>overleaf</value>
                      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">on the other side of the leaf</a:documentation>
                      <value>above</value>
                      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">above the line</a:documentation>
+                     <value>right</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">to the right, e.g. to the right of a vertical line of text, or to the right of a figure</a:documentation>
+                     <value>below</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">below the line</a:documentation>
+                     <value>left</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">to the left, e.g. to the left of a vertical line of text, or to the left of a figure</a:documentation>
                      <value>end</value>
                      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">at the end of e.g. chapter or volume.</a:documentation>
                      <value>inline</value>
@@ -656,6 +743,26 @@ Suggested values include: 1] below; 2] bottom; 3] margin; 4] top; 5] opposite; 6
                   <data type="anyURI"/>
                </oneOrMore>
             </list>
+         </attribute>
+      </optional>
+   </define>
+   <define name="att.timed.attributes">
+      <ref name="att.timed.attribute.start"/>
+      <ref name="att.timed.attribute.end"/>
+   </define>
+   <define name="att.timed.attribute.start">
+      <optional>
+         <attribute name="start">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indicates the location within a temporal alignment at which this element begins.</a:documentation>
+            <data type="anyURI"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="att.timed.attribute.end">
+      <optional>
+         <attribute name="end">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indicates the location within a temporal alignment at which this element ends.</a:documentation>
+            <data type="anyURI"/>
          </attribute>
       </optional>
    </define>
@@ -890,6 +997,7 @@ Suggested values include: 1] below; 2] bottom; 3] margin; 4] top; 5] opposite; 6
    </define>
    <define name="model.graphicLike">
       <choice>
+         <ref name="media"/>
          <ref name="graphic"/>
       </choice>
    </define>
@@ -1081,28 +1189,40 @@ Suggested values include: 1] below; 2] bottom; 3] margin; 4] top; 5] opposite; 6
    </define>
    <define name="model.labelLike">
       <choice>
+         <ref name="desc"/>
          <ref name="label"/>
       </choice>
    </define>
    <define name="model.labelLike_alternation">
       <choice>
+         <ref name="desc"/>
          <ref name="label"/>
       </choice>
    </define>
    <define name="model.labelLike_sequence">
+      <ref name="desc"/>
       <ref name="label"/>
    </define>
    <define name="model.labelLike_sequenceOptional">
+      <optional>
+         <ref name="desc"/>
+      </optional>
       <optional>
          <ref name="label"/>
       </optional>
    </define>
    <define name="model.labelLike_sequenceOptionalRepeatable">
       <zeroOrMore>
+         <ref name="desc"/>
+      </zeroOrMore>
+      <zeroOrMore>
          <ref name="label"/>
       </zeroOrMore>
    </define>
    <define name="model.labelLike_sequenceRepeatable">
+      <oneOrMore>
+         <ref name="desc"/>
+      </oneOrMore>
       <oneOrMore>
          <ref name="label"/>
       </oneOrMore>
@@ -1283,11 +1403,8 @@ Suggested values include: 1] below; 2] bottom; 3] margin; 4] top; 5] opposite; 6
       </oneOrMore>
    </define>
    <define name="model.descLike">
-      <notAllowed/>
-   </define>
-   <define name="model.glossLike">
       <choice>
-         <ref name="gloss"/>
+         <ref name="desc"/>
       </choice>
    </define>
    <define name="model.quoteLike">
@@ -1511,6 +1628,17 @@ Suggested values include: 1] below; 2] bottom; 3] margin; 4] top; 5] opposite; 6
          <ref name="model.pPart.data"/>
       </choice>
    </define>
+   <define name="model.limitedPhrase">
+      <choice>
+         <ref name="model.hiLike"/>
+         <ref name="model.emphLike"/>
+         <ref name="model.pPart.msdesc"/>
+         <ref name="model.pPart.editorial"/>
+         <ref name="model.ptrLike"/>
+         <ref name="model.phrase.xml"/>
+         <ref name="model.pPart.data"/>
+      </choice>
+   </define>
    <define name="model.divLike">
       <choice>
          <ref name="div"/>
@@ -1549,6 +1677,12 @@ Suggested values include: 1] below; 2] bottom; 3] margin; 4] top; 5] opposite; 6
             </attribute>
          </optional>
          <optional>
+            <attribute name="key">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Designates a paragraph to only be applicable and only be displayed in one text version according to the key defined in the <code xmlns="http://www.w3.org/1999/xhtml">&lt;sourceDesc&gt;</code>.</a:documentation>
+               <text/>
+            </attribute>
+         </optional>
+         <optional>
             <attribute name="type">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
                <choice>
@@ -1576,7 +1710,7 @@ Suggested values include: 1] below; 2] bottom; 3] margin; 4] top; 5] opposite; 6
    </define>
    <define name="foreign">
       <element name="foreign">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">identifies a word or phrase as belonging to some language other than that of the surrounding text. [3.3.2.1. Foreign Words or Expressions]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(foreign) identifies a word or phrase as belonging to some language other than that of the surrounding text. [3.3.2.1. Foreign Words or Expressions]</a:documentation>
          <ref name="macro.phraseSeq"/>
          <ref name="att.global.rendition.attribute.rend"/>
          <attribute name="xml:lang">
@@ -1610,6 +1744,8 @@ Suggested values include: 1] below; 2] bottom; 3] margin; 4] top; 5] opposite; 6
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Chinese written in Roman script</a:documentation>
                <value>bo</value>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Tibetan in Tibetan script (Use Bo-Ltn if in Roman script or Wylie) </a:documentation>
+               <value>cs</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Czech</a:documentation>
                <value>de</value>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">German (Deutsch)</a:documentation>
                <value>el</value>
@@ -1620,12 +1756,16 @@ Suggested values include: 1] below; 2] bottom; 3] margin; 4] top; 5] opposite; 6
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">French</a:documentation>
                <value>it</value>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Italian</a:documentation>
-               <value>la</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Latin</a:documentation>
-               <value>zh</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Chinese in Chinese script (Use Zh-Ltn if in Roman script)</a:documentation>
                <value>ja</value>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Japanese in Japanese script (Use Ja-Ltn if in Roman script)</a:documentation>
+               <value>la</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Latin</a:documentation>
+               <value>nl</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Dutch; Flemish</a:documentation>
+               <value>ru</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Russian</a:documentation>
+               <value>zh</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Chinese in Chinese script (Use Zh-Ltn if in Roman script)</a:documentation>
                <value>middle_indic-Ltn</value>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Middle Indic written in Roman script.</a:documentation>
                <value>mixed</value>
@@ -1718,9 +1858,40 @@ Suggested values include: 1] below; 2] bottom; 3] margin; 4] top; 5] opposite; 6
          <empty/>
       </element>
    </define>
+   <define name="desc">
+      <element name="desc">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(description) contains a brief description of the object documented by its parent element, typically a documentation element or an entity. [22.4.1. Description of Components]</a:documentation>
+         <ref name="macro.limitedContent"/>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="NewODD-desc-deprecationInfo-only-in-deprecated-constraint-rule-2">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:desc[ @type eq 'deprecationInfo']">
+               <sch:assert test="../@validUntil">Information about a
+        deprecation should only be present in a specification element
+        that is being deprecated: that is, only an element that has a
+        @validUntil attribute should have a child &lt;desc
+        type="deprecationInfo"&gt;.</sch:assert>
+            </sch:rule>
+         </pattern>
+         <ref name="att.global.attributes"/>
+         <optional>
+            <attribute name="type">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">characterizes the element in some sense, using any convenient classification scheme or typology.
+Suggested values include: 1] deprecationInfo (deprecation information)</a:documentation>
+               <choice>
+                  <value>deprecationInfo</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(deprecation
+          information) This element describes why or how its parent element is being deprecated, typically including recommendations for alternate encoding.</a:documentation>
+                  <data type="token">
+                     <param name="pattern">[^\p{C}\p{Z}]+</param>
+                  </data>
+               </choice>
+            </attribute>
+         </optional>
+         <empty/>
+      </element>
+   </define>
    <define name="gloss">
       <element name="gloss">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">identifies a phrase or word used to provide a gloss or definition for some other word or phrase. [3.3.4. Terms, Glosses, Equivalents, and Descriptions 22.4.1. Description of Components]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(gloss) identifies a phrase or word used to provide a gloss or definition for some other word or phrase. [3.4.1. Terms and Glosses 22.4.1. Description of Components]</a:documentation>
          <oneOrMore>
             <ref name="term"/>
          </oneOrMore>
@@ -1758,7 +1929,7 @@ Suggested values include: 1] below; 2] bottom; 3] margin; 4] top; 5] opposite; 6
    </define>
    <define name="term">
       <element name="term">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains a single-word, multi-word, or symbolic designation which is regarded as a technical term. [3.3.4. Terms, Glosses, Equivalents, and Descriptions]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(term) contains a single-word, multi-word, or symbolic designation which is regarded as a technical term. [3.4.1. Terms and Glosses]</a:documentation>
          <ref name="macro.phraseSeq"/>
          <ref name="att.global.attribute.xmllang"/>
          <ref name="att.global.rendition.attribute.rend"/>
@@ -1775,6 +1946,16 @@ Suggested values include: 1] below; 2] bottom; 3] margin; 4] top; 5] opposite; 6
                   <value>semanticReconstruction</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
                   <value>transliterationReconstruction</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>person-interlocutor</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>person-main-speaker</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>person-topical</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>main-subject</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>secondary-subject</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
                </choice>
             </attribute>
@@ -1794,13 +1975,13 @@ Suggested values include: 1] below; 2] bottom; 3] margin; 4] top; 5] opposite; 6
    </define>
    <define name="name">
       <element name="name">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(name, proper noun) contains a proper noun or noun phrase. [3.5.1. Referring Strings]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(name, proper noun) contains a proper noun or noun phrase. [3.6.1. Referring Strings]</a:documentation>
          <text/>
       </element>
    </define>
    <define name="date">
       <element name="date">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains a date in any format. [3.5.4. Dates and Times 2.2.4. Publication, Distribution, Licensing, etc. 2.6. The Revision Description 3.11.2.4. Imprint, Size of a Document, and Reprint Information 15.2.3. The Setting Description 13.3.7. Dates and Times]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(date) contains a date in any format. [3.6.4. Dates and Times 2.2.4. Publication, Distribution, Licensing, etc. 2.6. The Revision Description 3.12.2.4. Imprint, Size of a Document, and Reprint Information 15.2.3. The Setting Description 13.4. Dates]</a:documentation>
          <text/>
          <ref name="att.canonical.attributes"/>
          <empty/>
@@ -1808,7 +1989,7 @@ Suggested values include: 1] below; 2] bottom; 3] margin; 4] top; 5] opposite; 6
    </define>
    <define name="abbr">
       <element name="abbr">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(abbreviation) contains an abbreviation of any sort. [3.5.5. Abbreviations and Their Expansions]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(abbreviation) contains an abbreviation of any sort. [3.6.5. Abbreviations and Their Expansions]</a:documentation>
          <oneOrMore>
             <choice>
                <text/>
@@ -1819,13 +2000,13 @@ Suggested values include: 1] below; 2] bottom; 3] margin; 4] top; 5] opposite; 6
    </define>
    <define name="expan">
       <element name="expan">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(expansion) contains the expansion of an abbreviation. [3.5.5. Abbreviations and Their Expansions]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(expansion) contains the expansion of an abbreviation. [3.6.5. Abbreviations and Their Expansions]</a:documentation>
          <ref name="macro.phraseSeq"/>
       </element>
    </define>
    <define name="ptr">
       <element name="ptr">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(pointer) defines a pointer to another location. [3.6. Simple Links and Cross-References 16.1. Links]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(pointer) defines a pointer to another location. [3.7. Simple Links and Cross-References 16.1. Links]</a:documentation>
          <text/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="NewODD-ptr-ptrAtts-constraint-report-3">
             <rule context="tei:ptr">
@@ -1833,6 +2014,7 @@ Suggested values include: 1] below; 2] bottom; 3] margin; 4] top; 5] opposite; 6
 attributes @target and @cRef may be supplied on <name/>.</report>
             </rule>
          </pattern>
+         <ref name="att.internetMedia.attributes"/>
          <attribute name="target">
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">specifies the destination of the reference by supplying one or more URI References</a:documentation>
             <list>
@@ -1846,7 +2028,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
    </define>
    <define name="ref">
       <element name="ref">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(reference) defines a reference to another location, possibly modified by additional text or comment. [3.6. Simple Links and Cross-References 16.1. Links]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(reference) defines a reference to another location, possibly modified by additional text or comment. [3.7. Simple Links and Cross-References 16.1. Links]</a:documentation>
          <ref name="macro.paraContent"/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="NewODD-ref-refAtts-constraint-report-4">
             <rule context="tei:ref">
@@ -1858,6 +2040,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
          <ref name="att.cReferencing.attributes"/>
          <ref name="att.global.attribute.xmllang"/>
          <ref name="att.global.attribute.xmlid"/>
+         <ref name="att.internetMedia.attributes"/>
          <ref name="att.pointing.attributes"/>
          <optional>
             <attribute name="rend">
@@ -1917,7 +2100,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
    </define>
    <define name="list">
       <element name="list">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains any sequence of items organized as a list. [3.7. Lists]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(list) contains any sequence of items organized as a list. [3.8. Lists]</a:documentation>
          <zeroOrMore>
             <ref name="head"/>
          </zeroOrMore>
@@ -1927,13 +2110,13 @@ attributes @target and @cRef may be supplied on <name/>.</report>
                <ref name="p"/>
             </choice>
          </oneOrMore>
-         <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="NewODD-list-gloss-list-must-have-labels-constraint-rule-2">
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="NewODD-list-gloss-list-must-have-labels-constraint-rule-3">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:rng="http://relaxng.org/ns/structure/1.0" context="tei:list[@type='gloss']">
 	              <sch:assert test="tei:label">The content of a "gloss" list should include a sequence of one or more pairs of a label element followed by an item element</sch:assert>
             </sch:rule>
          </pattern>
          <attribute name="type">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">These "type" values are used to identify the types of lists used in various places throughout the text: "glossary" is applied to the main list in the glossary, "abbreviation" is applied to the list of abbreviations within the notes section of the text. In addition to these two standard lists, the <code xmlns="http://www.w3.org/1999/xhtml">&lt;list&gt;</code> element is also used for any outlines, bulleted lists, or other lists that appear with the actual text itself. In this case, the type attribute with the value "section" or "bullet" should be used, and this will effect how the list is displayed by the parser. The type value "section" will render a list of sections, with some vertical spacing between each item in the list; this is ideal for lists where each item is a paragraph or longer. The type value "bullet" will render the list with indentation but without vertical spacing; this is ideal for short items with identifiers (it isn't necessary that there be an actual "bullet" before each item, this is just the name we are using to distinguish the type). The latter two list types may also be used in combination to create an outline. For instance, see the sample of XML markup below for <a xmlns="http://www.w3.org/1999/xhtml" href="http://read.84000-translate.org/translation/toh116.html#UT22084-051-004-45">Toh. 116</a>. For further information on outlines <a xmlns="http://www.w3.org/1999/xhtml" href="84000_ODD.html#index.xml-back.1_div.2_div.3">see Appendix B.3</a>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">These "type" values are used to identify the types of lists used in various places throughout the text: "glossary" is applied to the main list in the glossary, "abbreviation" is applied to the list of abbreviations within the notes section of the text. In addition to these two standard lists, the <code xmlns="http://www.w3.org/1999/xhtml">&lt;list&gt;</code> element is also used for any outlines, bulleted lists, or other lists that appear with the actual text itself. In this case, the type attribute with the value "section" or "bullet" should be used, and this will effect how the list is displayed by the parser. The type value "section" will render a list of sections, with some vertical spacing between each item in the list; this is ideal for lists where each item is a paragraph or longer. The type value "bullet" will render the list with indentation but without vertical spacing; this is ideal for short items with identifiers (it isn't necessary that there be an actual "bullet" before each item, this is just the name we are using to distinguish the type). The latter two list types may also be used in combination to create an outline. For instance, see the sample of XML markup below for <a xmlns="http://www.w3.org/1999/xhtml" href="http://read.84000-translate.org/translation/toh116.html#UT22084-051-004-45">Toh. 116</a>. Note, that an additionally the attribute @rend="dots", "numbers", or "letters" maybe used to create a list with an automatically generated prefix (bullet, numbers, or letters respectively) and a hanging indent(see example below). This can be done in combination with a @type="section" list or a @type="bullet" list. For further information on outlines <a xmlns="http://www.w3.org/1999/xhtml" href="84000_ODD.html#index.xml-back.1_div.2_div.3">see Appendix B.3</a>
             </a:documentation>
             <choice>
                <value>glossary</value>
@@ -1946,12 +2129,25 @@ attributes @target and @cRef may be supplied on <name/>.</report>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
             </choice>
          </attribute>
+         <optional>
+            <attribute name="rend">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Renders further changes to the display of lists in HTML and other formats.</a:documentation>
+               <choice>
+                  <value>dots</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Items in the list will have a generated bullet dot and hanging indent (may be used in combination with @type="section" or @type="bullet").</a:documentation>
+                  <value>numbers</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Items in the list will have a generated number prefixes and hanging indent (may be used in combination with @type="section" or @type="bullet").</a:documentation>
+                  <value>letters</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Items in the list will have a generated letter prefixes and hanging indent (may be used in combination with @type="section" or @type="bullet").</a:documentation>
+               </choice>
+            </attribute>
+         </optional>
          <empty/>
       </element>
    </define>
    <define name="item">
       <element name="item">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains one component of a list. [3.7. Lists 2.6. The Revision Description]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(item) contains one component of a list. [3.8. Lists 2.6. The Revision Description]</a:documentation>
          <ref name="macro.specialPara"/>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.rendition.attribute.rend"/>
@@ -1960,7 +2156,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
    </define>
    <define name="label">
       <element name="label">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains any label or heading used to identify part of a text.  [3.7. Lists]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(label) contains any label or heading used to identify part of a text.  [3.8. Lists]</a:documentation>
          <ref name="macro.phraseSeq"/>
       </element>
    </define>
@@ -2043,7 +2239,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
    </define>
    <define name="note">
       <element name="note">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains a note or annotation. [3.8.1. Notes and Simple Annotation 2.2.6. The Notes Statement 3.11.2.8. Notes and Statement of Language 9.3.5.4. Notes within Entries]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(note) contains a note or annotation. [3.9.1. Notes and Simple Annotation 2.2.6. The Notes Statement 3.12.2.8. Notes and Statement of Language 9.3.5.4. Notes within Entries]</a:documentation>
          <zeroOrMore>
             <choice>
                <ref name="macro.specialPara"/>
@@ -2096,13 +2292,13 @@ attributes @target and @cRef may be supplied on <name/>.</report>
             </attribute>
          </optional>
          <optional>
-            <attribute name="value">
+            <attribute name="import">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
                <text/>
             </attribute>
          </optional>
          <optional>
-            <attribute name="key">
+            <attribute name="value">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
                <text/>
             </attribute>
@@ -2110,17 +2306,41 @@ attributes @target and @cRef may be supplied on <name/>.</report>
          <empty/>
       </element>
    </define>
+   <define name="media">
+      <element name="media">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indicates the location of any form of external media such as an audio or video clip etc. [3.10. Graphics and Other Non-textual Components]</a:documentation>
+         <zeroOrMore>
+            <ref name="model.descLike"/>
+         </zeroOrMore>
+         <ref name="att.typed.attributes"/>
+         <ref name="att.global.attributes"/>
+         <ref name="att.timed.attributes"/>
+         <attribute name="mimeType">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            <choice>
+               <value>audio/mpeg</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            </choice>
+         </attribute>
+         <attribute name="url">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(uniform resource locator) Indicate the url, "/audio/..." of the audio file from the folder db/apps/84000-data/audio/</a:documentation>
+            <data type="anyURI"/>
+         </attribute>
+         <empty/>
+      </element>
+   </define>
    <define name="graphic">
       <element name="graphic">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indicates the location of a graphic or illustration, either forming part of a text, or providing an image of it. [3.9. Graphics and Other Non-textual Components 11.1. Digital Facsimiles]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(graphic) indicates the location of a graphic or illustration, either forming part of a text, or providing an image of it. [3.10. Graphics and Other Non-textual Components 11.1. Digital Facsimiles]</a:documentation>
          <empty/>
+         <ref name="att.media.attributes"/>
          <ref name="att.resourced.attributes"/>
          <empty/>
       </element>
    </define>
    <define name="milestone">
       <element name="milestone">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">marks a boundary point separating any kind of section of a text, typically but not necessarily indicating a point at which some part of a standard reference system changes, where the change is not represented by a structural element. [3.10.3. Milestone
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(milestone) marks a boundary point separating any kind of section of a text, typically but not necessarily indicating a point at which some part of a standard reference system changes, where the change is not represented by a structural element. [3.11.3. Milestone
 Elements]</a:documentation>
          <empty/>
          <ref name="att.global.attribute.xmllang"/>
@@ -2141,34 +2361,112 @@ Elements]</a:documentation>
    </define>
    <define name="lb">
       <element name="lb">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(line beginning) marks the beginning of a new (typographic) line in some edition or version of a text. [3.10.3. Milestone
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(line beginning) marks the beginning of a new (typographic) line in some edition or version of a text. [3.11.3. Milestone
 Elements 7.2.5. Speech Contents]</a:documentation>
          <rng:empty xmlns:rng="http://relaxng.org/ns/structure/1.0"/>
       </element>
    </define>
    <define name="author">
       <element name="author">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">in a bibliographic reference, contains the name(s) of an author, personal or corporate, of a work; for example in the same form as that provided by a recognized bibliographic name authority. [3.11.2.2. Titles, Authors, and Editors 2.2.1. The Title Statement]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(author) in a bibliographic reference, contains the name(s) of an author, personal or corporate, of a work; for example in the same form as that provided by a recognized bibliographic name authority. [3.12.2.2. Titles, Authors, and Editors 2.2.1. The Title Statement]</a:documentation>
          <ref name="macro.phraseSeq"/>
-         <attribute name="role">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Describes the author's role in the translation of the text. "translatorMain" and "translatorEng" denote the Tibetan to English translators of the current 84000 text while the "translatorTib" denotes the Tibetan translator of the the Kangyur source.</a:documentation>
-            <choice>
-               <value>translatorMain</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Main translator of the English translation. Typically this is the name of the translation group, or name of person who translated the text. In our TEI this is followed by a line break <code xmlns="http://www.w3.org/1999/xhtml">&lt;lb&gt;</code> and the phrase, "under the patronage and supervision of 84000: Translating the Words of the Buddha." (See XML example).</a:documentation>
-               <value>translatorEng</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Anyone who has taken part in the translation into English for the current project.</a:documentation>
-               <value>translatorTib</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Lists the original translators of the Tibetan text as stated in the colophon or understood from other bibliographic sources such as imperial catalogs. Includes non-Tibetan (Indian, Chinese, etc...) authors that contributed to the production of the Tibetan text. Note, this element is not stated in the <code xmlns="http://www.w3.org/1999/xhtml">&lt;titleStmt&gt;</code> with the English translators, but is listed in the <code xmlns="http://www.w3.org/1999/xhtml">&lt;sourceDesc&gt;</code> where the bibliographic information for the Kangyur source is documented.</a:documentation>
-               <value>preface</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">If the text has a preface in addition to an introduction (this is rare), add its author.</a:documentation>
-            </choice>
-         </attribute>
+         <ref name="att.global.attribute.xmlid"/>
+         <ref name="att.global.rendition.attribute.rend"/>
+         <optional>
+            <attribute name="xml:lang">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <choice>
+                  <value>Bo-Ltn</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Tibetan written in Roman script (Wylie or otherwise)</a:documentation>
+                  <value>Gu-Ltn</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Gujarti written in Roman script</a:documentation>
+                  <value>Hi-Ltn</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Hindi written in Roman script</a:documentation>
+                  <value>Ja-Ltn</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Japanese written in Roman script</a:documentation>
+                  <value>Kn-Ltn</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Kannada written in Roman script</a:documentation>
+                  <value>Mr-Ltn</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Marathi written in Roman script</a:documentation>
+                  <value>Mn-Ltn</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Mongolian written in Roman script</a:documentation>
+                  <value>Pi-Ltn</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Pali written in Roman script</a:documentation>
+                  <value>Pra-Ltn</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Prakrit written in Roman script</a:documentation>
+                  <value>Sa-Ltn</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Sanskrit written in Roman script (Note: the term will be italicized. do not tag this for terms that are left unitalicized in 84000 texts like sutra, nagas, dharma, Sanskrit names, etc.)</a:documentation>
+                  <value>Ta-Ltn</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Tamil written in Roman script</a:documentation>
+                  <value>Th-Ltn</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Thai written in Roman script</a:documentation>
+                  <value>Zh-Ltn</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Chinese written in Roman script</a:documentation>
+                  <value>bo</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Tibetan in Tibetan script (Use Bo-Ltn if in Roman script or Wylie) </a:documentation>
+                  <value>cs</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Czech</a:documentation>
+                  <value>de</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">German (Deutsch)</a:documentation>
+                  <value>el</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Greek</a:documentation>
+                  <value>en</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">English</a:documentation>
+                  <value>fr</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">French</a:documentation>
+                  <value>it</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Italian</a:documentation>
+                  <value>ja</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Japanese in Japanese script (Use Ja-Ltn if in Roman script)</a:documentation>
+                  <value>la</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Latin</a:documentation>
+                  <value>nl</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Dutch; Flemish</a:documentation>
+                  <value>ru</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Russian</a:documentation>
+                  <value>zh</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Chinese in Chinese script (Use Zh-Ltn if in Roman script)</a:documentation>
+                  <value>middle_indic-Ltn</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Middle Indic written in Roman script.</a:documentation>
+                  <value>mixed</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">This element contains strings mixed with different languages. They will be differentiated within this element by <code xmlns="http://www.w3.org/1999/xhtml">&lt;foreign&gt;</code> tags, or left unwrapped if they are the default English.</a:documentation>
+               </choice>
+            </attribute>
+         </optional>
+         <optional>
+            <attribute name="role">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Describes the author's role in the translation of the text. "translatorMain" and "translatorEng" denote the Tibetan to English translators of the current 84000 text while the "translatorTib" denotes the Tibetan translator of the the Kangyur source.</a:documentation>
+               <list>
+                  <oneOrMore>
+                     <data type="token">
+                        <param name="pattern">[^\p{C}\p{Z}]+</param>
+                     </data>
+                  </oneOrMore>
+               </list>
+            </attribute>
+         </optional>
+         <optional>
+            <attribute name="key">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Used to distinguish two or more authors, when there is an alternative attribution to an historical author.</a:documentation>
+               <data type="string"/>
+            </attribute>
+         </optional>
+         <optional>
+            <attribute name="ref">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(reference) Links the author to a profile in the database</a:documentation>
+               <list>
+                  <oneOrMore>
+                     <data type="anyURI"/>
+                  </oneOrMore>
+               </list>
+            </attribute>
+         </optional>
          <empty/>
       </element>
    </define>
    <define name="editor">
       <element name="editor">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains a secondary statement of responsibility for a bibliographic item, for example the name of an individual, institution or organization, (or of several such) acting as editor, compiler, translator, etc. [3.11.2.2. Titles, Authors, and Editors]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains a secondary statement of responsibility for a bibliographic item, for example the name of an individual, institution or organization, (or of several such) acting as editor, compiler, translator, etc. [3.12.2.2. Titles, Authors, and Editors]</a:documentation>
          <ref name="macro.phraseSeq"/>
          <ref name="att.global.attributes"/>
          <ref name="att.canonical.attribute.key"/>
@@ -2209,14 +2507,19 @@ Elements 7.2.5. Speech Contents]</a:documentation>
                </list>
             </attribute>
          </optional>
+         <optional>
+            <attribute name="revision">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <text/>
+            </attribute>
+         </optional>
          <empty/>
       </element>
    </define>
    <define name="title">
       <element name="title">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains a title for any kind of work. [3.11.2.2. Titles, Authors, and Editors 2.2.1. The Title Statement 2.2.5. The Series Statement]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(title) contains a title for any kind of work. [3.12.2.2. Titles, Authors, and Editors 2.2.1. The Title Statement 2.2.5. The Series Statement]</a:documentation>
          <ref name="macro.paraContent"/>
-         <ref name="att.global.rendition.attribute.rend"/>
          <attribute name="xml:lang">
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
             <choice>
@@ -2248,6 +2551,8 @@ Elements 7.2.5. Speech Contents]</a:documentation>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Chinese written in Roman script</a:documentation>
                <value>bo</value>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Tibetan in Tibetan script (Use Bo-Ltn if in Roman script or Wylie) </a:documentation>
+               <value>cs</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Czech</a:documentation>
                <value>de</value>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">German (Deutsch)</a:documentation>
                <value>el</value>
@@ -2258,18 +2563,35 @@ Elements 7.2.5. Speech Contents]</a:documentation>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">French</a:documentation>
                <value>it</value>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Italian</a:documentation>
-               <value>la</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Latin</a:documentation>
-               <value>zh</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Chinese in Chinese script (Use Zh-Ltn if in Roman script)</a:documentation>
                <value>ja</value>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Japanese in Japanese script (Use Ja-Ltn if in Roman script)</a:documentation>
+               <value>la</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Latin</a:documentation>
+               <value>nl</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Dutch; Flemish</a:documentation>
+               <value>ru</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Russian</a:documentation>
+               <value>zh</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Chinese in Chinese script (Use Zh-Ltn if in Roman script)</a:documentation>
                <value>middle_indic-Ltn</value>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Middle Indic written in Roman script.</a:documentation>
                <value>mixed</value>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">This element contains strings mixed with different languages. They will be differentiated within this element by <code xmlns="http://www.w3.org/1999/xhtml">&lt;foreign&gt;</code> tags, or left unwrapped if they are the default English.</a:documentation>
             </choice>
          </attribute>
+         <optional>
+            <attribute name="rend">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(rendition) @rend is used in our TEI specifically for the value "reconstruction," when a Sa-Ltn title is reconstructed from the Tibetan.</a:documentation>
+               <list>
+                  <oneOrMore>
+                     <choice>
+                        <value>reconstruction</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A Sanskrit, "Sa-Ltn" title which is reconstructed from Tibetan.</a:documentation>
+                     </choice>
+                  </oneOrMore>
+               </list>
+            </attribute>
+         </optional>
          <optional>
             <attribute name="type">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">classifies the title according to the TBRC typology.classifies the title according to the 84000 typology.</a:documentation>
@@ -2283,12 +2605,18 @@ Elements 7.2.5. Speech Contents]</a:documentation>
                </choice>
             </attribute>
          </optional>
+         <optional>
+            <attribute name="group">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Allows the grouping multiple titles together as equivalents in different languages, e.g. short title, long title, etc...</a:documentation>
+               <text/>
+            </attribute>
+         </optional>
          <empty/>
       </element>
    </define>
    <define name="publisher">
       <element name="publisher">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">provides the name of the organization responsible for the publication or distribution of a bibliographic item. [3.11.2.4. Imprint, Size of a Document, and Reprint Information 2.2.4. Publication, Distribution, Licensing, etc.]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(publisher) provides the name of the organization responsible for the publication or distribution of a bibliographic item. [3.12.2.4. Imprint, Size of a Document, and Reprint Information 2.2.4. Publication, Distribution, Licensing, etc.]</a:documentation>
          <ref name="macro.phraseSeq"/>
          <ref name="att.canonical.attributes"/>
          <empty/>
@@ -2296,13 +2624,13 @@ Elements 7.2.5. Speech Contents]</a:documentation>
    </define>
    <define name="biblScope">
       <element name="biblScope">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(scope of bibliographic reference) defines the scope of a bibliographic reference, for example as a list of page numbers, or a named subdivision of a larger work. [3.11.2.5. Scopes and Ranges in Bibliographic Citations]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(scope of bibliographic reference) defines the scope of a bibliographic reference, for example as a list of page numbers, or a named subdivision of a larger work. [3.12.2.5. Scopes and Ranges in Bibliographic Citations]</a:documentation>
          <ref name="macro.phraseSeq"/>
       </element>
    </define>
    <define name="bibl">
       <element name="bibl">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(bibliographic citation) contains a loosely-structured bibliographic citation of which the sub-components may or may not be explicitly tagged. [3.11.1. Methods of Encoding Bibliographic References and Lists of References 2.2.7. The Source Description 15.3.2. Declarable Elements]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(bibliographic citation) contains a loosely-structured bibliographic citation of which the sub-components may or may not be explicitly tagged. [3.12.1. Methods of Encoding Bibliographic References and Lists of References 2.2.7. The Source Description 15.3.2. Declarable Elements]</a:documentation>
          <zeroOrMore>
             <choice>
                <text/>
@@ -2336,7 +2664,7 @@ Elements 7.2.5. Speech Contents]</a:documentation>
    </define>
    <define name="l">
       <element name="l">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(verse line) contains a single, possibly incomplete, line of verse. [3.12.1. Core Tags for Verse 3.12. Passages of Verse or Drama 7.2.5. Speech Contents]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(verse line) contains a single, possibly incomplete, line of verse. [3.13.1. Core Tags for Verse 3.13. Passages of Verse or Drama 7.2.5. Speech Contents]</a:documentation>
          <zeroOrMore>
             <choice>
                <text/>
@@ -2360,7 +2688,7 @@ Elements 7.2.5. Speech Contents]</a:documentation>
    </define>
    <define name="lg">
       <element name="lg">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(line group) contains one or more verse lines functioning as a formal unit, e.g. a stanza, refrain, verse paragraph, etc. [3.12.1. Core Tags for Verse 3.12. Passages of Verse or Drama 7.2.5. Speech Contents]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(line group) contains one or more verse lines functioning as a formal unit, e.g. a stanza, refrain, verse paragraph, etc. [3.13.1. Core Tags for Verse 3.13. Passages of Verse or Drama 7.2.5. Speech Contents]</a:documentation>
          <oneOrMore>
             <choice>
                <ref name="l"/>
@@ -2369,7 +2697,7 @@ Elements 7.2.5. Speech Contents]</a:documentation>
                <ref name="modPassage"/>
             </choice>
          </oneOrMore>
-         <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="NewODD-lg-atleast1oflggapl-constraint-assert-3">
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="NewODD-lg-atleast1oflggapl-constraint-assert-4">
             <rule context="tei:lg">
                <sch:assert xmlns="http://www.tei-c.org/ns/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:rng="http://relaxng.org/ns/structure/1.0" test="count(descendant::tei:lg|descendant::tei:l|descendant::tei:gap) &gt; 0">An lg element
         must contain at least one child l, lg, or gap element.</sch:assert>
@@ -2504,7 +2832,7 @@ Elements 7.2.5. Speech Contents]</a:documentation>
    </define>
    <define name="edition">
       <element name="edition">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">describes the particularities of one edition of a text. [2.2.2. The Edition Statement]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(edition) describes the particularities of one edition of a text. [2.2.2. The Edition Statement]</a:documentation>
          <group>
             <text/>
             <element name="date">
@@ -2638,7 +2966,7 @@ Elements 7.2.5. Speech Contents]</a:documentation>
    </define>
    <define name="idno">
       <element name="idno">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(identifier) supplies any form of identifier used to identify some object, such as a bibliographic item, a person, a title, an organization, etc. in a standardized way. [13.3.1. Basic Principles 2.2.4. Publication, Distribution, Licensing, etc. 2.2.5. The Series Statement 3.11.2.4. Imprint, Size of a Document, and Reprint Information]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(identifier) supplies any form of identifier used to identify some object, such as a bibliographic item, a person, a title, an organization, etc. in a standardized way. [13.3.1. Basic Principles 2.2.4. Publication, Distribution, Licensing, etc. 2.2.5. The Series Statement 3.12.2.4. Imprint, Size of a Document, and Reprint Information]</a:documentation>
          <empty/>
          <ref name="att.global.attribute.xmlid"/>
          <optional>
@@ -2683,6 +3011,9 @@ Elements 7.2.5. Speech Contents]</a:documentation>
                <optional>
                   <attribute name="update"/>
                </optional>
+               <optional>
+                  <attribute name="import"/>
+               </optional>
                <text/>
             </element>
          </zeroOrMore>
@@ -2723,12 +3054,62 @@ Elements 7.2.5. Speech Contents]</a:documentation>
                      </element>
                   </optional>
                   <zeroOrMore>
-                     <element name="author">
-                        <attribute name="role">
-                           <value>translatorTib</value>
-                        </attribute>
-                        <text/>
-                     </element>
+                     <choice>
+                        <element name="author">
+                           <optional>
+                              <attribute name="role">
+                                 <value>translatorTib</value>
+                              </attribute>
+                           </optional>
+                           <optional>
+                              <attribute name="key"/>
+                           </optional>
+                           <optional>
+                              <attribute name="ref"/>
+                           </optional>
+                           <optional>
+                              <attribute name="xml:lang">
+                                 <choice>
+                                    <value>Sa-Ltn</value>
+                                    <value>Bo-Ltn</value>
+                                    <value>Pi-Ltn</value>
+                                    <value>Zh-Ltn</value>
+                                    <value>bo</value>
+                                    <value>en</value>
+                                    <value>zh</value>
+                                 </choice>
+                              </attribute>
+                           </optional>
+                           <text/>
+                        </element>
+                        <element name="editor">
+                           <optional>
+                              <attribute name="role">
+                                 <value>reviser</value>
+                              </attribute>
+                           </optional>
+                           <optional>
+                              <attribute name="ref"/>
+                           </optional>
+                           <optional>
+                              <attribute name="revision"/>
+                           </optional>
+                           <optional>
+                              <attribute name="xml:lang">
+                                 <choice>
+                                    <value>Sa-Ltn</value>
+                                    <value>Bo-Ltn</value>
+                                    <value>Pi-Ltn</value>
+                                    <value>Zh-Ltn</value>
+                                    <value>bo</value>
+                                    <value>en</value>
+                                    <value>zh</value>
+                                 </choice>
+                              </attribute>
+                           </optional>
+                           <text/>
+                        </element>
+                     </choice>
                   </zeroOrMore>
                   <ref name="location"/>
                   <element name="idno">
@@ -2755,6 +3136,9 @@ Elements 7.2.5. Speech Contents]</a:documentation>
             </oneOrMore>
             <ref name="p"/>
          </choice>
+         <optional>
+            <ref name="link"/>
+         </optional>
       </element>
    </define>
    <define name="encodingDesc">
@@ -2782,7 +3166,7 @@ Elements 7.2.5. Speech Contents]</a:documentation>
    </define>
    <define name="taxonomy">
       <element name="taxonomy">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">defines a typology either implicitly, by means of a bibliographic citation, or explicitly by a structured taxonomy. [2.3.7. The Classification Declaration]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(taxonomy) defines a typology either implicitly, by means of a bibliographic citation, or explicitly by a structured taxonomy. [2.3.7. The Classification Declaration]</a:documentation>
          <zeroOrMore>
             <ref name="category"/>
          </zeroOrMore>
@@ -2792,39 +3176,42 @@ Elements 7.2.5. Speech Contents]</a:documentation>
    </define>
    <define name="category">
       <element name="category">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains an individual descriptive category, possibly nested within a superordinate category, within a user-defined taxonomy. [2.3.7. The Classification Declaration]</a:documentation>
-         <group>
-            <choice>
-        
-               <oneOrMore>
-                  <ref name="catDesc"/>
-               </oneOrMore>
-        
-        
-               <zeroOrMore>
-                  <choice>
-                     <ref name="model.descLike"/>
-                     <ref name="model.glossLike"/>
-                  </choice>
-               </zeroOrMore>
-        
-            </choice>
-      
-            <zeroOrMore>
-               <ref name="category"/>
-            </zeroOrMore>
-      
-         </group>
-         <ref name="att.global.attributes"/>
-         <empty/>
-      </element>
-   </define>
-   <define name="catDesc">
-      <element name="catDesc">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(category description) describes some category within a taxonomy or text typology, either in the form of a brief prose description or in terms of the situational parameters used by the TEI formal <code xmlns="http://www.w3.org/1999/xhtml">&lt;textDesc&gt;</code>. [2.3.7. The Classification Declaration]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(category) contains an individual descriptive category, possibly nested within a superordinate category, within a user-defined taxonomy. [2.3.7. The Classification Declaration]</a:documentation>
          <text/>
          <ref name="att.global.attributes"/>
-         <ref name="att.canonical.attributes"/>
+         <attribute name="name">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            <choice>
+               <value>source-language</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>source-used</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>catalogued-in</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>western-translation</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>translation-period</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>RR-filter</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>text-type-84000</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>text-type-12-branch</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>homage-type</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>audience-type</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>setting</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            </choice>
+         </attribute>
+         <optional>
+            <attribute name="id">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <text/>
+            </attribute>
+         </optional>
          <empty/>
       </element>
    </define>
@@ -2849,13 +3236,24 @@ Elements 7.2.5. Speech Contents]</a:documentation>
    </define>
    <define name="keywords">
       <element name="keywords">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains a list of keywords or phrases identifying the topic or nature of a text. [2.4.3. The Text Classification]</a:documentation>
-         <choice>
-            <oneOrMore>
-               <ref name="term"/>
-            </oneOrMore>
-            <ref name="list"/>
-         </choice>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(keywords) contains a list of keywords or phrases identifying the topic or nature of a text. [2.4.3. The Text Classification]</a:documentation>
+         <zeroOrMore>
+            <element name="term">
+               <attribute name="type">
+                  <choice>
+                     <value>person-interlocutor</value>
+                     <value>person-main-speaker</value>
+                     <value>person-topical</value>
+                     <value>main-subject</value>
+                     <value>secondary-subject</value>
+                  </choice>
+               </attribute>
+               <optional>
+                  <attribute name="ref"/>
+               </optional>
+               <text/>
+            </element>
+         </zeroOrMore>
          <ref name="att.global.attributes"/>
          <empty/>
       </element>
@@ -2863,7 +3261,9 @@ Elements 7.2.5. Speech Contents]</a:documentation>
    <define name="catRef">
       <element name="catRef">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(category reference) specifies one or more defined categories within some taxonomy or text typology. [2.4.3. The Text Classification]</a:documentation>
-         <empty/>
+         <zeroOrMore>
+            <ref name="category"/>
+         </zeroOrMore>
          <ref name="att.global.attributes"/>
          <ref name="att.pointing.attributes"/>
          <optional>
@@ -2897,7 +3297,7 @@ Elements 7.2.5. Speech Contents]</a:documentation>
    </define>
    <define name="text">
       <element name="text">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains a single text of any kind, whether unitary or composite, for example a poem or drama, a collection of essays, a novel, a dictionary, or a corpus sample. [4. Default Text Structure 15.1. Varieties of Composite Text]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(text) contains a single text of any kind, whether unitary or composite, for example a poem or drama, a collection of essays, a novel, a dictionary, or a corpus sample. [4. Default Text Structure 15.1. Varieties of Composite Text]</a:documentation>
          <ref name="front"/>
          <optional>
             <ref name="body"/>
@@ -3402,42 +3802,39 @@ Elements 7.2.5. Speech Contents]</a:documentation>
                            <attribute name="id" ns="http://www.w3.org/XML/1998/namespace">
                               <data type="ID"/>
                            </attribute>
-                           <oneOrMore>
+                           <zeroOrMore>
                               <choice>
-                                 <optional>
-                                    <element name="head">
-                                       <attribute name="type">
-                                          <value>section</value>
-                                       </attribute>
-                                       <ref name="head-content"/>
-                                    </element>
-                                 </optional>
-                                 <zeroOrMore>
-                                    <element name="list">
-                                       <attribute name="type">
-                                          <value>abbreviations</value>
-                                       </attribute>
-                                       <zeroOrMore>
-                                          <ref name="head"/>
-                                       </zeroOrMore>
-                                       <oneOrMore>
-                                          <element name="item">
-                                             <attribute name="id" ns="http://www.w3.org/XML/1998/namespace">
-                                                <data type="ID"/>
-                                             </attribute>
-                                             <text/>
-                                             <optional>
-                                                <ref name="abbr"/>
-                                             </optional>
-                                             <optional>
-                                                <ref name="expan"/>
-                                             </optional>
-                                          </element>
-                                       </oneOrMore>
-                                    </element>
-                                 </zeroOrMore>
+                                 <element name="head">
+                                    <attribute name="type">
+                                       <value>section</value>
+                                    </attribute>
+                                    <ref name="head-content"/>
+                                 </element>
+                                 <element name="list">
+                                    <attribute name="type">
+                                       <value>abbreviations</value>
+                                    </attribute>
+                                    <zeroOrMore>
+                                       <ref name="head"/>
+                                    </zeroOrMore>
+                                    <oneOrMore>
+                                       <element name="item">
+                                          <attribute name="id" ns="http://www.w3.org/XML/1998/namespace">
+                                             <data type="ID"/>
+                                          </attribute>
+                                          <text/>
+                                          <optional>
+                                             <ref name="abbr"/>
+                                          </optional>
+                                          <optional>
+                                             <ref name="expan"/>
+                                          </optional>
+                                       </element>
+                                    </oneOrMore>
+                                 </element>
+                                 <ref name="milestone"/>
                               </choice>
-                           </oneOrMore>
+                           </zeroOrMore>
                         </element>
                      </zeroOrMore>
                   </choice>
@@ -3462,140 +3859,42 @@ Elements 7.2.5. Speech Contents]</a:documentation>
                         </attribute>
                         <oneOrMore>
                            <choice>
-                              <optional>
-                                 <element name="head">
-                                    <attribute name="type">
-                                       <value>section</value>
-                                    </attribute>
-                                    <ref name="head-content"/>
-                                 </element>
-                              </optional>
-                              <zeroOrMore>
-                                 <ref name="p"/>
-                              </zeroOrMore>
-                              <zeroOrMore>
-                                 <ref name="milestone"/>
-                              </zeroOrMore>
-                              <zeroOrMore>
-                                 <ref name="hi"/>
-                              </zeroOrMore>
-                              <zeroOrMore>
-                                 <ref name="lb"/>
-                              </zeroOrMore>
-                              <zeroOrMore>
-                                 <element name="bibl">
-                                    <attribute name="id" ns="http://www.w3.org/XML/1998/namespace">
-                                       <data type="ID"/>
-                                    </attribute>
-                                    <oneOrMore>
-                                       <choice>
-                                          <zeroOrMore>
-                                             <ref name="title"/>
-                                          </zeroOrMore>
-                                          <zeroOrMore>
-                                             <ref name="foreign"/>
-                                          </zeroOrMore>
-                                          <zeroOrMore>
-                                             <ref name="lb"/>
-                                          </zeroOrMore>
-                                          <zeroOrMore>
-                                             <ref name="ptr"/>
-                                          </zeroOrMore>
-                                          <zeroOrMore>
-                                             <ref name="ref-other"/>
-                                          </zeroOrMore>
-                                          <zeroOrMore>
-                                             <ref name="hi"/>
-                                          </zeroOrMore>
-                                          <zeroOrMore>
-                                             <ref name="note"/>
-                                          </zeroOrMore>
-                                          <zeroOrMore>
-                                             <element name="author">
-                                                <data type="string"/>
-                                             </element>
-                                          </zeroOrMore>
-                                          <zeroOrMore>
-                                             <element name="date">
-                                                <data type="string"/>
-                                             </element>
-                                          </zeroOrMore>
-                                          <text/>
-                                       </choice>
-                                    </oneOrMore>
-                                 </element>
-                              </zeroOrMore>
-                              <zeroOrMore>
-                                 <element name="div">
-                                    <attribute name="type">
-                                       <value>section</value>
-                                    </attribute>
-                                    <attribute name="id" ns="http://www.w3.org/XML/1998/namespace">
-                                       <data type="ID"/>
-                                    </attribute>
-                                    <oneOrMore>
-                                       <choice>
-                                          <optional>
-                                             <element name="head">
-                                                <attribute name="type">
-                                                   <value>section</value>
-                                                </attribute>
-                                                <ref name="head-content"/>
-                                             </element>
-                                          </optional>
-                                          <zeroOrMore>
-                                             <ref name="lb"/>
-                                          </zeroOrMore>
-                                          <zeroOrMore>
-                                             <ref name="p"/>
-                                          </zeroOrMore>
-                                          <zeroOrMore>
-                                             <ref name="milestone"/>
-                                          </zeroOrMore>
-                                          <zeroOrMore>
-                                             <element name="bibl">
-                                                <attribute name="id" ns="http://www.w3.org/XML/1998/namespace">
-                                                   <data type="ID"/>
-                                                </attribute>
-                                                <oneOrMore>
-                                                   <choice>
-                                                      <zeroOrMore>
-                                                         <ref name="title"/>
-                                                      </zeroOrMore>
-                                                      <zeroOrMore>
-                                                         <ref name="foreign"/>
-                                                      </zeroOrMore>
-                                                      <zeroOrMore>
-                                                         <ref name="lb"/>
-                                                      </zeroOrMore>
-                                                      <zeroOrMore>
-                                                         <ref name="ptr"/>
-                                                      </zeroOrMore>
-                                                      <zeroOrMore>
-                                                         <ref name="ref-other"/>
-                                                      </zeroOrMore>
-                                                      <zeroOrMore>
-                                                         <ref name="hi"/>
-                                                      </zeroOrMore>
-                                                      <zeroOrMore>
-                                                         <element name="author">
-                                                            <data type="string"/>
-                                                         </element>
-                                                      </zeroOrMore>
-                                                      <zeroOrMore>
-                                                         <element name="date">
-                                                            <data type="string"/>
-                                                         </element>
-                                                      </zeroOrMore>
-                                                      <text/>
-                                                   </choice>
-                                                </oneOrMore>
-                                             </element>
-                                          </zeroOrMore>
-                                       </choice>
-                                    </oneOrMore>
-                                 </element>
-                              </zeroOrMore>
+                              <ref name="bibl-section-content"/>
+                              <element name="div">
+                                 <attribute name="type">
+                                    <value>section</value>
+                                 </attribute>
+                                 <attribute name="id" ns="http://www.w3.org/XML/1998/namespace">
+                                    <data type="ID"/>
+                                 </attribute>
+                                 <oneOrMore>
+                                    <choice>
+                                       <ref name="bibl-section-content"/>
+                                       <element name="div">
+                                          <attribute name="type">
+                                             <value>section</value>
+                                          </attribute>
+                                          <attribute name="id" ns="http://www.w3.org/XML/1998/namespace">
+                                             <data type="ID"/>
+                                          </attribute>
+                                          <oneOrMore>
+                                             <choice>
+                                                <ref name="bibl-section-content"/>
+                                                <element name="div">
+                                                   <attribute name="type">
+                                                      <value>section</value>
+                                                   </attribute>
+                                                   <attribute name="id" ns="http://www.w3.org/XML/1998/namespace">
+                                                      <data type="ID"/>
+                                                   </attribute>
+                                                   <ref name="bibl-section-content"/>
+                                                </element>
+                                             </choice>
+                                          </oneOrMore>
+                                       </element>
+                                    </choice>
+                                 </oneOrMore>
+                              </element>
                            </choice>
                         </oneOrMore>
                      </element>
@@ -3768,7 +4067,7 @@ Elements 7.2.5. Speech Contents]</a:documentation>
    </define>
    <define name="table">
       <element name="table">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains text displayed in tabular form, in rows and columns. [14.1.1. TEI Tables]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(table) contains text displayed in tabular form, in rows and columns. [14.1.1. TEI Tables]</a:documentation>
          <group>
             <zeroOrMore>
                <choice>
@@ -3808,18 +4107,31 @@ Elements 7.2.5. Speech Contents]</a:documentation>
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Numbers the table in the text along with and in the same manner as paragraph, <code xmlns="http://www.w3.org/1999/xhtml">&lt;p&gt;</code>; and line group, <code xmlns="http://www.w3.org/1999/xhtml">&lt;l&gt;</code>, elements.</a:documentation>
             <text/>
          </attribute>
+         <optional>
+            <attribute name="rend">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Modifies table's display in the HTML</a:documentation>
+               <choice>
+                  <value>firstcol-30pc</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Renders the first column with 30% width</a:documentation>
+                  <value>firstcol-40pc</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Renders the first column with 40% width</a:documentation>
+                  <value>firstcol-50pc</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Renders the first column with 50% width</a:documentation>
+               </choice>
+            </attribute>
+         </optional>
          <empty/>
       </element>
    </define>
    <define name="row">
       <element name="row">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains one row of a table. [14.1.1. TEI Tables]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(row) contains one row of a table. [14.1.1. TEI Tables]</a:documentation>
          <oneOrMore>
             <ref name="cell"/>
          </oneOrMore>
          <optional>
             <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0" name="role" a:defaultValue="data">
-               <a:documentation>indicates the kind of information held in this cell or in each cell of this row.
+               <a:documentation>(role) indicates the kind of information held in this cell or in each cell of this row.
 Suggested values include: 1] label; 2] data</a:documentation>
                <choice>
                   <value>label</value>
@@ -3837,7 +4149,7 @@ Suggested values include: 1] label; 2] data</a:documentation>
    </define>
    <define name="cell">
       <element name="cell">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains one cell of a table. [14.1.1. TEI Tables]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(cell) contains one cell of a table. [14.1.1. TEI Tables]</a:documentation>
          <zeroOrMore>
             <choice>
                <text/>
@@ -3858,7 +4170,7 @@ Suggested values include: 1] label; 2] data</a:documentation>
          </zeroOrMore>
          <optional>
             <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0" name="role" a:defaultValue="data">
-               <a:documentation>indicates the kind of information held in this cell or in each cell of this row.
+               <a:documentation>(role) indicates the kind of information held in this cell or in each cell of this row.
 Suggested values include: 1] label; 2] data</a:documentation>
                <choice>
                   <value>label</value>
@@ -3919,6 +4231,21 @@ Sample values include: </a:documentation>
          <empty/>
       </element>
    </define>
+   <define name="link">
+      <element name="link">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Used in the <code xmlns="http://www.w3.org/1999/xhtml">&lt;sourceDesc&gt;</code> to define a relationship between one text and another. Currently the only @type is "commentaryOf" and the @targets are unverified toh keys.</a:documentation>
+         <empty/>
+         <attribute name="type">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            <text/>
+         </attribute>
+         <attribute name="target">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            <text/>
+         </attribute>
+         <empty/>
+      </element>
+   </define>
    <define name="location">
       <element name="location">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
@@ -3971,6 +4298,8 @@ Sample values include: </a:documentation>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Chinese written in Roman script</a:documentation>
                <value>bo</value>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Tibetan in Tibetan script (Use Bo-Ltn if in Roman script or Wylie) </a:documentation>
+               <value>cs</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Czech</a:documentation>
                <value>de</value>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">German (Deutsch)</a:documentation>
                <value>el</value>
@@ -3981,12 +4310,16 @@ Sample values include: </a:documentation>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">French</a:documentation>
                <value>it</value>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Italian</a:documentation>
-               <value>la</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Latin</a:documentation>
-               <value>zh</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Chinese in Chinese script (Use Zh-Ltn if in Roman script)</a:documentation>
                <value>ja</value>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Japanese in Japanese script (Use Ja-Ltn if in Roman script)</a:documentation>
+               <value>la</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Latin</a:documentation>
+               <value>nl</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Dutch; Flemish</a:documentation>
+               <value>ru</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Russian</a:documentation>
+               <value>zh</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Chinese in Chinese script (Use Zh-Ltn if in Roman script)</a:documentation>
                <value>middle_indic-Ltn</value>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Middle Indic written in Roman script.</a:documentation>
                <value>mixed</value>

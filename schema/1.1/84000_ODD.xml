@@ -45,7 +45,7 @@
     </front>
     <body>
       <schemaSpec ident="NewODD" docLang="en" xml:lang="en">
-        <moduleRef key="core" include="abbr author bibl biblScope date distinct editor emph expan foreign gloss graphic head hi item l label lb lg list milestone name note p ptr publisher q ref term title"/>
+        <moduleRef key="core" include="abbr author bibl biblScope date desc distinct editor emph expan foreign gloss graphic head hi item l label lb lg list media milestone name note p ptr publisher q ref term title"/>
         <moduleRef key="tei" except=""/>
         <moduleRef key="header" include="availability catRef category catDesc classDecl edition editionStmt encodingDesc fileDesc idno keywords licence notesStmt profileDesc publicationStmt sourceDesc taxonomy teiHeader textClass titleStmt"/>
         <moduleRef key="textstructure" include="TEI back body div front text trailer"/>
@@ -113,6 +113,9 @@
                 <valItem ident="bo">
                   <desc>Tibetan in Tibetan script (Use Bo-Ltn if in Roman script or Wylie) </desc>
                 </valItem>
+                <valItem ident="cs">
+                  <desc>Czech</desc>
+                </valItem>
                 <valItem ident="de">
                   <desc>German (Deutsch)</desc>
                 </valItem>
@@ -128,14 +131,20 @@
                 <valItem ident="it">
                   <desc>Italian</desc>
                 </valItem>
+                <valItem ident="ja">
+                  <desc>Japanese in Japanese script (Use Ja-Ltn if in Roman script)</desc>
+                </valItem>
                 <valItem ident="la">
                   <desc>Latin</desc>
                 </valItem>
+                <valItem ident="nl">
+                  <desc>Dutch; Flemish</desc>
+                </valItem>
+                <valItem ident="ru">
+                  <desc>Russian</desc>
+                </valItem>
                 <valItem ident="zh">
                   <desc>Chinese in Chinese script (Use Zh-Ltn if in Roman script)</desc>
-                </valItem>
-                <valItem ident="ja">
-                  <desc>Japanese in Japanese script (Use Ja-Ltn if in Roman script)</desc>
                 </valItem>
                 <valItem ident="middle_indic-Ltn">
                   <desc>Middle Indic written in Roman script.</desc>
@@ -158,8 +167,13 @@
         <classSpec type="atts" ident="att.global.responsibility" mode="delete"/>
         <classSpec type="atts" ident="att.global.source" mode="delete"/>
         <classSpec type="atts" ident="att.global.linking" mode="delete"/>
-        <classSpec type="atts" ident="att.internetMedia" mode="delete"/>
-        <classSpec type="atts" ident="att.media" mode="delete"/>
+        <classSpec type="atts" ident="att.media" mode="change">
+          <attList>
+            <attDef ident="width" mode="delete"/>
+            <attDef ident="height" mode="delete"/>
+            <attDef ident="scale" mode="delete"/>
+          </attList>
+        </classSpec>
         <classSpec type="atts" ident="att.naming" mode="change">
           <attList>
             <attDef ident="nymRef" mode="delete"/>
@@ -185,110 +199,110 @@
         <!--Modifications to Standard TEI Macros-->
         <macroSpec ident="macro.phraseSeq" mode="change">
           <content>
-            <zeroOrMore xmlns="http://relaxng.org/ns/structure/1.0">
-            <choice>
-              <text/>
-              <ref name="model.gLike"/>
-              <ref name="model.attributable"/>
-              <ref name="model.phrase"/>
-              <ref name="model.global"/>
+            <rng:zeroOrMore xmlns="http://relaxng.org/ns/structure/1.0">
+            <rng:choice>
+              <rng:text/>
+              <rng:ref name="model.gLike"/>
+              <rng:ref name="model.attributable"/>
+              <rng:ref name="model.phrase"/>
+              <rng:ref name="model.global"/>
               <!--Added to standard:-->
-              <ref name="ref-canonical"/>
-              <ref name="ref-other"/>
-            </choice>
-          </zeroOrMore>
+              <rng:ref name="ref-canonical"/>
+              <rng:ref name="ref-other"/>
+            </rng:choice>
+          </rng:zeroOrMore>
           </content>
         </macroSpec>
         <macroSpec ident="macro.paraContent" mode="change">
           <content>
-            <zeroOrMore xmlns="http://relaxng.org/ns/structure/1.0">
-              <choice>
-                <text/>
-                <ref name="model.gLike"/>
-                <ref name="model.phrase"/>
-                <ref name="model.inter"/>
-                <ref name="model.global"/>
-                <ref name="model.lLike"/>
-                <ref name="lg"/>
+            <rng:zeroOrMore xmlns="http://relaxng.org/ns/structure/1.0">
+              <rng:choice>
+                <rng:text/>
+                <rng:ref name="model.gLike"/>
+                <rng:ref name="model.phrase"/>
+                <rng:ref name="model.inter"/>
+                <rng:ref name="model.global"/>
+                <rng:ref name="model.lLike"/>
+                <rng:ref name="lg"/>
                 <!--Added to standard:-->
-                <ref name="mantra"/>
-                <ref name="modPassage"/>
-                <ref name="canonDef"/>
-                <ref name="ref-canonical"/>
-                <ref name="ref-other"/>
-              </choice>
-            </zeroOrMore>
+                <rng:ref name="mantra"/>
+                <rng:ref name="modPassage"/>
+                <rng:ref name="canonDef"/>
+                <rng:ref name="ref-canonical"/>
+                <rng:ref name="ref-other"/>
+              </rng:choice>
+            </rng:zeroOrMore>
           </content>
         </macroSpec>
         <macroSpec ident="macro.specialPara" mode="change">
           <content>
-            <zeroOrMore xmlns="http://relaxng.org/ns/structure/1.0">
-              <choice>
-                <text/>
-                <ref name="model.gLike"/>
-                <ref name="model.phrase"/>
-                <ref name="model.inter"/>
-                <ref name="model.divPart"/>
-                <ref name="model.global"/>
+            <rng:zeroOrMore xmlns="http://relaxng.org/ns/structure/1.0">
+              <rng:choice>
+                <rng:text/>
+                <rng:ref name="model.gLike"/>
+                <rng:ref name="model.phrase"/>
+                <rng:ref name="model.inter"/>
+                <rng:ref name="model.divPart"/>
+                <rng:ref name="model.global"/>
                 <!--Added to standard:-->
-                <ref name="mantra"/>
-                <ref name="modPassage"/>
-                <ref name="canonDef"/>
-                <ref name="ref-other"/>
-                <ref name="ref-canonical"/>
-              </choice>
-            </zeroOrMore>            
+                <rng:ref name="mantra"/>
+                <rng:ref name="modPassage"/>
+                <rng:ref name="canonDef"/>
+                <rng:ref name="ref-other"/>
+                <rng:ref name="ref-canonical"/>
+              </rng:choice>
+            </rng:zeroOrMore>            
          </content>
         </macroSpec>
         <macroSpec ident="cache" mode="add">
           <content>
             <interleave xmlns="http://relaxng.org/ns/structure/1.0">
-              <optional>
-                <element name="notes-cache" ns="http://read.84000.co/ns/1.0">
-                  <ref name="anyAttribute"/>
-                  <ref name="anyContent"/>
-                </element>
-              </optional>
-              <optional>
-                <element name="milestones-cache" ns="http://read.84000.co/ns/1.0">
-                  <ref name="anyAttribute"/>
-                  <ref name="anyContent"/>
-                </element>
-              </optional>
-              <optional>
-                <element name="folios-cache" ns="http://read.84000.co/ns/1.0">
-                  <ref name="anyAttribute"/>
-                  <ref name="anyContent"/>
-                </element>
-              </optional>
-              <optional>
-                <element name="glossary-cache" ns="http://read.84000.co/ns/1.0">
-                  <ref name="anyAttribute"/>
-                  <ref name="anyContent"/>
-                </element>
-              </optional>
+              <rng:optional>
+                <rng:element name="notes-cache" ns="http://read.84000.co/ns/1.0">
+                  <rng:ref name="anyAttribute"/>
+                  <rng:ref name="anyContent"/>
+                </rng:element>
+              </rng:optional>
+              <rng:optional>
+                <rng:element name="milestones-cache" ns="http://read.84000.co/ns/1.0">
+                  <rng:ref name="anyAttribute"/>
+                  <rng:ref name="anyContent"/>
+                </rng:element>
+              </rng:optional>
+              <rng:optional>
+                <rng:element name="folios-cache" ns="http://read.84000.co/ns/1.0">
+                  <rng:ref name="anyAttribute"/>
+                  <rng:ref name="anyContent"/>
+                </rng:element>
+              </rng:optional>
+              <rng:optional>
+                <rng:element name="glossary-cache" ns="http://read.84000.co/ns/1.0">
+                  <rng:ref name="anyAttribute"/>
+                  <rng:ref name="anyContent"/>
+                </rng:element>
+              </rng:optional>
             </interleave>
           </content>
         </macroSpec>
         <!--To Fill Out References in model.resource Macro above:-->
         <macroSpec ident="anyContent" mode="add">
           <content> 
-            <zeroOrMore xmlns="http://relaxng.org/ns/structure/1.0">&gt;
-            <element>
+            <rng:zeroOrMore xmlns="http://relaxng.org/ns/structure/1.0">&gt;
+            <rng:element>
               <anyName>
                 <except>
                   <name>idno</name>
                 </except>
               </anyName>
-              <ref name="anyAttribute"/>
-              <ref name="anyContent"/>
-            </element>
-          </zeroOrMore>
+              <rng:ref name="anyAttribute"/>
+              <rng:ref name="anyContent"/>
+            </rng:element>
+          </rng:zeroOrMore>
           </content>
         </macroSpec>
         <macroSpec ident="anyAttribute" mode="add">
           <content>
-            <zeroOrMore xmlns="http://relaxng.org/ns/structure/1.0">
+            <rng:zeroOrMore xmlns="http://relaxng.org/ns/structure/1.0">
             <attribute>
               <anyName>
                 <except>
@@ -296,10 +310,55 @@
                 </except>
               </anyName>
             </attribute>
-          </zeroOrMore>
+          </rng:zeroOrMore>
           </content>
         </macroSpec>
         <!--Added Macros to be Referenced in the Content Models of 84000's Schema's Elements-->
+        <macroSpec ident="bibl-section-content">
+          <content>
+            <rng:optional xmlns="http://relaxng.org/ns/structure/1.0">
+              <rng:zeroOrMore>
+                <rng:choice>
+                    <rng:element name="head">
+                      <attribute name="type">
+                        <rng:choice>
+                          <rng:value>section</rng:value>
+                        </rng:choice>
+                      </attribute>
+                      <rng:ref name="head-content"/>
+                    </rng:element>
+                    <rng:ref name="p"/>
+                    <rng:ref name="milestone"/>
+                    <rng:ref name="hi"/>
+                    <rng:ref name="lb"/>
+                    <rng:element name="bibl">
+                      <attribute name="id" ns="http://www.w3.org/XML/1998/namespace">
+                        <rng:data type="ID"/>
+                      </attribute>
+                      <rng:oneOrMore>
+                        <rng:choice>
+                            <rng:ref name="title"/>
+                            <rng:ref name="foreign"/>
+                            <rng:ref name="lb"/>
+                            <rng:ref name="ptr"/>
+                            <rng:ref name="ref-other"/>
+                            <rng:ref name="hi"/>
+                            <rng:ref name="note"/>
+                            <rng:element name="author">
+                              <rng:data type="string"/>
+                            </rng:element>
+                            <rng:element name="date">
+                              <rng:data type="string"/>
+                            </rng:element>
+                          <rng:text/>
+                        </rng:choice>
+                      </rng:oneOrMore>
+                    </rng:element>
+                </rng:choice>
+              </rng:zeroOrMore>
+            </rng:optional>
+          </content>
+        </macroSpec>
         <macroSpec ident="endnote" mode="add">
           <content>
             <rng:element xmlns="http://relaxng.org/ns/structure/1.0" name="note">
@@ -308,9 +367,6 @@
                 <rng:data type="integer"/>
               </attribute>
                             </rng:optional>
-              <rng:optional>
-                                <attribute name="key"/>
-              </rng:optional>
               <attribute name="place">
                 <rng:choice>
                   <rng:value>end</rng:value>
@@ -332,26 +388,23 @@
         <macroSpec ident="head-content">
           <content>
             <rng:optional>
-              <rng:attribute name="tid"/>
+              <attribute xmlns="http://relaxng.org/ns/structure/1.0" name="tid"/>
             </rng:optional>
-            <rng:optional>
-              <rng:attribute name="key"/>
-            </rng:optional>
-            <choice xmlns="http://relaxng.org/ns/structure/1.0">
+            <rng:choice xmlns="http://relaxng.org/ns/structure/1.0">
               <data type="string">
                 <param name="minLength">1</param>
               </data>
               <interleave>
                 <rng:oneOrMore>
-                  <choice>
-                    <ref name="endnote"/>
-                    <ref name="title"/>
-                    <ref name="foreign"/>
-                  </choice>
+                  <rng:choice>
+                    <rng:ref name="endnote"/>
+                    <rng:ref name="title"/>
+                    <rng:ref name="foreign"/>
+                  </rng:choice>
                 </rng:oneOrMore>
-                <text/>
+                <rng:text/>
               </interleave>
-            </choice>
+            </rng:choice>
           </content>
         </macroSpec>
         <macroSpec ident="paragraph" mode="add">
@@ -377,7 +430,7 @@
               </rng:optional>
               <rng:oneOrMore xmlns="http://relaxng.org/ns/structure/1.0">
                 <rng:choice>
-                  <text/>
+                  <rng:text/>
                     <rng:ref name="title"/>
                     <rng:ref name="ptr"/>
                     <rng:ref name="endnote"/>
@@ -408,7 +461,7 @@
                           <rng:zeroOrMore>
                             <rng:ref name="foreign"/>
                           </rng:zeroOrMore>
-                          <text/>
+                          <rng:text/>
                         </rng:choice>
                       </rng:oneOrMore>
                     </rng:element>
@@ -420,31 +473,31 @@
         <macroSpec ident="ref-canonical" mode="add">
           <content>
             <rng:element name="ref">
-              <rng:attribute name="id" ns="http://www.w3.org/XML/1998/namespace">
+              <attribute xmlns="http://relaxng.org/ns/structure/1.0" name="id" ns="http://www.w3.org/XML/1998/namespace">
                 <rng:data type="ID"/>
-              </rng:attribute>
-              <rng:attribute name="type">
+              </attribute>
+              <attribute xmlns="http://relaxng.org/ns/structure/1.0" name="type">
                 <rng:choice>
                   <rng:value>folio</rng:value>
                   <rng:value>volume</rng:value>
                 </rng:choice>
-              </rng:attribute>
-              <rng:attribute name="cRef"/>
+              </attribute>
+              <attribute xmlns="http://relaxng.org/ns/structure/1.0" name="cRef"/>
               <rng:optional>
-                <rng:attribute name="key"/>
+                <attribute xmlns="http://relaxng.org/ns/structure/1.0" name="key"/>
               </rng:optional>
               <rng:optional>
-                <rng:attribute name="rend">
+                <attribute xmlns="http://relaxng.org/ns/structure/1.0" name="rend">
                   <rng:choice>
                     <rng:value>blank</rng:value>
                   </rng:choice>
-                </rng:attribute>
+                </attribute>
               </rng:optional>
               <rng:optional>
-                <rng:attribute name="work"/>
+                <attribute xmlns="http://relaxng.org/ns/structure/1.0" name="work"/>
               </rng:optional>
               <rng:optional>
-                <rng:attribute name="page"/>
+                <attribute xmlns="http://relaxng.org/ns/structure/1.0" name="page"/>
               </rng:optional>
               <rng:text/>
             </rng:element>
@@ -453,39 +506,39 @@
         <macroSpec ident="ref-other" mode="add">
           <content>
             <rng:element xmlns="http://relaxng.org/ns/structure/1.0" name="ref">
-              <optional>
+              <rng:optional>
                 <attribute name="type">
-                  <choice>
-                    <value>bampo</value>
-                    <value>sanskrit</value>
-                    <value>chinese</value>
-                  </choice>
+                  <rng:choice>
+                    <rng:value>bampo</rng:value>
+                    <rng:value>sanskrit</rng:value>
+                    <rng:value>chinese</rng:value>
+                  </rng:choice>
                 </attribute>
-              </optional>
-              <optional>
+              </rng:optional>
+              <rng:optional>
                 <attribute name="rend">
-                  <choice>
-                    <value>hidden</value>
-                    <value>pending</value>
-                  </choice>
+                  <rng:choice>
+                    <rng:value>hidden</rng:value>
+                    <rng:value>pending</rng:value>
+                  </rng:choice>
                 </attribute>
-              </optional>
-              <optional>
+              </rng:optional>
+              <rng:optional>
                 <attribute name="cRef"/>
-              </optional>
-              <optional>
+              </rng:optional>
+              <rng:optional>
                 <attribute name="target"/>
-              </optional>
-              <optional>
+              </rng:optional>
+              <rng:optional>
                 <attribute name="inst"/>
-              </optional>
-              <optional>
+              </rng:optional>
+              <rng:optional>
                 <attribute name="work"/>
-              </optional>
-              <optional>
+              </rng:optional>
+              <rng:optional>
                 <attribute name="key"/>
-              </optional>
-              <text/>
+              </rng:optional>
+              <rng:text/>
             </rng:element>
           </content>
         </macroSpec>
@@ -504,6 +557,7 @@
                   <rng:ref name="table"/>
                   <rng:ref name="label"/>
                   <rng:ref name="trailer"/>
+                  <rng:ref name="media"/>
               </rng:choice>
               </rng:zeroOrMore>
              </rng:optional>
@@ -517,9 +571,9 @@
                   <rng:value>chapter</rng:value>
                 </rng:choice>
               </attribute>
-              <rng:attribute name="id" ns="http://www.w3.org/XML/1998/namespace">
+              <attribute name="id" ns="http://www.w3.org/XML/1998/namespace">
                 <rng:data type="ID"/>
-              </rng:attribute>
+              </attribute>
               <rng:optional>
                 <attribute name="rend"/>
               </rng:optional>
@@ -539,7 +593,21 @@
                 <rng:optional>
                   <attribute name="key"/>
                 </rng:optional>
-                <text/>
+                <rng:choice>
+                  <data type="string">
+                    <param name="minLength">1</param>
+                  </data>
+                  <interleave>
+                    <rng:oneOrMore>
+                      <rng:choice>
+                        <rng:ref name="endnote"/>
+                        <rng:ref name="title"/>
+                        <rng:ref name="foreign"/>
+                      </rng:choice>
+                    </rng:oneOrMore>
+                    <rng:text/>
+                  </interleave>
+                </rng:choice>
               </rng:element>
               <rng:zeroOrMore>
                 <rng:choice>
@@ -593,29 +661,29 @@
           <content>
             <!--Note - this begins with the initial attributes of the div of that section. It is included here to reduce redundancy in the nested
               sections rendered in the macros that follow it.-->
-            <rng:attribute name="type">
+            <attribute xmlns="http://relaxng.org/ns/structure/1.0" name="type">
               <rng:choice>
                 <rng:value>section</rng:value>
               </rng:choice>
-            </rng:attribute>
-            <rng:attribute name="id" ns="http://www.w3.org/XML/1998/namespace">
+            </attribute>
+            <attribute xmlns="http://relaxng.org/ns/structure/1.0" name="id" ns="http://www.w3.org/XML/1998/namespace">
               <rng:data type="ID"/>
-            </rng:attribute>
+            </attribute>
             <rng:optional>
-              <rng:attribute name="rend"/>
+              <attribute xmlns="http://relaxng.org/ns/structure/1.0" name="rend"/>
             </rng:optional>
             <rng:optional>
-              <rng:attribute name="prefix"/>
+              <attribute xmlns="http://relaxng.org/ns/structure/1.0" name="prefix"/>
             </rng:optional>
-            <rng:oneOrMore>
+            <rng:oneOrMore xmlns="http://relaxng.org/ns/structure/1.0">
               <rng:choice>
                 <rng:zeroOrMore>
                   <rng:element name="head">
-                    <rng:attribute name="type">
+                    <attribute name="type">
                       <rng:choice>
                         <rng:value>section</rng:value>
                       </rng:choice>
-                    </rng:attribute>
+                    </attribute>
                     <rng:ref name="head-content"/>
                   </rng:element>
                 </rng:zeroOrMore>
@@ -834,11 +902,11 @@
           </remarks>
         </elementSpec>
         <elementSpec ident="author" module="core" mode="change">
-          <classes>
+          <!--<classes>
             <memberOf key="model.respLike"/>
-          </classes>
+          </classes>-->
           <attList>
-            <attDef ident="role" usage="req" mode="add">
+            <attDef ident="role" usage="opt" mode="change">
               <desc>Describes the author's role in the translation of the text. "translatorMain" and
                 "translatorEng" denote the Tibetan to English translators of the current 84000 text
                 while the "translatorTib" denotes the Tibetan translator of the the Kangyur
@@ -869,7 +937,10 @@
             <attDef ident="ref" usage="opt" mode="change">
               <desc>Links the author to a profile in the database</desc>
             </attDef>
-            <attDef ident="key" mode="delete"/>
+            <attDef ident="key" usage="opt" mode="change">
+              <desc>Used to distinguish two or more authors, when there is an alternative attribution to an historical author.</desc>
+            </attDef>
+            <attDef ident="xml:lang" usage="opt" mode="change"/>
           </attList>
           <exemplum>
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -1015,12 +1086,11 @@
                             <rng:value>section</rng:value>
                           </rng:choice>
                         </attribute>
-                        <rng:attribute name="id" ns="http://www.w3.org/XML/1998/namespace">
+                        <attribute name="id" ns="http://www.w3.org/XML/1998/namespace">
                 <rng:data type="ID"/>
-              </rng:attribute>
-                        <rng:oneOrMore>
+              </attribute>
+                        <rng:zeroOrMore>
                           <rng:choice>
-                            <rng:optional>
                               <rng:element name="head">
                                 <attribute name="type">
                                   <rng:choice>
@@ -1029,9 +1099,6 @@
                                 </attribute>
                                 <rng:ref name="head-content"/>
                               </rng:element>
-                            </rng:optional>
-                      <!-- abbreviations -->
-                      <rng:zeroOrMore>
                           <rng:element name="list">
                           <attribute name="type">
                             <rng:choice>
@@ -1059,9 +1126,9 @@
                             </rng:element>
                           </rng:oneOrMore>
                         </rng:element>
-                      </rng:zeroOrMore>
+                            <rng:ref name="milestone"/>
                           </rng:choice>
-                        </rng:oneOrMore>
+                        </rng:zeroOrMore>
                       </rng:element>
                     </rng:zeroOrMore>
                     </rng:choice>     
@@ -1090,155 +1157,57 @@
                             <rng:value>section</rng:value>
                           </rng:choice>
                         </attribute>
-                        <rng:attribute name="id" ns="http://www.w3.org/XML/1998/namespace">
+                        <attribute name="id" ns="http://www.w3.org/XML/1998/namespace">
                 <rng:data type="ID"/>
-              </rng:attribute>
+              </attribute>
                         <rng:oneOrMore>
-                          <rng:choice>
-                            <rng:optional>
-                              <rng:element name="head">
-                                <attribute name="type">
-                                  <rng:choice>
-                                    <rng:value>section</rng:value>
-                                  </rng:choice>
-                                </attribute>
-                                <rng:ref name="head-content"/>
-                              </rng:element>
-                            </rng:optional>
-                            <rng:zeroOrMore>
-                              <rng:ref name="p"/>
-                            </rng:zeroOrMore>
-                            <rng:zeroOrMore>
-                              <rng:ref name="milestone"/>
-                            </rng:zeroOrMore>
-                            <rng:zeroOrMore>
-                              <rng:ref name="hi"/>
-                            </rng:zeroOrMore>
-                            <rng:zeroOrMore>
-                              <rng:ref name="lb"/>
-                            </rng:zeroOrMore>
-                            <rng:zeroOrMore>
-                              <rng:element name="bibl">
-                                <attribute name="id" ns="http://www.w3.org/XML/1998/namespace">
-                                  <rng:data type="ID"/>
-                                </attribute>
-                                <rng:oneOrMore>
-                                  <rng:choice>
-                                    <rng:zeroOrMore>
-                                      <rng:ref name="title"/>
-                                    </rng:zeroOrMore>
-                                    <rng:zeroOrMore>
-                                      <rng:ref name="foreign"/>
-                                    </rng:zeroOrMore>
-                                    <rng:zeroOrMore>
-                                      <rng:ref name="lb"/>
-                                    </rng:zeroOrMore>
-                                    <rng:zeroOrMore>
-                                      <rng:ref name="ptr"/>
-                                    </rng:zeroOrMore>
-                                    <rng:zeroOrMore>
-                                      <rng:ref name="ref-other"/>
-                                    </rng:zeroOrMore>
-                                    <rng:zeroOrMore>
-                                      <rng:ref name="hi"/>
-                                    </rng:zeroOrMore>
-                                    <rng:zeroOrMore>
-                                      <rng:ref name="note"/>
-                                    </rng:zeroOrMore>
-                                    <rng:zeroOrMore>
-                                      <rng:element name="author">
-                                        <rng:data type="string"/>
-                                      </rng:element>
-                                    </rng:zeroOrMore>
-                                    <rng:zeroOrMore>
-                                      <rng:element name="date">
-                                        <rng:data type="string"/>
-                                      </rng:element>
-                                    </rng:zeroOrMore>
-                                    <rng:text/>
-                                  </rng:choice>
-                                </rng:oneOrMore>
-                              </rng:element>
-                            </rng:zeroOrMore>
-                            <!-- bibliography sub-section (creating a macro that references itself creates an infinite recursion error in
-                                  the generated documentation so it is needed to restate each level of 
-                                  sub-sectionings for the purpose of documentation.) -->
-                            <rng:zeroOrMore>
-                              <rng:element name="div">
-                                <attribute name="type">
-                                  <rng:choice>
-                                    <rng:value>section</rng:value>
-                                  </rng:choice>
-                                </attribute>
-                                <rng:attribute name="id" ns="http://www.w3.org/XML/1998/namespace">
-                <rng:data type="ID"/>
-              </rng:attribute>
-                                <rng:oneOrMore>
-                                  <rng:choice>
-                                    <rng:optional>
-                                      <rng:element name="head">
-                                        <attribute name="type">
-                                          <rng:choice>
-                                            <rng:value>section</rng:value>
-                                          </rng:choice>
-                                        </attribute>
-                                        <rng:ref name="head-content"/>
-                                      </rng:element>
-                                    </rng:optional>
-                                    <rng:zeroOrMore>
-                                      <rng:ref name="lb"/>
-                                    </rng:zeroOrMore>
-                                    <rng:zeroOrMore>
-                                      <rng:ref name="p"/>
-                                    </rng:zeroOrMore>
-                                    <rng:zeroOrMore>
-                                      <rng:ref name="milestone"/>
-                                    </rng:zeroOrMore>
-                                    <rng:zeroOrMore>
-                                      <rng:element name="bibl">
-                                        <attribute name="id" ns="http://www.w3.org/XML/1998/namespace">
-                                          <rng:data type="ID"/>
-                                        </attribute>
-                                        <rng:oneOrMore>
-                                          <rng:choice>
-                                            <rng:zeroOrMore>
-                                              <rng:ref name="title"/>
-                                            </rng:zeroOrMore>
-                                            <rng:zeroOrMore>
-                                              <rng:ref name="foreign"/>
-                                            </rng:zeroOrMore>
-                                            <rng:zeroOrMore>
-                                              <rng:ref name="lb"/>
-                                            </rng:zeroOrMore>
-                                            <rng:zeroOrMore>
-                                              <rng:ref name="ptr"/>
-                                            </rng:zeroOrMore>
-                                            <rng:zeroOrMore>
-                                              <rng:ref name="ref-other"/>
-                                            </rng:zeroOrMore>
-                                            <rng:zeroOrMore>
-                                              <rng:ref name="hi"/>
-                                            </rng:zeroOrMore>
-                                            <rng:zeroOrMore>
-                                              <rng:element name="author">
-                                                <rng:data type="string"/>
-                                              </rng:element>
-                                            </rng:zeroOrMore>
-                                            <rng:zeroOrMore>
-                                              <rng:element name="date">
-                                                <rng:data type="string"/>
-                                              </rng:element>
-                                            </rng:zeroOrMore>
-                                            <rng:text/>
-                                          </rng:choice>
-                                        </rng:oneOrMore>
-                                      </rng:element>
-                                    </rng:zeroOrMore>
-                                  </rng:choice>
-                                </rng:oneOrMore>
-                              </rng:element>
-                            </rng:zeroOrMore>
-                          </rng:choice>
+                         <rng:choice>  
+                           <rng:ref name="bibl-section-content"/>
+                           <!--bibliography subsection lv 2-->
+                           <rng:element name="div">
+                             <attribute name="type">
+                               <rng:choice>
+                                 <rng:value>section</rng:value>
+                               </rng:choice>
+                             </attribute>
+                             <attribute name="id" ns="http://www.w3.org/XML/1998/namespace">
+                               <rng:data type="ID"/>
+                             </attribute>
+                             <rng:oneOrMore>
+                               <rng:choice>
+                                 <rng:ref name="bibl-section-content"/>
+                                 <!--bibliography subsection lv 3-->
+                                 <rng:element name="div">
+                                   <attribute name="type">
+                                     <rng:choice>
+                                       <rng:value>section</rng:value>
+                                     </rng:choice>
+                                   </attribute>
+                                   <attribute name="id" ns="http://www.w3.org/XML/1998/namespace">
+                                     <rng:data type="ID"/>
+                                   </attribute>
+                                   <rng:oneOrMore>
+                                     <rng:choice>
+                                       <rng:ref name="bibl-section-content"/>
+                                       <!--bibliography subsection lv 4-->
+                                       <rng:element name="div">
+                                         <attribute name="type">
+                                           <rng:choice>
+                                             <rng:value>section</rng:value>
+                                           </rng:choice>
+                                         </attribute>
+                                         <attribute name="id" ns="http://www.w3.org/XML/1998/namespace">
+                                           <rng:data type="ID"/>
+                                         </attribute>
+                                         <rng:ref name="bibl-section-content"/>
+                                       </rng:element>
+                                     </rng:choice>
+                                   </rng:oneOrMore>
+                                 </rng:element>
+                               </rng:choice>
+                             </rng:oneOrMore>
+                           </rng:element>
+                        </rng:choice>
                         </rng:oneOrMore>
                       </rng:element>
                     </rng:zeroOrMore>
@@ -1389,9 +1358,9 @@
                               <rng:value>homage</rng:value>
                             </rng:choice>
                           </attribute>
-                          <rng:attribute name="id" ns="http://www.w3.org/XML/1998/namespace">
+                          <attribute name="id" ns="http://www.w3.org/XML/1998/namespace">
                 <rng:data type="ID"/>
-              </rng:attribute>
+              </attribute>
                           <rng:element name="head">
                             <attribute name="type">
                               <rng:choice>
@@ -1659,9 +1628,9 @@
                           <rng:value>homage</rng:value>
                         </rng:choice>
                       </attribute>
-                      <rng:attribute name="id" ns="http://www.w3.org/XML/1998/namespace">
+                      <attribute name="id" ns="http://www.w3.org/XML/1998/namespace">
                 <rng:data type="ID"/>
-              </rng:attribute>
+              </attribute>
                       <rng:element name="head">
                         <attribute name="type">
                           <rng:choice>
@@ -1692,9 +1661,9 @@
                           <rng:value>colophon</rng:value>
                         </rng:choice>
                       </attribute>
-                      <rng:attribute name="id" ns="http://www.w3.org/XML/1998/namespace">
+                      <attribute name="id" ns="http://www.w3.org/XML/1998/namespace">
                 <rng:data type="ID"/>
-              </rng:attribute>
+              </attribute>
                       <rng:element name="head">
                         <attribute name="type">
                           <rng:choice>
@@ -1779,6 +1748,34 @@
         <elementSpec ident="catDesc" module="header" mode="change">
           <content>
             <textNode/>
+          </content>
+        </elementSpec>
+        <elementSpec ident="category" module="header" mode="change">
+          <content>
+            <textNode/>
+          </content>
+          <attList>
+            <attDef ident="name" usage="req">
+              <valList type="closed">
+                <valItem ident="source-language"/> 
+                <valItem ident="source-used"/> 
+                <valItem ident="catalogued-in"/>
+                <valItem ident="western-translation"/>
+                <valItem ident="translation-period"/>
+                <valItem ident="RR-filter"/>
+                <valItem ident="text-type-84000"/>
+                <valItem ident="text-type-12-branch"/>
+                <valItem ident="homage-type"/>
+                <valItem ident="audience-type"/>
+                <valItem ident="setting"/>
+              </valList>
+            </attDef>
+            <attDef ident="id"/>
+          </attList>
+        </elementSpec>
+        <elementSpec ident="catRef" module="header" mode="change">
+          <content>
+            <elementRef key="category" minOccurs="0" maxOccurs="unbounded"/>
           </content>
         </elementSpec>
         <elementSpec ident="cell" mode="change">
@@ -2191,8 +2188,9 @@
                 <valItem ident="TEImarkupEditor">
                   <desc>84000-appointed markup editor.</desc>
                 </valItem>
-              </valList>
+            </valList>
             </attDef>
+            <attDef ident="revision" usage="opt" mode="add"/>
             <attDef ident="ref" usage="opt" mode="change">
               <desc>Links the editor to a profile in the database</desc>
             </attDef>
@@ -2614,9 +2612,9 @@
                               <rng:value>section</rng:value>
                             </rng:choice>
                           </attribute> 
-                          <rng:attribute name="id" ns="http://www.w3.org/XML/1998/namespace">
+                          <attribute name="id" ns="http://www.w3.org/XML/1998/namespace">
                 <rng:data type="ID"/>
-              </rng:attribute>
+              </attribute>
                               <rng:optional>
                                 <rng:element name="head">
                                   <attribute name="type">
@@ -2636,9 +2634,9 @@
                                   <rng:value>section</rng:value>
                                 </rng:choice>
                               </attribute> 
-                              <rng:attribute name="id" ns="http://www.w3.org/XML/1998/namespace">
+                              <attribute name="id" ns="http://www.w3.org/XML/1998/namespace">
                                 <rng:data type="ID"/>
-                              </rng:attribute>
+                              </attribute>
                               <rng:optional>
                                 <rng:element name="head">
                                   <attribute name="type">
@@ -2658,9 +2656,9 @@
                                       <rng:value>section</rng:value>
                                     </rng:choice>
                                   </attribute> 
-                                  <rng:attribute name="id" ns="http://www.w3.org/XML/1998/namespace">
+                                  <attribute name="id" ns="http://www.w3.org/XML/1998/namespace">
                 <rng:data type="ID"/>
-              </rng:attribute>
+              </attribute>
                                   <rng:optional>
                                     <rng:element name="head">
                                       <attribute name="type">
@@ -3100,6 +3098,25 @@
           </remarks>
         </elementSpec>
         <elementSpec ident="keywords" module="header" mode="change">
+          <content>
+            <rng:zeroOrMore>
+              <rng:element name="term">
+                <attribute xmlns="http://relaxng.org/ns/structure/1.0" name="type">
+                  <rng:choice>
+                      <rng:value>person-interlocutor</rng:value>
+                      <rng:value>person-main-speaker</rng:value>
+                      <rng:value>person-topical</rng:value>
+                      <rng:value>main-subject</rng:value>
+                      <rng:value>secondary-subject</rng:value>
+                  </rng:choice>
+                </attribute>
+                <rng:optional>
+                  <attribute xmlns="http://relaxng.org/ns/structure/1.0" name="ref"/>
+                </rng:optional>
+                <rng:text/>
+              </rng:element>
+            </rng:zeroOrMore>
+          </content>
           <attList>
             <attDef ident="scheme" mode="delete"/>
           </attList>
@@ -3109,18 +3126,18 @@
             <memberOf key="att.global" mode="delete"/>
           </classes>
           <content>
-            <zeroOrMore xmlns="http://relaxng.org/ns/structure/1.0">
-              <choice>
-                <text/>
-                <ref name="model.gLike"/>
-                <ref name="model.phrase"/>
-                <ref name="model.inter"/>
-                <ref name="model.global"/>
-                <ref name="mantra"/>
-                <ref name="ref-canonical"/>
-                <ref name="ref-other"/>
-              </choice>
-            </zeroOrMore>
+            <rng:zeroOrMore xmlns="http://relaxng.org/ns/structure/1.0">
+              <rng:choice>
+                <rng:text/>
+                <rng:ref name="model.gLike"/>
+                <rng:ref name="model.phrase"/>
+                <rng:ref name="model.inter"/>
+                <rng:ref name="model.global"/>
+                <rng:ref name="mantra"/>
+                <rng:ref name="ref-canonical"/>
+                <rng:ref name="ref-other"/>
+              </rng:choice>
+            </rng:zeroOrMore>
               <!--<alternate minOccurs="0" maxOccurs="unbounded">
                 <textNode/>
                 <classRef key="model.gLike"/>
@@ -3324,6 +3341,14 @@
               according to the following example:</p>
           </remarks>
         </elementSpec>
+        <elementSpec ident="link" mode="add">
+          <desc>Used in the <gi>sourceDesc</gi> to define a relationship between one text and another. 
+            Currently the only @type is "commentaryOf" and the @targets are unverified toh keys.</desc>
+          <attList>
+            <attDef ident="type" mode="add" usage="req"/>
+            <attDef ident="target" mode="add" usage="req"/>
+          </attList>
+        </elementSpec>
         <elementSpec ident="list" module="core" mode="change">
           <classes mode="change">
             <memberOf key="att.global" mode="delete"/>
@@ -3351,13 +3376,30 @@
                 isn't necessary that there be an actual "bullet" before each item, this is just the
                 name we are using to distinguish the type). The latter two list types may also be
                 used in combination to create an outline. For instance, see the sample of XML markup
-                below for <ref target="http://read.84000-translate.org/translation/toh116.html#UT22084-051-004-45">Toh. 116</ref>. For further information on outlines <ref target="84000_ODD.html#index.xml-back.1_div.2_div.3">see Appendix B.3</ref>
+                below for <ref target="http://read.84000-translate.org/translation/toh116.html#UT22084-051-004-45">Toh. 116</ref>.
+                Note, that an additionally the attribute @rend="dots", "numbers", or "letters" maybe used to create a 
+                list with an automatically generated prefix (bullet, numbers, or letters respectively) and a hanging indent(see example below). This can be done in combination with a @type="section" list or a @type="bullet" list. 
+                For further information on outlines <ref target="84000_ODD.html#index.xml-back.1_div.2_div.3">see Appendix B.3</ref>
               </desc>
               <valList type="closed">
                 <valItem ident="glossary"/>
                 <valItem ident="abbreviations"/>
                 <valItem ident="section"/>
                 <valItem ident="bullet"/>
+              </valList>
+            </attDef>
+            <attDef ident="rend" mode="replace" usage="opt">
+              <desc>Renders further changes to the display of lists in HTML and other formats.</desc>
+              <valList type="closed">
+                <valItem ident="dots">
+                  <desc>Items in the list will have a generated bullet dot and hanging indent (may be used in combination with @type="section" or @type="bullet").</desc>
+                </valItem>
+                <valItem ident="numbers">
+                  <desc>Items in the list will have a generated number prefixes and hanging indent (may be used in combination with @type="section" or @type="bullet").</desc>
+                </valItem>
+                <valItem ident="letters">
+                  <desc>Items in the list will have a generated letter prefixes and hanging indent (may be used in combination with @type="section" or @type="bullet").</desc>
+                </valItem>
               </valList>
             </attDef>
           </attList>
@@ -3469,6 +3511,28 @@
                     non-apprehensible—mere designations and conceptualizations. </p>
                 </item>
                 <!--...etc...-->
+              </list>
+            </egXML>
+          </exemplum>
+          <exemplum>
+            <p>Here is an example of a bullet list with hanging indents rendered with the @rend="dots" attribute. Note that the bullet dot will be generated by the parser.
+              <ref target="https://read.84000.co/translation/toh674.html#UT22084-091-072-45">(See Reading Room Display for this example in Toh 674 here)</ref>
+                        </p>
+            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+              <list type="bullet" rend="dots">
+                <item>
+                  <p tid="35">The name <foreign xml:lang="Bo-Ltn">tshe dpag tu med pa</foreign>
+                    (Aparimitāyus), which occurs a number of times here in Toh 674, is given its longer form
+                    in Toh 675: <foreign xml:lang="Bo-Ltn">tshe dang ye shes dpag tu med pa</foreign>
+                    (Aparimitāyur­jñāna). </p>
+                </item>
+                <item>
+                  <p tid="36">The name of Aparimitāyur­jñāna’s realm here in Toh 674 is <foreign xml:lang="Bo-Ltn">yon 
+                    tan dpag tu med pa sogs pa</foreign> (Aparimita­guṇa­saṃcaya, “Accumulation of Immeasurable 
+                    Qualities”), but in Toh 675 the first mention of it is just <foreign xml:lang="Bo-Ltn">yon tan dpag 
+                    tu med pa</foreign> (Aparimitaguṇa, “Immeasurable Qualities”). </p>
+                </item>
+                <!--...-->
               </list>
             </egXML>
           </exemplum>
@@ -3636,6 +3700,22 @@
                         </p>
           </remarks>
         </elementSpec> 
+        <elementSpec ident="media" module="core" mode="change">
+          <attList>
+            <attDef ident="url" mode="change" usage="req">
+              <desc>Indicate the url, "/audio/..." of the audio file from the folder db/apps/84000-data/audio/</desc>
+            </attDef>
+            <attDef ident="mimeType" mode="replace" usage="req">
+              <valList type="closed" mode="replace">
+                <valItem ident="audio/mpeg"/>
+              </valList>
+            </attDef>
+          </attList>
+          <remarks>
+            <p>Indicates the location of any form of external media. Currently we are using this markup to embed audio clips in the reading room. This element
+              requires that the @mimeType be marked, which for our 84000 texts will be "audio/mpeg" by default. Audio files can be uploaded to 84000-data/audio as long as they are small. If there's a need for longer recordings we'll have to consider a streaming solution. The @url, "/audio/..." will indicate the audio file to be fetched from the folder db/apps/84000-data/audio. <ref target="https://read.84000-translate.org/translation/toh729.html#UT22084-094-006-24">See an example in Toh 729</ref>. </p>
+          </remarks>
+        </elementSpec>
         <elementSpec ident="modPassage">
           <classes>
             <memberOf key="att.global"/>
@@ -3757,29 +3837,61 @@
                   by the forms in operations.</p>
               </remarks>
             </attDef>
+            <attDef ident="import" mode="add" usage="opt">
+              <remarks>
+                <p>With in the <gi>noteStmt</gi> allows us to track which file it was imported from and overwrite if we re-import.</p>
+              </remarks>
+            </attDef>
             <attDef ident="value" mode="add" usage="opt">
               <remarks>
                 <p>if <att>type</att> = 'update' then this is the value of the update. This is
                   automated by the forms in operations.</p>
               </remarks>
             </attDef>
-            <attDef ident="key" mode="add" usage="opt">
+           <!--<attDef ident="key" mode="add" usage="opt">
               <remarks>
                 <p>Used to specify when an endnote is intended to appear in one version of a text but not another.
                 For example a note maybe arranged to appear in Toh 676, but not in Toh 850, which is another version of the same text.
                 The keys are defined in the <gi>sourceDesc</gi> of every 84000 published text.</p>
               </remarks>
-            </attDef>
+            </attDef>-->
           </attList>
           <exemplum>
             <p>All of the <gi>note</gi>s in the front matter and body of text require the following
-              attributes: <att>xml:id</att>, <att>place</att> (with the value "end"), and
-                <att>index</att>.</p>
+              attributes: <att>xml:id</att> and <att>place</att> (with the value "end").</p>
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
               <l>When he said the letter <foreign xml:lang="Sa-Ltn">aṃ</foreign>, out came the
                 statement: “The emergence of what is efficacious (<foreign xml:lang="Sa-Ltn">amoghotpatti</foreign>).”<note place="end" index="3" xml:id="UT22084-046-001-3071">Translation is based on the Sanskrit.</note>
               </l>
             </egXML>
+          </exemplum>
+          <exemplum>
+            <p>Occasionally you may need to display a note differently for two duplicate texts with distinct Toh numbers as 
+              there may be content or differences that affect one but not the other. It is important that we keep the same index of 
+              milestones and notes the same in these parallel versions of duplicate texts. However we may differentiate the
+              content of the notes by using separate <gi>p</gi> elements with <att>key</att> attributes to distinguish the text contained in 
+              each file. See for example note 6 in Toh 725/1001: </p>
+            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+              <note place="end" xml:id="UT22084-094-006-12">
+                                <p key="toh729" tid="23">Note that there is a discrepancy among various databases for
+                cataloging the Toh 1001 version of this text within vol. 101 or 102 of the Degé Kangyur. See Toh 1001, <ref target="https://read.84000.co/translation/toh1001.html#end-note-UT22084-094-006-12">note 6</ref>, for
+                details.</p>
+                                <p key="toh1001" tid="24">This text, Toh 1001, and all those
+                  contained in this same volume (<foreign xml:lang="Bo-Ltn">gzungs, waM</foreign>), are listed as being located in volume
+                  101 of the Degé Kangyur by the Buddhist Digital Resource Center (BDRC). However, several other Kangyur databases—including
+                  the eKangyur that supplies the digital input version displayed by the 84000 Reading Room—list this work as being located
+                  in volume 102. This discrepancy is partly due to the fact that the two volumes of the <foreign xml:lang="Bo-Ltn">gzungs
+                    ’dus</foreign> section are an added supplement not mentioned in the original catalog, and also hinges on the fact that
+                  the compilers of the Tōhoku catalog placed another text—which forms a whole, very large volume—the <title xml:lang="Sa-Ltn">Vimala­prabhā­nāma­kālacakra­tantra­ṭīkā</title> (<title xml:lang="Bo-Ltn">dus ’khor ’grel bshad dri
+                    med ’od</title>, Toh 845), before the volume 100 of the Degé Kangyur, numbering it as vol. 100, although it is almost
+                  certainly intended to come right at the end of the Degé Kangyur texts as volume 102; indeed its final fifth chapter is
+                  often carried over and wrapped in the same volume as the Kangyur <foreign xml:lang="Bo-Ltn">dkar chags</foreign>
+                  (catalog). Please note this discrepancy when using the eKangyur viewer in this translation.</p>
+                            </note>
+            </egXML>
+            <p>
+                            <ref target="https://read.84000.co/translation/toh729.html#end-note-UT22084-094-006-12">[See how this page is rendered in the web display.]</ref>
+                        </p>          
           </exemplum>
           <exemplum>
             <p>There is one <gi>note</gi> element found at in the <gi>notesStmt</gi> within the
@@ -3810,7 +3922,8 @@
           </classes>
           <content>
                 <rng:zeroOrMore>
-                  <rng:element name="note">
+                  <rng:choice>
+                                <rng:element name="note">
                     <rng:optional>
                       <attribute xmlns="http://relaxng.org/ns/structure/1.0" name="type"/>
                     </rng:optional>
@@ -3826,8 +3939,12 @@
                     <rng:optional>
                       <attribute xmlns="http://relaxng.org/ns/structure/1.0" name="update"/>
                     </rng:optional>
+                    <rng:optional>
+                      <attribute xmlns="http://relaxng.org/ns/structure/1.0" name="import"/>
+                    </rng:optional>
                     <rng:text/>
                   </rng:element>
+                  </rng:choice>
                 </rng:zeroOrMore>
           </content>
           <exemplum>
@@ -3850,6 +3967,9 @@
           <attList>
             <attDef ident="tid" mode="add" usage="opt">
               <desc>Numbers paragraph and line groups in a particular text.</desc>
+            </attDef>
+            <attDef ident="key" mode="add" usage="opt">
+              <desc>Designates a paragraph to only be applicable and only be displayed in one text version according to the key defined in the <gi>sourceDesc</gi>.</desc>
             </attDef>
             <attDef ident="type" mode="add" usage="opt">
               <valList type="closed">
@@ -4506,14 +4626,66 @@
                       </rng:element>
                     </rng:optional>
                     <rng:zeroOrMore>
+                      <rng:choice>
                       <rng:element name="author">
-                        <attribute xmlns="http://relaxng.org/ns/structure/1.0" name="role">
+                        <rng:optional>
+                          <attribute xmlns="http://relaxng.org/ns/structure/1.0" name="role">
                           <rng:choice>
                             <rng:value>translatorTib</rng:value>
                           </rng:choice>
                         </attribute>
+                        </rng:optional>
+                        <rng:optional>
+                          <attribute xmlns="http://relaxng.org/ns/structure/1.0" name="key"/>                        
+                        </rng:optional>
+                        <rng:optional>
+                          <attribute xmlns="http://relaxng.org/ns/structure/1.0" name="ref"/>                        
+                        </rng:optional>
+                        <rng:optional>
+                          <attribute xmlns="http://relaxng.org/ns/structure/1.0" name="xml:lang">
+                            <rng:choice>
+                              <rng:value>Sa-Ltn</rng:value>
+                              <rng:value>Bo-Ltn</rng:value>
+                              <rng:value>Pi-Ltn</rng:value>
+                              <rng:value>Zh-Ltn</rng:value>
+                              <rng:value>bo</rng:value>
+                              <rng:value>en</rng:value>
+                              <rng:value>zh</rng:value>
+                            </rng:choice>
+                          </attribute>                        
+                        </rng:optional>
                         <rng:text/>
                       </rng:element>
+                        <rng:element name="editor">
+                          <rng:optional>
+                            <attribute xmlns="http://relaxng.org/ns/structure/1.0" name="role">
+                              <rng:choice>
+                                <rng:value>reviser</rng:value>
+                              </rng:choice>
+                            </attribute>
+                          </rng:optional>
+                          <rng:optional>
+                            <attribute xmlns="http://relaxng.org/ns/structure/1.0" name="ref"/>                        
+                          </rng:optional>
+                          <rng:optional>
+                            <attribute xmlns="http://relaxng.org/ns/structure/1.0" name="revision"/>                        
+                          </rng:optional>
+                          <rng:optional>
+                            <attribute xmlns="http://relaxng.org/ns/structure/1.0" name="xml:lang">
+                              <rng:choice>
+                                <rng:value>Sa-Ltn</rng:value>
+                                <rng:value>Bo-Ltn</rng:value>
+                                <rng:value>Pi-Ltn</rng:value>
+                                <rng:value>Zh-Ltn</rng:value>
+                                <rng:value>bo</rng:value>
+                                <rng:value>en</rng:value>
+                                <rng:value>zh</rng:value>
+                              </rng:choice>
+                            </attribute>                        
+                          </rng:optional>
+                          <rng:text/>
+                        </rng:element>
+                      </rng:choice>
                     </rng:zeroOrMore>
                     <!-- location -->
                     <rng:ref name="location">
@@ -4564,6 +4736,9 @@
                 state a previous published source in a <bibl>-->
                 <rng:ref name="p"/>
               </rng:choice>
+            <rng:optional>
+              <rng:ref name="link"/>
+            </rng:optional>
           </content>
           <exemplum>
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -4634,6 +4809,20 @@
             <attDef ident="tid" mode="add" usage="req">
               <desc>Numbers the table in the text along with and in the same manner as paragraph, <gi>p</gi>; 
                 and line group, <gi>l</gi>, elements.</desc>
+            </attDef>
+            <attDef ident="rend" mode="replace" usage="opt">
+              <desc>Modifies table's display in the HTML</desc>
+              <valList type="closed">
+                <valItem ident="firstcol-30pc">
+                  <desc>Renders the first column with 30% width</desc>
+                </valItem>
+                <valItem ident="firstcol-40pc">
+                  <desc>Renders the first column with 40% width</desc>
+                </valItem>
+                <valItem ident="firstcol-50pc">
+                  <desc>Renders the first column with 50% width</desc>
+                </valItem>
+              </valList>
             </attDef>
             <attDef ident="rows" mode="delete"/>
             <attDef ident="cols" mode="delete"/>
@@ -4723,9 +4912,14 @@
           </exemplum>-->
           <remarks>
             <p>Tables contains an optional heading and a series of <gi>row</gi>s. 
-              Currently there is no need to distinguish how the table should be rendered,
-              but as this becomes necessary, any rendition information should be supplied using the global <att>rend</att> 
-              attribute, at the table, row, or cell level as appropriate. Currently no <att>type</att> is
+              Generally the style of the table will be generated automatically by the parser and the 
+              width of each column and row will be determined by the longest string of text in that column or row;
+              however if the default table is rendered ineloquently in the HTML, as an option the <att>rend</att>
+              attribute may be used to define the width of the first column: @rend="firstcol-30pc" will set the width 
+              of the first column to 30% of the width of the full table, "firstcol-40pc" and "firstcol-50pc" will set 
+              it to 40% and 50% respectively. This was used, for example, in the <ref target="https://read.84000-translate.org/translation/toh307.html#appendix">appendix of Toh 307</ref> to 
+              display the tables there with a consistent column width in relation to each other.</p> 
+              <p>Currently no <att>type</att> is
             being used, but this may be added to the schema and documentation when it becomes necessary.
             Cells and rows should be assigned <att>role</att>="label" if they are considered to be the label or heading
             in which the subsequent <gi>cell</gi>s are considered to be data relevant to that label. If a <gi>row</gi>
@@ -4854,11 +5048,19 @@
               <desc>Identifies the term in terms of its relation to the glossary, or its function
                 within the glossary. </desc>
               <valList type="closed" mode="replace">
+                <!--IN TEXT BODY-->
                 <valItem ident="ignore"/>
+                <!--TYPES FOR TERMS IN GLOSSARY-->
                 <valItem ident="definition"/>
                 <valItem ident="alternative"/>
                 <valItem ident="semanticReconstruction"/>
                 <valItem ident="transliterationReconstruction"/>
+                  <!--TYPES FOR TERMS IN TEIHEADER/.../KEYWORDS-->
+                <valItem ident="person-interlocutor"/>
+                <valItem ident="person-main-speaker"/>
+                <valItem ident="person-topical"/>
+                <valItem ident="main-subject"/>
+                <valItem ident="secondary-subject"/>
               </valList>
             </attDef>
             <attDef ident="xml:id" mode="delete"/>
@@ -5002,6 +5204,17 @@
             <attDef ident="xml:id" mode="delete"/>
             <attDef ident="level" mode="delete"/>
             <attDef ident="xml:lang" mode="change" usage="req"/>
+            <attDef ident="group" mode="add">
+              <desc>Allows the grouping multiple titles together as equivalents in different languages, e.g. short title, long title, etc...</desc>
+                        </attDef>
+            <attDef ident="rend" mode="change">
+              <desc>@rend is used in our TEI specifically for the value "reconstruction," when a Sa-Ltn title is reconstructed from the Tibetan.</desc>
+              <valList type="closed" mode="change">
+                <valItem ident="reconstruction">
+                  <desc>A Sanskrit, "Sa-Ltn" title which is reconstructed from Tibetan.</desc>
+                </valItem>
+              </valList>
+            </attDef>
           </attList>
           <exemplum>
             <p>Below is an example from the <gi>titleStmt</gi> in the teiHeader in Toh 127:</p>
@@ -5164,19 +5377,19 @@
             <memberOf key="att.typed" mode="delete"/>
           </classes>
           <content>
-            <zeroOrMore xmlns="http://relaxng.org/ns/structure/1.0">
-              <choice>
-                <text/>
-                <ref name="lg"/>
-                <ref name="ref-canonical"/>
-                <ref name="ref-other"/>
-                <ref name="model.gLike"/>
-                <ref name="model.phrase"/>
-                <ref name="model.inter"/>
-                <ref name="model.lLike"/>
-                <ref name="model.global"/>
-              </choice>
-            </zeroOrMore>
+            <rng:zeroOrMore xmlns="http://relaxng.org/ns/structure/1.0">
+              <rng:choice>
+                <rng:text/>
+                <rng:ref name="lg"/>
+                <rng:ref name="ref-canonical"/>
+                <rng:ref name="ref-other"/>
+                <rng:ref name="model.gLike"/>
+                <rng:ref name="model.phrase"/>
+                <rng:ref name="model.inter"/>
+                <rng:ref name="model.lLike"/>
+                <rng:ref name="model.global"/>
+              </rng:choice>
+            </rng:zeroOrMore>
           </content>
           <attList>
             <attDef ident="tid" mode="add" usage="req">
@@ -5798,7 +6011,15 @@
                                 </egXML> Or if they forgot to add the second period before that "a" or "b," like
               "[F.100a]", then search for: <egXML xmlns="http://www.tei-c.org/ns/Examples">\[(F\.\d+)([ab])\]</egXML> And replace with: <egXML xmlns="http://www.tei-c.org/ns/Examples">
                                     <ref cRef="$1.$2" type="folio"/>
-                                </egXML> Regular expressions are very useful for such tasks, just be careful not to
+                                </egXML> 
+              Another situation you might see is double folios for duplicate Toh versions such as, "[(Toh 674) F.212.a] [(Toh 849) F.58.a]". Since you need to copy over the Toh # as the 
+              key, you can do that with a regular expression like this, search:
+              <egXML xmlns="http://www.tei-c.org/ns/Examples">\[\(Toh (\d+)\) (F\.\d+\.[ab])\]</egXML>
+              And replace:
+              <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                    <ref key="toh$1" cRef="$2" type="folio"/>
+                                </egXML>
+              Regular expressions are very useful for such tasks, just be careful not to
               search and replace any text or markup you did not intend to. For example, the
               introduction of a text might quote a folio reference number in the same format in
               which it was applied in the body of the text, say "[F.100.a]". We definitely don't
@@ -6244,6 +6465,25 @@
           </egXML>
           <p>Here in the web display both references will be visible but only the one without the
             "work" attribute will have a clickable link to the eKangyur.</p>
+          <p>Please add a note after the first folio instance that explains this issue to the reader. If the text includes
+            duplicates at different Toh numbers, then the note will need alternate messages, which are applied by <ref target="https://exist-db.84000-translate.org/exist/webdav/db/apps/84000-data/tei/schema/current/84000_ODD.html#index.xml-back.1_div.2_div.10">using the @key attribute</ref> in the <gi>p</gi> elements within the note. The template for the note is as follows:</p>
+          <egXML xmlns="http://www.tei-c.org/ns/Examples">
+            <note place="end">
+              <p key="[ENTER KEY HERE FOR VOL 88 TEXT]">Two sets of folio references have been included in this translation due to a discrepancy 
+                in volume 88 (<foreign xml:lang="Bo-Ltn">rgyud ’bum</foreign>, <foreign xml:lang="Bo-Ltn">na</foreign>) of the Degé Kangyur between the 1737 <foreign xml:lang="Bo-Ltn">par 
+                  phud</foreign> printings and the late (post <foreign xml:lang="Bo-Ltn">par phud</foreign>) printings. In the latter case, 
+                an extra work, <title xml:lang="Sa-Ltn">Bodhi­maṇḍasyālaṃkāra­lakṣa­dhāraṇī</title> (Toh 508, <title xml:lang="Bo-Ltn">byang chub 
+                  snying po’i rgyan ’bum gyi gzungs</title>), was added as the second text in the volume, 
+                thereby displacing the pagination of all the following texts in the same volume 
+                by 17 folios. Since the eKangyur follows the later printing, both references 
+                have been provided, with the highlighted one linking to the eKangyur viewer.</p>
+              <!--THE FOLLOWING ONLY NEEDED FOR TEXTS WITH MULTIPLE TOH VERSIONS OTHERWISE OMIT AND REMOVE THE <p> ELEMENT-->
+              <p key="[ENTER KEY HERE FOR OTHER TEXT]">In the Toh <fix>###</fix> version of the text there is a slight discrepancy in the folio numbering between the 1737 <foreign xml:lang="Bo-Ltn">par phud</foreign> printings and the late (post <foreign xml:lang="Bo-Ltn">par phud</foreign>) printings of the Degé Kangyur. Although the discrepancy is irrelevant here, further details concerning this may be found in <ref target="https://read.84000.co/translation/toh[ENTER THE TOH NUMBER OF THE VOL 88 VERSION].html#end-note-[ENTER THE XML:ID OF THIS NOTE]">note <fix>#</fix>
+                                </ref> of the Toh <fix>###</fix> version of this text.</p>
+              <!--REPLICATE PREVIOUS NOTE IF THERE ARE THREE OR MORE TOH VERSIONS-->
+            </note>
+          </egXML>
+          <p>That way the alternate text will display a shorter note that simply references the longer one (For example, see how the note is displayed differently in <ref target="https://read.84000-translate.org/translation/toh212.html#end-note-UT22084-062-012-80">Toh 212</ref> and <ref target="https://read.84000-translate.org/translation/toh520.html#end-note-UT22084-062-012-80">Toh 520</ref>).</p>
           <p>To confirm that the W22084 folio is correct please use the <ref target="https://translator-tools.84000-translate.org/84000-data/translator-tools/data/dege_scan_checker.zip">Dege-scan checking script</ref>. Note, that BDRC, AIBS, and even the Vienna site are not reliable in terms
           of distinguishing the "par phud" vs "post par phud" pagination in Vol. 88.</p>
           <p>
@@ -6265,22 +6505,35 @@
               </bibl>
             </sourceDesc>
           </egXML>
-          <p>Additionally, a note about this discrepancy should be placed somewhere in the introduction. Use the following 
-          note adjusted appropriately:</p>
+          <p>Additionally, a note about this discrepancy should be placed somewhere in the introduction. As before, if the text includes
+            duplicates at different Toh numbers, then the note will need to include alternate messages applied by <ref target="https://exist-db.84000-translate.org/exist/webdav/db/apps/84000-data/tei/schema/current/84000_ODD.html#index.xml-back.1_div.2_div.10">using the @key attribute</ref> in the <gi>p</gi> elements within the note. The template for this note is as follows:</p>
           <egXML xmlns="http://www.tei-c.org/ns/Examples">
-            <note place="end">This text, Toh XXX, and 
-                all those contained in this same volume (<foreign xml:lang="Bo-Ltn">XXXX, X</foreign>), are listed as being located in volume 
-                XXX of the Degé Kangyur by the Buddhist Digital Resource Center (BDRC). However, several other Kangyur databases—including the 
-                eKangyur that supplies the digital input version displayed by the 84000 Reading Room—list this work as being located in volume XXX. 
+            <note place="end">
+              <p key="[ENTER KEY HERE FOR VOL 100-103 TEXT]">This text, Toh <fix>###</fix>, and 
+                all those contained in this same volume (<foreign xml:lang="Bo-Ltn">
+                                    <fix>XXXX, X</fix>
+                                </foreign>), are listed as being located in volume 
+                <fix>###</fix> of the Degé Kangyur by the Buddhist Digital Resource Center (BDRC). However, several other Kangyur databases—including the 
+                eKangyur that supplies the digital input version displayed by the 84000 Reading Room—list this work as being located in volume <fix>###</fix>. 
                 This discrepancy is partly due to the fact that the two volumes of the <foreign xml:lang="Bo-Ltn">gzungs ’dus</foreign> section 
                 are an added supplement not mentioned in the original catalog, and also hinges on the fact that the compilers of the Tōhoku 
                 catalog placed another text—which forms a whole, very large volume—the 
-              <title xml:lang="Sa-Ltn">Vimalaprabhā­nāmakālacakra­tantraṭīkā</title> (<title xml:lang="Bo-Ltn">dus ’khor ’grel bshad dri med ’od</title>, 
+                <title xml:lang="Sa-Ltn">Vimala­prabhā­nāma­kālacakra­tantra­ṭīkā</title> (<title xml:lang="Bo-Ltn">dus ’khor ’grel bshad dri med ’od</title>, 
                 Toh 845), before the volume 100 of the Degé Kangyur, numbering it as vol. 100, although it is almost certainly intended to come 
                 right at the end of the Degé Kangyur texts as volume 102; indeed its final fifth chapter is often carried over and wrapped in 
                 the same volume as the Kangyur <foreign xml:lang="Bo-Ltn">dkar chags</foreign> (catalog). Please note this discrepancy 
-                when using the eKangyur viewer in this translation.</note>
+                  when using the eKangyur viewer in this translation.</p>
+              <!--THE FOLLOWING ONLY NEEDED FOR TEXTS WITH MULTIPLE TOH VERSIONS OTHERWISE OMIT AND REMOVE THE <p> ELEMENT-->
+              <p key="[ENTER KEY HERE FOR OTHER TEXT">Note that there is a discrepancy among various databases for
+                cataloging the Toh <fix>###</fix> version of this text within vol. <fix>###</fix> or <fix>###</fix> of the Degé Kangyur. See Toh <fix>####</fix>, <ref target="https://read.84000.co/translation/toh[ENTER THE TOH NUMBER OF THE VOL 88 VERSION].html#end-note-[ENTER THE XML:ID OF THIS NOTE]">note <fix>#</fix>
+                                </ref>, for
+                details.</p>
+              <!--REPLICATE PREVIOUS NOTE IF THERE ARE THREE OR MORE TOH VERSIONS-->
+            </note>
           </egXML>
+          <p>See an example how the note is displayed <ref target="https://read.84000-translate.org/translation/toh729.html#end-note-UT22084-094-006-12">Toh 729</ref> and <ref target="https://read.84000-translate.org/translation/toh1001.html#end-note-UT22084-094-006-12">Toh 1001</ref>
+                    </p>
+          <lb/>
           <p>Please place the note in the introduction wherever it makes sense, for instance when explaining
             where the text is found in the Kangyur, and so on. Adapt it to the volume number, e.g., "gzung ’dus e", or 
             as appropriate if the text appears in two volumes. If needed you can see how it was adapted and 
@@ -7104,6 +7357,27 @@
             </list>
           </egXML>
           <lb/>
+          <p>Note, that there is one additional style option, in which the attribute @rend="dots", "numbers", or "letters" may be used to create a 
+            list with an automatically generated prefix (bullet, number, or letter respectively) and a hanging indent. This can be done in combination with a @type="section" list or a @type="bullet" list.
+            Here is an example from <ref target="https://read.84000.co/translation/toh674.html#UT22084-091-072-45">Toh 674</ref>:</p>
+         <egXML xmlns="http://www.tei-c.org/ns/Examples">
+            <list type="bullet" rend="dots">
+              <item>
+                <p tid="35">The name <foreign xml:lang="Bo-Ltn">tshe dpag tu med pa</foreign>
+                  (Aparimitāyus), which occurs a number of times here in Toh 674, is given its longer form
+                  in Toh 675: <foreign xml:lang="Bo-Ltn">tshe dang ye shes dpag tu med pa</foreign>
+                  (Aparimitāyur­jñāna). </p>
+              </item>
+              <item>
+                <p tid="36">The name of Aparimitāyur­jñāna’s realm here in Toh 674 is <foreign xml:lang="Bo-Ltn">yon 
+                  tan dpag tu med pa sogs pa</foreign> (Aparimita­guṇa­saṃcaya, “Accumulation of Immeasurable 
+                  Qualities”), but in Toh 675 the first mention of it is just <foreign xml:lang="Bo-Ltn">yon tan dpag 
+                    tu med pa</foreign> (Aparimitaguṇa, “Immeasurable Qualities”). </p>
+              </item>
+              <!--...-->
+            </list>
+          </egXML>
+          <lb/>
           <p>Note that <gi>list</gi>s along with their <gi>item</gi>s can be generated from the template .docx passed through our XSLT script.
             In MS Word, lists are auto-generated either by clicking the list icons on the menu bar or by entering a "1" or "*" and on a new line 
             and hitting the space key. These lists will be rendered by the XSLT script with nested <gi>list</gi> and <gi>item</gi> tags. It can render
@@ -7111,12 +7385,16 @@
             determine that they are auto-generated when in MS Word the cursor will skip over the bullet point or numbered prefix of the list when passed
             across with the arrow keys. The first level <gi>list</gi> will be tagged type="bullet" by default, but second level lists and beyond will
             need the type attribute to be entered manually.</p>
+        
         </div>
         
         <div>
           <head>Cross References and Links</head>
           <div>
             <head>Internal Links Created with the <gi>ptr</gi> Element:</head>
+            <p>
+                            <ref target="https://docs.google.com/document/d/1MYuPmHhuuh15KsrWgqivajwDUj40PJFPN3PYxcXGNSs/edit?usp=sharing">See also the style guide for cross references in google doc.</ref>
+                        </p>
             <list>
               <item>
                 <label rend="bold">Milestones:</label>
@@ -7722,6 +8000,146 @@
             be applied and adjusted according to the need.</item>
           </list>
           </div>
+        <div>
+          <head>Keys: Using the @Key attribute to distinguish the content in duplicate texts with separate Toh numbers</head>
+          <p>Certain elements allow for the <att>key</att> attribute: <gi>ref</gi>, <gi>p</gi>, <gi>foreign</gi>, and <gi>mantra</gi> elements.
+          These can be used to allow for content to appear in one version of a text but not another. The key corresponds to the key of the specific
+          Toh version of the text, e.g. "toh999", which is defined for each Toh version in the <gi>sourceDesc</gi> However, it is important the we keep the numbered 
+          index for all notes and milestones the same throughout all duplicate versions of a text. Therefore the @key attribute is invalid for milestones
+          and notes.</p>
+          <p>
+                        <hi rend="bold">*** Be careful not to add a @key to a <gi>p</gi> that contains a child <gi>note</gi> within it, as that will cause the note to disappear in the
+          other versions and distrupt the index of the notes causing problems for the notes cache. </hi>
+                    </p>
+          <p>Here is an overview for how and when to use the <att>key</att> attributes:</p>
+          <list>
+            <item>
+                            <hi rend="bold">Inside</hi> <gi>ref</gi> <hi rend="bold">elements:</hi>
+            This is used to simply provide the alternate folio number, which will link to the proper page of the eKangyur in the reading room. This is very common. E.g.,
+            at the beginning of Toh 729:
+            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+              <p tid="15">
+                                    <ref cRef="F.222.a" type="folio" key="toh729" xml:id="UT22084-094-006-20"/>
+                <ref cRef="F.160.a" type="folio" key="toh1001" xml:id="UT22084-094-006-21"/> Homage to the Three Jewels!</p>
+            </egXML>
+              <p>Here F.222.a will display in Toh 729 and F.160.a will display in Toh 1001. <ref target="https://read.84000.co/translation/toh729.html#UT22084-094-006-19">[See in web display]</ref>
+                            </p>
+            </item>
+            <item>
+                            <hi rend="bold">Inside</hi> <gi>p</gi> <hi rend="bold">elements:</hi>
+            Principally this is used inside of <gi>note</gi> elements since we do not want to use them on the notes themselves to avoid altering the index.
+            Although we typically don't put <gi>p</gi> elements in <gi>note</gi>s, we can add them in this case in order display a different message depending 
+              on the Toh number of the text. 
+            The common example of this is for text that are cross listed with the dharani volumes 100-103, which have a discrepancy regarding the volume number found in the Degé, or
+            with the volume 88 texts which have 17 folio number shift between the par phud and post-par phud editions (see <ref target="https://exist-db.84000-translate.org/exist/webdav/db/apps/84000-data/tei/schema/current/84000_ODD.html#index.xml-back.1_div.1_div.6">Appendix A6</ref>). In such cases, a detailed explanation should be 
+              given in the relevant version, but a simpler placeholder version that simply references the full note can be used in the other versions (because in order to keep the 
+              index number consistent the other versions have to say <hi rend="italic">something</hi>). An example of this markup would look like this:
+              <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                <note place="end" xml:id="UT22084-999-999-999">
+                  <p key="toh9999A">The folio reference here has a particularity here is a long explanation that is only relevant in this version...</p>
+                  <p key="toh9999B">In the Toh 9999A version of this text the folio references have a particularity; see Toh 9999A, <ref target="https://read.84000.co/translation/toh9999A.html#end-note-UT22084-999-999-999">note 1</ref> for details.</p>
+                </note>
+              </egXML>
+              Here are is the template to be used for the note in Vol. 88 texts:
+              <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                <note place="end">
+                  <p key="[ENTER KEY HERE FOR VOL 88 TEXT]">Two sets of folio references have been included in this translation due to a discrepancy 
+                    in volume 88 (<foreign xml:lang="Bo-Ltn">rgyud ’bum</foreign>, <foreign xml:lang="Bo-Ltn">na</foreign>) of the Degé Kangyur between the 1737 <foreign xml:lang="Bo-Ltn">par 
+                      phud</foreign> printings and the late (post <foreign xml:lang="Bo-Ltn">par phud</foreign>) printings. In the latter case, 
+                    an extra work, <title xml:lang="Sa-Ltn">Bodhi­maṇḍasyālaṃkāra­lakṣa­dhāraṇī</title> (Toh 508, <title xml:lang="Bo-Ltn">byang chub 
+                      snying po’i rgyan ’bum gyi gzungs</title>), was added as the second text in the volume, 
+                    thereby displacing the pagination of all the following texts in the same volume 
+                    by 17 folios. Since the eKangyur follows the later printing, both references 
+                    have been provided, with the highlighted one linking to the eKangyur viewer.</p>
+                  <!--THE FOLLOWING ONLY NEEDED FOR TEXTS WITH MULTIPLE TOH VERSIONS OTHERWISE OMIT AND REMOVE THE <p> ELEMENT-->
+                  <p key="[ENTER KEY HERE FOR OTHER TEXT]">In the Toh <fix>###</fix> version of the text there is a slight discrepancy in the folio numbering between the 1737 <foreign xml:lang="Bo-Ltn">par phud</foreign> printings and the late (post <foreign xml:lang="Bo-Ltn">par phud</foreign>) printings of the Degé Kangyur. Although the discrepancy is irrelevant here, further details concerning this may be found in <ref target="https://read.84000.co/translation/toh[ENTER THE TOH NUMBER OF THE VOL 88 VERSION].html#end-note-[ENTER THE XML:ID OF THIS NOTE]">note <fix>#</fix>
+                                        </ref> of the Toh <fix>###</fix> version of this text.</p>
+                  <!--REPLICATE PREVIOUS NOTE IF THERE ARE THREE OR MORE TOH VERSIONS-->
+                </note>
+              </egXML>
+              <p>(See an example in the web display for <ref target="https://read.84000-translate.org/translation/toh212.html#end-note-UT22084-062-012-80">Toh 212</ref> and <ref target="https://read.84000-translate.org/translation/toh212.html#end-note-UT22084-062-012-80">Toh 520</ref>)</p>
+              Here are is the template to be used for the note in Vol. 100-103 texts:
+              <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                <note place="end">
+                  <p key="[ENTER KEY HERE FOR VOL 100-103 TEXT]">This text, Toh <fix>###</fix>, and 
+                    all those contained in this same volume (<foreign xml:lang="Bo-Ltn">
+                                            <fix>XXXX, X</fix>
+                                        </foreign>), are listed as being located in volume 
+                    <fix>###</fix> of the Degé Kangyur by the Buddhist Digital Resource Center (BDRC). However, several other Kangyur databases—including the 
+                    eKangyur that supplies the digital input version displayed by the 84000 Reading Room—list this work as being located in volume <fix>###</fix>. 
+                    This discrepancy is partly due to the fact that the two volumes of the <foreign xml:lang="Bo-Ltn">gzungs ’dus</foreign> section 
+                    are an added supplement not mentioned in the original catalog, and also hinges on the fact that the compilers of the Tōhoku 
+                    catalog placed another text—which forms a whole, very large volume—the 
+                    <title xml:lang="Sa-Ltn">Vimala­prabhā­nāma­kālacakra­tantra­ṭīkā</title> (<title xml:lang="Bo-Ltn">dus ’khor ’grel bshad dri med ’od</title>, 
+                    Toh 845), before the volume 100 of the Degé Kangyur, numbering it as vol. 100, although it is almost certainly intended to come 
+                    right at the end of the Degé Kangyur texts as volume 102; indeed its final fifth chapter is often carried over and wrapped in 
+                    the same volume as the Kangyur <foreign xml:lang="Bo-Ltn">dkar chags</foreign> (catalog). Please note this discrepancy 
+                    when using the eKangyur viewer in this translation.</p>
+                  <!--THE FOLLOWING ONLY NEEDED FOR TEXTS WITH MULTIPLE TOH VERSIONS OTHERWISE OMIT AND REMOVE THE <p> ELEMENT-->
+                  <p key="[ENTER KEY HERE FOR OTHER TEXT">Note that there is a discrepancy among various databases for
+                    cataloging the Toh <fix>###</fix> version of this text within vol. <fix>###</fix> or <fix>###</fix> of the Degé Kangyur. See Toh <fix>####</fix>, <ref target="https://read.84000.co/translation/toh[ENTER THE TOH NUMBER OF THE VOL 88 VERSION].html#end-note-[ENTER THE XML:ID OF THIS NOTE]">note <fix>#</fix>
+                                        </ref>, for
+                    details.</p>
+                  <!--REPLICATE PREVIOUS NOTE IF THERE ARE THREE OR MORE TOH VERSIONS-->
+                </note>
+              </egXML>              
+              <p>(See an example in the web display for <ref target="https://read.84000-translate.org/translation/toh729.html#end-note-UT22084-094-006-12">Toh 729</ref> and <ref target="https://read.84000-translate.org/translation/toh1001.html#end-note-UT22084-094-006-12">Toh 1001</ref>)</p>
+              <lb/>
+              <p>In principle this could be used in regular <gi>p</gi> paragraph outside of the notes as well. Although there has yet to be an example of doing this.
+              Just be sure that if this is ever needed, make sure there aren't any <gi>note</gi>s inside the <gi>p</gi> element that has a key.</p>
+            </item>
+            <item>
+                            <hi rend="bold">Inside</hi> <gi>foreign</gi> <hi rend="bold">or</hi> <gi>mantra</gi> <hi rend="bold">elements:</hi>
+            <p>Typically this is to show alternate versions of dharanis or mantras which often have small alterations in the formulas of the Sanskrit 
+            transliteration. Usually these discrepancies are just stated in notes, but in some cases it may be desirable to display the text differently 
+            for each version. We have yet to use this technique, but it should be valid in the schema, and if this mode is used in the future an 
+            example will be documented here. </p>
+            </item>
+          </list>
+        </div>
+        <div>
+          <head>Chinese and Scripts</head>
+          <p>Chinese scripts need to always be tagged with a @xml:lang="zh" if they are in Chinese script, e.g. "漢語拼音", and be tagged @xml:lang="Zh-Ltn" if they
+            are in pinyin or other Roman transliteration e.g. "Hànyǔ Pīnyīn". They may be tagged with the @xml:lang attribute either with a <gi>foreign</gi> or <gi>title</gi>,
+          or a <gi>div</gi> element in the case of a Chinese Summary (Chinese summaries should be placed immediately after the English summary in its own separate <gi>div</gi> with an @xml:lang="zh" attribute. It will not be displayed in the English Reading Room but will on the Chinese site). If they are not tagged like this they will not be displayed correctly in a consistent font. The same goes for any Japanese text, 
+            which should be tagged "ja" or "Ja-Ltn" in the same manner. There is one exception where we don't need to worry about the tags and that is the Chinese names often found in the <gi>sponsor</gi> element in the TEI header, these aren't
+            displayed anywhere so they do not need the @xml:lang attribute.</p>
+            <p>Most of 
+            us not knowing Chinese and Japanese will sometimes need to guess according to the context whether the script is "zh" or "ja", however, this is not too important
+            because the parser will display Chinese, Japanese, and Korean in the same CJK-pan. So it's not imperative that they are tagged 100% correctly as long as each instance
+            of CJK unicode is tagged with <hi rend="bold">one of the CJK attributes</hi>: either "zh" "ja" or "ko". </p>
+          <p>The following search codes will allow you to easily locate miss-tagged or missing tags:</p>
+          <list>
+            <item>An XPath Query that will locate any CJK unicode character that does not have an ancestor element with @xml:lang="zh" or "ja":
+              <code>//text()[matches(., '&amp;#x4E00;-&amp;#x9FFF;&amp;#x3040;-&amp;#x309F;&amp;#x30A0;-&amp;#x30FF;&amp;#xAC00;-&amp;#xD7AF;')][not(ancestor::*[@xml:lang=('zh') or @xml:lang =('ja') or @xml:lang=('ko')])]</code>
+            </item>
+            <item>An XPath will locate any Roman letter "a-z" or letter "A-Z" that is mislabelled "zh" or "ja":
+              <code>//text()[matches(., '[a-zA-z]')][ancestor::*[@xml:lang = ('zh') or @xml:lang = ('ja')]]</code>
+            </item>
+            <item>Using the regular CTRL-F search in Oxygen you can also locate Chinese script with the regex pattern:
+              <code>\p{script=Han}+</code>
+                        </item>
+            <item>And any Japanese script with:
+              <code>[\p{script=Hiragana}\p{script=Katakana}]+</code>
+                        </item>
+            <item>Korean:
+              <code>\p{script=Hangul}+</code>
+                        </item>
+          </list>
+          <p>
+                        <ref target="http://www.regular-expressions.info/unicode.html#prop">(See more about searching various unicode scripts using regex patterns here)</ref> </p>
+          <p>Keep an eye out for Chinese in the acknowledgements section and the bibliography where titles and names tend to be missed. Note that when a title is given in 
+            both Chinese script and pinyin, then two <gi>title</gi> tags are needed to separate the language codes:
+            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                            <title xml:lang="Ja-Ltn">Shirukurōdo to
+              kindai nihon no kaikō: sai’iki kodai shiryō to nihon kindai bukkyō</title>
+              <title xml:lang="ja">シルクロードと近代日本の邂逅―西域古代資料と日本近代仏教</title>
+                        </egXML>
+            
+            It's not indispensable to check
+          for these every time since we will occasionally run these searches on the full TEI translation folder, but it might be a good idea to run the scripts on text that
+          especially heavy in Chinese references in the notes and bibliography. </p>
+        </div>
       </div>
       <div>
         <!--Appendix C-->
@@ -7757,7 +8175,10 @@
         <p>In the glossary, <gi>gloss</gi> nodes can be given the attributes mode="match|marked."
           Match mode will highlight any matches in the text except where they have been marked up
           with <tag>term type="ignore"</tag>, e.g.: <egXML xmlns="http://www.tei-c.org/ns/Examples">parse this <term type="ignore">but not this</term>
-          </egXML> Marked mode will only match terms that have been marked up with <gi>term</gi>
+          </egXML> </p>
+          <p>*Note that a term in the definition field of a glossary entry linking to itself is ignored automatically.</p>
+        <p>    
+          Marked mode will only match terms that have been marked up with <gi>term</gi>
           e.g. <egXML xmlns="http://www.tei-c.org/ns/Examples">Ignore this <term>but match
               this</term>.</egXML>
         </p>
@@ -7975,9 +8396,7 @@
         ODD editor (Celso) if the schema needs to be updated.</p>
         <label rend="bold">Some Final Tips for Polishing the Glossary:</label>
         <list>
-          <item>Sometimes a term will appear in its own definition. In this case it looks a bit
-            silly for the term to link to itself, so it would be best to mark it with <tag>term
-              type="ignore"</tag>.</item>
+          <item>Sometimes a term will appear in its own definition. By default the parser will block these from linking to themselves.</item>
           <item>If there are references in the definition to a term, such as "see also...", they can
             be placed into a second <tag>term type="definition"</tag> line, to create some visual
             lightness in the final webdisplay.</item>
@@ -8331,6 +8750,10 @@
       </div>
       <div>
         <head>Guidelines for Using an XSLT Conversion Script</head>
+        <p>This is the method that bypasses the process of running the .docx through Project Management.</p>
+        <p>If you need to convert a word .docx created from our template into TEI you will need to first run the file through the <ref target="http://oxgarage.tei-c.org/">oXgarage website</ref> or <ref target="https://oxgarage2.tei-c.org/#">it's mirror site</ref>. Convert the file to a
+          "TEI P5 XML Document" and then run our own .xslt script on the document.</p>
+        
         <p>Here are instructions for using an XSLT script in oXygen:</p>
         <list>
           <item>A. Click on “Configure Transformation Scenarios” (it should be a wrench with a red
@@ -8341,9 +8764,8 @@
           <item>D. Select the appropriate .xsl document from the database. For example the script
             for transforming a .docx created from the 84000 template can be found in: 84000
             Collaboration &gt; apps &gt; import-84000-data &gt; xsl &gt; oxGto84000.xsl.</item>
-          <item>E. For the “Transformer:” confirm that “Saxon-PE 9.8.0.12” or the latest version of "Saxon-"  from the drop down menu.</item>
-          <item>F. Click on the “Output” tab and check the box that says “Open in Editor.”</item>
-          <item>G. Click okay, and then select “apply associated” (the transformation scenario you
+          <item>E. Click on the “Output” tab and check the box that says “Open in Editor.”</item>
+          <item>F. Click okay, and then select “apply associated” (the transformation scenario you
             just made should be ticked under “projects”).</item>
         </list>
       </div>
