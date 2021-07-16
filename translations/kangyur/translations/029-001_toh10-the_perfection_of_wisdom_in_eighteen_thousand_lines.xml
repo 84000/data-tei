@@ -1,0 +1,666 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schema/current/translation.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="mainTitle" xml:lang="Bo-Ltn">sher phyin khri brgyad stong pa/ \(khri
+                    brgyad/\)</title>
+                <title type="mainTitle" xml:lang="Sa-Ltn">Aṣṭādaśasāhasrikāprajñāpāramitā</title>
+                <title type="mainTitle" xml:lang="bo">The Perfection of Wisdom in Eighteen Thousand
+                    Lines</title>
+                <title type="longTitle" xml:lang="bo">’phags pa shes rab kyi pha rol tu phyin pa
+                    khri brgyad stong pa zhes bya ba theg pa chen po’i mdo</title>
+                <title type="longTitle" xml:lang="en">Āryāṣṭādaśasāhasrikāprajñāpāramitānāmamahāyānasūtra</title>
+                <title type="otherTitle" xml:lang="zh">般若波羅蜜多一萬八千頌 · (大正藏：大般若波羅蜜多經第三會)</title>
+                <author role="translatorMain" ref="contributors.xml#team-60"/>
+                <author role="translatorEng" ref="contributors.xml#person-211">Dr. Gareth
+                    Sparham</author>
+                <editor role="projectEditor" ref="contributors.xml#person-289">Nathaniel
+                    Rich</editor>
+                <consultant role="projectManager" ref="contributors.xml#person-211">Dr. Gareth
+                    Sparham</consultant>
+                <editor role="copyEditor" ref="contributors.xml#person-249">Konchog Norbu</editor>
+                <sponsor ref="sponsors.xml#sponsor-25">Matthew Yizhen Kong, Steven Ye Kong and
+                    family</sponsor>
+                <sponsor ref="sponsors.xml#sponsor-25">An Zhang, Hannah Zhang, Lucas Zhang, Aiden
+                    Zhang, Jinglan Chi, Jingcan Chi, Jinghui Chi and family, Hong Zhang and
+                    family</sponsor>
+                <sponsor ref="sponsors.xml#sponsor-182">Mao Guirong, Zhang Yikun, Chi
+                    Linlin</sponsor>
+                <sponsor ref="sponsors.xml#sponsor-197">Joseph Tse, Patricia Tse and
+                    Family</sponsor>
+            </titleStmt>
+            <editionStmt>
+                <edition>v 0.1.12 <date>2019</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt status="2.a">
+                <publisher>
+                    <name>84000: Translating the Words of the Buddha</name> is a global non-profit
+                    initiative to translate all the Buddha’s words into modern languages, and to
+                    make them available to everyone. </publisher>
+                <availability>
+                    <licence>
+                        <graphic url="http://i.creativecommons.org/l/by-nc-nd/2.0/88x31.png"/>
+                        <p>This work is provided under the protection of a Creative Commons CC
+                            BY-NC-ND (Attribution - Non-commercial - No-derivatives) 3.0 copyright.
+                            It may be copied or printed for fair use, but only with full
+                            attribution, and not for commercial advantage or personal compensation.
+                            For full details, see the Creative Commons license.</p>
+                    </licence>
+                </availability>
+                <idno xml:id="UT22084-029-001"/>
+                <note>An early mistake in the assigning of UT numbers within the 84000 project means
+                    that these ids diverge slightly from the standard logic.</note>
+                <date>2021-07-16</date>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl key="toh10" type="text">
+                    <ref>Toh 10</ref>
+                    <biblScope>Degé Kangyur, vol. 29 (shes phyin, ka), folios 1.a–300.a; vol. 30
+                        (shes phyin, kha), folios 1.a–304.a; vol. 31 (shes phyin, ga), folios
+                        1.a–206.a.</biblScope>
+                    <location work="UT4CZ5369" count-pages="1611">
+                        <volume number="29" start-page="2" end-page="599"/>
+                        <volume number="30" start-page="2" end-page="607"/>
+                        <volume number="31" start-page="2" end-page="412"/>
+                    </location>
+                    <idno parent-id="O1JC114941JC14665" work="http://read.84000.co/sections"/>
+                    <idno source-id="O1JC114941JC11523" work="W22084"/>
+                </bibl>
+            </sourceDesc>
+            <notesStmt>
+                <note type="lastUpdated" date-time="2021-07-16T22:54:46.663Z" user="admin">16/07/2021 22:54:46</note>
+                <note type="updated" update="text-version" value="v 0.1.0" date-time="2019-11-20T08:51:58.292Z" user="andreas">v 0.1.0</note>
+                <note type="updated" update="translation-status" value="2.f" date-time="2019-12-12T18:49:53.683Z" user="john">2.f</note>
+                <note type="updated" update="text-version" value="v 0.1.1" date-time="2019-12-20T12:56:48.575Z" user="admin">Automated version
+                    increment</note>
+                <note type="updated" update="translation-status" value="2.g" date-time="2020-01-27T13:06:18.593Z" user="mike">2.g</note>
+                <note type="updated" update="translation-status" value="2.h" date-time="2020-02-24T08:13:40.798Z" user="andreas">2.h</note>
+                <note type="updated" update="translation-status" value="2.g" date-time="2020-03-20T08:34:56.675Z" user="line-tofte">2.g</note>
+                <note type="updated" update="translation-status" value="2.e" date-time="2020-07-06T07:41:16.554Z" user="line-tofte">2.e</note>
+                <note type="updated" update="text-version" value="0.1.2" date-time="2020-10-13T12:19:22.704Z" user="amy">Auto (update-sponsorship)</note>
+                <note type="updated" update="text-version" value="0.1.3" date-time="2020-12-31T08:28:58.951Z" user="amy">Auto (update-sponsorship)</note>
+
+                <note type="updated" update="translation-status" value="2.d" date-time="2021-02-18T07:48:47.144Z" user="line-tofte">2.d</note>
+                <note type="updated" update="text-version" value="0.1.4" date-time="2021-02-18T07:48:47.144Z" user="line-tofte">Auto
+                    (update-publication-status)</note>
+                <note type="updated" update="text-version" value="0.1.5" date-time="2021-02-24T07:45:10.042Z" user="line-tofte">Auto
+                    (update-contributors)</note>
+                <note type="updated" update="text-version" value="0.1.6" date-time="2021-03-16T16:49:48.298Z" user="amy">Auto (update-sponsorship)</note>
+                <note type="updated" update="text-version" value="0.1.7" date-time="2021-03-17T02:14:23.075Z" user="amy">Auto (update-sponsorship)</note>
+                <note type="updated" update="text-version" value="0.1.8" date-time="2021-03-17T02:14:47.847Z" user="amy">Auto (update-sponsorship)</note>
+                <note type="updated" update="translation-status" value="2.c" date-time="2021-03-22T14:29:53.569Z" user="line-tofte">2.c</note>
+                <note type="updated" update="text-version" value="0.1.9" date-time="2021-03-22T14:29:53.569Z" user="line-tofte">Auto
+                    (update-publication-status)</note>
+                <note type="updated" update="translation-status" value="2.d" date-time="2021-03-29T10:36:11.334Z" user="line-tofte">2.d</note>
+                <note type="updated" update="text-version" value="0.1.10" date-time="2021-03-29T10:36:11.334Z" user="line-tofte">Auto
+                    (update-publication-status)</note>
+                <note type="updated" update="text-version" value="0.1.11" date-time="2021-04-22T16:47:33.266Z" user="amy">Auto (update-sponsorship)</note>
+            
+    <note type="updated" update="text-version" value="0.1.12" date-time="2021-07-16T22:54:43.454Z" user="celso">Sample section for crossref test, status"2.a" is false, actual status="2.d"</note>
+            </notesStmt>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <div type="summary">
+                <head type="summary" tid="1">Summary</head>
+                <milestone unit="chunk" xml:id="UT22084-029-001-1"/>
+                <p tid="2">[Summary to be entered here]</p>
+            </div>
+            <div type="acknowledgment">
+                <head type="acknowledgment" tid="3">Acknowledgements</head>
+                <milestone unit="chunk" xml:id="UT22084-029-001-2"/>
+                <p tid="4">[Acknowledgements to be added here.]</p>
+            </div>
+            <div type="introduction">
+                <head type="introduction" tid="5">Introduction</head>
+                <div type="section" xml:id="UT22084-029-001-introduction-1">
+                    <head type="section" tid="6">Main Section</head>
+                    <milestone unit="chunk" xml:id="UT22084-029-001-3"/>
+                    <p tid="7">This is a test sample of the first chapter of the 18 Thousand Line
+                        Perfection of Wisdom Sūtra applied on 7/16/2021 for the purposes of testing
+                        its cross-referencing with Toh 3808. All off the sections including the
+                        first chapter will be replaced by the later proofed version. Please
+                        disregard any current grammatical issues in the translation. </p>
+                </div>
+            </div>
+        </front>
+        <body>
+            <div type="translation">
+                <head type="translation" tid="8"> The Translation </head>
+                <head type="titleHon" tid="9">The Noble Mahāyāna Sūtra</head>
+                <head type="titleMain" tid="10">The Perfection of Wisdom in Eighteen Thousand
+                    Lines</head>
+                <div type="chapter" xml:id="UT22084-029-001-chapter-1">
+                    <head type="chapter" tid="11">Chapter 1: Introduction</head>
+                    <milestone unit="chunk" xml:id="UT22084-029-001-4"/>
+                    <p tid="12">[B1]</p>
+                    <milestone unit="chunk" xml:id="UT22084-029-001-5"/>
+                    <p tid="13">We prostrate to all the buddhas and bodhisattvas.</p>
+                    <milestone unit="chunk" xml:id="UT22084-029-001-6"/>
+                    <p tid="14">Thus did I hear at one time. The Lord dwelt at Rājagṛha on
+                        Gṛdhrākūṭa Hill together with a great community of monks, numbering<note place="end" xml:id="UT22084-029-001-7"> Here and below “numbering”
+                            renders <foreign xml:lang="Sa-Ltn">mātra</foreign> (from root <foreign xml:lang="Sa-Ltn">mā</foreign> “to measure”). D
+                                <foreign xml:lang="Bo-Ltn">tsam</foreign> means “just” (in a limiting sense).</note> five
+                        thousand monks, all worthy ones with the exception of one single
+                        person––that is, venerable Ānanda––with outflows dried up, without
+                        afflictions, fully controlled, with their minds well freed and their wisdom
+                        well freed, thoroughbreds, great bull elephants, with their work done, their
+                        task accomplished, with their burden laid down, with their own goal
+                        accomplished, with the fetters that bound them to existence broken, with
+                        their hearts well freed by perfect understanding, in perfect<note place="end" xml:id="UT22084-029-001-8"> “Perfect” is the MDPL rendering
+                            of <foreign xml:lang="Sa-Ltn" type="term">paramapārami</foreign>
+                                (<foreign xml:lang="Bo-Ltn" type="term">dam pa’i pha rol tu son
+                                pa</foreign>). Seton (Appendix I, 36) says Ratnākaraśānti dissolves
+                            the compound more fully to mean “because they have gone and are in a
+                            state that has gone to the limit of mental mastery.”</note> control of
+                        their whole mind; [F.2.a] with nuns numbering five hundred––Yaśodharā,
+                        Mahāprajāpatī, and so on—and with a great many laymen and laywomen, all of
+                        them with a vision of the Dharma; and with an unbounded, infinite number of
+                        bodhisattva great beings, all of whom had acquired the dhāraṇīs, were
+                        dwellers in emptiness, their range the signless, and who had not fashioned
+                        any wishes, had acquired forbearance for the sameness of all dharmas, had
+                        acquired the dhāraṇī of nonattachment, with imperishable clairvoyant
+                        knowledges, and with speech worth listening to; who were not hypocrites, not
+                        fawners, with thoughts that had left behind all desire for reputation and
+                        gain; who were Dharma teachers without thought of compensation, with perfect
+                        forbearance for the deep dharmas, who had obtained the fearlessnesses, and
+                        who had transcended all the works of Māra, who had cut the continuum of
+                        karmic obscuration, were skillful in expounding the analysis of
+                        investigations into phenomena, with the prayers they made during
+                        incalculable eons really fully answered, with smiling countenances, forward
+                        in addressing others, without a frown on their faces, skillful in
+                        communicating with others in chanted verse, without feelings of depression,
+                        without losing the confidence giving a readiness to speak, and endowed with
+                        fearlessness when surpassing endless assemblies; who were skilled in going
+                        forth during an endless one hundred million eons, understanding phenomena to
+                        be like an illusion, a mirage, a reflection of the moon in water, a dream,
+                        an echo, an apparition, a reflection in the mirror, and a magical creation;
+                        who were skillful in comprehending the thoughts, conduct, and beliefs of all
+                        beings and subtle knowledge, [F.2.b] with unobstructed thoughts, and endowed
+                        with extreme patience; who were skilled in causing entry into reality just
+                        as it is, having appropriated all the endless arrays of the buddhafields
+                        through prayer and setting out, with the meditative stabilization
+                        recollecting buddhas in an infinite number of world systems constantly and
+                        always activated; who were skillful in soliciting innumerable buddhas; who
+                        were skillful in eliminating the various views, propensities, obsessions,
+                        and defilements; and who were skillful in accomplishing a hundred thousand
+                        feats through meditative concentration. That is, he was together with the
+                        bodhisattva great beings Bhadrapāla, Ratnākara, Ratnagarbha,<note place="end" xml:id="UT22084-029-001-9"> H: <foreign xml:lang="Bo-Ltn">rin chen snying po</foreign>.</note> Ratnadatta, Susārthavaha,
+                        Varuṇadeva, Guhyagupta, Indradatta, Uttaramatin, Viśeṣamatin,
+                        Vardhamānamatin, Anantamatin, Amoghadarśin, Anāvaraṇamatin, Susaṃprasthita,
+                        Suvikrāntamin, Anantavīrya, Nityodyukta, Nityaprayukta, Anikṣiptadura,
+                        Sūryagarbha, Anupamamatin, and Avalokiteśvara, Mahāsthāmaprāpta, Mañjuśrī
+                        Kumārabhūta, Mārabalapramardin, Vajramatin, Ratnamudrāhasta,
+                        Nityotkṣiptahasta, Mahākaruṇācinta, Mahāvyūha, Vyūharāja, and Merukūṭa, the
+                        bodhisattva great being Maitreya, and many hundreds of thousands of one
+                        hundred million billion other bodhisattvas as well. </p>
+                    <milestone unit="chunk" xml:id="UT22084-029-001-10"/>
+                    <p tid="15"> Thereupon the Lord, having himself arranged the lion throne, sat
+                        down with his legs crossed, holding his body erect, intent on fixing
+                        mindfulness, and entered into the meditative stabilization, [F.3.a]
+                            <distinct>samādhirāja</distinct> by name, in which all meditative
+                        stabilizations are included, encompassed, and come to meet.</p>
+                    <milestone unit="chunk" xml:id="UT22084-029-001-11"/>
+                    <p tid="16"> Then the Lord, mindful and self-possessed, emerged from this
+                        meditative stabilization and surveyed with his divine eye all world systems.
+                        Having done so, he beamed with his whole body. From the wheels with a
+                        thousand spokes on the soles of his feet issued sixty sixty-one hundred
+                        thousand one hundred million billion rays, from the ten toes of his feet
+                        issued sixty sixty-one hundred thousand one hundred million billion rays,
+                        and similarly from his ankles, legs, knees, thighs, hips, and navel, from
+                        his two sides, and from the <foreign xml:lang="Sa-Ltn" type="term">śrivatsa</foreign> mark of a great person in his heart issued sixty
+                        sixty-one hundred thousand one hundred million billion rays. From his ten
+                        fingers issued sixty sixty-one hundred thousand one hundred million billion
+                        rays. Similarly, from his two forearms, two shoulders, neck, four eyeteeth,
+                        all forty teeth, two nostrils, ears and eyes, the soft, long, fine, coiled
+                        white hair between his eyebrows, the naturally formed turban of hair on the
+                        top of his head, and from the opening of his mouth issued sixty sixty-one
+                        hundred thousand one hundred million billion rays. All these sixty sixty-one
+                        hundred thousand one hundred million billion rays pervaded the world systems
+                        in their entirety with a great illumination and lit them up. This great
+                        illumination from the light rays spread out through as many world systems in
+                        the eastern direction as there are sand particles in the Gaṅgā River.
+                        Similarly, this great illumination from the light rays spread out through
+                        each of as many world systems as there are sand particles in the Gaṅgā River
+                        to the south, west, and north, in the intermediate directions to the
+                        northeast, southeast, southwest, northwest, below and above, and lit them
+                        up. And all the beings [F.3.b] that saw that light, that were touched by the
+                        illumination of those light rays, became irreversible from unsurpassed,
+                        perfect, complete awakening. </p>
+                    <milestone unit="chunk" xml:id="UT22084-029-001-12"/>
+                    <p tid="17"> Thereupon all the Lord’s hair pores became radiant. From each of
+                        the hair pores sixty sixty-one hundred thousand one hundred million billion
+                        rays issued forth, and these rays pervaded all the world systems in the
+                        great billionfold world system with a great illumination. This great
+                        illumination from the light rays spread out through as many world systems as
+                        there are sand particles in the Gaṅgā River to the east, pervading them with
+                        a great illumination and lighting them up. Similarly, this illumination from
+                        the light rays spread out through each of as many world systems as there are
+                        sand particles in the Gaṅgā River to the south, west, and north, in the
+                        intermediate directions to the northeast, southeast, southwest, and
+                        northwest, below and above, and lit them up. And all the beings that saw
+                        that light, that were touched by the illumination of those light rays,
+                        became irreversible from unsurpassed, perfect, complete awakening. </p>
+                    <milestone unit="chunk" xml:id="UT22084-029-001-13"/>
+                    <p tid="18"> Then the Lord, with the light from the natural splendor of a
+                        tathāgata, pervaded the great billionfold world system with a great
+                        illumination. He pervaded as many world systems as there are sand particles
+                        in the Gaṅgā River to the east with this great illumination, and similarly,
+                        pervaded each of as many world systems as there are sand particles in the
+                        Gaṅgā River to the south, west, and north, in the intermediate directions to
+                        the northeast, southeast, southwest, and northwest, below and above, with
+                        this great illumination. And all the beings that saw that light, that were
+                        touched by the illumination of those light rays, became irreversible from
+                        unsurpassed, perfect, complete awakening. </p>
+                    <milestone unit="chunk" xml:id="UT22084-029-001-14"/>
+                    <p tid="19"> Thereupon the Lord extended his tongue and with it covered the
+                        great billionfold world system in its entirety. [F.4.a] Having pervaded the
+                        great billionfold world system with his tongue, he smiled, and from his
+                        tongue again many hundred thousand one hundred million billion variously
+                        colored rays issued forth, and on all the light rays stood lotuses made of
+                        manifold precious stones, shining like gold, each with a thousand petals,
+                        variegated, beautiful, captivating, brilliant, fragrant, and soft, all
+                        completely like the kācalindika,<note place="end" xml:id="UT22084-029-001-15"> MW, s.v. <foreign xml:lang="Sa-Ltn" type="term">kācalindi</foreign> says <foreign xml:lang="Sa-Ltn" type="term">kācalindi</foreign> is a different spelling of <foreign xml:lang="Sa-Ltn" type="term">kācaciñcika</foreign>, the <foreign xml:lang="la" type="term">Arbus precatorius</foreign>,
+                            an herbaceous flowery plant with deadly poisonous bright red seeds
+                            prized as beads for use in rosaries and jewelry. Each has almost exactly
+                            the same weight, so they were used in weighing gold.</note> pleasing to
+                        the touch. On the lotuses, furthermore, were seated many embodied
+                        tathāgatas, teaching Dharma—this very teaching of Dharma associated with the
+                        perfection of wisdom. They went to as many world systems as there are sand
+                        particles in the Gaṅgā River to the east and taught Dharma—this very
+                        teaching of Dharma associated with the perfection of wisdom—and similarly,
+                        to each of as many world systems as there are sand particles in the Gaṅgā
+                        River to the south, west, and north, in the intermediate directions to the
+                        northeast, southeast, southwest, and northwest, below and above, and
+                        demonstrated Dharma—this very teaching of Dharma associated with the six
+                        perfections. And all the beings who listened to that Dharma became
+                        irreversible from unsurpassed, perfect, complete awakening. </p>
+                    <milestone unit="chunk" xml:id="UT22084-029-001-16"/>
+                    <p tid="20"> Then the Lord, seated on that very lion throne, entered into the
+                        meditative stabilization called <distinct>siṃhavikrīḍita</distinct>. He
+                        enacted such a performance with his miraculous power that his performance of
+                        miraculous power shook the great billionfold world system in six ways: it
+                        shook, shook greatly, and shook violently; it quaked, quaked greatly, and
+                        quaked violently; it stirred, stirred greatly, and stirred violently; it
+                        became disturbed, greatly disturbed, and violently disturbed; [F.4.b] it
+                        roared, roared greatly, and roared violently; and it resounded, resounded
+                        greatly, and resounded violently. At the edges it rose up and it sank down
+                        in the middle; in the middle it rose up and at the edges sank down. It
+                        became soft and oily, producing benefit and ease for all beings. Thereupon,
+                        at that moment, minute, and second, in the great billionfold world system
+                        the continuums of the hells and the animal world, and the world of Yama,
+                        were all cut. And all the places that preclude a perfect human birth
+                        disappeared. All those beings were reborn among humans, and also among the
+                        Cāturmahārājika, Trāyastriṃśa, Yāma, Tuṣita, Nirmāṇarati, and
+                        Paranirmitavaśavartin gods.</p>
+                    <milestone unit="chunk" xml:id="UT22084-029-001-17"/>
+                    <p tid="21"> Thereupon, in their great joy and rejoicing these humans and gods
+                        recalled their former lives, and having recalled them approached the Lord,
+                        bowed to his feet with their heads, cupped their palms together in a gesture
+                        of prayerful supplication, and bowed forward. And so too in each of the ten
+                        directions, in as many world systems as there are sand particles in the
+                        Gaṅgā River to the east, to the south, west, and north, in the intermediate
+                        directions, and below and above, the continuums of the hells, animal worlds,
+                        and the worlds of Yama in as many world systems as there are sand particles
+                        in the Gaṅgā River were all cut too. And all the places precluding a perfect
+                        birth disappeared. All those beings were reborn among humans and the gods.
+                        Thereupon these humans and gods recalled their former lives. In their great
+                        joy and rejoicing they then approached the buddhas in their respective
+                        buddhafields, bowed to their feet with their heads, [F.5.a] and with palms
+                        together in a gesture of prayerful supplication bowed forward.</p>
+                    <milestone unit="chunk" xml:id="UT22084-029-001-18"/>
+                    <p tid="22"> Then, in the great billionfold world system the beings who were
+                        born blind saw forms with their eyes, the deaf heard sounds with their ears,
+                        the insane regained their senses, those with distracted thoughts became
+                        one-pointed in their thoughts, the naked found clothes, the poor found
+                        wealth, the hungry found food, the thirsty found drink, the sick were
+                        healed, the sense faculties of those with damaged sense faculties were
+                        repaired, and the physically exhausted became no longer exhausted. Those who
+                        had not given up unwholesome deeds of body, speech, and mind, and
+                        unwholesome livelihood, gave up their unwholesome habits. All beings
+                        considered every being in the same way as they considered their mother,
+                        father, brother, and sister, and as they considered their friends, close
+                        relatives, and blood relatives. And they were endowed with the ten wholesome
+                        paths of action, and became celibate, pure, free from the stain of
+                        immorality, and free from all unwholesome conceptualization. And at that
+                        time all beings, possessed of all happiness, acquired the ease a monk feels
+                        when absorbed in the third concentration. And at that very time they were
+                        endowed with such knowledge that they knew, “Good is charity! Good is
+                        self-discipline! Good is restraint! Good it is to observe celibacy! Good is
+                        nonviolence toward living creatures!” And at that time [F.5.b] the lord
+                        buddhas in other buddhafields cried out cries of delight: “Ah! It is amazing
+                        these beings are thus endowed with such knowledge that knows, ‘Good is
+                        charity! Good is self-discipline! Good is restraint! Good it is to observe
+                        celibacy! Good is nonviolence toward living creatures!’ ” </p>
+                    <milestone unit="chunk" xml:id="UT22084-029-001-19"/>
+                    <p tid="23"> Thereupon the Lord, seated on this very lion throne, stood out
+                        towering over the great billionfold world system with Sumeru, the encircling
+                        mountain ranges, the abodes of the gods, Indra, Brahmā, Vaśavartin,
+                        Śuddhāvāsa, and the classes of gods and asuras,<note place="end" xml:id="UT22084-029-001-20"> “Asuras”: <foreign xml:lang="Bo-Ltn" type="term">lha ma yin</foreign> renders <foreign xml:lang="Sa-Ltn" type="term">dānava</foreign>.</note> shining forth, gleaming,
+                        dazzling, and shedding light with his light, color, brilliance, and glory in
+                        the same way as, for example, a strong sun or the disk of a full moon in a
+                        clear sky.</p>
+                    <milestone unit="chunk" xml:id="UT22084-029-001-21"/>
+                    <p tid="24"> So too the Lord stood out towering over as many world systems as
+                        there are sand particles in the Gaṅgā River to the east with his light,
+                        color, brilliance, and glory. Similarly the Lord stood out towering over as
+                        many world systems as there are sand particles in the Gaṅgā River to the
+                        south, west, and north, in the intermediate directions, and below and
+                        above—in each of the ten directions—shining forth, gleaming, dazzling, and
+                        shedding light with his light, color, brilliance, and glory in the same way
+                        as, for example, Sumeru, the king of mountains, stands out towering over all
+                        mountains, shining forth, gleaming, dazzling, and shedding light; or in the
+                        same way as, for example, the disk of the moon towers over all the stars,
+                        shining forth, gleaming, dazzling, and shedding light; or in the same way
+                        as, for example, the disk of the sun [F.6.a] stands out towering over all
+                        other lights, shining forth, gleaming, dazzling, and shedding light. So too
+                        the Lord stands out towering over world systems in the ten directions with
+                        their gods, Indras, Brahmās, Śuddhāvāsas, and the classes of gods and
+                        humans, shining forth, gleaming, dazzling, and shedding light with his
+                        light, color, brilliance, and glory.</p>
+                    <milestone unit="chunk" xml:id="UT22084-029-001-22"/>
+                    <p tid="25"> Thereupon the Lord exhibited an ordinary bodily form, like that of
+                        beings in the great billionfold world system. Then in the great billionfold
+                        world system all the gods, from the gods of the Śuddhāvāsa class, down to
+                        the Brahmā, Paranirmitavaśavartin, Nirmāṇarati, Tuṣita, Yāma, Trāyastriṃśa,
+                        and Cāturmahārājik gods saw the body of the Tathāgata you can never see
+                        enough. Feeling contented, pleased, delighted, joyful, and joyous, with such
+                        mental happiness they took celestial flowers, celestial garlands, celestial
+                        incense, celestial creams, celestial powders, and celestial perfumes;
+                        celestial blue lotuses, lotuses, red lotuses, white lotuses, nalina lilies
+                        and saugandhaka lilies; celestial flowers, nāgavṛkṣa flowers, and tamāla
+                        leaves; and celestial robes, celestial jewelry, celestial parasols, flags,
+                        and banners and approached the Lord. Those humans to be trained, and in the
+                        form of recipients seated in the great billionfold world system, saw the
+                        body of the Tathāgata you can never see enough, took land and water flowers
+                        and approached the body of the Tathāgata you can never see enough. [F.6.b]
+                        Both gods and humans then strewed near, strewed in front, and strewed
+                        flowers all around<note place="end" xml:id="UT22084-029-001-23"> Nakamura
+                            (2014: 516) renders these “strewing [flowers] near [to Buddha], strewing
+                            [flowers] in front [of Buddha] and strewing [flowers] all around
+                            [Buddha].” The Tib says, literally, “strew down on, strew over, and
+                            strew right over.”</note> the body of the Tathāgata these celestial
+                        flowers, incense, perfumes, garlands, creams, powders, robes, parasols,
+                        flags, banners, and land and water flowers. </p>
+                    <milestone unit="chunk" xml:id="UT22084-029-001-24"/>
+                    <p tid="26"> By the sustaining power of the Lord all this rain of flowers,
+                        incense, perfumes, garlands, creams, powders, robes, parasols, flags,
+                        banners, and land and water flowers strewed down on the Lord stayed there
+                        like a second story made of flowers and so on, with the dimensions of the
+                        great billionfold world system, in the sky right above the Lord’s head. And
+                        from this second story tassels made of celestial flowers and silk were
+                        suspended, hanging there, hanging right there, and these tassels made of
+                        celestial flowers and silk made the great billionfold world system look very
+                        beautiful. And the brightly shining golden color of the Lord streaming forth
+                        in the ten directions pervaded and lit up as many world systems as there are
+                        sand particles in the Gaṅgā River in each direction. This thought then
+                        occurred to each of the gods and humans in all the Jambudvīpa world systems
+                        in the great billionfold world system: “The Tathāgata is seated in front of
+                        us teaching the Dharma.” Similarly, this thought occurred to the gods in the
+                        Godānīyas to the west, Videhas to the east, and Kurus to the north, to the
+                            Cāturmahārājika<note place="end" xml:id="UT22084-029-001-25"> For
+                            consistency <foreign xml:lang="Bo-Ltn">rgyal chen bzhi’i ris</foreign> is rendered
+                                <foreign xml:lang="Sa-Ltn">cāturmahārājika</foreign> (“[gods] belonging to the group of the
+                            four Great Kings”) even though there are a number of Skt forms (Edgerton
+                            says the forms are <foreign xml:lang="Sa-Ltn">cāturmahārājakāyika</foreign> and less often
+                                <foreign xml:lang="Sa-Ltn">caturmahārājakāyika</foreign>, and <foreign xml:lang="Sa-Ltn">cāturmahārājika</foreign> and
+                            less often <foreign xml:lang="Sa-Ltn">caturmahārājika</foreign>) and slight differences are
+                            encountered in the Tib translation. “Gods” is sometimes rendered
+                            explicitly and is sometimes implicit in the Tib.</note> gods up to the
+                        Akaniṣṭha gods, and similarly to all of the gods and humans in a
+                        thousandfold [four-continent] world system, in a millionfold world system,
+                        or in a great billionfold world system: [F.7.a] “The Tathāgata is seated in
+                        front of us teaching the Dharma.”</p>
+                    <milestone unit="chunk" xml:id="UT22084-029-001-26"/>
+                    <p tid="27"> Thereupon the Lord, seated on this very lion throne, smiled once
+                        again. Through the illumination from that smile the great billionfold world
+                        system was lit up, and all the beings seated in the great billionfold world
+                        system saw the Lord Buddha, together with his śrāvaka saṅgha, in as many
+                        world systems as there are sand particles in the Gaṅgā River to the east.
+                        And all those beings seated in as many world systems as there are sand
+                        particles in the Gaṅgā River to the east saw the Lord Śākyamuni, together
+                        with his community of monks, in this Sahā world system.</p>
+                    <milestone unit="chunk" xml:id="UT22084-029-001-27"/>
+                    <p tid="28"> Similarly, the beings included in this Sahā world system saw the
+                        Lord Buddha, together with his śrāvaka saṅgha, in as many world systems as
+                        there are sand particles in the Gaṅgā River to the south, west, and north,
+                        in the intermediate directions to the northeast, southeast, southwest, and
+                        northwest, below and above. And all those beings seated in as many world
+                        systems as there are sand particles in the Gaṅgā River as well saw this Sahā
+                        world system and the Lord Śākyamuni, together with his community of
+                        monks.</p>
+                    <milestone unit="chunk" xml:id="UT22084-029-001-28"/>
+                    <p tid="29"> In the east, beyond as many world systems as there are sand
+                        particles in the Gaṅgā River, at the very limit of these world systems,
+                        there is a world system called Ratnāvatī. In it the tathāgata, worthy one,
+                        perfectly complete buddha Ratnākara now dwells and maintains himself. He
+                        teaches to the bodhisattvas this very perfection of wisdom. [F.7.b] Then, in
+                        that world system a bodhisattva, a great being, called Samantaraśmi saw this
+                        great illumination, this great shaking of the earth, and the body of the
+                        Lord you can never see enough, and he approached the lord Ratnākara, the
+                        tathāgata, and inquired of the tathāgata Ratnākara, “What is the cause, O
+                        Lord, what is the reason for this great illumination having manifested in
+                        the world, and for this great shaking of the earth, and for the presence of
+                        the body of the tathāgata you can never see enough?”</p>
+                    <milestone unit="chunk" xml:id="UT22084-029-001-29"/>
+                    <p tid="30"> The lord Ratnākara replied to the bodhisattva Samantaraśmi, “There
+                        is, child of a good family, beyond as many world systems as there are sand
+                        particles in the Gaṅgā River in the western direction a world system called
+                        Sahā. There the tathāgata Śākyamuni now dwells and maintains himself, also
+                        teaching the Dharma to the bodhisattvas. This sort of thing is his
+                        power.”</p>
+                    <milestone unit="chunk" xml:id="UT22084-029-001-30"/>
+                    <p tid="31"> Then the bodhisattva Samantaraśmi said to the tathāgata Ratnākara,
+                        “I will go to that Sahā world system to see, salute, and honor that
+                        tathāgata Śākyamuni, and to see those bodhisattva great beings, for the most
+                        part in the form of the young, who have acquired the dhāraṇīs and detailed
+                        and thorough knowledges, and have acquired mastery over all the meditative
+                        stabilizations and absorptions.”</p>
+                    <milestone unit="chunk" xml:id="UT22084-029-001-31"/>
+                    <p tid="32"> The Lord replied, “Go then, child of a good family, since you feel
+                        that now is the right time.”</p>
+                    <milestone unit="chunk" xml:id="UT22084-029-001-32"/>
+                    <p tid="33"> Thereupon the tathāgata Ratnākara gave the bodhisattva Samantaraśmi
+                        [F.8.a] a thousand lotuses made of manifold jewels, each with a thousand
+                        petals shining like gold, saying, “These lotuses, child of a good family,
+                        strew over the tathāgata Śākyamuni. Be on your best behavior<note place="end" xml:id="UT22084-029-001-33"> I have based this translation
+                            in part on Z 272 n. 253 and have rendered <foreign xml:lang="Bo-Ltn" type="quote">shes bzhin du spyod cig</foreign> (<foreign xml:lang="Sa-Ltn" type="quote">samprajānacarī bhāveḥ</foreign>) “be
+                            on your best behavior” instead of “be careful” (Z) or “act with full
+                            self-possession” (LSPW) because in this Tib version the bodhisattva is
+                            very polite without having first been instructed by his buddha. Z has a
+                            good summary of the possible meanings. </note> in that buddhafield. And
+                        why? Because the bodhisattvas born in that Sahā world system are difficult
+                        to approach.” </p>
+                    <milestone unit="chunk" xml:id="UT22084-029-001-34"/>
+                    <p tid="34"> Thereupon the bodhisattva Samantaraśmi received from the tathāgata
+                        Ratnākara the lotuses made of manifold jewels, each with a thousand petals
+                        shining like gold. Surrounded by, and at the head of, many hundred thousand
+                        one hundred million billion bodhisattvas, householders and renunciates,
+                        young men and women, he disappeared together with them from that buddhafield
+                        and, having respected, revered, honored, and worshiped as many lords as
+                        there are dwelling and maintaining themselves in the east with flowers,
+                        incense, perfumes, garlands, creams, powders, robes, parasols, flags, and
+                        banners, arrived there in the Sahā world through that bodhisattva’s great
+                        wonder-working and that bodhisattva’s great power. He approached the
+                        tathāgata Śākyamuni, went up to him, bowed to the Lord’s feet with his head,
+                        and stood to one side. The bodhisattva Samantaraśmi then addressed the Lord,
+                        the tathāgata Śākyamuni: “The lord Ratnākara inquires about the Lord’s
+                        health, hopes that the Lord is well and free from sickness, alert and
+                        buoyant, eating well, strong, and comfortable. [F.8.b] The lord Ratnākara
+                        has also dispatched these lotuses for the Lord.”</p>
+                    <milestone unit="chunk" xml:id="UT22084-029-001-35"/>
+                    <p tid="35"> The lord tathāgata Śākyamuni accepted the lotuses and threw them
+                        back to the lord buddhas in as many world systems as there are sand
+                        particles in the Gaṅgā River to the east. Those lotuses spread throughout
+                        those world systems, and on them were seated buddha bodies. In those
+                        buddhafields they taught Dharma—this very teaching of Dharma associated with
+                        the perfection of wisdom. And the beings who heard that Dharma became
+                        definite to reach unsurpassed, perfect, complete awakening. Thereupon those
+                        bodhisattvas, the householders and renunciates, young men and women, each
+                        one by virtue of his or her own wholesome roots respected, revered, honored,
+                        and worshiped the lord Śākyamuni and sat down on one side.</p>
+                    <milestone unit="chunk" xml:id="UT22084-029-001-36"/>
+                    <p tid="36"> Then in the south, beyond as many world systems as there are sand
+                        particles in the Gaṅgā River, at the very limit of these world systems,
+                        there is a world system called Sarvaśokāpagata. In it the tathāgata, worthy
+                        one, perfectly complete buddha Aśokaśrī now dwells and maintains himself.
+                        Then, in that world system a bodhisattva, a great being, called Vigatāśoka
+                            <distinct>and so on</distinct>. <distinct>Connect to the previous, at
+                            length</distinct>, <distinct>up to</distinct> and sat down on one
+                        side.</p>
+                    <milestone unit="chunk" xml:id="UT22084-029-001-37"/>
+                    <p tid="37"> Then in the west there is a world system called Upaśānta. In it the
+                        tathāgata, worthy one, perfectly complete buddha Ratnārcis now dwells and
+                        maintains himself. Then, in that world system a bodhisattva, a great being,
+                        called Cāritramati <distinct>and so on, at length, up to</distinct> and sat
+                        down on one side.</p>
+                    <milestone unit="chunk" xml:id="UT22084-029-001-38"/>
+                    <p tid="38"> Then in the north [F.9.a] there is a world system called Jayā. In
+                        it the tathāgata, worthy one, perfectly complete buddha Jayendra now dwells
+                        and maintains himself. Then, in that world system a bodhisattva, a great
+                        being, called Jayadatta <distinct>and so on, at length, up to</distinct> and
+                        sat down on one side.</p>
+                    <milestone unit="chunk" xml:id="UT22084-029-001-39"/>
+                    <p tid="39"> Then in the intermediate northeast direction there is a world
+                        system called Samādhyalaṃkṛtā. In it the tathāgata, worthy one, perfectly
+                        complete buddha Samādhihastyuttaraśrī now dwells and maintains himself.
+                        Then, in that world system a bodhisattva, a great being, called
+                        Vijayavikrāmin <distinct>and so on, at length, up to</distinct> and sat down
+                        on one side.</p>
+                    <milestone unit="chunk" xml:id="UT22084-029-001-40"/>
+                    <p tid="40"> Then in the intermediate southeast direction there is a world
+                        system called Bodhimaṇḍalālaṃkārasurucitā. In it the tathāgata, worthy one,
+                        perfectly complete buddha Padmottaraśrī now dwells and maintains himself.
+                        Then, in that world system a bodhisattva, a great being, called Padmahasta
+                            <distinct>and so on, at length, up to</distinct> and sat down on one
+                        side.</p>
+                    <milestone unit="chunk" xml:id="UT22084-029-001-41"/>
+                    <p tid="41"> Then in the intermediate southwest direction there is a world
+                        system called Vigatarajasaṃcayā. In it the tathāgata, worthy one, perfectly
+                        complete buddha Sūryamaṇḍalaprabhāsottaraśrī now dwells and maintains
+                        himself. Then, in that world system a bodhisattva, a great being, called
+                        Sūryapratibhāsa <distinct>and so on, at length, up to</distinct> and sat
+                        down on one side.</p>
+                    <milestone unit="chunk" xml:id="UT22084-029-001-42"/>
+                    <p tid="42"> Then in the intermediate northwest direction there is a world
+                        system called Vaśībhūtā. In it the tathāgata, worthy one, perfectly [F.9.b]
+                        complete buddha Ekachattra now dwells and maintains himself. Then, in that
+                        world system a bodhisattva, a great being, called Ratnottama <distinct>and
+                            so on, at length, up to</distinct> and sat down on one side.</p>
+                    <milestone unit="chunk" xml:id="UT22084-029-001-43"/>
+                    <p tid="43"> Then in the direction below there is a world system called Padmā.
+                        In it the tathāgata, worthy one, perfectly complete buddha Padmaśrī now
+                        dwells and maintains himself. Then, in that world system a bodhisattva, a
+                        great being, called Padmottama <distinct>and so on, at length, up
+                            to</distinct> and sat down on one side.</p>
+                    <milestone unit="chunk" xml:id="UT22084-029-001-44"/>
+                    <p tid="44"> Then in the direction above, beyond as many world systems as there
+                        are sand particles in the Gaṅgā River, at the very limit of these world
+                        systems, there is a world system called Nandā. In it the tathāgata, worthy
+                        one, perfectly complete buddha Nandaśrī now dwells and maintains himself.
+                        Then, in that world system a bodhisattva, a great being, called Nandadatta
+                        saw this great illumination, this great shaking of the earth, and the body
+                        of the Lord you can never see enough, and he approached the lord Nandaśrī,
+                        the tathāgata, and inquired of the tathāgata Nandaśrī, “What is the cause, O
+                        Lord, what is the reason for this great illumination being manifested in the
+                        world, and for this great shaking of the earth, and for the presence of the
+                        body of the tathāgata you can never see enough?”</p>
+                    <milestone unit="chunk" xml:id="UT22084-029-001-45"/>
+                    <p tid="45"> The lord Nandaśrī replied to the bodhisattva Nandadatta, “There is,
+                        O child of a good family, beyond as many world systems as there are sand
+                        particles in the Gaṅgā River in the direction below a world system called
+                        Sahā. There the tathāgata arhat, perfectly [F.10.a] complete buddha
+                        Śākyamuni now dwells and maintains himself, also teaching the Dharma to the
+                        bodhisattvas. This sort of thing is his power.”</p>
+                    <milestone unit="chunk" xml:id="UT22084-029-001-46"/>
+                    <p tid="46"> Then the bodhisattva Nandadatta said to the tathāgata Nandaśrī, “I
+                        will go to that Sahā world system to see, salute, and honor that tathāgata
+                        Śākyamuni, and to see those bodhisattva great beings, for the most part in
+                        the form of the young, who have acquired the dhāraṇīs and detailed and
+                        thorough knowledges, and have acquired mastery over all the meditative
+                        stabilizations and absorptions.”</p>
+                    <milestone unit="chunk" xml:id="UT22084-029-001-47"/>
+                    <p tid="47"> The Lord replied, “Go then, child of a good family, since you feel
+                        that now is the right time.”</p>
+                    <milestone unit="chunk" xml:id="UT22084-029-001-48"/>
+                    <p tid="48"> Thereupon the tathāgata Nandaśrī gave the bodhisattva Nandadatta a
+                        thousand lotuses made of manifold jewels, each with a thousand petals
+                        shining like gold, saying, “These lotuses, child of a good family, strew
+                        over the tathāgata Śākyamuni. Be on your best behavior in that buddhafield.
+                        And why? Because the bodhisattvas born in that Sahā world system are
+                        difficult to approach.” </p>
+                    <milestone unit="chunk" xml:id="UT22084-029-001-49"/>
+                    <p tid="49"> Thereupon the bodhisattva Nandadatta received from the tathāgata
+                        Nandaśrī the lotuses made of manifold jewels, each with a thousand petals
+                        shining like gold. Surrounded by, and at the head of many hundred thousand
+                        one hundred million billion bodhisattvas, householders and renunciates,
+                        young men and women, he disappeared together with them from that
+                        buddhafield, and, having respected, revered, honored, and worshiped as many
+                        lords as there are dwelling and maintaining themselves in the direction
+                        above [F.10.b] with flowers, incense, perfumes, garlands, creams, powders,
+                        robes, parasols, flags, and banners, arrived there in the Sahā world through
+                        that bodhisattva’s great wonder-working and that bodhisattva’s great power.
+                        He approached the tathāgata Śākyamuni, went up to him, bowed to the Lord’s
+                        feet with his head, and stood to one side. The bodhisattva Nandadatta then
+                        addressed the lord, the tathāgata Śākyamuni: “The lord Nandaśrī inquires
+                        about the Lord’s health, hopes that the Lord is well and free from sickness,
+                        alert and buoyant, eating well, strong, and comfortable. The lord Nandaśrī
+                        has also dispatched these lotuses for the Lord.”</p>
+                    <milestone unit="chunk" xml:id="UT22084-029-001-50"/>
+                    <p tid="50"> The lord tathāgata Śākyamuni accepted the lotuses and threw them
+                        back to the lords, the buddhas in as many world systems as there are sand
+                        particles in the Gaṅgā River in the direction above. Those lotuses spread
+                        throughout those world systems, and on them were seated buddha bodies. In
+                        those buddhafields they demonstrated Dharma—this very demonstration of
+                        Dharma associated with the perfection of wisdom. And the beings who heard
+                        that Dharma became irreversible from unsurpassed, perfect, complete
+                        awakening. Thereupon those bodhisattvas, the householders and renunciates,
+                        young men and women, each one by virtue of his or her own wholesome roots
+                        respected, [F.11.a] revered, honored, and worshiped the lord Śākyamuni and
+                        sat down on one side.</p>
+                    <milestone unit="chunk" xml:id="UT22084-029-001-51"/>
+                    <p tid="51"> Thereupon, at that moment, minute, and second, the great
+                        billionfold world system became constituted of jewels, filled with various
+                        blossoms, hung with clusters of silk streamers, made fragrant with incense
+                        pots, and beautified with wish-fulfilling trees whose stem-tips bend down
+                        with ornaments and fruit, and with flower trees, fruit trees, fragrance
+                        trees, flower-garland trees, and powder trees, just like Padmavatī, the
+                        buddhafield of the tathāgata Samantakusuma where Mañjuśrī Kumārabhūta lives,
+                        as well as the god Susthitamati, and others who are magnificent bodhisattva
+                        great beings.</p>
+                    <milestone unit="chunk" xml:id="UT22084-029-001-52"/>
+                    <trailer tid="52">This was the first chapter, Introduction, of <title xml:lang="en">The Perfection of Wisdom in Eighteen Thousand
+                            Lines</title>. </trailer>
+                </div>
+                <div type="chapter" xml:id="UT22084-029-001-chapter-2">
+                    <head type="chapter" tid="53">Chapter 2: Production of the Thought</head>
+                    <milestone unit="chunk" xml:id="UT22084-029-001-53"/>
+                    <p tid="54">[Chapter 2 and following chapters to be entered here. Please update
+                        the heading of this chapter if it has changed in the polished version]</p>
+                </div>
+                <div type="colophon" xml:id="UT22084-029-001-colophon">
+                    <head type="colophon" tid="55">Colophon</head>
+                    <milestone unit="chunk" xml:id="UT22084-029-001-54"/>
+                    <p tid="56">[Colophon to be entered here]</p>
+                </div>
+            </div>
+        </body>
+        <back>
+            <div type="notes">
+                <head type="notes" tid="57">Notes</head>
+
+            </div>
+            <div type="listBibl">
+                <head type="listBibl" tid="58">Bibliography</head>
+                <div type="section" xml:id="UT22084-029-001-listBibl-1">
+                    <head type="section" tid="59">Main Section</head>
+                    <bibl xml:id="UT22084-029-001-55">[Insert Bibliography information here]</bibl>
+                </div>
+            </div>
+        </back>
+    </text>
+</TEI>
