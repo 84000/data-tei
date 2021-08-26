@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../../../schema/current/translation.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<tei:TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0">
         <teiHeader>
                 <fileDesc>
                         <titleStmt>
@@ -26,11 +26,11 @@
                                 <editor role="TEImarkupEditor" ref="contributors.xml#person-92">Laura Goetz</editor>
                         </titleStmt>
                         <editionStmt>
-                <edition>v 0.0.2 <date>2021</date>
+                <edition>v 1.0.0 <date>2021</date>
                 </edition>
             </editionStmt>
 
-                        <publicationStmt status="2">
+                        <publicationStmt status="1.a">
                 <publisher>
                     <name>84000: Translating the Words of the Buddha</name> is a global non-profit initiative to translate all
                                         the Buddha’s words into modern languages, and to make them available to everyone. </publisher>
@@ -46,7 +46,7 @@
                 <idno xml:id="UT22084-072-017"/>
                 <note>An early mistake in the assigning of UT numbers within the 84000 project means that these ids diverge slightly
                                         from the standard logic.</note>
-                <date>2021-05-26</date>
+                <date>2021-08-26</date>
             </publicationStmt>
                         <sourceDesc>
                                 <bibl key="toh317" type="text">
@@ -63,7 +63,7 @@
                                 </bibl>
                         </sourceDesc>
                         <notesStmt>
-                                <note type="lastUpdated" date-time="2021-06-15T23:26:33.576Z" user="admin">15/06/2021 23:26:33</note>
+                                <note type="lastUpdated" date-time="2021-08-26T18:23:29.608Z" user="admin">26/08/2021 18:23:29</note>
 
                                 <note type="updated" update="text-version" value="v 0.0.1" date-time="2019-12-20T12:56:48.575Z" user="admin">Automated
                                         version increment</note>
@@ -96,14 +96,13 @@
                         
     <note type="updated" update="translation-status" value="2" date-time="2021-06-15T23:26:26.611Z" user="mike">2</note>
     <note type="updated" update="text-version" value="0.0.2" date-time="2021-06-15T23:26:26.611Z" user="mike">Auto (update-publication-status)</note>
+    <note type="updated" update="translation-status" value="1.a" date-time="2021-08-26T18:23:22.993Z" user="celso">1.a</note>
+    <note type="updated" update="text-version" value="1.0.0" date-time="2021-08-26T18:23:22.993Z" user="celso">1.0.0</note>
             </notesStmt>
                 </fileDesc>
         </teiHeader>
         <text>
-                <!--Note the "Contents" outline from the Word DOCX has not been included in the script. If the 
-                    Outline to the text is quite complex, it is recommended that you paste the outlined contents from the DOCX here as a comment for
-                    markup's reference. The actual table of contents will be generated in the Reading Room by the parser.-->
-                <front>
+                 <front>
                         <div type="summary">
                                 <head type="summary" tid="1">Summary</head>
                                 <milestone unit="chunk" xml:id="UT22084-072-017-1"/>
@@ -128,7 +127,8 @@
                                 <head type="introduction" tid="6">Introduction</head>
                                 <div type="section" xml:id="UT22084-072-017-introduction-1">
                                         <milestone unit="chunk" xml:id="UT22084-072-017-4"/>
-                                        <lg tid="7">
+                                        <q>
+                        <lg tid="7">
                                                 <l>“Since apart from analyzing the dharmas</l>
                                                 <l>There is no other means to pacify mental afflictions,</l>
                                                 <l>And since due to mental afflictions people wander in this ocean of <term type="ignore">existence</term>,</l>
@@ -136,13 +136,15 @@
                                                                 <foreign xml:lang="Sa-Ltn" type="quote">dharmāṇāṁ pravicayam antareṇa nāsti kleśānāṁ
                                                                         yata upaśāntaye ’bhyupāyaḥ | kleśaiś ca bhramati bhavārṇave ‘tra lokas
                                                                         taddhetor ata uditaḥ kilaiṣa śāstra</foreign> (<title xml:lang="Sa-Ltn">Abhidharma­kośa­kārikā</title> 1.3).<ref rend="pending" target="https://read.84000.co/translation/toh4089.html"/>
-                            </note>
-                        </l>
+                                </note>
+                            </l>
                                         </lg>
+                    </q>
                                         <p tid="8"> –Vasubandhu</p>
                                         <lb/>
                                         <milestone unit="chunk" xml:id="UT22084-072-017-6"/>
-                                        <p tid="9">“The instructions found in <title xml:lang="en">Distinctly Ascertaining the Meanings</title> are
+                                        <q>
+                        <p tid="9">“The instructions found in <title xml:lang="en">Distinctly Ascertaining the Meanings</title> are
                                                 for the purpose of analyzing the dharmas, since without the sūtras’ instructions a disciple cannot
                                                 analyze the dharmas. Analyzing the dharmas is for the purpose of pacifying the afflictions; pacifying
                                                 the afflictions is for the purpose of attaining the ultimate state.”<note place="end" xml:id="UT22084-072-017-7">
@@ -150,11 +152,12 @@
                                                                 dharmaṁ pravicetum | <term type="ignore">dharma</term>­pravicaya
                                                                 upakleśopaśamanārtham | tadupaśamo ‘pi naiṣṭhika­padāvaptaye bhavati</foreign> (<title xml:lang="Sa-Ltn">Artha­viniścaya­sūtra­nibandhana</title>, Samtani 1971, p. 72). We
                                                         read <foreign xml:lang="Sa-Ltn" type="term">
-                                <term type="ignore">dharma</term>­pravicaya
+                                    <term type="ignore">dharma</term>­pravicaya
                                                                 upakleśopaśamanārtham</foreign> rather than <foreign xml:lang="Sa-Ltn" type="term">
-                                <term type="ignore">dharma</term>­pravicayopakleśopaśamanārtham</foreign> as
+                                    <term type="ignore">dharma</term>­pravicayopakleśopaśamanārtham</foreign> as
                                                         per Samtani’s printed text.</note>
-                    </p>
+                        </p>
+                    </q>
                                         <lb/>
                                         <p tid="10"> –Vīryaśrīdatta</p>
                                         <lb/>
@@ -162,23 +165,22 @@
                                         <p tid="11">Vīryaśrīdatta (fl. eighth century <hi rend="small-caps">ce</hi>), the Nālandā master who commented
                                                 on this sūtra, explains the expression <distinct>distinctly ascertaining the meanings</distinct> as a
                                                 synonym of <distinct>analyzing the dharmas</distinct>, or classifying entities, so as to see directly
-                                                both their unique traits and their shared traits. This is also called <distinct>wisdom</distinct>,
-                                                        <distinct>abhidharma</distinct>, or <distinct>insight meditation</distinct>, the path to the
-                                                realization that everything produced by assemblages of causes and conditions is impermanent, that
-                                                everything leading to mental defilement is suffering, and that nothing whatsoever is or has a
-                                                        <distinct>self</distinct>—a continuing, non-contingent personal identity.</p>
+                                                both their unique traits and their shared traits. 
+                                                This <term type="ignore">analysis</term> constitutes a path to the realization that everything produced by assemblages of causes 
+                                                and conditions is impermanent, that everything leading to mental defilement is suffering, and that 
+                                                nothing whatsoever is or has a permanent and independent self‍.</p>
                                         <milestone unit="chunk" xml:id="UT22084-072-017-9"/>
                                         <p tid="12">According to a well-established tradition, having the right view is to recognize impermanence,
                                                 suffering, selflessness, and that nirvāṇa is peace. This liberating vision vanquishes the mind’s
-                                                poisons of attraction, aversion, and confusion. The mind turns toward the virtues of merit and wisdom,
-                                                allowing the peace of nirvāṇa to become manifest. </p>
+                                                poisons of attraction, aversion, and confusion. The mind then turns toward the virtues of merit and wisdom,
+                                                gradually giving way to the peace of nirvāṇa. </p>
                                         <milestone unit="chunk" xml:id="UT22084-072-017-10"/>
                                         <p tid="13">
                         <title xml:lang="en">Distinctly Ascertaining the Meanings</title> is a step-by-step contemplation
                                                 of all facets of reality and freedom from suffering. It starts with the five aggregates that
                                                 constitute the common basis of defilement and purification and goes through the teachings on
                                                 selflessness, the path to realize selflessness, and the higher stages of realization, and it
-                                                culminates in the special features that belong exclusively to a fully awakened buddha. This perfect
+                                                culminates in the special features that belong exclusively to a fully awakened buddha. This invaluable
                                                 archive of Buddhist terms and ideas is to be well absorbed and remembered, so as to make all other
                                                 teachings easier to comprehend. </p>
                                         <milestone unit="chunk" xml:id="UT22084-072-017-11"/>
@@ -187,19 +189,19 @@
                                                 detailed and accessible commentary, the <title xml:lang="en">Gathering</title> (<title xml:lang="Sa-Ltn">Nibandhana</title>) by Vīryaśrīdatta, is a didactically subtle and
                                                 comprehensive manual of Buddhist philosophy. The <title xml:lang="en">Gathering</title> reproduces
                                                 much of the content of Vasubandhu’s <title xml:lang="en">Treasury of Abhidharma</title> (<title xml:lang="Sa-Ltn">Abhidharmakośa</title>)<ref rend="pending" target="https://read.84000.co/translation/toh4089.html"/>, an unsurpassed and thorough
-                                                treatise of fundamental Buddhist thought; but while Vasubandhu’s text goes into much detail and
-                                                features complex details, the <title xml:lang="en">Gathering</title> offers a much more accessible
+                                                treatise of fundamental Buddhist thought; but while Vasubandhu’s text 
+                                                goes into much detail with the subject matter, the <title xml:lang="en">Gathering</title> offers a much more accessible
                                                 presentation of the same topics.</p>
                                         <milestone unit="chunk" xml:id="UT22084-072-017-12"/>
                                         <p tid="15">Vīryaśrīdatta shows the purpose and structure of the sūtra, connects it to other texts, and offers
                                                 convincing, cogent, and well-supported interpretations. He explains the structure of the sūtra by
                                                 analyzing it into six topical elements: </p>
                                         <milestone unit="chunk" xml:id="UT22084-072-017-13"/>
-                                        <p tid="16">1. the introductory presntation of the occasion when the sūtra was spoken (<foreign xml:lang="Sa-Ltn" type="term">nidāna</foreign>), which starts from the very beginning and goes
+                                        <p tid="16">1. the introductory presentation of the occasion when the sūtra was spoken (<foreign xml:lang="Sa-Ltn" type="term">nidāna</foreign>), which starts from the very beginning and goes
                                                 up to the mention of the number of bhikṣus present; </p>
                                         <milestone unit="chunk" xml:id="UT22084-072-017-481"/>
                                         <p tid="17">2. the opening remarks by the Buddha (<foreign xml:lang="Sa-Ltn" type="term">upodghāta</foreign>),
-                                                which immediately follow, where the Buddha tells the bhikṣus that he is going to teach and they agree
+                                                which immediately follow, in which he tells the bhikṣus that he is going to teach and they agree
                                                 to pay attention; </p>
                                         <p tid="18">3. the purpose of the teaching (<foreign xml:lang="Sa-Ltn" type="term">prayojana</foreign>),
                                                 embedded in the very title of the sūtra, which is wisdom or, more precisely, “analysis of the dharmas”
@@ -212,11 +214,11 @@
                                                 mentioned in the initial list, which starts right after the initial list and continues to the end of
                                                 the sūtra; </p>
                                         <milestone unit="chunk" xml:id="UT22084-072-017-485"/>
-                                        <p tid="21">6. and the connection between the different expressions (<foreign xml:lang="Sa-Ltn" type="term">anusandhi</foreign>), more specifically showing how a later expression is thematically and/or
+                                        <p tid="21">6. the connection between the different expressions (<foreign xml:lang="Sa-Ltn" type="term">anusandhi</foreign>), more specifically showing how a later expression is thematically and/or
                                                 logically connected to a prior one, which applies to the whole text.</p>
                                         <milestone unit="chunk" xml:id="UT22084-072-017-14"/>
-                                        <p tid="22">The sūtra is also mentioned by Yaśomitra, Vasubandhu’s great commentator and the author of an
-                                                extensive explanation (<foreign xml:lang="Sa-Ltn" type="term">vyākhyā</foreign>) on the <title xml:lang="en">Treasury of Abhidharma</title>. Yaśomitra writes that according to “those who
+                                        <p tid="22">The sūtra is also mentioned by Yaśomitra, the author of an
+                                                extensive explanation (<foreign xml:lang="Sa-Ltn" type="term">vyākhyā</foreign>) on Vasubandhu’s <title xml:lang="en">Treasury of Abhidharma</title>. Yaśomitra writes that according to “those who
                                                 emphasize the sūtras” (Sautrāntika), while it is correct to say that the Buddha taught abhidharma, he
                                                 did not teach separate abhidharmic treatises (as the Vaibhāṣika think); he taught the abhidharma in
                                                 specific sūtras, such as <title xml:lang="en">Distinctly Ascertaining the Meanings</title>. As the
@@ -266,9 +268,14 @@
                                                 intended syntax of the Tibetan and, in a few cases, show how some obscure expression may be due to a
                                                 mistake (even a printing mistake) in the transmission of the Tibetan.</p>
                                         <milestone unit="chunk" xml:id="UT22084-072-017-25"/>
-                                        <p tid="26">We have here translated the Degé Kangyur version of the sūtra (except in a handful of instances,
-                                                where we explain the reasons in the notes), which appears in the General Sūtra (<foreign xml:lang="Bo-Ltn">mdo sde</foreign>) section and was translated by Jinamitra, Prajñā­varman,
-                                                and Yeshé Dé in the ninth century. It is worth mentioning that Jinamitra and Yeshé Dé figure among the
+                                        <p tid="26">
+                                                This English translation was prepared based on the Tibetan translation in the Degé Kangyur in consultation 
+                                                with the Comparative Edition (<foreign xml:lang="Bo-Ltn">dpe bsdur ma</foreign>) and the Stok Palace Kangyur. According to the Tibetan translators’ 
+                                                colophon, the Sanskrit text was translated into Tibetan by the Indian preceptors Jinamitra and Prajñā­varman, 
+                                                and the Tibetan translator Yeshé Dé. This would place the translation in the ninth century, but it is worth 
+                                                noting that the translation is absent from both the Denkarma and Phangtangma inventories of Tibetan translations 
+                                                dated to that time.
+                                                It is worth mentioning that Jinamitra and Yeshé Dé figure among the
                                                 compilers of the great Sanskrit–Tibetan lexicon the <title xml:lang="Sa-Ltn">Mahāvyutpatti</title>,
                                                 which is a useful point to bear in mind when trying to understand the relationship between the Tibetan
                                                 translation and the various Sanskrit versions.</p>
@@ -302,19 +309,16 @@
                                                 not sure whether this is a fair assessment, but “juicy” may be a very good way to speak of the rewards
                                                 of reading Vīryaśrīdatta’s comments, some of which will be found in the notes and in the glossary, so
                                                 as to offer at least glimpses of what one may be missing by not reading the <title xml:lang="Sa-Ltn">Nibandhana</title>. The <title xml:lang="Sa-Ltn">Mahāvyutpatti</title> explicitly relied on
-                                                Vasubandhu’s work, and so does Vīryaśrīdatta in explaining the Buddhist thesaurus that is this sūtra.
+                                                Vasubandhu’s work, and so does Vīryaśrīdatta in explaining the contents of this sūtra.
                                                 His glosses thus offer some keys to the subtlety, greatness, and extraordinary dedication of the
                                                 ancient translators from Sanskrit into Tibetan.</p>
                                         <milestone unit="chunk" xml:id="UT22084-072-017-31"/>
                                         <p tid="29">There are at least three modern translations of <title xml:lang="en">Distinctly Ascertaining the
                                                         Meanings</title>: one in Italian by Ferrari (1944), and two in English by Samtani (1971) and
-                                                Ānandajoti (2016). None of these translations represents the Kangyur version, and we furthermore
-                                                differ from all three in other matters of interpretation (including, in some instances, in how we
-                                                understand the syntax).</p>
-                                        <milestone unit="chunk" xml:id="UT22084-072-017-32"/>
-                                        <p tid="30">We hope this translation carries some of the flavor of the original—paced by recurrent phrases,
-                                                symmetries, and expanding lists conducive to chanting and memory and culminating in an exercise of
-                                                mindfulness focusing on the qualities of the Buddha, the Bhagavat. </p>
+                                                Ānandajoti (2016). None of these translations represents the Kangyur version, 
+                                                and we furthermore differ from all three in certain matters of interpretation.
+                                                We hope this translation carries at least some of the flavor of the original with its recurrent phrases 
+                                                and topical lists so conducive to chanting and memorization.</p>
                                 </div>
                         </div>
                 </front>
@@ -362,7 +366,7 @@
                                                         also Nance 2012, p. 131 for a translation).</note> I will clarify the unique, complete, pure,
                                                 and purified Brahman conduct, the Dharma instruction <title xml:lang="en">Distinctly Ascertaining the
                                                         Meanings</title>. <ref cRef="F.171.a" type="folio" xml:id="UT22084-072-017-407"/> Listen
-                                                properly and place it well in your mind;<note place="end" xml:id="UT22084-072-017-40"> The <title xml:lang="Sa-Ltn">Nibandhana</title> explains that this sentence is meant to ensure
+                                                properly and keep it firmly in your mind;<note place="end" xml:id="UT22084-072-017-40"> The <title xml:lang="Sa-Ltn">Nibandhana</title> explains that this sentence is meant to ensure
                                                         that the listeners avoid three defects: not listening, listening but understanding the meaning
                                                         of what was heard in a distorted manner, and not being able to retain even what has been heard
                                                         and understood correctly, since it was not listened to with the necessary reverence. These
@@ -385,11 +389,12 @@
                                                         <title xml:lang="en">Distinctly Ascertaining the Meanings</title>.</p>
                                         <milestone unit="chunk" xml:id="UT22084-072-017-43"/>
                                         <p tid="38">“Now, bhikṣus, what are the five aggregates? They are the aggregate of form, the aggregate of
-                                                feeling, the aggregate of perception, the aggregate of assembled factors, and the aggregate of
+                                                feeling, the aggregate of notion<note place="end" xml:id="UT22084-072-017-567">
+                            <foreign xml:lang="Sa-Ltn">Saṁjñā</foreign> is not easy to translate: it refers to a concept or idea through which one identifies, correctly or incorrectly, the object of cognition by determining that it has a certain “sign” (<foreign xml:lang="Sa-Ltn">nimitta</foreign>, a term closely connected to perceptual experiences). Its function is associated with naming, since <foreign xml:lang="Sa-Ltn">saṁjñā</foreign> can be verbalized by those who are acquainted with language, as pointed out in Abhidharma texts. It can also refer to an evaluative belief about something, such as it being desirable, etc., or a notion that one should develop through training (such as the idea that the Dharma teacher is the Buddha). In some forms of Abhidharma, it is explained that the consciousnesses based on the five senses have weak <foreign xml:lang="Sa-Ltn">saṁjñā</foreign>, while it is sharp in case of thought-consciousness. <foreign xml:lang="Sa-Ltn">Saṁjñā</foreign> complements the perception of objects (<foreign xml:lang="Sa-Ltn">vijñānaskandha</foreign>) with  enough determination to become fit to be put into words, expressing specific referents and their features. It is regarded as a mental state (<foreign xml:lang="Sa-Ltn">caitta</foreign>), accompanying the basic mind (<foreign xml:lang="Sa-Ltn">citta</foreign>) that is defined as the mere perception of objects, incapable of grasping their specificities.</note>, the aggregate of assembled factors, and the aggregate of
                                                 consciousness. These, bhikṣus, are the five aggregates.</p>
                                         <milestone unit="chunk" xml:id="UT22084-072-017-44"/>
                                         <p tid="39">“Now, bhikṣus, what are the five aggregates of clinging? They are the aggregate of clinging of
-                                                form, the aggregate of clinging of feeling, the aggregate of clinging of perception, the aggregate of
+                                                form, the aggregate of clinging of feeling, the aggregate of clinging of notion, the aggregate of
                                                 clinging of assembled factors, and the aggregate of clinging of consciousness. <ref cRef="F.171.b" type="folio" xml:id="UT22084-072-017-408"/> These, bhikṣus, are the five aggregates of
                                                 clinging.</p>
                                         <milestone unit="chunk" xml:id="UT22084-072-017-45"/>
@@ -519,7 +524,7 @@
                                                                 <foreign xml:lang="Sa-Ltn" type="quote">tatra kataman nāma catvāro’rūpiṇaḥ skandḥāḥ |
                                                                 katame catvāraḥ</foreign> (Samtani 1971, p. 8). This could be translated as “What,
                                                         then, is name? It is the four formless aggregates. What are the four?” </note> the aggregate
-                                                of feeling, the aggregate of perception, the aggregate of assembled factors, <ref cRef="F.173.a" type="folio" xml:id="UT22084-072-017-411"/> and the aggregate of consciousness. This is
+                                                of feeling, the aggregate of notion, the aggregate of assembled factors, <ref cRef="F.173.a" type="folio" xml:id="UT22084-072-017-411"/> and the aggregate of consciousness. This is
                                                         <distinct>name</distinct>. What is form? Whatever form exists, it all consists in the four
                                                 great elements and in what depends on the four great elements.<note place="end" xml:id="UT22084-072-017-64"> Here the Tibetan lacks the expression “and in what depends on the
                                                         four great elements”; we have nevertheless included it on the basis of Samtani’s Sanskrit
@@ -1076,7 +1081,7 @@
                                                         p. 322.</note>
                     </p>
                                         <milestone unit="chunk" xml:id="UT22084-072-017-161"/>
-                                        <p tid="101">“Among those, what is right samādhi? It is the samādhi that is even<note place="end" xml:id="UT22084-072-017-162">“Even” here translates <foreign xml:lang="Sa-Ltn" type="term">samā</foreign>; there is a wordplay between <foreign xml:lang="Sa-Ltn" type="term">samā</foreign> and <foreign xml:lang="Sa-Ltn">samādhi</foreign>.</note> (<foreign xml:lang="Sa-Ltn" type="term">samā</foreign>), in the sense that it is right.<note place="end" xml:id="UT22084-072-017-163"> The Tibetan suggests *<foreign xml:lang="Sa-Ltn" type="term">yā
+                                        <p tid="101">“Among those, what is right samādhi? It is the samādhi that is even<note place="end" xml:id="UT22084-072-017-162">“Even” here translates <foreign xml:lang="Sa-Ltn" type="term">samā</foreign>; there is a wordplay between <foreign xml:lang="Sa-Ltn" type="term">samā</foreign> and <foreign xml:lang="Sa-Ltn">samādhi</foreign>.</note> in the sense that it is right.<note place="end" xml:id="UT22084-072-017-163"> The Tibetan suggests *<foreign xml:lang="Sa-Ltn" type="term">yā
                                                                 samyaktvena samā</foreign>. The Sanskrit has <foreign xml:lang="Sa-Ltn" type="quote">yā samyaktvena samādhiḥ</foreign>.</note>
                                                 <ref cRef="F.181.b" type="folio" xml:id="UT22084-072-017-428"/> It is the samādhi abiding in which one
                                                 steps into the right certainty of steadfastness toward the liberation of all sentient beings. This is
@@ -1392,7 +1397,7 @@
                                                         Samtani (1971, p. 54, n. 5), in this instance the Tibetan not only translates <foreign type="term" xml:lang="Sa-Ltn">eṇeya</foreign> with <foreign xml:lang="Bo-Ltn">ri
                                                                 dvags</foreign> but also offers a transliteration. </note>
                                         </p>
-                                        <p tid="172">9. “His secret organ is placed within a sheath.</p>
+                                        <p tid="172">9. “His secret organ is retracted within a sheath.</p>
                                         <p tid="173">10. “The upper half of his body is like a lion’s. </p>
                                         <milestone unit="chunk" xml:id="UT22084-072-017-510"/>
                                         <p tid="174">11. “The space between the shoulders is broad. </p>
@@ -2287,8 +2292,9 @@
                                                         <term type="definition">In its broadest sense, the term <foreign xml:lang="Sa-Ltn" type="term">saṁskāra</foreign> includes all impermanent entities when understood as
                                                                 causes. The prefix <foreign xml:lang="Sa-Ltn" type="term">sam</foreign> is here
                                                                 understood as indicating “coming together” or “assembling,” while the root <foreign xml:lang="Sa-Ltn" type="term">kṛ</foreign> means “to produce,” “to create.”
-                                                                This translation is also meant to reflect the Tibetan rendering, where each <term type="ignore">element</term> matches, respectively, “assembling” and
-                                                                “factor.”</term>
+                                                                <!--This translation is also meant to reflect the Tibetan rendering, where each <term type="ignore">element</term> matches, respectively, “assembling” and
+                                                                “factor.”-->
+                            </term>
                                                 </gloss>
                     </item>
                                         <item>
@@ -2347,7 +2353,7 @@
                                                                 According to some abhidharma masters, this coming together gives rise to a specific
                                                                 entity called “contact,” while others consider “contact” to simply describe a specific
                                                                 state of those three entities, i.e., when object, faculty, and consciousness are
-                                                                “together” and thus able to give rise to perception. It is also worth noticing that
+                                                                “together” and thus able to give rise to notion. It is also worth noticing that
                                                                 the root <foreign xml:lang="Sa-Ltn" type="term">spṛś</foreign> is used far more often
                                                                 in Sanskrit than either “to touch” or “to come in contact with” is used in English,
                                                                 and can often mean something like “to obtain” etc.</term>
@@ -2667,7 +2673,7 @@
                                                         <term xml:lang="bo">ཕུང་པོ་ལྔ།</term>
                                                         <term xml:lang="Sa-Ltn">pañca skandhāḥ</term>
                                                         <term type="definition">Five collections of similar dharmas under which all dependently arisen
-                                                                dharmas may be included: form (materiality), feeling, perception, assembled factors,
+                                                                dharmas may be included: form (materiality), feeling, notion, assembled factors,
                                                                 and consciousness.</term>
                                                 </gloss>
                     </item>
@@ -2677,7 +2683,7 @@
                                                         <term xml:lang="Bo-Ltn">nye bar len pa’i phung po lnga </term>
                                                         <term xml:lang="bo">ཉེ་བར་ལེན་པའི་ཕུང་པོ་ལྔ།</term>
                                                         <term xml:lang="Sa-Ltn">pañcopādāna­skandha</term>
-                                                        <term type="definition">The five aggregates of form, feeling, perception, assembled factors,
+                                                        <term type="definition">The five aggregates of form, feeling, notion, assembled factors,
                                                                 and consciousness. They are referred to as the bases for clinging insofar as all
                                                                 conceptual grasping arises based on these aggregates.</term>
                                                 </gloss>
@@ -3216,11 +3222,12 @@
                                                                 idea of “nourishing” (<foreign xml:lang="Pi-Ltn" type="quote">attabhāvassa posanato
                                                                         poso</foreign>), and therefore we have preferred to follow traditional
                                                                 etymologies that better reflect how the South Asian and Tibetan masters understood the
-                                                                term, rather than opting to represent a contemporary speculative hypothesis regarding
+                                                                term.<!--, rather than opting to represent a contemporary speculative hypothesis regarding
                                                                 the origin of the term, which would have been obviously unknown and incomprehensible
                                                                 to the translators of <title xml:lang="en">Distinctly Ascertaining the
                                                                         Meanings</title> into Tibetan (or to any other premodern Buddhist
-                                                                readership).</term>
+                                                                readership).-->
+                            </term>
                                                 </gloss>
                     </item>
                                         <item>
@@ -3715,7 +3722,7 @@
                                                         <term xml:lang="Bo-Ltn">gzugs can ma yin pa’i phung po bzhi </term>
                                                         <term xml:lang="bo">གཟུགས་ཅན་མ་ཡིན་པའི་ཕུང་པོ་བཞི།</term>
                                                         <term xml:lang="Sa-Ltn">catvāro 'rūpiṇaḥ skandhāḥ</term>
-                                                        <term type="definition">Listed here as the aggregates of feeling, perception, assembled
+                                                        <term type="definition">Listed here as the aggregates of feeling, notion, assembled
                                                                 factors, and consciousness.</term>
                                                 </gloss>
                     </item>
@@ -3744,9 +3751,7 @@
                                                         <term xml:lang="Bo-Ltn">lha ma yin </term>
                                                         <term xml:lang="bo">ལྷ་མ་ཡིན།</term>
                                                         <term xml:lang="Sa-Ltn">asura</term>
-                                                        <term type="definition">The traditional adversaries of the devas (gods), they are frequently
-                                                                portrayed in brahmanical mythology as having a disruptive effect on cosmological and
-                                                                social harmony.</term>
+                                                <term type="definition">One of the six classes of sentient beings. The asuras are dominated by envy, ambition, and hostility and are incessantly embroiled in disputes with the gods. They are frequently portrayed in brahmanical and Buddhist mythology as having a disruptive effect on cosmic and social harmony.</term>
                                                 </gloss>
                     </item>
                                         <item>
@@ -3813,7 +3818,7 @@
                     </item>
                                         <item>
                         <gloss type="term" xml:id="UT22084-072-017-390">
-                                                        <term>perception</term>
+                                                        <term>notion</term>
                                                         <term xml:lang="Bo-Ltn">’du shes </term>
                                                         <term xml:lang="bo">འདུ་ཤེས།</term>
                                                         <term xml:lang="Sa-Ltn">saṃjñā</term>
@@ -3994,4 +3999,4 @@
                         </div>
                 </back>
         </text>
-</TEI>
+</tei:TEI>
