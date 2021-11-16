@@ -1,0 +1,2119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schema/current/translation.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<tei:TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="mainTitle" xml:lang="Bo-Ltn">des pas zhus pa’i mdo</title>
+                <title type="mainTitle" xml:lang="Sa-Ltn">Surataparipṛcchāsūtra</title>
+                <title type="mainTitle" xml:lang="en">Surata’s Questions</title>
+                <title type="longTitle" xml:lang="Bo-Ltn">’phags pa des pas zhus pa zhes bya ba theg pa chen po’i mdo</title>
+                <title type="longTitle" xml:lang="Sa-Ltn">Āryasurataparipṛcchānāmamahāyānasūtra</title>
+                <title type="mainTitle" xml:lang="bo">དེས་པས་ཞུས་པའི་མདོ།</title>
+                <title type="longTitle" xml:lang="bo">འཕགས་པ་དེས་པས་ཞུས་པ་ཞེས་བྱ་བ་ཐེག་པ་ཆེན་པོའི་མདོ།</title>
+                <author role="translatorMain" ref="contributors.xml#team-34">Translated by the UCSB Translation Group 2<lb/>
+                    under the patronage and supervision of 84000: Translating the Words of the Buddha</author>
+                <author role="translatorEng" ref="contributors.xml#person-203">Jed Forman</author>
+                <editor role="associateEditor" ref="contributors.xml#person-74">Ryan Damron</editor>
+                <editor role="externalReviewer" ref="contributors.xml#person-51">James Duncan Gentry</editor>
+                <consultant role="projectManager" ref="contributors.xml#person-203">Jed Forman</consultant>
+                <editor role="copyEditor" ref="contributors.xml#person-249">Konchog Norbu</editor>
+                <author role="translatorEng" ref="contributors.xml#person-204">ErdeneBaatar Erdene-Ochir</author>
+                <author role="translatorEng" ref="contributors.xml#person-202">Michael Ium</author>
+                <consultant role="advisor" ref="contributors.xml#person-206">José I. Cabezón</consultant>
+                <editor role="projectEditor" ref="contributors.xml#person-289">Nathaniel Rich</editor>
+                <editor role="TEImarkupEditor" ref="contributors.xml#person-108">André Rodrigues</editor>
+                <editor role="finalReviewer" ref="contributors.xml#person-250">Rory Lindsay</editor>
+            </titleStmt>
+            <editionStmt>
+                <edition>v 1.0.1 <date>2021</date>
+                </edition>
+            </editionStmt>
+
+            <publicationStmt status="1">
+                <publisher>
+                    <name>84000: Translating the Words of the Buddha</name> is a global non-profit initiative to translate all the Buddha’s words into modern languages, and to make them available to everyone. </publisher>
+                <availability>
+                        <licence>
+                            <graphic url="http://i.creativecommons.org/l/by-nc-nd/2.0/88x31.png"/>
+                            <tei:p>This work is provided under the protection of a Creative Commons CC BY-NC-ND (Attribution -
+                                Non-commercial - No-derivatives) 3.0 copyright. It may be copied or printed for fair use, but only
+                                with full attribution, and not for commercial advantage or personal compensation. For full details,
+                                see the Creative Commons license.</tei:p>
+                        </licence>
+                    </availability>
+                <idno xml:id="UT22084-043-008"/>
+                <date>2021-10-13</date>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl key="toh71" type="text">
+                    <ref>Toh 71</ref>
+                    <biblScope>Degé Kangyur, vol. 43 (dkon brtsegs, ca), folios 181.a–193.b</biblScope>
+                    <author role="translatorTib">Jinamitra</author>
+                    <author role="translatorTib">Surendrabodhi</author>
+                    <author role="translatorTib">Bandé Yeshé Dé</author>
+                    <location work="UT4CZ5369" count-pages="26">
+                        <volume number="43" start-page="361" end-page="386"/>
+                    </location>
+                    <idno parent-id="O1JC114941JC14667" work="http://read.84000.co/sections"/>
+                    <idno source-id="O1JC114941JC11610" work="W22084"/>
+                </bibl>
+            </sourceDesc>
+            <notesStmt>
+                <note type="lastUpdated" date-time="2021-11-16T14:52:32.729Z" user="admin">16/11/2021 14:52:32</note>
+            
+<note type="updated" update="text-version" value="v 0.0.1" date-time="2019-12-20T12:56:48.575Z" user="admin">Automated version increment</note>
+<note type="updated" update="translation-status" value="2.g" date-time="2020-03-11T09:16:15.209Z" user="line-tofte">2.g</note>
+    <note type="updated" update="translation-status" value="2.f" date-time="2020-11-30T10:33:16.883Z" user="line-tofte">2.f</note>
+    <note type="updated" update="text-version" value="0.0.2" date-time="2020-11-30T10:33:16.883Z" user="line-tofte">Auto (update-publication-status)</note>
+    <note type="updated" update="translation-status" value="2.d" date-time="2021-02-18T09:06:08.229Z" user="line-tofte">2.d</note>
+    <note type="updated" update="text-version" value="0.0.3" date-time="2021-02-18T09:06:08.229Z" user="line-tofte">Auto (update-publication-status)</note>
+    <note type="updated" update="text-version" value="0.0.4" date-time="2021-02-18T09:06:45.121Z" user="line-tofte">Auto (update-contributors)</note>
+    <note type="updated" update="translation-status" value="2.c" date-time="2021-03-29T08:24:51.383Z" user="line-tofte">2.c</note>
+    <note type="updated" update="text-version" value="0.0.5" date-time="2021-03-29T08:24:51.383Z" user="line-tofte">Auto (update-publication-status)</note>
+    <note type="updated" update="text-version" value="0.0.6" date-time="2021-03-29T08:35:46.067Z" user="line-tofte">Auto (update-contributors)</note>
+    <note type="updated" update="text-version" value="0.0.7" date-time="2021-09-03T12:21:08.986Z" user="line-tofte">Auto (update-contributors)</note>
+    <note type="updated" update="translation-status" value="2.b" date-time="2021-09-09T06:55:50.983Z" user="line-tofte">2.b</note>
+    <note type="updated" update="text-version" value="0.0.8" date-time="2021-09-09T06:55:50.983Z" user="line-tofte">Auto (update-publication-status)</note>
+    <note type="updated" update="text-version" value="0.0.9" date-time="2021-09-10T09:27:04.775Z" user="line-tofte">Auto (update-contributors)</note>
+    <note type="updated" update="translation-status" value="2.a" date-time="2021-09-10T09:28:08.837Z" user="line-tofte">2.a</note>
+    <note type="updated" update="text-version" value="0.0.10" date-time="2021-09-10T09:28:08.837Z" user="line-tofte">Auto (update-publication-status)</note>
+    <note type="updated" update="text-version" value="0.0.11" date-time="2021-09-16T13:04:06.053Z" user="andre">Auto (update-titles)</note>
+    <note type="updated" update="translation-status" value="2" date-time="2021-09-23T05:30:56.548Z" user="mike">2</note>
+    <note type="updated" update="text-version" value="0.0.12" date-time="2021-09-23T05:30:56.548Z" user="mike">Auto (update-publication-status)</note>
+    <note type="updated" update="text-version" value="0.0.13" date-time="2021-10-07T08:47:46.372Z" user="line-tofte">Auto (update-contributors)</note>
+    <note type="updated" update="translation-status" value="1" date-time="2021-10-13T04:37:17.236Z" user="mike">1</note>
+    <note type="updated" update="text-version" value="1.0.0" date-time="2021-10-13T04:37:17.236Z" user="mike">first published version</note>
+    <note type="updated" update="text-version" value="1.0.1" date-time="2021-11-16T14:52:28.951Z" user="andre">Corrected Skt to: anāthapiṇḍadasya ārāmaḥ</note>
+</notesStmt>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <div type="summary">
+                <head type="summary" tid="1">Summary</head>
+                <tei:milestone unit="chunk" xml:id="UT22084-043-008-1"/>
+                <tei:p tid="2">
+                    <title xml:lang="en">Surata's Questions</title> follows Surata, a seemingly poor vagabond endowed
+                    with a wealth of ethical virtue. The juxtaposition of Surata’s poverty with the abundance of his
+                    moral merits forms a central theme of the sūtra. After being tested by the god Śakra, Surata finds a
+                    precious gem that he decides to give to the poorest person in the city. The narrative’s irony ensues
+                    when Surata decides that King Prasenajit should receive the gem, since his ethical depravity
+                    vitiates his material wealth. The shock of Surata’s decision occasions a valuable lesson on true
+                    wealth lying in moral integrity, to which the Buddha himself attests upon his arrival midway through
+                    the sūtra. The sūtra concludes with King Prasenajit’s recognition of the error of his ways and the
+                    Buddha’s prophecy of Surata’s coming awakening.</tei:p>
+            </div>
+            <div type="acknowledgment">
+                <head type="acknowledgment" tid="3">Acknowledgements</head>
+                <tei:milestone unit="chunk" xml:id="UT22084-043-008-2"/>
+                <tei:p tid="4">Translated, edited, and introduced by ErdeneBaatar Erdene-Ochir, Jed Forman, and Michael Ium, members of the UCSB Buddhist Studies Translation Group 2. The translation team would like to acknowledge their indebtedness to Professor José Cabezón for his
+                    ongoing support. We would also like to thank all of our teachers. <foreign xml:lang="Sa-Ltn" type="term">Sarvamaṅgalam</foreign>!</tei:p>
+                <tei:milestone unit="chunk" xml:id="UT22084-043-008-3"/>
+                <tei:p tid="5">The translation was completed under the patronage and supervision of 84000: Translating the Words of
+                    the Buddha.</tei:p>
+            </div>
+            <div type="introduction">
+                <head type="introduction" tid="6">Introduction</head>
+                <div type="section" xml:id="UT22084-043-008-introduction-1">
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-4"/>
+                    <tei:p tid="8">
+                        <title xml:lang="en">Surata’s Questions</title>, the twenty-seventh sūtra in the <title xml:lang="en">
+                            <term>Heap of Jewels</term>
+                        </title> section of the
+                            Kangyur, displays many of the common tropes of Mahāyāna literature, including the
+                        Buddha’s unimaginably vast retinue, his performance of miracles, such as lights emanating from
+                        his body, and the conversion of a previously stubborn interlocutor. Also typical of Mahāyāna
+                        sūtras, the main protagonist is the eponymous figure of the sūtra, in lieu of the Buddha. <title xml:lang="en">Surata’s Questions</title> thus mainly focuses on the story of Surata in a
+                        narrative that can be conceptualized in six movements. </tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-5"/>
+                    <tei:p tid="9">First, Surata, identified simply as a “poor city-dweller,” is tested by the god Śakra in
+                        Śrāvastī, the city where the Buddha himself happens to be residing. With his divine eye, Śakra
+                        perceives Surata to be of impeccable moral character and so decides to determine the limits of
+                        his resolve. Śakra magically creates several scenarios to tempt Surata to succumb to a desire
+                        for power, wealth, and sexual gratification. But being inveterately moral and without desire,
+                        Surata resists each temptation, and responds to them in eloquent verses that highlight the
+                        dangers of succumbing to each of them. At this point, Śakra becomes deeply impressed
+                        with Surata.</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-7"/>
+                    <tei:p tid="10">In the second movement, Surata chances upon a precious gem. As a good bodhisattva, he resolves to
+                        give the jewel to the poorest person in the city of Śrāvastī, the capital of Kośala. Announcing
+                        this publicly, the townsfolk predictably make their case for why they are the poorest and
+                        therefore the most deserving of the gem. They are also predictably irritated when Surata
+                        declares he has decided to give the gem to the king of Kośala, the famed King Prasenajit. Having
+                        gained the crowd’s attention through his audacity, Surata gives a soliloquy on how true wealth
+                        lies not in possessions, but in virtue. Surata therefore displays characteristic Mahāyāna
+                        skillful means, leveraging the townsfolk’s infatuation with the gem to impart a moral lesson.</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-8"/>
+                    <tei:p tid="11">With the crowd in tow, Surata delivers the gem to King Prasenajit. It is a backhanded gesture
+                        since Surata offers it with the explanation that the king is the poorest person in Śrāvastī.
+                        Insulted, the king asks Surata to explain how he could possibly be the poorest. Surata proceeds
+                        to describe how the king’s political maneuverings and plundering have made him bereft of moral
+                        virtue. His possessions mean nothing without the merit of good deeds, for without this, one is
+                        karmically doomed to a miserable future. The king is both moved and angered by Surata’s
+                        exposition, and so remains unconvinced, asking if there is anyone who can bear witness to
+                        Surata’s testament. This ushers in the fourth movement of the story. Surata says that the Buddha
+                        will bear such witness. King Prasenajit therefore requests Surata to invite the Buddha, but
+                        Surata counters that there is no need, for, being omniscient, the Buddha will arrive simply
+                        through Surata’s mental aspiration. The Buddha suddenly bursts forth from the ground,
+                        accompanied by a dizzying number of holy beings. The Buddha attests to Surata’s summation of the
+                        king’s wealth, and so Prasenajit is convinced. Surata suggests that the Buddha give a sermon,
+                        since it would be a shame for him to come without doing so. After delivering his sermon, the
+                        Buddha and his retinue continue their upward trajectory by flying into the sky. </tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-9"/>
+                    <tei:p tid="12">In the fifth movement, Surata delivers a sermon of his own, describing the various meanings of
+                            <distinct>retinue</distinct>. At the conclusion, the king again feels moved to contrition,
+                        offering bolts of cloth to the rag-clad Surata. When Surata rejects the offer, the king requests
+                        Surata to at least walk upon the cloth. This is a great show of respect because the feet are
+                        considered the most impure part of a person’s body. Thus to request someone to touch an object
+                        with their feet suggests that even the lowest part of that person’s body confers immense
+                        blessing. Surata then requests that the king give this cloth to the poor townsfolk,
+                        demonstrating that Surata did not trade their welfare solely to create an opportunity to teach
+                        the Dharma; in lieu of the gem, he was still able to offer them something of value in the
+                        end.</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-10"/>
+                    <tei:p tid="13">The sixth and final movement of the story reads somewhat like an epilogue. Sometime later, King
+                        Prasenajit, his family, and his royal attendants accompany Surata to visit the Buddha. Śakra
+                        emanates a grand throne for the Buddha and his retinue with the requisite fanfare. Some of the
+                        other gods question why Surata, out of place in his ragged garments, is in attendance. Śakra’s
+                        earlier respect for Surata resurfaces when he comes to Surata’s defense by admonishing the other
+                        gods for their failure to realize how special Surata is. As Śakra foreshadows, the Buddha
+                        concludes the sūtra by predicting Surata’s awakening, to the grand jubilation of all.</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-11"/>
+                    <tei:p tid="14">Surata is a common personal name in Buddhist literature, but no other text appears to mention a
+                        renunciate bodhisattva who might be identifiable as the Surata of this text. In contrast, the
+                        prominent role in this narrative of Prasenajit, king of Kośala, a well-known figure in Buddhist
+                        literature, is noteworthy. It is believed that Prasenajit was born in the same year as
+                        Siddhārtha, the future Buddha, and it is possible, given the close geographical and political
+                        ties between Kośala and the Śākya kingdom, that Prasenajit and the Śākya prince Siddhārtha moved
+                        in the same royal circles and knew each other from an early age. Prasenajit is generally
+                        depicted as a dedicated, lifelong patron of the Buddha with an exemplary degree of devotion to
+                        him. This devotion is clearly demonstrated in Prasenajit’s most famous deed: his fashioning of a
+                        sandalwood image of Śākyamuni—perhaps the earliest record of any image of the Buddha—to soothe
+                        his longing and devotion when the Buddha was away from Śrāvastī. Prasenajit is also a frequent
+                        interlocuter in Buddhist sūtras, presenting the questions to Śākyamuni that elicit his sermons.
+                        For his role in Buddhist sūtras and his acts of patronage and devotion, Prasenajit is often held
+                        up as the model of Buddhist kingship. </tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-12"/>
+                    <tei:p tid="15">This general depiction of Prasenajit in Buddhist literature makes his role in <title xml:lang="en">Surata’s Questions</title> a curious one. Here he is described as a rapacious
+                        and maniacal tyrant who steals the wealth of his people and inflicts needless suffering upon
+                        them. It is only through Surata’s challenge and the Buddha’s subsequent chastisement that
+                        Prasenajit realizes his faults as a king and awakens his devotion to the Buddha and his
+                        community. That this narrative stands somewhat at odds with Prasenajit’s general status in
+                        Buddhist literature may simply demonstrate the malleability of common Buddhist narratives for
+                        the sake of expediency in articulating the ethical or doctrinal message of a given scriptural
+                        discourse. Possibly, too, in describing what seems to be his first meeting with the Buddha
+                        following the latter’s awakening, the text could be read as indicating that Prasenajit’s views
+                        on how best to wield royal power had, prior to that first encounter with Surata’s challenge as a
+                        prelude, been fiercer and more autocratic than is suggested in other accounts of his subsequent
+                            doings.<note place="end" xml:id="UT22084-043-008-13"> A further hint that leaves room for such speculation is the
+                            traditional narrative according to which the Buddha was not invited to Śrāvastī either by
+                            King Prasenajit or by any other member of the ruling family, but instead by the wealthy merchant
+                            Anāthapiṇḍada, who then had to pay Prasenajit’s son Prince Jeta a huge sum of money for land
+                            on which to build a vihāra to accommodate the Buddha and his followers. This was in stark
+                            contrast to the insistent invitations, welcome, patronage, and provision of resources
+                            extended to the Buddha by Bimbisara, king of Magadha. </note> If this is an account of
+                        Prasenajit’s first meeting with the Buddha, however, it should be noted that it is a quite
+                        different one from the classic account related in the <title xml:lang="Sa-Ltn">Saṅghabhedavastu</title> (Toh 1 chapter 17<ref rend="pending" target="https://read.84000.co/translation/toh1-17.html"/>),<note place="end" xml:id="UT22084-043-008-14">
+                                Degé Kangyur vol. 4 (’dul ba, nga) F.89.b et seq. See Miller et al., <title xml:lang="en">The Chapter on Schisms in the Saṅgha</title>
+                            <ref rend="pending" target="https://read.84000.co/translation/toh1-17.html"/>, 84000:
+                            Translating the Words of the Buddha (forthcoming).</note> in its standalone derivative the
+                        <title xml:lang="Sa-Ltn">Abhiniṣkramanasūtra</title> (Toh 301<ref rend="pending" target="https://read.84000.co/translation/toh301.html"/>),
+                        and in the Pali <title xml:lang="Pi-Ltn">Dahara-sutta</title> (SN 3.1). This unique
+                        perspective on the figure of Prasenajit thus counts among the numerous ways <title xml:lang="en">Surata’s Questions</title> makes a significant contribution to our understanding of
+                        Buddhist literature.</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-15"/>
+                    <tei:p tid="16">In addition to the Tibetan translation found in various Kangyurs, two Chinese translations of the
+                            <title xml:lang="Sa-Ltn">Surataparipṛcchā</title> are presently available: the first by Zhi
+                        Shilun in 373 <hi rend="small-caps">ce</hi> with the title <title xml:lang="zh">須賴經</title> (<title xml:lang="Zh-Ltn">Xu lai jing</title>, Taishō 329), and a
+                        second in the sixth century by Bodhiruci under the title <title xml:lang="zh">善順菩薩會</title> (<title xml:lang="Zh-Ltn">Shan shun pusa hui</title>, Taishō 310).
+                        The latter translation by Bodhiruci served as the basis for the English translation of the
+                            <title xml:lang="Sa-Ltn">Surataparipṛcchā</title> published by Garma C. C. Chang and his
+                        team in 1983. There are marked differences between Bodhiruci's translation and the Tibetan
+                        versions used in the translation of this sūtra that follows here, which are reflected in Chang’s
+                        English translation. The final, sixth movement is not found in the Chinese version, and the
+                        order of events varies. In the sequence from the Tibetan translation reported above, the
+                        narrative continues after the Buddha has given his sermon on the meanings of
+                            <distinct>retinue</distinct>; the Chinese version of the sūtra, however, concludes at this
+                        point. The contents of the Buddha’s sermon in the fourth movement also vary widely between the
+                        two versions: in the Chinese, the Buddha discusses the thirty-two practices that good Mahāyāna
+                        adherents must follow, while in the Tibetan, the Buddha expounds six different sets of four,
+                        each tetrad communicating seemingly disconnected aspects of Buddhist practice. Other differences
+                        are minor but noteworthy: in the Tibetan version, for instance, Surata chances upon a precious
+                        gem, and in the Chinese, he finds a golden bell. </tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-16"/>
+                    <tei:p tid="17">
+                        <title xml:lang="en">Surata's Questions</title> is only mentioned by name in one work of the
+                        Tengyur, an anthology titled <title xml:lang="en">Compendium of Sūtras on the Steps of
+                            Meditation</title> (<title xml:lang="Sa-Ltn">Bhāvanā­krama­sūtra­samuccaya</title>, <title xml:lang="Bo-Ltn">bsgom pa'i rim pa mdo kun las btus pa</title>). The work cites two
+                        interesting parts of the sūtra, both of which are in verse. The first reads,</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-17"/>
+                    <q>
+                        <lg tid="18">
+                        <l>When the seeds are bitter,</l>
+                        <l>They will bear bitter fruit.</l>
+                        <l>When the seeds are sweet,</l>
+                        <l>They will bear sweet fruit.</l>
+                    </lg>
+                    </q>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-18"/>
+                    <q>
+                        <lg tid="19">
+                        <l>Applying this example,</l>
+                        <l>A wise person understands</l>
+                        <l>The bitterness of the ripening of sins</l>
+                        <l>And the sweetness of the fruits of white deeds. [F.130.b]</l>
+                    </lg>
+                    </q>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-19"/>
+                    <tei:p tid="20">This verse is given in the midst of several other citations describing the importance of keeping
+                        one’s ethics in order to escape the suffering of saṃsāra. The second selection is
+                        cited as an example of how to go to refuge to the Three Jewels—the Buddha, Dharma, and
+                        Saṅgha:</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-20"/>
+                    <q>
+                        <lg tid="21">
+                        <l>You delight in eliminating desire, hatred, and delusion;</l>
+                        <l>Your mind is peaceful and impartial, yet compassionate;</l>
+                        <l>You speak truthfully and know the ultimate;</l>
+                        <l>Thus, I pay homage to you, who liberates all three realms! [F.137.b]</l>
+                    </lg>
+                    </q>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-21"/>
+                    <tei:p tid="22">The context of these passages becomes clear in the sūtra translated below. However, the decision
+                        to isolate these passages and place them in a mélange of other such passages from other sūtras
+                        suggests they may have been recognized as standalone aphorisms that were well-known in the
+                        compiler’s contemporary Buddhist community and worthy of record.</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-22"/>
+                    <tei:p tid="23">There is no surviving Sanskrit witness to <title xml:lang="en">Surata's Questions</title>. It was
+                        translated into Tibetan by a group of translators, including the famous translator Bandé Yeshé
+                        Dé, no later than the early ninth century <hi rend="small-caps">ce</hi>. The text is recorded in
+                        both the Denkarma and the Phangthangma—both early catalogs of Tibetan translations. The
+                        translation below relies primarily on the Degé (<title xml:lang="Bo-Ltn">sde dge</title>)
+                        edition of the text, but other editions included in the Comparative Edition of the Kangyur
+                            (<title xml:lang="Bo-Ltn">bka’ ’gyur dpe bsdur ma</title>) as well as the Stok Palace
+                            (<title xml:lang="Bo-Ltn">stog pho brang</title>) edition of the Kangyur were consulted,
+                        particularly when the Degé seemed to contain errors or nonintuitive readings. Chang’s English
+                        translation of the Chinese version of this text—which, as described above, is markedly different
+                        from the Tibetan—was also consulted for comparison.</tei:p>
+                </div>
+            </div>
+        </front>
+        <body>
+            <div type="translation">
+                <head type="translation" tid="24"> The Translation </head>
+                <head type="titleHon" tid="25">The Noble Mahāyāna Sūtra</head>
+                <head type="titleMain" tid="26">Surata’s Questions</head>
+                <div type="section" xml:id="UT22084-043-008-section-1">
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-25"/>
+                    <tei:p tid="30">
+                        <ref cRef="F.181.a" type="folio" xml:id="UT22084-043-008-295"/> Homage to all the buddhas and bodhisattvas!</tei:p>
+                    <lb/>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-26"/>
+                    <tei:p tid="31">Thus did I hear at one time. The Bhagavān was dwelling in Śrāvastī, in Prince Jeta’s Grove at
+                        Anāthapiṇḍada’s Park, together with a great monastic assembly of one thousand two hundred and
+                        fifty monks and with thirty-two thousand bodhisattvas. He was venerated, revered, honored, and
+                        worshiped by the fourfold community, as well as by the king, ministers, townsfolk, and
+                        citizens.</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-27"/>
+                    <tei:p tid="32">At that time in Śrāvastī there lived a poor city-dweller named Surata. He had unshakable faith in
+                        the Buddha, unshakable faith in the Dharma, and unshakable faith in the Saṅgha. He held to the
+                        five basic precepts and adhered to the ten virtuous actions. Being kind, he was equanimous
+                        toward all sentient beings. Being compassionate, he was indefatigable. Being joyful, he reveled
+                        in and longed for the bliss of Dharma. Being impartial, he was unmoved by happiness or
+                        suffering. He was dedicated to the pursuit of unsurpassable, perfect awakening, and was
+                        perfected through previous practice. Through skillful means, he brought sentient beings to full
+                        maturity, despite being considered poor.</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-28"/>
+                    <tei:p tid="33">Śakra, lord of the gods, beheld the poor city-dweller Surata with his divine eye, whose clarity
+                        surpasses any human’s. Śakra perceived that he had few desires, that he was content, that he had
+                        ethical discipline and was morally upright, that his mind was unperturbed, that he always wore a
+                        smile, that he did not judge others for their mistakes, <ref cRef="F.181.b" type="folio" xml:id="UT22084-043-008-296"/> that he cared for the mental
+                        welfare of all sentient beings, that he was not covetous, that he acted mindfully, that he was
+                        content, easily fulfilled, and easily sated, that he had good intentions, that he was not
+                        deceitful, that he was not conceited, that he was eloquent, that he was respectful, that he
+                        continually observed the eight precepts, that he carried a bowl made of leaves in his hands,
+                        that he slept on a grass mat, that he wore tattered garments, that he would not take things he
+                        chanced upon, that he would share his food no matter its quality, that he had regard for the
+                        Tathāgata at all times, that he wanted to hear the Dharma, that he was inspired by various
+                        parables, and that when sentient beings saw him, they were happy.</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-29"/>
+                    <tei:p tid="34">Seeing this, Śakra, lord of the gods, thought to himself, “Let me examine whether this poor
+                        city-dweller’s moral resolve is firm.” He then emanated a crowd of people who abused and rebuked
+                        the poor city-dweller Surata with offensive words. Surata patiently tolerated their threats,
+                        even as they brandished clumps of earth, sticks, and blades; he was neither irritated, nor gave
+                        rise to malicious thoughts.</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-30"/>
+                    <tei:p tid="35">Śakra, lord of the gods, then emanated another crowd in front of Surata. With kind words, they
+                        said to him, “We would like to help you. If you wish, we will exterminate all the enemies who
+                        threaten you.” </tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-31"/>
+                    <tei:p tid="36">“Friends, don’t say such things!” replied Surata. “Even if those people were to cut my body into
+                        a hundred pieces, I still would not think badly of them. Friends, in the various worlds, there
+                        are two types of beings, the virtuous and the nonvirtuous. The virtuous ones have happy
+                        rebirths, and the nonvirtuous ones have miserable rebirths. Therefore, since I don’t even want
+                        to get angry with them, how could I harm them physically?”</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-32"/>
+                    <tei:p tid="37">Surata then spoke these verses:</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-33"/>
+                    <lg tid="38">
+                        <l>“When the seeds are bitter,</l>
+                        <l>They will bear bitter fruit. <ref cRef="F.182.a" type="folio" xml:id="UT22084-043-008-297"/>
+                        </l>
+                        <l>When the seeds are sweet,</l>
+                        <l>They will bear sweet fruit.</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-34"/>
+                    <lg tid="39">
+                        <l>“Applying this analogy,</l>
+                        <l>A wise person understands</l>
+                        <l>The bitterness of the ripening of sins</l>
+                        <l>And the sweetness of the fruits of white deeds.<note place="end" xml:id="UT22084-043-008-35"> That is, virtuous
+                                deeds.</note>
+                        </l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-36"/>
+                    <lg tid="40">
+                        <l>“You should never commit the three kinds of sins</l>
+                        <l>With your body, speech, or mind!</l>
+                        <l>And when others commit them,</l>
+                        <l>The wise should not rejoice!</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-37"/>
+                    <lg tid="41">
+                        <l>“You should always perform the three white deeds</l>
+                        <l>With your body, speech, and mind!</l>
+                        <l>And when others perform virtues, </l>
+                        <l>You should rejoice in them!”</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-38"/>
+                    <tei:p tid="42">Then, on another occasion, Śakra, lord of the gods, showed Surata a heap of jewels and gold and
+                        said, “Surata, use these to make donations and make merit! Get some clothes and jewelry! Why
+                        should you be poor and wretched?”</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-39"/>
+                    <tei:p tid="43">“Friends,”<note place="end" xml:id="UT22084-043-008-40"> “Friends” (<foreign xml:lang="Bo-Ltn" type="term">grogs po
+                                dag</foreign>) is clearly in the plural in the Tibetan, but it is unclear whom Surata is
+                            addressing.</note> said Surata, “because I performed evil deeds in the past toward sentient
+                        beings with my body, speech, and mind, I am now considered poor. Therefore, I don’t want to take
+                        what is not given to me.”</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-41"/>
+                    <tei:p tid="44">“Surata, now is the time to be living happily!” Śakra insisted. “Why are you thinking of the
+                        world beyond?”</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-42"/>
+                    <tei:p tid="45">“Friend,” replied Surata, “living for the sake of this life is the way of childish beings. The
+                        wise live for the sake of their next life. Those who are possessed by desire, possessed by
+                        hatred, possessed by delusion, and possessed by lust take what is not given to them, whereas the
+                        wise are not covetous. Those who live for the sake of hoarding take what is not given to them,
+                        whereas the wise do not hoard. Those who hold concepts of ‘mine’ and who are possessive take
+                        what is not given to them, whereas the wise do not hold concepts of ‘mine’ and are not
+                        possessive. Those who focus on their bodies and vitality take what is not given to them, whereas
+                        the wise do not focus on their bodies and vitality. <ref cRef="F.182.b" type="folio" xml:id="UT22084-043-008-298"/> Those who are not satisfied and
+                        not contented take what is not given to them, whereas the wise know satisfaction and
+                        contentment. Those who live impurely take what is not given to them, whereas the wise live
+                        purely. Those who do not have insight into karma take what is not given to them, whereas the
+                        wise have insight into karma. Those who live for the sake of harming others take what is not
+                        given to them, whereas the wise live for the sake of not harming others. Those who do not have
+                        loving attitudes take what is not given to them, whereas the wise have loving attitudes. Those
+                        whose minds are polluted by the four wrong views take what is not given to them, whereas the
+                        minds of the wise are not wrong. Moreover, may the poor heed these verses!</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-43"/>
+                    <lg tid="46">
+                        <l>“The learned have explained</l>
+                        <l>That those with tens of billions of treasures</l>
+                        <l>But who refuse to give</l>
+                        <l>Are poor in this world.</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-44"/>
+                    <lg tid="47">
+                        <l>“The insightful have explained</l>
+                        <l>That those without even porridge to eat</l>
+                        <l>But who continue to give</l>
+                        <l>Are wealthy in this world.</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-45"/>
+                    <lg tid="48">
+                        <l>“Noble ones are without sin, </l>
+                        <l>And thus are always beautiful.</l>
+                        <l>Childish beings commit sins</l>
+                        <l>And so are ugly, even adorned with ornaments.</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-46"/>
+                    <lg tid="49">
+                        <l>“What the wise revile with ease</l>
+                        <l>The childish praise instead.</l>
+                        <l>The childish praise sin;</l>
+                        <l>Sin is what the wise condemn.”</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-47"/>
+                    <tei:p tid="50">Then, on another occasion, Śakra, lord of the gods, emanated another person who brought a pile of
+                        gold to Surata and said, “Hey Surata, I’ve brought this gold for you. I’m in the midst of a
+                        dispute with someone and only you can act as my witness. You need to be my witness!”</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-48"/>
+                    <tei:p tid="51">Surata replied, “Give it up, my friend! Don’t say that! I don’t want to lie. My friend, lying
+                        would deceive not only myself and others, but the noble ones as well. Lying ruins one’s
+                        reputation. Lying makes one untrustworthy and unpleasant. <ref cRef="F.183.a" type="folio" xml:id="UT22084-043-008-299"/> Lying makes one despicable.
+                        Lying torments one’s mind. My friend, lying gives one bad breath. Lying makes one’s body feeble.
+                        Lying makes one despised by the gods. My friend, lying steals away one’s roots of virtue. Lying
+                        dulls one’s memory. Lying blocks one’s path to fortunate rebirths. My friend, noble ones do not
+                        engage in lying.<note place="end" xml:id="UT22084-043-008-49"> This translation follows the reading <foreign xml:lang="Bo-Ltn" type="term">brtson par mi bya ba</foreign> attested in the Yongle,
+                            Kangxi, Narthang, and Lhasa versions of the text. The Degé reads <foreign xml:lang="Bo-Ltn" type="term">btson par mi bya ba</foreign>. </note> Lying makes one’s speech distasteful
+                        among truthful people. Lying is criticized by the wise. Lying is the root of all sins. Lying
+                        severs the fulfillment of one’s religious observances at the root. Lying is the root of all
+                        miserable rebirths.” </tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-50"/>
+                    <tei:p tid="52">The poor city-dweller Surata then spoke these verses:</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-51"/>
+                    <lg tid="53">
+                        <l>“From the mouths of liars</l>
+                        <l>Emerges foul breath.</l>
+                        <l>Lying eliminates all of one’s prior white deeds,</l>
+                        <l>Akin to destroying a monastery.</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-52"/>
+                    <lg tid="54">
+                        <l>“Deluded people dishearten themselves</l>
+                        <l>As well as deities and noble beings.</l>
+                        <l>A person who tells lies</l>
+                        <l>Will always be suspect.</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-53"/>
+                    <lg tid="55">
+                        <l>“Telling a lie</l>
+                        <l>Is the root of all sins.</l>
+                        <l>It severs the root of ascetic practices,</l>
+                        <l>And is said to be the path to miserable rebirths.</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-54"/>
+                    <lg tid="56">
+                        <l>“Even if you were to offer me gold</l>
+                        <l>Enough to fill Jambudvīpa,</l>
+                        <l>To protect the Dharma,</l>
+                        <l>I would never tell a lie.”</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-55"/>
+                    <tei:p tid="57">Unable to get Surata to lie, the person emanated by Śakra went away.</tei:p>
+                    <tei:p tid="58">Then Śakra, lord of the gods, said to the goddess Sunlight and the asura Śacī,</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-57"/>
+                    <tei:p tid="59">“You two go test whether this practitioner of religious observances and austerities indulges in
+                        sensual gratification or if he truly doesn’t strive for pleasure!”</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-58"/>
+                    <tei:p tid="60">At daybreak, the asura Śacī and the goddess Sunlight went to where Surata was staying and spoke
+                        to him sweetly, “Wake up, Surata! <ref cRef="F.183.b" type="folio" xml:id="UT22084-043-008-300"/> We’re here to serve you. Surata, behold our perfect
+                        bodies! Behold the curves, luster, and shapeliness of our bodies. Behold our bodies, anointed
+                        with unguents and adorned with ornaments, garments, and accessories! Behold how we exude the
+                        bloom of youth! Surata, behold our well-formed, perfect bodies, the kind that will please
+                        you.”</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-59"/>
+                    <tei:p tid="61">Seeing them, Surata said, “You two serve those in hell, the realms of animals, and Yama’s realm,
+                        but not those in the god or human realms. I see your bodies as illusory and dream-like. I see
+                        your bodies as being like foam, bubbles, and mirages. I see your bodies, anointed with
+                        sandalwood ointment, as covered in soggy flesh. I see your ornaments and garments as illusions
+                        that deceive the eyes. I see your youthfulness as impermanent and subject to change. Since I see
+                        all that to be meritless, I feel no attraction to you. You two serve those whose minds are like
+                        monkeys and those whose minds are like women’s, but you can’t serve those whose minds are
+                        protected by mindfulness. </tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-60"/>
+                    <tei:p tid="62">“Sisters, those who rely on desire are ugly. Those who rely on desire smell foul. Those who rely
+                        on desire are rotten. Those who rely on desire suffer greatly. Those who rely on desire are
+                        barred from all happiness. Those who rely on desire will frequent the hells, animal realms, and
+                        Yama’s realm. Those who rely on desire will remain in miserable rebirths. Those who rely on
+                        desire will resort to fighting, disputing, and quarreling. Those who rely on desire will have to
+                        live in disharmony and become trapped. Those who rely on desire develop misconceptions.
+                        <ref cRef="F.184.a" type="folio" xml:id="UT22084-043-008-301"/> Those who rely on desire will maintain their propensities for continued
+                            existence.<note place="end" xml:id="UT22084-043-008-61"> The Stok Palace version has <foreign xml:lang="Bo-Ltn" type="term">sred pa</foreign> here, which could be read as “attachment” or “craving.”
+                            The Degé reads <foreign xml:lang="Bo-Ltn" type="term">srid pa</foreign>. </note> Those who
+                        rely on desire are very deluded, completely deluded, and thoroughly deluded. Those who rely on
+                        desire are fully oppressed, very oppressed, and extremely oppressed. Those who rely on desire
+                        are thoroughly tormented, very tormented, and entirely tormented. Those who rely on desire
+                        pursue nonvirtue and degrade their virtue. Those who rely on desire plant the roots of
+                        nonvirtue. Those who rely on desire are completely trapped in an impenetrable fog of nonvirtue.
+                        Those who rely on desire are intimate with rākṣasīs, with those who have ugly bodies, and with
+                        piśācīs. Those who rely on desire will have relations with cattle, donkeys, dogs, pigs, camels,
+                        elephants, horses, sheep, and foxes. Those who rely on desire will rely on degenerate people.
+                        Those who rely on desire will rely on people who entirely forsake discipline, study, and acts of
+                        generosity. Those who rely on desire forsake religious observances and ascetic practices. Those
+                        who rely on desire are completely careless. Those who rely on desire greatly increase their
+                        mental afflictions. Those who rely on desire create many obstacles.”</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-62"/>
+                    <tei:p tid="63">The poor city-dweller Surata then spoke these verses:</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-63"/>
+                    <lg tid="64">
+                        <l>“Desire tarnishes the impermanent as permanent;</l>
+                        <l>Desire completely destroys happiness with suffering;</l>
+                        <l>Desire makes miserable realms your home.</l>
+                        <l>Those with deluded minds always rely on desire.</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-64"/>
+                    <lg tid="65">
+                        <l>“Due to desire, the quarrelsome become unhappy and evil.</l>
+                        <l>They are trapped in contentiousness and disharmony;</l>
+                        <l>They are a fertile ground for misconceptions;</l>
+                        <l>Their craving increases and happiness vanishes.</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-65"/>
+                    <lg tid="66">
+                        <l>“Due to desire, they become very deluded, extremely deluded, and thoroughly deluded;</l>
+                        <l>They are constantly oppressed and experience harm;</l>
+                        <l>They are thoroughly tormented, very tormented, and entirely tormented; <ref cRef="F.184.b" type="folio" xml:id="UT22084-043-008-302"/>
+                        </l>
+                        <l>And they engage in evil and squander their virtue.</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-66"/>
+                    <lg tid="67">
+                        <l>“Desire is the root of all nonvirtue.</l>
+                        <l>Relying on desire is like an impenetrable fog;</l>
+                        <l>Relying on desire, one will be intimate</l>
+                        <l>With piśācīs, rākṣasīs, and ugly women.</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-67"/>
+                    <lg tid="68">
+                        <l>“Due to desire, one even has relations</l>
+                        <l>With cattle, donkeys, horses,</l>
+                        <l>Pigs, dogs, foxes, camels, elephants, and sheep.</l>
+                        <l>Thus, holy beings abandon desire.</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-68"/>
+                    <lg tid="69">
+                        <l>“Desire ruins discipline, study, and acts of generosity</l>
+                        <l>As well as ascetic practice and religious observance;</l>
+                        <l>Due to desire, one is always careless, and faults increase.</l>
+                        <l>Therefore, those who wish for liberation always reject women.</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-69"/>
+                    <lg tid="70">
+                        <l>“Even if the world were filled</l>
+                        <l>With radiant beauties like you,</l>
+                        <l>Being stable in good qualities, my focused mind</l>
+                        <l>Would never be swayed toward desire.”</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-70"/>
+                    <tei:p tid="71">The asura Śacī and the goddess Sunlight then went back to Śakra, lord of the gods, and spoke this
+                        verse:</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-71"/>
+                    <lg tid="72">
+                        <l>“Surata perceives unfailingly</l>
+                        <l>The true deficiencies of women.</l>
+                        <l>The more he rejects sense objects,</l>
+                        <l>The less he has any desire for them.”</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-72"/>
+                    <tei:p tid="73">Thereupon Śakra, lord of the gods, came to the poor city-dweller Surata and spoke this verse:</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-73"/>
+                    <lg tid="74">
+                        <l>“O righteous Surata, what is it you desire?</l>
+                        <l>Keeper of religious observances, tell me truthfully!</l>
+                        <l>Do you want to become Sūrya, Candra, or Indra,</l>
+                        <l>Or Brahmā, or a divine king?”</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-74"/>
+                    <tei:p tid="75">Surata responded:</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-75"/>
+                    <lg tid="76">
+                        <l>“What wise person would want to become any of those mighty great beings,</l>
+                        <l>Whether it is Sūrya, Candra, or even Śakra,</l>
+                        <l>Brahmā, a divine king, or anyone else,</l>
+                        <l>Seeing that their frolicking is impermanent and unstable?</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-76"/>
+                    <lg tid="77">
+                        <l>“I am resolved, in thought and deed,</l>
+                        <l>To obtain that which is birthless, ageless, deathless,</l>
+                        <l>And beyond judgments of beauty and ugliness—</l>
+                        <l>That is called ‘becoming a buddha who liberates beings.’ ”</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-77"/>
+                    <tei:p tid="78">Śakra said: </tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-78"/>
+                    <lg tid="79">
+                        <l>“I rejoice in your beneficent words; <ref cRef="F.185.a" type="folio" xml:id="UT22084-043-008-303"/>
+                        </l>
+                        <l>May you completely accomplish your wishes!</l>
+                        <l>Having swiftly subjugated the entire horde of māras,</l>
+                        <l>May you attain awakening like the conqueror Śākyasiṃha!”</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-79"/>
+                    <tei:p tid="80">On another occasion, the poor city-dweller Surata found a priceless and precious gem. He thought
+                        to himself, “Assuredly, I should give this precious gem, the finest in Jambudvīpa, to the
+                        poorest person in Śrāvastī.” He went to the city and announced, “I will give this gem to the
+                        poorest among you.” </tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-80"/>
+                    <tei:p tid="81">A crowd of neglected poor people gathered there and called out, “We are poor, so give it to
+                        us!”</tei:p>
+                    <tei:p tid="82">“You are not poor!” countered Surata. “But there is someone else in Śrāvastī who is exceedingly
+                        poor, so I will give it to that person.” </tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-82"/>
+                    <tei:p tid="83">The crowd asked, “Who?” </tei:p>
+                    <tei:p tid="84">“It is King Prasenajit,” replied Surata.</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-84"/>
+                    <tei:p tid="85">“Don’t say that!” the crowd retorted. “King Prasenajit is rich and wealthy with vast resources,
+                        whereas we are poor and neglected.” </tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-85"/>
+                    <tei:p tid="86">Surata responded:</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-86"/>
+                    <lg tid="87">
+                        <l>“What is the use of so much wealth?</l>
+                        <l>Like nāgas unsatisfied with what’s in the ocean,<note place="end" xml:id="UT22084-043-008-87"> The ocean is said to be
+                                the source of precious jewels. So even though the nāgas who live there have extensive
+                                access to riches, they still are not satisfied.</note>
+                        </l>
+                        <l>Those for whom nothing is ever enough</l>
+                        <l>Are unrestrained and thus truly poor.</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-88"/>
+                    <lg tid="88">
+                        <l>“Those deluded ones,</l>
+                        <l>Whose desires intensify</l>
+                        <l>And whose minds are tormented,</l>
+                        <l>Are poor in both this life and the next.”</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-89"/>
+                    <tei:p tid="89">Then the poor city-dweller Surata, carrying the precious gem and accompanied by the crowd, went
+                        to where King Prasenajit was administering his royal duties.</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-90"/>
+                    <tei:p tid="90">At that time, as a penalty for some minor infractions, King Prasenajit had seized the possessions
+                        of some five hundred eminent merchants and householders who were from good families.</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-91"/>
+                    <tei:p tid="91">The poor city-dweller Surata offered the king the precious gem and said, “Great king, I’ve found
+                        this priceless and precious gem whose worth matches that of all Jambudvīpa, <ref cRef="F.185.b" type="folio" xml:id="UT22084-043-008-304"/> and I
+                        thought that I would give it to the poorest person in Śrāvastī. I think you are the poorest
+                        among everyone here. Therefore, O King, please accept it!”</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-92"/>
+                    <tei:p tid="92">Thereupon King Prasenajit became nervous and embarrassed, and he asked the poor city-dweller
+                        Surata, “Surata, how am I even poorer than you?”</tei:p>
+                    <tei:p tid="93">Surata replied, “O Your Majesty, it is true. You are poorer than me.”</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-94"/>
+                    <tei:p tid="94">“In what way am I poor?” asked the king.</tei:p>
+                    <tei:p tid="95">Surata then spoke these verses:</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-96"/>
+                    <lg tid="96">
+                        <l>“When someone has increasingly intense desires, is not contented with his own
+                            possessions,</l>
+                        <l>Disturbs the kingdom by causing harm, forsakes even himself,</l>
+                        <l>Fails to protect the people in his kingdom, and holds in high esteem those of meager
+                            quality,</l>
+                        <l>Then those intent on the Dharma will think him poor.</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-97"/>
+                    <lg tid="97">
+                        <l>“When someone practices loving kindness, is not harsh to sentient beings,</l>
+                        <l>Is always content with the bare necessities, has no desire,</l>
+                        <l>Is constantly compassionate when he sees the destitute, and does not despise them,</l>
+                        <l>Then he is rich, wealthy, and immensely affluent, enjoys the treasures of faith, and so
+                            forth.</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-98"/>
+                    <lg tid="98">
+                        <l>“Know that when someone possesses immense power over the people here, but does not protect
+                            the Dharma;</l>
+                        <l>When he knows that lowly people are tormented by suffering, yet punishes them further;</l>
+                        <l>When he delights in focusing on what’s in front of him with his mistresses, but has no regard
+                            for the world beyond,</l>
+                        <l>Then he does not protect the Dharma—he is abjectly poor and the lowest of people!</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-99"/>
+                    <lg tid="99">
+                        <l>“Those whose minds are stainless due to their faith, who remain unshakably ethical,</l>
+                        <l>Who always know shame and propriety, who uphold learning and enjoy giving,</l>
+                        <l>Who have perfected wisdom, are intelligent, and have concern for all beings</l>
+                        <l>Never fall into poverty and are worthy of veneration by those intent upon the Dharma.</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-100"/>
+                    <lg tid="100">
+                        <l>“Those <ref cRef="F.186.a" type="folio" xml:id="UT22084-043-008-305"/> who are attached to wealth, enjoy pleasures, and are miserly,</l>
+                        <l>Who take their own body and life to heart, but never bother with what is essential—</l>
+                        <l>Those whose minds are crazed and frantic, like a rampaging elephant,</l>
+                        <l>And who are unmindful—Your Majesty, all of them fall into poverty.</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-101"/>
+                    <lg tid="101">
+                        <l>“Those who have great devotion to the stainless Three Jewels,</l>
+                        <l>Who are always skillful at using what’s essential from their body, life, and wealth—</l>
+                        <l>Those who are not covetous, malicious, foolish, or prideful,</l>
+                        <l>And those who are adorned with the Dharma—Your Majesty, all of them are wealthy and holy
+                            beings.</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-102"/>
+                    <lg tid="102">
+                        <l>“Your Majesty, a wildfire is never satisfied with just burning the dry bark in a forest.</l>
+                        <l>Your Majesty, the ocean is never satisfied with just the water it receives from rivers.</l>
+                        <l>Likewise, the sun and moon are never satisfied with their progressions in the sky.</l>
+                        <l>Due to craving, a king is never content with his wealth, and so is brought to ruin.</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-103"/>
+                    <lg tid="103">
+                        <l>“Once grass has been incinerated by fire, it will not burn again.</l>
+                        <l>Similarly, the wise are never content with their wisdom and so do not blaze with
+                            afflictions.</l>
+                        <l>Since, like a water drop, a kingdom is unstable and prone to destruction,</l>
+                        <l>Who would seek out such a kingdom that is a wellspring of harm and smothers virtue?”</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-104"/>
+                    <tei:p tid="104">King Prasenajit became agitated and demanded of the poor city-dweller Surata, “Surata, who could
+                        attest, on your behalf, that I am poor and you are rich?”</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-105"/>
+                    <tei:p tid="105">“Your Majesty,” replied Surata, “haven’t you heard that the thus-gone, worthy, completely perfect
+                        Buddha is dwelling here in Śrāvastī?”</tei:p>
+                    <tei:p tid="106">“I’ve heard this, but have yet to see him,” said the king.</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-107"/>
+                    <tei:p tid="107">“Your Majesty, he has become the eye for all beings, including the gods!” said Surata. “He has
+                        become the authority. He could attest on my behalf.”</tei:p>
+                    <tei:p tid="108">“Go invite the Tathāgata and I will hear what he has to say,” said the king.</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-109"/>
+                    <tei:p tid="109">Surata replied:</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-110"/>
+                    <lg tid="110">
+                        <l>“One need not send this humble servant,</l>
+                        <l>Nor any other envoy for the Teacher, <ref cRef="F.186.b" type="folio" xml:id="UT22084-043-008-306"/>
+                        </l>
+                        <l>For when I think of him,</l>
+                        <l>He will know and come hither.</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-111"/>
+                    <lg tid="111">
+                        <l>“In this world and beyond,</l>
+                        <l>There is nothing unknown to him.</l>
+                        <l>Knowing my thoughts,</l>
+                        <l>The Guide will come hither.</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-112"/>
+                    <lg tid="112">
+                        <l>“Because of his compassion toward sentient beings,</l>
+                        <l>He does not fall prey to conceit.</l>
+                        <l>Because he is ever attentive to sentient beings,</l>
+                        <l>He will come hither, even from afar.</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-113"/>
+                    <lg tid="113">
+                        <l>“O great king, in your great kindness,</l>
+                        <l>Please now do what I ask!</l>
+                        <l>Please seek a statement of truth </l>
+                        <l>From the Teacher who is coming here!</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-114"/>
+                    <lg tid="114">
+                        <l>“Please prepare</l>
+                        <l>Flowers, incense, flower garlands,</l>
+                        <l>Victory banners, parasols, ointments, and cymbals—</l>
+                        <l>The Guide is coming.”</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-115"/>
+                    <lg tid="115">
+                        <l>Surata, with hands joined together,</l>
+                        <l>Uncovered one shoulder, </l>
+                        <l>Knelt down on the ground,</l>
+                        <l>And said these words:</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-116"/>
+                    <lg tid="116">
+                        <l>“If you are truly omniscient,</l>
+                        <l>Then you should know what I am thinking.</l>
+                        <l>Therefore, O Sage, please come before me</l>
+                        <l>By the truth of my words!”</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-117"/>
+                    <lg tid="117">
+                        <l>As soon as these words were spoken,</l>
+                        <l>The earth shook violently.</l>
+                        <l>The ground burst open,</l>
+                        <l>And the Tathāgata emerged.</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-118"/>
+                    <lg tid="118">
+                        <l>He was surrounded by five hundred śrāvakas,</l>
+                        <l>Who possessed miraculous powers,</l>
+                        <l>And was escorted </l>
+                        <l>By twelve hundred bodhisattvas,</l>
+                        <l>As well as protectors, gods, nāgas,</l>
+                        <l>And the gods Śakra and Brahmā.</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-119"/>
+                    <lg tid="119">
+                        <l>When they saw these miracles,</l>
+                        <l>The people were astonished.</l>
+                        <l>The king, together with his ministers and army,</l>
+                        <l>Prostrated at the Teacher’s feet.</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-120"/>
+                    <lg tid="120">
+                        <l>Then thousands of other living beings</l>
+                        <l>Also made offerings to the Teacher.</l>
+                        <l>Making offerings to the perfect Buddha,</l>
+                        <l>They mentally prostrated as well, for the sake of awakening.</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-121"/>
+                    <tei:p tid="121">Thereupon the poor city-dweller Surata paid homage by touching his head to the Bhagavān’s feet
+                        and circumambulated him seven times. Then he said, “Bhagavān, while wandering about Śrāvastī,
+                        <ref cRef="F.187.a" type="folio" xml:id="UT22084-043-008-307"/> I found a priceless, precious gem. I decided to give it to the poorest person in
+                        Śrāvastī. I determined that King Prasenajit is the poorest, because no matter how much he
+                        plunders, he is never satisfied; he seeks riches again and again, yet it is never enough. He is
+                        never satisfied with the possessions of others; he harms those already suffering and quickly
+                        uproots the happiness of others. He leads the poor to ruin and subjugates the wealthy. He has
+                        gone completely mad! Having determined that he is completely bound by the wealth of his kingdom
+                        and by his cravings, I offered him the gem but he didn’t accept it. He asked, ‘Who could attest,
+                        on your behalf, that I am poor and you are rich?’ Therefore, O Bhagavān—who is impartial to all
+                        sentient beings, who never turns away from them, and who is without obstinacy, impurity, and
+                        enmity—Bhagavān, please tell us clearly if what I have said is true!”</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-122"/>
+                    <tei:p tid="122">The Bhagavān then said, “Great king, you think yourself rich based on the resources of your
+                        kingdom that you have acquired in this life, such as gold, jewels, pearls, lapis lazuli, conch
+                        shells, crystals, corals, gold powder, silver, horses, elephants, chariots, infantry, cavalry,
+                        storehouses, and treasuries. Great king, Surata thinks himself rich based on his generosity,
+                        discipline, self-restraint, forbearance, gentleness,<note place="end" xml:id="UT22084-043-008-123"> Though this is describing
+                            a quality of Surata, “gentleness” (<foreign xml:lang="Bo-Ltn" type="term">des pa</foreign>)
+                            here happens to be the same word for his name.</note> ethical discipline, religious
+                        observances, ascetic practices, conscientiousness, virtuous practices, frugality, kindness,
+                        compassion, joy, equanimity, <ref cRef="F.187.b" type="folio" xml:id="UT22084-043-008-308"/> devotion to the Buddha, Dharma, and Saṅgha, faith,
+                        ethical discipline, learning, acts of generosity, wisdom, sense of shame, modesty, stability,
+                        and vows. Great king, suppose that all the people under your authority became wealthy like you.
+                        Even added together, the mound of their collective merit could not match one hundredth the merit
+                        that Surata accumulates by walking seven steps with his discipline, learning, religious
+                        observance, ascetic practices, and conscientiousness alone. It is incomparable.”</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-124"/>
+                    <tei:p tid="123">“Bhagavān,” said Prasenajit, “finding people like him, with such vast qualities, living in our
+                        land is a great discovery!” </tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-125"/>
+                    <tei:p tid="124">The Bhagavān replied, “Great king, there are many people with these vast qualities in your
+                        land.”</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-126"/>
+                    <tei:p tid="125">King Prasenajit then spoke these verses to Surata:</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-127"/>
+                    <lg tid="126">
+                        <l>“With your words, you have certainly eliminated my pride;</l>
+                        <l>Therefore, Surata, you are my second teacher!</l>
+                        <l>Let me give you my entire kingdom and my armies.</l>
+                        <l>Make me your disciple and teach me!</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-128"/>
+                    <lg tid="127">
+                        <l>“I have been deceived by my pride for a long time,</l>
+                        <l>And have been surrounded and coddled by wicked companions.</l>
+                        <l>Since I have heard this Dharma from you, Surata,</l>
+                        <l>I will restrain myself and behave in accordance with the Dharma.</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-129"/>
+                    <lg tid="128">
+                        <l>“For the sake of wealth I have punished </l>
+                        <l>These five hundred householders.</l>
+                        <l>From now on I will no longer do this;</l>
+                        <l>Let me leave them alone and make them comfortable.</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-130"/>
+                    <lg tid="129">
+                        <l>“Let these five hundred who are now free</l>
+                        <l>Also develop deep respect for Surata.</l>
+                        <l>May they never fatigue, and without distraction,</l>
+                        <l>May they aspire for happiness and the state of omniscience!</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-131"/>
+                    <lg tid="130">
+                        <l>“Surata, you spoke well when you said,</l>
+                        <l>‘I am not poor. You are poor.’</l>
+                        <l>Whoever now calls Surata ‘poor’ <ref cRef="F.188.a" type="folio" xml:id="UT22084-043-008-309"/>
+                        </l>
+                        <l>Breaks the king’s command.”</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-132"/>
+                    <tei:p tid="131">Surata, a child of the lineage, then made a request of the Bhagavān: “Bhagavān, it is not enough
+                        for the great assembly of people gathered here merely to see you. Therefore, Bhagavān, please
+                        offer them whatever teachings will make their encounter with the Tathāgata meaningful!”</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-133"/>
+                    <tei:p tid="132">The Bhagavān replied, “Surata, if a child of the lineage possesses these four dharmas, he or she
+                        will clearly see the Tathāgata. What are the four? Conviction, faith, regret, and reverence are
+                        the four. Whoever possesses these four will clearly see the Tathāgata.</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-134"/>
+                    <tei:p tid="133">“There is another set of four: generating the intention for unsurpassable, perfect awakening
+                        while gazing at the form body of the Tathāgata and wishing, ‘May I become like him’; generating
+                        the special and pure intention because the Tathāgata is trustworthy;<note place="end" xml:id="UT22084-043-008-135"> The
+                            phrase here, <foreign xml:lang="Bo-Ltn" type="quote">lhag pa’i bsam pa yongs su dag
+                                pa</foreign>, seems to suggest <foreign xml:lang="Bo-Ltn" type="term">lhag bsam rnam
+                                dag</foreign>, a technical term describing a stage preceding the development of full
+                            bodhicitta where one takes on the personal responsibility to eliminate the suffering of all
+                            sentient beings.</note> generating the intention to teach the Dharma to all sentient beings
+                        until they are completely liberated; and generating the intention to uphold the supreme Dharma
+                        so that the continuity of the lineage of the Three Jewels is maintained. Whoever possesses these
+                        four will clearly see the Tathāgata.</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-136"/>
+                    <tei:p tid="134">“There is still another set of four: seeing form as <term>detached</term>; seeing sensations, perceptions,
+                        formations, and consciousnesses as <term>detached</term>; seeing the four elements as space-like; and seeing
+                        the sense spheres to be like empty cities. Whoever possesses these
+                        four will clearly see the Tathāgata.<!--<note place="end" xml:id="UT22084-043-008-138"> The word “detached” is a translation of
+                            the Tib. term <foreign xml:lang="Bo-Ltn" type="term">dben pa</foreign> and the Skt. <foreign xml:lang="Sa-Ltn" type="term">viveka</foreign>. It is traditionally categorized as being
+                            of three types: (1) detachment or seclusion of the body (<foreign xml:lang="Sa-Ltn" type="term">kāyaviveka</foreign>), which refers to remaining in solitude free from
+                            desirous or disturbing objects; (2) detachment or seclusion of the mind (<foreign xml:lang="Sa-Ltn" type="term">cittaviveka</foreign>), which is mental detachment from
+                            desirous or disturbing objects; and, (3) detachment or seclusion from the “substrate”
+                                (<foreign xml:lang="Sa-Ltn" type="term">upadhiviveka</foreign>), which indicates
+                            detachment from all things that perpetuate rebirth, including the five aggregates, the
+                                <foreign xml:lang="Sa-Ltn" type="term">kleśas</foreign>, karma, etc. This last category
+                            is what is being referenced here.</note>-->
+                    </tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-139"/>
+                    <tei:p tid="135">“There is still another set of four: the purity of the self because there is no self; the purity
+                        of a sentient being because there is no sentient being; the purity of a living being because
+                        there is no living being; and the purity of a person because there is no person. Whoever
+                        possesses these four will clearly see the Tathāgata. <ref cRef="F.188.b" type="folio" xml:id="UT22084-043-008-310"/>
+                    </tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-140"/>
+                    <tei:p tid="136">“There is still another set of four: the divine eye that is uncontrived;<note place="end" xml:id="UT22084-043-008-141"> Here
+                            we follow the Kangxi, Narthang, Lhasa, Stok Palace, and Yongle versions in reading <foreign xml:lang="Bo-Ltn" type="term">mngon par byed pa med pa</foreign> (Skt. <foreign xml:lang="Sa-Ltn" type="term">anabhisaṃskāra</foreign>), where the Degé reads <foreign xml:lang="Bo-Ltn" type="term">mngon par byed pa</foreign> (Skt. <foreign xml:lang="Sa-Ltn" type="term">abhisaṃskāra</foreign>). </note> the wisdom eye that is
+                        all-pervasive; the dharma eye that discriminates; and the buddha eye that is fully aware.<note place="end" xml:id="UT22084-043-008-142"> These are four of the “five eyes” (Tib. <foreign xml:lang="Bo-Ltn" type="term">spyan lnga</foreign>; Skt. <foreign xml:lang="Sa-Ltn" type="term">pañcacakṣuḥ</foreign>) or five types of extraordinary vision possessed by a buddha. The
+                            five are the flesh eye, divine eye, wisdom eye, dharma eye, and buddha eye. The flesh eye is
+                            omitted in this list.</note> Whoever possesses these four will clearly see the
+                        Tathāgata.</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-143"/>
+                    <tei:p tid="137">“There is still another set of four: because all phenomena are not objective, the component of
+                        ethics is pure; because all phenomena are equal, the component of concentration is pure; because
+                        transcendent gnosis is internalized, the component of wisdom is pure; because the liberation of
+                        that gnosis is seen, the component of the gnosis seeing liberation is pure.<note place="end" xml:id="UT22084-043-008-144">
+                            These are the “five uncontaminated components” (Tib. <foreign xml:lang="Bo-Ltn" type="term">zag med phung po lnga</foreign>, Skt. <foreign xml:lang="Sa-Ltn" type="term">pañcānāsravaskandha</foreign>): the component of ethics, the component of
+                            concentration, the component of wisdom, the component of liberation, and the component of
+                            gnosis seeing liberation. </note> Surata, child of the lineage, whoever possesses these four
+                        will clearly see the Tathāgata.”</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-145"/>
+                    <tei:p tid="138">Then, having brought joy to that great assembly of people with this sermon, the Bhagavān flew
+                        into the sky like the king of geese, accompanied by his retinue.</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-146"/>
+                    <tei:p tid="139">King Prasenajit of Kośala said to the child of the lineage, Surata, “Surata, when you go to see
+                        the Tathāgata, please let me know! I will come with you to see the Tathāgata.” </tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-147"/>
+                    <tei:p tid="140">“Great king, I will do so,” replied Surata. “I will take you and your retinue—your wives, heirs,
+                        ministers, and the rest—to see the Tathāgata. </tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-148"/>
+                    <tei:p tid="141">“Great king, bodhisattvas do not act for their own benefit alone; instead, they are resplendent
+                        when surrounded by a grand retinue.”</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-149"/>
+                    <tei:p tid="142">“Surata, what is the retinue of a bodhisattva?” asked the king.</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-150"/>
+                    <tei:p tid="143">Surata replied, “All sentient beings are the retinue of a bodhisattva for the sake of training
+                        and maturing them. Great king, bodhicitta, which motivates others toward awakening so that they
+                        do not desire other vehicles, is also the retinue of a bodhisattva. Great king, <ref cRef="F.189.a" type="folio" xml:id="UT22084-043-008-311"/> the
+                        special intention to discipline crooked beings is also the retinue of a bodhisattva. Great king,
+                        inexorable resoluteness is also the retinue of a bodhisattva. </tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-151"/>
+                    <tei:p tid="144">“Great king, the generosity that matures miserly beings is also the retinue of a bodhisattva.
+                        Great king, the ethical discipline that matures unethical beings is also the retinue of a
+                        bodhisattva. Great king, the tolerance that matures beings with harmful intentions is also the
+                        retinue of a bodhisattva. Great king, the diligence that matures lazy beings is also the retinue
+                        of a bodhisattva. Great king, the concentration that matures distracted beings is also the
+                        retinue of a bodhisattva. Great king, the wisdom that matures unwise beings is also the retinue
+                        of a bodhisattva.</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-152"/>
+                    <tei:p tid="145">“Great king, the kindness that is equanimous toward all sentient beings is also the retinue of a
+                        bodhisattva. Great king, the compassion that does not wane with the vicissitudes of cyclic
+                        existence is also the retinue of a bodhisattva. Great king, the joy that delights in and seeks
+                        the bliss of the Dharma is also the retinue of a bodhisattva. Great king, the equanimity that is
+                        free of attachment and aversion is also the retinue of a bodhisattva. </tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-153"/>
+                    <tei:p tid="146">“Great king, the four means of gathering disciples that bring all beings to maturity are also the
+                        retinue of a bodhisattva. Great king, accumulating all the various roots of virtue that purify
+                        buddhafields is also the retinue of a bodhisattva. Great king, the emptiness, signlessness, and
+                        wishlessness that completely overcome all demonic machinations are also the retinue of a
+                        bodhisattva. <ref cRef="F.189.b" type="folio" xml:id="UT22084-043-008-312"/> </tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-154"/>
+                    <tei:p tid="147">“Great king, the truthfulness and gentleness that make one’s words respectable are the retinue of
+                        a bodhisattva. Great king, the refusal to blame and disparage others that perfects one’s
+                        eloquence is also the retinue of a bodhisattva. </tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-155"/>
+                    <tei:p tid="148">“Great king, accumulating the tools necessary to preserve one’s learning is also the retinue of a
+                        bodhisattva. Great king, reverence for one’s masters and preceptors for the sake of learning is
+                        also the retinue of a bodhisattva. Great king, the learning that allows one to fully grasp the
+                        supreme Dharma is also the retinue of a bodhisattva. Great king, a full grasp of the supreme
+                        Dharma that causes one to master the teachings of all tathāgatas is also the retinue of a
+                        bodhisattva. </tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-156"/>
+                    <tei:p tid="149">“Great king, dwelling in a forest, which perfects all of one’s roots of virtue, is also the
+                        retinue of a bodhisattva. Great king, a pure livelihood that inspires the faithless to faith is
+                        also the retinue of a bodhisattva. Great king, the conscientiousness that causes one to achieve
+                        the factors conducive to awakening is also the retinue of a bodhisattva.”</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-157"/>
+                    <tei:p tid="150">King Prasenajit then rejoiced; he felt great joy. Filled with such boundless joy, he offered
+                        Surata one thousand pairs of finely woven upper and lower garments, worthy of a king, as
+                        religious robes. </tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-158"/>
+                    <tei:p tid="151">“Great king,” said Surata, “you seek to venerate and make offerings to me! Although the king may
+                        want to give all that to me, I don’t want clothes that would make me hold conceptions of ‘mine’
+                        or make me possessive. I already have rags sewn together from a hundred patches of tattered
+                        cotton. Great king, during the hot season, when I leave these rags hanging on a branch for one,
+                        two, ten, or a hundred days, no one steals them, <ref cRef="F.190.a" type="folio" xml:id="UT22084-043-008-313"/> and no one becomes covetous. I just
+                        leave them there without worrying about them, and there they remain. Great king, I don’t want
+                        any clothes that would make me hold conceptions of ‘mine’ or make me possessive. Great king,
+                        bodhisattvas only possess those clothes for which they have no desire and which will not give
+                        rise to desire in others.”</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-159"/>
+                    <tei:p tid="152">The king replied, “Surata, if you won’t accept these pairs of finely woven upper and lower
+                        garments, please, out of sympathy for me, at least tread on them with your feet!” </tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-160"/>
+                    <tei:p tid="153">Saying, “Your Majesty, I’ll do as you wish,” Surata trod on them with his feet and returned to
+                        the king.</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-161"/>
+                    <tei:p tid="154">“Surata, what should I do with these pairs of finely woven upper and lower garments that have
+                        been beneath your feet?”<note place="end" xml:id="UT22084-043-008-162"> The <foreign xml:lang="Bo-Ltn" type="term">dman
+                                ma</foreign> in the phrase here, <foreign xml:lang="Bo-Ltn" type="quote">rkang pa’i dman
+                                mar gyur pa</foreign>, can denote “old” or “left over.” In colloquial English, we might
+                            call the cloth “used clothing.”</note> asked the king.</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-163"/>
+                    <tei:p tid="155">“Great king,” replied Surata, “give them away to the poor and naked.” </tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-164"/>
+                    <tei:p tid="156">The king said, “Yes, I will do as you say,” and entrusted the matter to his attendants, who
+                        carried out his order.</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-165"/>
+                    <tei:p tid="157">Those poor people, who received and put on those pairs of finely woven upper and lower garments,
+                        were immediately moved to repay Surata’s kindness. Then, due to the blessing of the Buddha and
+                        the power of Surata’s aspiration, they heard these verses from the sky:</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-166"/>
+                    <lg tid="158">
+                        <l>“Although you may want to offer</l>
+                        <l>Flowers, incense, perfumes,</l>
+                        <l>Food, drink, and jewelry as repayment,</l>
+                        <l>These will not suffice, for Surata is delighted by bodhicitta.</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-167"/>
+                    <lg tid="159">
+                        <l>“Surata has no desire for food and clothes,</l>
+                        <l>Nor for personal gain, nor veneration, nor fame.</l>
+                        <l>Surata desires the qualities that arise from bodhicitta;</l>
+                        <l>It is bodhicitta that pleases Surata.”</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-168"/>
+                    <tei:p tid="160">Sometime later, Surata, a child of the lineage, and King Prasenajit with his retinue of queens,
+                        ministers, and entourage, as well as the men, women, boys, and girls of Śrāvastī and hundreds of
+                        other creatures, went to see the Bhagavān.</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-169"/>
+                    <tei:p tid="161">Between Śrāvastī and Prince Jeta’s Grove, Śakra, lord of the gods, emanated a large,
+                        well-decorated pavilion that was vast, towering, and beautiful to behold; it was a beautifully
+                        adorned palace that resembled Vaijayanta, his palace in the Heaven of the Thirty-Three.
+                        <ref cRef="F.190.b" type="folio" xml:id="UT22084-043-008-314"/> At the center of the palace he emanated a wish-fulfilling tree, in front of which he
+                        emanated a well-proportioned lion throne fit for the Bhagavān, one that was beautiful to behold
+                        and covered with hundreds of thousands of divine, finely woven cotton cloths. Finally,
+                        he emanated sixty thousand seats for bodhisattvas.</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-170"/>
+                    <tei:p tid="162">Twelve thousand goddesses, such as the asura Śacī, came bringing flowers, incense, perfumes,
+                        flower garlands, ointments, and divine sandalwood powders, while playing cymbals and drums.
+                        Since they were Surata’s attendants, they ornamented the Bhagavān’s lion throne. Knowing that
+                        this great assembly of people was coming, the Bhagavān emerged from the monastery and sat down
+                        on the prepared seat, surrounded by bodhisattvas and śrāvakas.</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-171"/>
+                    <tei:p tid="163">Then, the gandharva Pañcaśikha said to the goddess Sunlight, “Kind lady, come here! As an act of
+                        service to Surata, please worship the Tathāgata with string instruments and melodious
+                        songs!”</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-172"/>
+                    <tei:p tid="164">The goddess Sunlight together with some five hundred goddesses then sang these verses of praise
+                        accompanied by string instruments:</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-173"/>
+                    <lg tid="165">
+                        <l>“For the past hundred eons, you have practiced asceticism;</l>
+                        <l>You have delighted in the ways of gathering disciples, discipline, and generosity;</l>
+                        <l>Your body, speech, and mind are completely pure—</l>
+                        <l>Thus, I pay homage to you, the foremost in the three realms!</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-174"/>
+                    <lg tid="166">
+                        <l>“You are without callousness, and delight in forbearance and kindness;</l>
+                        <l>Your diligence is firm, and your powers perfected;</l>
+                        <l>You delight in the dawning of concentration, intelligence, and ethics—</l>
+                        <l>Thus, I pay homage to you, who dispels the blemishes of the three stains! </l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-175"/>
+                    <lg tid="167">
+                        <l>“You delight in eliminating desire, hatred, and delusion;</l>
+                        <l>Your mind is peaceful and impartial, yet compassionate;</l>
+                        <l>You speak truthfully and know the ultimate—</l>
+                        <l>Thus, I pay homage to you, who liberates all three realms! <ref cRef="F.191.a" type="folio" xml:id="UT22084-043-008-315"/>
+                        </l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-176"/>
+                    <lg tid="168">
+                        <l>“You eliminate doubts in those who see you;</l>
+                        <l>You eliminate all faults in those who see you;</l>
+                        <l>You bring great delight to those who see you—</l>
+                        <l>Thus, I go for refuge to you, the Conqueror, with all my heart!</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-177"/>
+                    <lg tid="169">
+                        <l>“Even sublime goddesses who are extremely lustful,</l>
+                        <l>Upon seeing you, delight in the Dharma.</l>
+                        <l>Delighted, they will attain expansive mindfulness. </l>
+                        <l>Delighted, they will be free from delighting in lust for beauty.</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-178"/>
+                    <lg tid="170">
+                        <l>“You have the supreme, luminous qualities of being perfectly adorned</l>
+                        <l>With the ornaments of the thirty-two supreme marks.</l>
+                        <l>You are a holy man, whose speech is pure and supreme;</l>
+                        <l>I pay homage to you, whose radiance is unparalleled!</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-179"/>
+                    <lg tid="171">
+                        <l>“Your beautiful palms are like the gold of the noble Jambu River. </l>
+                        <l>The Sage’s chest is like a lion’s, and your posture like an elephant’s.</l>
+                        <l>Your eyebrows and nose are elegant; your teeth are even, beautiful, and have no gaps—</l>
+                        <l>I bow to you, the great Śākyamuni, who is like the śrīgarbha jewel!</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-180"/>
+                    <lg tid="172">
+                        <l>“By the limitless capacities of the merit</l>
+                        <l>Acquired from praising the delightful Sugata,</l>
+                        <l>A conqueror replete with hundreds of good qualities,</l>
+                        <l>May the whole world come to buddhahood together!”</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-181"/>
+                    <tei:p tid="173">Surata, a child of the lineage, then approached the Bhagavān along with the great crowd of
+                        people. Surata bowed his head to the Bhagavān’s feet and sat to one side. King Prasenajit said
+                        to Surata, a child of the lineage, “Please sit here!” and personally offered him a well-prepared
+                        seat, which Surata accepted. King Prasenajit and his retinue also bowed their heads to the
+                        Bhagavān’s feet and took their seats. </tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-182"/>
+                    <tei:p tid="174">Thereupon, some of the gods<note place="end" xml:id="UT22084-043-008-183"> The Stok Palace, Lhasa, Kangxi, Narthang, and
+                            Yongle Kangyurs omit “gods” and instead have “children of the lineage” (<foreign xml:lang="Bo-Ltn" type="term">rigs kyi bu gang bdag gis</foreign>).</note> who were
+                        unfamiliar with Surata, a child of the lineage, wondered to themselves, “Why has this shabbily
+                        dressed poor man received such abundant honors?” </tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-184"/>
+                    <tei:p tid="175">Śakra, lord of the gods, told those gods, <ref cRef="F.191.b" type="folio" xml:id="UT22084-043-008-316"/> “Friends, don’t belittle him! I have seen for
+                        myself the great qualities possessed by this child of the lineage. Friends, just sit down for
+                        now! You will see the display of qualities this child of the lineage possesses.”</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-185"/>
+                    <tei:p tid="176">Realizing what those gods were thinking, Surata, a child of the lineage, made a request to the
+                        Bhagavān: “Bhagavān, please teach us the means that bodhisattvas display to bring sentient
+                        beings to maturity and the means they display to bring them to gnosis!”</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-186"/>
+                    <tei:p tid="177">The Bhagavān then emitted light rays from his body. When the light rays reached Surata, his body
+                        became over a hundred thousand times more beautiful than the perfect body of Śakra, the lord of
+                        the gods. Those gods were thunderstruck and rained flowers upon Surata.</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-187"/>
+                    <tei:p tid="178">Then the Bhagavān replied to Surata, a child of the lineage, “Surata, whenever bodhisattvas have
+                        adamantine power, they feign to be lowly for the sake of bringing sentient beings to maturity.
+                        And even when they have little power, they feign to be supreme, also for the sake of bringing
+                        sentient beings to maturity. This is their display. Immersed in gnosis, they feign ignorance,
+                        and even when feigning ignorance, their knowledge is keen. This is their display. With their
+                        physical and moral conduct, they inspire faith in those without gnosis. Showing all types of
+                        conduct, they reveal miracles to those with gnosis. This is their display. By constantly
+                        mastering their minds, they are revered by Brahmā despite manifesting as poor and destitute, and
+                        when maintaining their supreme display, they are still revered by ordinary beings. This is their
+                        display. For the sake of attracting sentient beings, they teach the poor and destitute. For the
+                        sake of inspiring sentient beings to renounce the world, they appear as renunciants, despite
+                        possessing vast wealth. This is their display.”</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-188"/>
+                    <tei:p tid="179">Thereupon, venerable Ānanda asked the Bhagavān, <ref cRef="F.192.a" type="folio" xml:id="UT22084-043-008-317"/> “Bhagavān, what good deeds has Surata,
+                        a child of the lineage, done for the sake of awakening?”</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-189"/>
+                    <tei:p tid="180">The Bhagavān answered, “Ānanda! Surata, a child of the lineage, has venerated millions of
+                        buddhas. He has been perfected through previous practice. He has attained the three
+                        forbearances. He has attained eloquence. He is artful with his extraordinary powers. He is
+                        skilled in bringing sentient beings to maturity. By being poor and destitute, he disciplines
+                        sentient beings.”</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-190"/>
+                    <tei:p tid="181">“Bhagavān,” asked Ānanda, “how many sentient beings has this poor and destitute man disciplined?” </tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-191"/>
+                    <tei:p tid="182">The Bhagavān replied, “Ānanda, he has brought many hundreds of thousands of gods to the maturity
+                        of unsurpassable and perfect awakening. He has done the same for an equal number of human
+                        beings.”</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-192"/>
+                    <tei:p tid="183">“Bhagavān,” asked Ānanda, “how will he become an unsurpassable, perfect, and completely awakened
+                        buddha? How will his buddhafield be arrayed? What will his name be?”</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-193"/>
+                    <tei:p tid="184">The Bhagavān replied to venerable Ānanda with these verses:</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-194"/>
+                    <lg tid="185">
+                        <l>“Listen, Ānanda, and I will explain to you</l>
+                        <l>The nature of his efforts to benefit beings, his consistency in religious observances,</l>
+                        <l>How his great renown is held in the hearts of many,</l>
+                        <l>And the way his conduct is steadfast in the qualities of awakening.</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-195"/>
+                    <lg tid="186">
+                        <l>“Whatever good deeds Surata has done,</l>
+                        <l>Whether it is his veneration of the conquerors through supreme offerings,</l>
+                        <l>Or striving to protect the holy Dharma,</l>
+                        <l>They are too numerous to be listed now.</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-196"/>
+                    <lg tid="187">
+                        <l>“He is well trained in all the perfections;</l>
+                        <l>He has been artful with his extraordinary powers in past lives;</l>
+                        <l>He has perfected the divine states of mind;</l>
+                        <l>He is well trained in skillful activity.</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-197"/>
+                    <lg tid="188">
+                        <l>“Now, he sees well the faults of composite phenomena;</l>
+                        <l>Even the complete awakening of the buddhas is evident to him.</l>
+                        <l>He is well trained in those skills</l>
+                        <l>That bring all sorts of different beings to liberation. <ref cRef="F.192.b" type="folio" xml:id="UT22084-043-008-318"/>
+                        </l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-198"/>
+                    <lg tid="189">
+                        <l>“He is fearless and endowed with intelligence, realization, and mindfulness,</l>
+                        <l>As well as eloquence and dhāraṇīs.</l>
+                        <l>He has escaped Māra’s hook and the mire of mental afflictions,</l>
+                        <l>And he is firmly set in the purview of the buddhas, the ultimate goal.</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-199"/>
+                    <lg tid="190">
+                        <l>“He is not tainted by worldly affairs;</l>
+                        <l>Like a stone, he is unmoved by lust and the like.</l>
+                        <l>He neither gets close to nor distant from anyone;</l>
+                        <l>Just like space, he is free of both bondage and liberation.</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-200"/>
+                    <lg tid="191">
+                        <l>“He is steadfastly compassionate and indefatigable; </l>
+                        <l>He is self-restrained and kind to those who are bewildered.</l>
+                        <l>Considering all sentient beings as dear as himself,</l>
+                        <l>He does not perceive others’ faults and thus is never quarrelsome.</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-201"/>
+                    <lg tid="192">
+                        <l>“He steadfastly practices exactly as he was taught;</l>
+                        <l>He conducts himself exactly in accord with the teachings.</l>
+                        <l>By following the Dharma, he is well trained in the essence of dharmas.</l>
+                        <l>He yearns for emptiness and is free of dualism.</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-202"/>
+                    <lg tid="193">
+                        <l>“He has attained the three forbearances and transcends the purview of ordinary beings;</l>
+                        <l>He is steadfast in the way and pure qualities of the buddhas.</l>
+                        <l>In whatever world he roams,</l>
+                        <l>He liberates numerous beings.</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-203"/>
+                    <lg tid="194">
+                        <l>“Wherever this child of the buddhas resides,</l>
+                        <l>There is never an absence of tathāgatas.</l>
+                        <l>Thus, the entire world, including the gods,</l>
+                        <l>Pays respect to him in the manner of a buddha.</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-204"/>
+                    <lg tid="195">
+                        <l>“After I pass into nirvāṇa during the age of degeneration,</l>
+                        <l>Surata will perform a buddha’s deeds.</l>
+                        <l>Then, he will return to Abhirati, Akṣobhya’s realm,</l>
+                        <l>Where he previously resided.</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-205"/>
+                    <lg tid="196">
+                        <l>“Imperturbable,<note place="end" xml:id="UT22084-043-008-206"> “Imperturbable” (<foreign xml:lang="Bo-Ltn" type="term">brtan po</foreign>) here may be a play on the meaning of Akṣobhya’s name, which is
+                                “immovable.” </note> he will benefit living creatures,</l>
+                        <l>And seek out the treasures of that buddhafield.</l>
+                        <l>For the sake of bringing sentient beings to the maturity of awakening,</l>
+                        <l>He will perform good deeds for three countless eons.</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-207"/>
+                    <lg tid="197">
+                        <l>“After that, he will become a guardian, a conqueror,</l>
+                        <l>Whose name will be Lord King of the World.</l>
+                        <l>His world will be equal to</l>
+                        <l>The buddhafield of the Tathāgata Akṣobhya.</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-208"/>
+                    <lg tid="198">
+                        <l>“That world will be called Elegantly Emanated, <ref cRef="F.193.a" type="folio" xml:id="UT22084-043-008-319"/>
+                        </l>
+                        <l>And will be endowed with all good qualities.</l>
+                        <l>His lifespan will be ten thousand years,</l>
+                        <l>And his saṅgha members beyond reckoning.</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-209"/>
+                    <lg tid="199">
+                        <l>“He will have few saṅgha members within the Śrāvaka Vehicle,</l>
+                        <l>While most will strive for awakening.</l>
+                        <l>All will possess the power of gnosis and miraculous powers,</l>
+                        <l>And they will be endowed with the liberations and be fearless.</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-211"/>
+                    <lg tid="200">
+                        <l>“That world will resound with the continual reverberation</l>
+                        <l>Of nothing but their eloquent elucidations of the Dharma.</l>
+                        <l>There will be no māras, nor attachment to saṃsāra;</l>
+                        <l>They will all be knowledgeable and completely pure.</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-212"/>
+                    <lg tid="201">
+                        <l>“After that sugata passes into complete nirvāṇa,</l>
+                        <l>His sublime Dharma will be practiced</l>
+                        <l>For eighty-four years,<note place="end" xml:id="UT22084-043-008-213"> This seems a paltry number of years for Surata’s
+                                future Dharma teachings to persist. However, this is the literal number suggested by the
+                                Tibetan, “<foreign xml:lang="Bo-Ltn">lo ni brgyad cu dag las bzhi lhag</foreign>.” It may be a shorthand of
+                                84,000, which is a significant number in Buddhist texts.</note>
+                        </l>
+                        <l>During which time his Dharma tradition will have no disharmony.</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-214"/>
+                    <lg tid="202">
+                        <l>“Those who are brought to maturity by Surata</l>
+                        <l>Will pursue unsurpassable awakening.</l>
+                        <l>The sentient beings who are born in that buddhafield</l>
+                        <l>Will become free from all faults.”</l>
+                    </lg>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-215"/>
+                    <tei:p tid="203">As soon as the Bhagavān had made this prophecy about Surata, a child of the lineage, the
+                        trichiliocosm shook in six ways as divine flowers, powders, garments, and ornaments rained down.
+                        The entire retinue offered their garments to Surata, a child of the lineage. Many hundreds of
+                        merchants, householders, and brahmins were went forth as renunciants.</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-216"/>
+                    <tei:p tid="204">Thereupon Surata said to the Bhagavān, “Please permit me to go forth in the tradition of the
+                        Dharma and Vinaya that you have taught so well.”</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-217"/>
+                    <tei:p tid="205">The Bhagavān then raised his hand and blessed Surata, a child of the lineage, upon his head. The
+                        moment the Bhagavān touched his head, Surata, a child of the lineage, transformed into a monk
+                        wearing saffron robes.</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-218"/>
+                    <tei:p tid="206">Then the Bhagavān said to venerable Ānanda, “Ānanda, there are five degenerations: the
+                        degeneration of time, the degeneration of sentient beings, the degeneration of place, the
+                        degeneration of lifespan, and the degeneration of mental afflictions. <ref cRef="F.193.b" type="folio" xml:id="UT22084-043-008-320"/> In the time of
+                        these degenerations, and following my perfect awakening, no one should be disciplined in ways
+                        other than how Surata has been disciplined. </tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-219"/>
+                    <tei:p tid="207">“Ānanda, I don’t tame sentient beings of the Sahā world system with the Vinaya of the buddhas.
+                        Ānanda, I tame sentient beings with fears and warnings of becoming poor and destitute, or of
+                        taking lower rebirths. Ānanda, if in this world system I taught and gave instructions about the
+                        Dharma from a Buddha’s point of view, not one sentient being would be tamed and no Dharma would
+                        be realized. Therefore Ānanda, just as Surata and I tame sentient beings, so should you. Ānanda,
+                        there will be many sentient beings who will gain faith and realization; by hearing this Dharma
+                        discourse they will find faith and practice accordingly.”</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-220"/>
+                    <tei:p tid="208">When the Bhagavān finished speaking, venerable Ānanda, the bodhisattva Surata, the other
+                        bodhisattvas, the monks, Śakra, lord of the gods, King Prasenajit, and the gods, humans, asuras,
+                        and gandharvas of the world rejoiced and praised what the Bhagavān had said.</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-221"/>
+                    <trailer tid="209">This concludes <title xml:lang="en">Surata’s Questions,</title> the twenty-seventh chapter
+                        of the noble Dharma discourse entitled <title xml:lang="en">The Great Heap of Jewels</title>,
+                        which itself has a hundred thousand chapters.</trailer>
+                </div>
+                <div type="colophon" xml:id="UT22084-043-008-colophon">
+                    <head type="colophon" tid="210">Colophon</head>
+                    <tei:milestone unit="chunk" xml:id="UT22084-043-008-222"/>
+                    <tei:p tid="211">The Indian preceptors Jinamitra and Surendrabodhi, the Tibetan chief-editor and translator Bandé
+                        Yeshé Dé, and others translated, edited, and finalized this text.</tei:p>
+                </div>
+            </div>
+        </body>
+        <back>
+            <div type="notes">
+                <head type="notes" tid="212">Notes</head>
+            </div>
+            <div type="listBibl">
+                <head type="listBibl" tid="214">Bibliography</head>
+                <div type="section" xml:id="UT22084-043-008-listBibl-1">
+                    <head type="section" tid="215">Primary Sources</head>
+                    <bibl xml:id="UT22084-043-008-224">
+                        <title xml:lang="Bo-Ltn">bsgom pa'i rim pa mdo kun las btus pa</title> (<title xml:lang="Sa-Ltn">Bhāvanā­krama­sūtra­samuccaya</title>). Toh 3933, Degé Tengyur vol. 110 (dbu
+                        ma, ki), folios 125.b–148.a.</bibl>
+                    <bibl xml:id="UT22084-043-008-225">Denkarma (<title xml:lang="Bo-Ltn">pho brang stod thang ldan [/ lhan] dkar gyi chos ’gyur ro
+                            cog gi dkar chag</title>). Degé Tengyur vol. 206 (sna tshogs, jo), folios
+                        294.b–310.a.</bibl>
+                    <bibl xml:id="UT22084-043-008-226">
+                        <title xml:lang="Bo-Ltn">’phags pa des pas zhus pa, bam po gcig pa</title> (<title xml:lang="Sa-Ltn">Āryasurataparipṛcchānāmamahāyānasūtra</title>). Toh 71, Degé Kangyur vol.
+                        43 (dkon brtsegs, ca), folios 181.a–193.b.</bibl>
+                    <bibl xml:id="UT22084-043-008-227">
+                        <title xml:lang="Bo-Ltn">’phags pa des pas zhus pa zhes bya ba theg pa chen po’i mdo</title>
+                            (<title xml:lang="Sa-Ltn">Āryasurataparipṛcchānāmamahāyānasūtra</title>). bka’ ’gyur (dpe
+                        bsdur ma) [Comparative Edition of the Kangyur], krung go’i bod rig pa zhib ’jug ste gnas kyi
+                        bka’ bstan dpe sdur khang (The Tibetan Tripitaka Collation Bureau of the China Tibetology
+                        Research Center), 108 volumes. Beijing: Krung go’i bod rig pa dpe skrun khang (China Tibetology
+                        Publishing House). 2006–2009, vol. 43, pp. 511–43.</bibl>
+                    <bibl xml:id="UT22084-043-008-228">
+                        <title xml:lang="Bo-Ltn">’phags pa des pas zhus pa zhes bya ba theg pa chen po’i mdo</title>
+                            (<title xml:lang="Sa-Ltn">Āryasurataparipṛcchānāmamahāyānasūtra</title>). bka’ ’gyur (stog
+                        pho brang bris ma) vol. 39 (dkon brtsegs, ca), folios 314.b–334.a.</bibl>
+                    <bibl xml:id="UT22084-043-008-229">Phangthangma (<title xml:lang="Bo-Ltn">dkar chag ’phang thang ma</title>). Beijing: Mi rigs
+                        dpe skrun khang, 2003.</bibl>
+                </div>
+                <div type="section" xml:id="UT22084-043-008-listBibl-2">
+                    <head type="section" tid="216">Secondary Sources</head>
+                    <bibl xml:id="UT22084-043-008-230">Chang, Garma C. C., ed. “Bodhisattva Surata’s Discourse.” In <title xml:lang="en">A Treasury
+                            of Mahāyāna Sūtras: Selections from the Mahāratnakūṭa Sūtra</title>, 243–55. University
+                        Park: Pennsylvania State University Press, 1983.</bibl>
+                    <bibl xml:id="UT22084-043-008-231">Nattier, Jan. “Indian Antecedents of Huayan Thought: New Light from Chinese Sources.” In
+                            <title xml:lang="en">Reflecting Mirrors: Perspectives on Huayan Buddhism</title>, edited by
+                        Imre Hamar, 109–38. Wiesbaden: Harrassowitz Verlag, 2007.</bibl>
+                    <bibl xml:id="UT22084-043-008-232">Negi, J.S. <title xml:lang="en">Tibetan Sanskrit Dictionary</title>, 16 Volumes. Sarnath,
+                        Varanasi: Dictionary Unit, Central Institute of Higher Tibetan Studies, 2002.</bibl>
+                    <bibl xml:id="UT22084-043-008-233">Pad dkar bzang po. “Le’u nyer bdun pa ’phags pa des pas zhus pa’i mdo.” In <title xml:lang="Bo-Ltn">Mdo sde spyi’i rnam bzhag</title> (<title xml:lang="en">Presentation of
+                            the Sūtras in the Kangyur</title>), edited by Mi nyag mgon po, 85–87. Beijing: Mi rigs dpe
+                        skrun khang, 2006.</bibl>
+                </div>
+            </div>
+            <div type="glossary">
+                <list type="glossary">
+                    <!--<item>
+                        <gloss type="term">
+                            <term></term>
+                            <term xml:lang="Bo-Ltn"></term>
+                            <term xml:lang="Sa-Ltn" status="verified"></term>
+                            <term type="definition"></term>
+                        </gloss>
+                    </item>-->
+                    <item>
+                        <gloss type="term" xml:id="UT22084-043-008-326">
+                            <term>three realms</term>
+                            <term xml:lang="Bo-Ltn" status="verified">khams gsum pa</term>
+                            <term xml:lang="bo">ཁམས་གསུམ་པ།</term>
+                            <term xml:lang="Sa-Ltn" status="verified">tridhātu</term>
+                            <term type="definition">(1) The desire realm (<foreign xml:lang="Sa-Ltn">kāmadhātu</foreign>, <foreign xml:lang="Bo-Ltn">’dod khams</foreign>), (2) the form realm (<foreign xml:lang="Sa-Ltn">rūpadhātu</foreign>, <foreign xml:lang="Bo-Ltn">gzugs khams</foreign>), and (3) the formless realm (<foreign xml:lang="Sa-Ltn">arūpyadhātu</foreign>, <foreign xml:lang="Bo-Ltn">gzugs med khams</foreign>).</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-043-008-325">
+                            <term>asura</term>
+                            <term xml:lang="Bo-Ltn" status="verified">lha ma yin</term>
+                            <term xml:lang="bo">ལྷ་མ་ཡིན།</term>
+                            <term xml:lang="Sa-Ltn" status="verified">asura</term>
+                            <term type="definition">A class of divine beings who are engaged in a mythic war with the
+                                gods (Skt. <foreign xml:lang="Sa-Ltn" type="term">deva</foreign>) for possession of the
+                                nectar of immortality. In Buddhist cosmology, they inhabit a realm below those of
+                                the gods, from which they observe the gods with intense jealousy.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-043-008-324">
+                            <term>bhagavān</term>
+                            <term xml:lang="Bo-Ltn" status="verified">bcom ldan ’das</term>
+                            <term xml:lang="bo">བཅོམ་ལྡན་འདས།</term>
+                            <term xml:lang="Sa-Ltn" status="verified">bhagavān</term>
+                            <term xml:lang="Sa-Ltn" status="verified">bhagavat</term>
+                            <term type="definition">In Buddhist literature, an epithet applied to buddhas, most often to Śākyamuni. The Sanskrit term generically means “possessing fortune,” but in specifically Buddhist contexts implies that a buddha is in possession of six auspicious qualities (<foreign xml:lang="Sa-Ltn" type="term">bhaga</foreign>) associated with complete awakening. The Tibetan term—where <foreign xml:lang="Sa-Ltn" type="term">bcom</foreign> is said to refer to “subduing” the four māras, <foreign xml:lang="Sa-Ltn" type="term">ldan</foreign> to “possessing” the great qualities of buddhahood, and <foreign xml:lang="Sa-Ltn" type="term">’das</foreign> to “going beyond” saṃsāra and nirvāṇa—possibly reflects the commentarial tradition where the Sanskrit <foreign xml:lang="Sa-Ltn" type="term">bhagavat</foreign> is interpreted, in addition, as “one who destroys the four māras.” This is achieved either by reading <foreign xml:lang="Sa-Ltn" type="term">bhagavat</foreign> as <foreign xml:lang="Sa-Ltn" type="term">bhagnavat</foreign> (“one who broke”), or by tracing the word <foreign xml:lang="Sa-Ltn" type="term">bhaga</foreign> to the root <foreign xml:lang="Sa-Ltn" type="term">√bhañj</foreign>, “to break.”</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-043-008-323">
+                            <term>tathāgata</term>
+                            <term xml:lang="Bo-Ltn" status="verified">de bzhin gshegs pa</term>
+                            <term xml:lang="bo">དེ་བཞིན་གཤེགས་པ།</term>
+                            <term xml:lang="Sa-Ltn" status="verified">tathāgata</term>
+                            <term type="definition">A frequently used synonym for buddha. According to different explanations, it can be read as 
+                                <foreign xml:lang="Sa-Ltn" type="term">tathā-gata</foreign>, literally meaning “one who has thus gone,” or as  
+                                <foreign xml:lang="Sa-Ltn" type="term">tathā-agata</foreign>, “one who has thus come.” 
+                                <foreign xml:lang="Sa-Ltn" type="term">Gata</foreign>, though literally meaning “gone,” is a past passive participle used
+                                to describe a state or condition of existence. 
+                                <foreign xml:lang="Sa-Ltn" type="term">Tatha</foreign>­(<foreign xml:lang="Sa-Ltn" type="term">tā</foreign>), 
+                                often rendered as “suchness” or “thusness,” is the quality or
+                                condition of things as they really are, which cannot be conveyed in conceptual, dualistic terms. Therefore, this
+                                epithet is interpreted in different ways, but in general it implies one who has departed in the wake of the buddhas of
+                                the past, or one who has manifested the supreme enlightenment dependent on the reality that does not abide in the two
+                                extremes of existence and quiescence. </term>
+                            <term type="definition">Here also used as a specific epithet of the Buddha Śākyamuni.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-043-008-322" mode="marked">
+                            <term>detachment</term>
+                            <term xml:lang="Bo-Ltn" status="verified">dben pa</term>
+                            <term xml:lang="bo">དབེན་པ།</term>
+                            <term xml:lang="Sa-Ltn" status="verified">viveka</term>
+                            <term type="definition">Detachment is traditionally categorized as being
+                    of three types: (1) detachment or seclusion of the body (<foreign xml:lang="Sa-Ltn" type="term">kāyaviveka</foreign>), which refers to remaining in solitude free from
+                    desirous or disturbing objects; (2) detachment or seclusion of the mind (<foreign xml:lang="Sa-Ltn" type="term">cittaviveka</foreign>), which is mental detachment from
+                    desirous or disturbing objects; and, (3) detachment or seclusion from the “substrate”
+                    (<foreign xml:lang="Sa-Ltn" type="term">upadhiviveka</foreign>), which indicates
+                    detachment from all things that perpetuate rebirth, including the five aggregates, the
+                    <foreign xml:lang="Sa-Ltn" type="term">kleśas</foreign>, karma, etc. This last category
+                    is what is being referenced here.</term>
+                            <term type="alternative">detached</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-043-008-321">
+                            <term>sense sphere</term>
+                            <term xml:lang="Bo-Ltn" status="verified">skye mched</term>
+                            <term xml:lang="bo">སྐྱེ་མཆེད།</term>
+                            <term xml:lang="Sa-Ltn" status="verified">āyatana</term>
+                            <term type="definition">The sense spheres are a collective list of the six sense objects (forms, sounds, odors, tastes, textures, mental phenomena) with their respective senses (eye, ear, nose, tongue, tactile sense, and mind) totaling twelve and indicating their interdependence. In this sūtra, they are equated to an “empty city.” This most likely denotes the fact that there is no self independent of the interaction of these or perceiver independent of the process of perception.</term>
+                        </gloss>
+                    </item>
+                    <item>
+            <gloss type="term" xml:id="UT22084-043-008-235">
+                <term>bodhicitta</term>
+                <term xml:lang="Bo-Ltn" status="verified">byang chub kyi sems </term>
+                            <term xml:lang="bo">བྱང་ཆུབ་ཀྱི་སེམས།</term>
+                <term xml:lang="Sa-Ltn" status="verified">bodhicitta</term>
+                <term type="definition">Literally “the mind of awakening,” but more technically, one’s particular
+                    aspiration to become fully awakened for the specific purpose of liberating all sentient beings. This
+                    is the necessary and sufficient condition to be a bodhisattva.</term>
+            </gloss>
+        </item>
+        <item>
+            <gloss type="term" xml:id="UT22084-043-008-236">
+                <term>dhāraṇī</term>
+                <term xml:lang="Bo-Ltn" status="verified">gzungs </term>
+                            <term xml:lang="bo">གཟུངས།</term>
+                <term xml:lang="Sa-Ltn" status="verified">dhāraṇī</term>
+                <term type="definition">As incantations or spells, dhāraṇīs are mnemonic formulas possessed by advanced
+                    bodhisattvas that contain a quintessence of their attainments. The same term in Sanskrit and Tibetan also refers to a highly developed
+                    power present in bodhisattvas that is a process of memory and recall of detailed teachings. This is best
+                    translated “retention” in certain contexts.</term>
+            </gloss>
+        </item>
+        <item>
+            <gloss type="term" xml:id="UT22084-043-008-238">
+                <term>five basic precepts</term>
+                <term xml:lang="Bo-Ltn" status="verified">bslab pa’i gzhi lnga </term>
+                            <term xml:lang="bo">བསླབ་པའི་གཞི་ལྔ།</term>
+                <term xml:lang="Sa-Ltn" status="verified">pañcaśikṣāpada</term>
+                <term type="definition">Abstaining from killing, stealing, sexual misconduct, lying, and
+                    intoxication.</term>
+            </gloss>
+        </item>
+        <item>
+            <gloss type="term" xml:id="UT22084-043-008-239">
+                <term>five degenerations</term>
+                <term xml:lang="Bo-Ltn" status="verified">snyigs ma lnga </term>
+                            <term xml:lang="bo">སྙིགས་མ་ལྔ།</term>
+                <term xml:lang="Sa-Ltn" status="verified">pañcakaṣāya</term>
+                <term type="definition">In this text, the five degenerations are: (1) the degeneration of time, (2) the
+                    degeneration of sentient beings, (3) the degeneration of place, (4) the degeneration of lifespan,
+                    and (5) the degeneration of mental afflictions. This differs from other presentations of this list
+                    in which the degeneration of views replaces the degeneration of place.</term>
+            </gloss>
+        </item>
+        <item>
+            <gloss type="term" xml:id="UT22084-043-008-240">
+                <term>four means of gathering disciples</term>
+                <term xml:lang="Bo-Ltn" status="verified">bsdu ba’i dngos po bzhi </term>
+                            <term xml:lang="bo">བསྡུ་བའི་དངོས་པོ་བཞི།</term>
+                <term xml:lang="Sa-Ltn" status="verified">catuḥ­saṅgraha­vastu</term>
+                <term type="definition">Generosity, kind talk, meaningful actions, and practicing what one
+                    preaches.</term>
+            </gloss>
+        </item>
+        <item>
+            <gloss type="term" xml:id="UT22084-043-008-241">
+                <term>four wrong views</term>
+                <term xml:lang="Bo-Ltn" status="verified">phyin ci log bzhi </term>
+                            <term xml:lang="bo">ཕྱིན་ཅི་ལོག་བཞི།</term>
+                <term xml:lang="Sa-Ltn" status="verified">caturviparyāsa</term>
+                <term type="definition">Viewing what is impermanent to be permanent, viewing what brings suffering to be
+                    pleasurable, viewing what is tainted to be pure, and viewing what is non-self to be self.</term>
+            </gloss>
+        </item>
+        <item>
+            <gloss type="term" xml:id="UT22084-043-008-242">
+                <term>fourfold community</term>
+                <term xml:lang="Bo-Ltn" status="verified">’khor bzhi </term>
+                            <term xml:lang="bo">འཁོར་བཞི།</term>
+                <term xml:lang="Sa-Ltn" status="verified">catuḥpariṣad</term>
+                <term type="definition">Monks, nuns, and male and female lay practitioners. </term>
+            </gloss>
+        </item>
+        <item>
+            <gloss type="term" xml:id="UT22084-043-008-243">
+                <term>gandharva</term>
+                <term xml:lang="Bo-Ltn" status="verified">dri za </term>
+                            <term xml:lang="bo">དྲི་ཟ།</term>
+                <term xml:lang="Sa-Ltn" status="verified">gandharva</term>
+                <term type="definition">A type of nonhuman being often rendered as “celestial musicians” who fly through
+                    space and serve as musicians for the gods.</term>
+                <term type="alternative">gandharvī </term>
+            </gloss>
+        </item>
+        <item>
+            <gloss type="text" xml:id="UT22084-043-008-244" mode="marked">
+                <term>Heap of Jewels</term>
+                <term xml:lang="Bo-Ltn" status="verified">dkon mchog brtsegs pa </term>
+                            <term xml:lang="bo">དཀོན་མཆོག་བརྩེགས་པ།</term>
+                <term xml:lang="Sa-Ltn" status="verified">Ratnakūṭa</term>
+                <term type="definition">A collection of texts comprising a section of the Kangyur as well as of the
+                    Chinese Buddhist canon.</term>
+            </gloss>
+        </item>
+        <item>
+            <gloss type="term" xml:id="UT22084-043-008-245">
+                <term>liberations</term>
+                <term xml:lang="Bo-Ltn" status="verified">rnam par thar pa rnams</term>
+                            <term xml:lang="bo">རྣམ་པར་ཐར་པ་རྣམས།</term>
+                <term xml:lang="Sa-Ltn" status="verified">vimokṣa</term>
+                <term type="definition">Though not explicit in this text, this may be a reference to eight stages to liberation (<foreign xml:lang="Sa-Ltn">aṣṭavimokṣa</foreign>; <foreign xml:lang="Bo-Ltn">rnam par thar pa brgyad</foreign>), a series of increasingly subtle states of meditative realization or attainment. There are several presentations of these found in the canonical literature. One of the most common is as follows: (1) One observes form while the mind dwells at the level of the form realm. (2) One observes forms externally while discerning formlessness internally. (3) One dwells in the direct experience of the body's pleasant aspect. (4) One dwells in the realization of the sphere of infinite space by transcending all conceptions of matter, resistance, and diversity. (5) Transcending the sphere of infinite space, one dwells in the realization of the sphere of infinite consciousness. (6) Transcending the sphere of infinite consciousness, one dwells in the realization of the sphere of nothingness. (7) Transcending the sphere of nothingness, one dwells in the realization of the sphere of neither perception nor nonperception. (8) Transcending the sphere of neither perception and nonperception, one dwells in the realization of the cessation of conception and feeling.</term>
+            </gloss>
+        </item>
+        <item>
+            <gloss type="term" xml:id="UT22084-043-008-246">
+                <term>māra</term>
+                <term xml:lang="Bo-Ltn" status="verified">bdud </term>
+                            <term xml:lang="bo">བདུད།</term>
+                <term xml:lang="Sa-Ltn" status="verified">māra</term>
+                <term type="definition">A class of beings related to the demon Māra or a term for the demon Māra
+                    himself. Māra and the māras are portrayed as the primary adversaries and tempters of people who vow
+                    to take up the religious life, and māras can be understood as a class of demonic beings responsible
+                    for perpetuating the illusion that keeps beings bound to the world and worldly attachments and the
+                    mental states those beings elicit.</term>
+                <term type="alternative">Māras </term>
+            </gloss>
+        </item>
+                    
+        <item>
+            <gloss type="term" xml:id="UT22084-043-008-247">
+                <term>nāga</term>
+                <term xml:lang="Bo-Ltn" status="verified">klu </term>
+                            <term xml:lang="bo">ཀླུ།</term>
+                <term xml:lang="Sa-Ltn" status="verified">nāga</term>
+                <term type="definition">A class of nonhuman beings who live in subterranean aquatic environments and who
+                    are known to hoard wealth and esoteric teachings. They are associated with snakes and
+                    serpents.</term>
+            </gloss>
+        </item>
+        <item>
+            <gloss type="term" xml:id="UT22084-043-008-248">
+                <term>perfected through previous practice </term>
+                <term xml:lang="Bo-Ltn" status="verified">sngon gyi tshul phun sum tshogs pa </term>
+                            <term xml:lang="bo">སྔོན་གྱི་ཚུལ་ཕུན་སུམ་ཚོགས་པ།</term>
+                <term xml:lang="Sa-Ltn" status="verified">pūrvayogasampanna</term>
+            </gloss>
+        </item>
+        <item>
+            <gloss type="term" xml:id="UT22084-043-008-249">
+                <term>piśācī</term>
+                <term xml:lang="Bo-Ltn" status="verified">sha za ma </term>
+                            <term xml:lang="bo">ཤ་ཟ་མ།</term>
+                <term xml:lang="Sa-Ltn" status="verified">piśācī</term>
+                <term type="definition">A female member of a class of nonhuman beings traditionally associated with the wild, remote places of the earth. They are considered particularly violent and are known to devour flesh. </term>
+            </gloss>
+        </item>
+        <item>
+            <gloss type="term" xml:id="UT22084-043-008-250">
+                <term>possesses the four dharmas</term>
+                <term xml:lang="Bo-Ltn" status="verified">chos bzhi dang ldan </term>
+                            <term xml:lang="bo">ཆོས་བཞི་དང་ལྡན།</term>
+                <term xml:lang="Sa-Ltn"/>
+                <term type="alternative">possesses these four dharmas</term>
+            </gloss>
+        </item>
+        <item>
+            <gloss type="term" xml:id="UT22084-043-008-251">
+                <term>propensities for continued existence</term>
+                <term xml:lang="Bo-Ltn" status="verified">srid pa’i bag la nyal ba </term>
+                            <term xml:lang="bo">སྲིད་པའི་བག་ལ་ཉལ་བ།</term>
+                <term xml:lang="Sa-Ltn"/>
+                <term type="definition">Various unwholesome mental states that lead to continued suffering and
+                    existence.</term>
+            </gloss>
+        </item>
+        <item>
+                        <gloss xml:id="UT22084-043-008-252" type="term" mode="match">
+                            <term>rākṣasī</term>
+                            <term xml:lang="Bo-Ltn" status="verified">srin mo</term>
+                            <term xml:lang="bo">སྲིན་མོ།</term>
+                            <term xml:lang="Sa-Ltn" status="verified">rākṣasī</term>
+                            <term type="definition">A female member of a class of Indic spirit deities generally considered malevolent and demonic.</term>
+                        </gloss>
+                    </item>
+        <item>
+                        <gloss xml:id="UT22084-043-008-253" type="term" mode="match">
+                            <term>śrāvaka</term>
+                            <term xml:lang="Bo-Ltn" status="verified">nyan thos</term>
+                            <term xml:lang="bo">ཉན་ཐོས།</term>
+                            <term xml:lang="Sa-Ltn" status="verified">śrāvaka</term>
+                            <term type="definition">A “listener” or direct disciple of the Buddha. Often used to denote the non-Mahāyāna monastic community.</term>
+                        </gloss>
+                    </item>
+        <item>
+            <gloss type="term" xml:id="UT22084-043-008-254">
+                <term>Śrāvaka Vehicle </term>
+                <term xml:lang="Bo-Ltn" status="verified">nyan thos theg pa </term>
+                            <term xml:lang="bo">ཉན་ཐོས་ཐེག་པ།</term>
+                <term xml:lang="Sa-Ltn" status="verified">śrāvakayāna </term>
+                <term type="definition">The vehicle comprising the teaching of the śrāvakas, the disciples or “Hearers”
+                    who heard the teachings from the Buddha. According to Mahāyāna sources, this is one of the two constitutents
+                    (along with the Pratyekabuddhayāna) of the so-called “Lesser Vehicle” (Hīnayāna). </term>
+            </gloss>
+        </item>
+        <item>
+            <gloss type="term" xml:id="UT22084-043-008-255">
+                <term>divine states of mind</term>
+                <term xml:lang="Bo-Ltn" status="verified">tshangs pa’i gnas </term>
+                            <term xml:lang="bo">ཚངས་པའི་གནས།</term>
+                <term xml:lang="Sa-Ltn" status="verified">brahmavihāra</term>
+                <term type="definition">The four qualities that are said to result in rebirth in the paradise of Brahmā:
+                    limitless love, compassion, rejoicing, and equanimity.</term>
+            </gloss>
+        </item>
+        <item>
+            <gloss type="term" xml:id="UT22084-043-008-256">
+                <term>eight precepts</term>
+                <term xml:lang="Bo-Ltn" status="verified">gso sbyong gi yan lag brgyad </term>
+                            <term xml:lang="bo">གསོ་སྦྱོང་གི་ཡན་ལག་བརྒྱད།</term>
+                <term xml:lang="Sa-Ltn" status="verified">aṣṭāṅgapoṣadha</term>
+                <term type="definition">These are the eight <foreign xml:lang="Sa-Ltn">upavasatha</foreign> vows, similar to the commitments of a
+                    monk, but maintained only for one day. On such days one pledges: (1) not to kill, (2) not to steal,
+                    (3) not to engage in sexual intercourse, (4) not to lie, (5) not to partake of any intoxicants, (6)
+                    not to sing or dance, (7) not to eat after noon, and (8) not to use high seats or luxurious
+                    beds.</term>
+            </gloss>
+        </item>
+        <item>
+            <gloss type="term" xml:id="UT22084-043-008-257">
+                <term>śrīgarbha jewel</term>
+                <term xml:lang="Bo-Ltn" status="verified">dpal gyi snying po </term>
+                            <term xml:lang="bo">དཔལ་གྱི་སྙིང་པོ།</term>
+                <term xml:lang="Sa-Ltn" status="verified">śrīgarbha</term>
+                <term type="definition">A kind of gem, reddish in color. </term>
+            </gloss>
+        </item>
+        <item>
+            <gloss type="term" xml:id="UT22084-043-008-258">
+                <term>ten virtuous actions</term>
+                <term xml:lang="Bo-Ltn" status="verified">dge ba bcu’i las kyi lam </term>
+                            <term xml:lang="bo">དགེ་བ་བཅུའི་ལས་ཀྱི་ལམ།</term>
+                <term xml:lang="Sa-Ltn" status="verified">daśakuśalakarmapatha</term>
+                <term type="definition">These are the opposite of the ten sins, i.e., refraining from engaging in
+                    activities related to the ten sins and doing the opposite. There are three physical virtues: saving
+                    lives, giving, and sexual propriety. There are four verbal virtues: truthfulness, reconciling
+                    discussions, gentle speech, and religious speech. There are three mental virtues: loving attitude,
+                    generous attitude, and right views. The whole doctrine is collectively called the “tenfold path of
+                    good action” (<foreign xml:lang="Sa-Ltn">daśa­kuśala­karma­patha</foreign>).</term>
+            </gloss>
+        </item>
+        <item>
+            <gloss type="term" xml:id="UT22084-043-008-259">
+                <term>three forbearances</term>
+                <term xml:lang="Bo-Ltn" status="verified">bzod pa gsum </term>
+                            <term xml:lang="bo">བཟོད་པ་གསུམ།</term>
+                <term xml:lang="Sa-Ltn" status="verified">trikṣānti</term>
+                <term type="definition">The three types of forbearance needed on the spiritual path: (1) forbearance
+                    with regard to harms, (2) forbearance with regard to undertaking hardships, and (3) forbearance with
+                    regard to having confidence in the Dharma.</term>
+            </gloss>
+        </item>
+        <item>
+            <gloss type="term" xml:id="UT22084-043-008-260">
+                <term>three stains</term>
+                <term xml:lang="Bo-Ltn" status="verified">dri ma gsum </term>
+                            <term xml:lang="bo">དྲི་མ་གསུམ།</term>
+                <term xml:lang="Sa-Ltn" status="verified">trimala</term>
+                <term type="definition">The same as the three poisons: desire, hatred, and delusion.</term>
+            </gloss>
+        </item>
+        <item>
+            <gloss type="term" xml:id="UT22084-043-008-261">
+                <term>thirty-two supreme marks</term>
+                <term xml:lang="Bo-Ltn" status="verified">mtshan mchog sum cu rtsa gnyis </term>
+                            <term xml:lang="bo">མཚན་མཆོག་སུམ་ཅུ་རྩ་གཉིས།</term>
+                <term xml:lang="Sa-Ltn" status="verified">dvātriṃśanmahāpuruṣalakṣaṇa</term>
+                <term type="definition">These are thirty-two physical characteristics of a “great person.”</term>
+            </gloss>
+        </item>
+        <item>
+            <gloss type="term" xml:id="UT22084-043-008-262">
+                <term>virtuous practices</term>
+                <term xml:lang="Bo-Ltn" status="verified">sbyangs pa’i yon tan </term>
+                            <term xml:lang="bo">སྦྱངས་པའི་ཡོན་ཏན།</term>
+                <term xml:lang="Sa-Ltn" status="verified">dhūtaguṇa</term>
+                <term type="definition">An optional set of thirteen practices that monastics can adopt in order to
+                    cultivate greater detachment. They consist of (1) wearing patched robes made from discarded cloth
+                    rather than from cloth donated by laypeople; (2) wearing only three robes; (3) going for alms; (4)
+                    not omitting any house while on the alms round, rather than begging only at those houses known to
+                    provide good food; (5) eating only what can be eaten in one sitting; (6) eating only food received
+                    in the alms bowl, rather than more elaborate meals presented to the Saṅgha; (7) refusing more food
+                    after indicating one has eaten enough; (8) dwelling in the forest; (9) dwelling at the root of a
+                    tree; (10) dwelling in the open air, using only a tent made from one’s robes as shelter; (11)
+                    dwelling in a charnel ground; (12) being satisfied with whatever dwelling one has; and (13) sleeping
+                    in a sitting position without ever lying down.</term>
+            </gloss>
+        </item>
+        <item>
+            <gloss type="person" xml:id="UT22084-043-008-263">
+                <term>Akṣobhya</term>
+                <term xml:lang="Bo-Ltn" status="verified">mi ’khrugs </term>
+                            <term xml:lang="bo">མི་འཁྲུགས།</term>
+                <term xml:lang="Sa-Ltn" status="verified">Akṣobhya</term>
+                <term type="definition">In Sanskrit, “Immovable,” the name of a tathāgata. In Surata's next life, he
+                    returns to Abhirati, the realm of Akṣobhya. </term>
+            </gloss>
+        </item>
+        <item>
+            <gloss type="person" xml:id="UT22084-043-008-264">
+                <term>Ānanda</term>
+                <term xml:lang="Bo-Ltn" status="verified">kun dga' bo </term>
+                            <term xml:lang="bo">ཀུན་དགའ་བོ།</term>
+                <term xml:lang="Sa-Ltn" status="verified">Ānanda</term>
+                <term type="definition">The Buddha's cousin and longtime attendant. </term>
+            </gloss>
+        </item>
+        <item>
+            <gloss type="person" xml:id="UT22084-043-008-265">
+                <term>Anāthapiṇḍada</term>
+                <term xml:lang="Bo-Ltn" status="verified">mgon med zas sbyin </term>
+                            <term xml:lang="bo">མགོན་མེད་ཟས་སྦྱིན།</term>
+                <term xml:lang="Sa-Ltn" status="verified">Anāthapiṇḍada</term>
+                <term type="definition">Anāthapiṇḍada was a wealthy merchant in the town of Śrāvastī, who became a
+                    patron of the Buddha Śākyamuni. He bought the land from Prince Jeta to serve as the Buddha’s first monastery.
+                </term>
+            </gloss>
+        </item>
+        <item>
+            <gloss type="person" xml:id="UT22084-043-008-266">
+                <term>Brahmā</term>
+                <term xml:lang="Bo-Ltn" status="verified">tshangs pa </term>
+                            <term xml:lang="bo">ཚངས་པ།</term>
+                <term xml:lang="Sa-Ltn" status="verified">Brahmā</term>
+                <term type="definition">A high-ranking deity, presiding over a divine world where other beings consider
+                    him the creator; he is also considered to be the “Lord of the Sahā World” (our universe).</term>
+            </gloss>
+        </item>
+        <item>
+            <gloss type="person" xml:id="UT22084-043-008-267">
+                <term>Candra</term>
+                <term xml:lang="Bo-Ltn" status="verified">zla ba </term>
+                            <term xml:lang="bo">ཟླ་བ།</term>
+                <term xml:lang="Sa-Ltn" status="verified">Candra</term>
+                <term type="definition">The god of the moon; the moon personified.</term>
+            </gloss>
+        </item>
+        <item>
+            <gloss type="person" xml:id="UT22084-043-008-268">
+                <term>Indra</term>
+                <term xml:lang="Bo-Ltn" status="verified">dbang po </term>
+                            <term xml:lang="bo">དབང་པོ།</term>
+                <term xml:lang="Sa-Ltn" status="verified">Indra</term>
+                <term type="definition">A Vedic god who eventually emerged as one of the most important in the Vedic
+                    pantheon. Indra retains his role as the “Lord of the Gods” in Buddhist literature, where he is often
+                    referred to by the name Śakra.</term>
+            </gloss>
+        </item>
+        <item>
+            <gloss type="person" xml:id="UT22084-043-008-269">
+                <term>Jeta</term>
+                <term xml:lang="Bo-Ltn" status="verified">rgyal byed </term>
+                            <term xml:lang="bo">རྒྱལ་བྱེད།</term>
+                <term xml:lang="Sa-Ltn" status="verified">Jeta</term>
+                <term type="definition">Prince who sold a piece of land in Śrāvastī to the
+                    householder Anāthapiṇḍada, who built a monastery there and offered it to the Buddha.</term>
+            </gloss>
+        </item>
+        <item>
+            <gloss type="person" xml:id="UT22084-043-008-270">
+                <term>Lord King of the World</term>
+                <term xml:lang="Bo-Ltn" status="verified">’jig rten rgyal po dbang phyug </term>
+                            <term xml:lang="bo">འཇིག་རྟེན་རྒྱལ་པོ་དབང་ཕྱུག</term>
+                <term xml:lang="Sa-Ltn"/>
+                <term type="definition">The name Surata is known by after he becomes enlightened. </term>
+            </gloss>
+        </item>
+        <item>
+            <gloss type="person" xml:id="UT22084-043-008-271">
+                <term>Māra</term>
+                <term xml:lang="Bo-Ltn" status="verified">bdud </term>
+                            <term xml:lang="bo">བདུད།</term>
+                <term xml:lang="Sa-Ltn" status="verified">Māra</term>
+                <term type="definition">The demon who assailed Śākyamuni prior to his awakening; any demonic force; the
+                    personification of conceptual and emotional obstacles.</term>
+            </gloss>
+        </item>
+        <item>
+            <gloss type="person" xml:id="UT22084-043-008-272">
+                <term>Pañcaśikha </term>
+                <term xml:lang="Bo-Ltn" status="verified">gtsug phud lnga pa </term>
+                            <term xml:lang="bo">གཙུག་ཕུད་ལྔ་པ།</term>
+                <term xml:lang="Sa-Ltn" status="verified">Pañcaśikha </term>
+                <term type="definition">A certain young gandharva allied with the god Śakra.</term>
+            </gloss>
+        </item>
+        <item>
+            <gloss type="person" xml:id="UT22084-043-008-273">
+                <term>Prasenajit</term>
+                <term xml:lang="Bo-Ltn" status="verified">gsal rgyal </term>
+                            <term xml:lang="bo">གསལ་རྒྱལ།</term>
+                <term xml:lang="Sa-Ltn" status="verified">Prasenajit</term>
+                <term type="definition">King of the country of Kośala, he reigned in the city of Śrāvastī. In this sūtra, Surata
+                    humbles him and then becomes one of his teachers. See also <ptr target="#UT22084-043-008-11"/>.</term>
+            </gloss>
+        </item>
+        <item>
+            <gloss type="person" xml:id="UT22084-043-008-275">
+                <term>Śacī</term>
+                <term xml:lang="Bo-Ltn" status="verified">bde sogs </term>
+                            <term xml:lang="bo">བདེ་སོགས།</term>
+                <term xml:lang="Sa-Ltn" status="verified">Śacī</term>
+                <term type="definition">A goddess typically understood to be the wife of Indra/Śakra. In this text, it refers to a
+                    female asura who attempts to seduce Surata and later becomes one of his attendants.</term>
+            </gloss>
+        </item>
+        <item>
+            <gloss type="person" xml:id="UT22084-043-008-276">
+                <term>Śakra</term>
+                <term xml:lang="Bo-Ltn" status="verified">brgya byin </term>
+                            <term xml:lang="bo">བརྒྱ་བྱིན།</term>
+                <term xml:lang="Sa-Ltn" status="verified">Śakra</term>
+                <term type="definition">Another name for Indra, a Vedic god who eventually emerged as one of the most
+                    important in the Vedic pantheon. Indra retains his role as the “Lord of the Gods” in Buddhist
+                    literature, where he is often referred to by the name Śakra.</term>
+            </gloss>
+        </item>
+        <item>
+            <gloss type="person" xml:id="UT22084-043-008-277">
+                <term>Śākyamuni</term>
+                <term xml:lang="Bo-Ltn" status="verified">shAkya thub </term>
+                            <term xml:lang="bo">ཤཱཀྱ་ཐུབ།</term>
+                <term xml:lang="Sa-Ltn" status="verified">Śākyamuni</term>
+                <term type="definition">The name of the historical Buddha, Siddhartha Gautama. He was a <foreign xml:lang="Sa-Ltn">muni</foreign>
+                    (“sage”) from the Śākya clan.</term>
+            </gloss>
+        </item>
+        <item>
+            <gloss type="person" xml:id="UT22084-043-008-278">
+                <term>Śākyasiṃha</term>
+                <term xml:lang="Bo-Ltn" status="verified">shAkya seng ge </term>
+                            <term xml:lang="bo">ཤཱཀྱ་སེང་གེ</term>
+                <term xml:lang="Sa-Ltn" status="verified">Śākyasiṃha</term>
+                <term type="definition">In Sanskrit, “Lion of the Śākyas,” an epithet for the Buddha.</term>
+            </gloss>
+        </item>
+        <item>
+            <gloss type="person" xml:id="UT22084-043-008-279">
+                <term>Sunlight</term>
+                <term xml:lang="Bo-Ltn" status="verified">nyi ’od </term>
+                            <term xml:lang="bo">ཉི་འོད།</term>
+                <term xml:lang="Sa-Ltn"/>
+                <term type="definition">A goddess who attempts to seduce Surata and later becomes one of his attendants.
+                </term>
+            </gloss>
+        </item>
+        <item>
+            <gloss type="person" xml:id="UT22084-043-008-280">
+                <term>Surata</term>
+                <term xml:lang="Bo-Ltn" status="verified">des pa </term>
+                            <term xml:lang="bo">དེས་པ།</term>
+                <term xml:lang="Sa-Ltn" status="verified">Surata</term>
+                <term type="definition">A poor city-dweller in Śrāvastī and protagonist of the text. Poor in resources,
+                    he is endowed with the proverbial wealth of virtue. See also <ptr target="#UT22084-043-008-11"/>.</term>
+            </gloss>
+        </item>
+        <item>
+            <gloss type="person" xml:id="UT22084-043-008-281">
+                <term>Sūrya</term>
+                <term xml:lang="Bo-Ltn" status="verified">nyi ma </term>
+                            <term xml:lang="bo">ཉི་མ།</term>
+                <term xml:lang="Sa-Ltn" status="verified">Sūrya</term>
+                <term type="definition">The god of the sun; the sun personified.</term>
+            </gloss>
+        </item>
+        <item>
+            <gloss type="person" xml:id="UT22084-043-008-282">
+                <term>Yama</term>
+                <term xml:lang="Bo-Ltn" status="verified">gshin rje</term>
+                            <term xml:lang="bo">གཤིན་རྗེ།</term>
+                <term xml:lang="Sa-Ltn" status="verified">Yama</term>
+                <term type="definition">The lord of death in Indian mythology who judges the dead and rules over the
+                    hells and the realm of the hungry ghosts.</term>
+            </gloss>
+        </item>
+        <item>
+            <gloss type="place" xml:id="UT22084-043-008-283">
+                <term>Abhirati</term>
+                <term xml:lang="Bo-Ltn" status="verified">mngon par dga’ ba </term>
+                            <term xml:lang="bo">མངོན་པར་དགའ་བ།</term>
+                <term xml:lang="Sa-Ltn" status="verified">Abhirati</term>
+                <term type="definition">Lit. “Intense Delight.” The universe, or buddhafield, of the Tathāgata Akṣobhya.
+                </term>
+            </gloss>
+        </item>
+        <item>
+            <gloss type="place" xml:id="UT22084-043-008-284">
+                <term>Anāthapiṇḍada’s Park</term>
+                <term xml:lang="Bo-Ltn" status="verified">mgon med zas sbyin gyi kun dga’ ra ba </term>
+                            <term xml:lang="bo">མགོན་མེད་ཟས་སྦྱིན་གྱི་ཀུན་དགའ་ར་བ།</term>
+                <term xml:lang="Sa-Ltn" status="verified">Anāthapiṇḍadasya ārāmaḥ</term>
+                <term type="definition">This was an important early site for the Buddha’s growing community.
+                    Anāthapiṇḍada, a wealthy patron of the Buddha, purchased the park, located outside Śrāvasti, at
+                    great cost, purportedly covering the ground with gold, and donated it to the saṅgha. It was there
+                    that the Buddha spent several rainy seasons and gave discourses that were later recorded as sūtras.
+                    It was also the site for one of the first Buddhist monasteries.</term>
+            </gloss>
+        </item>
+        <item>
+            <gloss type="place" xml:id="UT22084-043-008-285">
+                <term>Elegantly Emanated</term>
+                <term xml:lang="Bo-Ltn" status="verified">legs par sprul pa </term>
+                            <term xml:lang="bo">ལེགས་པར་སྤྲུལ་པ།</term>
+                <term xml:lang="Sa-Ltn"/>
+                <term type="definition">The name of Surata's buddhafield after he becomes awakened.</term>
+            </gloss>
+        </item>
+        <item>
+            <gloss type="place" xml:id="UT22084-043-008-287">
+                <term>Heaven of the Thirty-Three</term>
+                <term xml:lang="Bo-Ltn" status="verified">sum cu rtsa gsum </term>
+                            <term xml:lang="bo">སུམ་ཅུ་རྩ་གསུམ།</term>
+                <term xml:lang="Sa-Ltn" status="verified">trāyastriṃśa</term>
+                <term type="definition">The paradise of Indra on the summit of Sumeru where there are thirty-three
+                    leading deities, hence the name “Heaven of the Thirty-Three.” The second (counting from the lowest)
+                    of the six paradises in the desire realm.</term>
+            </gloss>
+        </item>
+        <item>
+            <gloss type="place" xml:id="UT22084-043-008-288">
+                <term>Jambu River</term>
+                <term xml:lang="Bo-Ltn" status="verified">’dzam bu chu bo </term>
+                            <term xml:lang="bo">འཛམ་བུ་ཆུ་བོ།</term>
+                <term xml:lang="Sa-Ltn" status="verified">Jambunadī</term>
+                <term type="definition">A divine river whose gold is believed to be especially fine.</term>
+            </gloss>
+        </item>
+        <item>
+            <gloss type="place" xml:id="UT22084-043-008-289">
+                <term>Jambudvīpa</term>
+                <term xml:lang="Bo-Ltn" status="verified">’dzam bu gling</term>
+                            <term xml:lang="bo">འཛམ་བུ་གླིང་།</term>
+                <term xml:lang="Bo-Ltn" status="verified">’dzam gling </term>
+                            <term xml:lang="bo">འཛམ་གླིང་།</term>
+                <term xml:lang="Sa-Ltn" status="verified">Jambudvīpa</term>
+                <term type="definition">The name of the southern continent in Buddhist cosmology, which can signify either the known human world, or more specifically the Indian subcontinent, literally “the <foreign xml:lang="Sa-Ltn">jambu</foreign> island/continent.” Jambu is the name used for a range of plum-like fruits from trees belonging to the genus <foreign xml:lang="la">Szygium</foreign>, particularly <foreign xml:lang="la">Szygium jambos</foreign> and <foreign xml:lang="la">Szygium cumini</foreign>, and has commonly been rendered “rose apple” although “black plum” may be a less misleading term. Among various explanations given for the continent being so named, one (in the <title xml:lang="Sa-Ltn">Abhidharmakośa</title>) is that a jambu tree grows in its northern mountains beside Lake Anavatapta, mythically considered the source of the four great rivers of India, and that the continent is therefore named from the tree or the fruit. Jambudvīpa has the vajrāsana at its center and is the only continent upon which buddhas attain awakening.</term>
+            </gloss>
+        </item>
+        <item>
+            <gloss type="place" xml:id="UT22084-043-008-290">
+                <term>Kośala</term>
+                <term xml:lang="Bo-Ltn" status="verified">ko sa la </term>
+                            <term xml:lang="bo">ཀོ་ས་ལ།</term>
+                <term xml:lang="Sa-Ltn" status="verified">Kośala</term>
+                <term type="definition">An ancient kingdom, northwest of Magadha, abutting Kāśi, whose capital was
+                    Śrāvastī. During the Buddha’s time it was ruled by Prasenajit. It presently corresponds to an area
+                    within Uttar Pradesh.</term>
+            </gloss>
+        </item>
+        <item>
+            <gloss type="place" xml:id="UT22084-043-008-291">
+                <term>Prince Jeta’s Grove</term>
+                <term xml:lang="Bo-Ltn" status="verified">rgyal bu rgyal byed kyi tshal </term>
+                            <term xml:lang="bo">རྒྱལ་བུ་རྒྱལ་བྱེད་ཀྱི་ཚལ།</term>
+                <term xml:lang="Sa-Ltn" status="verified">Jetavana</term>
+                <term type="definition">A grove owned by Prince Jeta in Śrāvastī, the capital of the kingdom of Kośala.
+                    It was bought by Anāthapiṇḍada and became the monastery that the Buddha spent most rainy seasons in
+                    and is therefore the setting for many sūtras.</term>
+            </gloss>
+        </item>
+        <item>
+            <gloss type="place" xml:id="UT22084-043-008-292">
+                <term>Sahā world system</term>
+                <term xml:lang="Bo-Ltn" status="verified">’jig rten gyi khams mi mjed </term>
+                            <term xml:lang="bo">འཇིག་རྟེན་གྱི་ཁམས་མི་མཇེད།</term>
+                <term xml:lang="Sa-Ltn" status="verified">Sahālokadhātu</term>
+                <term type="definition">This universe of ours, or the trichiliocosm (but sometimes referring to just
+                    this world system of four continents), presided over by Brahmā. The term is variously interpreted as
+                    meaning the world of suffering, of endurance, of fearlessness, or of concomitance (of karmic cause
+                    and effect).</term>
+            </gloss>
+        </item>
+        <item>
+            <gloss type="place" xml:id="UT22084-043-008-293">
+                <term>Śrāvastī</term>
+                <term xml:lang="Bo-Ltn" status="verified">mnyan yod </term>
+                            <term xml:lang="bo">མཉན་ཡོད།</term>
+                <term xml:lang="Sa-Ltn" status="verified">Śrāvastī</term>
+                <term type="definition">Capital city of the kingdom of Kośala, ruled by one of the Buddha’s royal
+                    patrons, King Prasenajit, where the Buddha often dwelt in the Jetavana grove, the site of many Mahāyāna
+                    sūtras.</term>
+            </gloss>
+        </item>
+        <item>
+                        <gloss xml:id="UT22084-043-008-294" type="place" mode="match">
+                            <term>Vaijayanta</term>
+                            <term xml:lang="Bo-Ltn" status="verified">rnam par rgyal ba</term>
+                            <term xml:lang="bo">རྣམ་པར་རྒྱལ་བ།</term>
+                            <term xml:lang="Sa-Ltn" status="verified">Vaijayanta</term>
+                            <term type="definition">The palace of Śakra in the Heaven of the Thirty-Three.</term>
+                        </gloss>
+                    </item>
+                </list>
+            </div>
+        </back>
+    </text>
+</tei:TEI>
