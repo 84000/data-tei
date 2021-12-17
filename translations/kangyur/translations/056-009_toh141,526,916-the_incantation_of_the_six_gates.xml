@@ -1,0 +1,802 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schema/current/translation.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+        <teiHeader>
+                <fileDesc>
+                        <titleStmt>
+                                <title type="mainTitle" xml:lang="en">The Dhāraṇī of the Six Gates</title>
+                                <title type="mainTitle" xml:lang="Sa-Ltn">Ṣaṇmukhī­dhāraṇī</title>
+                                <title type="mainTitle" xml:lang="Bo-Ltn">sgo drug pa’i gzungs</title>
+                                <title type="mainTitle" xml:lang="bo">སྒོ་དྲུག་པའི་གཟུངས།</title>
+                                <title type="longTitle" xml:lang="Bo-Ltn">’phags pa sgo drug pa zhes bya ba’i gzungs</title>
+                                <title type="longTitle" xml:lang="bo">འཕགས་པ་སྒོ་དྲུག་པ་ཞེས་བྱ་བའི་གཟུངས།</title>
+                                <title type="longTitle" xml:lang="en">The Noble Dhāraṇī of the Six Gates</title>
+                                <title type="longTitle" xml:lang="Sa-Ltn">Ārya­ṣaṇmukhīnāma­dhāraṇī</title>
+                                <title type="otherTitle" xml:lang="zh"/>
+
+                                <author role="translatorMain" ref="eft:team-50">Translated by the Pema Yeshé Dé Translation Team<lb/> under the patronage and
+                                        supervision of 84000: Translating the Words of the Buddha</author>
+
+                                <author role="translatorEng" ref="eft:person-316">Giuliano Proença</author>
+                                <consultant role="advisor" ref="eft:person-315">Joaquim Monteiro</consultant>
+                                <author role="translatorEng" ref="eft:person-317">Leticia Osorio</author>
+                                <consultant role="projectManager" ref="eft:person-316">Giuliano Francisco Proença</consultant>
+                                <editor role="projectEditor" ref="eft:person-262">David Higgins</editor>
+                                <editor role="copyEditor" ref="eft:person-92">Laura Goetz</editor>
+                                <editor role="projectEditor" ref="eft:person-250">Rory Lindsay</editor>
+                                <editor role="projectEditor" ref="eft:person-139">John Canti</editor>
+                                <editor role="TEImarkupEditor" ref="eft:person-381">Martina Cotter</editor>
+                        </titleStmt>
+                        <editionStmt>
+                                <edition>v 0.0.1 <date>2021</date>
+                </edition>
+                        </editionStmt>
+                        <publicationStmt status="2.a">
+                                <publisher>
+                    <name>84000: Translating the Words of the Buddha</name> is a global non-profit initiative to translate all the
+                                        Buddha’s words into modern languages, and to make them available to everyone. </publisher>
+                                <availability>
+                                        <licence>
+                                                <graphic url="http://i.creativecommons.org/l/by-nc-nd/2.0/88x31.png"/>
+                                                <p>This work is provided under the protection of a Creative Commons CC BY-NC-ND (Attribution - Non-commercial -
+                                                        No-derivatives) 3.0 copyright. It may be copied or printed for fair use, but only with full attribution,
+                                                        and not for commercial advantage or personal compensation. For full details, see the Creative Commons
+                                                        license.</p>
+                                        </licence>
+                                </availability>
+                                <idno xml:id="UT22084-056-009"/>
+                                <note>An early mistake in the assigning of UT numbers within the 84000 project means that these ids diverge slightly from the
+                                        standard logic.</note>
+                                <date>2021-12-09</date>
+                        </publicationStmt>
+                        <sourceDesc>
+
+                                <bibl key="toh141" type="text">
+                                        <ref>Toh 141</ref>
+                                        <biblScope>Degé Kangyur, vol. 56 (mdo sde, na), folios 299.a–300.a</biblScope>
+                                        <location work="UT4CZ5369" count-pages="3">
+                                                <volume number="56" start-page="597" end-page="599"/>
+                                        </location>
+                                        <idno parent-id="O1JC114941JC14668" work="http://read.84000.co/sections"/>
+                                        <idno source-id="O1JC114941JC11727" work="W22084"/>
+                                </bibl>
+
+                                <bibl key="toh526" type="text">
+                                        <ref>Toh 526</ref>
+                                        <biblScope>Degé Kangyur, vol. 88 (rgyud, na), folios 54.a–54.b (in <foreign xml:lang="Bo-Ltn">par phud</foreign>
+                                                printings), 71.a–71.b (in later printings) </biblScope>
+                                        <location work="UT4CZ5369" count-pages="2">
+                                                <volume number="88" start-page="141" end-page="142"/>
+                                                <!--start-page="107" end-page="108"-->
+                                        </location>
+                                        <idno parent-id="O1JC114941JC21415" work="http://read.84000.co/sections"/>
+                                        <idno source-id="O1JC114941JC12249" work="W22084"/>
+                                </bibl>
+                                <bibl key="toh916" type="text">
+                                        <ref>Toh 916</ref>
+                                        <biblScope>Degé Kangyur, vol. 100 (gzungs, e), folios 260.b–261.a</biblScope>
+                                        <location work="UT4CZ5369" count-pages="2">
+                                                <volume number="101" start-page="518" end-page="519"/>
+                                                <!--number="100" start-page="520" end-page="521"-->
+                                        </location>
+                                        <idno parent-id="O1JC114941JC20568" work="http://read.84000.co/sections"/>
+                                        <idno source-id="O1JC114941JC12678" work="W22084"/>
+                                </bibl>
+
+                        </sourceDesc>
+                        <notesStmt>
+                                <note type="lastUpdated" date-time="2021-12-16T20:49:00.022Z" user="martina-cotter">16/12/2021 20:49:00</note>
+                                <note type="updated" update="text-version" value="v 0.1.0" date-time="2019-12-13T10:35:48.837Z" user="john">v 0.1.0</note>
+                                <note type="updated" update="translation-status" value="3" date-time="2019-12-13T10:35:48.837Z" user="john">3</note>
+                                <note type="updated" update="translation-status" value="2.h" date-time="2020-03-10T10:43:01.175Z" user="line-tofte">2.h</note>
+                                <note type="updated" update="text-version" value="0.1.1" date-time="2021-03-12T15:04:32.179Z" user="line-tofte">Auto
+                                        (update-contributors)</note>
+                                <note type="updated" update="text-version" value="0.1.2" date-time="2021-03-12T15:05:32.069Z" user="line-tofte">Auto
+                                        (update-contributors)</note>
+                                <note type="updated" update="text-version" value="0.1.3" date-time="2021-03-12T15:05:43.129Z" user="line-tofte">Auto
+                                        (update-contributors)</note>
+                                <note type="updated" update="translation-status" value="2.g" date-time="2021-03-22T11:20:44.007Z" user="line-tofte">2.g</note>
+                                <note type="updated" update="text-version" value="0.1.4" date-time="2021-03-22T11:20:44.007Z" user="line-tofte">Auto
+                                        (update-publication-status)</note>
+                                <note type="updated" update="text-version" value="0.1.5" date-time="2021-03-22T11:22:03.995Z" user="line-tofte">Auto
+                                        (update-contributors)</note>
+                                <note type="updated" update="translation-status" value="2.f" date-time="2021-04-01T07:27:27.479Z" user="line-tofte">2.f</note>
+                                <note type="updated" update="text-version" value="0.1.6" date-time="2021-04-01T07:27:27.479Z" user="line-tofte">Auto
+                                        (update-publication-status)</note>
+                                <note type="updated" update="translation-status" value="2.e" date-time="2021-04-27T15:20:35.755Z" user="line-tofte">2.e</note>
+                                <note type="updated" update="text-version" value="0.1.7" date-time="2021-04-27T15:20:35.755Z" user="line-tofte">Auto
+                                        (update-publication-status)</note>
+                                <note type="updated" update="text-version" value="0.1.8" date-time="2021-04-27T15:20:58.133Z" user="line-tofte">Auto
+                                        (update-contributors)</note>
+                                <note type="updated" update="text-version" value="0.1.9" date-time="2021-04-27T15:21:13.78Z" user="line-tofte">Auto
+                                        (update-contributors)</note>
+                                <note type="updated" update="translation-status" value="2.d" date-time="2021-04-29T07:33:51.019Z" user="line-tofte">2.d</note>
+                                <note type="updated" update="text-version" value="0.1.10" date-time="2021-04-29T07:33:51.019Z" user="line-tofte">Auto
+                                        (update-publication-status)</note>
+                                <note type="updated" update="translation-status" value="2.c" date-time="2021-05-04T07:04:18.729Z" user="line-tofte">2.c</note>
+                                <note type="updated" update="text-version" value="0.1.11" date-time="2021-05-04T07:04:18.729Z" user="line-tofte">Auto
+                                        (update-publication-status)</note>
+                                <note type="updated" update="text-version" value="0.1.12" date-time="2021-09-09T07:59:38.118Z" user="line-tofte">Auto
+                                        (update-contributors)</note>
+                                <note type="updated" update="translation-status" value="2.b" date-time="2021-09-10T06:47:55.581Z" user="line-tofte">2.b</note>
+                                <note type="updated" update="text-version" value="0.1.13" date-time="2021-09-10T06:47:55.581Z" user="line-tofte">Auto
+                                        (update-publication-status)</note>
+                                <note type="updated" update="text-version" value="0.1.14" date-time="2021-09-27T09:20:18.152Z" user="john">0.1.14</note>
+                                <note type="updated" update="text-version" value="0.1.15" date-time="2021-09-29T11:47:46.13Z" user="line-tofte">Auto
+                                        (update-contributors)</note>
+                                <note type="updated" update="translation-status" value="2.a" date-time="2021-12-02T09:17:20.139Z" user="line-tofte">2.a</note>
+
+                                <note type="updated" update="text-version" value="0.1.16" date-time="2021-12-02T09:17:20.139Z" user="line-tofte">Auto
+                                        (update-publication-status)</note>
+
+                                <note type="updated" update="text-version" value="0.1.17" date-time="2021-12-02T09:18:02.868Z" user="line-tofte">Auto
+                                        (update-contributors)</note>
+                        </notesStmt>
+                </fileDesc>
+        </teiHeader>
+        <text>
+                <front>
+                        <div type="summary">
+                                <head type="summary" tid="1">Summary</head>
+                                <milestone unit="chunk" xml:id="UT22084-056-009-1"/>
+                                <p tid="2">While the Buddha is abiding in the space above the Śuddhāvāsa realm with a retinue of bodhisattvas, he urges them to
+                                        uphold <title xml:lang="en">The Dhāraṇī of the Six Gates</title> and presents these gates as six aspirations that
+                                        vanquish the causes of saṃsāric experience. He then presents the dhāraṇī itself to his listeners and instructs them to
+                                        recite it three times each day and three times each night. Finally, he indicates the benefits that come from this
+                                        practice, and the assembly praises the Buddha’s words. This is followed by a short dedication marking the conclusion of
+                                        the text. </p>
+                        </div>
+                        <div type="acknowledgment">
+                                <head type="acknowledgment" tid="3">Acknowledgements</head>
+                                <milestone unit="chunk" xml:id="UT22084-056-009-2"/>
+                                <p tid="4">Giuliano Proença and Leticia Osorio produced and revised the translation. Joaquim Monteiro provided comparisons with
+                                        the Chinese version of the consulted texts and gave valuable references throughout the translation process. Giuliano
+                                        Proença wrote the introduction and other ancillary elements while Leticia Osorio revised them.</p>
+
+                                <p tid="5">The translation was completed under the patronage and supervision of 84000: Translating the Words of the Buddha.</p>
+                        </div>
+                        <div type="introduction">
+                                <head type="introduction" tid="8">Introduction</head>
+                                <div type="section" xml:id="UT22084-056-009-introduction-1">
+
+                                        <milestone unit="chunk" xml:id="UT22084-056-009-6"/>
+                                        <p tid="10">
+                        <title xml:lang="en">The Dhāraṇī of the Six Gates</title> is a short text that consists mainly of a dhāraṇī
+                                                taught by the Buddha to an assembly of bodhisattvas. According to Sánchez,<note place="end" xml:id="UT22084-056-009-7"> Sánchez 2011, p. 28.</note> this style of dhāraṇī appeared between the third
+                                                and eighth centuries <hi rend="small-caps">ce</hi>. Since Xuanzang’s Chinese translation dates to 645 <hi rend="small-caps">ce</hi>, this text must already have been available at the beginning of the seventh
+                                                century. It appears to have enjoyed a certain level of popularity, since we find many copies of it among the
+                                                Dunhuang documents in Tibetan and Chinese, as well as some Indian, Tibetan, and Chinese commentaries and
+                                                recitation texts based on it.</p>
+                                        <milestone unit="chunk" xml:id="UT22084-056-009-8"/>
+                                        <p tid="11">One of its commentaries, the <title xml:lang="Sa-Ltn">Ṣaṇmukhī­dhāraṇī­vyākhyāna</title> (Toh 3989),<ref rend="pending" target="https://read.84000.co/translation/toh3989.html"/> appears in the Tengyur and is
+                                                attributed to Vasubandhu (fourth to fifth century). Its subcommentary (IOL Tib J 430) written by Jñānadatta has
+                                                been preserved only in Tibetan and Chinese among the Dunhuang manuscripts. In Chinese, they are both included in
+                                                the Taishō. According to the colophon of the Dunhuang texts, these Indian commentaries were translated into
+                                                Tibetan by the Indian paṇḍitas Dharmapāla and Prajñāvarman, and by the Tibetan translator-monk Yeshé Dé.</p>
+                                        <milestone unit="chunk" xml:id="UT22084-056-009-9"/>
+                                        <p tid="12">There are four known Tibetan commentaries on the <title xml:lang="Sa-Ltn">Ṣaṇmukhī­dhāraṇī</title> composed
+                                                by the renowned scholars Butön Rinchen Drup (1290–1364), Jonang Tāranātha (1575–1634), the seventh Dalai Lama
+                                                (1708–57), and the Geluk scholar Ngüchu Dharmabhadra (1772–1851). The Phangthangma, one of the imperial catalogs
+                                                of translated works, also mentions two sādhanas related to the <title xml:lang="Sa-Ltn">Ṣaṇmukhī­dhāraṇī</title>, which we could not locate. There are available, however, some relatively modern
+                                                recitation texts related to this dhāraṇī composed by Ngawang Khedrup (1779–1838) and Losang Tsültrim Gyatso
+                                                (1845–1915). </p>
+                                        <milestone unit="chunk" xml:id="UT22084-056-009-10"/>
+                                        <p tid="13">It is not known who translated <title xml:lang="en">The Dhāraṇī of the Six Gates</title> into Tibetan.
+                                                Neither the colophons, the imperial catalogs such as the Denkarma and Phangthangma, nor Tibetan historical works
+                                                mention the translators. The inclusion of our text in the Denkarma catalog, dated to ca. 812 ᴄᴇ, confirms that
+                                                the translation was made by the early ninth-century at the latest. It seems likely that this dhāraṇī was
+                                                translated from an Indian original since, according to the Phangthangma catalog, it does not appear among the
+                                                dhāraṇīs that were translated from Chinese. </p>
+                                        <milestone unit="chunk" xml:id="UT22084-056-009-11"/>
+                                        <p tid="14">Texts that include dhāraṇīs, as well as those referred to as dhāraṇīs by their titles, are widespread in the
+                                                Mahāyāna sūtra literature as well as featuring in the tantras. Gergely Hidas, for example, notes that dhāraṇī
+                                                scriptures have been assigned both to sūtra and tantra categories in Buddhist canonical collections and that
+                                                their classification is “sometimes controversial within Tibetan and Chinese textual systems.”<note place="end" xml:id="UT22084-056-009-12"> Hidas 2015, p. 130. </note> In this regard, it is interesting to note that
+                                                three almost identical versions of the <title xml:lang="Sa-Ltn">Ṣaṇmukhī­dhāraṇī</title> are assigned to the
+                                                Sūtra, Tantra, and Dhāraṇī sections of the Kangyurs of the Tshalpa group. In the Thempangma Kangyurs, as in the
+                                                Stok Palace Kangyur, it is included exclusively in the Tantra section. In the Lhasa and Narthang Kangyurs, we
+                                                find almost identical versions of <title xml:lang="en">The Dhāraṇī of the Six Gates</title> in both the Sūtra
+                                                and Tantra sections. Our text is also found among the Dunhuang manuscripts.<note place="end" xml:id="UT22084-056-009-13"> Complete and fragmentary, as PT 77, PT 414, PT 415, PT 416, IOL Tib J 426,
+                                                        IOL Tib J 427, and IOL Tib J 432.</note> All versions have roughly the same length. There were probably
+                                                different sources for the Tibetan translations that were found in Dunhuang: Pelliot tibétain 415 is almost
+                                                identical to the Thempangma versions, while Pelliot tibétain 77 is in some cases closer to the Tshalpa
+                                                recensions. </p>
+                                        <milestone unit="chunk" xml:id="UT22084-056-009-14"/>
+                                        <p tid="15">Fortunately, there are a few extant Sanskrit manuscripts of <title xml:lang="en">The Dhāraṇī of the Six
+                                                        Gates</title>. Mimaki (1977b) prepared a critical edition based on these manuscripts and prepared a
+                                                critical edition of the Tibetan based on various canonical translations. The Tibetan versions seem to be quite
+                                                accurate translations of the Sanskrit text, although there are minor differences between them. It is noteworthy
+                                                that the versions of the Thempangma Kangyur group, like that of the Stok Palace, and Pelliot tibétain 415 are
+                                                closer to the extant Sanskrit version than versions from the Tshalpa Kangyur group. <title xml:lang="en">The
+                                                        Dhāraṇī of the Six Gates</title> was translated into Chinese by the great translator Xuanzang in 645 <hi rend="small-caps">ce</hi> (Taishō 1360). The Chinese translation differs considerably from the Sanskrit
+                                                and the Tibetan, especially in its presentation of the six gates, despite having the same structure of the
+                                                Sanskrit and Tibetan texts. Interestingly, the Tibetan and Chinese translations of the above mentioned
+                                                commentary and subcommentary are similar in content and wording. Even the quotations of the six gates in the
+                                                Chinese subcommentary more closely match the Tibetan text of <title xml:lang="en">The Dhāraṇī of the Six
+                                                        Gates</title> than Xuanzang’s rendering of the six gates.</p>
+                                        <milestone unit="chunk" xml:id="UT22084-056-009-15"/>
+                                        <p tid="16">In addition to his critical editions of the Sanskrit and Tibetan versions of the text, Mimaki (1977a) offers
+                                                a French translation. Mimaki also examines references to <title xml:lang="en">The Dhāraṇī of the Six
+                                                        Gates</title> in later treatises and its possible affiliation to the Sautrāntika school. He lists the
+                                                extant Sanskrit, Tibetan, and Chinese manuscripts of the text, as well as the Tibetan editions and the
+                                                commentaries. He also compares his Sanskrit edition with the Tibetan and with the Chinese canonical versions.
+                                                Mimaki’s research proved invaluable for preparing our own translation.</p>
+                                        <milestone unit="chunk" xml:id="UT22084-056-009-16"/>
+                                        <p tid="17">We have based our translation mainly on the Tibetan text as found in the Sūtra section of the Degé Kangyur
+                                                (Toh 141), but consulted the other versions found in the Action Tantra and Dhāraṇī sections to clarify ambiguous passages (Toh 526 and Toh 916 respectively). <note place="end" xml:id="UT22084-056-009-132">
+                                                        <p key="toh141" tid="62">Note that there is a discrepancy among various databases for cataloging the Toh
+                                                                916 version of this text within vol. 100 or 101 of the Degé Kangyur. See Toh 916 <ref target="https://read.84000.co/translation/toh916.html#end-note-UT22084-056-09-80">note
+                                                                        4</ref> for details.</p>
+                                                        <p key="toh526" tid="63">Note that there is a discrepancy among various databases for cataloging the Toh
+                                                                916 version of this text within vol. 100 or 101 of the Degé Kangyur. See Toh 916 <ref target="https://read.84000.co/translation/toh916.html#end-note-UT22084-062-09-80">note
+                                                                        4</ref> for details.</p>
+                                                        <p key="toh916" tid="64">The present text (Toh 916), and all those contained in the same volume
+                                                                        (<foreign xml:lang="Bo-Ltn">gzungs ’dus, e</foreign>), are listed as being located in
+                                                                volume 101 of the Degé Kangyur by the Buddhist Digital Resource Center (BDRC). However, several
+                                                                other Kangyur databases—including the eKangyur that supplies the digital input version displayed
+                                                                by the 84000 Reading Room—list this work as being located in volume 101. This discrepancy is
+                                                                partly due to the fact that the two volumes of the <foreign xml:lang="Bo-Ltn">gzungs
+                                                                        ’dus</foreign> section are an added supplement not mentioned in the original catalog,
+                                                                and also hinges on the fact that the compilers of the Tōhoku catalog placed another text—which
+                                                                forms a whole, very large volume—the <title xml:lang="Sa-Ltn">Vimalaprabhā­nāmakālacakra­tantraṭīkā</title> (<title xml:lang="Bo-Ltn">dus ’khor ’grel
+                                                                        bshad dri med ’od</title>, Toh 845), before the present volume, numbering it as vol.
+                                                                100, although it is almost certainly intended to come right at the end of the Degé Kangyur texts
+                                                                as volume 102; indeed its final fifth chapter is often carried over and wrapped in the same
+                                                                volume as the Kangyur <foreign xml:lang="Bo-Ltn">dkar chags</foreign> (catalog). Please note
+                                                                this discrepancy when using the eKangyur viewer in this translation.</p>
+                        </note> Whenever our
+                                                main source text diverged from the Sanskrit, we compared the passage in question with other Tibetan
+                                                translations, including the comparative Pedurma and Stok Palace versions, and the two complete Tibetan
+                                                manuscripts from Dunhuang, and we recorded variant readings in the notes. Moreover, in cases where both the
+                                                Tibetan and Sanskrit texts allowed for different readings, we consulted the Indian commentaries on <title xml:lang="en">The Dhāraṇī of the Six Gates</title> for clarification. </p>
+                                        <milestone unit="chunk" xml:id="UT22084-056-009-17"/>
+                                        <p tid="18">As suggested by its title, <title xml:lang="en">The Dhāraṇī of the Six Gates</title> consists in an account
+                                                of the six gates, which are presented as a series of six aspiration prayers, followed by the presentation of the
+                                                dhāraṇī itself. The goal of the dhāraṇī is to transcend worldly suffering by eradicating the causes of saṃsāric
+                                                experience.</p>
+                                        <milestone unit="chunk" xml:id="UT22084-056-009-18"/>
+                                        <p tid="19">The dhāraṇī begins with the Buddha advising his audience of innumerable bodhisattvas to uphold <title xml:lang="en">The Dhāraṇī of the Six Gates</title> for the good of the entire world. He then utters the
+                                                six aspirations, which can be summarized as recognizing one’s own sufferings as no different from those of all
+                                                beings in saṃsāra, using worldly happiness for the benefit of others as well as oneself, purifying one’s
+                                                misdeeds through confession, understanding demonic actions, developing virtue through supreme knowledge, and
+                                                liberating all beings from saṃsāra.</p>
+                                        <milestone unit="chunk" xml:id="UT22084-056-009-19"/>
+                                        <p tid="20">He finally instructs the assembly to recite the dhāraṇī three times each day and night and then highlights
+                                                the benefits that derive from this practice, including the ultimate benefit of attaining spiritual awakening.
+                                                The text concludes with the assembly praising the Buddha’s teaching. This is followed by a short dedication
+                                                marking the conclusion of the text. In one Tibetan canonical version (Toh 141), two auspicious sayings in
+                                                Sanskrit and the “Verse on Dependent Arising” Pratītyasamutpādagāthā appear after the dedication. The importance
+                                                of this work is attested by several extant Indian, Tibetan, and Chinese commentaries and recitation texts based
+                                                on it. </p>
+                                </div>
+                        </div>
+                </front>
+
+
+
+                <body>
+                        <div type="translation">
+                                <head type="translation" tid="21"> The Translation </head>
+                                <head type="titleMain" tid="22">The Noble Dhāraṇī of the Six Gates</head>
+                                <div type="section" xml:id="UT22084-056-009-section-1">
+                                        <milestone unit="chunk" xml:id="UT22084-056-009-21"/>
+                                        <!--vol. 88 par phud ref has "key" "cRef" and "work"-->
+                                        <!--vol. 88 POST par phud ref has "key" "cRef" "type" and "xml:id"-->
+                                        <p tid="26">
+                                                <ref cRef="F.54.a" key="toh526" work="W22084"/>
+                                                <ref cRef="F.299.a" key="toh141" type="folio" xml:id="UT22084-056-009-124"/>
+                        <ref cRef="F.71.a" key="toh526" type="folio" xml:id="UT22084-056-009-125"/>
+                        <ref cRef="F.260.b" key="toh916" type="folio" xml:id="UT22084-056-009-126"/>
+                                                <note place="end" xml:id="UT22084-056-009-133">
+                                                        <p key="toh526" tid="56">Two sets of folio references have been included in this translation due to a
+                                                                discrepancy in volume 88 (<foreign xml:lang="Bo-Ltn">rgyud ’bum</foreign>, <foreign xml:lang="Bo-Ltn">na</foreign>) of the Degé Kangyur between the 1737 <foreign xml:lang="Bo-Ltn">par phud</foreign> printings and the late (post <foreign xml:lang="Bo-Ltn">par phud</foreign>) printings. In the latter case, an extra work,
+                                                                        <title xml:lang="Sa-Ltn">Bodhi­maṇḍasyālaṃkāra­lakṣa­dhāraṇī</title> (Toh 508, <title xml:lang="Bo-Ltn">byang chub snying po’i rgyan ’bum gyi gzungs</title>), was added as
+                                                                the second text in the volume, thereby displacing the pagination of all the following texts in
+                                                                the same volume by 17 folios. Since the eKangyur follows the later printing, both references
+                                                                have been provided, with the highlighted one linking to the eKangyur viewer.</p>
+                                                        <p key="toh141" tid="57">In the Toh 526 version of the text there is a slight discrepancy in the folio
+                                                                numbering between the 1737 <foreign xml:lang="Bo-Ltn">par phud</foreign> printings and the late
+                                                                (post <foreign xml:lang="Bo-Ltn">par phud</foreign>) printings of the Degé Kangyur. Although the
+                                                                discrepancy is irrelevant here, further details concerning this may be found in <ref target="https://read.84000.co/translation/toh526.html#end-note-UT22084-056-009-88">note
+                                                                        5</ref> of the Toh 526 version of this text.</p>
+                                                        <p key="toh916" tid="58">In the Toh 526 version of the text there is a slight discrepancy in the folio
+                                                                numbering between the 1737 <foreign xml:lang="Bo-Ltn">par phud</foreign> printings and the late
+                                                                (post <foreign xml:lang="Bo-Ltn">par phud</foreign>) printings of the Degé Kangyur. Although the
+                                                                discrepancy is irrelevant here, further details concerning this may be found in <ref target="https://read.84000.co/translation/toh526.html#end-note-UT22084-056-009-88">note
+                                                                        5</ref> of the Toh 526 version of this text.</p>
+                                                </note> Homage to Mañjuśrī Kumārabhūta.<note place="end" xml:id="UT22084-056-009-22"> In the Skt. edition we
+                                                        find <foreign xml:lang="Sa-Ltn" type="quote">oṁ namo buddhāya</foreign> (“oṁ homage to the Buddha”),
+                                                        while S, PT, N<hi rend="subscript">T</hi>, and H<hi rend="subscript">T</hi> read <foreign xml:lang="Bo-Ltn" type="quote">sangs rgyas dang byang chub sems dpa’ thams cad la phyag ’tshal
+                                                                lo</foreign> (“Homage to all buddhas and bodhisattvas”). According to the instructions regarding
+                                                        Tripiṭaka translations decreed to the translators by the king Tri Ralpachen, a translators’ homage made
+                                                        to Mañjuśrī was supposed to be a mark of Abhidharma texts, while homage to the Buddha and homage to all
+                                                        buddhas and bodhisattvas were deemed appropriate for vinaya and sūtra texts, respectively.</note>
+                    </p>
+                                        <lb/>
+
+
+                                        <p tid="28">Thus have I heard at one time. The Bhagavān was dwelling together with an assembly of innumerable
+                                                bodhisattvas in a pavilion ornately decorated with the seven kinds of precious jewels<note place="end" xml:id="UT22084-056-009-25"> We have followed the Tib. reading. The Skt. reads “decorated with various
+                                                        jewels, among which the seven kinds of jewels were arranged.” For the critically edited Skt. text, see
+                                                        Mimaki 1977b, p. 10.</note> that was located in the firmament of the sky above Śuddhāvāsa. </p>
+                                        <milestone unit="chunk" xml:id="UT22084-056-009-26"/>
+                                        <p tid="29">On that occasion, the Bhagavān said to the bodhisattvas, “Children of a noble family, <ref cRef="F.299.b" key="toh141" type="folio" xml:id="UT22084-056-009-127"/> may you uphold <distinct>The Dhāraṇī of the Six
+                                                        Gates</distinct> for the benefit and well-being of the whole world.<note place="end" xml:id="UT22084-056-009-27"> We follow the Tib. <foreign xml:lang="Bo-Ltn" type="quote">’gro ba thams
+                                                                cad la phan pa dang bde ba’i phyir</foreign>. The Skt. reads <foreign xml:lang="Sa-Ltn" type="quote">sarva­jagaddhitārthaṃ</foreign> (“for the benefit of the whole world”).</note> It
+                                                is as follows:</p>
+                                        <milestone unit="chunk" xml:id="UT22084-056-009-28"/>
+                                        <p tid="30">“As I pass through life after life in saṃsāra,<note place="end" xml:id="UT22084-056-009-29"> Translated
+                                                        based on the Skt. <foreign xml:lang="Sa-Ltn" type="quote">saṃsāre saṃsarato</foreign> and S, PT <foreign xml:lang="Bo-Ltn" type="quote">’khor ba na ’khor ba’i tshe</foreign>. All witnesses in A have
+                                                                <foreign xml:lang="Bo-Ltn" type="quote">’khor ba nas ’khor ba’i skye gnas gzhan dag tu</foreign>
+                                                        (“from saṃsāra to other saṃsāric rebirths”). </note> whatever suffering I experience may it not be
+                                                defined by my not understanding that it is the same for all beings.</p>
+                                        <milestone unit="chunk" xml:id="UT22084-056-009-30"/>
+                                        <p tid="31">“Whatever happiness due to worldly success I experience, may I make use of it in common with all
+                                                        beings<!--toh 141 only:--> to bring about thorough
+                                                  understanding.<!--toh 141 only-->
+                        <note place="end" xml:id="UT22084-056-009-31"> The sūtra versions in D (Toh 141) and N, K, H, and C all read
+                                                                <foreign xml:lang="Bo-Ltn">yongs su shes par byed par spyod par gyur cig</foreign>; whereas the
+                                                        tantra and dhāraṇī versions in D (Toh 526 and 916) and the other Kangyurs read simply <foreign xml:lang="Bo-Ltn">yongs su spyod par gyur cig</foreign>. The extant Sanskrit versions do not
+                                                        include any equivalent to the phrase <foreign xml:lang="Bo-Ltn">yongs su shes par byed par</foreign>
+                                                        (“to bring about
+                                                thorough understanding”).</note><!--<note place="comment-to-markup-editor" xml:id="UT22084-056-009-32">NOTE TO MARKUP: for
+                                                  differential markup, to appear in Toh 141 but not
+                                                  other Tohs. </note>-->
+                    </p>
+                                        <milestone unit="chunk" xml:id="UT22084-056-009-33"/>
+                                        <p tid="32">“Whatever misdeeds and non-virtuous actions<note place="end" xml:id="UT22084-056-009-34"> PT 77 adds
+                                                                <foreign xml:lang="Bo-Ltn" type="quote">las kyi sgribs pa</foreign> and S adds <foreign xml:lang="Bo-Ltn" type="quote">las kyi sgrib pa</foreign> (“karmic obscurations”). The phrase in
+                                                        the Skt. is <foreign xml:lang="Sa-Ltn" type="quote">pāpa­karmākuśalamūlaṃ karmāvaraṇaṃ</foreign>
+                                                        (“misdeeds, roots of nonvirtue, karmic obscurations”).</note> I have done, may I not fail to confess
+                                                each one of them through unsurpassed confession.</p>
+                                        <milestone unit="chunk" xml:id="UT22084-056-009-35"/>
+                                        <p tid="33">“Whatever demonic actions have been done to me,<note place="end" xml:id="UT22084-056-009-36"> The Skt. reads
+                                                                <foreign xml:lang="Sa-Ltn" type="quote">me mārakarmāṇi</foreign>. All witnesses included in A
+                                                        have <foreign xml:lang="Bo-Ltn" type="quote">bdag gis bdud kyi las gang ci byas pa de yongs su shes
+                                                                pas</foreign>, except for N<hi rend="subscript">T</hi> and H<hi rend="subscript">T</hi>. N<hi rend="subscript">T</hi>, H<hi rend="subscript">T</hi>, and S read <foreign xml:lang="Bo-Ltn" type="quote">bdag la bdud kyi las gang dag yod pa de dag yongs su shes pas</foreign>. Although
+                                                        versions of this phrase could be interpreted as speaking of one’s own “demonic actions,” the commentary
+                                                        attributed to Vasubandhu suggests that the obstacle to be overcome here is rather actions done
+                                                                <distinct>to</distinct> one (and influences exerted on one) by others. However, Tāranātha’s
+                                                        commentary (p. 355), while confirming that for experienced practitioners “demonic actions” can be
+                                                        interpreted as applying mainly to others, lists them as including such things as procrastination,
+                                                        laziness, rowdiness, belittling others’ virtuous actions, disliking perfections, slandering
+                                                        bodhisattvas, favoring false views, getting distracted while in meditation, turning away from and
+                                                        diminishing virtuous actions, and having incompatible attitudes after engaging in them.</note> may I not
+                                                fail to thoroughly understand them through unsurpassed thorough understanding.</p>
+                                        <milestone unit="chunk" xml:id="UT22084-056-009-37"/>
+                                        <p tid="34">“Whatever roots of virtue I may have, both mundane and supramundane, endowed with the perfections, may they
+                                                become the fruit of unsurpassable wisdom for all beings.<note place="end" xml:id="UT22084-056-009-38"> The
+                                                        Sanskrit text reads <foreign xml:lang="Sa-Ltn" type="term">sarvasattvānām</foreign> (“for all sentient
+                                                        beings”) and omits the equivalent for “fruit.” N<hi rend="subscript">T</hi>, S, and PT omit <foreign xml:lang="Bo-Ltn" type="term">thams cad</foreign> (“all”).</note>
+                                        </p>
+                                        <milestone unit="chunk" xml:id="UT22084-056-009-39"/>
+                                        <p tid="35">“Whatever liberation I may have, through it may all sentient beings be released.<note place="end" xml:id="UT22084-056-009-40"> PT 77 reads <title xml:lang="Bo-Ltn">gang bdag gi rnam par grol ba de sems
+                                                                can thams cad kyi rnam par grol bar ’gyur cig</title> (“may my liberation be the liberation of
+                                                        all sentient beings”). It is closer to the Skt. <foreign xml:lang="Sa-Ltn" type="quote">yā ca me
+                                                                vimuktiḥ sā bhavatu sarva­sattva­vimokṣāya</foreign> (“may my liberation be for the liberation
+                                                        of all sentient beings”).</note> May I stay neither in saṃsāra nor in nirvāṇa.<note place="end" xml:id="UT22084-056-009-41"> Most of the versions in the sūtra sections of Tshalpa Kangyurs do not
+                                                        specify that this aspiration to remain neither in saṃsāra nor nirvāṇa is made for oneself, but here we
+                                                        have followed K and K<hi rend="subscript">Y</hi> in the Sūtra section, all witnesses in A for Toh 916 and Toh 526, and S and PT 415. which read <foreign xml:lang="Bo-Ltn" type="quote">’khor ba dang mya ngan
+                                                                las ’das pa la bdag gnas par ma gyur cig</foreign>. The Skt. has <foreign xml:lang="Sa-Ltn" type="quote">mā ca me bhūt saṃsāre nirvāṇe pratiṣṭhitatā</foreign>, with the same
+                                                        meaning.</note>
+                                        </p>
+                                        <milestone unit="chunk" xml:id="UT22084-056-009-42"/>
+                                        <p rend="mantra" tid="36">
+                                                <mantra type="dharani" xml:lang="Sa-Ltn">tadyathā oṃ kṣame kṣame kṣānte kṣānte dame dame dānte dānte bhadre
+                                                        bhadre <ref cRef="F.261.a" key="toh916" type="folio" xml:id="UT22084-056-009-128"/> subhadre subhadre
+                                                        candre candre <ref cRef="F.54.b" key="toh526" work="W22084"/>
+                                                        <ref cRef="F.71.b" key="toh526" type="folio" xml:id="UT22084-056-009-129"/> sucandre sucandre
+                                                        candrakiraṇe candravati tejovati yaśovati<note place="end" xml:id="UT22084-056-009-43"> The Skt. reads
+                                                                        <foreign xml:lang="Sa-Ltn" type="term">dhanavati</foreign>.</note> dharmavati brahmavati
+                                                        sarva­kleśa­viśodhani sarvārtha­sādhani sarvārtha­praśamane<note place="end" xml:id="UT22084-056-009-44">
+                                                                Skt. and PT read <foreign xml:lang="Sa-Ltn" type="quote">sarvānartha­praśamani</foreign>.</note> paramārtha­sādhani kāyaviśodhani vākaviśodhani<note place="end" xml:id="UT22084-056-009-45"> K and K<hi rend="subscript">Y</hi> in the Tantra
+                                                                section, S, and Skt. have <foreign xml:lang="Sa-Ltn" type="quote">vāgviśodhani</foreign>.</note>
+                                                        manaḥsaṃśodhani svāhā <foreign xml:lang="Sa-Ltn" type="quote">sarvānartha­praśamani</foreign>
+                        </mantra>
+                    </p>
+                                        <milestone unit="chunk" xml:id="UT22084-056-009-46"/>
+                                        <p tid="37">“Therefore, children of a noble family, if any sons or daughters of a noble family recite <distinct>The
+                                                        Dhāraṇī of the Six Gates</distinct> three times by day and three times by night, <ref cRef="F.300.a" key="toh141" type="folio" xml:id="UT22084-056-009-130"/> then, having purified all their karmic
+                                                obscurations, they will remember their previous lives up to seven lifetimes<note place="end" xml:id="UT22084-056-009-47"> Skt., S, N<hi rend="subscript">T</hi>, H<hi rend="subscript">T</hi>, and PT
+                                                        415 omit this passage on the recollection of former lives.</note> and will swiftly<note place="end" xml:id="UT22084-056-009-48"> Following the Skt. which has <foreign xml:lang="Sa-Ltn" type="term">kṣipram</foreign> (“swiftly”), translated in S, N<hi rend="subscript">T</hi>, H<hi rend="subscript">T</hi>, and PT as <foreign xml:lang="Bo-Ltn" type="term">myur
+                                                        du</foreign>.</note> and fully awaken to unsurpassed perfect buddhahood.”<note place="end" xml:id="UT22084-056-009-49"> The Skt. reads, “If anyone, son or daughter of a good family, recites this
+                                                                <distinct>dhāraṇī of the six gates</distinct> three times each night and three times each day,
+                                                        then, having abandoned all karma, they will quickly reach the supreme state of perfect awakening.” For
+                                                        the critically edited Skt. text, see Mimaki 1977b, p. 10.</note>
+                                        </p>
+                                        <milestone unit="chunk" xml:id="UT22084-056-009-50"/>
+                                        <p tid="38">When the delighted Bhagavān had spoken these words, the assembly of bodhisattvas,<note place="end" xml:id="UT22084-056-009-51"> Instead of “assembly of bodhisattvas,” the Skt. reads <foreign xml:lang="Sa-Ltn" type="term">bodhisattvā mahāsattvā</foreign>, and S, N<hi rend="subscript">T</hi>, H<hi rend="subscript">T</hi>, and PT 415 read <foreign xml:lang="Bo-Ltn" type="quote">byang chub sems dpa’ sems dpa’ chen po</foreign> (“bodhisattvas mahāsattvas”). </note>
+                                                <!--toh526 and 916 only--><!--the gods of Śuddhāvāsa,--><!--toh526 and 916 only-->
+                                                and the world with its devas, humans, asuras, and gandharvas<note place="end" xml:id="UT22084-056-009-53"> This
+                                                        passage is missing in the Skt. following “the assembly of bodhisattvas,” PT 415, S, D (Toh 916), and D (Toh 526) instead reads <foreign xml:lang="Bo-Ltn" type="quote">gnas gtsang ma’i ris kyi lha’i bu de dag</foreign> (“the gods of
+                                                        Śuddhāvāsa”).</note> rejoiced in what the Bhagavān had said.<note place="end" xml:id="UT22084-056-009-54"> The Skt. reads, “When the delighted Bhagavān had thus spoken, the
+                                                                bodhisattva mahāsattvas rejoiced in what the Blessed One had taught.” For the critically edited Skt.
+                                                        text, see Mimaki 1977b, p. 10. Commentators and translators have disagreed over whether the adjective
+                                                                <foreign xml:lang="Sa-Ltn" type="term">ravi</foreign> (“delighted”) here applies to the
+                                                        Bhagavān, to the bodhisattvas (as in the Chinese translations), or to both (as in the Tibetan
+                                                        translations that have <foreign xml:lang="Bo-Ltn" type="term">dgyes</foreign> for the Bhagavān and
+                                                                <foreign xml:lang="Bo-Ltn">yi</foreign>(<foreign xml:lang="Bo-Ltn">d</foreign>) <foreign xml:lang="Bo-Ltn">rang</foreign>(<foreign xml:lang="Bo-Ltn">s</foreign>) for the assembly). On this delicate issue,
+                                                        see Mimaki 1977b, p. 13, n. 9.</note>
+                    </p>
+                                        <milestone unit="chunk" xml:id="UT22084-056-009-55"/>
+                                        <trailer tid="39">Thus ends “The Noble Dhāraṇī of the Six Gates.” </trailer>
+
+
+                                        <milestone unit="chunk" xml:id="UT22084-056-009-57"/>
+                                        <lg tid="41">
+                                                <l>
+                            <foreign xml:lang="Sa-Ltn">śubham astu
+                                                                sarvajagatām</foreign><!--<note place="comment-to-markup-editor" xml:id="UT22084-056-009-58">NOTE TO MARKUP: It
+                                                  wasn’t obvious how to style these. I focused first
+                                                  on maintaining the appearance of the text as I
+                                                  received it, which is itl. and flush left, with
+                                                  the extra paragraph breaks.</note>-->
+                            <note place="end" xml:id="UT22084-056-009-59"> “May there be benefit for all beings.” Only D (Toh 141)
+                                                                has this and the following auspicious sayings in Sanskrit.</note>
+                        </l>
+                                        </lg>
+                                        <lb/>
+
+                                        <lg tid="43">
+                                                <l>
+                            <foreign xml:lang="Sa-Ltn">ye dharmā hetuprabhavā hetuṃ teṣāṃ tathāgato hy avadat</foreign>
+                        </l>
+                                                <l>
+                            <foreign xml:lang="Sa-Ltn">teṣāṃ ca yo nirodha evaṃvādī mahāśramaṇaḥ</foreign>
+                            <note place="end" xml:id="UT22084-056-009-63"> For the translation of these verses, see the Buddhavacana Translation Group, trans., <title xml:lang="en">The
+                                                        Sūtra on Dependent Arising</title> (Toh 212), 2016, <ref target="https://read.84000.co/translation/toh212.html#UT22084-062-012-12">1.5</ref>.</note>
+                        </l>
+                                        </lg>
+                                        <lb/>
+
+                                        <lg tid="46">
+                                                <l>
+                            <foreign xml:lang="Sa-Ltn">maṅgalaṃ bhavatu</foreign>
+                            <note place="end" xml:id="UT22084-056-009-66"> “May it
+                                                                be
+                                                        auspicious.”</note><!--<note place="comment-to-markup-editor" xml:id="UT22084-056-009-67">NOTE TO MARKUP: these
+                                                  could be differentially marked up to appear only
+                                                  for Toh 141, not the other Tohs.</note>-->
+                        </l>
+                                        </lg>
+                                </div>
+                        </div>
+                </body>
+                <back>
+                        <div type="notes">
+                                <head type="notes" tid="47">Notes</head>
+                                <list type="abbreviations">
+                                        <head tid="48">Abbreviations</head>
+
+                                        <item xml:id="UT22084-056-009-68">
+                        <abbr>A</abbr>
+                        <expan> Comparative Edition (<foreign xml:lang="Bo-Ltn">dpe bsdur
+                                                                ma</foreign>) of the Kangyur</expan>
+                    </item>
+                                        
+                                        
+                                        <item xml:id="UT22084-056-009-71">
+                        <abbr>D (Toh 526)</abbr>
+                                                <expan>Degé (<foreign xml:lang="Bo-Ltn">sde dge</foreign>) Kangyur—Tantra section</expan>
+                                        </item>
+                                        <item xml:id="UT22084-056-009-72">
+                        <abbr>D (Toh 141)</abbr>
+                                                <expan>Degé (<foreign xml:lang="Bo-Ltn">sde dge</foreign>) Kangyur—Sūtra section</expan>
+                    </item>
+                                        <item xml:id="UT22084-056-009-73">
+                        <abbr>D (Toh 916)</abbr>
+                                                <expan>Degé (<foreign xml:lang="Bo-Ltn">sde dge</foreign>) Kangyur—Dhāraṇī section</expan>
+                    </item>
+                                        <item xml:id="UT22084-056-009-74">
+                        <abbr>H<hi rend="subscript">T</hi>
+                        </abbr>
+                                                <expan>Lhasa (<foreign xml:lang="Bo-Ltn">zhol</foreign>) Kangyur—Tantra section</expan>
+                    </item>
+                                        <item xml:id="UT22084-056-009-75">
+                        <abbr>K</abbr>
+                                                <expan>Peking (<foreign xml:lang="Bo-Ltn">pe cin</foreign>) Kangxi Kangyur</expan>
+                    </item>
+                                        <item xml:id="UT22084-056-009-76">
+                        <abbr>K<hi rend="subscript">Y</hi>
+                        </abbr>
+                                                <expan>Peking Yongle (<foreign xml:lang="Bo-Ltn">g.yung lo</foreign>) Kangyur</expan>
+                    </item>
+                                        <item xml:id="UT22084-056-009-77">
+                        <abbr>N<hi rend="subscript">T</hi>
+                        </abbr>
+                                                <expan>Narthang (<foreign xml:lang="Bo-Ltn">snar thang</foreign>) Kangyur—Tantra section</expan>
+                    </item>
+                                        <item xml:id="UT22084-056-009-78">
+                        <abbr>PT</abbr>
+                                                <expan>Pelliot tibétain (numbers denote specific texts in collection)</expan>
+                    </item>
+                                        <item xml:id="UT22084-056-009-79">
+                        <abbr>S</abbr>
+                                                <expan>Stok Palace (<foreign xml:lang="Bo-Ltn" type="term">stog pho brang</foreign>) Manuscript
+                                                Kangyur</expan>
+                    </item>
+                                        <item xml:id="UT22084-056-009-80">
+                        <abbr>Skt.</abbr>
+                        <expan>Mimaki’s Sanskrit edition (1977)</expan>
+                                        </item>
+                                        <item xml:id="UT22084-056-009-81">
+                        <abbr>Toh</abbr>
+                                                <expan>Degé (<foreign xml:lang="Bo-Ltn">sde dge</foreign>) Kangyur (numbers denote specific texts in
+                                                        collection)</expan>
+                    </item>
+                                </list>
+                        </div>
+                        <div type="listBibl">
+                                <head type="listBibl" tid="49">Bibliography</head>
+                                <div type="section" xml:id="UT22084-056-009-listBibl-1">
+                                        <head type="section" tid="50">Tibetan and Sanskrit Source Texts</head>
+                                        <bibl xml:id="UT22084-056-009-82">
+                        <title xml:lang="Bo-Ltn">sgo drug pa’i gzungs</title> (<title xml:lang="Sa-Ltn">Ṣaṇmukhī­dhāraṇī</title>). Toh 141, Degé Kangyur vol. 56 (mdo sde, na), folios 299.a–300.a.</bibl>
+                                        <bibl xml:id="UT22084-056-009-83">
+                        <title xml:lang="Bo-Ltn">sgo drug pa’i gzungs</title> (<title xml:lang="Sa-Ltn">Ṣaṇmukhīdhāraṇī</title>). Toh 526, Degé Kangyur vol. 88 (rgyud, na), folios 54.a–54.b (in <foreign xml:lang="Bo-Ltn">par phud</foreign> printings).</bibl>
+                                        <bibl xml:id="UT22084-056-009-84">
+                        <title xml:lang="Bo-Ltn">sgo drug pa’i gzungs</title> (<title xml:lang="Sa-Ltn">Ṣaṇmukhī­dhāraṇī</title>). Toh 916, Degé Kangyur vol. 100 (gzungs, e), folios 260.b–261.a.</bibl>
+                                        <bibl xml:id="UT22084-056-009-85">
+                        <title xml:lang="Bo-Ltn">sgo drug pa’i gzungs</title>. bka’ ’gyur (dpe bsdur ma)
+                                                [Comparative Edition of the Kangyur], krung go’i bod rig pa zhib ’jug ste gnas kyi bka’ bstan dpe sdur khang
+                                                (The Tibetan Tripitaka Collation Bureau of the China Tibetology Research Center). 108 volumes. Beijing: krung
+                                                go’i bod rig pa dpe skrun khang (China Tibetology Publishing House), 2006–9, vol. 56, pp. 826–29; vol. 88, pp.
+                                                227–30; vol. 97, pp. 775–78.</bibl>
+                                        <bibl xml:id="UT22084-056-009-86">
+                        <title xml:lang="Bo-Ltn">sgo drug pa’i gzungs</title>. Stok Palace Kangyur vol. 102
+                                                (rgyud, da), folios 60.a–61.a.</bibl>
+                                        <bibl xml:id="UT22084-056-009-87">
+                        <ref target="http://idp.bl.uk/database/oo_loader.a4d?pm=Pelliot%20tib%C3%A9tain%2077;img=1">Pelliot tibétain
+                                                        77</ref>, section 2. Bibliothèque nationale de France, Paris. Accessed through <title xml:lang="en">The
+                                                        International Dunhuang Project: The Silk Road Online</title>.</bibl>
+                                        <bibl xml:id="UT22084-056-009-88">
+                        <ref target="http://idp.bl.uk/database/oo_loader.a4d?pm=Pelliot%20tibétain%20415;img=1">Pelliot tibétain
+                                                        415</ref>, section 1. Bibliothèque nationale de France, Paris. Accessed through <title xml:lang="en">The
+                                                        International Dunhuang Project: The Silk Road Online</title>.</bibl>
+                                        <bibl xml:id="UT22084-056-009-89">Mimaki, Katsumi (1977b). “La Ṣaṇmukhī-dhāraṇī ou ‘Incantation des SIX PORTES,’ texte
+                                                attribué aux Sautrāntika (II).” <title xml:lang="en">Report of the Japanese Association for Tibetan
+                                                        Studies</title> 23 (1977): 9–13.</bibl>
+                                </div>
+                                <div type="section" xml:id="UT22084-056-009-listBibl-2">
+                                        <head type="section" tid="51">Tibetan Secondary References </head>
+                                        <bibl xml:id="UT22084-056-009-90">Vasubandhu. <title xml:lang="Bo-Ltn">sgo drug pa’i gzungs kyi rnam par bshad
+                                                        pa</title> (<title xml:lang="Sa-Ltn">Ṣaṇmukhī­dhāraṇī­vyākhyāna</title>). Toh 3989, Degé Tengyur vol.
+                                                113 (mdo ’grel, ngi), folios 64.b–66.a. <ref rend="pending" target="https://read.84000.co/translation/toh3989.html"/>
+                    </bibl>
+                                        <bibl xml:id="UT22084-056-009-91">———. <title xml:lang="Bo-Ltn">sgo drug pa’i gzungs kyi rnam par bshad pa</title>.
+                                                bstan ’gyur (dpe bsdur ma) [Comparative Edition of the Tengyur], krung go’i bod kyi shes rig zhib ’jug lte gnas
+                                                kyi bka’ bstan dpe sdur khang (The Tibetan Tripitaka Collation Bureau of the China Tibetology Research Center).
+                                                120 volumes. Beijing: krung go’i bod rig pa’i dpe skrun khang (China Tibetology Publishing House), 1994–2008,
+                                                vol. 37, pp. 3–7.<ref rend="pending" target="https://read.84000.co/translation/toh3989.html"/>
+                    </bibl>
+                                        <bibl xml:id="UT22084-056-009-92">Jñānadatta (ye shes byin). <title xml:lang="Bo-Ltn">’phags pa sgo drug pa’i gzungs kyi
+                                                        rnam par bshad par gya cher ’grel pa</title>. <ref target="http://idp.bl.uk/database/oo_loader.a4d?pm=IOL%20Tib%20J%20430;img=1">IOL Tib J 430</ref>,
+                                                section 1. British Library, London. Accessed through <title xml:lang="en">The International Dunhuang Project:
+                                                        The Silk Road Online</title>.</bibl>
+                                        <bibl xml:id="UT22084-056-009-93">Denkarma (<title xml:lang="Bo-Ltn">pho brang stod thang ldan dkar gyi chos kyi ’gyur
+                                                        ro cog gi dkar chag</title>). Toh 4364, Degé Tengyur vol. 206 (sna tshogs, jo), folios
+                                                294.b–310.a.</bibl>
+                                        <bibl xml:id="UT22084-056-009-94">Phangthangma (<title xml:lang="Bo-Ltn">dkar chag ’phang thang ma</title>). Beijing: mi
+                                                rigs dpe skrun khang, 2003.</bibl>
+                                        <bibl xml:id="UT22084-056-009-95">Tāranātha. <title xml:lang="Bo-Ltn">’phags pa sgo drug pa’i gzungs kyi rnam par bshad
+                                                        pa</title>. In <title xml:lang="Bo-Ltn">gsung ’bum/ tA ra nA tha (dpe bsdur ma)</title>, vol. 35 (77)
+                                                pp. 350–362. Beijing: krung go’i bod rig pa dpe skrun khang, 2008. </bibl>
+                                </div>
+                                <div type="section" xml:id="UT22084-056-009-listBibl-3"> 
+                                        <head type="section" tid="65">Chinese Source Texts</head>
+                                        <bibl xml:id="UT22084-056-009-134">Xuanzang, trans. <foreign xml:lang="Zh-Ltn">Liu men tuoluoni jing</foreign> <foreign xml:lang="zh">六門陀羅尼經</foreign>, <ref target="https://cbetaonline.dila.edu.tw/en/T1360">Taishō 1360</ref>.</bibl>
+                                        <bibl xml:id="UT22084-056-009-135">Vasubandhu. <foreign xml:lang="Zh-Ltn">Liu men tuoluoni jing lun</foreign> <foreign xml:lang="zh">六門陀羅尼經論</foreign>, <ref target="https://cbetaonline.dila.edu.tw/en/T1361">Taishō 1361</ref>.</bibl>
+                                </div>
+                                       
+                                        
+                                        
+                                <div type="section" xml:id="UT22084-056-009-listBibl-4">
+                                        <head type="section" tid="52">Western Translation and References</head>
+                                        <bibl xml:id="UT22084-056-009-131">Buddhavacana Translation Group, trans. <title xml:lang="en">
+                                                <ref target="https://read.84000.co/translation/toh212.html#UT22084-062-012-12">The Sūtra on Dependent Arising</ref>
+                                        </title> (<title xml:lang="Sa-Ltn">Pratītya­samutpāda­sūtra</title>, Toh 212). 84000: Translating the Words of the Buddha,
+                                                2016.</bibl>
+                                        <bibl xml:id="UT22084-056-009-96">Dalton, Jacob, and Sam Van Schaik. <title xml:lang="en">Tibetan Tantric Manuscripts
+                                                        from Dunhuang: A Descriptive Catalogue of the Stein Collection at the British Library</title>. Leiden:
+                                                Brill, 2006.</bibl>
+                                        <bibl xml:id="UT22084-056-009-97">Halkias, Georgios. “Tibetan Buddhism Registered: A Catalogue from the Imperial Court
+                                                of ’Phang Thang.” <title xml:lang="en">The Eastern Buddhist</title> 36, nos. 1–2 (2004): 46–105.</bibl>
+                                        <bibl xml:id="UT22084-056-009-98">Hidas, Gergely. “Dhāraṇī Sūtras.” In <title xml:lang="en">Brill’s Encyclopedia of
+                                                        Buddhism</title>, vol. 1, edited by Jonathan Silk, 129–37. Leiden: Brill, 2015.</bibl>
+                                        <bibl xml:id="UT22084-056-009-99">Mimaki, Katsumi (1977a). “La Ṣaṇmukhī-dhāraṇī ou ‘Incantation des SIX PORTES,’ texte
+                                                attribué aux Sautrāntika (I).” <title xml:lang="en">Report of the Japanese Association for Tibetan
+                                                        Studies</title> 23 (1977): 965–72.</bibl>
+                                        <bibl xml:id="UT22084-056-009-100">———(1977b). “La Ṣaṇmukhī-dhāraṇī ou ‘Incantation des SIX PORTES,’ texte attribué aux
+                                                Sautrāntika (II).” <title xml:lang="en">Report of the Japanese Association for Tibetan Studies</title> 23
+                                                (1977): 9–13.</bibl>
+                                        <bibl xml:id="UT22084-056-009-101">Obermiller, Eugéne, trans. and ed. <title xml:lang="en">History of Buddhism (Chos
+                                                        ḥbyung) by Bu-ston</title>. Vol. 2, <title xml:lang="en">The History of Buddhism in India and
+                                                        Tibet</title>. Materialien zur Kunde des Buddhismus 19. Heidelberg: O. Harrassowitz, 1932.</bibl>
+                                        <bibl xml:id="UT22084-056-009-102">Sánchez, Pedro M. C. “The Indian Buddhist <foreign xml:lang="Sa-Ltn" type="term">Dhāraṇī</foreign>: An Introduction to its History, Meanings and Functions.” MA diss., University of
+                                                Sunderland, 2011.</bibl>
+                                        <bibl xml:id="UT22084-056-009-103">Yoshimura, Shyuki. <title xml:lang="en">The Denkar-Ma: An Oldest Catalogue of the
+                                                        Tibetan Buddhist Canons</title>. Kyoto: Ryukoku University, 1950.</bibl>
+                                </div>
+                        </div>
+                        <div type="glossary">
+                                <list type="glossary">
+
+                                        <item>
+                        <gloss type="term" xml:id="UT22084-056-009-105">
+                                                        <term>bhagavān</term>
+                                                        <term xml:lang="Bo-Ltn">bcom ldan ’das </term>
+                                                        <term xml:lang="bo">བཅོམ་ལྡན་འདས།</term>
+                                                        <term xml:lang="Sa-Ltn">bhagavān</term>
+                                                        <term type="definition">“Blessed One,” an epithet of the Buddha.</term>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="term" xml:id="UT22084-056-009-106">
+                                                        <term>saṃsāra</term>
+                                                        <term xml:lang="Bo-Ltn">’khor ba </term>
+                                                        <term xml:lang="bo">འཁོར་བ།</term>
+                                                        <term xml:lang="Sa-Ltn">saṃsāra</term>
+                                                        <term type="definition">The cyclic existence in which beings are confined to suffering and
+                                                                unsatisfactoriness.</term>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="term" xml:id="UT22084-056-009-107">
+                                                        <term>nirvāṇa</term>
+                                                        <term xml:lang="Bo-Ltn">mya ngan las ’das pa </term>
+                                                        <term xml:lang="bo">མྱ་ངན་ལས་འདས་པ།</term>
+                                                        <term xml:lang="Sa-Ltn">nirvāṇa</term>
+                                                        <term type="definition">Final liberation from suffering. The Sanskrit literally means “extinguishment”
+                                                                and the Tibetan “the transcendence of suffering.” </term>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="term" xml:id="UT22084-056-009-108">
+                                                        <term>asura</term>
+                                                        <term xml:lang="Bo-Ltn">lha ma yin </term>
+                                                        <term xml:lang="bo">ལྷ་མ་ཡིན།</term>
+                                                        <term xml:lang="Sa-Ltn">asura</term>
+                                                        <term type="definition">One of the six classes of sentient beings. The asuras are engendered and
+                                                                dominated by envy, ambition, and hostility and are metaphorically described as being incessantly
+                                                                embroiled in disputes with the gods (<foreign xml:lang="Sa-Ltn">deva</foreign>). They are frequently portrayed in brahmanical
+                                                                mythology as having a disruptive effect on cosmological and social harmony. </term>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="term" xml:id="UT22084-056-009-109">
+                                                        <term>deva</term>
+                                                        <term xml:lang="Bo-Ltn">lha </term>
+                                                        <term xml:lang="bo">ལྷ།</term>
+                                                        <term xml:lang="Sa-Ltn">deva</term>
+                                                        <term type="definition">Lit. “god.” A class of beings in the higher planes of existence in the desire
+                                                                realm, as well as in the form and formless realms.</term>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="term" xml:id="UT22084-056-009-110">
+                                                        <term>gandharva</term>
+                                                        <term xml:lang="Bo-Ltn">dri za </term>
+                                                        <term xml:lang="bo">དྲི་ཟ།</term>
+                                                        <term xml:lang="Sa-Ltn">gandharva</term>
+                                                        <term type="definition">A class of sentient beings who lives on scents and are particularly known to be
+                                                                musicians.</term>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="term" xml:id="UT22084-056-009-111">
+                                                        <term>dhāraṇī</term>
+                                                        <term xml:lang="Bo-Ltn">gzungs </term>
+                                                        <term xml:lang="bo">གཟུངས།</term>
+                                                        <term xml:lang="Sa-Ltn">dhāraṇī</term>
+                                                        <term type="definition">A verbal formula or phrase that can serve a variety of purposes depending on the
+                                                                genre of text. It often refers to a magical incantation for attaining mundane or supramundane
+                                                                goals.</term>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="term" xml:id="UT22084-056-009-112">
+                                                        <term>bodhisattva</term>
+                                                        <term xml:lang="Bo-Ltn">byang chub sems dpa’ </term>
+                                                        <term xml:lang="bo">བྱང་ཆུབ་སེམས་དཔའ།</term>
+                                                        <term xml:lang="Sa-Ltn">bodhisattva</term>
+                                                        <term type="definition">A being who is dedicated to the cultivation and fulfilment of the intention to
+                                                                attain manifestly perfect buddhahood for the benefit of all sentient beings.</term>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="term" xml:id="UT22084-056-009-113">
+                                                        <term>seven kinds of precious jewels</term>
+                                                        <term xml:lang="Bo-Ltn">rin po che sna bdun </term>
+                                                        <term xml:lang="bo">རིན་པོ་ཆེ་སྣ་བདུན།</term>
+                                                        <term xml:lang="Sa-Ltn">saptaratna</term>
+                                                        <term type="definition">The list of seven precious materials varies. One possible listing is gold,
+                                                                silver, cat’s eye, crystal, ruby, emerald, and amethyst.</term>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="term" xml:id="UT22084-056-009-114">
+                                                        <term>roots of nonvirtue</term>
+                                                        <term xml:lang="Bo-Ltn">mi dge ba’i rtsa ba </term>
+                                                        <term xml:lang="bo">མི་དགེ་བའི་རྩ་བ།</term>
+                                                        <term xml:lang="Sa-Ltn">akuśalamūla</term>
+                                                        <term type="definition">Usually referring to the ten unwholesome actions, which are taking life, taking
+                                                                what is not given, sexual misconduct, lying, sowing discord, harsh speech, worthless chatter,
+                                                                covetousness, wishing harm on others, and wrong views.</term>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="term" xml:id="UT22084-056-009-115">
+                                                        <term>roots of virtue</term>
+                                                        <term xml:lang="Bo-Ltn">dge ba’i rtsa ba </term>
+                                                        <term xml:lang="bo">དགེ་བའི་རྩ་བ།</term>
+                                                        <term xml:lang="Sa-Ltn">kuśalamūla</term>
+                                                        <term type="definition">Wholesome actions that are conducive to happiness.</term>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="term" xml:id="UT22084-056-009-116">
+                                                        <term>perfection</term>
+                                                        <term xml:lang="Bo-Ltn">pha rol tu phyin pa </term>
+                                                        <term xml:lang="bo">ཕ་རོལ་ཏུ་ཕྱིན་པ།</term>
+                                                        <term xml:lang="Sa-Ltn">pāramitā</term>
+                                                        <term type="definition">Typically refers to the practices of the bodhisattvas, which are embraced with
+                                                                knowledge. The six perfections are generosity, discipline, patience, diligence, concentration,
+                                                                and wisdom.</term>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="term" xml:id="UT22084-056-009-117">
+                                                        <term>karmic obscurations</term>
+                                                        <term xml:lang="Bo-Ltn">las kyi sgrib pa </term>
+                                                        <term xml:lang="bo">ལས་ཀྱི་སྒྲིབ་པ།</term>
+                                                        <term xml:lang="Sa-Ltn">karmāvaraṇa</term>
+                                                        <term type="definition">Obstructions due to past actions.</term>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="term" xml:id="UT22084-056-009-118">
+                                                        <term>demonic action</term>
+                                                <term xml:lang="Bo-Ltn">bdud kyi las </term>
+                            <term xml:lang="bo">བདུད་ཀྱི་ལས།</term>
+                                                        
+                                                <term xml:lang="Sa-Ltn">mārakarman</term>
+                                                <term type="definition">An action that is either done by the god-demon Māra (the personification of evil) himself; or by beings belonging to the class of demons; or by humans either (literally) under demonic influence or (figuratively) under the influence of whatever distractions, obstacles, and afflictions act as an impediment to liberation.</term>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="term" xml:id="UT22084-056-009-119">
+                                                        <term>thorough understanding</term>
+                                                        <term xml:lang="Bo-Ltn">yongs su shes pa </term>
+                                                        <term xml:lang="bo">ཡོངས་སུ་ཤེས་པ།</term>
+                                                <term xml:lang="Sa-Ltn">parijñāna</term>
+                                                        <term type="definition">A general term that may here imply not just understanding or knowledge but
+                                                                realization or even awakening. </term>
+                                                        <term type="alternative">thoroughly understand</term>
+                                                </gloss>
+                    </item>
+
+                                        <item>
+                        <gloss type="person" xml:id="UT22084-056-009-121">
+                                                        <term>Mañjuśrī Kumārabhūta</term>
+                                                        <term xml:lang="Bo-Ltn">’jam dpal gzhon nur gyur pa </term>
+                                                        <term xml:lang="bo">འཇམ་དཔལ་གཞོན་ནུར་གྱུར་པ།</term>
+                                                        <term xml:lang="Sa-Ltn">Mañjuśrī­kumāra­bhūta</term>
+                                                        <term type="definition">The bodhisattva who is considered the embodiment of wisdom, with the additional
+                                                                honorific title for a young man, since he is perennially youthful.</term>
+                                                </gloss>
+                    </item>
+
+                                        <item>
+                        <gloss type="place" xml:id="UT22084-056-009-123">
+                                                        <term>Śuddhāvāsa</term>
+                                                        <term xml:lang="Bo-Ltn">gnas gtsang ma </term>
+                                                        <term xml:lang="bo">གནས་གཙང་མ།</term>
+                                                        <term xml:lang="Sa-Ltn">Śuddhāvāsa</term>
+                                                        <term type="definition">Name for the five highest levels of existence within the form realm.</term>
+                                                </gloss>
+                    </item>
+                                </list>
+                        </div>
+                </back>
+        </text>
+</TEI>
