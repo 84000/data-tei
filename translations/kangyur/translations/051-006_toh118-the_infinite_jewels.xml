@@ -1,0 +1,1224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schema/current/translation.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="mainTitle" xml:lang="en">Infinite Jewels</title>
+                <title type="mainTitle" xml:lang="Sa-Ltn">Ratnakoṭi</title>
+                <title type="mainTitle" xml:lang="bo">རིན་པོ་ཆེའི་མཐའ།</title>
+                <title type="mainTitle" xml:lang="Bo-Ltn">rin po che’i mtha’</title>
+                <title type="longTitle" xml:lang="en">The Noble Great Vehicle Sūtra “Infinite Jewels”</title>
+                <title type="longTitle" xml:lang="Sa-Ltn">Āryaratnakoṭināmamahāyānasūtra</title>
+                <title type="longTitle" xml:lang="Bo-Ltn">’phags pa rin po che’i mtha’ zhes bya ba theg pa chen po’i mdo</title>
+                <title type="longTitle" xml:lang="bo">འཕགས་པ་རིན་པོ་ཆེའི་མཐའ་ཞེས་བྱ་བ་ཐེག་པ་ཆེན་པོའི་མདོ།</title>
+                <title type="otherTitle" xml:lang="Sa-Ltn">ratnakoṭisūtra</title>
+                <title type="otherTitle" xml:lang="Bo-Ltn">rin po che'i mtha'i mdo/</title>
+                <author role="translatorMain" ref="eft:team-9">Translated by the Dharmachakra Translation Committee<lb/>under the
+                    patronage and supervision of 84000: Translating the Words of the Buddha</author>
+                <consultant role="projectManager" ref="eft:person-50">Andreas Doctor</consultant>
+                <consultant role="dharmaMaster" ref="eft:person-40">Chokyi Nyima Rinpoche</consultant>
+                <author role="translatorEng" ref="eft:person-70">Miguel Sawaya</author>
+                <author role="translatorEng" ref="eft:person-68">Luke Hanley</author>
+                <editor role="reviser" ref="eft:person-50">Andreas Doctor</editor>
+                <editor role="projectEditor" ref="eft:person-262">David Higgins</editor>
+                <editor role="copyEditor" ref="eft:person-92">Laura Goetz</editor>
+                <editor role="projectEditor" ref="eft:person-250">Rory Lindsay</editor>
+                <editor role="TEImarkupEditor" ref="eft:person-108">André Rodrigues</editor>
+            </titleStmt>
+            <editionStmt>
+                <edition>v 0.1.15 <date>2019</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt status="2.a">
+                <publisher>
+                    <name>84000: Translating the Words of the Buddha</name> is a global non-profit initiative to
+                    translate all the Buddha’s words into modern languages, and to make them available to everyone. </publisher>
+                <availability>
+                    <licence>
+                        <graphic url="http://i.creativecommons.org/l/by-nc-nd/2.0/88x31.png"/>
+                        <p>This work is
+                        provided under the protection of a Creative Commons CC BY-NC-ND (Attribution -
+                        Non-commercial - No-derivatives) 3.0 copyright. It may be copied or printed for fair use,
+                        but only with full attribution, and not for commercial advantage or personal compensation.
+                        For full details, see the Creative Commons license.</p>
+                    </licence>
+                </availability>
+                <idno xml:id="UT22084-051-006"/>
+                <date>2021-12-26</date>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl key="toh118" type="text">
+                    <ref>Toh 118</ref>
+                    <biblScope>Degé Kangyur vol. 51 (mdo sde, ja), folios 290.b–298.a</biblScope>
+                    <location work="UT4CZ5369" count-pages="16">
+                        <volume number="51" start-page="580" end-page="595"/>
+                    </location>
+                    <idno parent-id="O1JC114941JC14668" work="http://read.84000.co/sections"/>
+                    <idno source-id="O1JC114941JC11688" work="W22084"/>
+                </bibl>
+            </sourceDesc>
+            <notesStmt>
+                <note type="lastUpdated" date-time="2021-12-26T11:23:15.983Z" user="admin">26/12/2021 11:23:15</note>
+                <note type="updated" update="text-version" value="v 0.1.0" date-time="2019-11-12T08:26:31.233Z" user="andreas">v 0.1.0</note>
+                <note type="updated" update="translation-status" value="2.g" date-time="2019-11-12T08:26:31.233Z" user="andreas">2.g</note>
+                <note type="updated" update="translation-status" value="2.h" date-time="2020-01-27T13:00:21.604Z" user="mike">2.h</note>
+                <note type="updated" update="translation-status" value="2.f" date-time="2020-03-16T14:21:11.94Z" user="line-tofte">2.f</note>
+                <note type="updated" update="text-version" value="0.1.1" date-time="2021-03-02T13:38:05.247Z" user="line-tofte">Auto (update-contributors)</note>
+                <note type="updated" update="text-version" value="0.1.2" date-time="2021-03-02T13:39:19.594Z" user="line-tofte">Auto (update-contributors)</note>
+                <note type="updated" update="text-version" value="0.1.3" date-time="2021-03-02T13:40:00.831Z" user="line-tofte">Auto (update-contributors)</note>
+                <note type="updated" update="text-version" value="0.1.4" date-time="2021-03-02T13:41:08.51Z" user="line-tofte">Auto (update-contributors)</note>
+                <note type="updated" update="text-version" value="0.1.5" date-time="2021-03-02T13:41:29.912Z" user="line-tofte">Auto (update-contributors)</note>
+                <note type="updated" update="text-version" value="0.1.6" date-time="2021-03-02T13:41:53.383Z" user="line-tofte">Auto (update-contributors)</note>
+                <note type="updated" update="translation-status" value="2.e" date-time="2021-03-25T09:01:49.419Z" user="line-tofte">2.e</note>
+                <note type="updated" update="text-version" value="0.1.7" date-time="2021-03-25T09:01:49.419Z" user="line-tofte">Auto (update-publication-status)</note>
+                <note type="updated" update="text-version" value="0.1.8" date-time="2021-03-25T09:02:22.457Z" user="line-tofte">Auto (update-contributors)</note>
+                <note type="updated" update="translation-status" value="2.d" date-time="2021-03-30T07:40:35.395Z" user="line-tofte">2.d</note>
+                <note type="updated" update="text-version" value="0.1.9" date-time="2021-03-30T07:40:35.395Z" user="line-tofte">Auto (update-publication-status)</note>
+                <note type="updated" update="translation-status" value="2.c" date-time="2021-04-15T07:20:00.163Z" user="line-tofte">2.c</note>
+                <note type="updated" update="text-version" value="0.1.10" date-time="2021-04-15T07:20:00.163Z" user="line-tofte">Auto (update-publication-status)</note>
+                <note type="updated" update="translation-status" value="2.b" date-time="2021-09-09T07:04:21.369Z" user="line-tofte">2.b</note>
+                <note type="updated" update="text-version" value="0.1.11" date-time="2021-09-09T07:04:21.369Z" user="line-tofte">Auto (update-publication-status)</note>
+                <note type="updated" update="text-version" value="0.1.12" date-time="2021-09-09T07:06:23.515Z" user="line-tofte">Auto (update-contributors)</note>
+                <note type="updated" update="text-version" value="0.1.13" date-time="2021-12-01T11:43:50.98Z" user="line-tofte">Auto (update-contributors)</note>
+                <note type="updated" update="translation-status" value="2.a" date-time="2021-12-01T11:45:14.652Z" user="line-tofte">2.a</note>
+                <note type="updated" update="text-version" value="0.1.14" date-time="2021-12-01T11:45:14.652Z" user="line-tofte">Auto (update-publication-status)</note>
+            </notesStmt>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <div type="summary">
+                <head type="summary" tid="1">Summary</head>
+                <milestone unit="chunk" xml:id="UT22084-051-006-1"/>
+                <p tid="2">While residing at Vulture Peak Mountain with a large community of monks, the Buddha is visited by the
+                    bodhisattva Mañjuśrī. The sūtra unfolds as a series of exchanges between the Buddha, Mañjuśrī, and
+                    the monk Śāriputra, elucidating a profound vision of reality as undifferentiated, nondual, and
+                    all-pervasive.</p>
+            </div>
+            <div type="acknowledgment">
+                <head type="acknowledgment" tid="3">Acknowledgements</head>
+                <milestone unit="chunk" xml:id="UT22084-051-006-2"/>
+                <p tid="4">Translated by the Dharmachakra Translation Committee under the supervision of Chokyi Nyima Rinpoche.
+                    The translation was produced by Miguel Sawaya and Luke Hanley. Andreas Doctor compared the
+                    translation with the original Tibetan and edited the text. The translators are grateful to Khenpo
+                    Gyaltsen, Khenpo Karma Gyurme, and Khenpo Tsondru Sangpo for assistance with difficult passages in
+                    the Tibetan, as well as to Jue Liang, Felin Chung, and Chia Ping Chau for their help in consulting
+                    the Chinese.</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-3"/>
+                <p tid="5">The translation was completed under the patronage and supervision of 84000: Translating the Words of
+                    the Buddha.</p>
+            </div>
+            <div type="introduction">
+                <head type="introduction" tid="6">Introduction</head>
+                <milestone unit="chunk" xml:id="UT22084-051-006-4"/>
+                <p tid="7">While the Buddha is residing on Vulture Peak Mountain near Rājagṛha with a large group of monks, the
+                    bodhisattva Mañjuśrī comes to see him. The bodhisattva inquires about the meditative absorption from
+                    which the Buddha has just arisen, and the Buddha responds that the absorption is known as
+                        <distinct>infinite jewels</distinct>. The sūtra then unfolds as a dialogue between the Buddha
+                    and Mañjuśrī on the nature and significance of the absorption, with an additional series of
+                    exchanges on this topic with the Buddha’s eminent monk-disciple Śāriputra.</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-5"/>
+                <p tid="8">Because the text conveys a profound view of reality, it is fitting that the bodhisattva Mañjuśrī, who
+                    epitomizes wisdom in the Great Vehicle tradition, is the Buddha’s primary interlocutor. The
+                    perspective of profound wisdom is elucidated through the exploration of a pair of key terms:
+                        <distinct>limit of reality</distinct> (Skt. <foreign xml:lang="Sa-Ltn" type="term">bhūtakoṭi</foreign>) and <distinct>realm of phenomena</distinct> (<foreign xml:lang="Sa-Ltn" type="term">dharmadhātu</foreign>). These terms are meant to indicate the way things are on the
+                    level of ultimate reality, and in this sūtra they are treated as synonyms. According to this
+                    ultimate perspective, all phenomena are characterized by the lack of an independent essence or fixed
+                    identity. </p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-6"/>
+                <p tid="9">The term “limit of reality” appears in a number of sūtras, and frequently in the Perfection of Wisdom
+                    literature. It stands for ultimate truth and, therefore, is synonymous with intrinsic nature
+                        (<foreign xml:lang="Sa-Ltn" type="term">dharmatā</foreign>) and suchness (<foreign xml:lang="Sa-Ltn" type="term">tathatā</foreign>).<note place="end" xml:id="UT22084-051-006-7"> This particular equation is
+                        made in the <title xml:lang="Sa-Ltn">Mahāprajñāpāramitāśāstra</title> attributed to Nāgārjuna
+                        (Lamotte 2001, p. 47). Elsewhere in his translation of this text, Lamotte cites a number of
+                        other canonical sources that provide lists of synonyms for the ultimate nature, all of which
+                        include the term <foreign xml:lang="Sa-Ltn" type="term">bhūtakoṭi</foreign> (ibid., p. 52, n.
+                        103). Grammatically, <foreign xml:lang="Sa-Ltn" type="term">bhūtakoṭi</foreign> can be read as
+                        both a <foreign xml:lang="Sa-Ltn" type="term">tatpuruṣa</foreign> and a <foreign xml:lang="Sa-Ltn" type="term">karmadhāraya</foreign> compound. In support of reading it as a
+                        tatpuruṣa, Ratnākaraśānti, when explaining the term in his <title xml:lang="Sa-Ltn">Muktāvalī</title> (Toh 1189),&lt;Reference Toh 1189&gt; glosses <foreign xml:lang="Sa-Ltn" type="term">bhūta</foreign> by <foreign xml:lang="Sa-Ltn" type="term">tattva</foreign>
+                        (“reality”), and <foreign xml:lang="Sa-Ltn" type="term">koṭi</foreign> by <foreign xml:lang="Sa-Ltn" type="term">agra</foreign> (“edge,” “limit”) (Tripathi 2001, p. 96). Both
+                        words in this compound are nouns. Lamotte also adopted this reading in his translation of the
+                            <title xml:lang="Sa-Ltn">Mahāprajñāpāramitāśāstra</title>, where, in the English translation
+                        of his work, the term is rendered “summit of existence” (2001, p. 47). On the other hand,
+                        Edgerton (1953, p. 410) takes <foreign xml:lang="Sa-Ltn" type="term">bhūtakoṭi</foreign> to be a
+                        karmadhāraya compound, meaning “true goal” (<foreign xml:lang="Sa-Ltn" type="term">bhūta</foreign> = “true” and <foreign xml:lang="Sa-Ltn" type="term">koṭi</foreign> =
+                        “goal”). What may underlie these different interpretations is the fact that the word <foreign xml:lang="Sa-Ltn" type="term">bhūta</foreign> can be used both in an adjectival sense of
+                        “real/true” as well as a noun meaning “reality/truth.” In this translation, we have opted to
+                        read the term as a tatpuruṣa compound.</note> While this appears to be the main significance of
+                    the term, <distinct>the limit of reality</distinct> can also refer to the awakened experience of the
+                    ultimate, or even to the quiescent state of a worthy one (<foreign xml:lang="Sa-Ltn" type="term">arhat</foreign>) to be avoided by bodhisattvas who vow to remain in cyclic existence as long as
+                    suffering remains.<note place="end" xml:id="UT22084-051-006-8"> Buswell and Lopez 2013, p. 117.</note> In the present sūtra,
+                    the equation between the ultimate and the limit of reality is repeatedly confirmed. In the final
+                    exchange concerning this term, we are told that it is not actually a limit, per se. In general, a
+                    limit must be localizable, but since the limit of reality transcends location, it is not truly a
+                    limit in the ordinary sense of the word.</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-9"/>
+                <p tid="10">The discussion regarding the realm of phenomena focuses on the fact that distinctions and
+                    designations are mere postulates having no ultimate, independent existence. According to this sūtra,
+                    in the context of the realm of phenomena, one cannot speak meaningfully of the traits of ordinary
+                    beings as distinct from those of buddhas, or of distinct psycho-physical aggregates that make up
+                    persons, or of emotional defilements or heinous acts that can be isolated and identified. Indeed,
+                    the realm of phenomena is described as nondual, and notions of birth, death, transmigration,
+                    pollution, and purification are moot. Thus, it is mainly by way of commentary on these terms that
+                    the sūtra seeks to convey the profound nature of the ultimate. The discourse ends with a praise of
+                    these teachings and a description of the benefits that result from engaging with them.</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-10"/>
+                <p tid="11">A key challenge of translation is that frequently there does not exist a single term in the target
+                    language that embodies the range of meaning of a particular term in the source language. Such is the
+                    case with the Sanskrit <foreign xml:lang="Sa-Ltn" type="term">koṭi</foreign>, which appears both in
+                    the title, <foreign xml:lang="Sa-Ltn" type="term">Ratnakoṭi</foreign>, and in <foreign xml:lang="Sa-Ltn" type="term">bhūtakoṭi</foreign>, the limit of reality. <foreign xml:lang="Sa-Ltn" type="term">Koṭi</foreign> can mean limit, end, apex, point, highest point,
+                    eminence, or excellence. It can also refer to the number ten million. Thus, the title of our sūtra
+                    could be translated in a number of ways. We have chosen “Infinite Jewels” for two reasons. The first
+                    is to be found in the Buddha’s own explanation of the title of this sūtra, which refers to a
+                    particular meditative absorption entered by the Buddha. When Mañjuśrī asks why the absorption is so
+                    named, the Buddha likens it to an unblemished jewel. When such a jewel is placed on an even surface,
+                    there appear untold millions<note place="end" xml:id="UT22084-051-006-11"> Here the text alludes to the sense of <foreign xml:lang="Sa-Ltn" type="term">koṭi</foreign> as “ten million” (rendered as <foreign xml:lang="Bo-Ltn" type="term">bye ba</foreign> in Tibetan). The term used here is <foreign xml:lang="Bo-Ltn" type="term">che bye ba</foreign>, which may translate <foreign xml:lang="Sa-Ltn" type="term">mahākoṭi</foreign>, a term having the sense of vast or untold
+                        millions.</note> of other “jewels” surrounding it (presumably due to light refracting in the
+                    facets of the jewel). Secondly, the <title xml:lang="Sa-Ltn">Mahāvyutpatti</title>, the seminal list
+                    of Sanskrit–Tibetan terminological equivalents, renders <foreign xml:lang="Sa-Ltn" type="quote">ratnakoṭir nāma samādhiḥ</foreign> as <foreign xml:lang="Bo-Ltn" type="quote">rin chen mtha’
+                        yas zhes bya ba’i ting nge ’dzin</foreign>, “the meditative absorption called <distinct>infinite
+                        jewels</distinct>.”<note place="end" xml:id="UT22084-051-006-12"> Interestingly, Saerji (2011) has argued that this sūtra
+                        and the shorter <title xml:lang="Sa-Ltn">Samādhicakrasūtra</title> (Toh 241)&lt;Reference Toh
+                        0241&gt; are related, as the <title xml:lang="Sa-Ltn">Samādhicakrasūtra</title> seems to be a
+                        summary of <title xml:lang="en">Infinite Jewels</title>, perhaps meant to facilitate
+                        memorization.</note>
+                </p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-13"/>
+                <p tid="12">While there is no known Sanskrit manuscript of this sūtra, it does exist in Chinese and Tibetan
+                    translations. There are two Chinese translations: 入法界體性經 (<fix>ru fajie tixing jing</fix>, Taishō
+                    355) and 寶積三昧文殊師利菩薩問法身經 (<fix>baoji sanmei wenshushili pusa wen fashen jing</fix>, Taishō 356). The
+                    former (Taishō 355) was produced by the Gandhāran monk Jñānagupta (523~c. 600 <hi rend="small-caps">ce</hi>) sometime in the late sixth-century <hi rend="small-caps">ce</hi> during his stay in
+                    the Chinese capital of Chang’an. The latter translation (Taishō 356) is a much earlier work
+                    attributed to the translator An Shigao (second century <hi rend="small-caps">ce</hi>). However,
+                    Karashima has argued that An Shigao might not be the translator of this sūtra and has instead
+                    proposed that the translation may have been done by another early translator, the Gandhāran monk
+                    Lokakṣema (147–? <hi rend="small-caps">ce</hi>).<note place="end" xml:id="UT22084-051-006-14"> Karashima 2015, p. 119.</note> In
+                    any case, it seems certain that the sūtra was already in circulation in China by the second century
+                        <hi rend="small-caps">ce</hi>, which makes it a very early sūtra within the literary corpus of
+                    the Great Vehicle.</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-15"/>
+                <p tid="13">According to the colophon of the Tibetan translation, <title xml:lang="en">Infinite Jewels</title>
+                    was translated from Sanskrit to Tibetan by the Indian preceptor Prajñāvarman and the Tibetan
+                    translator Yeshé Dé, and thus can be dated to the early ninth-century <hi rend="small-caps">ce</hi>,
+                    a dating that is also attested by the text’s inclusion in the early ninth-century Denkarma (<foreign xml:lang="Bo-Ltn">ldan dkar ma</foreign>) inventory of translations into Tibetan.<note place="end" xml:id="UT22084-051-006-16"> The Denkarma catalog is dated to c. 812 <hi rend="small-caps">ce</hi>. Denkarma,
+                        299.a.4. See also Herrmann-Pfandt 2008, pp. 98–99, no. 183.</note> The present translation was
+                    prepared based on the Tibetan translation in the Degé Kangyur in consultation with the Comparative
+                    Edition (Tib. <foreign xml:lang="Bo-Ltn">dpe bsdur ma</foreign>). </p>
+            </div>
+        </front>
+        <body>
+            <div type="translation">
+                <head type="translation" tid="14"> The Translation </head>
+                <head type="titleHon" tid="15">The Noble Great Vehicle Sūtra “Infinite Jewels”</head>
+                <head type="titleMain" tid="16">[F.290.b]</head>
+                <!--In the rare case that there is initial text before the first chapter begins, the script will place the
+                        text here. However, this will cause the two headings for the "Honorific Title" and "Main Title" to be duplicated below
+                        as <p> elements. Markup Editors, please delete these initial duplicated <p> elements along with their milestones and delete this comment.-->
+                <milestone unit="chunk" xml:id="UT22084-051-006-17"/>
+                <p tid="17">The Noble Great Vehicle Sūtra “Infinite Jewels”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-18"/>
+                <p tid="18">[F.290.b]</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-19"/>
+                <p tid="19">Homage to all buddhas and bodhisattvas! </p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-20"/>
+                <p tid="20">&lt;break&gt;</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-21"/>
+                <p tid="21">Thus did I hear at one time. The Blessed One was dwelling in Rājagṛha, on Vulture Peak Mountain,
+                    together with a great saṅgha of five hundred monks. At dusk Youthful Mañjuśrī went to the Blessed
+                    One’s residence, stood beside the door, and praised<note place="end" xml:id="UT22084-051-006-22"> Reading <foreign xml:lang="Bo-Ltn" type="term">bstod</foreign> based on the Yongle, Kangxi, and Choné
+                        versions. The Degé reads <foreign xml:lang="Bo-Ltn" type="term">sdod</foreign>.</note> the
+                    Blessed One. At that time, the Blessed One was resting in equipoise in the absorption known as
+                        <distinct>infinite jewels</distinct>. Mindful and alert, the Blessed One then arose from that
+                    absorption. He saw that Youthful Mañjuśrī was at the door and said, “Please come inside, Mañjuśrī.” </p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-23"/>
+                <p tid="22">“Very well, Blessed One, very well,” replied Youthful Mañjuśrī, and, heeding the Blessed One’s words,
+                    he went before the Blessed One. He prostrated, placing his head at the Blessed One’s feet and stood
+                    to one side. The Blessed One gave Youthful Mañjuśrī permission to sit, and, with the Blessed One’s
+                    permission, Youthful Mañjuśrī bowed with palms joined and then sat to one side of the Blessed One. </p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-24"/>
+                <p tid="23">Sitting to one side, Youthful Mañjuśrī asked the Blessed One, “What was the absorption from which you
+                    just arose, Blessed One?” [F.291.a]</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-25"/>
+                <p tid="24">“Mañjuśrī, there is an absorption called <distinct>infinite jewels</distinct>,” replied the Blessed
+                    One to Youthful Mañjuśrī. “That is the absorption from which I just arose.”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-26"/>
+                <p tid="25">“Blessed One, why is it called <distinct>infinite jewels</distinct>?”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-27"/>
+                <p tid="26">The Blessed One responded, “Mañjuśrī, take as an analogy an exceedingly pure and well-polished
+                    precious jewel. If it is placed on level ground, then wherever it is placed, there will be untold
+                    millions of jewels. In the same way, Mañjuśrī, when I remain in this absorption and look to the
+                    east, I see thus-gone ones, worthy ones, perfect buddhas abiding and teaching the Dharma in
+                    boundless, innumerable world systems. It is the same to the south, west, north, below, and above.
+                    When I look in the ten directions, I see thus-gone ones, worthy ones, perfect buddhas abiding and
+                    teaching the Dharma in boundless world systems. Remaining in this absorption, Mañjuśrī, I do not
+                    actually see any phenomenon whatsoever that is not the limit of reality. Mañjuśrī, I posit this seal
+                    of the limit of reality as my seal. Faithful noble sons and daughters who engage in this seal will
+                    gain uninterrupted eloquence.”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-28"/>
+                <p tid="27">“Blessed One, I have something to say. Well-Gone One, I have something to say.”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-29"/>
+                <p tid="28">“Then speak, Mañjuśrī.”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-30"/>
+                <p tid="29">“Blessed One, take as an analogy that very same precious jewel. Whatever facet it is set down upon,
+                    it will rest on precisely that side of the precious jewel.<note place="end" xml:id="UT22084-051-006-31"> Translation tentative.
+                        Degé: <foreign xml:lang="Bo-Ltn" type="quote">nor bu rin po che de nyid ngos gang dang gang kho
+                            nas phab de gzhag pa’i rin po che’i ngos de dang de kho na ’bab cing gnas par ’gyur lags
+                            so</foreign>.</note> [F.291.b] Blessed One, in the same way, all phenomena abide only as the
+                    limit of reality.”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-32"/>
+                <p tid="30">“Mañjuśrī, do you know the limit of reality?”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-33"/>
+                <p tid="31">“I do, Blessed One.”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-34"/>
+                <p tid="32">“Well then, Mañjuśrī, where is the limit of reality?” </p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-35"/>
+                <p tid="33">“Blessed One, the limit of reality is wherever my limit is. The limit of reality is wherever the
+                    phenomena of ordinary beings are not. The limit of reality is not karma or ripening but only the
+                    limit of all phenomena. Blessed One, those who have such conviction are not liberated from anything
+                    at all. Those who are not liberated from anything at all are liberated from being mistaken. Those
+                    who are liberated from being mistaken are truly liberated. Those who are truly liberated have
+                    entered what is not the objective world.<note place="end" xml:id="UT22084-051-006-36"> We have here translated the term <foreign xml:lang="Bo-Ltn" type="term">spyod yul</foreign> (<foreign xml:lang="Sa-Ltn" type="term">gocara</foreign>, literally “cattle range”), which refers to the domain or objects
+                            (<foreign xml:lang="Bo-Ltn" type="term">yul</foreign>) over which the senses roam, as
+                        “objective world.”</note> Those who have entered what is not the objective world have entered
+                    into reality. And why? Blessed One, when one thinks, ‘It is not the objective world,’ then one has
+                    already thought of it as being that objective world.<note place="end" xml:id="UT22084-051-006-37"> Translation tentative. Degé:
+                            <foreign xml:lang="Bo-Ltn" type="quote">spyod yul ma lags pa zhes bgyis pa ni spyod yul des
+                            bgyis lags pa ste</foreign>.</note> It is on account of that that we label it <distinct>not
+                        an objective world</distinct>.”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-38"/>
+                <p tid="34">“Mañjuśrī, what does <distinct>not an objective world</distinct> refer to?” </p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-39"/>
+                <p tid="35">“Blessed One, <distinct>not an objective world</distinct> refers to the limit of reality.” </p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-40"/>
+                <p tid="36">“Mañjuśrī, what does <distinct>cultivating the path</distinct> refer to?” </p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-41"/>
+                <p tid="37">“Blessed One, <distinct>cultivating the path</distinct> refers to not cultivating the path.”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-42"/>
+                <p tid="38">“Mañjuśrī, [F.292.a] how do you teach the Dharma to noble sons and daughters who are beginners?” </p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-43"/>
+                <p tid="39">“Blessed One, I teach the Dharma to noble sons and daughters who are beginners by teaching that the
+                    composite person<note place="end" xml:id="UT22084-051-006-44"> The term <foreign xml:lang="Bo-Ltn" type="term">’jig
+                            tshogs</foreign> (Skt. <foreign xml:lang="Sa-Ltn" type="term">satkāya</foreign>, literally
+                        “real aggregates/person”) here alludes to the belief in a real person (<foreign xml:lang="Sa-Ltn" type="term">satkāyadṛṣti</foreign>) or, more specifically, the view that
+                        the aggregates constitute a real person. This is typically denounced as a false view in
+                        Buddhism. However, the text here makes the radical claim that beginners should be taught
+                            <emph>not</emph> to reject the composite person because, as becomes clear, there is, quite
+                        literally, nothing there to reject.</note> should not be discarded. When I teach the Dharma, I
+                    teach that attachment, aversion, and delusion are not to be abandoned. Why is this? Because, Blessed
+                    One, it is impossible to abandon whatever is the given nature of these phenomena. Blessed One, to
+                    seek to abandon the composite person or the origin of the composite person would amount to
+                    abandoning the limit of reality. Rather, Blessed One, to noble sons and daughters who are beginners
+                    I teach that, in a manner free from clinging, the Buddha’s attributes are not to be grasped or
+                    actualized, and the attributes of ordinary beings should not be overestimated or deprecated. Blessed
+                    One, how do you teach the Dharma to those who are beginners?” </p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-45"/>
+                <p tid="40">“Mañjuśrī, I teach the Dharma whereby form does not disintegrate and is unborn. I teach that
+                    feelings, perceptions, and formations, as well as consciousness, do not disintegrate and are unborn.
+                    I teach the Dharma whereby attachment, aversion, and delusion do not disintegrate and are unborn,
+                    and I also teach that the inconceivable attributes are unattainable. It is in this way, without
+                    destroying or producing any attribute whatsoever, that I awakened to unsurpassed and perfect
+                    buddhahood. Mañjuśrī, <distinct>buddhahood</distinct> is a term for the realm of phenomena. One
+                    should understand that the attributes of a buddha, such as the powers, fearlessnesses, [F.292.b] and
+                    the unique attributes, are also nothing but the realm of phenomena. With regard to the realm of
+                    phenomena, I do not see any distinct attributes of ordinary beings, worthy ones, solitary buddhas,
+                    or buddhas. How is this so? Mañjuśrī, in that realm there are no distinctions; such is the realm of
+                    phenomena. The realm of phenomena is an unadulterated realm. </p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-46"/>
+                <p tid="41">“As an analogy, Mañjuśrī, consider rivers that have distinct names, colors, and waters. When they
+                    flow into the ocean it becomes impossible to differentiate them or identify them, saying, ‘This is
+                    the Ganges,’ ‘This is Sītā,’ or ‘This is Yamunā.’ Similarly, Mañjuśrī, within the realm of
+                    phenomena, all those phenomena that have different names cannot be distinctly labeled, saying,
+                    ‘These are the attributes of ordinary beings, and here are those of the hearers, solitary buddhas,
+                    bodhisattvas, and buddhas.’</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-47"/>
+                <p tid="42">“Mañjuśrī, consider this analogy. If you have different heaps of grain, you can label them, saying,
+                    ‘This is a heap of such-and-such a grain, and this is such-and-such.’ However, within the realm of
+                    phenomena you cannot make such distinctions and point out the individual attributes of ordinary
+                    beings, hearers, solitary buddhas, bodhisattvas, and buddhas. </p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-48"/>
+                <p tid="43">“Mañjuśrī, consider this analogy. If you have different heaps of grain, you can label them, saying,
+                    ‘This is a heap of such-and-such a grain, and this is such-and-such.’ However, within the realm of
+                    phenomena you cannot make such distinctions, saying, ‘These are the attributes of ordinary beings,
+                    these are the attributes of worthy ones, these are attributes of solitary buddhas, these are the
+                    attributes of bodhisattvas, [F.293.a] and these are the attributes of buddhas.’ It cannot be pointed
+                    out or labeled, as by saying, ‘This is the realm of phenomena; this is where it is’ or ‘It is in
+                    such-and-such a location.’ And why not? Because the realm of phenomena cannot be seen and cannot be
+                    shown. It is not something that can be labeled; it is beyond being labeled. </p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-49"/>
+                <p tid="44">“I have taught that beings are of this realm. If one commits an act of immediate retribution yet has
+                    conviction in this teaching and understands that acts of immediate retribution are also of the realm
+                    of phenomena, then one will not become defiled. And why not? Because, Mañjuśrī, the acts of
+                    immediate retribution are equivalent to the realm of phenomena. In this way, the realm of the acts
+                    of immediate retribution and the realm of phenomena are nondual and inseparable. Here, coming,
+                    going, or appearing are not apprehended.”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-50"/>
+                <p tid="45">Then Youthful Mañjuśrī said to the Blessed One, “Blessed One, I also do not see the realm of
+                    phenomena going to the lower realms, the higher realms, or nirvāṇa.”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-51"/>
+                <p tid="46">“Mañjuśrī, suppose someone were to ask how your teacher designates saṃsāra with its six classes of
+                    beings. What would you answer?” </p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-52"/>
+                <p tid="47">“Blessed One, if I were asked such a question this would be my reply: Consider the analogy of a
+                    sleeping person who in dreams sees hell beings, animal realms, lands of hungry ghosts, classes of
+                    asuras, gods, or people. Blessed One, although the dreaming person sees myriad things, all the
+                    surrounding things are not there. [F.293.b] In the same way, although I teach distinct types of
+                    beings, it is impossible to designate distinct essences within the realm of phenomena. That being
+                    so, Blessed One, that is how I would answer such a question.</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-53"/>
+                <p tid="48">“Similarly, Blessed One, the parinirvāṇa of the buddhas, bodhisattvas, solitary buddhas, and hearers
+                    cannot be distinctly labeled. Blessed One, their ways of abiding also cannot be distinctly labeled.
+                    And why not? Because they are not distinct from the realm of phenomena. To give an analogy, Blessed
+                    One, there are various precious substances in the sea—conch shells, crystal, coral, and the like—of
+                    lesser, middling, or superior quality. These can all be distinctly labeled, saying, ‘This is
+                    such-and-such precious substance; this is such-and-such precious substance.’ However, such distinct
+                    labeling cannot be applied to the realm of phenomena, where such designations cannot be
+                    differentiated. Therein, death, transmigration, and birth cannot be distinctly labeled. Why is that?
+                    Because the realm of phenomena is without death, transmigration, birth, pollution, and purification.
+                    The realm of phenomena is not polluted. The realm of phenomena is not adulterated. Within the realm
+                    of phenomena there are no attributes to be relinquished or generated.”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-54"/>
+                <p tid="49">Then the Blessed One, knowingly, said to Youthful Mañjuśrī, “Mañjuśrī, do you know the realm of
+                    phenomena?”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-55"/>
+                <p tid="50">“If I were to apprehend it, I would know it.” </p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-56"/>
+                <p tid="51">“Mañjuśrī, do you know the world that is experienced?”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-57"/>
+                <p tid="52">“Blessed One, the world is merely that which is experienced by people who are illusory apparitions.
+                    Blessed One, what is called <distinct>world</distinct> is no more than a mere name. [F.294.a] Apart
+                    from that I do not see any world that can be pointed out, or a world to experience. I do not see
+                    anything distinct from the world’s realm of phenomena. And why not? Because there isn’t any.
+                    Regarding the Blessed One’s statement about ‘the world that is experienced,’ the essential nature of
+                    form is without death, transmigration, or birth; it does not disintegrate or perish. This being the
+                    case, what is there to experience? Likewise, since the essential nature of feeling, perception,
+                    formation, and consciousness does not exist substantially, there is no arising or ceasing. These
+                    things do not go beyond the single characteristic; indeed, their defining characteristic is the
+                    same.”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-58"/>
+                <p tid="53">“Mañjuśrī, tell me, do you think that I, the Thus-Gone One, the Worthy One, the Perfect Buddha, will
+                    pass into parinirvāṇa or disappear?”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-59"/>
+                <p tid="54">“No, Blessed One, I do not. And why not? Because the realm of phenomena is not truly established.
+                    Blessed One, if the realm of phenomena were truly established, then it would not pass away. However,
+                    it is not apprehended as something truly established. Thus, how can one speak of not passing
+                        away<note place="end" xml:id="UT22084-051-006-60"> Reading <foreign xml:lang="Bo-Ltn" type="term">’da’ ba</foreign> (instead
+                        of <foreign xml:lang="Bo-Ltn" type="term">gda’ ba</foreign>) based on the Narthang and Lhasa
+                        versions.</note> or completely passing away? The Thus-Gone One is the realm of phenomena. For
+                    that reason, the Blessed One is not born and does not pass into parinirvāṇa.”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-61"/>
+                <p tid="55">“Well then, Mañjuśrī,” said the Blessed One, “how can you have conviction in the statement that the
+                    thus-gone ones of the past, equal in number to the grains of sand of the River Ganges, have passed
+                    into parinirvāṇa?”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-62"/>
+                <p tid="56">“If I had genuinely beheld their birth, I would have conviction.”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-63"/>
+                <p tid="57">“Do you maintain that ordinary beings are reborn after they die?” [F.294.b]</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-64"/>
+                <p tid="58">“Blessed One, since I do not see or apprehend ordinary beings, how could I possibly apprehend their
+                    rebirth?”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-65"/>
+                <p tid="59">“Mañjuśrī, please expound on the Thus-Gone One’s assertion that phenomena abide.”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-66"/>
+                <p tid="60">“Where should I begin my discourse?” Or simply, “How should I begin?”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-67"/>
+                <p tid="61">“Start with the realm of phenomena.”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-68"/>
+                <p tid="62">“Blessed One, I do not actually see any phenomena that are not the realm of phenomena.”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-69"/>
+                <p tid="63">“Mañjuśrī, those who are presumptuously arrogant will be frightened.”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-70"/>
+                <p tid="64">“Blessed One, if the limit of reality were to be frightened, then, based on that, those who are
+                    presumptuously arrogant would also be frightened. Why is this? Blessed One, those who are
+                    presumptuously arrogant are not something other than the limit of reality. Whatever is the limit of
+                    those who are presumptuously arrogant, that very limit is the limit of reality. Moreover, that which
+                    is the limit of reality is also the limit of all phenomena. For that reason, they are not
+                    frightened. The statement ‘no phenomenon is truly established’ is a vajra basis.”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-71"/>
+                <p tid="65">“Mañjuśrī,” asked the Blessed One, “Why is this called a <distinct>vajra basis</distinct>?”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-72"/>
+                <p tid="66">“Blessed One, all phenomena are indestructible. It is for this reason that it is called a
+                        <distinct>vajra basis</distinct>. Since the thus-gone ones are inconceivable, all phenomena are
+                    inconceivable. This is a vajra basis. Why is this referred to as a <distinct>vajra basis</distinct>?
+                    It is because all phenomena are not mind. To say that all phenomena are awakening is a vajra basis.
+                    Why is this? Because all phenomena are inexpressible. Phenomena expressed by means of various labels
+                    are not actually present in those very phenomena. Whatever is not present is empty. That which is
+                    empty does not exist. What does not exist [F.295.a] cannot be expressed. The inexpressible is
+                    awakening. It is for that reason that this is a vajra basis. All phenomena are the object of the
+                    thus-gone ones. This is a vajra basis.”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-73"/>
+                <p tid="67">“Why is it called a <distinct>vajra basis</distinct>?”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-74"/>
+                <p tid="68">“Blessed One, all phenomena are devoid of self-existent objects. For that reason, this is a vajra
+                    basis.”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-75"/>
+                <p tid="69">“Mañjuśrī, the monk Ānanda will also comprehend this Dharma exposition. Shall I motion him to come
+                    here?”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-76"/>
+                <p tid="70">“Blessed One, is there any Dharma that has been taught or expressed here? I myself have not actually
+                    witnessed even a single syllable that has been taught. That being so, how could I possibly have
+                    perceived many of them?”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-77"/>
+                <p tid="71">“Excellent, Mañjuśrī, excellent. These words of yours, which you present in this way, are well
+                    spoken. Well done, Mañjuśrī. In the boundless, innumerable world systems of the ten directions, I
+                    see thus-gone ones, worthy ones, perfect buddhas teaching this truth.”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-78"/>
+                <p tid="72">At this point Venerable Śāriputra left his dwelling and went to the dwelling of Youthful Mañjuśrī. He
+                    did not see Mañjuśrī there, and so he went to the Blessed One’s residence. He stood outside the door
+                    and heard the teachings being given. </p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-79"/>
+                <p tid="73">The Blessed One said to Youthful Mañjuśrī, “Mañjuśrī, the monk Śāriputra is standing outside the door
+                    of this dwelling. As he wishes to listen to the Dharma, Mañjuśrī, bring Śāriputra inside so he can
+                    listen.”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-80"/>
+                <p tid="74">“If this limit is the limit of reality, is it present outside, inside, or neither?”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-81"/>
+                <p tid="75">“Mañjuśrī, it is none of these.”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-82"/>
+                <p tid="76">“Therefore, Blessed One, the limit of reality is not a limit. [F.295.b] Regarding a limit such as
+                    this, one does not come here or go there. Thus, Blessed One, it does not make sense that reverend
+                    Śāriputra, who is limited in this way, could come here or come inside.”<note place="end" xml:id="UT22084-051-006-83">
+                        Translation tentative. Degé: <foreign xml:lang="Bo-Ltn" type="quote">tshur mchi ba’am/ nang du
+                            mchi ba’i mi rigs lags so</foreign>
+                        <fix>.</fix>
+                    </note>
+                </p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-84"/>
+                <p tid="77">“Mañjuśrī, if I were in this dwelling speaking with the hearers while you were outside, powerless to
+                    enter, would you not suffer?”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-85"/>
+                <p tid="78">“Blessed One, it is not so. And why not? Because all phenomena are included within the realm of
+                    phenomena. In this regard, the expression <distinct>thus-gone one</distinct> means the realm of
+                    phenomena. Since they are of a single characteristic, the Thus-Gone One and the realm of phenomena
+                    are not any different. Phenomena such as ‘Dharma,’ ‘Dharma teachings,’ or ‘listening to the Dharma’
+                    are nondual and thus are not distinct. And it is for that reason, too, that they are not distinct
+                    from the realm of phenomena. The syllables that make up the name Mañjuśrī also belong to the realm
+                    of phenomena. Thus, Blessed One, for this reason I would not be distressed in the slightest. Even if
+                    the Blessed One were to teach the Dharma for eons equal in number to the grains of sand of the River
+                    Ganges, whether I were there or not, I would experience neither joy at being there nor anguish
+                    otherwise. And why not? Blessed One, if duality existed then I would experience joy or anguish.
+                    However, the realm of phenomena is nondual, and it is for that reason that I would not become joyful
+                    or anguished. Blessed One, the teachings by which you share the Dharma do not cause any phenomena to
+                    accumulate, diminish, increase, or decrease. Such a teaching is not founded on apprehension of any
+                    phenomenon whatsoever. It is for that reason as well, Blessed One, that I would not become joyous or
+                    anguished.”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-86"/>
+                <p tid="79">At this point, the Blessed One asked Venerable Śāriputra, “Did you hear Youthful Mañjuśrī’s
+                    eloquence, Śāriputra?” [F.296.a]</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-87"/>
+                <p tid="80">“Blessed One, I heard. I came here, Blessed One, thinking how wonderful it would be to hear the
+                    eloquent words of the Blessed One and of Youthful Mañjuśrī.”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-88"/>
+                <p tid="81">Youthful Mañjuśrī then said to the Blessed One, “Blessed One, please invite Venerable Śāriputra to
+                    come inside.”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-89"/>
+                <p tid="82">“Enter, Śāriputra,” said the Blessed One to Venerable Śāriputra.</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-90"/>
+                <p tid="83">Venerable Śāriputra entered, prostrated at the Blessed One’s feet, and sat to one side. “Reverend
+                    Śāriputra,” said Youthful Mañjuśrī to Venerable Śāriputra, who was seated to the side, “what purpose
+                    did you envision for coming here?”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-91"/>
+                <p tid="84">“I came here, Mañjuśrī, with a longing to hear the Dharma. Where the Blessed One and sublime beings
+                    such as yourself are dwelling, there are profound and exquisite teachings. It is because of this
+                    that I came.”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-92"/>
+                <p tid="85">“So it is, Reverend Śāriputra. This teaching is profound.”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-93"/>
+                <p tid="86">“How profound is this Dharma exposition that you commenced together with the Blessed One?”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-94"/>
+                <p tid="87">“It will not be comprehended by Reverend Śāriputra. A worthy one whose contaminants have been
+                    exhausted is not a vessel for this Dharma teaching. Why is this? Because this Dharma teaching is not
+                    engaged with the properties of ordinary beings, is not engaged with the properties of worthy ones,
+                    is not engaged with the properties of solitary buddhas, and is not engaged with the properties of
+                    thus-gone ones. It is not engaged with the apprehension of any property. Since all attributes are
+                    completely void, it is not engaged with, or disengaged from, anything at all.”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-95"/>
+                <p tid="88">“Mañjuśrī, what is your rationale for saying that worthy ones whose contaminants are exhausted are
+                    not vessels for this teaching?”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-96"/>
+                <p tid="89">“Reverend Śāriputra, I thought, ‘If the worthy one’s attachment, [F.296.b] aversion, and delusion are
+                    exhausted, what kind of vessel is he? What kind of vessel will he become?’ Having considered these
+                    questions, I reply that worthy ones whose contaminants are exhausted are not vessels for this
+                    teaching.”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-97"/>
+                <p tid="90">“Mañjuśrī, for the sake of this teaching I went from temple to temple, from dwelling to dwelling, and
+                    from hermitage to hermitage in search of you. I thought of how wonderful it would be to hear such
+                    profound and eloquent expositions from you. Mañjuśrī, I am insatiable when it comes to the Blessed
+                    One’s teachings or your own.”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-98"/>
+                <p tid="91">“Reverend Śāriputra, you are not sated by Dharma teachings?”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-99"/>
+                <p tid="92">“I am not.”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-100"/>
+                <p tid="93">“Reverend Śāriputra, does the realm of phenomena seek out the Dharma?”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-101"/>
+                <p tid="94">“It does not, Mañjuśrī.” </p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-102"/>
+                <p tid="95">“Since it is not the case that the realm of phenomena is one distinct thing while Venerable Śāriputra
+                    is something other, why is it that Venerable Śāriputra is insatiable in listening to the Dharma? Why
+                    do I say this? Reverend Śāriputra, it is because the realm of phenomena does not seek the Dharma. If
+                    it did seek, then it would be something that could be sated. However, since it does not seek, it is
+                    not sated.” </p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-103"/>
+                <p tid="96">“Mañjuśrī, apart from the Thus-Gone One, where else will you find someone like me to listen to the
+                    Dharma?”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-104"/>
+                <p tid="97">“Reverend Śāriputra, do you believe that you, Śāriputra, will not enter parinirvāṇa?” </p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-105"/>
+                <p tid="98">“Yes, I do.”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-106"/>
+                <p tid="99">“Why do you believe this?”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-107"/>
+                <p tid="100">“I believe this thinking that, since no phenomenon is established, I too will not attain
+                    parinirvāṇa.”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-108"/>
+                <p tid="101">“Reverend Śāriputra, do you believe that for you there is no death, transmigration, and rebirth?”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-109"/>
+                <p tid="102">“Yes, I do.”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-110"/>
+                <p tid="103">“Why do you believe this?”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-111"/>
+                <p tid="104">“I believe this because I am included within the realm of phenomena, and in the realm of phenomena
+                    death, transmigration, and birth do not exist.”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-112"/>
+                <p tid="105">“Reverend Śāriputra, do you believe that a worthy one whose contaminants have been exhausted is
+                    ignorant?” [F.297.a]</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-113"/>
+                <p tid="106">“Yes.”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-114"/>
+                <p tid="107">“Why do you believe this?”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-115"/>
+                <p tid="108">“Since knowledge and ignorance are equivalent, a worthy one whose contaminants have been exhausted is
+                    ignorant. In this way, ignorance and knowledge are inexhaustible, and therefore they are void. That
+                    being the case, it is because of not conceptualizing ignorance and consciousness that I believe that
+                    a worthy one whose contaminants have been exhausted is ignorant.”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-116"/>
+                <p tid="109">“Reverend Śāriputra, do you believe that worthy ones whose contaminants have been exhausted are
+                    devoid of knowledge?” </p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-117"/>
+                <p tid="110">“Yes, I do.”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-118"/>
+                <p tid="111">“Why do you believe this?”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-119"/>
+                <p tid="112">“All phenomena are devoid of any actual essence. Because of this I believe that worthy ones whose
+                    contaminants have been exhausted are devoid of knowledge.”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-120"/>
+                <p tid="113">“Reverend Śāriputra, do you believe that worthy ones whose contaminants are exhausted are not
+                    liberated?”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-121"/>
+                <p tid="114">“Yes, I do.”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-122"/>
+                <p tid="115">“Why do you believe that?”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-123"/>
+                <p tid="116">“I believe this because emotional defilements do not exist. From what is one liberated if defilements
+                    do not exist?”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-124"/>
+                <p tid="117">“Reverend Śāriputra, do you believe that the prior thus-gone ones did not appear and did not enter
+                    parinirvāṇa?”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-125"/>
+                <p tid="118">“Yes, I do.”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-126"/>
+                <p tid="119">“Why do you believe this?”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-127"/>
+                <p tid="120">“In the inconceivable realm, Mañjuśrī, there is no birth. Thus, how could what is unborn disappear or
+                    pass into parinirvāṇa? That is why I believe it.”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-128"/>
+                <p tid="121">“Reverend Śāriputra, do you believe that all buddhas are one?”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-129"/>
+                <p tid="122">“Yes, I do.”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-130"/>
+                <p tid="123">“Why do you believe this?”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-131"/>
+                <p tid="124">“Mañjuśrī, it is because there are no distinctions in the realm of phenomena that I believe in this
+                    way.”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-132"/>
+                <p tid="125">“Reverend Śāriputra, do you believe that all buddha fields are a single buddha field?”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-133"/>
+                <p tid="126">“Yes, I do.”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-134"/>
+                <p tid="127">“Why do you believe this?”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-135"/>
+                <p tid="128">“Mañjuśrī, since all buddha fields are the field of the inexhaustible, I believe in this way.”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-136"/>
+                <p tid="129">“Reverend Śāriputra, do you believe that no phenomenon can be known, abandoned, actualized, [F.297.b]
+                    and cultivated?”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-137"/>
+                <p tid="130">“Yes, I do.”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-138"/>
+                <p tid="131">“Why do you believe this?”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-139"/>
+                <p tid="132">“Essentially, Mañjuśrī, no essence is known. Naturally, no nature is relinquished, actualized,
+                    cultivated, produced, ended, adopted, or rejected. That limit is nonabiding. That is how I believe
+                    this.”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-140"/>
+                <p tid="133">“Reverend Śāriputra, do you believe that the realm of phenomena is a field without aggregates, that
+                    there is no arising or ceasing of any phenomena, and that there are no phenomena whatsoever that are
+                    present as aggregates?”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-141"/>
+                <p tid="134">“Yes, I do.”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-142"/>
+                <p tid="135">“Why do you believe this?”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-143"/>
+                <p tid="136">“Mañjuśrī, I do not apprehend any phenomena arising, ceasing, or present as aggregates, and so I
+                    believe in this way.”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-144"/>
+                <p tid="137">“Reverend Śāriputra, do you believe that insight is the realm of phenomena, and that the realm of
+                    phenomena is insight, and that therefore the so-called <distinct>realm of phenomena</distinct> is
+                    also called <distinct>a worthy one</distinct>?”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-145"/>
+                <p tid="138">“Yes, I do.”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-146"/>
+                <p tid="139">“Why do you believe this?”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-147"/>
+                <p tid="140">“Mañjuśrī, the state of a worthy one comes about through the insight that leads to realization.
+                    Accordingly, as this amounts to knowledge of the realm of phenomena, that knowledge is not
+                    epitomized by attachment, aversion, or delusion, and the Worthy One is therefore no other than the
+                    realm of phenomena. Thus, I believe in this way.”<note place="end" xml:id="UT22084-051-006-148"> The translation of this
+                        paragraph is tentative.</note>
+                </p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-149"/>
+                <p tid="141">“Reverend Śāriputra, do you believe all phenomena are equal to the Buddha, the great leader?”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-150"/>
+                <p tid="142">“Yes, I do.”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-151"/>
+                <p tid="143">“Why do you believe this?”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-152"/>
+                <p tid="144">“Mañjuśrī, I believe this because the Blessed One has fully understood that all phenomena are devoid
+                    of inherent nature.”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-153"/>
+                <p tid="145">“Reverend Śāriputra, it is excellent that you have given answers according to the extent of your
+                    purview. Well done. That is as far as I will question you. Now, return to your place.”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-154"/>
+                <p tid="146">Śāriputra responded, “Mañjuśrī, this is my place, for as long as I live.”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-155"/>
+                <p tid="147">At this point, the Blessed One said to Venerable Śāriputra, [F.298.a] “Śāriputra, noble sons or
+                    daughters who remember, hold, read, or learn this teaching will swiftly become eloquent.”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-156"/>
+                <p tid="148">“So it is, Blessed One. Those who, for the sake of noble sons or daughters, present this Dharma seal
+                    exactly as it has been taught will be paying service to the victors of the past; they should be seen
+                    in this way.”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-157"/>
+                <p tid="149">Then Venerable Śāriputra asked the Blessed One, “What is the name of this Dharma teaching, Blessed
+                    One? How should it be known?”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-158"/>
+                <p tid="150">“To that end, Śāriputra,” said the Blessed One to Venerable Śāriputra, “you may identify this Dharma
+                    teaching as <title xml:lang="en">My Response to Youthful Mañjuśrī’s Question</title>. Identify it
+                    also as <title xml:lang="en">The Realm of Phenomena</title>. You can also identify it as <title xml:lang="en">The Limit of Reality</title> and <title xml:lang="en">Infinite Jewels</title>.
+                    Śāriputra, noble sons and daughters who exert themselves in remembering, holding, reading, learning,
+                    cultivating, and applying this Dharma teaching are like jewels. They will swiftly attain acceptance
+                    that phenomena are unborn and generate roots of virtue in others. Even if they master just a small
+                    portion of the Dharma, they will be able to teach the Dharma elaborately. Their eloquence will be
+                    uninterrupted.”</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-159"/>
+                <p tid="151">When the Blessed One had said this, Youthful Mañjuśrī, Venerable Śāriputra, and the world with its
+                    gods, humans, asuras, and gandharvas rejoiced and praised what the Blessed One had said.</p>
+                <milestone unit="chunk" xml:id="UT22084-051-006-160"/>
+                <trailer tid="152">This completes the noble Great Vehicle sūtra “Infinite Jewels.”</trailer>
+                <div type="colophon" xml:id="UT22084-051-006-colophon">
+                    <head tid="153">Colophon</head>
+                    <milestone unit="chunk" xml:id="UT22084-051-006-161"/>
+                    <p tid="154">This was translated, proofed, and finalized by the Indian scholar Prajñāvarman, the
+                        translator-editor Bandé Yeshé Dé, and others.</p>
+                </div>
+            </div>
+        </body>
+        <back>
+            <div type="notes">
+                <head type="notes" tid="155">Notes</head>
+                <list type="abbreviations">
+                    <head tid="156">Abbreviations</head>
+                    <fix/>
+                    <!-- In this section, markup editors need to move the expanded form of the
+                            abbreviation out of the "abbr" element and put it into the "expan" element. Delete
+                           this comment and the "fix" tag when you are done. If there are no abbreviations in 
+                            this text, then delete this entire "list" element, but leave the "div" and "head"
+                            entitled "notes"-->
+                </list>
+            </div>
+            <div type="listBibl">
+                <head type="listBibl" tid="157">Bibliography</head>
+                <div type="section" xml:id="UT22084-051-006-listBibl-1">
+                    <head type="section" tid="158">Main Section</head>
+                    <bibl xml:id="UT22084-051-006-162">
+                        <title xml:lang="Bo-Ltn">rin po che’i mtha’</title> (<title xml:lang="Sa-Ltn">Ratnakoṭi</title>). Toh 118, Degé Kangyur vol. 51 (mdo sde, ja), folios 290.b–298.a.</bibl>
+                    <bibl xml:id="UT22084-051-006-163">
+                        <title xml:lang="Bo-Ltn">rin po che’i mtha’</title>. bka’ ’gyur (dpe bsdur ma) [Comparative
+                        Edition of the Kangyur], krung go’i bod rig pa zhib ’jug ste gnas kyi bka’ bstan dpe sdur khang
+                        (The Tibetan Tripitaka Collation Bureau of the China Tibetology Research Center). 108 volumes.
+                        Beijing: krung go’i bod rig pa dpe skrun khang (China Tibetology Publishing House), 2006–9, vol.
+                        51, 764–83.</bibl>
+                    <bibl xml:id="UT22084-051-006-164">
+                        <title xml:lang="Bo-Ltn">ting nge ’dzin gyi ’khor lo’i mdo</title> (<title xml:lang="Sa-Ltn">Samādhicakrasūtra</title>). Toh 241, Degé Kangyur, vol. 65 (mdo sde, zha), folios
+                        302.a–303.a.&lt;Reference Toh 0241&gt;</bibl>
+                    <bibl xml:id="UT22084-051-006-165">Ratnākaraśānti. <title xml:lang="Bo-Ltn">dpal dgyes pa’i rdo rje’i dka’ ’grel mu tig phreng
+                            ba</title> (<title xml:lang="Sa-Ltn">Śrīhevajrapañjikānāmamuktikāvalī</title>). Toh 1189,
+                        Degé Tengyur vol. 3 (rgyud, ga), folios 221.a–297.a.&lt;Reference Toh 1189&gt;</bibl>
+                    <bibl xml:id="UT22084-051-006-166">Denkarma (<title xml:lang="Bo-Ltn">pho brang stod thang ldan [/ lhan] dkar gyi chos ’gyur ro
+                            cog gi dkar chag</title>). Degé Tengyur, vol. 206 (sna tshogs, jo), folios
+                        294.b–310.a.</bibl>
+                    <bibl xml:id="UT22084-051-006-167">
+                        <title xml:lang="Sa-Ltn">Mahāvyutpatti</title> (<title xml:lang="Bo-Ltn">bye brag tu rtogs par
+                            byed pa chen po</title>). Toh 4346, Degé Tengyur vol. 204 (sna tshogs, co), folios
+                        1.b–131.a.</bibl>
+                    <bibl xml:id="UT22084-051-006-168">Buswell, Robert E., Jr., and Donald S. Lopez, Jr. <title xml:lang="en">The Princeton
+                            Dictionary of Buddhism</title>. Princeton: Princeton University Press, 2013.</bibl>
+                    <bibl xml:id="UT22084-051-006-169">Edgerton, Franklin. <title xml:lang="en">Buddhist Hybrid Sanskrit Grammar and
+                            Dictionary</title>. Vol. 2, <title xml:lang="en">Dictionary</title>. New Haven: Yale
+                        University Press, 1953.</bibl>
+                    <bibl xml:id="UT22084-051-006-170">Herrmann-Pfandt, Adelheid. <title xml:lang="Input Language">Die lHan kar ma: ein früher
+                            Katalog der ins Tibetische übersetzten buddhistischen Texte</title>. Vienna: Verlag der
+                        österreichischen Akademie der Wissenschaften, 2008.</bibl>
+                    <bibl xml:id="UT22084-051-006-171">Karashima, Seishi. “Who Composed the Mahāyāna Scriptures? The Mahāsāṃghikas and <foreign xml:lang="Sa-Ltn" type="term">Vaitulya</foreign> Scriptures.” <title xml:lang="en">Annual
+                            Report of The International Research Institute for Advanced Buddhology</title> 18 (2015):
+                        113–162.</bibl>
+                    <bibl xml:id="UT22084-051-006-172">Lamotte, Étienne. <title xml:lang="en">The Treatise on the Great Virtue of Wisdom of
+                            Nāgārjuna: Mahāprajñāpāramitāśāstra</title>. Vol. 1. Translated from the French (<title xml:lang="Input Language">Le traité de la grande vertu de sagesse de Nāgārjuna</title>) by
+                        Gelongma Karma Migme Chodron. Unpublished manuscript, 2001.</bibl>
+                    <bibl xml:id="UT22084-051-006-173">Saerji. “The Translations of the Khotanese Monk Śīladharma Preserved in the Tibetan bka’
+                        ’gyur.” <title xml:lang="en">Annual Report of The International Research Institute for Advanced
+                            Buddhology</title> 14 (2011): 185–222.</bibl>
+                    <bibl xml:id="UT22084-051-006-174">Tripathi, Ram Shankar, and Thakur Sain Negi, eds. <title xml:lang="en">Hevajratantram with
+                            Muktāvalī Pañjikā of Mahāpaṇḍitācārya Ratnākaraśānti</title>. Sarnath: Central Institute for
+                        Higher Tibetan Studies, 2001.</bibl>
+                </div>
+            </div>
+            <div type="glossary">
+                <list type="glossary">
+                    <item>
+                        <gloss type="term" xml:id="UT22084-051-006-175">
+                            <term>Translation</term>
+                            <term xml:lang="Bo-Ltn">Tibetan Wylie </term>
+                            <term xml:lang="bo">ཊིབེཏན་ཝཡླིཨེ།</term>
+                            <term xml:lang="Sa-Ltn">Sanskrit</term>
+                            <term type="definition">Definition</term>
+                            <term type="alternative">Alternatives</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-051-006-176">
+                            <term>limit of reality</term>
+                            <term xml:lang="Bo-Ltn">yang dag pa’i mtha’
+                                </term>
+                            <term xml:lang="bo">ཡང་དག་པའི་མཐའ།</term>
+                            <term xml:lang="Sa-Ltn">bhūtakoṭi</term>
+                            <term type="definition">This term has
+                                three meanings: (1) a synonym for the ultimate nature, (2) the experience of the
+                                ultimate nature, and (3) the quiescent state of a worthy one to be avoided by
+                                bodhisattvas. </term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-051-006-177">
+                            <term>composite person</term>
+                            <term xml:lang="Bo-Ltn">’jig tshogs
+                                </term>
+                            <term xml:lang="bo">འཇིག་ཚོགས།</term>
+                            <term xml:lang="Sa-Ltn">satkāya</term>
+                            <term type="definition">The transitory
+                                collection of the five aggregates, the basis for the view of a self or that which
+                                belongs to a self.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-051-006-178">
+                            <term>realm of phenomena</term>
+                            <term xml:lang="Bo-Ltn">chos kyi dbyings
+                                </term>
+                            <term xml:lang="bo">ཆོས་ཀྱི་དབྱིངས།</term>
+                            <term xml:lang="Sa-Ltn">dharmadhātu</term>
+                            <term type="definition">A synonym for
+                                the nature of things.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-051-006-179">
+                            <term>hearer</term>
+                            <term xml:lang="Bo-Ltn">nyan thos </term>
+                            <term xml:lang="bo">ཉན་ཐོས།</term>
+                            <term xml:lang="Sa-Ltn">śrāvaka</term>
+                            <term type="definition">Someone who practices according
+                                to the Vehicle of the Hearers (those who hear the teachings from others), or someone who
+                                has heard the Dharma from the Buddha.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-051-006-180">
+                            <term>solitary buddha </term>
+                            <term xml:lang="Bo-Ltn">rang sangs rgyas
+                                </term>
+                            <term xml:lang="bo">རང་སངས་རྒྱས།</term>
+                            <term xml:lang="Sa-Ltn">pratyekabuddha</term>
+                            <term type="definition">An
+                                individual who, in their last life, attains realization by realizing the nature of
+                                interdependent origination without relying on a spiritual guide.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-051-006-181">
+                            <term>immediate retribution</term>
+                            <term xml:lang="Bo-Ltn">mtshams med pa
+                                </term>
+                            <term xml:lang="bo">མཚམས་མེད་པ།</term>
+                            <term xml:lang="Sa-Ltn">ānantarya</term>
+                            <term type="definition">Describing the
+                                result of committing one of five particularly heinous crimes: (1) killing one’s father,
+                                (2) killing one’s mother, (3) killing a worthy one, (4) maliciously drawing blood from a
+                                buddha, and (5) causing a schism in the sangha.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-051-006-182">
+                            <term>lower realms</term>
+                            <term xml:lang="Bo-Ltn">ngan song </term>
+                            <term xml:lang="bo">ངན་སོང་།</term>
+                            <term xml:lang="Sa-Ltn">durgati</term>
+                            <term type="definition">The states of hell beings,
+                                hungry ghosts, and animals.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-051-006-183">
+                            <term>higher realms</term>
+                            <term xml:lang="Bo-Ltn">mtho ris </term>
+                            <term xml:lang="bo">མཐོ་རིས།</term>
+                            <term xml:lang="Sa-Ltn">svarga</term>
+                            <term type="definition">The states of gods, asuras, and
+                                humans.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-051-006-184">
+                            <term>six classes of beings</term>
+                            <term xml:lang="Bo-Ltn">’gro ba drug
+                                </term>
+                            <term xml:lang="bo">འགྲོ་བ་དྲུག</term>
+                            <term xml:lang="Sa-Ltn">ṣaḍgati</term>
+                            <term type="definition">Gods, asuras,
+                                humans, animals, hungry ghosts, and hell beings.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-051-006-185">
+                            <term>parinirvāṇa</term>
+                            <term xml:lang="Bo-Ltn">yongs su mya ngan las ’das
+                                pa </term>
+                            <term xml:lang="bo">ཡོངས་སུ་མྱ་ངན་ལས་འདས་པ།</term>
+                            <term xml:lang="Sa-Ltn">parinirvāṇa</term>
+                            <term type="definition">The final
+                                state of liberation attained by awakened beings at the time of
+                        death.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-051-006-186">
+                            <term>buddha field</term>
+                            <term xml:lang="Bo-Ltn">sangs rgyas kyi zhing
+                                </term>
+                            <term xml:lang="bo">སངས་རྒྱས་ཀྱི་ཞིང་།</term>
+                            <term xml:lang="Sa-Ltn">buddhakṣetra</term>
+                            <term type="definition">A pure realm
+                                manifested by a buddha or advanced bodhisattva through the power of their great merit
+                                and aspirations.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-051-006-187">
+                            <term>aggregate</term>
+                            <term xml:lang="Bo-Ltn">phung po </term>
+                            <term xml:lang="bo">ཕུང་པོ།</term>
+                            <term xml:lang="Sa-Ltn">skandha</term>
+                            <term type="definition">Here referring to the five
+                                collections of psycho-physical factors that constitute beings: form, feelings,
+                                perceptions, formations, and consciousness.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-051-006-188">
+                            <term>gandharva</term>
+                            <term xml:lang="Bo-Ltn">dri za </term>
+                            <term xml:lang="bo">དྲི་ཟ།</term>
+                            <term xml:lang="Sa-Ltn">gandharva</term>
+                            <term type="definition">In Indian religious mythology,
+                                a class of nonhuman beings who often appear as semidivine celestial musicians. The same
+                                term is used in certain Buddhist texts in a quite different sense: to denote a
+                                disembodied sentient being or anguished spirit in the intermediate state between two
+                                lives, seeking the conditions for a new birth as a human or other kind of embodied
+                                being.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-051-006-189">
+                            <term>contaminant</term>
+                            <term xml:lang="Bo-Ltn">zag pa </term>
+                            <term xml:lang="bo">ཟག་པ།</term>
+                            <term xml:lang="Sa-Ltn">asrava</term>
+                            <term type="definition">A term of Jain origin meaning
+                                “inflows.” It refers to uncontrolled thoughts resulting from the influence of sensory
+                                objects and thus being sullied or defiled. It is also defined as “outflows,” hence the
+                                    Tibetan <foreign xml:lang="Bo-Ltn" type="term">zag pa</foreign> (“leaks”), as the
+                                mind is “flowing out” toward the sensory objects.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-051-006-190">
+                            <term>emotional defilement</term>
+                            <term xml:lang="Bo-Ltn">nyon mongs
+                                </term>
+                            <term xml:lang="bo">ཉོན་མོངས།</term>
+                            <term xml:lang="Sa-Ltn">kleśa</term>
+                            <term type="definition">In Buddhism, <foreign xml:lang="Sa-Ltn" type="term">kleśa</foreign> refers to any disturbing and
+                                destructive mental state that causes suffering and continued existence in saṃsāra. In
+                                this regard, the three basic kleśas are ignorance, attachment, and aversion (or hatred).
+                                In terms of etymology, the primary meaning is “defilement.” This is reflected in the
+                                middle-Indic <foreign xml:lang="Input Language" type="term">kileśa</foreign> and Pali
+                                    <foreign xml:lang="Input Language" type="term">kilesa</foreign>, which mean “to
+                                soil, stain, defile.” The meaning “affliction” is a secondary meaning that derives from
+                                a more general (non-Buddhist) classical understanding based on the verbal root <foreign xml:lang="Input Language" type="term">kliś</foreign> (“afflict, torment, cause
+                                pain”). Both senses are noted by later Buddhist commentators.</term>
+                            <term type="alternative">defilement</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-051-006-191">
+                            <term>pollution</term>
+                            <term xml:lang="Bo-Ltn">kun nas nyon mongs
+                                </term>
+                            <term xml:lang="bo">ཀུན་ནས་ཉོན་མོངས།</term>
+                            <term xml:lang="Sa-Ltn">saṃkleśa</term>
+                            <term type="definition">A term meaning
+                                defilement, impurity, and pollution and broadly referring to cognitive and emotional
+                                factors that disturb and obscure the mind. It is often paired with its opposite <foreign xml:lang="Sa-Ltn" type="term">vyavadāna</foreign>, meaning
+                            “purification.”</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-051-006-192">
+                            <term>purification</term>
+                            <term xml:lang="Bo-Ltn">rnam par byang ba
+                                </term>
+                            <term xml:lang="bo">རྣམ་པར་བྱང་བ།</term>
+                            <term xml:lang="Sa-Ltn">vyavadāna</term>
+                            <term type="definition">A term meaning
+                                purity or purification and broadly referring to the process of purifying the mind of
+                                what obscures it in order to attain spiritual awakening. It is often paired with its
+                                opposite <foreign xml:lang="Sa-Ltn" type="term">saṃkleśa</foreign>, meaning
+                                “pollution.”</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-051-006-193">
+                            <term>worthy one</term>
+                            <term xml:lang="Bo-Ltn">dgra bcom pa </term>
+                            <term xml:lang="bo">དགྲ་བཅོམ་པ།</term>
+                            <term xml:lang="Sa-Ltn">arhat</term>
+                            <term type="definition">One who has accomplished the final
+                                fruition of the path of the hearers and is liberated from saṃsāra.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-051-006-194">
+                            <term>powers</term>
+                            <term xml:lang="Bo-Ltn">stobs </term>
+                            <term xml:lang="bo">སྟོབས།</term>
+                            <term xml:lang="Sa-Ltn">bala</term>
+                            <term type="definition">Refers to five or ten powers. As
+                                five they are faith, diligence, mindfulness, absorption, and insight. The ten powers are
+                                the ten knowledges of a buddha or bodhisattva: (1) the knowledge of what is possible and
+                                not possible, (2) the knowledge of the ripening of karma, (3) the knowledge of the
+                                variety of aspirations, (4) the knowledge of the variety of natures, (5) the knowledge
+                                of the different levels of capabilities, (6) the knowledge of the destinations of all
+                                paths, (7) the knowledge of various states of meditation, (8) the knowledge of
+                                remembering previous lives, (9) the knowledge of deaths and rebirths, and (10) the
+                                knowledge of the cessation of defilements.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-051-006-195">
+                            <term>fearlessnesses</term>
+                            <term xml:lang="Bo-Ltn">mi ’jigs pa </term>
+                            <term xml:lang="bo">མི་འཇིགས་པ།</term>
+                            <term xml:lang="Sa-Ltn">vaiśāradya</term>
+                            <term type="definition">The four fearlessness are
+                                fearlessness in declaring that one has (1) awakened, (2) ceased all illusions, (3)
+                                taught the obstacles to awakening, and (4) shown the way to
+                        liberation.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-051-006-196">
+                            <term>unique attributes</term>
+                            <term xml:lang="Bo-Ltn">ma ’dres pa
+                                </term>
+                            <term xml:lang="bo">མ་འདྲེས་པ།</term>
+                            <term xml:lang="Sa-Ltn">āveṇika</term>
+                            <term type="definition">Eighteen special
+                                features of a buddha’s behavior, realization, activity, and wisdom that are not shared
+                                by other beings. They are as follows: (1) he never makes a mistake, (2) he is never
+                                boisterous, (3) he never forgets, (4) his concentration never falters, (5) he has no
+                                notion of distinctness, (6) his equanimity is not due to lack of consideration, (7) his
+                                motivation never falters, (8) his endeavor never fails, (9) his mindfulness never
+                                falters, (10) he never abandons his concentration, (11) his insight never decreases,
+                                (12) his liberation never fails, (13) all his physical actions are preceded and followed
+                                by wisdom (<foreign xml:lang="Sa-Ltn" type="term">jñāna</foreign>), (14) all his verbal
+                                actions are preceded and followed by wisdom, (15) all his mental actions are preceded
+                                and followed by wisdom, (16) his wisdom and vision perceive the past without any
+                                attachment or hindrance, (17) his wisdom and vision perceive the future without any
+                                attachment or hindrance, and (18) his wisdom and vision perceive the present without any
+                                attachment or hindrance.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-051-006-197">
+                            <term>asura</term>
+                            <term xml:lang="Bo-Ltn">lha ma yin </term>
+                            <term xml:lang="bo">ལྷ་མ་ཡིན།</term>
+                            <term xml:lang="Sa-Ltn">asura</term>
+                            <term type="definition">One of the six classes of beings.
+                                The asuras are engendered and dominated by envy, ambition, and hostility and are
+                                metaphorically described as being incessantly embroiled in disputes with the gods. They
+                                are frequently portrayed in brahmanical mythology as having a disruptive effect on
+                                cosmological and social harmony.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-051-006-198">
+                            <term>hungry ghost</term>
+                            <term xml:lang="Bo-Ltn">yi dags </term>
+                            <term xml:lang="bo">ཡི་དགས།</term>
+                            <term xml:lang="Sa-Ltn">preta</term>
+                            <term type="definition">One of the six classes of beings.
+                                In the Buddhist tradition they are particularly known to suffer from hunger and thirst
+                                and the inability to acquire sustenance.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="person" xml:id="UT22084-051-006-199">
+                            <term>Translation</term>
+                            <term xml:lang="Bo-Ltn">Tibetan Wylie
+                                </term>
+                            <term xml:lang="bo">ཊིབེཏན་ཝཡླིཨེ།</term>
+                            <term xml:lang="Sa-Ltn">Sanskrit</term>
+                            <term type="definition">Definition</term>
+                            <term type="alternative">Alternatives</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="person" xml:id="UT22084-051-006-200">
+                            <term>Mañjuśrī </term>
+                            <term xml:lang="Bo-Ltn">’jam dpal </term>
+                            <term xml:lang="bo">འཇམ་དཔལ།</term>
+                            <term xml:lang="Sa-Ltn">Mañjuśrī</term>
+                            <term type="definition">A well-known bodhisattva. One
+                                of the eight “close sons” of the Buddha, the embodiment of wisdom.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="person" xml:id="UT22084-051-006-201">
+                            <term>Ānanda </term>
+                            <term xml:lang="Bo-Ltn">kun dga’ bo </term>
+                            <term xml:lang="bo">ཀུན་དགའ་བོ།</term>
+                            <term xml:lang="Sa-Ltn">Ānanda </term>
+                            <term type="definition">The Buddha’s cousin and
+                                principal attendant.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="person" xml:id="UT22084-051-006-202">
+                            <term>Śāriputra</term>
+                            <term xml:lang="Bo-Ltn">shA ri’i bu </term>
+                            <term xml:lang="bo">ཤཱ་རིའི་བུ།</term>
+                            <term xml:lang="Sa-Ltn">Śāriputra</term>
+                            <term type="definition">One of the foremost disciples
+                                of the Buddha, also a principal compiler of the Abhidharma.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="person" xml:id="UT22084-051-006-203">
+                            <term>Prajñāvarman</term>
+                            <term xml:lang="Bo-Ltn">pradz+nyA barma
+                                </term>
+                            <term xml:lang="bo">པྲཛྙཱ་བརྨ།</term>
+                            <term xml:lang="Sa-Ltn">Prajñāvarman</term>
+                            <term type="definition">An Indian
+                                Bengali paṇḍita resident in Tibet during the late eighth and early ninth centuries.
+                                Arriving in Tibet on an invitation from the Tibetan king, he assisted in the translation
+                                of numerous canonical scriptures. He is also the author of a few philosophical
+                                commentaries contained in the Tibetan Tengyur ( <foreign xml:lang="Bo-Ltn" type="term">bstan ’gyur</foreign>) collection.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="person" xml:id="UT22084-051-006-204">
+                            <term>Yeshé Dé </term>
+                            <term xml:lang="Bo-Ltn">ye shes sde </term>
+                            <term xml:lang="bo">ཡེ་ཤེས་སྡེ།</term>
+                            <term xml:lang="Sa-Ltn"/>
+                            <term type="definition">A prolific Tibetan translator active during
+                                the late eighth and early ninth centuries.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="place" xml:id="UT22084-051-006-205">
+                            <term>Translation</term>
+                            <term xml:lang="Bo-Ltn">Tibetan Wylie </term>
+                            <term xml:lang="bo">ཊིབེཏན་ཝཡླིཨེ།</term>
+                            <term xml:lang="Sa-Ltn">Sanskrit</term>
+                            <term type="definition">Definition</term>
+                            <term type="alternative">Alternatives</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="place" xml:id="UT22084-051-006-206">
+                            <term>Rājagṛha</term>
+                            <term xml:lang="Bo-Ltn">rgyal po’i khab </term>
+                            <term xml:lang="bo">རྒྱལ་པོའི་ཁབ།</term>
+                            <term xml:lang="Sa-Ltn">Rājagṛha</term>
+                            <term type="definition">The capital of the ancient
+                                kingdom of Magadha.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="place" xml:id="UT22084-051-006-207">
+                            <term>Vulture Peak Mountain</term>
+                            <term xml:lang="Bo-Ltn">bya rgod phung
+                                po’i ri </term>
+                            <term xml:lang="bo">བྱ་རྒོད་ཕུང་པོའི་རི།</term>
+                            <term xml:lang="Sa-Ltn">Gṛdhrakūṭa parvata </term>
+                            <term type="definition">The mountain where many Great Vehicle teachings were delivered by the Buddha
+                                Śākyamuni.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="place" xml:id="UT22084-051-006-208">
+                            <term>Ganges</term>
+                            <term xml:lang="Bo-Ltn">gang gA </term>
+                            <term xml:lang="bo">གང་གཱ།</term>
+                            <term xml:lang="Sa-Ltn">Gaṅgā</term>
+                            <term type="definition">Generally considered the most
+                                sacred river in India.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="place" xml:id="UT22084-051-006-209">
+                            <term>Sītā</term>
+                            <term xml:lang="Bo-Ltn">si ta </term>
+                            <term xml:lang="bo">སི་ཏ།</term>
+                            <term xml:lang="Sa-Ltn">Sītā</term>
+                            <term type="definition">Sacred river in
+                            India.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="place" xml:id="UT22084-051-006-210">
+                            <term>Yamunā</term>
+                            <term xml:lang="Bo-Ltn">ya mu na </term>
+                            <term xml:lang="bo">ཡ་མུ་ན།</term>
+                            <term xml:lang="Sa-Ltn">Yamunā</term>
+                            <term type="definition">Sacred tributary river of the
+                                Ganges in Northern India.</term>
+                        </gloss>
+                    </item>
+                </list>
+            </div>
+        </back>
+    </text>
+</TEI>
