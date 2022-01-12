@@ -37,7 +37,7 @@
                     Rich</editor>
             </titleStmt>
             <editionStmt>
-                <edition>v 1.0.3 <date>2021</date>
+                <edition>v 1.0.4 <date>2021</date>
                 </edition>
             </editionStmt>
             <publicationStmt status="1">
@@ -74,7 +74,7 @@
                 </bibl>
             </sourceDesc>
             <notesStmt>
-                <note type="lastUpdated" date-time="2021-02-09T14:31:47.599Z" user="admin">09/02/2021 14:31:47</note>
+                <note type="lastUpdated" date-time="2022-01-12T08:13:22.244Z" user="admin">12/01/2022 08:13:22</note>
                 <note type="updated" update="text-version" value="v 0.0.1" date-time="2019-12-20T12:56:48.575Z" user="admin">Automated version
                     increment</note>
                 <note type="updated" update="translation-status" value="2.d" date-time="2020-01-28T06:25:36.907Z" user="mike">2.d</note>
@@ -100,7 +100,8 @@
     <note type="updated" update="text-version" value="1.0.1" date-time="2020-11-23T13:57:44.998Z" user="admin">Auto (TEI migration 2.0.0)</note>
     <note type="updated" update="text-version" value="1.0.2" date-time="2020-12-11T14:06:50.919Z" user="admin">Auto (TEI migration 2.1.5)</note>
     <note type="updated" update="text-version" value="1.0.3" date-time="2021-01-26T22:00:19.598Z" user="celso">corrected a mislabed foreign tags</note>
-            </notesStmt>
+    <note type="updated" update="text-version" value="1.0.4" date-time="2022-01-12T08:13:17.648Z" user="andre">Fixed glossary entry for "preta/gdon" (due to discrepancy between Tib and Skt source)</note>
+</notesStmt>
         </fileDesc>
     </teiHeader>
     <text>
@@ -1743,7 +1744,7 @@
                         maṇḍala of the great king of the three realms whose instructions are
                         perfect; who instills fear in all the bhūtas, nāgas, yakṣas, and
                         vidyādharas; who removes all obstacles, afflictions, and pain; and who kills
-                        all the pretas, vetālas, and pūtanas dwelling in charnel grounds—the secret
+                        all the pretas,<note place="end" xml:id="UT22084-095-002-2104">Instead of “<term type="ignore">pretas</term>”, the Tib. says <foreign xml:lang="Sa-Ltn">gdon</foreign>, namely the graha class of <term type="ignore">spirits</term>.</note> vetālas, and pūtanas dwelling in charnel grounds—the secret
                         maṇḍala that accomplishes
                         everything.” <!--<ref cRef="6.4" type="sanskrit"/>-->
                     </p>
@@ -9173,8 +9174,8 @@
                     <item>
                         <gloss type="term" xml:id="UT22084-095-002-989">
                             <term>preta</term>
-                            <term xml:lang="Bo-Ltn">gdon </term>
-                            <term xml:lang="bo">གདོན།</term>
+                            <term xml:lang="Bo-Ltn" status="verified">yi dags</term>
+                            <term xml:lang="bo">ཡི་དགས།</term>
                             <term xml:lang="Sa-Ltn">preta</term>
                             <term type="definition">One of the lower order of spirits with
                                 grotesquely misshapen bodies who endlessly suffer from hunger and
@@ -9277,19 +9278,19 @@
                         </gloss>
                     </item>
                     <item>
-                        <gloss type="term" xml:id="UT22084-095-002-1000">
-                            <term>yakṣa</term>
-                            <term xml:lang="Bo-Ltn">gnod ’byin </term>
-                            <term xml:lang="bo">གནོད་འབྱིན།</term>
+                        <gloss xml:id="UT22084-095-002-1000" type="term" mode="match">
+                            <term>Yakṣa</term>
+                            <term xml:lang="Bo-Ltn">gnod sbyin</term>
+                            <term xml:lang="bo">གནོད་སྦྱིན།</term>
                             <term xml:lang="Sa-Ltn">yakṣa</term>
                             <term type="definition">A class of nonhuman beings.</term>
                         </gloss>
                     </item>
                     <item>
-                        <gloss type="term" xml:id="UT22084-095-002-1001">
+                        <gloss xml:id="UT22084-095-002-1001" type="term" mode="match">
                             <term>yakṣiṇī</term>
-                            <term xml:lang="Bo-Ltn">gnod sbyin ma </term>
-                            <term xml:lang="bo">གནོད་སྦྱིན་མ།</term>
+                            <term xml:lang="Bo-Ltn" status="verified">gnod sbyin mo</term>
+                            <term xml:lang="bo">གནོད་སྦྱིན་མོ།</term>
                             <term xml:lang="Sa-Ltn">yakṣiṇī</term>
                             <term type="definition">Female yakṣa.</term>
                         </gloss>
