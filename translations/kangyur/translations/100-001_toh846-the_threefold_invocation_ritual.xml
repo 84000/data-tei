@@ -19,7 +19,7 @@
                 <consultant role="dharmaMaster" ref="contributors.xml#person-40">Chökyi Nyima Rinpoche</consultant>
             </titleStmt>
             <editionStmt>
-                <edition>v 1.1.13 <date>2021</date>
+                <edition>v 1.1.15 <date>2021</date>
                 </edition>
             </editionStmt>
             <publicationStmt status="1">
@@ -54,7 +54,7 @@
                 </bibl>
             </sourceDesc>
             <notesStmt>
-                <note type="lastUpdated" date-time="2021-01-26T19:56:25.787Z" user="admin">26/01/2021 19:56:25</note>
+                <note type="lastUpdated" date-time="2022-03-08T16:10:43.526Z" user="admin">08/03/2022 16:10:43</note>
 
                 <note type="updated" update="text-version" value="v 0.1.0" date-time="2019-10-10T08:04:08.457Z" user="andreas">v 0.1.0</note>
                 <note type="updated" update="translation-status" value="2.d" date-time="2019-12-19T07:26:19.082Z" user="andreas">2.d</note>
@@ -82,6 +82,7 @@
     <note type="updated" update="text-version" value="1.1.11" date-time="2020-12-09T15:17:39.429Z" user="andre">fixed some glossary entries and made them work.</note>
     <note type="updated" update="text-version" value="1.1.12" date-time="2020-12-11T14:06:50.919Z" user="admin">Auto (TEI migration 2.1.5)</note>
     <note type="updated" update="text-version" value="1.1.13" date-time="2021-01-26T19:56:22.323Z" user="celso">Updated IAST diacritics for name Gaṅgā</note>
+    <note type="updated" update="text-version" value="1.1.14" date-time="2021-09-24T13:56:27.255Z" user="celso">"Compendium of Incantations" to "Compendium of Dhāraṇīs"</note>    <note type="updated" update="text-version" value="1.1.15" date-time="2022-03-08T16:10:39.535Z" user="andre">Definition of kumbhāṇḍa replaced</note>
             </notesStmt>
         </fileDesc>
     </teiHeader>
@@ -111,7 +112,7 @@
                 <head type="introduction" tid="5">Introduction</head>
                 <div type="section" xml:id="UT22084-100-001-introduction-1">
                     <milestone unit="chunk" xml:id="UT22084-100-001-160"/>
-                    <p tid="49">The Compendium of Incantations (<foreign xml:lang="Bo-Ltn">gzungs ’dus</foreign>) 
+                    <p tid="49">The Compendium of Dhāraṇīs (<foreign xml:lang="Bo-Ltn">gzungs ’dus</foreign>) 
                         opens with the present work, <title xml:lang="en">The Threefold
                             Invocation Ritual</title>. A very large majority of the 250 texts in this two-volume section 
                         appended to the Degé Kangyur are simply duplicates of texts in other sections, but this 
@@ -197,7 +198,7 @@
                     <milestone unit="chunk" xml:id="UT22084-100-001-9"/>
                     <p tid="11">This translation is based on the version of <title xml:lang="en">The
                             Threefold Invocation Ritual</title> found at the opening of the
-                        Compendium of Incantations section in the Degé Kangyur in consultation with the
+                        Compendium of Dhāraṇīs section in the Degé Kangyur in consultation with the
                         text as it appears in the Comparative Edition (<title xml:lang="Bo-Ltn">dpe
                             bsdur ma</title>) of the Kangyur. The
                         prose section that is derived from the <title xml:lang="Sa-Ltn">Lokottaraparivarta</title> was checked against the Tibetan
@@ -561,23 +562,21 @@
                         </gloss>
                     </item>
                     <item>
-                        <gloss type="term" xml:id="UT22084-100-001-61">
-                            <term>kinnara</term>
-                            <term xml:lang="Bo-Ltn">mi ’am ci </term>
-                            <term xml:lang="bo">མི་འམ་ཅི།</term>
+                        <gloss xml:id="UT22084-100-001-61" type="term" mode="match">
+                            <term>Kinnara</term>
+                            <term xml:lang="Bo-Ltn" status="verified">mi’am ci</term>
+                            <term xml:lang="bo">མིའམ་ཅི།</term>
                             <term xml:lang="Sa-Ltn">kinnara</term>
-                            <term type="definition">A class of semi-divine beings that are
-                                half-human, half-animal. Typically they have animal heads atop human
-                                bodies. The term literally means “Is that human?”</term>
+                            <term type="definition">A class of semi-divine beings that are half-human, half-animal. Typically they have animal heads atop human bodies. The term literally means “Is that human?”</term>
                         </gloss>
                     </item>
                     <item>
-                        <gloss type="term" xml:id="UT22084-100-001-62">
+                        <gloss xml:id="UT22084-100-001-62" type="term" mode="match">
                             <term>kumbhāṇḍa</term>
-                            <term xml:lang="Bo-Ltn">grul bum </term>
+                            <term xml:lang="Bo-Ltn">grul bum</term>
                             <term xml:lang="bo">གྲུལ་བུམ།</term>
                             <term xml:lang="Sa-Ltn">kumbhāṇḍa</term>
-                            <term type="definition">Vampire demon; a type of yakṣa.</term>
+                            <term type="definition">—</term>
                         </gloss>
                     </item>
                     <item>
@@ -732,9 +731,9 @@
                         </gloss>
                     </item>
                     <item>
-                        <gloss type="person" xml:id="UT22084-100-001-77">
+                        <gloss xml:id="UT22084-100-001-77" type="person" mode="match">
                             <term>Gaṅgā</term>
-                            <term xml:lang="Bo-Ltn">gang gA </term>
+                            <term xml:lang="Bo-Ltn" status="verified">gang gA</term>
                             <term xml:lang="bo">གང་གཱ།</term>
                             <term xml:lang="Sa-Ltn">Gaṅgā</term>
                             <term type="definition">A river goddess.</term>
@@ -1329,14 +1328,12 @@
                         </gloss>
                     </item>
                     <item>
-                        <gloss type="person" xml:id="UT22084-100-001-138">
+                        <gloss xml:id="UT22084-100-001-138" type="term" mode="match">
                             <term>vidyāmantra</term>
-                            <term xml:lang="Bo-Ltn">rig pa </term>
+                            <term xml:lang="Bo-Ltn">rig pa</term>
                             <term xml:lang="bo">རིག་པ།</term>
                             <term xml:lang="Sa-Ltn">vidyāmantra</term>
-                            <term type="definition">A type of incantation or spell used to
-                                accomplish a ritual goal. This can be associated with either
-                                ordinary attainments or those whose goal is awakening.</term>
+                            <term type="definition">A type of incantation or spell used to accomplish a ritual goal. This can be associated with either ordinary attainments or those whose goal is awakening.</term>
                         </gloss>
                     </item>
                     <item>
