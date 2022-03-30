@@ -37,7 +37,7 @@
                     Rich</editor>
             </titleStmt>
             <editionStmt>
-                <edition>v 1.0.4 <date>2021</date>
+                <edition>v 1.0.5 <date>2022</date>
                 </edition>
             </editionStmt>
             <publicationStmt status="1">
@@ -74,7 +74,7 @@
                 </bibl>
             </sourceDesc>
             <notesStmt>
-                <note type="lastUpdated" date-time="2022-01-12T08:13:22.244Z" user="admin">12/01/2022 08:13:22</note>
+                <note type="lastUpdated" date-time="2022-03-30T21:03:24.075Z" user="admin">30/03/2022 21:03:24</note>
                 <note type="updated" update="text-version" value="v 0.0.1" date-time="2019-12-20T12:56:48.575Z" user="admin">Automated version
                     increment</note>
                 <note type="updated" update="translation-status" value="2.d" date-time="2020-01-28T06:25:36.907Z" user="mike">2.d</note>
@@ -101,6 +101,7 @@
     <note type="updated" update="text-version" value="1.0.2" date-time="2020-12-11T14:06:50.919Z" user="admin">Auto (TEI migration 2.1.5)</note>
     <note type="updated" update="text-version" value="1.0.3" date-time="2021-01-26T22:00:19.598Z" user="celso">corrected a mislabed foreign tags</note>
     <note type="updated" update="text-version" value="1.0.4" date-time="2022-01-12T08:13:17.648Z" user="andre">Fixed glossary entry for "preta/gdon" (due to discrepancy between Tib and Skt source)</note>
+    <note type="updated" update="text-version" value="1.0.5" date-time="2022-03-30T21:03:20.166Z" user="celso">Blocked glossary linking in Sanskrit appendix, and made minor caching adjustments. Removed unused glossary entry</note>
 </notesStmt>
         </fileDesc>
     </teiHeader>
@@ -5737,7 +5738,7 @@
                         numbering of folios between {G9v} and {G11v}, as the precise location of
                         folio breaks could not be ascertained. </p>
                 </div>
-                <div type="chapter" xml:id="UT22084-095-002-appendix-1">
+                <div rend="ignoreGlossary" type="chapter" xml:id="UT22084-095-002-appendix-1">
                     <head type="chapter" tid="825">Chapter A1</head>
                     <milestone unit="chunk" xml:id="UT22084-095-002-1139"/>
                     <p tid="826">{G1v} {A1v} namo vajrasattvāya ||</p>
@@ -6087,7 +6088,7 @@
                     <milestone unit="chunk" xml:id="UT22084-095-002-1229"/>
                     <p tid="906"> aṣṭau mahābhūtarājñī samāptā || </p>
                 </div>
-                <div type="chapter" xml:id="UT22084-095-002-appendix-2">
+                <div rend="ignoreGlossary" type="chapter" xml:id="UT22084-095-002-appendix-2">
                     <head type="chapter" tid="907">Chapter A2</head>
                     <milestone unit="chunk" xml:id="UT22084-095-002-1230"/>
                     <p tid="908"> atha śmaśānapraveśinī mahābhūtinī utthāya bhagavataḥ pādau
@@ -6213,7 +6214,7 @@
                                 <distinct>om.</distinct> G </note>
                         bhūtinīmudrālakṣaṇavidhivistaratantraḥ || </p>
                 </div>
-                <div type="chapter" xml:id="UT22084-095-002-appendix-3">
+                <div rend="ignoreGlossary" type="chapter" xml:id="UT22084-095-002-appendix-3">
                     <head type="chapter" tid="933">Chapter A3</head>
                     <milestone unit="chunk" xml:id="UT22084-095-002-1268"/>
                     <p tid="934"> {A11r} athāto bhūtaḍāmaramahātantrarāje<note place="end" xml:id="UT22084-095-002-1269"> °tantrarāje] A; °tantre G
@@ -6261,7 +6262,7 @@
                     <milestone unit="chunk" xml:id="UT22084-095-002-1282"/>
                     <p tid="941"> bhūtaḍāmaramahātantre karmapiśācīvidhivistaratantraḥ || || </p>
                 </div>
-                <div type="chapter" xml:id="UT22084-095-002-appendix-4">
+                <div rend="ignoreGlossary" type="chapter" xml:id="UT22084-095-002-appendix-4">
                     <head type="chapter" tid="942">Chapter A4</head>
                     <milestone unit="chunk" xml:id="UT22084-095-002-1283"/>
                     <p tid="943"> {A12r} athātaś caṇḍakātyāyanī mahāraudrabhūtinī utthāya tasmin
@@ -6386,7 +6387,7 @@
                                 <distinct>conj.</distinct>; °vidhibhistaraha­tantraḥ A;
                             siddhipradāyikā G </note> || </p>
                 </div>
-                <div type="chapter" xml:id="UT22084-095-002-appendix-5">
+                <div rend="ignoreGlossary" type="chapter" xml:id="UT22084-095-002-appendix-5">
                     <head type="chapter" tid="965">Chapter A5</head>
                     <milestone unit="chunk" xml:id="UT22084-095-002-1326"/>
                     <p tid="966"> athātaḥ paramarahasyātirahasya<note place="end" xml:id="UT22084-095-002-1327"> °rahasya°] A; °rahasyaṃ G
@@ -6481,7 +6482,7 @@
                     <milestone unit="chunk" xml:id="UT22084-095-002-1348"/>
                     <p tid="976"> ity aṣṭakātyāyanīsādhanavidhivistaratantraḥ || </p>
                 </div>
-                <div type="chapter" xml:id="UT22084-095-002-appendix-6">
+                <div rend="ignoreGlossary" type="chapter" xml:id="UT22084-095-002-appendix-6">
                     <head type="chapter" tid="977">Chapter A6</head>
                     <milestone unit="chunk" xml:id="UT22084-095-002-1349"/>
                     <p tid="978"> {G7v} athāto bhūtaḍāmaramahātantrarāje ceṭīceṭakānāṃ sādhanaṃ
@@ -6528,7 +6529,7 @@
                     <milestone unit="chunk" xml:id="UT22084-095-002-1358"/>
                     <p tid="986"> mantramudrāsādhanavidhivistaratantraḥ || </p>
                 </div>
-                <div type="chapter" xml:id="UT22084-095-002-appendix-7">
+                <div rend="ignoreGlossary" type="chapter" xml:id="UT22084-095-002-appendix-7">
                     <head type="chapter" tid="987">Chapter A7</head>
                     <milestone unit="chunk" xml:id="UT22084-095-002-1359"/>
                     <p tid="988"> athātaḥ saṃpravakṣyāmi mahāmaṇḍalam uttamam | </p>
@@ -6703,7 +6704,7 @@
                     <p tid="1043"> bhūtaḍāmaramahātantrarāje mahāmaṇḍalavidhivistaratantraḥ
                         samāptaḥ || || </p>
                 </div>
-                <div type="chapter" xml:id="UT22084-095-002-appendix-8">
+                <div rend="ignoreGlossary" type="chapter" xml:id="UT22084-095-002-appendix-8">
                     <head type="chapter" tid="1044">Chapter A8</head>
                     <milestone unit="chunk" xml:id="UT22084-095-002-1400"/>
                     <p tid="1045"> athāto bhūtaḍāmaramahātantrarāje vidhivistaro bhavati | </p>
@@ -6872,7 +6873,7 @@
                     <p tid="1091"> bhūtaḍāmaramahātantrarāje siddhimaṇḍalavidhivistaratantraḥ
                         samāptaḥ || </p>
                 </div>
-                <div type="chapter" xml:id="UT22084-095-002-appendix-9">
+                <div rend="ignoreGlossary" type="chapter" xml:id="UT22084-095-002-appendix-9">
                     <head type="chapter" tid="1092">Chapter A9 </head>
                     <milestone unit="chunk" xml:id="UT22084-095-002-1434"/>
                     <p tid="1093">
@@ -7029,7 +7030,7 @@
                     <p tid="1137"> iti bhūtaḍāmaratantrarāje
                         mahāmaṇḍalamudrālakṣaṇavidhivistaratantraḥ || </p>
                 </div>
-                <div type="chapter" xml:id="UT22084-095-002-appendix-10">
+                <div rend="ignoreGlossary" type="chapter" xml:id="UT22084-095-002-appendix-10">
                     <head type="chapter" tid="1138">Chapter A10</head>
                     <milestone unit="chunk" xml:id="UT22084-095-002-1474"/>
                     <p tid="1139"> atha bāhyatṛtīyapuṭasya hṛdayamantravidhivistaro bhavati | </p>
@@ -7170,7 +7171,7 @@
                     <p tid="1177"> bhūtaḍāmaramahātantrarāje siddhimahāmaṇḍalasya sarvadevatāyā
                         mudrāvidhivistaratantraḥ || </p>
                 </div>
-                <div type="chapter" xml:id="UT22084-095-002-appendix-11">
+                <div rend="ignoreGlossary" type="chapter" xml:id="UT22084-095-002-appendix-11">
                     <head type="chapter" tid="1178">Chapter A11</head>
                     <milestone unit="chunk" xml:id="UT22084-095-002-1510"/>
                     <p tid="1179"> {A25r} atha khalu vajrapāṇir mahākrodhādhipatir idam uvāca | </p>
@@ -7234,7 +7235,7 @@
                     <p tid="1190"> bhūtaḍāmaramahātantrarāje prathamasādhanavidhivistaratantraḥ
                         samaptaḥ || </p>
                 </div>
-                <div type="chapter" xml:id="UT22084-095-002-appendix-12">
+                <div rend="ignoreGlossary" type="chapter" xml:id="UT22084-095-002-appendix-12">
                     <head type="chapter" tid="1191">Chapter A12</head>
                     <milestone unit="chunk" xml:id="UT22084-095-002-1525"/>
                     <p tid="1192"> namaś caṇḍavajradharāya || </p>
@@ -7335,7 +7336,7 @@
                     <p tid="1207"> bhūtaḍāmaramahātantrarāje
                         kiṃkarasādhanavidhivistaratantraḥ || </p>
                 </div>
-                <div type="chapter" xml:id="UT22084-095-002-appendix-13">
+                <div rend="ignoreGlossary" type="chapter" xml:id="UT22084-095-002-appendix-13">
                     <head type="chapter" tid="1208">Chapter A13</head>
                     <milestone unit="chunk" xml:id="UT22084-095-002-1562"/>
                     <p tid="1209"> athāto ´parimitabalaparākramasya traidhātukanamaskṛtasya
@@ -7441,7 +7442,7 @@
                                 om.</distinct> G </note> ceṭīsādhanavidhivistaratantraḥ<note place="end" xml:id="UT22084-095-002-1595"> °tantraḥ] A;
                                 <distinct>om.</distinct> G </note> || </p>
                 </div>
-                <div type="chapter" xml:id="UT22084-095-002-appendix-14">
+                <div rend="ignoreGlossary" type="chapter" xml:id="UT22084-095-002-appendix-14">
                     <head type="chapter" tid="1228">Chapter A14</head>
                     <milestone unit="chunk" xml:id="UT22084-095-002-1596"/>
                     <p tid="1229"> athātaḥ paramarahasyātirahasyabhūtaḍāmaramahātantrarāje<note place="end" xml:id="UT22084-095-002-1597"> °rāje] A;
@@ -7561,7 +7562,7 @@
                     <p tid="1251"> bhūtaḍāmaramahātantrarāje aṣṭau
                         bhūtinīsādhanavidhivistaratantraḥ || </p>
                 </div>
-                <div type="chapter" xml:id="UT22084-095-002-appendix-15">
+                <div rend="ignoreGlossary" type="chapter" xml:id="UT22084-095-002-appendix-15">
                     <head type="chapter" tid="1252">Chapter A15</head>
                     <milestone unit="chunk" xml:id="UT22084-095-002-1632"/>
                     <p tid="1253"> namaḥ śrīvajradharamahābalaparākramasya || </p>
@@ -7715,7 +7716,7 @@
                     <milestone unit="chunk" xml:id="UT22084-095-002-1672"/>
                     <p tid="1287"> apsaraḥsādhanavidhivistaratantraḥ || || </p>
                 </div>
-                <div type="chapter" xml:id="UT22084-095-002-appendix-16">
+                <div rend="ignoreGlossary" type="chapter" xml:id="UT22084-095-002-appendix-16">
                     <head type="chapter" tid="1288">Chapter A16</head>
                     <milestone unit="chunk" xml:id="UT22084-095-002-1673"/>
                     <p tid="1289"> {A35r} atha khalu vajrapāṇir guhyakādhipatir idam uvāca | </p>
@@ -7803,7 +7804,7 @@
                                 om.</distinct> G </note> aṣṭau apsaraḥsasādhanavidhivistaratantraḥ
                          || </p>
                 </div>
-                <div type="chapter" xml:id="UT22084-095-002-appendix-17">
+                <div rend="ignoreGlossary" type="chapter" xml:id="UT22084-095-002-appendix-17">
                     <head type="chapter" tid="1313">Chapter A17</head>
                     <milestone unit="chunk" xml:id="UT22084-095-002-1703"/>
                     <p tid="1314"> atha sarvayakṣiṇī utthāya {A36r} śrīvajradharasya pādau
@@ -7948,7 +7949,7 @@
                     <p tid="1339"> bhūtaḍāmaramahātantrarāje {A39r}
                         yakṣiṇīsādhanavidhivistaratantraḥ || </p>
                 </div>
-                <div type="chapter" xml:id="UT22084-095-002-appendix-18">
+                <div rend="ignoreGlossary" type="chapter" xml:id="UT22084-095-002-appendix-18">
                     <head type="chapter" tid="1340">Chapter A18</head>
                     <milestone unit="chunk" xml:id="UT22084-095-002-1746"/>
                     <p tid="1341"> atha vajrapāṇir guhyakādhipatir idam uvāca | </p>
@@ -8013,7 +8014,7 @@
                     <p tid="1355"> bhūtaḍāmaramahātantrarāje
                         yakṣiṇīsādhanavidhivistaratantraḥ || </p>
                 </div>
-                <div type="chapter" xml:id="UT22084-095-002-appendix-19">
+                <div rend="ignoreGlossary" type="chapter" xml:id="UT22084-095-002-appendix-19">
                     <head type="chapter" tid="1356">Chapter A19</head>
                     <milestone unit="chunk" xml:id="UT22084-095-002-1763"/>
                     <p tid="1357"> atha {A40r} nāgarājñī utthāya tasmin parṣanmaṇḍale<note place="end" xml:id="UT22084-095-002-1764"> parṣanmaṇḍale] A;
@@ -8189,7 +8190,7 @@
                     <p tid="1387"> bhūtaḍāmaramahātantrarāje
                         nāginīsadhanavidhivistaratantraḥ || </p>
                 </div>
-                <div type="chapter" xml:id="UT22084-095-002-appendix-20">
+                <div rend="ignoreGlossary" type="chapter" xml:id="UT22084-095-002-appendix-20">
                     <head type="chapter" tid="1388">Chapter A20</head>
                     <milestone unit="chunk" xml:id="UT22084-095-002-1818"/>
                     <p tid="1389"> atha khalu vajrapāṇir guhyakādhipatir kruddho<note place="end" xml:id="UT22084-095-002-1819"> kruddho] A; baddho G </note>
@@ -8211,7 +8212,7 @@
                     <p tid="1394"> bhūtaḍāmaramahātantrarāje nāginīsādhanavidhivistaratantraḥ
                         samāptaḥ || </p>
                 </div>
-                <div type="chapter" xml:id="UT22084-095-002-appendix-21">
+                <div rend="ignoreGlossary" type="chapter" xml:id="UT22084-095-002-appendix-21">
                     <head type="chapter" tid="1395">Chapter A21</head>
                     <milestone unit="chunk" xml:id="UT22084-095-002-1826"/>
                     <p tid="1396"> atha parṣanmaṇḍale kiṃnararājñy utthāya bhagavataḥ
@@ -8284,7 +8285,7 @@
                     <p tid="1410"> bhūtaḍāmaramahātantrarāje
                         kiṃnarīsādhanavidhivistaratantraḥ || </p>
                 </div>
-                <div type="chapter" xml:id="UT22084-095-002-appendix-22">
+                <div rend="ignoreGlossary" type="chapter" xml:id="UT22084-095-002-appendix-22">
                     <head type="chapter" tid="1411">Chapter A22</head>
                     <milestone unit="chunk" xml:id="UT22084-095-002-1846"/>
                     <p tid="1412"> atha khalu vajrapāṇir guhyakādhipatir maheśvaram etad avocat | </p>
@@ -8536,7 +8537,7 @@
                     <p tid="1480"> bhūtaḍāmaramahātantrarāje {A46v}
                         krodharājamaṇḍalavidhivistaratantraḥ || </p>
                 </div>
-                <div type="chapter" xml:id="UT22084-095-002-appendix-23">
+                <div rend="ignoreGlossary" type="chapter" xml:id="UT22084-095-002-appendix-23">
                     <head type="chapter" tid="1481">Chapter A23</head>
                     <milestone unit="chunk" xml:id="UT22084-095-002-1925"/>
                     <p tid="1482"> athāto bhūtaḍāmaramahātantrarāje<note place="end" xml:id="UT22084-095-002-1926">
@@ -8674,7 +8675,7 @@
                     <p tid="1507"> iti bhūtaḍāmaramahātantrarāje
                         kiṃkarasādhanavidhivistaratantraḥ || </p>
                 </div>
-                <div type="chapter" xml:id="UT22084-095-002-appendix-24">
+                <div rend="ignoreGlossary" type="chapter" xml:id="UT22084-095-002-appendix-24">
                     <head type="chapter" tid="1508">Chapter A24</head>
                     <milestone unit="chunk" xml:id="UT22084-095-002-1951"/>
                     <p tid="1509"> athātaḥ saṃpravakṣyāmi nānāsiddhisādhanam ācāryāṇāṃ hitārthāya
@@ -8705,7 +8706,7 @@
                     <p tid="1513"> bhūtaḍāmaramahātantrarāje
                         siddhisādhanavidhivistaratantraḥ || </p>
                 </div>
-                <div type="chapter" xml:id="UT22084-095-002-appendix-25">
+                <div rend="ignoreGlossary" type="chapter" xml:id="UT22084-095-002-appendix-25">
                     <head type="chapter" tid="1514">Chapter A25</head>
                     <milestone unit="chunk" xml:id="UT22084-095-002-1964"/>
                     <p tid="1515"> athāto bhūtaḍāmaramahātantrarāje aṣṭānāṃ bhūtānāṃ mudrālakṣaṇaṃ
@@ -8748,7 +8749,7 @@
                     <p tid="1524"> bhūtaḍāmaramahātantrarāje aṣṭānāṃ bhūtānāṃ mudrālakṣaṇaṃ
                         samāptam || </p>
                 </div>
-                <div type="chapter" xml:id="UT22084-095-002-appendix-26">
+                <div rend="ignoreGlossary" type="chapter" xml:id="UT22084-095-002-appendix-26">
                     <head type="chapter" tid="1525">Chapter A26</head>
                     <milestone unit="chunk" xml:id="UT22084-095-002-1975"/>
                     <p tid="1526"> atha khalu vajrapāṇir guhyakādhipatir bhagavantam etad avocat | </p>
@@ -8794,7 +8795,7 @@
                     <milestone unit="chunk" xml:id="UT22084-095-002-1987"/>
                     <p tid="1535"> bhūtaḍāmaramahātantrarāje sādhanavidhivistaraḥ || </p>
                 </div>
-                <div type="chapter" xml:id="UT22084-095-002-appendix-27">
+                <div rend="ignoreGlossary" type="chapter" xml:id="UT22084-095-002-appendix-27">
                     <head type="chapter" tid="1536">Chapter A27</head>
                     <milestone unit="chunk" xml:id="UT22084-095-002-1988"/>
                     <p tid="1537"> {A51v} devasaṃbhūtabhūtam<note place="end" xml:id="UT22084-095-002-1989"> deva­saṃbhūta­bhūtam] A;
@@ -8819,7 +8820,7 @@
                     <milestone unit="chunk" xml:id="UT22084-095-002-1994"/>
                     <p tid="1541"> bhūtaḍāmaramahātantrarāje balividhivistaratantraḥ || </p>
                 </div>
-                <div type="chapter" xml:id="UT22084-095-002-appendix-28">
+                <div rend="ignoreGlossary" type="chapter" xml:id="UT22084-095-002-appendix-28">
                     <head type="chapter" tid="1542">Chapter A28</head>
                     <milestone unit="chunk" xml:id="UT22084-095-002-1995"/>
                     <p rend="mantra" tid="1543"> śmaśāne devakuleṣu parvatāgre catuṣpathe {A52r}
@@ -10219,7 +10220,7 @@
                                 spirits.</term>
                         </gloss>
                     </item>
-                    <item>
+                    <!--<item> CW: Removed, the one instance at 8.7 F.247.a has not been rendered as a name but "vajra anger" and like terms are not linked to glossary
                         <gloss type="person" xml:id="UT22084-095-002-1099">
                             <term>Vajrakrodha</term>
                             <term xml:lang="Bo-Ltn">badzra kro dha </term>
@@ -10228,7 +10229,7 @@
                             <term type="definition">‟Vajra Anger,” one of the epithets of
                                 Bhūtaḍāmara.</term>
                         </gloss>
-                    </item>
+                    </item>-->
                     <item>
                         <gloss type="person" xml:id="UT22084-095-002-1100">
                             <term>Vajrapāṇi</term>
