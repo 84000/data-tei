@@ -31,7 +31,7 @@
         <editor role="finalReviewer" ref="contributors.xml#person-74">Ryan Damron</editor>
       </titleStmt>
       <editionStmt>
-                <edition>v 1.0.10 <date>2021</date>
+                <edition>v 1.0.11 <date>2022</date>
                 </edition>
             </editionStmt>
       <publicationStmt status="1">
@@ -63,7 +63,7 @@
         </bibl>
       </sourceDesc>
       <notesStmt>
-        <note type="lastUpdated" date-time="2022-03-11T19:11:05.268Z" user="admin">11/03/2022 19:11:05</note>
+        <note type="lastUpdated" date-time="2022-06-03T01:27:20.119Z" user="admin">03/06/2022 01:27:20</note>
 
         <note type="updated" update="text-version" value="0.0.1" date-time="2020-03-06T14:17:10.983Z" user="line-tofte">0.0.1</note>
         <note type="updated" update="translation-status" value="2.h" date-time="2020-11-24T14:27:25.922Z" user="line-tofte">2.h</note>
@@ -116,6 +116,7 @@
 
     <note type="updated" update="text-version" value="1.0.9" date-time="2021-12-16T20:10:59.584Z" user="celso">Applied some corrections to Skt. according to Wiesiek's review</note>
     <note type="updated" update="text-version" value="1.0.10" date-time="2022-03-11T19:11:01.087Z" user="celso">adjusted glossary linking according to new hyphen rules</note>
+    <note type="updated" update="text-version" value="1.0.11" date-time="2022-06-03T01:27:16.207Z" user="celso">activated pending link toh 10</note>
 </notesStmt>
     </fileDesc>
   </teiHeader>
@@ -617,11 +618,11 @@
 
           <bibl xml:id="UT22084-060-001-123">
                         <title xml:lang="Bo-Ltn">byams pas zhus</title> (<title xml:lang="Sa-Ltn">Maitreya­paripṛcchā</title>).
-            Toh 149, Degé Kangyur vol. 57 (mdo sde, pa), folios 330.b–331.a. English translation in Kīrtimukha Translation Group, (2021).</bibl>
+            Toh 149, Degé Kangyur vol. 57 (mdo sde, pa), folios 330.b–331.a. English translation in Kīrtimukha Translation Group (2021).</bibl>
 
           <bibl xml:id="UT22084-060-001-120">
-                        <title xml:lang="Bo-Ltn">shes rab kyi pha rol tu phyin pa khri brgyad stong pa</title> (<title xml:lang="Sa-Ltn">Āṣṭā­daśa­sāhasrikā­prajñā­pāramitā</title>). Toh 10<ref rend="pending" target="https://read.84000.co/translation/toh10.html" inst="add bibl in 2nd sources"/>, Degé Kangyur vol. 29 (khri brgyad, ka), folios
-            1.b–300.a; vol. 30 (khri brgyad, kha), folios 1.b–206.a; vol. 31 (khri brgyad, ga), folios 1.b–206.a.</bibl>
+                        <title xml:lang="Bo-Ltn">shes rab kyi pha rol tu phyin pa khri brgyad stong pa</title> (<title xml:lang="Sa-Ltn">Āṣṭā­daśa­sāhasrikā­prajñā­pāramitā</title>). Toh 10, Degé Kangyur vol. 29 (khri brgyad, ka), folios
+            1.b–300.a; vol. 30 (khri brgyad, kha), folios 1.b–206.a; vol. 31 (khri brgyad, ga), folios 1.b–206.a. English translation in Sparham (2022).</bibl>
 
 
           <bibl xml:id="UT22084-060-001-121">
@@ -693,6 +694,11 @@
             Delhi: Motilal Banarsidass, 2012.</bibl>
           <bibl xml:id="UT22084-060-001-142">Silk, Jonathan A. “Review Article: Buddhist Sūtras in Sanskrit from the Potala.” <title xml:lang="en">Indo-Iranian Journal</title> 56 (2013): 61–87. </bibl>
           <bibl xml:id="UT22084-060-001-143">Skilling, Peter. “Symbols on the body, feet, and hands of a Buddha, Part I—Lists.” <title xml:lang="en">Journal of the Siam Society</title> 80 (1992): 67–79.</bibl>
+          <bibl xml:id="UT22084-060-001-314">Sparham, Gareth, trans. <title xml:lang="en">
+                            <ref target="https://read.84000.co/translation/toh10.html">The Transcendent Perfection of
+            Wisdom in Eighteen Thousand Lines</ref>
+                        </title> (<title xml:lang="Sa-Ltn">Aṣṭa­daśa­sāhasrikā­prajñā­pāramitā</title>, Toh 10). 84000: Translating the Words of the
+            Buddha, 2022.</bibl>
         </div>
       </div>
       <div type="glossary">
@@ -1161,8 +1167,7 @@
               <term xml:lang="Sa-Ltn">aśītyānuvyañjana</term>
               <term type="definition">A set of eighty bodily characteristics and insignia borne by both buddhas and cakravartins. For a complete list
                 see the <title xml:lang="Sa-Ltn">Aṣṭā­daśa­sāhasrikā­prajñā­pāramitā Sūtra</title> (<title xml:lang="en">The Perfection of Wisdom in
-                  Eighteen Thousand Lines</title>), vol. 31, folios 79.b–82.a.<ref rend="pending" target="https://read.84000.co/translation/toh10.html" inst="79.b"/>
-                            </term>
+                  Eighteen Thousand Lines</title>), <ref target="https://read.84000.co/translation/toh10.html#UT22084-029-001-5663">73.93</ref><!--vol. 31, folios 79.b–82.a-->.</term>
             </gloss>
           </item>
           <item>
@@ -1486,21 +1491,16 @@
             </gloss>
           </item>
           <item>
-            <gloss type="term" xml:id="UT22084-060-001-217">
-              <term>kalaviṅka bird</term>
-              <term xml:lang="Bo-Ltn" status="verified">ka la ping ka </term>
-              <term xml:lang="bo">ཀ་ལ་པིང་ཀ</term>
-              <term xml:lang="Bo-Ltn" status="verified">ka la bing+ka </term>
-              <term xml:lang="bo">ཀ་ལ་བིངྐ།</term>
-              <term xml:lang="Sa-Ltn">kalaviṅka</term>
-              <term type="definition">An Indian bird renowned for its beautiful song. There is some uncertainty regarding the identity of the
-                kalaviṅka, as some dictionaries declare it to be a type of Indian cuckoo (probably <foreign xml:lang="la" type="term">Eudynamys
-                  scolopacea</foreign>, also known as the asian koel) or a red and green sparrow (possibly <foreign type="term" xml:lang="la">Amandava
-                  amandava</foreign>, also known as the red avadavat). Within the Buddhist sūtras, the bird is usually linked to its pleasing or
-                striking voice. In some cases, it has also taken on mythical characteristics, being described as part human, part bird. Here it is the
-                sixteenth of the eighty designs on the palms and soles of the Tathāgata.</term>
-            </gloss>
-          </item>
+                        <gloss xml:id="UT22084-060-001-217" type="term" mode="match">
+                            <term>kalaviṅka bird</term>
+                            <term xml:lang="Bo-Ltn" status="verified">ka la ping ka</term>
+                            <term xml:lang="bo">ཀ་ལ་པིང་ཀ</term>
+                            <term xml:lang="Bo-Ltn" status="verified">ka la bing+ka</term>
+                            <term xml:lang="bo">ཀ་ལ་བིངྐ།</term>
+                            <term xml:lang="Sa-Ltn">kalaviṅka</term>
+                            <term type="definition">An Indian bird renowned for its beautiful song. There is some uncertainty regarding the identity of the kalaviṅka, as some dictionaries declare it to be a type of Indian cuckoo (probably <foreign xml:lang="la" type="term">Eudynamys scolopacea</foreign>, also known as the asian koel) or a red and green sparrow (possibly <foreign type="term" xml:lang="la">Amandava amandava</foreign>, also known as the red avadavat). Within the Buddhist sūtras, the bird is usually linked to its pleasing or striking voice. In some cases, it has also taken on mythical characteristics, being described as part human, part bird. Here it is the sixteenth of the eighty designs on the palms and soles of the Tathāgata.</term>
+                        </gloss>
+                    </item>
           <item>
             <gloss type="term" xml:id="UT22084-060-001-218">
               <term>lance</term>
@@ -2016,15 +2016,14 @@
             </gloss>
           </item>
           <item>
-            <gloss type="term" xml:id="UT22084-060-001-263">
-              <term>the ability to reach the hands to the knees without bending</term>
-              <term xml:lang="Bo-Ltn" status="verified">ma btud par phyag pus mo’i lha nga la reg pa </term>
-              <term xml:lang="bo">མ་བཏུད་པར་ཕྱག་པུས་མོའི་ལྷ་ང་ལ་རེག་པ།</term>
-              <term xml:lang="Sa-Ltn">anavanata­pralamba­bāhu</term>
-              <term type="definition">Listed in <title xml:lang="en">The Question of Mañjuśrī</title> as the twenty-sixth of the thirty-two signs of a
-                great being.</term>
-            </gloss>
-          </item>
+                        <gloss xml:id="UT22084-060-001-263" type="term" mode="match">
+                            <term>ability to reach the hands to the knees without bending</term>
+                            <term xml:lang="Bo-Ltn" status="verified">ma btud par phyag pus mo’i lha nga la reg pa</term>
+                            <term xml:lang="bo">མ་བཏུད་པར་ཕྱག་པུས་མོའི་ལྷ་ང་ལ་རེག་པ།</term>
+                            <term xml:lang="Sa-Ltn">anavanata­pralamba­bāhu</term>
+                            <term type="definition">Listed in <title xml:lang="en">The Question of Mañjuśrī</title> as the twenty-sixth of the thirty-two signs of a great being.</term>
+                        </gloss>
+                    </item>
           <item>
             <gloss type="term" xml:id="UT22084-060-001-264">
               <term>the voice of Brahmā</term>
