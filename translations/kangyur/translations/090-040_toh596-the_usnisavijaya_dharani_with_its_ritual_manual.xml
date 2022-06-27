@@ -1,0 +1,781 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schema/current/translation.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="mainTitle" xml:lang="en">The Uṣṇīṣavijayā Dhāraṇī with Its Ritual
+          Manual</title>
+        <title type="mainTitle" xml:lang="Sa-Ltn">Uṣṇīṣavijayā­dhāraṇī kalpasahitā</title>
+        <title type="mainTitle" xml:lang="Bo-Ltn">gtsug tor rnam rgyal gyi gzungs rtog pa dang bcas
+          pa</title>
+        <title type="mainTitle" xml:lang="bo">གཙུག་ཏོར་རྣམ་རྒྱལ་གྱི་གཟུངས་རྟོག་པ་དང་བཅས་པ།</title>
+        <title type="longTitle" xml:lang="Bo-Ltn">de bzhin gshegs pa thams cad kyi gtsug tor rnam
+          par rgyal ba zhes bya ba’i gzung rtog pa dang bcas pa</title>
+        <title type="longTitle" xml:lang="bo">དེ་བཞིན་གཤེགས་པ་ཐམས་ཅད་ཀྱི་གཙུག་ཏོར་རྣམ་པར་རྒྱལ་བ་ཞེས་བྱ་བའི་གཟུང་རྟོག་པ་དང་བཅས་པ།</title>
+        <title type="longTitle" xml:lang="en">Crown Victory of All Tathāgatas: The Uṣṇīṣavijayā
+          Dhāraṇī with Its Ritual Manual</title>
+        <title type="longTitle" xml:lang="Sa-Ltn">Sarvatathāgata­uṣṇīṣavijayā­nāma­dhāraṇī
+          kalpasahitā</title>
+        <title type="otherTitle" xml:lang="Bo-Ltn">de bzhin gshegs pa thams cad kyi gtsug tor rnam
+          par rgyal ba zhes bya ba’i gzungs rtog pa dang bcas pa/</title>
+        <title type="otherTitle" xml:lang="zh">佛說一切如來烏瑟膩沙最勝總持經</title>
+        <author role="translatorMain" ref="eft:team-55">Translated by Catherine Dalton<lb/>under the
+          patronage and supervision of 84000: Translating the Words of the Buddha</author>
+        <author role="translatorEng" ref="eft:person-61">Catherine Dalton</author>
+        <editor role="projectEditor" ref="eft:person-274">Adam Krug</editor>
+        <editor role="copyEditor" ref="eft:person-92">Laura Goetz</editor>
+        <editor role="projectEditor" ref="eft:person-50">Andreas Doctor</editor>
+        <editor role="TEImarkupEditor" ref="eft:person-391">Sameer Dhingra</editor>
+        <sponsor ref="sponsors.xml#sponsor-2">May, George, Li Kai, Lillian Gu</sponsor>
+      </titleStmt>
+      <editionStmt>
+                <edition>v 0.0.2 <date>2022</date>
+                </edition>
+            </editionStmt>
+      <publicationStmt status="2">
+                <publisher>
+                    <name>84000: Translating the Words of the Buddha</name> is a global non-profit
+          initiative to translate all the Buddha’s words into modern languages, and to make them
+          available to everyone. </publisher>
+                <availability>
+          <licence>
+            <graphic url="http://i.creativecommons.org/l/by-nc-nd/2.0/88x31.png"/>
+            <p>This work is provided under the protection of a Creative Commons CC BY-NC-ND
+              (Attribution - Non-commercial - No-derivatives) 3.0 copyright. It may be copied or
+              printed for fair use, but only with full attribution, and not for commercial advantage
+              or personal compensation. For full details, see the Creative Commons license.</p>
+          </licence>
+        </availability>
+                <idno xml:id="UT22084-090-040"/>
+                <note>An early mistake in the assigning of UT numbers within the 84000 project means that
+          these ids diverge slightly from the standard logic.</note>
+                <date>2022-06-06</date>
+            </publicationStmt>
+      <sourceDesc>
+        <bibl key="toh596" type="text">
+          <ref>Toh 596</ref>
+          <biblScope>Degé Kangyur, vol. 90 (rgyud, pha), folios 242.a–243.b</biblScope>
+          <location work="UT4CZ5369" count-pages="4">
+            <volume number="90" start-page="481" end-page="484"/>
+          </location>
+          <idno parent-id="O1JC114941JC21415" work="http://read.84000.co/sections"/>
+          <idno source-id="O1JC114941JC12329" work="W22084"/>
+        </bibl>
+      </sourceDesc>
+      <notesStmt>
+        <note type="lastUpdated" date-time="2022-06-27T06:37:06.571Z" user="admin">27/06/2022 06:37:06</note>
+        <note type="updated" update="text-version" value="v 0.0.1" date-time="2019-12-20T12:56:48.575Z" user="admin">Automated version increment</note>
+
+        <note type="updated" update="translation-status" value="4" date-time="2021-12-10T12:57:42.226Z" user="line-tofte">4</note>
+
+        <note type="updated" update="text-version" value="0.0.2" date-time="2021-12-10T12:57:42.226Z" user="line-tofte">Auto
+          (update-publication-status)</note>
+
+        <note type="updated" update="translation-status" value="3" date-time="2021-12-16T08:23:23.847Z" user="line-tofte">3</note>
+
+        <note type="updated" update="text-version" value="0.0.3" date-time="2021-12-16T08:23:23.847Z" user="line-tofte">Auto
+          (update-publication-status)</note>
+
+        <note type="updated" update="text-version" value="0.0.4" date-time="2021-12-16T08:23:47.605Z" user="line-tofte">Auto (update-contributors)</note>
+        <note type="updated" update="translation-status" value="2.h" date-time="2022-02-18T13:28:03.959Z" user="line-tofte">2.h</note>
+        <note type="updated" update="text-version" value="0.0.5" date-time="2022-02-18T13:28:03.959Z" user="line-tofte">Auto
+          (update-publication-status)</note>
+        <note type="updated" update="translation-status" value="2.g" date-time="2022-04-11T10:50:18.639Z" user="line-tofte">2.g</note>
+        <note type="updated" update="text-version" value="0.0.6" date-time="2022-04-11T10:50:18.639Z" user="line-tofte">Auto
+          (update-publication-status)</note>
+        <note type="updated" update="text-version" value="0.0.7" date-time="2022-04-11T10:50:44.811Z" user="line-tofte">Auto (update-contributors)</note>
+        <note type="updated" update="translation-status" value="2.f" date-time="2022-05-19T10:09:28.005Z" user="line-tofte">2.f</note>
+        <note type="updated" update="text-version" value="0.0.8" date-time="2022-05-19T10:09:28.005Z" user="line-tofte">Auto
+          (update-publication-status)</note>
+        <note type="updated" update="translation-status" value="2.e" date-time="2022-05-19T10:09:58.423Z" user="line-tofte">2.e</note>
+        <note type="updated" update="text-version" value="0.0.9" date-time="2022-05-19T10:09:58.423Z" user="line-tofte">Auto
+          (update-publication-status)</note>
+        <note type="updated" update="text-version" value="0.0.10" date-time="2022-05-19T10:10:34.489Z" user="line-tofte">Auto (update-contributors)</note>
+        <note type="updated" update="translation-status" value="2.d" date-time="2022-06-01T07:23:09.361Z" user="line-tofte">2.d</note>
+        <note type="updated" update="text-version" value="0.0.11" date-time="2022-06-01T07:23:09.361Z" user="line-tofte">Auto
+          (update-publication-status)</note>
+        <note type="updated" update="translation-status" value="2.b" date-time="2022-06-03T08:53:37.283Z" user="line-tofte">2.b</note>
+        <note type="updated" update="text-version" value="0.0.12" date-time="2022-06-03T08:53:37.283Z" user="line-tofte">Auto
+          (update-publication-status)</note>
+        <note type="updated" update="text-version" value="0.0.13" date-time="2022-06-03T08:54:47.479Z" user="line-tofte">Auto (update-contributors)</note>
+          <note type="updated" update="translation-status" value="2" date-time="2022-06-27T06:36:58.92Z" user="line-tofte">2</note>
+          <note type="updated" update="text-version" value="0.0.2" date-time="2022-06-27T06:36:58.92Z" user="line-tofte">Auto (update-publication-status)</note>
+      </notesStmt>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <!--Note the "Contents" outline from the Word DOCX has not been included in the script. If the 
+                    Outline to the text is quite complex, it is recommended that you paste the outlined contents from the DOCX here as a comment for
+                    markup's reference. The actual table of contents will be generated in the Reading Room by the parser.-->
+    <front>
+      <div type="summary">
+        <head type="summary" tid="1">Summary</head>
+        <milestone unit="chunk" xml:id="UT22084-090-040-1"/>
+        <p tid="2">
+                    <title xml:lang="en">The Uṣṇīṣavijayā Dhāraṇī with Its Ritual Manual</title> is a
+          short work in which the Buddha Amitāyus teaches the <foreign xml:lang="Sa-Ltn" type="term">uṣṇīṣavijayā</foreign> dhāraṇī along with its benefits and a short rite for its
+          recitation.</p>
+      </div>
+      <div type="acknowledgment">
+        <head type="acknowledgment" tid="3">Acknowledgements</head>
+        <milestone unit="chunk" xml:id="UT22084-090-040-2"/>
+        <p tid="4">This text was translated by Catherine Dalton, who also wrote the
+          introduction.</p>
+        <p tid="5">The translation was completed under the patronage and supervision of 84000:
+          Translating the Words of the Buddha.</p>
+        <milestone unit="chunk" xml:id="UT22084-090-040-4"/>
+        <lb/>
+        <p tid="7">The generous sponsorship of May, George, Likai and Lillian Gu, which helped make
+          the work on this translation possible, is most gratefully acknowledged.</p>
+      </div>
+      <div type="introduction">
+        <head type="introduction" tid="8">Introduction</head>
+        <div type="section" xml:id="UT22084-090-040-introduction-1">
+          <milestone unit="chunk" xml:id="UT22084-090-040-6"/>
+          <p tid="10">
+                        <title xml:lang="en">The Uṣṇīṣavijayā Dhāraṇī with Its Ritual Manual</title>
+            opens in Sukhāvatī, where the Blessed One Amitāyus is residing. Amitāyus addresses the
+            bodhisattva Avalokiteśvara, informing him that there are beings who suffer from
+            illnesses and short lifespans, and introduces the <foreign xml:lang="Sa-Ltn" type="term">uṣṇīṣavijayā</foreign> dhāraṇī as a remedy for such painful circumstances.
+            Avalokiteśvara immediately asks Amitāyus to pronounce the dhāraṇī, which the Tathāgata
+            does from within a state of samādhi. </p>
+          <milestone unit="chunk" xml:id="UT22084-090-040-7"/>
+          <p tid="11">After he pronounces the dhāraṇī, Amitāyus explains the benefits of reciting
+            the dhāraṇī for oneself, as well as for animals, as a method for purification and for
+            cutting off lower rebirths.</p>
+          <milestone unit="chunk" xml:id="UT22084-090-040-8"/>
+          <p tid="12">This text belongs to a group of <foreign xml:lang="Sa-Ltn" type="term">uṣṇīṣavijayā</foreign> dhāraṇī texts and related ritual manuals (<foreign xml:lang="Sa-Ltn" type="term">kalpas</foreign>) found clustered together in the
+            Kriyātantra section of the Tibetan Kangyurs. The present text is the shortest of four
+            short dhāraṇī texts—three of which have the same title—that present the <foreign xml:lang="Sa-Ltn" type="term">uṣṇīṣavijayā</foreign> dhāraṇī with its ritual manual
+              (<foreign xml:lang="Sa-Ltn" type="term">kalpa</foreign>).<note place="end" xml:id="UT22084-090-040-9"> The four texts are <ref target="https://read.84000.co/translation/toh594.html">Toh 594</ref>, <ref target="https://read.84000.co/translation/toh595.html">595</ref>, 596 (the present
+              text), and <ref target="https://read.84000.co/translation/toh598.html">598</ref>. The
+              first three share the same title: <title xml:lang="en">Crown Victory of the
+                Tathāgatas: The Uṣṇīṣavijayā Dhāraṇī with Its Ritual Manual</title> (<title xml:lang="Bo-Ltn">de bzhin gshegs pa thams cad kyi gtsug tor rnam par rgyal ba zhes
+                bya ba’i gzungs rtog pa dang bcas pa</title>). The fourth has an ever-so-slightly
+              different title: <title xml:lang="en">Crown Victory of the Tathāgatas: A Ritual Manual
+                for the Uṣṇīṣavijayā Dhāraṇī</title> (<title xml:lang="Bo-Ltn">de bzhin gshegs pa
+                thams cad kyi gtsug tor rnam par rgyal ma’i gzungs zhe bya ba’i rtog pa</title>).
+            </note> These four works share a similar narrative opening (<foreign xml:lang="Sa-Ltn" type="term">nidāna</foreign>) up through the presentation of the dhāraṇī proper, and
+            several among them also share further passages. The present text is made up of content
+            that is entirely parallel—even if some of it appears abbreviated and rearranged—with the
+            longer Toh 594. </p>
+          <milestone unit="chunk" xml:id="UT22084-090-040-10"/>
+          <p tid="13">There are many Sanskrit witnesses of the <foreign xml:lang="Sa-Ltn" type="term">uṣṇīṣavijayā</foreign> dhāraṇī proper.<note place="end" xml:id="UT22084-090-040-11"> Hidas 2020, p. 141. See also Hidas 2021b, which catalogs
+            a number of Indic <foreign xml:lang="Sa-Ltn" type="term">dhāraṇī­saṃgraha</foreign>
+              collections, many of which include the <foreign xml:lang="Sa-Ltn" type="term">uṣṇīṣavijayā</foreign> dhāraṇī.</note> Moreover, what we will call—simply for the
+            purpose of distinguishing it from the present group of dhāraṇī-kalpas—the “primary”
+              <foreign xml:lang="Sa-Ltn" type="term">uṣṇīṣavijayā</foreign> dhāraṇī text (Toh 597,
+            which is titled <title xml:lang="Sa-Ltn">Sarva­durgati­pariśodhana-uṣṇīṣavijayā-<emph rend="bold">dhāraṇī</emph>
+                        </title><!--<note place="comment-to-markup-editor" xml:id="UT22084-090-040-12"
+              >MARKUP: Please note bold font here and in several of the notes.</note>-->
+            rather than <title xml:lang="Sa-Ltn">Uṣṇīṣavijayā-<emph rend="bold">dhāraṇī-kalpasahitā</emph>
+                        </title>)<note place="end" xml:id="UT22084-090-040-13">
+              The surviving Sanskrit work seems, more properly, to be titled the <title xml:lang="Sa-Ltn">Sarvagati</title> (rather than <title xml:lang="Sa-Ltn">Sarvadurgati</title>)<title xml:lang="Sa-Ltn">-pariśodhana-uṣṇīṣavijayā-dhāraṇī</title>, but either way the title provides
+              evidence of the relationship between the <title xml:lang="Sa-Ltn">Uṣṇīṣavijayā</title>
+              and <title xml:lang="Sa-Ltn">Sarva­durgati­pariśodhana</title> corpuses. For more on
+              this relationship see J. Dalton 2016 and forthcoming. The point here, however, is
+              simply that <ref target="https://read.84000.co/translation/toh597.html">Toh 597</ref>
+              is titled the <title xml:lang="Sa-Ltn">Uṣṇīṣavijayā-dhāraṇī</title> rather than the
+                <title xml:lang="Sa-Ltn">Uṣṇīṣāvijayā-</title>“<foreign xml:lang="Sa-Ltn" type="term">dhāraṇī</foreign> with its ritual manual” (<foreign xml:lang="Sa-Ltn" type="term">kalpasahitā</foreign>).</note><!--&lt;Reference Toh 0597&gt;&lt;Reference Toh
+              0984&gt;<note place="comment-to-markup-editor" xml:id="UT22084-090-040-14">MARKUP: It
+              was difficult to determine where and how often to apply reference tags as the other
+              texts in this set are mentioned so often. Please feel free to modify if there is a
+              better way to add links.</note>-->, survives in at least one incomplete
+            early manuscript.<note place="end" xml:id="UT22084-090-040-15"> The Sanskrit of this
+              work is preserved in what Gregory Schopen calls the “Los Angeles Manuscript,” though
+              it appears to be currently held in Japan. This is an early manuscript from
+              Bamiyan-Gilgit that Schopen transcribed and translated into English in an unpublished
+              work, which we are grateful to Jacob Dalton for sharing. In addition to being
+              incomplete, probably due to the loss of a folio, the manuscript lacks several passages
+              that are found in the Tibetan translation of Toh 597 and contains a few passages that
+              are absent in that translation, including two passages that <emph>are</emph> found in
+              the present work. Nonetheless, the Sanskrit manuscript is by and large the same work
+              that is translated into Tibetan as Toh 597. More recently, the Sanskrit of the very
+              same manuscript was studied by Gudrun Meltzer in a 2007 “limited distribution report”
+              (Silk 2021, p. 108), to which we have not had access, as well as by Unebe Toshiya, who
+              published the Sanskrit along with a Japanese translation in a 2015 article. </note>
+            While the present text appears to no longer be extant in Sanskrit, there is at least one
+            surviving Sanskrit <foreign xml:lang="Sa-Ltn" type="term">uṣṇīṣavijayā</foreign> dhāraṇī
+            work that is closely related to it and belongs to the same group of related dhāraṇī
+            texts described above. This work shares the same opening narrative and some of the
+            ritual material with the texts from this group.<note place="end" xml:id="UT22084-090-040-16"> This text has been edited on the basis of ten Nepalese
+              Sanskrit manuscripts and translated into English in Hidas 2020. From among the works
+              belonging to this group that are preserved in the Tibetan canon, the Sanskrit text is
+              most closely parallel, though not identical, with Toh 595. </note>
+          </p>
+          <milestone unit="chunk" xml:id="UT22084-090-040-17"/>
+          <p tid="14">The primary <foreign xml:lang="Sa-Ltn" type="term">uṣṇīṣavijayā</foreign> text
+            was first translated into Chinese by Buddhapāli in the late seventh century, and then at
+            least five times subsequently.<note place="end" xml:id="UT22084-090-040-18"> The first
+              translation is Taishō 967, followed by Taishō 968–971 and Taishō 974 (Chou 1945, p.
+              322).</note> Several ritual manuals for its recitation were also translated into
+            Chinese, but our text does not appear to be among them.<note place="end" xml:id="UT22084-090-040-19"> According to Chou, the ritual manuals surviving in
+              Chinese are Taishō 972–973 (Chou 1945, p. 322). Hidas 2020 notes that the full set of
+                <title xml:lang="Sa-Ltn">Uṣṇīṣavijayā</title>-related texts found in the Taishō
+              canon includes Taishō 968–974, 978, and 979.</note> One ritual manual (Taishō 978),
+            translated in to Chinese by Dharmadeva between 973 and 981, is among the group of
+              <foreign xml:lang="Sa-Ltn" type="term">uṣṇīṣavijayā</foreign> dhāraṇī texts to which
+            the present work belongs.<note place="end" xml:id="UT22084-090-040-20"> Hidas mentions
+              that Taishō 978 “stands closest to the Nepalese tradition” of the Sanskrit work that
+              he has edited, which is also how he describes the relationship between the Sanskrit
+              work and Toh 595 (Hidas 2020, p. 156n6–7). A comparison of Toh 595 and Taishō 978
+              shows that while neither exactly matches the Sanskrit text that Hidas edited, the
+              Tibetan and Chinese are indeed translations of the same Sanskrit work and contain
+              identical material apart from the Chinese translation’s inclusion of a single, very
+              short passage about a toothbrush that is absent in the Tibetan translation (but
+              present in some of the other <foreign xml:lang="Sa-Ltn" type="term">uṣṇīṣavijayā</foreign> texts in the Tibetan canon).</note> The primary <foreign xml:lang="Sa-Ltn" type="term">uṣṇīṣavijayā</foreign> text was significant in East
+            Asia, and one scholar has even identified it as the most important esoteric Buddhist
+            scripture translated into Chinese in the seventh century.<note place="end" xml:id="UT22084-090-040-21"> Sørensen 2011a, p. 165.</note> Practices connected with
+            the <foreign xml:lang="Sa-Ltn" type="term">uṣṇīṣavijayā</foreign> dhāraṇī were important
+            in China, in particular in conjunction with funerary rites, where the dhāraṇī was
+            written on pillars near tombs, especially from the mid-Tang to Ming dynasties (ca.
+            800–1600 <hi rend="small-caps">ce</hi>).<note place="end" xml:id="UT22084-090-040-22">
+              Sørensen 2011b, p. 386. See also Silk 2021 for further mention of the uses of the
+                <foreign xml:lang="Sa-Ltn" type="term">uṣṇīṣavijayā</foreign> dhāraṇī, often
+              alongside the <title xml:lang="en">Heart Sūtra</title>, in China.</note> In addition
+            to its ritual uses, in China this dhāraṇī receives mention in poems and tales of
+            miracles and is analyzed in philosophical commentaries.<note place="end" xml:id="UT22084-090-040-23"> Copp 2005, p. 4. For further details see Copp 2005, which
+              addresses the topic of dhāraṇīs in medieval China using the <foreign xml:lang="Sa-Ltn" type="term">uṣṇīṣavijayā</foreign> dhāraṇī as a case study.</note>
+          </p>
+          <milestone unit="chunk" xml:id="UT22084-090-040-24"/>
+          <p tid="15">The <foreign xml:lang="Sa-Ltn" type="term">uṣṇīṣavijayā</foreign> dhāraṇī also
+            appears to have been popular in Dunhuang. A number of Tibetan manuscripts from Dunhuang
+            include just the dhāraṇī on its own, both in Tibetan transliteration (dhāraṇīs, like
+            mantras, are commonly left untranslated in Tibetan texts) <emph>and</emph> in Tibetan
+            translation. The primary <foreign xml:lang="Sa-Ltn" type="term">uṣṇīṣavijayā</foreign>
+            dhāraṇī text (Toh 597) also appears in several Dunhuang manuscripts.<note place="end" xml:id="UT22084-090-040-25"> See <ref target="http://idp.bl.uk/database/oo_loader.a4d?pm=IOL%20Tib%20J%20307;img=1">IOL
+                Tib J 307</ref>/<ref target="http://idp.bl.uk/database/oo_loader.a4d?pm=Pelliot%20tibétain%2054;img=1">PT
+                54</ref>, <ref target="http://idp.bl.uk/database/oo_loader.a4d?pm=Pelliot%20tibétain%206;img=1">PT
+                6</ref>, and <ref target="http://idp.bl.uk/database/oo_loader.a4d?pm=Pelliot%20tibétain%20368;img=1">PT 368</ref> for Tibetan translations of the work, <ref target="http://idp.bl.uk/database/oo_loader.a4d?pm=IOL%20Tib%20J%20322;img=1">IOL
+                TIB J 322</ref> and <ref target="http://idp.bl.uk/database/oo_loader.a4d?pm=IOL%20Tib%20J%20349;img=3">IOL
+                Tib J 349/3</ref> for a Tibetan translation of the dhāraṇī alone (not the whole
+              text), and <ref target="http://idp.bl.uk/database/oo_loader.a4d?pm=IOL%20Tib%20J%20466;img=2">IOL
+                Tib J 466/2</ref>, <ref target="http://idp.bl.uk/database/oo_loader.a4d?pm=IOL%20Tib%20J%20547;img=1">IOL
+                Tib J 547</ref>, <ref target="http://idp.bl.uk/database/oo_loader.a4d?pm=IOL%20Tib%20J%201134;img=1">IOL
+                Tib J 1134</ref>, <ref target="http://idp.bl.uk/database/oo_loader.a4d?pm=IOL%20Tib%20J%201498;img=1">IOL
+                Tib J 1498</ref>, <ref target="http://idp.bl.uk/database/oo_loader.a4d?pm=Pelliot%20tibétain%2072;img=1">PT72</ref>, and <ref target="http://idp.bl.uk/database/oo_loader.a4d?pm=Pelliot%20tibétain%2073;img=1">PT73</ref> for Tibetan translations of the Sanskrit dhāraṇī alone (J. Dalton and
+              van Schaik 2006; accessed through <title xml:lang="en">The International Dunhuang
+                Project: The Silk Road Online</title>). The translations of the primary <foreign xml:lang="Sa-Ltn" type="term">uṣṇīṣavijayā</foreign> dhāraṇī text (Toh 597)
+              appearing at Dunhuang include at least one passage parallel with rites described in
+              our text but missing from the primary text in its Tibetan canonical translation,
+              though present in the surviving Sanskrit manuscript corresponding to Toh 597 studied
+              by Schopen (see J. Dalton forthcoming; Schopen unpublished).</note><!--<note
+              place="comment-to-markup-editor" xml:id="UT22084-090-040-26">I’ve tried to come up
+              with a good way to cite the IDP website in an unobtrusive way, but of course this is
+              just one idea. Links added by me.</note>--> Moreover, several drawings
+            from Dunhuang show maṇḍala (altar) arrangements corresponding to <foreign xml:lang="Sa-Ltn" type="term">uṣṇīṣavijayā</foreign> dhāraṇī texts.<note place="end" xml:id="UT22084-090-040-27"> Schmid 2011, pp. 372–73.</note>
+                    </p>
+          <milestone unit="chunk" xml:id="UT22084-090-040-28"/>
+          <p tid="16">In Nepal, <foreign xml:lang="Sa-Ltn" type="term">uṣṇīṣavijayā</foreign>
+            dhāraṇī rituals continue to be performed as part of modern Newar Buddhist practice,
+            where their practice is sometimes prescribed for Wednesdays in particular.<note place="end" xml:id="UT22084-090-040-29"> Bühnemann 2014; Rospatt 2015, p. 821.</note>
+            Practices connected to the <foreign xml:lang="Sa-Ltn" type="term">uṣṇīṣavijayā</foreign>
+            dhāraṇī likewise continue in modern Tibetan Buddhism. The so-called Tongchö (<foreign xml:lang="Bo-Ltn" type="term">stong mchod</foreign>)—the thousandfold offering
+            practice of Uṣṇīṣavijayā, a version of which is mentioned briefly in our text—is
+            currently performed in Tibetan monasteries, sometimes using a ritual manual composed by
+            the nineteenth-century polymath Jamyang Khyentsé Wangpo. Other notable Tibetan works on
+            the <title xml:lang="Sa-Ltn">Uṣṇīṣavijayā Dhāraṇī</title> and its associated practices
+            include commentaries by the great Sakya lama Butön (<foreign xml:lang="Bo-Ltn">bu ston
+              rin chen grub</foreign>, 1290–1364) and the fourth Panchen Lama, Lozang Chökyi
+            Gyaltsen (<foreign xml:lang="Bo-Ltn">blo bzang chos kyi rgyal mtshan</foreign>,
+            1570–1662).</p>
+          <milestone unit="chunk" xml:id="UT22084-090-040-30"/>
+          <p tid="17">The question of what, or <emph>who</emph>, exactly, Uṣṇīṣavijayā is is a
+            complex one that cannot be clearly answered here. In short, like a number of uṣṇīṣa
+            deities, she is sometimes identified as a protective deity, in this case a goddess,
+            emanated from the Buddha’s uṣṇīṣa. Indeed, in the later Tibetan tradition Uṣṇīṣavijayā
+            is clearly depicted as a goddess and can even appear as one of a group of three
+            long-life deities along with the Buddha Amitāyus and White Tārā. However, in our text,
+            and indeed in all but one of the <foreign xml:lang="Sa-Ltn" type="term">uṣṇīṣavijayā</foreign> works in this section of the Kangyur (Toh 598), while the
+            dhāraṇī itself uses the feminine vocative form throughout, the name <foreign xml:lang="Sa-Ltn" type="term">uṣṇīṣavijayā</foreign> is not rendered into Tibetan in
+            the feminine, and the word <foreign xml:lang="Sa-Ltn" type="term">uṣṇīṣavijayā</foreign>
+            is not used to refer to anything apart from the name of the dhāraṇī—the dhāraṇī of
+              <distinct>the crown victory</distinct>. </p>
+          <milestone unit="chunk" xml:id="UT22084-090-040-31"/>
+          <p tid="18">The present text lacks a translator’s colophon. However, as noted above it is
+            made up of content that is almost entirely parallel with Toh 594, with which it also
+            shares the same title. That work <emph>does</emph> have a translator’s colophon
+            indicating that it was translated into Tibetan by the Indian scholar Dharmasena and the
+            Tibetan translator Bari, and it is therefore an eleventh- or twelfth-century
+            translation. However, the imperial Phangthangma catalog lists one <title xml:lang="Sa-Ltn">Uṣṇīṣavijayā-dhāraṇī-vidhisahitā</title>, which, even if not the
+            same as the present text, is certainly a work of a similar type.<note place="end" xml:id="UT22084-090-040-32">
+              <title xml:lang="Bo-Ltn">dkar chag ’phang thang ma</title>, 23. While phrase <foreign xml:lang="Bo-Ltn" type="quote">cho ga dang bcas pa</foreign> (Skt. <foreign xml:lang="Sa-Ltn" type="term">vidhisahitā</foreign>) is functionally equivalent to
+              the phrase <foreign xml:lang="Bo-Ltn" type="quote">rtog pa dang bcas pa</foreign>
+              (Skt. <foreign xml:lang="Sa-Ltn" type="term">kalpasahitā</foreign>), we unfortunately
+              have no way of knowing whether this text was or resembled the primary <foreign xml:lang="Sa-Ltn" type="term">uṣṇīṣavijayā</foreign> dhāraṇī-sūtra (Toh 597) with a
+              ritual manual attached to it, or if it resembled the present text or any of the other
+              works in the modern canons titled <title xml:lang="Sa-Ltn">Uṣṇīṣavijayā-dhāraṇī-kalpasahitā</title> (i.e., Toh 594 or 595); Toh 596 is too
+              short to correspond with the text identified in the Phangthangma as having 120 ślokas,
+              and Toh 598 is an unlikely candidate because, while it shares the opening narrative
+              with the other texts in this set, it seems to represent a separate, and later, ritual
+              system. The Phangthangma also lists what may be a copy of the dhāraṇī alone, outside
+              of the framework of a sūtra (<title xml:lang="Bo-Ltn">dkar chag ’phang thang
+                ma</title>, p. 31). The other imperial catalog, the Denkarma, lists only the primary
+                <foreign xml:lang="Sa-Ltn" type="term">uṣṇīṣavijayā</foreign> dhāraṇī-sūtra,
+              identified clearly as the text included in the later canons as Toh 597 by its full
+              title in that catalog: the <title xml:lang="Sa-Ltn">Sarva­durgati­pariśodhana-uṣṇīṣavijayā-dhāraṇī</title> (Lalou 1953, 327).</note>
+            Thus, along with the records of Uṣṇīṣavijayā texts at Dunhuang, its presence in the
+            Phangthangma catalog at the very least indicates the early presence of parts of the
+            Uṣṇīṣavijayā corpus, including not just the dhāraṇī but also some of its associated
+            rites, in Tibet. </p>
+          <milestone unit="chunk" xml:id="UT22084-090-040-33"/>
+          <p tid="19">The present translation was completed on the basis of the Tibetan translation
+            of the text found in the Tantra Collection (<foreign xml:lang="Bo-Ltn">rgyud
+              ’bum</foreign>) section of the Degé Kangyur,<note place="end" xml:id="UT22084-090-040-34"> Unlike many dhāraṇī-sūtras (including Toh 597), which
+              tend to appear both in the Tantra Collection and the Dhāraṇī Collection section of the
+              Kangyurs, the texts in the genre of dhāraṇī-kalpas seem to appear exclusively in the
+              Tantra Collection section of the Kangyurs. </note> in consultation with the Stok
+            Palace Kangyur and the notes in the Comparative Edition (<foreign xml:lang="Bo-Ltn">dpe
+              bsdur ma</foreign>). The text is stable across all the Kangyurs consulted, with the
+            same title and only minor variants; all recensions are alike in lacking a translator’s
+            colophon. We have also consulted Hidas’ edition and translation of the surviving
+            Sanskrit <title xml:lang="Sa-Ltn">Uṣṇīṣavijayā-dhāraṇī</title> text for the passages
+            that are parallel with the present text. The dhāraṇī proper is rendered following Hidas’
+            edition, which is based on ten different Sanskrit witnesses. </p>
+        </div>
+      </div>
+    </front>
+    <body>
+      <div type="translation">
+        <head type="translation" tid="20"> The Translation </head>
+        <head type="titleHon" tid="21">Crown Victory of All Tathāgatas</head>
+        <head type="titleMain" tid="22">The Uṣṇīṣavijayā Dhāraṇī with Its Ritual Manual</head>
+        <div type="section" xml:id="UT22084-090-040-section-1">
+          <milestone unit="chunk" xml:id="UT22084-090-040-37"/>
+          <p tid="26">
+                        <ref cRef="F.242.a" type="folio" xml:id="UT22084-090-040-104"/>
+                        <lb/>            
+            <note place="end" xml:id="UT22084-090-040-38"> The title of this text and the first
+              part, through the presentation of the dhāraṇī, are closely parallel with the opening
+              passages of Toh 594 and Toh 595. However, this version of the opening passage seems to
+              have been edited and gives smoother readings in some places, and very much less smooth
+              and even slightly different readings in other places. It is also parallel with the
+              opening narrative of Toh 598, which has significantly improved the difficult
+              readings.</note>Homage to all buddhas and bodhisattvas.</p>
+          <lb/>
+          <milestone unit="chunk" xml:id="UT22084-090-040-40"/>
+          <p tid="28">Thus did I hear at one time. <ref cRef="F.242.b" type="folio" xml:id="UT22084-090-040-105"/> The blessed, thus-gone, worthy, perfectly awakened
+            Buddha Amitāyus was staying the excellent secret palace, Dharma Proclamation,<note place="end" xml:id="UT22084-090-040-41">
+              <foreign xml:lang="Bo-Ltn" type="quote">chos yang dag par sdus pa’i phug khang bzangs
+                mchog</foreign>. The Sanskrit in the closely parallel text edited by Hidas reads
+              <foreign xml:lang="Sa-Ltn" type="quote">dharma­saṃgīti­mahā­guhya­prāsāde</foreign>
+              (Hidas 2020, p. 152). The Tibetan phrase is awkward, and it seems that there may have
+              been some textual corruption. What has been rendered in Tibetan as <foreign xml:lang="Bo-Ltn" type="term">phug</foreign> seems to be <foreign xml:lang="Sa-Ltn" type="term">guhya</foreign> in the Sanskrit parallel; perhaps the Tibetan
+              translators were reading <foreign xml:lang="Sa-Ltn" type="term">guhā</foreign>—which
+              does translate to <foreign xml:lang="Bo-Ltn" type="term">phug</foreign>—rather than
+                <foreign xml:lang="Sa-Ltn" type="term">guhya</foreign>. Although we cannot be sure
+              that the surviving Sanskrit witnesses represent the older reading, they provide a more
+              coherent reading than the one in our Tibetan witnesses, so we have translated this
+              word following the Sanskrit, rather than the Tibetan witness.</note> in Sukhāvatī. He
+            looked out at the circle of his retinue and said to Noble Avalokiteśvara, “Alas,
+            bodhisattva great beings and sons and daughters of noble family, there are beings who
+            suffer, are afflicted with diseases, and have short lifespans. To help them, one should
+            uphold and recite this dhāraṇī called <distinct>the crown victory of all
+              tathāgatas</distinct> and teach it extensively to others for the sake of long
+              life.”<note place="end" xml:id="UT22084-090-040-42"> The text here is corrupt and
+              appears to have transmitted a line slip, where a line from slightly lower in the text
+              made its way incongruously to a place where it does not belong, rendering this
+              sentence difficult to parse. While the passage as it reads here, unlike the parallel
+              passage in Toh 594 and Toh 595, shows evidence of having been edited to improve some
+              readings, the text remains problematic. The parallel passage in both the Sanskrit text
+              and Toh 598 lack this line slip error, confirming that it is a textual corruption. We
+              have relied upon Hidas’ Sanskrit edition to repair the Tibetan text here. The Tibetan
+              reads <foreign xml:lang="Bo-Ltn" type="quote">de rnams kyi phyir sems can thams cad la
+                <emph rend="bold">kun du gzigs pa’i mtshan gyi dpal</emph> de bzhin gshegs pa thams cad kyi gtsug tor rnam
+                par rgyal ba zhes bya ba’i gzungs ’di nyid ’cang ba dang / klogs pa dang / gzhan la
+                rgya cher yang dag par bstan pa’i phyir yun ring por gnas par sgrub pa’i ched
+                du</foreign> . . . The passage in bold has been incongruously lifted from its proper
+              place several lines down in the text and added here. The phrase <foreign xml:lang="Bo-Ltn" type="quote">sems can thams cad la</foreign> in our text is absent
+              in all the parallel passages in both Sanskrit and Tibetan and may have been added here
+              by editors in order to render the passage more sensible. Once the line slip has been
+              corrected, however, that phrase no longer makes sense, so we have not translated it.
+              The Sanskrit passage lacks the line slip error but also includes several additional
+              words absent in the Tibetan. However, as the Sanskrit and Tibetan texts are not
+              identical in other places in this parallel passage either, and since the Tibetan text
+              makes perfect sense without these additional elements, we have not taken the liberty
+              of adding them in the English translation. The Sanskrit passage, in Hidas’ edition
+              (with the elements absent in the Tibetan text indicated in bold), reads <foreign xml:lang="Sa-Ltn" type="quote">teṣāṃ arthāya <emph rend="bold">hitāya sukhāya</emph> imāṃ
+                sarvatathāgatoṣṇīṣavijayā-nāma-dhāraṇīṃ dhārayed vācayed <emph rend="bold">deśayet paryavāpnuyāt</emph>
+                parebhyaś ca vistareṇa samprakāśayet | dīrghāyuṣkāṇām upādāyeti</foreign> (Hidas
+              2020, p. 152). The passage in Toh 598 reads <foreign xml:lang="Bo-Ltn" type="quote">de
+                rnams kyi don du tshe ring bar nye bar bsgrub par bya ba’i phyir/ de bzhin gshegs pa
+                thams cad kyi gtsug tor rnam par rgyal ma zhes bya ba’i gzungs ’di gzung bar bya/
+                gzhan la rgya cher yang dag par bstan par bya’o</foreign>.</note>
+          </p>
+          <milestone unit="chunk" xml:id="UT22084-090-040-43"/>
+          <p tid="29">Then the bodhisattva, the great being, Avalokiteśvara arose from his seat,
+            joined his palms, and said to the Blessed One, “Blessed One, please teach! Well-Gone
+            One, please teach the dhāraṇī called <distinct>the crown victory of all
+              tathāgatas</distinct>.” </p>
+          <milestone unit="chunk" xml:id="UT22084-090-040-44"/>
+          <p tid="30">Then the Blessed One looked upon the circle of his perfect<note place="end" xml:id="UT22084-090-040-45">
+              <foreign xml:lang="Bo-Ltn" type="quote">thams cad dang ldan pa</foreign>.</note>
+            retinue, entered the samādhi called <distinct>the splendor beheld everywhere</distinct>,
+            and pronounced this dhāraṇī called <distinct>the crown victory of all
+              tathāgatas</distinct>:<note place="end" xml:id="UT22084-090-040-46"> The dhāraṇī is
+              rendered here following Gergely Hidas’ edition (Hidas 2020, pp. 152–53). </note>
+                    </p>
+          <milestone unit="chunk" xml:id="UT22084-090-040-47"/>
+          <p rend="mantra" tid="31">
+                        <mantra xml:lang="Sa-Ltn">“oṃ namo bhagavate
+              sarvatrailokyaprativiśiṣṭāya buddhāya te namaḥ | tadyathā |
+              <lb/>
+              oṃ bhrūṃ bhrūṃ bhrūṃ śodhaya śodhaya
+              viśodhaya viśodhaya asamasamantāvabhāsaspharaṇagatigagane svabhāvaviśuddhe |
+              uṣṇīṣavijāyāpariśuddhe | abhiṣiñcantu māṃ sarvatathāgatāḥ
+              sugatavaravacanāmṛtābhiṣekair mahāmudrāmantrapadaiḥ | oṃ āhara āhara āyuḥsaṃdhāraṇi
+              śodhaya śodhaya viśodhaya viśodhaya gaganasvabhāvaviśuddhe | uṣṇīṣavijayāpariśuddhe |
+              sahasraraśmisaṃcodite sarvatathāgatāvalokini ṣaṭpāramitāparipūraṇi |
+              sarvatathāgatamāte daśabhūmipratiṣṭhite | sarvatathāgatahṛdayādhiṣṭhānādhiṣṭhite | oṃ
+              mudre mudre | mahāmudre | vajrakāyasaṃhatanapariśuddhe sarvakarmāvaraṇaviśuddhe |
+              pratinivartaya mamāyurviśuddhe | sarvatathāgatasamayādhiṣṭhānādhiṣṭhite <ref cRef="F.243.a" type="folio" xml:id="UT22084-090-040-106"/> | oṃ muni muni mahāmuni |
+              vimuni vimuni mahāvimuni | mati mati mahāmati mamati | sumati |
+              tathatābhūtakoṭipariśuddhe visphuṭabuddhiśuddhe | oṃ he he | jaya jaya vijaya vijaya
+              smara smara sphara sphara sphāraya sphāraya | sarvabuddhādhiṣṭhānādhiṣṭhite | oṃ
+              śuddhe śuddhe buddhe buddhe vajre vajre mahāvajre | vajragarbhe | jayagarbhe |
+              vijayagarbhe | vajrajvālāgarbhe | vajrodbhave | vajrasaṃbhave | vajre vajriṇi vajraṃ
+              bhavatu mama śarīraṃ sarvasattvānāṃ ca | kāyapariśuddhir bhavatu mama
+              sarvagatipariśuddhiś ca | sarvatathāgatahṛdayādhiṣṭhānādhiṣṭhite | sarvatathāgatāś ca
+              samāśvāsayantu | oṃ budhya budhya sidhya sidhya bodhaya bodhaya vibodhaya vibodhaya
+              mocaya mocaya vimocaya vimocaya śodhaya śodhaya viśodhaya viśodhaya samantān mocaya
+              mocaya samantaraśmipariśuddhe | sarvatathāgatahṛdayādhiṣṭhanādhiṣṭhite oṃ mudre mudre
+              mahāmudre mahāmudrāmantrapade svāhā<note place="end" xml:id="UT22084-090-040-49">
+                Hidas has translated the dhāraṇī based on his edition, and rather than retranslate
+                it, we give his translation here: “<mantra xml:lang="Sa-Ltn" type="dharani">Oṃ
+                  veneration to the glorious Buddha distinguished in all the Three Worlds. Namely,
+                  oṃ bhrūṃ bhrūṃ bhrūṃ, purge, purge, purify, purify, O Unequalled Enveloping
+                  Splendor Sparkle Destiny Sky, O the One of Purified Nature, O the One Purified by
+                  the Topknot Victory, let all Tathāgatas consecrate me with consecrations of the
+                  nectar of the excellent Sugata’s words along with great seals and mantrapadas, oṃ
+                  bring, bring, O the One who Nourishes Life, purge, purge, purify, purify, O the
+                  One Purified by Sky Nature, O the One Purified by the Topknot Victory, O the One
+                  Impelled by Thousand Rays, O the One Beholding all Tathāgatas, O the One
+                  Fulfilling the Six Perfections, O Mother of all Tathāgatas, O the One Established
+                  in the Ten Stages, O the One Empowered by the Empowerment of the Heart of all
+                  Tathāgatas, oṃ O Seal, O Seal, O Great Seal, O the One Purified by the Firmness of
+                  the Vajra Body, O the One Purged of all Obscurations Resulting from Actions, turn
+                  back for me O Life-purged One, O the One Empowered by the Empowerment of the Vow
+                  of all Tathāgatas, oṃ muni muni, mahāmuni, vimuni vimuni, mahāvimuni, mati mati,
+                  mahāmati, mamati, sumati, O the One Purified by Truth and the True Goal, O the One
+                  Purged by a Burst Open Mind, oṃ he he, triumph triumph, succeed succeed, recollect
+                  recollect, manifest manifest, expand expand, O the One Empowered by the
+                  Empowerment of all Buddhas, oṃ O Pure One, O Pure One, O Awakened One, O Awakened
+                  One, O Vajra, O Vajra, O Great Vajra, O Vajra-essence, O Victory-essence, O
+                  Triumph-essence, O Vajra-flame-essence, O Vajra-born, O Vajra-produced, O Vajra, O
+                  the One with a Vajra, let my body become a vajra and that of all beings, let there
+                  be body-purification for me and purification of all destinies, O the One Empowered
+                  by the Empowerment of the Heart of all Tathāgatas, let all Tathāgatas provide
+                  encouragement, oṃ awake awake, succeed succeed, awaken awaken, wake up, wake up,
+                  liberate liberate, release release, purge purge, purify purify, liberate
+                  completely, O the One Purified by an Enveloping Ray, O the One Empowered by the
+                  Empowerment of the Heart of all Tathāgatas, oṃ O Seal O Seal, O Great Seal, O
+                  Great Seal and Mantrapada svāhā</mantra>” (Hidas 2020, p.
+            154).</note>
+                        </mantra>
+                    </p>
+          <milestone unit="chunk" xml:id="UT22084-090-040-50"/>
+          <p tid="33">“Write down this dhāraṇī called <distinct>the crown victory</distinct>, which
+            purifies all evil deeds and obscurations and eliminates all lower rebirths, and place it
+            at the summit of the life-pillar of a caitya. If one bathes and recites this dhāraṇī
+            eight thousand times on the full moon day, one’s life force that has been exhausted will
+            instead be replenished. One will be swiftly freed from lower rebirths, one’s
+            obscurations will be purified, and one will thus attain unsurpassed awakening. </p>
+          <milestone unit="chunk" xml:id="UT22084-090-040-51"/>
+          <p tid="34">“If animals hear this dhāraṇī, this will be their final lower rebirth. Until
+            they attain awakening, they will be born into kṣatriya, brahmin, merchant, and
+            householder families as prominent as the great sāl tree.</p>
+          <milestone unit="chunk" xml:id="UT22084-090-040-52"/>
+          <p tid="35">“If someone is touched by the shadow of that caitya, or even if they are
+            touched by a particle of dust from it, they will not take lower rebirths.”</p>
+          <milestone unit="chunk" xml:id="UT22084-090-040-53"/>
+          <p tid="36">When the Blessed One spoke these words, the bodhisattva great being Noble
+            Avalokiteśvara <ref cRef="F.243.b" type="folio" xml:id="UT22084-090-040-107"/> rejoiced
+            and praised what he had said. </p>
+          <milestone unit="chunk" xml:id="UT22084-090-040-54"/>
+          <trailer tid="37">This concludes “<title xml:lang="en">The Uṣṇīṣavijayā Dhāraṇī with Its
+              Ritual Manual</title>.”</trailer>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="notes">
+        <head type="notes" tid="38">Notes</head>
+
+      </div>
+      <div type="listBibl">
+        <head type="listBibl" tid="40">Bibliography</head>
+        <div type="section" xml:id="UT22084-090-040-listBibl-1">
+          <head type="section" tid="41">Source Texts for This Translation</head>
+          <bibl xml:id="UT22084-090-040-55">
+                        <title xml:lang="Bo-Ltn">de bzhin gshegs pa thams cad
+              kyi gtsug tor rnam par rgyal ba zhes bya ba’i gzungs rtog pa dang bcas pa</title>
+            (<title xml:lang="Sa-Ltn">Sarva­tathāgata­uṣṇīṣavijayā­nāma­dhāraṇī­kalpasahitā</title>).
+            Toh 596, Degé Kangyur vol. 90 (rgyud, pha), folios 242.a–243.b.</bibl>
+          <bibl xml:id="UT22084-090-040-56">
+                        <title xml:lang="Bo-Ltn">de bzhin gshegs pa thams cad
+              kyi gtsug tor rnam par rgyal ba zhes bya ba’i gzungs rtog pa dang bcas pa</title>.
+            bka’ ’gyur (dpe bsdur ma) [Comparative Edition of the Kangyur], krung go’i bod rig pa
+            zhib ’jug ste gnas kyi bka’ bstan dpe sdur khang (The Tibetan Tripitaka Collation Bureau
+            of the China Tibetology Research Center). 108 volumes. Beijing: krung go’i bod rig pa
+            dpe skrun khang (China Tibetology Publishing House), 2006–9, vol. 90, pp. 799–802. </bibl>
+          <bibl xml:id="UT22084-090-040-57">
+                        <title xml:lang="Bo-Ltn">de bzhin gshegs pa thams cad
+              kyi gtsug tor rnam par rgyal ba zhes bya ba’i gzungs rtog pa dang bcas pa</title>.
+            Stok Palace Kangyur vol. 104 (rgyud, pa), folios 224.a–225.b. </bibl>
+        </div>
+        <div type="section" xml:id="UT22084-090-040-listBibl-2">
+          <head type="section" tid="42">Other Tibetan and Sanskrit Sources</head>
+          <bibl xml:id="UT22084-090-040-58">
+                        <title xml:lang="Bo-Ltn">de bzhin gshegs pa thams cad
+              kyi gtsug tor rnam par rgyal ba zhes bya ba’i gzungs rtog pa dang bcas pa</title>
+            (<title xml:lang="Sa-Ltn">Sarva­tathāgata­uṣṇīṣavijayā­nāma­dhāraṇī­kalpasahitā</title>).
+              <ref target="https://read.84000.co/translation/toh594.html">Toh 594</ref>, Degé
+            Kangyur vol. 90 (rgyud, pha), folios 230.a–237.b.</bibl>
+          <bibl xml:id="UT22084-090-040-59">
+                        <title xml:lang="Bo-Ltn">de bzhin gshegs pa thams cad
+              kyi gtsug tor rnam par rgyal ba zhes bya ba’i gzungs rtog pa dang bcas pa</title>
+            (<title xml:lang="Sa-Ltn">Sarva­tathāgata­uṣṇīṣavijayā­nāma­dhāraṇī­kalpasahitā</title>).
+              <ref target="https://read.84000.co/translation/toh595.html">Toh 595</ref>, Degé
+            Kangyur vol. 90 (rgyud, pha), folios 237.b–242.a.</bibl>
+          <bibl xml:id="UT22084-090-040-60">
+                        <title xml:lang="Bo-Ltn">’phags pa ngan ’gro thams cad
+            yongs su sbyong ba gtsug tor rnam par rgyal ba zhes bya ba’i gzungs</title> (<title xml:lang="Sa-Ltn">Sarva­durgati­pariśodhana­uṣṇīṣavijayā­nāma­dhāraṇī</title>). <ref target="https://read.84000.co/translation/toh597.html">Toh 597</ref>,
+            Degé Kangyur vol. 90 (rgyud, pha), folios 243.b–248.a; <ref target="https://read.84000.co/translation/toh984.html">Toh 984</ref>, Degé Kangyur vol. 102
+            (gzungs, waM), folios 120.a–124.b.</bibl>
+          <bibl xml:id="UT22084-090-040-61">
+                        <title xml:lang="Bo-Ltn">de bzhin gshegs pa thams cad
+            kyi gtsug tor rnam par rgyal ma’i gzungs zhe bya ba’i rtog pa </title> (<title xml:lang="Sa-Ltn">Sarva­tathāgata­uṣṇīṣavijayā­nāma­dhāraṇī­kalpa</title>). <ref target="https://read.84000.co/translation/toh598.html">Toh 598</ref>, Degé
+            Kangyur, vol. 90 (rgyud, pha), folios 248.a–250.a.</bibl>
+          <bibl xml:id="UT22084-090-040-62">Denkarma (<title xml:lang="Bo-Ltn">pho brang stod thang
+            ldan dkar gyi chos kyi ’gyur ro cog gi dkar chag</title>). <ref target="https://read.84000.co/translation/toh4364.html" rend="pending">Toh 4364</ref>, Degé Tengyur vol.
+            206 (sna tshogs, jo), folios 294.b–310.a.</bibl>
+          <bibl xml:id="UT22084-090-040-63">
+                        <title xml:lang="Bo-Ltn">dkar chag ’phang thang
+              ma</title>. Beijing: mi rigs dpe skrun khang, 2003.</bibl>
+        </div>
+        <div type="section" xml:id="UT22084-090-040-listBibl-3">
+          <head type="section" tid="43">Secondary Sources</head>
+          <bibl xml:id="UT22084-090-040-64">Bühnemann, Gudrun. “A <foreign xml:lang="Sa-Ltn" type="term">Dhāraṇī</foreign> for Each Day of the Week: The <foreign xml:lang="Sa-Ltn" type="term">Saptavāra</foreign> Tradition of the Newar Buddhists.” <title xml:lang="en">Bulletin of SOAS</title> 77, no. 1 (2014): 119–36. </bibl>
+          <bibl xml:id="UT22084-090-040-65">Chou, Yi-liang. “Tantrism in China.” <title xml:lang="en">Harvard Journal of Asiatic Studies</title> 8, no. 3/4 (March 1945):
+            241–332. </bibl>
+          <bibl xml:id="UT22084-090-040-66">Copp, Paul. “Voice, Dust, Shadow, Stone: The Makings of
+            Spells in Medieval Chinese Buddhism.” PhD diss., Princeton University, 2005.</bibl>
+          <bibl xml:id="UT22084-090-040-67">Dalton, Jacob P. (2016). “How Dhāraṇīs WERE
+            Proto-Tantric: Liturgies, Ritual Manuals, and the Origins of the Tantras.” In <title xml:lang="en">Tantric Traditions in Transmission and Translation</title>, edited by
+            David Gray and Ryan Richard Overbey, 199–229. New York: Oxford University Press, 2016. </bibl>
+          <bibl xml:id="UT22084-090-040-68">———(forthcoming). <title xml:lang="en">Conjuring the
+              Buddha: Ritual Manuals in Early Tantric Buddhism</title>. New York: Columbia
+            University Press, forthcoming.</bibl>
+          <bibl xml:id="UT22084-090-040-69">Dalton, Jacob, and Sam van Schaik, ed. <title xml:lang="en">Tibetan Tantric Manuscripts from Dunhuang: A Descriptive Catalogue of
+              the Stein Collection at the British Library</title>. Brill’s Tibetan Studies Library
+            12. Leiden: Brill, 2006. </bibl>
+          <bibl xml:id="UT22084-090-040-70">Hidas, Gergely (2014). “Two <foreign xml:lang="Sa-Ltn" type="term">Dhāraṇī</foreign> Prints in the Stein Collection at the British Museum.”
+              <title xml:lang="en">Bulletin of SOAS</title> 77, no. 1 (2014): 105–17. </bibl>
+          <bibl xml:id="UT22084-090-040-71">———(2020). “<title xml:lang="Sa-Ltn">Uṣṇīṣavijayā-dhāraṇī</title>: The Complete Sanskrit Text Based on Nepalese
+            Manuscripts.” <title xml:lang="en">International Journal of Buddhist Thought &amp;
+              Culture</title> 30, no. 2 (December 2020): 147–67. </bibl>
+          <bibl xml:id="UT22084-090-040-72">———(2021a). “Dhāraṇī Seals in the Cunningham
+            Collection.” In <title xml:lang="en">Precious Treasures from the Diamond Throne: Finds
+              from the Site of the Buddha’s Enlightenment</title>, edited by Sam van Schaik et al.,
+            87–94. London: The British Museum, 2021.</bibl>
+          <bibl xml:id="UT22084-090-040-73">———(2021b). <title xml:lang="en">Powers of Protection:
+              The Buddhist Tradition of Spells in the </title>Dhāraṇīsaṃgraha<title xml:lang="en">
+              Collections</title>. Beyond Boundaries 9. Boston: de Gruyter, 2021. </bibl>
+          <bibl xml:id="UT22084-090-040-74">Lalou, Marcelle. “Les textes bouddhiques au temps du roi
+            Khri-sroṅ-lde-bcan.” <title xml:lang="fr">Journal Asiatique</title> 241 (1953):
+            313–53.</bibl>
+          <bibl xml:id="UT22084-090-040-75">Negi, J. S. <title xml:lang="en">Tibetan–Sanskrit
+              Dictionary</title> (<title xml:lang="Bo-Ltn">bod skad legs sbyar gyi tshig mdzod chen
+              mo</title>). 16 vols. Sarnath: Dictionary Unit, Central Institute of Higher Tibetan
+            Studies, 1993. </bibl>
+          <bibl xml:id="UT22084-090-040-76">Schopen, Gregory (2005). “The <title xml:lang="Sa-Ltn">Bodhi­garbhālaṅkāra­lakṣa</title> and <foreign xml:lang="Sa-Ltn">Vimaloṣṇīṣa
+              Dhāraṇīs</foreign> in Indian Inscriptions: Two Sources for the Practice of Buddhism in
+            Medieval India.” In <title xml:lang="en">Figments and Fragments of Mahāyāna Buddhism in
+              India</title>, 314–34. Honolulu: University of Hawai‘i Press, 2005. </bibl>
+          <bibl xml:id="UT22084-090-040-77">———(unpublished).
+            “Sarva(dur)gatipariśodhani-uṣṇīṣavijaya: The Los Angeles Manuscript.” Unpublished
+            transcription and English translation. </bibl>
+          <bibl xml:id="UT22084-090-040-78">Schmid, Neil. “Dunhuang and Central Asia.” In <title xml:lang="en">Esoteric Buddhism and the Tantras in East Asia</title>, edited by
+            Charles D. Orzech, Henrik H. Sørensen, and Richard K. Payne, 365–78. Leiden: Brill,
+            2011. </bibl>
+          <bibl xml:id="UT22084-090-040-79">Silk, Jonathan. “The <title xml:lang="en">Heart
+              Sūtra</title> as <foreign xml:lang="Sa-Ltn" type="term">Dhāraṇī</foreign>.” <title xml:lang="Ja-Ltn">Acta Asiatica</title> 121 (2021): 99–125. </bibl>
+          <bibl xml:id="UT22084-090-040-80">Sørensen, Henrik (2011a). “On Esoteric Buddhism in
+            China: A Working Definition.” In <title xml:lang="en">Esoteric Buddhism and the Tantras
+              in East Asia</title>, edited by Charles D. Orzech, Henrik H. Sørensen, and Richard K.
+            Payne, 155–75. Leiden: Brill, 2011.</bibl>
+          <bibl xml:id="UT22084-090-040-81">———(2011b). “Esoteric Buddhism in the Nanzhao and Dali
+            Kingdoms (ca. 800–1253).” In <title xml:lang="en">Esoteric Buddhism and the Tantras in
+              East Asia</title>, edited by Charles D. Orzech, Henrik H. Sørensen, and Richard K.
+            Payne, 379–92. Leiden: Brill, 2011.</bibl>
+          <bibl xml:id="UT22084-090-040-82">Unebe Toshiya. “Bonbun Bucchō Sonshō daranikyō to
+            shoyaku no taishō kenkyū” [<title xml:lang="Sa-Ltn">Sarva­durgati­pariśodhana-ūṣṇīṣavijayā
+              nama dhāraṇī</title>: Sanskrit text collated with Tibetan and Chinese translations
+            along with Japanese translation]. <title xml:lang="Ja-Ltn">Nagoya Diagaku Bungakubu
+              Kankyū Ronshū</title> 61 (2015): 97–146. </bibl>
+          <bibl xml:id="UT22084-090-040-83">von Rospatt, Alexander. “Local Literatures: Nepal.” In
+              <title xml:lang="en">Brill’s Encyclopedia of Buddhism</title>, edited by Jonathan Silk
+            et al., vol. 1, <title xml:lang="en">Literature and Languages</title>, 819–30. Leiden:
+            Brill, 2015.</bibl>
+        </div>
+      </div>
+      <div type="glossary" status="excluded">
+        <list type="glossary">
+          <item>
+                        <gloss xml:id="UT22084-090-040-85" type="term" mode="match">
+                            <term>blessed one</term>
+                            <term xml:lang="Bo-Ltn">bcom ldan ’das</term>
+                            <term xml:lang="bo">བཅོམ་ལྡན་འདས།</term>
+                            <term xml:lang="Sa-Ltn">bhagavān</term>
+                            <term type="alternative">blessed</term>
+                        </gloss>
+                    </item>
+          <item>
+                        <gloss xml:id="UT22084-090-040-86" type="term" mode="match">
+                            <term>well-gone one</term>
+                            <term xml:lang="Bo-Ltn">bde bar gshegs pa</term>
+                            <term xml:lang="bo">བདེ་བར་གཤེགས་པ།</term>
+                            <term xml:lang="Sa-Ltn">sugata</term>
+                        </gloss>
+                    </item>
+          <item>
+                        <gloss xml:id="UT22084-090-040-87" type="term" mode="match">
+                            <term>tathāgata</term>
+                            <term xml:lang="Bo-Ltn">de bzhin gshegs pa</term>
+                            <term xml:lang="bo">དེ་བཞིན་གཤེགས་པ།</term>
+                            <term xml:lang="Sa-Ltn">tathāgata</term>
+                            <term type="alternative">thus-gone</term>
+                        </gloss>
+                    </item>
+          <item>
+                        <gloss xml:id="UT22084-090-040-88" type="term" mode="match">
+                            <term>uṣṇīṣa</term>
+                            <term xml:lang="Bo-Ltn">gtsug tor</term>
+                            <term xml:lang="bo">གཙུག་ཏོར།</term>
+                            <term xml:lang="Sa-Ltn">uṣṇīṣa</term>
+                        </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-090-040-89">
+              <term>lower rebirth</term>
+              <term xml:lang="Bo-Ltn">ngan ’gro </term>
+              <term xml:lang="bo">ངན་འགྲོ།</term>
+              <term xml:lang="Sa-Ltn">durgati</term>
+              <term type="definition">Lower rebirths within cyclic existence.</term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss xml:id="UT22084-090-040-90" type="term" mode="match">
+                            <term>kṣatriya</term>
+                            <term xml:lang="Bo-Ltn">rgyal po’i rigs</term>
+                            <term xml:lang="bo">རྒྱལ་པོའི་རིགས།</term>
+                            <term xml:lang="Sa-Ltn">kṣatriya</term>
+                        </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-090-040-91">
+              <term>brahmin</term>
+              <term xml:lang="Bo-Ltn">bram ze </term>
+              <term xml:lang="bo">བྲམ་ཟེ།</term>
+              <term xml:lang="Sa-Ltn">bramaṇa</term>
+              <term type="definition">The highest caste in traditional Indian society.</term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-090-040-92">
+              <term>householder</term>
+              <term xml:lang="Bo-Ltn">khyim bdag </term>
+              <term xml:lang="bo">ཁྱིམ་བདག</term>
+              <term xml:lang="Sa-Ltn">gṛhapati</term>
+              <term type="definition">Not one of the normal four “castes” of Indian society, but
+                presumably here a term referring to nonmonastics.</term>
+            </gloss>
+                    </item>
+          <item>
+            <gloss xml:id="UT22084-090-040-93" type="term" mode="match">
+              <term>caitya</term>
+              <term xml:lang="Bo-Ltn">mchod rten</term>
+              <term xml:lang="bo">མཆོད་རྟེན།</term>
+              <term xml:lang="Sa-Ltn">caitya</term>
+            </gloss>
+          </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-090-040-94">
+              <term>samādhi</term>
+              <term xml:lang="Bo-Ltn">ting nge ’dzin </term>
+              <term xml:lang="bo">ཏིང་ངེ་འཛིན།</term>
+              <term xml:lang="Sa-Ltn">samādhi</term>
+              <term type="definition"/>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-090-040-95">
+              <term>dhāraṇī</term>
+              <term xml:lang="Bo-Ltn">gzungs </term>
+              <term xml:lang="bo">གཟུངས།</term>
+              <term xml:lang="Sa-Ltn">dhāraṇī</term>
+              <term type="definition"/>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-090-040-96">
+              <term>kalpa</term>
+              <term xml:lang="Bo-Ltn">rtog pa </term>
+              <term xml:lang="bo">རྟོག་པ།</term>
+              <term xml:lang="Sa-Ltn">kalpa</term>
+              <term type="definition">A ritual manual.</term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-090-040-97">
+              <term>great sāl tree</term>
+              <term xml:lang="Bo-Ltn">shing sA la chen po </term>
+              <term xml:lang="bo">ཤིང་སཱ་ལ་ཆེན་པོ།</term>
+              <term xml:lang="Sa-Ltn">mahāsāla</term>
+            <term xml:lang="Sa-Ltn">mahāśāla</term>
+              <term type="definition">This can refer to either to the sal (or sala) tree (<foreign xml:lang="la" type="term">Shorea robusta</foreign>) or to a great (<foreign xml:lang="Sa-Ltn" type="term">mahā</foreign>) household (<foreign xml:lang="Sa-Ltn" type="term">śāla</foreign>). The Buddha was said to have been
+                born and died beneath a sāla tree. </term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="person" xml:id="UT22084-090-040-99">
+              <term>Amitāyus</term>
+              <term xml:lang="Bo-Ltn">tshe dpag tu med pa </term>
+                            <term xml:lang="bo">ཚེ་དཔག་ཏུ་མེད་པ།</term>
+              <term xml:lang="Sa-Ltn">Amitāyus</term>
+              <term type="definition">The buddha residing in the western buddha realm of Sukhāvatī.
+                He is sometimes known as Amitābha. More commonly translated into Tibetan as <foreign xml:lang="Bo-Ltn">tshe dpag med</foreign>.</term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss xml:id="UT22084-090-040-100" type="person" mode="match">
+                            <term>Avalokiteśvara</term>
+                            <term xml:lang="Bo-Ltn">spyan ras gzigs</term>
+                            <term xml:lang="bo">སྤྱན་རས་གཟིགས།</term>
+                            <term xml:lang="Sa-Ltn">Avalokiteśvara</term>
+                        </gloss>
+                    </item>
+          <item>
+                        <gloss type="place" xml:id="UT22084-090-040-102">
+              <term>Sukhāvatī</term>
+              <term xml:lang="Bo-Ltn">bde ba can </term>
+              <term xml:lang="bo">བདེ་བ་ཅན།</term>
+              <term xml:lang="Sa-Ltn">Sukhāvatī</term>
+              <term type="definition">Amitāyus’ pure realm.</term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="place" xml:id="UT22084-090-040-103">
+              <term>Dharma Proclamation</term>
+              <term xml:lang="Bo-Ltn">chos yang dag par sdud pa </term>
+                            <term xml:lang="bo">ཆོས་ཡང་དག་པར་སྡུད་པ།</term>
+              <term xml:lang="Sa-Ltn">Dharmasaṃgīti</term>
+              <term type="definition">A secret palace in Sukhāvatī.</term>
+            </gloss>
+                    </item>
+        </list>
+      </div>
+    </back>
+  </text>
+</TEI>
