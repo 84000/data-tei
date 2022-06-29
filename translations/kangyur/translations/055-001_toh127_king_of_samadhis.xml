@@ -30,7 +30,7 @@
                 <sponsor ref="sponsors.xml#sponsor-8">anonymous</sponsor>
             </titleStmt>
             <editionStmt>
-                <edition>v 1.45.20 <date>2022</date>
+                <edition>v 1.45.22 <date>2022</date>
                 </edition>
             </editionStmt>
             <publicationStmt status="1">
@@ -66,7 +66,7 @@
 
             </sourceDesc>
             <notesStmt>
-                <note type="lastUpdated" date-time="2022-03-11T13:43:57.753Z" user="admin">11/03/2022 13:43:57</note>
+                <note type="lastUpdated" date-time="2022-06-29T15:48:11.095Z" user="admin">29/06/2022 15:48:11</note>
                 <note type="updated" update="text-version" value="v 1.34" date-time="2019-03-18T11:06:14.991Z" user="john">v 1.34 2018</note>
                 <note type="updated" update="text-version" value="v 1.35" date-time="2019-03-18T11:34:16.438Z" user="john">v 1.35 2018</note>
                 <note type="updated" update="text-version" value="v 1.37" date-time="2019-04-16T16:42:43.647Z" user="john">v 1.37 2018</note>
@@ -96,6 +96,8 @@
     <note type="updated" update="text-version" value="1.45.18" date-time="2021-11-03T18:03:27.157Z" user="celso">activated pending link and adjucsted bibl entries</note>
     <note type="updated" update="text-version" value="1.45.19" date-time="2022-03-09T20:29:32.514Z" user="celso">adjusted cache in glossary linking according to new hyphen rules</note>
     <note type="updated" update="text-version" value="1.45.20" date-time="2022-03-11T13:43:53.467Z" user="laura">Minor issue with glossary link</note>
+    <note type="updated" update="text-version" value="1.45.21" date-time="2022-06-27T10:06:48.1Z" user="admin">Auto (script-increment-version-published)</note>
+    <note type="updated" update="text-version" value="1.45.22" date-time="2022-06-29T15:48:07Z" user="martina-cotter">Added pending links.</note>
 </notesStmt>
             <!--<notesStmt>
                 <note type="lastUpdated">Last updated at 06/01/2018 at 14:00:24 by celso</note>
@@ -205,7 +207,10 @@
                             (<title xml:lang="Sa-Ltn">Ratnakūṭa</title>) section of the Kangyur, in
                         which, as in the <title xml:lang="en">King of Samādhis Sūtra,</title> he is
                         depicted as inviting the Buddha to his home and making elaborate
-                        preparations for the visit.<ref rend="pending" target="https://read.84000.co/translation/toh55.html" inst="add note, add bibl"/> Most of the qualities of the samādhi described
+                        preparations for the visit.<note place="end" xml:id="UT22084-055-001-6180">See Dharmachakra Translation Committee, trans., <title xml:lang="en">
+                                <ref target="https://read.84000.co/translation/toh55.html#UT22084-040-006-811">The Teaching on the Effulgence of Light</ref>
+                            </title>, Toh 55 (84000: Translating the Words of the Buddha, 2022).</note>
+                         Most of the qualities of the samādhi described
                         in the <title xml:lang="en">King of Samādhis Sūtra</title> also appear
                         within the list of the qualities of a samādhi in <title xml:lang="en">The
                             Sūtra of the Samādhi of the Miraculous Ascertainment of Peace.</title>
@@ -26928,10 +26933,9 @@
                         <bibl xml:id="UT22084-055-001-4765">
                             <title xml:lang="Bo-Ltn">’od zer kun du bkye pa’i bstan pa’i mdo</title>
                             (<title xml:lang="Sa-Ltn">
-                                <ref rend="pending" target="https://read.84000.co/translation/toh55.html">Raśmi­samantamukta­nirdeśa­sūtra</ref>
+                                <ref target="https://read.84000.co/translation/toh55.html">Raśmi­samantamukta­nirdeśa­sūtra</ref>
                             </title>)
-                                [<title xml:lang="en">The Sūtra of the Teaching on the Complete
-                                Effulgence of Light</title>]. Toh 55, Degé Kangur vol. 40 (dkon
+                            [<title xml:lang="en">The Teaching on the Effulgence of Light</title>]. Toh 55, Degé Kangur vol. 40 (dkon
                             brtsegs, kha), folios 195.a–255.b.</bibl>
                         <bibl xml:id="UT22084-055-001-4766">
                             <title xml:lang="Bo-Ltn">tshong dpon bzang skyong gyis zhus pa’i
@@ -27028,6 +27032,9 @@
                     <bibl xml:id="UT22084-055-001-6176">———, trans. (2020c). <title xml:lang="en">
                         <ref target="https://read.84000.co/translation/toh101.html">Upholding the Roots of Virtue</ref>
                     </title> (<title xml:lang="Sa-Ltn">Kuśala­mūla­saṃparigraha</title>, Toh 101). 84000: Translating the Words of the Buddha.</bibl>
+                    <bibl xml:id="UT22084-055-001-6181">———, trans. (2022). <title xml:lang="en">
+                            <ref target="https://read.84000.co/translation/toh55.html">The Teaching on the Effulgence of Light</ref>
+                        </title> (<title xml:lang="Sa-Ltn">Raśmisamanta­mukta­nirdeśa</title>, Toh 55). 84000: Translating the Words of the Buddha.</bibl>
                     <bibl xml:id="UT22084-055-001-4783">Dimitrov, Dragomir. “Two Female Bodhisattvas
                         in Flesh and Blood,” in <title xml:lang="en">Aspects of the Female in Indian
                             Culture</title>. Marburg: Indica et Tibetica, 2004, pp. 3–30. </bibl>
@@ -30468,18 +30475,12 @@
                         </gloss>
                     </item>
                     <item>
-                        <gloss type="person" xml:id="UT22084-055-001-5123">
+                        <gloss xml:id="UT22084-055-001-5123" type="person" mode="match">
                             <term>Udāyin</term>
-                            <term xml:lang="Bo-Ltn">’char ba po </term>
+                            <term xml:lang="Bo-Ltn">’char ba po</term>
                             <term xml:lang="bo">འཆར་བ་པོ།</term>
                             <term xml:lang="Sa-Ltn">Udāyin</term>
-                            <term xml:lang="Sa-Ltn">Kālodāyin</term>
-                            <term type="definition">The son of the court priest in Kapilavastu, the
-                                Buddha’s home town. Also called Kālodāyin (black <term type="ignore">Udāyin</term>) because of his dark skin. He and his wife Guptā
-                                became monk and nun. He became an arhat who was a skilled teacher.
-                                However he also figures prominently in accounts of inappropriate
-                                sexual behavior that instigated vinaya rules. He and Guptā are also
-                                said to have conceived a son after their ordination.</term>
+                            <term type="definition">The son of the court priest in Kapilavastu, the Buddha’s home town. Also called Kālodāyin (black <term type="ignore">Udāyin</term>) because of his dark skin. He and his wife Guptā became monk and nun. He became an arhat who was a skilled teacher. However he also figures prominently in accounts of inappropriate sexual behavior that instigated vinaya rules. He and Guptā are also said to have conceived a son after their ordination.</term>
                         </gloss>
                     </item>
                     <item>
