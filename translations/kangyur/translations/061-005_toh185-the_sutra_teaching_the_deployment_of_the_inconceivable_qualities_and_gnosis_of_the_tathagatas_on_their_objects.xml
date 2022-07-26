@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../../../schema/current/translation.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<tei:TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="mainTitle" xml:lang="bo">དེ་བཞིན་གཤེགས་པའི་ཡོན་ཏན་དང་ཡེ་ཤེས་བསམ་གྱིས་མི་ཁྱབ་པའི་ཡུལ་ལ་འཇུག་པ་བསྟན་པ།</title>
-                <title type="mainTitle" xml:lang="Bo-Ltn">de bzhin gshegs pa’i yon tan dang ye shes bsam gyis mi khyab pa’i yul la ’jug pa bstan pa</title>
                 <title type="mainTitle" xml:lang="en">Introduction to the Domain of the Inconceivable Qualities and Wisdom of the Tathāgatas</title>
                 <title type="mainTitle" xml:lang="Sa-Ltn">Tathāgata­guṇa­jñānācintya­viṣayāvatāra­nirdeśa</title>
-                <title type="longTitle" xml:lang="Bo-Ltn">’phags pa de bzhin gshegs pa’i yon tan dang ye shes bsam gyis mi khyab pa’i yul la ’jug pa bstan pa zhes bya ba theg pa chen po’i mdo</title>
-              <title type="longTitle" xml:lang="en">The Noble Mahāyāna Sūtra “Introduction to the Domain of the Inconceivable Qualities and Wisdom of the Tathāgatas”</title>
+                <title type="mainTitle" xml:lang="Bo-Ltn">de bzhin gshegs pa’i yon tan dang ye shes bsam gyis mi khyab pa’i yul la ’jug pa bstan pa</title>
+                <title type="mainTitle" xml:lang="bo">དེ་བཞིན་གཤེགས་པའི་ཡོན་ཏན་དང་ཡེ་ཤེས་བསམ་གྱིས་མི་ཁྱབ་པའི་ཡུལ་ལ་འཇུག་པ་བསྟན་པ།</title>
+                <title type="longTitle" xml:lang="en">The Noble Mahāyāna Sūtra “Introduction to the Domain of the Inconceivable Qualities and Wisdom of the Tathāgatas”</title>
                 <title type="longTitle" xml:lang="Sa-Ltn">Ārya­tathāgata­guṇa­jñānācintya­viṣayāvatāra­nirdeśa­nāma­mahāyāna­sūtra</title>
+                <title type="longTitle" xml:lang="Bo-Ltn">’phags pa de bzhin gshegs pa’i yon tan dang ye shes bsam gyis mi khyab pa’i yul la ’jug pa bstan pa zhes bya ba theg pa chen po’i mdo</title>
                 <title type="longTitle" xml:lang="bo">འཕགས་པ་དེ་བཞིན་གཤེགས་པའི་ཡོན་ཏན་དང་ཡེ་ཤེས་བསམ་གྱིས་མི་ཁྱབ་པའི་ཡུལ་ལ་འཇུག་པ་བསྟན་པ་ཞེས་བྱ་བ་ཐེག་པ་ཆེན་པོའི་མདོ།</title>
-                <title type="otherTitle" xml:lang="zh">大方广入如来智德不思议经</title>
+                <title type="otherTitle" xml:lang="zh">《大方廣入如來智德不思議經》</title>
                 <author role="translatorMain" ref="contributors.xml#team-16">Translated by Karen Liljenberg and Ulrich Pagel<lb/>under the patronage and supervision of 84000: Translating the Words of the Buddha</author>
                 <author role="translatorEng" ref="contributors.xml#person-115">Dr. Karen Liljenberg</author>
                 <editor role="externalReviewer" ref="contributors.xml#person-282">Gavin Kilty</editor>
@@ -24,7 +24,7 @@
                 <sponsor ref="sponsors.xml#sponsor-47">Make and Wang Xiao Juan (馬珂和王曉娟)</sponsor>
             </titleStmt>
             <editionStmt>
-                <edition>v 1.0.8 <date>2021</date>
+                <edition>v 1.0.12 <date>2021</date>
                 </edition>
             </editionStmt>
             <publicationStmt status="1">
@@ -61,7 +61,7 @@
                 </bibl>
             </sourceDesc>
             <notesStmt>
-                <note type="lastUpdated" date-time="2021-06-26T04:12:08.853Z" user="admin">26/06/2021 04:12:08</note>
+                <note type="lastUpdated" date-time="2022-07-26T06:28:27.941Z" user="admin">26/07/2022 06:28:27</note>
                 <note type="updated" update="translation-status" value="2.d" date-time="2019-05-06T16:17:25.267Z" user="john">2.d</note>
                 <note type="updated" update="translation-status" value="2.c" date-time="2019-05-30T01:13:35.014Z" user="dion-blundell">2.c</note>
                 <note type="updated" update="text-version" value="0.1" date-time="2019-10-07T08:19:33.747Z" user="andreas"/>
@@ -85,12 +85,15 @@
                 <note type="updated" update="text-version" value="1.0.0" date-time="2020-12-15T10:14:31.203Z" user="mike">First Published Version</note>
                 <note type="updated" update="text-version" value="1.0.1" date-time="2020-12-31T11:57:47.584Z" user="john">Some spellings etc. corrected</note>
                 <note type="updated" update="text-version" value="1.0.2" date-time="2021-01-04T22:28:55.812Z" user="laura">Updated colophon to Bandé</note>
-            
-    <note type="updated" update="text-version" value="1.0.4" date-time="2021-01-08T20:00:07.747Z" user="celso">fixed typo in bibl entry</note>
-    <note type="updated" update="text-version" value="1.0.5" date-time="2021-01-08T20:33:30.158Z" user="celso">further corrections to bibliography</note>
-    <note type="updated" update="text-version" value="1.0.6" date-time="2021-02-12T19:24:52.42Z" user="celso">"scholar" to "preceptor" in colophon</note>
-    <note type="updated" update="text-version" value="1.0.7" date-time="2021-04-22T15:33:25.755Z" user="celso">added a missing @xml:lang tag to Chinese string</note>
-    <note type="updated" update="text-version" value="1.0.8" date-time="2021-06-26T04:12:05.73Z" user="celso">kiṃnara to kinnara</note>
+                <note type="updated" update="text-version" value="1.0.4" date-time="2021-01-08T20:00:07.747Z" user="celso">fixed typo in bibl entry</note>
+                <note type="updated" update="text-version" value="1.0.5" date-time="2021-01-08T20:33:30.158Z" user="celso">further corrections to bibliography</note>
+                <note type="updated" update="text-version" value="1.0.6" date-time="2021-02-12T19:24:52.42Z" user="celso">"scholar" to "preceptor" in colophon</note>
+                <note type="updated" update="text-version" value="1.0.7" date-time="2021-04-22T15:33:25.755Z" user="celso">added a missing @xml:lang tag to Chinese string</note>
+                <note type="updated" update="text-version" value="1.0.8" date-time="2021-06-26T04:12:05.73Z" user="celso">kiṃnara to kinnara</note>
+                <note type="updated" update="text-version" value="1.0.9" date-time="2021-11-03T17:49:28.333Z" user="celso">activated pending links</note>
+                <note type="updated" update="text-version" value="1.0.10" date-time="2021-11-03T18:42:23.85Z" user="celso">minor typo in bibl</note>
+                <note type="updated" update="text-version" value="1.0.11" date-time="2022-06-27T10:06:48.1Z" user="admin">Auto (script-increment-version-published)</note>
+                <note type="updated" update="text-version" value="1.0.12" date-time="2022-07-26T06:28:20.129Z" user="cabie-sim">Auto (update-titles)</note>
             </notesStmt>
         </fileDesc>
     </teiHeader>
@@ -115,9 +118,10 @@
                         </div>
                         <div type="introduction">
                                 <head type="introduction" tid="5">Introduction</head>
-                                <milestone unit="chunk" xml:id="UT22084-061-005-3"/>
+                                <div type="section" xml:id="UT22084-061-005-introduction-1">
+                    <milestone unit="chunk" xml:id="UT22084-061-005-3"/>
                                 <p tid="6">
-                    <title xml:lang="en">Introduction to the Domain of the Inconceivable Qualities and Wisdom of the Tathāgatas</title> consists of a discourse
+                        <title xml:lang="en">Introduction to the Domain of the Inconceivable Qualities and Wisdom of the Tathāgatas</title> consists of a discourse
                                         between two bodhisattvas in which the bodhisattva Sarva­nīvaraṇa­viṣkambhin addresses the bodhisattva Mañjuśrī in the
                                         Buddha’s inspiring presence. The sūtra thus belongs to the class of scriptures classified in the Tibetan tradition as “imparted with permission” by the Buddha.<note place="end" xml:id="UT22084-061-005-4"> The Tibetan tradition recognizes
                                                         three categories of the Buddha’s words: (1) oral teachings (Tib. <foreign xml:lang="Bo-Ltn" type="term">zhal nas gsungs pa</foreign>); (2) imparted with blessings (Tib. <foreign xml:lang="Bo-Ltn" type="term">byin gyis brlabs pa</foreign>); and (3) imparted with permission (Tib. <foreign xml:lang="Bo-Ltn" type="term">rjes su gnang ba</foreign>).</note>
@@ -130,31 +134,31 @@
                                         path. Many sūtras elaborate on the subject of the awakened qualities of the buddhas, but the strong emphasis this sūtra
                                         places on the importance of a spiritual friend is unusual.<note place="end" xml:id="UT22084-061-005-6"> It is not
                                           without parallel, however. See, for example, <title xml:lang="en">
-                            <ref target="https://read.84000.co/translation/toh300.html">The Sūtra on Reliance upon a Virtuous Spiritual‌ Friend</ref>
-                        </title> (<title xml:lang="Sa-Ltn">Kalyāṇa­mitra­sevana­sūtra</title>, Toh 300).</note>
-                </p>
+                                <ref target="https://read.84000.co/translation/toh300.html">The Sūtra on Reliance upon a Virtuous Spiritual‌ Friend</ref>
+                            </title> (<title xml:lang="Sa-Ltn">Kalyāṇa­mitra­sevana­sūtra</title>, Toh 300).</note>
+                    </p>
                                 <milestone unit="chunk" xml:id="UT22084-061-005-7"/>
                                 <p tid="8">The sūtra states that a bodhisattva who is accepted by a <distinct>spiritual friend</distinct> also attains a number of
                                                 <foreign xml:lang="Sa-Ltn" type="term">dhāraṇīs</foreign> (Tib. <foreign xml:lang="Bo-Ltn" type="term">gzungs</foreign>); these are formulae linked to the powers of scriptural memorization and recitation, or in a
                                         more magical vein, consisting in incantations chanted for worldly or spiritual gain. The list of these <foreign xml:lang="Sa-Ltn" type="term">dhāraṇīs</foreign> is closely related to that found in the <title xml:lang="Sa-Ltn">Mahāvyutpatti</title>, an authoritative Tibetan-Sanskrit lexicon of the ninth
                                     century.<note place="end" xml:id="UT22084-061-005-8"> And also in <title xml:lang="en">
-                            <ref target="https://read.84000.co/translation/toh147.html#UT22084-057-006-713">The Teaching on the Great Compassion of the Tathāgata</ref>
-                        </title> (<title xml:lang="Sa-Ltn">Tathāgata­mahā­karuṇā­nirdeśa</title>, Toh 147). For a discussion of these <foreign xml:lang="Sa-Ltn" type="term">dhāraṇīs</foreign> see Pagel 2007, 169–72, 174.</note> The
+                                <ref target="https://read.84000.co/translation/toh147.html#UT22084-057-006-713">The Teaching on the Great Compassion of the Tathāgata</ref>
+                            </title> (<title xml:lang="Sa-Ltn">Tathāgata­mahā­karuṇā­nirdeśa</title>, Toh 147). For a discussion of these <foreign xml:lang="Sa-Ltn" type="term">dhāraṇīs</foreign> see Pagel 2007, 169–72, 174.</note> The
                                         sūtra also incorporates, near its beginning, a passage describing the qualities of the Buddha that is also found in the
                                     <title xml:lang="Sa-Ltn">Saṃdhi­nirmocana­sūtra</title> (Toh 106).<note place="end" xml:id="UT22084-061-005-792">
                                         See Buddhavacana Translation Group, trans., <title xml:lang="en">
-                            <ref target="https://read.84000.co/translation/toh106.html">Unraveling the Intent</ref>
-                        </title>, Toh 106 (84000:
+                                <ref target="https://read.84000.co/translation/toh106.html">Unraveling the Intent</ref>
+                            </title>, Toh 106 (84000:
                                         Translating the Words of the Buddha).</note> Further on, there is a list of various states
                                         of <foreign xml:lang="Sa-Ltn" type="term">samādhi</foreign>, or meditative absorption, ascribed here to bodhisattvas.
                                     Similar lists also appear in the <title xml:lang="Sa-Ltn">Akṣaya­mati­nirdeśa</title> (Toh 175),<note place="end" xml:id="UT22084-061-005-793">
                                         See Jens Braarvig and David Welsh, University of Oslo, trans., <title xml:lang="en">
-                            <ref target="https://read.84000.co/translation/toh175.html">The Teaching of Akṣayamati</ref>
-                        </title>, Toh 175 (84000:
+                                <ref target="https://read.84000.co/translation/toh175.html">The Teaching of Akṣayamati</ref>
+                            </title>, Toh 175 (84000:
                                         Translating the Words of the Buddha).</note> the <title xml:lang="Sa-Ltn">Bodhi­sattva­piṭaka</title> (Toh 56), the <title xml:lang="Sa-Ltn">Ratnamegha</title> (Toh 231),<note place="end" xml:id="UT22084-061-005-794">
                                             See Dharmachakra Translation Committee, trans., <title xml:lang="en">
-                            <ref target="https://read.84000.co/translation/toh231.html">The Jewel Cloud</ref>
-                        </title>, Toh 231 (84000:
+                                <ref target="https://read.84000.co/translation/toh231.html">The Jewel Cloud</ref>
+                            </title>, Toh 231 (84000:
                                             Translating the Words of the Buddha).</note>
                                   the <title xml:lang="Sa-Ltn">Gaṇḍavyūha</title> (Toh 44), and other sūtras, as well as in the <title xml:lang="Sa-Ltn">Mahāvyutpatti</title>.<note place="end" xml:id="UT22084-061-005-9"> For detailed references, see Skilton 2002,
                                                         57.</note>
@@ -162,10 +166,10 @@
                                 <milestone unit="chunk" xml:id="UT22084-061-005-10"/>
                                 <p tid="9">This sūtra seems to have been well known to Buddhist scholars in India. The text is quoted both in Nāgarjūna’s
                                   <title xml:lang="Sa-Ltn">
-                        <ref rend="pending" target="https://read.84000.co/translation/toh3934.html">Sūtrasamuccaya</ref>
-                    </title> (Toh 3934)<note place="end" xml:id="UT22084-061-005-11"> Pāsādika 1989,
+                            <ref rend="pending" target="https://read.84000.co/translation/toh3934.html">Sūtrasamuccaya</ref>
+                        </title> (Toh 3934)<note place="end" xml:id="UT22084-061-005-11"> Pāsādika 1989,
                                                   14.11–15.12.</note> and in the <title xml:lang="Sa-Ltn">Ratna­gotra­vibhāga­vyākhyā</title> (Toh 4025).<note place="end" xml:id="UT22084-061-005-12"> Toh 4025, 75.a.7–b.1; cf. Johnston 1950, p. 3.7–9.<ref rend="pending" target="https://read.84000.co/translation/toh4025.html" inst="F.75.a"/>
-                    </note> If the
+                        </note> If the
                                   <title xml:lang="Sa-Ltn">Sūtrasamuccaya</title> is indeed the work of the Nāgarjūna (150 to 250 <hi rend="small-caps">ce</hi>)<note place="end" xml:id="UT22084-061-005-13"> For a summary of the contingencies surrounding the dating of the <title xml:lang="Sa-Ltn">Sūtrasamuccaya</title>, see Skilling and Saerji 2013, 203, n.
                                                   51.</note> who is identified as the author of the <title xml:lang="Sa-Ltn">Mūla­madhyamaka­kārikā</title> (Toh 3824), this would
                                         suggest that our sūtra was already in circulation in the second or third century <hi rend="small-caps">ce</hi>. </p>
@@ -174,9 +178,9 @@
                                         circulated in India, and that were only later identified as a unitary collection in Tibet and China.<note place="end" xml:id="UT22084-061-005-15"> See Skilling and Saerji 2013.</note> To this we may add further
                                         textual and thematic evidence for including the sūtra in the <title xml:lang="Sa-Ltn">Buddhāvataṃsaka</title> family. An important piece of
                                   textual evidence is its reference to the <title xml:lang="Sa-Ltn">Samanta­bhadra­caryā­praṇidhāna</title> (<title xml:lang="en">
-                        <term type="ignore">Aspiration Prayer
+                            <term type="ignore">Aspiration Prayer
                                                 for the Conduct of Samantabhadra</term>
-                    </title>),<note place="end" xml:id="UT22084-061-005-16"> The reference to the
+                        </title>),<note place="end" xml:id="UT22084-061-005-16"> The reference to the
                                                   <title xml:lang="Sa-Ltn">Samanta­bhadra­caryā­praṇidhāna</title> occurs at <ptr target="#UT22084-061-005-44"/><!--Toh 185, 109.b.6-->.</note> a text that forms
                                   the final part of the <title xml:lang="Sa-Ltn">Gaṇḍa­vyūha­sūtra</title> (Toh 44-45), which is itself an important component text in
                                         the <title xml:lang="Sa-Ltn">Buddhāvataṃsaka</title> family.<note place="end" xml:id="UT22084-061-005-17"> This work forms the final part of
@@ -188,7 +192,7 @@
                                         descriptions of the bodhisattvas’ qualities.</p>
                                 <milestone unit="chunk" xml:id="UT22084-061-005-18"/>
                                 <p tid="11">
-                    <title xml:lang="en">Introduction to the Domain of the Inconceivable Qualities and Wisdom of the Tathāgatas</title>, is found in the
+                        <title xml:lang="en">Introduction to the Domain of the Inconceivable Qualities and Wisdom of the Tathāgatas</title>, is found in the
                                         General Sūtra Section (Tib. <foreign xml:lang="Bo-Ltn" type="term">mdo sde</foreign>) of the Kangyur. According to the
                                         colophon, it was translated by the Indian pandit Jñānagarbha and the renowned Tibetan translator Yeshé Dé, who
                                         flourished in the late eighth to the early ninth centuries. It is also included in the Denkarma (<title xml:lang="Bo-Ltn">ldan dkar
@@ -205,6 +209,7 @@
                                 <milestone unit="chunk" xml:id="UT22084-061-005-22"/>
                                 <p tid="13">This translation was prepared from the Degé (<foreign xml:lang="Bo-Ltn">sde dge</foreign>) block print in consultation with
                                         the Comparative Kangyur (<foreign xml:lang="Bo-Ltn">dpe bsdur ma</foreign>).</p>
+                </div>
                         </div>
                 </front>
                 <body>
@@ -236,7 +241,7 @@
                                                 took a seat on a lion throne made of lotus flowers in the company of a saṅgha of six million two hundred
                                                 thousand monks.</p>
                                         <milestone unit="chunk" xml:id="UT22084-061-005-29"/>
-                                  <p tid="24">These included the Venerable Śāriputra, as well as Mahā­maudgalyāyana, Mahā-Kāśyapa, Niruddha, Subhūti, Kātyāyana,
+                                  <p tid="24">These included the Venerable Śāriputra, as well as Mahāmaudgalyāyana, Mahākāśyapa, Aniruddha, Subhūti, Kātyāyana,
                                     Mahākapphiṇa, Citra,<note place="end" xml:id="UT22084-061-005-30"> We follow <foreign type="quote" xml:lang="Bo-Ltn">nag po</foreign>, the dominant
                                                         variant in the comparative Pedurma, rather than <foreign type="quote" xml:lang="Bo-Ltn">nag pa</foreign> found in
                                                   Degé Pharphud.</note> Nanda, Nadī-Kāśyapa, Gayā-Kāśyapa, Uruvilvā­Kāśyapa, Pūrṇa Maitrāyaṇī­putra,
@@ -1706,15 +1711,15 @@
                                 <ref rend="pending" target="https://read.84000.co/translation/toh4025.html">Ratna­gotra­vibhāga­vyākhyā</ref>
                             </title>). Toh 4025, Degé Tengyur vol. (sems tsam, phi), folios 74.b–129.a.</bibl>
                                    <bibl xml:id="UT22084-061-005-700">
-                            <title xml:lang="Bo-Ltn">blo gros mi zad pas bstan pa</title> (<title xml:lang="Sa-Ltn">Akṣaya­mati­nirdeśa</title>). Toh 175, Degé Kangyur vol. 60 (mdo sde, ma), folios 79.a–174.b. English translation in Braarvig, Jens, and David Welsh (2020). [Full citation listed in secondary literature]</bibl>
+                            <title xml:lang="Bo-Ltn">blo gros mi zad pas bstan pa</title> (<title xml:lang="Sa-Ltn">Akṣaya­mati­nirdeśa</title>). Toh 175, Degé Kangyur vol. 60 (mdo sde, ma), folios 79.a–174.b. English translation in <ref target="https://read.84000.co/translation/toh175.html">Braarvig, Jens, and David Welsh (2020)</ref>. [Full citation listed in secondary literature]</bibl>
                                    <bibl xml:id="UT22084-061-005-702">
                             <title xml:lang="Bo-Ltn">byang chub sems dpa’i sde snod</title> (<title xml:lang="Sa-Ltn">
                                 <ref rend="pending" target="https://read.84000.co/translation/toh56.html">Bodhi­sattva­piṭaka</ref>
                             </title>). Toh 56, Degé Kangyur vol. 40 (dkon brtsegs, kha), folios 255.b–294.a and vol. 41 (dkon brtsegs, ga), folios 1.b–205.b.</bibl>              
                                    <bibl xml:id="UT22084-061-005-701">
-                            <title xml:lang="Bo-Ltn">dgongs pa nges par ’grel pa’i mdo</title> (<title xml:lang="Sa-Ltn">Saṃdhi­nirmocana­sūtra</title>). Toh 106, Degé Kangyur vol. 49 (mdo sde, ca), folios 1.b–55.b. English translation in Buddhavacana Translation Group (2020). [Full citation listed in secondary literature]</bibl>
+                            <title xml:lang="Bo-Ltn">dgongs pa nges par ’grel pa’i mdo</title> (<title xml:lang="Sa-Ltn">Saṃdhi­nirmocana­sūtra</title>). Toh 106, Degé Kangyur vol. 49 (mdo sde, ca), folios 1.b–55.b. English translation in <ref target="https://read.84000.co/translation/toh106.html">Buddhavacana Translation Group (2020)</ref>. [Full citation listed in secondary literature]</bibl>
                                    <bibl xml:id="UT22084-061-005-703">
-                            <title xml:lang="Bo-Ltn">dkon mchog sprin</title> (<title xml:lang="Sa-Ltn">Ratnamegha</title>). Toh 231, Degé Kangyur vol. 64 (mdo sde, wa), folios 1.b–112.b. English translation in Dharmachakra Translation Committee (2019). [Full citation listed in secondary literature]</bibl>
+                            <title xml:lang="Bo-Ltn">dkon mchog sprin</title> (<title xml:lang="Sa-Ltn">Ratnamegha</title>). Toh 231, Degé Kangyur vol. 64 (mdo sde, wa), folios 1.b–112.b. English translation in <ref target="https://read.84000.co/translation/toh231.html">Dharmachakra Translation Committee (2019)</ref>. [Full citation listed in secondary literature]</bibl>
                                    <bibl xml:id="UT22084-061-005-705">
                             <title xml:lang="Bo-Ltn">kun tu bzang po’i spyod pa’i smon lam</title> (<title xml:lang="Sa-Ltn">
                                 <ref rend="pending" target="https://read.84000.co/translation/toh44-45a.html">Samanta­bhadra­caryā­praṇidhāna</ref>
@@ -1728,9 +1733,7 @@
                                    <bibl xml:id="UT22084-061-005-706">
                             <title xml:lang="Bo-Ltn">sangs rgyas phal po che</title> (<title xml:lang="Sa-Ltn">Buddhāvataṃsaka</title>). Toh 44, Degé Kangyur vol. 35 (phal chen, ka) folios 1.b–393.a; vol. 36 (phal chen, kha) folios 1.b–396.a; vol. 37 (phal chen, ga) folios 1.b–396.a, and vol. 38 (phal chen, a) folios 1.b–363.a.</bibl>
                                    <bibl xml:id="UT22084-061-005-704">
-                            <title xml:lang="Bo-Ltn">sdong pos brgyan pa’i le’u</title> (<title xml:lang="Sa-Ltn">
-                                <ref rend="pending" target="https://read.84000.co/translation/toh44-45.html">Gaṇḍavyūha</ref>
-                            </title>). Toh 44-45, Degé Kangyur vol. 37 (phal chen, ga), folios 274.b–336.a and vol. 38 (phal chen, a), folios 1.b–363.a.</bibl>                                 
+                            <title xml:lang="Bo-Ltn">sdong pos brgyan pa’i le’u</title> (<title xml:lang="Sa-Ltn">Gaṇḍavyūha</title>). Toh 44-45, Degé Kangyur vol. 37 (phal chen, ga), folios 274.b–336.a and vol. 38 (phal chen, a), folios 1.b–363.a. English translation in <ref target="https://read.84000.co/translation/toh44-45.html">Roberts (2021)</ref>. [Full citation listed in secondary literature]</bibl>                                 
                                  </div>
                                   <div type="section" xml:id="UT22084-061-005-listBibl-1-3">
                                     <head type="section" tid="214">Sanskrit Texts and Secondary Literature</head>
@@ -1757,6 +1760,11 @@
                                     
                                     <bibl xml:id="UT22084-061-005-252">Powers, John. <title xml:lang="en">Wisdom of Buddha: The Saṁdhinirmocana Sūtra</title>. Berkeley: Dharma
                                       Publishing, 1995.</bibl>
+                                    
+                                    <bibl xml:id="UT22084-061-005-798">Roberts, Peter Alan, trans. <title xml:lang="en">
+                                      <ref target="https://read.84000.co/translation/toh44-45.html">The Stem Array</ref>
+                                    </title> (<title xml:lang="Sa-Ltn">Gaṇḍavyūha</title>, Toh 44-45). 84000: Translating the Words of the Buddha,
+                                      2021.</bibl>
                                     
                                     <bibl xml:id="UT22084-061-005-253">Skilling, Peter and Saerji. “The Circulation of the <title xml:lang="Sa-Ltn">Buddhāvataṃsaka</title> in India.” 
                                       <title xml:lang="en">Annual Report of The International Research Institute for Advanced Buddhology at Soka University for the Academic Year 2012</title>. [=ARIRIAB], vol. XVI, March 2013.</bibl>
@@ -3528,14 +3536,14 @@
       </gloss>
     </item>
     <item>
-      <gloss type="person" xml:id="UT22084-061-005-446">
-        <term>Kātyāyana</term>
-        <term xml:lang="Bo-Ltn">kA tyA’i bu </term>
+                        <gloss xml:id="UT22084-061-005-446" type="person" mode="match">
+                            <term>Kātyāyana</term>
+                            <term xml:lang="Bo-Ltn" status="verified">kA tyA’i bu</term>
                             <term xml:lang="bo">ཀཱ་ཏྱཱའི་བུ།</term>
-        <term xml:lang="Sa-Ltn">Kātyāyana</term>
-        <term type="definition">A monk (<foreign type="term" xml:lang="Sa-Ltn">bhikṣu</foreign>) and disciple of the Buddha.</term>
-      </gloss>
-    </item>
+                            <term xml:lang="Sa-Ltn">Kātyāyana</term>
+                            <term type="definition">A monk (<foreign type="term" xml:lang="Sa-Ltn">bhikṣu</foreign>) and disciple of the Buddha.</term>
+                        </gloss>
+                    </item>
     <item>
       <gloss type="person" xml:id="UT22084-061-005-447">
         <term>Khadiravanika</term>
@@ -3628,10 +3636,10 @@
     </item>
     <item>
       <gloss type="person" xml:id="UT22084-061-005-457">
-        <term>Mahā­maudgalyāyana</term>
+        <term>Mahāmaudgalyāyana</term>
         <term xml:lang="Bo-Ltn">maud gal gyi bu chen po </term>
                             <term xml:lang="bo">མཽད་གལ་གྱི་བུ་ཆེན་པོ།</term>
-        <term xml:lang="Sa-Ltn">Mahā­maudgalyāyana</term>
+        <term xml:lang="Sa-Ltn">Mahāmaudgalyāyana</term>
         <term type="definition">A monk (<foreign type="term" xml:lang="Sa-Ltn">bhikṣu</foreign>) and disciple of the Buddha.</term>
       </gloss>
     </item>
@@ -3777,10 +3785,10 @@
     </item>
     <item>
       <gloss type="person" xml:id="UT22084-061-005-473">
-        <term>Niruddha</term>
+        <term>Aniruddha</term>
         <term xml:lang="Bo-Ltn">ma ’gags pa </term>
                             <term xml:lang="bo">མ་འགགས་པ།</term>
-        <term xml:lang="Sa-Ltn">Niruddha</term>
+        <term xml:lang="Sa-Ltn">Aniruddha</term>
         <term type="definition">A monk (<foreign type="term" xml:lang="Sa-Ltn">bhikṣu</foreign>) and disciple of the Buddha.</term>
       </gloss>
     </item>
@@ -4761,14 +4769,14 @@
     </item>
     
     <item>
-      <gloss type="place" xml:id="UT22084-061-005-585">
-        <term>Suyāma</term>
-        <term xml:lang="Bo-Ltn">rab ’thab bral </term>
+                        <gloss xml:id="UT22084-061-005-585" type="place" mode="match">
+                            <term>Suyāma</term>
+                            <term xml:lang="Bo-Ltn">rab ’thab bral</term>
                             <term xml:lang="bo">རབ་འཐབ་བྲལ།</term>
-        <term xml:lang="Sa-Ltn"/>
-        <term type="definition">A divine heaven, and the <foreign xml:lang="Sa-Ltn">suyāma</foreign> (“free from strife”) class of gods who inhabit it.</term>
-      </gloss>
-    </item>
+                            <term xml:lang="Sa-Ltn">Suyāma</term>
+                            <term type="definition">A divine heaven, and the <foreign xml:lang="Sa-Ltn">suyāma</foreign> (“free from strife”) class of gods who inhabit it.</term>
+                        </gloss>
+                    </item>
     <item>
       <gloss type="place" xml:id="UT22084-061-005-587">
         <term>Tuṣita</term>
@@ -4870,7 +4878,7 @@
                             <term xml:lang="bo">སྡོང་པོས་བརྒྱན་པའི་ལེའུ།</term>
         <term xml:lang="Sa-Ltn">Gaṇḍa­vyūha­sūtra</term>
         <term type="definition">The <title xml:lang="Sa-Ltn">
-                                    <ref rend="pending" target="https://read.84000.co/translation/toh44-45.html">Gaṇḍavyūha­sūtra</ref>
+                                    <ref target="https://read.84000.co/translation/toh44-45.html">Gaṇḍavyūha­sūtra</ref>
                                 </title> (Toh 44-45) is an important Sanskrit ­sūtra that traces 
           the journey of the young pilgrim Sudhana toward awakening. It was later incorporated into the large 
           scriptural omnibus <title xml:lang="Sa-Ltn">Buddhāvataṃsaka­sūtra</title> as its forty-fifth chapter.</term>
@@ -4919,4 +4927,4 @@
     
     
     
-    </tei:TEI>
+    </TEI>
