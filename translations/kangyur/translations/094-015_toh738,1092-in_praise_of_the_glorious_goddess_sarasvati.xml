@@ -6,18 +6,12 @@
             <titleStmt>
                 <title type="mainTitle" xml:lang="en">In Praise of the Glorious Goddess
                     Sarasvatī</title>
-                <title type="mainTitle" xml:lang="Sa-Ltn"/>
                 <title type="mainTitle" xml:lang="Bo-Ltn">lha mo sgra dbyangs la bstod pa</title>
                 <title type="mainTitle" xml:lang="bo">ལྷ་མོ་སྒྲ་དབྱངས་ལ་བསྟོད་པ།</title>
-                <title type="longTitle" xml:lang="bo"/>
-                <title type="longTitle" xml:lang="Bo-Ltn"/>
-                <title type="longTitle" xml:lang="en"/>
-                <title type="longTitle" xml:lang="Sa-Ltn"/>
                 <title type="otherTitle" xml:lang="en">In Praise of Sarasvatī</title>
+                <title type="otherTitle" xml:lang="bo">དཔལ་ལྷ་མོ་སྒྲ་དབྱངས་ལ་བསྟོད་པ།</title>
                 <title type="otherTitle" xml:lang="Bo-Ltn">dpal lha mo sgra dbyangs la bstod
                     pa/</title>
-                <title type="otherTitle" xml:lang="bo">དཔལ་ལྷ་མོ་སྒྲ་དབྱངས་ལ་བསྟོད་པ།</title>
-                <title type="otherTitle" xml:lang="zh"/>
                 <author role="translatorMain" ref="eft:team-49">Translated by the Subhashita
                     Translation Group<lb/>under the patronage and supervision of 84000: Translating
                     the Words of the Buddha</author>
@@ -28,9 +22,11 @@
                 <editor role="copyEditor" ref="eft:person-249">Konchog Norbu</editor>
                 <editor role="projectEditor" ref="eft:person-50">Andreas Doctor</editor>
                 <editor role="TEImarkupEditor" ref="eft:person-391">Sameer Dhingra</editor>
+                <editor role="TEImarkupEditor" ref="eft:person-108">André Rodrigues</editor>
+                <editor role="finalReviewer" ref="eft:person-289">Nathaniel Rich</editor>
             </titleStmt>
             <editionStmt>
-                <edition>v 0.0.2 <date>2021</date>
+                <edition>v 0.0.3 <date>2021</date>
                 </edition>
             </editionStmt>
             <publicationStmt status="2">
@@ -76,7 +72,7 @@
                 </bibl>
             </sourceDesc>
             <notesStmt>
-                <note type="lastUpdated" date-time="2022-03-10T14:55:00.212Z" user="admin">10/03/2022 14:55:00</note>
+                <note type="lastUpdated" date-time="2022-08-04T08:47:31.181Z" user="admin">04/08/2022 08:47:31</note>
                 <note type="updated" update="translation-status" value="3" date-time="2021-02-22T13:25:53.267Z" user="line-tofte">3</note>
                 <note type="updated" update="text-version" value="0.0.1" date-time="2021-02-22T13:25:53.267Z" user="line-tofte">0.0.1</note>
                 <note type="updated" update="text-version" value="0.0.2" date-time="2021-02-22T13:27:02.109Z" user="line-tofte">Auto
@@ -101,15 +97,11 @@
                 <note type="updated" update="text-version" value="0.0.10" date-time="2021-09-27T14:38:29.167Z" user="line-tofte">Auto
                     (update-contributors)</note>
                 <note type="updated" update="translation-status" value="2.d" date-time="2021-12-07T11:05:55.074Z" user="line-tofte">2.d</note>
-
                 <note type="updated" update="text-version" value="0.0.11" date-time="2021-12-07T11:05:55.074Z" user="line-tofte">Auto
                     (update-publication-status)</note>
-
                 <note type="updated" update="text-version" value="0.0.12" date-time="2021-12-07T11:06:44.256Z" user="line-tofte">Auto
                     (update-contributors)</note>
-
                 <note type="updated" update="translation-status" value="2.c" date-time="2022-01-19T10:46:58.514Z" user="line-tofte">2.c</note>
-
                 <note type="updated" update="text-version" value="0.0.13" date-time="2022-01-19T10:46:58.514Z" user="line-tofte">Auto
                     (update-publication-status)</note>
                 <note type="updated" update="translation-status" value="2.b" date-time="2022-02-16T16:55:06.083Z" user="line-tofte">2.b</note>
@@ -122,6 +114,7 @@
                     (update-contributors)</note>
                 <note type="updated" update="translation-status" value="2" date-time="2022-03-10T14:54:52.037Z" user="line-tofte">2</note>
                 <note type="updated" update="text-version" value="0.0.2" date-time="2022-03-10T14:54:52.037Z" user="line-tofte">Auto (update-publication-status)</note>
+                <note type="updated" update="text-version" value="0.0.3" date-time="2022-08-04T08:47:22.873Z" user="line-tofte">Auto (update-contributors)</note>
             </notesStmt>
         </fileDesc>
 
@@ -492,10 +485,8 @@
                         Mithila Institute, 1967.</bibl>
                 </div>
             </div>
-            <div type="glossary">
+            <div type="glossary" status="excluded">
                 <list type="glossary">
-
-
                     <item>
                         <gloss type="term" xml:id="UT22084-094-015-52">
                             <term>dhāraṇī</term>
@@ -523,26 +514,14 @@
                         </gloss>
                     </item>
                     <item>
-                        <gloss type="term" xml:id="UT22084-094-015-54">
+                        <gloss xml:id="UT22084-094-015-54" type="term" mode="match">
                             <term>perfections</term>
-                            <term xml:lang="Bo-Ltn" status="verified">pha rol du phyin pa </term>
-                            <term xml:lang="bo">ཕ་རོལ་དུ་ཕྱིན་པ།</term>
+                            <term xml:lang="Bo-Ltn" status="verified">pha rol phyin pa</term>
+                            <term xml:lang="bo">ཕ་རོལ་ཕྱིན་པ།</term>
                             <term xml:lang="Sa-Ltn" status="verified">pāramitā</term>
-                            <term type="definition">The ten perfections are generosity (Skt.
-                                    <foreign xml:lang="Sa-Ltn" type="term">dāna</foreign>, Tib.
-                                    <foreign xml:lang="Bo-Ltn" type="term">sbyin pa</foreign>),
-                                discipline (Skt. <foreign xml:lang="Sa-Ltn" type="term">śīla</foreign>, Tib. <foreign xml:lang="Bo-Ltn" type="term">tshul khrims</foreign>), patience (Skt. <foreign xml:lang="Sa-Ltn" type="term">kṣānti</foreign>, Tib.<foreign xml:lang="Bo-Ltn" type="term"> bzod pa</foreign>), diligence
-                                (Skt. <foreign xml:lang="Sa-Ltn" type="term">vīrya</foreign>, Tib.
-                                    <foreign xml:lang="Bo-Ltn" type="term">brtson ’grus</foreign>),
-                                concentration (Skt. <foreign xml:lang="Sa-Ltn" type="term">dhyāna</foreign>, Tib. <foreign xml:lang="Bo-Ltn" type="term">bsam gtan</foreign>), insight (Skt. <foreign xml:lang="Sa-Ltn" type="term">prajñā</foreign>, Tib. <foreign xml:lang="Bo-Ltn" type="term">shes rab</foreign>), skillful means (<foreign xml:lang="Sa-Ltn" type="term">upāyakauśala</foreign>, Tib.
-                                    <foreign xml:lang="Bo-Ltn" type="term">thabs la mkhas
-                                    pa</foreign>), might (Skt.<foreign xml:lang="Sa-Ltn" type="term"> bala</foreign>, Tib. <foreign xml:lang="Bo-Ltn" type="term">stobs</foreign>), aspiration (Skt. <foreign xml:lang="Sa-Ltn" type="term">praṇidhāna</foreign>, Tib. <foreign xml:lang="Bo-Ltn" type="term">smon lam</foreign>), and wisdom
-                                (Skt. <foreign xml:lang="Sa-Ltn" type="term">jñāna</foreign>, Tib.
-                                    <foreign xml:lang="Bo-Ltn" type="term">ye
-                                shes</foreign>).</term>
+                            <term type="definition">The ten perfections are generosity (Skt. <foreign xml:lang="Sa-Ltn" type="term">dāna</foreign>, Tib. <foreign xml:lang="Bo-Ltn" type="term">sbyin pa</foreign>), discipline (Skt. <foreign xml:lang="Sa-Ltn" type="term">śīla</foreign>, Tib. <foreign xml:lang="Bo-Ltn" type="term">tshul khrims</foreign>), patience (Skt. <foreign xml:lang="Sa-Ltn" type="term">kṣānti</foreign>, Tib.<foreign xml:lang="Bo-Ltn" type="term"> bzod pa</foreign>), diligence (Skt. <foreign xml:lang="Sa-Ltn" type="term">vīrya</foreign>, Tib. <foreign xml:lang="Bo-Ltn" type="term">brtson ’grus</foreign>), concentration (Skt. <foreign xml:lang="Sa-Ltn" type="term">dhyāna</foreign>, Tib. <foreign xml:lang="Bo-Ltn" type="term">bsam gtan</foreign>), insight (Skt. <foreign xml:lang="Sa-Ltn" type="term">prajñā</foreign>, Tib. <foreign xml:lang="Bo-Ltn" type="term">shes rab</foreign>), skillful means (<foreign xml:lang="Sa-Ltn" type="term">upāyakauśala</foreign>, Tib. <foreign xml:lang="Bo-Ltn" type="term">thabs la mkhas pa</foreign>), might (Skt.<foreign xml:lang="Sa-Ltn" type="term"> bala</foreign>, Tib. <foreign xml:lang="Bo-Ltn" type="term">stobs</foreign>), aspiration (Skt. <foreign xml:lang="Sa-Ltn" type="term">praṇidhāna</foreign>, Tib. <foreign xml:lang="Bo-Ltn" type="term">smon lam</foreign>), and wisdom (Skt. <foreign xml:lang="Sa-Ltn" type="term">jñāna</foreign>, Tib. <foreign xml:lang="Bo-Ltn" type="term">ye shes</foreign>).</term>
                         </gloss>
                     </item>
-
                     <item>
                         <gloss type="person" xml:id="UT22084-094-015-56">
                             <term>Brahmā</term>
@@ -632,8 +611,6 @@
                                     (<foreign xml:lang="Sa-Ltn" type="term">su</foreign>). </term>
                         </gloss>
                     </item>
-
-
                 </list>
             </div>
         </back>
