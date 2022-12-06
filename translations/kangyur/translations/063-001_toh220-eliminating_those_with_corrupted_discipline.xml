@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../../../schema/current/translation.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<tei:TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0">
         <teiHeader>
                 <fileDesc>
                         <titleStmt>
@@ -56,16 +56,16 @@
                                         Cotter</editor>
                         </titleStmt>
                         <editionStmt>
-                                <edition>v 0.0.1 <date>2022</date>
+                <edition>v 0.0.2 <date>2022</date>
                 </edition>
-                        </editionStmt>
-                        <publicationStmt status="2.a">
-                                <publisher>
+            </editionStmt>
+                        <publicationStmt status="2">
+                <publisher>
                     <name>84000: Translating the Words of the Buddha</name>
                                         is a global non-profit initiative to translate all the
                                         Buddha’s words into modern languages, and to make them
                                         available to everyone. </publisher>
-                                <availability>
+                <availability>
                                         <licence>
                                                 <graphic url="http://i.creativecommons.org/l/by-nc-nd/2.0/88x31.png"/>
                                                 <p>This work is provided under the protection of a
@@ -77,12 +77,12 @@
                                                   details, see the Creative Commons license.</p>
                                         </licence>
                                 </availability>
-                                <idno xml:id="UT22084-063-001"/>
-                                <note>An early mistake in the assigning of UT numbers within the
+                <idno xml:id="UT22084-063-001"/>
+                <note>An early mistake in the assigning of UT numbers within the
                                         84000 project means that these ids diverge slightly from the
                                         standard logic.</note>
-                                <date>2022-11-22</date>
-                        </publicationStmt>
+                <date>2022-11-22</date>
+            </publicationStmt>
                         <sourceDesc>
                                 <bibl key="toh220" type="text">
                                         <ref>Toh 220</ref>
@@ -98,7 +98,7 @@
                                 </bibl>
                         </sourceDesc>
                         <notesStmt>
-                                <note type="lastUpdated" date-time="2022-11-25T18:26:08.094Z" user="martina-cotter">25/11/2022 18:26:08</note>
+                                <note type="lastUpdated" date-time="2022-12-06T15:45:46.983Z" user="admin">06/12/2022 15:45:46</note>
                                 <note type="updated" update="text-version" value="0.0.1" date-time="2020-03-16T14:58:50.259Z" user="line-tofte">0.0.1</note>
                                 <note type="updated" update="translation-status" value="2.h" date-time="2020-03-16T14:58:50.259Z" user="line-tofte">2.h</note>
                                 <note type="updated" update="text-version" value="0.0.2" date-time="2021-07-05T16:22:36.428Z" user="mike">summary
@@ -135,6 +135,8 @@
                                         (update-publication-status)</note>
                                 <note type="updated" update="text-version" value="0.0.14" date-time="2022-11-21T10:01:18.938Z" user="line-tofte">Auto
                                         (update-contributors)</note>
+                            <note type="updated" update="translation-status" value="2" date-time="2022-12-06T15:45:41.248Z" user="line-tofte">2</note>
+                            <note type="updated" update="text-version" value="0.0.2" date-time="2022-12-06T15:45:41.248Z" user="line-tofte">Auto (update-publication-status)</note>
                         </notesStmt>
                 </fileDesc>
         </teiHeader>
@@ -306,11 +308,12 @@
                                                   Herrmann-Pfandt 2008, p. 53, no. 92.</note>
                                         </p>
                                         <milestone unit="chunk" xml:id="UT22084-063-001-13"/>
-                                        <p tid="16">The Chinese translation (Taishō 653) was
+                                        <p tid="16">The Chinese translation (Taishō 653)<note place="end" xml:id="UT22084-063-001-14">
+                                                <ref target="http://www.acmuller.net/descriptive_catalogue/files/k0529.html">Chinese translation.</ref>
+                        </note> was
                                                 completed by the renowned translator Kumārajīva
                                                 (344–413 <hi rend="small-caps">ce</hi>) in 405 <hi rend="small-caps">ce</hi>, during his stay in the
-                                                former capital of Chang’an, modern-day Xi’an.<note place="end" xml:id="UT22084-063-001-14">
-                                                  http://www.acmuller.net/descriptive_catalogue/files/k0529.html</note>
+                                                former capital of Chang’an, modern-day Xi’an.
                                                 Chung-hui Tsui has identified one Chinese sūtra
                                                 manuscript as the <title xml:lang="Sa-Ltn">Buddha­piṭakaduḥśīlani­grahasūtra</title>
                                                 in her study of scriptural calligraphy based on the
@@ -806,8 +809,7 @@
                                                 afflictions, and something fit to be purified; it
                                                 lacks names, marks, actions related to marks, and an
                                                 object of thought; it lacks the female and male
-                                                genders; it lacks gods, <foreign xml:lang="Sa-Ltn" type="term">nāgas</foreign>, <foreign xml:lang="Sa-Ltn" type="term">yakṣas</foreign>,
-                                                  <foreign xml:lang="Sa-Ltn" type="term">gandharvas</foreign>, and <foreign xml:lang="Sa-Ltn" type="term">kumbhāṇḍas</foreign>; it is without nihilism,
+                                                genders; it lacks gods, nāgas, yakṣas, gandharvas, and kumbhāṇḍas; it is without nihilism,
                                                 eternalism, being, a life force, a soul, and a
                                                 person; it lacks a descendant of Manu and a child of
                                                 Manu; it is without permanence, transmigration, and
@@ -4753,7 +4755,7 @@
                                                 that ten million kings, all called Ikṣvāku, appeared
                                                 in the world. They were all universal monarchs.
                                                 Śāriputra, I also remember that, in the past, ten
-                                                thousand kings, all called Pradīpta, appeared in the
+                                                thousand kings, all called <term ref="UT22084-063-001-759">Pradīpta</term>, appeared in the
                                                 world. They were all universal monarchs. <ref cRef="F.57.b" type="folio" xml:id="UT22084-063-001-810"/> Śāriputra, I also
                                                 remember that two hundred million kings, all called
                                                 Sundara, appeared in the world. They were all
@@ -5965,7 +5967,8 @@
                                                 by the categories of Dharma taught by the Buddha—the
                                                 discourses, songs, prophecies, verses, aphorisms,
                                                 narratives, biographies, parables, stories of former
-                                                births, marvels, and profound doctrines—and by the
+                                                births, marvels, and <term ref="UT22084-063-001-707">instructions</term>
+                        <note place="end" xml:id="UT22084-063-001-947">Only eleven of the “twelve branches of Buddhist scripture” are enumerated here. “Extensive teachings” (Skt. <foreign xml:lang="Sa-Ltn">vaipulya</foreign>; Tib. <foreign xml:lang="Bo-Ltn">shin tu rgyas pa'i sde</foreign>) is missing.</note>—and by the
                                                 prātimokṣa vows. <ref cRef="F.72.a" type="folio" xml:id="UT22084-063-001-933"/> They will not
                                                 transgress or damage their discipline, and they will
                                                 put effort into reading and recitation. I have
@@ -6843,7 +6846,7 @@
                                 <div type="colophon" xml:id="UT22084-063-001-colophon">
                                         <head type="colophon" tid="611">Colophon</head>
                                         <milestone unit="chunk" xml:id="UT22084-063-001-946"/>
-                                        <p tid="612">This was translated, edited, and finalized in the Lhenkar Palace by the Indian scholar Dharmaśrīprabha and the translator monk Palgyi Lhünpo</p>
+                                        <p tid="612">This was translated, edited, and finalized in the Lhenkar Palace by the Indian preceptor Dharmaśrīprabha and the translator monk Palgyi Lhünpo</p>
                                 </div>
                                 
                         </div>
@@ -7028,13 +7031,12 @@
                     </item>
                                         <item>
                         <gloss type="term" xml:id="UT22084-063-001-665">
-                                                  <term>sense sources</term>
+                                                  <term>sense fields</term>
                                                   <term xml:lang="Bo-Ltn" status="verified">skye mched </term>
                                                   <term xml:lang="bo">སྐྱེ་མཆེད།</term>
                                                   <term xml:lang="Sa-Ltn" status="verified">āyatana</term>
                                                   <term type="definition">One way of describing
-                                                  experience and the world in terms of twelve sense
-                                                  sources (eye and form, ear and sound, nose and
+                                                  experience and the world in terms of twelve sense fields (eye and form, ear and sound, nose and
                                                   odor, tongue and taste, body and touch, mind and
                                                   mental objects).</term>
                                                 </gloss>
@@ -7086,8 +7088,7 @@
                                                   <term xml:lang="Bo-Ltn" status="verified">grul bum </term>
                                                   <term xml:lang="bo">གྲུལ་བུམ།</term>
                                                   <term xml:lang="Sa-Ltn" status="verified">kumbhāṇḍa</term>
-                                                  <term type="definition">A class of spirit-deity
-                                                  identified by their gourd-like shape.</term>
+                                                <term type="definition">A class of spirit-deity. The name uses a play on the word <foreign xml:lang="Sa-Ltn">āṇḍa</foreign>, which means “egg” but is also a euphemism for testicle. Thus, they are often depicted as having testicles as big as pots (from <foreign xml:lang="Sa-Ltn">khumba</foreign>, or “pot”).</term>
                                                 </gloss>
                     </item>
                                         <item>
@@ -7427,9 +7428,9 @@
                                                   maintain any opinion about anything; Kakuda
                                                   Kātyāyana, who taught a materialism in which there
                                                   was no such thing as killer or killed, but only
-                                                  transformations of elements; Ajita Keśakambala,
+                                                  transformations of <term type="ignore">elements</term>; Ajita Keśakambala,
                                                   who taught a more extreme nihilism regarding
-                                                  everything except the four main elements; and
+                                                  everything except the four main <term type="ignore">elements</term>; and
                                                   Nirgrantha Jñātiputra, otherwise known as
                                                   Mahāvīra, the founder of Jainism, who taught the
                                                   doctrine of indeterminism (Skt. <foreign xml:lang="Sa-Ltn" type="term">syādvāda</foreign>),
@@ -7455,13 +7456,11 @@
                     </item>
                                         <item>
                         <gloss type="term" xml:id="UT22084-063-001-695">
-                                                  <term>the lineage</term>
+                                                  <term>lineage</term>
                                                   <term xml:lang="Bo-Ltn" status="verified">rigs </term>
                                                   <term xml:lang="bo">རིགས།</term>
                                                   <term xml:lang="Sa-Ltn" status="verified">gotra</term>
-                                                  <term type="definition">A term for those who hold
-                                                  the “lineage” that assures their eventual
-                                                  attainment of buddhahood. In this sūtra the status
+                                                <term type="definition">I suggest this: A term for the "lineage" that assures those who hold it eventual attainment of buddhahood. In this sūtra the status
                                                   of someone who holds the lineage depends primarily
                                                   on abandoning any wrong views associated with
                                                   apprehending and realizing the view of emptiness
@@ -7585,14 +7584,23 @@
                                                 </gloss>
                     </item>
                                         <item>
-                        <gloss type="term" xml:id="UT22084-063-001-707">
-                                                  <term>profound doctrines</term>
-                                                  <term xml:lang="Bo-Ltn" status="verified">shin tu rgyas pa’i sde </term>
-                                                  <term xml:lang="bo">ཤིན་ཏུ་རྒྱས་པའི་སྡེ།</term>
-                                                  <term xml:lang="Sa-Ltn" status="verified">vaipulya</term>
+                        <gloss mode="marked" type="term" xml:id="UT22084-063-001-707">
+                                                <term>instructions</term>
+                                                <term xml:lang="Bo-Ltn" status="verified">gtan la bab par bstan pa’i sde</term>
+                            <term xml:lang="bo">གཏན་ལ་བབ་པར་བསྟན་པའི་སྡེ།</term>
                                                   <term type="definition">One of the twelve branches
                                                   of Buddhist scriptures.</term>
                                                 </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="term" xml:id="UT22084-063-001-948">
+                                                <term>Extensive teachings</term>
+                                                <term xml:lang="Bo-Ltn" status="verified">shin tu rgyas pa'i sde</term>
+                            <term xml:lang="bo">ཤིན་ཏུ་རྒྱས་པའི་སྡེ།</term>
+                                                <term xml:lang="Sa-Ltn">vaipulya</term>
+                                                <term type="definition">One of the twelve branches
+                                                        of Buddhist scriptures.</term>
+                                        </gloss>
                     </item>
                                         <item>
                         <gloss type="term" xml:id="UT22084-063-001-708">
@@ -7872,8 +7880,7 @@
                                                   <term xml:lang="Bo-Ltn" status="verified">bkur ba’i gzhi pa </term>
                                                   <term xml:lang="bo">བཀུར་བའི་གཞི་པ།</term>
                                                   <term xml:lang="Sa-Ltn"/>
-                                                  <term type="definition">The name of a monk in the
-                                                  lineage of the buddha Mahāvyūha and the name of
+                                                <term type="definition">The name of a monk in the <term type="ignore">lineage</term> of the buddha Mahāvyūha and the name of
                                                   the order founded by that monk after Mahāvyūha
                                                   entered parinirvāṇa. </term>
                                                 </gloss>
@@ -7884,8 +7891,7 @@
                                                   <term xml:lang="Bo-Ltn" status="verified">’byung bar dmigs pa </term>
                             <term xml:lang="bo">འབྱུང་བར་དམིགས་པ།</term>
                                                   <term xml:lang="Sa-Ltn"/>
-                                                  <term type="definition">The name of a monk in the
-                                                  lineage of the buddha Mahāvyūha and the name of
+                                                <term type="definition">The name of a monk in the <term type="ignore">lineage</term> of the buddha Mahāvyūha and the name of
                                                   the order founded by that monk after Mahāvyūha
                                                   entered parinirvāṇa.</term>
                                                 </gloss>
@@ -7896,9 +7902,8 @@
                                                   Exist</term>
                                                   <term xml:lang="Bo-Ltn" status="verified">thams cad yod par smra ba </term>
                                                   <term xml:lang="bo">ཐམས་ཅད་ཡོད་པར་སྨྲ་བ།</term>
-                                                  <term xml:lang="Sa-Ltn" status="verified">sarvāstivāda</term>
-                                                  <term type="definition">The name of a monk in the
-                                                  lineage of the buddha Mahāvyūha and the name of
+                                                <term xml:lang="Sa-Ltn" status="verified">sarvāstivādin</term>
+                                                <term type="definition">The name of a monk in the <term type="ignore">lineage</term> of the buddha Mahāvyūha and the name of
                                                   the order founded by that monk after Mahāvyūha
                                                   entered parinirvāṇa.</term>
                                                 </gloss>
@@ -7909,8 +7914,7 @@
                                                   <term xml:lang="Bo-Ltn" status="verified">tshogs nas byung ba </term>
                                                   <term xml:lang="bo">ཚོགས་ནས་བྱུང་བ།</term>
                                                   <term xml:lang="Sa-Ltn"/>
-                                                  <term type="definition">The name of a monk in the
-                                                  lineage of the buddha Mahāvyūha and the name of
+                                                <term type="definition">The name of a monk in the <term type="ignore">lineage</term> of the buddha Mahāvyūha and the name of
                                                   the order founded by that monk after Mahāvyūha
                                                   entered parinirvāṇa.</term>
                                                 </gloss>
@@ -7921,8 +7925,7 @@
                                                   <term xml:lang="Bo-Ltn" status="verified">nye bar bcings pa </term>
                             <term xml:lang="bo">ཉེ་བར་བཅིངས་པ།</term>
                                                   <term xml:lang="Sa-Ltn"/>
-                                                  <term type="definition">The name of a monk in the
-                                                  lineage of the buddha Mahāvyūha and the name of
+                                                <term type="definition">The name of a monk in the <term type="ignore">lineage</term> of the buddha Mahāvyūha and the name of
                                                   the order founded by that monk after Mahāvyūha
                                                   entered parinirvāṇa. </term>
                                                 </gloss>
@@ -7935,16 +7938,6 @@
                                                   <term xml:lang="Sa-Ltn" status="verified">Samantaprabha</term>
                                                   <term type="definition">Name of a past buddha.
                                                   </term>
-                                                </gloss>
-                    </item>
-                                        <item>
-                        <gloss type="person" xml:id="UT22084-063-001-737">
-                                                  <term>Samantaprabhāsa</term>
-                                                  <term xml:lang="Bo-Ltn" status="verified">kun tu snang ba </term>
-                                                  <term xml:lang="bo">ཀུན་ཏུ་སྣང་བ།</term>
-                                                  <term xml:lang="Sa-Ltn" status="verified">Samantaprabhāsa</term>
-                                                  <term type="definition">Name of a past
-                                                  buddha.</term>
                                                 </gloss>
                     </item>
                                         <item>
@@ -7995,8 +7988,8 @@
                                         <item>
                         <gloss type="person" xml:id="UT22084-063-001-742">
                                                   <term>Pradīpta</term>
-                                                  <term xml:lang="Bo-Ltn" status="verified">rab tu ’bar </term>
-                                                  <term xml:lang="bo">རབ་ཏུ་འབར།</term>
+                                                <term xml:lang="Bo-Ltn" status="verified">rab tu ’bar ba</term>
+                            <term xml:lang="bo">རབ་ཏུ་འབར་བ།</term>
                                                   <term xml:lang="Sa-Ltn" status="verified">Pradīpta</term>
                                                   <term type="definition">Name of a past
                                                   buddha.</term>
@@ -8039,7 +8032,7 @@
                                                   <term xml:lang="bo">ཀཽཎྜི་ནྱས་རིགས།</term>
                                                   <term xml:lang="Sa-Ltn" status="verified">Kauṇḍinyagotra</term>
                                                   <term type="definition">Name of a past
-                                                  buddha.</term>
+                                                          buddha. The Sanskrit literally means “one belonging to Kauṇḍinya’s lineage/family/clan.”</term>
                                                 </gloss>
                     </item>
                                         <item>
@@ -8156,7 +8149,7 @@
                                                 </gloss>
                     </item>
                                         <item>
-                        <gloss type="person" xml:id="UT22084-063-001-759">
+                        <gloss mode="marked" type="person" xml:id="UT22084-063-001-759">
                                                   <term>Pradīpta</term>
                                                   <term xml:lang="Bo-Ltn" status="verified">rab ’bar </term>
                                                   <term xml:lang="bo">རབ་འབར།</term>
@@ -8255,8 +8248,7 @@
                                                   <term xml:lang="bo">ངེས་པར་འབྱུང་བ།</term>
                                                   <term xml:lang="Sa-Ltn"/>
                                                   <term type="definition">An alternate name for the
-                                                  monk Apprehending Origination who was in the
-                                                  lineage of Buddha Mahāvyūha and the name of the
+                                                          monk Apprehending Origination who was in the <term type="ignore">lineage</term> of Buddha Mahāvyūha and the name of the
                                                   order founded by that monk after Mahāvyūha entered
                                                   parinirvāṇa. </term>
                                                 </gloss>
@@ -8354,7 +8346,7 @@
                     </item>
                                         <item>
                         <gloss type="place" xml:id="UT22084-063-001-778">
-                                                  <term>Hell of Intense Heat</term>
+                                                  <term>Intensely Hot Hell</term>
                                                   <term xml:lang="Bo-Ltn" status="verified">rab tu tsha ba </term>
                                                   <term xml:lang="bo">རབ་ཏུ་ཚ་བ།</term>
                                                   <term xml:lang="Sa-Ltn" status="verified">Pratāpana</term>
@@ -8364,7 +8356,7 @@
                     </item>
                                         <item>
                         <gloss type="place" xml:id="UT22084-063-001-779">
-                                                  <term>Hell of Heat</term>
+                                                <term>Hot Hell</term>
                                                   <term xml:lang="Bo-Ltn" status="verified">tsha ba </term>
                                                   <term xml:lang="bo">ཚ་བ།</term>
                                                   <term xml:lang="Sa-Ltn" status="verified">Tāpana</term>
@@ -8409,7 +8401,7 @@
                                                   <term xml:lang="bo">ཐིག་ནག</term>
                                                   <term xml:lang="Sa-Ltn" status="verified">Kālasūtra</term>
                                                   <term type="definition">One of the eight hot
-                                                  hells.</term>
+                                                          hells. The name of this hell refers to the black thread that is used to measure lines on the bodies of those reborn there so that they can be cut into pieces.</term>
                                                 </gloss>
                     </item>
                                         <item>
@@ -8480,4 +8472,4 @@
                         </div>
                 </back>
         </text>
-</TEI>
+</tei:TEI>
