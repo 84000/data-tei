@@ -26,7 +26,7 @@
                 <editor role="finalReviewer" ref="contributors.xml#person-250">Rory Lindsay, Dr.</editor>
             </titleStmt>
             <editionStmt>
-                <edition>v 1.1.11 <date>2021</date>
+                <edition>v 1.1.14 <date>2021</date>
                 </edition>
             </editionStmt>
             <publicationStmt status="1">
@@ -59,7 +59,7 @@
                 </bibl>
             </sourceDesc>
             <notesStmt>
-                <note type="lastUpdated" date-time="2021-06-26T04:19:28.013Z" user="admin">26/06/2021 04:19:28</note>
+                <note type="lastUpdated" date-time="2023-01-18T16:59:43.652Z" user="celso">18/01/2023 16:59:43</note>
                 <note type="updated" update="translation-status" value="2.c" date-time="2019-05-13T14:58:41.819Z" user="laura">2.c</note>
                 <note type="updated" update="text-version" value="v 0.0.1" date-time="2019-12-20T12:56:48.575Z" user="admin">Automated version increment</note>
                 <note type="updated" update="translation-status" value="2.d" date-time="2020-01-28T06:14:23.025Z" user="mike">2.d</note>
@@ -83,7 +83,7 @@
     <note type="updated" update="text-version" value="1.1.8" date-time="2021-01-04T22:03:33.068Z" user="laura">Updated colophon to Bandé</note>
     <note type="updated" update="text-version" value="1.1.9" date-time="2021-02-12T18:55:30.714Z" user="celso">"scholar" to "preceptor" in colophon</note>
     <note type="updated" update="text-version" value="1.1.10" date-time="2021-04-22T14:58:23.343Z" user="celso">added @xml:lang to a chinese string</note>
-    <note type="updated" update="text-version" value="1.1.11" date-time="2021-06-26T04:19:24.911Z" user="celso">kiṃnara to kinnara</note>
+    <note type="updated" update="text-version" value="1.1.11" date-time="2021-06-26T04:19:24.911Z" user="celso">kiṃnara to kinnara</note>    <note type="updated" update="text-version" value="1.1.12" date-time="2022-06-27T10:06:48.1Z" user="admin">Auto (script-increment-version-published)</note>    <note type="updated" update="text-version" value="1.1.13" date-time="2023-01-16T16:58:52.361Z" user="celso">Auto (script-increment-version-published)</note>    <note type="updated" update="text-version" value="1.1.14" date-time="2023-01-18T16:58:06.914Z" user="celso">Auto (remove-tid-from-back-list-items)</note>
             </notesStmt>
         </fileDesc>
     </teiHeader>
@@ -118,7 +118,8 @@
             </div>
             <div type="introduction">
                 <head type="introduction" tid="7">Introduction</head>
-                <milestone unit="chunk" xml:id="UT22084-057-010-3"/>
+                <div type="section" xml:id="UT22084-057-010-introduction-1">
+                    <milestone unit="chunk" xml:id="UT22084-057-010-3"/>
                 <p tid="8">In this sūtra the Buddha Śākyamuni gives a teaching on the workings of karma, the
                     relationships between actions and their effects. The setting for the teaching is the Jeta Grove near
                     the city of Śrāvastī, which the benefactor Anāthapiṇḍada donated to the Buddha at great expense.
@@ -161,6 +162,7 @@
                     imperial translations, so we can establish that it was first translated from Sanskrit into Tibetan
                     no later than the early ninth century, as the Denkarma is dated to 812 <hi rend="small-caps">ce</hi>. The primary Tibetan text used for the present translation was the Degé (<foreign xml:lang="Bo-Ltn">sde dge</foreign>) edition, but the other editions included in the Comparative
                     Kangyur (<foreign xml:lang="Bo-Ltn">dpe bsdur ma</foreign>) were also consulted.</p>
+                </div>
             </div>
         </front>
         <body>
@@ -1093,15 +1095,15 @@
             </gloss>
         </item>
         <item>
-            <gloss type="term" xml:id="UT22084-057-010-179">
-                <term>Blessed One</term>
-                <term xml:lang="Bo-Ltn">bcom ldan ’das</term>
-                <term xml:lang="bo">བཅོམ་ལྡན་འདས།</term>
-                <term xml:lang="Sa-Ltn">bhagavān</term>
-                <term xml:lang="Sa-Ltn">bhagavat</term>
-                <term type="definition">An epithet of a buddha, used in this text to refer to the Buddha  Śākyamuni.</term>
-            </gloss>
-        </item>
+                        <gloss xml:id="UT22084-057-010-179" type="term" mode="match">
+                            <term>blessed one</term>
+                            <term xml:lang="Bo-Ltn">bcom ldan ’das</term>
+                            <term xml:lang="bo">བཅོམ་ལྡན་འདས།</term>
+                            <term xml:lang="Sa-Ltn">bhagavān</term>
+                            <term xml:lang="Sa-Ltn">bhagavat</term>
+                            <term type="definition">An epithet of a buddha, used in this text to refer to the Buddha Śākyamuni.</term>
+                        </gloss>
+                    </item>
         <item>
             <gloss type="term" xml:id="UT22084-057-010-181">
                 <term>thus-gone one</term>
@@ -1304,8 +1306,8 @@
         <item>
             <gloss type="person" xml:id="UT22084-057-010-180">
                 <term>Śākyamuni</term>
-                <term xml:lang="Bo-Ltn">shA kya thub pa</term>
-                <term xml:lang="bo">ཀུན་དགའ་བོ།</term>
+                <term xml:lang="Bo-Ltn">shAkya thub pa</term>
+                            <term xml:lang="bo">ཤཱཀྱ་ཐུབ་པ།</term>
                 <term xml:lang="Sa-Ltn">Śākyamuni</term>
                 <term type="definition">The name of the historical Buddha, Siddhārtha Gautama; he was a <foreign xml:lang="Sa-Ltn" type="term">muni</foreign> (sage) from the Śākya clan.</term>
             </gloss>

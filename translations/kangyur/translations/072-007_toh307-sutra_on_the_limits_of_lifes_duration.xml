@@ -26,7 +26,7 @@
                 <editor role="finalReviewer" ref="contributors.xml#person-250">Rory Lindsay</editor>
             </titleStmt>
             <editionStmt>
-                <edition>v 1.0.10 <date>2021</date>
+                <edition>v 1.0.12 <date>2021</date>
                 </edition>
             </editionStmt>
             <publicationStmt status="1">
@@ -62,7 +62,7 @@
                 </bibl>
             </sourceDesc>
             <notesStmt>
-                <note type="lastUpdated" date-time="2022-12-14T14:36:03.261Z" user="admin">14/12/2022 14:36:03</note>
+                <note type="lastUpdated" date-time="2023-01-29T12:59:53.573Z" user="admin">29/01/2023 12:59:53</note>
                 <note type="updated" update="text-version" value="v 0.0.1" date-time="2019-12-20T12:56:48.575Z" user="admin">Automated version
                     increment</note>
                 <note type="updated" update="translation-status" value="2.d" date-time="2020-01-28T06:19:24.922Z" user="mike">2.d</note>
@@ -106,6 +106,8 @@
                 <note type="updated" update="text-version" value="1.0.8" date-time="2022-06-27T10:06:48.1Z" user="admin">Auto (script-increment-version-published)</note>
                 <note type="updated" update="text-version" value="1.0.9" date-time="2022-06-29T16:10:08.343Z" user="cabie-sim">Auto (update-titles)</note>
                 <note type="updated" update="text-version" value="1.0.10" date-time="2022-12-14T14:36:00.272Z" user="martina-cotter">Updated title of Toh 339 to "Transformation of Karma."</note>
+                <note type="updated" update="text-version" value="1.0.11" date-time="2023-01-16T16:58:52.361Z" user="celso">Auto (script-increment-version-published)</note>
+                <note type="updated" update="text-version" value="1.0.12" date-time="2023-01-18T16:58:06.914Z" user="celso">Auto (remove-tid-from-back-list-items)</note>
             </notesStmt>
         </fileDesc>
     </teiHeader>
@@ -1793,7 +1795,7 @@
                     <milestone unit="chunk" xml:id="UT22084-072-007-501"/>
                     <!--<head type="section">The Lifespan of Different States of Existence as Seen in <title xml:lang="en">The Limits of Life</title></head>-->
                     <table tid="1001" rend="firstcol-30pc">
-                        <head type="table" tid="2003"><!--Unfortunate Rebirth Destinies-->UNFORTUNATE REBIRTH DESTINIES</head>
+                        <head type="table"><!--Unfortunate Rebirth Destinies-->UNFORTUNATE REBIRTH DESTINIES</head>
                         <row>
                             <cell role="label">Destiny</cell>
                             <cell role="label">Lifespan</cell>
@@ -1814,7 +1816,7 @@
 
                     <milestone unit="chunk" xml:id="UT22084-072-007-502"/>
                     <table tid="1002" rend="firstcol-30pc">
-                        <head type="table" tid="2004"><!--Human Realms-->HUMAN REALMS</head>
+                        <head type="table"><!--Human Realms-->HUMAN REALMS</head>
                         <row>
                             <cell role="label">Location</cell>
                             <cell role="label">Lifespan</cell>
@@ -1839,7 +1841,7 @@
 
                     <milestone unit="chunk" xml:id="UT22084-072-007-503"/>
                     <table tid="1003" rend="firstcol-30pc">
-                        <head type="table" tid="2007"><!--Heavens and Hells of the Desire Realm-->HEAVENS AND HELLS OF THE DESIRE REALM</head>
+                        <head type="table"><!--Heavens and Hells of the Desire Realm-->HEAVENS AND HELLS OF THE DESIRE REALM</head>
                         <row>
                             <cell role="label">Location</cell>
                             <cell role="label">Lifespan</cell>
@@ -1914,7 +1916,7 @@
 
                     <milestone unit="chunk" xml:id="UT22084-072-007-504"/>
                     <table tid="1004" rend="firstcol-30pc">
-                        <head type="table" tid="2008"><!--Heavens of the Form Realm-->HEAVENS OF THE FORM REALM</head>
+                        <head type="table"><!--Heavens of the Form Realm-->HEAVENS OF THE FORM REALM</head>
                         <row>
                             <cell role="label">Location</cell>
                             <cell role="label">Lifespan</cell>
@@ -1971,7 +1973,7 @@
 
                     <milestone unit="chunk" xml:id="UT22084-072-007-505"/>
                     <table tid="1005" rend="firstcol-30pc">
-                        <head type="table" tid="2009"><!--The Pure Abodes-->THE PURE ABODES</head>
+                        <head type="table"><!--The Pure Abodes-->THE PURE ABODES</head>
                         <row>
                             <cell role="label">Location</cell>
                             <cell role="label">Lifespan</cell>
@@ -2006,7 +2008,7 @@
 
                     <milestone unit="chunk" xml:id="UT22084-072-007-506"/>
                     <table tid="1006" rend="firstcol-30pc">
-                        <head type="table" tid="2010"><!--Heavens of the Formless Realm-->HEAVENS OF THE FORMLESS REALM</head>
+                        <head type="table"><!--Heavens of the Formless Realm-->HEAVENS OF THE FORMLESS REALM</head>
                         <row>
                             <cell role="label">Location</cell>
                             <cell role="label">Lifespan</cell>
@@ -2882,13 +2884,12 @@
                         </gloss>
                     </item>
                     <item>
-                        <gloss type="place" xml:id="UT22084-072-007-470">
+                        <gloss xml:id="UT22084-072-007-470" type="place" mode="match">
                             <term>Sphere of Nothingness</term>
-                            <term xml:lang="Bo-Ltn">ci yang med pa’i skye mched </term>
+                            <term xml:lang="Bo-Ltn">ci yang med pa’i skye mched</term>
                             <term xml:lang="bo">ཅི་ཡང་མེད་པའི་སྐྱེ་མཆེད།</term>
-                            <term xml:lang="Sa-Ltn">Ākiṃcanyāyatana</term>
-                            <term type="definition">Third of the four heavens of the formless realm. Rebirth there is the karmic result of
-                                accomplishing one of the formless meditative absorptions.</term>
+                            <term xml:lang="Sa-Ltn">ākiṃcanyāyatana</term>
+                            <term type="definition">Third of the four heavens of the formless realm. Rebirth there is the karmic result of accomplishing one of the formless meditative absorptions.</term>
                         </gloss>
                     </item>
                     <item>

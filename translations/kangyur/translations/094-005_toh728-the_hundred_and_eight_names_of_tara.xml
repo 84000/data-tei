@@ -1,969 +1,1201 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../../../schema/current/translation.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader>
-        <fileDesc>
-            <titleStmt>
-                <title type="mainTitle" xml:lang="en">The Hundred and Eight Names of
-                    the Goddess Tārā</title>
-                <title type="mainTitle" xml:lang="Sa-Ltn">Tāradevīnāmāṣṭaśataka</title>
-                <title type="mainTitle" xml:lang="Bo-Ltn">lha mo sgrol ma’i mtshan
-                    brgya rtsa brgyad pa</title>
-                <title type="mainTitle" xml:lang="bo">ལྷ་མོ་སྒྲོལ་མའི་མཚན་བརྒྱ་རྩ་བརྒྱད་པ།</title>
-                <title type="otherTitle" xml:lang="Bo-Ltn">lha mo sgrol ma'i mtshan brgya rtsa brgyad pa zhes bya ba</title>
-                <title type="otherTitle" xml:lang="Bo-Ltn">lha mo sgrol ma zhal bzang ba’i ming brgya rtsa brgyad pa</title>
-                <title type="otherTitle" xml:lang="en">The Hundred and
-                    Eight Names of the Goddess Tārā with a Lovely Face</title>
-                <title type="otherTitle" xml:lang="Bo">ལྷ་མོ་སྒྲོལ་མ་ཞལ་བཟང་བའི་མིང་བརྒྱ་རྩ་བརྒྱད་པ།</title>
-                <author role="translatorMain" ref="eft:team-48">Translated by Lhasey Lotsawa
-                    Translations and Publications<lb/>under the patronage and
-                    supervision of 84000: Translating the Words of the
-                    Buddha.</author>
-                <author role="translatorEng" ref="eft:person-320">Roger Espel Llima</author>
-                <author role="translatorEng" ref="eft:person-56">Alex Yiannopoulos</author>
-                <consultant role="projectManager" ref="eft:person-305">Stefan Mang</consultant>
-                <editor role="projectEditor" ref="eft:person-74">Ryan Damron</editor>
-                <editor role="copyEditor" ref="eft:person-66">Joseph McClellan</editor>
-                <editor role="projectEditor" ref="eft:person-289">Nathaniel Rich</editor>
-                <editor role="TEImarkupEditor" ref="eft:person-391">Sameer Dhingra</editor>
-            </titleStmt>
-            <editionStmt>
-                <edition>v 0.0.1 <date>2022</date>
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="mainTitle" xml:lang="en">The Hundred and Eight Names of the Goddess
+          Tārā</title>
+        <title type="mainTitle" xml:lang="Sa-Ltn">Tāradevīnāmāṣṭaśataka</title>
+        <title type="mainTitle" xml:lang="Bo-Ltn">lha mo sgrol ma’i mtshan brgya rtsa brgyad
+          pa</title>
+        <title type="mainTitle" xml:lang="bo">ལྷ་མོ་སྒྲོལ་མའི་མཚན་བརྒྱ་རྩ་བརྒྱད་པ།</title>
+        <title type="otherTitle" xml:lang="Bo-Ltn">lha mo sgrol ma’i mtshan brgya rtsa brgyad pa
+          zhes bya ba</title>
+        <title type="otherTitle" xml:lang="Bo-Ltn">lha mo sgrol ma zhal bzang ba’i ming brgya rtsa
+          brgyad pa</title>
+        <title type="otherTitle" xml:lang="en">The Hundred and Eight Names of the Goddess Tārā with
+          a Lovely Face</title>
+        <title type="otherTitle" xml:lang="bo">ལྷ་མོ་སྒྲོལ་མ་ཞལ་བཟང་བའི་མིང་བརྒྱ་རྩ་བརྒྱད་པ།</title>
+        <author role="translatorMain" ref="eft:team-48">Translated by Lhasey Lotsawa Translations
+          and Publications<lb/>under the patronage and supervision of 84000: Translating the Words
+          of the Buddha.</author>
+        <author role="translatorEng" ref="eft:person-320">Roger Espel Llima</author>
+        <author role="translatorEng" ref="eft:person-56">Alex Yiannopoulos</author>
+        <consultant role="projectManager" ref="eft:person-305">Stefan Mang</consultant>
+        <editor role="projectEditor" ref="eft:person-74">Ryan Damron</editor>
+        <editor role="copyEditor" ref="eft:person-66">Joseph McClellan</editor>
+        <editor role="projectEditor" ref="eft:person-289">Nathaniel Rich</editor>
+        <editor role="TEImarkupEditor" ref="eft:person-391">Sameer Dhingra</editor>
+      </titleStmt>
+      <editionStmt>
+        <edition>v 0.0.1 <date>2022</date>
                 </edition>
-            </editionStmt>
-
-            <publicationStmt status="2.a">
-                <publisher>
-                    <name>84000: Translating the Words of the Buddha</name>
-                    is a global non-profit initiative to translate all the
-                    Buddha’s words into modern languages, and to make them
-                    available to everyone. </publisher>
-                <availability>
-                    <licence>
-                        <graphic url="http://i.creativecommons.org/l/by-nc-nd/2.0/88x31.png"/>
-                        <p>This work is provided under the protection of
-                        a Creative Commons CC BY-NC-ND (Attribution -
-                        Non-commercial - No-derivatives) 3.0 copyright. It
-                        may be copied or printed for fair use, but only
-                        with full attribution, and not for commercial
-                        advantage or personal compensation. For full
-                        details, see the Creative Commons
-                        license.</p>
-                    </licence>
-                </availability>
-                <idno xml:id="UT22084-094-005"/>
-                <note>An early mistake in the assigning of UT numbers within the
-                    84000 project means that these ids diverge slightly from the
-                    standard logic.</note>
-                <date>2022-07-14</date>
-            </publicationStmt>
-            <sourceDesc>
-                <bibl key="toh728" type="text">
-                    <ref>Toh 728</ref>
-                    <biblScope>Degé Kangyur vol. 94 (rgyud, tsha), folios
-                        219.a–222.a</biblScope>
-                    <location work="UT4CZ5369" count-pages="7">
-                        <volume number="94" start-page="437" end-page="443"/>
-                    </location>
-                    <idno parent-id="O1JC114941JC21415" work="http://read.84000.co/sections"/>
-                    <idno source-id="O1JC114941JC12469" work="W22084"/>
-                </bibl>
-            </sourceDesc>
-            <notesStmt>
-                <note type="lastUpdated" date-time="2022-07-14T09:51:14.628Z" user="sameer">14/07/2022 09:51:14</note>
-                <note type="updated" update="text-version" value="v 0.1.0" date-time="2019-12-13T10:56:38.631Z" user="john">v 0.1.0</note>
-                <note type="updated" update="translation-status" value="3" date-time="2019-12-13T10:56:38.631Z" user="john">3</note>
-                <note type="updated" update="translation-status" value="2.h" date-time="2020-05-28T13:10:21.844Z" user="line-tofte">2.h</note>
-                <note type="updated" update="translation-status" value="2.g" date-time="2020-11-16T14:12:04.049Z" user="line-tofte">2.g</note>
-                <note type="updated" update="text-version" value="0.1.1" date-time="2020-11-16T14:12:04.049Z" user="line-tofte">Auto (update-publication-status)</note>
-                <note type="updated" update="text-version" value="0.1.2" date-time="2020-11-16T14:12:26.077Z" user="line-tofte">Auto (update-contributors)</note>
-                <note type="updated" update="translation-status" value="2.f" date-time="2022-01-31T08:04:09.887Z" user="line-tofte">2.f</note>
-                <note type="updated" update="text-version" value="0.1.3" date-time="2022-01-31T08:04:09.887Z" user="line-tofte">Auto (update-publication-status)</note>
-                <note type="updated" update="translation-status" value="2.e" date-time="2022-02-23T08:53:39.086Z" user="line-tofte">2.e</note>
-                <note type="updated" update="text-version" value="0.1.4" date-time="2022-02-23T08:53:39.086Z" user="line-tofte">Auto (update-publication-status)</note>
-                <note type="updated" update="text-version" value="0.1.5" date-time="2022-02-23T08:54:04.015Z" user="line-tofte">Auto (update-contributors)</note>
-                <note type="updated" update="translation-status" value="2.d" date-time="2022-02-23T08:54:33.101Z" user="line-tofte">2.d</note>
-                <note type="updated" update="text-version" value="0.1.6" date-time="2022-02-23T08:54:33.101Z" user="line-tofte">Auto (update-publication-status)</note>
-                <note type="updated" update="translation-status" value="2.c" date-time="2022-07-04T12:57:20.193Z" user="line-tofte">2.c</note>
-                <note type="updated" update="text-version" value="0.1.7" date-time="2022-07-04T12:57:20.193Z" user="line-tofte">Auto (update-publication-status)</note>
-                <note type="updated" update="translation-status" value="2.b" date-time="2022-07-07T09:27:25.264Z" user="line-tofte">2.b</note>
-                <note type="updated" update="text-version" value="0.1.8" date-time="2022-07-07T09:27:25.264Z" user="line-tofte">Auto (update-publication-status)</note>
-                <note type="updated" update="text-version" value="0.1.9" date-time="2022-07-07T09:28:01.384Z" user="line-tofte">Auto (update-contributors)</note>
-                <note type="updated" update="translation-status" value="2.a" date-time="2022-07-13T09:05:20.423Z" user="line-tofte">2.a</note>
-                <note type="updated" update="text-version" value="0.1.10" date-time="2022-07-13T09:05:20.423Z" user="line-tofte">Auto (update-publication-status)</note>
-                <note type="updated" update="text-version" value="0.1.11" date-time="2022-07-13T09:10:32.793Z" user="line-tofte">Auto (update-contributors)</note>
-            </notesStmt>
-        </fileDesc>
-    </teiHeader>
-    <text>
-                <!--Note the "Contents" outline from the Word DOCX has not been included in the script. If the 
+      </editionStmt>
+      <publicationStmt status="2.a">
+        <publisher>
+                    <name>84000: Translating the Words of the Buddha</name> is a global non-profit
+          initiative to translate all the Buddha’s words into modern languages, and to make them
+          available to everyone. </publisher>
+        <availability>
+          <licence>
+            <graphic url="http://i.creativecommons.org/l/by-nc-nd/2.0/88x31.png"/>
+            <p>This work is provided under the protection of a Creative Commons CC BY-NC-ND
+              (Attribution - Non-commercial - No-derivatives) 3.0 copyright. It may be copied or
+              printed for fair use, but only with full attribution, and not for commercial advantage
+              or personal compensation. For full details, see the Creative Commons license.</p>
+          </licence>
+        </availability>
+        <idno xml:id="UT22084-094-005"/>
+        <note>An early mistake in the assigning of UT numbers within the 84000 project means that
+          these ids diverge slightly from the standard logic.</note>
+        <date>2022-07-14</date>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl key="toh728" type="text">
+          <ref>Toh 728</ref>
+          <biblScope>Degé Kangyur vol. 94 (rgyud, tsha), folios 219.a–222.a</biblScope>
+          <location work="UT4CZ5369" count-pages="7">
+            <volume number="94" start-page="437" end-page="443"/>
+          </location>
+          <idno parent-id="O1JC114941JC21415" work="http://read.84000.co/sections"/>
+          <idno source-id="O1JC114941JC12469" work="W22084"/>
+        </bibl>
+      </sourceDesc>
+      <notesStmt>
+        <note type="lastUpdated" date-time="2022-07-18T11:34:14.335Z" user="sameer">18/07/2022 11:34:14</note>
+        <note type="updated" update="text-version" value="v 0.1.0" date-time="2019-12-13T10:56:38.631Z" user="john">v 0.1.0</note>
+        <note type="updated" update="translation-status" value="3" date-time="2019-12-13T10:56:38.631Z" user="john">3</note>
+        <note type="updated" update="translation-status" value="2.h" date-time="2020-05-28T13:10:21.844Z" user="line-tofte">2.h</note>
+        <note type="updated" update="translation-status" value="2.g" date-time="2020-11-16T14:12:04.049Z" user="line-tofte">2.g</note>
+        <note type="updated" update="text-version" value="0.1.1" date-time="2020-11-16T14:12:04.049Z" user="line-tofte">Auto
+          (update-publication-status)</note>
+        <note type="updated" update="text-version" value="0.1.2" date-time="2020-11-16T14:12:26.077Z" user="line-tofte">Auto (update-contributors)</note>
+        <note type="updated" update="translation-status" value="2.f" date-time="2022-01-31T08:04:09.887Z" user="line-tofte">2.f</note>
+        <note type="updated" update="text-version" value="0.1.3" date-time="2022-01-31T08:04:09.887Z" user="line-tofte">Auto
+          (update-publication-status)</note>
+        <note type="updated" update="translation-status" value="2.e" date-time="2022-02-23T08:53:39.086Z" user="line-tofte">2.e</note>
+        <note type="updated" update="text-version" value="0.1.4" date-time="2022-02-23T08:53:39.086Z" user="line-tofte">Auto
+          (update-publication-status)</note>
+        <note type="updated" update="text-version" value="0.1.5" date-time="2022-02-23T08:54:04.015Z" user="line-tofte">Auto (update-contributors)</note>
+        <note type="updated" update="translation-status" value="2.d" date-time="2022-02-23T08:54:33.101Z" user="line-tofte">2.d</note>
+        <note type="updated" update="text-version" value="0.1.6" date-time="2022-02-23T08:54:33.101Z" user="line-tofte">Auto
+          (update-publication-status)</note>
+        <note type="updated" update="translation-status" value="2.c" date-time="2022-07-04T12:57:20.193Z" user="line-tofte">2.c</note>
+        <note type="updated" update="text-version" value="0.1.7" date-time="2022-07-04T12:57:20.193Z" user="line-tofte">Auto
+          (update-publication-status)</note>
+        <note type="updated" update="translation-status" value="2.b" date-time="2022-07-07T09:27:25.264Z" user="line-tofte">2.b</note>
+        <note type="updated" update="text-version" value="0.1.8" date-time="2022-07-07T09:27:25.264Z" user="line-tofte">Auto
+          (update-publication-status)</note>
+        <note type="updated" update="text-version" value="0.1.9" date-time="2022-07-07T09:28:01.384Z" user="line-tofte">Auto (update-contributors)</note>
+        <note type="updated" update="translation-status" value="2.a" date-time="2022-07-13T09:05:20.423Z" user="line-tofte">2.a</note>
+        <note type="updated" update="text-version" value="0.1.10" date-time="2022-07-13T09:05:20.423Z" user="line-tofte">Auto
+          (update-publication-status)</note>
+        <note type="updated" update="text-version" value="0.1.11" date-time="2022-07-13T09:10:32.793Z" user="line-tofte">Auto (update-contributors)</note>
+      </notesStmt>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <!--Note the "Contents" outline from the Word DOCX has not been included in the script. If the 
                     Outline to the text is quite complex, it is recommended that you paste the outlined contents from the DOCX here as a comment for
                     markup's reference. The actual table of contents will be generated in the Reading Room by the parser.-->
-                <front>
-                        <div type="summary">
-                                <head type="summary" tid="1">Summary</head>
-                                <milestone unit="chunk" xml:id="UT22084-094-005-1"/>
-                                <p tid="2">In this sūtra, the goddess Tārā recites a dhāraṇī before an
-                                        assembly of gods, asuras, and spirits of various types,
-                                        which brings them peace and stills their speech. The
-                                        assembled beings then sing praise for Tārā in the form of
-                                        one hundred and eight epithets of the goddess. Tārā gives a
-                                        pithy teaching on the importance of seeking liberation and
-                                        on the right attitude needed for this endeavor. Finally, the
-                                        goddess gives encouragement and extols the power of the
-                                        dhāraṇī.</p>
-                        </div>
-                        <div type="acknowledgment">
-                                <head type="acknowledgment" tid="3">Acknowledgements</head>
-                                <milestone unit="chunk" xml:id="UT22084-094-005-2"/>
-                                <p tid="4">Translated by Lhasey Lotsawa Translations and Publications under
-                                        the guidance of Phakchok Rinpoche. The translation and
-                                        introduction were produced and edited by Roger Espel Llima,
-                                        Stefan Mang, Lowell Cook, Ryan Conlon, and Alex
-                                        Yiannopoulos.</p>
-                                <milestone unit="chunk" xml:id="UT22084-094-005-3"/>
-                                <p tid="5">&lt;break&gt;</p>
-                                <milestone unit="chunk" xml:id="UT22084-094-005-4"/>
-                                <p tid="6">[Sponsored by XXXXXX]</p>
-                        </div>
-                        <div type="introduction">
-                                <head type="introduction" tid="7">Introduction</head>
-                                <div type="section" xml:id="UT22084-094-005-introduction-1">
-                                        <head type="section" tid="8">Main Section [placeholder heading—will
-                                                be removed in publication]</head>
-                                        <milestone unit="chunk" xml:id="UT22084-094-005-5"/>
-                                        <p tid="9">This sūtra opens with an homage to the goddess Tārā, to
-                                                whom the text is dedicated. Tārā immediately
-                                                pronounces a dhāraṇī in front of an audience of
-                                                gods, asuras, and spirits of various types. Awed by
-                                                Tārā’s presence, they all praise her powers. In the
-                                                central portion of the sūtra, the assembled beings
-                                                offer homage and praise to Tārā in the form of a
-                                                list of epithets of the goddess. At the end of this
-                                                recitation, Tārā responds with some words of
-                                                encouragement and gives a brief teaching on the path
-                                                to liberation as well as on the importance of
-                                                applying unwavering effort to cross over the ocean
-                                                of cyclic existence. The text concludes with Tārā
-                                                extolling the power of the dhāraṇī she previously
-                                                pronounced, detailing its salvific effects, and
-                                                praising those who uphold it. At the end of the
-                                                sūtra, the audience is filled with joy, and we are
-                                                told that their speech has been completely
-                                                stilled.</p>
-                                        <milestone unit="chunk" xml:id="UT22084-094-005-6"/>
-                                        <p tid="10">The sūtra can be divided into three sections. The first
-                                                section centers on the dhāraṇī. After a brief
-                                                introduction, Tārā recites the dhāraṇī, “which had
-                                                never been seen or heard before,” and we are told of
-                                                its effect on the audience. The second section,
-                                                which is the longest and constitutes the core of the
-                                                text, is composed of the list of epithets of the
-                                                goddess Tārā. These epithets are given in the form
-                                                of thirty-five four-line verses, and it is not
-                                                obvious how to count exactly 108 names in them. This
-                                                list of names is quite different from the most
-                                                well-known list of Tārā’s names found in <title xml:lang="en">One Hundred and Eight Names of the
-                                                  Noble Lady Tārā</title> (Toh 727&lt;Reference Toh
-                                                0727&gt;; <title xml:lang="Bo-Ltn">rje btsun ma
-                                                  ’phags ma sgrol ma’i mtshan brgya rtsa brgyad
-                                                  pa</title>). There is very little overlap in the
-                                                epithets, but many of them echo similar themes
-                                                related to Tārā’s forms, qualities, attributes, and
-                                                activities. The third and final section takes the
-                                                form of a pithy teaching given by Tārā to her
-                                                audience.</p>
-                                        <milestone unit="chunk" xml:id="UT22084-094-005-7"/>
-                                        <p tid="11">Since this sūtra lacks a colophon, it offers no
-                                                contextual information besides the original Sanskrit
-                                                title. In particular, it is not known when or by
-                                                whom it was translated into Tibetan. The Sanskrit
-                                                text does not appear to be extant, and there do not
-                                                appear to be any Indian or Tibetan authors who
-                                                commented on it. The text was translated into
-                                                Chinese by Fa Tian in the late tenth century under
-                                                the title <title xml:lang="zh">聖多羅菩薩一百八名陀羅尼經</title> (<title xml:lang="Zh-Ltn">Sheng Duoluo Pusa
-                                                  Yibai Ba Ming Tuoluoni Jing</title>, Taishō 1105).
-                                                This sūtra has not been previously translated into
-                                                any European language, and it has only been
-                                                mentioned in passing in scholarly works on
-                                                  Tārā,<note place="end" xml:id="UT22084-094-005-8">See Blonay (1895), p. 25;
-                                                  Martin (1996), p. 94; Beyer (1978), p.
-                                                  476n53.</note> which makes it a relatively
-                                                unexplored text.</p>
-                                        <milestone unit="chunk" xml:id="UT22084-094-005-9"/>
-                                        <p tid="12">This English translation is based on the Tibetan version
-                                                in the Degé Kangyur. The Comparative Edition
-                                                  (<foreign xml:lang="Bo-Ltn" type="term">dpe sdur
-                                                  ma</foreign>) Kangyur, the Stok Palace Kangyur,
-                                                and the Phukdrak Kangyur were consulted for variant
-                                                readings. </p>
-                                </div>
-                        </div>
-                </front>
-                <body>
-                        <div type="translation">
-                                <head type="translation" tid="13"> The Translation </head>
-                                <head type="titleHon" tid="14">The Hundred and Eight Names of the Goddess
-                                        Tārā</head>
-                                <head type="titleMain" tid="15"/>
-                                <div type="section" xml:id="UT22084-094-005-section-1">
-                                        <head tid="17">Main Section [placeholder heading—will be removed in
-                                                publication]</head>
-                                        <milestone unit="chunk" xml:id="UT22084-094-005-11"/>
-                                        <p tid="18">[F.219.a] Homage to the great goddess Tārā, the
-                                                completely victorious jewel, who, with her sumptuous
-                                                necklace, garments, and lower robes, is a canopy for
-                                                the great worldly realm. [F.219.b]</p>
-                                        <milestone unit="chunk" xml:id="UT22084-094-005-12"/>
-                                        <p tid="19">At that time, the goddess Tārā uttered this supreme
-                                                dhāraṇī, which had never been seen or heard
-                                                before:</p>
-                                        <milestone unit="chunk" xml:id="UT22084-094-005-13"/>
-                                        <p rend="mantra" tid="20">
-                        <mantra xml:lang="Sa-Ltn">oṁ
-                                                  trailokyavijaya | acittajaya | aniracijataya |
-                                                  sujaya | vijaya | mahājaya | vijaya</mantra>
-                        <note place="end" xml:id="UT22084-094-005-14"> Against the Degé witness, we follow
-                                                  the Narthang and Stok Palace Kangyurs in reading
-                                                  <foreign xml:lang="Sa-Ltn" type="term">jaya</foreign> instead of <foreign xml:lang="Sa-Ltn" type="term">jāya</foreign> for
-                                                  the six words beginning with <foreign xml:lang="Sa-Ltn" type="term">acittajaya</foreign>.</note>
-                        <mantra xml:lang="Sa-Ltn"> | jaya jaya | he he | smara
-                                                  smara | vara vara varada | mahādevi | vilasa |
-                                                  vilasa | vilasa | vaja amotakari vijayadevi | hī
-                                                  hī | kiṇi kiṇi</mantra>
-                        <note place="end" xml:id="UT22084-094-005-15">Against
-                                                  the Degé witness, we follow Narthang and Stok
-                                                  Palace in reading <foreign xml:lang="Sa-Ltn" type="term">kiṇi kiṇi</foreign> in place of
-                                                  <foreign xml:lang="Sa-Ltn" type="term">kini
-                                                  kini</foreign>. This is based on parallel uses of
-                                                  <foreign xml:lang="Sa-Ltn" type="term">kiṇi
-                                                  kiṇi</foreign> in other dhāraṇīs.</note>
-                        <mantra xml:lang="Sa-Ltn"> vilambase | smara smara |
-                                                  mahāprajñā anipata |
-                                                  vajramahākāruṇika</mantra>
-                        <note place="end" xml:id="UT22084-094-005-16">Against the Degé witness, we follow Narthang and
-                                                  Stok Palace in reading <foreign xml:lang="Sa-Ltn" type="term">vajramahākaruṇika</foreign> in place
-                                                  of <foreign xml:lang="Sa-Ltn" type="term">vajramamamahākaruṇika</foreign>.</note>
-                        <mantra xml:lang="Sa-Ltn"> | bhagini hruṃ hruṃ | sphuṭa
-                                                  sphuṭa | sphoṭa sphoṭa | āveśaya āveśaya | dhuna
-                                                  dhuna | vidhuna vidhuna | kampa kampa | kampaya |
-                                                  surabhigandha | atisita | mukhe haladavala |
-                                                  saṃgarājana | vimavigi | vināśaya vināśaya | he
-                                                  bhagavati | santrāsaya</mantra>
-                        <note place="end" xml:id="UT22084-094-005-17">Against the Degé witness, we follow Narthang and
-                                                  Stok Palace in reading <foreign xml:lang="Sa-Ltn" type="term">saṃtrāsaya</foreign> in place of
-                                                  <foreign xml:lang="Sa-Ltn" type="term">santrasaya</foreign>.</note>
-                        <mantra xml:lang="Sa-Ltn"> vighanān | parivalāya asmākaṃ
-                                                  asmākaṃ | mādani mādani | saṃbodhaya | saṃmohaya |
-                                                  hara hara | hiri hiri | huru huru | vitakara |
-                                                  varaja | haṃ haṃ | trotāya | haṃ haṃ | santratāya
-                                                  | santroya | manta manta | marda marda | cara cara
-                                                  | saṃcara saṃcara | vega vega vegavati | namo namo
-                                                  namaḥ svāhā |</mantra>
-                        <note place="end" xml:id="UT22084-094-005-18">This
-                                                  dhāraṇī has been reproduced primarily as it
-                                                  appears in the Degé witness of the Tibetan
-                                                  translation, and the word divisions have been
-                                                  arranged in a way that seems most appropriate
-                                                  given the available readings. This dhāraṇī employs
-                                                  conventions typical of dhāraṇīs, which are
-                                                  difficult to understand with precision and to
-                                                  translate. Moreover, it is evident that the
-                                                  transmission of this dhāraṇī has suffered from
-                                                  various corruptions. Therefore, it is not possible
-                                                  to conjecture alternative readings or offer a
-                                                  complete translation. Generally, the dhāraṇī can
-                                                  be understood to invoke the goddess as one who is
-                                                  described as victorious in various ways. She is
-                                                  asked to recollect her vows (<foreign xml:lang="Sa-Ltn" type="term">smara
-                                                  smara</foreign>) and to manifest beautifully
-                                                  (<foreign xml:lang="Sa-Ltn" type="term">vilasa
-                                                  vilasa</foreign>) as a great, boon-granting
-                                                  goddess. Her connections with vajra-emptiness and
-                                                  compassion are evoked, and she is asked to spring
-                                                  forth (<foreign xml:lang="Sa-Ltn" type="term">sphuṭa sphuṭa</foreign>), enter or possess
-                                                  (<foreign xml:lang="Sa-Ltn" type="term">āveśa
-                                                  āveśa</foreign>), shake (<foreign xml:lang="Sa-Ltn" type="term">kampa
-                                                  kampa</foreign>) and to make others shake
-                                                  (<foreign xml:lang="Sa-Ltn" type="term">kampaya</foreign>). Her fragrance and white color
-                                                  are mentioned, she is asked to terrorize
-                                                  obstructive forces (<foreign xml:lang="Sa-Ltn" type="term">santrāsaya vighanān</foreign>), to
-                                                  “surround us” and provide protection (<foreign xml:lang="Sa-Ltn" type="term">parivalāya asmākaṃ
-                                                  asmākaṃ</foreign>), and spring into action
-                                                  (<foreign xml:lang="Sa-Ltn" type="term">cara
-                                                  cara</foreign>). She is then described as one who
-                                                  is rich in driving force (<foreign xml:lang="Sa-Ltn" type="term">vegavatī</foreign>).
-                                                  The dhāraṇī ends by paying homage to her (<foreign xml:lang="Sa-Ltn" type="term">namo namo namaḥ
-                                                  svāhā</foreign>).</note>
+    <front>
+      <div type="summary">
+        <head type="summary" tid="1">Summary</head>
+        <milestone unit="chunk" xml:id="UT22084-094-005-1"/>
+        <p tid="2">In this sūtra, the goddess Tārā recites a dhāraṇī before an assembly of gods,
+          asuras, and spirits of various types, which brings them peace and stills their speech. The
+          assembled beings then sing praise for Tārā in the form of one hundred and eight epithets
+          of the goddess. Tārā gives a pithy teaching on the importance of seeking liberation and on
+          the right attitude needed for this endeavor. Finally, the goddess gives encouragement and
+          extols the power of the dhāraṇī.</p>
+      </div>
+      <div type="acknowledgment">
+        <head type="acknowledgment" tid="3">Acknowledgements</head>
+        <milestone unit="chunk" xml:id="UT22084-094-005-2"/>
+        <p tid="4">Translated by Lhasey Lotsawa Translations and Publications under the guidance of
+          Phakchok Rinpoche. The translation and introduction were produced and edited by Roger
+          Espel Llima, Stefan Mang, Lowell Cook, Ryan Conlon, and Alex Yiannopoulos.</p>
+      </div>
+      <div type="introduction">
+        <head type="introduction" tid="7">Introduction</head>
+        <div type="section" xml:id="UT22084-094-005-introduction-1">
+          <milestone unit="chunk" xml:id="UT22084-094-005-5"/>
+          <p tid="9">This sūtra opens with an homage to the goddess Tārā, to whom the text is
+            dedicated. Tārā immediately pronounces a dhāraṇī in front of an audience of gods,
+            asuras, and spirits of various types. Awed by Tārā’s presence, they all praise her
+            powers. In the central portion of the sūtra, the assembled beings offer homage and
+            praise to Tārā in the form of a list of epithets of the goddess. At the end of this
+            recitation, Tārā responds with some words of encouragement and gives a brief teaching on
+            the path to liberation as well as on the importance of applying unwavering effort to
+            cross over the ocean of cyclic existence. The text concludes with Tārā extolling the
+            power of the dhāraṇī she previously pronounced, detailing its salvific effects, and
+            praising those who uphold it. At the end of the sūtra, the audience is filled with joy,
+            and we are told that their speech has been completely stilled.</p>
+          <milestone unit="chunk" xml:id="UT22084-094-005-6"/>
+          <p tid="10">The sūtra can be divided into three sections. The first section centers on the
+            dhāraṇī. After a brief introduction, Tārā recites the dhāraṇī, “which had never been
+            seen or heard before,” and we are told of its effect on the audience. The second
+            section, which is the longest and constitutes the core of the text, is composed of the
+            list of epithets of the goddess Tārā. These epithets are given in the form of
+            thirty-five four-line verses, and it is not obvious how to count exactly 108 names in
+            them. This list of names is quite different from the most well-known list of Tārā’s
+            names found in <title xml:lang="en">One Hundred and Eight Names of the Noble Lady
+              Tārā</title> (<ref target="https://read.84000.co/translation/toh727.html" rend="pending">Toh 727</ref>; <title xml:lang="Bo-Ltn">rje btsun ma ’phags ma sgrol
+              ma’i mtshan brgya rtsa brgyad pa</title>). There is very little overlap in the
+            epithets, but many of them echo similar themes related to Tārā’s forms, qualities,
+            attributes, and activities. The third and final section takes the form of a pithy
+            teaching given by Tārā to her audience.</p>
+          <milestone unit="chunk" xml:id="UT22084-094-005-7"/>
+          <p tid="11">Since this sūtra lacks a colophon, it offers no contextual information besides
+            the original Sanskrit title. In particular, it is not known when or by whom it was
+            translated into Tibetan. The Sanskrit text does not appear to be extant, and there do
+            not appear to be any Indian or Tibetan authors who commented on it. The text was
+            translated into Chinese by Fa Tian in the late tenth century under the title <title xml:lang="zh">聖多羅菩薩一百八名陀羅尼經</title> (<title xml:lang="Zh-Ltn">Sheng Duoluo Pusa Yibai
+              Ba Ming Tuoluoni Jing</title>, Taishō 1105). This sūtra has not been previously
+            translated into any European language, and it has only been mentioned in passing in
+            scholarly works on Tārā,<note place="end" xml:id="UT22084-094-005-8">See Blonay (1895),
+              p. 25; Martin (1996), p. 94; Beyer (1978), p. 476n53.</note> which makes it a
+            relatively unexplored text.</p>
+          <milestone unit="chunk" xml:id="UT22084-094-005-9"/>
+          <p tid="12">This English translation is based on the Tibetan version in the Degé Kangyur.
+            The Comparative Edition (<foreign xml:lang="Bo-Ltn" type="term">dpe sdur ma</foreign>)
+            Kangyur, the Stok Palace Kangyur, and the Phukdrak Kangyur were consulted for variant
+            readings. </p>
+        </div>
+      </div>
+    </front>
+    <body>
+      <div type="translation">
+        <head type="translation" tid="13"> The Translation </head>
+        <head type="titleHon" tid="14">The Hundred and Eight Names of the Goddess Tārā</head>
+        <head type="titleMain" tid="15"/>
+        <div type="section" xml:id="UT22084-094-005-section-1">
+          <milestone unit="chunk" xml:id="UT22084-094-005-11"/>
+          <p tid="18">
+                        <ref cRef="F.219.a" type="folio" xml:id="UT22084-094-005-154"/> Homage to the great goddess Tārā, the
+            completely victorious jewel, who, with her sumptuous necklace, garments, and lower
+            robes, is a canopy for the great worldly realm. <ref cRef="F.219.b" type="folio" xml:id="UT22084-094-005-155"/>
                     </p>
-                                        <milestone unit="chunk" xml:id="UT22084-094-005-19"/>
-                                        <lg tid="21">
-                                                <l>Upon hearing this great mantra,</l>
-                                                <l>Supremely renowned in the three realms,</l>
-                                                <l>The assemblies of gods and asuras,</l>
-                                                <l>Together with the hordes of <foreign xml:lang="Sa-Ltn" type="term">rākṣasas</foreign>, </l>
-                                                <l>
+          <milestone unit="chunk" xml:id="UT22084-094-005-12"/>
+          <p tid="19">At that time, the goddess Tārā uttered this supreme dhāraṇī, which had never
+            been seen or heard before:</p>
+          <milestone unit="chunk" xml:id="UT22084-094-005-13"/>
+          <p rend="mantra" tid="20">
+                        <mantra xml:lang="Sa-Ltn">oṁ trailokyavijaya | acittajaya |
+              aniracijataya | sujaya | vijaya | mahājaya | vijaya<note place="end" xml:id="UT22084-094-005-14"> Against the Degé witness, we follow the Narthang and
+                Stok Palace Kangyurs in reading <foreign xml:lang="Sa-Ltn" type="term">jaya</foreign> instead of <foreign xml:lang="Sa-Ltn" type="term">jāya</foreign>
+                for the six words beginning with <foreign xml:lang="Sa-Ltn" type="term">acittajaya</foreign>.</note> | jaya jaya | he he | smara smara | vara vara varada
+              | mahādevi | vilasa | vilasa | vilasa | vaja amotakari vijayadevi | hī hī | kiṇi
+                kiṇi<note place="end" xml:id="UT22084-094-005-15">Against the Degé witness, we
+                follow Narthang and Stok Palace in reading <foreign xml:lang="Sa-Ltn" type="term">kiṇi kiṇi</foreign> in place of <foreign xml:lang="Sa-Ltn" type="term">kini
+                  kini</foreign>. This is based on parallel uses of <foreign xml:lang="Sa-Ltn" type="term">kiṇi kiṇi</foreign> in other dhāraṇīs.</note> vilambase | smara smara
+              | mahāprajñā anipata | vajramahākāruṇika<note place="end" xml:id="UT22084-094-005-16">Against the Degé witness, we follow Narthang and Stok Palace in reading <foreign xml:lang="Sa-Ltn" type="term">vajramahākaruṇika</foreign> in place of <foreign xml:lang="Sa-Ltn" type="term">vajramamamahākaruṇika</foreign>.</note> | bhagini
+              hruṃ hruṃ | sphuṭa sphuṭa | sphoṭa sphoṭa | āveśaya āveśaya | dhuna dhuna | vidhuna
+              vidhuna | kampa kampa | kampaya | surabhigandha | atisita | mukhe haladavala |
+              saṃgarājana | vimavigi | vināśaya vināśaya | he bhagavati | santrāsaya<note place="end" xml:id="UT22084-094-005-17">Against the Degé witness, we follow Narthang
+                and Stok Palace in reading <foreign xml:lang="Sa-Ltn" type="term">saṃtrāsaya</foreign> in place of <foreign xml:lang="Sa-Ltn" type="term">santrasaya</foreign>.</note> vighanān | parivalāya asmākaṃ asmākaṃ | mādani
+              mādani | saṃbodhaya | saṃmohaya | hara hara | hiri hiri | huru huru | vitakara |
+              varaja | haṃ haṃ | trotāya | haṃ haṃ | santratāya | santroya | manta manta | marda
+              marda | cara cara | saṃcara saṃcara | vega vega vegavati | namo namo namaḥ svāhā
+                |<note place="end" xml:id="UT22084-094-005-18">This dhāraṇī has been reproduced
+                primarily as it appears in the Degé witness of the Tibetan translation, and the word
+                divisions have been arranged in a way that seems most appropriate given the
+                available readings. This dhāraṇī employs conventions typical of dhāraṇīs, which are
+                difficult to understand with precision and to translate. Moreover, it is evident
+                that the transmission of this dhāraṇī has suffered from various corruptions.
+                Therefore, it is not possible to conjecture alternative readings or offer a complete
+                translation. Generally, the dhāraṇī can be understood to invoke the goddess as one
+                who is described as victorious in various ways. She is asked to recollect her vows
+                  (<foreign xml:lang="Sa-Ltn" type="term">smara smara</foreign>) and to manifest
+                beautifully (<foreign xml:lang="Sa-Ltn" type="term">vilasa vilasa</foreign>) as a
+                great, boon-granting goddess. Her connections with vajra-emptiness and compassion
+                are evoked, and she is asked to spring forth (<foreign xml:lang="Sa-Ltn" type="term">sphuṭa sphuṭa</foreign>), enter or possess (<foreign xml:lang="Sa-Ltn" type="term">āveśa āveśa</foreign>), shake (<foreign xml:lang="Sa-Ltn" type="term">kampa kampa</foreign>) and to make others shake (<foreign xml:lang="Sa-Ltn" type="term">kampaya</foreign>). Her fragrance and white color are mentioned, she
+                is asked to terrorize obstructive forces (<foreign xml:lang="Sa-Ltn" type="term">santrāsaya vighanān</foreign>), to “surround us” and provide protection (<foreign xml:lang="Sa-Ltn" type="term">parivalāya asmākaṃ asmākaṃ</foreign>), and spring
+                into action (<foreign xml:lang="Sa-Ltn" type="term">cara cara</foreign>). She is
+                then described as one who is rich in driving force (<foreign xml:lang="Sa-Ltn" type="term">vegavatī</foreign>). The dhāraṇī ends by paying homage to her
+                  (<foreign xml:lang="Sa-Ltn" type="term">namo namo namaḥ
+              svāhā</foreign>).</note>
+                        </mantra>
+                    </p>
+          <milestone unit="chunk" xml:id="UT22084-094-005-19"/>
+          <lg tid="21">
+            <l>Upon hearing this great mantra,</l>
+            <l>Supremely renowned in the three realms,</l>
+            <l>The assemblies of gods and asuras,</l>
+            <l>Together with the hordes of <foreign xml:lang="Sa-Ltn" type="term">rākṣasas</foreign>, </l>
+            <l>
                             <foreign xml:lang="Sa-Ltn" type="term">Yakṣas</foreign>, <foreign xml:lang="Sa-Ltn" type="term">kinnaras</foreign>, <foreign xml:lang="Sa-Ltn" type="term">mahoragas</foreign>,</l>
-                                          <l>
+            <l>
                             <foreign xml:lang="Sa-Ltn" type="term">Bhūtas</foreign>, <foreign xml:lang="Sa-Ltn" type="term">gandharvas</foreign>, and <foreign xml:lang="Sa-Ltn" type="term">vināyakas</foreign>,</l>
-                                                <l>Grew afraid and hung their heads low.</l>
-                                                <l>With their mighty arms trembling, they said:</l>
-                                        </lg>
-                                        <milestone unit="chunk" xml:id="UT22084-094-005-20"/>
-                                        <lg tid="22">
-                                                <l>“Homage to you, Tārā, the broad-eyed one,</l>
-                                                <l>Who turns away the speech of Kāmadeva,</l>
-                                                <l>So that your names<note place="end" xml:id="UT22084-094-005-21">Reading
-                                                  <foreign xml:lang="Bo-Ltn" type="term">mtshan
-                                                  dag</foreign> in accordance with the Narthang and
-                                                  Stok Palace Kangyurs. Degé and other editions have
-                                                  <foreign xml:lang="Bo-Ltn" type="term">mtha’
-                                                  dag</foreign>.</note> may fill the three
-                                                  realms!</l>
-                                        </lg>
-                                        <milestone unit="chunk" xml:id="UT22084-094-005-22"/>
-                                        <lg tid="23">
-                                                <l>“Proclaimer of Avalokiteśvara’s lineage,</l>
-                                                <l>Light renowned for its greatness, oh broad-eyed
-                                                  one, </l>
-                                                <l>You came into being to help sentient beings!”</l>
-                                        </lg>
-                                        <milestone unit="chunk" xml:id="UT22084-094-005-23"/>
-                                        <lg tid="24">
-                                                <l>Then, all the gods and asuras,</l>
-                                                <l>Such as Śiva and the others, gathered
-                                                  together.</l>
-                                                <l>The lords among vidyādharas </l>
-                                                <l>And the vidyādharas themselves</l>
-                                                <l>Draped their upper garments across their
-                                                  shoulders,</l>
-                                                <l>Performed excellent circumambulations, and, </l>
-                                                <l>Bending their knees to the ground, </l>
-                                                <l>Spoke the following words: [F.220.a]</l>
-                                        </lg>
-                                        <milestone unit="chunk" xml:id="UT22084-094-005-24"/>
-                                        <lg tid="25">
-                                                <l>“O Tārā, goddess of blazing light, </l>
-                                                <l>To you we pay homage! Homage! Homage to you!</l>
-                                                <l>Your hundred and eight peerless and pristine
-                                                  names</l>
-                                                <l>We will now recite:</l>
-                                        </lg>
-                                        <milestone unit="chunk" xml:id="UT22084-094-005-25"/>
-                                        <lg tid="26">
-                                                <l>“Glorious, exalted one, ever victorious and
-                                                  propitious,</l>
-                                                <l>Your extrasensory powers are as swift as
-                                                  Prajāpati’s.</l>
-                                                <l>Your fierceness instills fear in the Lord of
-                                                  Love,<note place="end" xml:id="UT22084-094-005-26">Tentatively interpreting
-                                                  the Tib. phrase <foreign xml:lang="Bo-Ltn" type="term">dbang phyug rab dga’</foreign> as a
-                                                  variant of <foreign xml:lang="Bo-Ltn" type="term">dga’ rab dbang phyug</foreign>, which is an
-                                                  epithet of Kāmadeva. </note>
+            <l>Grew afraid and hung their heads low.</l>
+            <l>With their mighty arms trembling, they said:</l>
+          </lg>
+          <milestone unit="chunk" xml:id="UT22084-094-005-20"/>
+          <lg tid="22">
+            <l>“Homage to you, Tārā, the broad-eyed one,</l>
+            <l>Who turns away the speech of Kāmadeva,</l>
+            <l>So that your names<note place="end" xml:id="UT22084-094-005-21">Reading <foreign xml:lang="Bo-Ltn" type="term">mtshan dag</foreign> in accordance with the Narthang
+                and Stok Palace Kangyurs. Degé and other editions have <foreign xml:lang="Bo-Ltn" type="term">mtha’ dag</foreign>.</note> may fill the three realms!</l>
+          </lg>
+          <milestone unit="chunk" xml:id="UT22084-094-005-22"/>
+          <lg tid="23">
+            <l>“Proclaimer of Avalokiteśvara’s lineage,</l>
+            <l>Light renowned for its greatness, oh broad-eyed one, </l>
+            <l>You came into being to help sentient beings!”</l>
+          </lg>
+          <milestone unit="chunk" xml:id="UT22084-094-005-23"/>
+          <lg tid="24">
+            <l>Then, all the gods and asuras,</l>
+            <l>Such as Śiva and the others, gathered together.</l>
+            <l>The lords among vidyādharas </l>
+            <l>And the vidyādharas themselves</l>
+            <l>Draped their upper garments across their shoulders,</l>
+            <l>Performed excellent circumambulations, and, </l>
+            <l>Bending their knees to the ground, </l>
+            <l>Spoke the following words: <ref cRef="F.220.a" type="folio" xml:id="UT22084-094-005-156"/>
                         </l>
-                                                <l>Yet you are free of carelessness and conceit.</l>
-                                        </lg>
-                                        <milestone unit="chunk" xml:id="UT22084-094-005-27"/>
-                                        <lg tid="27">
-                                                <l>“Your eyes, face, and navel </l>
-                                                <l>Are lotus-like and exude purity.</l>
-                                                <l>Your broad, beautiful eyes glow blue<note place="end" xml:id="UT22084-094-005-28"> Tib. <foreign xml:lang="Bo-Ltn" type="term">sngo ba</foreign> and <foreign xml:lang="Bo-Ltn" type="term">sngon po</foreign>
-                                                  (both appear in the Tibetan verse) can refer to a
-                                                  range of colors from green (Skt. <foreign xml:lang="Sa-Ltn" type="term">harita</foreign>) to
-                                                  blue (Skt. <foreign xml:lang="Sa-Ltn" type="term">nīla</foreign>).</note>
+          </lg>
+          <milestone unit="chunk" xml:id="UT22084-094-005-24"/>
+          <lg tid="25">
+            <l>“O Tārā, goddess of blazing light, </l>
+            <l>To you we pay homage! Homage! Homage to you!</l>
+            <l>Your hundred and eight peerless and pristine names</l>
+            <l>We will now recite:</l>
+          </lg>
+          <milestone unit="chunk" xml:id="UT22084-094-005-25"/>
+          <lg tid="26">
+            <l>“Glorious, exalted one, ever victorious and propitious,</l>
+            <l>Your extrasensory powers are as swift as Prajāpati’s.</l>
+            <l>Your fierceness instills fear in the Lord of Love,<note place="end" xml:id="UT22084-094-005-26">Tentatively interpreting the Tib. phrase <foreign xml:lang="Bo-Ltn" type="term">dbang phyug rab dga’</foreign> as a variant of
+                  <foreign xml:lang="Bo-Ltn" type="term">dga’ rab dbang phyug</foreign>, which is an
+                epithet of Kāmadeva. </note>
                         </l>
-                                                <l>Like the blue of the utpala flower.</l>
-                                        </lg>
-                                        <milestone unit="chunk" xml:id="UT22084-094-005-29"/>
-                                        <lg tid="28">
-                                                <l>“You protect all those worthy of care,</l>
-                                                <l>Granting them happiness, strength, and
-                                                  beauty.</l>
-                                                <l>Protector and fierce guardian,</l>
-                                                <l>You enact the deeds of the Three Jewels. </l>
-                                        </lg>
-                                        <milestone unit="chunk" xml:id="UT22084-094-005-30"/>
-                                        <lg tid="29">
-                                                <l>“Your lips and fingernails shine red.</l>
-                                                <l>With bloodshot eyes you gaze.</l>
-                                                <l>Joyful, lotus-like force of joy, </l>
-                                                <l>You are the color of the lotus, in whose hues you
-                                                  delight! </l>
-                                        </lg>
-                                        <milestone unit="chunk" xml:id="UT22084-094-005-31"/>
-                                        <lg tid="30">
-                                                <l>“With your extraordinary strength and frightful
-                                                  attire</l>
-                                                <l>You tame and pacify the three worlds.</l>
-                                                <l>Subduer who acts to tame beings,</l>
-                                                <l>Noble one, you are praised as supreme among
-                                                  all.<note place="end" xml:id="UT22084-094-005-32"> Tib. <foreign xml:lang="Bo-Ltn" type="term">mi mchog dam
-                                                  pa</foreign> (Skt. <foreign xml:lang="Sa-Ltn" type="term">narottama</foreign> or <foreign xml:lang="Sa-Ltn" type="term">naravarapravara</foreign>), which more literally
-                                                  means “the very best of humans.”</note>
-                                                </l>
-                                        </lg>
-                                        <milestone unit="chunk" xml:id="UT22084-094-005-33"/>
-                                        <lg tid="31">
-                                                <l>“Holder of the vajra of resplendent clarity which
-                                                  tames beings,</l>
-                                                <l>Utterly victorious clear light,</l>
-                                                <l>You are awake, beyond taint or stain,</l>
-                                                <l>And you are honored<note place="end" xml:id="UT22084-094-005-34"> Narthang,
-                                                  Lhasa, and Stok Palace read <foreign xml:lang="Bo-Ltn" type="term">rje</foreign>
-                                                  (“lord”) instead of <foreign xml:lang="Bo-Ltn" type="term">rjed</foreign> (“to honor, to
-                                                  respect”), which makes: “Lord over Candra and the
-                                                  outstanding gods.”</note> by Candra and the
-                                                  outstanding gods.</l>
-                                        </lg>
-                                        <milestone unit="chunk" xml:id="UT22084-094-005-35"/>
-                                        <lg tid="32">
-                                                <l>“Your beautiful beams of light</l>
-                                                <l>Pervade all objects of desire.<note place="end" xml:id="UT22084-094-005-36">
-                                                  Tentative for <foreign xml:lang="Bo-Ltn" type="term">sred bya dang ni sred bya’i
-                                                  bar</foreign>. </note>
+            <l>Yet you are free of carelessness and conceit.</l>
+          </lg>
+          <milestone unit="chunk" xml:id="UT22084-094-005-27"/>
+          <lg tid="27">
+            <l>“Your eyes, face, and navel </l>
+            <l>Are lotus-like and exude purity.</l>
+            <l>Your broad, beautiful eyes glow blue<note place="end" xml:id="UT22084-094-005-28">
+                Tib. <foreign xml:lang="Bo-Ltn" type="term">sngo ba</foreign> and <foreign xml:lang="Bo-Ltn" type="term">sngon po</foreign> (both appear in the Tibetan
+                verse) can refer to a range of colors from green (Skt. <foreign xml:lang="Sa-Ltn" type="term">harita</foreign>) to blue (Skt. <foreign xml:lang="Sa-Ltn" type="term">nīla</foreign>).</note>
                         </l>
-                                                <l>Majestic in your battle with Varuṇa,</l>
-                                                <l>Supreme one, your mind is naturally expansive and
-                                                  pervasive.</l>
-                                        </lg>
-                                        <milestone unit="chunk" xml:id="UT22084-094-005-37"/>
-                                        <lg tid="33">
-                                                <l>“With your triple crown ornament, three belly
-                                                  folds,<note place="end" xml:id="UT22084-094-005-38"> Three folds or lines on
-                                                  the belly that typify feminine beauty in classical
-                                                  Indian aesthetics.</note> and three eyes</l>
-                                                <l>You clear away the three defilements.</l>
-                                                <l>Dispeller of phenomenal existence, lady of deep
-                                                  virtue,</l>
-                                                <l>You are also renowned for your eloquence.</l>
-                                        </lg>
-                                        <milestone unit="chunk" xml:id="UT22084-094-005-39"/>
-                                        <lg tid="34">
-                                                <l>“You grant victory and merit</l>
-                                                <l>And fearlessly vanquish evil.</l>
-                                                <l>Lady of peace who grants wealth and luster,</l>
-                                                <l>Your form, belly, and bosom are most elegant!</l>
-                                        </lg>
-                                        <milestone unit="chunk" xml:id="UT22084-094-005-40"/>
-                                        <lg tid="35">
-                                                <l>“Lady of illusion who tames the field of illusory
-                                                  displays,<note place="end" xml:id="UT22084-094-005-41"> Tib. <foreign xml:lang="Bo-Ltn" type="quote">sgyu ’phrul sgyu
-                                                  ’phrul ldan zhing ’dul</foreign>. Tentatively
-                                                  reading the repeated word <foreign xml:lang="Bo-Ltn" type="term">sgyu
-                                                  ’phrul</foreign> (Skt. <foreign xml:lang="Sa-Ltn" type="term">māya</foreign>, “illusion” or
-                                                  “illusory display”) as first referring to Tārā
-                                                  herself. The Phukdrak Kangyur reads <foreign xml:lang="Bo-Ltn" type="quote">sgyu phrul rdzu
-                                                  ’phrul ldan zhing ’dul</foreign>, “you tame the
-                                                  field of illusory and miraculous
-                                                  displays.”</note>
+            <l>Like the blue of the utpala flower.</l>
+          </lg>
+          <milestone unit="chunk" xml:id="UT22084-094-005-29"/>
+          <lg tid="28">
+            <l>“You protect all those worthy of care,</l>
+            <l>Granting them happiness, strength, and beauty.</l>
+            <l>Protector and fierce guardian,</l>
+            <l>You enact the deeds of the Three Jewels. </l>
+          </lg>
+          <milestone unit="chunk" xml:id="UT22084-094-005-30"/>
+          <lg tid="29">
+            <l>“Your lips and fingernails shine red.</l>
+            <l>With bloodshot eyes you gaze.</l>
+            <l>Joyful, lotus-like force of joy, </l>
+            <l>You are the color of the lotus, in whose hues you delight! </l>
+          </lg>
+          <milestone unit="chunk" xml:id="UT22084-094-005-31"/>
+          <lg tid="30">
+            <l>“With your extraordinary strength and frightful attire</l>
+            <l>You tame and pacify the three worlds.</l>
+            <l>Subduer who acts to tame beings,</l>
+            <l>Noble one, you are praised as supreme among all.<note place="end" xml:id="UT22084-094-005-32"> Tib. <foreign xml:lang="Bo-Ltn" type="term">mi mchog
+                  dam pa</foreign> (Skt. <foreign xml:lang="Sa-Ltn" type="term">narottama</foreign>
+                or <foreign xml:lang="Sa-Ltn" type="term">naravarapravara</foreign>), which more
+                literally means “the very best of humans.”</note>
+            </l>
+          </lg>
+          <milestone unit="chunk" xml:id="UT22084-094-005-33"/>
+          <lg tid="31">
+            <l>“Holder of the vajra of resplendent clarity which tames beings,</l>
+            <l>Utterly victorious clear light,</l>
+            <l>You are awake, beyond taint or stain,</l>
+            <l>And you are honored<note place="end" xml:id="UT22084-094-005-34"> Narthang, Lhasa,
+                and Stok Palace read <foreign xml:lang="Bo-Ltn" type="term">rje</foreign> (“lord”)
+                instead of <foreign xml:lang="Bo-Ltn" type="term">rjed</foreign> (“to honor, to
+                respect”), which makes: “Lord over Candra and the outstanding gods.”</note> by
+              Candra and the outstanding gods.</l>
+          </lg>
+          <milestone unit="chunk" xml:id="UT22084-094-005-35"/>
+          <lg tid="32">
+            <l>“Your beautiful beams of light</l>
+            <l>Pervade all objects of desire.<note place="end" xml:id="UT22084-094-005-36">
+                Tentative for <foreign xml:lang="Bo-Ltn" type="term">sred bya dang ni sred bya’i
+                  bar</foreign>. </note>
                         </l>
-                                                <l>You uphold discipline and dispel all
-                                                  impurity.</l>
-                                                <l>Holding a garland, you bring elation,</l>
-                                                <l>Grant exhilaration,<note place="end" xml:id="UT22084-094-005-42"> In Tibetan
-                                                  the word <foreign xml:lang="Bo-Ltn" type="term">rgyags</foreign>, whose meaning ranges from
-                                                  “exhilaration” to “vanity”, is repeated twice in
-                                                  close succession. Here it is translated as
-                                                  “elation” and “exhilaration” to avoid the
-                                                  repetition.</note> and remove all conceit.</l>
-                                        </lg>
-                                        <milestone unit="chunk" xml:id="UT22084-094-005-43"/>
-                                        <lg tid="36">
-                                                <l>“Wrathful lady who inspires splendor,</l>
-                                                <l>White lady of bliss who brings peace,</l>
-                                                <l>Sovereign lady of all living beings, noble and
-                                                  mighty goddess, [F.220.b]</l>
-                                                <l>You hold and bestow sacred knowledge.<note place="end" xml:id="UT22084-094-005-44"> Tib. <foreign xml:lang="Bo-Ltn" type="term">tshangs par ldan</foreign>, possibly
-                                                  from Skt. <foreign xml:lang="Sa-Ltn" type="term">brahmavat</foreign>. Could also be read as
-                                                  “possessing and granting purity.”</note>
-                                                </l>
-                                        </lg>
-                                        <milestone unit="chunk" xml:id="UT22084-094-005-45"/>
-                                        <lg tid="37">
-                                                <l>“Your moon-like face glows with moonlight,</l>
-                                                <l>Stealing away the moon’s own effulgence.</l>
-                                                <l>Lady who delights in robbing the radiance of the
-                                                  sun,</l>
-                                                <l>You are beautiful, exalted, and wholly at peace!
-                                                </l>
-                                        </lg>
-                                        <milestone unit="chunk" xml:id="UT22084-094-005-46"/>
-                                        <lg tid="38">
-                                                <l>“Blissful<note place="end" xml:id="UT22084-094-005-47">Reading <foreign xml:lang="Bo-Ltn" type="term">bde ma</foreign> as
-                                                  attested in Narthang and Stok Palace. Degé reads
-                                                  <foreign xml:lang="Bo-Ltn" type="term">bde
-                                                  ba</foreign>.</note> stepping-stone to
-                                                  happiness,</l>
-                                                <l>You remove all that stands in the way of good
-                                                  fortune.</l>
-                                                <l>You make wealth increase and merit
-                                                  ever-victorious. </l>
-                                                <l>You gleam like gold and silver from the Jambu
-                                                  River. </l>
-                                        </lg>
-                                        <milestone unit="chunk" xml:id="UT22084-094-005-48"/>
-                                        <lg tid="39">
-                                                <l>“Dispeller of fears and bestower of
-                                                  fearlessness,</l>
-                                                <l>You are Tārā; your face is like the moon.</l>
-                                                <l>You never stray far from any sentient being.</l>
-                                                <l>You bring joy and are worthy of worship and
-                                                  homage. </l>
-                                        </lg>
-                                        <milestone unit="chunk" xml:id="UT22084-094-005-49"/>
-                                        <lg tid="40">
-                                                <l>“Your exalted garments glimmer with blue
-                                                  hues;</l>
-                                                <l>You are beautifully adorned with red
-                                                  ornaments;</l>
-                                                <l>And, like Gaṅgā, you dress in yellow
-                                                  clothing.</l>
-                                                <l>Blazing white lady, you are all-seeing! </l>
-                                        </lg>
-                                        <milestone unit="chunk" xml:id="UT22084-094-005-50"/>
-                                        <lg tid="41">
-                                                <l>“Fragrant as a ball of bezoar,</l>
-                                                <l>You are the adamantine Varuṇa and retinue.</l>
-                                                <l>Fearsome lady, queen of the supreme maṇḍala,</l>
-                                                <l>With your white teeth you laugh and smile. </l>
-                                        </lg>
-                                        <milestone unit="chunk" xml:id="UT22084-094-005-51"/>
-                                        <lg tid="42">
-                                                <l>“You wear armlets, earrings, and bracelets</l>
-                                                <l>And are wreathed in glimmering crystal
-                                                  necklaces.</l>
-                                                <l>Lady with a face of beauty, wearing a superb
-                                                  sash,</l>
-                                                <l>You are accompanied by the one who holds a sprig
-                                                  of neem leaves.<note place="end" xml:id="UT22084-094-005-52">Reference
-                                                  unclear. Could also be read as “You hold a [sprig
-                                                  of] neem leaves as your companion.”</note>
-                                                </l>
-                                        </lg>
-                                        <milestone unit="chunk" xml:id="UT22084-094-005-53"/>
-                                        <lg tid="43">
-                                                <l>“You wear a jeweled diadem, hold a jewel,</l>
-                                                <l>And are adorned with jeweled ornaments.</l>
-                                                <l>You are adorned with a band of beautiful
-                                                  gems,</l>
-                                                <l>And sparkle like precious stones.</l>
-                                        </lg>
-                                        <milestone unit="chunk" xml:id="UT22084-094-005-54"/>
-                                        <lg tid="44">
-                                                <l>“Vajra lady, you radiate with blazing colors,</l>
-                                                <l>Awakening men and women both.</l>
-                                                <l>Fanged one who wields the rod<note place="end" xml:id="UT22084-094-005-55">
-                                                  Reading the Tib. <foreign xml:lang="Bo-Ltn" type="term">dbyig</foreign> as <foreign xml:lang="Bo-Ltn" type="term">dbyig pa</foreign>,
-                                                  corresponding to the Skt. <foreign xml:lang="Sa-Ltn" type="term">daṇḍa</foreign>.
-                                                  </note> of peace,</l>
-                                                <l>You are as strong as Brahmā and as swift as the
-                                                  wind.<note place="end" xml:id="UT22084-094-005-56"> Tib. <foreign xml:lang="Bo-Ltn" type="term">rlung dang
-                                                  ldan</foreign>, possibly from Skt. <foreign xml:lang="Sa-Ltn" type="term">vāyuvat</foreign>,
-                                                  here understood as “wind-like” rather than the
-                                                  more literal reading “endowed with wind.”
-                                                  Understood as <foreign xml:lang="Sa-Ltn" type="term">vāyuvat</foreign>, this phrase could
-                                                  also be read as “swift like Vāyu,” referring to
-                                                  the wind god. </note>
+            <l>Majestic in your battle with Varuṇa,</l>
+            <l>Supreme one, your mind is naturally expansive and pervasive.</l>
+          </lg>
+          <milestone unit="chunk" xml:id="UT22084-094-005-37"/>
+          <lg tid="33">
+            <l>“With your triple crown ornament, three belly folds,<note place="end" xml:id="UT22084-094-005-38"> Three folds or lines on the belly that typify feminine
+                beauty in classical Indian aesthetics.</note> and three eyes</l>
+            <l>You clear away the three defilements.</l>
+            <l>Dispeller of phenomenal existence, lady of deep virtue,</l>
+            <l>You are also renowned for your eloquence.</l>
+          </lg>
+          <milestone unit="chunk" xml:id="UT22084-094-005-39"/>
+          <lg tid="34">
+            <l>“You grant victory and merit</l>
+            <l>And fearlessly vanquish evil.</l>
+            <l>Lady of peace who grants wealth and luster,</l>
+            <l>Your form, belly, and bosom are most elegant!</l>
+          </lg>
+          <milestone unit="chunk" xml:id="UT22084-094-005-40"/>
+          <lg tid="35">
+            <l>“Lady of illusion who tames the field of illusory displays,<note place="end" xml:id="UT22084-094-005-41"> Tib. <foreign xml:lang="Bo-Ltn" type="quote">sgyu
+                  ’phrul sgyu ’phrul ldan zhing ’dul</foreign>. Tentatively reading the repeated
+                word <foreign xml:lang="Bo-Ltn" type="term">sgyu ’phrul</foreign> (Skt. <foreign xml:lang="Sa-Ltn" type="term">māya</foreign>, “illusion” or “illusory display”) as
+                first referring to Tārā herself. The Phukdrak Kangyur reads <foreign xml:lang="Bo-Ltn" type="quote">sgyu phrul rdzu ’phrul ldan zhing ’dul</foreign>,
+                “you tame the field of illusory and miraculous displays.”</note>
                         </l>
-                                        </lg>
-                                        <milestone unit="chunk" xml:id="UT22084-094-005-57"/>
-                                        <lg tid="45">
-                                                <l>“You are the woman who descends from the sky</l>
-                                                <l>And shines with the light of a supreme
-                                                  goddess.<note place="end" xml:id="UT22084-094-005-58"> Following Stok Palace
-                                                  <foreign xml:lang="Bo-Ltn" type="term">’od ’phro
-                                                  ma</foreign> (Kangxi and Yongle also have <foreign xml:lang="Bo-Ltn" type="term">’od ’phro
-                                                  dang</foreign>, with the same general meaning).
-                                                  Other versions have <foreign xml:lang="Bo-Ltn" type="term">’od ’phrog ma</foreign>, “steals the
-                                                  light of the supreme goddess.”</note>
+            <l>You uphold discipline and dispel all impurity.</l>
+            <l>Holding a garland, you bring elation,</l>
+            <l>Grant exhilaration,<note place="end" xml:id="UT22084-094-005-42"> In Tibetan the word
+                  <foreign xml:lang="Bo-Ltn" type="term">rgyags</foreign>, whose meaning ranges from
+                “exhilaration” to “vanity”, is repeated twice in close succession. Here it is
+                translated as “elation” and “exhilaration” to avoid the repetition.</note> and
+              remove all conceit.</l>
+          </lg>
+          <milestone unit="chunk" xml:id="UT22084-094-005-43"/>
+          <lg tid="36">
+            <l>“Wrathful lady who inspires splendor,</l>
+            <l>White lady of bliss who brings peace,</l>
+            <l>Sovereign lady of all living beings, noble and mighty goddess, <ref cRef="F.220.b" type="folio" xml:id="UT22084-094-005-157"/>
                         </l>
-                                                <l>Luminous one who conquers through desire,</l>
-                                                <l>You have vanquished the torment of desire.</l>
-                                        </lg>
-                                        <milestone unit="chunk" xml:id="UT22084-094-005-59"/>
-                                        <lg tid="46">
-                                                <l>“Wrathful one with a topknot and diadem,
-                                                  victorious one, </l>
-                                                <l>You are Brahmā himself and have speech the likes
-                                                  of Brahmā.</l>
-                                                <l>Your beautiful voice rings like the call of the
-                                                  kalaviṅka.<note place="end" xml:id="UT22084-094-005-60">Tentatively reading
-                                                  <foreign xml:lang="Bo-Ltn" type="term">ping
-                                                  ka</foreign> as an abbreviation for <foreign xml:lang="Bo-Ltn" type="term">ka la ping
-                                                  ka</foreign> (Skt. <foreign xml:lang="Sa-Ltn" type="term">kalaviṅka</foreign>), the Kalaviṅka
-                                                  bird.</note>
+            <l>You hold and bestow sacred knowledge.<note place="end" xml:id="UT22084-094-005-44">
+                Tib. <foreign xml:lang="Bo-Ltn" type="term">tshangs par ldan</foreign>, possibly
+                from Skt. <foreign xml:lang="Sa-Ltn" type="term">brahmavat</foreign>. Could also be
+                read as “possessing and granting purity.”</note>
+            </l>
+          </lg>
+          <milestone unit="chunk" xml:id="UT22084-094-005-45"/>
+          <lg tid="37">
+            <l>“Your moon-like face glows with moonlight,</l>
+            <l>Stealing away the moon’s own effulgence.</l>
+            <l>Lady who delights in robbing the radiance of the sun,</l>
+            <l>You are beautiful, exalted, and wholly at peace! </l>
+          </lg>
+          <milestone unit="chunk" xml:id="UT22084-094-005-46"/>
+          <lg tid="38">
+            <l>“Blissful<note place="end" xml:id="UT22084-094-005-47">Reading <foreign xml:lang="Bo-Ltn" type="term">bde ma</foreign> as attested in Narthang and Stok
+                Palace. Degé reads <foreign xml:lang="Bo-Ltn" type="term">bde ba</foreign>.</note>
+              stepping-stone to happiness,</l>
+            <l>You remove all that stands in the way of good fortune.</l>
+            <l>You make wealth increase and merit ever-victorious. </l>
+            <l>You gleam like gold and silver from the Jambu River. </l>
+          </lg>
+          <milestone unit="chunk" xml:id="UT22084-094-005-48"/>
+          <lg tid="39">
+            <l>“Dispeller of fears and bestower of fearlessness,</l>
+            <l>You are Tārā; your face is like the moon.</l>
+            <l>You never stray far from any sentient being.</l>
+            <l>You bring joy and are worthy of worship and homage. </l>
+          </lg>
+          <milestone unit="chunk" xml:id="UT22084-094-005-49"/>
+          <lg tid="40">
+            <l>“Your exalted garments glimmer with blue hues;</l>
+            <l>You are beautifully adorned with red ornaments;</l>
+            <l>And, like Gaṅgā, you dress in yellow clothing.</l>
+            <l>Blazing white lady, you are all-seeing! </l>
+          </lg>
+          <milestone unit="chunk" xml:id="UT22084-094-005-50"/>
+          <lg tid="41">
+            <l>“Fragrant as a ball of bezoar,</l>
+            <l>You are the adamantine Varuṇa and retinue.</l>
+            <l>Fearsome lady, queen of the supreme maṇḍala,</l>
+            <l>With your white teeth you laugh and smile. </l>
+          </lg>
+          <milestone unit="chunk" xml:id="UT22084-094-005-51"/>
+          <lg tid="42">
+            <l>“You wear armlets, earrings, and bracelets</l>
+            <l>And are wreathed in glimmering crystal necklaces.</l>
+            <l>Lady with a face of beauty, wearing a superb sash,</l>
+            <l>You are accompanied by the one who holds a sprig of neem leaves.<note place="end" xml:id="UT22084-094-005-52">Reference unclear. Could also be read as “You hold a
+                [sprig of] neem leaves as your companion.”</note>
+            </l>
+          </lg>
+          <milestone unit="chunk" xml:id="UT22084-094-005-53"/>
+          <lg tid="43">
+            <l>“You wear a jeweled diadem, hold a jewel,</l>
+            <l>And are adorned with jeweled ornaments.</l>
+            <l>You are adorned with a band of beautiful gems,</l>
+            <l>And sparkle like precious stones.</l>
+          </lg>
+          <milestone unit="chunk" xml:id="UT22084-094-005-54"/>
+          <lg tid="44">
+            <l>“Vajra lady, you radiate with blazing colors,</l>
+            <l>Awakening men and women both.</l>
+            <l>Fanged one who wields the rod<note place="end" xml:id="UT22084-094-005-55"> Reading
+                the Tib. <foreign xml:lang="Bo-Ltn" type="term">dbyig</foreign> as <foreign xml:lang="Bo-Ltn" type="term">dbyig pa</foreign>, corresponding to the Skt.
+                  <foreign xml:lang="Sa-Ltn" type="term">daṇḍa</foreign>. </note> of peace,</l>
+            <l>You are as strong as Brahmā and as swift as the wind.<note place="end" xml:id="UT22084-094-005-56"> Tib. <foreign xml:lang="Bo-Ltn" type="term">rlung dang
+                  ldan</foreign>, possibly from Skt. <foreign xml:lang="Sa-Ltn" type="term">vāyuvat</foreign>, here understood as “wind-like” rather than the more literal
+                reading “endowed with wind.” Understood as <foreign xml:lang="Sa-Ltn" type="term">vāyuvat</foreign>, this phrase could also be read as “swift like Vāyu,” referring
+                to the wind god. </note>
                         </l>
-                                                <l>Sovereign of the world, you are born within the
-                                                  supreme family!</l>
-                                        </lg>
-                                        <milestone unit="chunk" xml:id="UT22084-094-005-61"/>
-                                        <lg tid="47">
-                                                <l>“Fierce lady adorned with the resplendence of
-                                                  jewels</l>
-                                                <l>And holding a staff with adamantine leaves,</l>
-                                                <l>Your immaculate earrings sway as you move.</l>
-                                                <l>Such is how you dawn in the minds of those in
-                                                  Yama’s realm.<note place="end" xml:id="UT22084-094-005-62">
-                                                  Tentative.</note>
+          </lg>
+          <milestone unit="chunk" xml:id="UT22084-094-005-57"/>
+          <lg tid="45">
+            <l>“You are the woman who descends from the sky</l>
+            <l>And shines with the light of a supreme goddess.<note place="end" xml:id="UT22084-094-005-58"> Following Stok Palace <foreign xml:lang="Bo-Ltn" type="term">’od ’phro ma</foreign> (Kangxi and Yongle also have <foreign xml:lang="Bo-Ltn" type="term">’od ’phro dang</foreign>, with the same general
+                meaning). Other versions have <foreign xml:lang="Bo-Ltn" type="term">’od ’phrog
+                  ma</foreign>, “steals the light of the supreme goddess.”</note>
                         </l>
-                                        </lg>
-                                        <milestone unit="chunk" xml:id="UT22084-094-005-63"/>
-                                        <lg tid="48">
-                                                <l>“You are the one taking the form of a
-                                                  vidyādharī.</l>
-                                                <l>You are endowed with five strengths and bestow
-                                                  strength. [F.221.a]</l>
-                                                <l>Wielding strength as well as absence of
-                                                  strength,<note place="end" xml:id="UT22084-094-005-64"> Meaning unclear; Lhasa
-                                                  has <foreign xml:lang="Bo-Ltn" type="term">stobs
-                                                  mang</foreign> (“many strengths”) rather than
-                                                  <foreign xml:lang="Bo-Ltn" type="term">stobs
-                                                  med</foreign> (“lack of strength”), but all other
-                                                  editions agree on <foreign xml:lang="Bo-Ltn" type="term">stobs med</foreign>.</note>
+            <l>Luminous one who conquers through desire,</l>
+            <l>You have vanquished the torment of desire.</l>
+          </lg>
+          <milestone unit="chunk" xml:id="UT22084-094-005-59"/>
+          <lg tid="46">
+            <l>“Wrathful one with a topknot and diadem, victorious one, </l>
+            <l>You are Brahmā himself and have speech the likes of Brahmā.</l>
+            <l>Your beautiful voice rings like the call of the kalaviṅka.<note place="end" xml:id="UT22084-094-005-60">Tentatively reading <foreign xml:lang="Bo-Ltn" type="term">ping ka</foreign> as an abbreviation for <foreign xml:lang="Bo-Ltn" type="term">ka la ping ka</foreign> (Skt. <foreign xml:lang="Sa-Ltn" type="term">kalaviṅka</foreign>), the Kalaviṅka bird.</note>
                         </l>
-                                                <l>You cut with the blade of wisdom.</l>
-                                        </lg>
-                                        <milestone unit="chunk" xml:id="UT22084-094-005-65"/>
-                                        <lg tid="49">
-                                                <l>“You are crafty and full of art,</l>
-                                                <l>And your voice resounds mightily</l>
-                                                <l>Like a bouquet of campaka flowers</l>
-                                                <l>Brightens a courtyard or hall from above.<note place="end" xml:id="UT22084-094-005-66"> The reading of this verse is quite
-                                                  tentative. In the Tibetan, the relationships
-                                                  between Tārā’s skill and voice, a courtyard or
-                                                  (banquet) hall, and being illuminated by a bouquet
-                                                  of <foreign xml:lang="Sa-Ltn" type="term">campaka</foreign> flowers, are not made explicit.
-                                                  We read <foreign xml:lang="Bo-Ltn" type="term">khyams dang khyams bza’</foreign> (courtyard and
-                                                  hall) with the Narthang Kangyur, where Degé has
-                                                  the repetition <foreign xml:lang="Bo-Ltn" type="term">khyams dang khyams bzang</foreign>
-                                                  (courtyard and excellent courtyard).</note>
+            <l>Sovereign of the world, you are born within the supreme family!</l>
+          </lg>
+          <milestone unit="chunk" xml:id="UT22084-094-005-61"/>
+          <lg tid="47">
+            <l>“Fierce lady adorned with the resplendence of jewels</l>
+            <l>And holding a staff with adamantine leaves,</l>
+            <l>Your immaculate earrings sway as you move.</l>
+            <l>Such is how you dawn in the minds of those in Yama’s realm.<note place="end" xml:id="UT22084-094-005-62"> Tentative.</note>
                         </l>
-                                        </lg>
-                                        <milestone unit="chunk" xml:id="UT22084-094-005-67"/>
-                                        <lg tid="50">
-                                                <l>Wrathful one, you hold a bouquet in your hand</l>
-                                                <l>And are an excellent support for yellow-clad
-                                                  monastics.<note place="end" xml:id="UT22084-094-005-68">This reading is also
-                                                  highly conjectural. We read <foreign xml:lang="Bo-Ltn" type="term">ser mo tsan
-                                                  pa</foreign> as <foreign xml:lang="Bo-Ltn" type="term">ser mo btsun pa</foreign>
-                                                  (“yellow-[clad] venerable ones”), for lack of a
-                                                  better alternative, despite the high level of
-                                                  agreement between the different witnesses. The
-                                                  Tibetan syllable <foreign xml:lang="Bo-Ltn" type="term">tsan</foreign> exists as part of the
-                                                  word <foreign xml:lang="Bo-Ltn" type="term">tsan
-                                                  dan</foreign> (“sandalwood”), so if <foreign xml:lang="Bo-Ltn" type="term">tsan</foreign> were
-                                                  taken to be short for <foreign xml:lang="Bo-Ltn" type="term">tsan dan</foreign>, a literal reading
-                                                  would be something like “excellent support for
-                                                  those to do with yellow sandalwood.”</note>
+          </lg>
+          <milestone unit="chunk" xml:id="UT22084-094-005-63"/>
+          <lg tid="48">
+            <l>“You are the one taking the form of a vidyādharī.</l>
+            <l>You are endowed with five strengths and bestow strength. <ref cRef="F.221.a" type="folio" xml:id="UT22084-094-005-158"/>
                         </l>
-                                                <l>Fortunate one, you are decked in ornaments<note place="end" xml:id="UT22084-094-005-69"> Another occurrence of the obscure
-                                                  word <foreign xml:lang="Bo-Ltn" type="term">gshal
-                                                  ka</foreign>, here tentatively translated as
-                                                  “ornament.”</note>
+            <l>Wielding strength as well as absence of strength,<note place="end" xml:id="UT22084-094-005-64"> Meaning unclear; Lhasa has <foreign xml:lang="Bo-Ltn" type="term">stobs mang</foreign> (“many strengths”) rather than <foreign xml:lang="Bo-Ltn" type="term">stobs med</foreign> (“lack of strength”), but all
+                other editions agree on <foreign xml:lang="Bo-Ltn" type="term">stobs
+                med</foreign>.</note>
                         </l>
-                                                <l>And experience great delight. </l>
-                                        </lg>
-                                        <milestone unit="chunk" xml:id="UT22084-094-005-70"/>
-                                        <lg tid="51">
-                                                <l>“Vajra fury who brings joy,</l>
-                                                <l>You are endowed with the signs and great strength
-                                                  of your lineage.</l>
-                                                <l>With your bliss, intelligence, and adamantine
-                                                  means,</l>
-                                                <l>You bestow understanding<note place="end" xml:id="UT22084-094-005-71">
-                                                  “Understanding” and “intelligence” here translate
-                                                  the same Tibetan word, <foreign xml:lang="Bo-Ltn" type="term">blo</foreign> (“intellect”).</note>
-                                                  and increase wisdom. </l>
-                                        </lg>
-                                        <milestone unit="chunk" xml:id="UT22084-094-005-72"/>
-                                        <lg tid="52">
-                                                <l>“Goddess of the resplendent diadem,</l>
-                                                <l>Your manner is greater than all the gods.</l>
-                                                <l>As Nārāyaṇī, you dispel negativity,</l>
-                                                <l>And you delight in auspiciousness and modesty.
-                                                </l>
-                                        </lg>
-                                        <milestone unit="chunk" xml:id="UT22084-094-005-73"/>
-                                        <lg tid="53">
-                                                <l>“Lady of gladness, you delight all who associate
-                                                  with you</l>
-                                                <l>And you delight in those who delight in wholesome
-                                                  conduct.</l>
-                                                <l>Delightful lady who exudes delight,</l>
-                                                <l>You are an excellent support for all
-                                                  qualities.<note place="end" xml:id="UT22084-094-005-74"> “Qualities” here
-                                                  translates the Tibetan word <foreign xml:lang="Bo-Ltn" type="term">chos</foreign>, Skt.
-                                                  <foreign xml:lang="Sa-Ltn" type="term">dharma</foreign>, with a wide range of
-                                                  meanings.</note>
-                                                </l>
-                                        </lg>
-                                        <milestone unit="chunk" xml:id="UT22084-094-005-75"/>
-                                        <lg tid="54">
-                                                <l>“Lady who emanates buddha emanations,</l>
-                                                <l>And who works to dispel pride,</l>
-                                                <l>You destroy karma and afflictions,</l>
-                                                <l>And conquer all forms of desire.</l>
-                                        </lg>
-                                        <milestone unit="chunk" xml:id="UT22084-094-005-76"/>
-                                        <lg tid="55">
-                                                <l>“You are a buddha with the ten knowledges,</l>
-                                                <l>And you uphold the ten perfections.</l>
-                                                <l>You have reached the ten grounds,</l>
-                                                <l>And shine bright with the light of the ten
-                                                  strengths. </l>
-                                        </lg>
-                                        <milestone unit="chunk" xml:id="UT22084-094-005-77"/>
-                                        <lg tid="56">
-                                                <l>“You wear a vajra diadem and wield a vajra.</l>
-                                                <l>With your subtle vajra you clear away asuras.</l>
-                                                <l>With the vajra of time<note place="end" xml:id="UT22084-094-005-78">
-                                                  Reference unclear.</note> you bring elation,</l>
-                                                <l>And you wield the vajra hook of bliss and
-                                                  glory.</l>
-                                        </lg>
-                                        <milestone unit="chunk" xml:id="UT22084-094-005-79"/>
-                                        <lg tid="57">
-                                                <l>“Charming lady who holds a vajra in her hand</l>
-                                                <l>And wields a vajra lasso and excellent lasso,</l>
-                                                <l>You are captivating; you bring satisfaction to
-                                                  the mind,</l>
-                                                <l>And you dispel all opponents and
-                                                  obstacle-makers.</l>
-                                        </lg>
-                                        <milestone unit="chunk" xml:id="UT22084-094-005-80"/>
-                                        <lg tid="58">
-                                                <l>“You bring about contentment and great
-                                                  happiness,</l>
-                                                <l>And reveal the way of play and dance.</l>
-                                                <l>Rich in Dharma, you have the radiance of
-                                                  halāhala.</l>
-                                                <l>Giver of the Dharma, your gaze is vast.</l>
-                                        </lg>
-                                        <milestone unit="chunk" xml:id="UT22084-094-005-81"/>
-                                        <lg tid="59">
-                                                <l>“You are a vajra emanation,</l>
-                                                <l>And are said to be vajra nectar.</l>
-                                                <l>Great goddess, powerful with a blazing vajra,</l>
-                                                <l>To you we pay homage!</l>
-                                        </lg>
-                                        <milestone unit="chunk" xml:id="UT22084-094-005-82"/>
-                                        <lg tid="60">
-                                                <l>“With this praise of ours,</l>
-                                                <l>We recite your hundred and eight sublime
-                                                  names.</l>
-                                                <l>Amazing! The supreme Blessed One herself<note place="end" xml:id="UT22084-094-005-83"> Could also be understood as the
-                                                  Blessed One himself, meaning that the Buddha has
-                                                  recited the dhāraṇī at one point as well.</note>
-                                                  [F.221.b]</l>
-                                                <l>Has spoken the most sublime of utterances.”<note place="end" xml:id="UT22084-094-005-84">Referring to the dhāraṇī that opens
-                                                  this text.</note>
-                                                </l>
-                                        </lg>
-                                        <milestone unit="chunk" xml:id="UT22084-094-005-85"/>
-                                        <lg tid="61">
-                                                <l>Then, the magnificent goddess Tārā,</l>
-                                                <l>Who is like the light of the moon,</l>
-                                                <l>And blazes with radiance,</l>
-                                                <l>Revealed a smile and spoke:</l>
-                                        </lg>
-                                        <milestone unit="chunk" xml:id="UT22084-094-005-86"/>
-                                        <lg tid="62">
-                                                <l>“Maheśvara and the rest of you, </l>
-                                                <l>Listen now to my words.</l>
-                                                <l>Always be agreeable with everyone</l>
-                                                <l>As you strive to attain the ten strengths. </l>
-                                                <l>At all times, protect the great way </l>
-                                                <l>Of the thus-gone ones.</l>
-                                                <l>Keeping your minds on the path of peace, </l>
-                                                <l>You must cross over the unbearable ocean of
-                                                  cyclic existence, </l>
-                                                <l>Which is the source of great terrors</l>
-                                                <l>And is so difficult to ford.</l>
-                                                <l>Setting your mind upon the city of nirvāṇa,</l>
-                                                <l>You must strive for it and enter it.”</l>
-                                        </lg>
-                                        <milestone unit="chunk" xml:id="UT22084-094-005-87"/>
-                                        <lg tid="63">
-                                                <l>Then Tārā, whose face is as beautiful </l>
-                                                <l>As a garland of the sun’s blazing rays,</l>
-                                                <l>Spoke the following words</l>
-                                                <l>Like the rumbling thunder of the Thus-Gone
-                                                  One:</l>
-                                        </lg>
-                                        <milestone unit="chunk" xml:id="UT22084-094-005-88"/>
-                                        <lg tid="64">
-                                                <l>“O wonder! This excellent vidyāmantra of Tārā</l>
-                                                <l>Clears away all darkness,</l>
-                                                <l>Creates immense power and strength,</l>
-                                                <l>And cuts through all obscurations.</l>
-                                        </lg>
-                                        <milestone unit="chunk" xml:id="UT22084-094-005-89"/>
-                                        <lg tid="65">
-                                                <l>“This dhāraṇī, which brings so much joy,</l>
-                                                <l>Will not be heard by the masses</l>
-                                                <l>Who have not purified themselves</l>
-                                                <l>By cultivating inner confidence.</l>
-                                        </lg>
-                                        <milestone unit="chunk" xml:id="UT22084-094-005-90"/>
-                                        <lg tid="66">
-                                                <l>“This great samaya, the samaya of this
-                                                  vidyāmantra,</l>
-                                                <l>Will arise for those</l>
-                                                <l>Who have developed stable confidence,</l>
-                                                <l>From their prior efforts toward buddhahood.</l>
-                                        </lg>
-                                        <milestone unit="chunk" xml:id="UT22084-094-005-91"/>
-                                        <lg tid="67">
-                                                <l>“Whoever upholds this sublime, indestructible
-                                                  dhāraṇī-mantra,</l>
-                                                <l>Which quells all afflictions,</l>
-                                                <l>Eliminates all negativity,</l>
-                                                <l>And nurtures all beings;<note place="end" xml:id="UT22084-094-005-92">
-                                                  Meaning unclear. Here, the Tib. term <foreign xml:lang="Bo-Ltn" type="term">rab ’byed
-                                                  pa</foreign> is understood to align with the Skt.
-                                                  term <foreign xml:lang="Sa-Ltn" type="term">prabhāvana</foreign>. </note>
+            <l>You cut with the blade of wisdom.</l>
+          </lg>
+          <milestone unit="chunk" xml:id="UT22084-094-005-65"/>
+          <lg tid="49">
+            <l>“You are crafty and full of art,</l>
+            <l>And your voice resounds mightily</l>
+            <l>Like a bouquet of campaka flowers</l>
+            <l>Brightens a courtyard or hall from above.<note place="end" xml:id="UT22084-094-005-66"> The reading of this verse is quite tentative. In the
+                Tibetan, the relationships between Tārā’s skill and voice, a courtyard or (banquet)
+                hall, and being illuminated by a bouquet of <foreign xml:lang="Sa-Ltn" type="term">campaka</foreign> flowers, are not made explicit. We read <foreign xml:lang="Bo-Ltn" type="term">khyams dang khyams bza’</foreign> (courtyard and
+                hall) with the Narthang Kangyur, where Degé has the repetition <foreign xml:lang="Bo-Ltn" type="term">khyams dang khyams bzang</foreign> (courtyard and
+                excellent courtyard).</note>
                         </l>
-                                                <l>Whoever, in meditative equipoise,</l>
-                                                <l>Hears it, reads it, or keeps it in mind,</l>
-                                                <l>Will accomplish all their aims</l>
-                                                <l>As was stated by the Self-Arisen One. </l>
-                                        </lg>
-                                        <milestone unit="chunk" xml:id="UT22084-094-005-93"/>
-                                        <lg tid="68">
-                                                <l>“They will be liberated from all affliction, </l>
-                                                <l>Become the most excellent of sentient beings, </l>
-                                                <l>And will be equal to the thus-gone ones</l>
-                                                <l>Who are immersed in knowledge of every world’s
-                                                  phenomena.</l>
-                                        </lg>
-                                        <milestone unit="chunk" xml:id="UT22084-094-005-94"/>
-                                        <lg tid="69">
-                                                <l>“Whoever chants these hundred and eight names</l>
-                                                <l>And praises Tārā’s moon-like face in this way
-                                                  [F.222.a]</l>
-                                                <l>Will reach buddhahood itself.</l>
-                                                <l>They will accomplish all their aims</l>
-                                                <l>And gain control over kings, powerful people, </l>
-                                                <l>And any number of other beings.</l>
-                                        </lg>
-                                        <milestone unit="chunk" xml:id="UT22084-094-005-95"/>
-                                        <lg tid="70">
-                                                <l>“This praise known as <title xml:lang="en">The
-                                                  Hundred and Eight Names <lb/>Of the Goddess Tārā
-                                                  with a Lovely Face</title>
+          </lg>
+          <milestone unit="chunk" xml:id="UT22084-094-005-67"/>
+          <lg tid="50">
+            <l>Wrathful one, you hold a bouquet in your hand</l>
+            <l>And are an excellent support for yellow-clad monastics.<note place="end" xml:id="UT22084-094-005-68">This reading is also highly conjectural. We read
+                  <foreign xml:lang="Bo-Ltn" type="term">ser mo tsan pa</foreign> as <foreign xml:lang="Bo-Ltn" type="term">ser mo btsun pa</foreign> (“yellow-[clad] venerable
+                ones”), for lack of a better alternative, despite the high level of agreement
+                between the different witnesses. The Tibetan syllable <foreign xml:lang="Bo-Ltn" type="term">tsan</foreign> exists as part of the word <foreign xml:lang="Bo-Ltn" type="term">tsan dan</foreign> (“sandalwood”), so if <foreign xml:lang="Bo-Ltn" type="term">tsan</foreign> were taken to be short for <foreign xml:lang="Bo-Ltn" type="term">tsan dan</foreign>, a literal reading would be something like
+                “excellent support for those to do with yellow sandalwood.”</note>
                         </l>
-                                                <l>Fills the many worlds, </l>
-                                                <l>And dispels all afflictions and everything
-                                                  untoward!</l>
-                                        </lg>
-                                        <milestone unit="chunk" xml:id="UT22084-094-005-96"/>
-                                        <lg tid="71">
-                                                <l>“Her body, which is like the supreme mountain of
-                                                  thus-gone ones,</l>
-                                                <l>Shakes the mountain ascended by the clans of
-                                                  māras.</l>
-                                                <l>She is the light that fully awakens gods and
-                                                  humans.</l>
-                                        </lg>
-                                        <milestone unit="chunk" xml:id="UT22084-094-005-97"/>
-                                        <lg tid="72">
-                                                <l>“This eminent one is renowned for her profound
-                                                  dedication</l>
-                                                <l>To the great collection of well-spoken
-                                                  teachings</l>
-                                                <l>Ceaselessly transmitted by the most eminent of
-                                                  the Victor’s heirs</l>
-                                                <l>Through their stability in the unique<note place="end" xml:id="UT22084-094-005-98">Reading <foreign xml:lang="Bo-Ltn" type="term">khyad par stobs</foreign>, following
-                                                  the Lhasa, Narthang, Phukdrak, and Stok Palace
-                                                  Kangyurs. Degé reads <foreign xml:lang="Bo-Ltn" type="term">khyab par stobs</foreign> (“pervading
-                                                  power”).</note> powers.</l>
-                                                <l>Appearing for the benefit of all, she condenses
-                                                  this Dharma,</l>
-                                                <l>And thus expertly soothes the fevers of the
-                                                  mind.”</l>
-                                        </lg>
-                                        <milestone unit="chunk" xml:id="UT22084-094-005-99"/>
-                                        <lg tid="73">
-                                                <l>After these words that dispel unbearable
-                                                  afflictions,</l>
-                                                <l>And which produce a tranquil mind,</l>
-                                                <l>Were spoken by the supreme Victor,</l>
-                                                <l>Tārā remained still and did not speak
-                                                  further.</l>
-                                        </lg>
-                                        <milestone unit="chunk" xml:id="UT22084-094-005-100"/>
-                                        <lg tid="74">
-                                                <l>Astonished and enraptured by the sublime goddess
-                                                  Tārā,</l>
-                                                <l>The entire assembly of devas and asuras was
-                                                  filled with joy and wonder</l>
-                                                <l>Upon hearing these instructive words that evoke
-                                                  deep joy and grant happiness and long life.</l>
-                                                <l>Overjoyed, they joined their hands above their
-                                                  heads as their speech was stilled.</l>
-                                        </lg>
-                                        <milestone unit="chunk" xml:id="UT22084-094-005-101"/>
-                                        <trailer tid="75">This completes the dhāraṇī named “<title xml:lang="en">Supreme Tārā, the Hundred and Eight
-                                                  Names of the Goddess Tārā</title>.”</trailer>
-                                </div>
-                        </div>
-                </body>
-                <back>
-                        <div type="notes">
-                                <head type="notes" tid="76">Notes</head>
-                        </div>
-                        <div type="listBibl">
-                                <head type="listBibl" tid="78">Bibliography</head>
-                                <div type="section" xml:id="UT22084-094-005-listBibl-1">
-                                        <head type="section" tid="79">Primary Sources</head>
-                                        <bibl xml:id="UT22084-094-005-102">
-                        <title xml:lang="Bo-Ltn">lha mo sgrol ma’i mtshan
-                                          brgya rtsa brgyad pa</title> (<title xml:lang="Sa-Ltn">Tāradevīnāmāṣṭaśataka</title>). Toh 728,
-                                                Degé Kangyur vol. 94 (rgyud, tsha), folios
-                                                219.a–222.a. Page numbers in brackets refer to this
-                                                edition.</bibl>
-                                        <bibl xml:id="UT22084-094-005-103">
-                        <title xml:lang="Bo-Ltn">lha mo sgrol ma’i mtshan
-                                                  brgya rtsa brgyad pa</title>. bka’ ’gyur (dpe
-                                                bsdur ma) [Comparative Edition of the Kangyur],
-                                                krung go’i bod rig pa zhib ’jug ste gnas kyi bka’
-                                                bstan dpe sdur khang (The Tibetan Tripitaka
-                                                Collation Bureau of the China Tibetology Research
-                                                Center). 108 volumes. </bibl>
-                                        <bibl xml:id="UT22084-094-005-104">Beijing: krung go’i bod rig pa dpe skrun khang (China
-                                                Tibetology Publishing House), 2006–2009, vol. 94 pp.
-                                                582–591.</bibl>
-                                        <bibl xml:id="UT22084-094-005-105">
-                        <title xml:lang="Bo-Ltn">lha mo sgrol ma’i mtshan
-                                                  brgya rtsa brgyad pa</title>. Stok Palace (stog
-                                                pho brang) Kangyur vol. 107 (rgyud, ma), folios
-                                                122.a–126.a </bibl>
-                                        <bibl xml:id="UT22084-094-005-106">
+            <l>Fortunate one, you are decked in ornaments<note place="end" xml:id="UT22084-094-005-69"> Another occurrence of the obscure word <foreign xml:lang="Bo-Ltn" type="term">gshal ka</foreign>, here tentatively translated as
+                “ornament.”</note>
+                        </l>
+            <l>And experience great delight. </l>
+          </lg>
+          <milestone unit="chunk" xml:id="UT22084-094-005-70"/>
+          <lg tid="51">
+            <l>“Vajra fury who brings joy,</l>
+            <l>You are endowed with the signs and great strength of your lineage.</l>
+            <l>With your bliss, intelligence, and adamantine means,</l>
+            <l>You bestow understanding<note place="end" xml:id="UT22084-094-005-71">
+                “Understanding” and “intelligence” here translate the same Tibetan word, <foreign xml:lang="Bo-Ltn" type="term">blo</foreign> (“intellect”).</note> and increase
+              wisdom. </l>
+          </lg>
+          <milestone unit="chunk" xml:id="UT22084-094-005-72"/>
+          <lg tid="52">
+            <l>“Goddess of the resplendent diadem,</l>
+            <l>Your manner is greater than all the gods.</l>
+            <l>As Nārāyaṇī, you dispel negativity,</l>
+            <l>And you delight in auspiciousness and modesty. </l>
+          </lg>
+          <milestone unit="chunk" xml:id="UT22084-094-005-73"/>
+          <lg tid="53">
+            <l>“Lady of gladness, you delight all who associate with you</l>
+            <l>And you delight in those who delight in wholesome conduct.</l>
+            <l>Delightful lady who exudes delight,</l>
+            <l>You are an excellent support for all qualities.<note place="end" xml:id="UT22084-094-005-74"> “Qualities” here translates the Tibetan word <foreign xml:lang="Bo-Ltn" type="term">chos</foreign>, Skt. <foreign xml:lang="Sa-Ltn" type="term">dharma</foreign>, with a wide range of meanings.</note>
+            </l>
+          </lg>
+          <milestone unit="chunk" xml:id="UT22084-094-005-75"/>
+          <lg tid="54">
+            <l>“Lady who emanates buddha emanations,</l>
+            <l>And who works to dispel pride,</l>
+            <l>You destroy karma and afflictions,</l>
+            <l>And conquer all forms of desire.</l>
+          </lg>
+          <milestone unit="chunk" xml:id="UT22084-094-005-76"/>
+          <lg tid="55">
+            <l>“You are a buddha with the ten knowledges,</l>
+            <l>And you uphold the ten perfections.</l>
+            <l>You have reached the ten grounds,</l>
+            <l>And shine bright with the light of the ten strengths. </l>
+          </lg>
+          <milestone unit="chunk" xml:id="UT22084-094-005-77"/>
+          <lg tid="56">
+            <l>“You wear a vajra diadem and wield a vajra.</l>
+            <l>With your subtle vajra you clear away asuras.</l>
+            <l>With the vajra of time<note place="end" xml:id="UT22084-094-005-78"> Reference
+                unclear.</note> you bring elation,</l>
+            <l>And you wield the vajra hook of bliss and glory.</l>
+          </lg>
+          <milestone unit="chunk" xml:id="UT22084-094-005-79"/>
+          <lg tid="57">
+            <l>“Charming lady who holds a vajra in her hand</l>
+            <l>And wields a vajra lasso and excellent lasso,</l>
+            <l>You are captivating; you bring satisfaction to the mind,</l>
+            <l>And you dispel all opponents and obstacle-makers.</l>
+          </lg>
+          <milestone unit="chunk" xml:id="UT22084-094-005-80"/>
+          <lg tid="58">
+            <l>“You bring about contentment and great happiness,</l>
+            <l>And reveal the way of play and dance.</l>
+            <l>Rich in Dharma, you have the radiance of halāhala.</l>
+            <l>Giver of the Dharma, your gaze is vast.</l>
+          </lg>
+          <milestone unit="chunk" xml:id="UT22084-094-005-81"/>
+          <lg tid="59">
+            <l>“You are a vajra emanation,</l>
+            <l>And are said to be vajra nectar.</l>
+            <l>Great goddess, powerful with a blazing vajra,</l>
+            <l>To you we pay homage!</l>
+          </lg>
+          <milestone unit="chunk" xml:id="UT22084-094-005-82"/>
+          <lg tid="60">
+            <l>“With this praise of ours,</l>
+            <l>We recite your hundred and eight sublime names.</l>
+            <l>Amazing! The supreme Blessed One herself<note place="end" xml:id="UT22084-094-005-83"> Could also be understood as the Blessed One himself, meaning that the Buddha has
+                recited the dhāraṇī at one point as well.</note>
+              <ref cRef="F.221.b" type="folio" xml:id="UT22084-094-005-159"/>
+                        </l>
+            <l>Has spoken the most sublime of utterances.”<note place="end" xml:id="UT22084-094-005-84">Referring to the dhāraṇī that opens this text.</note>
+            </l>
+          </lg>
+          <milestone unit="chunk" xml:id="UT22084-094-005-85"/>
+          <lg tid="61">
+            <l>Then, the magnificent goddess Tārā,</l>
+            <l>Who is like the light of the moon,</l>
+            <l>And blazes with radiance,</l>
+            <l>Revealed a smile and spoke:</l>
+          </lg>
+          <milestone unit="chunk" xml:id="UT22084-094-005-86"/>
+          <lg tid="62">
+            <l>“Maheśvara and the rest of you, </l>
+            <l>Listen now to my words.</l>
+            <l>Always be agreeable with everyone</l>
+            <l>As you strive to attain the ten strengths. </l>
+            <l>At all times, protect the great way </l>
+            <l>Of the thus-gone ones.</l>
+            <l>Keeping your minds on the path of peace, </l>
+            <l>You must cross over the unbearable ocean of cyclic existence, </l>
+            <l>Which is the source of great terrors</l>
+            <l>And is so difficult to ford.</l>
+            <l>Setting your mind upon the city of nirvāṇa,</l>
+            <l>You must strive for it and enter it.”</l>
+          </lg>
+          <milestone unit="chunk" xml:id="UT22084-094-005-87"/>
+          <lg tid="63">
+            <l>Then Tārā, whose face is as beautiful </l>
+            <l>As a garland of the sun’s blazing rays,</l>
+            <l>Spoke the following words</l>
+            <l>Like the rumbling thunder of the Thus-Gone One:</l>
+          </lg>
+          <milestone unit="chunk" xml:id="UT22084-094-005-88"/>
+          <lg tid="64">
+            <l>“O wonder! This excellent vidyāmantra of Tārā</l>
+            <l>Clears away all darkness,</l>
+            <l>Creates immense power and strength,</l>
+            <l>And cuts through all obscurations.</l>
+          </lg>
+          <milestone unit="chunk" xml:id="UT22084-094-005-89"/>
+          <lg tid="65">
+            <l>“This dhāraṇī, which brings so much joy,</l>
+            <l>Will not be heard by the masses</l>
+            <l>Who have not purified themselves</l>
+            <l>By cultivating inner confidence.</l>
+          </lg>
+          <milestone unit="chunk" xml:id="UT22084-094-005-90"/>
+          <lg tid="66">
+            <l>“This great samaya, the samaya of this vidyāmantra,</l>
+            <l>Will arise for those</l>
+            <l>Who have developed stable confidence,</l>
+            <l>From their prior efforts toward buddhahood.</l>
+          </lg>
+          <milestone unit="chunk" xml:id="UT22084-094-005-91"/>
+          <lg tid="67">
+            <l>“Whoever upholds this sublime, indestructible dhāraṇī-mantra,</l>
+            <l>Which quells all afflictions,</l>
+            <l>Eliminates all negativity,</l>
+            <l>And nurtures all beings;<note place="end" xml:id="UT22084-094-005-92"> Meaning
+                unclear. Here, the Tib. term <foreign xml:lang="Bo-Ltn" type="term">rab ’byed
+                  pa</foreign> is understood to align with the Skt. term <foreign xml:lang="Sa-Ltn" type="term">prabhāvana</foreign>. </note>
+                        </l>
+            <l>Whoever, in meditative equipoise,</l>
+            <l>Hears it, reads it, or keeps it in mind,</l>
+            <l>Will accomplish all their aims</l>
+            <l>As was stated by the Self-Arisen One. </l>
+          </lg>
+          <milestone unit="chunk" xml:id="UT22084-094-005-93"/>
+          <lg tid="68">
+            <l>“They will be liberated from all affliction, </l>
+            <l>Become the most excellent of sentient beings, </l>
+            <l>And will be equal to the thus-gone ones</l>
+            <l>Who are immersed in knowledge of every world’s phenomena.</l>
+          </lg>
+          <milestone unit="chunk" xml:id="UT22084-094-005-94"/>
+          <lg tid="69">
+            <l>“Whoever chants these hundred and eight names</l>
+            <l>And praises Tārā’s moon-like face in this way <ref cRef="F.222.a" type="folio" xml:id="UT22084-094-005-160"/>
+                        </l>
+            <l>Will reach buddhahood itself.</l>
+            <l>They will accomplish all their aims</l>
+            <l>And gain control over kings, powerful people, </l>
+            <l>And any number of other beings.</l>
+          </lg>
+          <milestone unit="chunk" xml:id="UT22084-094-005-95"/>
+          <lg tid="70">
+            <l>“This praise known as <title xml:lang="en">The Hundred and Eight Names <lb/>Of the
+                Goddess Tārā with a Lovely Face</title>
+                        </l>
+            <l>Fills the many worlds, </l>
+            <l>And dispels all afflictions and everything untoward!</l>
+          </lg>
+          <milestone unit="chunk" xml:id="UT22084-094-005-96"/>
+          <lg tid="71">
+            <l>“Her body, which is like the supreme mountain of thus-gone ones,</l>
+            <l>Shakes the mountain ascended by the clans of māras.</l>
+            <l>She is the light that fully awakens gods and humans.</l>
+          </lg>
+          <milestone unit="chunk" xml:id="UT22084-094-005-97"/>
+          <lg tid="72">
+            <l>“This eminent one is renowned for her profound dedication</l>
+            <l>To the great collection of well-spoken teachings</l>
+            <l>Ceaselessly transmitted by the most eminent of the Victor’s heirs</l>
+            <l>Through their stability in the unique<note place="end" xml:id="UT22084-094-005-98">Reading <foreign xml:lang="Bo-Ltn" type="term">khyad par stobs</foreign>, following
+                the Lhasa, Narthang, Phukdrak, and Stok Palace Kangyurs. Degé reads <foreign xml:lang="Bo-Ltn" type="term">khyab par stobs</foreign> (“pervading
+                power”).</note> powers.</l>
+            <l>Appearing for the benefit of all, she condenses this Dharma,</l>
+            <l>And thus expertly soothes the fevers of the mind.”</l>
+          </lg>
+          <milestone unit="chunk" xml:id="UT22084-094-005-99"/>
+          <lg tid="73">
+            <l>After these words that dispel unbearable afflictions,</l>
+            <l>And which produce a tranquil mind,</l>
+            <l>Were spoken by the supreme Victor,</l>
+            <l>Tārā remained still and did not speak further.</l>
+          </lg>
+          <milestone unit="chunk" xml:id="UT22084-094-005-100"/>
+          <lg tid="74">
+            <l>Astonished and enraptured by the sublime goddess Tārā,</l>
+            <l>The entire assembly of devas and asuras was filled with joy and wonder</l>
+            <l>Upon hearing these instructive words that evoke deep joy and grant happiness and long
+              life.</l>
+            <l>Overjoyed, they joined their hands above their heads as their speech was stilled.</l>
+          </lg>
+          <milestone unit="chunk" xml:id="UT22084-094-005-101"/>
+          <trailer tid="75">This completes the dhāraṇī named “<title xml:lang="en">Supreme Tārā, the
+              Hundred and Eight Names of the Goddess Tārā</title>.”</trailer>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="notes">
+        <head type="notes" tid="76">Notes</head>
+      </div>
+      <div type="listBibl">
+        <head type="listBibl" tid="78">Bibliography</head>
+        <div type="section" xml:id="UT22084-094-005-listBibl-1">
+          <head type="section" tid="79">Primary Sources</head>
+          <bibl xml:id="UT22084-094-005-102">
+                        <title xml:lang="Bo-Ltn">lha mo sgrol ma’i mtshan brgya
+              rtsa brgyad pa</title> (<title xml:lang="Sa-Ltn">Tāradevīnāmāṣṭaśataka</title>). Toh
+            728, Degé Kangyur vol. 94 (rgyud, tsha), folios 219.a–222.a. Page numbers in brackets
+            refer to this edition.</bibl>
+          <bibl xml:id="UT22084-094-005-103">
+                        <title xml:lang="Bo-Ltn">lha mo sgrol ma’i mtshan brgya
+              rtsa brgyad pa</title>. bka’ ’gyur (dpe bsdur ma) [Comparative Edition of the
+            Kangyur], krung go’i bod rig pa zhib ’jug ste gnas kyi bka’ bstan dpe sdur khang (The
+            Tibetan Tripitaka Collation Bureau of the China Tibetology Research Center). 108
+            volumes. </bibl>
+          <bibl xml:id="UT22084-094-005-104">Beijing: krung go’i bod rig pa dpe skrun khang (China
+            Tibetology Publishing House), 2006–2009, vol. 94 pp. 582–591.</bibl>
+          <bibl xml:id="UT22084-094-005-105">
+                        <title xml:lang="Bo-Ltn">lha mo sgrol ma’i mtshan brgya
+              rtsa brgyad pa</title>. Stok Palace (stog pho brang) Kangyur vol. 107 (rgyud, ma),
+            folios 122.a–126.a </bibl>
+          <bibl xml:id="UT22084-094-005-106">
                         <title xml:lang="Bo-Ltn">rje btsun ma ‘phags ma sgrol
-                                                  ma’i mtshan brgya rtsa brgyad pa</title>. Toh 727,
-                                                Degé Kangyur vol. 94 (rgyud, tsha), folios
-                                                217.a–219.a</bibl>
-                                </div>
-                                <div type="section" xml:id="UT22084-094-005-listBibl-2">
-                                        <head type="section" tid="80">Secondary Sources</head>
-                                        <bibl xml:id="UT22084-094-005-107">Beyer, Stephan. <title xml:lang="en">The Cult of Tārā:
-                                                  Magic and Ritual in Tibet</title>. Berkeley:
-                                                University of California Press, 1978.</bibl>
-                                        <bibl xml:id="UT22084-094-005-108">Blonay, Godefroy de. <title xml:lang="fr">Materiaux pour servir à l’histoire de la déesse
-                                                  buddhique Tārā</title>. Paris, 1895.</bibl>
-                                        <bibl xml:id="UT22084-094-005-109">Willson, Martin. <title xml:lang="en">In Praise of
-                                                  Tara: Songs to the Saviouress</title>. Somerville:
-                                                Wisdom Publications, 1996.</bibl>
-                                        <bibl xml:id="UT22084-094-005-110">terms</bibl>
-                                        <bibl xml:id="UT22084-094-005-111">people</bibl>
-                                        <bibl xml:id="UT22084-094-005-112">places</bibl>
-                                        <bibl xml:id="UT22084-094-005-113">texts</bibl>
-                                </div>
-                        </div>
-                        <div type="glossary" status="excluded">
-                                <list type="glossary"/>
-                        </div>
-                </back>
-        </text>
+              ma’i mtshan brgya rtsa brgyad pa</title>. Toh 727, Degé Kangyur vol. 94 (rgyud, tsha),
+            folios 217.a–219.a</bibl>
+        </div>
+        <div type="section" xml:id="UT22084-094-005-listBibl-2">
+          <head type="section" tid="80">Secondary Sources</head>
+          <bibl xml:id="UT22084-094-005-107">Beyer, Stephan. <title xml:lang="en">The Cult of Tārā:
+              Magic and Ritual in Tibet</title>. Berkeley: University of California Press,
+            1978.</bibl>
+          <bibl xml:id="UT22084-094-005-108">Blonay, Godefroy de. <title xml:lang="fr">Materiaux
+              pour servir à l’histoire de la déesse buddhique Tārā</title>. Paris, 1895.</bibl>
+          <bibl xml:id="UT22084-094-005-109">Willson, Martin. <title xml:lang="en">In Praise of
+              Tara: Songs to the Saviouress</title>. Somerville: Wisdom Publications, 1996.</bibl>
+        </div>
+      </div>
+      <div type="glossary" status="excluded">
+        <list type="glossary">
+          <item>
+                        <gloss type="term" xml:id="UT22084-094-005-111">
+              <term>asura</term>
+              <term xml:lang="Bo-Ltn">lha ma yin </term>
+              <term xml:lang="bo">ལྷ་མ་ཡིན།</term>
+              <term xml:lang="Sa-Ltn">asura</term>
+              <term type="definition">One of the six classes of sentient beings. The asuras are
+                dominated by envy, ambition, and hostility, and are incessantly embroiled in
+                disputes with the gods. They are frequently portrayed in Brahmanical and Buddhist
+                mythology as having a disruptive effect on cosmological and social harmony.</term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-094-005-112">
+              <term>rākṣasa</term>
+              <term xml:lang="Bo-Ltn">srin po </term>
+              <term xml:lang="bo">སྲིན་པོ།</term>
+              <term xml:lang="Sa-Ltn">rākṣasa</term>
+              <term type="definition">A class of nonhuman beings that are often, but certainly not
+                always, considered harmful and demonic in the Buddhist tradition.</term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-094-005-113">
+              <term>yakṣa</term>
+              <term xml:lang="Bo-Ltn">gnod sbyin </term>
+              <term xml:lang="bo">གནོད་སྦྱིན།</term>
+              <term xml:lang="Sa-Ltn">yakṣa</term>
+              <term type="definition">A class of nonhuman beings that haunt or protect natural
+                places and cities. They can be malevolent or benevolent, and are known for bestowing
+                wealth and worldly boons, or, alternatively, for creating obstacles and causing
+                harm. They are often represented as the attendants of the god of wealth.</term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-094-005-114">
+              <term>kinnara</term>
+              <term xml:lang="Bo-Ltn">mi’am ci </term>
+              <term xml:lang="bo">མིའམ་ཅི།</term>
+              <term xml:lang="Sa-Ltn">kinnara</term>
+              <term type="definition">A class of nonhuman beings who are half human, half animal.
+                Typically, their upper bodies are animal, and their lower bodies human. The term
+                literally means “Is that human?” Kinnaras are celebrated for their celestial
+                voices.</term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-094-005-115">
+              <term>mahoraga</term>
+              <term xml:lang="Bo-Ltn">lto ’phye chen po </term>
+              <term xml:lang="bo">ལྟོ་འཕྱེ་ཆེན་པོ།</term>
+              <term xml:lang="Sa-Ltn">mahoraga</term>
+              <term type="definition">Literally “large serpent.” A subterranean, semi-divine being
+                that takes the form of a large serpent, sometimes with a human torso and
+                head.</term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-094-005-116">
+              <term>bhūta</term>
+              <term xml:lang="Bo-Ltn">’byung po </term>
+              <term xml:lang="bo">འབྱུང་པོ།</term>
+              <term xml:lang="Sa-Ltn">bhūta</term>
+              <term type="definition">A specific class of nonhuman supernatural beings, or a term
+                for spirits in general.</term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-094-005-117">
+              <term>gandharva</term>
+              <term xml:lang="Bo-Ltn">dri za </term>
+              <term xml:lang="bo">དྲི་ཟ།</term>
+              <term xml:lang="Sa-Ltn">gandharva</term>
+              <term type="definition">A class of generally benevolent nonhuman beings who inhabit
+                the sky and are most renowned as celestial musicians. </term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-094-005-118">
+              <term>vināyaka</term>
+              <term xml:lang="Bo-Ltn">log ’dren </term>
+              <term xml:lang="bo">ལོག་འདྲེན།</term>
+              <term xml:lang="Sa-Ltn">vināyaka</term>
+              <term type="definition">A class of nonhuman beings that deceive, harm, or otherwise
+                obstruct humans, especially practitioners. Their name literally means “those who
+                lead astray.”</term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-094-005-119">
+              <term>vidyādharī</term>
+              <term xml:lang="Bo-Ltn">rig sngags ’chang ma </term>
+              <term xml:lang="bo">རིག་སྔགས་འཆང་མ།</term>
+              <term xml:lang="Sa-Ltn">vidyādharī</term>
+              <term type="definition">A female vidyādhara.</term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-094-005-120">
+              <term>vidyādhara</term>
+              <term xml:lang="Bo-Ltn">rig sngags ’chang </term>
+              <term xml:lang="bo">རིག་སྔགས་འཆང་།</term>
+              <term xml:lang="Sa-Ltn">vidyādhara</term>
+              <term type="definition">A class of semi-divine being that is famous for wielding
+                  (<foreign xml:lang="Sa-Ltn" type="term">dhara</foreign>) spells (<foreign xml:lang="Sa-Ltn" type="term">vidyā</foreign>). Loosely understood as “sorcerers,”
+                these magical beings are frequently petitioned through dhāraṇī and Kriyātantra
+                ritual to grant magical powers to the supplicant. The later Buddhist tradition,
+                playing on the dual valences of vidyā as “spell” and “knowledge,” began to apply
+                this term to realized figures in the Buddhist pantheon. The term is often applied to
+                practitioners of Buddhist ritual magic. </term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-094-005-121">
+              <term>extrasensory powers</term>
+              <term xml:lang="Bo-Ltn">mngon shes </term>
+              <term xml:lang="bo">མངོན་ཤེས།</term>
+              <term xml:lang="Sa-Ltn">abhijñā</term>
+              <term type="definition">Supernatural powers of perception gained through spiritual
+                practice. Their number and type can vary, but they are traditionally given as a set
+                of five: (1) miraculous abilities, (2) clairvoyance, (3) clairaudience, (4)
+                knowledge of others’ minds, and (5) recollection of past lives. </term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-094-005-122">
+              <term>campaka</term>
+              <term xml:lang="Bo-Ltn">tsam pa ka </term>
+              <term xml:lang="bo">ཙམ་པ་ཀ</term>
+              <term xml:lang="Sa-Ltn">campaka</term>
+              <term type="definition">A type of flower, often identified as <foreign xml:lang="la" type="term">Magnolia champaca</foreign>.</term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-094-005-123">
+              <term>utpala</term>
+              <term xml:lang="Bo-Ltn">ut+pala </term>
+              <term xml:lang="bo">ཨུཏྤལ།</term>
+              <term xml:lang="Sa-Ltn">utpala</term>
+              <term type="definition">A type of blue flower often identified as a lotus or water
+                lily. </term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-094-005-124">
+              <term>bezoar</term>
+              <term xml:lang="Bo-Ltn">gi’u wang </term>
+              <term xml:lang="bo">གིའུ་ཝང་།</term>
+              <term xml:lang="Sa-Ltn">gorocanā</term>
+              <term type="definition">A yellowish, fragrant substance obtained from the solidified
+                bile of elephants and cattle.</term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-094-005-125">
+              <term>sash</term>
+              <term xml:lang="Bo-Ltn">’og pag </term>
+              <term xml:lang="bo">འོག་པག</term>
+              <term xml:lang="Sa-Ltn"> </term>
+              <term type="definition">Sash, waistband.</term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-094-005-126">
+              <term>neem</term>
+              <term xml:lang="Bo-Ltn">nim pa </term>
+              <term xml:lang="bo">ནིམ་པ།</term>
+              <term xml:lang="Sa-Ltn">nimba</term>
+              <term type="definition">
+                                <foreign xml:lang="la" type="term">Azadirachta
+                  indica</foreign>.</term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-094-005-127">
+              <term>nectar</term>
+              <term xml:lang="Bo-Ltn">bdud rtsi </term>
+              <term xml:lang="bo">བདུད་རྩི།</term>
+              <term xml:lang="Sa-Ltn">amṛta</term>
+              <term type="definition">The divine nectar that prevents death, often used as a
+                metaphor for the Dharma.</term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-094-005-128">
+              <term>Victor’s heirs</term>
+              <term xml:lang="Bo-Ltn">rgyal sras </term>
+              <term xml:lang="bo">རྒྱལ་སྲས།</term>
+              <term xml:lang="Sa-Ltn">jinaputra</term>
+              <term type="definition">A synonym for bodhisattvas.</term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-094-005-129">
+              <term>vidyāmantra</term>
+              <term xml:lang="Bo-Ltn">rig sngags </term>
+              <term xml:lang="bo">རིག་སྔགས།</term>
+              <term xml:lang="Sa-Ltn">vidyāmantra</term>
+              <term type="definition">A sacred utterance or spell made for the purpose of attaining
+                either worldly or transcendent benefits.</term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-094-005-130">
+              <term>dhāraṇī</term>
+              <term xml:lang="Bo-Ltn">gzungs </term>
+              <term xml:lang="bo">གཟུངས།</term>
+              <term xml:lang="Sa-Ltn">dhāraṇī</term>
+              <term type="definition">The term <foreign xml:lang="Sa-Ltn" type="term">dhāraṇī</foreign> has the sense of something that “holds” or “retains,” and as
+                such can refer to the special capacity of practitioners to memorize and recall
+                detailed teachings. It can also refer to a verbal expression of the teachings‍—an
+                incantation, spell, or mnemonic formula that distills and “holds” essential points
+                of the Dharma and is used by practitioners to attain mundane and supramundane goals.
+                The same term is also used to denote texts that contain such formulae.</term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-094-005-131">
+              <term>halāhala</term>
+              <term xml:lang="Bo-Ltn">hA la ha la </term>
+              <term xml:lang="bo">ཧཱ་ལ་ཧ་ལ།</term>
+              <term xml:lang="Sa-Ltn">halāhala</term>
+              <term type="definition">A mythical poison, blue in color, created from the churning of
+                the ocean by the devas and asuras.</term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-094-005-132">
+              <term>māra</term>
+              <term xml:lang="Bo-Ltn">bdud </term>
+              <term xml:lang="bo">བདུད།</term>
+              <term xml:lang="Sa-Ltn">māra</term>
+              <term type="definition">A class of beings related to the demon Māra or a term for the
+                demon Māra himself. Māra and the māras are portrayed as the primary adversaries and
+                tempters of people who vow to take up the religious life. They can be understood as
+                a class of demonic beings responsible for perpetuating the illusion that keeps
+                beings bound to the world and worldly attachments and the mental states those beings
+                elicit. </term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-094-005-133">
+              <term>ten grounds</term>
+              <term xml:lang="Bo-Ltn">sa bcu </term>
+              <term xml:lang="bo">ས་བཅུ།</term>
+              <term xml:lang="Sa-Ltn">daśabhūmi</term>
+              <term type="definition">The ten levels of a bodhisattva’s development into a fully
+                awakened buddha.</term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-094-005-134">
+              <term>kalaviṅka</term>
+              <term xml:lang="Bo-Ltn">ka la ping ka </term>
+              <term xml:lang="bo">ཀ་ལ་པིང་ཀ</term>
+              <term xml:lang="Sa-Ltn">kalaviṅka</term>
+              <term type="definition">In Buddhist literature refers to a mythical bird with the head
+                of a human and the body of a bird. The kalaviṅka’s call is said to be far more
+                beautiful than that of all other birds—so compelling that it can be heard even
+                before the bird has hatched. The call of the kalaviṅka is also used as an analogy to
+                describe the voice of the Buddha.</term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-094-005-135">
+              <term>ten strengths</term>
+              <term xml:lang="Bo-Ltn">stobs bcu </term>
+              <term xml:lang="bo">སྟོབས་བཅུ།</term>
+              <term xml:lang="Sa-Ltn">daśabala</term>
+              <term type="definition">A set of powers or qualities specifically possessed by a
+                tathāgata: (1) the knowledge of what is possible and not possible; (2) the knowledge
+                of the ripening of karma; (3) the knowledge of the variety of aspirations; (4) the
+                knowledge of the variety of natures; (5) the knowledge of the different levels of
+                capabilities; (6) the knowledge of the destinations of all paths; (7) the knowledge
+                of various states of meditation (dhyāna, liberation, samādhi, samāpatti, and so on);
+                (8) the knowledge of remembering previous lives; (9) the knowledge of deaths and
+                rebirths; and (10) the knowledge of the cessation of defilements.</term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-094-005-136">
+              <term>ten perfections</term>
+              <term xml:lang="Bo-Ltn">pha rol tu phyin pa bcu </term>
+              <term xml:lang="bo">ཕ་རོལ་ཏུ་ཕྱིན་པ་བཅུ།</term>
+              <term xml:lang="Sa-Ltn">daśapāramitā</term>
+              <term type="definition">A set of practices to be mastered by those on the bodhisattva
+                path: (1) generosity, (2) discipline, (3) patience, (4) diligence, (5) meditative
+                concentration, (6) wisdom, (7) skillful means, (8) strength, (9) aspirations, and
+                (10) knowledge.</term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-094-005-137">
+              <term>ten knowledges</term>
+              <term xml:lang="Bo-Ltn">shes pa bcu </term>
+              <term xml:lang="bo">ཤེས་པ་བཅུ།</term>
+              <term xml:lang="Sa-Ltn">daśajñāna</term>
+              <term type="definition">The ten knowledges, as given in the <title xml:lang="Sa-Ltn">Abhidharmakoṣa</title>, are (1) worldly knowledge, (2) the knowledge of phenomena
+                  (<foreign xml:lang="Sa-Ltn" type="term">dharma</foreign>), (3) inferential
+                knowledge, (4) knowledge of suffering, (5) knowledge of the origin of suffering, (6)
+                knowledge of the cessation of suffering, (7) knowledge of the path, (8) knowledge of
+                others’ minds, (9) knowledge of exhaustion, and (10) knowledge of non-arising.
+              </term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="person" xml:id="UT22084-094-005-139">
+              <term>Tārā</term>
+              <term xml:lang="Bo-Ltn">sgrol ma </term>
+              <term xml:lang="bo">སྒྲོལ་མ།</term>
+              <term xml:lang="Sa-Ltn">Tārā</term>
+              <term type="definition">A goddess (lit. “Savior”) known for giving protection. She is
+                variously presented in Buddhist literature as a great bodhisattva or a fully
+                awakened buddha.</term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="person" xml:id="UT22084-094-005-140">
+              <term>Prajāpati</term>
+              <term xml:lang="Bo-Ltn">skye dgu’i dbang phyug </term>
+              <term xml:lang="bo">སྐྱེ་དགུའི་དབང་ཕྱུག</term>
+              <term xml:lang="Sa-Ltn">Prajāpati</term>
+              <term type="definition">The Vedic deity associated with the creation of humanity and
+                the human world.</term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="person" xml:id="UT22084-094-005-141">
+              <term>Kāmadeva</term>
+              <term xml:lang="Bo-Ltn">dod pa’i lha </term>
+              <term xml:lang="bo">དོད་པའི་ལྷ།</term>
+              <term xml:lang="Sa-Ltn">Kāmadeva</term>
+              <term type="definition">The god of love and desire in the Brahmanical pantheon. In
+                Buddhist literature, he is often associated with Māra. </term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="person" xml:id="UT22084-094-005-142">
+              <term>Lord of Love</term>
+              <term xml:lang="Bo-Ltn">dbang phyug rab dga’ </term>
+              <term xml:lang="bo">དབང་ཕྱུག་རབ་དགའ།</term>
+              <term xml:lang="Sa-Ltn"> </term>
+              <term type="definition">An epithet of Kāmadeva.</term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="person" xml:id="UT22084-094-005-143">
+              <term>Varuṇa</term>
+              <term xml:lang="Bo-Ltn">chu lha </term>
+              <term xml:lang="bo">ཆུ་ལྷ།</term>
+              <term xml:lang="Sa-Ltn">Varuṇa</term>
+              <term type="definition">Vedic deity of the waters (and sometimes the sky) who is also
+                regarded as a protector of cosmic order. </term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="person" xml:id="UT22084-094-005-144">
+              <term>Maheśvara</term>
+              <term xml:lang="Bo-Ltn">dbang phyug chen po </term>
+              <term xml:lang="bo">དབང་ཕྱུག་ཆེན་པོ།</term>
+              <term xml:lang="Sa-Ltn">Maheśvara</term>
+              <term type="definition">A name for Śiva.</term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="person" xml:id="UT22084-094-005-145">
+              <term>Yama</term>
+              <term xml:lang="Bo-Ltn">gshin rje </term>
+              <term xml:lang="bo">གཤིན་རྗེ།</term>
+              <term xml:lang="Sa-Ltn">Yama</term>
+              <term type="definition">The Lord of Death who judges the dead and rules over the
+                hells. </term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="person" xml:id="UT22084-094-005-146">
+              <term>Candra</term>
+              <term xml:lang="Bo-Ltn">zla ba </term>
+              <term xml:lang="bo">ཟླ་བ།</term>
+              <term xml:lang="Sa-Ltn">Candra</term>
+              <term type="definition">The Moon personified as a deity.</term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="person" xml:id="UT22084-094-005-147">
+              <term>Gaṅgā</term>
+              <term xml:lang="Bo-Ltn">gang ga (ma) </term>
+              <term xml:lang="bo">གང་ག ༼མ༽།</term>
+              <term xml:lang="Sa-Ltn">Gaṅgā</term>
+              <term type="definition">The Brahmanical goddess identified with the Ganges River.
+              </term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="person" xml:id="UT22084-094-005-148">
+              <term>Nārāyaṇī</term>
+              <term xml:lang="Bo-Ltn">sred med bu mo </term>
+              <term xml:lang="bo">སྲེད་མེད་བུ་མོ།</term>
+              <term xml:lang="Sa-Ltn">Nārāyaṇī</term>
+              <term type="definition">Female form of Nārāyaṇa, which is another name for
+                Viṣṇu.</term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="person" xml:id="UT22084-094-005-161">
+              <term>Avalokiteśvara</term>
+              <term xml:lang="Bo-Ltn">spyan ras gzigs </term>
+              <term xml:lang="bo">སྤྱན་རས་གཟིགས།</term>
+              <term xml:lang="Sa-Ltn">Avalokiteśvara</term>
+              <term type="definition">Bodhisattva of compassion. One of the eight main bodhisattvas,
+                the heart sons of the Buddha.</term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="person" xml:id="UT22084-094-005-150">
+              <term>Brahmā </term>
+              <term xml:lang="Bo-Ltn">tshangs pa </term>
+              <term xml:lang="bo">ཚངས་པ།</term>
+              <term xml:lang="Sa-Ltn">Brahmā </term>
+              <term type="definition">A major deity in the Brahmanical pantheon presiding over a
+                divine world where other beings consider him the creator. He is also considered to
+                be the “Lord of the Sahā world” (our universe).</term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="person" xml:id="UT22084-094-005-151">
+              <term>Śiva</term>
+              <term xml:lang="Bo-Ltn">dbang phyug </term>
+              <term xml:lang="bo">དབང་ཕྱུག</term>
+              <term xml:lang="Sa-Ltn">śiva</term>
+              <term type="definition">Major deity in the classical Indian religious traditions. He
+                is sometimes portrayed as one part of the divine triad that also includes Brahmā and
+                Viṣṇu. </term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="place" xml:id="UT22084-094-005-153">
+              <term>Jambu River</term>
+              <term xml:lang="Bo-Ltn">’dzam bu’i chu bo </term>
+              <term xml:lang="bo">འཛམ་བུའི་ཆུ་བོ།</term>
+              <term xml:lang="Sa-Ltn">Jāmbūnada</term>
+              <term type="definition">A divine river whose gold is believed to be especially
+                fine.</term>
+            </gloss>
+                    </item>
+        </list>
+      </div>
+    </back>
+  </text>
 </TEI>

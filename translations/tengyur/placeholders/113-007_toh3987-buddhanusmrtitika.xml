@@ -4,10 +4,15 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="mainTitle" xml:lang="Bo-Ltn">sangs rgyas rjes su dran pa'i rgya cher 'grel pa</title>
-                <title type="mainTitle" xml:lang="Sa-Ltn">buddhanusmrtitika</title>
-                <title type="mainTitle" xml:lang="en"/>
+                <title xml:lang="bo" type="mainTitle">སངས་རྒྱས་རྗེས་སུ་དྲན་པའི་རྒྱ་ཆེར་འགྲེལ་པ།</title>
+                <title xml:lang="Bo-Ltn" type="mainTitle">sangs rgyas rjes su dran pa'i rgya cher 'grel pa/</title>
+                <title xml:lang="Sa-Ltn" type="mainTitle">Buddhānusmṛti­ṭīkā</title>
+                <title xml:lang="en" type="mainTitle">Extensive Commentary on The Recollection of the Buddha</title>
             </titleStmt>
+            <editionStmt>
+                <edition>v 0.0.1 <date/>
+                </edition>
+            </editionStmt>
             <publicationStmt status="">
                 <idno xml:id="UT23703-113-007"/>
             </publicationStmt>
@@ -15,19 +20,21 @@
                 <bibl key="toh3987" type="text">
                     <ref>Toh 3987</ref>
                     <biblScope>ff. 55v-63v</biblScope>
-                    <author role="translatorTib">a. dbyig gnyen</author>
-                    <author role="translatorTib">t. danasila</author>
-                    <author role="translatorTib">dpal brtsegs raksita</author>
-                    <location count-pages="">
-                        <start volume="113" page="112"/>
-                        <end volume="113" page="128"/>
+                    <author ref="eft:entity-7082" xml:lang="Sa-Ltn">Vasubandhu</author>
+                    <author role="translatorTib" ref="eft:entity-17455" xml:lang="Bo-Ltn">zhu chen gyi lo tsa ba dge slong dpal brtsegs rak+si ta</author>
+                    <author role="translatorTib" ref="eft:entity-18396" xml:lang="Sa-Ltn">Dānaśīla (I)</author>
+                    <location work="UT23703" count-pages="17">
+                        <volume number="113" start-page="110" end-page="126"/>
                     </location>
                     <idno parent-id="O1JC76301JC10651" work="http://read.84000.co/sections"/>
                     <idno source-id="O1JC76301JC10659" work="W23703"/>
                 </bibl>
+                <link type="isCommentaryOf" target="toh3982"/>
             </sourceDesc>
             <notesStmt>
-                <note type="lastUpdated">Last updated at 07/09/2018 at 10:16:36 by admin</note>
+                <note type="lastUpdated" date-time="2022-09-03T10:22:00.211Z" user="admin">03/09/2022 10:22:00</note>
+                <note type="updated" update="import" value="fileDesc" import="tengyur-data-3981-4019_PH_new_v2.4.xml" date-time="2022-01-28T10:32:05.149Z" user="admin"/>
+                <note type="updated" update="text-version" value="0.0.1" date-time="2022-09-03T10:19:05.33Z" user="andre">Auto (entity-merge-attribution)</note>
             </notesStmt>
         </fileDesc>
     </teiHeader>

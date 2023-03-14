@@ -4,10 +4,15 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="mainTitle" xml:lang="Bo-Ltn">tshigs su bcad pa'i don bsdus pa zhes bya ba'i bstan bcos</title>
-                <title type="mainTitle" xml:lang="Sa-Ltn">gathasangrahasastrartha</title>
-                <title type="mainTitle" xml:lang="en"/>
+                <title xml:lang="bo" type="mainTitle">ཚིགས་སུ་བཅད་པའི་དོན་བསྡུས་པ་ཞེས་བྱ་བའི་བསྟན་བཅོས།</title>
+                <title xml:lang="Bo-Ltn" type="mainTitle">tshigs su bcad pa'i don bsdus pa zhes bya ba'i bstan bcos/</title>
+                <title xml:lang="Sa-Ltn" type="mainTitle">Gāthā­saṃgraha­śāstrārtha­nāma</title>
+                <title xml:lang="en" type="mainTitle">A Treastise called “The Concise Meaning of Verses”</title>
             </titleStmt>
+            <editionStmt>
+                <edition>v 0.0.1 <date/>
+                </edition>
+            </editionStmt>
             <publicationStmt status="">
                 <idno xml:id="UT23703-149-005"/>
             </publicationStmt>
@@ -15,20 +20,23 @@
                 <bibl key="toh4103" type="text">
                     <ref>Toh 4103</ref>
                     <biblScope>ff. 224r-261r</biblScope>
-                    <author role="translatorTib">a. dbyig gnyen</author>
-                    <author role="translatorTib">t. dharmakara</author>
-                    <author role="translatorTib">ye shes snying po</author>
-                    <author role="translatorTib">r. dpal brtsegs</author>
-                    <location count-pages="">
-                        <start volume="149" page="449"/>
-                        <end volume="149" page="523"/>
+                    <author ref="eft:entity-7082" xml:lang="Sa-Ltn">Vasubandhu</author>
+                    <author role="translatorTib" ref="eft:entity-18508" xml:lang="Sa-Ltn">Dharmākara</author>
+                    <author role="translatorTib" ref="eft:entity-18220" xml:lang="Bo-Ltn">lo tsa ba ban de ye shes snying po</author>
+                    <editor role="reviser" ref="eft:entity-17455" xml:lang="Bo-Ltn">zhu chen gyi lo tsA ba ban de dpal brtsegs</editor>
+                    <location work="UT23703" count-pages="77">
+                        <volume number="149" start-page="447" end-page="523"/>
                     </location>
                     <idno parent-id="O1JC76301JC10788" work="http://read.84000.co/sections"/>
                     <idno source-id="O1JC76301JC10822" work="W23703"/>
                 </bibl>
+                <link type="isCommentaryOf" target="toh4102"/>
             </sourceDesc>
             <notesStmt>
-                <note type="lastUpdated">Last updated at 07/09/2018 at 10:34:37 by admin</note>
+                <note type="lastUpdated" date-time="2022-09-03T10:19:55.908Z" user="admin">03/09/2022 10:19:55</note>
+                <note type="updated" update="import" value="fileDesc" import="tengyur-data-4086-4103_PH_new_v2.4.xml" date-time="2021-11-02T14:16:18.239Z" user="admin"/>
+                <note type="updated" update="general" import="tengyur-data-4086-4103_PH_new_v2.4.xml" date-time="2021-11-02T14:16:18.239Z" user="admin">The text is a commentary on the previous text (Toh. 4102).</note>
+                <note type="updated" update="text-version" value="0.0.1" date-time="2022-09-03T10:19:05.33Z" user="andre">Auto (entity-merge-attribution)</note>
             </notesStmt>
         </fileDesc>
     </teiHeader>

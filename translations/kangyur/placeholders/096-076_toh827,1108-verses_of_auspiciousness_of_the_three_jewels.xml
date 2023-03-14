@@ -4,10 +4,19 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="mainTitle" xml:lang="Bo-Ltn">dkon mchog gsum gyi bkra shis kyi tshigs su bcad pa/</title>
-                <title type="mainTitle" xml:lang="Sa-Ltn">ratnatrayasvastigāthā</title>
-                <title type="mainTitle" xml:lang="en">Verses of Auspiciousness of the Three Jewels</title>
+                <title xml:lang="bo" type="mainTitle">དཀོན་མཆོག་གསུམ་གྱི་བཀྲ་ཤིས་ཀྱི་ཚིགས་སུ་བཅད་པ།</title>
+                <title xml:lang="Bo-Ltn" type="mainTitle">dkon mchog gsum gyi bkra shis kyi tshigs su bcad pa/</title>
+                <title xml:lang="Sa-Ltn" type="mainTitle">Ratnatraya­svasti­gāthā</title>
+                <title xml:lang="en" type="mainTitle">Verses of Auspiciousness of the Three Jewels</title>
+                <title xml:lang="en" type="otherTitle">Verses of Auspiciousness of the Three Jewels Spoken by the Blessed One to the Householder Surata</title>
+                <title xml:lang="Sa-Ltn" type="otherTitle">Ratnatri­svasti­gāthā</title>
+                <title xml:lang="Sa-Ltn" type="otherTitle">Triratna­svasti­gāthā</title>
             </titleStmt>
+            <editionStmt>
+                <edition>v 0.0.3 <date/>
+                </edition>
+            </editionStmt>
+
             <publicationStmt status="">
                 <idno xml:id="UT22084-096-076"/>
             </publicationStmt>
@@ -15,9 +24,11 @@
                 <bibl key="toh827" type="text">
                     <ref>Toh 827</ref>
                     <biblScope>vol.96, ff.263v-264r(pp.526-527)</biblScope>
-                    <location count-pages="2">
-                        <start volume="96" page="528"/>
-                        <end volume="96" page="529"/>
+                    <author ref="eft:entity-17509" xml:lang="en">Anon</author>
+                    <author role="translatorTib" ref="eft:entity-34601" xml:lang="Sa-Ltn">Jinamitra</author>
+                    <author role="translatorTib" ref="eft:entity-18257" xml:lang="Bo-Ltn">zhu chen gyi lo tsA ba ban+de ye shes sde</author>
+                    <location work="UT4CZ5369" count-pages="2">
+                        <volume number="96" start-page="526" end-page="527"/>
                     </location>
                     <idno parent-id="O1JC114941JC21416" work="http://read.84000.co/sections"/>
                     <idno source-id="O1JC114941JC12573" work="W22084"/>
@@ -25,16 +36,35 @@
                 <bibl key="toh1108" type="text">
                     <ref>Toh 1108</ref>
                     <biblScope>vol.101, ff.278r-278r(pp.555-555)</biblScope>
-                    <location count-pages="1">
-                        <start volume="101" page="557"/>
-                        <end volume="101" page="557"/>
+                    <author ref="eft:entity-17509" xml:lang="en">Anon</author>
+                    <author role="translatorTib" ref="eft:entity-34601" xml:lang="Sa-Ltn">Jinamitra</author>
+                    <author role="translatorTib" ref="eft:entity-18257" xml:lang="Bo-Ltn">zhu chen gyi lo tsA ba ban+de ye shes sde</author>
+                    <location work="UT4CZ5369" count-pages="1">
+                        <volume number="101" start-page="555" end-page="555"/>
                     </location>
                     <idno parent-id="O1JC114941JC20569" work="http://read.84000.co/sections"/>
                     <idno source-id="O1JC114941JC12872" work="W22084"/>
                 </bibl>
+                <bibl key="toh4413" type="text">
+                    <ref>Toh 4413</ref>
+                    <biblScope>ff. 349v-349v</biblScope>
+                    <author ref="eft:entity-17509" xml:lang="en">Anon</author>
+                    <author role="translatorTib" ref="eft:entity-34601" xml:lang="Sa-Ltn">Jinamitra</author>
+                    <author role="translatorTib" ref="eft:entity-18257" xml:lang="Bo-Ltn">zhu chen gyi lo tsA ba ban+de ye shes sde</author>
+                    <location work="UT23703" count-pages="1">
+                        <volume number="207" start-page="698" end-page="698"/>
+                    </location>
+                    <idno parent-id="O1JC76301JC21687" work="http://read.84000.co/sections"/>
+                    <idno source-id="O1JC76301JC112191JC21756" work="W23703"/>
+                </bibl>
             </sourceDesc>
             <notesStmt>
-                <note type="lastUpdated">Last updated at 23/01/2019 at 09:09:23 by admin</note>
+                <note type="lastUpdated" date-time="2022-06-07T06:48:15.625Z" user="admin">07/06/2022 06:48:15</note>
+                <note type="updated" update="import" value="fileDesc" import="tengyur-data-4398-4464_PH_new_v2.4.xml" date-time="2021-11-02T14:27:22.591Z" user="admin"/>
+
+                <note type="updated" update="text-version" value="0.0.1" date-time="2022-01-20T09:14:07.444Z" user="admin">Auto (correct-orphaned-attributions)</note>
+                <note type="updated" update="text-version" value="0.0.2" date-time="2022-04-18T09:53:16.819Z" user="andre">Auto (entity-merge-attribution)</note>
+                <note type="updated" update="text-version" value="0.0.3" date-time="2022-06-07T06:48:13.515Z" user="sameer">Auto (entity-merge-attribution)</note>
             </notesStmt>
         </fileDesc>
     </teiHeader>

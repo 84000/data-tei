@@ -4,10 +4,15 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="mainTitle" xml:lang="Bo-Ltn">dge 'dun rjes su dran pa'i bshad pa</title>
-                <title type="mainTitle" xml:lang="Sa-Ltn">samghanusmrtivyakhya</title>
-                <title type="mainTitle" xml:lang="en"/>
+                <title xml:lang="bo" type="mainTitle">དགེ་འདུན་རྗེས་སུ་དྲན་པའི་བཤད་པ།</title>
+                <title xml:lang="Bo-Ltn" type="mainTitle">dge 'dun rjes su dran pa'i bshad pa/</title>
+                <title xml:lang="Sa-Ltn" type="mainTitle">Saṃghānusmṛtivyākhyā</title>
+                <title xml:lang="en" type="mainTitle">An Explanation of The Recollection of the Saṅgha</title>
             </titleStmt>
+            <editionStmt>
+                <edition>v 0.0.1 <date/>
+                </edition>
+            </editionStmt>
             <publicationStmt status="">
                 <idno xml:id="UT23703-113-004"/>
             </publicationStmt>
@@ -15,19 +20,21 @@
                 <bibl key="toh3984" type="text">
                     <ref>Toh 3984</ref>
                     <biblScope>ff. 15v-18r</biblScope>
-                    <author role="translatorTib">a. thogs med</author>
-                    <author role="translatorTib">t. ajitasribhadra</author>
-                    <author role="translatorTib">shakya 'od</author>
-                    <location count-pages="">
-                        <start volume="113" page="32"/>
-                        <end volume="113" page="37"/>
+                    <author ref="eft:entity-1721" xml:lang="Sa-Ltn">Asaṅga</author>
+                    <author role="translatorTib" ref="eft:entity-17470" xml:lang="Bo-Ltn">bod kyi lo tsa ba dge slong shakya 'od</author>
+                    <author role="translatorTib" ref="eft:entity-18432" xml:lang="Sa-Ltn">Ajitaśrībhadra</author>
+                    <location work="UT23703" count-pages="6">
+                        <volume number="113" start-page="30" end-page="35"/>
                     </location>
                     <idno parent-id="O1JC76301JC10651" work="http://read.84000.co/sections"/>
                     <idno source-id="O1JC76301JC10656" work="W23703"/>
                 </bibl>
+                <link type="isCommentaryOf" target="toh281"/>
             </sourceDesc>
             <notesStmt>
-                <note type="lastUpdated">Last updated at 07/09/2018 at 10:16:38 by admin</note>
+                <note type="lastUpdated" date-time="2022-07-23T21:13:17.502Z" user="admin">23/07/2022 21:13:17</note>
+                <note type="updated" update="import" value="fileDesc" import="tengyur-data-3981-4019_PH_new_v2.4.xml" date-time="2022-01-28T10:32:05.149Z" user="admin"/>
+                <note type="updated" update="text-version" value="0.0.1" date-time="2022-07-23T21:11:43.192Z" user="andre">Auto (entity-merge-attribution)</note>
             </notesStmt>
         </fileDesc>
     </teiHeader>

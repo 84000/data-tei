@@ -156,13 +156,13 @@
                   </rng:zeroOrMore>
                   <rng:zeroOrMore>
                     <rng:element name="term">
-                      <optional xmlns="http://relaxng.org/ns/structure/1.0">
+                      <rng:optional>
                         <rng:attribute name="type">
                           <rng:choice>
                             <rng:value>ignore</rng:value>
                           </rng:choice>
                         </rng:attribute>
-                      </optional>
+                      </rng:optional>
                       <rng:oneOrMore>
                         <rng:choice>
                           <rng:zeroOrMore>
@@ -236,9 +236,9 @@
                   <rng:zeroOrMore>
                     <rng:ref name="list"/>
                   </rng:zeroOrMore>
-                  <optional xmlns="http://relaxng.org/ns/structure/1.0">
+                  <rng:optional>
                     <rng:ref name="trailer"/>
-                  </optional>
+                  </rng:optional>
                   <rng:zeroOrMore>
                     <rng:element name="label">
                       <rng:data type="string"/>
@@ -261,13 +261,13 @@
                 <rng:choice>
                   <rng:zeroOrMore>
                     <rng:element name="head">
-                      <optional xmlns="http://relaxng.org/ns/structure/1.0">
+                      <rng:optional>
                         <rng:attribute name="type">
                           <rng:choice>
                             <rng:value>section</rng:value>
                           </rng:choice>
                         </rng:attribute>
-                      </optional>
+                      </rng:optional>
                       <rng:text/>
                     </rng:element>
                   </rng:zeroOrMore>
@@ -292,9 +292,9 @@
                   <rng:zeroOrMore>
                     <rng:ref name="list"/>
                   </rng:zeroOrMore>
-                  <optional xmlns="http://relaxng.org/ns/structure/1.0">
+                  <rng:optional>
                     <rng:ref name="trailer"/>
-                  </optional>
+                  </rng:optional>
                   <rng:zeroOrMore>
                     <rng:element name="label">
                       <rng:data type="string"/>
@@ -323,13 +323,13 @@
                 <rng:choice>
                   <rng:zeroOrMore>
                     <rng:element name="head">
-                      <optional xmlns="http://relaxng.org/ns/structure/1.0">
+                      <rng:optional>
                         <rng:attribute name="type">
                           <rng:choice>
                             <rng:value>section</rng:value>
                           </rng:choice>
                         </rng:attribute>
-                      </optional>
+                      </rng:optional>
                       <rng:text/>
                     </rng:element>
                   </rng:zeroOrMore>
@@ -354,9 +354,9 @@
                   <rng:zeroOrMore>
                     <rng:ref name="list"/>
                   </rng:zeroOrMore>
-                  <optional xmlns="http://relaxng.org/ns/structure/1.0">
+                  <rng:optional>
                     <rng:ref name="trailer"/>
-                  </optional>
+                  </rng:optional>
                   <rng:zeroOrMore>
                     <rng:element name="label">
                       <rng:data type="string"/>
@@ -587,14 +587,14 @@
             <!-- notes -->
             <rng:oneOrMore>
               <rng:choice>
-                <optional xmlns="http://relaxng.org/ns/structure/1.0">
+                <rng:optional>
                   <rng:element name="div">
                     <rng:attribute name="type">
                       <rng:choice>
                         <rng:value>notes</rng:value>
                       </rng:choice>
                     </rng:attribute>
-                    <optional>
+                    <rng:optional>
                       <rng:element name="head">
                         <rng:attribute name="type">
                           <rng:choice>
@@ -603,23 +603,23 @@
                         </rng:attribute>
                         <rng:text/>
                       </rng:element>
-                    </optional>
+                    </rng:optional>
                     <!-- abbreviations -->
-                    <optional>
+                    <rng:optional>
                       <!-- Should this be optional? -->
                       <rng:element name="list">
-                        <optional>
+                        <rng:optional>
                           <rng:attribute name="type">
                             <rng:choice>
                               <rng:value>abbreviations</rng:value>
                             </rng:choice>
                           </rng:attribute>
-                        </optional>
-                        <optional>
+                        </rng:optional>
+                        <rng:optional>
                           <rng:element name="head">
                             <rng:data type="string"/>
                           </rng:element>
-                        </optional>
+                        </rng:optional>
                         <rng:oneOrMore>
                           <!-- item -->
                           <rng:element name="item">
@@ -628,13 +628,13 @@
                             </rng:attribute>
                             <rng:text/>
                             <!-- abbr -->
-                            <optional>
+                            <rng:optional>
                               <rng:element name="abbr">
                                 <rng:data type="string"/>
                               </rng:element>
-                            </optional>
+                            </rng:optional>
                             <!-- expan -->
-                            <optional>
+                            <rng:optional>
                               <rng:element name="expan">
                                 <rng:oneOrMore>
                                   <rng:choice>
@@ -651,13 +651,13 @@
                                   </rng:choice>
                                 </rng:oneOrMore>
                               </rng:element>
-                            </optional>
+                            </rng:optional>
                           </rng:element>
                         </rng:oneOrMore>
                       </rng:element>
-                    </optional>
+                    </rng:optional>
                   </rng:element>
-                </optional>
+                </rng:optional>
                 <!-- bibliography -->
                 <rng:element name="div">
                   <rng:attribute name="type">
@@ -666,7 +666,7 @@
                     </rng:choice>
                   </rng:attribute>
                   <!-- head -->
-                  <optional xmlns="http://relaxng.org/ns/structure/1.0">
+                  <rng:optional>
                     <!-- Should this be optional? -->
                     <rng:element name="head">
                       <rng:attribute name="type">
@@ -676,7 +676,7 @@
                       </rng:attribute>
                       <rng:text/>
                     </rng:element>
-                  </optional>
+                  </rng:optional>
                   <!-- bibliography section -->
                   <rng:zeroOrMore>
                     <rng:element name="div">
@@ -687,18 +687,18 @@
                       </rng:attribute>
                       <rng:oneOrMore>
                         <rng:choice>
-                          <optional xmlns="http://relaxng.org/ns/structure/1.0">
+                          <rng:optional>
                             <rng:element name="head">
-                              <optional>
+                              <rng:optional>
                                 <rng:attribute name="type">
                                   <rng:choice>
                                     <rng:value>section</rng:value>
                                   </rng:choice>
                                 </rng:attribute>
-                              </optional>
+                              </rng:optional>
                               <rng:text/>
                             </rng:element>
-                          </optional>
+                          </rng:optional>
                           <rng:zeroOrMore>
                             <rng:ref name="p"/>
                           </rng:zeroOrMore>
@@ -754,18 +754,18 @@
                               </rng:attribute>
                               <rng:oneOrMore>
                                 <rng:choice>
-                                  <optional xmlns="http://relaxng.org/ns/structure/1.0">
+                                  <rng:optional>
                                     <rng:element name="head">
-                                      <optional>
+                                      <rng:optional>
                                         <rng:attribute name="type">
                                           <rng:choice>
                                             <rng:value>section</rng:value>
                                           </rng:choice>
                                         </rng:attribute>
-                                      </optional>
+                                      </rng:optional>
                                       <rng:text/>
                                     </rng:element>
-                                  </optional>
+                                  </rng:optional>
                                   <rng:zeroOrMore>
                                     <rng:ref name="lb"/>
                                   </rng:zeroOrMore>
@@ -822,7 +822,7 @@
                       <rng:value>glossary</rng:value>
                     </rng:choice>
                   </rng:attribute>
-                  <optional xmlns="http://relaxng.org/ns/structure/1.0">
+                  <rng:optional>
                     <rng:element name="head">
                       <rng:attribute name="type">
                         <rng:choice>
@@ -830,14 +830,14 @@
                         </rng:choice>
                       </rng:attribute>
                     </rng:element>
-                  </optional>
+                  </rng:optional>
                   <!-- list -->
-                  <optional xmlns="http://relaxng.org/ns/structure/1.0">
+                  <rng:optional>
                     <!-- Should this be optional? -->
                     <rng:element name="list">
                       <rng:oneOrMore>
                         <rng:element name="item">
-                          <optional>
+                          <rng:optional>
                             <rng:element name="gloss">
                               <rng:attribute name="id" ns="http://www.w3.org/XML/1998/namespace">
                                 <rng:data type="ID"/>
@@ -850,14 +850,14 @@
                                   <rng:value>text</rng:value>
                                 </rng:choice>
                               </rng:attribute>
-                              <optional>
+                              <rng:optional>
                                 <rng:attribute name="mode">
                                   <rng:choice>
                                     <rng:value>marked</rng:value>
                                     <rng:value>match</rng:value>
                                   </rng:choice>
                                 </rng:attribute>
-                              </optional>
+                              </rng:optional>
                               <!-- term -->
                               <rng:oneOrMore>
                                 <rng:element name="term">
@@ -883,7 +883,7 @@
                                       </rng:zeroOrMore>
                                     </rng:choice>
                                   </rng:oneOrMore>
-                                  <optional>
+                                  <rng:optional>
                                     <rng:attribute name="lang" ns="http://www.w3.org/XML/1998/namespace">
                                       <rng:choice>
                                         <rng:value type="language">en</rng:value>
@@ -902,36 +902,36 @@
                                         <rng:value type="language">th</rng:value>
                                       </rng:choice>
                                     </rng:attribute>
-                                  </optional>
-                                  <optional>
+                                  </rng:optional>
+                                  <rng:optional>
                                     <rng:attribute name="type">
                                       <rng:choice>
                                         <rng:value>definition</rng:value>
                                         <rng:value>alternative</rng:value>
                                       </rng:choice>
                                     </rng:attribute>
-                                  </optional>
+                                  </rng:optional>
                                 </rng:element>
                               </rng:oneOrMore>
                             </rng:element>
-                          </optional>
+                          </rng:optional>
                         </rng:element>
                       </rng:oneOrMore>
-                      <optional>
+                      <rng:optional>
                         <rng:attribute name="type"/>
-                      </optional>
+                      </rng:optional>
                     </rng:element>
-                  </optional>
+                  </rng:optional>
                 </rng:element>
                 <!-- appendix -->
-                <optional xmlns="http://relaxng.org/ns/structure/1.0">
+                <rng:optional>
                   <rng:element name="div">
                     <rng:attribute name="type">
                       <rng:choice>
                         <rng:value>appendix</rng:value>
                       </rng:choice>
                     </rng:attribute>
-                    <optional>
+                    <rng:optional>
                       <rng:element name="head">
                         <rng:attribute name="type">
                           <rng:choice>
@@ -948,13 +948,13 @@
                         </rng:attribute>
                         <rng:text/>
                       </rng:element>
-                    </optional>
+                    </rng:optional>
                     <rng:ref name="translation-section"/>
                     <rng:oneOrMore>
                       <rng:ref name="translation-chapter"/>
                     </rng:oneOrMore>
                   </rng:element>
-                </optional>
+                </rng:optional>
               </rng:choice>
             </rng:oneOrMore>
           </content>
@@ -1081,7 +1081,7 @@
                   </rng:attribute>
                   <rng:text/>
                 </rng:element>
-                <optional xmlns="http://relaxng.org/ns/structure/1.0">
+                <rng:optional>
                   <rng:element name="head">
                     <rng:attribute name="type">
                       <rng:choice>
@@ -1090,7 +1090,7 @@
                     </rng:attribute>
                     <rng:text/>
                   </rng:element>
-                </optional>
+                </rng:optional>
                 <rng:element name="head">
                   <rng:attribute name="type">
                     <rng:choice>
@@ -1114,7 +1114,7 @@
                     </rng:attribute>
                     <rng:oneOrMore>
                       <rng:choice>
-                        <optional xmlns="http://relaxng.org/ns/structure/1.0">
+                        <rng:optional>
                           <rng:element name="head">
                             <rng:attribute name="type">
                               <rng:choice>
@@ -1123,7 +1123,7 @@
                             </rng:attribute>
                             <rng:text/>
                           </rng:element>
-                        </optional>
+                        </rng:optional>
                         <rng:zeroOrMore>
                           <rng:ref name="milestone"/>
                         </rng:zeroOrMore>
@@ -1738,7 +1738,7 @@
                         </rng:attribute>
                         <rng:oneOrMore>
                           <rng:choice>
-                            <optional xmlns="http://relaxng.org/ns/structure/1.0">
+                            <rng:optional>
                               <rng:element name="head">
                                 <rng:attribute name="type">
                                   <rng:choice>
@@ -1747,7 +1747,7 @@
                                 </rng:attribute>
                                 <rng:text/>
                               </rng:element>
-                            </optional>
+                            </rng:optional>
                             <rng:zeroOrMore>
                               <rng:ref name="milestone"/>
                             </rng:zeroOrMore>
@@ -2605,11 +2605,11 @@
             <rng:oneOrMore>
               <rng:choice>
                 <rng:text/>
-                <optional xmlns="http://relaxng.org/ns/structure/1.0">
+                <rng:optional>
                   <rng:element name="name">
                     <rng:text/>
                   </rng:element>
-                </optional>
+                </rng:optional>
                 <rng:zeroOrMore>
                   <rng:ref name="lb"/>
                 </rng:zeroOrMore>
@@ -2790,21 +2790,21 @@
                     </rng:choice>
                   </rng:zeroOrMore>
                 </rng:element>
-                <optional xmlns="http://relaxng.org/ns/structure/1.0">
+                <rng:optional>
                   <rng:element name="series">
                     <rng:data type="string"/>
                   </rng:element>
-                </optional>
-                <optional xmlns="http://relaxng.org/ns/structure/1.0">
+                </rng:optional>
+                <rng:optional>
                   <rng:attribute name="key">
                     <rng:data type="integer"/>
                   </rng:attribute>
-                </optional>
-                <optional xmlns="http://relaxng.org/ns/structure/1.0">
+                </rng:optional>
+                <rng:optional>
                   <rng:element name="citedRange">
                     <rng:data type="string"/>
                   </rng:element>
-                </optional>
+                </rng:optional>
                 <rng:zeroOrMore>
                   <rng:element name="author">
                     <rng:attribute name="role">

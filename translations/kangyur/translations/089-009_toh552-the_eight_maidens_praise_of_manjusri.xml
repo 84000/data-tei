@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schema/current/translation.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+        <teiHeader>
+                <fileDesc>
+                        <titleStmt>
+                                <title type="mainTitle" xml:lang="en">The Eight Maidens’ Praise</title>
+                                <title type="mainTitle" xml:lang="Bo-Ltn">bu mo brgyad kyis bstod
+                                        pa</title>
+                                <title type="mainTitle" xml:lang="bo">བུ་མོ་བརྒྱད་ཀྱིས་བསྟོད་པ།</title>
+                                <title type="longTitle" xml:lang="en">The Eight Maidens’ Praise of
+                                        Mañjuśrī, Lord of Speech</title>
+                                <title type="longTitle" xml:lang="Bo-Ltn">’jam dpal ngag gi dbang
+                                        phyug la bu mo brgyad kyis bstod pa</title>
+                                <title type="longTitle" xml:lang="bo">འཇམ་དཔལ་ངག་གི་དབང་ཕྱུག་ལ་བུ་མོ་བརྒྱད་ཀྱིས་བསྟོད་པ།</title>
+                                <title type="otherTitle" xml:lang="zh"/>
+                                <author ref="eft:team-33" role="translatorMain">Translated by the
+                                        Tibetan Classics Translators Guild of New York<lb/>under the
+                                        patronage and supervision of 84000: Translating the Words of
+                                        the Buddha</author>
+                                <consultant role="dharmaMaster" ref="eft:person-199">Geshe Lozang
+                                        Jamspal</consultant>
+                                <consultant role="projectManager" ref="eft:person-375">David
+                                        Mellins</consultant>
+                                <author role="translatorEng" ref="eft:person-375">David
+                                        Mellins</author>
+                                <author role="translatorEng" ref="eft:person-308">Erin
+                                        Sperry</author>
+                                <author role="translatorEng" ref="eft:person-199">Geshe Lozang
+                                        Jamspal</author>
+                                <author role="translatorEng" ref="eft:person-200">Kaia
+                                        Fischer</author>
+                                <editor role="projectEditor" ref="eft:person-289">Nathaniel
+                                        Rich</editor>
+                                <editor role="copyEditor" ref="eft:person-422">George
+                                        FitzHerbert</editor>
+                                <editor role="projectEditor" ref="eft:person-50">Andreas
+                                        Doctor</editor>
+                                <editor role="TEImarkupEditor" ref="eft:person-381">Martina
+                                        Cotter</editor>
+                        </titleStmt>
+                        <editionStmt>
+                                <edition>v 0.0.1 <date>2022</date>
+                </edition>
+                        </editionStmt>
+                        <publicationStmt status="2.a">
+                                <publisher>
+                    <name>84000: Translating the Words of the Buddha</name>
+                                        is a global non-profit initiative to translate all the
+                                        Buddha’s words into modern languages, and to make them
+                                        available to everyone. </publisher>
+                                <availability>
+                                        <licence>
+                                                <graphic url="http://i.creativecommons.org/l/by-nc-nd/2.0/88x31.png"/>
+                                                <p>This work is provided under the protection of a
+                                                  Creative Commons CC BY-NC-ND (Attribution -
+                                                  Non-commercial - No-derivatives) 3.0 copyright. It
+                                                  may be copied or printed for fair use, but only
+                                                  with full attribution, and not for commercial
+                                                  advantage or personal compensation. For full
+                                                  details, see the Creative Commons license.</p>
+                                        </licence>
+                                </availability>
+                                <idno xml:id="UT22084-089-009"/>
+                                <note>An early mistake in the assigning of UT numbers within the
+                                        84000 project means that these ids diverge slightly from the
+                                        standard logic.</note>
+                                <date>2023-03-10</date>
+                        </publicationStmt>
+                        <sourceDesc>
+                                <bibl key="toh552" type="text">
+                                        <ref>Toh 552</ref>
+                                        <biblScope>Degé Kangyur vol. 89 (rgyud ’bum, pa), folios
+                                                15.b.–16.a.</biblScope>
+                                        <location work="UT4CZ5369" count-pages="2">
+                                                <volume number="89" start-page="30" end-page="31"/>
+                                        </location>
+                                        <idno parent-id="O1JC114941JC21415" work="http://read.84000.co/sections"/>
+                                        <idno source-id="O1JC114941JC12279" work="W22084"/>
+                                </bibl>
+                        </sourceDesc>
+                        <notesStmt>
+                                <note type="lastUpdated" date-time="2023-03-13T06:22:21.564Z" user="martina-cotter">13/03/2023 06:22:21</note>
+                                <note type="updated" update="translation-status" value="3" date-time="2021-07-29T15:43:03.671Z" user="line-tofte">3</note>
+                                <note type="updated" update="text-version" value="0.0.1" date-time="2021-07-29T15:43:03.671Z" user="line-tofte">0.0.1</note>
+                                <note type="updated" update="text-version" value="0.0.2" date-time="2021-07-29T15:43:24.87Z" user="line-tofte">Auto
+                                        (update-contributors)</note>
+                                <note type="updated" update="text-version" value="0.0.3" date-time="2021-07-29T15:44:08.114Z" user="line-tofte">Auto
+                                        (update-contributors)</note>
+                                <note type="updated" update="translation-status" value="2.h" date-time="2022-02-09T15:46:55.222Z" user="line-tofte">2.h</note>
+                                <note type="updated" update="text-version" value="0.0.4" date-time="2022-02-09T15:46:55.222Z" user="line-tofte">Auto
+                                        (update-publication-status)</note>
+                                <note type="updated" update="translation-status" value="2.g" date-time="2022-04-07T09:00:08.802Z" user="line-tofte">2.g</note>
+                                <note type="updated" update="text-version" value="0.0.5" date-time="2022-04-07T09:00:08.802Z" user="line-tofte">Auto
+                                        (update-publication-status)</note>
+                                <note type="updated" update="text-version" value="0.0.6" date-time="2022-04-07T09:00:33.379Z" user="line-tofte">Auto
+                                        (update-contributors)</note>
+                                <note type="updated" update="translation-status" value="2.f" date-time="2022-05-11T08:34:25.742Z" user="line-tofte">2.f</note>
+                                <note type="updated" update="text-version" value="0.0.7" date-time="2022-05-11T08:34:25.742Z" user="line-tofte">Auto
+                                        (update-publication-status)</note>
+                                <note type="updated" update="translation-status" value="2.e" date-time="2022-09-15T08:55:16.346Z" user="line-tofte">2.e</note>
+                                <note type="updated" update="text-version" value="0.0.8" date-time="2022-09-15T08:55:16.346Z" user="line-tofte">Auto
+                                        (update-publication-status)</note>
+                                <note type="updated" update="text-version" value="0.0.9" date-time="2022-09-15T08:55:54.501Z" user="line-tofte">Auto
+                                        (update-contributors)</note>
+                                <note type="updated" update="translation-status" value="2.d" date-time="2022-11-15T14:17:08.113Z" user="line-tofte">2.d</note>
+                                <note type="updated" update="text-version" value="0.0.10" date-time="2022-11-15T14:17:08.113Z" user="line-tofte">Auto
+                                        (update-publication-status)</note>
+                                <note type="updated" update="translation-status" value="2.b" date-time="2023-02-27T09:10:13.292Z" user="line-tofte">2.b</note>
+                                <note type="updated" update="text-version" value="0.0.11" date-time="2023-02-27T09:10:13.292Z" user="line-tofte">Auto
+                                        (update-publication-status)</note>
+                                <note type="updated" update="text-version" value="0.0.12" date-time="2023-02-27T09:10:43.606Z" user="line-tofte">Auto
+                                        (update-contributors)</note>
+                                <note type="updated" update="translation-status" value="2.a" date-time="2023-03-06T14:33:13.313Z" user="line-tofte">2.a</note>
+                                <note type="updated" update="text-version" value="0.0.13" date-time="2023-03-06T14:33:13.313Z" user="line-tofte">Auto
+                                        (update-publication-status)</note>
+                                <note type="updated" update="text-version" value="0.0.14" date-time="2023-03-06T14:33:49.454Z" user="line-tofte">Auto
+                                        (update-contributors)</note>
+                        </notesStmt>
+                </fileDesc>
+        </teiHeader>
+        <text>
+                <!--Note the "Contents" outline from the Word DOCX has not been included in the script. If the 
+                    Outline to the text is quite complex, it is recommended that you paste the outlined contents from the DOCX here as a comment for
+                    markup's reference. The actual table of contents will be generated in the Reading Room by the parser.-->
+                <front>
+                        <div type="summary">
+                                <head type="summary" tid="1">Summary</head>
+                                <milestone unit="chunk" xml:id="UT22084-089-009-1"/>
+                                <p tid="2">This scripture is a praise to the bodhisattva Mañjuśrī.
+                                        The eight maidens indicated by the title may be inferred as
+                                        each speaking a different verse, together providing a range
+                                        of perspectives. </p>
+                        </div>
+                        <div type="acknowledgment">
+                                <head type="acknowledgment" tid="3">Acknowledgements</head>
+                                <milestone unit="chunk" xml:id="UT22084-089-009-2"/>
+                                <p tid="4">Translated by David Mellins, Kaia Fischer, and Geshé
+                                        Lobsang Dawa, with Phakyab Rinpoche (Geshé Ngawang Sungrab),
+                                        under the auspices of the Tibetan Classics Translators Guild
+                                        of New York. Introduction by David Mellins and Kaia Fischer.
+                                        Special thanks to Paul Hackett for generously sharing his
+                                        bibliographic expertise and resources. This translation
+                                        would not have been possible without the kind and dedicated
+                                        tutelage of Gen Lozang Jamspal, Executive Director, Tibetan
+                                        Classics Translators Guild of New York.</p>
+                                <milestone unit="chunk" xml:id="UT22084-089-009-3"/>
+                                <p tid="5">The translation was completed under the patronage and
+                                        supervision of 84000: Translating the Words of the
+                                        Buddha.</p>
+                        </div>
+                        <div type="introduction">
+                                <head type="introduction" tid="6">Introduction</head>
+                                <div type="section" xml:id="UT22084-089-009-introduction-1">
+                                        <milestone unit="chunk" xml:id="UT22084-089-009-4"/>
+                                        <p tid="8">This scripture is a praise to the bodhisattva
+                                                Mañjuśrī. Each of the eight maidens indicated by the
+                                                title may be inferred as each speaking a different
+                                                verse, together providing a range of perspectives.
+                                                These figures do not themselves appear in the body
+                                                of the text, which lacks an introductory narrative.
+                                                The first two verses are praises of Mañjuśri’s
+                                                radiance. The third verse praises the glittering
+                                                jewels of his uṣṇiśa, the fourth his ambrosial
+                                                voice, the fifth his purifying agency, the sixth his
+                                                fearsome appearance and manner, the seventh his
+                                                beatific visage, and the eighth verse concludes the
+                                                encomium with a presentation of immense offerings.
+                                                While the text is relatively straightforward in its
+                                                description of Mañjuśrī’s physical and metaphysical
+                                                attributes, it has several striking turns of phrase
+                                                that present his features as indicative of the
+                                                teachings themselves, which serve to inform
+                                                devotional practice.</p>
+                                        <milestone unit="chunk" xml:id="UT22084-089-009-5"/>
+                                        <p tid="9">This popular praise appears twice in the Tengyur
+                                                in the commentarial works of Saṃvarabhadra. The
+                                                opening verse appears in his <title xml:lang="en">A
+                                                  Ritual for Offering a Maṇḍala</title>
+                        <ref rend="pending" target="http://read.84000.co/translation/toh2121.html"/> and the scripture in its entirety is found in his
+                                                  <title xml:lang="en">A Sādhana of “Reciting the
+                                                  Names of Mañjuśrī”</title>
+                        <ref rend="pending" target="http://read.84000.co/translation/toh2108.html"/>. The opening verse has also been cited by
+                                                prominent masters from all the major schools of
+                                                Tibetan Buddhism, and it continues to be found in
+                                                prayer liturgies memorized and recited by monastics
+                                                to this day.</p>
+                                        <milestone unit="chunk" xml:id="UT22084-089-009-6"/>
+                                        <p tid="10">The text’s absence from the Denkarma and
+                                                Phangthangma imperial catalogs suggests that it was
+                                                translated into Tibetan later than the beginning of
+                                                the ninth century <hi rend="small-caps">ce.</hi>,<note place="end" xml:id="UT22084-089-009-7"> The Denkarma catalog
+                                                  is usually dated to ca. 812 ᴄᴇ.</note> but before
+                                                the flourishing of the scholar Butön Rinchen Drup
+                                                (1290–1364), who listed its title in his <title xml:lang="en">History of
+                                                        Buddhism.</title>
+                        <note place="end" xml:id="UT22084-089-009-8"> Butön Rinchen Drup (<foreign xml:lang="Bo-Ltn">bu ston rin chen grub</foreign>), <title xml:lang="Bo-Ltn">chos
+                                                  ’byung</title>, fol.172a./p.975.</note> A
+                                                commentary on <title xml:lang="en">The Eight
+                                                  Maidens’ Praise of Mañjuśrī</title> has yet to be
+                                                identified, and it appears that the text was never
+                                                translated into Chinese. The Tibetan translation
+                                                lacks both a Sanskrit title and a colophon, so we
+                                                have no information regarding its origin,
+                                                transmission history, or translation into Tibetan. </p>
+                                        <milestone unit="chunk" xml:id="UT22084-089-009-9"/>
+                                        <p tid="11">This English translation is based on the Degé
+                                                Kangyur version (Toh 552) in consultation with the
+                                                variant readings recorded in the Comparative Edition
+                                                  (<foreign xml:lang="Bo-Ltn" type="term">dpe bsdur
+                                                  ma</foreign>), with all major divergences recorded
+                                                in the notes.<note place="end" xml:id="UT22084-089-009-10"> The text is not
+                                                  included in the Kangyur collections of the
+                                                  Thempangma-lineage.</note>
+                    </p>
+                                </div>
+                        </div>
+                </front>
+                <body>
+                        <div type="translation">
+                                <head type="translation" tid="12">The Translation</head>
+                                <head type="titleMain" tid="13">The Eight Maidens’ Praise</head>
+                                <div type="section" xml:id="UT22084-089-009-section-1">
+                                        <milestone unit="chunk" xml:id="UT22084-089-009-12"/>
+                                        <p tid="17">
+                        <ref cRef="F.15.b" type="folio" xml:id="UT22084-089-009-51"/> </p>
+                                        <lg tid="18">
+                                                <l>Possessor of youthful body, </l>
+                                                <l>Adorned by the lamp of wisdom </l>
+                                                <l>That removes the darkness of delusion from the
+                                                  world—</l>
+                                                <l>Homage to Mañjughoṣa.</l>
+                                        </lg>
+                                        <milestone unit="chunk" xml:id="UT22084-089-009-15"/>
+                                        <lg tid="20">
+                                                <l>Your flood of radiance</l>
+                                                <l>Outshines the full moon,</l>
+                                                <l>And banishes ignorance—</l>
+                                                <l>Homage to Mañjuśrī. </l>
+                                        </lg>
+                                        <milestone unit="chunk" xml:id="UT22084-089-009-17"/>
+                                        <lg tid="22">
+                                                <l>Upon whose topknot, uncreated and vivid,</l>
+                                                <l>Rests a form glittering with gems,<note place="end" xml:id="UT22084-089-009-18"> Likely a
+                                                  reference to a buddha upon his crown.</note>
+                                                  <ref cRef="F.16.a" type="folio" xml:id="UT22084-089-009-52"/>
+                        </l>
+                                                <l>Whose body is a delight to all—</l>
+                                                <l>Homage to you, Mañjuśrī.</l>
+                                        </lg>
+                                        <milestone unit="chunk" xml:id="UT22084-089-009-20"/>
+                                        <lg tid="24">
+                                                <l>Like ambrosia, soft and deep</l>
+                                                <l>The pleasing sound of your voice, </l>
+                                                <l>O holy one, trove of Dharma jewels<note place="end" xml:id="UT22084-089-009-21"> According
+                                                  to the Comparative Edition (<foreign xml:lang="Bo-Ltn">dpe bsdur ma</foreign>), here
+                                                  the Yongle, Peking, Narthang, and Lhasa Kangyur
+                                                  versions read <foreign xml:lang="Bo-Ltn">dam pa’i
+                                                  chos kyi rin chen mdzod</foreign> (“O precious
+                                                  treasury of the holy Dharma”). </note>—</l>
+                                                <l>Homage and praise to you, Mañjuśrī. </l>
+                                        </lg>
+                                        <milestone unit="chunk" xml:id="UT22084-089-009-22"/>
+                                        <lg tid="25">
+                                                <l>Countless as drops of water in the Ganges</l>
+                                                <l>Are the stains of affliction</l>
+                                                <l>You dispel in every world—</l>
+                                                <l>Homage and praise to you, Mañjuśrī.</l>
+                                        </lg>
+                                        <milestone unit="chunk" xml:id="UT22084-089-009-23"/>
+                                        <lg tid="26">
+                                                <l>Terrifying is your body’s manner</l>
+                                                <l>When, fangs bared in fearsome pose, </l>
+                                                <l>You shatter the Lord of Death’s arrogance—</l>
+                                                <l>Homage and praise to you, Mañjuśrī.</l>
+                                        </lg>
+                                        <milestone unit="chunk" xml:id="UT22084-089-009-24"/>
+                                        <lg tid="27">
+                                                <l>You are beautified by a blue utpala</l>
+                                                <l>That is like your eyes in luster,</l>
+                                                <l>As you bear an alms bowl<note place="end" xml:id="UT22084-089-009-25"> The possession of a
+                                                  begging bowl may indicate Mañjuśrī’s emanation as
+                                                  a buddha, which is attested in scriptures such as
+                                                        <title xml:lang="en">
+                                    <ptr target="https://read.84000.co/translation/toh59.html">The Array of Virtues of
+                                                                Mañjuśrī’s Buddha Realm</ptr>
+                                </title>, <title xml:lang="en">The Sūtra for the Benefit of
+                                                  Aṅgulimāla</title>
+                                <ref rend="pending" target="http://read.84000.co/translation/toh213.html"/>, and <title xml:lang="en">The Sūtra of the
+                                                  Great Parinirvāṇa</title>
+                                <ref rend="pending" target="http://read.84000.co/translation/toh119.html"/>.</note> in your hand<note place="end" xml:id="UT22084-089-009-26"> In Saṃvarabhadra’s
+                                                  <title xml:lang="en">A Sādhana of “Reciting the
+                                                  Names of Mañjuśrī”</title>
+                                <ref rend="pending" target="http://read.84000.co/translation/toh2108.html"/>, where the present scripture is presented in
+                                                  its entirety, this line reads instead <foreign xml:lang="Bo-Ltn" type="quote">shes rab ral gri
+                                                  mnga’ gzhu ’dzin</foreign>, which might be glossed
+                                                  as, “We pay homage to you, O Mañjuśrī / Who has
+                                                  the sword of wisdom and bears a bow,” an apparent
+                                                  reference to forms of Mañjuśrī bearing these hand
+                                                  implements, such as the figure identified as
+                                                  Tīkṣṇa-Mañjuśrī in Clark (1937), p.
+                                                  264.</note>—</l>
+                                                <l>Homage to you, Mañjuśrī.</l>
+                                        </lg>
+                                        <milestone unit="chunk" xml:id="UT22084-089-009-27"/>
+                                        <lg tid="29">
+                                                <l>With immense offerings and praise</l>
+                                                <l>To the buddhas dwelling in the ten directions</l>
+                                                <l>We pay homage to you, Mañjuśrī,</l>
+                                                <l>Teacher of the path to liberation.</l>
+                                        </lg>
+                                        <milestone unit="chunk" xml:id="UT22084-089-009-29"/>
+                                        <trailer tid="45">This concludes <title xml:lang="en">The Eight
+                                                Maidens’ Praise</title>.</trailer>
+                                </div>
+                        </div>
+                </body>
+                <back>
+                        <div type="notes">
+                                <head type="notes" tid="31">Notes</head>
+                        </div>
+                        <div type="listBibl">
+                                <head type="listBibl" tid="46">Bibliography</head>
+                                <div type="section" xml:id="UT22084-089-009-listBibl-1">
+                                        <head type="section" tid="47">Tibetan Sources</head>
+                                        <bibl xml:id="UT22084-089-009-53">
+                        <title xml:lang="Bo-Ltn">bu mo brgyad kyis bstod
+                                                pa</title>. Toh 552, Degé Kangyur vol. 89 (rgyud,
+                                                pa), folios 15.b.6–16.a.4.</bibl>
+                                        
+                                        <bibl xml:id="UT22084-089-009-54"/>
+                                        <p tid="36">
+                        <title xml:lang="Bo-Ltn">bu mo brgyad kyis bstod
+                                                  pa</title>. bka’ ’gyur (dpe bsdur ma) [Comparative
+                                                Edition of the Kangyur], krung go’i bod rig pa zhib
+                                                ’jug ste gnas kyi bka’ bstan dpe sdur khang (The
+                                                Tibetan Tripitaka Collation Bureau of the China
+                                                Tibetology Research Center). 108 volumes. Beijing:
+                                                krung go’i bod rig pa dpe skrun khang (China
+                                                Tibetology Publishing House), 2006–9, vol. 89, pp.
+                                                64–65.</p>
+                                        <bibl xml:id="UT22084-089-009-55">
+                        <title xml:lang="Bo-Ltn">’jam dpal gyi sangs
+                                                rgyas kyi zhing gi yon tan bkod pa</title> (<title xml:lang="Sa-Ltn">Mañjuśrī­buddha­kṣetra­guṇa­vyūha</title>). Toh 59,
+                                                Degé Kangyur vol 41 (dkon brtsegs, ga), folios
+                                                248.b–297.a. English Translation in Dharmachakra
+                                                Translation Committee (2021).</bibl>
+                                        <bibl xml:id="UT22084-089-009-56">
+                        <title xml:lang="Bo-Ltn">’phags pa yongs su mya
+                                                ngan las ’das pa chen po’i mdo</title> (<title xml:lang="Sa-Ltn">Ārya­mahā­pari­nirvāṇa­sūtra</title>). Toh 119, Degé
+                                                Kangyur vol 52 (mdo sde, nya), folios
+                                                1.b.1–343.a.6.</bibl>
+                                        <bibl xml:id="UT22084-089-009-57">
+                        <title xml:lang="Bo-Ltn">’phags pa sor mo’i
+                                                phreng ba la phan pa zhes bya ba thegs pa chen
+                                                po’i mdo</title> (<title xml:lang="Sa-Ltn">Āryāṅgulimālīya­nāma­mahāyāna­sūtra</title>). Toh
+                                                213, Degé Kangyur vol 62 (mdo sde, tsha), folios
+                                                126.a.1–206.b.7.</bibl>
+                                        <bibl xml:id="UT22084-089-009-58">Saṃvarabhadra. <title xml:lang="Bo-Ltn">maN+Dala
+                                                bzhugs</title> (<title xml:lang="Sa-Ltn">Maṇḍalavidhi</title>). Toh 2121, Degé Tengyur
+                                                vol. 49 (rgyud ’grel, tshi), folios
+                                                161.a.4–161.b.5.</bibl>
+                                        <bibl xml:id="UT22084-089-009-59">———. <title xml:lang="Bo-Ltn">’phags pa ’jam
+                                                dpal gyi mtshan yang dag par brjod pa’i sgrub
+                                                thabs</title> (<title xml:lang="Sa-Ltn">Āryamañjuśrī­nāma­saṃgīti­sādhana</title>). Toh
+                                                2108, Degé Tengyur vol. 49 (rgyud ’grel, tshi),
+                                                folios 143.a.2–146.a.7.</bibl>
+                                        <bibl xml:id="UT22084-089-009-60">Denkarma (<title xml:lang="Bo-Ltn">pho brang
+                                                stod thang ldan dkar gyi chos kyi ’gyur ro cog gi
+                                                dkar chag</title>). Toh 4364, Degé Tengyur vol.
+                                                206 (sna tshogs, jo), folios 294.b–310.a.</bibl>
+                                        <bibl xml:id="UT22084-089-009-61">Phangthangma (<title xml:lang="Bo-Ltn">dkar chag
+                                                ʼphang thang ma</title>). Beijing: mi rigs dpe
+                                                skrun khang, 2003.</bibl>
+                                </div>
+                                        <div type="section" xml:id="UT22084-089-009-listBibl-1-2">
+                                                <head type="section" tid="48">Western Language
+                                                  Sources</head>
+                                                <bibl xml:id="UT22084-089-009-40">Clark, Walter
+                                                  Eugene. <title xml:lang="en">Two Lamaistic
+                                                  Pantheons</title>. Cambridge: Harvard University
+                                                  Press, 1937.</bibl>
+                                                <bibl xml:id="UT22084-089-009-41">Dharmachakra
+                                                  Translation Committee, trans. <title xml:lang="en">
+                            <ref target="https://read.84000.co/translation/UT22084-041-004.html#UT22084-041-004-577">The Array of Virtues of Mañjuśrī’s Buddha
+                                                          Realm</ref>
+                        </title>. (<title xml:lang="Sa-Ltn">Mañjuśrī­buddha­kṣetra­guṇa­vyūha</title>, Toh 59).
+                                                  84000: Translating the Words of the Buddha,
+                                                  2021.</bibl>
+                                        </div>
+                        </div>
+                        <div type="glossary" status="excluded">
+                                <list type="glossary">
+                                        <item>
+                        <gloss type="term" xml:id="UT22084-089-009-43">
+                                                  <term>affliction</term>
+                                                  <term xml:lang="Bo-Ltn" status="verified">nyon mongs </term>
+                                                  <term xml:lang="bo">ཉོན་མོངས།</term>
+                                                  <term xml:lang="Sa-Ltn" status="verified">kleśa</term>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="term" xml:id="UT22084-089-009-44">
+                                                  <term>delusion</term>
+                                                  <term xml:lang="Bo-Ltn" status="verified">gti mug </term>
+                                                  <term xml:lang="bo">གཏི་མུག</term>
+                                                  <term xml:lang="Sa-Ltn" status="verified">moha</term>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="person" xml:id="UT22084-089-009-46">
+                                                  <term>Mañjuśrī</term>
+                                                  <term xml:lang="Bo-Ltn" status="verified">’jam dpal </term>
+                                                  <term xml:lang="bo">འཇམ་དཔལ།</term>
+                                                  <term xml:lang="Sa-Ltn" status="verified">Mañjuśrī</term>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="person" xml:id="UT22084-089-009-47">
+                                                  <term>Mañjughoṣa</term>
+                                                  <term xml:lang="Bo-Ltn" status="verified">’jam pa’i dbyangs </term>
+                                                  <term xml:lang="bo">འཇམ་པའི་དབྱངས།</term>
+                                                  <term xml:lang="Sa-Ltn" status="verified">Mañjughoṣa</term>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="person" xml:id="UT22084-089-009-48">
+                                                  <term>Lord of Speech</term>
+                                                  <term xml:lang="Bo-Ltn" status="verified">ngag gi dbang phyug </term>
+                                                  <term xml:lang="bo">ངག་གི་དབང་ཕྱུག</term>
+                                                  <term xml:lang="Sa-Ltn" status="verified">vāgīśvara</term>
+                                                  <term type="definition">An epithet of
+                                                  Mañjuśrī.</term>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="person" xml:id="UT22084-089-009-49">
+                                                  <term>Lord of Death</term>
+                                                  <term xml:lang="Bo-Ltn" status="verified">gshin rje </term>
+                                                  <term xml:lang="bo">གཤིན་རྗེ།</term>
+                                                  <term xml:lang="Sa-Ltn" status="verified">Yama</term>
+                                                  <term type="definition">The lord of death in
+                                                  Indian mythology, who judges the dead and rules
+                                                  over the hells and the realm of the hungry
+                                                  ghosts.</term>
+                                                </gloss>
+                    </item>
+                                </list>
+                        </div>
+                </back>
+        </text>
+</TEI>

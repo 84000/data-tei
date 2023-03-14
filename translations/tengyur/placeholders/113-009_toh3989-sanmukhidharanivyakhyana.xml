@@ -4,10 +4,15 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="mainTitle" xml:lang="Bo-Ltn">sgo drug pa'i gzungs kyi rnam par bshad pa</title>
-                <title type="mainTitle" xml:lang="Sa-Ltn">sanmukhidharanivyakhyana</title>
-                <title type="mainTitle" xml:lang="en"/>
+                <title xml:lang="bo" type="mainTitle">འཕགས་པ་སྒོ་དྲུག་པའི་གཟུངས་ཀྱི་རྣམ་པར་བཤད་པ།</title>
+                <title xml:lang="Bo-Ltn" type="mainTitle">'phags pa sgo drug pa'i gzungs kyi rnam par bshad pa/</title>
+                <title xml:lang="Sa-Ltn" type="mainTitle">Ārya­ṣaṇmukhī­dhāraṇī­vyākhyāna</title>
+                <title xml:lang="en" type="mainTitle">An Explanation of The Dhāraṇī of the Six Gates</title>
             </titleStmt>
+            <editionStmt>
+                <edition>v 0.0.2 <date/>
+                </edition>
+            </editionStmt>
             <publicationStmt status="">
                 <idno xml:id="UT23703-113-009"/>
             </publicationStmt>
@@ -15,17 +20,21 @@
                 <bibl key="toh3989" type="text">
                     <ref>Toh 3989</ref>
                     <biblScope>ff. 64v-66r</biblScope>
-                    <author role="translatorTib">a. dbyig gnyen</author>
-                    <location count-pages="">
-                        <start volume="113" page="130"/>
-                        <end volume="113" page="134"/>
+                    <author ref="eft:entity-7082" xml:lang="Sa-Ltn">Vasubandhu</author>
+                    <location work="UT23703" count-pages="3">
+                        <volume number="113" start-page="128" end-page="131"/>
                     </location>
                     <idno parent-id="O1JC76301JC10651" work="http://read.84000.co/sections"/>
                     <idno source-id="O1JC76301JC10661" work="W23703"/>
                 </bibl>
+                <link type="isCommentaryOf" target="toh141"/>
+                <link type="isCommentaryOf" target="toh526"/>
+                <link type="isCommentaryOf" target="toh916"/>
             </sourceDesc>
             <notesStmt>
-                <note type="lastUpdated">Last updated at 07/09/2018 at 10:16:35 by admin</note>
+                <note type="lastUpdated" date-time="2022-09-03T10:21:08.641Z" user="admin">03/09/2022 10:21:08</note>
+                <note type="updated" update="import" value="fileDesc" import="tengyur-data-3981-4019_PH_new_v2.4.xml" date-time="2022-01-28T10:32:05.149Z" user="admin"/>
+                <note type="updated" update="text-version" value="0.0.2" date-time="2022-09-03T10:19:05.33Z" user="andre">Auto (entity-merge-attribution)</note>
             </notesStmt>
         </fileDesc>
     </teiHeader>

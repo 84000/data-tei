@@ -4,12 +4,14 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="mainTitle" xml:lang="Bo-Ltn">chos mngon pa'i mdzod kyi 'grel pa gnad kyi sgron me</title>
-                <title type="mainTitle" xml:lang="Sa-Ltn">abhidharmakosavrttimarmadipa</title>
-                <title type="mainTitle" xml:lang="en"/>
+                <title xml:lang="bo" type="mainTitle">ཆོས་མངོན་པའི་མཛོད་ཀྱི་འགྲེལ་པ་གནད་ཀྱི་སྒྲོན་མེ་ཞེས་བྱ་བ།</title>
+                <title xml:lang="Bo-Ltn" type="mainTitle">chos mngon pa'i mdzod kyi 'grel pa gnad kyi sgron me zhes bya ba/</title>
+                <title xml:lang="Sa-Ltn" type="mainTitle">Abhidharma­kośa­vṛtti­marma­pradīpa­nāma</title>
+                <title xml:lang="en" type="mainTitle">A Running Commentary on “The Treasury of Abhidharma” called “A Lamp for the Critical Points”</title>
             </titleStmt>
-    <editionStmt>
-                <edition>v 0.0.2 <date>2021</date>
+            <editionStmt>
+                <edition>v 0.0.2 
+                    <date>2021</date>
                 </edition>
             </editionStmt>
             <publicationStmt status="">
@@ -19,19 +21,23 @@
                 <bibl key="toh4095" type="text">
                     <ref>Toh 4095</ref>
                     <biblScope>ff. 95v-214r</biblScope>
-                    <author role="translatorTib">a. phyogs kyi glang po</author>
-                    <author role="translatorTib">t. rnal 'byor zla ba</author>
-                    <author role="translatorTib">'jam dpal gzhon pa</author>
+                    <author ref="eft:entity-17497" xml:lang="Sa-Ltn">Dignāga</author>
+                    <author role="translatorTib" ref="eft:entity-18504" xml:lang="Bo-Ltn">'jam dpal gzhon nu</author>
+                    <author role="translatorTib" ref="eft:entity-18505" xml:lang="Sa-Ltn">Yogacandra</author>
                     <location work="UT23703" count-pages="457">
                         <volume number="147" start-page="189" end-page="645"/>
                     </location>
                     <idno parent-id="O1JC76301JC10788" work="http://read.84000.co/sections"/>
                     <idno source-id="O1JC76301JC10811" work="W23703"/>
                 </bibl>
+                <link type="isCommentaryOf" target="toh4089"/>
+                <link type="isCommentaryOf" target="toh4090"/>
             </sourceDesc>
             <notesStmt>
                 <note type="lastUpdated" date-time="2021-02-22T11:47:10.037Z" user="admin">22/02/2021 11:47:10</note>
-    <note type="updated" update="text-version" value="0.0.2" date-time="2021-02-22T11:47:07.07Z" user="john">page range corrected (two subsequent volumes had been erroneously included)</note>
+                <note type="updated" update="text-version" value="0.0.2" date-time="2021-02-22T11:47:07.07Z" user="john">page range corrected (two subsequent volumes had been erroneously included)</note>
+                <note type="updated" update="import" value="fileDesc" import="tengyur-data-4086-4103_PH_new_v2.4.xml" date-time="2021-11-02T14:16:18.239Z" user="admin"/>
+                <note type="updated" update="general" import="tengyur-data-4086-4103_PH_new_v2.4.xml" date-time="2021-11-02T14:16:18.239Z" user="admin">The text is a concise simple abridgment of the Abhidharmakośa (Toh. 4089).</note>
             </notesStmt>
         </fileDesc>
     </teiHeader>

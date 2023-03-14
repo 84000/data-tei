@@ -4,10 +4,15 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="mainTitle" xml:lang="Bo-Ltn">rin po che'i phreng ba'i rgya cher bshad pa</title>
-                <title type="mainTitle" xml:lang="Sa-Ltn">ratnavalitika</title>
-                <title type="mainTitle" xml:lang="en"/>
+                <title xml:lang="bo" type="mainTitle">རིན་པོ་ཆེའི་ཕྲེང་བའི་རྒྱ་ཆེར་བཤད་པ།</title>
+                <title xml:lang="Bo-Ltn" type="mainTitle">rin po che'i phreng ba'i rgya cher bshad pa/</title>
+                <title xml:lang="Sa-Ltn" type="mainTitle">Ratnāvali­ṭīkā</title>
+                <title xml:lang="en" type="mainTitle">Extensive Commentary on [Nāgārjuna’s] “The Precious Garland”</title>
             </titleStmt>
+            <editionStmt>
+                <edition>v 0.0.3 <date/>
+                </edition>
+            </editionStmt>
             <publicationStmt status="">
                 <idno xml:id="UT23703-172-004"/>
             </publicationStmt>
@@ -15,19 +20,23 @@
                 <bibl key="toh4159" type="text">
                     <ref>Toh 4159</ref>
                     <biblScope>ff. 126r-165r</biblScope>
-                    <author role="translatorTib">a. mi pham bshes gnyen</author>
-                    <author role="translatorTib">t. vidyakaraprabha</author>
-                    <author role="translatorTib">dpal brtsegs</author>
-                    <location count-pages="">
-                        <start volume="172" page="253"/>
-                        <end volume="172" page="331"/>
+                    <author ref="eft:entity-18083" xml:lang="Sa-Ltn">Ajitamitragupta</author>
+                    <author role="translatorTib" ref="eft:entity-35870" xml:lang="Sa-Ltn">Vidyākaraprabha</author>
+                    <author role="translatorTib" ref="eft:entity-17455" xml:lang="Bo-Ltn">zhu chen gyi lo tsa ba ban+de dpal brtsegs</author>
+                    <location work="UT23703" count-pages="79">
+                        <volume number="172" start-page="251" end-page="329"/>
                     </location>
                     <idno parent-id="O1JC76301JC10908" work="http://read.84000.co/sections"/>
                     <idno source-id="O1JC76301JC10911" work="W23703"/>
                 </bibl>
+                <link type="isCommentaryOf" target="toh4158"/>
             </sourceDesc>
             <notesStmt>
-                <note type="lastUpdated">Last updated at 07/09/2018 at 10:33:36 by admin</note>
+                <note type="lastUpdated" date-time="2022-08-02T10:33:01.293Z" user="admin">02/08/2022 10:33:01</note>
+                <note type="updated" update="import" value="fileDesc" import="tengyur-data-4158-4202_PH_new_v2.4.xml" date-time="2021-11-02T14:19:02.211Z" user="admin"/>
+                <note type="updated" update="text-version" value="0.0.1" date-time="2022-02-19T06:29:15.579Z" user="andre">Auto (entity-merge-attribution)</note>
+                <note type="updated" update="text-version" value="0.0.2" date-time="2022-05-10T13:31:02.903Z" user="martina-cotter">Auto (entity-merge-attribution)</note>
+                <note type="updated" update="text-version" value="0.0.3" date-time="2022-08-02T10:32:34.829Z" user="sameer">Auto (entity-merge-attribution)</note>
             </notesStmt>
         </fileDesc>
     </teiHeader>

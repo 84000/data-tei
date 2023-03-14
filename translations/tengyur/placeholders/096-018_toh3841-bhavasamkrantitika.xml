@@ -4,10 +4,15 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="mainTitle" xml:lang="Bo-Ltn">srid pa 'pho ba'i TI ka</title>
-                <title type="mainTitle" xml:lang="Sa-Ltn">bhavasamkrantitika</title>
-                <title type="mainTitle" xml:lang="en"/>
+                <title xml:lang="bo" type="mainTitle">སྲིད་པ་འཕོ་བའི་ཊཱི་ཀ།</title>
+                <title xml:lang="Bo-Ltn" type="mainTitle">srid pa 'pho ba'i TI ka/</title>
+                <title xml:lang="Sa-Ltn" type="mainTitle">Bhava­saṃkrānti­ṭīkā</title>
+                <title xml:lang="en" type="mainTitle">Commentary on [Nāgārjuna's] "Passing Beyond the Mundane World"</title>
             </titleStmt>
+            <editionStmt>
+                <edition>v 0.0.4 <date/>
+                </edition>
+            </editionStmt>
             <publicationStmt status="">
                 <idno xml:id="UT23703-096-018"/>
             </publicationStmt>
@@ -15,18 +20,24 @@
                 <bibl key="toh3841" type="text">
                     <ref>Toh 3841</ref>
                     <biblScope>ff. 151v-158r</biblScope>
-                    <author role="translatorTib">a. byams pa mgon po</author>
-                    <author role="translatorTib">t. zla ba gzhon nu</author>
-                    <location count-pages="">
-                        <start volume="96" page="304"/>
-                        <end volume="96" page="317"/>
+                    <author ref="eft:entity-40235" xml:lang="Sa-Ltn">Maitreya</author>
+                    <author role="translatorTib" ref="eft:entity-18392" xml:lang="Bo-Ltn">gru ston chung </author>
+                    <author role="translatorTib" ref="eft:entity-17769" xml:lang="Sa-Ltn">Candrakumāra</author>
+                    <location work="UT23703" count-pages="14">
+                        <volume number="96" start-page="302" end-page="315"/>
                     </location>
                     <idno parent-id="O1JC76301JC10474" work="http://read.84000.co/sections"/>
                     <idno source-id="O1JC76301JC10493" work="W23703"/>
                 </bibl>
+                <link type="isCommentaryOf" target="toh3840"/>
             </sourceDesc>
             <notesStmt>
-                <note type="lastUpdated">Last updated at 07/09/2018 at 10:25:08 by admin</note>
+                <note type="lastUpdated" date-time="2022-10-12T21:36:10.983Z" user="admin">12/10/2022 21:36:10</note>
+                <note type="updated" update="import" value="fileDesc" import="tengyur-data-3824-3980_PH_new_v2.4.xml" date-time="2021-11-02T14:13:45.147Z" user="admin"/>
+                <note type="updated" update="text-version" value="0.0.1" date-time="2022-09-01T18:36:25.634Z" user="martina-cotter">Auto (entity-merge-attribution)</note>
+                <note type="updated" update="text-version" value="0.0.2" date-time="2022-09-03T09:49:48.355Z" user="andre">Auto (entity-merge-attribution)</note>
+                <note type="updated" update="text-version" value="0.0.3" date-time="2022-09-23T16:18:04.88Z" user="martina-cotter">Auto (entity-merge-attribution)</note>
+                <note type="updated" update="text-version" value="0.0.4" date-time="2022-10-12T21:35:56.278Z" user="martina-cotter">Auto (entity-merge-attribution)</note>
             </notesStmt>
         </fileDesc>
     </teiHeader>

@@ -4,15 +4,18 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="mainTitle" xml:lang="en">A Detailed Explanation of The Compendium of Abhidharma</title>
-                <title type="mainTitle" xml:lang="Sa-Ltn">Abhidharma­samuccaya­vyākhyā</title>
-                <title type="mainTitle" xml:lang="Bo-Ltn">mngon pa chos kun las btus pa'i rnam par bshad pa/</title>
+                <title xml:lang="bo" type="mainTitle">མངོན་པ་ཆོས་ཀུན་ལས་བཏུས་པའི་རྣམ་པར་བཤད་པ།</title>
+                <title xml:lang="Bo-Ltn" type="mainTitle">mngon pa chos kun las btus pa'i rnam par bshad pa/</title>
+                <title xml:lang="Sa-Ltn" type="mainTitle">Abhidharma­samuccaya­vyākhyā</title>
+                <title xml:lang="en" type="mainTitle">A Detailed Explanation of The Compendium of Abhidharma</title>
+                <title xml:lang="bo" type="longTitle">མངོན་པ་ཆོས་ཀུན་ལས་བཏུས་པའི་རྣམ་པར་བཤད་པ་ཞེས་བྱ་བ།</title>
+                <title xml:lang="Bo-Ltn" type="longTitle">mngon pa chos kun las btus pa'i rnam par bshad pa zhes bya ba/</title>
+                <title xml:lang="Sa-Ltn" type="longTitle">Abhidharma­samuccaya­vyākhyā­nāma</title>
             </titleStmt>
-    <editionStmt>
-                <edition>v 0.0.3 <date/>
+            <editionStmt>
+                <edition>v 0.0.11 <date/>
                 </edition>
             </editionStmt>
-
             <publicationStmt status="">
                 <idno xml:id="UT23703-135-002"/>
             </publicationStmt>
@@ -20,20 +23,32 @@
                 <bibl key="toh4054" type="text">
                     <ref>Toh 4054</ref>
                     <biblScope>ff. 117r-293v</biblScope>
+                    <author ref="eft:entity-7072" xml:lang="Sa-Ltn" key="alternate">Sthiramati</author>
                     <author ref="eft:entity-17489" xml:lang="Sa-Ltn">Jinaputra</author>
-                    <author role="translatorTib" xml:lang="Bo-Ltn">ye shes sde</author>
-                    <author role="translatorTib" ref="eft:entity-17467" xml:lang="Sa-Ltn">Jinamitra</author>
+                    <author role="translatorTib" ref="eft:entity-34601" xml:lang="Sa-Ltn">Jinamitra</author>
+                    <author role="translatorTib" ref="eft:entity-38146" xml:lang="Bo-Ltn">zhu chen gyi lo tsA ba ban+de ye shes sde</author>
+                    <editor role="reviser" ref="eft:entity-17462" xml:lang="Bo-Ltn">lo tsA ba shAkya'i dge slong nyi ma rgyal mtshan dpal bzang po</editor>
                     <location work="UT23703" count-pages="353">
                         <volume number="135" start-page="233" end-page="585"/>
                     </location>
                     <idno parent-id="O1JC76301JC10703" work="http://read.84000.co/sections"/>
                     <idno source-id="O1JC76301JC10753" work="W23703"/>
                 </bibl>
+                <link type="isCommentaryOf" target="toh4049"/>
             </sourceDesc>
             <notesStmt>
-                <note type="lastUpdated" date-time="2021-12-15T20:03:12.862Z" user="admin">15/12/2021 20:03:12</note>
-                <note type="updated" update="import" value="fileDesc" import="tengyur-data-3981-4085_CD_v1.xml" date-time="2021-11-02T14:15:02.402Z" user="admin"/>
+                <note type="lastUpdated" date-time="2022-09-30T16:27:17.056Z" user="admin">30/09/2022 16:27:17</note>
                 <note type="updated" update="text-version" value="0.0.2" date-time="2021-11-16T10:22:39.058Z" user="john">Auto (update-locations)</note>
+                <note type="updated" update="text-version" value="0.0.4" date-time="2022-01-20T09:14:07.444Z" user="admin">Auto (correct-orphaned-attributions)</note>
+                <note type="updated" update="import" value="fileDesc" import="tengyur-data-4020-4085_PH_new_v2.4.xml" date-time="2022-01-28T10:32:05.149Z" user="admin"/>
+                <note type="updated" update="attribution" import="tengyur-data-4020-4085_PH_new_v2.4.xml" date-time="2022-01-28T10:32:05.149Z" user="admin">The Chinese version translator (Xuanzang) attributes the text to Sthiramati.</note>
+                <note type="updated" update="text-version" value="0.0.5" date-time="2022-03-10T07:43:47.284Z" user="sameer">Auto (entity-merge-attribution)</note>
+                <note type="updated" update="text-version" value="0.0.6" date-time="2022-04-18T08:53:55.118Z" user="andre">Auto (entity-merge-attribution)</note>
+                <note type="updated" update="text-version" value="0.0.7" date-time="2022-04-18T09:53:16.819Z" user="andre">Auto (entity-merge-attribution)</note>
+                <note type="updated" update="text-version" value="0.0.8" date-time="2022-05-22T20:30:05.109Z" user="sameer">Auto (entity-merge-attribution)</note>
+                <note type="updated" update="text-version" value="0.0.9" date-time="2022-06-07T06:48:13.515Z" user="sameer">Auto (entity-merge-attribution)</note>
+                <note type="updated" update="text-version" value="0.0.10" date-time="2022-09-03T13:21:54.154Z" user="andre">Auto (entity-merge-attribution)</note>
+                <note type="updated" update="text-version" value="0.0.11" date-time="2022-09-30T16:24:42.058Z" user="andre">Auto (entity-merge-attribution)</note>
             </notesStmt>
         </fileDesc>
     </teiHeader>

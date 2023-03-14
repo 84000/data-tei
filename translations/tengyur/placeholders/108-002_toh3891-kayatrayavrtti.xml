@@ -4,10 +4,16 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="mainTitle" xml:lang="Bo-Ltn">sku gsum 'grel pa</title>
-                <title type="mainTitle" xml:lang="Sa-Ltn">kayatrayavrtti</title>
-                <title type="mainTitle" xml:lang="en"/>
+                <title xml:lang="bo" type="mainTitle">སྐུ་གསུམ་འགྲེལ་པ།</title>
+                <title xml:lang="Bo-Ltn" type="mainTitle">sku gsum 'grel pa/</title>
+                <title xml:lang="Sa-Ltn" type="mainTitle">Kāyatraya­vṛtti</title>
+                <title xml:lang="en" type="mainTitle">A Running Commentary on [Nāgamitra’s “Door for Entering into] the Three Bodies”</title>
             </titleStmt>
+    <editionStmt>
+                <edition>v 0.0.2 <date/>
+                </edition>
+            </editionStmt>
+
             <publicationStmt status="">
                 <idno xml:id="UT23703-108-002"/>
             </publicationStmt>
@@ -15,20 +21,24 @@
                 <bibl key="toh3891" type="text">
                     <ref>Toh 3891</ref>
                     <biblScope>ff. 8r-39v</biblScope>
-                    <author role="translatorTib">a. ye shes zla ba</author>
-                    <author role="translatorTib">t. prajnavarma</author>
-                    <author role="translatorTib">ye shes sde</author>
-                    <location count-pages="">
-                        <start volume="108" page="17"/>
-                        <end volume="108" page="80"/>
+                    <author ref="eft:entity-18404" xml:lang="Sa-Ltn">Jñānacandra</author>
+                    <author role="translatorTib" ref="eft:entity-18257" xml:lang="Bo-Ltn">zhu chen gyi lo tsa ba ban de ye shes sde</author>
+                    <author role="translatorTib" ref="eft:entity-35059" xml:lang="Sa-Ltn">Prajñāvarman</author>
+                    <location work="UT23703" count-pages="64">
+                        <volume number="108" start-page="15" end-page="78"/>
                     </location>
                     <idno parent-id="O1JC76301JC10474" work="http://read.84000.co/sections"/>
                     <idno source-id="O1JC76301JC10557" work="W23703"/>
                 </bibl>
+                <link type="isCommentaryOf" target="toh3890"/>
             </sourceDesc>
             <notesStmt>
-                <note type="lastUpdated">Last updated at 07/09/2018 at 10:23:41 by admin</note>
-            </notesStmt>
+                <note type="lastUpdated" date-time="2022-05-19T14:27:33.767Z" user="admin">19/05/2022 14:27:33</note>
+                <note type="updated" update="import" value="fileDesc" import="tengyur-data-3824-3980_PH_new_v2.4.xml" date-time="2021-11-02T14:13:45.147Z" user="admin"/>
+            
+    <note type="updated" update="text-version" value="0.0.1" date-time="2022-01-20T09:14:07.444Z" user="admin">Auto (correct-orphaned-attributions)</note>
+    <note type="updated" update="text-version" value="0.0.2" date-time="2022-05-19T14:26:43.261Z" user="sameer">Auto (entity-merge-attribution)</note>
+</notesStmt>
         </fileDesc>
     </teiHeader>
     <text>

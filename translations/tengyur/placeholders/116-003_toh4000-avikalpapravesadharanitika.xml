@@ -4,10 +4,15 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="mainTitle" xml:lang="Bo-Ltn">rnam par mi rtog par 'jug pa'i gzungs kyi rgya cher 'grel pa</title>
-                <title type="mainTitle" xml:lang="Sa-Ltn">avikalpapravesadharanitika</title>
-                <title type="mainTitle" xml:lang="en"/>
+                <title xml:lang="bo" type="mainTitle">འཕགས་པ་རྣམ་པར་མི་རྟོག་པར་འཇུག་པའི་གཟུངས་ཀྱི་རྒྱ་ཆེར་འགྲེལ་པ།</title>
+                <title xml:lang="Bo-Ltn" type="mainTitle">'phags pa rnam par mi rtog par 'jug pa'i gzungs kyi rgya cher 'grel pa/</title>
+                <title xml:lang="Sa-Ltn" type="mainTitle">Āryāvikalpa­praveśa­dhāraṇī­ṭīkā</title>
+                <title xml:lang="en" type="mainTitle">Extensive Commentary on The Dhāraṇī “Entering into Nonconceptuality”</title>
             </titleStmt>
+            <editionStmt>
+                <edition>v 0.0.3 <date/>
+                </edition>
+            </editionStmt>
             <publicationStmt status="">
                 <idno xml:id="UT23703-116-003"/>
             </publicationStmt>
@@ -15,20 +20,24 @@
                 <bibl key="toh4000" type="text">
                     <ref>Toh 4000</ref>
                     <biblScope>ff. 123r-145v</biblScope>
-                    <author role="translatorTib">a. kamalasila</author>
-                    <author role="translatorTib">t. jinamitra</author>
-                    <author role="translatorTib">danasila</author>
-                    <author role="translatorTib">dpal brtsegs raksita</author>
-                    <location count-pages="">
-                        <start volume="116" page="247"/>
-                        <end volume="116" page="292"/>
+                    <author ref="eft:entity-10129" xml:lang="Sa-Ltn">Kamalaśīla</author>
+                    <author role="translatorTib" ref="eft:entity-34601" xml:lang="Sa-Ltn">Jinamitra</author>
+                    <author role="translatorTib" ref="eft:entity-17455" xml:lang="Bo-Ltn">zhu chen gyi lo tsa ba ban de dpal brtsegs rak+shi ta</author>
+                    <author role="translatorTib" ref="eft:entity-18396" xml:lang="Sa-Ltn">Dānaśīla (I)</author>
+                    <location work="UT23703" count-pages="46">
+                        <volume number="116" start-page="245" end-page="290"/>
                     </location>
                     <idno parent-id="O1JC76301JC10651" work="http://read.84000.co/sections"/>
                     <idno source-id="O1JC76301JC10675" work="W23703"/>
                 </bibl>
+                <link type="isCommentaryOf" target="toh142"/>
             </sourceDesc>
             <notesStmt>
-                <note type="lastUpdated">Last updated at 07/09/2018 at 09:51:08 by admin</note>
+                <note type="lastUpdated" date-time="2022-06-07T06:49:53.685Z" user="admin">07/06/2022 06:49:53</note>
+                <note type="updated" update="text-version" value="0.0.1" date-time="2022-01-20T09:14:07.444Z" user="admin">Auto (correct-orphaned-attributions)</note>
+                <note type="updated" update="import" value="fileDesc" import="tengyur-data-3981-4019_PH_new_v2.4.xml" date-time="2022-01-28T10:32:05.149Z" user="admin"/>
+                <note type="updated" update="text-version" value="0.0.2" date-time="2022-04-18T09:53:16.819Z" user="andre">Auto (entity-merge-attribution)</note>
+                <note type="updated" update="text-version" value="0.0.3" date-time="2022-06-07T06:48:13.515Z" user="sameer">Auto (entity-merge-attribution)</note>
             </notesStmt>
         </fileDesc>
     </teiHeader>

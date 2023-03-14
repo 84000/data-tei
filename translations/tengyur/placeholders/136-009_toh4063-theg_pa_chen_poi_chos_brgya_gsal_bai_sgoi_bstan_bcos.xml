@@ -4,17 +4,15 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="mainTitle" xml:lang="en">A Treatise on the Gateway to the Knowledge on One Hundred Doctrines of the Mahāyāna</title>
-                <title type="mainTitle" xml:lang="Sa-Ltn">Mahāyāna­śata­dharma­vidyādvāra­śāstra*</title>
-                <title type="mainTitle" xml:lang="Bo-Ltn">theg pa chen po'i chos brgya gsal ba'i sgo'i bstan bcos/</title>
-                <title type="otherTitle" xml:lang="en">Dàshèng bǎifǎmíng mén lùn</title>
-                <title type="otherTitle" xml:lang="zh">大乘百法明門論</title>
+                <title xml:lang="bo" type="mainTitle">ཐེག་པ་ཆེན་པོའི་ཆོས་བརྒྱ་གསལ་པའི་སྒོའི་བསྟན་བཅོས།</title>
+                <title xml:lang="Bo-Ltn" type="mainTitle">theg pa chen po'i chos brgya gsal pa'i sgo'i bstan bcos/</title>
+                <title xml:lang="Sa-Ltn" type="mainTitle">Mahāyāna­śatadharma­prakāśa­mukha­śāstra</title>
+                <title xml:lang="en" type="mainTitle">A Treatise on the Gateway to the Knowledge on One Hundred Doctrines of the Mahāyāna</title>
             </titleStmt>
-    <editionStmt>
-                <edition>v 0.0.4 <date/>
+            <editionStmt>
+                <edition>v 0.0.5 <date/>
                 </edition>
             </editionStmt>
-
             <publicationStmt status="">
                 <idno xml:id="UT23703-136-009"/>
             </publicationStmt>
@@ -22,8 +20,11 @@
                 <bibl key="toh4063" type="text">
                     <ref>Toh 4063</ref>
                     <biblScope>ff. 145r-146v</biblScope>
-                    <author ref="eft:entity-18489" xml:lang="Sa-Ltn">Vasubandhu or Dharmapāla</author>
-                    <author role="translatorTib" ref="eft:entity-18488" xml:lang="Bo-Ltn">chos kyi rin chen</author>
+                    <author ref="eft:entity-34187" xml:lang="Sa-Ltn">Dharmapāla (I)</author>
+                    <author ref="eft:entity-7082" xml:lang="Sa-Ltn" key="alternate">Vasubandhu</author>
+                    <author role="translatorTib" ref="eft:entity-18545" xml:lang="Sa-Ltn">Thang­saṃ­tsang</author>
+                    <editor role="reviser" ref="eft:entity-34188" xml:lang="Bo-Ltn" revision="1">ston pa dge slong chos kyi rgyal mtshan</editor>
+                    <editor role="reviser" ref="eft:entity-18488" xml:lang="Bo-Ltn" revision="2">rgya nag chen po'i lha btsun chos kyi rin chen</editor>
                     <location work="UT23703" count-pages="4">
                         <volume number="136" start-page="289" end-page="292"/>
                     </location>
@@ -32,11 +33,12 @@
                 </bibl>
             </sourceDesc>
             <notesStmt>
-                <note type="lastUpdated" date-time="2021-12-16T09:42:42.804Z" user="admin">16/12/2021 09:42:42</note>
-                <note type="updated" update="import" value="fileDesc" import="tengyur-data-3981-4085_CD_v1.xml" date-time="2021-11-02T14:15:02.402Z" user="admin"/>
-                <note type="updated" update="title" value="mainTitle" import="tengyur-data-3981-4085_CD_v1.xml" date-time="2021-11-02T14:15:02.402Z" user="admin">Reconstructed title</note>
-                <note type="updated" update="title" value="otherTitle" import="tengyur-data-3981-4085_CD_v1.xml" date-time="2021-11-02T14:15:02.402Z" user="admin">Chinese: 大乘百法明門論</note>
+                <note type="lastUpdated" date-time="2022-09-03T10:21:15.093Z" user="admin">03/09/2022 10:21:15</note>
                 <note type="updated" update="text-version" value="0.0.3" date-time="2021-12-16T09:21:32.669Z" user="john">Auto (update-locations)</note>
+                <note type="updated" update="import" value="fileDesc" import="tengyur-data-4020-4085_PH_new_v2.4.xml" date-time="2022-01-28T10:32:05.149Z" user="admin"/>
+                <note type="updated" update="attribution" import="tengyur-data-4020-4085_PH_new_v2.4.xml" date-time="2022-01-28T10:32:05.149Z" user="admin">The colophon notes that it appears that in the Chinese version this text is attributed to Vasubandhu, but in Tibet the text is attributed to Dharmapāla
+            (fl. ca. 530-561).</note>
+                <note type="updated" update="text-version" value="0.0.5" date-time="2022-09-03T10:19:05.33Z" user="andre">Auto (entity-merge-attribution)</note>
             </notesStmt>
         </fileDesc>
     </teiHeader>

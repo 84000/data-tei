@@ -4,10 +4,15 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="mainTitle" xml:lang="Bo-Ltn">rgyal po chen po ka nis ka la springs pa'i spring yig</title>
-                <title type="mainTitle" xml:lang="Sa-Ltn">maharajakaniskalekha</title>
-                <title type="mainTitle" xml:lang="en"/>
+                <title xml:lang="bo" type="mainTitle">རྒྱལ་པོ་ཆེན་པོ་ཀ་ནིས་ཀ་ལ་སྤྲིངས་པའི་སྤྲིང་ཡིག</title>
+                <title xml:lang="Bo-Ltn" type="mainTitle">rgyal po chen po ka nis ka la springs pa'i spring yig</title>
+                <title xml:lang="Sa-Ltn" type="mainTitle">Mahārāja­kaniṣka­lekha</title>
+                <title xml:lang="en" type="mainTitle">Letter to the Great King Kaniṣka</title>
             </titleStmt>
+            <editionStmt>
+                <edition>v 0.0.3 <date/>
+                </edition>
+            </editionStmt>
             <publicationStmt status="">
                 <idno xml:id="UT23703-173-013"/>
             </publicationStmt>
@@ -15,20 +20,23 @@
                 <bibl key="toh4184" type="text">
                     <ref>Toh 4184</ref>
                     <biblScope>ff. 53r-56v</biblScope>
-                    <author role="translatorTib">a. maticitra</author>
-                    <author role="translatorTib">t. vidyakaraprabha</author>
-                    <author role="translatorTib">rin chen mchog</author>
-                    <author role="translatorTib">r. dpal brtsegs</author>
-                    <location count-pages="">
-                        <start volume="173" page="107"/>
-                        <end volume="173" page="114"/>
+                    <author ref="eft:entity-17484" xml:lang="Sa-Ltn">Mātṛceṭa</author>
+                    <author role="translatorTib" ref="eft:entity-35870" xml:lang="Sa-Ltn">Vidyākaraprabha</author>
+                    <author role="translatorTib" ref="eft:entity-17905" xml:lang="Bo-Ltn">zhu chen gyi lo tsa ba ban de rin chen mchog</author>
+                    <editor role="reviser" ref="eft:entity-17455" xml:lang="Bo-Ltn">A tsAr+ya dpal brtsegs</editor>
+                    <location work="UT23703" count-pages="8">
+                        <volume number="173" start-page="105" end-page="112"/>
                     </location>
                     <idno parent-id="O1JC76301JC10908" work="http://read.84000.co/sections"/>
                     <idno source-id="O1JC76301JC10937" work="W23703"/>
                 </bibl>
             </sourceDesc>
             <notesStmt>
-                <note type="lastUpdated">Last updated at 07/09/2018 at 10:33:27 by admin</note>
+                <note type="lastUpdated" date-time="2022-08-02T10:32:49.125Z" user="admin">02/08/2022 10:32:49</note>
+                <note type="updated" update="import" value="fileDesc" import="tengyur-data-4158-4202_PH_new_v2.4.xml" date-time="2021-11-02T14:19:02.211Z" user="admin"/>
+                <note type="updated" update="text-version" value="0.0.1" date-time="2022-02-19T06:29:15.579Z" user="andre">Auto (entity-merge-attribution)</note>
+                <note type="updated" update="text-version" value="0.0.2" date-time="2022-05-10T13:31:02.903Z" user="martina-cotter">Auto (entity-merge-attribution)</note>
+                <note type="updated" update="text-version" value="0.0.3" date-time="2022-08-02T10:32:34.829Z" user="sameer">Auto (entity-merge-attribution)</note>
             </notesStmt>
         </fileDesc>
     </teiHeader>

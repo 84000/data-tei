@@ -4,10 +4,16 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="mainTitle" xml:lang="Bo-Ltn">shes rab kyi pha rol tu phyin pa'i man ngag gi bstan bcos mngon par rtogs pa'i rgyan zhes bya ba'i 'grel pa</title>
-                <title type="mainTitle" xml:lang="Sa-Ltn">abhisamayalamkara-nama-prajnaparamitopadesasastravrtti</title>
-                <title type="mainTitle" xml:lang="en"/>
+                <title xml:lang="bo" type="mainTitle">ཤེས་རབ་ཀྱི་ཕ་རོལ་ཏུ་ཕྱིན་པའི་མན་ངག་གི་བསྟན་བཅོས་མངོན་པར་རྟོགས་པའི་རྒྱན་ཞེས་བྱ་བའི་འགྲེལ་པ།</title>
+                <title xml:lang="Bo-Ltn" type="mainTitle">shes rab kyi pha rol tu phyin pa'i man ngag gi bstan bcos mngon par rtogs pa'i rgyan zhes bya ba'i 'grel pa/</title>
+                <title xml:lang="Sa-Ltn" type="mainTitle">Abhisamayālaṃkāra­nāma­prajñāpāramitopadeśa­śāstra­vṛtti</title>
+                <title xml:lang="en" type="mainTitle">A Running Commentary on “The Ornament for Clear Realizations, A Treatise of Personal Instructions on the Perfection of Wisdom”</title>
+                <title xml:lang="Sa-Ltn" type="longTitle">Abhisamayālaṃkāravṛtti­sphuṭārthā; abhisamayālaṃkāra­kārikā­śāstra­vivṛti</title>
             </titleStmt>
+            <editionStmt>
+                <edition>v 0.0.3 <date/>
+                </edition>
+            </editionStmt>
             <publicationStmt status="">
                 <idno xml:id="UT23703-086-002"/>
             </publicationStmt>
@@ -15,21 +21,25 @@
                 <bibl key="toh3793" type="text">
                     <ref>Toh 3793</ref>
                     <biblScope>ff. 78v-140r</biblScope>
-                    <author role="translatorTib">a. seng ge bzang po (haribhadra)</author>
-                    <author role="translatorTib">t. vidyakaraparabha</author>
-                    <author role="translatorTib">dpal brtsegs</author>
-                    <author role="translatorTib">r. go mi 'chi med</author>
-                    <author role="translatorTib">blo ldan shes rab</author>
-                    <location count-pages="">
-                        <start volume="86" page="158"/>
-                        <end volume="86" page="281"/>
+                    <author ref="eft:entity-18371" xml:lang="Sa-Ltn">Haribhadra</author>
+                    <author role="translatorTib" ref="eft:entity-35870" xml:lang="Sa-Ltn">Vidyākaraprabha</author>
+                    <author role="translatorTib" ref="eft:entity-17455" xml:lang="Bo-Ltn">zhu chen gyi lo tsa ba ban de dpal brtsegs</author>
+                    <editor role="reviser" ref="eft:entity-18291" xml:lang="Sa-Ltn">Amaragomin</editor>
+                    <editor role="reviser" ref="eft:entity-17482" xml:lang="Bo-Ltn">lo tsA ba dge slong blo ldan shes rab</editor>
+                    <location work="UT23703" count-pages="124">
+                        <volume number="86" start-page="156" end-page="279"/>
                     </location>
                     <idno parent-id="O1JC76301JC10416" work="http://read.84000.co/sections"/>
                     <idno source-id="O1JC76301JC10433" work="W23703"/>
                 </bibl>
+                <link type="isCommentaryOf" target="toh3786"/>
             </sourceDesc>
             <notesStmt>
-                <note type="lastUpdated">Last updated at 07/09/2018 at 10:29:26 by admin</note>
+                <note type="lastUpdated" date-time="2022-08-02T10:33:13.459Z" user="admin">02/08/2022 10:33:13</note>
+                <note type="updated" update="import" value="fileDesc" import="tengyur-data-3786-3823_PH_new_v2.4.xml" date-time="2021-11-02T14:12:33.078Z" user="admin"/>
+                <note type="updated" update="text-version" value="0.0.1" date-time="2022-02-19T06:29:15.579Z" user="andre">Auto (entity-merge-attribution)</note>
+                <note type="updated" update="text-version" value="0.0.2" date-time="2022-05-10T13:31:02.903Z" user="martina-cotter">Auto (entity-merge-attribution)</note>
+                <note type="updated" update="text-version" value="0.0.3" date-time="2022-08-02T10:32:34.829Z" user="sameer">Auto (entity-merge-attribution)</note>
             </notesStmt>
         </fileDesc>
     </teiHeader>

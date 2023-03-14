@@ -4,10 +4,14 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="mainTitle" xml:lang="Bo-Ltn">'phags pa sgo drug pa'i gzungs kyi rnam par bshad pa</title>
-                <title type="mainTitle" xml:lang="Sa-Ltn">aryasanmukhidharanivyakhyana</title>
-                <title type="mainTitle" xml:lang="en"/>
+                <title xml:lang="bo" type="mainTitle">འཕགས་པ་སྒོ་དྲུག་པའི་གཟུངས་ཀྱི་རྣམ་པར་བཤད་པ།</title>
+                <title xml:lang="Bo-Ltn" type="mainTitle">'phags pa sgo drug pa'i gzungs kyi rnam par bshad pa/</title>
+                <title xml:lang="en" type="mainTitle">An Explanation of the Dhāraṇī of the Six Doors</title>
             </titleStmt>
+            <editionStmt>
+                <edition>v 0.0.1 <date/>
+                </edition>
+            </editionStmt>
             <publicationStmt status="">
                 <idno xml:id="UT23703-073-001"/>
             </publicationStmt>
@@ -15,16 +19,20 @@
                 <bibl key="toh2694" type="text">
                     <ref>Toh 2694</ref>
                     <biblScope>ff. 1r-3r</biblScope>
-                    <location count-pages="">
-                        <start volume="73" page="3"/>
-                        <end volume="73" page="7"/>
+                    <author ref="eft:entity-7082" xml:lang="Sa-Ltn">Vasubandhu</author>
+                    <location work="UT23703" count-pages="5">
+                        <volume number="73" start-page="1" end-page="5"/>
                     </location>
                     <idno parent-id="O1JC76301JC21612" work="http://read.84000.co/sections"/>
                     <idno source-id="O1JC76301JC9307" work="W23703"/>
                 </bibl>
+                <link type="isCommentaryOf" target="toh141"/>
+                <link type="isCommentaryOf" target="toh526"/>
             </sourceDesc>
             <notesStmt>
-                <note type="lastUpdated">Last updated at 07/09/2018 at 09:49:11 by admin</note>
+                <note type="lastUpdated" date-time="2022-09-03T10:21:02.191Z" user="admin">03/09/2022 10:21:02</note>
+                <note type="updated" update="import" value="fileDesc" import="tengyur-data-2670-2696_PH_new_v2.4.xml" date-time="2021-11-02T13:56:37.974Z" user="admin"/>
+                <note type="updated" update="text-version" value="0.0.1" date-time="2022-09-03T10:19:05.33Z" user="andre">Auto (entity-merge-attribution)</note>
             </notesStmt>
         </fileDesc>
     </teiHeader>

@@ -4,10 +4,16 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="mainTitle" xml:lang="Bo-Ltn">chos mngon pa'i mdzod kyi bshad pa</title>
-                <title type="mainTitle" xml:lang="Sa-Ltn">abhidharmakosabhasya</title>
-                <title type="mainTitle" xml:lang="en"/>
+                <title xml:lang="bo" type="mainTitle">ཆོས་མངོན་པའི་མཛོད་ཀྱི་བཤད་པ།</title>
+                <title xml:lang="Bo-Ltn" type="mainTitle">chos mngon pa'i mdzod kyi bshad pa/</title>
+                <title xml:lang="Sa-Ltn" type="mainTitle">Abhidharma­kośa­bhāṣya</title>
+                <title xml:lang="en" type="mainTitle">Explanation of “The Treasury of Abhidharma”</title>
             </titleStmt>
+    <editionStmt>
+                <edition>v 0.0.4 <date/>
+                </edition>
+            </editionStmt>
+
             <publicationStmt status="">
                 <idno xml:id="UT23703-140-002"/>
             </publicationStmt>
@@ -15,20 +21,27 @@
                 <bibl key="toh4090" type="text">
                     <ref>Toh 4090</ref>
                     <biblScope>vol 140 ff. 26v-258r, vol 141 ff. 1v-95r</biblScope>
-                    <author role="translatorTib">a. dbyig gnyen</author>
-                    <author role="translatorTib">t. jinamitra</author>
-                    <author role="translatorTib">dpal brtsegs raksita</author>
-                    <location count-pages="">
-                        <start volume="140" page="54"/>
-                        <end volume="141" page="191"/>
+                    <author ref="eft:entity-7082" xml:lang="Sa-Ltn">Vasubandhu</author>
+                    <author role="translatorTib" ref="eft:entity-34601" xml:lang="Sa-Ltn">Jinamitra</author>
+                    <author role="translatorTib" ref="eft:entity-17455" xml:lang="Bo-Ltn">zhu chen gyi lo tsa ba ban de dpal brtsegs</author>
+                    <location work="UT23703" count-pages="661">
+                        <volume number="140" start-page="52" end-page="524"/>
+                        <volume number="141" start-page="2" end-page="189"/>
                     </location>
                     <idno parent-id="O1JC76301JC10788" work="http://read.84000.co/sections"/>
                     <idno source-id="O1JC76301JC10795" work="W23703"/>
                 </bibl>
+                <link type="isCommentaryOf" target="toh4089"/>
             </sourceDesc>
             <notesStmt>
-                <note type="lastUpdated">Last updated at 07/09/2018 at 09:49:39 by admin</note>
-            </notesStmt>
+                <note type="lastUpdated" date-time="2022-09-03T10:20:10.454Z" user="admin">03/09/2022 10:20:10</note>
+                <note type="updated" update="import" value="fileDesc" import="tengyur-data-4086-4103_PH_new_v2.4.xml" date-time="2021-11-02T14:16:18.239Z" user="admin"/>
+            
+    <note type="updated" update="text-version" value="0.0.1" date-time="2022-01-20T09:14:07.444Z" user="admin">Auto (correct-orphaned-attributions)</note>
+    <note type="updated" update="text-version" value="0.0.2" date-time="2022-04-18T09:53:16.819Z" user="andre">Auto (entity-merge-attribution)</note>
+    <note type="updated" update="text-version" value="0.0.3" date-time="2022-06-07T06:48:13.515Z" user="sameer">Auto (entity-merge-attribution)</note>
+    <note type="updated" update="text-version" value="0.0.4" date-time="2022-09-03T10:19:05.33Z" user="andre">Auto (entity-merge-attribution)</note>
+</notesStmt>
         </fileDesc>
     </teiHeader>
     <text>

@@ -4,10 +4,15 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="mainTitle" xml:lang="Bo-Ltn">bzang po spyod pa'i smon lam gyi 'grel pa</title>
-                <title type="mainTitle" xml:lang="Sa-Ltn">bhadracaryapranidhanatika</title>
-                <title type="mainTitle" xml:lang="en"/>
+                <title xml:lang="bo" type="mainTitle">འཕགས་པ་བཟང་པོ་སྤྱོད་པའི་སྨོན་ལམ་གྱི་འགྲེལ་པ།</title>
+                <title xml:lang="Bo-Ltn" type="mainTitle">'phags pa bzang po spyod pa'i smon lam gyi 'grel pa/</title>
+                <title xml:lang="Sa-Ltn" type="mainTitle">Ārya­bhadracaryā­praṇidhāna­ṭīkā</title>
+                <title xml:lang="en" type="mainTitle">A Commentary on the Prayer for Good Conduct</title>
             </titleStmt>
+            <editionStmt>
+                <edition>v 0.0.1 <date/>
+                </edition>
+            </editionStmt>
             <publicationStmt status="">
                 <idno xml:id="UT23703-117-006"/>
             </publicationStmt>
@@ -15,19 +20,22 @@
                 <bibl key="toh4015" type="text">
                     <ref>Toh 4015</ref>
                     <biblScope>ff. 252v-269r</biblScope>
-                    <author role="translatorTib">a. dbyig gnyen</author>
-                    <author role="translatorTib">t. ananda</author>
-                    <author role="translatorTib">bhadrapala</author>
-                    <location count-pages="">
-                        <start volume="117" page="506"/>
-                        <end volume="117" page="539"/>
+                    <author ref="eft:entity-7082" xml:lang="Sa-Ltn">Vasubandhu</author>
+                    <author role="translatorTib" ref="eft:entity-17479" xml:lang="Bo-Ltn">lo tsa ba dge slong b+ha dra pa la</author>
+                    <author role="translatorTib" ref="eft:entity-18044" xml:lang="Sa-Ltn">Kaśmīri Ānanda</author>
+                    <location work="UT23703" count-pages="34">
+                        <volume number="117" start-page="504" end-page="537"/>
                     </location>
                     <idno parent-id="O1JC76301JC10651" work="http://read.84000.co/sections"/>
                     <idno source-id="O1JC76301JC10691" work="W23703"/>
                 </bibl>
+                <link type="isCommentaryOf" target="toh44"/>
+                <link type="isCommentaryOf" target="toh1095"/>
             </sourceDesc>
             <notesStmt>
-                <note type="lastUpdated">Last updated at 07/09/2018 at 09:50:59 by admin</note>
+                <note type="lastUpdated" date-time="2022-09-03T10:22:19.547Z" user="admin">03/09/2022 10:22:19</note>
+                <note type="updated" update="import" value="fileDesc" import="tengyur-data-3981-4019_PH_new_v2.4.xml" date-time="2022-01-28T10:32:05.149Z" user="admin"/>
+                <note type="updated" update="text-version" value="0.0.1" date-time="2022-09-03T10:19:05.33Z" user="andre">Auto (entity-merge-attribution)</note>
             </notesStmt>
         </fileDesc>
     </teiHeader>

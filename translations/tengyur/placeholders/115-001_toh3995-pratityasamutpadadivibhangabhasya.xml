@@ -4,10 +4,16 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="mainTitle" xml:lang="Bo-Ltn">rten cing 'brel bar 'byung ba dang po'i rnam par dbye ba bshad pa</title>
-                <title type="mainTitle" xml:lang="Sa-Ltn">pratityasamutpadadivibhangabhasya</title>
-                <title type="mainTitle" xml:lang="en"/>
+                <title xml:lang="bo" type="mainTitle">རྟེན་ཅིང་འབྲེལ་བར་འབྱུང་བ་དང་པོའི་རྣམ་པར་དབྱེ་བ་བཤད་པ།</title>
+                <title xml:lang="Bo-Ltn" type="mainTitle">rten cing 'brel bar 'byung ba dang po'i rnam par dbye ba bshad pa/</title>
+                <title xml:lang="Sa-Ltn" type="mainTitle">Pratītyasamutpādādi­vibhaṅga­nirdeśa</title>
+                <title xml:lang="en" type="mainTitle">An Explanation of The Fundamental Exposition and Detailed Analysis of Dependent Arising</title>
+                <title xml:lang="Sa-Ltn" type="longTitle">Pratītyasamutpādavyākhyā</title>
             </titleStmt>
+            <editionStmt>
+                <edition>v 0.0.1 <date/>
+                </edition>
+            </editionStmt>
             <publicationStmt status="">
                 <idno xml:id="UT23703-115-001"/>
             </publicationStmt>
@@ -15,19 +21,23 @@
                 <bibl key="toh3995" type="text">
                     <ref>Toh 3995</ref>
                     <biblScope>ff. 1v-61r</biblScope>
-                    <author role="translatorTib">a. vasubandhu</author>
-                    <author role="translatorTib">t. surendrakaraprabha</author>
-                    <author role="translatorTib">nam mkha'</author>
-                    <location count-pages="">
-                        <start volume="115" page="4"/>
-                        <end volume="115" page="123"/>
+                    <author ref="eft:entity-7082" xml:lang="Sa-Ltn">Vasubandhu</author>
+                    <author role="translatorTib" ref="eft:entity-18383" xml:lang="Sa-Ltn">Surendrākaraprabha</author>
+                    <author role="translatorTib" ref="eft:entity-18384" xml:lang="Bo-Ltn">zhu chen gyi lo tsa ba dge slong nam mkha'</author>
+                    <location work="UT23703" count-pages="120">
+                        <volume number="115" start-page="2" end-page="121"/>
                     </location>
                     <idno parent-id="O1JC76301JC10651" work="http://read.84000.co/sections"/>
                     <idno source-id="O1JC76301JC10669" work="W23703"/>
                 </bibl>
+                <link type="isCommentaryOf" target="toh211"/>
             </sourceDesc>
             <notesStmt>
-                <note type="lastUpdated">Last updated at 07/09/2018 at 10:16:13 by admin</note>
+                <note type="lastUpdated" date-time="2022-09-03T10:19:49.334Z" user="admin">03/09/2022 10:19:49</note>
+                <note type="updated" update="import" value="fileDesc" import="tengyur-data-3981-4019_PH_new_v2.4.xml" date-time="2022-01-28T10:32:05.149Z" user="admin"/>
+                <note type="updated" update="general" import="tengyur-data-3981-4019_PH_new_v2.4.xml" date-time="2022-01-28T10:32:05.149Z" user="admin">It has been observed that the translation into Tibetan was done with only minimal accommodation to normative Tibetan grammar and must instead be read as a
+            Sanskrit text.</note>
+                <note type="updated" update="text-version" value="0.0.1" date-time="2022-09-03T10:19:05.33Z" user="andre">Auto (entity-merge-attribution)</note>
             </notesStmt>
         </fileDesc>
     </teiHeader>

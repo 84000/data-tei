@@ -4,11 +4,15 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="mainTitle" xml:lang="Bo-Ltn">sA lu ljang pa zhes bya ba theg pa chen po'i mdo'i rgya cher bshad pa</title>
-                <title type="mainTitle" xml:lang="Sa-Ltn"/>
-                <title type="mainTitle" xml:lang="en"/>
-                <title type="otherTitle" xml:lang="Bo-Ltn">śālistambakamahāyānasūtraṭīkā</title>
+                <title xml:lang="bo" type="mainTitle">འཕགས་པ་སཱ་ལུ་ལྗང་པ་ཞེས་བྱ་བ་ཐེག་པ་ཆེན་པོའི་མདོའི་རྒྱ་ཆེར་བཤད་པ།</title>
+                <title xml:lang="Bo-Ltn" type="mainTitle">'phags pa sA lu ljang pa zhes bya ba theg pa chen po'i mdo'i rgya cher bshad pa/</title>
+                <title xml:lang="Sa-Ltn" type="mainTitle">Ārya­śālistambaka­ [nāma­] mahāyāna­sūtra­ṭīkā</title>
+                <title xml:lang="en" type="mainTitle">Extensive Commentary on the Mahāyāna Sūtra, The Rice Seedling</title>
             </titleStmt>
+            <editionStmt>
+                <edition>v 0.0.1 <date/>
+                </edition>
+            </editionStmt>
             <publicationStmt status="">
                 <idno xml:id="UT23703-113-006"/>
             </publicationStmt>
@@ -16,16 +20,23 @@
                 <bibl key="toh3986" type="text">
                     <ref>Toh 3986</ref>
                     <biblScope>ff. 20v-55v</biblScope>
-                    <location count-pages="">
-                        <start volume="113" page="42"/>
-                        <end volume="113" page="112"/>
+                    <author ref="eft:entity-1707" xml:lang="Sa-Ltn">Nāgārjuna</author>
+                    <author role="translatorTib" ref="eft:entity-34191" xml:lang="Sa-Ltn">Jñānakumāra</author>
+                    <author role="translatorTib" ref="eft:entity-17929" xml:lang="Bo-Ltn">lo tsa ba ban+de legs pa'i blo gros</author>
+                    <author role="translatorTib" ref="eft:entity-18622" xml:lang="Sa-Ltn">Dharmaśrīprabha</author>
+                    <editor role="reviser" ref="eft:entity-17455" xml:lang="Bo-Ltn">zhu chen gyi lo tsA ba ban+de dpal brtsegs</editor>
+                    <location work="UT23703" count-pages="71">
+                        <volume number="113" start-page="40" end-page="110"/>
                     </location>
                     <idno parent-id="O1JC76301JC10651" work="http://read.84000.co/sections"/>
                     <idno source-id="O1JC76301JC10658" work="W23703"/>
                 </bibl>
+                <link type="isCommentaryOf" target="toh210"/>
             </sourceDesc>
             <notesStmt>
-                <note type="lastUpdated">Last updated at 07/09/2018 at 10:16:37 by admin</note>
+                <note type="lastUpdated" date-time="2022-06-11T11:19:43.991Z" user="admin">11/06/2022 11:19:43</note>
+                <note type="updated" update="import" value="fileDesc" import="tengyur-data-3981-4019_PH_new_v2.4.xml" date-time="2022-01-28T10:32:05.149Z" user="admin"/>
+                <note type="updated" update="text-version" value="0.0.1" date-time="2022-06-11T11:15:46.265Z" user="andre">Auto (entity-merge-attribution)</note>
             </notesStmt>
         </fileDesc>
     </teiHeader>

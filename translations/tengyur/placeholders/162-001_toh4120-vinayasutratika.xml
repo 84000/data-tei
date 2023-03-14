@@ -4,10 +4,16 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="mainTitle" xml:lang="Bo-Ltn">'dul ba mdo'i rgya cher 'grel pa</title>
-                <title type="mainTitle" xml:lang="Sa-Ltn">vinayasutratika</title>
-                <title type="mainTitle" xml:lang="en"/>
+                <title xml:lang="bo" type="mainTitle">འདུལ་བའི་མདོའི་རྒྱ་ཆེར་འགྲེལ་པ།</title>
+                <title xml:lang="Bo-Ltn" type="mainTitle">'dul ba'i mdo'i rgya cher 'grel pa/</title>
+                <title xml:lang="Sa-Ltn" type="mainTitle">Vinaya­sūtra­ṭīkā</title>
+                <title xml:lang="en" type="mainTitle">An Extensive Commentary on the “Aphorisms on Monastic Discipline”</title>
             </titleStmt>
+    <editionStmt>
+                <edition>v 0.0.4 <date/>
+                </edition>
+            </editionStmt>
+
             <publicationStmt status="">
                 <idno xml:id="UT23703-162-001"/>
             </publicationStmt>
@@ -15,20 +21,27 @@
                 <bibl key="toh4120" type="text">
                     <ref>Toh 4120</ref>
                     <biblScope>vol 162 ff. 1v-388r, vol 163 ff. 1v-390r</biblScope>
-                    <author role="translatorTib">a. dharmamitra</author>
-                    <author role="translatorTib">t. jinamitra</author>
-                    <author role="translatorTib">klu'i rgyal mtshan</author>
-                    <location count-pages="">
-                        <start volume="162" page="4"/>
-                        <end volume="163" page="781"/>
+                    <author ref="eft:entity-9281" xml:lang="Sa-Ltn">Dharmamitra</author>
+                    <author role="translatorTib" ref="eft:entity-18247" xml:lang="Bo-Ltn">zhu chen gyi lo tsa ba ban+de klu'i rgyal mtshan</author>
+                    <author role="translatorTib" ref="eft:entity-34601" xml:lang="Sa-Ltn">Jinamitra</author>
+                    <location work="UT23703" count-pages="1552">
+                        <volume number="162" start-page="2" end-page="775"/>
+                        <volume number="163" start-page="2" end-page="779"/>
                     </location>
                     <idno parent-id="O1JC76301JC10823" work="http://read.84000.co/sections"/>
                     <idno source-id="O1JC76301JC10857" work="W23703"/>
                 </bibl>
+                <link type="isCommentaryOf" target="toh4117"/>
             </sourceDesc>
             <notesStmt>
-                <note type="lastUpdated">Last updated at 07/09/2018 at 10:34:26 by admin</note>
-            </notesStmt>
+                <note type="lastUpdated" date-time="2022-06-07T06:49:35.312Z" user="admin">07/06/2022 06:49:35</note>
+                <note type="updated" update="import" value="fileDesc" import="tengyur-data-4104-4149_PH_new_v2.4.xml" date-time="2021-11-02T14:17:45.617Z" user="admin"/>
+            
+    <note type="updated" update="text-version" value="0.0.1" date-time="2022-01-20T09:14:07.444Z" user="admin">Auto (correct-orphaned-attributions)</note>
+    <note type="updated" update="text-version" value="0.0.2" date-time="2022-04-18T09:53:16.819Z" user="andre">Auto (entity-merge-attribution)</note>
+    <note type="updated" update="text-version" value="0.0.3" date-time="2022-06-05T10:30:43.216Z" user="andre">Auto (entity-merge-attribution)</note>
+    <note type="updated" update="text-version" value="0.0.4" date-time="2022-06-07T06:48:13.515Z" user="sameer">Auto (entity-merge-attribution)</note>
+</notesStmt>
         </fileDesc>
     </teiHeader>
     <text>

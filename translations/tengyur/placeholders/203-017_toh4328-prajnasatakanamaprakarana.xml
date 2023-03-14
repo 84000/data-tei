@@ -4,10 +4,15 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="mainTitle" xml:lang="Bo-Ltn">shes rab brgya pa zhes bya ba'i rab tu byed pa</title>
-                <title type="mainTitle" xml:lang="Sa-Ltn">prajnasataka-nama-prakarana</title>
-                <title type="mainTitle" xml:lang="en"/>
+                <title xml:lang="bo" type="mainTitle">ཤེས་རབ་བརྒྱ་པ་ཞེས་བྱ་བའི་རབ་ཏུ་བྱེད་པ།</title>
+                <title xml:lang="Bo-Ltn" type="mainTitle">shes rab brgya pa zhes bya ba'i rab tu byed pa/</title>
+                <title xml:lang="Sa-Ltn" type="mainTitle">Prajñāśataka­nāma­prakaraṇa</title>
+                <title xml:lang="en" type="mainTitle">An Exposition called “One Hundred Verses on Wisdom”</title>
             </titleStmt>
+            <editionStmt>
+                <edition>v 0.0.1 <date/>
+                </edition>
+            </editionStmt>
             <publicationStmt status="">
                 <idno xml:id="UT23703-203-017"/>
             </publicationStmt>
@@ -15,9 +20,9 @@
                 <bibl key="toh4328" type="text">
                     <ref>Toh 4328</ref>
                     <biblScope>ff. 99v-103r</biblScope>
-                    <author role="translatorTib">a. klu sgrub</author>
-                    <author role="translatorTib">t. sarvajnadeva</author>
-                    <author role="translatorTib">dpal brtsegs</author>
+                    <author ref="eft:entity-1707" xml:lang="Sa-Ltn">Nāgārjuna</author>
+                    <author role="translatorTib" ref="eft:entity-17455" xml:lang="Bo-Ltn">zhu chen gyi lo tsa ba ban de dpal brtsegs</author>
+                    <author role="translatorTib" ref="eft:entity-17453" xml:lang="Sa-Ltn">Sarvajñādeva</author>
                     <location work="UT23703" count-pages="8">
                         <volume number="203" start-page="198" end-page="205"/>
                     </location>
@@ -26,7 +31,9 @@
                 </bibl>
             </sourceDesc>
             <notesStmt>
-                <note type="lastUpdated" date-time="2021-03-01T19:27:12.677Z" user="john">01/03/2021 19:27:12</note>
+                <note type="lastUpdated" date-time="2022-06-11T11:18:43.705Z" user="admin">11/06/2022 11:18:43</note>
+                <note type="updated" update="import" value="fileDesc" import="tengyur-data-4328-4397_PH_new_v2.4.xml" date-time="2021-11-02T14:25:19.656Z" user="admin"/>
+                <note type="updated" update="text-version" value="0.0.1" date-time="2022-06-11T11:15:46.265Z" user="andre">Auto (entity-merge-attribution)</note>
             </notesStmt>
         </fileDesc>
     </teiHeader>

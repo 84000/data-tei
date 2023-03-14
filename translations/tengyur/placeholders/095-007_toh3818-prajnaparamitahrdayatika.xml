@@ -4,10 +4,16 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="mainTitle" xml:lang="Bo-Ltn">shes rab kyi pha rol tu phyin pa'i snying po'i rgya cher bshad pa</title>
-                <title type="mainTitle" xml:lang="Sa-Ltn">prajnaparamitahrdayatika</title>
-                <title type="mainTitle" xml:lang="en"/>
+                <title xml:lang="bo" type="mainTitle">འཕགས་པ་ཤེས་རབ་ཀྱི་ཕ་རོལ་ཏུ་ཕྱིན་པའི་སྙིང་པོའི་རྒྱ་ཆེར་བཤད་པ།</title>
+                <title xml:lang="Bo-Ltn" type="mainTitle">'phags pa shes rab kyi pha rol tu phyin pa'i snying po'i rgya cher bshad pa/</title>
+                <title xml:lang="Sa-Ltn" type="mainTitle">Ārya­prajñāpāramitā­hṛdaya­ṭīkā</title>
+                <title xml:lang="en" type="mainTitle">An Extensive Commentary on “The Essence of the Perfection of Wisdom”</title>
+                <title xml:lang="en" type="longTitle">An Extensive Commentary on “The Noble Essence of the Perfection of Wisdom”</title>
             </titleStmt>
+            <editionStmt>
+                <edition>v 0.0.1 <date/>
+                </edition>
+            </editionStmt>
             <publicationStmt status="">
                 <idno xml:id="UT23703-095-007"/>
             </publicationStmt>
@@ -15,20 +21,22 @@
                 <bibl key="toh3818" type="text">
                     <ref>Toh 3818</ref>
                     <biblScope>ff. 267v-280v</biblScope>
-                    <author role="translatorTib">a. vimalamitra</author>
-                    <author role="translatorTib">t. vimalamitra</author>
-                    <author role="translatorTib">nam mkha'</author>
-                    <author role="translatorTib">ye shes snying po</author>
-                    <location count-pages="">
-                        <start volume="95" page="536"/>
-                        <end volume="95" page="562"/>
+                    <author ref="eft:entity-34792" xml:lang="Sa-Ltn">Vimalamitra the Elder</author>
+                    <author role="translatorTib" ref="eft:entity-34792" xml:lang="Sa-Ltn">Vimalamitra the Elder</author>
+                    <author role="translatorTib" ref="eft:entity-18220" xml:lang="Bo-Ltn">ye shes snying po</author>
+                    <author role="translatorTib" ref="eft:entity-18384" xml:lang="Bo-Ltn">bod kyi zhu chen gyi lo tsa ba ban de nam mkha'</author>
+                    <location work="UT23703" count-pages="27">
+                        <volume number="95" start-page="534" end-page="560"/>
                     </location>
                     <idno parent-id="O1JC76301JC10416" work="http://read.84000.co/sections"/>
                     <idno source-id="O1JC76301JC10468" work="W23703"/>
                 </bibl>
+                <link type="isCommentaryOf" target="toh21"/>
             </sourceDesc>
             <notesStmt>
-                <note type="lastUpdated">Last updated at 07/09/2018 at 10:25:46 by admin</note>
+                <note type="lastUpdated" date-time="2022-05-03T08:28:28.295Z" user="admin">03/05/2022 08:28:28</note>
+                <note type="updated" update="import" value="fileDesc" import="tengyur-data-3786-3823_PH_new_v2.4.xml" date-time="2021-11-02T14:12:33.078Z" user="admin"/>
+                <note type="updated" update="text-version" value="0.0.1" date-time="2022-05-03T08:28:05.853Z" user="sameer">Auto (entity-merge-attribution)</note>
             </notesStmt>
         </fileDesc>
     </teiHeader>

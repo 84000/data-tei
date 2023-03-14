@@ -4,10 +4,18 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="mainTitle" xml:lang="Bo-Ltn">bstan bcos tshigs su bcad pa bsdus pa</title>
-                <title type="mainTitle" xml:lang="Sa-Ltn">gathasangrahasastra</title>
-                <title type="mainTitle" xml:lang="en"/>
+                <title xml:lang="bo" type="mainTitle">བསྟན་བཅོས་ཚིགས་སུ་བཅད་པ་བསྡུས་པ།</title>
+                <title xml:lang="Bo-Ltn" type="mainTitle">bstan bcos tshigs su bcad pa bsdus pa/</title>
+                <title xml:lang="Sa-Ltn" type="mainTitle">Gāthā­saṃgraha­śāstra</title>
+                <title xml:lang="en" type="mainTitle">A Collection of Verses from Treatises</title>
+                <title xml:lang="bo" type="longTitle">བསྟན་བཅོས་ཚིགས་སུ་བཅད་པ་བསྡུས་པ་ཞེས་བྱ་བ།</title>
+                <title xml:lang="Bo-Ltn" type="longTitle">bstan bcos tshigs su bcad pa bsdus pa zhes bya ba/</title>
+                <title xml:lang="Sa-Ltn" type="longTitle">Gāthā­saṃgraha­śāstra­nāma</title>
             </titleStmt>
+            <editionStmt>
+                <edition>v 0.0.1 <date/>
+                </edition>
+            </editionStmt>
             <publicationStmt status="">
                 <idno xml:id="UT23703-149-004"/>
             </publicationStmt>
@@ -15,20 +23,22 @@
                 <bibl key="toh4102" type="text">
                     <ref>Toh 4102</ref>
                     <biblScope>ff. 223r-224r</biblScope>
-                    <author role="translatorTib">a. dbyig gnyen</author>
-                    <author role="translatorTib">t. dharmakara</author>
-                    <author role="translatorTib">ye shes snying po</author>
-                    <author role="translatorTib">r. dpal brtsegs</author>
-                    <location count-pages="">
-                        <start volume="149" page="447"/>
-                        <end volume="149" page="449"/>
+                    <author ref="eft:entity-7082" xml:lang="Sa-Ltn">Vasubandhu</author>
+                    <author role="translatorTib" ref="eft:entity-18508" xml:lang="Sa-Ltn">Dharmākara</author>
+                    <author role="translatorTib" ref="eft:entity-18220" xml:lang="Bo-Ltn">lo tsa ba ban de ye shes snying po</author>
+                    <editor role="reviser" ref="eft:entity-17455" xml:lang="Bo-Ltn">zhu chen gyi lo tsA ba ban de dpal brtsegs</editor>
+                    <location work="UT23703" count-pages="3">
+                        <volume number="149" start-page="445" end-page="447"/>
                     </location>
                     <idno parent-id="O1JC76301JC10788" work="http://read.84000.co/sections"/>
                     <idno source-id="O1JC76301JC10821" work="W23703"/>
                 </bibl>
             </sourceDesc>
             <notesStmt>
-                <note type="lastUpdated">Last updated at 07/09/2018 at 10:34:38 by admin</note>
+                <note type="lastUpdated" date-time="2022-09-03T10:21:40.885Z" user="admin">03/09/2022 10:21:40</note>
+                <note type="updated" update="import" value="fileDesc" import="tengyur-data-4086-4103_PH_new_v2.4.xml" date-time="2021-11-02T14:16:18.239Z" user="admin"/>
+                <note type="updated" update="general" import="tengyur-data-4086-4103_PH_new_v2.4.xml" date-time="2021-11-02T14:16:18.239Z" user="admin">The text is a brief summary of the Buddhist path in verse form.</note>
+                <note type="updated" update="text-version" value="0.0.1" date-time="2022-09-03T10:19:05.33Z" user="andre">Auto (entity-merge-attribution)</note>
             </notesStmt>
         </fileDesc>
     </teiHeader>

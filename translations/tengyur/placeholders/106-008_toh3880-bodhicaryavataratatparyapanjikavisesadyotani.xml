@@ -4,12 +4,14 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="mainTitle" xml:lang="Bo-Ltn">byang chub kyi spyod pa la 'jug pa'i dgongs pa'i 'grel pa khyad par gsal byed</title>
-                <title type="mainTitle" xml:lang="Sa-Ltn">bodhicaryavataratatparyapanjikavisesadyotani</title>
-                <title type="mainTitle" xml:lang="en"/>
+                <title xml:lang="bo" type="mainTitle">བྱང་ཆུབ་ཀྱི་སྤྱོད་པ་ལ་འཇུག་པའི་དགོངས་པའི་འགྲེལ་པ་ཁྱད་པར་གསལ་བྱེད་ཅེས་བྱ་བ།</title>
+                <title xml:lang="Bo-Ltn" type="mainTitle">byang chub kyi spyod pa la 'jug pa'i dgongs pa'i 'grel pa khyad par gsal byed ces bya ba/</title>
+                <title xml:lang="Sa-Ltn" type="mainTitle">Bodhicaryāvatāra­tātparya­pañjikā­viśeṣadyotanī­nāma</title>
+                <title xml:lang="en" type="mainTitle">A Commentary on the Import of [Śāntideva’s] “Entering into the Deeds of a Bodhisattva” called “Clarifying the Specifics”</title>
             </titleStmt>
-    <editionStmt>
-                <edition>v 0.0.1 <date>2021</date>
+            <editionStmt>
+                <edition>v 0.0.1 
+                    <date>2021</date>
                 </edition>
             </editionStmt>
             <publicationStmt status="">
@@ -19,18 +21,20 @@
                 <bibl key="toh3880" type="text">
                     <ref>Toh 3880</ref>
                     <biblScope>ff. 192v-285r</biblScope>
-                    <author role="translatorTib">a. vibhuticandra</author>
-                    <author role="translatorTib">t. vibhuticandra</author>
+                    <author ref="eft:entity-17719" xml:lang="Sa-Ltn">Vibhūticandra</author>
+                    <author role="translatorTib" ref="eft:entity-17719" xml:lang="Sa-Ltn">Vibhūticandra</author>
                     <location work="UT23703" count-pages="186">
                         <volume number="106" start-page="384" end-page="569"/>
                     </location>
                     <idno parent-id="O1JC76301JC10474" work="http://read.84000.co/sections"/>
                     <idno source-id="O1JC76301JC10544" work="W23703"/>
                 </bibl>
+                <link type="isCommentaryOf" target="toh3871"/>
             </sourceDesc>
             <notesStmt>
                 <note type="lastUpdated" date-time="2021-02-15T10:49:25.519Z" user="admin">15/02/2021 10:49:25</note>
-    <note type="updated" update="text-version" value="0.0.1" date-time="2021-02-15T10:49:22.65Z" user="john">Text uid updated to accomodate 385a in vol.</note>
+                <note type="updated" update="text-version" value="0.0.1" date-time="2021-02-15T10:49:22.65Z" user="john">Text uid updated to accomodate 385a in vol.</note>
+                <note type="updated" update="import" value="fileDesc" import="tengyur-data-3824-3980_PH_new_v2.4.xml" date-time="2021-11-02T14:13:45.147Z" user="admin"/>
             </notesStmt>
         </fileDesc>
     </teiHeader>

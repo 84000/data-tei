@@ -4,10 +4,15 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="mainTitle" xml:lang="Bo-Ltn">zhib mo rnam par 'thag pa zhes bya ba'i rab tu byed pa</title>
-                <title type="mainTitle" xml:lang="Sa-Ltn">vaidalya-nama-prakarana</title>
-                <title type="mainTitle" xml:lang="en"/>
+                <title xml:lang="bo" type="mainTitle">ཞིབ་མོ་རྣམ་པར་འཐག་པ་ཞེས་བྱ་བའི་རབ་ཏུ་བྱེད་པ།</title>
+                <title xml:lang="Bo-Ltn" type="mainTitle">zhib mo rnam par 'thag pa zhes bya ba'i rab tu byed pa/</title>
+                <title xml:lang="Sa-Ltn" type="mainTitle">Vaidalya­nāma­prakaraṇa</title>
+                <title xml:lang="en" type="mainTitle">An Exposition on “The Finely Woven”</title>
             </titleStmt>
+            <editionStmt>
+                <edition>v 0.0.1 <date/>
+                </edition>
+            </editionStmt>
             <publicationStmt status="">
                 <idno xml:id="UT23703-096-007"/>
             </publicationStmt>
@@ -15,19 +20,21 @@
                 <bibl key="toh3830" type="text">
                     <ref>Toh 3830</ref>
                     <biblScope>ff. 99v-110r</biblScope>
-                    <author role="translatorTib">a, klu sgrub</author>
-                    <author role="translatorTib">t. jayananda (k)</author>
-                    <author role="translatorTib">khu mdo sde 'bar</author>
-                    <location count-pages="">
-                        <start volume="96" page="200"/>
-                        <end volume="96" page="221"/>
+                    <author ref="eft:entity-1707" xml:lang="Sa-Ltn">Nāgārjuna</author>
+                    <author role="translatorTib" ref="eft:entity-17966" xml:lang="Sa-Ltn">Jayānanda (Kaśmīr)</author>
+                    <author role="translatorTib" ref="eft:entity-17967" xml:lang="Bo-Ltn">bod kyi lo ts+tsha ba chen po shakya'i dge slong khu mdo sde 'bar</author>
+                    <location work="UT23703" count-pages="22">
+                        <volume number="96" start-page="198" end-page="219"/>
                     </location>
                     <idno parent-id="O1JC76301JC10474" work="http://read.84000.co/sections"/>
                     <idno source-id="O1JC76301JC10482" work="W23703"/>
                 </bibl>
+                <link type="isCommentaryOf" target="toh3826"/>
             </sourceDesc>
             <notesStmt>
-                <note type="lastUpdated">Last updated at 07/09/2018 at 10:25:24 by admin</note>
+                <note type="lastUpdated" date-time="2022-06-11T11:25:03.614Z" user="admin">11/06/2022 11:25:03</note>
+                <note type="updated" update="import" value="fileDesc" import="tengyur-data-3824-3980_PH_new_v2.4.xml" date-time="2021-11-02T14:13:45.147Z" user="admin"/>
+                <note type="updated" update="text-version" value="0.0.1" date-time="2022-06-11T11:15:46.265Z" user="andre">Auto (entity-merge-attribution)</note>
             </notesStmt>
         </fileDesc>
     </teiHeader>
