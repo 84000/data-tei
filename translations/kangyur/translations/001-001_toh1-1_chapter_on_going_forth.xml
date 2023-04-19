@@ -31,7 +31,7 @@
                 <sponsor ref="sponsors.xml#sponsor-190">Irene Tillman</sponsor>
             </titleStmt>
             <editionStmt>
-                <edition>v 1.35.12 <date>2022</date>
+                <edition>v 1.35.13 <date>2023</date>
                 </edition>
             </editionStmt>
             <publicationStmt status="1">
@@ -66,7 +66,7 @@
                 </bibl>
             </sourceDesc>
             <notesStmt>
-                <note type="lastUpdated" date-time="2023-01-18T16:58:59.81Z" user="celso">18/01/2023 16:58:59</note>
+                <note type="lastUpdated" date-time="2023-04-19T11:10:37.049Z" user="admin">19/04/2023 11:10:37</note>
                 <note type="updated" update="text-version" value="v 1.14" date-time="2019-06-18T02:25:27.313Z" user="celso">v 1.14 2019</note>
                 <note type="updated" update="text-version" value="v 1.15" date-time="2019-06-21T14:11:40.294Z" user="celso">v 1.15 2019</note>
                 <note type="updated" update="text-version" value="v 1.17" date-time="2019-07-31T19:46:14.742Z" user="celso">v 1.17 2019</note>
@@ -136,6 +136,7 @@
                 <note type="updated" update="text-version" value="1.35.10" date-time="2022-06-27T09:59:07.153Z" user="admin">Auto (script-increment-version-published)</note>
                 <note type="updated" update="text-version" value="1.35.11" date-time="2022-12-08T00:19:51.726Z" user="konchog">A couple minor fixes.</note>
                 <note type="updated" update="text-version" value="1.35.12" date-time="2023-01-18T16:58:06.914Z" user="celso">Auto (remove-tid-from-back-list-items)</note>
+                <note type="updated" update="text-version" value="1.35.13" date-time="2023-04-19T11:10:33.873Z" user="celso">Corrected @type values for Skt. attestation to match the new code in the schema. No need to update associated files.</note>
             </notesStmt>
         </fileDesc>
     </teiHeader>
@@ -9490,7 +9491,7 @@
                             <term>instructor of novices</term>
                             <term xml:lang="Bo-Ltn">dge tshul gyi slob dpon </term>
                             <term xml:lang="bo">དགེ་ཚུལ་གྱི་སློབ་དཔོན།</term>
-                            <term xml:lang="Sa-Ltn" type="semanticReconstruction">śrāmaṇerācārya</term>
+                            <term xml:lang="Sa-Ltn" type="reconstructedSemantic">śrāmaṇerācārya</term>
                             <term type="definition">An instructor who grants refuge and the novice precepts. One of five types of instructors named by
                                 the Buddha when asked to elaborate on the role of an instructor.</term>
                             <term type="alternative">instructors of novices</term>
@@ -9677,7 +9678,7 @@
                             <term>worked to harm the king</term>
                             <term xml:lang="Bo-Ltn">rgyal po la gnod pa’i las byed pa </term>
                             <term xml:lang="bo">རྒྱལ་པོ་ལ་གནོད་པའི་ལས་བྱེད་པ།</term>
-                            <term xml:lang="Sa-Ltn" type="semanticReconstruction">rājāpathya</term>
+                            <term xml:lang="Sa-Ltn" type="reconstructedSemantic">rājāpathya</term>
                             <term type="definition">One of the classes of people barred from joining the renunciate order.</term>
                         </gloss>
                     </item>
@@ -10720,7 +10721,7 @@
                             <term>shape shifter</term>
                             <term xml:lang="Bo-Ltn">sprul pa </term>
                             <term xml:lang="bo">སྤྲུལ་པ།</term>
-                            <term xml:lang="Sa-Ltn" type="semanticReconstruction">pratāraṇā</term>
+                            <term xml:lang="Sa-Ltn" type="reconstructedSemantic">pratāraṇā</term>
                             <term type="definition">One of the classes of beings barred from joining the renunciate order. The word <foreign xml:lang="Bo-Ltn" type="term">sprul pa</foreign> denotes a wide range of phenomena—<term type="ignore">emanations</term>, apparitions, conjurings, shape-shifting creatures, etc.—all united by their tendency to morph
                                 through their own agency or another’s. We have therefore translated <foreign xml:lang="Bo-Ltn" type="term">sprul
                                     pa</foreign> according to context as “<term type="ignore">emanation</term>” or “<term type="ignore">shape
@@ -10732,7 +10733,7 @@
                             <term>emanation</term>
                             <term xml:lang="Bo-Ltn">sprul pa </term>
                             <term xml:lang="bo">སྤྲུལ་པ།</term>
-                            <term xml:lang="Sa-Ltn" type="semanticReconstruction">pratāraṇā</term>
+                            <term xml:lang="Sa-Ltn" type="reconstructedSemantic">pratāraṇā</term>
                             <term type="definition">See “shape shifter.”</term>
                         </gloss>
                     </item>
@@ -11199,10 +11200,11 @@
                             <term xml:lang="bo">མུ་སྟེགས་ཅན།</term>
                             <term xml:lang="Sa-Ltn">tīrthya</term>
                             <term xml:lang="Sa-Ltn">tīrthika</term>
-                            <term type="definition">Religious or philosophical orders that were contemporary with the early Buddhist order, including
-                                Jains, Jaṭilas, Ājīvikas, and Cārvākas. Initially, the term <term type="ignore">
+                            <term type="definition">The term used by early Buddhists to refer to contemporary religious or philosophical orders, including Brahmanical 
+                                traditions as well as non-Brahmanical traditions such as the Jains, Jaṭilas, Ājīvikas, and Cārvākas. Initially, the term <term type="ignore">
                                     <foreign xml:lang="Sa-Ltn">tīrthika</foreign>
-                                </term> or <foreign xml:lang="Sa-Ltn">tīrthya</foreign> may have referred to non-brahmanic ascetic orders.</term>
+                                </term> or <foreign xml:lang="Sa-Ltn">tīrthya</foreign> may have referred to non-Brahmanic ascetic orders. 
+                                According to Edgerton and supported by Schopen (2000, n. I.18), the term was generally used in a pejorative sense, as a marker of differentiation.</term>
                             <term type="definition">See also <ptr target="#UT22084-001-001-48"/> and <ptr target="#UT22084-001-001-49"/>.</term>
                         </gloss>
                     </item>
@@ -11308,7 +11310,7 @@
                             <term>medicinal roots</term>
                             <term xml:lang="Bo-Ltn">rtsa ba’i sman </term>
                             <term xml:lang="bo">རྩ་བའི་སྨན།</term>
-                            <term xml:lang="Sa-Ltn" type="semanticReconstruction">vṛntabhaiṣajya</term>
+                            <term xml:lang="Sa-Ltn" type="reconstructedSemantic">vṛntabhaiṣajya</term>
                             <term type="definition">An acceptable form of medicine for a monk, as identified in the Four Supports section of the
                                 ordination ritual.</term>
                         </gloss>
@@ -11337,7 +11339,7 @@
                             <term>grass hut</term>
                             <term xml:lang="Bo-Ltn">rtswa’i spyil bu </term>
                             <term xml:lang="bo">རྩྭའི་སྤྱིལ་བུ།</term>
-                            <term xml:lang="Sa-Ltn" type="semanticReconstruction">yavasakuṭikā</term>
+                            <term xml:lang="Sa-Ltn" type="reconstructedSemantic">yavasakuṭikā</term>
                             <term type="definition">An acceptable form of shelter for a monk, as identified in the Four Supports section of the
                                 ordination ritual.</term>
                         </gloss>
@@ -11475,8 +11477,8 @@
                             <term>ghee</term>
                             <term xml:lang="Bo-Ltn">zhun mar </term>
                             <term xml:lang="bo">ཞུན་མར།</term>
-                            <term xml:lang="Sa-Ltn" type="semanticReconstruction">ājya</term>
-                            <term xml:lang="Sa-Ltn" type="semanticReconstruction">ghṛta</term>
+                            <term xml:lang="Sa-Ltn" type="reconstructedSemantic">ājya</term>
+                            <term xml:lang="Sa-Ltn" type="reconstructedSemantic">ghṛta</term>
                             <term type="definition">An acceptable form of medicine for a monk, as identified in the Four Supports section of the
                                 ordination ritual.</term>
                         </gloss>
@@ -11760,7 +11762,7 @@
                             <term xml:lang="bo">རང་བྱུང་གི་བསྙེན་པར་རྫོགས་པ།</term>
                             <term xml:lang="Bo-Ltn">rang byung</term>
                             <term xml:lang="bo">རང་བྱུང་།</term>
-                            <term xml:lang="Sa-Ltn" type="semanticReconstruction">svāma upasaṃpadā</term>
+                            <term xml:lang="Sa-Ltn" type="reconstructedSemantic">svāma upasaṃpadā</term>
                             <term type="definition">The Buddha’s ordination as a monk was a self-ordination, not presided over by a preceptor or following one of the ritual procedures that were later adopted by the tradition.</term>
                         </gloss>
                     </item>
@@ -12021,7 +12023,7 @@
                             <term>medicinal leaves</term>
                             <term xml:lang="Bo-Ltn">lo ma’i sman </term>
                             <term xml:lang="bo">ལོ་མའི་སྨན།</term>
-                            <term xml:lang="Sa-Ltn" type="semanticReconstruction">viṭapabhaiṣajya</term>
+                            <term xml:lang="Sa-Ltn" type="reconstructedSemantic">viṭapabhaiṣajya</term>
                             <term type="definition">An acceptable form of medicine for a monk, as identified in the Four Supports section of the
                                 ordination ritual.</term>
                         </gloss>
@@ -12232,7 +12234,7 @@
                             <term>act of motion alone </term>
                             <term xml:lang="Bo-Ltn">gsol ba ’ba’ zhig gi las </term>
                             <term xml:lang="bo">གསོལ་བ་འབའ་ཞིག་གི་ལས།</term>
-                            <term xml:lang="Sa-Ltn" type="semanticReconstruction">muktikājñāptikarman</term>
+                            <term xml:lang="Sa-Ltn" type="reconstructedSemantic">muktikājñāptikarman</term>
                             <term type="definition">A formal act of the saṅgha in which the motion suffices, with no need to formally state the act.
                                 Such an act is employed before a candidate for ordination is asked about private matters pertaining to his fitness for
                                 ordination.</term>
