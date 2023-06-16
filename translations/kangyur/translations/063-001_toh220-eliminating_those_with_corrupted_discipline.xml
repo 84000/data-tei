@@ -54,10 +54,10 @@
                                 <editor role="finalReviewer" ref="eft:person-250">Rory Lindsay</editor>
                         </titleStmt>
                         <editionStmt>
-                <edition>v 1.1.2 <date>2023</date>
+                <edition>v 1.1.3 <date>2023</date>
                 </edition>
             </editionStmt>
-                        <publicationStmt status="1.a">
+                        <publicationStmt status="2">
                 <publisher>
                     <name>84000: Translating the Words of the Buddha</name>
                                         is a global non-profit initiative to translate all the
@@ -83,7 +83,7 @@
             </publicationStmt>
                         <sourceDesc>
                                 <bibl key="toh220" type="text">
-                                        <ref>Toh 220</ref>
+                                        <tei:ref>Toh 220</tei:ref>
                                         <biblScope>Degé Kangyur, vol. 63 (mdo sde, dza), folios
                                                 1.b–77.b</biblScope>
                                         <author role="translatorTib">Dharmaśrīprabha</author>
@@ -96,7 +96,7 @@
                                 </bibl>
                         </sourceDesc>
                         <notesStmt>
-                                <note type="lastUpdated" date-time="2023-06-07T18:06:34.077Z" user="admin">07/06/2023 18:06:34</note>
+                                <note type="lastUpdated" date-time="2023-06-16T18:43:46.919Z" user="admin">16/06/2023 18:43:46</note>
                                 <note type="updated" update="text-version" value="0.0.1" date-time="2020-03-16T14:58:50.259Z" user="line-tofte">0.0.1</note>
                                 <note type="updated" update="translation-status" value="2.h" date-time="2020-03-16T14:58:50.259Z" user="line-tofte">2.h</note>
                                 <note type="updated" update="text-version" value="0.0.2" date-time="2021-07-05T16:22:36.428Z" user="mike">summary
@@ -150,6 +150,8 @@
                             <note type="updated" update="text-version" value="1.0.4" date-time="2023-05-22T20:16:05.192Z" user="john">Some preliminary unfinished edits toward a revision.</note>
                             <note type="updated" update="text-version" value="1.1.1" date-time="2023-06-06T19:02:05.069Z" user="john">Title changed and several substantial edits throughout; needs further review.</note>
                             <note type="updated" update="text-version" value="1.1.2" date-time="2023-06-07T18:06:31.13Z" user="john">Further edits to ch 1.</note>
+                            <note type="updated" update="translation-status" value="2" date-time="2023-06-16T18:43:42.618Z" user="john">2</note>
+                            <note type="updated" update="text-version" value="1.1.3" date-time="2023-06-16T18:43:42.618Z" user="john">Finished revising chapters 1 and 2, but further work required on the rest. Status reversed to 2, since the translation is not yet good enough for publication.</note>
                         </notesStmt>
                 </fileDesc>
         </teiHeader>
@@ -318,7 +320,7 @@
                                         </p>
                                         <milestone unit="chunk" xml:id="UT22084-063-001-13"/>
                                         <p tid="16">The Chinese translation (Taishō 653)<note place="end" xml:id="UT22084-063-001-14">
-                                                <title xml:lang="Zh-Ltn">Fo cang jing</title> <title xml:lang="zh">佛藏經</title> (<title xml:lang="Sa-Ltn">buddha­piṭakaduḥ­śīlanigraha</title>), Taishō 653 (<ref target="https://cbetaonline.dila.edu.tw/en/T0653">CBETA</ref>; <ref target="https://21dzk.l.u-tokyo.ac.jp/SAT2018/T0653.html">SAT</ref>).</note> was
+                                                <title xml:lang="Zh-Ltn">Fo cang jing</title> <title xml:lang="zh">佛藏經</title> (<title xml:lang="Sa-Ltn">buddha­piṭakaduḥ­śīlanigraha</title>), Taishō 653 (<tei:ref target="https://cbetaonline.dila.edu.tw/en/T0653">CBETA</tei:ref>; <tei:ref target="https://21dzk.l.u-tokyo.ac.jp/SAT2018/T0653.html">SAT</tei:ref>).</note> was
                                                 completed by the renowned translator Kumārajīva
                                                 (344–413 <hi rend="small-caps">ce</hi>) in 405 <hi rend="small-caps">ce</hi>, during his stay in the
                                                 former capital of Chang’an, modern-day Xi’an.
@@ -416,10 +418,10 @@
                         as <p> elements. Markup Editors, please delete these initial duplicated <p> elements along with their milestones and delete this comment.-->
                                 <div type="chapter" xml:id="UT22084-063-001-chapter-1">
                                         <head type="chapter" tid="595">Chapter One</head>
-                                        <head type="chapterTitle" tid="27">The Introduction</head>
+                                        <head type="chapterTitle" tid="27">The Setting</head>
                                         <milestone unit="chunk" xml:id="UT22084-063-001-945"/>
                                         <p tid="25">
-                        <ref cRef="F.1.b" type="folio" xml:id="UT22084-063-001-816"/> <ref cRef="B1" type="bampo"/>Homage to all buddhas and bodhisattvas.</p>
+                        <tei:ref cRef="F.1.b" type="folio" xml:id="UT22084-063-001-816"/> <tei:ref cRef="B1" type="bampo"/>Homage to all buddhas and bodhisattvas.</p>
                                         <lb/>
                                         <p tid="28">Thus did I hear at one time. The Blessed One was
                                                 residing in the Deer Park of Ṛṣipatana at Vārāṇasī,
@@ -434,7 +436,7 @@
                                                 for one person—Venerable Ānanda.</p>
                                         <milestone unit="chunk" xml:id="UT22084-063-001-33"/>
                                         <p tid="29">At that time, Venerable Śāradvatīputra,
-                                                Venerable Maudgalyāyana, <ref cRef="F.2.a" type="folio" xml:id="UT22084-063-001-817"/>
+                                                Venerable Maudgalyāyana, <tei:ref cRef="F.2.a" type="folio" xml:id="UT22084-063-001-817"/>
                                                 Venerable Mahākāśyapa, Venerable Subhūti, Venerable
                                                 Bakkula, Venerable Pūrṇa Maitrāyaṇīputra, and
                                                 Venerable Ānanda arose from their afternoon
@@ -460,7 +462,7 @@
                                                 amazing!’?”</p>
                                         <milestone unit="chunk" xml:id="UT22084-063-001-36"/>
                                         <p tid="32">“Blessed One, when I was alone in the forest in
-                                                meditative seclusion, <ref cRef="F.2.b" type="folio" xml:id="UT22084-063-001-818"/> the following
+                                                meditative seclusion, <tei:ref cRef="F.2.b" type="folio" xml:id="UT22084-063-001-818"/> the following
                                                 thought occurred to me: ‘The Blessed One uses names
                                                 and marks to describe phenomena that are devoid of
                                                 names and marks, and he describes phenomena that are
@@ -493,7 +495,7 @@
                                                 much more amazing than that! Why is that? Because,
                                                 Śāriputra, he uses names and marks to describe in
                                                 conventional language phenomena that are without
-                                                characteristics, mental engagement, effort, <ref cRef="F.3.a" type="folio" xml:id="UT22084-063-001-791"/> movement,
+                                                characteristics, mental engagement, effort, <tei:ref cRef="F.3.a" type="folio" xml:id="UT22084-063-001-791"/> movement,
                                                 attainment, and activity; to describe phenomena that
                                                 lack anything attained, where one does not find
                                                 something attained, where the lack of something
@@ -531,7 +533,7 @@
                                                 it three times, swallowed it as if it were food
                                                 without feeling the slightest discomfort, and then
                                                 walked off in midair. What do you think, Śāriputra,
-                                                would that man’s actions be amazing?” <ref cRef="F.3.b" type="folio" xml:id="UT22084-063-001-819"/>
+                                                would that man’s actions be amazing?” <tei:ref cRef="F.3.b" type="folio" xml:id="UT22084-063-001-819"/>
                     </p>
                                         <p tid="37">“Blessed One, they would be amazing! Well-Gone
                                                 One, they would be most amazing!” </p>
@@ -575,7 +577,7 @@
                                                 you think, Śāriputra, would that person’s actions be
                                                 amazing?”</p>
                                         <p tid="43">“Blessed One, they would be amazing. Well-Gone
-                                                One, they would be most amazing!” <ref cRef="F.4.a" type="folio" xml:id="UT22084-063-001-820"/>
+                                                One, they would be most amazing!” <tei:ref cRef="F.4.a" type="folio" xml:id="UT22084-063-001-820"/>
                     </p>
                                         <milestone unit="chunk" xml:id="UT22084-063-001-49"/>
                                         <p tid="44">“Śāriputra, the fact that the Thus-Gone One has
@@ -614,7 +616,7 @@
                                         <milestone unit="chunk" xml:id="UT22084-063-001-56"/>
                                         <p tid="51">“Śāriputra, what do you think: is the great
                                                 Ganges River huge, wide, deep, and boundless?”</p>
-                                        <p tid="52">“Yes, Blessed One, it is.” <ref cRef="F.4.b" type="folio" xml:id="UT22084-063-001-821"/>
+                                        <p tid="52">“Yes, Blessed One, it is.” <tei:ref cRef="F.4.b" type="folio" xml:id="UT22084-063-001-821"/>
                     </p>
                                         <milestone unit="chunk" xml:id="UT22084-063-001-58"/>
                                         <p tid="53">“Śāriputra, imagine that a deluge as large as
@@ -656,7 +658,7 @@
                                         <p tid="61">“Śāriputra, imagine that when the great
                                                 eon of incineration comes about, a person were to extinguish
                                                 that great, blazing mass of fire by spitting on it,
-                                                  <ref cRef="F.5.a" type="folio" xml:id="UT22084-063-001-822"/> and then restore
+                                                  <tei:ref cRef="F.5.a" type="folio" xml:id="UT22084-063-001-822"/> and then restore
                                                 the entire universe, including the celestial
                                                 mansions, with a single breath. Śāriputra, what do
                                                 you think: would that person’s actions be
@@ -699,7 +701,7 @@
                                                 characteristics; they lack mental engagement and do
                                                 not possess mental engagement; they lack effort,
                                                 coming, going, and arrangement; they lack
-                                                elaboration and are free of elaboration; <ref cRef="F.5.b" type="folio" xml:id="UT22084-063-001-823"/> they lack torment
+                                                elaboration and are free of elaboration; <tei:ref cRef="F.5.b" type="folio" xml:id="UT22084-063-001-823"/> they lack torment
                                                 and are free of torment; they lack an opposite side,
                                                 this side, a shore, and the absence of a shore; they
                                                 are devoid of valleys, plains, rivers, and the
@@ -716,8 +718,8 @@
                                                 utter liberation; they lack falsehood and the
                                                 quality of falsehood; they lack deception, the
                                                 quality of deception, and the net of deception; they
-                                                lack names, marks, conventions, and the absence of
-                                                conventions; they lack imputation and the absence of
+                                                lack names, marks, terminology, and the absence of
+                                                terminology; they lack imputation and the absence of
                                                 imputation; they lack perfection and imperfection;
                                                 they lack guidance, a path, and being free from the
                                                 fruition of a path; they are free of delusion and
@@ -729,7 +731,7 @@
                                                 objects, and thoroughly apprehended objects; they
                                                 lack attainment and something to be attained; they
                                                 are devoid of truth, desire, anger, and delusion;
-                                                they lack truth and falsity; <ref cRef="F.6.a" type="folio" xml:id="UT22084-063-001-792"/> they
+                                                they lack truth and falsity; <tei:ref cRef="F.6.a" type="folio" xml:id="UT22084-063-001-792"/> they
                                                 lack permanence, impermanence, clarity, opacity,
                                                 light, and darkness; they lack possessiveness, an
                                                 intrinsic essence, and an object of intrinsic
@@ -761,7 +763,7 @@
                                                 nihilism, existence, nonexistence, names, marks, or
                                                 imputations, and anyone who apprehends entities,
                                                 Śāriputra, is not in agreement with the Thus-Gone
-                                                One. <ref cRef="F.6.b" type="folio" xml:id="UT22084-063-001-824"/> Śāriputra, those
+                                                One. <tei:ref cRef="F.6.b" type="folio" xml:id="UT22084-063-001-824"/> Śāriputra, those
                                                 who are not in agreement with the Thus-Gone One
                                                 adhere to wrong views. Those who adhere to wrong
                                                 views are not my disciples, and those who are not my
@@ -797,10 +799,10 @@
                                         <milestone unit="chunk" xml:id="UT22084-063-001-76"/>
                                         <p tid="70">“Those people have attained freedom from
                                                 delusion. Why is that? Śāriputra, it is because the
-                                                Dharma lacks going and coming, <ref cRef="F.7.a" type="folio" xml:id="UT22084-063-001-825"/>
+                                                Dharma lacks going and coming, <tei:ref cRef="F.7.a" type="folio" xml:id="UT22084-063-001-825"/>
                                                 something to be apprehended, and something to be
                                                 thoroughly apprehended; it lacks something to cling
-                                                to and something external; it is free of conventions
+                                                to and something external; it is free of conventional terms
                                                 and devoid of designations; it lacks joy and
                                                 something to be enjoyed, and it has put an end to
                                                 joy; it lacks gathering together and is free of gathering together; it lacks
@@ -825,7 +827,7 @@
                                                   Yongle, Lithang, Narthang, Choné, Lhasa, and Stok
                                                   editions read: <foreign xml:lang="Bo-Ltn" type="term">gnon</foreign> (“oppressing”). </note>
                                                 it is without discipline and contravened discipline;
-                                                it lacks affliction, purification, absorption, <ref cRef="F.7.b" type="folio" xml:id="UT22084-063-001-826"/> attainment, the
+                                                it lacks affliction, purification, absorption, <tei:ref cRef="F.7.b" type="folio" xml:id="UT22084-063-001-826"/> attainment, the
                                                 faculty of absorption, concentration, and the result
                                                 of concentration; it is without knowing, seeing,
                                                 apprehended object, and the lack of apprehended
@@ -860,9 +862,9 @@
                                                 imputations and marks.</p>
                                         <milestone unit="chunk" xml:id="UT22084-063-001-79"/>
                                         <p tid="71">“Śāriputra, the perfect awakening that the
-                                                Thus-Gone One attained also lacked the qualities of
+                                                Thus-Gone One has attained also lacks the qualities of
                                                 permanence, impermanence, happiness, suffering,
-                                                affliction, purification, nihilism, eternalism, <ref cRef="F.8.a" type="folio" xml:id="UT22084-063-001-827"/> a being, a life
+                                                affliction, purification, nihilism, eternalism, <tei:ref cRef="F.8.a" type="folio" xml:id="UT22084-063-001-827"/> a being, a life
                                                 force, a soul, a primordial man, a person,<note place="end" xml:id="UT22084-063-001-80"> The two
                                                   terms that are used here are both commonly
                                                   translated as “person” in English, but they have
@@ -877,15 +879,26 @@
                                                   <foreign xml:lang="Sa-Ltn" type="term">pudgala</foreign>, which refers to the “person”
                                                   at the level of the individual. </note> a
                                                 descendant of Manu, a child of Manu, a celestial
-                                                pole, and gandharvas; it is without entities, the
-                                                lack of entities, cessation, the lack of cessation,
-                                                attainment, and the lack of attainment; it is
+                                                fixed pole,<note place="end" xml:id="UT22084-063-001-680">The Tibetan 
+                                                        <foreign xml:lang="Bo-Ltn">brtan pa</foreign> here could simply 
+                                                        mean “fixed” or “stable” but, following as it does just after the two 
+                                                        preceding terms, may also refer to the Pole Star (Skt. 
+                                                        <foreign xml:lang="Sa-Ltn">dhruva</foreign>) mythologically 
+                                                        personified as the son of Uttānapāda and thus grandson of 
+                                                        Manu. Compare with the same Tibetan term, rendered “stability,” in 
+                                                        the list at <ptr target="#UT22084-063-001-230"/>
+                                                        where it appears instead flanked by <foreign xml:lang="Bo-Ltn">rtag pa</foreign> 
+                                                        (“permanence”) and <foreign xml:lang="Bo-Ltn">ther zug</foreign> (“eternality”).</note> 
+                                                and a gandharva;<note place="end" xml:id="UT22084-063-001-681">Here, presumably, with the meaning of a 
+                                                being disembodied after death and seeking rebirth.</note> it is without entity, without the
+                                                lack of entity, without cessation, without the lack of cessation,
+                                                without attainment, and without the lack of attainment; it is
                                                 without transmigration, oppression, birth, and
                                                 arising; it is without past, future, present, birth,
                                                 old age, sickness, death, sorrow, wailing, pain,
                                                 unhappiness, and disturbance; it is without perfect
-                                                awakening and the lack of perfect awakening; it is
-                                                has no limit in the past, future, or in-between; it
+                                                awakening and the lack of perfect awakening; it
+                                                has no extent into the past, into the future, or in-between; it
                                                 is without peace, discipline, decrease, increase,
                                                 engagement, imputation, nonimputation, and both
                                                 imputation and nonimputation; and it is without
@@ -906,32 +919,31 @@
                                                 why, Śāriputra, the fact that the Thus-Gone One
                                                 fully awakened to unsurpassed perfect buddhahood and
                                                 then taught a Dharma about all conditioned phenomena
-                                                being uncompounded, unarisen, devoid of marks, <ref cRef="F.8.b" type="folio" xml:id="UT22084-063-001-828"/> devoid of
+                                                being uncompounded, unarisen, devoid of marks, <tei:ref cRef="F.8.b" type="folio" xml:id="UT22084-063-001-828"/> devoid of
                                                 characteristics, unconditioned, and indescribable is
                                                 truly amazing!”</p>
                                         <milestone unit="chunk" xml:id="UT22084-063-001-83"/>
-                                        <p tid="73">This was chapter one, “The Introduction.”</p>
+                                        <p tid="73">This was chapter one, “The Setting.”</p>
                                 </div>
                                 <div type="chapter" xml:id="UT22084-063-001-chapter-2">
                                         <head type="chapter" tid="596">Chapter Two</head>
                                         <head type="chapterTitle" tid="597">The Teaching on
                                                 Recollection</head>
                                         <milestone unit="chunk" xml:id="UT22084-063-001-84"/>
-                                        <p tid="75">“Blessed One,” Śāriputra said, “how can one give
-                                                instructions and teachings in line with this Dharma
-                                                discourse that can allow one to recognize an evil
-                                                friend, and how can its instructions and teachings
-                                                allow one to recognize a virtuous friend?”</p>
+                                        <p tid="75">“Blessed One,” Śāriputra said, “according to this Dharma
+                                                discourse, what are the ways in which an evil
+                                                friend gives instructions and teachings, and what are the ways in which a virtuous
+                                                friend gives instructions and teachings?”</p>
                                         <milestone unit="chunk" xml:id="UT22084-063-001-85"/>
                                         <p tid="76">“Śāriputra,” the Blessed One replied, “a monk
-                                                can instruct and teach another monk: ‘Come, monk.
+                                                might instruct and teach another monk as follws: ‘Come, monk.
                                                 Focus on the Buddha, focus on the Dharma, and focus
                                                 on the Saṅgha. Focus on recollecting moral
                                                 discipline. Focus on recollecting giving. Focus on
-                                                recollecting the gods. Come, monk. Carefully reflect
-                                                and place your attention on the body. As you
-                                                apprehend the marks that are present there, consider
-                                                the impure marks that the body possesses. Come,
+                                                recollecting the gods. Come, monk. Place and sustain your attention on 
+                                                the body as being the body. To
+                                                keep hold of the marks of sustaining, focus on
+                                                the body’s impure marks. Come,
                                                 monk. Focus on the fact that all formations are
                                                 impermanent and are suffering. Focus on the fact
                                                 that all phenomena lack a self and are empty. Come,
@@ -947,7 +959,7 @@
                                                 they do not arise in the future. Come, monk.
                                                 Carefully consider and direct your attention to the
                                                 aspects of the aggregates, the sense fields, and the
-                                                elements as repulsive. <ref cRef="F.9.a" type="folio" xml:id="UT22084-063-001-829"/> Come,
+                                                elements as repulsive. <tei:ref cRef="F.9.a" type="folio" xml:id="UT22084-063-001-829"/> Come,
                                                 monk. Bear in mind the marks that indicate virtuous
                                                 and nonvirtuous qualities. Then, focus on these key
                                                 points to abandon them: To abandon desire, focus on
@@ -963,34 +975,34 @@
                                                 marks that indicate virtuous qualities perfectly in
                                                 mind and focus on the fact that nirvāṇa is
                                                 happiness and peace. Work to acquire this view, so
-                                                that you can attain nirvāṇa.’ </p>
-                                        <milestone unit="chunk" xml:id="UT22084-063-001-86"/>
-                                        <p tid="77">“If a monk instructs and teaches another saying,
+                                                that you can attain nirvāṇa.’ But when a monk instructs and teaches another 
+                                                with such statements and tells him,
                                                 ‘Focus on purity,’ he is encouraging him to hold a
                                                 mistaken understanding. The idea that this is the
                                                 correct view will encourage him to hold a wrong
-                                                view. </p>
+                                                view.</p>
+                                        <milestone unit="chunk" xml:id="UT22084-063-001-86"/>
+                                        <p tid="77">“Śāriputra, those who instruct and teach others
+                                                in such a manner are evil friends, and they are deprecating me.
+                                                They are speaking in the false and incorrect terms of non-Buddhists. 
+                                                They are teaching the positions that non-Buddhists preach. Śāriputra, I do
+                                                not authorize the donation of the offerings of the faithful to be used
+                                                by such unholy beings, not even as little as a small cup of water.</p>
                                         <milestone unit="chunk" xml:id="UT22084-063-001-87"/>
-                                        <p tid="78">“Śāriputra, those who instruct and teach others
-                                                in such a manner are evil friends who deprecate me.
-                                                The conventional view propounded by non-Buddhists is
-                                                based on something false and incorrect. Non-Buddhist
-                                                preachers teach their own position. Śāriputra, I do
-                                                not authorize even small cups of water to be donated
-                                                as gifts out of faith to such unholy beings.
-                                                Śāriputra, I say this because there are those who
-                                                give instructions but do not instruct and teach
+                                        <p tid="78">“Śāriputra, what I say is for the sake of those who give instructions,   
+                                                but these ones are not instructing and teaching
                                                 others in accordance with my words. Why is that?
-                                                Because most of them who give such instructions and
-                                                teachings have fallen victim to pride. <ref cRef="F.9.b" type="folio" xml:id="UT22084-063-001-793"/> Śāriputra, if those
-                                                ignorant monks do not completely abandon this
+                                                Those who give such instructions and
+                                                teachings are mostly those who have fallen victim to pride. 
+                                                <tei:ref cRef="F.9.b" type="folio" xml:id="UT22084-063-001-793"/> Śāriputra, if those
+                                                ignorant monks do not completely abandon every single aspect of this
                                                 position within five years, they may expend a great
                                                 deal of effort in those false words and not question
                                                 or gain understanding from the monks in the assembly
                                                 who hold the view of nonapprehending. And that is
-                                                why, Śāriputra, I say that monks who maintain a
+                                                why, Śāriputra, those monks who maintain a
                                                 false practice of diligence for five years and
-                                                associate under the purview of non-Buddhists behave
+                                                are mixed in the purview of non-Buddhists I say are behaving
                                                 just like the members of Māra’s hordes.</p>
                                         <milestone unit="chunk" xml:id="UT22084-063-001-88"/>
                                         <p tid="79">“Then, Śāriputra, there are those monks who hear
@@ -1002,7 +1014,7 @@
                                                 they engage in it, understand it, contemplate it,
                                                 and develop conviction in it, without it being based
                                                 in the view of personhood in any way whatsoever,
-                                                Śāriputra, I say that those monks are pure and
+                                                Śāriputra, those monks I say are pure and
                                                 observe pure conduct. Why is that? Because,
                                                 Śāriputra, those monks have mastered the acceptance
                                                 of nonapprehending, and they can reach nirvāṇa in
@@ -1012,221 +1024,230 @@
                                                 possess the qualities related to the acceptance of
                                                 nonapprehending will constitute the first great
                                                 assembly during the lifetime of the blessed
-                                                Maitreya. The blessed Maitreya will proclaim three
+                                                Maitreya. I prophesy that the blessed Maitreya will proclaim three
                                                 times, ‘Amazing! This great assembly mastered the
                                                 conduct related to nonapprehending during
                                                 Śākyamuni’s lifetime! Amazing! This great assembly
                                                 mastered the conduct related to nonapprehending
                                                 during Śākyamuni’s lifetime! Amazing! This great
                                                 assembly mastered the conduct related to
-                                                nonapprehending during Śākyamuni’s lifetime!’ <ref cRef="F.10.a" type="folio" xml:id="UT22084-063-001-830"/> Śāriputra, that is
+                                                nonapprehending during Śākyamuni’s lifetime!’ 
+                                                <tei:ref cRef="F.10.a" type="folio" xml:id="UT22084-063-001-830"/> Śāriputra, that is
                                                 how I prophesy that householders and renunciates who
                                                 master such an acceptance will reach nirvāṇa in this
                                                 world. </p>
                                         <milestone unit="chunk" xml:id="UT22084-063-001-90"/>
-                                        <p tid="81">“Śāriputra, if there are some monks who become
-                                                afraid, scared, or terrified when they hear
-                                                instructions and teachings that contain explanations
-                                                of the emptiness that is not to be apprehended, they
+                                        <p tid="81">“Śāriputra, some monks, when they are instructed and taught 
+                                                the teachings on nonapprehension and emptiness, if they feel
+                                                afraid, scared, or terrified on so hearing, they
                                                 will be reborn in the hell realms without a lord,
-                                                refuge, and teacher. Why is that? Because,
-                                                Śāriputra, fearing the teachings of the Buddha
-                                                fulfills the conditions for lower rebirth.
-                                                Śāriputra, why have I said that such people take
-                                                rebirth in the lower realms? Because, Śāriputra, that there is nothing designated
-                                                as the Buddha’s teachings is
-                                                the nondesignation of anything apprehended.</p>
+                                                refuge, and teacher. Why is that? 
+                                                Because, Śāriputra, it is to be afraid of the teachings of the Buddha   
+                                                that is itself what completes the conditions for lower rebirth.
+                                                Moreover, Śāriputra, I have said that some people will take
+                                                rebirth in the lower realms. Why is that? Śāriputra, 
+                                                the nonexistence that they identify in that way as the teachings of the Buddha
+                                                is a nonexistence that they have imputed upon what they apprehend.</p>
                                         <milestone unit="chunk" xml:id="UT22084-063-001-91"/>
-                                        <p tid="82">“Śāriputra, it would be better for someone to
-                                                commit any of the five deeds entailing immediate
-                                                retribution than to hold such a view with respect to
-                                                a self, a being, a life force, a person, the
-                                                aggregates, the elements, the sense fields,
-                                                origination, destruction, discipline, an essence of
-                                                discipline, an essence of concentration, a pure
-                                                essence of concentration, the marks of the Buddha,
-                                                and contemplating accomplishing the Dharma. </p>
+                                        <p tid="82">“Śāriputra, for someone even to
+                                                commit the five deeds entailing immediate
+                                                retribution is not worse than it is to hold a view with respect to
+                                                a self, to hold a view with respect to a being, 
+                                                to hold a view with respect to a life force, 
+                                                to hold a view with respect to a person, 
+                                                to hold a view with respect to the
+                                                aggregates, to hold a view with respect to the elements, 
+                                                to hold a view with respect to the sense fields,
+                                                to hold a view with respect to origination, 
+                                                to hold a view with respect to destruction, 
+                                                to hold a view with respect to discipline, 
+                                                to hold a view with respect to an essence of
+                                                discipline, to hold a view with respect to an essence of concentration, 
+                                                to hold a view with respect to a pure
+                                                essence of concentration, to hold a view with respect to the marks of the Buddha,
+                                                to hold a view with respect to engaging one’s attention on 
+                                                accomplishing the Dharma, or to hold that a view with respect to a person 
+                                                is the convention of the saṅgha. </p>
                                         <milestone unit="chunk" xml:id="UT22084-063-001-92"/>
-                                        <p tid="83">“The saṅgha should not include anyone who
-                                                maintains the conventional view of a person. Why is
-                                                that, Śāriputra? Because the teachings of the
+                                        <p tid="83">“Śāriputra, why is
+                                                that? Because the teachings of the
                                                 Thus-Gone One declare that someone who maintains the
-                                                view of a person cannot be regarded as a saṅgha
-                                                member. Why is that? Because, Śāriputra, persons,
-                                                concepts, and thoughts do not exist for the
-                                                Thus-Gone One’s saṅgha of hearers. <ref cRef="F.10.b" type="folio" xml:id="UT22084-063-001-831"/> Śāriputra, there is
+                                                view of a person cannot be counted as included in the saṅgha.
+                                                Why is that? Because, Śāriputra, the
+                                                Thus-Gone One’s saṅgha of hearers is without persons,
+                                                without concepts, and free of thoughts. 
+                                                <tei:ref cRef="F.10.b" type="folio" xml:id="UT22084-063-001-831"/> Śāriputra, there is
                                                 not the slightest nonvirtue within the Thus-Gone
                                                 One’s saṅgha of hearers. Their discipline is free of
-                                                corruption. Their conduct is free of corruption.
-                                                Their livelihood is free of corruption. Their view
-                                                is free of corruption. </p>
+                                                being spoiled. Their conduct is free of being spoiled.
+                                                Their livelihood is free of being spoiled. Their view
+                                                is free of being spoiled. </p>
                                         <milestone unit="chunk" xml:id="UT22084-063-001-93"/>
-                                        <p tid="84">“Śāriputra, what is meant by
+                                        <p tid="84">“Śāriputra, what is 
                                                   <distinct>virtue</distinct>? For the Thus-Gone
-                                                One’s saṅgha of hearers it refers to the conditions
-                                                associated with the mind, concepts about
+                                                One’s saṅgha of hearers it is like this: factors
+                                                concurrent with the mind, concepts about
                                                 nonentities, concepts about marks, apprehending in
-                                                terms of names, and apprehending in terms of
-                                                persons. Śāriputra, in the noble Dharma and Vinaya,
-                                                the term <distinct>virtue</distinct> refers to the
-                                                time when one finally does not apprehend any
-                                                conventions associated with the mind that are
-                                                virtuous or nonvirtuous.</p>
+                                                terms of names, apprehending in terms of
+                                                persons, and even, Śāriputra, any mind-related conventions at all 
+                                                about virtuous or nonvirtuous phenomena—not to  
+                                                apprehend any of these, that is what <distinct>virtue</distinct> is taught to be  
+                                                in the Dharma and Vinaya of the noble ones.</p>
                                         <milestone unit="chunk" xml:id="UT22084-063-001-94"/>
                                         <p tid="85">“Why is that, Śāriputra? Because one should know
                                                 that where there is happiness, there is also
-                                                suffering. Śāriputra, the teaching of the Thus-Gone
+                                                suffering. Śāriputra, the quality of the Thus-Gone
                                                 One’s perfect buddhahood is peace. Śāriputra, the
-                                                teaching of the Thus-Gone One’s perfect buddhahood
-                                                is without desire, aversion, happiness, suffering,
-                                                mind, intention, perception, and feeling. Finally,
-                                                Śāriputra, it even lacks emptiness. Why is that?
-                                                Because, Śāriputra, when a perception of emptiness
-                                                is present, the perceptions of a self, a being, a
-                                                life force, a person, eternalism, nihilism,
-                                                origination, and destruction will also arise. That
+                                                quality of the Thus-Gone One’s perfect buddhahood
+                                                is that in it there is no desire, no nondesire, no happiness, no suffering,
+                                                no mind, no intention, no perception, no feeling. 
+                                                Śāriputra, there is not even emptiness. Why is that?
+                                                Because, Śāriputra, when a notion of emptiness
+                                                is present, notions of a self, notions of a being, notions of a
+                                                life force, notions of a person, notions of eternity, notions of nothingness,
+                                                notions of origination, and notions of destruction will also arise. That
                                                 is why, Śāriputra, it is said that as long as there
-                                                is perception, there will also be grasping at the
-                                                perception of marks. That is why this is a wrong
-                                                view.</p>
+                                                is a perceiver, there will also be beliefs in 
+                                                perceptions involving marks, and that for that reason it is wrong.</p>
                                         <milestone unit="chunk" xml:id="UT22084-063-001-95"/>
-                                        <p tid="86">“Śāriputra, <distinct>emptiness</distinct> means
-                                                not contemplating an emptiness that is related to
-                                                the perception of marks. It is called
-                                                  <distinct>emptiness</distinct> because it is even
-                                                empty of contemplating emptiness. <ref cRef="F.11.a" type="folio" xml:id="UT22084-063-001-794"/>
+                                        <p tid="86">“Śāriputra, <distinct>emptiness</distinct> is so called 
+                                                because no attention is engaged on
+                                                an emptiness related to perceptions involving marks. It is called
+                                                  <distinct>emptiness</distinct> because it is also
+                                                empty of attention being engaged on emptiness. 
+                                                <tei:ref cRef="F.11.a" type="folio" xml:id="UT22084-063-001-794"/>
                                                 Śāriputra, it is called
                                                   <distinct>emptiness</distinct> because there is
-                                                neither virtue nor nonvirtue in emptiness.
+                                                thus neither virtue nor nonvirtue in emptiness.
                                                 Śāriputra, it is called
-                                                  <distinct>emptiness</distinct> because there is no
-                                                perception of emptiness. Śāriputra, all compounded
-                                                phenomena should be understood in that way. It is
-                                                called <distinct>emptiness</distinct> because there
-                                                is no knowing, cognizing, comprehending,
-                                                investigating, or abiding. Śāriputra, no one is able
-                                                to contemplate emptiness—not in terms of the absence
-                                                of marks, the absence of wishes, or the absence of
-                                                contemplating marks. That is why it is called
-                                                  <distinct>emptiness</distinct>. </p>
+                                                  <distinct>emptiness</distinct> because there is not even
+                                                a perception of emptiness. Śāriputra, it is
+                                                called <distinct>emptiness</distinct> because in common with
+                                                how all compounded phenomena should be known there
+                                                is no knowing, no cognizing, no comprehending,
+                                                no investigating, and no dwelling. Śāriputra, it is called
+                                                  <distinct>emptiness</distinct> because—since no one is able
+                                                to engage their attention on emptiness—it is not an absence
+                                                of marks, it is not an absence of wishes, and it is not an absence of
+                                                engaging attention on marks. </p>
                                         <milestone unit="chunk" xml:id="UT22084-063-001-96"/>
-                                        <p tid="87">“Śāriputra, why did I speak of <distinct>abiding
-                                                  by emptiness</distinct>? <distinct>Abiding by
-                                                  emptiness</distinct> means not contemplating any
-                                                marks, even marks related to emptiness. The absence
-                                                of marks means that marks have been abandoned.
-                                                Śāriputra, these marks are said to be without marks,
-                                                because there is no mental engagement, no absence of
-                                                mental engagement, no mark, and no sign whatsoever.
-                                                Śāriputra, I have taught that the slightest act of
-                                                grasping at marks and apprehending marks is a wrong
+                                        <!-->start<-->
+                    <p tid="87">“Śāriputra, why did I speak of <distinct>dwelling
+                                                  with emptiness</distinct>? It is called<distinct>dwelling with
+                                                  emptiness</distinct> because no attention is engaged on any
+                                                marks, even marks of emptiness. One speaks of the absence
+                                                of marks because marks have been abandoned.
+                                                Śāriputra, one speaks of the absence of marks
+                                                because there is no attention whatsoever engaged on marks, there is
+                                                no engagement of attention, no mark, and no sign.
+                                                Śāriputra, I have taught that the slightest belief in
+                                                marks or apprehending of marks is a wrong
                                                 view. Why is that? Śāriputra, in the Dharma and
-                                                Vinaya, even apprehending emptiness as peace is
-                                                incorrect, so what need is there to mention
-                                                apprehending it in terms of conventions which are
-                                                related to someone or something?</p>
+                                                Vinaya, even the apprehending of something as peace is
+                                                wrong—let alone a designation, let alone a designation by someone,
+                                                let alone a designation of something.</p>
                                         <milestone unit="chunk" xml:id="UT22084-063-001-97"/>
-                                        <p tid="88">“Śāriputra, why do the blessed buddhas teach so
-                                                extensively about the fact that conventions are
-                                                mistaken? Śāriputra, you may not understand that
-                                                these conventions are false, but the Thus-Gone One
-                                                has realized that they are mistaken, so he does not
-                                                apprehend any convention whatsoever. Śāriputra, that
-                                                is why he has taught that conventions are wrong
+                                        <p tid="88">“Śāriputra, why do the blessed ones teach so
+                                                extensively that designations are
+                                                wrong? Śāriputra, you may not know that
+                                                these designations are untrue, but the thus-gone ones
+                                                understand that they are wrong and do not
+                                                apprehend even the slightest designation whatsoever. Śāriputra, that
+                                                is why they have taught that designations are wrong
                                                 views. Śāriputra, the unsurpassed and perfect
                                                 awakening of the thus-gone ones is without
-                                                recollection or mental engagement. <ref cRef="F.11.b" type="folio" xml:id="UT22084-063-001-832"/> Why is that?
-                                                Śāriputra, it is because the thus-gone ones do not
-                                                apprehend any individual reality with regard to any
-                                                phenomenon; they do not apprehend any intrinsic
-                                                essence, any extrinsic essence, any sameness, or any
+                                                recollection and without attention. 
+                                                <tei:ref cRef="F.11.b" type="folio" xml:id="UT22084-063-001-832"/> Why is that?
+                                                Śāriputra, it is because the thus-gone ones, with regard to any
+                                                dharma, do not apprehend a suchness intrinsic to it, they 
+                                                do not apprehend an essential nature intrinsic to it, do not apprehend 
+                                                an essential nature extrinsic to it, do not apprehend a sameness, and do not apprehend a
                                                 lack of sameness.</p>
                                         <milestone unit="chunk" xml:id="UT22084-063-001-98"/>
                                         <p tid="89">“Śāriputra, why is it called the<distinct>
                                                   application of mindfulness</distinct>? As I have
-                                                said, Śāriputra, apprehending the application of
-                                                mindfulness, apprehending an intrinsic nature,
-                                                apprehending an individual reality, and apprehending
-                                                a natural state are unsound and uncalled for. The
-                                                Thus-Gone One has said that the<distinct>
-                                                  application of mindfulness</distinct> means to
-                                                understand with certainty that phenomena are empty
-                                                of inherent characteristics. They are without
-                                                clinging, craving, abiding, immediate presence, and
-                                                persistence, and they are free from abiding, so
-                                                there can be no mindfulness with respect to them. So
-                                                what need is there to mention an application of
-                                                mindfulness? That is why it is called the<distinct>
+                                                said, Śāriputra, an apprehended application of
+                                                mindfulness, an apprehended intrinsic nature,
+                                                an apprehended suchness intrinsic to something, and an apprehended
+                                                intrinsic enduring state would be baseless and spurious, and it is in order to ensure 
+                                                the proper understanding of how dharmas are empty
+                                                of their own inherent characteristics that the
+                                                Thus-Gone One has spoken of the<distinct>
+                                                  application of mindfulness</distinct>. They are without
+                                                clinging, without craving, have no location, have no imminence, 
+                                                do not endure, and are free of remaining, so
+                                                there can be no actual mindfulness of them—let alone
+                                                the application of
+                                                mindfulness. For that reason it is called the<distinct>
                                                   application of mindfulness</distinct>.</p>
                                         <milestone unit="chunk" xml:id="UT22084-063-001-99"/>
-                                        <p tid="90">“Śāriputra, if any phenomenon had any individual
-                                                reality—even if it was just the size of a hundredth
+                                        <p tid="90">“Śāriputra, if any dharma had any intrinsic 
+                                                suchness—even if it was no bigger than a hundredth
                                                 part of a hair-tip—the Thus-Gone One would not have
-                                                appeared in the world and taught that all phenomena
+                                                appeared in the world and taught that all dharmas
                                                 are devoid of intrinsic nature. However, Śāriputra,
-                                                since he knows that all phenomena are devoid of
+                                                since he knows that all dharmas are devoid of
                                                 intrinsic nature, are empty of intrinsic nature,
                                                 have but a single characteristic, and lack
                                                 characteristics, the Thus-Gone One has taught the
-                                                application of mindfulness using the designation
+                                                application of mindfulness and called it the
                                                   <distinct>application of mindfulness</distinct>.
-                                                The noble ones’ lack of concepts is called
+                                                As something that has no location and is not based on anything, is without
+                                                recollection and without any act of recollection,
+                                                is without concepts and without thoughts, is without intention
+                                                and without any act of intention, is without mind and without any act
+                                                of mind, is without phenomena and any notion
+                                                of phenomena, <tei:ref cRef="F.12.a" type="folio" xml:id="UT22084-063-001-833"/> 
+                                                is without any notions of anything believing anything whatsoever, and is
+                                                without dualistic activity, without dwelling, and
+                                                without enduring—for all these reasons the nonthought of the noble ones is called
                                                   the<distinct> application of
-                                                  mindfulness</distinct> because it is not located
-                                                anywhere and is not established; it is without
-                                                recollection and any action related to recollection;
-                                                it is without concepts, discursiveness, intention,
-                                                action related to intention, mind, and action
-                                                related to mind; it is without phenomena, perception
-                                                related to phenomena, <ref cRef="F.12.a" type="folio" xml:id="UT22084-063-001-833"/> and
-                                                all grasping perceptions whatsoever; and it is
-                                                without dualistic activity, abiding, and
-                                                persistence. That is why, when the Thus-Gone One
-                                                taught the application of mindfulness, he referred
-                                                to these concomitants of entities as the<distinct>
-                                                  application of mindfulness</distinct>. </p>
+                                                  mindfulness</distinct>. That whole set of items comprised by what the Thus-Gone One
+                                                taught to be the application of mindfulness is referred to as 
+                                                the <distinct>application of mindfulness</distinct>. </p>
                                         <milestone unit="chunk" xml:id="UT22084-063-001-101"/>
-                                        <p tid="91">“Śāriputra, what is <distinct>recollecting the
-                                                  Buddha</distinct>? Seeing that entities do not
-                                                exist is called <distinct>recollecting the
-                                                  Buddha</distinct>. The fact that the Buddha is
-                                                inconceivable and incomparable and his intention is
-                                                unified with suchness is called
+                                        <p tid="91">“Furthermore, Śāriputra, what is <distinct>recollecting the
+                                                  Buddha</distinct>? Seeing that there are no entities 
+                                                is called <distinct>recollecting the
+                                                  Buddha</distinct>. Also, that the Buddha is
+                                                inconceivable, that he is without compare, and that his intention 
+                                                comprises suchness is called
                                                   <distinct>recollecting the Buddha</distinct>.
-                                                Śāriputra, what does <distinct>his intention is
-                                                  unified with suchness</distinct> mean? The blessed
-                                                buddhas lack concepts, have no conceptual thought,
-                                                and do not exist according to concepts or conceptual
-                                                thoughts. That is why it is called
-                                                  <distinct>recollecting the Buddha</distinct>. When
-                                                one sees this intrinsic essence, one sees the
+                                                Śāriputra, what does <distinct>his intention 
+                                                  comprises suchness</distinct> mean? The blessed
+                                                buddhas are without concepts, have no thought,
+                                                and are the absence of concepts and
+                                                thoughts—that is why one speaks of
+                                                  <distinct>recollecting the Buddha</distinct>. To
+                                                see that intrinsic essence is to see the
                                                 Buddha.</p>
                                         <milestone unit="chunk" xml:id="UT22084-063-001-102"/>
-                                        <p tid="92">“What does <distinct>seeing the inherent
-                                                  essence</distinct> mean? Seeing the absence of
-                                                entities where there are no entities is recollecting
-                                                the Buddha. When one sees the Buddha without
-                                                observing even the slightest act of recollection
-                                                based on phenomena related to the mind and mental
-                                                states, it is called <distinct>recollecting the
-                                                  Buddha</distinct>. Śāriputra, it is not easy to
-                                                practice recollection when that recollection is
-                                                bereft of conventions and mental engagement, and
-                                                that is why this Dharma is called
+                                        <p tid="92">“What does <distinct>to see that intrinsic
+                                                  essence</distinct> mean? To see the absence of
+                                                entities in the absence of entities is to recollect
+                                                the Buddha. It is because one sees the Buddha without
+                                                apprehending even the slightest act of recollection
+                                                with the dharmas of the mind and mental
+                                                states that it is called <distinct>recollecting the
+                                                  Buddha</distinct>. Śāriputra, since it is not easy to
+                                                recollect by a recollecting that is
+                                                the abstention from designation and the 
+                                                elimination of engaging attention, that is why this teaching is called
                                                   <distinct>recollecting the Buddha</distinct>.
-                                                Śāriputra, this Dharma is the pacification of all
-                                                mental engagement. Those who exert themselves in
-                                                recollecting the Buddha are therefore not
-                                                contemplating the Thus-Gone One’s physical marks.
-                                                Why is that? Because, Śāriputra, consciousness is
-                                                always fixated on mere physical marks. The absence
-                                                of entities and apprehending it as formless <ref cRef="F.12.b" type="folio" xml:id="UT22084-063-001-795"/> is recollecting the
-                                                Buddha. That is why the absence of concepts,
-                                                thoughts, and grasping is referred to as
+                                                Śāriputra, this teaching is to be at peace from all
+                                                mental engagement. For those who exert themselves in
+                                                it, recollecting the Buddha does not mean engaging their attention on
+                                                the Thus-Gone One’s physical marks.
+                                                Why is that? Because, Śāriputra, it is consciousness that is
+                                                always focused just on physical marks. The absence
+                                                of any entity apprehending the absence of form, 
+                                                <tei:ref cRef="F.12.b" type="folio" xml:id="UT22084-063-001-795"/> that is recollecting the
+                                                Buddha. To be without concepts,
+                                                to have no thoughts, and to be without grasping is therefore referred to as
                                                   <distinct>recollecting the Buddha</distinct>.” </p>
                                         <milestone unit="chunk" xml:id="UT22084-063-001-103"/>
                                         <p tid="93">This was chapter two, “The Teaching on
-                                                Recollection.” <ref cRef="B2" type="bampo"/>
+                                                Recollection.” <tei:ref cRef="B2" type="bampo"/>
                     </p>
                                 </div>
                                 <div type="chapter" xml:id="UT22084-063-001-chapter-3">
@@ -1275,7 +1296,7 @@
                                                 the slightest action related to the recollection of
                                                 qualities that originate in the mind exists, what
                                                 need is there to mention physical, verbal, or mental
-                                                actions? It is impossible. <ref cRef="F.13.a" type="folio" xml:id="UT22084-063-001-834"/>
+                                                actions? It is impossible. <tei:ref cRef="F.13.a" type="folio" xml:id="UT22084-063-001-834"/>
                                                 Recollecting the Buddha is free from
                                                 characteristics, without movement, without marks,
                                                 without the absence of characteristics, and without
@@ -1316,7 +1337,7 @@
                                                   <distinct>recollecting the Buddha</distinct>.</p>
                                         <milestone unit="chunk" xml:id="UT22084-063-001-111"/>
                                         <p tid="99">“If they wish, those who possess such a
-                                                recollection of the Buddha <ref cRef="F.13.b" type="folio" xml:id="UT22084-063-001-835"/> can
+                                                recollection of the Buddha <tei:ref cRef="F.13.b" type="folio" xml:id="UT22084-063-001-835"/> can
                                                 transform this great trichiliocosm and overcome
                                                 trillions of demons, so how could they apprehend and
                                                 arouse baseless and untrue ignorance? If one
@@ -1349,7 +1370,7 @@
                                         <p tid="100">“Śāriputra, a monk should instruct and teach
                                                 another monk as follows: ‘Come, monk. Familiarize
                                                 yourself with the characteristics that phenomena
-                                                themselves possess. <ref cRef="F.14.a" type="folio" xml:id="UT22084-063-001-836"/> Do not contemplate
+                                                themselves possess. <tei:ref cRef="F.14.a" type="folio" xml:id="UT22084-063-001-836"/> Do not contemplate
                                                 the perception of phenomena.’ Those who contemplate
                                                 in such a way delight in the complete absence of
                                                 clinging and attachment, in the absence of phenomena
@@ -1394,7 +1415,7 @@
                                                   <distinct>virtuous friend</distinct>. Ultimately,
                                                 there is neither virtue nor nonvirtue. Śāriputra,
                                                 those who possess such characteristics are rare in
-                                                the world. <ref cRef="F.14.b" type="folio" xml:id="UT22084-063-001-837"/> Since they possess
+                                                the world. <tei:ref cRef="F.14.b" type="folio" xml:id="UT22084-063-001-837"/> Since they possess
                                                 the unmistaken and correct view, their view is known
                                                 as the <distinct>correct view</distinct>. Śāriputra,
                                                 concerning correct view, correct acceptance, and
@@ -1431,7 +1452,7 @@
                                                   Peking, Narthang, and Choné editions: <foreign xml:lang="Bo-Ltn" type="quote">tshangs par spyad
                                                   pa’i tha chad.</foreign> Degé reads: <foreign xml:lang="Bo-Ltn" type="quote">tshangs par spyad
                                                   pa’i tha snyad</foreign> (“Convention of pure
-                                                  conduct”).</note> type of pure conduct. <ref cRef="F.15.a" type="folio" xml:id="UT22084-063-001-796"/> Śāriputra, it is
+                                                  conduct”).</note> type of pure conduct. <tei:ref cRef="F.15.a" type="folio" xml:id="UT22084-063-001-796"/> Śāriputra, it is
                                                 not the case that I never said, ‘This is the correct
                                                 view, and this is a wrong view.’ Why is that?
                                                 Śāriputra, it is because I realize that all
@@ -1477,7 +1498,7 @@
                                                 of different topics, because their knowledge is
                                                 accurate. The proper understanding of a variety of
                                                 topics allows them to discuss things thoroughly and
-                                                provide the proper conditions. <ref cRef="F.15.b" type="folio" xml:id="UT22084-063-001-838"/> When
+                                                provide the proper conditions. <tei:ref cRef="F.15.b" type="folio" xml:id="UT22084-063-001-838"/> When
                                                 they teach about a variety of different topics, they
                                                 do not apprehend even the slightest entity
                                                 whatsoever, and are not included among all the
@@ -1521,7 +1542,7 @@
                                                 ultimately no saṅgha whatsoever.’ They do not
                                                 apprehend any substratum that has the qualities of
                                                 being permanent, stable, eternal, and unchanging.
-                                                  <ref cRef="F.16.a" type="folio" xml:id="UT22084-063-001-839"/> The noble ones
+                                                  <tei:ref cRef="F.16.a" type="folio" xml:id="UT22084-063-001-839"/> The noble ones
                                                 reject even the convention that phenomena are
                                                 objects of knowledge and accurately imputed
                                                 conventions, such as ‘this is a man,’ ‘this is a
@@ -1564,7 +1585,7 @@
                                         <milestone unit="chunk" xml:id="UT22084-063-001-137"/>
                                         <p tid="125">“ ‘This is the noble Saṅgha. This is the
                                                 relative saṅgha. This is a saṅgha that has come to
-                                                fruition. <ref cRef="F.16.b" type="folio" xml:id="UT22084-063-001-797"/> This is a quickly
+                                                fruition. <tei:ref cRef="F.16.b" type="folio" xml:id="UT22084-063-001-797"/> This is a quickly
                                                 assembled saṅgha. This is a resident saṅgha. This is
                                                 a saṅgha of monks. This is a saṅgha of nuns. This is
                                                 an appropriate saṅgha. This is an inappropriate
@@ -1601,7 +1622,7 @@
                                                 force, a person, humans, nonhumans, women, men,
                                                 gods, the hell realms, the animal realm, the world
                                                 of the Lord of Death, the aggregates, the elements,
-                                                the sense fields, origination, or destruction; <ref cRef="F.17.a" type="folio" xml:id="UT22084-063-001-840"/> to the sounds of
+                                                the sense fields, origination, or destruction; <tei:ref cRef="F.17.a" type="folio" xml:id="UT22084-063-001-840"/> to the sounds of
                                                 conch shells, great drums, gongs, clay drums, lutes,
                                                 songs, or any manner of musical sounds; to the terms
                                                 earth, water, fire, or wind; to the terms discipline
@@ -1627,7 +1648,7 @@
                                                 characteristics, marks, attachment, yearning,
                                                 grasping, birth, and cessation. For those who
                                                 naturally engage as such, there is no meditation,
-                                                cultivation, <ref cRef="F.17.b" type="folio" xml:id="UT22084-063-001-841"/> weariness,
+                                                cultivation, <tei:ref cRef="F.17.b" type="folio" xml:id="UT22084-063-001-841"/> weariness,
                                                 thinking, conceptualization, nonconceptualization,
                                                 or contradiction. They are called the
                                                   <distinct>noble Saṅgha</distinct> because they
@@ -1665,7 +1686,7 @@
                                                 meant by <distinct>seeing the Thus-Gone
                                                   One</distinct>? It is the absence of effort,
                                                 elaboration, origination, concepts, clinging,
-                                                craving, and names; <ref cRef="F.18.a" type="folio" xml:id="UT22084-063-001-842"/> it is without
+                                                craving, and names; <tei:ref cRef="F.18.a" type="folio" xml:id="UT22084-063-001-842"/> it is without
                                                 marks, the absence of marks, and action related to
                                                 marks; it lacks grasping at conventions, and it
                                                 lacks action related to imputation. Therefore, not
@@ -1704,7 +1725,7 @@
                                                 teacher, and they are not my disciples. Those
                                                 foolish beings do not belong in the assembly of my
                                                 saṅgha of hearers, so I expel them with a hand
-                                                gesture. <ref cRef="F.18.b" type="folio" xml:id="UT22084-063-001-843"/> Śāriputra, all
+                                                gesture. <tei:ref cRef="F.18.b" type="folio" xml:id="UT22084-063-001-843"/> Śāriputra, all
                                                 phenomena lack a primary cause, lack mental
                                                 engagement, lack marks, lack acceptance, and are not
                                                 perfect awakening. If one cannot even apprehend
@@ -1741,7 +1762,7 @@
                                                 seen the gods of the Heaven of the Thirty-Three.’
                                                 Then he said, ‘Learned ones, I have seen the gods of
                                                 the Heaven of the Thirty-Three! Would you like to
-                                                see them too?’ <ref cRef="F.19.a" type="folio" xml:id="UT22084-063-001-844"/> They replied,
+                                                see them too?’ <tei:ref cRef="F.19.a" type="folio" xml:id="UT22084-063-001-844"/> They replied,
                                                 ‘Friend, we want to see the gods of the Heaven of
                                                 the Thirty-Three as well!’ So, the group of
                                                 townspeople followed him into the dense jungle,
@@ -1781,7 +1802,7 @@
                                                 it, stray into an incorrect extreme, frequently
                                                 preach it to others, and make a living using evil
                                                 spells. They will be experts in the various Lokāyata
-                                                teachings. <ref cRef="F.19.b" type="folio" xml:id="UT22084-063-001-845"/> They will practice
+                                                teachings. <tei:ref cRef="F.19.b" type="folio" xml:id="UT22084-063-001-845"/> They will practice
                                                 and teach an impure Dharma, obsess over discourses,
                                                 sink into worldly paths, have little vitality, and
                                                 have bad complexions. They will eliminate
@@ -1823,7 +1844,7 @@
                                                 and think, ‘We should also pursue such teachings
                                                 right now and perfect them!’ With this thought in
                                                 mind, they will abandon the unsurpassed Dharma and
-                                                Vinaya. <ref cRef="F.20.a" type="folio" xml:id="UT22084-063-001-846"/> Śāriputra, those
+                                                Vinaya. <tei:ref cRef="F.20.a" type="folio" xml:id="UT22084-063-001-846"/> Śāriputra, those
                                                 monks who will appear in the future will not find
                                                 the path. They will follow a mistaken path and be
                                                 defiled and outcast mendicants.</p>
@@ -1869,7 +1890,7 @@
                                         <p tid="144">“Śāriputra, those unholy beings will reject my
                                                 unsurpassed and perfect awakening. Śāriputra, I do
                                                 not allow them to go forth, take full ordination,
-                                                  <ref cRef="F.20.b" type="folio" xml:id="UT22084-063-001-847"/> or enjoy even small
+                                                  <tei:ref cRef="F.20.b" type="folio" xml:id="UT22084-063-001-847"/> or enjoy even small
                                                 cups of water donated as gifts of faith. Why is
                                                 that? Because, Śāriputra, they have not abandoned
                                                 any of the following views—the view of apprehended
@@ -1908,7 +1929,7 @@
                                                 irreproachable. They are my disciples, because they
                                                 do not disagree with what I have taught. </p>
                                         <milestone unit="chunk" xml:id="UT22084-063-001-161"/>
-                                        <p tid="147">“Śāriputra, <ref cRef="F.21.a" type="folio" xml:id="UT22084-063-001-848"/> someone might say,
+                                        <p tid="147">“Śāriputra, <tei:ref cRef="F.21.a" type="folio" xml:id="UT22084-063-001-848"/> someone might say,
                                                 ‘The fact that the Thus-Gone One speaks of persons
                                                 even though there are no persons is surely on
                                                 account of worldly conventions. The Thus-Gone One
@@ -1946,7 +1967,7 @@
                                                 assertions, the Thus-Gone One would not stray toward
                                                 the wrong path. Śāriputra, even if I claimed that
                                                 everything is without a cause, the Thus-Gone One
-                                                  <ref cRef="F.21.b" type="folio" xml:id="UT22084-063-001-849"/> would not teach the
+                                                  <tei:ref cRef="F.21.b" type="folio" xml:id="UT22084-063-001-849"/> would not teach the
                                                 lack of causes. Śāriputra, even if I said the words
                                                 ‘there is no action,’ the Thus-Gone One would not
                                                 teach the absence of action. Śāriputra, even if I
@@ -1986,7 +2007,7 @@
                                                 for the purpose of purifying the mind, there is no
                                                 affliction whatsoever. Śāriputra, in the Dharma
                                                 taught by the Thus-Gone One for the sake of the
-                                                gods, <ref cRef="F.22.a" type="folio" xml:id="UT22084-063-001-850"/> there are no gods
+                                                gods, <tei:ref cRef="F.22.a" type="folio" xml:id="UT22084-063-001-850"/> there are no gods
                                                 whatsoever. Śāriputra, in the Dharma taught by the
                                                 Thus-Gone One for the sake of humans, there are no
                                                 humans whatsoever. Śāriputra, in the Dharma taught
@@ -2036,7 +2057,7 @@
                                                 there is no expression of name and form, no
                                                 conventions, no apprehending, no origination, no
                                                 disintegration, no contradiction, and no conceptual
-                                                thought. <ref cRef="F.22.b" type="folio" xml:id="UT22084-063-001-798"/> Śāriputra, I say
+                                                thought. <tei:ref cRef="F.22.b" type="folio" xml:id="UT22084-063-001-798"/> Śāriputra, I say
                                                 that those who are not afraid, scared, or terrified
                                                 when they hear about this absence of characteristics
                                                 and origination have completed this exceptional task
@@ -2045,7 +2066,7 @@
                                                   <distinct>noble Saṅgha</distinct>.”</p>
                                         <milestone unit="chunk" xml:id="UT22084-063-001-168"/>
                                         <p tid="153">This was chapter four, “The Noble Saṅgha.”
-                                                <ref cRef="B3" type="bampo"/>
+                                                <tei:ref cRef="B3" type="bampo"/>
                     </p>
                                 </div>
                                 <div type="chapter" xml:id="UT22084-063-001-chapter-5">
@@ -2084,7 +2105,7 @@
                                                 discipline is corrupted deserve to be criticized by
                                                 many beings. They deserve to be expelled, as if with
                                                 the pointed horns of oxen, and they will see their
-                                                own faults and experience suffering. <ref cRef="F.23.a" type="folio" xml:id="UT22084-063-001-851"/> Śāriputra, this is
+                                                own faults and experience suffering. <tei:ref cRef="F.23.a" type="folio" xml:id="UT22084-063-001-851"/> Śāriputra, this is
                                                 the second fault of the corrupted discipline of
                                                 monks whose discipline is corrupted. This will
                                                 complete the conditions to be reborn in the lower
@@ -2127,7 +2148,7 @@
                                                 of their major and minor limbs for a trillion eons,
                                                 they would not regain their current status. They
                                                 will attain rebirth in the animal realm, where they
-                                                will carry loads as oxen <ref cRef="F.23.b" type="folio" xml:id="UT22084-063-001-852"/> and
+                                                will carry loads as oxen <tei:ref cRef="F.23.b" type="folio" xml:id="UT22084-063-001-852"/> and
                                                 donkeys, and thus they will not regain their current
                                                 status. Why is that? Śāriputra, if monks whose
                                                 discipline is corrupted cannot purify even a
@@ -2165,7 +2186,7 @@
                                                 should know that a monk whose discipline is
                                                 corrupted is like a snake’s corpse, and they must
                                                 stay far away from them. They should not perform any
-                                                blessing rite, vow restoration, or <ref cRef="F.24.a" type="folio" xml:id="UT22084-063-001-853"/> offering ceremony.
+                                                blessing rite, vow restoration, or <tei:ref cRef="F.24.a" type="folio" xml:id="UT22084-063-001-853"/> offering ceremony.
                                                 Why is that? Because those foolish people will
                                                 complete the conditions to suffer injury, to be
                                                 helpless, to be unhappy, to suffer, to be weak, to
@@ -2204,7 +2225,7 @@
                                                   mendicants</distinct>, <distinct>defiled
                                                   mendicants</distinct>, <distinct>evil
                                                   mendicants</distinct>, <distinct>worthless
-                                                  mendicants</distinct>, <ref cRef="F.24.b" type="folio" xml:id="UT22084-063-001-799"/>
+                                                  mendicants</distinct>, <tei:ref cRef="F.24.b" type="folio" xml:id="UT22084-063-001-799"/>
                                                 <distinct>outsiders of the noble path</distinct>,
                                                   <distinct>stork mendicants</distinct>,<note place="end" xml:id="UT22084-063-001-178"> Tib.
                                                   <foreign xml:lang="Bo-Ltn" type="term">dge sbyong
@@ -2255,7 +2276,7 @@
                                                 firebrands, they lack the fragrance of discipline,
                                                 the scent of absorption, the scent of insight, the
                                                 scent of liberation, and the scent of the wisdom and
-                                                vision of liberation. <ref cRef="F.25.a" type="folio" xml:id="UT22084-063-001-854"/>
+                                                vision of liberation. <tei:ref cRef="F.25.a" type="folio" xml:id="UT22084-063-001-854"/>
                                                 Instead, they bear only the stench of corrupted
                                                 discipline. The words and discourses of such
                                                 mendicants do not actually reflect the discourses on
@@ -2287,7 +2308,7 @@
                                                 they multiply and complete the conditions for
                                                 rebirth in the lower realms. Śāriputra, this is the
                                                 fifth fault of the corrupted discipline of monks
-                                                whose discipline is corrupted. <ref cRef="F.25.b" type="folio" xml:id="UT22084-063-001-855"/> This
+                                                whose discipline is corrupted. <tei:ref cRef="F.25.b" type="folio" xml:id="UT22084-063-001-855"/> This
                                                 will complete the conditions to be reborn in the
                                                 lower realms. </p>
                                         <milestone unit="chunk" xml:id="UT22084-063-001-183"/>
@@ -2332,7 +2353,7 @@
                                                 talk nonsense, are careless, and repeat themselves
                                                 constantly; who are lazy, whose diligence is weak,
                                                 and who are forgetful; who are mentally imbalanced
-                                                and mentally disturbed; <ref cRef="F.26.a" type="folio" xml:id="UT22084-063-001-856"/> who
+                                                and mentally disturbed; <tei:ref cRef="F.26.a" type="folio" xml:id="UT22084-063-001-856"/> who
                                                 are not agreeable and not vigilant; and whose
                                                 insight is faulty, who are dull like sheep, and
                                                 whose faculties are lowly. Those who attend to,
@@ -2367,7 +2388,7 @@
                                         <milestone unit="chunk" xml:id="UT22084-063-001-190"/>
                                         <p tid="174">“What are the lower realms, Śāriputra? The
                                                 lower realms are the realms of hell beings, animals,
-                                                hungry ghosts, and asuras. <ref cRef="F.26.b" type="folio" xml:id="UT22084-063-001-857"/> When
+                                                hungry ghosts, and asuras. <tei:ref cRef="F.26.b" type="folio" xml:id="UT22084-063-001-857"/> When
                                                 those beings die and transmigrate from the hell
                                                 realms, they might be reborn as humans. If they are
                                                 reborn as humans, they will be separated from their
@@ -2401,7 +2422,7 @@
                                                 will not meet the Buddha’s hearers, the worthy ones
                                                 who have exhausted all defilements. They will
                                                 accumulate negative karma and, having habituated
-                                                themselves toward negativity, <ref cRef="F.27.a" type="folio" xml:id="UT22084-063-001-858"/> they
+                                                themselves toward negativity, <tei:ref cRef="F.27.a" type="folio" xml:id="UT22084-063-001-858"/> they
                                                 will be reborn in the company of extremely bad
                                                 people and be inclined toward negative actions. They
                                                 will perceive the correct view as a wrong view, and
@@ -2435,7 +2456,7 @@
                                                 includes using unwholesome speech, unwise speech,
                                                 and afflicted speech; acting in a disharmonious way,
                                                 with attachment, and with longing; indulging in
-                                                desire and lust; acting with anger, <ref cRef="F.27.b" type="folio" xml:id="UT22084-063-001-859"/> hatred, delusion,
+                                                desire and lust; acting with anger, <tei:ref cRef="F.27.b" type="folio" xml:id="UT22084-063-001-859"/> hatred, delusion,
                                                 and utter delusion; engaging in many activities;
                                                 taking pleasure in talking, sleeping, gathering,
                                                 socializing, and frivolous talk; engaging in
@@ -2465,7 +2486,7 @@
                                                 careless, arrogant, hyperactive, uninspired,
                                                 slothful, sluggish, excited by food, and
                                                 disheartened; developing pride, intense pride,
-                                                excessive pride, pride in believing one exists, <ref cRef="F.28.a" type="folio" xml:id="UT22084-063-001-860"/> pride related to
+                                                excessive pride, pride in believing one exists, <tei:ref cRef="F.28.a" type="folio" xml:id="UT22084-063-001-860"/> pride related to
                                                 humility, and false pride; being hypocritical,
                                                 obsequious, soliciting, extorting, and in disharmony
                                                 with the Dharma; using profits to make a profit;
@@ -2498,7 +2519,7 @@
                                         <milestone unit="chunk" xml:id="UT22084-063-001-195"/>
                                         <p tid="179">“After they die, those who have ruined their
                                                 discipline, vows, behavior, and conduct will fall
-                                                into the hell realms. <ref cRef="F.28.b" type="folio" xml:id="UT22084-063-001-861"/> They
+                                                into the hell realms. <tei:ref cRef="F.28.b" type="folio" xml:id="UT22084-063-001-861"/> They
                                                 deserve to be abandoned by the buddhas, by the
                                                 buddha’s hearers, and by those who pursue virtue and
                                                 wish for parinirvāṇa. For an analogy, Śāriputra, if
@@ -2535,7 +2556,7 @@
                                                 their discipline have a unique quality such that
                                                 they immediately become angry when they hear such
                                                 discourses. Overwhelmed by anger, they will develop
-                                                distrust toward the monks who teach the Dharma. <ref cRef="F.29.a" type="folio" xml:id="UT22084-063-001-862"/> They will deprecate
+                                                distrust toward the monks who teach the Dharma. <tei:ref cRef="F.29.a" type="folio" xml:id="UT22084-063-001-862"/> They will deprecate
                                                 them and generate this idea in many beings by
                                                 saying, ‘These discourses of the Thus-Gone One were
                                                 not taught by the Buddha!’ Why is that? Śāriputra,
@@ -2575,7 +2596,7 @@
                                                 monks through the three types of miraculous
                                                 displays, they would not understand that doctrine at
                                                 all and would not be able to attain the fruition.
-                                                Why is that? Such unholy beings <ref cRef="F.29.b" type="folio" xml:id="UT22084-063-001-863"/> have
+                                                Why is that? Such unholy beings <tei:ref cRef="F.29.b" type="folio" xml:id="UT22084-063-001-863"/> have
                                                 rejected the noble path, lack faith, chase after
                                                 food and clothes, and are attached to worldly,
                                                 material things. It is said that such beings will be
@@ -2613,7 +2634,7 @@
                                                 beings, intent on misdeeds, who have strong desires,
                                                 chase after material things, and are absorbed in the
                                                 pursuit of their own livelihoods, evil Māra will
-                                                take the opportunity <ref cRef="F.30.a" type="folio" xml:id="UT22084-063-001-864"/> to divide my Dharma
+                                                take the opportunity <tei:ref cRef="F.30.a" type="folio" xml:id="UT22084-063-001-864"/> to divide my Dharma
                                                 and Vinaya into five groups. After he has split it
                                                 into five groups there will be conflict, and the
                                                 householders and renunciates will say unpleasant
@@ -2656,7 +2677,7 @@
                                                 mental faculty: (1) the conducive basis, (2) the
                                                 basis conducive to exhaustion, (3) the basis of
                                                 claiming all phenomena exist, (4) the basis of a
-                                                person, and (5) the basis of apprehending. <ref cRef="F.30.b" type="folio" xml:id="UT22084-063-001-865"/> Śāriputra, those
+                                                person, and (5) the basis of apprehending. <tei:ref cRef="F.30.b" type="folio" xml:id="UT22084-063-001-865"/> Śāriputra, those
                                                 are the types of mistaken grasping Māra will teach
                                                 that were not expounded by the buddhas and their
                                                 hearers. Then, once evil Māra has overpowered those
@@ -2695,7 +2716,7 @@
                                         <milestone unit="chunk" xml:id="UT22084-063-001-206"/>
                                         <p tid="189">“Śāriputra, those among the newly ordained
                                                 monks at that time will primarily be beings with
-                                                sharp insight. <ref cRef="F.31.a" type="folio" xml:id="UT22084-063-001-866"/> Why is that? That
+                                                sharp insight. <tei:ref cRef="F.31.a" type="folio" xml:id="UT22084-063-001-866"/> Why is that? That
                                                 is the case, Śāriputra, because although they have
                                                 gone forth under this teaching and engaged in
                                                 afflicted conduct, many among them will be born
@@ -2730,7 +2751,7 @@
                                                 many impure aspects of the body. Then, during such a
                                                 contemplation, you will attain the fruition of a
                                                 stream enterer. If you contemplate the aggregates as
-                                                  <ref cRef="F.31.b" type="folio" xml:id="UT22084-063-001-867"/> suffering, empty,
+                                                  <tei:ref cRef="F.31.b" type="folio" xml:id="UT22084-063-001-867"/> suffering, empty,
                                                 and feeble, you will attain the fruition of a
                                                 once-returner. You can attain the fruition of a
                                                 non-returner and the state of a worthy one in the
@@ -2772,7 +2793,7 @@
                                                 gathered there to listen to the ultimate teachings
                                                 of the Buddha hear such an explanation, they will
                                                 experience intense fear, thinking, ‘We are going to
-                                                fall into a great abyss.’ <ref cRef="F.32.a" type="folio" xml:id="UT22084-063-001-868"/>
+                                                fall into a great abyss.’ <tei:ref cRef="F.32.a" type="folio" xml:id="UT22084-063-001-868"/>
                                                 ‘Alas!’ they will declare, ‘the teachings of Blessed
                                                 Śākyamuni will soon subside and disappear!’ </p>
                                         <milestone unit="chunk" xml:id="UT22084-063-001-216"/>
@@ -2810,7 +2831,7 @@
                                                 homes, domains, and lineages of my heirs and my
                                                 hearers, so what need is there to mention being able
                                                 to live in a monastery or practicing reverence? It
-                                                is impossible. <ref cRef="F.32.b" type="folio" xml:id="UT22084-063-001-800"/> Consider this,
+                                                is impossible. <tei:ref cRef="F.32.b" type="folio" xml:id="UT22084-063-001-800"/> Consider this,
                                                 Śāriputra: after the Thus-Gone One has passed into
                                                 parinirvāṇa, they will suppress and reject his heirs
                                                 who are tamed, purified, and endowed with the
@@ -2859,7 +2880,7 @@
                                                 would draw their weapons and guard and conceal that
                                                 honey pot, saying, ‘Whoever eats even a tiny
                                                 quantity—as little as a hair tip—from this honey pot
-                                                will die!’ <ref cRef="F.33.a" type="folio" xml:id="UT22084-063-001-869"/>
+                                                will die!’ <tei:ref cRef="F.33.a" type="folio" xml:id="UT22084-063-001-869"/>
                                         </p>
                                         <milestone unit="chunk" xml:id="UT22084-063-001-225"/>
                                         <p tid="205">“Śāriputra, some would then think, ‘Anyone who
@@ -2899,7 +2920,7 @@
                                                 themselves that compounded phenomena do not exist
                                                 and will become liberated from all forms of
                                                 suffering. Śāriputra, the honey pot represents the
-                                                Dharma and Vinaya of the Thus-Gone One <ref cRef="F.33.b" type="folio" xml:id="UT22084-063-001-870"/> that refer to
+                                                Dharma and Vinaya of the Thus-Gone One <tei:ref cRef="F.33.b" type="folio" xml:id="UT22084-063-001-870"/> that refer to
                                                 emptiness, the absence of marks, and the absence of
                                                 wishes. Śāriputra, the world with its gods guarding
                                                 and concealing the honey pot refers to the fact that
@@ -2920,7 +2941,7 @@
                                                 the aggregates, the elements, the sense fields,
                                                 existence, the path, nirvāṇa, fruition, and
                                                 attainment; and they will come to believe that they
-                                                have attained something they have not attained. <ref cRef="B4" type="bampo"/>
+                                                have attained something they have not attained. <tei:ref cRef="B4" type="bampo"/>
                                                 They will denigrate the profound awakening of the
                                                 Buddha and this Dharma teaching of emptiness and
                                                 nonapprehending. The Thus-Gone One has said that
@@ -2935,7 +2956,7 @@
                                                 teachings on the absence of a self, the absence of a
                                                 being, the absence of a life force, the absence of a
                                                 person, the emptiness of nonapprehending, the
-                                                absence of marks, <ref cRef="F.34.a" type="folio" xml:id="UT22084-063-001-871"/> and the absence of
+                                                absence of marks, <tei:ref cRef="F.34.a" type="folio" xml:id="UT22084-063-001-871"/> and the absence of
                                                 wishes are explained—have been instructed by Māra.
                                                 They are pretending to be mendicants, while in fact
                                                 they are not. They are Dharma thieves and Dharma
@@ -2965,7 +2986,7 @@
                                                 mendicants,’ ‘load bearers,’ ‘killers of thus-gone
                                                 ones,’ ‘those who commit the acts entailing
                                                 immediate retribution,’ ‘evil friends,’ ‘those whose
-                                                discipline is corrupted,’ <ref cRef="F.34.b" type="folio" xml:id="UT22084-063-001-872"/> ‘those
+                                                discipline is corrupted,’ <tei:ref cRef="F.34.b" type="folio" xml:id="UT22084-063-001-872"/> ‘those
                                                 who hold wrong views,’ ‘non-Buddhists,’ ‘obstacle
                                                 creators,’ ‘those who involve themselves with evil
                                                 actions,’ ‘those who destroy vitality,’ ‘wounded
@@ -3002,7 +3023,7 @@
                                                 ‘evil children,’ ‘deceivers,’ ‘those who like to
                                                 quarrel,’ ‘those who are obsessed with arguing,’
                                                 ‘those who take up conflict,’ ‘those who perpetuate
-                                                conflicts,’ <ref cRef="F.35.a" type="folio" xml:id="UT22084-063-001-873"/> ‘those who are not
+                                                conflicts,’ <tei:ref cRef="F.35.a" type="folio" xml:id="UT22084-063-001-873"/> ‘those who are not
                                                 liberated,’ ‘impure ones,’ ‘those who are overcome
                                                 by sorrow,’ ‘those who are disturbed by sorrow,’
                                                 ‘mere mendicants,’ ‘those who are bound by
@@ -3040,7 +3061,7 @@
                                                 cling to what has no essence engage in actions that
                                                 please evil Māra. All their disciplines and worldly
                                                 behaviors make them just like immature ordinary
-                                                beings. <ref cRef="F.35.b" type="folio" xml:id="UT22084-063-001-874"/> Those who have the
+                                                beings. <tei:ref cRef="F.35.b" type="folio" xml:id="UT22084-063-001-874"/> Those who have the
                                                 mindset of such unholy beings are called ‘those
                                                 endowed with wrong acceptance.’ They do not
                                                 resemble, are not similar to, and are not like
@@ -3083,7 +3104,7 @@
                                                 night. However, Blessed One, it would not be very
                                                 surprising if a householder who takes lives were to
                                                 harm and kill living beings for an entire day and a
-                                                night.” <ref cRef="F.36.a" type="folio" xml:id="UT22084-063-001-875"/>
+                                                night.” <tei:ref cRef="F.36.a" type="folio" xml:id="UT22084-063-001-875"/>
                     </p>
                                         <milestone unit="chunk" xml:id="UT22084-063-001-237"/>
                                         <p tid="215">“Śāriputra, what do you think would be more
@@ -3131,7 +3152,7 @@
                                                 and a night. However, Blessed One, it would not be
                                                 very surprising if householders who engaged in these
                                                 activities did commit them for a day and a night.
-                                                  <ref cRef="F.36.b" type="folio" xml:id="UT22084-063-001-876"/>
+                                                  <tei:ref cRef="F.36.b" type="folio" xml:id="UT22084-063-001-876"/>
                                         </p>
                                         <milestone unit="chunk" xml:id="UT22084-063-001-242"/>
                                         <p tid="219">“Blessed One, those who hold wrong views will
@@ -3169,7 +3190,7 @@
                                                 the words of others—they speak a hundred or a
                                                 thousand words every instant, so what need is there
                                                 to mention the things they can say in an entire day
-                                                and night? <ref cRef="F.37.a" type="folio" xml:id="UT22084-063-001-877"/> People who engage
+                                                and night? <tei:ref cRef="F.37.a" type="folio" xml:id="UT22084-063-001-877"/> People who engage
                                                 in idle gossip and are covetous constantly compare
                                                 themselves to others and crave and seek what others
                                                 possess. Malevolent people who constantly harm
@@ -3203,7 +3224,7 @@
                                                 should be recognized and identified by many beings,
                                                 and they deserve to be despised by many beings. They
                                                 are known as ‘having completely corrupted
-                                                discipline,’ ‘ruthless,’ ‘evil,’ ‘disgraceful,’ <ref cRef="F.37.b" type="folio" xml:id="UT22084-063-001-801"/> ‘impure,’
+                                                discipline,’ ‘ruthless,’ ‘evil,’ ‘disgraceful,’ <tei:ref cRef="F.37.b" type="folio" xml:id="UT22084-063-001-801"/> ‘impure,’
                                                 ‘nonvirtuous,’ ‘inauspicious,’ ‘lacking good
                                                 qualities,’ and ‘devoid of good qualities,’ and they
                                                 deserve to be rejected. They will also be known by
@@ -3241,7 +3262,7 @@
                                                 stream. If they develop faith in this teaching,
                                                 leave their homes, and go forth to abandon killing,
                                                 and if, in order to eliminate their obscurations,
-                                                  <ref cRef="F.38.a" type="folio" xml:id="UT22084-063-001-878"/> they go forth as
+                                                  <tei:ref cRef="F.38.a" type="folio" xml:id="UT22084-063-001-878"/> they go forth as
                                                 followers of the buddhas and the buddhas’ hearers,
                                                 and they rely upon, attend to, and venerate virtuous
                                                 friends, they will then attain the level of
@@ -3285,7 +3306,7 @@
                                                 every one of them would be extremely unhappy. So
                                                 what need is there to mention them seeing Māra’s
                                                 messengers participating in the vow restoration or
-                                                offering ceremony? <ref cRef="F.38.b" type="folio" xml:id="UT22084-063-001-879"/> They are Māra’s
+                                                offering ceremony? <tei:ref cRef="F.38.b" type="folio" xml:id="UT22084-063-001-879"/> They are Māra’s
                                                 servants. When they learn about the excellent
                                                 awakening of the buddhas and proclaim it to
                                                 householders, some gods, nāgas, and yakṣas who lack
@@ -3314,7 +3335,7 @@
                                                 behave like thieves in the way that they act and
                                                 think. They also behave like thieves in the way that
                                                 they stare, look around, bend and extend their
-                                                limbs, <ref cRef="F.39.a" type="folio" xml:id="UT22084-063-001-802"/> wear their skirts,
+                                                limbs, <tei:ref cRef="F.39.a" type="folio" xml:id="UT22084-063-001-802"/> wear their skirts,
                                                 carry their alms bowls, and wear their robes. They
                                                 act as thieves in all their physical, verbal, and
                                                 mental movements and endeavors. Anyone who shaves
@@ -3354,7 +3375,7 @@
                                                 steal anything,’ ‘those renowned as thieves,’ or
                                                 ‘the robbers who steal anything.’ And so, Śāriputra,
                                                 those evil monks are known as ‘the thieves of the
-                                                world with its gods.’ <ref cRef="F.39.b" type="folio" xml:id="UT22084-063-001-880"/>
+                                                world with its gods.’ <tei:ref cRef="F.39.b" type="folio" xml:id="UT22084-063-001-880"/>
                                         </p>
                                         <milestone unit="chunk" xml:id="UT22084-063-001-254"/>
                                         <p tid="229">“Śāriputra, are those thieves of the world with
@@ -3396,7 +3417,7 @@
                                                 entourage is one of corrupted discipline. They
                                                 indulge in corrupted discipline, and they do not
                                                 like discourses on discipline. They do not accord
-                                                with profound discourses such as this one. <ref cRef="F.40.a" type="folio" xml:id="UT22084-063-001-803"/> They do not agree,
+                                                with profound discourses such as this one. <tei:ref cRef="F.40.a" type="folio" xml:id="UT22084-063-001-803"/> They do not agree,
                                                 and they quarrel with the proponents of such
                                                 discourses. They do not like remaining seated, they
                                                 look around in the cardinal and intermediate
@@ -3438,7 +3459,7 @@
                                                 saṅgha. They do not question any task entrusted to
                                                 them. They inquire about robes, they try to find
                                                 fault in those who are disciplined, and they act as
-                                                if they are equals. <ref cRef="F.40.b" type="folio" xml:id="UT22084-063-001-881"/> They uphold and
+                                                if they are equals. <tei:ref cRef="F.40.b" type="folio" xml:id="UT22084-063-001-881"/> They uphold and
                                                 adopt unholy doctrines, they enjoy gatherings, and
                                                 they instigate disputes. Śāriputra, this is the
                                                 ninth fault of the corrupted discipline of monks
@@ -3474,7 +3495,7 @@
                                                 quickly outshine them. They are unpleasant, they
                                                 slander those who are disciplined, and they do not
                                                 keep close company with the men and women who give
-                                                advice. <ref cRef="F.41.a" type="folio" xml:id="UT22084-063-001-804"/> They disagree with
+                                                advice. <tei:ref cRef="F.41.a" type="folio" xml:id="UT22084-063-001-804"/> They disagree with
                                                 discourses like this one, and they are unpleasant
                                                 toward those who support and teach them. They are
                                                 also hostile and unpleasant toward those who like
@@ -3521,7 +3542,7 @@
                                                 monks like that who serve, venerate, and honor
                                                 householders. Śāriputra, householders will use their
                                                 worldly possessions to invite the monks as guests to
-                                                partake of their material wealth, <ref cRef="F.41.b" type="folio" xml:id="UT22084-063-001-882"/> and
+                                                partake of their material wealth, <tei:ref cRef="F.41.b" type="folio" xml:id="UT22084-063-001-882"/> and
                                                 since those worldly, material things will give the
                                                 monks pleasure, they will gradually adopt that
                                                 lifestyle. Those monks will chase after worldly,
@@ -3562,7 +3583,7 @@
                                         <p tid="247">“Another group of three will also become
                                                 unhappy. What are those three? Those who hold the
                                                 view of a self, those who hold the view of a life
-                                                force, and those who hold the view of a person. <ref cRef="F.42.a" type="folio" xml:id="UT22084-063-001-883"/> Another group of
+                                                force, and those who hold the view of a person. <tei:ref cRef="F.42.a" type="folio" xml:id="UT22084-063-001-883"/> Another group of
                                                 three will also become unhappy. What are those
                                                 three? Those who hold the view of the aggregates,
                                                 those who hold the view of the elements, and those
@@ -3612,7 +3633,7 @@
                                                   This translation amends the verb to <foreign xml:lang="Bo-Ltn" type="term">bklags</foreign>.
                                                 </note> a little bit of something they agree with in
                                                 a discourse and then teach it as the position of the
-                                                noble ones. <ref cRef="F.42.b" type="folio" xml:id="UT22084-063-001-805"/> They teach the
+                                                noble ones. <tei:ref cRef="F.42.b" type="folio" xml:id="UT22084-063-001-805"/> They teach the
                                                 Dharma out of attachment to their relatives,
                                                 motivated by gain and honor, and in order to
                                                 outshine others. </p>
@@ -3660,7 +3681,7 @@
                                         <p tid="254">“As an analogy, Śāriputra, a long time ago,
                                                 there were five hundred blind people who had reached
                                                 a town after traveling on the road for a long time.
-                                                  <ref cRef="F.43.a" type="folio" xml:id="UT22084-063-001-884"/> Hungry and thirsty,
+                                                  <tei:ref cRef="F.43.a" type="folio" xml:id="UT22084-063-001-884"/> Hungry and thirsty,
                                                 they set up camp in that town, and they appointed
                                                 one blind person to look after their camp<note place="end" xml:id="UT22084-063-001-280">
                                                   Translated based on the Stok edition: <foreign xml:lang="Bo-Ltn" type="term">brang sa</foreign>.
@@ -3703,7 +3724,7 @@
                                                 suffering. </p>
                                         <milestone unit="chunk" xml:id="UT22084-063-001-287"/>
                                         <p tid="261">“Śāriputra, those blind people who lost their
-                                                lives for a bite to eat <ref cRef="F.43.b" type="folio" xml:id="UT22084-063-001-885"/> and
+                                                lives for a bite to eat <tei:ref cRef="F.43.b" type="folio" xml:id="UT22084-063-001-885"/> and
                                                 the greedy rogue who led all those blind people and
                                                 made them fall into that abyss are just like the
                                                 monks who will be born in the future and who will
@@ -3742,7 +3763,7 @@
                                         <p tid="265">“Śāriputra, those blind people abandoned the
                                                 donations they received in town, became enamored
                                                 with a great donor, and fell into a great abyss when
-                                                they pursued greater offerings— <ref cRef="F.44.a" type="folio" xml:id="UT22084-063-001-886"/> and
+                                                they pursued greater offerings— <tei:ref cRef="F.44.a" type="folio" xml:id="UT22084-063-001-886"/> and
                                                 that is exactly how it will be for those monks who
                                                 reject my teachings. They will not be satisfied with
                                                 ordinary alms, and they will seek out great feasts.
@@ -3783,7 +3804,7 @@
                                                 concerned about insignificant things, and attached
                                                 to their relatives. They will thus experience the
                                                 pain of desire, anger, and delusion for a long time.
-                                                  <ref cRef="F.44.b" type="folio" xml:id="UT22084-063-001-887"/> Why is that?
+                                                  <tei:ref cRef="F.44.b" type="folio" xml:id="UT22084-063-001-887"/> Why is that?
                                                 Because, Śāriputra, even if the ripening of an
                                                 uncertain Dharma teaching can create an opportunity
                                                 for good fortune to arise, and that comes to pass,
@@ -3822,7 +3843,7 @@
                                                 Jambudvīpa, how much nonvirtue would accumulate from
                                                 that root cause?”</p>
                                         <p tid="273">“A lot, Blessed One! A lot, Well-Gone One!”
-                                                  <ref cRef="F.45.a" type="folio" xml:id="UT22084-063-001-888"/>
+                                                  <tei:ref cRef="F.45.a" type="folio" xml:id="UT22084-063-001-888"/>
                                         </p>
                                         <milestone unit="chunk" xml:id="UT22084-063-001-300"/>
                                         <p tid="274">“Śāriputra,” the Blessed One continued,
@@ -3860,10 +3881,10 @@
                                                 the Thus-Gone One teaches the Dharma of awakening
                                                 without concepts. Śāriputra, which concepts? They
                                                 are the views of a self, a being, a life force, and
-                                                a person, <ref cRef="F.45.b" type="folio" xml:id="UT22084-063-001-889"/> Śāriputra, all
+                                                a person, <tei:ref cRef="F.45.b" type="folio" xml:id="UT22084-063-001-889"/> Śāriputra, all
                                                 immature ordinary beings have these concepts, and
                                                 anyone who lacks such concepts does not contemplate
-                                                any phenomenon. <ref cRef="B5" type="bampo"/>
+                                                any phenomenon. <tei:ref cRef="B5" type="bampo"/>
                     </p>
                                         <milestone unit="chunk" xml:id="UT22084-063-001-302"/>
                                         <p tid="276">“Still, some beings will contemplate the fact
@@ -3902,7 +3923,7 @@
                                                 liberation. If a fool were to enter the retinue and
                                                 teach a wrong view based on his own analysis,
                                                 saying, ‘These are the words of the Buddha; this is
-                                                the noble path,’ <ref cRef="F.46.a" type="folio" xml:id="UT22084-063-001-890"/> they would
+                                                the noble path,’ <tei:ref cRef="F.46.a" type="folio" xml:id="UT22084-063-001-890"/> they would
                                                 denigrate the past, future, and present blessed
                                                 buddhas. Such people are evil friends; they are
                                                 unholy beings and are not virtuous friends. Why is
@@ -3933,7 +3954,7 @@
                                                 this chiliocosm. Śāriputra, compared to someone who
                                                 kills all beings in this great trichiliocosm, those
                                                 who teach an impure Dharma to others create much
-                                                greater demerit. Why is that? <ref cRef="F.46.b" type="folio" xml:id="UT22084-063-001-891"/>
+                                                greater demerit. Why is that? <tei:ref cRef="F.46.b" type="folio" xml:id="UT22084-063-001-891"/>
                                                 Because, Śāriputra, they denigrate the awakening of
                                                 the buddhas, they invigorate Māra’s armies, they
                                                 cause great harm to sentient beings, and they
@@ -3979,7 +4000,7 @@
                                                 blessed Thus-Gone One Mahāvyūha lived for
                                                 sixty-eight billion years, Śāriputra, and the monks
                                                 who were hearers in his assembly numbered
-                                                sixty-eight trillion. <ref cRef="F.47.a" type="folio" xml:id="UT22084-063-001-892"/>
+                                                sixty-eight trillion. <tei:ref cRef="F.47.a" type="folio" xml:id="UT22084-063-001-892"/>
                     </p>
                                         <milestone unit="chunk" xml:id="UT22084-063-001-312"/>
                                         <p tid="286">“For comparison, in the future, after I pass
@@ -4017,7 +4038,7 @@
                                         <p tid="288">“Śāriputra, a hundred years after that blessed
                                                 one had passed into parinirvāṇa, the Dharma and
                                                 Vinaya were divided into five groups called Support
-                                                of Veneration, Apprehending Origination, <ref cRef="F.47.b" type="folio" xml:id="UT22084-063-001-806"/> Proponents of the
+                                                of Veneration, Apprehending Origination, <tei:ref cRef="F.47.b" type="folio" xml:id="UT22084-063-001-806"/> Proponents of the
                                                 View That All Phenomena Exist, Arising from
                                                 Collection, and Completely Bound. Śāriputra, there
                                                 were five monks called Support of Veneration,
@@ -4057,7 +4078,7 @@
                                                 view of a self and advocated the view of a being, a
                                                 life force, and a person. They had retinues of many
                                                 people and were proponents of the view of a person.
-                                                  <ref cRef="F.48.a" type="folio" xml:id="UT22084-063-001-807"/> Śāriputra, those
+                                                  <tei:ref cRef="F.48.a" type="folio" xml:id="UT22084-063-001-807"/> Śāriputra, those
                                                 unholy beings went forth, caused large groups of
                                                 householders to cling to wrong views, and rejected
                                                 the ultimate reality. They used the words of the
@@ -4095,7 +4116,7 @@
                                                 into the Black Line Hell, and then again into the
                                                 Crushing Hell, the Wailing Hell, the Great Wailing
                                                 Hell, the Hot Hell, the Intensely Hot Hell, and the
-                                                great Hell of Ceaseless Torment. <ref cRef="F.48.b" type="folio" xml:id="UT22084-063-001-893"/>
+                                                great Hell of Ceaseless Torment. <tei:ref cRef="F.48.b" type="folio" xml:id="UT22084-063-001-893"/>
                     </p>
                                         <milestone unit="chunk" xml:id="UT22084-063-001-318"/>
                                         <p tid="292">“Śāriputra, in the same manner, those who were
@@ -4129,7 +4150,7 @@
                                                 intermediate worlds. Why is that? Because,
                                                 Śāriputra, they committed a severe act and
                                                 accumulated its karmic ripening, which is no less
-                                                severe. <ref cRef="F.49.a" type="folio" xml:id="UT22084-063-001-894"/> For many hundreds
+                                                severe. <tei:ref cRef="F.49.a" type="folio" xml:id="UT22084-063-001-894"/> For many hundreds
                                                 of years, thousands of years, hundreds of thousands
                                                 of years, and trillions of years they have
                                                 experienced intense, rough, overwhelming, and
@@ -4164,7 +4185,7 @@
                                                 body of that blessed one was twice as tall as those
                                                 ordinary bodies. The perpetual radiance of that
                                                 blessed buddha illuminated and pervaded myriads of
-                                                leagues. <ref cRef="F.49.b" type="folio" xml:id="UT22084-063-001-895"/> Those unholy beings
+                                                leagues. <tei:ref cRef="F.49.b" type="folio" xml:id="UT22084-063-001-895"/> Those unholy beings
                                                 went forth under the teachings of that blessed one
                                                 and they strove for fruition for many hundreds of
                                                 thousands of years as if their heads were on fire,
@@ -4203,7 +4224,7 @@
                                                 with pride, evil monks whose discipline and vows are
                                                 destroyed, and those who teach an impure
                                                 Dharma—those who denigrate the teachings of the
-                                                blessed buddhas have three characteristics: <ref cRef="F.50.a" type="folio" xml:id="UT22084-063-001-896"/> they do not truly
+                                                blessed buddhas have three characteristics: <tei:ref cRef="F.50.a" type="folio" xml:id="UT22084-063-001-896"/> they do not truly
                                                 know virtue, they are not liberated, and they
                                                 denigrate and do not trust the words of the
                                                 Thus-Gone One.</p>
@@ -4248,7 +4269,7 @@
                                                 taught the Dharma teachings through which the
                                                 sixty-eight quadrillion hearers, who had passed into
                                                 parinirvāṇa under five thousand buddhas, were
-                                                training. <ref cRef="F.50.b" type="folio" xml:id="UT22084-063-001-897"/> Do not have any
+                                                training. <tei:ref cRef="F.50.b" type="folio" xml:id="UT22084-063-001-897"/> Do not have any
                                                 uncertainty, hesitation, or doubt about that fact,
                                                 thinking that the monk named Support of
                                                 Veneration—who correctly revealed the awakening of
@@ -4282,7 +4303,7 @@
                                                 of a buddha for sentient beings. Śāriputra, Pūrṇa
                                                 Maitrāyaṇīputra taught the pure Dharma in the places
                                                 where ninety million blessed buddhas were born and
-                                                passed away. He always taught the pure Dharma. <ref cRef="F.51.a" type="folio" xml:id="UT22084-063-001-898"/> Whenever he was in
+                                                passed away. He always taught the pure Dharma. <tei:ref cRef="F.51.a" type="folio" xml:id="UT22084-063-001-898"/> Whenever he was in
                                                 the presence of the blessed buddhas, he taught the
                                                 pure Dharma by practicing pure conduct. Śāriputra,
                                                 the monk Pūrṇa has also preached the Dharma of the
@@ -4320,7 +4341,7 @@
                                                 happiness to many beings for a long time. Śāriputra,
                                                 the Dharma-teaching monk Pūrṇa has no afflictions,
                                                 does not care about material things, and teaches the
-                                                Dharma without clinging to gain and honor. <ref cRef="F.51.b" type="folio" xml:id="UT22084-063-001-808"/> Śāriputra, since
+                                                Dharma without clinging to gain and honor. <tei:ref cRef="F.51.b" type="folio" xml:id="UT22084-063-001-808"/> Śāriputra, since
                                                 the monk Pūrṇa is a Dharma teacher who has developed
                                                 perfect discernment, there is no one besides the
                                                 Teacher in the whole world with its gods who can
@@ -4358,7 +4379,7 @@
                                                 way that a potter devalues unbaked vessels; I win
                                                 them over with the awakening of the buddhas,
                                                 nonapprehending, and the ultimate reality,
-                                                emptiness. <ref cRef="F.52.a" type="folio" xml:id="UT22084-063-001-899"/> Then, when I teach
+                                                emptiness. <tei:ref cRef="F.52.a" type="folio" xml:id="UT22084-063-001-899"/> Then, when I teach
                                                 the Dharma to others, they will pick up the essence
                                                 and discard the husk. Why is that? Because,
                                                 Śāriputra, the Dharma that the thus-gone, worthy,
@@ -4389,7 +4410,7 @@
                                                 orders are proponents of a self, a being, a life
                                                 force, a person, eternalism, and nihilism; and I and
                                                 my hearers are proponents of the lack of self and
-                                                proponents of emptiness. <ref cRef="F.52.b" type="folio" xml:id="UT22084-063-001-900"/> We
+                                                proponents of emptiness. <tei:ref cRef="F.52.b" type="folio" xml:id="UT22084-063-001-900"/> We
                                                 train in concentration that lacks marks, we are
                                                 endowed with the acceptance that concords with the truth, and we do
                                                 not dwell on the consciousnesses. </p>
@@ -4431,7 +4452,7 @@
                                                 emptiness, free of apprehending. </p>
                                         <milestone unit="chunk" xml:id="UT22084-063-001-340"/>
                                         <p tid="313">“If such beings are afraid of the awakening of
-                                                the buddhas, <ref cRef="F.53.a" type="folio" xml:id="UT22084-063-001-901"/> a large number of
+                                                the buddhas, <tei:ref cRef="F.53.a" type="folio" xml:id="UT22084-063-001-901"/> a large number of
                                                 monks, or the saṅgha of monks, should tell their
                                                 preceptors and instructors, ‘The Blessed One said,
                                                 “I am the teacher of those who understand well the
@@ -4471,7 +4492,7 @@
                                                 non-Buddhist teachers. Since they consume gifts of
                                                 faith without having reached the acceptance related
                                                 to the sublime Dharma teachings, they do not
-                                                properly consume those gifts of faith. <ref cRef="F.53.b" type="folio" xml:id="UT22084-063-001-809"/> Although they are
+                                                properly consume those gifts of faith. <tei:ref cRef="F.53.b" type="folio" xml:id="UT22084-063-001-809"/> Although they are
                                                 assuredly bound by the <foreign xml:lang="Sa-Ltn" type="term">prātimokṣa</foreign> vows after going
                                                 forth in this teaching, when monks who do not engage
                                                 or show interest in the ultimate reality, emptiness,
@@ -4503,7 +4524,7 @@
                                                 longer prioritize discipline, absorption, or study.
                                                 Why is that? Because, Śāriputra, if there is no
                                                 formation, what phenomenon is there to prioritize?
-                                                  <ref cRef="F.54.a" type="folio" xml:id="UT22084-063-001-902"/> Therefore,
+                                                  <tei:ref cRef="F.54.a" type="folio" xml:id="UT22084-063-001-902"/> Therefore,
                                                 Śāriputra, if something singular and nondual lacks
                                                 the apprehending of discipline, what need is there
                                                 to mention apprehending corrupted discipline? It
@@ -4542,7 +4563,7 @@
                                                 from desire. Śāriputra, awakening is an abandonment.
                                                 What kind of abandonment? The abandonment of
                                                 everything included in desire. What is included in
-                                                desire? <ref cRef="F.54.b" type="folio" xml:id="UT22084-063-001-903"/> Desire includes
+                                                desire? <tei:ref cRef="F.54.b" type="folio" xml:id="UT22084-063-001-903"/> Desire includes
                                                 impropriety, nonvirtue, ‘I’ and ‘mine,’ selfishness,
                                                 and ownership. Those who have abandoned the notion
                                                 of a self are devoid of clinging. That abandonment
@@ -4584,7 +4605,7 @@
                                                 unsurpassed and perfect awakening. Still, those
                                                 blessed buddhas did not prophesy about me saying,
                                                 ‘In the future, you will become a thus-gone, worthy,
-                                                perfect buddha.’ <ref cRef="F.55.a" type="folio" xml:id="UT22084-063-001-904"/> Why is that?
+                                                perfect buddha.’ <tei:ref cRef="F.55.a" type="folio" xml:id="UT22084-063-001-904"/> Why is that?
                                                 Because I entertained notions related to
                                                 apprehending and clung to the view of a self. </p>
                                         <milestone unit="chunk" xml:id="UT22084-063-001-349"/>
@@ -4617,7 +4638,7 @@
                                         <milestone unit="chunk" xml:id="UT22084-063-001-353"/>
                                         <p tid="326">“Śāriputra, I also remember when I was a
                                                 universal monarch and I honored fifty million
-                                                buddhas, all called Pradīpta, […]. <ref cRef="F.55.b" type="folio" xml:id="UT22084-063-001-905"/>
+                                                buddhas, all called Pradīpta, […]. <tei:ref cRef="F.55.b" type="folio" xml:id="UT22084-063-001-905"/>
                     </p>
                                         <milestone unit="chunk" xml:id="UT22084-063-001-354"/>
                                         <p tid="327">“Śāriputra, I also remember when I was a
@@ -4658,7 +4679,7 @@
                                                 as Great Brahmā for five hundred eons. Śāriputra,
                                                 after those five hundred eons had passed, I again
                                                 obtained a kingdom in Jambudvīpa in which I was born
-                                                with the great fortune of great kings and gods. <ref cRef="F.56.a" type="folio" xml:id="UT22084-063-001-906"/> After that, I
+                                                with the great fortune of great kings and gods. <tei:ref cRef="F.56.a" type="folio" xml:id="UT22084-063-001-906"/> After that, I
                                                 became the sole ruler of the gods of the Heaven of
                                                 the Thirty-Three. Śāriputra, in this way, I was then
                                                 reborn in Jambudvīpa for five hundred eons, and then
@@ -4681,7 +4702,7 @@
                                                 Brahmā, I was reborn in Jambudvīpa, where I became a
                                                 universal monarch named Sudarśana. At that time, the
                                                 lifespan of humans was ninety thousand years.
-                                                <ref cRef="B6" type="bampo"/>
+                                                <tei:ref cRef="B6" type="bampo"/>
                     </p>
                                         <milestone unit="chunk" xml:id="UT22084-063-001-360"/>
                                         <p tid="333">“For as long as I lived, I continuously honored
@@ -4696,7 +4717,7 @@
                                         <milestone unit="chunk" xml:id="UT22084-063-001-361"/>
                                         <p tid="334">“Śāriputra, at the end of that eon, I was a
                                                 universal monarch when a thousand buddhas with
-                                                different names appeared. <ref cRef="F.56.b" type="folio" xml:id="UT22084-063-001-907"/> I
+                                                different names appeared. <tei:ref cRef="F.56.b" type="folio" xml:id="UT22084-063-001-907"/> I
                                                 continuously honored, respected, worshipped, and
                                                 revered them and their saṅghas of hearers by
                                                 offering them robes, alms, sleeping places,
@@ -4732,7 +4753,7 @@
                                                 and worshiped sixty-two thousand blessed buddhas,
                                                 all called Śamitā, and their assemblies of hearers,
                                                 by offering them robes, alms, sleeping places,
-                                                medicine, and other necessities. <ref cRef="F.57.a" type="folio" xml:id="UT22084-063-001-908"/> After
+                                                medicine, and other necessities. <tei:ref cRef="F.57.a" type="folio" xml:id="UT22084-063-001-908"/> After
                                                 pleasing them, I practiced with the aim of achieving
                                                 unsurpassed and perfect awakening. Still, those
                                                 blessed buddhas did not prophesy about me, […]
@@ -4764,7 +4785,7 @@
                                                 in the world. They were all universal monarchs.
                                                 Śāriputra, I also remember that, in the past, ten
                                                 thousand kings, all called <term ref="UT22084-063-001-759">Pradīpta</term>, appeared in the
-                                                world. They were all universal monarchs. <ref cRef="F.57.b" type="folio" xml:id="UT22084-063-001-810"/> Śāriputra, I also
+                                                world. They were all universal monarchs. <tei:ref cRef="F.57.b" type="folio" xml:id="UT22084-063-001-810"/> Śāriputra, I also
                                                 remember that two hundred million kings, all called
                                                 Sundara, appeared in the world. They were all
                                                 universal monarchs. </p>
@@ -4803,7 +4824,7 @@
                                                 hearers. […] In a prayer, he made this aspiration:
                                                 ‘When I pursue awakening in the future, may I obtain
                                                 a lifespan just as long as his, and may I gain a
-                                                saṅgha of great hearers of the same size. <ref cRef="F.58.a" type="folio" xml:id="UT22084-063-001-811"/> When I establish
+                                                saṅgha of great hearers of the same size. <tei:ref cRef="F.58.a" type="folio" xml:id="UT22084-063-001-811"/> When I establish
                                                 sentient beings in happiness, may I awaken to
                                                 unsurpassed and perfect buddhahood!’</p>
                                         <milestone unit="chunk" xml:id="UT22084-063-001-369"/>
@@ -4841,7 +4862,7 @@
                                                   although it appears to refer to the Buddha
                                                   himself. Tib. <foreign xml:lang="Bo-Ltn" type="quote">thams cad rtag tu sbyin zhes bya bas
                                                   dge ba ci yin zhes tshol ba na</foreign>.</note>
-                                                <ref cRef="F.58.b" type="folio" xml:id="UT22084-063-001-909"/> Consider his
+                                                <tei:ref cRef="F.58.b" type="folio" xml:id="UT22084-063-001-909"/> Consider his
                                                 constant weariness, his cultivation of infinite
                                                 diligence, his pleasing of all the thus-gone,
                                                 worthy, perfect buddhas, and all the hardships he
@@ -4884,7 +4905,7 @@
                                                 person were to pass into parinirvāṇa, all ordinary
                                                 beings would also pass into parinirvāṇa. Why is
                                                 that? Because, Śāriputra, the view of a person is a
-                                                wrong view. <ref cRef="F.59.a" type="folio" xml:id="UT22084-063-001-910"/> Śāriputra, most
+                                                wrong view. <tei:ref cRef="F.59.a" type="folio" xml:id="UT22084-063-001-910"/> Śāriputra, most
                                                 immature ordinary beings cling to the view of a
                                                 self, the view of a being, the view of a life force,
                                                 and the view of a person. Therefore, Śāriputra, all
@@ -4923,7 +4944,7 @@
                                                 this. No beings that entertain notions related to
                                                 apprehending will pass into parinirvāṇa. Śāriputra,
                                                 if beings entertaining notions related to
-                                                apprehending could pass into parinirvāṇa, <ref cRef="F.59.b" type="folio" xml:id="UT22084-063-001-812"/> the thus-gone,
+                                                apprehending could pass into parinirvāṇa, <tei:ref cRef="F.59.b" type="folio" xml:id="UT22084-063-001-812"/> the thus-gone,
                                                 worthy, perfect buddhas would not appear in the
                                                 world, and all the immature ordinary beings would
                                                 pass into parinirvāṇa. Why is that? Because all
@@ -4965,7 +4986,7 @@
                                                 into burning embers because he thinks he will be
                                                 safe, those foolish beings hold the view of a person
                                                 because they think that it will bring them
-                                                happiness. <ref cRef="F.60.a" type="folio" xml:id="UT22084-063-001-911"/> They enjoy gifts
+                                                happiness. <tei:ref cRef="F.60.a" type="folio" xml:id="UT22084-063-001-911"/> They enjoy gifts
                                                 offered through faith, while being strongly attached
                                                 to the very views that have deceived and deluded
                                                 them for a long time. They will be tormented for a
@@ -5008,7 +5029,7 @@
                                                   pa</foreign>.</note> or anyone else who might
                                                 violate them from roaming about in this city of
                                                 Dharma, they are kept very protected and guarded.
-                                                  <ref cRef="F.60.b" type="folio" xml:id="UT22084-063-001-912"/> One should not
+                                                  <tei:ref cRef="F.60.b" type="folio" xml:id="UT22084-063-001-912"/> One should not
                                                 teach mantra verses with their secret meanings that
                                                 belong to the Thus-Gone One or the Thus-Gone One’s
                                                 retinue to those who oppose the words of the
@@ -5058,7 +5079,7 @@
                                                 orders and all those who delight in the teachings of
                                                 the members of non-Buddhist orders. According to the
                                                 Thus-Gone One, this is who is required to observe a
-                                                probationary period. <ref cRef="F.61.a" type="folio" xml:id="UT22084-063-001-913"/>
+                                                probationary period. <tei:ref cRef="F.61.a" type="folio" xml:id="UT22084-063-001-913"/>
                                         </p>
                                         <milestone unit="chunk" xml:id="UT22084-063-001-387"/>
                                         <p tid="359">“Śāriputra, who are the proponents of the views
@@ -5106,7 +5127,7 @@
                                                 ultimate reality is emptiness, they will consume
                                                 gifts of faith without being authorized to do so.
                                                 Because of that, they will not honor, respect,
-                                                revere, worship, <ref cRef="F.61.b" type="folio" xml:id="UT22084-063-001-914"/> and venerate the
+                                                revere, worship, <tei:ref cRef="F.61.b" type="folio" xml:id="UT22084-063-001-914"/> and venerate the
                                                 Buddha, the Dharma, and the Saṅgha. Since they crush
                                                 the trainings of the Thus-Gone One into dust, the
                                                 members of non-Buddhist orders pretend to be
@@ -5147,7 +5168,7 @@
                                                 virtue. Just like fools selling teachings for the
                                                 price of sandalwood, they will not accept the
                                                 excellent teachings that have been taught in the
-                                                world. <ref cRef="F.62.a" type="folio" xml:id="UT22084-063-001-915"/>
+                                                world. <tei:ref cRef="F.62.a" type="folio" xml:id="UT22084-063-001-915"/>
                     </p>
                                         <milestone unit="chunk" xml:id="UT22084-063-001-394"/>
                                         <p tid="365">“Śāriputra, that is why the blessed Kāśyapa
@@ -5194,7 +5215,7 @@
                                                 characteristics? As an analogy, when the noble sons
                                                 demonstrate various illusory displays on stage,
                                                 those immature beings who are intimidated, deluded,
-                                                  <ref cRef="F.62.b" type="folio" xml:id="UT22084-063-001-916"/> and stupid see them
+                                                  <tei:ref cRef="F.62.b" type="folio" xml:id="UT22084-063-001-916"/> and stupid see them
                                                 and roar with great laughter. Why is that? Because
                                                 they are immature. Wise beings with sharp insight
                                                 then say, ‘These fools roar with great laughter when
@@ -5227,7 +5248,7 @@
                                                 not useful? Because, Śāriputra, such foolish beings
                                                 are unable to strive to abandon attachment, so what
                                                 need is there to mention striving to abandon
-                                                ignorance? It is impossible. <ref cRef="F.63.a" type="folio" xml:id="UT22084-063-001-917"/>
+                                                ignorance? It is impossible. <tei:ref cRef="F.63.a" type="folio" xml:id="UT22084-063-001-917"/>
                     </p>
                                         <milestone unit="chunk" xml:id="UT22084-063-001-398"/>
                                         <p tid="369">“Śāriputra, at that time, there will be
@@ -5268,7 +5289,7 @@
                                         <p tid="371">“Śāriputra, it is inappropriate for someone to
                                                 follow me and act as a servant to householders. Why
                                                 is that? Because, Śāriputra, my hearers should not
-                                                act as attendants for any god, nāga, or yakṣa. <ref cRef="F.63.b" type="folio" xml:id="UT22084-063-001-813"/> Rather, Śāriputra,
+                                                act as attendants for any god, nāga, or yakṣa. <tei:ref cRef="F.63.b" type="folio" xml:id="UT22084-063-001-813"/> Rather, Śāriputra,
                                                 it is the gods, nāgas, and the yakṣas themselves who
                                                 act as attendants for my hearers. Śāriputra, it is
                                                 impossible for those foolish beings who act as
@@ -5310,7 +5331,7 @@
                                                 as if their hair were on fire, and those who strive
                                                 to cultivate the noble path find it somewhat
                                                 difficult to delight in the Dharma teachings on
-                                                emptiness free of apprehending. <ref cRef="F.64.a" type="folio" xml:id="UT22084-063-001-918"/> So
+                                                emptiness free of apprehending. <tei:ref cRef="F.64.a" type="folio" xml:id="UT22084-063-001-918"/> So
                                                 what need is there to mention those who have no
                                                 interest, yearning, or enthusiasm? </p>
                                         <milestone unit="chunk" xml:id="UT22084-063-001-403"/>
@@ -5351,7 +5372,7 @@
                                                 they? Those whose discipline is corrupted, those who
                                                 have pride, and those who teach an impure
                                                 Dharma—because they will cling to the view of a
-                                                self. <ref cRef="F.64.b" type="folio" xml:id="UT22084-063-001-919"/>
+                                                self. <tei:ref cRef="F.64.b" type="folio" xml:id="UT22084-063-001-919"/>
                                         </p>
                                         <milestone unit="chunk" xml:id="UT22084-063-001-406"/>
                                         <p tid="377">“Śāriputra, those foolish beings will become
@@ -5394,7 +5415,7 @@
                                                 the male sexual organ who thinks that beings who
                                                 have a male sexual organ are also paṇḍakas will give
                                                 rise to the idea that he has the same nature and
-                                                characteristics as all of these beings. <ref cRef="F.65.a" type="folio" xml:id="UT22084-063-001-920"/> So too, Śāriputra,
+                                                characteristics as all of these beings. <tei:ref cRef="F.65.a" type="folio" xml:id="UT22084-063-001-920"/> So too, Śāriputra,
                                                 the monks who mingle with Lokāyatas and become
                                                 engrossed in the words and statements of outsiders
                                                 will not respect or cherish the ultimate reality
@@ -5428,7 +5449,7 @@
                                                 sun and the moon do not exist—they cannot perceive
                                                 them, and they cannot point to them. In accordance
                                                 with their mistaken perception, they will think that
-                                                everyone else is blind too. <ref cRef="F.65.b" type="folio" xml:id="UT22084-063-001-921"/>
+                                                everyone else is blind too. <tei:ref cRef="F.65.b" type="folio" xml:id="UT22084-063-001-921"/>
                                         </p>
                                         <milestone unit="chunk" xml:id="UT22084-063-001-411"/>
                                         <p tid="382">“Similarly, Śāriputra, monks who have pride,
@@ -5471,7 +5492,7 @@
                                         <p tid="385">“In that way, Śāriputra, those people whose
                                                 discipline is corrupted and degenerated, whose
                                                 behavior is corrupted and decayed, who have pride,
-                                                  <ref cRef="F.66.a" type="folio" xml:id="UT22084-063-001-922"/> and who have fallen
+                                                  <tei:ref cRef="F.66.a" type="folio" xml:id="UT22084-063-001-922"/> and who have fallen
                                                 into pride will think that they are holy. They will
                                                 teach an impure Dharma, they will devote themselves
                                                 to the teachings of the nirgranthas, they will cling
@@ -5526,7 +5547,7 @@
                                                 the words of the Buddha, and propound the spells of
                                                 non-Buddhist orders, and they will enter retinues
                                                 and please them with their proper manner of
-                                                speaking. <ref cRef="F.66.b" type="folio" xml:id="UT22084-063-001-923"/> Such unholy beings
+                                                speaking. <tei:ref cRef="F.66.b" type="folio" xml:id="UT22084-063-001-923"/> Such unholy beings
                                                 are known as <distinct>rotten mendicants</distinct>.
                                                 Why is that? Because, Śāriputra, the words of the
                                                 Buddha are devoid of the views of the Lokāyatas.
@@ -5567,7 +5588,7 @@
                                         <p tid="391">“Therefore, Śāriputra, this teaching has been
                                                 received by the buddhas, but those who put great
                                                 effort into the teachings of the Lokāyatas are
-                                                unable to receive it. <ref cRef="F.67.a" type="folio" xml:id="UT22084-063-001-924"/> Those
+                                                unable to receive it. <tei:ref cRef="F.67.a" type="folio" xml:id="UT22084-063-001-924"/> Those
                                                 who follow an impure Dharma are unable to receive
                                                 this teaching. Śāriputra, it is something possessed
                                                 by wise beings, not unwise beings. It does not
@@ -5580,7 +5601,7 @@
                                                 that the person is the ultimate truth would truly
                                                 exist. This person would be blue, yellow, red, or
                                                 white, and this true state would be apprehended as
-                                                situated in the body or separate from it. <ref cRef="B7" type="bampo"/> </p>
+                                                situated in the body or separate from it. <tei:ref cRef="B7" type="bampo"/> </p>
                                         <milestone unit="chunk" xml:id="UT22084-063-001-424"/>
                                         <p tid="393">“Śāriputra, one cannot show that the person
                                                 exists inside the body in the same way one can show
@@ -5613,7 +5634,7 @@
                                         <milestone unit="chunk" xml:id="UT22084-063-001-426"/>
                                         <p tid="395">“Śāriputra, those who entertain the notion of a
                                                 self and hold the view of a person are afraid of not
-                                                having a livelihood. <ref cRef="F.67.b" type="folio" xml:id="UT22084-063-001-925"/> Terrified by the
+                                                having a livelihood. <tei:ref cRef="F.67.b" type="folio" xml:id="UT22084-063-001-925"/> Terrified by the
                                                 prospect of not having a livelihood, they will cling
                                                 to gain and honor, and this will be an impediment
                                                 for them. Śāriputra, those who maintain a view of a
@@ -5655,7 +5676,7 @@
                                                 ultimate teaching of the Buddha. Due to the ripening
                                                 of those actions, even if they exert themselves with
                                                 diligence, they will not be able to understand the
-                                                topic of apprehending, <ref cRef="F.68.a" type="folio" xml:id="UT22084-063-001-926"/> so
+                                                topic of apprehending, <tei:ref cRef="F.68.a" type="folio" xml:id="UT22084-063-001-926"/> so
                                                 what need is there to mention the attainment of the
                                                 fruition? It is impossible. If even the buddhas
                                                 cannot untangle those who indulge in the view of a
@@ -5692,7 +5713,7 @@
                                                 disciplined as I,’ or, ‘I am learned but this person
                                                 is not as learned as I.’ Śāriputra, most of those
                                                 monks will live in the wilderness. The majority of
-                                                them who maintain discipline, <ref cRef="F.68.b" type="folio" xml:id="UT22084-063-001-927"/>
+                                                them who maintain discipline, <tei:ref cRef="F.68.b" type="folio" xml:id="UT22084-063-001-927"/>
                                                 respect the aggregate of discipline, and master many
                                                 topics will experience anger, intense covetousness,
                                                 attachment, rage, and confusion although having
@@ -5728,7 +5749,7 @@
                                                 discourses taught by the Buddha, so they will raise
                                                 irrelevant arguments. Śāriputra, their lack of
                                                 respect and their criticism of one another will
-                                                cause my Dharma and Vinaya to vanish. <ref cRef="F.69.a" type="folio" xml:id="UT22084-063-001-928"/>
+                                                cause my Dharma and Vinaya to vanish. <tei:ref cRef="F.69.a" type="folio" xml:id="UT22084-063-001-928"/>
                                         </p>
                                         <milestone unit="chunk" xml:id="UT22084-063-001-433"/>
                                         <p tid="402">“Śāriputra, most of those foolish beings will
@@ -5768,7 +5789,7 @@
                                                 not able to perform such acts of worship and
                                                 veneration, Śāriputra.’ One should not be attached
                                                 to the means of subsistence offered by the gods, the
-                                                nāgas, or the yakṣas. <ref cRef="F.69.b" type="folio" xml:id="UT22084-063-001-929"/> The
+                                                nāgas, or the yakṣas. <tei:ref cRef="F.69.b" type="folio" xml:id="UT22084-063-001-929"/> The
                                                 words of the Thus-Gone One are true, and they are
                                                 free from pretense and flattery, so exert yourself
                                                 to realize emptiness, the ultimate reality that he
@@ -5804,7 +5825,7 @@
                                                 should form the wish, ‘I will not engage in
                                                 nonvirtuous means of livelihood for the sake of
                                                 robes, or for the sake of alms, sleeping places,
-                                                medicine, or basic necessities.’ <ref cRef="F.70.a" type="folio" xml:id="UT22084-063-001-930"/>
+                                                medicine, or basic necessities.’ <tei:ref cRef="F.70.a" type="folio" xml:id="UT22084-063-001-930"/>
                                         </p>
                                         <milestone unit="chunk" xml:id="UT22084-063-001-438"/>
                                         <p tid="407">“Śāriputra, when monks who wear tattered
@@ -5842,7 +5863,7 @@
                                                 attached to them, they should think, ‘I will wear
                                                 these tattered clothes as my Dharma robe, to protect
                                                 me from the cold, […] and to cultivate the noble
-                                                path. <ref cRef="F.70.b" type="folio" xml:id="UT22084-063-001-814"/> Once I don these
+                                                path. <tei:ref cRef="F.70.b" type="folio" xml:id="UT22084-063-001-814"/> Once I don these
                                                 robes, I shall attain the result of a stream
                                                 enterer, the result of a once-returner, the result
                                                 of a non-returner, and the state of a worthy one. I
@@ -5883,7 +5904,7 @@
                                                 eliminate old agonies, to prevent new agonies from
                                                 arising, to live well with strength, with
                                                 well-being, and without wrongdoing, and to support
-                                                my life force. <ref cRef="F.71.a" type="folio" xml:id="UT22084-063-001-931"/> Therefore, in order
+                                                my life force. <tei:ref cRef="F.71.a" type="folio" xml:id="UT22084-063-001-931"/> Therefore, in order
                                                 to maintain my diligent efforts and to ensure that
                                                 my physical strength and power do not decline, I
                                                 shall eat this food. I shall then attain the result
@@ -5930,7 +5951,7 @@
                                                 endowment. Those who devote themselves to empty
                                                 phenomena and to the gateways to liberation,
                                                 consisting of emptiness, the absence of marks, and
-                                                the absence of wishes, are liberated. <ref cRef="F.71.b" type="folio" xml:id="UT22084-063-001-932"/>
+                                                the absence of wishes, are liberated. <tei:ref cRef="F.71.b" type="folio" xml:id="UT22084-063-001-932"/>
                                         </p>
                                         <milestone unit="chunk" xml:id="UT22084-063-001-448"/>
                                         <p tid="415">“Those who seek to know what virtue consists in
@@ -5977,7 +5998,7 @@
                                                 narratives, biographies, parables, stories of former
                                                 births, marvels, and <term ref="UT22084-063-001-707">instructions</term>
                         <note place="end" xml:id="UT22084-063-001-947">Only eleven of the “twelve branches of Buddhist scripture” are enumerated here. “Extensive teachings” (Skt. <foreign xml:lang="Sa-Ltn">vaipulya</foreign>; Tib. <foreign xml:lang="Bo-Ltn">shin tu rgyas pa'i sde</foreign>) is missing.</note>—and by the
-                                                prātimokṣa vows. <ref cRef="F.72.a" type="folio" xml:id="UT22084-063-001-933"/> They will not
+                                                prātimokṣa vows. <tei:ref cRef="F.72.a" type="folio" xml:id="UT22084-063-001-933"/> They will not
                                                 transgress or damage their discipline, and they will
                                                 put effort into reading and recitation. I have
                                                 authorized gifts of faith to be offered to such
@@ -6026,7 +6047,7 @@
                                                 suffering. However, it is possible for those who
                                                 have pacified their distracted nature to tame
                                                 others, it is possible for those who have pacified
-                                                themselves to pacify others, <ref cRef="F.72.b" type="folio" xml:id="UT22084-063-001-934"/> and it
+                                                themselves to pacify others, <tei:ref cRef="F.72.b" type="folio" xml:id="UT22084-063-001-934"/> and it
                                                 is possible for those who have passed beyond
                                                 suffering to lead others to pass beyond suffering. </p>
                                         <milestone unit="chunk" xml:id="UT22084-063-001-456"/>
@@ -6067,7 +6088,7 @@
                                                 that question. Let it go. Why is that? Because,
                                                 Ānanda, at that time, the monks will not understand
                                                 the wisdom of the Thus-Gone One. They will say, ‘the
-                                                Thus-Gone One’s wisdom is unfathomable.’ <ref cRef="F.73.a" type="folio" xml:id="UT22084-063-001-815"/> Ānanda, no
+                                                Thus-Gone One’s wisdom is unfathomable.’ <tei:ref cRef="F.73.a" type="folio" xml:id="UT22084-063-001-815"/> Ānanda, no
                                                 pratyekabuddhas or worthy ones can conceive of or
                                                 understand what has been apprehended by the
                                                 Thus-Gone One’s wisdom about conditioned phenomena.
@@ -6110,7 +6131,7 @@
                                         <milestone unit="chunk" xml:id="UT22084-063-001-464"/>
                                         <p tid="428">“Ānanda, this is the same thing that the wise
                                                 ones should know about the awakening of the buddhas.
-                                                  <ref cRef="F.73.b" type="folio" xml:id="UT22084-063-001-935"/> At that time, those
+                                                  <tei:ref cRef="F.73.b" type="folio" xml:id="UT22084-063-001-935"/> At that time, those
                                                 who are not worthy of understanding the awakening of
                                                 the buddhas will go forth and pretend to be monks.
                                                 When they are genuinely and properly encouraged,
@@ -6150,7 +6171,7 @@
                                                 increasing number of activities, who prioritize
                                                 socializing, and are eager for conversation; and
                                                 Lokāyatas, all those who are overwhelmed by demonic
-                                                disputes and afflictions, <ref cRef="F.74.a" type="folio" xml:id="UT22084-063-001-936"/> and
+                                                disputes and afflictions, <tei:ref cRef="F.74.a" type="folio" xml:id="UT22084-063-001-936"/> and
                                                 those who mistakenly entertain the perception of a
                                                 self will be unable to know, understand, trust, or
                                                 comprehend this Dharma teaching. It is impossible.
@@ -6189,7 +6210,7 @@
                                                 concern for their own livelihood. Ānanda, since
                                                 Jambudvīpa will be filled with beings with corrupted
                                                 insight, what would be the use for you to follow the
-                                                behavior of those deluded beings?” <ref cRef="F.74.b" type="folio" xml:id="UT22084-063-001-937"/>
+                                                behavior of those deluded beings?” <tei:ref cRef="F.74.b" type="folio" xml:id="UT22084-063-001-937"/>
                     </p>
                                         <milestone unit="chunk" xml:id="UT22084-063-001-470"/>
                                         <p tid="433">“Blessed One, what is the name of this Dharma
@@ -6233,7 +6254,7 @@
                                                 Thus-Gone One has passed into parinirvāṇa, I will
                                                 harm the faction of mendicants and ensure that the
                                                 members of the disciplined faction stay away from
-                                                each other. <ref cRef="F.75.a" type="folio" xml:id="UT22084-063-001-938"/> I will support the
+                                                each other. <tei:ref cRef="F.75.a" type="folio" xml:id="UT22084-063-001-938"/> I will support the
                                                 faction that has corrupted discipline. After that,
                                                 when those with corrupted discipline no longer
                                                 retain the words of the Buddha, I will sow confusion
@@ -6315,7 +6336,7 @@
                                         </lg>
                                         <milestone unit="chunk" xml:id="UT22084-063-001-492"/>
                                         <lg tid="454">
-                                                <l>“Just like ruthless thieves <ref cRef="F.75.b" type="folio" xml:id="UT22084-063-001-939"/>
+                                                <l>“Just like ruthless thieves <tei:ref cRef="F.75.b" type="folio" xml:id="UT22084-063-001-939"/>
                         </l>
                                                 <l>Who destroy cities in this world</l>
                                                 <l>And bring ruin upon many countries,</l>
@@ -6426,7 +6447,7 @@
                                                   Tentative translation. Tib. <foreign xml:lang="Bo-Ltn" type="quote">bdag nyid chen pos
                                                   dgon gnas dang/ gnas gsum zhal gyis bzhes mod
                                                   kyi</foreign>.</note>
-                                                  <ref cRef="F.76.a" type="folio" xml:id="UT22084-063-001-940"/>
+                                                  <tei:ref cRef="F.76.a" type="folio" xml:id="UT22084-063-001-940"/>
                         </l>
                                                 <l>But if one does not cultivate concentration, </l>
                                                 <l>How will one reach attainment? </l>
@@ -6537,7 +6558,7 @@
                                         </lg>
                                         <milestone unit="chunk" xml:id="UT22084-063-001-555"/>
                                         <lg tid="516">
-                                                <l>“There will be no mutual respect, <ref cRef="F.76.b" type="folio" xml:id="UT22084-063-001-941"/>
+                                                <l>“There will be no mutual respect, <tei:ref cRef="F.76.b" type="folio" xml:id="UT22084-063-001-941"/>
                         </l>
                                                 <l>And engaging in these evil actions</l>
                                                 <l>Will lead them to a nonvirtuous birth.</l>
@@ -6641,7 +6662,7 @@
                                         <milestone unit="chunk" xml:id="UT22084-063-001-584"/>
                                         <lg tid="544">
                                                 <l>“In which they will experience great suffering.
-                                                  <ref cRef="F.77.a" type="folio" xml:id="UT22084-063-001-942"/>
+                                                  <tei:ref cRef="F.77.a" type="folio" xml:id="UT22084-063-001-942"/>
                         </l>
                                                 <l>At that time, the monks </l>
                                                 <l>Will use stūpas that have been </l>
@@ -6758,7 +6779,7 @@
                                         <lg tid="572">
                                                 <l>“When they engage in analysis </l>
                                                 <l>And contemplate this in solitude, </l>
-                                                <l>They cry out unbearably, <ref cRef="F.77.b" type="folio" xml:id="UT22084-063-001-943"/>
+                                                <l>They cry out unbearably, <tei:ref cRef="F.77.b" type="folio" xml:id="UT22084-063-001-943"/>
                         </l>
                                                 <l>‘Where will I go and what will happen?’</l>
                                         </lg>
