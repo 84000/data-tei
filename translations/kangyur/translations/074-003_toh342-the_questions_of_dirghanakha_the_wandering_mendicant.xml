@@ -30,7 +30,7 @@
                                 <editor role="finalReviewer" ref="contributors.xml#person-250">Rory Lindsay</editor>
                         </titleStmt>
                         <editionStmt>
-                <edition>v 1.0.5 <date>2022</date>
+                <edition>v 1.0.6 <date>2023</date>
                 </edition>
             </editionStmt>
                         <publicationStmt status="1">
@@ -63,7 +63,7 @@
                                 </bibl>
                         </sourceDesc>
                         <notesStmt>
-                                <note type="lastUpdated" date-time="2023-01-18T17:00:44.811Z" user="celso">18/01/2023 17:00:44</note>
+                                <note type="lastUpdated" date-time="2023-07-11T18:19:09.54Z" user="admin">11/07/2023 18:19:09</note>
                                 <note type="updated" update="text-version" value="0.0.1" date-time="2020-03-06T14:18:38.292Z" user="line-tofte">0.0.1</note>
                                 <note type="updated" update="translation-status" value="2.h" date-time="2020-11-24T14:31:34.245Z" user="line-tofte">2.h</note>
                                 <note type="updated" update="text-version" value="0.0.2" date-time="2020-11-24T14:31:34.245Z" user="line-tofte">Auto
@@ -101,12 +101,14 @@
                                 <note type="updated" update="text-version" value="0.0.2" date-time="2021-10-27T13:27:43.982Z" user="line-tofte">Auto (update-publication-status)</note>
                                 <note type="updated" update="text-version" value="0.0.3" date-time="2021-10-27T13:28:13.759Z" user="line-tofte">Auto (update-contributors)</note>
                                 <note type="updated" update="translation-status" value="1" date-time="2021-11-02T17:49:54.859Z" user="mike">1</note>
+                                <note type="updated" update="translation-status" value="1.a" date-time="2021-11-02T17:49:54.859Z" user="admin">Note added retrospectively based on date of status '1'</note>
                                 <note type="updated" update="text-version" value="1.0.0" date-time="2021-11-02T17:49:54.859Z" user="mike">First published version</note>
                                 <note type="updated" update="text-version" value="1.0.1" date-time="2022-06-03T01:01:46.604Z" user="celso">activated pending link toh 10</note>
                                 <note type="updated" update="text-version" value="1.0.2" date-time="2022-06-03T14:32:31.248Z" user="celso">removed rend="pending" tag</note>
                             <note type="updated" update="text-version" value="1.0.3" date-time="2022-07-26T07:15:46.695Z" user="cabie-sim">Auto (update-titles)</note>
                             <note type="updated" update="text-version" value="1.0.4" date-time="2023-01-16T16:58:52.361Z" user="celso">Auto (script-increment-version-published)</note>
                             <note type="updated" update="text-version" value="1.0.5" date-time="2023-01-18T16:58:06.914Z" user="celso">Auto (remove-tid-from-back-list-items)</note>
+                            <note type="updated" update="text-version" value="1.0.6" date-time="2023-07-11T18:19:06.674Z" user="celso">Fixed bad links to Chinese Tripitika</note>
                         </notesStmt>
                 </fileDesc>
         </teiHeader>
@@ -629,7 +631,7 @@
                                         <bibl xml:id="UT22084-074-003-98">Yijing, trans. <title xml:lang="Zh-Ltn">chang zhao fan zhi qing wen
                                                         jing</title>
                                                 <title xml:lang="zh">長爪梵志請問經</title> (Chinese translation of <title xml:lang="en">The Sūtra of the
-                                                        Questions of Dīrghanakha the Wandering Mendicant</title>), <ref target="https://21dzk.l.u-tokyo.ac.jp/SAT2012/T0584.html">Taishō 584</ref>.</bibl>
+                                                        Questions of Dīrghanakha the Wandering Mendicant</title>), <ref target="https://21dzk.l.u-tokyo.ac.jp/SAT2018/T584.html">Taishō 584</ref>.</bibl>
                                 </div>
                                 <div type="section" xml:id="UT22084-074-003-listBibl-2">
                                         <head type="section" tid="57">Secondary Literature</head>
@@ -710,23 +712,14 @@
                                                 </gloss>
                                         </item>
                                         <item>
-                                                <gloss type="term" xml:id="UT22084-074-003-113">
-                                                        <term>blessed one</term>
-                                                        <term xml:lang="Bo-Ltn">bcom ldan ’das </term>
-                                                        <term xml:lang="bo">བཅོམ་ལྡན་འདས།</term>
-                                                        <term xml:lang="Sa-Ltn">bhagavat</term>
-                                                        <term type="definition">In Buddhist literature, an epithet applied to buddhas, most often to
-                                                                Śākyamuni. The Sanskrit term generically means “possessing fortune,” but in
-                                                                specifically Buddhist contexts it implies that a buddha is in possession of the
-                                                                virtuous qualities and wisdom associated with complete awakening. The Tibetan
-                                                                translation has three syllables defined to mean “one who has conquered (the māras),
-                                                                possesses (the qualities of awakening), and has transcended (saṃsāra, or both saṃsāra
-                                                                and nirvāṇa).</term>
-                                                        <term type="definition">In this sūtra it is notable that Dīrghanakha does not initially show
-                                                                respect to the Buddha and refers to him using a more neutral register, “renunciant
-                                                                Gautama,” until his conversion at the end of the sūtra (<ptr target="#UT22084-074-003-74"/>), when he then uses the epithet “Blessed One.”</term>
-                                                </gloss>
-                                        </item>
+                        <gloss xml:id="UT22084-074-003-113" type="term" mode="match">
+                            <term>blessed one</term>
+                            <term xml:lang="Bo-Ltn" type="sourceAttested">bcom ldan ’das</term>
+                            <term xml:lang="bo" type="sourceAttested">བཅོམ་ལྡན་འདས།</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified">bhagavat</term>
+                            <term type="definition">In this sūtra it is notable that Dīrghanakha does not initially show respect to the Buddha and refers to him using a more neutral register, “renunciant Gautama,” until his conversion at the end of the sūtra (<ptr target="#UT22084-074-003-74"/>), when he then uses the epithet “Blessed One.”</term>
+                        </gloss>
+                    </item>
                                         <item>
                                                 <gloss type="term" xml:id="UT22084-074-003-154">
                                                         <term>seer</term>
