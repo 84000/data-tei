@@ -27,7 +27,7 @@
         <editor role="finalReviewer" ref="contributors.xml#person-74">Ryan Damron</editor>
       </titleStmt>
       <editionStmt>
-                <edition>v 1.0.6 <date>2021</date>
+                <edition>v 1.0.7 <date>2023</date>
                 </edition>
             </editionStmt>
       <publicationStmt status="1">
@@ -61,7 +61,7 @@
         </bibl>
       </sourceDesc>
       <notesStmt>
-        <note type="lastUpdated" date-time="2023-01-18T17:00:16.492Z" user="celso">18/01/2023 17:00:16</note>
+        <note type="lastUpdated" date-time="2023-07-11T17:07:13.706Z" user="admin">11/07/2023 17:07:13</note>
         <note type="updated" update="text-version" value="0.0.1" date-time="2020-03-06T14:17:31.81Z" user="line-tofte">0.0.1</note>
         <note type="updated" update="translation-status" value="2.h" date-time="2020-11-24T14:28:30.111Z" user="line-tofte">2.h</note>
         <note type="updated" update="text-version" value="0.0.2" date-time="2020-11-24T14:28:30.111Z" user="line-tofte">Auto
@@ -98,6 +98,7 @@
         <note type="updated" update="text-version" value="0.0.3" date-time="2021-10-18T07:15:02.839Z" user="line-tofte">Auto (update-contributors)</note>
         <note type="updated" update="text-version" value="0.0.4" date-time="2021-10-21T10:27:38.29Z" user="line-tofte">Auto (update-contributors)</note>
         <note type="updated" update="translation-status" value="1" date-time="2021-10-27T08:13:44.905Z" user="mike">1</note>
+        <note type="updated" update="translation-status" value="1.a" date-time="2021-10-27T08:13:44.905Z" user="admin">Note added retrospectively based on date of status '1'</note>
         <note type="updated" update="text-version" value="1.0.0" date-time="2021-10-27T08:13:44.905Z" user="mike">First published version </note>
         <note type="updated" update="text-version" value="1.0.1" date-time="2021-10-28T23:12:56.313Z" user="konchog">A few minor fixes in the main translation.</note>
         <note type="updated" update="text-version" value="1.0.2" date-time="2021-10-29T00:33:01.337Z" user="konchog">Amended "bhgavato" to "bhagavato" in n. 16, after consultation with Nate.</note>
@@ -105,6 +106,7 @@
           <note type="updated" update="text-version" value="1.0.4" date-time="2022-07-26T06:22:27.307Z" user="cabie-sim">Auto (update-titles)</note>
           <note type="updated" update="text-version" value="1.0.5" date-time="2023-01-16T16:58:52.361Z" user="celso">Auto (script-increment-version-published)</note>
           <note type="updated" update="text-version" value="1.0.6" date-time="2023-01-18T16:58:06.914Z" user="celso">Auto (remove-tid-from-back-list-items)</note>
+          <note type="updated" update="text-version" value="1.0.7" date-time="2023-07-11T17:07:10.84Z" user="celso">Fixed bad links to Chinese Tripitika</note>
       </notesStmt>
     </fileDesc>
   </teiHeader>
@@ -333,7 +335,7 @@
               Manuscript from the Potala</title>. Sanskrit Texts from the Tibetan Autonomous Region 7/1. Beijing: China Tibetology Publishing House;
             Vienna: Austrian Academy of Sciences Press, 2010. </bibl>
           <bibl xml:id="UT22084-060-006-101">Śikṣananda, trans. <title xml:lang="zh">大乘四法經</title> (<title xml:lang="Zh-Ltn">da cheng si fa
-              jing</title>; Chinese translation of <title xml:lang="Sa-Ltn">Catuṣkanirhāra</title>), <ref target="https://21dzk.l.u-tokyo.ac.jp/SAT2012/T0774.html">Taishō 774</ref>.</bibl>
+            jing</title>; Chinese translation of <title xml:lang="Sa-Ltn">Catuṣkanirhāra</title>), <ref target="https://21dzk.l.u-tokyo.ac.jp/SAT2018/T0774.html">Taishō 774</ref>.</bibl>
         </div>
         <div type="section" xml:id="UT22084-060-006-listBibl-3">
           <head type="section" tid="37">Secondary Literature</head>
@@ -388,14 +390,14 @@
                         </gloss>
                     </item>
           <item>
-            <gloss type="person" xml:id="UT22084-060-006-128">
-              <term>Mañjuśrī</term>
-              <term xml:lang="Bo-Ltn">’jam dpal </term>
-              <term xml:lang="bo">འཇམ་དཔལ།</term>
-              <term xml:lang="Sa-Ltn">Mañjuśrī</term>
-              <term type="definition">One of the eight “close sons” of the Buddha, the embodiment of wisdom.</term>
-            </gloss>
-          </item>
+                        <gloss xml:id="UT22084-060-006-128" type="person" mode="match">
+                            <term>Mañjuśrī</term>
+                            <term xml:lang="Bo-Ltn" type="sourceAttested">’jam dpal</term>
+                            <term xml:lang="bo" type="sourceAttested">འཇམ་དཔལ།</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified">mañjuśrī</term>
+                            <term type="definition">One of the eight “close sons” of the Buddha, the embodiment of wisdom.</term>
+                        </gloss>
+                    </item>
           <item>
             <gloss type="person" xml:id="UT22084-060-006-129">
               <term>Santuṣita</term>
@@ -419,14 +421,14 @@
             </gloss>
           </item>
           <item>
-            <gloss type="person" xml:id="UT22084-060-006-131">
-              <term>Youthful Mañjuśrī</term>
-              <term xml:lang="Bo-Ltn">’jam dpal gzhon nur gyur pa </term>
-              <term xml:lang="bo">འཇམ་དཔལ་གཞོན་ནུར་གྱུར་པ།</term>
-              <term xml:lang="Sa-Ltn">Mañjuśrī­kumāra­bhūta</term>
-              <term type="definition">An epithet for the bodhisattva Mañjuśrī, as he appears always youthful, like a prince of sixteen.</term>
-            </gloss>
-          </item>
+                        <gloss xml:id="UT22084-060-006-131" type="person" mode="match">
+                            <term>Youthful Mañjuśrī</term>
+                            <term xml:lang="Bo-Ltn" type="sourceAttested">’jam dpal gzhon nur gyur pa</term>
+                            <term xml:lang="bo" type="sourceAttested">འཇམ་དཔལ་གཞོན་ནུར་གྱུར་པ།</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified">mañjuśrī­kumāra­bhūta</term>
+                            <term type="definition">An epithet for the bodhisattva <term type="ignore">Mañjuśrī</term>, as he appears always youthful, like a prince of sixteen. See “Mañjuśrī.”</term>
+                        </gloss>
+                    </item>
           <item>
             <gloss type="place" xml:id="UT22084-060-006-132">
               <term>Anāthapiṇḍada’s Park</term>
