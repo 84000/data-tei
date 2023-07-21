@@ -1,0 +1,892 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schema/current/translation.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+        <teiHeader>
+                <fileDesc>
+                        <titleStmt>
+                                <title type="mainTitle" xml:lang="en">The Sūtra of the Moon
+                                        (2)</title>
+                                <title type="mainTitle" xml:lang="Sa-Ltn">Candrasūtra</title>
+                                <title type="mainTitle" xml:lang="bo">ཟླ་བའི་མདོ།</title>
+                                <title type="mainTitle" xml:lang="Bo-Ltn">zla ba’i mdo</title>
+                                <author role="translatorMain" ref="eft:team-50">Translated by the
+                                        Pema Yeshé Dé Translation Team<lb/>under the patronage and
+                                        supervision of 84000: Translating the Words of the
+                                        Buddha</author>
+                                <consultant role="projectManager" ref="eft:person-316">Giuliano Proença</consultant>
+                                <author role="translatorEng" ref="eft:person-316">Giuliano Proença</author>
+                                <editor role="proofreader" ref="eft:person-359">Daniela Espíndola</editor>
+                                <editor role="projectEditor" ref="eft:person-250">Rory Lindsay</editor>
+                                <editor role="projectEditor" ref="eft:person-411">David Fiordalis</editor>
+                                <editor role="copyEditor" ref="eft:person-433">Dawn Collins</editor>
+                                <editor role="TEImarkupEditor" ref="eft:person-381">Martina Cotter</editor>
+                        </titleStmt>
+                        <editionStmt>
+                <edition>v 0.0.3 <date>2023</date>
+                </edition>
+            </editionStmt>
+                        <publicationStmt status="2">
+                <publisher>
+                    <name>84000: Translating the Words of the Buddha</name>
+                                        is a global non-profit initiative to translate all the
+                                        Buddha’s words into modern languages, and to make them
+                                        available to everyone. </publisher>
+                <availability>
+                                        <licence>
+                                                <graphic url="http://i.creativecommons.org/l/by-nc-nd/2.0/88x31.png"/>
+                                                <p>This work is provided under the protection of a
+                                                  Creative Commons CC BY-NC-ND (Attribution -
+                                                  Non-commercial - No-derivatives) 3.0 copyright. It
+                                                  may be copied or printed for fair use, but only
+                                                  with full attribution, and not for commercial
+                                                  advantage or personal compensation. For full
+                                                  details, see the Creative Commons license.</p>
+                                        </licence>
+                                </availability>
+                <idno xml:id="UT22084-072-031"/>
+                <note>An early mistake in the assigning of UT numbers within the
+                                        84000 project means that these ids diverge slightly from the
+                                        standard logic.</note>
+                <date>2023-07-14</date>
+            </publicationStmt>
+                        <sourceDesc>
+                                <bibl key="toh331" type="text">
+                                        <ref>Toh 331</ref>
+                                        <biblScope>Degé Kangyur, vol. 72 (mdo sde, sa), folios
+                                                259.b–260.a </biblScope>
+                                        <location work="UT4CZ5369" count-pages="2">
+                                                <volume number="72" start-page="518" end-page="519"/>
+                                        </location>
+                                        <idno parent-id="O1JC114941JC14668" work="http://read.84000.co/sections"/>
+                                        <idno source-id="O1JC114941JC12010" work="W22084"/>
+                                </bibl>
+                        </sourceDesc>
+                        <notesStmt>
+                                <note type="lastUpdated" date-time="2023-07-21T07:29:53.713Z" user="admin">21/07/2023 07:29:53</note>
+                                <note type="updated" update="translation-status" value="4" date-time="2020-10-02T13:51:52.984Z" user="line-tofte">4</note>
+                                <note type="updated" update="text-version" value="0.0.1" date-time="2020-10-02T13:51:52.984Z" user="line-tofte">0.0.1</note>
+                                <note type="updated" update="translation-status" value="3" date-time="2020-11-30T09:52:46.21Z" user="line-tofte">3</note>
+                                <note type="updated" update="text-version" value="0.0.2" date-time="2020-11-30T09:52:46.21Z" user="line-tofte">Auto
+                                        (update-publication-status)</note>
+                                <note type="updated" update="text-version" value="0.0.3" date-time="2021-01-11T14:06:23.284Z" user="line-tofte">Auto
+                                        (update-contributors)</note>
+                                <note type="updated" update="text-version" value="0.0.4" date-time="2021-01-11T14:08:19.081Z" user="line-tofte">Auto
+                                        (update-contributors)</note>
+                                <note type="updated" update="text-version" value="0.0.5" date-time="2021-01-11T14:10:13.55Z" user="line-tofte">Auto
+                                        (update-contributors)</note>
+                                <note type="updated" update="translation-status" value="2.h" date-time="2021-03-12T14:59:50.215Z" user="line-tofte">2.h</note>
+                                <note type="updated" update="text-version" value="0.0.6" date-time="2021-03-12T14:59:50.215Z" user="line-tofte">Auto
+                                        (update-publication-status)</note>
+                                <note type="updated" update="text-version" value="0.0.7" date-time="2021-03-12T15:01:29.545Z" user="line-tofte">Auto
+                                        (update-contributors)</note>
+                                <note type="updated" update="translation-status" value="2.g" date-time="2023-01-30T11:22:24.414Z" user="line-tofte">2.g</note>
+                                <note type="updated" update="text-version" value="0.0.8" date-time="2023-01-30T11:22:24.414Z" user="line-tofte">Auto
+                                        (update-publication-status)</note>
+                                <note type="updated" update="text-version" value="0.0.9" date-time="2023-01-30T12:40:02.861Z" user="line-tofte">Auto
+                                        (update-contributors)</note>
+                                <note type="updated" update="translation-status" value="2.f" date-time="2023-02-21T14:44:12.906Z" user="line-tofte">2.f</note>
+                                <note type="updated" update="text-version" value="0.0.10" date-time="2023-02-21T14:44:12.906Z" user="line-tofte">Auto
+                                        (update-publication-status)</note>
+                                <note type="updated" update="translation-status" value="2.e" date-time="2023-04-05T15:33:31.296Z" user="line-tofte">2.e</note>
+                                <note type="updated" update="text-version" value="0.0.11" date-time="2023-04-05T15:33:31.296Z" user="line-tofte">Auto
+                                        (update-publication-status)</note>
+                                <note type="updated" update="translation-status" value="2.d" date-time="2023-04-21T10:08:42.062Z" user="line-tofte">2.d</note>
+                                <note type="updated" update="text-version" value="0.0.12" date-time="2023-04-21T10:08:42.062Z" user="line-tofte">Auto
+                                        (update-publication-status)</note>
+                                <note type="updated" update="translation-status" value="2.c" date-time="2023-05-30T15:02:10.817Z" user="line-tofte">2.c</note>
+                                <note type="updated" update="text-version" value="0.0.13" date-time="2023-05-30T15:02:10.817Z" user="line-tofte">Auto
+                                        (update-publication-status)</note>
+                                <note type="updated" update="text-version" value="0.0.14" date-time="2023-06-28T14:59:37.197Z" user="line-tofte">Auto
+                                        (update-contributors)</note>
+                            <note type="updated" update="text-version" value="0.0.2" date-time="2023-07-18T06:49:22.695Z" user="line-tofte">Auto (update-contributors)</note>
+                            <note type="updated" update="translation-status" value="2" date-time="2023-07-21T07:29:49.424Z" user="line-tofte">2</note>
+                            <note type="updated" update="text-version" value="0.0.3" date-time="2023-07-21T07:29:49.424Z" user="line-tofte">Auto (update-publication-status)</note>
+                        </notesStmt>
+                </fileDesc>
+        </teiHeader>
+        <text>
+                <!--Note the "Contents" outline from the Word DOCX has not been included in the script. If the 
+                    Outline to the text is quite complex, it is recommended that you paste the outlined contents from the DOCX here as a comment for
+                    markup's reference. The actual table of contents will be generated in the Reading Room by the parser.-->
+                <front>
+                        <div type="summary">
+                                <head type="summary" tid="1">Summary</head>
+                                <milestone unit="chunk" xml:id="UT22084-072-031-1"/>
+                                <p tid="2">
+                    <title xml:lang="en">The Sūtra of the Moon (2)</title> is
+                                        a short text that presents a Buddhist description of a lunar
+                                        eclipse. On one occasion, while the Buddha is residing in
+                                        Campā, the moon is covered by Rāhu, lord of the asuras,
+                                        which causes an eclipse. The god of the moon asks the Buddha
+                                        for refuge, after which the Buddha urges Rāhu to release the
+                                        moon. Seeing this, Bali, another lord of the asuras, asks
+                                        Rāhu why he did so. Rāhu explains that if he had not
+                                        released the moon, his head would have split into seven
+                                        pieces. Thereafter, Bali utters a verse praising the
+                                        emergence of buddhas. Besides being included in the Kangyur,
+                                        in the Chinese Āgamas, and the Pali Nikāyas,<title xml:lang="en"> The Sūtra of the Moon (2)</title> was
+                                        included in collections of texts recited for protection.</p>
+                        </div>
+                        <div type="acknowledgment">
+                                <head type="acknowledgment" tid="3">Acknowledgements</head>
+                                <milestone unit="chunk" xml:id="UT22084-072-031-2"/>
+                                <p tid="4">Translated by the Pema Yeshé Dé Translation Group. The
+                                        translation, introduction, and notes were produced and
+                                        edited by Giuliano Proença. The English translation and
+                                        ancillary materials were proofread by Daniela Espíndola.
+                                        Thanks are due to Karin Kerb for making otherwise
+                                        unavailable bibliographical material accessible to us.</p>
+                                <milestone unit="chunk" xml:id="UT22084-072-031-3"/>
+                                <p tid="5">The translation was completed under the patronage and
+                                        supervision of 84000: Translating the Words of the
+                                        Buddha.</p>
+                                <lb/>
+                                <milestone unit="chunk" xml:id="UT22084-072-031-5"/>
+                                <p tid="7">[Sponsored by XXXXXX]</p>
+                        </div>
+                        <div type="introduction">
+                                <head type="introduction" tid="8">Introduction</head>
+                                <div type="section" xml:id="UT22084-072-031-introduction-1">
+                                        <milestone unit="chunk" xml:id="UT22084-072-031-6"/>
+                                        <p tid="10">
+                        <title xml:lang="en">The Sūtra of the Moon
+                                                  (2)</title> is a short sūtra explaining how a
+                                                lunar eclipse involves the covering of the moon by
+                                                the asura Rāhu. While the Buddha Śākyamuni is
+                                                staying at the Traveler Pond in Campā, the moon is
+                                                covered by Rāhu, lord of the asuras. Candramas, the
+                                                god of the moon, asks the Buddha for refuge, after
+                                                which the Buddha urges Rāhu to release the moon.
+                                                Seeing that Rāhu has set the moon free, Bali,
+                                                another lord of the asuras, asks Rāhu why he did so.
+                                                The asura explains that if he had not released the
+                                                moon, his head would have split into seven pieces.
+                                                The text concludes with a verse praising the
+                                                emergence of buddhas. </p>
+                                        <milestone unit="chunk" xml:id="UT22084-072-031-7"/>
+                                        <p tid="11">
+                        <title xml:lang="en">The Sūtra of the Moon
+                                                  (2)</title> is one of a few closely related texts
+                                                in the Kangyur, versions of which are also found in
+                                                the Chinese Āgamas and the Pali Nikāyas of the
+                                                Theravāda canon. Different versions of this text are
+                                                also included in the Paritta and Rakṣā collections,
+                                                which have the function of providing both spiritual
+                                                and worldly protection through their recitation.</p>
+                                        <milestone unit="chunk" xml:id="UT22084-072-031-8"/>
+                                        <p tid="12">In the Kangyur there are two texts titled <title xml:lang="en">The Sūtra of the Moon</title>, both
+                                                with the same basic content. There is the text
+                                                translated here, designated <title xml:lang="en">The
+                                                  Sūtra of the Moon (2)</title> (Toh 331), which was
+                                                translated from Sanskrit in the time of the “early
+                                                diffusion,” and <title xml:lang="en">The Sūtra of
+                                                  the Moon (1)</title> (Toh 42),<ref inst="untoggle following comment" rend="pending" target="https://read.84000.co/translation/toh42.html"/><!--<note place="end" xml:id="">Pema Yeshe De (2023), trans., <title xml:lang="en">
+                                                                  <ref target="https://read.84000.co/translation/toh42.html">The Sūtra of the Moon (1)</ref>
+                                                          </title>, Toh 42 (84000: Translating the Words of the Buddha).</note>-->
+                                                which was probably translated from Pali in the
+                                                fourteenth century. An almost identical narrative is
+                                                also found in <title xml:lang="en">The Sūtra of the
+                                                  Sun</title>
+                        <ref inst="untoggle following comment" rend="pending" target="https://read.84000.co/translation/toh41.html"/>
+                                                <!--<note place="end" xml:id="">Pema Yeshe De (2023), trans., <title xml:lang="en"><ref target="https://read.84000.co/translation/toh41.html">The Sūtra of the Moon (1)</ref></title>, Toh 41 (84000: Translating the Words of the Buddha).</note>-->
+                                                concerning a solar eclipse. <title xml:lang="en">The
+                                                  Sūtra of the Moon (1)</title> and <title xml:lang="en">The Sūtra of the Sun </title>remain
+                                                popular among Tibetans today,<note place="end" xml:id="UT22084-072-031-9"> See Skilling 1993, p.
+                                                  133.</note> appearing in recent Tibetan
+                                                collections of mantras and incantations for
+                                                recitation. Six of seven verses from <title xml:lang="en">The Sūtra of the Moon (2)</title>
+                                                are also quoted verbatim in <title xml:lang="en">Great Upholder of the Secret Mantra</title>, Toh
+                                                563, <ptr target="#UT22084-090-007-42">1.33</ptr>,
+                                                one of the Tibetan Pañcarakṣā texts.</p>
+                                        <milestone unit="chunk" xml:id="UT22084-072-031-10"/>
+                                        <p tid="13">Neither the colophons, nor the imperial
+                                                catalogs, nor Tibetan historical works mention the
+                                                translators of <title xml:lang="en">The Sūtra of the
+                                                  Moon (2)</title>. However, the fact that <title xml:lang="en">The Sūtra of the Moon (2)</title> is
+                                                listed in the Denkarma catalog from the early ninth
+                                                century confirms that the translation was probably
+                                                produced either during or prior to that period,
+                                                probably from Sanskrit.</p>
+                                        <milestone unit="chunk" xml:id="UT22084-072-031-11"/>
+                                        <p tid="14">
+                        <title xml:lang="en">The Sūtra of the Moon
+                                                  (2)</title> is available in the Kangyurs of the
+                                                Tshalpa, Thempangma, and mixed lines, in independent
+                                                collections such as the Phukdrak Kangyur, the Langdo
+                                                collection, and the Namgyal Kangyur, and in some
+                                                collections from Western Tibet, namely Gondhla and
+                                                Tholing. It is also included in Hemis I Kangyur from
+                                                Ladakh. All versions of this text are to be found in
+                                                the Sūtra section of the respective collections.</p>
+                                        <milestone unit="chunk" xml:id="UT22084-072-031-12"/>
+                                        <p tid="15">The colophons of the majority of the Kangyurs
+                                                only indicate the conclusion of the sūtra, but the
+                                                Thengpangma texts have the following observation at
+                                                the colophon: “It is evident that this and the sūtra
+                                                translated by Tharpa Lotsāwa are the same,”
+                                                referring to <title xml:lang="en">The Sūtra of the
+                                                  Moon (1)</title>.<note place="end" xml:id="UT22084-072-031-13"> The colophon of the
+                                                  <title xml:lang="en">Sūtra of the Moon (1)</title>
+                                                  mentions the translators Ānandaśrī and Tharpa
+                                                  Lotsāwa Nyima Gyaltsen (<foreign xml:lang="Bo-Ltn">thar pa lo tsa ba nyi ma rgyal mtshan</foreign>).
+                                                  Skilling dates the translation of <title xml:lang="en">The Sūtra of the Moon (1)</title> to
+                                                  the first decade of the fourteenth century. See
+                                                  Skilling 1993, p. 97.</note> In the same way, the
+                                                colophon of <title xml:lang="en">The Sūtra of the
+                                                  Moon (1)</title> in the Narthang edition states
+                                                that “there is also an early translation,” referring
+                                                to <title xml:lang="en">The Sūtra of the Moon
+                                                  (2)</title>. Although the Tibetan texts present
+                                                the Sanskrit title <title xml:lang="Sa-Ltn">Candrasūtra</title>, this title is not attested
+                                                in Sanskrit works, but the title <title xml:lang="Sa-Ltn">Candra­maṇḍala­sūtra</title> is
+                                                documented in a Sanskrit fragment from Central Asia
+                                                that lists different sūtras.<note place="end" xml:id="UT22084-072-031-14"> See Wille 2008, p.
+                                                  339, n. 4.</note>
+                    </p>
+                                        <milestone unit="chunk" xml:id="UT22084-072-031-15"/>
+                                        <p tid="16">No complete Sanskrit version of <title xml:lang="en">The Sūtra of the Moon (2)</title>
+                                                exists, but Waldschmidt<note place="end" xml:id="UT22084-072-031-16"> Waldschmidt (1970)
+                                                  edited four fragments found in Xinjiang in the
+                                                  Turfan expeditions; they are currently housed in
+                                                  Berlin.</note> and Klaus Wille<note place="end" xml:id="UT22084-072-031-17"> Wille (2008) adds
+                                                  five new fragments to the ones edited by
+                                                  Waldschmidt, two from the Turfan collection and
+                                                  three from the Pelliot collection. His edition is
+                                                  also available at <ref target="http://gretil.sub.uni-goettingen.de/gretil/1_sanskr/4_rellit/buddh/candras_tr.txt">http://gretil.sub.uni-goettingen.de/gretil/1_sanskr/4_rellit/buddh/candras_tr.txt</ref>.</note>
+                                                prepared annotated editions based on Sanskrit
+                                                fragments that correspond to this text. It is also
+                                                extant in two Chinese translations of the
+                                                  Saṃyuktāgama.<note place="end" xml:id="UT22084-072-031-18"> Sūtra no. 583 of the
+                                                  Saṃyuktāgama (<title xml:lang="zh">雜阿含經</title>,
+                                                  Taishō 99), translated by Guṇabhadra in the Song
+                                                  state (<foreign xml:lang="zh">宋</foreign>) between
+                                                  435–43 <hi rend="small-caps">ce</hi> in Jiankang
+                                                  (today’s Nanjing), and sūtra no. 167 of the
+                                                  Alternative Translation of the Saṃyuktāgama
+                                                  (<title xml:lang="zh">別譯雜阿含經</title>, Taishō 100),
+                                                  from an unknown translator in the Three Qin
+                                                  (<foreign xml:lang="zh">三秦</foreign>) period. The
+                                                  latter was probably translated between 385–431 <hi rend="small-caps">ce</hi> in the Gansu corridor
+                                                  (Bingenheimer 2011, p. 6).</note> It is likewise
+                                                quoted in the *<title xml:lang="Sa-Ltn">Mahā­prajñā­pāramitā­śāstra</title> (<title xml:lang="zh">大智度論</title>).<note place="end" xml:id="UT22084-072-031-19"> Taishō 1509. For an
+                                                  English translation of this quotation and from
+                                                  sūtra no. 583 of Taishō 99, see Lamotte 2001, pp.
+                                                  475–77.</note>
+                                        </p>
+                                        <milestone unit="chunk" xml:id="UT22084-072-031-20"/>
+                                        <p tid="17">In the Pali Saṃyutta Nikāya we find the <title xml:lang="Pi-Ltn">Candimasutta</title> (SN 2.9),
+                                                which is the probably close to the source text for
+                                                  <title xml:lang="en">The Sūtra of the Moon
+                                                  (1)</title>, but differs slightly from <title xml:lang="en">The Sūtra of the Moon
+                                                  (2)</title>.<note place="end" xml:id="UT22084-072-031-21"> See <title xml:lang="Pi-Ltn">Candimasutta</title> and
+                                                  Grimblot and Feer’s edition and translation (1871)
+                                                  from the Paritta collection in the
+                                                  bibliography.</note> Some passages from the
+                                                Chinese Āgamas were translated into Old Uyghur, and
+                                                there are two different Old Uyghur renditions of the
+                                                verses of <title xml:lang="en">The Sūtra of the Moon
+                                                  (2)</title> from Taishō 99, both edited by Zieme.
+                                                Feer presents the legend of Rāhu according to Hindu
+                                                and Buddhist texts, and his translations of both
+                                                versions of <title xml:lang="en">The Sūtra of the
+                                                  Moon</title> include extensive notes.</p>
+                                        <milestone unit="chunk" xml:id="UT22084-072-031-22"/>
+                                        <p tid="18">
+                        <title xml:lang="en">The Sūtra of the Moon
+                                                  (2)</title>, the Sanskrit fragments edited by
+                                                Klaus Wille, and the Chinese canonical translations
+                                                in the Saṃyuktāgama would seem to belong to related
+                                                textual traditions, while <title xml:lang="en">The
+                                                  Sūtra of the Moon (1)</title> and the Pali <title xml:lang="Pi-Ltn">Candimasutta</title> can be
+                                                grouped together as representing the Theravāda
+                                                tradition. They all share the same basic content,
+                                                but the texts differ in wording and in the number of
+                                                verses and passages in prose. For example, <title xml:lang="en">The Sūtra of the Moon (2)</title>
+                                                has seven verses, while <title xml:lang="en">The
+                                                  Sūtra of the Moon (1)</title> has only four. Among
+                                                them the setting also differs in that only <title xml:lang="en">The Sūtra of the Moon (2)</title> is
+                                                set in Campā, while all the other versions are set
+                                                in Śrāvastī. The characters differ too. For
+                                                instance, in <title xml:lang="en">The Sūtra of the
+                                                  Moon (1)</title> and the Pali <title xml:lang="Pi-Ltn">Candimasutta</title>, it is
+                                                Vemacitra who speaks to Rāhu, not Bali, as in the
+                                                other versions. Furthermore, Bali is mentioned by
+                                                name in Sanskrit and Chinese, but in <title xml:lang="en">The Sūtra of the Moon (2)</title> he
+                                                is addressed as the great son of Virocana. <title xml:lang="en">The Sūtra of the Sun</title> is
+                                                almost identical in wording to <title xml:lang="en">The Sūtra of the Moon (1)</title> but of course
+                                                reads “sun” instead of “moon” and includes one
+                                                additional verse, as is the case with the Pali
+                                                canonical versions. This extra verse, in which the
+                                                Buddha explains how the sun dispels darkness,
+                                                corresponds to a verse in <title xml:lang="en">The
+                                                  Sūtra of the Moon (2)</title>.</p>
+                                        <milestone unit="chunk" xml:id="UT22084-072-031-23"/>
+                                        <p tid="19">We have based our translation on the Degé
+                                                edition while also consulting the Comparative
+                                                Edition of the Kangyur, and the Stok Palace,
+                                                Phukdrak, Hemis I, and Gondhla manuscripts. We
+                                                compared Wille’s edition of the Sanskrit with the
+                                                Tibetan. When significant variants from Tibetan
+                                                Kangyur manuscripts are supported by Sanskrit, they
+                                                were preferred. Our translation benefited from
+                                                Feer’s notes on <title xml:lang="en">The Sūtra of
+                                                  the Moon (1)</title> and<title xml:lang="en"> The
+                                                  Sūtra of the Moon (2),</title> as well as from his
+                                                  translations.<note place="end" xml:id="UT22084-072-031-24"> Feer’s French
+                                                  translation of Toh 331 (1865) is the only
+                                                  translation into Western languages that we know
+                                                  of. However, there are many translations of other
+                                                  versions, such as Feer’s translation of the <title xml:lang="Pi-Ltn">Candimasutta</title> from Pali
+                                                  into French (1871), Geiger’s translation from Pali
+                                                  into German (1930), Rhys Davids’ translation from
+                                                  Pali to English (1950), Lamotte’s translation from
+                                                  Taishō 99 (sūtra no. 583) into French, and Peter
+                                                  Zieme’s translation from the verses of an Uyghur
+                                                  version into German (2000). There are many
+                                                  translations from Pali into modern languages
+                                                  available on the internet.</note> We sometimes
+                                                referred in the notes to <title xml:lang="en">The
+                                                  Sūtra of the Moon (1)</title> and <title xml:lang="en">The Sūtra of the Sun</title>. We
+                                                also consulted passages from <title xml:lang="en">The Sūtra of the Moon (2)</title> quoted in the
+                                                English translation of <title xml:lang="en">Great
+                                                  Upholder of the Secret Mantra</title>,<note place="end" xml:id="UT22084-072-031-106">Dharmachakra Translation Committee, trans.,
+                                                  <title xml:lang="en">
+                                <ref target="https://read.84000.co/translation/toh563.html">Great Upholder of the Secret
+                                                  Mantra</ref>
+                            </title>, Toh 563 (84000: Translating
+                                                  the Words of the Buddha, 2022).</note> translated
+                                                by the Dharmachakra Translation Committee for 84000.
+                                                We have on occasion referred to variants found in
+                                                this text and its commentary. </p>
+                                        <milestone unit="chunk" xml:id="UT22084-072-031-25"/>
+                                        <p tid="20">Apart from its role as a text for protection
+                                                that shows the Buddha’s power to bring eclipses to
+                                                an end, it is noteworthy that linguistic expressions
+                                                relating to Indian views on eclipses can be heard in
+                                                regions far beyond the influence of Buddhism. In
+                                                present-day Turkey, for instance, Jens Peter Laut
+                                                has shown the connection between Old Turkish
+                                                Buddhist culture from Central Asia with Modern
+                                                Turkish expressions such as “the moon was seized,”
+                                                meaning that the moon is eclipsed. This same
+                                                expression is found in <title xml:lang="en">The
+                                                  Sūtra of the Moon (1)</title> and the Pali <title xml:lang="Pi-Ltn">Candimasutta</title>, though
+                                                here in <title xml:lang="en">The Sūtra of the Moon
+                                                  (2)</title> we find the expression that the moon
+                                                “was covered.”</p>
+                                </div>
+                        </div>
+                </front>
+                <body>
+                        <div type="translation">
+                                <head type="translation" tid="21"> The Translation </head>
+                                <head type="titleMain" tid="23">The Sūtra of the Moon (2)</head>
+                                <div type="section" xml:id="UT22084-072-031-section-1">
+                                        <milestone unit="chunk" xml:id="UT22084-072-031-27"/>
+                                        <p tid="27">
+                        <ref cRef="F.259.b" type="folio" xml:id="UT22084-072-031-107"/> Homage to the Three
+                                                Jewels!</p>
+                                        <lb/>
+                                        <p tid="30">Thus did I hear at one time. The Blessed One was
+                                                dwelling on the bank of Traveler’s Pond in the
+                                                country of Campā.<note place="end" xml:id="UT22084-072-031-31"> The Sanskrit edition,
+                                                  the Chinese versions, and the Theravāda parallels
+                                                  are set in Śrāvastī. It seems that the Sanskrit
+                                                  fragment 8 (Wille 2008, p. 345) had the same
+                                                  setting as the Tibetan translation of this sūtra,
+                                                  since the few <foreign xml:lang="Sa-Ltn" type="term">akṣaras</foreign> left read <foreign xml:lang="Sa-Ltn" type="quote">tīre</foreign> (“on
+                                                  the shore”). Wille identifies this pond as Gargā
+                                                  Pond, known also from many Pali suttas as Gaggarā
+                                                  Pond, but we could not confirm it in the lexical
+                                                  resources we consulted.</note> At that time, the
+                                                entire moon was covered by Rāhu, lord of the
+                                                  asuras.<note place="end" xml:id="UT22084-072-031-32"> Read with the
+                                                  Sanskrit. The Tibetan reads <foreign xml:lang="Bo-Ltn" type="quote">de’i tshe lha ma
+                                                  yin gyi dbang po sgra gcan gyis zla ba’i dkyil
+                                                  ’khor thams cad ’od kyis bkab par gyur
+                                                  to</foreign>.</note> Then the god who dwells on
+                                                the disk of the moon, frightened, terrified, and
+                                                  dismayed,<note place="end" xml:id="UT22084-072-031-33"> The Sanskrit adds
+                                                  <foreign xml:lang="Sa-Ltn" type="quote">āhṛṣṭaromakūpā</foreign> (“with his hair standing
+                                                          on end”). Note that this term has a feminine ending in this context because it is in apposition to the feminine noun <foreign xml:lang="Sa-Ltn">devatā</foreign>.</note> approached the Blessed One, bowed
+                                                his head to the Blessed One’s feet, and sat to one
+                                                side. He then supplicated in verse:</p>
+                                        <milestone unit="chunk" xml:id="UT22084-072-031-34"/>
+                                        <lg tid="31">
+                                                <l>“I pay homage to you,</l>
+                                                <l>Thoroughly liberated, heroic Buddha! </l>
+                                                <l>I am in distress. </l>
+                                                <l>Please grant me refuge!</l>
+                                        </lg>
+                                        <milestone unit="chunk" xml:id="UT22084-072-031-35"/>
+                                        <lg tid="32">
+                                                <l>“Candramas took refuge </l>
+                                                <l>In the Worthy One in the world, the Well-Gone
+                                                  One. </l>
+                                                <l>Therefore, free the moon from Rāhu! </l>
+                                                <l>Buddhas have compassion for the world.”</l>
+                                        </lg>
+                                        <milestone unit="chunk" xml:id="UT22084-072-031-36"/>
+                                        <p tid="33">The Blessed One said:</p>
+                                        <milestone unit="chunk" xml:id="UT22084-072-031-37"/>
+                                        <lg tid="34">
+                                                <l>“Rāhu! The moon dispels darkness.</l>
+                                                <l>Illuminating the sky,</l>
+                                                <l>It is radiant, <ref cRef="F.260.a" type="folio" xml:id="UT22084-072-031-108"/>
+                        </l>
+                                                <l>Shining with white and pristine light.</l>
+                                                <l>Instead of seizing it in the sky,</l>
+                                                <l>Instantly release the lamp of beings!”<note place="end" xml:id="UT22084-072-031-38"> After
+                                                  this verse the Sanskrit adds <foreign xml:lang="Sa-Ltn" type="quote">atha rāhuṇā
+                                                  asurendreṇa tvaritatvaritaṃ candramaṇḍalam
+                                                  utsṛṣṭam</foreign> (“Then the disk of the moon was
+                                                  very swiftly released by Rāhu, lord of the
+                                                  asuras”).</note>
+                        </l>
+                                        </lg>
+                                        <milestone unit="chunk" xml:id="UT22084-072-031-39"/>
+                                        <lg tid="35">
+                                                <l>Then Rāhu, in a hurry, </l>
+                                                <l>Covered in sweat, agitated, </l>
+                                                <l>And confused like a sick person,<note place="end" xml:id="UT22084-072-031-40"> Read with the
+                                                  Sanskrit <foreign xml:lang="Sa-Ltn" type="quote">saṃbhr</foreign>(<foreign xml:lang="Sa-Ltn" type="quote">ānta āturo ya</foreign>)<foreign xml:lang="Sa-Ltn" type="quote">thā</foreign> and
+                                                  with Go, which reads <foreign xml:lang="Bo-Ltn" type="quote">nad pa bzhin du rtabs pa
+                                                  yis</foreign>. The quotation from <title xml:lang="en">The Sūtra of the Moon</title> in the
+                                                  <title xml:lang="en">Great Upholder of the Secret
+                                                  Mantra</title> in Hi also supports this reading. D
+                                                  reads <foreign xml:lang="Bo-Ltn" type="quote">nad
+                                                  pa bzhin du brtad pa yis</foreign>: “like a sick
+                                                  person, he released with haste the moon.”
+                                                  </note>
+                        </l>
+                                                <l>Released the moon.</l>
+                                        </lg>
+                                        <milestone unit="chunk" xml:id="UT22084-072-031-41"/>
+                                        <p tid="36">Then the great son of Virocana<note place="end" xml:id="UT22084-072-031-42"> The Sanskrit reads
+                                                  <foreign xml:lang="Sa-Ltn" type="quote">adrākṣīd
+                                                  baḍir vairocano</foreign> (“Bali Vairocana saw
+                                                  that…”). The Chinese translations also mention
+                                                  Bali by his name; Taishō 100 (sūtra no. 167) uses
+                                                  Bali’s epithet exactly as the Sanskrit. In the
+                                                  Theravāda parallels, it is Vemacitra who is Rāhu’s
+                                                  interlocutor. These asuras are often associated,
+                                                  and also accredited with the role of leaders. See
+                                                  <title xml:lang="en">The White Lotus of the Good
+                                                  Dharma</title>, Toh 113 (<ptr target="#UT22084-051-001-174">1.8</ptr>) and
+                                                  <title xml:lang="en">The Play in Full</title>, Toh
+                                                  95 (<ptr target="#UT22084-046-001-1181">16.15</ptr>).</note> saw that Rāhu, lord of the
+                                                asuras, had very swiftly released the moon.
+                                                Thereafter, he said in verse:</p>
+                                        <milestone unit="chunk" xml:id="UT22084-072-031-43"/>
+                                        <lg tid="37">
+                                                <l>“Why did you, Rāhu, </l>
+                                                <l>Covered in sweat, agitated, </l>
+                                                <l>And confused like a sick person,</l>
+                                                <l>Hurriedly release the moon?” <note place="end" xml:id="UT22084-072-031-44"> Read with Sanskrit
+                                                  <foreign xml:lang="Sa-Ltn" type="quote">saṃ</foreign>(<foreign xml:lang="Sa-Ltn" type="quote">bhrānta āturo yathā</foreign>) and
+                                                  Go<foreign xml:lang="Bo-Ltn" type="quote"> nad pa
+                                                  bzhin du brtabs pa’i</foreign>. The quotation from
+                                                  <title xml:lang="en">The Sūtra of the Moon</title>
+                                                  in <title xml:lang="en">Great Upholder of the
+                                                  Secret Mantra</title> in Hi also supports this
+                                                  reading. D reads <foreign xml:lang="Bo-Ltn" type="quote">nad pa bzhin du brtad pa
+                                                  yis</foreign> “like a sick person, he hastily and
+                                                  hurriedly released the moon.”</note>
+                        </l>
+                                        </lg>
+                                        <milestone unit="chunk" xml:id="UT22084-072-031-45"/>
+                                        <p tid="38">Rāhu replied:</p>
+                                        <milestone unit="chunk" xml:id="UT22084-072-031-46"/>
+                                        <lg tid="39">
+                                                <l>“As the Buddha uttered that verse, </l>
+                                                <l>If I had not released the moon, </l>
+                                                <l>My head would have split into seven pieces,<note place="end" xml:id="UT22084-072-031-47"> This
+                                                  topos is found elsewhere in the Kangyur. See
+                                                  <title xml:lang="en">The White Lotus of the Good
+                                                  Dharma</title>, Toh 113 (<ptr target="#UT22084-051-001-2703">21.20</ptr>),
+                                                  <title xml:lang="en">The Hundred Deeds</title>,
+                                                  Toh 340 (<ptr target="#UT22084-073-001-3058">6.196</ptr>), <title xml:lang="en">The Root
+                                                  Manual of the Rites of Mañjuśrī</title>, Toh 543
+                                                  (<ptr target="#UT22084-088-038-2620">15.107</ptr>)
+                                                  and <title xml:lang="en">Destroyer of the Great
+                                                  Trichiliocosm</title>, Toh 558 (<ptr target="#UT22084-090-002-295">1.286</ptr>).</note>
+                                                </l>
+                                                <l>And even while alive I would not find
+                                                  happiness.”</l>
+                                        </lg>
+                                        <milestone unit="chunk" xml:id="UT22084-072-031-48"/>
+                                        <p tid="40">The great son of Virocana said:</p>
+                                        <milestone unit="chunk" xml:id="UT22084-072-031-49"/>
+                                        <lg tid="41">
+                                                <l>“Oh wonder! Amazing is the emergence of
+                                                  buddhas,</l>
+                                                <l>Who see peace!<note place="end" xml:id="UT22084-072-031-50"> Read with He:
+                                                  <foreign xml:lang="Bo-Ltn" type="quote">kye ma bde
+                                                  ba gzigs pa’i/ /sangs rgyas rnams ni ’byung ba
+                                                  rmad</foreign>. The Sanskrit fragment 8 reads
+                                                  <foreign xml:lang="Sa-Ltn" type="quote">madarśi(nāṃ)</foreign>. Wille’s speculation that
+                                                  the akṣara <foreign xml:lang="Sa-Ltn" type="quote">ma</foreign> is possibly from <foreign xml:lang="Sa-Ltn" type="quote">kṣema</foreign> =
+                                                  <foreign xml:lang="Bo-Ltn" type="quote">bde
+                                                  ba</foreign> (<title xml:lang="Sa-Ltn">Mahāvyutpatti</title> entry 6415) finds support
+                                                  not only in He but also in Go, in the
+                                                  corresponding sūtra in Taishō 100, and in the
+                                                  quotation from the <title xml:lang="en">The Sūtra
+                                                  of the Moon</title> in the commentary on the
+                                                  <title xml:lang="en">Great Upholder of the Secret
+                                                  Mantra </title>in D. See Wille 2008, p. 349, n.
+                                                  67. D: <foreign xml:lang="Bo-Ltn" type="quote">kye
+                                                  ma bden pa gzigs pa yi/ /sangs rgyas rnams ni
+                                                  ’byung ba rmad</foreign> (“Oh wonder! Amazing is
+                                                  the emergence of buddhas, who see the
+                                                  truth!”).</note>
+                        </l>
+                                                <l>If they utter a verse,</l>
+                                                <l>Rāhu will free the moon.”</l>
+                                        </lg>
+                                        <milestone unit="chunk" xml:id="UT22084-072-031-51"/>
+                                        <trailer tid="42">This concludes <title xml:lang="en">“The
+                                                  Sūtra of the Moon.”</title>
+                    </trailer>
+                                </div>
+                        </div>
+                </body>
+                <back>
+                        <div type="notes">
+                                <head type="notes" tid="45">Notes</head>
+                                <list type="abbreviations">
+                                        <head tid="46">Abbreviations</head>
+                                        <item xml:id="UT22084-072-031-53">
+                        <abbr>D</abbr>
+                        <expan>Degé
+                                                  (<title xml:lang="Bo-Ltn">sde dge</title>)
+                                                  Kangyur</expan>
+                    </item>
+                                        <item xml:id="UT22084-072-031-54">
+                        <abbr>Go</abbr>
+                        <expan>Gondhla
+                                                  proto-Kangyur</expan>
+                    </item>
+                                        <item xml:id="UT22084-072-031-55">
+                        <abbr>He</abbr>
+                        <expan>Hemis I
+                                                Kangyur</expan>
+                    </item>
+                                        <item xml:id="UT22084-072-031-56">
+                        <abbr>Hi
+                                                  </abbr>
+                        <expan>Hemis II Kangyur</expan>
+                    </item>
+                                </list>
+                        </div>
+                        <div type="listBibl">
+                                <head type="listBibl" tid="47">Bibliography</head>
+                                <div type="section" xml:id="UT22084-072-031-listBibl-1">
+                                        <head type="section" tid="48">Tibetan Canonical Texts</head>
+                                        <bibl xml:id="UT22084-072-031-57">
+                        <title xml:lang="Bo-Ltn">zla ba’i mdo </title>(<title xml:lang="Sa-Ltn">Candrasūtra</title>). Toh 331, Degé Kangyur vol.
+                                                72 (mdo sde, sa), folios 259.b–260.a.</bibl>
+                                        <bibl xml:id="UT22084-072-031-58">
+                        <title xml:lang="Bo-Ltn">zla ba’i mdo</title>. bka’ ’gyur (dpe bsdur ma)
+                                                [Comparative Edition of the Kangyur], krung go’i bod
+                                                rig pa zhib ’jug ste gnas kyi bka’ bstan dpe sdur
+                                                khang (The Tibetan Tripitaka Collation Bureau of the
+                                                China Tibetology Research Center). 108 volumes.
+                                                Beijing: krung go’i bod rig pa dpe skrun khang
+                                                (China Tibetology Publishing House), 2006–9, vol.
+                                                72, pp. 743–45.</bibl>
+                                        <bibl xml:id="UT22084-072-031-59">
+                        <title xml:lang="Bo-Ltn">zla ba’i mdo</title>. Gondhla proto-Kangyur vol.
+                                                13, folios 98.a–98.b.</bibl>
+                                        <bibl xml:id="UT22084-072-031-60">
+                        <title xml:lang="Bo-Ltn">zla ba’i mdo</title>. Hemis I Kangyur vol. 78
+                                                (mdo, ngi), folios 88.a–89.a.</bibl>
+                                        <bibl xml:id="UT22084-072-031-61">
+                        <title xml:lang="Bo-Ltn">zla ba’i mdo</title>. Stok Palace Kangyur vol. 57
+                                                (mdo sde, cha), folios 265.a–265.b.</bibl>
+                                        <bibl xml:id="UT22084-072-031-62">
+                        <title xml:lang="Sa-Ltn">Mahāvyutpatti</title> (<title xml:lang="Bo-Ltn">bye brag tu rtogs par byed pa chen po</title>).
+                                                Toh 4346, Degé Tengyur vol. 204 (sna tshogs, co),
+                                                folios 1.b–131.a.</bibl>
+                                        <bibl xml:id="UT22084-072-031-63">Karmavajra. <title xml:lang="Bo-Ltn">gsang sngags chen mo rjes su
+                                                  ’dzin ma’i mdo’i ’bum ’grel</title> (<title xml:lang="Sa-Ltn">Mahā­mantrānudhāraṇī­sūtra­śatasahasra­ṭīkā</title>).
+                                                Toh 2692, Degé Tengyur vol. 72 (rgyud, du), folios
+                                                241.b–282.b.</bibl>
+                                </div>
+                                <div type="section" xml:id="UT22084-072-031-listBibl-2">
+                                        <head type="section" tid="49">Related Primary Sources</head>
+                                        <bibl xml:id="UT22084-072-031-64">
+                        <title xml:lang="Pi-Ltn">Candimasutta</title>. Pali Canon, <ref target="https://suttacentral.net/sn2.9/pli/ms">Saṃyutta Nikāya 2.9</ref>. Texts in Pali on
+                                                SuttaCentral. For translations, see Bhikkhu Sujato,
+                                                  <title xml:lang="en">The Moon</title>.</bibl>
+                                        <bibl xml:id="UT22084-072-031-65">Grimblot, Paul and Léon
+                                                Feer. “Extraits du Paritta.” <title xml:lang="fr">Journal Asiatique</title> 67 (1871):
+                                                225–335.</bibl>
+                                        <bibl xml:id="UT22084-072-031-66">Waldschmidt, Ernst.
+                                                “Buddha Frees the Disc of the Moon (<title xml:lang="Sa-Ltn">Candrasūtra</title>).”<title xml:lang="en"> Bulletin of the School of Oriental
+                                                  and African Studies</title> 33 (1970): 179–83. </bibl>
+                                        <bibl xml:id="UT22084-072-031-67">Wille, Klaus. “Neue
+                                                Fragmente des Candrasūtra.” In <title xml:lang="en">Bauddhasāhityastabakāvalī, Essays and Studies on
+                                                  Buddhist Sanskrit Literature dedicated to Claus
+                                                  Vogel by Colleagues, Students, and
+                                                Friends</title>, edited by D. Dimitrov, M. Hahn, and
+                                                R. Steiner, 339–51. Indica et Tibetica 36. Marburg:
+                                                Indica et Tibetica Verlag, 2008.</bibl>
+                                        <bibl xml:id="UT22084-072-031-68">
+                        <title xml:lang="Zh-Ltn">Biéyì zá āhán jīng</title>
+                                                <title xml:lang="zh">別譯雜阿含經</title> (<title xml:lang="Sa-Ltn">Saṃyuktāgama­sūtra</title>),
+                                                Taishō 100 (<ref target="https://cbetaonline.dila.edu.tw/en/T0100_009">CBETA</ref>; <ref target="https://21dzk.l.u-tokyo.ac.jp/SAT2018/T0100.html">SAT</ref>).</bibl>
+                                        <bibl xml:id="UT22084-072-031-69">
+                        <title xml:lang="Zh-Ltn">Za a han jing</title>
+                                                <title xml:lang="Zh-Ltn">雜阿含經</title> (<title xml:lang="Sa-Ltn">Saṃyuktāgama­sūtra</title>),
+                                                Taishō 99 (<ref target="https://cbetaonline.dila.edu.tw/en/T0099_022">CBETA</ref>; <ref target="https://21dzk.l.u-tokyo.ac.jp/SAT2018/T0099.html">SAT</ref>).</bibl>
+                                </div>
+                                <div type="section" xml:id="UT22084-072-031-listBibl-3">
+                                        <head type="section" tid="50">Western Translations and
+                                                References</head>
+                                        <bibl xml:id="UT22084-072-031-70">Bhikkhu Sujato, trans.
+                                                  <title xml:lang="en">
+                            <ref target="https://suttacentral.net/sn2.9/en/sujato">The Moon</ref>
+                        </title> (English translation
+                                                  of <title xml:lang="Pi-Ltn">Candimasutta</title>).
+                                                SuttaCentral, 2016-18.</bibl>
+                                        <bibl xml:id="UT22084-072-031-71">Bingenheimer, Marcus.
+                                                  <title xml:lang="en">Studies in Āgama Literature
+                                                  with Special Reference to the Shorter Chinese
+                                                  Saṃyuktāgama. </title>Taipei: Xinwenfeng,
+                                                2011.</bibl>
+                                        <bibl xml:id="UT22084-072-031-72">Dharmachakra Translation
+                                                Committee, trans. (2016). <title xml:lang="en">
+                            <ref target="https://read.84000.co/translation/UT22084-090-002.html">Destroyer of the Great
+                                                  Trichiliocosm</ref>
+                        </title> (<title xml:lang="Sa-Ltn">Mahāsāhasra­pramardanī</title>,
+                                                Toh 558). 84000: Translating the Words of the
+                                                Buddha.</bibl>
+                                        <bibl xml:id="UT22084-072-031-73">———(2016), trans. <title xml:lang="en">
+                            <ref target="HYPERLINK">Great
+                                                  Upholder of the Secret Mantra</ref>
+                        </title>
+                                                  (<title xml:lang="Sa-Ltn">Mahā­mantrānudhāriṇī­sūtra</title>, Toh 563).
+                                                84000: Translating the Words of the Buddha.</bibl>
+                                        <bibl xml:id="UT22084-072-031-74">———(2013), trans. <title xml:lang="en">
+                            <ref target="https://read.84000.co/translation/UT22084-046-001.html">The Play in Full</ref>
+                        </title> (<title xml:lang="Sa-Ltn">Lalitavistara</title>, Toh 95).
+                                                84000: Translating the Words of the Buddha.</bibl>
+                                        <bibl xml:id="UT22084-072-031-75">———(2020), trans. <title xml:lang="en">
+                            <ref target="https://read.84000.co/translation/UT22084-088-038.html">The Root Manual of the Rites of
+                                                  Mañjuśrī</ref>
+                        </title> (<title xml:lang="Sa-Ltn">Mañjuśrī­mūla­kalpa</title>, Toh 543). 84000:
+                                                Translating the Words of the Buddha.</bibl>
+                                        <bibl xml:id="UT22084-072-031-76">Feer, Léon (1883). <title xml:lang="fr">Fragments extraits du
+                                                  Kandjour</title>. Annales du Musée Guimet 5.
+                                                Paris.</bibl>
+                                        <bibl xml:id="UT22084-072-031-77">———(1865). <title xml:lang="fr">La Légende de Rahu chez les bramanes
+                                                  et les buddhistes</title>. Paris: Duprat.</bibl>
+                                        <bibl xml:id="UT22084-072-031-78">Geiger, Wilhelm. <title xml:lang="de">Die in Gruppen geordnete Sammlung
+                                                  aus dem Pāli-Kanon der Buddhisten zum ersten Mal
+                                                  ins Deutsche übertragen</title>.
+                                                München-Neubiberg: Oskar Schloss, 1930. </bibl>
+                                        <bibl xml:id="UT22084-072-031-79">Jamspal, Lozang and Kaia
+                                                Tara Fischer, trans. <title xml:lang="en">
+                            <ref target="https://read.84000.co/translation/UT22084-073-001.html">The Hundred Deeds</ref>
+                        </title> (<title xml:lang="Sa-Ltn">Karmaśataka</title>, Toh 340).
+                                                84000: Translating the Words of the Buddha,
+                                                2020.</bibl>
+                                        <bibl xml:id="UT22084-072-031-80">Lamotte, Etienne. <title xml:lang="en">The Treatise on the Great Virtue of
+                                                  Wisdom of Nagarjuna</title> (<title xml:lang="Sa-Ltn">Mahā­prajñā­pāramitā­śāstra</title>). Vol. I.
+                                                Translated from the French by Karma Migme Chodron,
+                                                2001.</bibl>
+                                        <bibl xml:id="UT22084-072-031-81">Laut, Jens Peter. “Zur
+                                                Rolle des Alttürkischen in der türkeitürkischen
+                                                Lexik.” <title xml:lang="de">Folia
+                                                  Orientalia</title> 36 (2000): 183–195.</bibl>
+                                        <bibl xml:id="UT22084-072-031-82">Pema Yeshé Dé Translation
+                                                Team, trans. (2023). <title xml:lang="en">The Sūtra
+                                                  of the Moon (1)</title> (<title xml:lang="Sa-Ltn">Candrasūtra</title>, Toh 42). 84000: Translating
+                                                the Words of the Buddha.</bibl>
+                                        <bibl xml:id="UT22084-072-031-83">———(2023), trans. <title xml:lang="en">The Sūtra of the Sun</title>.
+                                                  (<title xml:lang="Sa-Ltn">Sūryasūtra</title>, Toh
+                                                41). 84000: Translating the Words of the
+                                                Buddha.</bibl>
+                                        <bibl xml:id="UT22084-072-031-84">Rhys Davids, Caroline A.
+                                                F. <title xml:lang="en">The Book of the kindred
+                                                  sayings (Samyutta-nikāya) or grouped
+                                                  suttas</title>. Pali Text Society Translation
+                                                Series 7. London: The Pali Text Society,
+                                                1950.</bibl>
+                                        <bibl xml:id="UT22084-072-031-85">Roberts, Peter Alan,
+                                                trans. <title xml:lang="en">
+                            <ref target="https://read.84000.co/translation/toh113.html">The White Lotus of the Good Dharma</ref>
+                        </title>
+                                                  (<title xml:lang="Sa-Ltn">Saddharma­puṇḍarīka</title>, Toh 113). 84000:
+                                                Translating the Words of the Buddha, 2018.</bibl>
+                                        <bibl xml:id="UT22084-072-031-86">Skilling, Peter.
+                                                “Theravādin Literature in Tibetan Translation.”
+                                                  <title xml:lang="en">Journal of the Pāli Text
+                                                  Society</title> 19, (1993): 69–201.</bibl>
+                                        <bibl xml:id="UT22084-072-031-87">Yoshimura, Shyuki. <title xml:lang="en">The Denkar-Ma: An Oldest Catalogue
+                                                  of the Tibetan Buddhist Canons</title>. Kyoto:
+                                                Ryukoku University, 1950.</bibl>
+                                        <bibl xml:id="UT22084-072-031-88">Zieme, Peter. “Verse des
+                                                  <title xml:lang="Sa-Ltn">Candrasūtra</title> nach
+                                                chinesisch-uigurischen Bilinguen.” <title xml:lang="de">Türk Dilleri Araştırmaları
+                                                </title>10 (2000): 65–80.</bibl>
+                                </div>
+                        </div>
+                        <div type="glossary" status="excluded">
+                                <list type="glossary">
+                                        <item>
+                        <gloss type="term" xml:id="UT22084-072-031-90">
+                                                  <term>Three Jewels</term>
+                                                  <term status="verified" xml:lang="Bo-Ltn">dkon mchog gsum </term>
+                                                  <term xml:lang="bo">དཀོན་མཆོག་གསུམ།</term>
+                                                  <term type="attestedDictionary" status="verified" xml:lang="Sa-Ltn">triratna</term>
+                                                  <term type="definition">The Buddha, Dharma, and
+                                                  Saṅgha—the three objects of Buddhist
+                                                  refuge.</term>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="term" xml:id="UT22084-072-031-91">
+                                                  <term>blessed one</term>
+                                                  <term status="verified" xml:lang="Bo-Ltn">bcom ldan ’das </term>
+                                                  <term xml:lang="bo">བཅོམ་ལྡན་འདས།</term>
+                                                  <term type="attestedDictionary" status="verified" xml:lang="Sa-Ltn">bhagavat</term>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="term" xml:id="UT22084-072-031-92">
+                                                  <term>asura</term>
+                                                  <term status="verified" xml:lang="Bo-Ltn">lha ma yin </term>
+                                                  <term xml:lang="bo">ལྷ་མ་ཡིན།</term>
+                                                  <term type="attestedDictionary" status="verified" xml:lang="Sa-Ltn">asura</term>
+                                                  <term type="definition">A class of demigods.
+                                                  The asuras are opponents to the gods.</term>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="term" xml:id="UT22084-072-031-93">
+                                                  <term>buddha</term>
+                                                  <term status="verified" xml:lang="Bo-Ltn">sangs rgyas </term>
+                                                  <term xml:lang="bo">སངས་རྒྱས།</term>
+                                                  <term type="attestedDictionary" status="verified" xml:lang="Sa-Ltn">buddha</term>
+                                                  <term type="definition">A fully realized
+                                                  (“awakened”) being.</term>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="term" xml:id="UT22084-072-031-94">
+                                                  <term>Well-Gone One</term>
+                                                  <term status="verified" xml:lang="Bo-Ltn">bde bar gshegs pa</term>
+                                                  <term xml:lang="bo">བདེ་བར་གཤེགས་པ།</term>
+                                                  <term status="verified" xml:lang="Bo-Ltn">bde gshegs </term>
+                                                  <term xml:lang="bo">བདེ་གཤེགས།</term>
+                                                  <term type="attestedDictionary" status="verified" xml:lang="Sa-Ltn">sugata</term>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="term" xml:id="UT22084-072-031-95">
+                                                  <term>worthy one</term>
+                                                  <term status="verified" xml:lang="Bo-Ltn">dgra bcom</term>
+                                                  <term xml:lang="bo">དགྲ་བཅོམ།</term>
+                                                  <term status="verified" xml:lang="Bo-Ltn">dgra bcom pa</term>
+                                                  <term xml:lang="bo">དགྲ་བཅོམ་པ།</term>
+                                                  <term type="attestedDictionary" status="verified" xml:lang="Sa-Ltn">arhat</term>
+                                                  <term type="definition">One who has achieved the
+                                                  fourth and final level of attainment on the
+                                                  hearer’s path and who has attained liberation from
+                                                  saṃsāra with the cessation of all defilements.
+                                                  Also used as an epithet of the buddhas.</term>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="term" xml:id="UT22084-072-031-96">
+                                                  <term>happiness</term>
+                                                  <term status="verified" xml:lang="Bo-Ltn">bde ba </term>
+                                                  <term xml:lang="bo">བདེ་བ།</term>
+                                                  <term type="attestedDictionary" status="verified" xml:lang="Sa-Ltn">sukha</term>
+                                                  <term type="definition">Also translated as
+                                                  “bliss.”</term>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="person" xml:id="UT22084-072-031-98">
+                                                  <term>Rāhu</term>
+                                                  <term status="verified" xml:lang="Bo-Ltn">sgra gcan</term>
+                                                  <term xml:lang="bo">སྒྲ་གཅན།</term>
+                                                  <term status="verified" xml:lang="Bo-Ltn">sgra gcan ’dzin </term>
+                                                  <term xml:lang="bo">སྒྲ་གཅན་འཛིན།</term>
+                                                  <term type="attestedDictionary" status="verified" xml:lang="Sa-Ltn">rāhu</term>
+                                                  <term type="definition">A lord of the asuras, who
+                                                  is supposed to seize the sun and moon and thus
+                                                  cause eclipses.</term>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="person" xml:id="UT22084-072-031-99">
+                                                  <term>Candramas</term>
+                                                  <term status="verified" xml:lang="Bo-Ltn">zla ba </term>
+                                                  <term xml:lang="bo">ཟླ་བ།</term>
+                                                  <term type="attestedDictionary" status="verified" xml:lang="Sa-Ltn">candramas</term>
+                                                  <term type="definition">The god of the moon; the
+                                                  moon.</term>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="person" xml:id="UT22084-072-031-100">
+                                                <term>Virocana</term>
+                                                  <term status="verified" xml:lang="Bo-Ltn">rnam par snang byed </term>
+                                                  <term xml:lang="bo">རྣམ་པར་སྣང་བྱེད།</term>
+                                                <term type="attestedDictionary" status="verified" xml:lang="Sa-Ltn">virocana</term>  
+                                                <term type="definition">The father of the asura king Bali. </term>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="person" xml:id="UT22084-072-031-101">
+                                                  <term>Vemacitra</term>
+                                                  <term status="verified" xml:lang="Bo-Ltn">thags bzangs ris </term>
+                                                  <term xml:lang="bo">ཐགས་བཟངས་རིས།</term>
+                                                  <term type="attestedDictionary" status="verified" xml:lang="Sa-Ltn">vemacitrin</term>
+                                                <term type="attestedDictionary" status="verified" xml:lang="Sa-Ltn">vemacitra</term>  
+                                                <term type="definition">A lord of
+                                                  the asuras.</term>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="person" xml:id="UT22084-072-031-102">
+                                                  <term>Bali</term>
+                                                  <term status="verified" xml:lang="Bo-Ltn">stobs can </term>
+                                                  <term xml:lang="bo">སྟོབས་ཅན།</term>
+                                                  <term type="attestedDictionary" status="verified" xml:lang="Sa-Ltn">bali</term>
+                                                  <term type="definition">A lord of the asuras, son of Virocana. </term>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="place" xml:id="UT22084-072-031-104">
+                                                  <term>Campā</term>
+                                                  <term status="verified" xml:lang="Bo-Ltn">tsam pa</term>
+                                                  <term xml:lang="bo">ཙམ་པ།</term>
+                                                  <term status="verified" xml:lang="Bo-Ltn">tsam pa can </term>
+                                                  <term xml:lang="bo">ཙམ་པ་ཅན།</term>
+                                                  <term type="attestedDictionary" status="verified" xml:lang="Sa-Ltn">campā</term>
+                                                  <term type="definition">A city in ancient India,
+                                                  located on the Campā River. It was the capital of
+                                                  the Aṅga state, which was located east
+                                                  of Magadha.</term>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="place" xml:id="UT22084-072-031-105">
+                                                  <term>Traveler’s Pond</term>
+                                                  <term status="verified" xml:lang="Bo-Ltn">’gro ba po’i rdzing bu </term>
+                                                  <term xml:lang="bo">འགྲོ་བ་པོའི་རྫིང་བུ།</term>
+                                                  <term type="definition">The setting in Campā
+                                                  mentioned in this sūtra, which might refer to
+                                                  Gargā Pond, also known from many Pali suttas as
+                                                  Gaggarā (“Gurgling”) Pond.</term>
+                                                </gloss>
+                    </item>
+                                </list>
+                        </div>
+                </back>
+        </text>
+</TEI>
