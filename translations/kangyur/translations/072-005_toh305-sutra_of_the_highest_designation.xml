@@ -1,0 +1,712 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schema/current/translation.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="mainTitle" xml:lang="en">The Sūtra on the Designations as Supreme</title>
+        <title type="mainTitle" xml:lang="Sa-Ltn">Agra­prajñapti­sūtra</title>
+        <title type="mainTitle" xml:lang="bo">མཆོག་ཏུ་གདགས་པའི་མདོ།</title>
+        <title type="mainTitle" xml:lang="Bo-Ltn">mchog tu gdags pa’i mdo</title>
+        <author role="translatorMain" ref="eft:team-50">Translated by the Pema Yeshé Dé Translation
+          Team<lb/>under the patronage and supervision of 84000: Translating the Words of the
+          Buddha</author>
+        <consultant role="projectManager" ref="eft:person-316">Giuliano Proença</consultant>
+        <author role="translatorEng" ref="eft:person-316">Giuliano Proença</author>
+        <editor role="reviser" ref="eft:person-359">Daniela Espíndola</editor>
+        <editor role="associateEditor" ref="eft:person-422">George FitzHerbert</editor>
+        <editor role="copyEditor" ref="eft:person-433">Dawn Collins</editor>
+        <editor role="projectEditor" ref="eft:person-411">David Fiordalis</editor>
+        <editor role="TEImarkupEditor" ref="eft:person-381">Martina Cotter</editor>
+      </titleStmt>
+      <editionStmt>
+                <edition>v 0.0.3 <date>2023</date>
+                </edition>
+            </editionStmt>
+      <publicationStmt status="2">
+                <publisher>
+                    <name>84000: Translating the Words of the Buddha</name> is a global non-profit
+          initiative to translate all the Buddha’s words into modern languages, and to make them
+          available to everyone. </publisher>
+                <availability>
+          <licence>
+            <graphic url="http://i.creativecommons.org/l/by-nc-nd/2.0/88x31.png"/>
+            <p>This work is provided under the protection of a Creative Commons CC BY-NC-ND
+              (Attribution - Non-commercial - No-derivatives) 3.0 copyright. It may be copied or
+              printed for fair use, but only with full attribution, and not for commercial advantage
+              or personal compensation. For full details, see the Creative Commons license.</p>
+          </licence>
+        </availability>
+                <idno xml:id="UT22084-072-005"/>
+                <note>An early mistake in the assigning of UT numbers within the 84000 project means that
+          these ids diverge slightly from the standard logic.</note>
+                <date>2023-07-15</date>
+            </publicationStmt>
+      <sourceDesc>
+        <bibl key="toh305" type="text">
+          <ref>Toh 305</ref>
+          <biblScope>Degé Kangyur, vol. 72 (mdo sde, sa), folios 130.b–131.b </biblScope>
+          <location work="UT4CZ5369" count-pages="3">
+            <volume number="72" start-page="260" end-page="262"/>
+          </location>
+          <idno parent-id="O1JC114941JC14668" work="http://read.84000.co/sections"/>
+          <idno source-id="O1JC114941JC11974" work="W22084"/>
+        </bibl>
+      </sourceDesc>
+      <notesStmt>
+        <note type="lastUpdated" date-time="2023-07-21T07:33:04.386Z" user="admin">21/07/2023 07:33:04</note>
+        <note type="updated" update="translation-status" value="4" date-time="2021-08-04T12:43:53.916Z" user="line-tofte">4</note>
+        <note type="updated" update="text-version" value="0.0.1" date-time="2021-08-04T12:43:53.916Z" user="line-tofte">0.0.1</note>
+        <note type="updated" update="translation-status" value="3" date-time="2021-09-01T13:51:37.257Z" user="line-tofte">3</note>
+        <note type="updated" update="text-version" value="0.0.2" date-time="2021-09-01T13:51:37.257Z" user="line-tofte">Auto
+          (update-publication-status)</note>
+        <note type="updated" update="text-version" value="0.0.3" date-time="2021-09-01T13:51:59.511Z" user="line-tofte">Auto (update-contributors)</note>
+        <note type="updated" update="text-version" value="0.0.4" date-time="2021-09-01T13:52:43.387Z" user="line-tofte">Auto (update-contributors)</note>
+        <note type="updated" update="translation-status" value="2.h" date-time="2022-05-31T14:06:58.574Z" user="line-tofte">2.h</note>
+        <note type="updated" update="text-version" value="0.0.5" date-time="2022-05-31T14:06:58.574Z" user="line-tofte">Auto
+          (update-publication-status)</note>
+        <note type="updated" update="text-version" value="0.0.6" date-time="2023-01-10T15:55:03.566Z" user="line-tofte">Auto (update-contributors)</note>
+        <note type="updated" update="translation-status" value="2.g" date-time="2023-01-17T09:09:38.71Z" user="line-tofte">2.g</note>
+        <note type="updated" update="text-version" value="0.0.7" date-time="2023-01-17T09:09:38.71Z" user="line-tofte">Auto (update-publication-status)</note>
+        <note type="updated" update="translation-status" value="2.f" date-time="2023-01-24T12:33:31.752Z" user="line-tofte">2.f</note>
+        <note type="updated" update="text-version" value="0.0.8" date-time="2023-01-24T12:33:31.752Z" user="line-tofte">Auto
+          (update-publication-status)</note>
+        <note type="updated" update="translation-status" value="2.e" date-time="2023-04-28T10:38:43.694Z" user="line-tofte">2.e</note>
+        <note type="updated" update="text-version" value="0.0.9" date-time="2023-04-28T10:38:43.694Z" user="line-tofte">Auto
+          (update-publication-status)</note>
+        <note type="updated" update="text-version" value="0.0.10" date-time="2023-04-28T10:39:19.613Z" user="line-tofte">Auto (update-contributors)</note>
+        <note type="updated" update="translation-status" value="2.d" date-time="2023-05-25T07:16:47.331Z" user="line-tofte">2.d</note>
+        <note type="updated" update="text-version" value="0.0.11" date-time="2023-05-25T07:16:47.331Z" user="line-tofte">Auto
+          (update-publication-status)</note>
+        <note type="updated" update="translation-status" value="2.c" date-time="2023-06-02T07:59:33.754Z" user="line-tofte">2.c</note>
+        <note type="updated" update="text-version" value="0.0.12" date-time="2023-06-02T07:59:33.754Z" user="line-tofte">Auto
+          (update-publication-status)</note>
+        <note type="updated" update="text-version" value="0.0.13" date-time="2023-06-28T15:02:30.679Z" user="line-tofte">Auto (update-contributors)</note>
+        <note type="updated" update="text-version" value="0.0.2" date-time="2023-07-18T06:50:26.519Z" user="line-tofte">Auto (update-contributors)</note>
+          <note type="updated" update="translation-status" value="2" date-time="2023-07-21T07:33:00.088Z" user="line-tofte">2</note>
+          <note type="updated" update="text-version" value="0.0.3" date-time="2023-07-21T07:33:00.088Z" user="line-tofte">Auto (update-publication-status)</note>
+      </notesStmt>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <!--Note the "Contents" outline from the Word DOCX has not been included in the script. If the 
+                    Outline to the text is quite complex, it is recommended that you paste the outlined contents from the DOCX here as a comment for
+                    markup's reference. The actual table of contents will be generated in the Reading Room by the parser.-->
+    <front>
+      <div type="summary">
+        <head type="summary" tid="1">Summary</head>
+        <milestone unit="chunk" xml:id="UT22084-072-005-1"/>
+        <p tid="2">In <title xml:lang="en">The Sūtra on the Designations as Supreme</title>, the
+          Buddha, while spending the rainy season at the Bamboo Grove in Rājagṛha, teaches his
+          saṅgha of śrāvakas that the Buddha is supreme among all beings, the Dharma of being free
+          of attachment is supreme among all dharmas, and the Saṅgha is supreme among all
+          communities and groups. In this way, the sūtra gives a variation on the classic
+          formulation of the Three Jewels.</p>
+      </div>
+      <div type="acknowledgment">
+        <head type="acknowledgment" tid="3">Acknowledgements</head>
+        <milestone unit="chunk" xml:id="UT22084-072-005-2"/>
+        <p tid="4">This sūtra was translated by Giuliano Proença, who also prepared the
+          introduction, glossary, and notes. The English translation and ancillary materials were
+          proofread by Daniela Espíndola. Thanks to Karin Kerb for making otherwise unavailable
+          bibliographical material accessible to us.</p>
+        <milestone unit="chunk" xml:id="UT22084-072-005-3"/>
+        <p tid="5">The translation was completed under the patronage and supervision of 84000:
+          Translating the Words of the Buddha.</p>
+        <lb/>
+        <milestone unit="chunk" xml:id="UT22084-072-005-5"/>
+        <p tid="7">[Sponsored by XXXXXX]</p>
+      </div>
+      <div type="introduction">
+        <head type="introduction" tid="8">Introduction</head>
+        <div type="section" xml:id="UT22084-072-005-introduction-1">
+          <milestone unit="chunk" xml:id="UT22084-072-005-6"/>
+          <p tid="10">
+                        <title xml:lang="en">The Sūtra on the Designations as Supreme</title> (<title xml:lang="Sa-Ltn">Agra­prajñapti­sūtra</title>, Toh 305) is a short discourse set in
+            the Bamboo Grove at Rājagṛha, in which the Buddha designates three things as supreme:
+            the Buddha as supreme among all beings, the dharma of being free of attachment as
+            supreme among all dharmas, and the Saṅgha as supreme among all communities and groups.
+            In this way, <title xml:lang="en">The Sūtra on the Designations as Supreme</title>
+            provides a variation on the theme of the Three Jewels. The Buddha also states that the
+            reward of being well disposed toward these three things is rebirth as a god or as a
+            human.</p>
+          <milestone unit="chunk" xml:id="UT22084-072-005-7"/>
+          <p tid="11">Little is known about the history of <title xml:lang="en">The Sūtra on the
+              Designations as Supreme</title> as an independent text in India, but the existence of
+            parallel texts in the Pali and Chinese canons testifies to its antiquity.<note place="end" xml:id="UT22084-072-005-8"> The Pali canon emerged in written form around
+              the first century<hi rend="small-caps"> bce</hi>. The oldest Chinese parallel for this
+              text is included in the Ekottarikāgama (Taishō 125). It was translated into Chinese in
+              384 <hi rend="small-caps">ce</hi>.</note> The closest Pali parallel is the <title xml:lang="Pi-Ltn">Aggappasādasutta</title> (Iti 90), while the <title xml:lang="Pi-Ltn">Aggappasādasutta</title> (AN 4.34) and the <title xml:lang="Pi-Ltn">Cundīsutta</title> (AN 5.32) are also closely related.<note place="end" xml:id="UT22084-072-005-9"> For online links to all three Pali texts along with
+              English translations, see the Bibliography.</note> In the <title xml:lang="Pi-Ltn">Aggappasādasutta</title> (Iti 90), these same three things are proclaimed as supreme,
+            using similar language, and they are said therein to be the objects of the supreme kinds
+            of confidence, faith, or favorable disposition (Pali <foreign xml:lang="Pi-Ltn" type="term">aggappasāda</foreign>), as suggested by its title. The Pali also includes
+            several more words describing the referent of the Dharma as supreme, which in turn
+            highlights semantic flexibility of the word Dharma/dharma as both teaching and
+            phenomenon. </p>
+          <milestone unit="chunk" xml:id="UT22084-072-005-10"/>
+          <p tid="12">
+                        <title xml:lang="en">The Sūtra on the Designations as Supreme</title> may have
+            had a significant status in early Buddhist Central Asia, since we find Sanskrit
+            fragments of the sūtra, and its commentaries in a variety of manuscripts unearthed in
+            present-day Xinjiang Uyghur Autonomous Region, China. In addition to an unpublished
+            fragment in the Hoernle Collection,<note place="end" xml:id="UT22084-072-005-11">
+              British Library, Hoernle 149.140. </note> a fragment in the Pelliot Collection was
+            published by Bernard Pauly.<note place="end" xml:id="UT22084-072-005-12"> Bibliothèque
+              Nationale de France, Pelliot Sanskrit: petit fragment 83. Pauly (1960, pp. 519–24)
+              provides a transcription of the fragment and reproduces a passage from Speyer’s
+              edition of the <title xml:lang="Sa-Ltn">Avadānaśataka</title>, which is supplemented
+              with notes detailing variant readings of the fragment.</note> This latter fragment
+            contains the passage concerning the designation of the Buddha as supreme and is only
+            slightly different from the quotations of this sūtra found in the Sanskrit text of the
+              <title xml:lang="Sa-Ltn">Avadānaśataka</title>.</p>
+          <milestone unit="chunk" xml:id="UT22084-072-005-13"/>
+          <p tid="13">The Turfan Collection also holds two fragments from commentaries on <title xml:lang="en">The Sūtra on the Designations as Supreme</title>: a Sanskrit fragment
+            partially edited by Ernst Waldschmidt that includes the colophon,<note place="end" xml:id="UT22084-072-005-14"> Oriental Department of the State Library at Berlin, SHT
+              24f. See Waldschmidt (1965), pp. 16–17, n. 24.</note> and an Old Turkish and Sanskrit
+            bilingual fragment containing the beginning of a commentary on the sūtra.<note place="end" xml:id="UT22084-072-005-15"> Türkische Turfan-Text VIII H. See von Gabain
+              (1954), pp. 54–56.</note> Again, the quotations found in these closely match those
+            found in the <title xml:lang="Sa-Ltn">Avadānaśataka</title>, a Sanskrit anthology of
+            avadānas that quotes <title xml:lang="en">The S</title>
+                        <title xml:lang="en">ūtra on the
+              Designations as Supreme</title> almost in its entirety, in two different passages
+            (stories 9 and 57). The Tibetan translation of the <title xml:lang="Sa-Ltn">Avadānaśataka</title>, which also contains these extensive quotations, is included in
+            the Kangyur (Toh 343),<ref rend="pending" target="http://read.84000.co/translation/toh343.html"/>
+                        <note place="end" xml:id="UT22084-072-005-16"> In the ninth story,<ref rend="pending" inst="add ptr ref for folio F.27.b" target="http://read.84000.co/translation/toh343.html"/> there is no setting or
+              conclusion given for <title xml:lang="en">The Sūtra on the Designations as
+                Supreme</title>, although it is referred to as a sūtra: <foreign xml:lang="Sa-Ltn" type="quote">bhagavān idaṃ sūtraṃ bhāṣate sma</foreign>. In that version, the Buddha
+              preaches the sūtra to brahmins and householders. See Speyer (1902–06), pp. 49–50. In
+              the fifty-seventh story, <ref rend="pending" inst="add ptr ref for folio F.158.a" target="http://read.84000.co/translation/toh343.html"/> only the setting is omitted,
+              and the Buddha preaches it to monks, as found here in <title xml:lang="en">The Sūtra
+                on the Designations as Supreme</title>. See Speyer (1902–6), pp. 329–30.</note> and
+            the wording in these quotations is almost identical to the present sūtra. An abridged
+            form of the <title xml:lang="Sa-Ltn">Agra­prajñapti­sūtra</title> is also quoted in the
+              <title xml:lang="Sa-Ltn">Divyāvadāna</title>
+                        <note place="end" xml:id="UT22084-072-005-17"> For a Sanskrit edition, see Vaidya (1959), p. 95, and for
+              an English translation, see Rotman (2008), p. 268.</note> as well as in the <title xml:lang="en">Great Upholder of the Secret Mantra</title> (Toh 563, <ptr target="#UT22084-090-007-54">1.45</ptr>–<ptr target="#UT22084-090-007-56">1.47</ptr>).<note place="end" xml:id="UT22084-072-005-18"> The quotation in the
+                <title xml:lang="en">Great Upholder of the Secret Mantra</title>, one of the <title xml:lang="Sa-Ltn">Pañcarakṣā</title>, suggests the sūtra was considered to have a
+              protective function. This would be in line with the <title xml:lang="Sa-Ltn">Pañcarakṣā</title> being seen as protective texts (Hartmann and Maue,1996, p. 149,
+              n. 9).</note>
+                    </p>
+          <milestone unit="chunk" xml:id="UT22084-072-005-19"/>
+          <p tid="14">Two parallels of the sūtra are extant in the Chinese Tripitaka: the closest
+            parallel is found as part of the Ekottarikāgama (<foreign xml:lang="Zh-Ltn">Zeng yi a
+              han jing</foreign>
+            <foreign xml:lang="zh">增壹阿含經</foreign>, Taishō 125).<note place="end" xml:id="UT22084-072-005-20"> Ekottarikāgama 21.1 (<title xml:lang="Zh-Ltn">di yi
+                de</title>
+              <title xml:lang="zh">第一徳</title>). An English translation of this text from Chinese 
+              by Thích Huyên-Vi, Sara Boin-Webb, and Bhikkhu Pāsādika is available at SuttaCentral
+              with the title <title xml:lang="en">
+                                <ref target="https://suttacentral.net/ea21.1/en/huyenvi-boinwebb-pasadika?reference=none&amp;highlight=false">Highest Faith</ref>
+                            </title>. </note> Current scholarly consensus holds that the
+            Chinese translation of the Ekottarikāgama was, for the most part, completed by Zhu
+            Fonian (<foreign xml:lang="zh">竺佛念</foreign>) in 384 <hi rend="small-caps">ce</hi>.<note place="end" xml:id="UT22084-072-005-21"> See Bhikkhu Anālayo (2016), p. 1.</note> The
+            discourse in this text has a different setting, and unlike Toh 305, is presented in
+            similes and verses. Also parallel are the three sūtras (nos. 902–904) of the
+            Saṃyuktāgama (<foreign xml:lang="Zh-Ltn">Za a han jing</foreign>
+            <foreign xml:lang="zh">雜阿含經</foreign>, Taishō 99), which likewise designate each of the
+            three designations in turn as supreme. As in the <title xml:lang="Sa-Ltn">Agra­prajñapti­sūtra</title>, the setting in all three is the Bamboo Grove at
+            Rājagṛha. The Saṃyuktāgama was translated into Chinese between 435 and 443 <hi rend="small-caps">ce</hi> by Guṇabhadra (394–468) and Baoyun <foreign xml:lang="zh">寶雲</foreign> (376–449) in Jiankang (today’s Nanjing).<note place="end" xml:id="UT22084-072-005-22"> See Bingenheimer (2011), p. 1.</note>
+                    </p>
+          <milestone unit="chunk" xml:id="UT22084-072-005-23"/>
+          <p tid="15">The translators of <title xml:lang="en">The Sūtra on the Designations as
+              Supreme</title> into Tibetan remain unidentified and the sūtra is not listed in any
+            catalogs of the Tibetan imperial period. It seems likely that it was translated from
+            Sanskrit. The striking similarity between the Tibetan of <title xml:lang="en">The Sūtra
+              on the Designations as Supreme</title> (Toh 305) and its citation in the Tibetan
+            translation of the <title xml:lang="Sa-Ltn">Avadānaśataka</title> (Toh 343)<ref rend="pending" target="https://read.84000.co/translation/toh343.html"/> suggests that
+            these translations were unlikely to have been made independently of one another. The
+            colophon of the Tibetan <title xml:lang="Sa-Ltn">Avadānaśataka</title> (Toh 343) states
+            that it was translated by the scholars Jinamitra and Devacandra who were active in Tibet
+            in the early ninth century. By extension therefore, the Tibetan translation of the
+              <title xml:lang="Sa-Ltn">Agra­prajñapti­sūtra</title> may also be substantively dated
+            to the early ninth century.</p>
+          <milestone unit="chunk" xml:id="UT22084-072-005-24"/>
+          <p tid="16">
+                        <title xml:lang="en">The Sūtra on the Designations as Supreme</title> is only
+            found as an independent text in the Sūtra section of Kangyurs of the Tshalpa line, the
+            Lhasa and Narthang Kangyurs, and in the Tholing Collection from Western Tibet. The
+            Tibetan title of the text is the same in all Kangyurs included in the Pedurma, <title xml:lang="Bo-Ltn">mchog tu gdags pa’i mdo</title>, while the Tholing Collection has
+              <title xml:lang="Bo-Ltn">’phags pa mchog tu gdags pa’i mdo</title>.<note place="end" xml:id="UT22084-072-005-25"> For further information, see <ref target="http://www.rkts.org/">Resources for Kanjur and Tenjur Studies</ref> at
+              Universität Wein (last accessed 30 May 2023).</note> Versions such as the Yongle,
+            Lithang, Kangxi, Narthang, and Choné, do not present the name of the text at the
+            beginning. The Sanskrit title of the sūtra is missing in all versions. Nevertheless, the
+            colophon of the abovementioned fragmentary Sanskrit commentary clearly refers to the
+            sūtra using the title <title xml:lang="Sa-Ltn">Agra­prajñapti­sūtra</title>.<note place="end" xml:id="UT22084-072-005-26"> Although the colophon is fragmentary, it
+              begins as follows: <foreign xml:lang="Sa-Ltn" type="quote">agra­prajñapti­sūtrasyopadeśaḥ</foreign>…, “instructions on <title xml:lang="en">The Sūtra on the Designations as Supreme</title>…” See Waldschmidt (1965), p.
+              16.</note>
+                    </p>
+          <milestone unit="chunk" xml:id="UT22084-072-005-27"/>
+          <p tid="17">This English translation is based on the Degé Kangyur print of Toh 305, in
+            consultation with the Comparative Edition (<title xml:lang="Bo-Ltn">dpe bsdur
+            ma</title>) and Pauly’s edition of the Sanskrit fragment. We also compared the Tibetan
+            text line by line with the quotations from the sūtra in the <title xml:lang="Sa-Ltn">Avadānaśataka</title> in both Sanskrit<note place="end" xml:id="UT22084-072-005-28">
+              Speyer (1902–6) edited the Sanskrit text of the <title xml:lang="Sa-Ltn">Avadānaśataka</title> based on four different Nepalese manuscripts. Manuscript B in
+              Nepalese script, dated to 1645, is the common source for the other three. Vaidya
+              (1958) published another edition based on Speyer’s.</note> and Tibetan (Toh 343). The
+            translation also benefited from Léon Feer’s early French translation of the <title xml:lang="Sa-Ltn">Avadānaśataka</title>
+                        <note place="end" xml:id="UT22084-072-005-29">
+              Feer’s translation (1891) predates Speyer’s edition and is based on a single Nepalese
+              manuscript.</note> and Naomi Appleton’s more recent partial English translation of the
+              same.<note place="end" xml:id="UT22084-072-005-30"> Naomi Appleton (2020) translates
+              the first four sections of the <title xml:lang="Sa-Ltn">Avadānaśataka</title>, with a
+              commentary that reflects the advances of modern scholarship in the field. </note>
+          </p>
+        </div>
+      </div>
+    </front>
+    <body>
+      <div type="translation">
+        <head type="translation" tid="18"> The Translation </head>
+        <head type="titleMain" tid="20">The Sūtra on the Designations as Supreme</head>
+        <div type="section" xml:id="UT22084-072-005-section-1">
+          <milestone unit="chunk" xml:id="UT22084-072-005-33"/>
+          <p tid="24">
+                        <ref cRef="F.130.b" type="folio" xml:id="UT22084-072-005-111"/> Homage to all
+            buddhas and bodhisattvas.</p>
+          <lb/>
+          <milestone unit="chunk" xml:id="UT22084-072-005-36"/>
+          <p tid="27">Thus did I hear at one time. The Bhagavān, together with a saṅgha of śrāvakas,
+            was staying at Kalandakanivāsa in the Bamboo Grove at Rājagṛha, observing the pledge to
+            stay in retreat during the rains. Then the Bhagavān spoke to the monks:<note place="end" xml:id="UT22084-072-005-37"> The quotation from the <title xml:lang="Sa-Ltn">Agraprajñapti</title> in the <title xml:lang="Sa-Ltn">Avadānaśataka</title> (Avś),
+              and in its Tibetan translation (Toh 343)<ref rend="pending" inst="add ptr tag for F.158.a" target="https://read.84000.co/translation/toh343.html"/> begins with this
+              sentence.</note>
+                    </p>
+          <milestone unit="chunk" xml:id="UT22084-072-005-38"/>
+          <p tid="28">“Monks, the designations as supreme are three.<note place="end" xml:id="UT22084-072-005-39"> Reading with K<hi rend="subscript">Y</hi>, K, C, U and H:
+                <foreign xml:lang="Bo-Ltn" type="quote">dge slong dag ’di gsum ni mchog tu gdags pa
+                yin te</foreign>, and Avś <foreign xml:lang="Sa-Ltn" type="quote">tisra imā bhikṣavo
+                ’graprajñaptayaḥ</foreign>. D here has the corrupt reading <foreign xml:lang="Bo-Ltn" type="term">na</foreign> in place of <foreign xml:lang="Bo-Ltn" type="term">ni</foreign>.</note> What are the three? They are the designation of the
+            Buddha as supreme, the designation of the Dharma as supreme, and the designation of the
+            Saṅgha as supreme.</p>
+          <milestone unit="chunk" xml:id="UT22084-072-005-40"/>
+          <p tid="29">“In this regard,<note place="end" xml:id="UT22084-072-005-41"> The phrase “in
+              this regard” (Tib. <foreign xml:lang="Sa-Ltn" type="term">de la</foreign>) is absent
+              in Avś and in Toh 343.<ref rend="pending" inst="add ptr tag for F.158.b" target="https://read.84000.co/translation/toh343.html"/>
+                        </note> what is the
+            designation of the Buddha as supreme? It is declared that among all beings—those without
+            legs, with two legs, with four legs,<note place="end" xml:id="UT22084-072-005-42"> The
+              phrase “beings with four legs” is absent in Avś, though present in Frgm and in Toh
+                343.<ref rend="pending" inst="add ptr tag for F.158.b" target="https://read.84000.co/translation/toh343.html"/>
+                        </note> or with many legs;
+            those with form or without form; those with perception, without perception, or neither
+            with perception <ref cRef="F.131.a" type="folio" xml:id="UT22084-072-005-112"/> nor
+            without perception<note place="end" xml:id="UT22084-072-005-43"> This refers to the
+              category of beings abiding in the fourth and highest level of the formless realm.
+              These are either the gods that abide there or persons who have reached this state
+              through meditative equipoise. This state is also referred to as the “peak of
+              existence” (Skt. <foreign xml:lang="Sa-Ltn" type="term">bhavāgra</foreign>; Tib.
+                <foreign xml:lang="Bo-Ltn" type="term">srid rtse</foreign>) and is situated at the
+              apex of saṃsāra. The beings there do not experience perceptions and yet cannot be said
+              to be without perceptions.</note>—the tathāgata, the arhat, the completely perfect
+              Buddha<note place="end" xml:id="UT22084-072-005-44"> The phrase “the arhat, the
+              completely perfect Buddha” is absent in Frgm.</note> is supreme. Those who are well
+            disposed toward the Buddha are well disposed toward the supreme. For those who are well
+            disposed toward the supreme, supreme ripening alone may be expected, either as gods
+            among gods, or humans among humans. This is called <distinct>the designation of the
+              Buddha as supreme</distinct>.<note place="end" xml:id="UT22084-072-005-45"> Frgm reads
+              instead <foreign xml:lang="Sa-Ltn" type="quote">iyaṃ prathamā
+              agraprajñaptiḥ</foreign>, “This is the first designation as supreme.”</note>
+                    </p>
+          <milestone unit="chunk" xml:id="UT22084-072-005-46"/>
+          <p tid="30">“What is the designation of the Dharma as supreme? It is declared that among
+            all dharmas, conditioned or unconditioned, the dharma of being free from attachment is
+              supreme.<note place="end" xml:id="UT22084-072-005-47"> Alternatively, this may be
+              rendered “dispassion (i.e., being free of attachment) is the supreme dharma.”</note>
+            Those who are well disposed toward the Dharma are well disposed toward the supreme. For
+            those who are well disposed toward the supreme, supreme ripening alone may be expected,
+            either as gods among gods, or humans among humans. This is called <distinct>the
+              designation of the Dharma as supreme</distinct>.</p>
+          <milestone unit="chunk" xml:id="UT22084-072-005-48"/>
+          <p tid="31">“What is the designation of the Saṅgha as supreme? It is declared that among
+            all assemblies, gatherings, crowds, and retinues, the Saṅgha of śrāvakas of the
+            tathāgata, the arhat, the completely perfect Buddha<note place="end" xml:id="UT22084-072-005-49"> The phrase “the arhat, the completely perfect Buddha” is
+              absent in Avś and its Tibetan translation (Toh 343).<ref rend="pending" inst="add ptr tag for F.158.b" target="https://read.84000.co/translation/toh343.html"/>
+            </note> is supreme. Those who are well disposed toward the Saṅgha are well disposed
+            toward the supreme. For those who are well disposed toward the supreme, supreme ripening
+            alone may be expected, either as gods among gods, or humans among humans. This is called
+              <distinct>the designation of the Saṅgha as supreme</distinct>.”</p>
+          <milestone unit="chunk" xml:id="UT22084-072-005-50"/>
+          <p tid="32">After the Bhagavān had spoken thus, the monks rejoiced and praised his words.
+              <ref cRef="F.131.b" type="folio" xml:id="UT22084-072-005-113"/>
+                    </p>
+          <milestone unit="chunk" xml:id="UT22084-072-005-52"/>
+          <trailer tid="34">Thus ends <title xml:lang="en">“The Sūtra on the Designations as
+              Supreme.”</title>
+                    </trailer>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="notes">
+        <head type="notes" tid="37">Notes</head>
+        <list type="abbreviations">
+          <head tid="38">Abbreviations</head>
+          <item xml:id="UT22084-072-005-54">
+                        <abbr>AN</abbr>
+                        <expan>Aṅguttara Nikāya</expan>
+                    </item>
+          <item xml:id="UT22084-072-005-55">
+                        <abbr>Avś</abbr>
+                        <expan>Speyer’s Sanskrit edition of the
+                <title xml:lang="Sa-Ltn">Avadānaśataka </title>(1902–6), story 57</expan>
+                    </item>
+          <item xml:id="UT22084-072-005-56">
+                        <abbr>C</abbr>
+                        <expan>Choné (<title xml:lang="Bo-Ltn">co
+                ne</title>) Kangyur</expan>
+                    </item>
+          <item xml:id="UT22084-072-005-57">
+                        <abbr>D</abbr>
+                        <expan>Degé (<title xml:lang="Bo-Ltn">sde
+                dge</title>) Kangyur</expan>
+                    </item>
+          <item xml:id="UT22084-072-005-58">
+                        <abbr>EĀ</abbr>
+                        <expan>Ekottarikāgama</expan>
+                    </item>
+          <item xml:id="UT22084-072-005-59">
+                        <abbr>Frgm</abbr>
+                        <expan>Sanskrit fragment of the <title xml:lang="Sa-Ltn">Agraprajñapti</title> edited by Pauly (1960)</expan>
+                    </item>
+          <item xml:id="UT22084-072-005-60">
+                        <abbr>H</abbr>
+                        <expan>Lhasa (<title xml:lang="Bo-Ltn">zhol</title>) Kangyur</expan>
+                    </item>
+          <item xml:id="UT22084-072-005-61">
+                        <abbr>Iti</abbr>
+                        <expan>Itivuttaka</expan>
+                    </item>
+          <item xml:id="UT22084-072-005-62">
+                        <abbr>K</abbr>
+                        <expan>Kangxi (<title xml:lang="Bo-Ltn">pe
+                cin</title>) Kangyur</expan>
+                    </item>
+          <item xml:id="UT22084-072-005-63">
+                        <abbr>K<hi rend="subscript">Y</hi>
+                        </abbr>
+                        <expan>Yongle
+                (<title xml:lang="Bo-Ltn">g.yung lo</title>) Kangyur</expan>
+                    </item>
+          <item xml:id="UT22084-072-005-64">
+                        <abbr>U</abbr>
+                        <expan>Urga (<title xml:lang="Bo-Ltn">phyi
+                sog khu re</title>) Kangyur </expan>
+                    </item>
+        </list>
+      </div>
+      <div type="listBibl">
+        <head type="listBibl" tid="39">Bibliography</head>
+        <div type="section" xml:id="UT22084-072-005-listBibl-1">
+          <head type="section" tid="40">Tibetan Source Texts</head>
+          <bibl xml:id="UT22084-072-005-65">
+                        <title xml:lang="Bo-Ltn">mchog tu gdags pa’i mdo</title>
+              (<title xml:lang="Sa-Ltn">Agra­prajñapti­sūtra</title>). Toh 305, Degé Kangyur vol. 72
+            (mdo sde, sa), folios 130.b–131.b. </bibl>
+          <bibl xml:id="UT22084-072-005-66">
+                        <title xml:lang="Bo-Ltn">mchog tu gdags pa’i
+            mdo</title>. bka’ ’gyur (dpe bsdur ma) [Comparative Edition of the Kangyur], krung go’i
+            bod rig pa zhib ’jug ste gnas kyi bka’ bstan dpe sdur khang (The Tibetan Tripitaka
+            Collation Bureau of the China Tibetology Research Center). 108 volumes. Beijing: krung
+            go’i bod rig pa dpe skrun khang (China Tibetology Publishing House), 2006-9, vol. 72,
+            pp. 356–59.</bibl>
+        </div>
+        <div type="section" xml:id="UT22084-072-005-listBibl-2">
+          <head type="section" tid="41">Works Related to the Source Texts</head>
+          <bibl xml:id="UT22084-072-005-67">
+                        <title xml:lang="Bo-Ltn">gang po la sogs pa’i rtogs pa
+              brjod pa brgya pa</title> (<title xml:lang="Sa-Ltn">Pūrṇa­pramukhāvadānaśataka</title>). Toh 343, Degé Kangyur vol. 75 (mdo sde, aM),
+            folios 1.b–286.b.</bibl>
+          <bibl xml:id="UT22084-072-005-68">
+                        <title xml:lang="Bo-Ltn">gsang sngags chen po rjes su
+              ’dzin pa’i mdo</title> (<title xml:lang="Sa-Ltn">Mahā­mantrānudhāriṇī­sūtra</title>)
+              [<title xml:lang="en">Great Upholder of the Secret Mantra</title>]. Toh 563, Degé
+            Kangyur vol. 90 (rgyud ’bum, pha), folios 150.b–156.a. English translation in
+            Dharmachakra Translation Committee (2016).</bibl>
+          <bibl xml:id="UT22084-072-005-69">
+                        <title xml:lang="Pi-Ltn">Aggapasādasutta</title>. Pali
+            Canon, <ref target="https://suttacentral.net/iti90/pli/ms">Itivuttaka 90</ref>. Texts in
+            Pali on SuttaCentral. For English translation, see Bhikkhu Sujato (2020), <title xml:lang="en">The Best Kinds of Confidence</title>.</bibl>
+          <bibl xml:id="UT22084-072-005-70">
+                        <title xml:lang="Pi-Ltn">Aggappasādasutta</title>. Pali
+            Canon, <ref target="https://suttacentral.net/an4.34/pli/ms">Aṅguttara Nikāya 4.34</ref>.
+            Texts in Pali on SuttaCentral. For English translation, see Bhikkhu Sujato (2018a),
+              <title xml:lang="en">The Best Kinds of Confidence</title>.</bibl>
+          <bibl xml:id="UT22084-072-005-71">
+                        <title xml:lang="Pi-Ltn">Cundīsutta</title>. Pali Canon,
+              <ref target="https://suttacentral.net/an5.32/pli/ms">Aṅguttara Nikāya 5.32</ref>.
+            Texts in Pali on SuttaCentral. For translations, see Bhikkhu Sujato (2018b), <title xml:lang="Pi-Ltn">With Cundī</title>.</bibl>
+        </div>
+        <div type="section" xml:id="UT22084-072-005-listBibl-3">
+          <head type="section" tid="42">Editions, Translations, and References</head>
+          <bibl xml:id="UT22084-072-005-72">Appleton, Naomi, trans. <title xml:lang="en">Many
+              Buddhas, One Buddha: A Study and Translation of Avadānaśataka 1-40</title>. Sheffield:
+            Equinox, 2020.</bibl>
+          <bibl xml:id="UT22084-072-005-73">Bhikkhu Anālayo. <title xml:lang="en">Ekottarika-āgama
+              Studies</title>. Taipei: Dharma Drum Publishing Corporation, 2016.</bibl>
+          <bibl xml:id="UT22084-072-005-74">Bhikkhu Sujato (2020), trans. <title xml:lang="en">
+                            <ref target="https://suttacentral.net/iti90/en/sujato">The Best Kinds of
+              Confidence</ref>
+                        </title> (English translation of <title xml:lang="Pi-Ltn">Aggapasādasutta</title> Iti 90). <ref target="https://suttacentral.net/iti90/en/sujato?layout=plain&amp;reference=none&amp;notes=asterisk&amp;highlight=false&amp;script=latin">SuttaCentral</ref>.</bibl>
+          <bibl xml:id="UT22084-072-005-75">———(2018a), trans. <title xml:lang="en">
+                            <ref target="https://suttacentral.net/an4.34/en/sujato">The Best Kinds of
+                Confidence</ref>
+                        </title> (English translation of <title xml:lang="Pi-Ltn">Aggapasādasutta</title> AN 4.34). <ref target="https://suttacentral.net/an4.34/en/sujato?layout=plain&amp;reference=none&amp;notes=asterisk&amp;highlight=false&amp;script=latin">SuttaCentral</ref>.</bibl>
+          <bibl xml:id="UT22084-072-005-76">———(2018b), trans. <title xml:lang="en">
+                            <ref target="https://suttacentral.net/an5.32/en/sujato">With Cundī</ref>
+                        </title> (English
+            translation of <title xml:lang="Pi-Ltn">Cundīsutta</title> AN 5.32). <ref target="https://suttacentral.net/an5.32/en/sujato?layout=plain&amp;reference=none&amp;notes=asterisk&amp;highlight=false&amp;script=latin">SuttaCentral</ref>.</bibl>
+          <bibl xml:id="UT22084-072-005-77">Bingenheimer, Marcus. <title xml:lang="en">Studies in
+              Āgama Literature with Special Reference to the Shorter Chinese Saṃyuktāgama</title>.
+            Taipei: Xinwenfeng, 2011.</bibl>
+          <bibl xml:id="UT22084-072-005-78">Dharmachakra Translation Committee, trans. <title xml:lang="en">
+                            <ref target="HYPERLINK">Great Upholder of the Secret
+              Mantra</ref>
+                        </title> (<title xml:lang="Sa-Ltn">Mahā­mantrānudhāriṇī­sūtra</title>, Toh
+            563). 84000: Translating the Words of the Buddha, 2016.</bibl>
+          <bibl xml:id="UT22084-072-005-79">Feer, Léon, trans. <title xml:lang="fr">Avadāna-çataka:
+              Cent Légendes (Bouddhiques)</title>. Annales du Musée Guimet 18. Paris: Ernest Leroux,
+            1891.</bibl>
+          <bibl xml:id="UT22084-072-005-80">Gabain, Annemarie von. <title xml:lang="de">Türkische
+              Turfan-Texte VIII. Texte in Brāhmīschrift</title>. Berlin: Akademie-Verlag,
+            1954.</bibl>
+          <bibl xml:id="UT22084-072-005-81">Hartmann, Jens-Uwe, and Klaus Wille. “Die
+            nordturkistanischen Sanskrit-Handschriften der Sammlung Hoernle (Funde buddhistischer
+            Sanskrit-Handschriften, II)” In <title xml:lang="de">Sanskrit-Texte aus dem
+              buddhistischen Kanon: Neuentdeckungen und Neueditionen</title>, 2. Folge, 9–63.
+            Sanskrit-Wörterbuch der buddhistischen Texte aus den Turfan-Funden, Beiheft 4.
+            Göttingen: Vandenhoeck und Ruprecht, 1992.</bibl>
+          <bibl xml:id="UT22084-072-005-82">Hartmann, Jens-Uwe, and Dieter Maue. “Die
+            indisch-türkische Bilingue TT VIII G.” In <title xml:lang="de">Turfan, Khotan und
+              Dunhuang. Vorträge der Tagung „Annemarie v. Gabain und die Turfanforschung”,
+              veranstaltet von der Berlin-Brandenburgischen Akademie der Wissenschaften in Berlin
+              (9.-12. 12. 1994)</title>, edited by Ronald E. Emmerick, Werner Sundermann, Ingrid
+            Warnke und Peter Zieme, 147–63. Berlin: Akademie Verlag, 1996.</bibl>
+          <bibl xml:id="UT22084-072-005-83">Pauly, Bernard. “Fragments Sanskrits de Haute Asie
+            (Mission Pelliot).” <distinct>Journal Asiatique</distinct> 248 (1960): 509–38.</bibl>
+          <bibl xml:id="UT22084-072-005-84">Rotman, Andy, trans. <title xml:lang="en">Divine
+              Stories: Divyāvadāna Part 1</title>. Boston: Wisdom Publications, 2008.</bibl>
+          <bibl xml:id="UT22084-072-005-85">Speyer, Jacob S., ed. <title xml:lang="en">Avadānaśataka: A Century of Edifying Tales Belonging to the Hīnayāna</title>. 2 vols.
+            Biblioteca Buddhica 3. St. Petersburg: Académie Impériale des Sciences, 1902–6.</bibl>
+          <bibl xml:id="UT22084-072-005-86">Vaidya, P.L. (1958), ed. <title xml:lang="Sa-Ltn">Avadāna-Śataka</title>. Buddhist Sanskrit Texts 19. Darbhanga: Mithila
+            Institute.</bibl>
+          <bibl xml:id="UT22084-072-005-87">———(1959), ed. <title xml:lang="Sa-Ltn">Divyāvadāna</title>. Buddhist Sanskrit Texts 20. Darbhanga: Mithila Institute.</bibl>
+          <bibl xml:id="UT22084-072-005-88">Waldschmidt, Ernst. <title xml:lang="de">Sanskrithandschriften aus den Turfanfunden</title>, Teil 1. Wiesbaden: Franz Steiner
+            Verlag, 1965.</bibl>
+        </div>
+      </div>
+      <div type="glossary" status="excluded">
+        <list type="glossary">
+          <item>
+                        <gloss type="term" xml:id="UT22084-072-005-90">
+              <term>avadāna</term>
+              <term status="verified" xml:lang="Bo-Ltn">rtogs pa brjod pa </term>
+              <term xml:lang="bo">རྟོགས་པ་བརྗོད་པ།</term>
+              <term type="attestedDictionary" xml:lang="Sa-Ltn">avadāna</term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-072-005-91">
+              <term>designation as supreme</term>
+              <term status="verified" xml:lang="Bo-Ltn">mchog tu gdags pa </term>
+              <term xml:lang="bo">མཆོག་ཏུ་གདགས་པ།</term>
+              <term type="attestedDictionary" xml:lang="Sa-Ltn">agraprajñapti</term>
+              <term type="definition">The assertion that a person or thing is the best of its kind.
+                Here the Buddha is designated as supreme among all beings, the dharma of being free
+                of attachment as supreme among all dharmas, and the Saṅgha as supreme among all
+                communities and groups.</term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-072-005-92">
+              <term>buddha</term>
+              <term status="verified" xml:lang="Bo-Ltn">sangs rgyas </term>
+              <term xml:lang="bo">སངས་རྒྱས།</term>
+              <term type="attestedDictionary" xml:lang="Sa-Ltn">Buddha</term>
+            <term type="definition">The Indic term <distinct>buddha</distinct> is used in Buddhism as an epithet for
+                fully awakened beings in general and, more specifically, often refers to the
+                historical buddha, Siddhārtha Gautama, also known as the Buddha Śākyamuni. The term
+              <distinct>buddha</distinct> is the past participle of the Sanskrit root <distinct>budh</distinct>, meaning “to awaken,” “to
+                understand,” or “to become aware.” Sometimes also translated here as “awakened
+                one.”</term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-072-005-93">
+              <term>bodhisattva</term>
+              <term status="verified" xml:lang="Bo-Ltn">byang chub sems dpa’ </term>
+              <term xml:lang="bo">བྱང་ཆུབ་སེམས་དཔའ།</term>
+              <term type="attestedDictionary" xml:lang="Sa-Ltn">bodhisattva</term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-072-005-94">
+              <term>bhagavān</term>
+              <term status="verified" xml:lang="Bo-Ltn">bcom ldan ’das </term>
+              <term xml:lang="bo">བཅོམ་ལྡན་འདས།</term>
+              <term type="attestedDictionary" xml:lang="Sa-Ltn">Bhagavat</term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-072-005-95">
+              <term>saṅgha</term>
+              <term status="verified" xml:lang="Bo-Ltn">dge ’dun </term>
+              <term xml:lang="bo">དགེ་འདུན།</term>
+              <term type="attestedDictionary" xml:lang="Sa-Ltn">saṅgha</term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-072-005-96">
+              <term>śrāvaka</term>
+              <term status="verified" xml:lang="Bo-Ltn">nyan thos </term>
+              <term xml:lang="bo">ཉན་ཐོས།</term>
+              <term type="attestedDictionary" xml:lang="Sa-Ltn">Śrāvaka</term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-072-005-97">
+              <term>monk</term>
+              <term status="verified" xml:lang="Bo-Ltn">dge slong </term>
+              <term xml:lang="bo">དགེ་སློང་།</term>
+              <term type="attestedDictionary" xml:lang="Sa-Ltn">bhikṣu</term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-072-005-98">
+              <term>dharma</term>
+              <term status="verified" xml:lang="Bo-Ltn">chos </term>
+              <term xml:lang="bo">ཆོས།</term>
+              <term type="attestedDictionary" xml:lang="Sa-Ltn">dharma</term>
+              <term type="definition">[adapted from Toh 113] A term that predates Buddhism, <foreign xml:lang="Sa-Ltn" type="term">Dharma</foreign>/<foreign xml:lang="Sa-Ltn" type="term">dharma</foreign> has a wide range of meanings and usages in Buddhist
+                texts depending on context:When rendered as the <foreign xml:lang="Sa-Ltn" type="term">Dharma</foreign>, it refers in toto to the teaching of the <ref target="https://read.84000.co/translation/toh113.html#UT22084-051-001-3225">Buddha</ref>
+                <ref target="https://read.84000.co/translation/toh113.html#UT22084-051-001-3555">Śākyamuni</ref> and other <ref target="https://read.84000.co/translation/toh113.html#UT22084-051-001-3225">buddhas</ref>, preached by their followers, and transmitted in the form of
+                scripture; and, in addition, the nature of reality itself, the referent of the
+                Buddha’s teaching, and also what is realized through it. When rendered as <foreign xml:lang="Sa-Ltn" type="term">dharma</foreign> or <foreign xml:lang="Sa-Ltn" type="term">dharmas</foreign>, it can refer variously to the different teachings
+                given by the <ref target="https://read.84000.co/translation/toh113.html#UT22084-051-001-3225">Buddha</ref>
+                <ref target="https://read.84000.co/translation/toh113.html#UT22084-051-001-3555">Śākyamuni</ref>, other <ref target="https://read.84000.co/translation/toh113.html#UT22084-051-001-3225">buddhas</ref>, and their followers; the trainings enjoined in those teachings;
+                the positive qualities acquired through applying those trainings; mental <ref target="https://read.84000.co/translation/toh113.html#UT22084-051-001-3687">phenomena</ref> in general; or <ref target="https://read.84000.co/translation/toh113.html#UT22084-051-001-3687">phenomena</ref> in general or their characteristics. Often in Buddhist
+                literature, and certainly in this sūtra, there is a play on the multiple interlinked
+                senses of this term.</term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-072-005-99">
+              <term>tathāgata</term>
+              <term status="verified" xml:lang="Bo-Ltn">de bzhin gshegs pa </term>
+              <term xml:lang="bo">དེ་བཞིན་གཤེགས་པ།</term>
+              <term type="attestedDictionary" xml:lang="Sa-Ltn">tathāgata</term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-072-005-100">
+              <term>arhat</term>
+              <term status="verified" xml:lang="Bo-Ltn">dgra bcom pa </term>
+              <term xml:lang="bo">དགྲ་བཅོམ་པ།</term>
+              <term type="attestedDictionary" xml:lang="Sa-Ltn">Arhat</term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-072-005-101">
+              <term>well disposed</term>
+              <term status="verified" xml:lang="Bo-Ltn">mngon par dga’ ba </term>
+              <term xml:lang="bo">མངོན་པར་དགའ་བ།</term>
+              <term type="attestedDictionary" xml:lang="Sa-Ltn">abhiprasanna</term>
+              <term type="definition">The Sanskrit term means either “favorably disposed towards” or
+                “having faith in.” The Tibetan term means “highly appreciating.”</term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-072-005-102">
+              <term>supreme</term>
+              <term status="verified" xml:lang="Bo-Ltn">mchog </term>
+              <term xml:lang="bo">མཆོག</term>
+              <term type="attestedDictionary" xml:lang="Sa-Ltn">Agra</term>
+              <term type="definition">Other possible translations as an adjective would include
+                “best”, “first” or “foremost.” Or as a noun, “best of its kind” or
+                “excellence.”</term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-072-005-103">
+              <term>completely perfect buddha</term>
+              <term status="verified" xml:lang="Bo-Ltn">yang dag par rdzogs pa’i sangs rgyas </term>
+              <term xml:lang="bo">ཡང་དག་པར་རྫོགས་པའི་སངས་རྒྱས།</term>
+              <term type="attestedDictionary" xml:lang="Sa-Ltn">samyaksaṃbuddha</term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-072-005-104">
+              <term>Ripening</term>
+              <term status="verified" xml:lang="Bo-Ltn">rnam par smin pa </term>
+              <term xml:lang="bo">རྣམ་པར་སྨིན་པ།</term>
+              <term type="attestedDictionary" xml:lang="Sa-Ltn">Vipāka</term>
+              <term type="definition">The result or maturation of karmic actions and the
+                manifestation of their effects. </term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-072-005-105">
+              <term>conditioned</term>
+              <term status="verified" xml:lang="Bo-Ltn">’dus byas </term>
+              <term xml:lang="bo">འདུས་བྱས།</term>
+              <term type="attestedDictionary" xml:lang="Sa-Ltn">saṃskṛta</term>
+              <term type="definition">When referring to phenomena or the constituents of
+                  experience,<foreign xml:lang="Sa-Ltn" type="term"> saṃskṛta</foreign> usually
+                means “conditioned.” But it can also mean “refined,” “adorned,” “ornamented,”
+                “polished.” It seems that the text is here playing on the multivalence of the term
+                in combination with the multivalence of the term “dharma.” </term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-072-005-106">
+              <term>unconditioned</term>
+              <term status="verified" xml:lang="Bo-Ltn">’dus ma byas </term>
+              <term xml:lang="bo">འདུས་མ་བྱས།</term>
+              <term type="attestedDictionary" xml:lang="Sa-Ltn">asaṃskṛta</term>
+              <term type="definition">When referring to phenomena or constituents of experience,
+                  <foreign xml:lang="Sa-Ltn" type="term">asaṃskṛta</foreign> usually means
+                “unconditioned.” But it can also mean “unrefined,” “unadorned,” “unpolished.” It
+                seems that the text is here playing on the multivalence of the term in combination
+                with the multivalence of the term “dharma.” </term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="place" xml:id="UT22084-072-005-108">
+              <term>Bamboo Grove</term>
+              <term status="verified" xml:lang="Bo-Ltn">’od ma’i tshal </term>
+              <term xml:lang="bo">འོད་མའི་ཚལ།</term>
+              <term type="attestedDictionary" xml:lang="Sa-Ltn">veṇuvana</term>
+              <term type="definition">The famous Bamboo Grove in Rājagṛha where the Buddha regularly
+                stayed and gave teachings. It was situated on land donated by King Bimbisāra of
+                Magadha, and as such, was the first of several landholdings donated to the Buddhist
+                community during the time of the Buddha.</term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="place" xml:id="UT22084-072-005-109">
+              <term>Kalandakanivāsa</term>
+              <term status="verified" xml:lang="Bo-Ltn">bya ka lan da ka gnas pa </term>
+              <term xml:lang="bo">བྱ་ཀ་ལན་ད་ཀ་གནས་པ།</term>
+              <term type="attestedDictionary" xml:lang="Sa-Ltn">kalandakanivāsa</term>
+              <term type="attestedDictionary" xml:lang="Sa-Ltn">kalandakanivāpa</term>
+              <term type="definition">Literally “the dwelling place of <foreign xml:lang="Pi-Ltn" type="term">kalandakas</foreign>.” A location within the Bamboo Grove where the
+                Buddha stayed. The alternative Sanskrit Kalandakanivāpa means “where food offerings
+                are made to <foreign xml:lang="Pi-Ltn" type="term">kalandakas</foreign>.” It is said
+                that the place was given its name by King Bimbisāra after he was rescued from a
+                snake attack there. Pali sources suggest he was saved by the squawking of many
+                  <foreign xml:lang="Pi-Ltn" type="term">kalandaka </foreign>or flying squirrels. In
+                Tibetan translation these were called “kalandaka birds” (<foreign xml:lang="Bo-Ltn" type="term">bya</foreign>).</term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="place" xml:id="UT22084-072-005-110">
+              <term>Rājagṛha</term>
+              <term status="verified" xml:lang="Bo-Ltn">rgyal po’i khab </term>
+              <term xml:lang="bo">རྒྱལ་པོའི་ཁབ།</term>
+              <term type="attestedDictionary" xml:lang="Sa-Ltn">rājagṛha</term>
+            </gloss>
+                    </item>
+        </list>
+      </div>
+    </back>
+  </text>
+</TEI>
