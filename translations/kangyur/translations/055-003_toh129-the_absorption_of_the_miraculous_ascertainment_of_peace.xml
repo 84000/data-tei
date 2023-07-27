@@ -31,7 +31,7 @@
                 <sponsor ref="sponsors.xml#sponsor-180">anonymous</sponsor>
             </titleStmt>
             <editionStmt>
-                <edition>v 1.3.25 <date>2021</date>
+                <edition>v 1.3.26 <date>2021</date>
                 </edition>
             </editionStmt>
             <publicationStmt status="1">
@@ -64,7 +64,7 @@
                 </bibl>
             </sourceDesc>
             <notesStmt>
-                <note type="lastUpdated" date-time="2023-01-18T17:04:21.841Z" user="celso">18/01/2023 17:04:21</note>
+                <note type="lastUpdated" date-time="2023-07-27T22:07:52.965Z" user="admin">27/07/2023 22:07:52</note>
                 <note type="updated" update="translation-status" value="2.c" date-time="2019-05-29T11:54:09.215Z" user="james">2.c</note>
                 <note type="updated" update="text-version" value="v 0.0.1" date-time="2019-12-20T12:56:48.575Z" user="admin">Automated version increment</note>
                 <note type="updated" update="translation-status" value="2.d" date-time="2020-01-28T06:12:56.467Z" user="mike">2.d</note>
@@ -84,6 +84,7 @@
                 <note type="updated" update="text-version" value="0.9.2" date-time="2020-08-26T11:38:42.092Z" user="john">Same</note>
                 <note type="updated" update="text-version" value="0.9.3" date-time="2020-09-01T18:06:22.584Z" user="john">Auto (update-contributors)</note>
                 <note type="updated" update="translation-status" value="1" date-time="2020-09-01T18:09:12.159Z" user="john">1</note>
+                <note type="updated" update="translation-status" value="1.a" date-time="2020-09-01T18:09:12.159Z" user="admin">Note added retrospectively based on date of status '1'</note>
                 <note type="updated" update="text-version" value="1.0.1" date-time="2020-09-01T18:09:12.159Z" user="john">First published version.</note>
                 <note type="updated" update="text-version" value="1.1.1" date-time="2020-09-02T11:45:58.076Z" user="john">Added material to Intro, notes, and biblio.</note>
                 <note type="updated" update="text-version" value="1.1.2" date-time="2020-09-02T11:46:56.133Z" user="john">Corrected publication date</note>
@@ -114,6 +115,7 @@
                 <note type="updated" update="text-version" value="1.3.23" date-time="2022-07-26T05:52:04.143Z" user="cabie-sim">Auto (update-titles)</note>
                 <note type="updated" update="text-version" value="1.3.24" date-time="2023-01-16T16:58:52.361Z" user="celso">Auto (script-increment-version-published)</note>
                 <note type="updated" update="text-version" value="1.3.25" date-time="2023-01-18T16:58:06.914Z" user="celso">Auto (remove-tid-from-back-list-items)</note>
+                <note type="updated" update="text-version" value="1.3.26" date-time="2023-07-27T22:07:50.1Z" user="martina-cotter">Updated "Blissful One" to "Well-Gone One"</note>
             </notesStmt>
         </fileDesc>
     </teiHeader>
@@ -2365,7 +2367,7 @@
                     <milestone unit="chunk" xml:id="UT22084-055-003-247"/>
                     <lg tid="237">
                         <l>“Blessed One, you have spoken well!</l>
-                        <l>Blissful One, you have spoken well! </l>
+                        <l>Well-Gone One, you have spoken well! </l>
                         <l>May this Dharma teaching <ref cRef="F.210.a" type="folio" xml:id="UT22084-055-003-646"/> </l>
                         <l>Remain long in this world!”</l>
                     </lg>
@@ -2386,7 +2388,7 @@
                     <milestone unit="chunk" xml:id="UT22084-055-003-249"/>
                     <lg tid="239">
                         <l>“Blessed One, you have spoken well!</l>
-                        <l>Blissful One, you have spoken well! </l>
+                        <l>Well-Gone One, you have spoken well! </l>
                         <l>Oh, we have heard a Dharma teaching that was never heard before!</l>
                         <l>Oh, may this Dharma teaching remain for long!”</l>
                     </lg>
@@ -2538,15 +2540,15 @@
             </gloss>
         </item>
         <item>
-            <gloss type="term" xml:id="UT22084-055-003-267">
-                <term>blessed one</term>
-                <term xml:lang="Bo-Ltn">bcom ldan ’das </term>
-                <term xml:lang="bo">བཅོམ་ལྡན་འདས།</term>
-                <term xml:lang="Sa-Ltn">bhagavat</term>
-                <term xml:lang="Sa-Ltn">bhagavān</term>
-                <term type="definition">An epithet for a buddha. </term>
-            </gloss>
-        </item>
+                        <gloss xml:id="UT22084-055-003-267" type="term" mode="match">
+                            <term>blessed one</term>
+                            <term xml:lang="Bo-Ltn" type="sourceAttested">bcom ldan ’das</term>
+                            <term xml:lang="bo" type="sourceAttested">བཅོམ་ལྡན་འདས།</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified">bhagavat</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified">bhagavān</term>
+                            <term type="definition">An epithet for a buddha. </term>
+                        </gloss>
+                    </item>
         <item>
             <gloss type="term" xml:id="UT22084-055-003-268">
                 <term>caraka</term>
@@ -2683,14 +2685,14 @@
             </gloss>
         </item>
         <item>
-            <gloss type="term" xml:id="UT22084-055-003-282">
-                <term>mahoraga</term>
-                <term xml:lang="Bo-Ltn">lto ’phye chen po </term>
-                <term xml:lang="bo">ལྟོ་འཕྱེ་ཆེན་པོ།</term>
-                <term xml:lang="Sa-Ltn">mahoraga</term>
-                <term type="definition">Literally “large serpent.” A subterranean semi-divine being that takes the form of a large serpent, sometimes with a human torso and head.</term>
-            </gloss>
-        </item>
+                        <gloss xml:id="UT22084-055-003-282" type="term" mode="match">
+                            <term>mahoraga</term>
+                            <term xml:lang="Bo-Ltn" type="sourceAttested">lto ’phye chen po</term>
+                            <term xml:lang="bo" type="sourceAttested">ལྟོ་འཕྱེ་ཆེན་པོ།</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified">mahoraga</term>
+                            <term type="definition">Literally “large serpent.” A subterranean semi-divine being that takes the form of a large serpent, sometimes with a human torso and head.</term>
+                        </gloss>
+                    </item>
         <item>
             <gloss type="term" xml:id="UT22084-055-003-520">
                 <term>nāga</term>
@@ -2701,28 +2703,27 @@
             </gloss>
         </item>
         <item>
-            <gloss type="term" xml:id="UT22084-055-003-521">
-                <term>god</term>
-                <term xml:lang="Bo-Ltn">lha</term>
-                            <term xml:lang="bo">ལྷ།</term>
-                <term xml:lang="Bo-Ltn">lha’i bu</term>
-                            <term xml:lang="bo">ལྷའི་བུ།</term>
-                
-                <term xml:lang="Sa-Ltn">deva</term>
-                <term xml:lang="Sa-Ltn">devaputra</term>
-                <term type="definition">One of the five or six classes of living beings, specifically engendered and dominated by exaltation, indulgence, and pride. The <term type="ignore">gods</term> are said to exist in realms higher than that of the human realm within in the world system of desire (<foreign xml:lang="Sa-Ltn" type="term">kāma­dhātu</foreign>), and also in the world system of form (<foreign xml:lang="Sa-Ltn" type="term">rūpa­dhātu</foreign>).</term>
-            </gloss>
-        </item>
+                        <gloss xml:id="UT22084-055-003-521" type="term" mode="match">
+                            <term>god</term>
+                            <term xml:lang="Bo-Ltn" type="sourceAttested">lha</term>
+                            <term xml:lang="bo" type="sourceAttested">ལྷ།</term>
+                            <term xml:lang="Bo-Ltn" type="sourceAttested">lha’i bu</term>
+                            <term xml:lang="bo" type="sourceAttested">ལྷའི་བུ།</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified">deva</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified">devaputra</term>
+                            <term type="definition">One of the five or six classes of living beings, specifically engendered and dominated by exaltation, indulgence, and pride. The <term type="ignore">gods</term> are said to exist in realms higher than that of the human realm within in the world system of desire (<foreign xml:lang="Sa-Ltn" type="term">kāma­dhātu</foreign>), and also in the world system of form (<foreign xml:lang="Sa-Ltn" type="term">rūpa­dhātu</foreign>).</term>
+                        </gloss>
+                    </item>
         <item>
-            <gloss type="term" xml:id="UT22084-055-003-522">
-                <term>gandharva</term>
-                <term xml:lang="Bo-Ltn">dri za</term>
-                <term xml:lang="bo">དྲི་ཟ།</term>
-                <term xml:lang="Sa-Ltn">gandharva</term>
-                <term type="definition">
+                        <gloss xml:id="UT22084-055-003-522" type="term" mode="match">
+                            <term>gandharva</term>
+                            <term xml:lang="Bo-Ltn" type="sourceAttested">dri za</term>
+                            <term xml:lang="bo" type="sourceAttested">དྲི་ཟ།</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified">gandharva</term>
+                            <term type="definition">
                                 <term type="ignore">Gandharvas</term>, literally “smell-eaters,” are a class of spirits, sometimes described as celestial musicians. In other contexts the term can also refer to beings in the bardo-state.</term>
-            </gloss>
-        </item>
+                        </gloss>
+                    </item>
         <item>
             <gloss type="term" xml:id="UT22084-055-003-523">
                 <term>asura</term>
@@ -2733,23 +2734,23 @@
             </gloss>
         </item>
         <item>
-            <gloss type="term" xml:id="UT22084-055-003-524">
-                <term>garuḍa</term>
-                <term xml:lang="Bo-Ltn">nam mkha’ lding</term>
-                <term xml:lang="bo">ནམ་མཁའ་ལྡིང་།</term>
-                <term xml:lang="Sa-Ltn">garuḍa</term>
-                <term type="definition">Lower class of divine being, described as an eagle-type bird with a gigantic wingspan. They were traditionally enemies of the nāgas. In the Vedas, they were thought to have brought nectar from the heavens to earth.</term>
-            </gloss>
-        </item>
+                        <gloss xml:id="UT22084-055-003-524" type="term" mode="match">
+                            <term>garuḍa</term>
+                            <term xml:lang="Bo-Ltn" type="sourceAttested">nam mkha’ lding</term>
+                            <term xml:lang="bo" type="sourceAttested">ནམ་མཁའ་ལྡིང་།</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified">garuḍa</term>
+                            <term type="definition">Lower class of divine being, described as an eagle-type bird with a gigantic wingspan. They were traditionally enemies of the nāgas. In the Vedas, they were thought to have brought nectar from the heavens to earth.</term>
+                        </gloss>
+                    </item>
         <item>
-            <gloss type="term" xml:id="UT22084-055-003-525">
-                <term>kinnara</term>
-                <term xml:lang="Bo-Ltn">mi’am ci</term>
-                <term xml:lang="bo">མིའམ་ཅི།</term>
-                <term xml:lang="Sa-Ltn">kinnara</term>
-                <term type="definition">A class of semidivine beings that resemble humans to the degree that their very name—which means “Is that a man?”—suggests some confusion as to their divine status. kinnaras are mythological beings found in both Buddhist and Hindu literature, where they are portrayed as creatures half human, half animal (horse or bird). They are also usually depicted as highly skilled celestial musicians.</term>
-            </gloss>
-        </item>
+                        <gloss xml:id="UT22084-055-003-525" type="term" mode="match">
+                            <term>kinnara</term>
+                            <term xml:lang="Bo-Ltn" type="sourceAttested">mi’am ci</term>
+                            <term xml:lang="bo" type="sourceAttested">མིའམ་ཅི།</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified">kinnara</term>
+                            <term type="definition">A class of semidivine beings that resemble humans to the degree that their very name—which means “Is that a man?”—suggests some confusion as to their divine status. kinnaras are mythological beings found in both Buddhist and Hindu literature, where they are portrayed as creatures half human, half animal (horse or bird). They are also usually depicted as highly skilled celestial musicians.</term>
+                        </gloss>
+                    </item>
         <item>
             <gloss type="term" xml:id="UT22084-055-003-526">
                 <term>guardians of the world</term>
@@ -2809,16 +2810,14 @@
             </gloss>
         </item>-->
         <item>
-            <gloss type="term" xml:id="UT22084-055-003-286">
-                <term>piśāca</term>
-                <term xml:lang="Bo-Ltn">sha za </term>
-                <term xml:lang="bo">ཤ་ཟ།</term>
-                <term xml:lang="Sa-Ltn">piśāca</term>
-                <term type="definition">A flesh-eating demon, or a demon who can possess the body of a human and cause
-                    various illnesses or insanity. They are often depicted as red-eyed, dark-skinned, bug-eyed
-                    creatures, although they seem to be able to assume many shapes.</term>
-            </gloss>
-        </item>
+                        <gloss xml:id="UT22084-055-003-286" type="term" mode="match">
+                            <term>piśāca</term>
+                            <term xml:lang="Bo-Ltn" type="sourceAttested">sha za</term>
+                            <term xml:lang="bo" type="sourceAttested">ཤ་ཟ།</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified">piśāca</term>
+                            <term type="definition">A flesh-eating demon, or a demon who can possess the body of a human and cause various illnesses or insanity. They are often depicted as red-eyed, dark-skinned, bug-eyed creatures, although they seem to be able to assume many shapes.</term>
+                        </gloss>
+                    </item>
         <item>
             <gloss type="term" xml:id="UT22084-055-003-287">
                 <term>preta</term>
@@ -2830,14 +2829,14 @@
             </gloss>
         </item>
         <item>
-            <gloss type="term" xml:id="UT22084-055-003-288">
-                <term>rākṣasa</term>
-                <term xml:lang="Bo-Ltn">srin po </term>
-                <term xml:lang="bo">སྲིན་པོ།</term>
-                <term xml:lang="Sa-Ltn">rākṣasa</term>
-                <term type="definition">A flesh-eating demon that haunts frightening places.</term>
-            </gloss>
-        </item>
+                        <gloss xml:id="UT22084-055-003-288" type="term" mode="match">
+                            <term>rākṣasa</term>
+                            <term xml:lang="Bo-Ltn" type="sourceAttested">srin po</term>
+                            <term xml:lang="bo" type="sourceAttested">སྲིན་པོ།</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified">rākṣasa</term>
+                            <term type="definition">A flesh-eating demon that haunts frightening places.</term>
+                        </gloss>
+                    </item>
         <item>
             <gloss type="term" xml:id="UT22084-055-003-289">
                 <term>realm of phenomena</term>
@@ -2955,16 +2954,15 @@
             </gloss>
         </item>
         <item>
-            <gloss type="term" xml:id="UT22084-055-003-297">
-                <term>thus-gone one</term>
-                <term xml:lang="Bo-Ltn">de bzhin gshegs pa </term>
-                <term xml:lang="bo">དེ་བཞིན་གཤེགས་པ།</term>
-                <term xml:lang="Sa-Ltn">tathāgata</term>
-                <term type="definition">Epithet of a buddha meaning “one who has gone, reached, or realized in that
-                    way.”</term>
-                <term type="alternative">thus-gone</term>
-            </gloss>
-        </item>
+                        <gloss xml:id="UT22084-055-003-297" type="term" mode="match">
+                            <term>thus-gone one</term>
+                            <term xml:lang="Bo-Ltn" type="sourceAttested">de bzhin gshegs pa</term>
+                            <term xml:lang="bo" type="sourceAttested">དེ་བཞིན་གཤེགས་པ།</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified">tathāgata</term>
+                            <term type="alternative">thus-gone</term>
+                            <term type="definition">Epithet of a buddha meaning “one who has gone, reached, or realized in that way.”</term>
+                        </gloss>
+                    </item>
         <item>
             <gloss type="term" xml:id="UT22084-055-003-298">
                 <term>tranquility </term>
@@ -2987,15 +2985,14 @@
             </gloss>
         </item>
         <item>
-            <gloss type="term" xml:id="UT22084-055-003-301">
-                <term>yakṣa</term>
-                <term xml:lang="Bo-Ltn">gnod sbyin </term>
-                <term xml:lang="bo">གནོད་སྦྱིན།</term>
-                <term xml:lang="Sa-Ltn">yakṣa</term>
-                <term type="definition">A class of semidivine beings said to dwell in the north, under the jurisdiction
-                    of the Great King Vaiśravaṇa, otherwise known as Kubera.</term>
-            </gloss>
-        </item>
+                        <gloss xml:id="UT22084-055-003-301" type="term" mode="match">
+                            <term>yakṣa</term>
+                            <term xml:lang="Bo-Ltn" type="sourceAttested">gnod sbyin</term>
+                            <term xml:lang="bo" type="sourceAttested">གནོད་སྦྱིན།</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified">yakṣa</term>
+                            <term type="definition">A class of semidivine beings said to dwell in the north, under the jurisdiction of the Great King Vaiśravaṇa, otherwise known as Kubera.</term>
+                        </gloss>
+                    </item>
         <item>
             <gloss type="term" xml:id="UT22084-055-003-558">
                 <term>twelve essential qualities</term>
@@ -3708,25 +3705,24 @@
             </gloss>
         </item>
         <item>
-            <gloss type="person" xml:id="UT22084-055-003-379">
-                <term>Mañjuśrī Kumārabhūta</term>
-                <term xml:lang="Bo-Ltn">’jam dpal gzhon nur gyur pa </term>
-                <term xml:lang="bo">འཇམ་དཔལ་གཞོན་ནུར་གྱུར་པ།</term>
-                <term xml:lang="Sa-Ltn">Mañjuśrī Kumārabhūta</term>
-                <term type="definition">One of the eight “close sons” of the Buddha, the embodiment of wisdom.</term>
-                <term type="alternative">Mañjuśrī</term>
-            </gloss>
-        </item>
+                        <gloss xml:id="UT22084-055-003-379" type="person" mode="match">
+                            <term>Mañjuśrī Kumārabhūta</term>
+                            <term xml:lang="Bo-Ltn" type="sourceAttested">’jam dpal gzhon nur gyur pa</term>
+                            <term xml:lang="bo" type="sourceAttested">འཇམ་དཔལ་གཞོན་ནུར་གྱུར་པ།</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified">mañjuśrī kumārabhūta</term>
+                            <term type="alternative">Mañjuśrī</term>
+                            <term type="definition">One of the eight “close sons” of the Buddha, the embodiment of wisdom.</term>
+                        </gloss>
+                    </item>
         <item>
-            <gloss type="person" xml:id="UT22084-055-003-380">
-                <term>Māra</term>
-                <term xml:lang="Bo-Ltn">bdud </term>
-                <term xml:lang="bo">བདུད།</term>
-                <term xml:lang="Sa-Ltn">Māra</term>
-                <term type="definition">The demon opposing the Buddha’s teaching; in the plural (māras) it denotes all
-                    such nonhuman beings.</term>
-            </gloss>
-        </item>
+                        <gloss xml:id="UT22084-055-003-380" type="person" mode="match">
+                            <term>Māra</term>
+                            <term xml:lang="Bo-Ltn" type="sourceAttested">bdud</term>
+                            <term xml:lang="bo" type="sourceAttested">བདུད།</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified">māra</term>
+                            <term type="definition">The demon opposing the Buddha’s teaching; in the plural (māras) it denotes all such nonhuman beings.</term>
+                        </gloss>
+                    </item>
         <item>
             <gloss type="person" xml:id="UT22084-055-003-381">
                 <term>Meritorious Light</term>
@@ -4496,14 +4492,14 @@
             </gloss>
         </item>
         <item>
-            <gloss type="person" xml:id="UT22084-055-003-467">
-                <term>Vajrapāṇi </term>
-                <term xml:lang="Bo-Ltn">lag na rdo rje </term>
-                <term xml:lang="bo">ལག་ན་རྡོ་རྗེ།</term>
-                <term xml:lang="Sa-Ltn">Vajrapāṇi </term>
-                <term type="definition">One of the eight “close sons” of the Buddha, the embodiment of power.</term>
-            </gloss>
-        </item>
+                        <gloss xml:id="UT22084-055-003-467" type="person" mode="match">
+                            <term>Vajrapāṇi</term>
+                            <term xml:lang="Bo-Ltn" type="sourceAttested">lag na rdo rje</term>
+                            <term xml:lang="bo" type="sourceAttested">ལག་ན་རྡོ་རྗེ།</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified">vajrapāṇi</term>
+                            <term type="definition">One of the eight “close sons” of the Buddha, the embodiment of power.</term>
+                        </gloss>
+                    </item>
         <item>
             <gloss type="person" xml:id="UT22084-055-003-468">
                 <term>Victory Banner of Beauty</term>
@@ -4631,15 +4627,14 @@
             </gloss>
         </item>
         <item>
-            <gloss type="person" xml:id="UT22084-055-003-482">
-                <term>Yeshé Dé</term>
-                <term xml:lang="Bo-Ltn">ye shes sde </term>
-                <term xml:lang="bo">ཡེ་ཤེས་སྡེ།</term>
-                <term xml:lang="Sa-Ltn"/>
-                <term type="definition">A prolific Tibetan translator active during the late 8th and early 9th
-                    centuries.</term>
-            </gloss>
-        </item>
+                        <gloss xml:id="UT22084-055-003-482" type="person" mode="match">
+                            <term>Yeshé Dé</term>
+                            <term xml:lang="Bo-Ltn" type="sourceAttested">ye shes sde</term>
+                            <term xml:lang="bo" type="sourceAttested">ཡེ་ཤེས་སྡེ།</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified"/>
+                            <term type="definition">A prolific Tibetan translator active during the late 8th and early 9th centuries.</term>
+                        </gloss>
+                    </item>
         <item>
             <gloss type="place" xml:id="UT22084-055-003-483">
                 <term>Brahmā Heavens</term>
