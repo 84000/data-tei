@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../../../schema/current/translation.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<tei:TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -22,7 +22,7 @@
                 <editor role="TEImarkupEditor" ref="contributors.xml#person-253">Michael Engle</editor>
             </titleStmt>
             <editionStmt>
-                <edition>v 1.24.15 <date>2022</date>
+                <edition>v 1.24.16 <date>2022</date>
                 </edition>
             </editionStmt>
             <publicationStmt status="1">
@@ -32,9 +32,9 @@
                 <availability>
                     <licence>
                         <graphic url="http://i.creativecommons.org/l/by-nc-nd/2.0/88x31.png"/>
-                        <p>This work is provided under the protection of a Creative Commons CC BY-NC-ND (Attribution - Non-commercial -
+                        <tei:p>This work is provided under the protection of a Creative Commons CC BY-NC-ND (Attribution - Non-commercial -
                             No-derivatives) 3.0 copyright. It may be copied or printed for fair use, but only with full attribution, and not for
-                            commercial advantage or personal compensation. For full details, see the Creative Commons license.</p>
+                            commercial advantage or personal compensation. For full details, see the Creative Commons license.</tei:p>
                     </licence>
                 </availability>
                 <idno xml:id="UT22084-054-003"/>
@@ -42,7 +42,7 @@
             </publicationStmt>
             <sourceDesc>
                 <bibl key="toh122" type="text">
-                    <ref>Toh 122</ref>
+                    <tei:ref>Toh 122</tei:ref>
                     <biblScope>Degé Kangyur vol. 54 (mdo sde, tha), folios 153.a–153.b</biblScope>
                     <author role="translatorTib">Unknown</author>
                     <location work="UT4CZ5369" count-pages="2">
@@ -54,7 +54,9 @@
 
             </sourceDesc>
             <notesStmt>
-                <note type="lastUpdated" date-time="2023-03-21T14:14:30.855Z" user="admin">21/03/2023 14:14:30</note>
+                <note type="lastUpdated" date-time="2023-07-27T14:38:16.243Z" user="admin">27/07/2023 14:38:16</note>
+                <note type="updated" update="translation-status" value="1" date-time="2016-12-01T12:00:00.000Z" user="admin">Note added retrospectively based on publication date</note>
+                <note type="updated" update="translation-status" value="1.a" date-time="2016-12-01T12:00:00.000Z" user="admin">Note added retrospectively based on publication date</note>
                 <note type="updated" update="text-version" value="v 1.24" date-time="2019-06-18T16:07:37.289Z" user="celso">v 1.24 2019</note>
                 <note type="updated" update="text-version" value="v 1.24.1" date-time="2019-10-07T10:27:24.685Z" user="admin">Publication statement
                     updated</note>
@@ -80,6 +82,7 @@
     <note type="updated" update="text-version" value="1.24.13" date-time="2023-01-16T16:58:52.361Z" user="celso">Auto (script-increment-version-published)</note>
     <note type="updated" update="text-version" value="1.24.14" date-time="2023-01-18T16:58:06.914Z" user="celso">Auto (remove-tid-from-back-list-items)</note>
     <note type="updated" update="text-version" value="1.24.15" date-time="2023-03-21T14:14:28.045Z" user="celso">Update to glossary entry</note>
+    <note type="updated" update="text-version" value="1.24.16" date-time="2023-07-27T14:38:13.391Z" user="martina-cotter">Added pending links.</note>
 </notesStmt>
         </fileDesc>
     </teiHeader>
@@ -95,26 +98,26 @@
         <front>
             <div type="summary">
                 <head type="summary" tid="29">Summary</head>
-                <milestone unit="chunk" xml:id="UT22084-054-003-1"/>
-                <p tid="1">While the Buddha is residing in the Akaniṣṭha realm, the bodhisattva mahāsattva Ākāśagarbha asks him how to consider the
+                <tei:milestone unit="chunk" xml:id="UT22084-054-003-1"/>
+                <tei:p tid="1">While the Buddha is residing in the Akaniṣṭha realm, the bodhisattva mahāsattva Ākāśagarbha asks him how to consider the
                     mind of a bodhisattva who is about to die. The Buddha replies that when death comes a bodhisattva should develop the wisdom of the
                     hour of death. He explains that a bodhisattva should cultivate a clear understanding of the non-existence of entities, great
                     compassion, non-apprehension, non-attachment, and a clear understanding that, since wisdom is the realization of one’s own mind,
                     the Buddha should not be sought elsewhere. After these points have been repeated in verse form, the assembly praises the Buddha’s
-                    words, concluding the sūtra.</p>
+                    words, concluding the sūtra.</tei:p>
             </div>
             <div type="acknowledgment">
                 <head type="acknowledgment" tid="30">Acknowledgments</head>
-                <milestone unit="chunk" xml:id="UT22084-054-003-2"/>
-                <p tid="2">Translated into English by Tom Tillemans’ class in the University of Vienna’s program of Buddhist Translation Studies in
-                    2014. The introduction was written by Casey Kemp and Tom Tillemans.</p>
-                <p tid="3">This translation has been completed under the patronage and supervision of 84000: Translating the Words of the Buddha.</p>
+                <tei:milestone unit="chunk" xml:id="UT22084-054-003-2"/>
+                <tei:p tid="2">Translated into English by Tom Tillemans’ class in the University of Vienna’s program of Buddhist Translation Studies in
+                    2014. The introduction was written by Casey Kemp and Tom Tillemans.</tei:p>
+                <tei:p tid="3">This translation has been completed under the patronage and supervision of 84000: Translating the Words of the Buddha.</tei:p>
             </div>
             <div type="introduction">
                 <head type="introduction" tid="31">Introduction</head>
                 <div type="section" xml:id="UT22084-054-003-introduction-1">
-                    <milestone unit="chunk" xml:id="UT22084-054-003-3"/>
-                    <p tid="4">This sūtra, brief though it is, addresses central Mahāyāna concepts in relation to practices to be carried out at the
+                    <tei:milestone unit="chunk" xml:id="UT22084-054-003-3"/>
+                    <tei:p tid="4">This sūtra, brief though it is, addresses central Mahāyāna concepts in relation to practices to be carried out at the
                         hour of death. When the Buddha is asked how one is to consider the mind (or mindset) of a bodhisattva who is about to die, he
                         replies by giving pith instructions on the nature of phenomena and the mind, and instructs that a bodhisattva should
                         accordingly engender specific clear understandings. The Buddha points out that all phenomena are pure, subsumed within the
@@ -123,9 +126,9 @@
                         clear understanding of non-apprehension, a clear understanding of non-attachment, and a clear understanding that the Buddha
                         should not be sought elsewhere than in one’s own mind. Although he refers to these instructions as the wisdom of the hour of
                         death, the implication is that these teachings can be cultivated and realized throughout a bodhisattva’s lifetime in order to
-                        prepare for death and attain liberation.</p>
-                    <milestone unit="chunk" xml:id="UT22084-054-003-4"/>
-                    <p tid="5">The Sanskrit title of the sūtra is found transcribed in all Kangyurs as <title xml:lang="Sa-Ltn">Ārya-ātajñāna-nāma­mahā­yāna­sūtra</title>.<note place="end" xml:id="UT22084-054-003-59">In all Kangyurs, both printed
+                        prepare for death and attain liberation.</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-054-003-4"/>
+                    <tei:p tid="5">The Sanskrit title of the sūtra is found transcribed in all Kangyurs as <title xml:lang="Sa-Ltn">Ārya-ātajñāna-nāma­mahā­yāna­sūtra</title>.<note place="end" xml:id="UT22084-054-003-59">In all Kangyurs, both printed
                             and manuscript, the only minor variation being that the initial <emph>a</emph> of <foreign xml:lang="Sa-Ltn">-āta-</foreign> is shortened in the Peking and Yongle Kangyurs. The Tōhoku Catalogue entry for the sūtra (but not the
                             commentaries) also has this title.</note> This transcription, however, appears to have been truncated; as Sanskrit, it is
                         not readily comprehensible, and certainly not equivalent to the Tibetan <foreign xml:lang="Bo-Ltn">’da’ ka ye shes.</foreign>
@@ -135,27 +138,27 @@
                             associated commentaries (though not of the sūtra itself); the catalogue of the Nyingma Edition of the Degé Kangyur
                             published by Dharma Publishing (1977–1983); and Tadeusz Skorupski’s <title xml:lang="en">Catalogue of the Stog Palace
                                 Kanjur</title> (1985).</note>
-                    </p>
-                    <milestone unit="chunk" xml:id="UT22084-054-003-5"/>
-                    <p tid="6">There is no extant Sanskrit text to our knowledge, although it is clear that there was such an original at one time—the
+                    </tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-054-003-5"/>
+                    <tei:p tid="6">There is no extant Sanskrit text to our knowledge, although it is clear that there was such an original at one time—the
                         Tibetan colophon to Śāntideva’s commentary mentions that the Indian abbot Dharmarāja collaborated with Pakpa Sherab (<foreign xml:lang="Bo-Ltn">’phags pa shes rab</foreign>) in the translation of the commentarial text. The sūtra translation
                         preserved in the Kangyur, however, has no colophon with the usual mention of the Tibetan translators and Indian paṇḍits, and
                         was most likely made not from the Sanskrit but from an earlier Chinese translation, as the early 9th century Denkarma
                             (<foreign xml:lang="Bo-Ltn">ldan dkar ma</foreign>) catalogue explicitly includes the <title xml:lang="Sa-Ltn">Atyayajñāna</title> in a list of sūtras translated into Tibetan from Chinese. Its inclusion in the Denkarma allows it to
                         be dated to the first decades of the ninth century at the latest, and possibly earlier if it was indeed known to King Trisong
                         Detsen (see below). The putative Chinese version, however, does not seem to have survived and the sūtra does not seem to
-                        figure in the Chinese canon.</p>
-                    <milestone unit="chunk" xml:id="UT22084-054-003-6"/>
-                    <p tid="7">There are two commentaries on this text written by Indian authors in the Degé Tengyur, one attributed to Śāntideva (c.
+                        figure in the Chinese canon.</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-054-003-6"/>
+                    <tei:p tid="7">There are two commentaries on this text written by Indian authors in the Degé Tengyur, one attributed to Śāntideva (c.
                         eighth century) and the other to Prajñāsamudra (dates unknown).<note place="end" xml:id="UT22084-054-003-62"> See
                             bibliography.</note> There are also six known Tibetan commentaries, four of which were written by seventeenth to
                         nineteenth century Gelukpa (<foreign xml:lang="Bo-Ltn">dge lugs pa</foreign>) scholars, the longest and most detailed being
                         one by the seventh Dalai Lama, Kelsang Gyatso.<note place="end" xml:id="UT22084-054-003-63"> See bibliography for some of
                             these. Also Khomthar Jamlö (2014), vol. 1, p. 4, and vol. 6, pp. 1–2 for comments and a partial list; vol. 4 contains the
                             two Indian commentaries and five of the six known Tibetan ones. See also Jackson (2009), p. 7, n. 17.</note> Our
-                        translation mainly follows the commentary of Prajñāsamudra and, to a lesser degree, that of Choné Drakpa Shedrub (<foreign xml:lang="Bo-Ltn">co ne grags pa bshad sgrub</foreign>, 1675–1748). </p>
-                    <milestone unit="chunk" xml:id="UT22084-054-003-7"/>
-                    <p tid="8">The <title xml:lang="Sa-Ltn">Atyayajñāna</title> is included in lists of sūtras known as the Five Royal Sūtras and Ten
+                        translation mainly follows the commentary of Prajñāsamudra and, to a lesser degree, that of Choné Drakpa Shedrub (<foreign xml:lang="Bo-Ltn">co ne grags pa bshad sgrub</foreign>, 1675–1748). </tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-054-003-7"/>
+                    <tei:p tid="8">The <title xml:lang="Sa-Ltn">Atyayajñāna</title> is included in lists of sūtras known as the Five Royal Sūtras and Ten
                         Royal Sūtras, two sets of profound, relatively short, and pithy works<note place="end" xml:id="UT22084-054-003-64"> See
                             Khomthar Jamlö (2014), vol. 1 pp. 2–3, and Jackson (2009), p. 3. Lists of both sets can also be found in <title xml:lang="Bo-Ltn">bod rgya tshig mdzod chen mo </title>(ed. Zhang Yisun) and <title xml:lang="Bo-Ltn">dung dkar tshig
                                 mdzod chen mo</title>, s.v. <title xml:lang="Bo-Ltn">rgyal po mdo lnga </title>and <title xml:lang="Bo-Ltn">rgyal po
@@ -176,9 +179,9 @@
                             term <foreign xml:lang="Bo-Ltn" type="term">’bum [chen] sde lnga</foreign>—although it does not seem to have been
                             particularly widespread—was used at least as early as the tenth century.</note> From this viewpoint, the <title xml:lang="Sa-Ltn">Atyayajñāna</title> represents the essence of the <title xml:lang="Sa-Ltn">Mahā­pari­nirvāṇa­sūtra</title> (Toh 119–120). Yet another, more prosaic explanation sometimes found for the epithet
                         “royal” being applied to these works is simply that each of them, compared to other works on similar themes, is of paramount
-                        importance. </p>
-                    <milestone unit="chunk" xml:id="UT22084-054-003-8"/>
-                    <p tid="9">The <title xml:lang="Sa-Ltn">Atyayajñāna</title> is considered particularly important in several Tibetan Buddhist
+                        importance. </tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-054-003-8"/>
+                    <tei:p tid="9">The <title xml:lang="Sa-Ltn">Atyayajñāna</title> is considered particularly important in several Tibetan Buddhist
                         traditions, including Dzogchen (<foreign xml:lang="Bo-Ltn" type="term">rdzogs chen</foreign>) and Mahāmudrā. Roger Jackson
                         points out that it seems to be the only sūtra from the Kangyur that is included in indigenous Tibetan lists of Indian
                         canonical texts on Mahāmudrā. As a search of the Buddhist Digital Resource Center (www.tbrc.org) data reveals, the <title xml:lang="Sa-Ltn">Atyayajñāna</title> is quoted by well-known Tibetan authors of all schools—including Gampopa (<foreign xml:lang="Bo-Ltn">sgam po pa</foreign>, 1079–1153), Sakya Paṇḍita (<foreign xml:lang="Bo-Ltn">sa skya paN+Di ta</foreign>,
@@ -186,20 +189,20 @@
                             (<foreign xml:lang="Bo-Ltn">klong chen rab ’byams pa</foreign>, 1308–1364), Shākya Chogden (<foreign xml:lang="Bo-Ltn">shAkya mchog ldan</foreign>, 1428–1507), Drukpa Padma Karpo (<foreign xml:lang="Bo-Ltn">’brug pa pad+ma dkar
                         po</foreign>, 1527–1592), Tāranātha (<foreign xml:lang="Bo-Ltn">tA ra nA tha</foreign>, 1575–1634), and the Fifth Dalai Lama,
                         Ngawang Lobzang Gyatso (<foreign xml:lang="Bo-Ltn">ngag dbang blo bzang rgya mtsho</foreign>, 1617–1682). The most frequent
-                        excerpt quoted is from the final verses on the mind (1.14):</p>
+                        excerpt quoted is from the final verses on the mind (1.14):</tei:p>
                     <q>
                         <lg tid="10">
                             <l>Since the mind is the cause for the arising of wisdom,</l>
                             <l>Do not look for the Buddha elsewhere.</l>
                         </lg>
                     </q>
-                    <milestone unit="chunk" xml:id="UT22084-054-003-9"/>
-                    <p tid="11">Unsurprisingly, this brief yet well-known sūtra has been translated into English a number of times. Several
+                    <tei:milestone unit="chunk" xml:id="UT22084-054-003-9"/>
+                    <tei:p tid="11">Unsurprisingly, this brief yet well-known sūtra has been translated into English a number of times. Several
                         translations can be found on the internet, including translations by Ruth Sonam and at least one anonymous version. Published
                         translations include those by Roger Jackson (2009), Sherab Raldri (2010), Tony Duff (2011), and Erick Tsiknopoulos (2019). A
                         translation of the sūtra together with translations of Prajñāsamudra’s and Śāntideva’s commentaries has been published online
                         by Lhasey Lotsawa Translations (2015). We hope that our translation will contribute to readers’ appreciation of this
-                        remarkable and justly celebrated work.</p>
+                        remarkable and justly celebrated work.</tei:p>
                 </div>
             </div>
         </front>
@@ -209,26 +212,26 @@
                 <head type="titleHon" tid="33">The Noble Mahāyāna Sūtra on</head>
                 <head type="titleMain" tid="34">Wisdom at the Hour of Death</head>
                 <div type="section" xml:id="UT22084-054-003-section-1">
-                    <milestone unit="chunk" xml:id="UT22084-054-003-10"/>
-                    <p tid="12">
-                        <ref cRef="F.153.a" type="folio" xml:id="UT22084-054-003-72"/> Homage to all buddhas and bodhisattvas! </p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-054-003-10"/>
+                    <tei:p tid="12">
+                        <tei:ref cRef="F.153.a" type="folio" xml:id="UT22084-054-003-72"/> Homage to all buddhas and bodhisattvas! </tei:p>
                     <lb/>
-                    <milestone unit="chunk" xml:id="UT22084-054-003-11"/>
-                    <p tid="13">Thus did I hear at one time. While the Blessed One was residing in the palace of the king of the gods in the Akaniṣṭha
+                    <tei:milestone unit="chunk" xml:id="UT22084-054-003-11"/>
+                    <tei:p tid="13">Thus did I hear at one time. While the Blessed One was residing in the palace of the king of the gods in the Akaniṣṭha
                             realm,<note place="end" xml:id="UT22084-054-003-67">This appears to be the only Kangyur sūtra to be set in Akaniṣṭha
                             (although a number of tantras are, too). As well as referring to the highest level of the Realm of Form, Akaniṣṭha here,
                             according to the Indian and Tibetan commentaries, is also to be equated with the Ghana­vyūha (<foreign xml:lang="Bo-Ltn">stug po bkod pa</foreign>) buddhafield and indicates that the Buddha is present here in his saṃbhoga­kāya form,
-                            perceptible only to bodhisattvas on the highest levels.</note> he taught the Dharma to the entire assembly. </p>
-                    <milestone unit="chunk" xml:id="UT22084-054-003-12"/>
-                    <p tid="14">The bodhisattva mahāsattva Ākāśagarbha then paid homage to the Blessed One and asked, “Blessed One, how should we
-                        think about the mind of a bodhisattva who is about to die?”</p>
-                    <milestone unit="chunk" xml:id="UT22084-054-003-13"/>
-                    <p tid="15">The Blessed One replied, “Ākāśagarbha, when a bodhisattva is about to die, he should cultivate the wisdom of the hour
-                        of death. The wisdom of the hour of death is as follows: </p>
-                    <milestone unit="chunk" xml:id="UT22084-054-003-14"/>
-                    <p tid="16">“All phenomena are naturally pure. So, one should cultivate the clear understanding that there are no entities. </p>
-                    <milestone unit="chunk" xml:id="UT22084-054-003-15"/>
-                    <p tid="17">“All phenomena are subsumed within the mind of enlightenment. So, one should cultivate the clear understanding of
+                            perceptible only to bodhisattvas on the highest levels.</note> he taught the Dharma to the entire assembly. </tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-054-003-12"/>
+                    <tei:p tid="14">The bodhisattva mahāsattva Ākāśagarbha then paid homage to the Blessed One and asked, “Blessed One, how should we
+                        think about the mind of a bodhisattva who is about to die?”</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-054-003-13"/>
+                    <tei:p tid="15">The Blessed One replied, “Ākāśagarbha, when a bodhisattva is about to die, he should cultivate the wisdom of the hour
+                        of death. The wisdom of the hour of death is as follows: </tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-054-003-14"/>
+                    <tei:p tid="16">“All phenomena are naturally pure. So, one should cultivate the clear understanding that there are no entities. </tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-054-003-15"/>
+                    <tei:p tid="17">“All phenomena are subsumed within the mind of enlightenment. So, one should cultivate the clear understanding of
                         great compassion.<note place="end" xml:id="UT22084-054-003-68"><!-- KB --> Prajñāsamudra’s commentary here explains that all
                             phenomena of saṃsāra and nirvāṇa indeed have no true “outer” existence but are one’s own very mind of enlightenment, and
                             that “great compassion” means applying all three levels of compassion, namely, (1) compassion that perceives sentient
@@ -236,24 +239,24 @@
                             that perceives phenomena (<foreign xml:lang="Bo-Ltn">chos la dmigs pa’i snying rje</foreign>) regarding the impermanent,
                             suffering, empty, and selfless nature of all phenomena; and (3) compassion that does not apprehend anything (<foreign xml:lang="Bo-Ltn">dmigs pa med pa’i snying rje</foreign>), and thus cultivating emptiness. The three together include
                             all of the Buddha’s teaching. </note>
-                    </p>
-                    <milestone unit="chunk" xml:id="UT22084-054-003-16"/>
-                    <p tid="18">“All phenomena are naturally luminous. So, one should cultivate the clear understanding of non-apprehension.</p>
-                    <milestone unit="chunk" xml:id="UT22084-054-003-17"/>
-                    <p tid="19">“All entities are impermanent. So, one should cultivate the clear understanding of non-attachment to anything
-                        whatsoever.</p>
-                    <milestone unit="chunk" xml:id="UT22084-054-003-18"/>
-                    <p tid="20">“When one realizes mind, this is wisdom. So, one should cultivate the clear understanding of not seeking the Buddha
-                        elsewhere.” </p>
+                    </tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-054-003-16"/>
+                    <tei:p tid="18">“All phenomena are naturally luminous. So, one should cultivate the clear understanding of non-apprehension.</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-054-003-17"/>
+                    <tei:p tid="19">“All entities are impermanent. So, one should cultivate the clear understanding of non-attachment to anything
+                        whatsoever.</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-054-003-18"/>
+                    <tei:p tid="20">“When one realizes mind, this is wisdom. So, one should cultivate the clear understanding of not seeking the Buddha
+                        elsewhere.” </tei:p>
                     <lb/>
-                    <p tid="21">The Blessed One then spoke the following verses:</p>
+                    <tei:p tid="21">The Blessed One then spoke the following verses:</tei:p>
                     <lb/>
-                    <milestone unit="chunk" xml:id="UT22084-054-003-19"/>
+                    <tei:milestone unit="chunk" xml:id="UT22084-054-003-19"/>
                     <lg tid="22">
                         <l>“Since all phenomena are naturally pure,</l>
                         <l>One should cultivate the clear understanding that there are no entities.</l>
                     </lg>
-                    <milestone unit="chunk" xml:id="UT22084-054-003-20"/>
+                    <tei:milestone unit="chunk" xml:id="UT22084-054-003-20"/>
                     <lg tid="23">
                         <l>“Since all phenomena<note place="end" xml:id="UT22084-054-003-69"> Although the subject “all phenomena” is omitted in this
                                 verse, it is implicit, as can be seen in the parallel construction in the preceding and following verses, each
@@ -270,26 +273,26 @@
                                     mchog yin no</foreign>.</note>
                         </l>
                     </lg>
-                    <milestone unit="chunk" xml:id="UT22084-054-003-21"/>
+                    <tei:milestone unit="chunk" xml:id="UT22084-054-003-21"/>
                     <lg tid="24">
                         <l>“Since all phenomena are naturally luminous,</l>
                         <l>One should cultivate the clear understanding of non-apprehension.</l>
                     </lg>
-                    <milestone unit="chunk" xml:id="UT22084-054-003-22"/>
+                    <tei:milestone unit="chunk" xml:id="UT22084-054-003-22"/>
                     <lg tid="25">
                         <l>“Since all entities are impermanent,</l>
                         <l>One should cultivate the clear understanding of non-attachment.</l>
                     </lg>
-                    <milestone unit="chunk" xml:id="UT22084-054-003-23"/>
+                    <tei:milestone unit="chunk" xml:id="UT22084-054-003-23"/>
                     <lg tid="26">
                         <l>“Since the mind is the cause for the arising of wisdom,</l>
                         <l>Do not look for the Buddha elsewhere.”</l>
                     </lg>
-                    <milestone unit="chunk" xml:id="UT22084-054-003-24"/>
-                    <p tid="27">After the Blessed One had spoken, <ref cRef="F.153.b" type="folio" xml:id="UT22084-054-003-73"/> the whole assembly,
-                        including the bodhisattva Ākāśagarbha and others, were overjoyed and full of praise for the Buddha’s words. </p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-054-003-24"/>
+                    <tei:p tid="27">After the Blessed One had spoken, <tei:ref cRef="F.153.b" type="folio" xml:id="UT22084-054-003-73"/> the whole assembly,
+                        including the bodhisattva Ākāśagarbha and others, were overjoyed and full of praise for the Buddha’s words. </tei:p>
                     <lb/>
-                    <milestone unit="chunk" xml:id="UT22084-054-003-25"/>
+                    <tei:milestone unit="chunk" xml:id="UT22084-054-003-25"/>
                     <trailer tid="28">This concludes the Noble Mahāyāna Sūtra on Wisdom at the Hour of Death. </trailer>
                 </div>
                 <!--<div type="colophon">
@@ -320,13 +323,13 @@
                         <title xml:lang="Bo-Ltn">’dul ba rnam par gtan la dbab pa nye bar ’khor gyis zhus pa</title> (<title xml:lang="Sa-Ltn">Vinaya­viniścayopāli­paripṛcchā</title>). Toh 68, Degé Kangyur vol. 43 (dkon brtsegs, ca), folios 115.a–131.a. English
                         translation in UCSB Buddhist Studies Translation Group (2021, see below). </bibl>
                     <bibl xml:id="UT22084-054-003-30">Prajñāsamudra. <title xml:lang="Bo-Ltn">
-                            <ref rend="pending" target="https://read.84000.co/translation/toh4003.html">’da’ ka ye shes kyi mdo’i rnam par bshad pa</ref>
+                            <tei:ref rend="pending" target="https://read.84000.co/translation/toh4003.html">’da’ ka ye shes kyi mdo’i rnam par bshad pa</tei:ref>
                         </title>. Toh
                         4003, Degé Tengyur, vol. 116 (mdo ’grel, ji), folios 171a–174a. Also in Khomthar Jamlö (2014, see below), vol. 6, pp. 25–32.
                         English translation in Lhasey Lotsawa Translations (2015, see below).</bibl>
                     <bibl xml:id="UT22084-054-003-29">Śāntideva. <title xml:lang="Bo-Ltn">
-                            <ref rend="pending" target="https://read.84000.co/translation/toh4004.html">’da’ ka ye shes zhes bya ba chen po’i mdo’i ’grel
-                            pa</ref>
+                            <tei:ref rend="pending" target="https://read.84000.co/translation/toh4004.html">’da’ ka ye shes zhes bya ba chen po’i mdo’i ’grel
+                            pa</tei:ref>
                         </title>. Toh 4004, Degé Tengyur, vol. 116 (mdo ’grel, ji), folios 174a–178a. Also in Khomthar Jamlö (2014, see
                         below), vol. 6, pp. 33–42. English translation in Lhasey Lotsawa Translations (2015, see below).</bibl>
                     <bibl xml:id="UT22084-054-003-32">Choné Drakpa Shedrub (co ne grags pa bshad sgrub). <title xml:lang="Bo-Ltn">’phags pa ’da’ ka ye
@@ -337,8 +340,8 @@
                             shes zhes bya ba’i theg pa chen po’i mdo’i ’grel kun mkhyen ye shes snang ba’i nyi ma.</title> In his <title xml:lang="Bo-Ltn">Collected Works </title>[bskal bzang rgya mtsho gsung ’bum]. Gangtok: Dodrup Sangye (1975–1983). Vol. 1,
                         pp. 341–406. Also in Khomthar Jamlö (2014, see below), vol. 6, pp. 51–105.</bibl>
                     <bibl xml:id="UT22084-054-003-34">Kawa Peltsek (ska ba dpal brtsegs). <title xml:lang="Bo-Ltn">
-                            <ref rend="pending" target="https://read.84000.co/translation/toh4364.html">pho brang stod thang ldan dkar gyi chos kyi ’gyur ro cog gi
-                                dkar chag</ref>
+                            <tei:ref rend="pending" target="https://read.84000.co/translation/toh4364.html">pho brang stod thang ldan dkar gyi chos kyi ’gyur ro cog gi
+                                dkar chag</tei:ref>
                         </title>. Toh. 4364, Degé Tengyur, vol. 206 (sna tshogs, jo), folios 294b–310a.</bibl>
                     <bibl xml:id="UT22084-054-003-33">Khomthar Jamlö (khoM thar ’jam los), ed. <!--for
                         si khron pod yig dpe rnying bsdu sgrig khang. -->
@@ -347,12 +350,12 @@
                         volumes. Sichuan: si khron mi rigs dpe skrun khang [Sichuan Minorities Publishing House], 2014.</bibl>
                     <bibl xml:id="UT22084-054-003-74">
                         <title xml:lang="Sa-Ltn">
-                            <ref rend="pending" target="https://read.84000.co/translation/toh119.html">Mahā­pari­nirvāṇa­sūtra</ref>
+                            <tei:ref rend="pending" target="https://read.84000.co/translation/toh119.html">Mahā­pari­nirvāṇa­sūtra</tei:ref>
                         </title> (<title xml:lang="Bo-Ltn">yongs su mya ngan las ’das pa chen po’i mdo</title>). Toh 119 Degé Kangyur, vol. 52 (mdo sde, nya), folios 1.b–343.a and
                         vol. 53 (mdo sde, ta), folios 1.b–339.a.</bibl>
                     <bibl xml:id="UT22084-054-003-75">
                         <title xml:lang="Sa-Ltn">
-                            <ref rend="pending" target="https://read.84000.co/translation/toh120.html">Mahā­pari­nirvāṇa­sūtra</ref>
+                            <tei:ref rend="pending" target="https://read.84000.co/translation/toh120.html">Mahā­pari­nirvāṇa­sūtra</tei:ref>
                         </title> (<title xml:lang="Bo-Ltn">yongs su mya ngan las ’das pa chen po’i mdo</title>). Toh 120 Degé Kangyur, vol. 54 (mdo sde, tha), folios 1.b–151.a. </bibl>
 
                     <bibl xml:id="UT22084-054-003-36">Nyangrel Nyima Özer (nyang ral nyi ma ’od zer). <title xml:lang="Bo-Ltn">“Zanglingma”</title>
@@ -382,7 +385,7 @@
                         Tibetan and Buddhist Studies, 2011.</bibl>
                     <bibl xml:id="UT22084-054-003-42">Lhasey Lotsawa Translations, trans. <title xml:lang="en">The Noble Wisdom of the Time of Death
                             Sūtra &amp; Commentaries by Prajñāsamudra and Śāntideva</title>. Kathmandu: Lhasey Lotsawa Translations and Publications,
-                        2015. PDF e-book. <ref target="https://lhaseylotsawa.org/books/the-noble-wisdom-of-the-time-of-death-sutra-and-commentaries">https://lhaseylotsawa.org</ref>. </bibl>
+                        2015. PDF e-book. <tei:ref target="https://lhaseylotsawa.org/books/the-noble-wisdom-of-the-time-of-death-sutra-and-commentaries">https://lhaseylotsawa.org</tei:ref>. </bibl>
                     <bibl xml:id="UT22084-054-003-43">Lopez, Donald S. <title xml:lang="en">The Heart Sūtra Explained: Indian and Tibetan
                             Commentaries</title>. Albany: State University of New York Press, 1988. Reprinted, Delhi: Sri Satguru Publications,
                         1990.</bibl>
@@ -395,7 +398,7 @@
                     <bibl xml:id="UT22084-054-003-46">Tsogyal, Yeshé. <title xml:lang="en">The Lotus-Born: The Life Story of Padmasambhava</title>.
                         Translated by Erik P. Kunsang and Marcia B. Schmidt. Boston: Shambhala, 1993.</bibl>
                     <bibl xml:id="UT22084-054-003-77">UCSB Buddhist Studies Translation Group, trans. <title xml:lang="en">
-                            <ref target="https://read.84000.co/translation/toh68.html">Ascertaining the Vinaya: Upāli’s Questions</ref>
+                            <tei:ref target="https://read.84000.co/translation/toh68.html">Ascertaining the Vinaya: Upāli’s Questions</tei:ref>
                         </title> (<title xml:lang="Sa-Ltn">Vinaya­viniścayopāli­paripṛcchā</title>, Toh 68). 84000: Translating the Words of the
                         Buddha, 2021.</bibl>
                 </div>
@@ -409,11 +412,11 @@
                             <term xml:lang="bo">རྒྱལ་པོ་མདོ་ལྔ།</term>
                             <term xml:lang="Sa-Ltn"/>
                             <term type="definition">(1) <title xml:lang="Sa-Ltn">Bhadra­caryā­praṇidhāna</title> (<title xml:lang="Bo-Ltn">bzang spyod
-                                    smon lam</title>, <ref rend="pending" target="https://read.84000.co/translation/toh1095.html">Toh 1095</ref>);
+                                    smon lam</title>, <tei:ref rend="pending" target="https://read.84000.co/translation/toh1095.html">Toh 1095</tei:ref>);
                                 for aspiration (<foreign xml:lang="Bo-Ltn">smon
-                                    lam</foreign>), and described as vast (<foreign xml:lang="Bo-Ltn">rgya chen</foreign>). (2) <title xml:lang="Sa-Ltn">Vajra­vidāraṇā­dhāraṇī</title> (<title xml:lang="Bo-Ltn">rdo rje rnam ’joms</title>, <ref target="https://read.84000.co/translation/toh750.html">Toh 750</ref>); for ablution (<foreign xml:lang="Bo-Ltn">khrus</foreign>). (3) <title xml:lang="Sa-Ltn">Prajñā­pāramitā­hṛdaya</title> (<title xml:lang="Bo-Ltn">shes rab snying po</title>, <ref target="https://read.84000.co/translation/toh21.html">Toh 21</ref> and <ref target="https://read.84000.co/translation/toh531.html">531</ref>); for the view (<foreign xml:lang="Bo-Ltn">lta
+                                    lam</foreign>), and described as vast (<foreign xml:lang="Bo-Ltn">rgya chen</foreign>). (2) <title xml:lang="Sa-Ltn">Vajra­vidāraṇā­dhāraṇī</title> (<title xml:lang="Bo-Ltn">rdo rje rnam ’joms</title>, <tei:ref target="https://read.84000.co/translation/toh750.html">Toh 750</tei:ref>); for ablution (<foreign xml:lang="Bo-Ltn">khrus</foreign>). (3) <title xml:lang="Sa-Ltn">Prajñā­pāramitā­hṛdaya</title> (<title xml:lang="Bo-Ltn">shes rab snying po</title>, <tei:ref target="https://read.84000.co/translation/toh21.html">Toh 21</tei:ref> and <tei:ref target="https://read.84000.co/translation/toh531.html">531</tei:ref>); for the view (<foreign xml:lang="Bo-Ltn">lta
                                     ba</foreign>), and described as profound (<foreign xml:lang="Bo-Ltn">zab mo</foreign>). (4) <title xml:lang="Sa-Ltn">Atyaya­jñāna</title> (’<title xml:lang="Bo-Ltn">da’ ka ye shes</title>, Toh 122); for
-                                cultivation (<foreign xml:lang="Bo-Ltn">sgom pa</foreign>) and described as of definitive meaning (<title xml:lang="Bo-Ltn">nges don</title>). (5) <title xml:lang="Bo-Ltn">bya ba ltung bshags</title> (part of <title xml:lang="Sa-Ltn">Vinaya­viniścayopāli­paripṛcchā</title>, <ref target="https://read.84000.co/translation/toh68.html#UT22084-043-005-94">Toh 68</ref>); for purification of karmic obscurations (<foreign xml:lang="Bo-Ltn">las sgrib dag
+                                cultivation (<foreign xml:lang="Bo-Ltn">sgom pa</foreign>) and described as of definitive meaning (<title xml:lang="Bo-Ltn">nges don</title>). (5) <title xml:lang="Bo-Ltn">bya ba ltung bshags</title> (part of <title xml:lang="Sa-Ltn">Vinaya­viniścayopāli­paripṛcchā</title>, <tei:ref target="https://read.84000.co/translation/toh68.html#UT22084-043-005-94">Toh 68</tei:ref>); for purification of karmic obscurations (<foreign xml:lang="Bo-Ltn">las sgrib dag
                                     pa</foreign>). </term>
                             <!--See UCSB Buddhist Studies Translation Group, trans. <title xml:lang="en">Ascertaining the Vinaya: Upāli’s Questions</title>-->
                         </gloss>
@@ -425,11 +428,11 @@
                             <term xml:lang="bo">རྒྱལ་པོ་མདོ་བཅུ།</term>
                             <term xml:lang="Sa-Ltn"/>
                             <term type="definition">In addition to the Five Royal Sūtras: (6) <title xml:lang="Sa-Ltn">Aparimitāyur­jñāna</title>
-                                    (<title xml:lang="Bo-Ltn">tshe dang ye shes dpag tu med pa’i mdo</title>, <ref target="https://read.84000.co/translation/toh674.html">Toh 674</ref>); for extending longevity (<foreign xml:lang="Bo-Ltn">tshe bsring</foreign>). (7) <title xml:lang="Bo-Ltn">gos sngon can gyi gzungs</title>, perhaps
-                                    <title xml:lang="Sa-Ltn">Bhagavān­nīlāmbara­dhara­vajrapāṇi­tantra</title> (<ref target="https://read.84000.co/translation/toh498.html">Toh 498</ref>) but possibly another of the several texts on
-                                this form of Vajrapāṇi; for protection (<foreign xml:lang="Bo-Ltn">srung ba</foreign>). (8) <title xml:lang="Sa-Ltn">Uṣṇīṣa­sitāta­patrā</title> (<title xml:lang="Bo-Ltn">gtsug tor gdugs dkar</title>, <ref rend="pending" target="https://read.84000.co/translation/toh590.html">Toh 590</ref>, <ref rend="pending" target="https://read.84000.co/translation/toh591.html">591</ref>, and <ref rend="pending" target="https://read.84000.co/translation/toh592.html">592</ref>); for averting (<foreign xml:lang="Bo-Ltn">zlog
+                                    (<title xml:lang="Bo-Ltn">tshe dang ye shes dpag tu med pa’i mdo</title>, <tei:ref target="https://read.84000.co/translation/toh674.html">Toh 674</tei:ref>); for extending longevity (<foreign xml:lang="Bo-Ltn">tshe bsring</foreign>). (7) <title xml:lang="Bo-Ltn">gos sngon can gyi gzungs</title>, perhaps
+                                    <title xml:lang="Sa-Ltn">Bhagavān­nīlāmbara­dhara­vajrapāṇi­tantra</title> (<tei:ref target="https://read.84000.co/translation/toh498.html">Toh 498</tei:ref>) but possibly another of the several texts on
+                                this form of Vajrapāṇi; for protection (<foreign xml:lang="Bo-Ltn">srung ba</foreign>). (8) <title xml:lang="Sa-Ltn">Uṣṇīṣa­sitāta­patrā</title> (<title xml:lang="Bo-Ltn">gtsug tor gdugs dkar</title>, <tei:ref target="https://read.84000.co/translation/toh590.html">Toh 590</tei:ref>, <tei:ref rend="pending" target="https://read.84000.co/translation/toh591.html">591</tei:ref>, and <tei:ref rend="pending" target="https://read.84000.co/translation/toh592.html">592</tei:ref>); for averting (<foreign xml:lang="Bo-Ltn">zlog
                                     pa</foreign>). (9) <title xml:lang="Sa-Ltn">Vasu­dhāra</title> (<title xml:lang="Bo-Ltn">nor rgyun ma</title>,
-                                    <ref rend="pending" target="https://read.84000.co/translation/toh663.html">Toh 663</ref> and <ref rend="pending" target="https://read.84000.co/translation/toh664.html">664</ref>); for increasing resources (<foreign xml:lang="Bo-Ltn">longs spyod spel ba</foreign>). (10) <title xml:lang="Sa-Ltn">Ekākṣarīmātā­prajñā­pāramitā</title> (<title xml:lang="Bo-Ltn">sher phyin yi ge gcig ma</title>, <ref rend="pending" target="https://read.84000.co/translation/toh23.html">Toh 23</ref>); for the essence (<foreign xml:lang="Bo-Ltn">snying po</foreign>).</term>
+                                    <tei:ref rend="pending" target="https://read.84000.co/translation/toh663.html">Toh 663</tei:ref> and <tei:ref rend="pending" target="https://read.84000.co/translation/toh664.html">664</tei:ref>); for increasing resources (<foreign xml:lang="Bo-Ltn">longs spyod spel ba</foreign>). (10) <title xml:lang="Sa-Ltn">Ekākṣarīmātā­prajñā­pāramitā</title> (<title xml:lang="Bo-Ltn">sher phyin yi ge gcig ma</title>, <tei:ref rend="pending" target="https://read.84000.co/translation/toh23.html">Toh 23</tei:ref>); for the essence (<foreign xml:lang="Bo-Ltn">snying po</foreign>).</term>
                         </gloss>
                     </item>
                     <item>
@@ -440,10 +443,10 @@
                             <term xml:lang="Bo-Ltn">’bum chen sde lnga </term>
                             <term xml:lang="bo">འབུམ་ཆེན་སྡེ་ལྔ།</term>
                             <term xml:lang="Sa-Ltn"/>
-                            <term type="definition">(1) The long <title xml:lang="Sa-Ltn">Prajñā­pāramitā</title> (<ref rend="pending" target="https://read.84000.co/translation/toh8-1.html">Toh 8</ref>), which contains 100,000 ślokas; (2) the <title xml:lang="Sa-Ltn">Mahā­pari­nirvāṇa</title> (<ref rend="pending" target="https://read.84000.co/translation/toh119.html">Toh 119</ref>–<ref rend="pending" target="https://read.84000.co/translation/toh120.html">120</ref>), which contains 100,000 testaments given by the
-                                Buddha at the time of his <foreign xml:lang="Sa-Ltn">pari­nirvāṇa</foreign>; (3) the <title xml:lang="Sa-Ltn">Ratna­kūṭa</title> (<ref target="https://read.84000.co/section/O1JC114941JC14667.html">Toh 45–93</ref>), which
-                                contains 100,000 distinct names of the Buddha; (4) the <title xml:lang="Sa-Ltn">Avataṃsaka</title> (<ref target="https://read.84000.co/section/O1JC114941JC14666.html">Toh 44</ref>), which contains 100,000 aspirations;
-                                and (5) the <title xml:lang="Sa-Ltn">Laṅkāvatāra</title> (<ref rend="pending" target="https://read.84000.co/translation/toh107.html">Toh 107</ref>-<ref rend="pending" target="https://read.84000.co/translation/toh108.html">108</ref>), which contains 100,000 discourses that are ways
+                            <term type="definition">(1) The long <title xml:lang="Sa-Ltn">Prajñā­pāramitā</title> (<tei:ref rend="pending" target="https://read.84000.co/translation/toh8-1.html">Toh 8</tei:ref>), which contains 100,000 ślokas; (2) the <title xml:lang="Sa-Ltn">Mahā­pari­nirvāṇa</title> (<tei:ref rend="pending" target="https://read.84000.co/translation/toh119.html">Toh 119</tei:ref>–<tei:ref rend="pending" target="https://read.84000.co/translation/toh120.html">120</tei:ref>), which contains 100,000 testaments given by the
+                                Buddha at the time of his <foreign xml:lang="Sa-Ltn">pari­nirvāṇa</foreign>; (3) the <title xml:lang="Sa-Ltn">Ratna­kūṭa</title> (<tei:ref target="https://read.84000.co/section/O1JC114941JC14667.html">Toh 45–93</tei:ref>), which
+                                contains 100,000 distinct names of the Buddha; (4) the <title xml:lang="Sa-Ltn">Avataṃsaka</title> (<tei:ref target="https://read.84000.co/section/O1JC114941JC14666.html">Toh 44</tei:ref>), which contains 100,000 aspirations;
+                                and (5) the <title xml:lang="Sa-Ltn">Laṅkāvatāra</title> (<tei:ref rend="pending" target="https://read.84000.co/translation/toh107.html">Toh 107</tei:ref>-<tei:ref rend="pending" target="https://read.84000.co/translation/toh108.html">108</tei:ref>), which contains 100,000 discourses that are ways
                                 of subjugating the rākṣasas. These five sets of 100,000 features are also said to correspond to the Buddha’s body,
                                 speech, mind, qualities, and activities, respectively.</term>
                         </gloss>
@@ -543,4 +546,4 @@
 
 
 
-</TEI>
+</tei:TEI>
