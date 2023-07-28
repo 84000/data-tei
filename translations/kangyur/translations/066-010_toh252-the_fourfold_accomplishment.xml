@@ -25,7 +25,7 @@
                 <editor role="finalReviewer" ref="contributors.xml#person-250">Rory Lindsay, Dr.</editor>
             </titleStmt>
             <editionStmt>
-                <edition>v 1.1.7 <date>2022</date>
+                <edition>v 1.1.8 <date>2022</date>
                 </edition>
             </editionStmt>
             <publicationStmt status="1">
@@ -57,7 +57,7 @@
                 </bibl>
             </sourceDesc>
             <notesStmt>
-                <note type="lastUpdated" date-time="2023-01-20T19:52:26.625Z" user="celso">20/01/2023 19:52:26</note>
+                <note type="lastUpdated" date-time="2023-07-28T11:50:02.632Z" user="admin">28/07/2023 11:50:02</note>
                 <note type="updated" update="translation-status" value="2.g" date-time="2019-09-15T08:31:34.009Z" user="john">2.g</note>
                 <note type="updated" update="text-version" value="" date-time="2019-09-25T06:27:23.811Z" user="andreas">0.1 2019</note>
                 <note type="updated" update="text-version" value="v 0.1.1" date-time="2019-10-07T10:27:24.685Z" user="admin">Publication statement
@@ -79,6 +79,7 @@
                     (update-contributors)</note>
             
     <note type="updated" update="translation-status" value="1" date-time="2021-01-27T12:55:08.986Z" user="mike">1</note>
+    <note type="updated" update="translation-status" value="1.a" date-time="2021-01-27T12:55:08.986Z" user="admin">Note added retrospectively based on date of status '1'</note>
     <note type="updated" update="text-version" value="1.0.0" date-time="2021-01-27T12:55:08.986Z" user="mike">First published version</note>
     <note type="updated" update="text-version" value="1.0.1" date-time="2021-02-08T19:21:34.198Z" user="celso">fixed invalid pending link (no need to update associated files)</note>
     <note type="updated" update="text-version" value="1.0.2" date-time="2021-06-26T04:02:04.481Z" user="celso">kiṃnara to kinnara</note>
@@ -88,6 +89,7 @@
     <note type="updated" update="text-version" value="1.1.5" date-time="2022-06-14T16:33:35.453Z" user="celso">Corrected a definition in glossary</note>
     <note type="updated" update="text-version" value="1.1.6" date-time="2023-01-16T16:58:52.361Z" user="celso">Auto (script-increment-version-published)</note>
     <note type="updated" update="text-version" value="1.1.7" date-time="2023-01-18T16:58:06.914Z" user="celso">Auto (remove-tid-from-back-list-items)</note>
+    <note type="updated" update="text-version" value="1.1.8" date-time="2023-07-28T11:49:59.744Z" user="martina-cotter">Updated "Blissful One" to "Well-Gone One"</note>
 </notesStmt>
         </fileDesc>
     </teiHeader>
@@ -443,7 +445,7 @@
                     </lg>
                     <milestone unit="chunk" xml:id="UT22084-066-010-87"/>
                     <lg tid="87">
-                        <l>“Blissful one, supreme benefactor of the earth and the god realms</l>
+                        <l>“Well-Gone One, supreme benefactor of the earth and the god realms</l>
                         <l>Who brings joy and happiness, whose qualities are limitless,</l>
                         <l>Whose clear speech perfectly teaches in a way that is appropriate and relevant—</l>
                         <l>Please make us understand the reason that you smile.</l>
@@ -727,8 +729,8 @@
                             <term xml:lang="Bo-Ltn">lha ma yin </term>
                             <term xml:lang="bo">ལྷ་མ་ཡིན།</term>
                             <term xml:lang="Sa-Ltn">asura</term>
-                            <term type="definition">The traditional adversaries of the devas (gods) who are frequently portrayed in brahmanical
-                                mythology as having a disruptive effect on cosmological and social harmony.</term>
+                            <!--<term type="definition">The traditional adversaries of the devas (gods) who are frequently portrayed in brahmanical
+                                mythology as having a disruptive effect on cosmological and social harmony.</term>-->
                         </gloss>
                     </item>
                     <item>
@@ -752,11 +754,11 @@
                         </gloss>
                     </item>
                     <item>
-                        <gloss type="term" xml:id="UT22084-066-010-134">
+                        <gloss xml:id="UT22084-066-010-134" type="term" mode="match">
                             <term>garuḍa</term>
-                            <term xml:lang="Bo-Ltn">nam mkha’ lding </term>
-                            <term xml:lang="bo">ནམ་མཁའ་ལྡིང་།</term>
-                            <term xml:lang="Sa-Ltn">garuḍa</term>
+                            <term xml:lang="Bo-Ltn" type="sourceAttested">nam mkha’ lding</term>
+                            <term xml:lang="bo" type="sourceAttested">ནམ་མཁའ་ལྡིང་།</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified">garuḍa</term>
                             <term type="definition">A class of divine creatures with the bodies of giant birds.</term>
                         </gloss>
                     </item>
@@ -771,21 +773,20 @@
                         </gloss>
                     </item>
                     <item>
-                        <gloss type="term" xml:id="UT22084-066-010-136">
+                        <gloss xml:id="UT22084-066-010-136" type="term" mode="match">
                             <term>kinnara</term>
-                            <term xml:lang="Bo-Ltn">mi ’am ci </term>
-                            <term xml:lang="bo">མི་འམ་ཅི།</term>
-                            <term xml:lang="Sa-Ltn">kinnara</term>
-                            <term type="definition">A class of semidivine beings that resemble humans to the degree that their very name—which means
-                                “Is that a man?”—suggests some confusion as to their divine status.</term>
+                            <term xml:lang="Bo-Ltn" type="sourceAttested">mi ’am ci</term>
+                            <term xml:lang="bo" type="sourceAttested">མི་འམ་ཅི།</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified">kinnara</term>
+                            <term type="definition">A class of semidivine beings that resemble humans to the degree that their very name—which means “Is that a man?”—suggests some confusion as to their divine status.</term>
                         </gloss>
                     </item>
                     <item>
-                        <gloss type="term" xml:id="UT22084-066-010-137">
+                        <gloss xml:id="UT22084-066-010-137" type="term" mode="match">
                             <term>mahoraga</term>
-                            <term xml:lang="Bo-Ltn">lto ’phye chen po </term>
-                            <term xml:lang="bo">ལྟོ་འཕྱེ་ཆེན་པོ།</term>
-                            <term xml:lang="Sa-Ltn">mahoraga</term>
+                            <term xml:lang="Bo-Ltn" type="sourceAttested">lto ’phye chen po</term>
+                            <term xml:lang="bo" type="sourceAttested">ལྟོ་འཕྱེ་ཆེན་པོ།</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified">mahoraga</term>
                             <term type="definition">Demons shaped like enormous serpents.</term>
                         </gloss>
                     </item>
@@ -853,21 +854,20 @@
                         </gloss>
                     </item>
                     <item>
-                        <gloss type="term" xml:id="UT22084-066-010-144">
+                        <gloss xml:id="UT22084-066-010-144" type="term" mode="match">
                             <term>yakṣa</term>
-                            <term xml:lang="Bo-Ltn">gnod sbyin </term>
-                            <term xml:lang="bo">གནོད་སྦྱིན།</term>
-                            <term xml:lang="Sa-Ltn">yakṣa</term>
-                            <term type="definition">A class of semidivine beings said to dwell in the north, under the jurisdiction of the Great King
-                                Vaiśravaṇa, otherwise known as Kubera.</term>
+                            <term xml:lang="Bo-Ltn" type="sourceAttested">gnod sbyin</term>
+                            <term xml:lang="bo" type="sourceAttested">གནོད་སྦྱིན།</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified">yakṣa</term>
+                            <term type="definition">A class of semidivine beings said to dwell in the north, under the jurisdiction of the Great King Vaiśravaṇa, otherwise known as Kubera.</term>
                         </gloss>
                     </item>
                     <item>
-                        <gloss type="term" xml:id="UT22084-066-010-165">
+                        <gloss xml:id="UT22084-066-010-165" type="term" mode="match">
                             <term>god</term>
-                            <term xml:lang="Bo-Ltn">lha</term>
-                            <term xml:lang="bo">ལྷ།</term>
-                            <term xml:lang="Sa-Ltn">deva</term>
+                            <term xml:lang="Bo-Ltn" type="sourceAttested">lha</term>
+                            <term xml:lang="bo" type="sourceAttested">ལྷ།</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified">deva</term>
                             <term type="definition">One of the six classes of sentient beings. According to Buddhist cosmology, the <term type="ignore">gods</term> are said to exist in many levels of celestial or divine realms.</term>
                         </gloss>
                     </item>
@@ -904,14 +904,12 @@
                         </gloss>
                     </item>
                     <item>
-                        <gloss type="term" xml:id="UT22084-066-010-170">
+                        <gloss xml:id="UT22084-066-010-170" type="term" mode="match">
                             <term>thus-gone one</term>
-                            <term xml:lang="Bo-Ltn">de bzhin gshegs pa</term>
-                            <term xml:lang="bo">དེ་བཞིན་གཤེགས་པ།</term>
-                            <term xml:lang="Sa-Ltn">tathāgata</term>
-                            <term type="definition">A frequently used synonym for a buddha. The expression is interpreted in different ways, but in
-                                general it implies one who has arrived at the realization of the ultimate state. Here used as a specific epithet of
-                                the Buddha Śākyamuni.</term>
+                            <term xml:lang="Bo-Ltn" type="sourceAttested">de bzhin gshegs pa</term>
+                            <term xml:lang="bo" type="sourceAttested">དེ་བཞིན་གཤེགས་པ།</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified">tathāgata</term>
+                            <term type="definition">A frequently used synonym for a buddha. The expression is interpreted in different ways, but in general it implies one who has arrived at the realization of the ultimate state. Here used as a specific epithet of the Buddha Śākyamuni.</term>
                         </gloss>
                     </item>
                     <item>
@@ -1023,14 +1021,12 @@
                         </gloss>
                     </item>
                     <item>
-                        <gloss type="term" xml:id="UT22084-066-010-182">
+                        <gloss xml:id="UT22084-066-010-182" type="term" mode="match">
                             <term>universal emperor</term>
-                            <term xml:lang="Bo-Ltn">’khor los sgyur ba</term>
-                            <term xml:lang="bo">འཁོར་ལོས་སྒྱུར་བ།</term>
-                            <term xml:lang="Sa-Ltn">cakravartin</term>
-                            <term type="definition">A cakravartin is a king who rules over at least one continent, and gains his territory by the
-                                rolling of his magic wheel over the land. Therefore he is called a king with the revolving wheel. This is as the
-                                result of the merit he has accumulated in previous lifetimes.</term>
+                            <term xml:lang="Bo-Ltn" type="sourceAttested">’khor los sgyur ba</term>
+                            <term xml:lang="bo" type="sourceAttested">འཁོར་ལོས་སྒྱུར་བ།</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified">cakravartin</term>
+                            <term type="definition">A cakravartin is a king who rules over at least one continent, and gains his territory by the rolling of his magic wheel over the land. Therefore he is called a king with the revolving wheel. This is as the result of the merit he has accumulated in previous lifetimes.</term>
                         </gloss>
                     </item>
                     <item>
@@ -1125,11 +1121,11 @@
                         </gloss>
                     </item>
                     <item>
-                        <gloss type="person" xml:id="UT22084-066-010-175">
+                        <gloss xml:id="UT22084-066-010-175" type="person" mode="match">
                             <term>Ānanda</term>
-                            <term xml:lang="Bo-Ltn">kun dga’ bo </term>
-                            <term xml:lang="bo">ཀུན་དགའ་བོ།</term>
-                            <term xml:lang="Sa-Ltn">Ānanda</term>
+                            <term xml:lang="Bo-Ltn" type="sourceAttested">kun dga’ bo</term>
+                            <term xml:lang="bo" type="sourceAttested">ཀུན་དགའ་བོ།</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified">ānanda</term>
                             <term type="definition">The Buddha’s cousin and principal attendant.</term>
                         </gloss>
                     </item>
@@ -1172,22 +1168,21 @@
                         </gloss>
                     </item>
                     <item>
-                        <gloss type="person" xml:id="UT22084-066-010-151">
+                        <gloss xml:id="UT22084-066-010-151" type="person" mode="match">
                             <term>Mañjuśrī</term>
-                            <term xml:lang="Bo-Ltn">’jam dpal </term>
-                            <term xml:lang="bo">འཇམ་དཔལ།</term>
-                            <term xml:lang="Sa-Ltn">Mañjuśrī</term>
-                            <term type="definition">The bodhisattva known for his mastery of wisdom. Also rendered here as
-                                Mañjuśrī­kumāra­bhūta.</term>
+                            <term xml:lang="Bo-Ltn" type="sourceAttested">’jam dpal</term>
+                            <term xml:lang="bo" type="sourceAttested">འཇམ་དཔལ།</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified">mañjuśrī</term>
+                            <term type="definition">Also rendered here as Mañjuśrī­kumāra­bhūta.</term>
                         </gloss>
                     </item>
                     <item>
-                        <gloss type="person" xml:id="UT22084-066-010-152">
+                        <gloss xml:id="UT22084-066-010-152" type="person" mode="match">
                             <term>Mañjuśrī­kumāra­bhūta</term>
-                            <term xml:lang="Bo-Ltn">’jam dpal gzhon nur gyur pa </term>
-                            <term xml:lang="bo">འཇམ་དཔལ་གཞོན་ནུར་གྱུར་པ།</term>
-                            <term xml:lang="Sa-Ltn">Mañjuśrī­kumāra­bhūta</term>
-                            <term type="definition">The bodhisattva known for his mastery of wisdom. Also rendered here simply as Mañjuśrī.</term>
+                            <term xml:lang="Bo-Ltn" type="sourceAttested">’jam dpal gzhon nur gyur pa</term>
+                            <term xml:lang="bo" type="sourceAttested">འཇམ་དཔལ་གཞོན་ནུར་གྱུར་པ།</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified">mañjuśrī­kumāra­bhūta</term>
+                            <term type="definition">See “Mañjuśrī.”</term>
                         </gloss>
                     </item>
                     <item>
@@ -1248,11 +1243,11 @@
                         </gloss>
                     </item>
                     <item>
-                        <gloss type="place" xml:id="UT22084-066-010-158">
+                        <gloss xml:id="UT22084-066-010-158" type="place" mode="match">
                             <term>Ganges</term>
-                            <term xml:lang="Bo-Ltn">gang gA </term>
-                            <term xml:lang="bo">གང་གཱ།</term>
-                            <term xml:lang="Sa-Ltn">gaṅgā</term>
+                            <term xml:lang="Bo-Ltn" type="sourceAttested">gang gA</term>
+                            <term xml:lang="bo" type="sourceAttested">གང་གཱ།</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified">gaṅgā</term>
                             <term type="definition">The sacred river of North India.</term>
                         </gloss>
                     </item>
