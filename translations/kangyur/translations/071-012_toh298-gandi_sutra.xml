@@ -1,0 +1,878 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schema/current/translation.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="mainTitle" xml:lang="Bo-Ltn">gaN DI’i mdo</title>
+                <title type="mainTitle" xml:lang="bo">གཎ་ཌཱིའི་མདོ།</title>
+                <title type="mainTitle" xml:lang="en">The Gaṇḍī Sūtra</title>
+                <title type="mainTitle" xml:lang="Sa-Ltn">Gaṇḍīsūtra</title>
+                <title type="longTitle" xml:lang="bo"/>
+                <title type="longTitle" xml:lang="Bo-Ltn"/>
+                <title type="longTitle" xml:lang="en"/>
+                <title type="longTitle" xml:lang="Sa-Ltn"/>
+                <title type="otherTitle" xml:lang="zh"/>
+                <author role="translatorMain" ref="contributors.xml#team-2">Translated by Annie
+                    Bien<lb/>under the patronage and supervision of 84000: Translating the Words of
+                    the Buddha</author>
+                <author role="translatorEng" ref="contributors.xml#person-5">Annie Bien</author>
+                <editor role="copyEditor" ref="contributors.xml#person-272">Yeshe Hegan</editor>
+                <editor role="finalReviewer" ref="contributors.xml#person-141">Charles Hastings</editor>
+                <editor role="projectEditor" ref="contributors.xml#person-262">David Higgins</editor>
+                <editor role="associateEditor" ref="contributors.xml#person-74">Ryan Damron</editor>
+                <editor role="TEImarkupEditor" ref="contributors.xml#person-92">Laura Goetz</editor>
+                <editor role="finalReviewer" ref="contributors.xml#person-139">Dr. John Canti</editor>
+                <consultant role="advisor" ref="contributors.xml#person-8">Robert Thurman</consultant>
+                <consultant role="advisor" ref="contributors.xml#person-7">Paul Hackett</consultant>
+                <consultant role="dharmaMaster" ref="contributors.xml#person-6">Geshe Dorji Damdul</consultant>
+                <consultant role="advisor" ref="contributors.xml#person-328">Robert Beer</consultant>
+                <consultant role="projectManager" ref="contributors.xml#person-5">Annie Bien</consultant>
+                <editor role="reviser" ref="contributors.xml#person-11">Leslie Kriesel</editor>
+            </titleStmt>
+            <editionStmt>
+                <edition>v 1.1.15 <date>2021</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt status="1">
+                <publisher>
+                    <name>84000: Translating the Words of the Buddha</name> is a global non-profit
+                    initiative to translate all the Buddha’s words into modern languages, and to
+                    make them available to everyone. </publisher>
+                <availability>
+                    <licence>
+                        <graphic url="http://i.creativecommons.org/l/by-nc-nd/2.0/88x31.png"/>
+                        <p>This work is provided under the protection of a Creative Commons CC
+                            BY-NC-ND (Attribution - Non-commercial - No-derivatives) 3.0 copyright.
+                            It may be copied or printed for fair use, but only with full
+                            attribution, and not for commercial advantage or personal compensation.
+                            For full details, see the Creative Commons license.</p>
+                    </licence>
+                </availability>
+                <idno xml:id="UT22084-071-012"/>
+                <note>An early mistake in the assigning of UT numbers within the 84000 project means
+                    that these ids diverge slightly from the standard logic.</note>
+                <date>2020-04-03</date>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl key="toh298" type="text">
+                    <ref>Toh 298</ref>
+                    <biblScope>Degé Kangyur, vol. 71 (mdo sde, sha), folios 301.b–303.b</biblScope>
+                    <location work="UT4CZ5369" count-pages="5">
+                        <volume number="71" start-page="602" end-page="606"/>
+                    </location>
+                    <idno parent-id="O1JC114941JC14668" work="http://read.84000.co/sections"/>
+                    <idno source-id="O1JC114941JC11964" work="W22084"/>
+                </bibl>
+            </sourceDesc>
+            <notesStmt>
+                <note type="lastUpdated" date-time="2023-07-28T12:32:59.749Z" user="admin">28/07/2023 12:32:59</note>
+
+                <note type="updated" update="text-version" value="v 0.0.1" date-time="2019-12-20T12:56:48.575Z" user="admin">Automated version
+                    increment</note>
+                <note type="updated" update="translation-status" value="2.d" date-time="2020-01-28T06:19:06.847Z" user="mike">2.d</note>
+                <note type="updated" update="translation-status" value="2.g" date-time="2020-03-24T14:11:41.485Z" user="line-tofte">2.g</note>
+                <note type="updated" update="translation-status" value="2.e" date-time="2020-03-26T07:18:58.175Z" user="line-tofte">2.e</note>
+                <note type="updated" update="translation-status" value="2.c" date-time="2020-03-27T09:21:16.297Z" user="line-tofte">2.c</note>
+                <note type="updated" update="translation-status" value="2.a" date-time="2020-03-30T18:34:41.987Z" user="celso">2.a</note>
+            
+<note type="updated" update="text-version" value="v 1.0" date-time="2020-03-31T18:38:20.258Z" user="celso">v 1.0</note>
+<note type="updated" update="translation-status" value="2" date-time="2020-03-31T18:38:20.258Z" user="celso">2</note>
+<note type="updated" update="text-version" value="v 1.0.1" date-time="2020-04-01T16:17:16.85Z" user="celso">final proofing</note>
+<note type="updated" update="text-version" value="v 1.1.1" date-time="2020-04-03T11:56:23.167Z" user="john">Finalized, first published version.</note>
+<note type="updated" update="translation-status" value="1" date-time="2020-04-03T11:56:23.167Z" user="john">Finalized, first published version.</note>
+<note type="updated" update="translation-status" value="1.a" date-time="2020-04-03T11:56:23.167Z" user="admin">Note added retrospectively based on date of status '1'</note>
+<note type="updated" update="text-version" value="v 1.1.2" date-time="2020-04-08T13:59:17.173Z" user="celso">Changed terminology of 2 gloss terms.</note>
+    <note type="updated" update="text-version" value="v 1.1.3" date-time="2020-05-28T13:16:07.823Z" user="laura">Added line to acknowledgement</note>
+    <note type="updated" update="text-version" value="1.1.4" date-time="2020-11-23T13:57:44.998Z" user="admin">Auto (TEI migration 2.0.0)</note>
+    <note type="updated" update="text-version" value="1.1.5" date-time="2020-11-25T15:50:25.161Z" user="celso">Updated pending links</note>
+    <note type="updated" update="text-version" value="1.1.6" date-time="2020-12-10T16:50:52.361Z" user="celso">Moved translation title from titleHon to titleMain</note>
+    <note type="updated" update="text-version" value="1.1.7" date-time="2020-12-11T14:06:50.919Z" user="admin">Auto (TEI migration 2.1.5)</note>
+    <note type="updated" update="text-version" value="1.1.8" date-time="2021-02-16T20:13:34.296Z" user="celso">"abbot" to "preceptor" in colophon and related</note>
+    <note type="updated" update="text-version" value="1.1.9" date-time="2021-04-14T14:19:38.786Z" user="line-tofte">Auto (update-contributors)</note>
+    <note type="updated" update="text-version" value="1.1.10" date-time="2021-04-14T14:20:50.331Z" user="line-tofte">Auto (update-contributors)</note>
+    <note type="updated" update="text-version" value="1.1.11" date-time="2021-04-14T14:25:13.395Z" user="line-tofte">Auto (update-contributors)</note>    <note type="updated" update="text-version" value="1.1.12" date-time="2022-06-27T10:06:48.1Z" user="admin">Auto (script-increment-version-published)</note>    <note type="updated" update="text-version" value="1.1.13" date-time="2023-01-16T16:58:52.361Z" user="celso">Auto (script-increment-version-published)</note>    <note type="updated" update="text-version" value="1.1.14" date-time="2023-01-18T16:58:06.914Z" user="celso">Auto (remove-tid-from-back-list-items)</note>    <note type="updated" update="text-version" value="1.1.15" date-time="2023-07-28T12:32:56.897Z" user="martina-cotter">Updated "Blissful One" to "Well-Gone One"</note>
+            </notesStmt>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <div type="summary">
+                <head type="summary" tid="1">Summary</head>
+                <milestone unit="chunk" xml:id="UT22084-071-012-1"/>
+                <p tid="2">While the Buddha is dwelling in the Bamboo Grove monastery near Rājagṛha,
+                    together with a thousand monks and a host of bodhisattvas, King Prasenajit
+                    arises from his seat, bows at the Buddha’s feet, and asks him how to uphold the
+                    Dharma in his kingdom during times of conflict. In reply the Buddha instructs
+                    the king about the gaṇḍī, a wooden ritual instrument, and tells him how the
+                    sound of this instrument, used for Dharma practice in a temple or monastery,
+                    quells conflict and strife for all who hear it. He describes how to make,
+                    consecrate, and sound the gaṇḍī. He explains that the gaṇḍī symbolizes
+                    the Perfection of Insight and describes in detail the many benefits it
+                    confers.</p>
+            </div>
+            <div type="acknowledgment">
+                <head type="acknowledgment" tid="3">Acknowledgements</head>
+                <milestone unit="chunk" xml:id="UT22084-071-012-2"/>
+                <p tid="4">This translation was produced by Annie Bien with the assistance of Dr. Robert
+                    Thurman, Dr. Paul Hackett, Geshe Dorji Damdul, and Robert Beer. The translator
+                    is also thankful to Khyongla Rato Rinpoche, Leslie Kriesel, Anming Karrer-Bien,
+                    Tarini Mehta, and Ven. Yeshe Choedup for their advice.</p>
+                    <p tid="57">The translation was completed under the patronage and supervision of 84000: Translating the Words of the Buddha.</p>
+            </div>
+            <div type="introduction">
+                <head type="introduction" tid="5">Introduction</head>
+                <div type="section" xml:id="UT22084-071-012-introduction-1">
+                    <milestone unit="chunk" xml:id="UT22084-071-012-3"/>
+                    <p tid="6">While the Buddha is dwelling in the Bamboo Grove monastery near Rājagṛha,
+                        together with a thousand monks and a host of bodhisattvas, King
+                        Prasenajit rises from his seat, bows at the feet of the Buddha, and asks him
+                        how to uphold the Dharma in his kingdom during times of conflict. In reply
+                        the Buddha instructs the king about the gaṇḍī,<note place="end" xml:id="UT22084-071-012-4"> For
+                            historical and ethnographical details concerning the gaṇḍī and its
+                            wide-ranging usage in Buddhist monasteries, see Helffer (1983), Hu-von
+                            Hinüber (1991), and Sobkovyak (2015).</note> a wooden beam that
+                        is ritually struck to produce sound,<note place="end" xml:id="UT22084-071-012-5">In <title xml:lang="en">The
+                                Pali Text Society’s Pali-English Dictionary</title>, the term
+                                <foreign xml:lang="Sa-Ltn" type="term">gaṇḍī</foreign> is defined as
+                            “a shaft or stalk, used as a bar.” The related Sanskrit term <foreign xml:lang="Sa-Ltn" type="term">gaṇḍi</foreign> is defined in the
+                            Monier-Williams dictionary as “the trunk of a tree from the root to the
+                            beginning of the branches.” For a discussion of the various definitions
+                            and etymologies of the term, see Sobkovyak (2015), p. 689. </note> and
+                        tells him how the sound of this instrument, used for Dharma practice in a temple
+                        or monastery, quells conflict and strife for all who hear it. He then
+                        describes how to make, consecrate, and sound the gaṇḍī. He explains that the
+                        gaṇḍī symbolizes the Perfection of Insight and describes in detail the many
+                        benefits it confers.</p>
+                    <milestone unit="chunk" xml:id="UT22084-071-012-6"/>
+                    <p tid="7">The gaṇḍī, sometimes misleadingly translated into English as “gong,” refers
+                        to a wooden beam cut from specific trees to particular proportions. From as
+                        early as the first century <hi rend="small-caps">ce</hi> down to the present
+                        day, it has been widely used in Buddhist monasteries as an instrument for
+                        summoning monks to assembly.<note place="end" xml:id="UT22084-071-012-7">As noted by ethnomusicologist
+                            Mireille Helffer, “The oldest writings on Indian Buddhism mention an
+                            instrument, the gandi, used to call monks to assembly. Recent
+                            observations show an instrument called gandi, or ganti, used similarly
+                            in Tibetan monasteries. Other recent texts confirm that the old gandi,
+                            like the modern version, is a phonoxyle; its shape is similar to that of
+                            certain wooden semanterions used in Greek Orthodox monasteries. The
+                            prescriptions of the canonical writings are still followed, and the
+                            Tibetan Buddhists, faithful to a tradition received from India, continue
+                            to build and use the gandi.” Helffer (1983), p. 112.</note> To hear
+                        its sound is said to quell all disruptive thoughts, dispel obstacles, and
+                        pacify all conflicts and negative forces. The role of the gaṇḍī in Buddhist
+                        monastic life appears to have been quite varied, extending to both
+                        nontantric and tantric forms of ritualism and daily life. As an example of
+                        its diverse functions in the day-to-day monastic itinerary, the <title xml:lang="Sa-Ltn">Vinayavastu</title> classifies five different types or
+                        uses of the gaṇḍī: the gaṇḍī for assembling monks, the gaṇḍī for meetings,
+                        the gaṇḍī for death ceremonies, the gaṇḍī for renunciation, and the gaṇḍī
+                        for emergencies.<note place="end" xml:id="UT22084-071-012-8"> This classification is given in the
+                                <title xml:lang="Sa-Ltn">Poṣadhavastu</title>,<ref rend="pending" target="https://read.84000.co/translation/toh1-2.html"/> which comprises the
+                            second chapter of the Tibetan version of the <title xml:lang="Sa-Ltn">Vinayavastu</title> included in the Kangyur and corresponds to the
+                            Khandhaka section of the Theravāda Vinaya in Pāli. For a translation of
+                            this passage as it occurs in the Sanskrit Gilgit manuscript purported to
+                            belong to the Mūlasarvāstivāda tradition, see Hu-von Hinüber (1991), p.
+                            746. The passage appears to distinguish five different kinds of gaṇḍī
+                            but more likely specifies five different ways in which the gaṇḍī is used
+                            in monastic life. Indeed, the <title xml:lang="Sa-Ltn">Poṣadhavastu</title> elsewhere specifies the different ways of
+                            striking the gaṇḍī beam in each of these five contexts. For details on
+                            these contexts as well as traditional classifications of its use in
+                            tantric practice, see Sobkovyak (2015), 690–93.</note>
+                    </p>
+                    <milestone unit="chunk" xml:id="UT22084-071-012-9"/>
+                    <p tid="58">There is to our knowledge no extant Sanskrit or Chinese version of <title xml:lang="en">The Gaṇḍī Sūtra</title>. According to the colophon to the
+                        Tibetan translations, it was translated into Tibetan by Dharma­śrībhadra and
+                        Tsültrim Yönten and subsequently edited by Rinchen Zangpo, which dates the
+                        Tibetan translation included in the Kangyur to the early
+                        eleventh century <hi rend="small-caps">ce</hi>. The text is, however, also
+                        recorded in the Denkarma<note place="end" xml:id="UT22084-071-012-10"> Denkarma, folio 301.a.5. See
+                            also Herrmann-Pfandt (2008), p. 167.</note> catalog of the Tibetan
+                        imperial translations, so it appears that it was first translated from
+                        Sanskrit into Tibetan by an unknown translator no later than the early ninth
+                        century, as the Denkarma is dated to 812 <hi rend="small-caps">ce</hi>. It
+                        is not recorded in the Phangthangma catalog of Tibetan imperial
+                        translations.<note place="end" xml:id="UT22084-071-012-11">
+                            <title xml:lang="Bo-Ltn">dkar chag ’phang thang ma</title>
+                            (2003).</note> </p>
+                    <milestone unit="chunk" xml:id="UT22084-071-012-94"/>
+                    <p tid="59">This English translation was prepared based on the
+                        Tibetan translation in the Degé Kangyur in consultation with the Comparative
+                        Edition (Tib. <foreign xml:lang="Bo-Ltn">dpe bsdur ma</foreign>) and the
+                        Stok Palace Kangyur.</p>
+                </div>
+            </div>
+        </front>
+        <body>
+            <div type="translation">
+                <head type="translation" tid="9"> The Translation </head>
+                <head type="titleHon" tid="10"/>
+                <head type="titleMain" tid="11">The Gaṇḍī Sūtra</head>
+                <div type="section" xml:id="UT22084-071-012-section-1">
+                    <milestone unit="chunk" xml:id="UT22084-071-012-12"/>
+                    <p tid="12">
+                        <ref cRef="F.301.b" type="folio" xml:id="UT22084-071-012-95"/> Homage to all the buddhas and bodhisattvas.</p>
+                    <lb/>
+                    <milestone unit="chunk" xml:id="UT22084-071-012-13"/>
+                    <p tid="13">Thus did I hear at one time. The Bhagavān was dwelling in the Bamboo
+                        Grove, in the Kalandaka­nivāpa near Rājagṛha, together with a great saṅgha of
+                        a thousand monks and a great gathering of bodhisattvas. They were all worthy
+                        ones. Their contaminations were exhausted, their duties fulfilled, their work
+                        concluded, their burdens put down, their personal welfare attained, their
+                        bonds to existence destroyed, and their minds fully liberated through
+                        perfect knowledge.</p>
+                    <milestone unit="chunk" xml:id="UT22084-071-012-14"/>
+                    <p tid="14">At that time, King Prasenajit arose from his seat and went to meet the
+                        Bhagavān. He bowed his head down at the feet of the Bhagavān and
+                        addressed him with these words: “Bhagavān, in the future, during times of
+                        conflict, all beings will have evil minds, quarrelsome minds filled with
+                        desire, hatred, and delusion. While intensely coveting others’ possessions
+                        and striving to devour one another, they will cause the previous period when
+                        teachings were given by the Bhagavān to decline. They will cause the
+                        abandonment of the true Dharma. They will go against the Buddha, the Dharma,
+                        and those who are free of desire. Please teach a way to eliminate such
+                        behavior so that beings may be strongly inclined to awakening.”</p>
+                    <milestone unit="chunk" xml:id="UT22084-071-012-15"/>
+                    <p tid="15">Thus entreated, the Bhagavān declared, “King, since you make this request
+                        for the sake of the welfare of all beings, for their benefit and happiness,
+                        and in order to protect the Buddha, the Dharma, and the Saṅgha, your inquiry
+                        is excellent! Excellent! Therefore, listen closely and keep this in mind!
+                        <ref cRef="F.302.a" type="folio" xml:id="UT22084-071-012-96"/> I will explain.”</p>
+                    <milestone unit="chunk" xml:id="UT22084-071-012-16"/>
+                    <p tid="16">Thereupon, the Bhagavān entered the meditative absorption called
+                            <distinct>resounding everywhere</distinct>. When the Bhagavān entered
+                        that meditative absorption, all hells were terminated. All those who had been filled with
+                        hatred became free from their hatred and wholly devoted to the mind of
+                        awakening. </p>
+                    <milestone unit="chunk" xml:id="UT22084-071-012-17"/>
+                    <p tid="17">Then the Bhagavān asked, “Prasenajit, did you see, or hear, or understand,
+                        or realize?”</p>
+                    <p tid="18">“Bhagavān, I saw! Well-Gone One, I saw. I comprehended, understood,
+                        recognized, and realized!” </p>
+                    <milestone unit="chunk" xml:id="UT22084-071-012-18"/>
+                    <p tid="19">The Bhagavān said, “Prasenajit, this is the mother of all beings. She
+                        gives birth to buddhas and bodhisattvas. She is venerated, worshiped,
+                        contemplated, and cultivated by all hearers, solitary buddhas, and perfect
+                        buddhas. Taking the form of the sound of the Perfection of Insight, she
+                        nurtures all beings. She is the vanquisher of all non-Buddhists,
+                        the pacifier of angry thoughts, the subduer of sinful thoughts, the
+                        dispeller of hateful thoughts, the destroyer of deluded thoughts, and the
+                        banisher of lustful thoughts. She is the protector of the mind of awakening,
+                        the intensifier of the mind of buddhas, and the supporter for the genesis of
+                        buddhas. She is the destroyer of all fights, quarrels, strife, conflicts,
+                        miseries, and all those of bad character who contravene the monastic code.
+                        She is the pacifier of sudden illness and death and of untimely death,
+                        epidemics, and so forth. She is the subduer of foreign armies, destroyer of
+                        Māra, and dispeller of torments. She is the extender of the fortunate era,
+                        bestower of long life and freedom from disease, pacifier of the dread of
+                        death, and intensifier of freedom and prosperity. To those who hear this and
+                        rejoice, she bestows results, like a wish-fulfilling gem. The Mother, the
+                        Perfection of Insight, is present in the form of the gaṇḍī.” <ref cRef="F.302.b" type="folio" xml:id="UT22084-071-012-97"/>
+                    </p>
+                    <lb/>
+                    <milestone unit="chunk" xml:id="UT22084-071-012-19"/>
+                    <p tid="20">Having heard this, deep conviction rose in King Prasenajit, and he entreated
+                        the Bhagavān: “Bhagavān, what is the size of this gaṇḍī? What is its
+                        color? What are its specifications? How is it to be struck? By what is it to
+                        be struck? At what time, on what occasion, and for how long should it be
+                        struck? How should it be placed?” </p>
+                    <milestone unit="chunk" xml:id="UT22084-071-012-20"/>
+                    <p tid="21">Thus entreated, the Bhagavān declared:</p>
+                    <lg tid="22">
+                        <l>“As for the wood you wish to use, </l>
+                        <l>You should investigate with great effort: </l>
+                        <l>Sandalwood, Bengal quince, bastard teak,</l>
+                        <l>Sacred fig, and red sandalwood tree,</l>
+                    </lg>
+                    <milestone unit="chunk" xml:id="UT22084-071-012-21"/>
+                    <lg tid="23">
+                        <l>“Indian walnut, palmyra, kingshuk tree,</l>
+                        <l>Aloe wood, false mangosteen,</l>
+                        <l>Mango, walnut, myrobalan tree,</l>
+                        <l>
+                            <distinct>Tintisara</distinct>,<note place="end" xml:id="UT22084-071-012-22"> Tib. <foreign xml:lang="Bo-Ltn" type="term">ting ti sa ra</foreign>. We could
+                                not find a botanical listing for this tree. </note> and aśoka.</l>
+                    </lg>
+                    <milestone unit="chunk" xml:id="UT22084-071-012-23"/>
+                    <lg tid="24">
+                        <l>“If all of these are absent,</l>
+                        <l>You should try the mulberry tree.</l>
+                        <l>King, if despite your efforts</l>
+                        <l>None of these are present, do not make it.</l>
+                    </lg>
+                    <milestone unit="chunk" xml:id="UT22084-071-012-24"/>
+                    <lg tid="25">
+                        <l>“If made without measure and from bad wood,</l>
+                        <l>The sound will not emerge when struck.</l>
+                        <l>When such a Mother of the Buddhas is struck,</l>
+                        <l>Harm will surely arise in the land.</l>
+                    </lg>
+                    <milestone unit="chunk" xml:id="UT22084-071-012-25"/>
+                    <lg tid="26">
+                        <l>“As for the monks in the temple, </l>
+                        <l>Their minds will thus be discordant,</l>
+                        <l>They will be afflicted with disease, </l>
+                        <l>And there will be all sorts of quarrels.</l>
+                    </lg>
+                    <milestone unit="chunk" xml:id="UT22084-071-012-26"/>
+                    <lg tid="27">
+                        <l>“Non-Buddhists will be empowered</l>
+                        <l>And māras will likewise come to the fore.</l>
+                        <l>Due to many noxious nāgas,</l>
+                        <l>Crops will fail.</l>
+                    </lg>
+                    <milestone unit="chunk" xml:id="UT22084-071-012-27"/>
+                    <lg tid="28">
+                        <l>“In that kingdom many beings</l>
+                        <l>Will be destroyed.</l>
+                        <l>Temples also will be destroyed,</l>
+                        <l>And the Dharma will decline as well.</l>
+                    </lg>
+                    <milestone unit="chunk" xml:id="UT22084-071-012-28"/>
+                    <lg tid="29">
+                        <l>“Demonic gods will cause unruliness</l>
+                        <l>Within the saṅgha of monks.</l>
+                        <l>Thus, knowing all this well, </l>
+                        <l>Proceed with careful inspection.</l>
+                    </lg>
+                    <milestone unit="chunk" xml:id="UT22084-071-012-29"/>
+                    <lg tid="30">
+                        <l>“As for measurements: the small ends should be eight fingers.</l>
+                        <l>Make the main body eighty-four fingers.</l>
+                        <l>Make it six fingers in breadth</l>
+                        <l>And two fingers in height.</l>
+                    </lg>
+                    <milestone unit="chunk" xml:id="UT22084-071-012-30"/>
+                    <lg tid="31">
+                        <l>“Using the measurements of finger joints,</l>
+                        <l>The measure to the four corners is two fingers.</l>
+                        <l>The perfect balance is made very clear.</l>
+                        <l>The two ends are like the head of a frog.</l>
+                    </lg>
+                    <milestone unit="chunk" xml:id="UT22084-071-012-31"/>
+                    <lg tid="32">
+                        <l>“After that, cut the striker</l>
+                        <l>From the same wood block.</l>
+                        <l>Measuring twelve fingers,</l>
+                        <l>It is rounded and has mongoose heads at both ends.</l>
+                    </lg>
+                    <milestone unit="chunk" xml:id="UT22084-071-012-32"/>
+                    <lg tid="33">
+                        <l>“The size of the handle is also like that.</l>
+                        <l>It should be very smooth and evenly ribbed.</l>
+                        <l>Thus, it is meant to be struck.</l>
+                        <l>Below, make a stand for it. <ref cRef="F.303.a" type="folio" xml:id="UT22084-071-012-98"/>
+                        </l>
+                    </lg>
+                    <milestone unit="chunk" xml:id="UT22084-071-012-33"/>
+                    <lg tid="34">
+                        <l>“Place it above the temple gate, </l>
+                        <l>Or place it above the central gate.</l>
+                        <l>As for its consecration,</l>
+                        <l>It is the very stable<note place="end" xml:id="UT22084-071-012-34"> We have followed Degé: <foreign xml:lang="Bo-Ltn" type="quote">shin tu brtan pa</foreign> (“very
+                                stable”). Stok: <foreign xml:lang="Bo-Ltn" type="quote">shin tu
+                                    bstan pa</foreign> (“well revealed”).</note> Dharma body.</l>
+                    </lg>
+                    <milestone unit="chunk" xml:id="UT22084-071-012-35"/>
+                    <lg tid="35">
+                        <l>“It is unproduced, indestructible,</l>
+                        <l>And primordially unborn virtue.</l>
+                        <l>Having been consecrated as such,</l>
+                        <l>The gaṇḍī’s eyes are opened.</l>
+                    </lg>
+                    <milestone unit="chunk" xml:id="UT22084-071-012-36"/>
+                    <lg tid="36">
+                        <l>“Next, having opened the gaṇḍī’s eyes, </l>
+                        <l>One must strike it to increasingly produce sound<note place="end" xml:id="UT22084-071-012-37"> This
+                                is a tentative rendering of the line <foreign xml:lang="Bo-Ltn" type="quote">bskyed pa’i rim gyis brdung bar bya</foreign>.
+                                According to Geshe Dorji Damdul (personal communication), the
+                                meaning of this phrase is that the gaṇḍī should be struck softly at
+                                first, then gradually harder, and finally the sound should decrease
+                                again. Sobkovyak’s conjecture that this refers to the developing
+                                stage (<foreign xml:lang="Sa-Ltn" type="term">utpattikrama</foreign>) of the Vajrayāna seems anachronistic.
+                                Sobkovyak (2015), 700.</note>
+                        </l>
+                        <l>Throughout the temple,</l>
+                        <l>As if adorned by seven nāgas.<note place="end" xml:id="UT22084-071-012-38"> We are not sure what the
+                                seven nāgas refer to here. In some traditional representations of
+                                the Buddha, he is presented as sheltered by a seven-headed nāga,
+                                which refers to the nāga that sheltered him from the storm shortly
+                                before his awakening. Perhaps the mention of seven nāgas in this
+                                text is related to this?</note>
+                        </l>
+                    </lg>
+                    <milestone unit="chunk" xml:id="UT22084-071-012-39"/>
+                    <lg tid="37">
+                        <l>“Thereafter, one should pay homage to the Three Jewels</l>
+                        <l>And then strike the gaṇḍī.</l>
+                        <l>One should then sound the cymbal<note place="end" xml:id="UT22084-071-012-40"> We have followed Degé:
+                                    <foreign xml:lang="Bo-Ltn" type="term">shang rtsa</foreign>.
+                                Stok: <foreign xml:lang="Bo-Ltn" type="term">shing rtsa</foreign>
+                                (“tree root”).</note> three times </l>
+                        <l>And beat the Dharma drums. </l>
+                    </lg>
+                    <milestone unit="chunk" xml:id="UT22084-071-012-41"/>
+                    <lg tid="38">
+                        <l>“Cleansing the gaṇḍī with flower-petal water</l>
+                        <l>At mealtime, sunrise, and sunset, </l>
+                        <l>Strike it three times at the three intervals.</l>
+                        <l>When it is time for bathing, let it resound twice.</l>
+                    </lg>
+                    <milestone unit="chunk" xml:id="UT22084-071-012-42"/>
+                    <lg tid="39">
+                        <l>“It should be struck consecutively without hesitation</l>
+                        <l>To prevent sudden harm </l>
+                        <l>And likewise quarrels, disputes,</l>
+                        <l>Lightning, and great devastation.</l>
+                    </lg>
+                    <milestone unit="chunk" xml:id="UT22084-071-012-43"/>
+                    <lg tid="40">
+                        <l>“It should be struck to invite the elders</l>
+                        <l>And to pacify plagues and famines. </l>
+                        <l>It should be struck constantly at all times</l>
+                        <l>By monks and novices.</l>
+                    </lg>
+                    <milestone unit="chunk" xml:id="UT22084-071-012-44"/>
+                    <lg tid="41">
+                        <l>“During monthly purification, </l>
+                        <l>It should be struck by laypeople as well.</l>
+                        <l>All its qualities being complete,</l>
+                        <l>It should be adorned by seven nāgas.<note place="end" xml:id="UT22084-071-012-45"> Perhaps this also
+                                refers to the gaṇḍī being sheltered by the seven-headed nāga in the
+                                same way that certain buddha statues are presented? See <ptr target="#UT22084-071-012-38"/>.</note>
+                        </l>
+                    </lg>
+                    <milestone unit="chunk" xml:id="UT22084-071-012-46"/>
+                    <lg tid="42">
+                        <l>“O King, when throughout the land</l>
+                        <l>That gaṇḍī resounds, </l>
+                        <l>The year will be good there,</l>
+                        <l>With splendor, fame, and all desirable things.</l>
+                    </lg>
+                    <milestone unit="chunk" xml:id="UT22084-071-012-47"/>
+                    <lg tid="43">
+                        <l>“There will be no fear of foreign armies,</l>
+                        <l>And the crops will never fail.</l>
+                        <l>With the wealth of the Buddha’s blessings, </l>
+                        <l>Māras will be tamed there. </l>
+                    </lg>
+                    <milestone unit="chunk" xml:id="UT22084-071-012-48"/>
+                    <lg tid="44">
+                        <l>“The Dharma drum will thunder everywhere,</l>
+                        <l>Right up to the summit of existence. </l>
+                        <l>The worlds of hell and pretas</l>
+                        <l>Will undoubtedly be destroyed.</l>
+                    </lg>
+                    <milestone unit="chunk" xml:id="UT22084-071-012-49"/>
+                    <lg tid="45">
+                        <l>“Everyone will have enduring conviction in the Buddha,</l>
+                        <l>And everyone will be devoted to the Dharma.</l>
+                        <l>There, the saṅgha will be disciplined,</l>
+                        <l>And the wise will flourish as well.</l>
+                    </lg>
+                    <milestone unit="chunk" xml:id="UT22084-071-012-50"/>
+                    <lg tid="46">
+                        <l>“Lust, hate, and delusion </l>
+                        <l>Will subside there.</l>
+                        <l>The king will live long and uphold the Dharma,</l>
+                        <l>And he will have every happiness.</l>
+                    </lg>
+                    <milestone unit="chunk" xml:id="UT22084-071-012-51"/>
+                    <lg tid="47">
+                        <l>“O King, in every temple, </l>
+                        <l>When beating the Dharma drum, </l>
+                        <l>Its sound will be renowned</l>
+                        <l>In the pathways of peoples’ ears;</l>
+                    </lg>
+                    <milestone unit="chunk" xml:id="UT22084-071-012-52"/>
+                    <lg tid="48">
+                        <l>“Those who hear it four times a day</l>
+                        <l>Will attain spiritual awakening. <ref cRef="F.303.b" type="folio" xml:id="UT22084-071-012-99"/>
+                        </l>
+                        <l>Those who rejoice from the heart</l>
+                        <l>Will undoubtedly be free. </l>
+                    </lg>
+                    <milestone unit="chunk" xml:id="UT22084-071-012-53"/>
+                    <lg tid="49">
+                        <l>“Hearing just once <title xml:lang="en">The Gaṇḍī Sūtra</title>, </l>
+                        <l>One will remember one’s former lives.</l>
+                        <l>Where this best among sūtras is present, </l>
+                        <l>That land will be prosperous. </l>
+                    </lg>
+                    <milestone unit="chunk" xml:id="UT22084-071-012-54"/>
+                    <lg tid="50">
+                        <l>“Those who observe it at all times, </l>
+                        <l>Read it aloud, worship it, </l>
+                        <l>And keep it in mind </l>
+                        <l>Will be freed from evil.”</l>
+                    </lg>
+                    <milestone unit="chunk" xml:id="UT22084-071-012-55"/>
+                    <p tid="51">When the Bhagavān had said this, King Prasenajit paid his respects to the
+                        Bhagavān repeatedly and then departed. When the Bhagavān had spoken
+                        these words, the entire assembly, along with the world with its gods,
+                        humans, asuras, garuḍas, and gandharvas, rejoiced and praised what the Bhagavān had said.</p>
+                    <milestone unit="chunk" xml:id="UT22084-071-012-56"/>
+                    <trailer tid="52">This completes “The Gaṇḍī Sūtra.”</trailer>
+                </div>
+                <div type="colophon" xml:id="UT22084-071-012-colophon">
+                    <head type="colophon" tid="53">Colophon</head>
+                    <milestone unit="chunk" xml:id="UT22084-071-012-57"/>
+                    <p tid="54">It was translated by the Indian preceptor Dharma­śrībhadra and the monk-translator
+                        Tsültrim Yönten, and edited and finalized by the monk and chief
+                        editor-translator Rinchen Zangpo.</p>
+                </div>
+            </div>
+        </body>
+        <back>
+            <div type="notes">
+                <head type="notes" tid="55">Notes</head>
+                
+            </div>
+            <div type="listBibl">
+                <head type="listBibl" tid="56">Bibliography</head>
+                <div type="section" xml:id="UT22084-071-012-listBibl-1">
+                    <bibl xml:id="UT22084-071-012-59">
+                        <title xml:lang="Bo-Ltn">GaN DI’i mdo</title> (<title xml:lang="Sa-Ltn">Gaṇḍīsūtra</title>). Toh 298, Degé Kangyur vol. 71 (mdo sde, sha),
+                        folios 301.b–303.b.</bibl>
+                    <bibl xml:id="UT22084-071-012-60">
+                        <title xml:lang="Bo-Ltn">GaN DI’i mdo</title>. bka’ ’gyur (dpe bsdur ma)
+                        [Comparative Edition of the Kangyur], krung go’i bod rig pa zhib ’jug ste
+                        gnas kyi bka’ bstan dpe sdur khang (The Tibetan Tripitaka Collation Bureau
+                        of the China Tibetology Research Center). 108 volumes. Beijing: krung go’i
+                        bod rig pa dpe skrun khang (China Tibetology Publishing House), 2006–2009,
+                        vol. 71, pp. 816–823. </bibl>
+                    <bibl xml:id="UT22084-071-012-61">
+                        <title xml:lang="Bo-Ltn">GaN DI’i mdo</title> (<title xml:lang="Sa-Ltn">Gaṇḍīsūtra</title>). Stok 298, Stok Palace Kangyur vol. 86 (mdo sde,
+                        ci), folios 251.a–254.b. </bibl>
+                    <bibl xml:id="UT22084-071-012-58">Denkarma (<title xml:lang="Bo-Ltn">pho brang stod thang ldan dkar gyi chos
+                            ’gyur ro cog gi dkar chag</title>). Toh 4364, Degé Tengyur vol. 206 (sna
+                        tshogs, jo), folios 294.b–310.a. </bibl>
+                    <bibl xml:id="UT22084-071-012-62">Helffer, Mireille. “Le Gandi: Un Simandre Tibétain d’Origine Indienne.”
+                            <title xml:lang="en">Yearbook for Traditional Music</title> 15 (1983):
+                        112–125.</bibl>
+                    <bibl xml:id="UT22084-071-012-63">Herrmann-Pfandt, Adelheid. <title xml:lang="de">Die lHan kar
+                            ma: ein früher Katalog der ins Tibetische übersetzten buddhistischen
+                            Texte</title>. Vienna: Verlag der Österreichischen Akademie der
+                        Wissenschaften, 2008.</bibl>
+                    <bibl xml:id="UT22084-071-012-64">Hu-von Hinüber, Haiyan. “Das Anschlagen der <foreign xml:lang="Sa-Ltn" type="term">Gaṇḍī</foreign> in buddhistischen Klöstern. Über einige
+                        einschlägige Vinaya-Termini.” In <title xml:lang="en">Papers in Honour of
+                            Prof. Dr. Ji Xianlin on the Occasion of His 80th Birthday</title>,
+                        edited by Li Zheng and Jiang Zhongxin, 2: 737–768. Beijing: Peking
+                        University Press, 1991.</bibl>
+                    <bibl xml:id="UT22084-071-012-65">Monier-Williams, Monier. <title xml:lang="en">A Sanskrit-English
+                            Dictionary: Etymologically and Philologically Arranged with Special
+                            Reference to Cognate Indo-European Languages</title>. Oxford: Clarendon
+                        Press, 1974.</bibl>
+                    <bibl xml:id="UT22084-071-012-66">Rhys Davids, T. W and William Stede, ed. <title xml:lang="en">The Pali
+                            Text Society’s Pali-English Dictionary</title>. London: The Pali Text Society, 1921–25.</bibl>
+                    <bibl xml:id="UT22084-071-012-67">Sobkovyak, Ekaterina. “Religious History of the <foreign xml:lang="Sa-Ltn" type="term">Gaṇḍī</foreign> Beam: Testimonies of Texts, Images and
+                        Ritual Practices.” <title xml:lang="mixed">Asiatische Studien -
+                            Études Asiatiques</title> 69, no. 3 (2015): 685–722.</bibl>
+                </div>
+            </div>
+            <div type="glossary">
+                <list type="glossary">
+                    <item>
+                        <gloss xml:id="UT22084-071-012-68" type="term" mode="match">
+                            <term>asura</term>
+                            <term xml:lang="Bo-Ltn" type="sourceAttested">lha ma yin</term>
+                            <term xml:lang="bo" type="sourceAttested">ལྷ་མ་ཡིན།</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified">asura</term>
+                            <!--<term type="definition">The traditional adversaries of the gods who are frequently portrayed in brahmanical mythology as having a disruptive effect on cosmological and social harmony.</term>-->
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-071-012-69">
+                            <term>awakening</term>
+                            <term xml:lang="Bo-Ltn">byang chub </term>
+                            <term xml:lang="bo">བྱང་ཆུབ།</term>
+                            <term xml:lang="Sa-Ltn">bodhi</term>
+                            <term type="definition">
+                                <term type="ignore">Awakening</term> refers to the state of realization and
+                                understanding possessed by a buddha regarding the nature of
+                                things.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss xml:id="UT22084-071-012-70" type="term" mode="match">
+                            <term>bhagavān</term>
+                            <term xml:lang="Bo-Ltn" type="sourceAttested">bcom ldan ’das</term>
+                            <term xml:lang="bo" type="sourceAttested">བཅོམ་ལྡན་འདས།</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified">bhagavān</term>
+                            <term type="definition">Epithet of a buddha.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-071-012-71">
+                            <term>well-gone one</term>
+                            <term xml:lang="Bo-Ltn">bde bar gshegs pa </term>
+                            <term xml:lang="bo">བདེ་བར་གཤེགས་པ།</term>
+                            <term xml:lang="Sa-Ltn">sugata</term>
+                            <term type="definition">Epithet of a buddha.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-071-012-72">
+                            <term>bodhisattva</term>
+                            <term xml:lang="Bo-Ltn">byang chub sems dpa’ </term>
+                            <term xml:lang="bo">བྱང་ཆུབ་སེམས་དཔའ།</term>
+                            <term xml:lang="Sa-Ltn">bodhisattva</term>
+                            <term type="definition">One dedicated to perfect awakening in order to
+                                liberate all living beings.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-071-012-73">
+                            <term>gandharva</term>
+                            <term xml:lang="Bo-Ltn">dri za </term>
+                            <term xml:lang="bo">དྲི་ཟ།</term>
+                            <term xml:lang="Sa-Ltn">gandharva</term>
+                            <term type="definition">A class of celestial spirits and
+                                minor gods (<foreign xml:lang="Sa-Ltn" type="term">deva</foreign>)
+                                in both Hindu and Buddhist cosmologies who are said to live on
+                                scents. They are messengers, singers, and skilled musicians and
+                                dancers. </term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-071-012-74">
+                            <term>gaṇḍī</term>
+                            <term xml:lang="Bo-Ltn">gaN+Di </term>
+                            <term xml:lang="bo">གཎྜི།</term>
+                            <term xml:lang="Sa-Ltn">gaṇḍī</term>
+                            <term type="definition">A percussion instrument made from a wooden beam
+                                cut from specific trees to particular proportions, it has been
+                                widely used in Buddhist monasteries as an instrument for summoning
+                                monks to assembly.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss xml:id="UT22084-071-012-75" type="term" mode="match">
+                            <term>garuḍa</term>
+                            <term xml:lang="Bo-Ltn" type="sourceAttested">khyung</term>
+                            <term xml:lang="bo" type="sourceAttested">ཁྱུང་།</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified">garuḍa</term>
+                            <term type="definition">Lower class of divine beings described as eagle-type birds with gigantic wingspans. They are traditionally enemies of the nāgas. In the Vedas, they are said to have brought nectar from the heavens to earth.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-071-012-76">
+                            <term>hearer</term>
+                            <term xml:lang="Bo-Ltn">nyan thos </term>
+                            <term xml:lang="bo">ཉན་ཐོས།</term>
+                            <term xml:lang="Sa-Ltn">śrāvaka</term>
+                            <term type="definition">One who listens to the Buddha’s teaching in
+                                order to reach liberation.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss xml:id="UT22084-071-012-77" type="person" mode="match">
+                            <term>Māra</term>
+                            <term xml:lang="Bo-Ltn" type="sourceAttested">bdud</term>
+                            <term xml:lang="bo" type="sourceAttested">བདུད།</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified">māra</term>
+                            <term type="definition">A class of beings related to the demon Māra (literally “death” in Sanskrit) or a term for the demon Māra himself. Māra and the <term type="ignore">māra</term>s are portrayed as the primary adversaries and tempters of people who vow to take up the religious life, and <term type="ignore">māra</term>s can be understood as a class of demonic beings responsible for perpetuating the illusion that keeps beings bound to the world and worldly attachments and the mental states those beings elicit.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-071-012-78">
+                            <term>meditative absorption</term>
+                            <term xml:lang="Bo-Ltn">ting nge ’dzin </term>
+                            <term xml:lang="bo">ཏིང་ངེ་འཛིན།</term>
+                            <term xml:lang="Sa-Ltn">samādhi</term>
+                            <term type="definition">State of mental absorption or one-pointed
+                                concentration.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-071-012-79">
+                            <term>nāga</term>
+                            <term xml:lang="Bo-Ltn">klu </term>
+                            <term xml:lang="bo">ཀླུ།</term>
+                            <term xml:lang="Sa-Ltn">nāga</term>
+                            <term type="definition">A semidivine class of beings who live in
+                                subterranean and aquatic environments and who are known to hoard
+                                wealth and esoteric teachings. They are associated with snakes and
+                                serpents.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-071-012-80">
+                            <term>non-Buddhist</term>
+                            <term xml:lang="Bo-Ltn">mu stegs pa </term>
+                            <term xml:lang="bo">མུ་སྟེགས་པ།</term>
+                            <term xml:lang="Sa-Ltn">tīrthika</term>
+                            <term type="definition">Those of religious or philosophical orders that
+                                were contemporary with the early Buddhist order, including Jains,
+                                Jaṭilas, Ājīvikas, and Cārvākas. Initially, the
+                                term <foreign xml:lang="Sa-Ltn" type="term">tīrthika</foreign> or <foreign xml:lang="Sa-Ltn" type="term">tīrthya</foreign> may
+                                have referred to non-brahmanic ascetic orders. Tīrthika (“forder”)
+                                literally translates as “one belonging to or associated with
+                                (possessive suffix <foreign xml:lang="Sa-Ltn">–ika</foreign>) stairs
+                                for landing or for descent into a river,” or “a bathing place,” or
+                                “a place of pilgrimage on the banks of sacred streams”
+                                (Monier-Williams). The term may have originally referred to temple
+                                priests at river crossings or fords where travelers propitiated a
+                                deity before crossing. The Sanskrit term seems to have undergone
+                                metonymic transfer in referring to those able to ford the turbulent
+                                river of saṃsāra (as in the Jain tīrthaṅkaras, “ford makers”), and
+                                it came to be used in Buddhist sources to refer to teachers of rival
+                                religious traditions. The Sanskrit term is closely rendered by the
+                                Tibetan <foreign xml:lang="Bo-Ltn" type="term">mu stegs
+                                pa</foreign>: “those on the steps (<foreign xml:lang="Bo-Ltn" type="term">stegs pa</foreign>) at the edge (<foreign xml:lang="Bo-Ltn" type="term">mu</foreign>).”</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss xml:id="UT22084-071-012-81" type="term" mode="match">
+                            <term>Perfection of Insight</term>
+                            <term xml:lang="Bo-Ltn" status="verified">shes rab kyi pha rol tu phyin pa</term>
+                            <term xml:lang="bo">ཤེས་རབ་ཀྱི་ཕ་རོལ་ཏུ་ཕྱིན་པ།</term>
+                            <term xml:lang="Sa-Ltn">Prajñāpāramitā</term>
+                            <term type="definition">The profound nondual understanding of the ultimate reality of emptiness of all things, it is personified as a goddess described as the “Mother of all Victorious Ones” (<foreign xml:lang="Sa-Ltn" type="term">Sarvajinamātā</foreign>).</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-071-012-82">
+                            <term>preta</term>
+                            <term xml:lang="Bo-Ltn">yi dwags </term>
+                            <term xml:lang="bo">ཡི་དྭགས།</term>
+                            <term xml:lang="Sa-Ltn">preta</term>
+                            <term type="definition">A class of beings who, in the Buddhist tradition, are particularly
+                                known to suffer from hunger and thirst and the inability to acquire
+                                sustenance.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-071-012-83">
+                            <term>resounding everywhere</term>
+                            <term xml:lang="Bo-Ltn">kun tu sgra sgrogs pa </term>
+                            <term xml:lang="bo">ཀུན་ཏུ་སྒྲ་སྒྲོགས་པ།</term>
+                            <term xml:lang="Sa-Ltn"/>
+                            <term type="definition">The name of a meditative absorption.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-071-012-84">
+                            <term>solitary buddha</term>
+                            <term xml:lang="Bo-Ltn">rang sangs rgyas </term>
+                            <term xml:lang="bo">རང་སངས་རྒྱས།</term>
+                            <term xml:lang="Sa-Ltn">pratyekabuddha</term>
+                            <term type="definition">One who has attained liberation entirely through
+                                their own contemplation as a result of progress in previous lives
+                                but, unlike a buddha, does not have the accumulated merit and
+                                motivation to teach others.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-071-012-85">
+                            <term>worthy one</term>
+                            <term xml:lang="Bo-Ltn">dgra bcom pa </term>
+                            <term xml:lang="bo">དགྲ་བཅོམ་པ།</term>
+                            <term xml:lang="Sa-Ltn">arhat</term>
+                            <term type="definition">One who has accomplished the final fruition of
+                                the path of the hearers and is liberated from saṃsāra.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="person" xml:id="UT22084-071-012-86">
+                            <term>Dharma­śrībhadra</term>
+                            <term xml:lang="Bo-Ltn">dhar+ma shrI bha dra </term>
+                            <term xml:lang="bo">དྷརྨ་ཤྲཱི་བྷ་དྲ།</term>
+                            <term xml:lang="Sa-Ltn">Dharma­śrībhadra</term>
+                            <term type="definition">The Indian scholar who assisted with the
+                                translation of the text into Tibetan. His dates are unknown but he
+                                lived sometime during the late 10th century to the middle of the
+                                11th century.</term>
+                        </gloss>
+                    </item>
+                    <!--<item>
+                        <gloss xml:id="UT22084-071-012-87" type="person">
+                            <term>Māra</term>
+                            <term xml:lang="Bo-Ltn" type="sourceAttested">bdud</term>
+                            <term xml:lang="bo" type="sourceAttested">བདུད།</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified">māra</term>
+                            <term type="definition">The demon <term type="ignore">Māra</term>. See “māra.”</term>
+                        </gloss>
+                    </item>-->
+                    <item>
+                        <gloss type="person" xml:id="UT22084-071-012-88">
+                            <term>Prasenajit</term>
+                            <term xml:lang="Bo-Ltn">gsal rgyal </term>
+                            <term xml:lang="bo">གསལ་རྒྱལ།</term>
+                            <term xml:lang="Sa-Ltn">Prasenajit</term>
+                            <term type="definition">King of the Kośala state during the time of the
+                                Buddha. </term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="person" xml:id="UT22084-071-012-89">
+                            <term>Rinchen Zangpo</term>
+                            <term xml:lang="Bo-Ltn">rin chen bzang po </term>
+                            <term xml:lang="bo">རིན་ཆེན་བཟང་པོ།</term>
+                            <term xml:lang="Sa-Ltn"/>
+                            <term type="definition">A famous translator and editor of canonical
+                                texts during the second spread of Indian Buddhism into Tibet. He
+                                lived from 958–1055.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="person" xml:id="UT22084-071-012-90">
+                            <term>Tsültrim Yönten</term>
+                            <term xml:lang="Bo-Ltn">tshul khrims yon tan </term>
+                            <term xml:lang="bo">ཚུལ་ཁྲིམས་ཡོན་ཏན།</term>
+                            <term xml:lang="Sa-Ltn"/>
+                            <term type="definition">The Tibetan translator of this text. His dates
+                                are unknown but he lived sometime during the late 10th century to
+                                the middle of the 11th century. </term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="place" xml:id="UT22084-071-012-91">
+                            <term>Bamboo Grove </term>
+                            <term xml:lang="Bo-Ltn">’od ma’i tshal </term>
+                            <term xml:lang="bo">འོད་མའི་ཚལ།</term>
+                            <term xml:lang="Sa-Ltn">Veṇuvana</term>
+                            <term type="definition">The famous <term type="ignore">bamboo grove</term> near Rājagṛha where the
+                                Buddha regularly stayed and gave teachings. It was situated on land
+                                donated by King Bimbisāra of Magadha and was the first of several
+                                landholdings donated to the Buddhist saṅgha during the time of the
+                                Buddha.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="place" xml:id="UT22084-071-012-92">
+                            <term>Kalandaka­nivāpa</term>
+                            <term xml:lang="Bo-Ltn">bya ka lan da ka gnas pa </term>
+                            <term xml:lang="bo">བྱ་ཀ་ལན་ད་ཀ་གནས་པ།</term>
+                            <term xml:lang="Sa-Ltn">Kalandaka­nivāpa</term>
+                            <term type="definition">A park outside Rājagṛha where the Buddha often
+                                resided, within the Bamboo Grove (Veṇuvana). The Tibetan 
+                                rendering <foreign xml:lang="Bo-Ltn" type="term">bya ka lan da ka</foreign> makes it clear that the Tibetans
+                                considered the kalandaka to be a kind of bird, while Sanskrit and
+                                Pali sources generally agree that it is a kind of squirrel. It is
+                                therefore likely that this word refers to the Indian flying
+                                squirrel, <foreign xml:lang="la" type="term">Petaurista
+                                    philippensis</foreign>.</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="place" xml:id="UT22084-071-012-93">
+                            <term>Rājagṛha</term>
+                            <term xml:lang="Bo-Ltn">rgyal po’i khab </term>
+                            <term xml:lang="bo">རྒྱལ་པོའི་ཁབ།</term>
+                            <term xml:lang="Sa-Ltn">Rājagṛha</term>
+                            <term type="definition">Modern Rajgir. Nearby is Vulture Peak mountain
+                                (Gṛdhrakūṭaparvata), where the Buddha is said to have
+                                taught the <title xml:lang="Sa-Ltn">Prajñāpāramitā</title> and other
+                                teachings, and the Bamboo Grove (Veṇuvana) where the Buddha
+                                regularly gave teachings.</term>
+                        </gloss>
+                    </item>
+                </list>
+            </div>
+        </back>
+    </text>
+
+    
+    
+    
+    </TEI>
