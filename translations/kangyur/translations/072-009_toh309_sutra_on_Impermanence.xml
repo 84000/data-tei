@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../../../schema/current/translation.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<tei:TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -8,27 +8,27 @@
                 <title type="mainTitle" xml:lang="Sa-Ltn">Anityatāsūtra</title>
                 <title type="mainTitle" xml:lang="bo">མི་རྟག་པ་ཉིད་ཀྱི་མདོ།</title>
                 <title type="mainTitle" xml:lang="Bo-Ltn">mi rtag pa nyid kyi mdo</title>
-                <author role="translatorMain" ref="contributors.xml#team-27">
+                <author role="translatorMain" xml:id="UT22084-072-009-36">
                     Translated by the Sakya Pandita Translation Group (International Buddhist Academy Division) 
                     <lb/>under the patronage and supervision of 84000: Translating the Words of the Buddha</author>
-                <author role="translatorEng" ref="contributors.xml#person-182">Christian Bernert</author>
-                <editor role="reviser" ref="contributors.xml#person-246">Vivian Paganuzzi</editor>
-                <editor role="TEImarkupEditor" ref="contributors.xml#person-306">Simeon Joffe</editor>
+                <author role="translatorEng" xml:id="UT22084-072-009-37">Christian Bernert</author>
+                <editor role="reviser" xml:id="UT22084-072-009-38">Vivian Paganuzzi</editor>
+                <editor role="TEImarkupEditor" xml:id="UT22084-072-009-39">Simeon Joffe</editor>
             </titleStmt>
             <editionStmt>
-                <edition>v 1.22.12 <date>2021</date>
+                <edition>v 1.22.14 <date>2023</date>
                 </edition>
             </editionStmt>
-            <publicationStmt status="1">
+            <publicationStmt>
                 <publisher>
                     <name>84000: Translating the Words of the Buddha</name> is a global non-profit initiative to translate all the Buddha’s words into modern languages, and to make them available to everyone.</publisher>
-                <availability>
+                <availability status="1">
                     <licence>
                         <graphic url="http://i.creativecommons.org/l/by-nc-nd/2.0/88x31.png"/>
-                        <p>This work is provided under the protection of a Creative Commons CC BY-NC-ND (Attribution -
+                        <tei:p>This work is provided under the protection of a Creative Commons CC BY-NC-ND (Attribution -
                             Non-commercial - No-derivatives) 3.0 copyright. It may be copied or printed for fair use, but only
                             with full attribution, and not for commercial advantage or personal compensation. For full details,
-                            see the Creative Commons license.</p>
+                            see the Creative Commons license.</tei:p>
                     </licence>
                 </availability>
                 <idno xml:id="UT22084-072-009"/>
@@ -36,10 +36,10 @@
             </publicationStmt>
             <sourceDesc>
                 <bibl key="toh309" type="text">
-                    <ref>Toh 309</ref>
+                    <tei:ref>Toh 309</tei:ref>
                     <biblScope>Degé Kangyur, vol 72 (mdo sde, sa), folios 155.a–155.b</biblScope>
-                    <author role="translatorTib">Surendrabodhi</author>
-                    <author role="translatorTib">Zhang Yeshé Dé</author>
+                    <author role="translatorTib" xml:id="UT22084-072-009-57">Surendrabodhi</author>
+                    <author role="translatorTib" xml:id="UT22084-072-009-58">Zhang Yeshé Dé</author>
                     <location work="UT4CZ5369" count-pages="2">
                         <volume number="72" start-page="309" end-page="310"/>
                     </location>
@@ -48,23 +48,63 @@
                 </bibl>
             
             </sourceDesc>
-            <notesStmt>
-                <note type="lastUpdated" date-time="2023-02-15T19:02:30.483Z" user="admin">15/02/2023 19:02:30</note>
-                <note type="updated" update="text-version" value="v 1.21" date-time="2019-06-18T16:25:59.158Z" user="celso">v 1.21 2019</note>
-                <note type="updated" update="text-version" value="v 1.22" date-time="2019-06-21T14:44:35.078Z" user="celso">v 1.22 2019</note>
-                <note type="updated" update="text-version" value="v 1.22.1" date-time="2019-10-07T10:27:24.685Z" user="admin">Publication statement updated</note>
-                <note type="updated" update="text-version" value="v 1.22.2" date-time="2019-12-20T12:56:48.575Z" user="admin">Automated version increment</note>
-                <note type="updated" update="text-version" value="1.22.3" date-time="2020-11-23T13:57:44.998Z" user="admin">Auto (TEI migration 2.0.0)</note>
-                <note type="updated" update="text-version" value="1.22.4" date-time="2020-12-11T14:06:50.919Z" user="admin">Auto (TEI migration 2.1.5)</note>
-                <note type="updated" update="text-version" value="1.22.5" date-time="2021-01-04T22:43:25.937Z" user="laura">Updated colophon to Bandé</note>
-                <note type="updated" update="text-version" value="1.22.6" date-time="2021-02-10T20:01:02.659Z" user="celso">"scholar" to "preceptor" in colophon</note>
-                <note type="updated" update="text-version" value="1.22.7" date-time="2022-06-27T10:06:48.1Z" user="admin">Auto (script-increment-version-published)</note>
-                <note type="updated" update="text-version" value="1.22.8" date-time="2022-12-29T16:51:43.203Z" user="konchog">Several fixes throughout all sections, as part of review of early published texts.</note>
-                <note type="updated" update="text-version" value="1.22.9" date-time="2023-01-16T16:58:52.361Z" user="celso">Auto (script-increment-version-published)</note>
-                <note type="updated" update="text-version" value="1.22.10" date-time="2023-01-18T14:48:43.396Z" user="celso">Auto (removing-tid-from-back-list-items)</note>
-                <note type="updated" update="text-version" value="1.22.11" date-time="2023-02-07T18:23:42.683Z" user="john">Auto (update-titles)</note>
-                <note type="updated" update="text-version" value="1.22.12" date-time="2023-02-15T19:02:27.584Z" user="martina-cotter">Added pending links.</note>
-            </notesStmt>
+            <notesStmt/>
+            <revisionDesc>
+                <change who="#admin" when="2013-10-20T12:00:00.000Z" type="translation-status" status="1" xml:id="UT22084-072-009-40">
+                    <desc>Note added retrospectively based on publication date</desc>
+                </change>
+                <change who="#admin" when="2013-10-20T12:00:00.000Z" type="translation-status" status="1.a" xml:id="UT22084-072-009-41">
+                    <desc>Note added retrospectively based on publication date</desc>
+                </change>
+                <change who="#celso" when="2019-06-18T16:25:59.158Z" type="text-version" status="v 1.21" xml:id="UT22084-072-009-42">
+                    <desc>v 1.21 2019</desc>
+                </change>
+                <change who="#celso" when="2019-06-21T14:44:35.078Z" type="text-version" status="v 1.22" xml:id="UT22084-072-009-43">
+                    <desc>v 1.22 2019</desc>
+                </change>
+                <change who="#admin" when="2019-10-07T10:27:24.685Z" type="text-version" status="v 1.22.1" xml:id="UT22084-072-009-44">
+                    <desc>Publication statement updated</desc>
+                </change>
+                <change who="#admin" when="2019-12-20T12:56:48.575Z" type="text-version" status="v 1.22.2" xml:id="UT22084-072-009-45">
+                    <desc>Automated version increment</desc>
+                </change>
+                <change who="#admin" when="2020-11-23T13:57:44.998Z" type="text-version" status="1.22.3" xml:id="UT22084-072-009-46">
+                    <desc>Auto (TEI migration 2.0.0)</desc>
+                </change>
+                <change who="#admin" when="2020-12-11T14:06:50.919Z" type="text-version" status="1.22.4" xml:id="UT22084-072-009-47">
+                    <desc>Auto (TEI migration 2.1.5)</desc>
+                </change>
+                <change who="#laura" when="2021-01-04T22:43:25.937Z" type="text-version" status="1.22.5" xml:id="UT22084-072-009-48">
+                    <desc>Updated colophon to Bandé</desc>
+                </change>
+                <change who="#celso" when="2021-02-10T20:01:02.659Z" type="text-version" status="1.22.6" xml:id="UT22084-072-009-49">
+                    <desc>"scholar" to "preceptor" in colophon</desc>
+                </change>
+                <change who="#admin" when="2022-06-27T10:06:48.1Z" type="text-version" status="1.22.7" xml:id="UT22084-072-009-50">
+                    <desc>Auto (script-increment-version-published)</desc>
+                </change>
+                <change who="#konchog" when="2022-12-29T16:51:43.203Z" type="text-version" status="1.22.8" xml:id="UT22084-072-009-51">
+                    <desc>Several fixes throughout all sections, as part of review of early published texts.</desc>
+                </change>
+                <change who="#celso" when="2023-01-16T16:58:52.361Z" type="text-version" status="1.22.9" xml:id="UT22084-072-009-52">
+                    <desc>Auto (script-increment-version-published)</desc>
+                </change>
+                <change who="#celso" when="2023-01-18T14:48:43.396Z" type="text-version" status="1.22.10" xml:id="UT22084-072-009-53">
+                    <desc>Auto (removing-tid-from-back-list-items)</desc>
+                </change>
+                <change who="#john" when="2023-02-07T18:23:42.683Z" type="text-version" status="1.22.11" xml:id="UT22084-072-009-54">
+                    <desc>Auto (update-titles)</desc>
+                </change>
+                <change who="#martina-cotter" when="2023-02-15T19:02:27.584Z" type="text-version" status="1.22.12" xml:id="UT22084-072-009-55">
+                    <desc>Added pending links.</desc>
+                </change>
+                <change who="#admin" when="2023-07-30T22:39:48.323Z" type="text-version" status="1.22.13" xml:id="UT22084-072-009-56">
+                    <desc>TEI migrated to 2.19.0</desc>
+                </change>
+                <change who="#andre" when="2023-08-24T15:00:49.064Z" type="text-version" status="1.22.14" xml:id="UT22084-072-009-59">
+                    <desc>Glossary TEI fixes</desc>
+                </change>
+            </revisionDesc>
         </fileDesc>
     </teiHeader>
     <!-- Contents
@@ -79,27 +119,27 @@
         <front>
             <div type="summary">
                 <head type="summary" tid="19">Summary</head>
-                <milestone unit="chunk" xml:id="UT22084-072-009-1"/>
-                <p tid="1">In this brief sūtra, the Buddha reminds his followers of one of the principal characteristics of
+                <tei:milestone unit="chunk" xml:id="UT22084-072-009-1"/>
+                <tei:p tid="1">In this brief sūtra, the Buddha reminds his followers of one of the principal characteristics of
                     saṃsāric existence: the reality of impermanence. The four things cherished most in this world, the Buddha
                     says—namely, good health, youth, prosperity, and life—are all impermanent. He closes his teaching with a verse,
                     asking how beings, afflicted as they are by impermanence, can take delight in anything desirable, and
-                    indirectly urging his disciples to practice the path of liberation.</p>
+                    indirectly urging his disciples to practice the path of liberation.</tei:p>
             </div>
             <div type="acknowledgment">
                 <head type="acknowledgment" tid="20">Acknowledgments</head>
-                <milestone unit="chunk" xml:id="UT22084-072-009-2"/>
-                <p tid="2">Translation by the Sakya Pandita Translation Group (International Buddhist Academy Division,
+                <tei:milestone unit="chunk" xml:id="UT22084-072-009-2"/>
+                <tei:p tid="2">Translation by the Sakya Pandita Translation Group (International Buddhist Academy Division,
                     Kathmandu). This sūtra was translated from the Tibetan into English by Christian Bernert and edited by Vivian
-                    Paganuzzi.</p>
-                <p tid="3">This translation has been completed under the patronage and supervision of 84000: Translating the Words
-                    of the Buddha.</p>
+                    Paganuzzi.</tei:p>
+                <tei:p tid="3">This translation has been completed under the patronage and supervision of 84000: Translating the Words
+                    of the Buddha.</tei:p>
             </div>
             <div type="introduction">
                 <head type="introduction" tid="21">Introduction</head>
                 <div type="section" xml:id="UT22084-072-009-introduction-1">
-                    <milestone unit="chunk" xml:id="UT22084-072-009-3"/>
-                    <p tid="4"> This sūtra highlights one of the most fundamental teachings of the Buddha—recognizing the
+                    <tei:milestone unit="chunk" xml:id="UT22084-072-009-3"/>
+                    <tei:p tid="4"> This sūtra highlights one of the most fundamental teachings of the Buddha—recognizing the
                         impermanence (<foreign type="term" xml:lang="Sa-Ltn">anityatā</foreign>) of conditioned phenomena. The
                         fact that such phenomena are impermanent (<foreign type="term" xml:lang="Sa-Ltn">anitya</foreign>) is
                         listed as the first of the three principal characteristics of existence, the other two being the
@@ -112,75 +152,75 @@
                         these three characteristics of existence and a fourth principle, that nirvāṇa is peace), often described
                         as summarizing or epitomizing the Buddhadharma, and more particularly as the criteria that together enable
                         the variety of Buddhist philosophical views to be distinguished from non-Buddhist ones.<note place="end" xml:id="UT22084-072-009-29">See, for example, <title xml:lang="en">The Questions of the Nāga
-                                King Sāgara</title> (Toh <ref target="UT22084-058-002.html">155</ref>). </note>
-                    </p>
+                                King Sāgara</title> (Toh <tei:ref target="UT22084-058-002.html">155</tei:ref>). </note>
+                    </tei:p>
                 </div>
                 <div type="section" xml:id="UT22084-072-009-introduction-2">
                     <head type="section" tid="22">Sūtras on impermanence</head>
-                    <milestone unit="chunk" xml:id="UT22084-072-009-4"/>
-                    <p tid="5">The Tibetan canon contains two sūtras with the title <title xml:lang="en">Sūtra on Impermanence
+                    <tei:milestone unit="chunk" xml:id="UT22084-072-009-4"/>
+                    <tei:p tid="5">The Tibetan canon contains two sūtras with the title <title xml:lang="en">Sūtra on Impermanence
                             </title>(<title xml:lang="Bo-Ltn">mi rtag pa nyid kyi mdo</title>), both found in the same section of
                         the Kangyur (mdo sde, Toh 309 and 310<note place="end" xml:id="UT22084-072-009-34">See DiSimone, Charles and Choi, Jin Kyoung. trans., <title xml:lang="en">
-                                <ref target="https://read.84000.co/translation/toh310.html">The Sūtra on Impermanence (2)</ref>
+                                <tei:ref target="https://read.84000.co/translation/toh310.html">The Sūtra on Impermanence (2)</tei:ref>
                             </title>, Toh 310. </note>). The sūtra translated here is the first, the shorter of the two.
                         Sūtras with equivalent titles are also found in other Buddhist canons, but their contents differ
                         substantially from the one translated here. The Chinese Tripiṭaka, for instance, contains two sūtras so
                         entitled (Taishō nos. 801 and 759), and in the Samyutta Nikāya of the Pāli canon, the collection of
                         discourses grouped by themes, there are a number of different texts with the title <title xml:lang="en">Sutta on Impermanence</title> (P. <title xml:lang="Sa-Ltn">Aniccasutta</title>).<note place="end" xml:id="UT22084-072-009-30">For instance Samyutta Nikaya 22.45 and 46, and Samyutta Nikaya
                             36.9.</note>
-                    </p>
+                    </tei:p>
                 </div>
                 <div type="section" xml:id="UT22084-072-009-introduction-3">
                     <head type="section" tid="23">Note on the translation</head>
-                    <milestone unit="chunk" xml:id="UT22084-072-009-5"/>
-                    <p tid="6">The content of this sūtra is rather straightforward and its interpretation does not pose any major
+                    <tei:milestone unit="chunk" xml:id="UT22084-072-009-5"/>
+                    <tei:p tid="6">The content of this sūtra is rather straightforward and its interpretation does not pose any major
                         difficulties. One particular term, however, did present a problem of translation: the Tibetan <foreign type="term" xml:lang="Bo-Ltn">dben pa</foreign>, which commonly translates the Sanskrit <foreign type="term" xml:lang="Sa-Ltn">viveka</foreign>/<foreign type="term" xml:lang="Sa-Ltn">vivikta </foreign>and is usually related to concepts of
                         isolation and seclusion. Here it seems to refer more specifically to the act of picking something out,
-                        separating it from other things and thus singling it out from them as special.</p>
+                        separating it from other things and thus singling it out from them as special.</tei:p>
                 </div>
             </div>
         </front>
         <body>
             <div type="translation">
-                <head type="translation" tid="24">The Translation</head>
+                <head type="translation">The Translation</head>
                 <head type="titleMain" tid="25">The Sūtra on Impermanence (1)</head>
                 <div type="section" xml:id="UT22084-072-009-section-1">
-                    <milestone unit="chunk" xml:id="UT22084-072-009-6"/>
-                    <p tid="7">
-                        <ref cRef="F.155.a" type="folio" xml:id="UT22084-072-009-32"/>
+                    <tei:milestone unit="chunk" xml:id="UT22084-072-009-6"/>
+                    <tei:p tid="7">
+                        <tei:ref cRef="F.155.a" type="folio" xml:id="UT22084-072-009-32"/>
                         <!--<modularPassage type="homage">-->Homage to all buddhas and bodhisattvas!<!--</modularPassage>-->
-                    </p>
+                    </tei:p>
                     <lb/>
-                    <milestone unit="chunk" xml:id="UT22084-072-009-7"/>
-                    <p tid="8">Thus did I hear at one time. The Bhagavān was dwelling in Anāthapiṇḍada’s park, in the Jeta Grove
-                        in Śrāvastī, along with a large monastic assembly. The Bhagavān addressed the monks as follows:</p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-072-009-7"/>
+                    <tei:p tid="8">Thus did I hear at one time. The Bhagavān was dwelling in Anāthapiṇḍada’s park, in the Jeta Grove
+                        in Śrāvastī, along with a large monastic assembly. The Bhagavān addressed the monks as follows:</tei:p>
                     <lb/>
-                    <milestone unit="chunk" xml:id="UT22084-072-009-8"/>
-                    <p tid="9">“Monks, four things are appealing, singled out, considered valuable, pleasant, and highly
-                        appreciated by everyone. What are those four? </p>
-                    <milestone unit="chunk" xml:id="UT22084-072-009-9"/>
-                    <p tid="10">“Monks, good health is appealing, singled out, considered valuable, pleasant, and highly
+                    <tei:milestone unit="chunk" xml:id="UT22084-072-009-8"/>
+                    <tei:p tid="9">“Monks, four things are appealing, singled out, considered valuable, pleasant, and highly
+                        appreciated by everyone. What are those four? </tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-072-009-9"/>
+                    <tei:p tid="10">“Monks, good health is appealing, singled out, considered valuable, pleasant, and highly
                         appreciated by everyone. Good health, however, ends with sickness. Monks, sickness is neither appealing,
-                        nor is it singled out, considered valuable, pleasant, or highly appreciated by anyone.</p>
-                    <milestone unit="chunk" xml:id="UT22084-072-009-10"/>
-                    <p tid="11">“Monks, youth is appealing, singled out, considered valuable, pleasant, and highly appreciated by
+                        nor is it singled out, considered valuable, pleasant, or highly appreciated by anyone.</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-072-009-10"/>
+                    <tei:p tid="11">“Monks, youth is appealing, singled out, considered valuable, pleasant, and highly appreciated by
                         everyone. Youth, however, ends with the aging of the body. Monks, the aging of the body is neither
-                        appealing, nor is it singled out, considered valuable, pleasant, or highly appreciated by anyone.</p>
-                    <milestone unit="chunk" xml:id="UT22084-072-009-11"/>
-                    <p tid="12">“Monks, prosperity is appealing, singled out, considered valuable, pleasant, and highly
+                        appealing, nor is it singled out, considered valuable, pleasant, or highly appreciated by anyone.</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-072-009-11"/>
+                    <tei:p tid="12">“Monks, prosperity is appealing, singled out, considered valuable, pleasant, and highly
                         appreciated by everyone. Prosperity, however, ends with its decline. Monks, the decline of prosperity is
                         neither appealing, nor is it singled out, considered valuable, pleasant, or highly appreciated by
-                        anyone. <ref cRef="F.155.b" type="folio" xml:id="UT22084-072-009-33"/>
-                    </p>
-                    <milestone unit="chunk" xml:id="UT22084-072-009-12"/>
-                    <p tid="13">“Monks, life is appealing, singled out, considered valuable, pleasant, and highly appreciated by
+                        anyone. <tei:ref cRef="F.155.b" type="folio" xml:id="UT22084-072-009-33"/>
+                    </tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-072-009-12"/>
+                    <tei:p tid="13">“Monks, life is appealing, singled out, considered valuable, pleasant, and highly appreciated by
                         everyone. Life, however, ends in death. Monks, death is neither appealing, nor is it singled out,
-                        considered valuable, pleasant, or highly appreciated by anyone.”</p>
-                    <milestone unit="chunk" xml:id="UT22084-072-009-13"/>
+                        considered valuable, pleasant, or highly appreciated by anyone.”</tei:p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-072-009-13"/>
                     <lb/>
-                    <p tid="14">Thus spoke the Bhagavān, the Sugata, and having spoken the Teacher added these words:</p>
+                    <tei:p tid="14">Thus spoke the Bhagavān, the Sugata, and having spoken the Teacher added these words:</tei:p>
                     <lb/>
-                    <milestone unit="chunk" xml:id="UT22084-072-009-14"/>
+                    <tei:milestone unit="chunk" xml:id="UT22084-072-009-14"/>
                     <lg tid="15">
                         <l>“Good health is impermanent, </l>
                         <l>Youth does not last. </l>
@@ -189,17 +229,17 @@
                         <l>How can beings, afflicted as they are by impermanence,</l>
                         <l>Take delight in desirable things like these?”</l>
                     </lg>
-                    <milestone unit="chunk" xml:id="UT22084-072-009-15"/>
-                    <p tid="16">When the Bhagavān had thus spoken, the monks rejoiced and praised his words. </p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-072-009-15"/>
+                    <tei:p tid="16">When the Bhagavān had thus spoken, the monks rejoiced and praised his words. </tei:p>
                     <lb/>
-                    <milestone unit="chunk" xml:id="UT22084-072-009-16"/>
+                    <tei:milestone unit="chunk" xml:id="UT22084-072-009-16"/>
                     <trailer tid="17"> This completes “<title xml:lang="en">The Sūtra on Impermanence</title>.” </trailer>
                 </div>
                 <div type="colophon" xml:id="UT22084-072-009-colophon">
                     <head type="colophon" tid="26">Colophon</head>
-                    <milestone unit="chunk" xml:id="UT22084-072-009-31"/>
-                    <p tid="18">Translated and edited by the Indian preceptor Surendrabodhi and the principal editor-translator, Bandé Zhang Yeshé Dé. It was then also reviewed and finalized in accordance with current language
-                        reforms.</p>
+                    <tei:milestone unit="chunk" xml:id="UT22084-072-009-31"/>
+                    <tei:p tid="18">Translated and edited by the Indian preceptor Surendrabodhi and the principal editor-translator, Bandé Zhang Yeshé Dé. It was then also reviewed and finalized in accordance with current language
+                        reforms.</tei:p>
                 </div>
             </div>
         </body>
@@ -220,83 +260,87 @@
                         Center). 108 volumes. Beijing: krung go’i bod rig pa dpe skrun khang (China Tibetology Publishing House),
                         2006–9, vol. 72, 434–36.</bibl>
                     <bibl xml:id="UT22084-072-009-35">DiSimone, Charles and Choi, Jin Kyoung, trans. <title xml:lang="en">
-                            <ref target="https://read.84000.co/translation/toh310.html">The Sūtra on Impermanence (2)</ref>
+                            <tei:ref target="https://read.84000.co/translation/toh310.html">The Sūtra on Impermanence (2)</tei:ref>
                         </title> (<title xml:lang="Sa-Ltn">Anityatāsūtra</title>, Toh 310). </bibl>
                     <bibl xml:id="UT22084-072-009-19">Nyanaponika Thera, transl.<title xml:lang="en"> Anicca Sutta:
                             Impermanent</title> (SN 36.9), translated from the Pali. <title xml:lang="en">Access to
-                            Insight</title>, 30 June 2010, <ref target="http://www.accesstoinsight.org/tipitaka/sn/sn36/sn36.009.nypo.html">www.accesstoinsight.org</ref>. Retrieved on 10 May 2013.</bibl>
+                            Insight</title>, 30 June 2010, <tei:ref target="http://www.accesstoinsight.org/tipitaka/sn/sn36/sn36.009.nypo.html">www.accesstoinsight.org</tei:ref>. Retrieved on 10 May 2013.</bibl>
                     <bibl xml:id="UT22084-072-009-20">“The Three Basic Facts of Existence: I. Impermanence (Anicca), with a
-                        preface by Nyanaponika Thera.” <title xml:lang="en">Access to Insight</title>, 2 December 2011, <ref target="http://www.accesstoinsight.org/lib/authors/various/wheel186.html">www.accesstoinsight.org</ref>. Retrieved on 10 May 2013.</bibl>
+                        preface by Nyanaponika Thera.” <title xml:lang="en">Access to Insight</title>, 2 December 2011, <tei:ref target="http://www.accesstoinsight.org/lib/authors/various/wheel186.html">www.accesstoinsight.org</tei:ref>. Retrieved on 10 May 2013.</bibl>
                 </div>
             </div>
             <div type="glossary">
                 <list type="glossary">
                     <item>
                         <gloss type="term" xml:id="UT22084-072-009-21">
-                            <term>three principal characteristics of existence</term>
-                            <term xml:lang="Bo-Ltn">bkar btags gsum </term>
-                            <term xml:lang="bo">བཀར་བཏགས་གསུམ།</term>
-                            <term xml:lang="Sa-Ltn"/>
-                            <term type="definition">Impermanence, suffering, and no-self. They are called in Pāli <foreign xml:lang="Pi-Ltn">tilakkhaṇa</foreign>, the “three
+                            <term type="translationMain">three principal characteristics of existence</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified"/>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">bkar btags gsum</term>
+                            <term xml:lang="bo" type="attestedSource" n="1">བཀར་བཏགས་གསུམ།</term>
+                            <note type="definition">
+                                <p>Impermanence, suffering, and no-self. They are called in Pāli <foreign xml:lang="Pi-Ltn">tilakkhaṇa</foreign>, the “three
                                 characteristics,” a term that has no direct equivalent in the Sanskrit or Tibetan
                                 literature; in Tibetan, these three factors are usually called the “three seals of the Buddha’s
-                                teaching” in parallel to the “four seals of the Buddha’s teaching,” q.v.</term>
+                                teaching” in parallel to the “four seals of the Buddha’s teaching,” q.v.</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="term" xml:id="UT22084-072-009-22">
-                            <term>impermanent</term>
-                            <term xml:lang="Bo-Ltn">mi rtag pa </term>
-                            <term xml:lang="bo">མི་རྟག་པ།</term>
-                            <term xml:lang="Sa-Ltn">anitya</term>
+                            <term type="translationMain">impermanent</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified">anitya</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">mi rtag pa</term>
+                            <term xml:lang="bo" type="attestedSource" n="1">མི་རྟག་པ།</term>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="term" xml:id="UT22084-072-009-23">
-                            <term>impermanence</term>
-                            <term xml:lang="Bo-Ltn">mi rtag pa nyid </term>
-                            <term xml:lang="bo">མི་རྟག་པ་ཉིད།</term>
-                            <term xml:lang="Sa-Ltn">anityatā</term>
+                            <term type="translationMain">impermanence</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified">anityatā</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">mi rtag pa nyid</term>
+                            <term xml:lang="bo" type="attestedSource" n="1">མི་རྟག་པ་ཉིད།</term>
                         </gloss>
                     </item>
                     <item>
                         <gloss xml:id="UT22084-072-009-24" type="term" mode="match">
-                            <term>suffering</term>
-                            <term xml:lang="Bo-Ltn">sdug bsngal</term>
-                            <term xml:lang="bo">སྡུག་བསྔལ།</term>
-                            <term xml:lang="Sa-Ltn">duḥkha</term>
+                            <term type="translationMain">suffering</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified">duḥkha</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">sdug bsngal</term>
+                            <term xml:lang="bo" type="attestedSource" n="1">སྡུག་བསྔལ།</term>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="term" xml:id="UT22084-072-009-25">
-                            <term>no-self</term>
-                            <term xml:lang="Bo-Ltn">bdag med </term>
-                            <term xml:lang="bo">བདག་མེད།</term>
-                            <term xml:lang="Sa-Ltn">anātman</term>
-                            <term type="alternative" xml:lang="en">lack of an inherent substance</term>
+                            <term type="translationMain">no-self</term>
+                            <term type="translationAlternative">lack of an inherent substance</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified">anātman</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">bdag med</term>
+                            <term xml:lang="bo" type="attestedSource" n="1">བདག་མེད།</term>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="term" xml:id="UT22084-072-009-26">
-                            <term>four seals of the Buddha’s teaching</term>
-                            <term xml:lang="Bo-Ltn">bka’ rtags kyi phyag rgya bzhi</term>
-                            <term xml:lang="bo">བཀའ་རྟགས་ཀྱི་ཕྱག་རྒྱ་བཞི།</term>
-                            <term xml:lang="Bo-Ltn">bkar btags bzhi </term>
-                            <term xml:lang="bo">བཀར་བཏགས་བཞི།</term>
-                            <term xml:lang="Bo-Ltn">chos kyi sdom bzhi </term>
-                            <term xml:lang="bo">ཆོས་ཀྱི་སྡོམ་བཞི།</term>
-                            <term xml:lang="Sa-Ltn">caturdharmoddāna</term>
-                            <term type="definition">All conditioned phenomena are impermanent; all defilements are suffering; all
-                                phenomena are without self; nirvāṇa is peace.</term>
+                            <term type="translationMain">four seals of the Buddha’s teaching</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified">caturdharmoddāna</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">bka’ rtags kyi phyag rgya bzhi</term>
+                            <term xml:lang="bo" type="attestedSource" n="1">བཀའ་རྟགས་ཀྱི་ཕྱག་རྒྱ་བཞི།</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="2">bkar btags bzhi</term>
+                            <term xml:lang="bo" type="attestedSource" n="2">བཀར་བཏགས་བཞི།</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="3">chos kyi sdom bzhi</term>
+                            <term xml:lang="bo" type="attestedSource" n="3">ཆོས་ཀྱི་སྡོམ་བཞི།</term>
+                            <note type="definition">
+                                <p>All conditioned phenomena are impermanent; all defilements are suffering; all
+                                phenomena are without self; nirvāṇa is peace.</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="term" xml:id="UT22084-072-009-27">
-                            <term>singled out</term>
-                            <term xml:lang="Bo-Ltn">dben pa </term>
-                            <term xml:lang="bo">དབེན་པ།</term>
-                            <term xml:lang="Sa-Ltn">viveka</term>
-                            <term xml:lang="Sa-Ltn">vivikta</term>
+                            <term type="translationMain">singled out</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified">viveka</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified">vivikta</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">dben pa</term>
+                            <term xml:lang="bo" type="attestedSource" n="1">དབེན་པ།</term>
                         </gloss>
                     </item>
                 </list>
@@ -307,4 +351,4 @@
     
     
     
-    </TEI>
+    </tei:TEI>
