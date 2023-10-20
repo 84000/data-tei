@@ -28,7 +28,7 @@
                 <editor role="finalReviewer" xml:id="UT22084-090-003-1844">Rory Lindsay</editor>
             </titleStmt>
             <editionStmt>
-                <edition>v 1.0.1 <date>2023</date>
+                <edition>v 1.0.3 <date>2023</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -121,6 +121,12 @@
                 <change who="#sameer" when="2023-09-17T02:31:01.568Z" type="text-version" status="1.0.1" xml:id="UT22084-090-003-1857">
                     <desc>Included in App v 3.6</desc>
                 </change>
+                <change who="#celso" when="2023-10-13T11:48:10.305Z" type="text-version" status="1.0.2" xml:id="UT22084-090-003-1858">
+                    <desc>reapplied capital letters in Wylie and covert to TibUni-glossary</desc>
+                </change>
+                <change who="#martina-cotter" when="2023-10-20T15:08:00.301Z" type="text-version" status="1.0.3" xml:id="UT22084-090-003-1861">
+                    <desc>Added pending links.</desc>
+                </change>
             </revisionDesc>
         </fileDesc>
     </teiHeader>
@@ -189,7 +195,11 @@
                                 (<title xml:lang="Bo-Ltn">bsil ba’i tshal chen mo’i mdo</title>),
                             which means <title xml:lang="en">The Sūtra of the Great Cool
                                 Forest</title>. About this shifting morphology, see Hidas 2017, p.
-                            452, note 20 and Skilling 1992, pp. 141–42.</note> (Toh 562), <ref rend="pending" target="http://read.84000.co/translation/toh562.html"/>
+                            452, note 20 and Skilling 1992, pp. 141–42.</note> (Toh 562),<note place="end" xml:id="UT22084-090-003-1859">Dharmachakra Translation Committee, trans., <title xml:lang="en">
+                                <ref target="http://read.84000.co/translation/toh562.html">Great Cool Grove
+                                </ref>
+                            </title>, Toh 562 (84000: Translating the Words of the 
+                                Buddha, 2023).</note>
                         and <title xml:lang="Sa-Ltn">Mahā­mantrānusāriṇī</title>
                         <note place="end" xml:id="UT22084-090-003-9"> As above, we have provided the most popular
                             Sanskrit name for the text and the Pañcarakṣā goddess it invokes. The
@@ -3760,7 +3770,13 @@
                             <ref target="https://read.84000.co/translation/toh561.html">The Great
                                 Amulet</ref>
                         </title> (<title xml:lang="Sa-Ltn">Mahā­pratisarā­vidyā­rājñī</title>, Toh 561). 84000: Translating the
-                        Words of the Buddha.</bibl>
+                        Words of the Buddha, 2023.</bibl>
+                    <bibl xml:id="UT22084-090-003-1860">———(2023). trans. 
+                        <title xml:lang="en">
+                            <ref target="https://read.84000.co/translation/toh562.html">Great Cool Grove
+                        </ref>
+                        </title> 
+                        (Toh 562). 84000: Translating the Words of the Buddha, 2023.</bibl>
                     <bibl xml:id="UT22084-090-003-661">Herrmann-Pfandt, Adelheid. <title xml:lang="de">Die lHan kar ma: ein früher Katalog der ins Tibetische
                             übersetzten buddhistischen Texte</title>. Vienna: Verlag der
                         Österreichischen Akademie der Wissenschaften, 2008.</bibl>
@@ -6467,7 +6483,7 @@
                             <term xml:lang="Sa-Ltn" type="sourceUnspecified">elapatra</term>
                             <term xml:lang="Bo-Ltn" type="attestedSource" n="1">e la’i ’dab</term>
                             <term xml:lang="bo" type="attestedSource" n="1">ཨེ་ལའི་འདབ།</term>
-                            <note type="definition">
+                            <note type="definition" rend="override">
                                 <p>A nāga king.</p>
                             </note>
                         </gloss>
@@ -6532,8 +6548,8 @@
                         <gloss type="person" xml:id="UT22084-090-003-920">
                             <term type="translationMain">Gaṅgā</term>
                             <term xml:lang="Sa-Ltn" type="sourceUnspecified">gaṅgā</term>
-                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">gang ga</term>
-                            <term xml:lang="bo" type="attestedSource" n="1">གང་ག</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">gang gA</term>
+                            <term xml:lang="bo" type="attestedSource" n="1">གང་གཱ།</term>
                             <note type="definition">
                                 <p>A nāga king identified by the name of the river Gaṅgā.</p>
                             </note>
@@ -6543,8 +6559,8 @@
                         <gloss mode="marked" type="person" xml:id="UT22084-090-003-921">
                             <term type="translationMain">Gaṅgā</term>
                             <term xml:lang="Sa-Ltn" type="sourceUnspecified">gaṅgā</term>
-                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">gang ga</term>
-                            <term xml:lang="bo" type="attestedSource" n="1">གང་ག</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">gang gA</term>
+                            <term xml:lang="bo" type="attestedSource" n="1">གང་གཱ།</term>
                             <note type="definition">
                                 <p>A river queen.</p>
                             </note>
@@ -7196,9 +7212,8 @@
                         <gloss type="person" xml:id="UT22084-090-003-981">
                             <term type="translationMain">Jñānasiddhi</term>
                             <term xml:lang="Sa-Ltn" type="sourceUnspecified">jñānasiddhi</term>
-                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">dz+nya na sid
-                                d+hi</term>
-                            <term xml:lang="bo" type="attestedSource" n="1">ཛྙ་ན་སིད་དྷི།</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">dz+nyA na sid d+hi</term>
+                            <term xml:lang="bo" type="attestedSource" n="1">ཛྙཱ་ན་སིད་དྷི།</term>
                             <note type="definition">
                                 <p>Indian scholar from the late eighth–early ninth century.</p>
                             </note>
@@ -9738,8 +9753,8 @@
                         <gloss type="person" xml:id="UT22084-090-003-1209">
                             <term type="translationMain">Pāṇḍaraka</term>
                             <term xml:lang="Sa-Ltn" type="sourceUnspecified">pāṇḍaraka</term>
-                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">pan+da ka</term>
-                            <term xml:lang="bo" type="attestedSource" n="1">པནྡ་ཀ</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">paN+Da ka</term>
+                            <term xml:lang="bo" type="attestedSource" n="1">པཎྜ་ཀ</term>
                             <note type="definition">
                                 <p>A nāga king.</p>
                             </note>
@@ -10805,18 +10820,16 @@
                         <gloss type="person" xml:id="UT22084-090-003-1305">
                             <term type="translationMain">Śākyamuni</term>
                             <term xml:lang="Sa-Ltn" type="sourceUnspecified">śākyamuni</term>
-                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">shakya thub
-                                pa</term>
-                            <term xml:lang="bo" type="attestedSource" n="1">ཤཀྱ་ཐུབ་པ།</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">shAkya thub pa</term>
+                            <term xml:lang="bo" type="attestedSource" n="1">ཤཱཀྱ་ཐུབ་པ།</term>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="person" xml:id="UT22084-090-003-1306">
                             <term type="translationMain">Śākyaprabha</term>
                             <term xml:lang="Sa-Ltn" type="sourceUnspecified">śākyaprabha</term>
-                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">shakya pra
-                                b+ha</term>
-                            <term xml:lang="bo" type="attestedSource" n="1">ཤཀྱ་པྲ་བྷ།</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">shAkya pra b+ha</term>
+                            <term xml:lang="bo" type="attestedSource" n="1">ཤཱཀྱ་པྲ་བྷ།</term>
                             <note type="definition">
                                 <p>Indian scholar from the late eighth–early ninth century.</p>
                             </note>
@@ -11261,9 +11274,8 @@
                         <gloss type="person" xml:id="UT22084-090-003-1346">
                             <term type="translationMain">Śīlendrabodhi</term>
                             <term xml:lang="Sa-Ltn" type="sourceUnspecified">śīlendrabodhi</term>
-                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">shi len dra bo
-                                d+hi</term>
-                            <term xml:lang="bo" type="attestedSource" n="1">ཤི་ལེན་དྲ་བོ་དྷི།</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">shI len dra bo d+hi</term>
+                            <term xml:lang="bo" type="attestedSource" n="1">ཤཱི་ལེན་དྲ་བོ་དྷི།</term>
                             <note type="definition">
                                 <p>Indian scholar from the late eighth–early ninth century.</p>
                             </note>
@@ -11355,8 +11367,8 @@
                         <gloss mode="marked" type="person" xml:id="UT22084-090-003-1354">
                             <term type="translationMain">Sītā</term>
                             <term xml:lang="Sa-Ltn" type="sourceUnspecified">sītā</term>
-                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">si ta</term>
-                            <term xml:lang="bo" type="attestedSource" n="1">སི་ཏ།</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">sI ta</term>
+                            <term xml:lang="bo" type="attestedSource" n="1">སཱི་ཏ།</term>
                             <note type="definition">
                                 <p>A nāga king.</p>
                             </note>
@@ -11366,8 +11378,8 @@
                         <gloss type="person" xml:id="UT22084-090-003-1355">
                             <term type="translationMain">Sītā</term>
                             <term xml:lang="Sa-Ltn" type="sourceUnspecified">sītā</term>
-                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">si ta</term>
-                            <term xml:lang="bo" type="attestedSource" n="1">སི་ཏ།</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">sI ta</term>
+                            <term xml:lang="bo" type="attestedSource" n="1">སཱི་ཏ།</term>
                             <note type="definition">
                                 <p>A river queen.</p>
                             </note>
@@ -12466,8 +12478,8 @@
                         <gloss type="person" xml:id="UT22084-090-003-1454">
                             <term type="translationMain">Vaccaḍa</term>
                             <term xml:lang="Sa-Ltn" type="sourceUnspecified">vaccaḍa</term>
-                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">bab+ba da</term>
-                            <term xml:lang="bo" type="attestedSource" n="1">བབྦ་ད།</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">bab+ba Da</term>
+                            <term xml:lang="bo" type="attestedSource" n="1">བབྦ་ཌ།</term>
                             <note type="definition">
                                 <p>A yakṣa general.</p>
                             </note>
@@ -12477,8 +12489,8 @@
                         <gloss type="person" xml:id="UT22084-090-003-1455">
                             <term type="translationMain">Vaḍi</term>
                             <term xml:lang="Sa-Ltn" type="sourceUnspecified">vaḍi</term>
-                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">ba di</term>
-                            <term xml:lang="bo" type="attestedSource" n="1">བ་དི།</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">ba Di</term>
+                            <term xml:lang="bo" type="attestedSource" n="1">བ་ཌི།</term>
                             <note type="definition">
                                 <p>A yakṣa who is a “Dharma brother” of Vaiśravaṇa.</p>
                             </note>
@@ -12607,8 +12619,8 @@
                         <gloss type="person" xml:id="UT22084-090-003-1466">
                             <term type="translationMain">Vakṣu</term>
                             <term xml:lang="Sa-Ltn" type="sourceUnspecified">vakṣu</term>
-                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">pak+shu</term>
-                            <term xml:lang="bo" type="attestedSource" n="1">པཀྴུ།</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">pak+Shu</term>
+                            <term xml:lang="bo" type="attestedSource" n="1">པཀྵུ།</term>
                             <note type="definition">
                                 <p>A river queen.</p>
                             </note>
@@ -13536,8 +13548,8 @@
                         <gloss type="person" xml:id="UT22084-090-003-1549">
                             <term type="translationMain">Śākya</term>
                             <term xml:lang="Sa-Ltn" type="sourceUnspecified">śākya</term>
-                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">shakya</term>
-                            <term xml:lang="bo" type="attestedSource" n="1">ཤཀྱ།</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">shAkya</term>
+                            <term xml:lang="bo" type="attestedSource" n="1">ཤཱཀྱ།</term>
                             <note type="definition">
                                 <p>The name of the family clan into which Buddha Śākyamuni was
                                     born.</p>
@@ -13593,8 +13605,8 @@
                         <gloss type="person" xml:id="UT22084-090-003-1554">
                             <term type="translationMain">Yāmā</term>
                             <term xml:lang="Sa-Ltn" type="sourceUnspecified">yāmā</term>
-                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">ya ma</term>
-                            <term xml:lang="bo" type="attestedSource" n="1">ཡ་མ།</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">yA ma</term>
+                            <term xml:lang="bo" type="attestedSource" n="1">ཡཱ་མ།</term>
                             <note type="definition">
                                 <p>A great rākṣasī.</p>
                             </note>
@@ -13683,8 +13695,8 @@
                         <gloss mode="marked" type="person" xml:id="UT22084-090-003-1562">
                             <term type="translationMain">Vakṣu</term>
                             <term xml:lang="Sa-Ltn" type="sourceUnspecified">vakṣu</term>
-                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">pak+shu</term>
-                            <term xml:lang="bo" type="attestedSource" n="1">པཀྴུ།</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">pak+Shu</term>
+                            <term xml:lang="bo" type="attestedSource" n="1">པཀྵུ།</term>
                             <note type="definition">
                                 <p>A nāga king.</p>
                             </note>
@@ -14395,8 +14407,8 @@
                         <gloss type="place" xml:id="UT22084-090-003-1643">
                             <term type="translationMain">Kauśāmbī</term>
                             <term xml:lang="Sa-Ltn" type="sourceUnspecified">kauśāmbī</term>
-                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">kau sham+bi</term>
-                            <term xml:lang="bo" type="attestedSource" n="1">ཀཽ་ཤམྦི།</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">kau shAm+bI</term>
+                            <term xml:lang="bo" type="attestedSource" n="1">ཀཽ་ཤཱམྦཱི།</term>
                         </gloss>
                     </item>
                     <item>
@@ -15042,16 +15054,16 @@
                         <gloss type="place" xml:id="UT22084-090-003-1719">
                             <term type="translationMain">Uḍḍiyānaka</term>
                             <term xml:lang="Sa-Ltn" type="sourceUnspecified">uḍḍiyānaka</term>
-                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">u t+yana</term>
-                            <term xml:lang="bo" type="attestedSource" n="1">ཨུ་ཏྱན།</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">u T+yana</term>
+                            <term xml:lang="bo" type="attestedSource" n="1">ཨུ་ཊྱན།</term>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="place" xml:id="UT22084-090-003-1720">
                             <term type="translationMain">Udumbara</term>
                             <term xml:lang="Sa-Ltn" type="sourceUnspecified">udumbara</term>
-                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">u dum+ba ra</term>
-                            <term xml:lang="bo" type="attestedSource" n="1">ཨུ་དུམྦ་ར།</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">u dum+bA ra</term>
+                            <term xml:lang="bo" type="attestedSource" n="1">ཨུ་དུམྦཱ་ར།</term>
                         </gloss>
                     </item>
                     <item>
@@ -15125,8 +15137,8 @@
                         <gloss type="place" xml:id="UT22084-090-003-1729">
                             <term type="translationMain">Vārāṇasī</term>
                             <term xml:lang="Sa-Ltn" type="sourceUnspecified">vārāṇasī</term>
-                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">ba ra na si</term>
-                            <term xml:lang="bo" type="attestedSource" n="1">བ་ར་ན་སི།</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">bA rA Na sI</term>
+                            <term xml:lang="bo" type="attestedSource" n="1">བཱ་རཱ་ཎ་སཱི།</term>
                         </gloss>
                     </item>
                     <item>
