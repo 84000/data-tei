@@ -30,7 +30,7 @@
                 <editor role="finalReviewer" xml:id="UT22084-090-006-465">Rory Lindsay</editor>
             </titleStmt>
                         <editionStmt>
-                <edition>v 1.0.3 <date>2023</date>
+                <edition>v 1.0.5 <date>2023</date>
                 </edition>
             </editionStmt>
                         <publicationStmt>
@@ -149,6 +149,12 @@
                 <change who="#sameer" when="2023-09-17T09:17:00.636Z" type="text-version" status="1.0.3" xml:id="UT22084-090-006-472">
                     <desc>Included in App v 3.6</desc>
                 </change>
+                <change who="#celso" when="2023-10-13T11:48:10.305Z" type="text-version" status="1.0.4" xml:id="UT22084-090-006-473">
+                    <desc>reapplied capital letters in Wylie and covert to TibUni-glossary</desc>
+                </change>
+                <change who="#martina-cotter" when="2023-10-20T14:57:07.091Z" type="text-version" status="1.0.5" xml:id="UT22084-090-006-476">
+                    <desc>Added pending links.</desc>
+                </change>
             </revisionDesc>
         </fileDesc>
         </teiHeader>
@@ -216,7 +222,11 @@
                             </title>, Toh 558 (84000:
                                                   Translating the Words of the Buddha, 2016).</note>
                                                 <title xml:lang="en">The Great Peahen</title>
-                                                  (<title xml:lang="Sa-Ltn">Mahā­māyūrīvidyā­rājñī</title>, Toh 559),<ref rend="pending" target="http://read.84000.co/translation/toh559.html"/>
+                                            (<title xml:lang="Sa-Ltn">Mahā­māyūrīvidyā­rājñī</title>, Toh 559),<note place="end" xml:id="UT22084-090-006-474">Dharmachakra Translation Committee, trans., <title xml:lang="en">
+                                <ref target="http://read.84000.co/translation/toh559.html">The Queen of Incantations: The Great Peahen
+                                                </ref>
+                            </title>, Toh 559 (84000: Translating the Words of the 
+                                                Buddha, 2023).</note>
                                                 <title xml:lang="en">The Great Amulet</title>
                                                   (<title xml:lang="Sa-Ltn">Mahā­pratisārāvidyā­rājñī</title>, Toh 561),<note place="end" xml:id="UT22084-090-006-428">
                                                   Dharmacakra Translation Committee, trans., <title xml:lang="en">
@@ -2148,6 +2158,12 @@
                                 </div>
                                 <div type="section" xml:id="UT22084-090-006-listBibl-2">
                                         <head type="section" tid="225">Secondary Sources</head>
+                                    <bibl xml:id="UT22084-090-006-475">Dharmachakra Translation Committee, trans. 
+                                        <title xml:lang="en">
+                            <ref target="https://read.84000.co/translation/toh559.html">The Queen of Incantations: The Great Peahen
+                                        </ref>
+                        </title> 
+                                        (Toh 559). 84000: Translating the Words of the Buddha, 2023.</bibl>
                                         <bibl xml:id="UT22084-090-006-251">Herrmann-Pfandt,
                                                 Adelheid. <title xml:lang="de">Die lHan kar ma: ein
                                                   früher Katalog der ins Tibetische übersetzten
@@ -2972,8 +2988,8 @@
                         <gloss type="person" xml:id="UT22084-090-006-326">
                             <term type="translationMain">Kātyāyana</term>
                             <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">kātyāyana</term>
-                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">ka t+ya’i bu</term>
-                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">ཀ་ཏྱའི་བུ།</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">kA t+yA’i bu</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">ཀཱ་ཏྱཱའི་བུ།</term>
                             <note type="definition">
                                 <p>One of the ten principal
                                                   pupils of the Buddha, he was foremost in
@@ -2985,8 +3001,8 @@
                         <gloss type="person" xml:id="UT22084-090-006-327">
                             <term type="translationMain">Kauṇḍinya</term>
                             <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">kauṇḍinya</term>
-                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">kaun+di n+ya</term>
-                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">ཀཽནྡི་ནྱ།</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">kauN+Di n+ya</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">ཀཽཎྜི་ནྱ།</term>
                             <note type="definition">
                                 <p>Counted among the five
                                                   wandering mendicants (<foreign xml:lang="Sa-Ltn" type="term">parivrājaka</foreign>) who initially
@@ -3138,7 +3154,7 @@
                             <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">maitreya</term>
                             <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">byams pa</term>
                             <term xml:lang="bo" type="attestedSource" n="1" status="verified">བྱམས་པ།</term>
-                            <note type="definition">
+                            <note type="definition" rend="override">
                                 <p>A bodhisattva who will
                                                   become the next buddha of this world
                                                   system.</p>
@@ -3338,8 +3354,8 @@
                         <gloss xml:id="UT22084-090-006-356" type="person" mode="match">
                             <term type="translationMain">Śāriputra</term>
                             <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">śāriputra</term>
-                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">sha ri’i bu</term>
-                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">ཤ་རིའི་བུ།</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">shA ri’i bu</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">ཤཱ་རིའི་བུ།</term>
                             <note type="definition" rend="override">
                                 <p>One of the principal śrāvaka disciples of the Buddha, he was praised by the Buddha as foremost among the wise.</p>
                             </note>
@@ -3629,8 +3645,8 @@
                         <gloss xml:id="UT22084-090-006-381" type="person" mode="match">
                             <term type="translationMain">Śākya</term>
                             <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">śākya</term>
-                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">shakya</term>
-                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">ཤཀྱ།</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">shAkya</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">ཤཱཀྱ།</term>
                             <note type="definition" rend="override">
                                 <p>The name of the clan in which the Buddha Śākyamuni was born.</p>
                             </note>
@@ -3697,8 +3713,8 @@
                         <gloss xml:id="UT22084-090-006-388" type="place" mode="match">
                             <term type="translationMain">Magadha</term>
                             <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">magadha</term>
-                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">ma ga d+ha</term>
-                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">མ་ག་དྷ།</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">ma ga d+hA</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">མ་ག་དྷཱ།</term>
                             <note type="definition" rend="override">
                                 <p>An ancient Indian kingdom that lay to the south of the Ganges River in what is today the state of Bihar. During the life of the Buddha Śākyamuni, it was ruled by King Bimbisāra and was home to many of the most important Buddhist sites, including Bodh Gayā, Nālandā, and Rājagṛha.</p>
                             </note>
