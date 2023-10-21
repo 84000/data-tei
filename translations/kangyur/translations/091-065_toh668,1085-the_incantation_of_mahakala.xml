@@ -1,0 +1,806 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schema/current/translation.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+        <teiHeader>
+                <fileDesc>
+                        <titleStmt>
+                                <title type="mainTitle" xml:lang="Bo-Ltn">mgon po nag po’i
+                                        gzungs</title>
+                                <title type="mainTitle" xml:lang="bo">མགོན་པོ་ནག་པོའི་གཟུངས།</title>
+                                <title type="mainTitle" xml:lang="en">The Dhāraṇī of
+                                        Mahākāla</title>
+                                <title type="mainTitle" xml:lang="Sa-Ltn">Mahākāla­dhāraṇī</title>
+                                <title type="longTitle" xml:lang="bo">འཕགས་པ་དཔལ་མགོན་པོ་ནག་པོ་ཞེས་བྱ་བའི་གཟུངས།</title>
+                                <title type="longTitle" xml:lang="Bo-Ltn">’phags pa dpal mgon po nag
+                                        po zhes bya ba’i gzungs</title>
+                                <title type="longTitle" xml:lang="en">The Noble Dhāraṇī of Glorious
+                                        Mahākāla</title>
+                                <title type="longTitle" xml:lang="Sa-Ltn">Ārya­śrī­mahākālanāma­dhāraṇī</title>
+                                <title type="otherTitle" xml:lang="zh"/>
+                                <author xml:id="UT22084-091-065-1" role="translatorMain">Translated
+                                        by the Dharmachakra Translation Committee<lb/>under the
+                                        patronage and supervision of 84000: Translating the Words of
+                                        the Buddha</author>
+                                <consultant role="projectManager" xml:id="UT22084-091-065-2">Andreas
+                                        Doctor</consultant>
+                                <author role="translatorEng" xml:id="UT22084-091-065-3">Adam
+                                        Krug</author>
+                                <consultant role="dharmaMaster" xml:id="UT22084-091-065-4">Chokyi
+                                        Nyima Rinpoche</consultant>
+                                <editor role="reviser" xml:id="UT22084-091-065-5">Andreas
+                                        Doctor</editor>
+                                <editor role="projectEditor" xml:id="UT22084-091-065-6">David
+                                        Fiordalis</editor>
+                                <editor role="copyEditor" xml:id="UT22084-091-065-7">Dawn
+                                        Collins</editor>
+                                <editor role="projectEditor" xml:id="UT22084-091-065-34">George
+                                        FitzHerbert</editor>
+                                <editor role="TEImarkupEditor" xml:id="UT22084-091-065-48">Martina
+                                        Cotter</editor>
+                        </titleStmt>
+                        <editionStmt>
+                <edition>v 0.0.2 <date>2023</date>
+                </edition>
+            </editionStmt>
+                        <publicationStmt>
+                                <publisher>
+                    <name>84000: Translating the Words of the Buddha</name>
+                                        is a global non-profit initiative to translate all the
+                                        Buddha’s words into modern languages, and to make them
+                                        available to everyone. </publisher>
+                                <availability status="2.a">
+                                        <p type="tantricRestriction">
+                        <emph rend="bold">Warning:</emph> Readers are reminded that
+                                                according to Vajrayāna Buddhist tradition there are
+                                                restrictions and commitments concerning tantra.
+                                                Practitioners who are not sure if they should read
+                                                this translation are advised to consult the
+                                                authorities of their lineage. The responsibility for
+                                                reading this text or sharing it with others who may
+                                                or may not fulfill the requirements lies in the
+                                                hands of readers.</p>
+                                        <licence>
+                                                <graphic url="http://i.creativecommons.org/l/by-nc-nd/2.0/88x31.png"/>
+                                                <p>This work is provided under the protection of a
+                                                  Creative Commons CC BY-NC-ND (Attribution -
+                                                  Non-commercial - No-derivatives) 3.0 copyright. It
+                                                  may be copied or printed for fair use, but only
+                                                  with full attribution, and not for commercial
+                                                  advantage or personal compensation. For full
+                                                  details, see the Creative Commons license.</p>
+                                        </licence>
+                                </availability>
+                                <idno xml:id="UT22084-091-065"/>
+                                <note>An early mistake in the assigning of UT numbers within the
+                                        84000 project means that these ids diverge slightly from the
+                                        standard logic.</note>
+                                <date>2023-09-11</date>
+                        </publicationStmt>
+                        <sourceDesc>
+                                <bibl key="toh668" type="text">
+                                        <ref>Toh 668</ref>
+                                        <biblScope>Degé Kangyur, vol. 91 (rgyud ’bum, ba), folios
+                                                201.b–202.a </biblScope>
+                                        <location work="UT4CZ5369" count-pages="2">
+                                                <volume number="91" start-page="402" end-page="403"/>
+                                        </location>
+                                        <idno parent-id="O1JC114941JC21415" work="http://read.84000.co/sections"/>
+                                        <idno source-id="O1JC114941JC12403" work="W22084"/>
+                                </bibl>
+                                <bibl key="toh1085" type="text">
+                                        <ref>Toh 1085</ref>
+                                        <biblScope>Degé Kangyur, vol. 101 (gzungs ’dus, waM), folios
+                                                252.a–252.b</biblScope>
+                                        <location work="UT4CZ5369" count-pages="2">
+                                                <volume number="101" start-page="503" end-page="504"/>
+                                        </location>
+                                        <idno parent-id="O1JC114941JC20568" work="http://read.84000.co/sections"/>
+                                        <idno source-id="O1JC114941JC12849" work="W22084"/>
+                                </bibl>
+                        </sourceDesc>
+                        <notesStmt/>
+                        <revisionDesc>
+                                <change who="#john" when="2019-12-13T10:07:48.589Z" type="text-version" status="v 0.1.0" xml:id="UT22084-091-065-8">
+                                        <desc>v 0.1.0</desc>
+                                </change>
+                                <change who="#john" when="2019-12-13T10:07:48.589Z" type="translation-status" status="3" xml:id="UT22084-091-065-9">
+                                        <desc>3</desc>
+                                </change>
+                                <change who="#line-tofte" when="2021-05-10T08:46:40.877Z" type="translation-status" status="2.h" xml:id="UT22084-091-065-10">
+                                        <desc>2.h</desc>
+                                </change>
+                                <change who="#line-tofte" when="2021-05-10T08:46:40.877Z" type="text-version" status="0.1.1" xml:id="UT22084-091-065-11">
+                                        <desc>Auto (update-publication-status)</desc>
+                                </change>
+                                <change who="#line-tofte" when="2021-05-10T08:47:09.998Z" type="text-version" status="0.1.2" xml:id="UT22084-091-065-12">
+                                        <desc>Auto (update-contributors)</desc>
+                                </change>
+                                <change who="#line-tofte" when="2021-05-10T08:47:28.234Z" type="text-version" status="0.1.3" xml:id="UT22084-091-065-13">
+                                        <desc>Auto (update-contributors)</desc>
+                                </change>
+                                <change who="#line-tofte" when="2023-03-29T14:33:37.163Z" type="translation-status" status="2.g" xml:id="UT22084-091-065-14">
+                                        <desc>2.g</desc>
+                                </change>
+                                <change who="#line-tofte" when="2023-03-29T14:33:37.163Z" type="text-version" status="0.1.4" xml:id="UT22084-091-065-15">
+                                        <desc>Auto (update-publication-status)</desc>
+                                </change>
+                                <change who="#line-tofte" when="2023-03-29T14:34:14.553Z" type="text-version" status="0.1.5" xml:id="UT22084-091-065-16">
+                                        <desc>Auto (update-contributors)</desc>
+                                </change>
+                                <change who="#line-tofte" when="2023-04-17T09:38:27.596Z" type="translation-status" status="2.f" xml:id="UT22084-091-065-17">
+                                        <desc>2.f</desc>
+                                </change>
+                                <change who="#line-tofte" when="2023-04-17T09:38:27.596Z" type="text-version" status="0.1.6" xml:id="UT22084-091-065-18">
+                                        <desc>Auto (update-publication-status)</desc>
+                                </change>
+                                <change who="#line-tofte" when="2023-06-19T11:07:53.529Z" type="translation-status" status="2.e" xml:id="UT22084-091-065-19">
+                                        <desc>2.e</desc>
+                                </change>
+                                <change who="#line-tofte" when="2023-06-19T11:07:53.529Z" type="text-version" status="0.1.7" xml:id="UT22084-091-065-20">
+                                        <desc>Auto (update-publication-status)</desc>
+                                </change>
+                                <change who="#line-tofte" when="2023-06-19T11:08:27.642Z" type="text-version" status="0.1.8" xml:id="UT22084-091-065-21">
+                                        <desc>Auto (update-contributors)</desc>
+                                </change>
+                                <change who="#line-tofte" when="2023-07-18T11:47:35.827Z" type="translation-status" status="2.d" xml:id="UT22084-091-065-22">
+                                        <desc>2.d</desc>
+                                </change>
+                                <change who="#line-tofte" when="2023-07-18T11:47:35.827Z" type="text-version" status="0.1.9" xml:id="UT22084-091-065-23">
+                                        <desc>Auto (update-publication-status)</desc>
+                                </change>
+                                <change who="#admin" when="2023-07-30T22:39:48.323Z" type="text-version" status="0.1.10" xml:id="UT22084-091-065-24">
+                                        <desc>TEI migrated to 2.19.0</desc>
+                                </change>
+                                <change who="#line-tofte" when="2023-08-08T13:55:34.479Z" type="translation-status" status="2.c" xml:id="UT22084-091-065-25">
+                                        <desc>2.c</desc>
+                                </change>
+                                <change who="#line-tofte" when="2023-08-08T13:55:34.479Z" type="text-version" status="0.1.11" xml:id="UT22084-091-065-26">
+                                        <desc>Auto (update-publication-status)</desc>
+                                </change>
+                                <change who="#line-tofte" when="2023-08-28T12:37:31.054Z" type="text-version" status="0.1.12" xml:id="UT22084-091-065-35">
+                                        <desc>Auto (update-contributors)</desc>
+                                </change>
+                                <change who="#line-tofte" when="2023-09-05T07:40:20.436Z" type="translation-status" status="2.b" xml:id="UT22084-091-065-36">
+                                        <desc>2.b</desc>
+                                </change>
+                                <change who="#line-tofte" when="2023-09-05T07:40:20.436Z" type="text-version" status="0.1.13" xml:id="UT22084-091-065-37">
+                                        <desc>Auto (update-publication-status)</desc>
+                                </change>
+                                <change who="#line-tofte" when="2023-09-06T09:18:00.133Z" type="translation-status" status="2.a" xml:id="UT22084-091-065-38">
+                                        <desc>2.a</desc>
+                                </change>
+                                <change who="#line-tofte" when="2023-09-06T09:18:00.133Z" type="text-version" status="0.1.14" xml:id="UT22084-091-065-39">
+                                        <desc>Auto (update-publication-status)</desc>
+                                </change>
+                                <change who="#line-tofte" when="2023-09-06T09:18:41.398Z" type="text-version" status="0.1.15" xml:id="UT22084-091-065-49">
+                                        <desc>Auto (update-contributors)</desc>
+                                </change>
+                <change who="#konchog" when="2023-10-21T14:14:13.665Z" type="text-version" status="0.0.2" xml:id="UT22084-091-065-142">
+                    <desc>Several fixes through all section made during Gomde meeting.</desc>
+                </change>
+                        </revisionDesc>
+                </fileDesc>
+        </teiHeader>
+        <text>
+                <!--Note the "Contents" outline from the Word DOCX has not been included in the script. If the 
+                    Outline to the text is quite complex, it is recommended that you paste the outlined contents from the DOCX here as a comment for
+                    markup's reference. The actual table of contents will be generated in the Reading Room by the parser.-->
+                <front>
+                        <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="summary">
+                                <head type="summary" tid="1">Summary</head>
+                                <milestone unit="chunk" xml:id="UT22084-091-065-50"/>
+                                <p tid="2">
+                    <title xml:lang="en">The Dhāraṇī of Mahākāla</title>
+                                        opens at the vajra seat under the Bodhi tree in Bodhgayā
+                                        shortly after the Buddha Śākyamuni has defeated Māra and his
+                                        demonic horde and attained awakening. As Śākyamuni sits
+                                        under the Bodhi tree, Mahākāla approaches him, prostrates at
+                                        his feet, sits to one side, and offers to give him a
+                                                <foreign xml:lang="Sa-Ltn" type="term">vidyā</foreign>, or “spell,” as a gift. Mahākāla
+                                        then pronounces his vidyā and tells Śākyamuni that it can be
+                                        used to prevent diseases and ward off potentially harmful
+                                        spirit beings. The text then concludes with Mahākāla’s
+                                        promise to Śākyamuni to act as a guardian of temples and
+                                        maṇḍalas and to protect the Three Jewels.</p>
+                        </tei:div>
+                        <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="acknowledgment">
+                                <head type="acknowledgment" tid="3">Acknowledgements</head>
+                                <milestone unit="chunk" xml:id="UT22084-091-065-51"/>
+                                <p tid="4">Translated by the Dharmachakra Translation Committee
+                                        under the supervision of Chokyi Nyima Rinpoche. The
+                                        translation was produced by Adam Krug and then checked
+                                        against the Tibetan and edited by Andreas Doctor.</p>
+                                <milestone unit="chunk" xml:id="UT22084-091-065-52"/>
+                                <p tid="5">The translation was completed under the patronage and
+                                        supervision of 84000: Translating the Words of the
+                                        Buddha.</p>
+                        </tei:div>
+                        <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="introduction">
+                                <head type="introduction" tid="8">Introduction</head>
+                                <tei:div type="section" xml:id="UT22084-091-065-introduction-1">
+                                        <milestone unit="chunk" xml:id="UT22084-091-065-55"/>
+                                        <p tid="10">
+                        <title xml:lang="en">The Dhāraṇī of
+                                                  Mahākāla</title> opens at the vajra seat under the
+                                                Bodhi tree in Bodhgayā shortly after the Buddha
+                                                Śākyamuni has defeated Māra and his demonic horde
+                                                and attained awakening. As Śākyamuni sits under the
+                                                Bodhi tree, Mahākāla approaches him, prostrates at
+                                                his feet, sits to one side, and offers to give him a
+                                                  <foreign xml:lang="Sa-Ltn" type="term">vidyā</foreign>, or “spell,” as a gift. Mahākāla
+                                                then pronounces his vidyā and tells Śākyamuni
+                                                that it can be used to prevent diseases and ward off
+                                                potentially harmful spirit beings. The text then
+                                                concludes with Mahākāla’s promise to Śākyamuni to
+                                                act as a guardian of temples and maṇḍalas and to
+                                                protect the Three Jewels. </p>
+                                        <milestone unit="chunk" xml:id="UT22084-091-065-56"/>
+                                        <p tid="11">A Sanskrit version of this text has yet to come
+                                                to light, and it does not appear as an independent
+                                                work in the Chinese canon. It also does not appear
+                                                in the Denkarma and Phangthangma royal Tibetan
+                                                catalogs of translated works. The text lacks a
+                                                translators’ colophon, so the historical
+                                                circumstances surrounding its transmission into
+                                                Tibet remain unclear. </p>
+                                        <milestone unit="chunk" xml:id="UT22084-091-065-57"/>
+                                        <p tid="12">This English translation is based on the
+                                                recensions found in the Tantra Collection (Toh
+                                                668) and the Compendium of
+                                                Dhāraṇīs (Toh 1085) in the
+                                                Degé Kangyur, in consultation the Comparative
+                                                Edition of the Kangyur (<title xml:lang="Bo-Ltn">dpe
+                                                  bsdur ma</title>) and the Stok Palace Kangyur.
+                                        </p>
+                                </tei:div>
+                        </tei:div>
+                </front>
+                <body>
+                        <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="translation">
+                                <head type="translation"> The Translation </head>
+                                <head type="titleMain" tid="14">The Noble Dhāraṇī of Glorious
+                                        Mahākāla</head>
+                                <tei:div type="section" xml:id="UT22084-091-065-section-1">
+                                        <milestone unit="chunk" xml:id="UT22084-091-065-60"/>
+                                        <p tid="18">
+                        <ref cRef="F.201.b" type="folio" key="toh668" xml:id="UT22084-091-065-138"/> <ref cRef="F.252.a" type="folio" key="toh1085" xml:id="UT22084-091-065-139"/> Homage to all buddhas and bodhisattvas.</p>
+                                        <lb/>
+                                        <p tid="22">Thus did I hear at one time. The Blessed One was
+                                                seated upon the vajra seat at the base of the Bodhi
+                                                tree shortly after subduing Māra and becoming a
+                                                perfect buddha. The divine gatekeeper, the lord of
+                                                the gaṇas,<note place="end" xml:id="UT22084-091-065-65"> D and S: <foreign xml:lang="Bo-Ltn" type="term">lha’i sde dpon chen
+                                                  po tshogs kyi bdag po</foreign>. The phrase
+                                                  <foreign xml:lang="Bo-Ltn" type="term">lha’i sde
+                                                  dpon chen</foreign> (Skt. *<foreign xml:lang="Sa-Ltn" type="term">devapratihāra</foreign>), translated here as “the
+                                                  divine gatekeeper,” could refer to the deity
+                                                  Gaṇapati, who is known in the puranic literature
+                                                  as the gatekeeper for Śiva’s domain, and, in turn,
+                                                  as a guardian of all gateways and thresholds.
+                                                  However, even though Gaṇapati’s name (Tib.
+                                                  <foreign xml:lang="Bo-Ltn" type="term">tshogs kyi
+                                                  bdag po</foreign>) immediately follows this
+                                                  phrase, there is no clear indication that these
+                                                  two phrases refer to separate deities, so this
+                                                  requires that both phrases be translated as
+                                                  epithets of Mahākāla. The epithet <foreign xml:lang="Bo-Ltn" type="term">lha’i sde dpon
+                                                  chen</foreign> is also justified in Buddhist
+                                                  traditions, where Mahākāla is so often considered
+                                                  a protector deity who guards the gateways to
+                                                  temples, monasteries, and maṇḍalas. The term
+                                                  <foreign xml:lang="Bo-Ltn" type="term">tshogs kyi
+                                                  bdag po</foreign> (Skt. <foreign xml:lang="Sa-Ltn" type="term">gaṇapati</foreign>) could also just as
+                                                  easily refer to Mahākāla as a “lord of the gaṇas,”
+                                                  a characterization of this deity that is supported
+                                                  in the present text, which centers around
+                                                  Mahākāla’s <foreign xml:lang="Sa-Ltn" type="term">vidyā</foreign> (Tib. <foreign xml:lang="Bo-Ltn" type="term">rig pa</foreign>) for warding off all
+                                                  manner of harmful spirit beings.</note> the great
+                                                black one, glorious lord Mahākāla who has dominion
+                                                over the lords of the desire realm, approached the
+                                                Blessed One, prostrated at the Blessed One’s feet,
+                                                sat to one side, and addressed him, saying,
+                                                “Honorable Blessed One, please accept my vidyā as a
+                                                gift: </p>
+                                        <milestone unit="chunk" xml:id="UT22084-091-065-66"/>
+                                        <p rend="mantra" tid="42">
+                        <mantra xml:lang="Sa-Ltn">oṃ śrīmahākāla gaṇa guti  svāhā
+                                        <lb/>
+                                                namaḥ śrīmahākāla gaṇe guti<note place="end" xml:id="UT22084-091-065-67"> Following Toh 668:
+                                                        <foreign xml:lang="Bo-Ltn" type="quote">ga Na gu
+                                                                ti</foreign>. Toh 1085: <foreign xml:lang="Bo-Ltn" type="quote">gha Na gha Na Ti</foreign>. N, H:
+                                                        <foreign xml:lang="Bo-Ltn" type="quote">gA Na
+                                                                gu ti</foreign>. S: <foreign xml:lang="Bo-Ltn" type="quote">gA Na gu te</foreign>.</note> śāya
+                                                <lb/>
+                                        namo yoginaṇīna 
+                                                <lb/>
+                                        tadyathā 
+                                                <lb/>
+                                        oṃ hile hile kite kiteni cite citeni svāhā</mantra>
+                    </p>
+                                        <milestone unit="chunk" xml:id="UT22084-091-065-72"/>
+                                        <p tid="28">“Chanting this vidyā will bind all beings who
+                                                cause illnesses and diseases, all grahas, beings who
+                                                cause plague, all bhūtas, and beings who cause
+                                                faulty meditations and faulty views all the way up
+                                                through the Heaven of Controlling Pleasures
+                                                Magically Emanated by Others. <ref cRef="F.202.a" type="folio" key="toh668" xml:id="UT22084-091-065-140"/> It will
+                                                bind them all the way down below <ref cRef="F.252.b" type="folio" key="toh1085" xml:id="UT22084-091-065-141"/> through
+                                                the hell realms. It will bind those in one’s
+                                                immediate environment and out to the surrounding
+                                                  mountains.<note place="end" xml:id="UT22084-091-065-73"> D and S: <foreign xml:lang="Bo-Ltn" type="quote">ri la thug pa yan
+                                                  chad</foreign>. This phrase most likely refers to
+                                                  the ring of mountains that surrounds the world
+                                                  according to the classical Buddhist
+                                                  cosmogram.</note>
+                                        </p>
+                                        <milestone unit="chunk" xml:id="UT22084-091-065-74"/>
+                                        <p tid="29">“Moreover, I promise and vow to be a guardian of
+                                                temples and maṇḍalas, to be a physician who treats
+                                                the illness of the three poisons, to be the vital
+                                                  support<note place="end" xml:id="UT22084-091-065-75"> D and S: <foreign xml:lang="Bo-Ltn" type="quote">yongs kyi srog
+                                                  shing</foreign>. The translation of this term
+                                                  remains tentative.</note> of all vidyā holders, to
+                                                be the warrior spirit of all yogins, and to be the
+                                                sovereign lord of those who subdue Māra, as well as
+                                                to completely destroy the rākṣasa city of Laṅkāpurī,
+                                                to reduce to dust the yakṣa daughters and rākṣasīs who flash
+                                                like lightning, and to protect the teaching
+                                                of the Three Jewels.” </p>
+                                        <milestone unit="chunk" xml:id="UT22084-091-065-76"/>
+                                        <trailer tid="30">This concludes <title xml:lang="en">“The
+                                                  Noble Dhāraṇī of Glorious
+                                                Mahākāla.”</title>
+                    </trailer>
+                                </tei:div>
+                        </tei:div>
+                </body>
+                <back>
+                        <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="notes">
+                                <head type="notes" tid="38">Notes</head>
+                                <list type="abbreviations">
+                                        <head tid="39">Abbreviations</head>
+                                        <item xml:id="UT22084-091-065-129">
+                        <abbr>D</abbr>
+                        <expan>Degé (<foreign xml:lang="Bo-Ltn">sde dge bka’ ’gyur</foreign>)</expan>
+                    </item>
+                                        <item xml:id="UT22084-091-065-130">
+                        <abbr>C</abbr>
+                        <expan>Choné (<foreign xml:lang="Bo-Ltn">co ne</foreign>)</expan>
+                    </item>
+                                        <item xml:id="UT22084-091-065-131">
+                        <abbr>H</abbr>
+                        <expan>Lhasa (<foreign xml:lang="Bo-Ltn">lha sa/zhol</foreign>)</expan>
+                    </item>
+                                        <item xml:id="UT22084-091-065-132">
+                        <abbr>J</abbr>
+                        <expan>Lithang (<foreign xml:lang="Bo-Ltn">li thang</foreign>)</expan>
+                    </item>
+                                        <item xml:id="UT22084-091-065-133">
+                        <abbr>K</abbr>
+                        <expan>Kangxi (<foreign xml:lang="Bo-Ltn">kang shi</foreign>)</expan>
+                    </item>
+                                        <item xml:id="UT22084-091-065-134">
+                        <abbr>N</abbr>
+                        <expan>Narthang (<foreign xml:lang="Bo-Ltn">snar thang</foreign>)</expan>
+                    </item>
+                                        <item xml:id="UT22084-091-065-135">
+                        <abbr>U</abbr>
+                        <expan>Urga (<foreign xml:lang="Bo-Ltn">phyi sog khu re</foreign>)</expan>
+                    </item>
+                                        <item xml:id="UT22084-091-065-136">
+                        <abbr>Y</abbr>
+                        <expan>Yongle (<foreign xml:lang="Bo-Ltn">g.yong lo</foreign>)</expan>
+                    </item>
+                                        <item xml:id="UT22084-091-065-137">
+                        <abbr>S</abbr>
+                        <expan>Stok Palace (<foreign xml:lang="Bo-Ltn">stog pho ’brang</foreign>)</expan>
+                    </item>
+                                </list>
+                        </tei:div>
+                        <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="listBibl">
+                                <head type="listBibl" tid="36">Bibliography</head>
+                                <tei:div type="section" xml:id="UT22084-091-065-listBibl-1">
+                                        <head type="section" tid="40">Tibetan sources</head>
+                                        <bibl xml:id="UT22084-091-065-89">
+                        <title xml:lang="Bo-Ltn">dpal mgon po nag po zhes bya ba’i gzungs</title>
+                                                (<title xml:lang="Sa-Ltn">Śrī­mahākāla­nāma­dhāraṇī</title>). Toh 668, Degé
+                                                Kangyur vol. 91 (rgyud ’bum, ba), folios
+                                                201.b–202.a.</bibl>
+                                        <bibl xml:id="UT22084-091-065-90">
+                        <title xml:lang="Bo-Ltn">dpal mgon po nag po zhes bya ba’i gzungs</title>
+                                                (<title xml:lang="Sa-Ltn">Śrī­mahākāla­nāma­dhāraṇī</title>). Toh 1085, Degé
+                                                Kangyur vol. 101 (gzungs ’dus, waM), folios
+                                                252.a–252.b.</bibl>
+                                        <bibl xml:id="UT22084-091-065-91">
+                        <title xml:lang="Bo-Ltn">dpal mgon po nag po zhes bya ba’i gzungs</title>
+                                                (<title xml:lang="Sa-Ltn">Śrī­mahākāla­nāma­dhāraṇī</title>). bka’ ’gyur (dpe
+                                                bsdur ma) [Comparative Edition of the Kangyur],
+                                                krung go’i bod rig pa zhib ’jug ste gnas kyi bka’
+                                                bstan dpe sdur khang (The Tibetan Tripitaka
+                                                Collation Bureau of the China Tibetology Research
+                                                Center). 108 volumes. Beijing: krung go’i bod rig pa
+                                                dpe skrun khang (China Tibetology Publishing House)
+                                                2006–9, vol. 91, pp. 734–38.</bibl>
+                                        <bibl xml:id="UT22084-091-065-92">
+                        <title xml:lang="Bo-Ltn">dpal mgon po nag po zhes bya ba’i gzungs</title>
+                                                (<title xml:lang="Sa-Ltn">Śrī­mahākāla­nāma­dhāraṇī</title>). bka’ ’gyur (dpe
+                                                bsdur ma) [Comparative Edition of the Kangyur],
+                                                krung go’i bod rig pa zhib ’jug ste gnas kyi bka’
+                                                bstan dpe sdur khang (The Tibetan Tripitaka
+                                                Collation Bureau of the China Tibetology Research
+                                                Center). 108 volumes. Beijing: krung go’i bod rig pa
+                                                dpe skrun khang (China Tibetology Publishing House)
+                                                2006–9, vol. 98, pp. 876–78. </bibl>
+                                        <bibl xml:id="UT22084-091-065-93">
+                        <title xml:lang="Bo-Ltn">dpal mgon po nag po zhes bya ba’i gzungs</title>
+                                                (<title xml:lang="Sa-Ltn">Śrī­mahākāla­nāma­dhāraṇī</title>). Stok Palace
+                                                Kangyur vol. 105 (rgyud, pha), folios
+                                                178.a–178.b.</bibl>
+                                </tei:div>
+                                <tei:div type="section" xml:id="UT22084-091-065-listBibl-2">
+                                        <head type="section" tid="41">Reference Works</head>
+                                        <bibl xml:id="UT22084-091-065-95">Edgerton, Franklin. <title xml:lang="en">Buddhist Hybrid Sanskrit Grammar and
+                                                  Dictionary</title>. Delhi: Motilal Banarsidass
+                                                Publishers, 2004.</bibl>
+                                        <bibl xml:id="UT22084-091-065-96">Lancaster, Lewis R. <title xml:lang="en">The Korean Buddhist Canon</title>,
+                                                accessed June 11, 2019. <ref target="http://www.acmuller.net/descriptive_catalogue/index.html">http://www.acmuller.net/descriptive_catalogue/index.html</ref>.</bibl>
+                                        <bibl xml:id="UT22084-091-065-97">Monier-Williams, Sir
+                                                Monier. <title xml:lang="en">A Sanskrit-English
+                                                  Dictionary Etymologically and Philologically
+                                                  Arranged with Special Reference to Cognate
+                                                  Indo-European Languages</title>. Delhi: Motilal
+                                                Banarsidass Publishers, 2005.</bibl>
+                                        <bibl xml:id="UT22084-091-065-98">Negi, J. S. <title xml:lang="en">Tibetan-Sanskrit Dictionary</title>
+                                                  (<title xml:lang="Bo-Ltn">bod skad legs sbyar gyi
+                                                  tshig mdzod chen mo</title>). Sarnath: Dictionary
+                                                Unit, Central Institute of higher Tibetan Studies,
+                                                1993. </bibl>
+                                        <bibl xml:id="UT22084-091-065-99">
+                        <title xml:lang="en">Resources for Kanjur &amp; Tenjur
+                                                Studies</title>, Universität Wien, accessed June 11,
+                                                2019. <ref target="https://www.istb.univie.ac.at/kanjur/rktsneu/sub/index.php">https://www.istb.univie.ac.at/kanjur/rktsneu/sub/index.php</ref>.</bibl>
+                                        <bibl xml:id="UT22084-091-065-100">
+                        <title xml:lang="en">The
+                                                  Buddhist Canons Research Database</title>.
+                                                American Institute of Buddhist Studies and Columbia
+                                                University Center for Buddhist Studies, accessed
+                                                June 11, 2019. <ref target="http://databases.aibs.columbia.edu">http://databases.aibs.columbia.edu</ref>.</bibl>
+                                </tei:div>
+                        </tei:div>
+                        <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="glossary" status="excluded">
+                                <list type="glossary">
+                                        <item>
+                        <gloss type="term" xml:id="UT22084-091-065-102">
+                                                  <term type="translationMain">the vital support of
+                                                  all vidyā holders</term>
+                                                  <term xml:lang="Bo-Ltn" status="verified" n="1">rig ’dzin yongs kyi
+                                                  srog shing </term>
+                                                  <term xml:lang="bo" n="1">རིག་འཛིན་ཡོངས་ཀྱི་སྲོག་ཤིང་།</term>
+                                                  <term xml:lang="Sa-Ltn" status="verified"/>
+                                                <term type="translationAlternative">the vital support</term>
+                                                <term type="translationAlternative">of all vidyā holders</term>
+                                                <note type="definition">
+                                <p>A role that the deity
+                                                  Mahākāla promised to take on before the Buddha
+                                                  Śākyamuni, shortly after the latter attained
+                                                  awakening. </p>
+                            </note>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="term" xml:id="UT22084-091-065-103">
+                                                  <term type="translationMain">the warrior spirit of
+                                                  all yogins</term>
+                                                  <term xml:lang="Bo-Ltn" status="verified" n="1">rnal ’byor kun gyi
+                                                  dgra bla </term>
+                                                  <term xml:lang="bo" n="1">རྣལ་འབྱོར་ཀུན་གྱི་དགྲ་བླ།</term>
+                                                  <term xml:lang="Sa-Ltn" status="verified"/>
+                                                  <note type="definition">
+                                <p>A role that the deity
+                                                  Mahākāla promised to take on before the Buddha
+                                                  Śākyamuni, shortly after the latter
+                                                  attained awakening. See <ptr target="#UT22084-091-065-116"/> for a definition of warrior spirit. </p>
+                            </note>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="term" xml:id="UT22084-091-065-104">
+                                                  <term type="translationMain">beings who cause
+                                                  plague</term>
+                                                  <term xml:lang="Bo-Ltn" status="verified" n="1">mi ngas </term>
+                                                  <term xml:lang="bo" n="1">མི་ངས།</term>
+                                                  <term xml:lang="Sa-Ltn" status="verified"/>
+                                                  <note type="definition">
+                                <p>A class of potentially
+                                                  harmful spirit being associated with
+                                                  plague.</p>
+                            </note>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="term" xml:id="UT22084-091-065-105">
+                                                  <term type="translationMain">guardian of temples
+                                                  and maṇḍalas</term>
+                                                  <term xml:lang="Bo-Ltn" status="verified" n="1">gtsug lag khang dang
+                                                  dkyil ’khor gyi srung ma </term>
+                            <term xml:lang="bo" n="1" status="verified">གཙུག་ལག་ཁང་དང་དཀྱིལ་འཁོར་གྱི་སྲུང་མ།</term>
+                            
+                                                  <term xml:lang="Sa-Ltn" status="verified"/>
+                                                  <note type="definition">
+                                <p>A role that the deity
+                                                  Mahākāla promised to take on before the Buddha
+                                                  Śākyamuni, shortly after the latter attained
+                                                  awakening. </p>
+                            </note>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="term" xml:id="UT22084-091-065-106">
+                                                  <term type="translationMain">rākṣasīs who flash like lightning</term>
+                                                  <term xml:lang="Bo-Ltn" status="verified" n="1">nam mkha’i glog ma
+                                                  srin </term>
+                                                  <term xml:lang="bo" n="1">ནམ་མཁའི་གློག་མ་སྲིན།</term>
+                                                  <term xml:lang="Sa-Ltn" status="verified"/>
+                                                  <note type="definition">
+                                <p>A class of demonic
+                                                  female beings. </p>
+                            </note>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="term" xml:id="UT22084-091-065-107">
+                                                  <term type="translationMain">a physician who
+                                                  treats the illness of the three poisons</term>
+                                                  <term xml:lang="Bo-Ltn" status="verified" n="1">dug gsum nad kyi
+                                                  sman pa </term>
+                            <term xml:lang="bo" n="1">དུག་གསུམ་ནད་ཀྱི་སྨན་པ།</term>
+                                                  <term xml:lang="Sa-Ltn" status="verified"/>
+                                                  <note type="definition">
+                                <p>A role that the deity
+                                                  Mahākāla promised to take on before the Buddha Śākyamuni,
+                                                  shortly after the latter attained
+                                                  awakening. </p>
+                            </note>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="term" xml:id="UT22084-091-065-108">
+                                                  <term type="translationMain">rākṣasa</term>
+                                                  <term xml:lang="Bo-Ltn" status="verified" n="1">srin po </term>
+                                                  <term xml:lang="bo" n="1">སྲིན་པོ།</term>
+                                                  <term xml:lang="Sa-Ltn" status="verified" type="attestedOther">rākṣasa</term>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="term" xml:id="UT22084-091-065-109">
+                                                  <term type="translationMain">graha</term>
+                                                  <term xml:lang="Bo-Ltn" status="verified" n="1">gdon </term>
+                                                  <term xml:lang="bo" n="1">གདོན།</term>
+                                                  <term xml:lang="Sa-Ltn" status="verified" type="attestedOther">graha</term>
+                                                  <note type="definition">
+                                <p>A class of potentially
+                                                  harmful spirit beings associated with various
+                                                  states of possession and mental
+                                                  illness.</p>
+                            </note>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="term" xml:id="UT22084-091-065-110">
+                                                  <term type="translationMain">the sovereign lord of
+                                                  those who subdue Māra</term>
+                                                  <term xml:lang="Bo-Ltn" status="verified" n="1">bdud ’dul rnams kyi
+                                                  dbang phyug </term>
+                                                  <term xml:lang="bo" n="1">བདུད་འདུལ་རྣམས་ཀྱི་དབང་ཕྱུག</term>
+                                                  <term xml:lang="Sa-Ltn" status="verified"/>
+                                                  <note type="definition">
+                                <p>A role that the deity
+                                                  Mahākāla promised to take on before the Buddha Śākyamuni,
+                                                  shortly after the latter attained
+                                                  awakening. </p>
+                            </note>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="term" xml:id="UT22084-091-065-111">
+                                                  <term type="translationMain">vidyā</term>
+                                                  <term xml:lang="Bo-Ltn" status="verified" n="1">rig pa </term>
+                                                  <term xml:lang="bo" n="1">རིག་པ།</term>
+                                                  <term xml:lang="Sa-Ltn" status="verified" type="attestedOther">vidyā</term>
+                                                  <note type="definition">
+                                <p>A term for a class of
+                                                  spell and the female beings or goddesses who
+                                                  embody the power of that spell and carry out the
+                                                  action for which that spell is employed.
+                                                  </p>
+                            </note>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="term" xml:id="UT22084-091-065-113">
+                                                  <term type="translationMain">bhūta</term>
+                                                  <term xml:lang="Bo-Ltn" status="verified" n="1">’byung po </term>
+                                                  <term xml:lang="bo" n="1">འབྱུང་པོ།</term>
+                                                  <term xml:lang="Sa-Ltn" status="verified" type="attestedOther">bhūta</term>
+                                                  <note type="definition">
+                                <p>A class of potentially
+                                                  harmful spirit beings associated with various
+                                                  states of possession and mental
+                                                  illness.</p>
+                            </note>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="term" xml:id="UT22084-091-065-114">
+                                                  <term type="translationMain">to completely destroy
+                                                  the rākṣasa city of Laṅkāpurī</term>
+                                                  <term xml:lang="Bo-Ltn" status="verified" n="1">srin po lang ka pu
+                                                  ri’i grong khyer gtan nas rlog pa </term>
+                                                  <term xml:lang="bo" n="1">སྲིན་པོ་ལང་ཀ་པུ་རིའི་གྲོང་ཁྱེར་གཏན་ནས་རློག་པ།</term>
+                                                  <term xml:lang="Sa-Ltn" status="verified"/>
+                                                <note type="definition">
+                                <p>To completely destroy
+                                                        the rākṣasa city of Laṅkāpūrī is a role that the deity
+                                                  Mahākāla promised to take on before the Buddha Śākyamuni,
+                                                  shortly after the latter attained
+                                                  awakening. </p>
+                            </note>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="term" xml:id="UT22084-091-065-115">
+                                                  <term type="translationMain">to reduce to dust the yakṣa
+                                                  daughters and rākṣasīs who flash like lightning</term>
+                                                  <term xml:lang="Bo-Ltn" status="verified" n="1">gnod sbyin gyi bu mo
+                                                  nam mkha’i glog ma srin rdul du rlog pa </term>
+                                                  <term xml:lang="bo" n="1">གནོད་སྦྱིན་གྱི་བུ་མོ་ནམ་མཁའི་གློག་མ་སྲིན་རྡུལ་དུ་རློག་པ།</term>
+                                                  <term xml:lang="Sa-Ltn" status="verified"/>
+                                                <note type="definition">
+                                <p>To reduce to dust the yakṣa
+                                                        daughters and rākṣasīs who flash like lightning is a role that the deity
+                                                  Mahākāla promised to take on before the Buddha Śākyamuni,
+                                                  shortly after the latter attained
+                                                  awakening. </p>
+                            </note>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="term" xml:id="UT22084-091-065-116">
+                                                  <term type="translationMain">warrior spirit</term>
+                                                  <term xml:lang="Bo-Ltn" status="verified" n="1">dgra bla </term>
+                                                  <term xml:lang="bo" n="1">དགྲ་བླ།</term>
+                                                  <term xml:lang="Sa-Ltn" status="verified"/>
+                                                  <note type="definition">
+                                <p>A class of nonhuman
+                                                  being.</p>
+                            </note>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="term" xml:id="UT22084-091-065-117">
+                                                  <term type="translationMain">yakṣa daughter</term>
+                                                  <term xml:lang="Bo-Ltn" status="verified" n="1">gnod sbyin gyi bu mo </term>
+                                                  <term xml:lang="bo" n="1">གནོད་སྦྱིན་གྱི་བུ་མོ།</term>
+                                                  <term xml:lang="Sa-Ltn" status="verified"/>
+                                                  <note type="definition">
+                                <p>A young female yakṣa, a
+                                                  class of potentially harmful nonhuman
+                                                  beings.</p>
+                            </note>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="person" xml:id="UT22084-091-065-119">
+                                                  <term type="translationMain">divine
+                                                  gatekeeper</term>
+                                                <term xml:lang="Bo-Ltn" status="verified" n="1">lha’i sde dpon chen
+                                                  po </term>
+                            <term xml:lang="bo" n="1">ལྷའི་སྡེ་དཔོན་ཆེན་པོ།</term>
+                                                  <term xml:lang="Sa-Ltn" status="verified"/>
+                                                  <note type="definition">
+                                <p>An epithet of the deity
+                                                  Mahākāla.</p>
+                            </note>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="person" xml:id="UT22084-091-065-120">
+                                                  <term type="translationMain">glorious lord
+                                                  Mahākāla</term>
+                                                  <term xml:lang="Bo-Ltn" status="verified" n="1">dpal mgon po nag po
+                                                  chen po </term>
+                                                  <term xml:lang="bo" n="1">དཔལ་མགོན་པོ་ནག་པོ་ཆེན་པོ།</term>
+                                                  <term xml:lang="Sa-Ltn" status="verified" type="attestedOther">śrīmahākāla</term>
+                                                  <note type="definition">
+                                <p>The name of a wrathful
+                                                  form of the god Śiva. </p>
+                            </note>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="person" xml:id="UT22084-091-065-121">
+                                                  <term type="translationMain">who has dominion over
+                                                  the lords of the desire realm</term>
+                                                  <term xml:lang="Bo-Ltn" status="verified" n="1">’dod pa’i khams kyi
+                                                  dbang phyug la dbang skyur ba </term>
+                            <term xml:lang="bo" n="1">འདོད་པའི་ཁམས་ཀྱི་དབང་ཕྱུག་ལ་དབང་སྐྱུར་བ།</term>
+                                                  <term xml:lang="Sa-Ltn" status="verified"/>
+                                                  <note type="definition">
+                                <p>An epithet of the deity
+                                                  Mahākāla.</p>
+                            </note>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="person" xml:id="UT22084-091-065-122">
+                                                  <term type="translationMain">lord of the
+                                                  gaṇas</term>
+                                                  <term xml:lang="Bo-Ltn" status="verified" n="1">tshogs kyi bdag po </term>
+                                                  <term xml:lang="bo" n="1">ཚོགས་ཀྱི་བདག་པོ།</term>
+                                                  <term xml:lang="Sa-Ltn" status="verified"/>
+                                                  <note type="definition">
+                                <p>Here an epithet of the
+                                                  deity Mahākāla.</p>
+                            </note>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="person" xml:id="UT22084-091-065-123">
+                                                  <term type="translationMain">the great black
+                                                  one</term>
+                                                  <term xml:lang="Bo-Ltn" status="verified" n="1">ma hA kA la </term>
+                                                  <term xml:lang="bo" n="1">མ་ཧཱ་ཀཱ་ལ།</term>
+                                                  <term xml:lang="Sa-Ltn" status="verified" type="reconstructedPhonetic">mahākāla</term>
+                                                  <note type="definition">
+                                <p>The Tibetan
+                                                  transliteration of the Sanskrit <foreign xml:lang="Sa-Ltn" type="term">mahākāla</foreign>.
+                                                  </p>
+                            </note>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="place" xml:id="UT22084-091-065-125">
+                                                  <term type="translationMain">Bodhi tree</term>
+                                                  <term xml:lang="Bo-Ltn" status="verified" n="1">byang chub kyi shing </term>
+                                                  <term xml:lang="bo" n="1">བྱང་ཆུབ་ཀྱི་ཤིང་།</term>
+                                                  <term xml:lang="Sa-Ltn" status="verified" type="attestedOther">bodhivṛkṣa</term>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="place" xml:id="UT22084-091-065-126">
+                                                  <term type="translationMain">Heaven of Controlling
+                                                  Pleasures Magically Emanated by Others</term>
+                                                  <term xml:lang="Bo-Ltn" status="verified" n="1">gzhan ’phrul dbang
+                                                  byed </term>
+                                                  <term xml:lang="bo" n="1">གཞན་འཕྲུལ་དབང་བྱེད།</term>
+                                                <term xml:lang="Sa-Ltn" status="verified" type="attestedOther">para­nirmitavaśavartin</term>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="place" xml:id="UT22084-091-065-127">
+                                                  <term type="translationMain">the rākṣasa city of
+                                                  Laṅkāpūrī</term>
+                                                  <term xml:lang="Bo-Ltn" status="verified" n="1">srin po lang ka pu
+                                                  ri’i grong khyer </term>
+                                                  <term xml:lang="bo" n="1">སྲིན་པོ་ལང་ཀ་པུ་རིའི་གྲོང་ཁྱེར།</term>
+                                                  <term xml:lang="Sa-Ltn" status="verified"/>
+                                                  <note type="definition">
+                                <p>The name of the city of
+                                                  Laṅkā, which is mythologized as the ancient
+                                                  capital of Śrī Laṅkā. See <ptr target="#UT22084-091-065-108"/> for a definition of rākṣasa.</p>
+                            </note>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="place" xml:id="UT22084-091-065-128">
+                                                  <term type="translationMain">vajra seat</term>
+                                                  <term xml:lang="Bo-Ltn" status="verified" n="1">rdo rje’i gdan </term>
+                                                  <term xml:lang="bo" n="1">རྡོ་རྗེའི་གདན།</term>
+                                                  <term xml:lang="Sa-Ltn" status="verified" type="attestedOther">vajrāsana</term>
+                                                </gloss>
+                    </item>
+                                </list>
+                        </tei:div>
+                </back>
+        </text>
+</TEI>
