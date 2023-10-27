@@ -1,0 +1,2602 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schema/current/translation.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="mainTitle" xml:lang="Bo-Ltn">tshogs bdag kyi rgyud</title>
+        <title type="mainTitle" xml:lang="bo">ཚོགས་བདག་ཀྱི་རྒྱུད།</title>
+        <title type="mainTitle" xml:lang="en">The Gaṇapati Tantra</title>
+        <title type="mainTitle" xml:lang="Sa-Ltn">Gaṇapatitantra</title>
+        <title type="longTitle" xml:lang="bo">ཚོགས་ཀྱི་བདག་པོ་ཆེན་པོའི་རྒྱུད།</title>
+        <title type="longTitle" xml:lang="Bo-Ltn">tshogs kyi bdag po chen po’i rgyud</title>
+        <title type="longTitle" xml:lang="en">The Tantra of Great Gaṇapati</title>
+        <title type="longTitle" xml:lang="Sa-Ltn">Mahā­gaṇa­pati­tantra</title>
+        <title type="otherTitle" xml:lang="zh"/>
+        <author xml:id="UT22084-091-063-1" role="translatorMain">Translated by the Dharmachakra
+          Translation Committee<lb/>under the patronage and supervision of 84000: Translating the
+          Words of the Buddha</author>
+        <consultant role="projectManager" xml:id="UT22084-091-063-2">Andreas Doctor</consultant>
+        <author role="translatorEng" xml:id="UT22084-091-063-3">Adam Krug</author>
+        <editor role="reviser" xml:id="UT22084-091-063-4">Ryan Conlon</editor>
+        <editor role="associateEditor" xml:id="UT22084-091-063-5">George FitzHerbert</editor>
+        <editor role="copyEditor" xml:id="UT22084-091-063-6">Dawn Collins</editor>
+        <editor role="projectEditor" xml:id="UT22084-091-063-28">David Fiordalis</editor>
+        <editor role="TEImarkupEditor" xml:id="UT22084-091-063-41">Martina Cotter</editor>
+      </titleStmt>
+      <editionStmt>
+                <edition>v 0.0.2 <date>2023</date>
+                </edition>
+            </editionStmt>
+      <publicationStmt>
+        <publisher>
+                    <name>84000: Translating the Words of the Buddha</name> is a global non-profit
+          initiative to translate all the Buddha’s words into modern languages, and to make them
+          available to everyone. </publisher>
+        <availability status="2">
+          <p type="tantricRestriction">
+                        <emph rend="bold">Warning:</emph> Readers are reminded that
+            according to Vajrayāna Buddhist tradition there are restrictions and commitments
+            concerning tantra. Practitioners who are not sure if they should read this translation
+            are advised to consult the authorities of their lineage. The responsibility for reading
+            this text or sharing it with others who may or may not fulfill the requirements lies in
+            the hands of readers.</p>
+          <licence>
+            <graphic url="http://i.creativecommons.org/l/by-nc-nd/2.0/88x31.png"/>
+            <p>This work is provided under the protection of a Creative Commons CC BY-NC-ND
+              (Attribution - Non-commercial - No-derivatives) 3.0 copyright. It may be copied or
+              printed for fair use, but only with full attribution, and not for commercial advantage
+              or personal compensation. For full details, see the Creative Commons license.</p>
+          </licence>
+        </availability>
+        <idno xml:id="UT22084-091-063"/>
+        <note>An early mistake in the assigning of UT numbers within the 84000 project means that
+          these ids diverge slightly from the standard logic.</note>
+        <date>2023-09-07</date>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl key="toh666" type="text">
+          <ref>Toh 666</ref>
+          <biblScope>Degé Kangyur, vol. 91 (rgyud ’bum, ba), folios 193.a–199.a</biblScope>
+          <author role="translatorTib" xml:id="UT22084-091-063-389">Dīpaṁkaraśrījñāna</author>
+          <author role="translatorTib" xml:id="UT22084-091-063-390">Gyalwé Jungné</author>
+          <location work="UT4CZ5369" count-pages="13">
+            <volume number="91" start-page="385" end-page="397"/>
+          </location>
+          <idno parent-id="O1JC114941JC21415" work="http://read.84000.co/sections"/>
+          <idno source-id="O1JC114941JC12401" work="W22084"/>
+        </bibl>
+      </sourceDesc>
+      <notesStmt/>
+      <revisionDesc>
+        <change who="#john" when="2019-12-13T10:06:14.363Z" type="text-version" status="v 0.1.0" xml:id="UT22084-091-063-7">
+          <desc>v 0.1.0</desc>
+        </change>
+        <change who="#john" when="2019-12-13T10:06:14.363Z" type="translation-status" status="3" xml:id="UT22084-091-063-8">
+          <desc>3</desc>
+        </change>
+        <change who="#line-tofte" when="2022-08-08T14:16:19.71Z" type="translation-status" status="2.h" xml:id="UT22084-091-063-9">
+          <desc>2.h</desc>
+        </change>
+        <change who="#line-tofte" when="2022-08-08T14:16:19.71Z" type="text-version" status="0.1.1" xml:id="UT22084-091-063-10">
+          <desc>Auto (update-publication-status)</desc>
+        </change>
+        <change who="#line-tofte" when="2023-04-24T12:57:40.229Z" type="translation-status" status="2.f" xml:id="UT22084-091-063-11">
+          <desc>2.f</desc>
+        </change>
+        <change who="#line-tofte" when="2023-04-24T12:57:40.229Z" type="text-version" status="0.1.2" xml:id="UT22084-091-063-12">
+          <desc>Auto (update-publication-status)</desc>
+        </change>
+        <change who="#line-tofte" when="2023-06-19T11:02:10.243Z" type="translation-status" status="2.e" xml:id="UT22084-091-063-13">
+          <desc>2.e</desc>
+        </change>
+        <change who="#line-tofte" when="2023-06-19T11:02:10.243Z" type="text-version" status="0.1.3" xml:id="UT22084-091-063-14">
+          <desc>Auto (update-publication-status)</desc>
+        </change>
+        <change who="#line-tofte" when="2023-06-19T11:03:23.307Z" type="text-version" status="0.1.4" xml:id="UT22084-091-063-15">
+          <desc>Auto (update-contributors)</desc>
+        </change>
+        <change who="#line-tofte" when="2023-06-19T11:03:46.147Z" type="text-version" status="0.1.5" xml:id="UT22084-091-063-16">
+          <desc>Auto (update-contributors)</desc>
+        </change>
+        <change who="#line-tofte" when="2023-07-18T11:45:49.3Z" type="translation-status" status="2.d" xml:id="UT22084-091-063-17">
+          <desc>2.d</desc>
+        </change>
+        <change who="#line-tofte" when="2023-07-18T11:45:49.3Z" type="text-version" status="0.1.6" xml:id="UT22084-091-063-18">
+          <desc>Auto (update-publication-status)</desc>
+        </change>
+        <change who="#admin" when="2023-07-30T22:39:48.323Z" type="text-version" status="0.1.7" xml:id="UT22084-091-063-19">
+          <desc>TEI migrated to 2.19.0</desc>
+        </change>
+        <change who="#line-tofte" when="2023-08-08T13:53:48.987Z" type="translation-status" status="2.c" xml:id="UT22084-091-063-20">
+          <desc>2.c</desc>
+        </change>
+        <change who="#line-tofte" when="2023-08-08T13:53:48.987Z" type="text-version" status="0.1.8" xml:id="UT22084-091-063-21">
+          <desc>Auto (update-publication-status)</desc>
+        </change>
+        <change who="#line-tofte" when="2023-08-28T13:24:59.525Z" type="text-version" status="0.1.9" xml:id="UT22084-091-063-29">
+          <desc>Auto (update-contributors)</desc>
+        </change>
+        <change who="#line-tofte" when="2023-08-31T13:28:46.581Z" type="translation-status" status="2.b" xml:id="UT22084-091-063-30">
+          <desc>2.b</desc>
+        </change>
+        <change who="#line-tofte" when="2023-08-31T13:28:46.581Z" type="text-version" status="0.1.10" xml:id="UT22084-091-063-31">
+          <desc>Auto (update-publication-status)</desc>
+        </change>
+        <change who="#line-tofte" when="2023-09-05T15:33:20.58Z" type="translation-status" status="2.a" xml:id="UT22084-091-063-32">
+          <desc>2.a</desc>
+        </change>
+        <change who="#line-tofte" when="2023-09-05T15:33:20.58Z" type="text-version" status="0.1.11" xml:id="UT22084-091-063-33">
+          <desc>Auto (update-publication-status)</desc>
+        </change>
+        <change who="#line-tofte" when="2023-09-06T09:15:47.585Z" type="text-version" status="0.1.12" xml:id="UT22084-091-063-42">
+          <desc>Auto (update-contributors)</desc>
+        </change>
+                <change who="#line-tofte" when="2023-10-27T07:55:16.82Z" type="translation-status" status="2" xml:id="UT22084-091-063-392">
+                    <desc>2</desc>
+                </change>
+                <change who="#line-tofte" when="2023-10-27T07:55:16.82Z" type="text-version" status="0.0.2" xml:id="UT22084-091-063-393">
+                    <desc>Auto (update-publication-status)</desc>
+                </change>
+      </revisionDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <!--Note the "Contents" outline from the Word DOCX has not been included in the script. If the 
+                    Outline to the text is quite complex, it is recommended that you paste the outlined contents from the DOCX here as a comment for
+                    markup's reference. The actual table of contents will be generated in the Reading Room by the parser.-->
+    <front>
+      <div type="summary">
+        <head type="summary" tid="1">Summary</head>
+        <milestone unit="chunk" xml:id="UT22084-091-063-43"/>
+        <p tid="2">
+                    <title xml:lang="en">The Tantra of Great Gaṇapati</title> is a work in fifteen
+          chapters that detail offering rites, mantra recitation practices, and meditation practices
+          for propitiating various forms of the elephant-headed deity Gaṇapati.</p>
+      </div>
+      <div type="acknowledgment">
+        <head type="acknowledgment" tid="3">Acknowledgements</head>
+        <milestone unit="chunk" xml:id="UT22084-091-063-44"/>
+        <p tid="4">This text was translated by the Dharmachakra Translation Committee under the
+          supervision of Chokyi Nyima Rinpoche. The translation was produced by Adam C. Krug and
+          then checked against the Tibetan and edited by Ryan Conlon.</p>
+        <milestone unit="chunk" xml:id="UT22084-091-063-45"/>
+        <p tid="5">The translation was completed under the patronage and supervision of 84000:
+          Translating the Words of the Buddha.</p>
+      </div>
+      <div type="introduction">
+        <head type="introduction" tid="8">Introduction</head>
+        <div type="section" xml:id="UT22084-091-063-introduction-1">
+          <milestone unit="chunk" xml:id="UT22084-091-063-48"/>
+          <p tid="10">
+                        <title xml:lang="en">The Tantra of Great Gaṇapati</title> is a compendium of
+            ritual instructions for the performance of offering rites, mantra recitation, and
+            meditation practices related to the elephant-headed deity Gaṇapati. The text is divided
+            into fifteen chapters. The topics covered in these chapters include instructions for the
+            construction of Gaṇapati’s maṇḍalas, instructions for making various images of Gaṇapati,
+            the ritual applications that correspond to those images, descriptions of various forms
+            of Gaṇapati and the deities that accompany him in his maṇḍala, and a handful of
+            instructions on the “selection of mantra syllables” (Skt. <foreign xml:lang="Sa-Ltn" type="term">mantroddhāra</foreign>; Tib. <foreign xml:lang="Bo-Ltn" type="term">sngags
+              btu ba</foreign>), for mantras associated with Gaṇapati.<note place="end" xml:id="UT22084-091-063-49"> Butön Rinchen Drup (Bu ston rin chen grub 1290–1364)
+              includes a complete version of the Gaṇapati mantra as he received it in his <title xml:lang="en">Collection of Dhāraṇīs from the Four Classes of Tantras of the Secret
+                Mantra</title> (<title xml:lang="Bo-Ltn">gsang sngags rgyud sde bzhi’i gzungs
+                ’bum</title>). The mantras that appear in <title xml:lang="en">The Tantra of Great
+                Gaṇapati</title> are scattered across a handful of different chapters. In this
+              sense, they are not presented as a single Gaṇapati mantra, but as a collection of
+              various Gaṇapati mantras. The Gaṇapati mantra, according to Bütön, is as follows:
+                  <q>
+                                <mantra xml:lang="Sa-Ltn">oṃ ha ratnadhi ratnasiddhi vināyaka baira hūṁ hri hūṁ
+                  phaṭ | oṃ hūṁ phaṭ | bhe bhi bha yakṣa mahābherabhe trireca śatrūṁ nṛja nija yakṣa
+                  kāma mahābhairave devayakṣam nāganāga thumarilaya yaya mahābhairave yakṣa nāśaya
+                  nāśaya | curṇa curṇa tralaya nāgayakatra māraya hana cakra vināyaka jīvaṃ
+                  tāntakara hūṁ hūṁ phaṭ phaṭ oṃ vighnabhivabhi sarvavīryā viśvayahṛdam itaya hūṁ
+                  citu patu pramarutāya hana hana gṛhṇa gṛhṇa paca paca brahma brahma brahmāya
+                  brahmāya hūṁ hūṁ phaṭ phaṭ || </mantra>
+                            </q>See Butön Rinchen Drup, <title xml:lang="Bo-Ltn">gsang sngags rgyud sde bzhi’i gzungs ’bum</title>, in <title xml:lang="Bo-Ltn">gsung ’bum/ rin chen grub/ </title>(<title xml:lang="Bo-Ltn">zhol
+                par ma/ ldi lir bskyar par brgyab pa/</title>) vol. 16/ma (New Delhi: International
+              Academy of Indian Culture, 1965–71), 267.a–267.b. This important source was initially
+              accessed through the AIBS database entry for <title xml:lang="en">The Tantra of Great
+                Gaṇapati </title>(Toh 666). See<title xml:lang="en"> The Buddhist Canons Research
+                Database</title>. American Institute of Buddhist Studies and Columbia University
+              Center for Buddhist Studies. Accessed May 31, 2019. <ref target="http://databases.aibs.columbia.edu/">http://databases.aibs.columbia.edu</ref>.</note>
+                    </p>
+          <milestone unit="chunk" xml:id="UT22084-091-063-50"/>
+          <p tid="11">Gaṇapati enjoys a rich mythology in <foreign xml:lang="Sa-Ltn" type="term">purāṇa</foreign> literature, where he is identified as one of two primary sons of the
+            divine couple Śiva and Pārvatī. As a result of his popular identification with Hindu
+            traditions, Gaṇapati’s important role as a Buddhist deity is often overlooked. There is
+            archeological evidence at the Buddhist cave vihāra complex outside of Aurangabad,
+              Mahārāṣṭra<note place="end" xml:id="UT22084-091-063-391">The Aurangabad cave complex is not to be
+              confused with the better-known and large cave complexes at Ajanta and Ellora, which
+              are also located in the wider Aurangabad area. The Aurangabad cave complex is found on
+              a hill just outside the city of Aurangabad and is know simply as the “Aurangabad cave
+              complex.”</note> of Gaṇapati’s involvement in Buddhist ritual life in South Asia from
+            as early as the sixth and seventh centuries <hi rend="small-caps">ce</hi>. Here, in a
+            small chapel at the entrance to a Buddhist monastic complex carved into the rock cliffs
+            outside of the city, Gaṇapati appears flanked by Durgā in her forms as the buffalo
+            demon-slaying goddess (<foreign xml:lang="Sa-Ltn" type="term">mahiṣāsuramardinī</foreign>) and a semi-wrathful form of the goddess Cāmuṇḍā. He is
+            also accompanied by depictions of the Seven Mothers (<foreign xml:lang="Sa-Ltn" type="term">Saptmātṛkā</foreign>) and two Buddha images.<note place="end" xml:id="UT22084-091-063-51"> This description is taken from Adam Krug’s first-hand
+              observation and documentation of this cave vihāra site. For a thorough study of this
+              important Buddhist archeological site, see Pia Brancaccio 2011.</note> The level of
+            Buddhist participation in the Gaṇapati cult in India requires more research, but it is
+            supported by the existence of Gaṇapati shrines such as the one found at the Aurangabad
+            cave complex. Both works devoted to this deity in the Tibetan Kangyurs—<title xml:lang="en">The Tantra of Great Gaṇapati </title>and <title xml:lang="en">Gaṇapati’s
+              Heart Mantra</title>
+                        <ref inst="untoggle the following comment" rend="pending" target="https://read.84000.co/translation/toh665.html"/>
+            <!--<note xml:id="" place="end">Dharmachakra Translation Committee, trans., <title xml:lang="en"><ref rend="pending" target="https://read.84000.co/translation/toh665.html">Gaṇapati’s Heart Mantra</ref></title>, Toh 665/Toh 1084 (84000: Translating the Words of the Buddha, 2023).</note>-->
+            —provide additional textual evidence of his importance to Indian Buddhist traditions. </p>
+          <milestone unit="chunk" xml:id="UT22084-091-063-52"/>
+          <p tid="12">While <title xml:lang="en">Gaṇapati’s Heart Mantra</title> appears in the
+              Phangthangma<note place="end" xml:id="UT22084-091-063-53">
+              <title xml:lang="Bo-Ltn">dkar chag ’phang thang ma</title> (Pe cin: mi rigs dpe skrun
+              khang, 2003), p. 30. </note> and Denkarma<note place="end" xml:id="UT22084-091-063-54"> Denkarma (<title xml:lang="Bo-Ltn">pho brang stod thang ldan dkar gyi chos kyi ’gyur
+                ro cog gi dkar chag</title>). Toh 4364, Degé Tengyur, vol. 206 (sna tshogs, jo),
+              folio 303.a. See also Shyuki Yoshimuri 1950, p. 154.</note> royal catalogs of Tibetan
+            translations under the abridged title <title xml:lang="Bo-Ltn">’phags pa tshogs kyi
+              snying po</title>, neither of these catalogs contains any mention of <title xml:lang="en">The Tantra of Great Gaṇapati</title>. <title xml:lang="en">The Tantra of
+              Great Gaṇapati </title>also does not<title xml:lang="en"> </title>appear to be
+            included among the various works on Gaṇapati that were incorporated into the compendia
+            of dhāraṇīs translated into Chinese from the seventh century.<note place="end" xml:id="UT22084-091-063-55"> This is based on Duquenne’s analysis of these materials.
+              See Robert Duquenne 1988, pp. 321–54.</note>
+          </p>
+          <milestone unit="chunk" xml:id="UT22084-091-063-56"/>
+          <p tid="13">Tarthang Tulku’s catalog to <title xml:lang="en">The Nyingma Edition of the
+              sDe-dge bKa’-’gyur and bsTan-’gyur </title>notes that Bütön (Bu ston rin chen grub,
+            1290–1364) questioned the authenticity of this text.<note place="end" xml:id="UT22084-091-063-57"> Tarthang Tulku 1982, p. 270.</note> This may explain why
+            the text’s colophon does not follow the usual conventions but is rendered instead in
+            verse as follows: </p>
+          <milestone unit="chunk" xml:id="UT22084-091-063-58"/>
+          <lg tid="14">
+            <l>“The Indian preceptor Dīpaṁkaraśrījñāna </l>
+            <l>Arrived from India carrying this</l>
+            <l>For the sake of worldly siddhis.</l>
+            <l>He entrusted it to Gyalwé Jungné.</l>
+          </lg>
+          <milestone unit="chunk" xml:id="UT22084-091-063-59"/>
+          <lg tid="15">
+            <l>This tantra fulfills wishes.”</l>
+          </lg>
+          <milestone unit="chunk" xml:id="UT22084-091-063-60"/>
+          <p tid="16">The emphasis placed here on the fact that Atiśa arrived with this text
+              <emph>from India</emph> (<foreign xml:lang="Bo-Ltn" type="quote">rgya gar yul
+              nas</foreign>) appears to be some form of response to the text’s contested status, as
+            noted by Bütön, and to justify including it in the Kangyur as an authentically Indic
+            work. Some material in <title xml:lang="en">The Tantra of Great Gaṇapati </title>itself,
+            however, such as the reference to a “soul stone” (<foreign xml:lang="Bo-Ltn" type="term">bla rdo</foreign>) in chapter fourteen, and perhaps the spelling <foreign xml:lang="Sa-Ltn" type="term">bhairabhe </foreign>(for the Sanskrit *<foreign xml:lang="Sa-Ltn" type="term">bhairave</foreign>) in the sections presenting
+            Gaṇapati’s mantra, may suggest Tibetan, or, in the latter case, Nepalese influence.<note place="end" xml:id="UT22084-091-063-61"> The term <foreign xml:lang="Bo-Ltn" type="term">bla rdo</foreign> may also be an idiomatic translation of the Sanskrit
+                <foreign xml:lang="Sa-Ltn" type="term">liṅga</foreign>. This is supported by
+              evidence in the eight-chapter <title xml:lang="Sa-Ltn">Mahākālatantra</title> (Toh.
+              667) <ref inst="untoggle the following comment" rend="pending" target="https://read.84000.co/translation/toh667.html"/>
+              <!--<note xml:id="" place="end">Dharmachakra Translation Committee, trans., <title xml:lang="en"><ref rend="pending" target="https://read.84000.co/translation/toh667.html">The Mahākāla Tantra</ref></title>, Toh 667 (84000: Translating the Words of the Buddha, 2023).</note>-->
+              where the deity Mahākāla offers his liṅga (<foreign xml:lang="Bo-Ltn" type="quote">rtags</foreign>), which is described there as “the essence of his life force”
+                (<foreign xml:lang="Bo-Ltn" type="quote">srog gi snying po</foreign>) to show his
+              subservience to the deity Hayagrīva. The term <foreign xml:lang="Bo-Ltn" type="term">bla rto</foreign> also appears in the eight-chapter <title xml:lang="Sa-Ltn">Mahākālatantra</title> four times, appearing to have a similar function as this use
+              of the word <foreign xml:lang="Sa-Ltn" type="term">liṅga</foreign> to signify a kind
+              of “essence of the life force” that can be installed in a ritual implement or maṇḍala,
+              or even worn on one’s own body.</note> It is also curious that this colophon verse
+            mentions Atiśa Dīpaṁkaraśrījñāna “entrusting”<emph> </emph>this work to his disciple
+            Dromtön Gyalwé Jungné but contains no mention of Atiśa, Dromtön, or anyone else
+            performing tasks such as translating, editing, or finalizing the text. Thus, all that we
+            can determine with any certainty at this time is that <title xml:lang="en">The Tantra of
+              Great Gaṇapati</title> was most likely introduced to Tibet by Atiśa sometime in the
+            mid-eleventh century. </p>
+          <milestone unit="chunk" xml:id="UT22084-091-063-62"/>
+          <p tid="17">This translation is based on the version of <title xml:lang="en">The Tantra of
+              Great Gaṇapati</title> that appears in the “Tantra Collection” (<foreign xml:lang="Bo-Ltn" type="term">rgyud ’bum</foreign>) of the Degé Kangyur, in
+            consultation with the Comparative Edition (<title xml:lang="Bo-Ltn">dpe bsdur
+            ma</title>) and the Stok Palace Kangyur. Unfortunately, no known Sanskrit version of the
+            text appears to have survived. Christopher Wilkinson’s English translation of the text
+            was also consulted.<note place="end" xml:id="UT22084-091-063-63"> Christopher Wilkinson
+              1991, pp. 235–75.</note>
+                    </p>
+        </div>
+      </div>
+    </front>
+    <body>
+      <div type="translation">
+        <head type="translation"> The Translation </head>
+        <head type="titleMain" tid="195">The Gaṇapati Tantra</head>
+        <div type="section" xml:id="UT22084-091-063-section-1">
+          <milestone unit="chunk" xml:id="UT22084-091-063-66"/>
+          <p tid="23">
+                        <ref cRef="F.193.a" type="folio" xml:id="UT22084-091-063-376"/> Homage to
+            Lokeśvara.</p>
+          <div type="chapter" xml:id="UT22084-091-063-section-1-1">
+            <head tid="26" type="chapter">Chapter 1: The Arising of Siddhi</head>
+            <milestone unit="chunk" xml:id="UT22084-091-063-69"/>
+            <lg tid="27">
+              <l>After one has paid homage to glorious great Gaṇapati </l>
+              <l>And glorious Gaṇapati is pleased, one should</l>
+              <l>Place the statue in <ref cRef="F.193.b" type="folio" xml:id="UT22084-091-063-377"/>
+                a square maṇḍala </l>
+              <l>And perform the offering for six months. </l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-70"/>
+            <lg tid="28">
+              <l>One will have the same good fortune in this life </l>
+              <l>As a divine universal emperor.</l>
+              <l>One will incur great merit. </l>
+              <l>One’s wealth will equal that of the gods.</l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-71"/>
+            <lg tid="29">
+              <l>One’s lifespan will greatly increase.</l>
+              <l>Humans and other beings will be under one’s control,</l>
+              <l>And even the gods will become one’s servants </l>
+              <l>And obey one’s commands. </l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-72"/>
+            <lg tid="30">
+              <l>The nāgas will also obey one’s commands</l>
+              <l>And accomplish any task like servants.</l>
+              <l>The pleasure one will experience will be</l>
+              <l>Greater than the pleasures of the god realms.<note place="end" xml:id="UT22084-091-063-73"> Following D and S: <foreign xml:lang="Bo-Ltn" type="quote">lha yi longs spyod mnga’ ris las/ /’dod pa’i longs spyod ’byung bar
+                    ’gyur</foreign>. This translation is tentative. </note>
+              </l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-74"/>
+            <lg tid="31">
+              <l>The great deity Great Gaṇapati will create<note place="end" xml:id="UT22084-091-063-75"> Following D and S: <foreign xml:lang="Bo-Ltn" type="quote">lha chen tshogs bdag chen pos bya</foreign>. This translation is
+                  tentative. It is also possible to translate this line as “Mahādeva and Gaṇapati
+                  will create.” However, since the chapter colophon does refer to Gaṇapati as a
+                  “great deity” (<foreign xml:lang="Bo-Ltn" type="term">lha chen</foreign>), this
+                  alternate reading is less likely.</note>
+                            </l>
+              <l>Emanation bodies that consecrate fortunate</l>
+              <l>Disciples who have attained siddhi.</l>
+              <l>When one attains the highest supreme siddhi,</l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-76"/>
+            <lg tid="32">
+              <l>One becomes extremely powerful, and it</l>
+              <l>Increases wealth like a wish-fulfilling jewel. </l>
+              <l>The person who performs this offering to the benefactor </l>
+              <l>Of the world, the god of gods, will attain siddhi. </l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-77"/>
+            <trailer tid="33">This is chapter 1 in “<title xml:lang="en">The Tantra of the Great
+                Deity Gaṇapati</title>,” “The Arising of Siddhi.”</trailer>
+          </div>
+          <div type="chapter" xml:id="UT22084-091-063-section-1-2">
+            <head tid="34" type="chapter">Chapter 2: Instructions on the Mantra for the Deity’s
+              Siddhi</head>
+            <milestone unit="chunk" xml:id="UT22084-091-063-78"/>
+            <lg tid="35">
+              <l>Make a square maṇḍala </l>
+              <l>In a secluded place as follows:</l>
+              <l>Smear the ground with cow dung making it</l>
+              <l>Smooth and soft, and place a statue of Gaṇapati</l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-79"/>
+            <lg tid="36">
+              <l>In the center of its raised middle section.</l>
+              <l>Scatter white flowers on it, </l>
+              <l>Get naked, adopt the form</l>
+              <l>Of Vināyaka, and perform the offering.</l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-80"/>
+            <lg tid="37">
+              <l>Adopt a six-month observance<note place="end" xml:id="UT22084-091-063-81">
+                  Following D and S: <foreign xml:lang="Bo-Ltn" type="quote">ba ra ta ka zla ba
+                    drug</foreign>. Y, J, and C: <foreign xml:lang="Bo-Ltn" type="quote">ba ra ta ga
+                    zla ba drug</foreign>. This translation is tentative and reads the Tibetan
+                    <foreign xml:lang="Bo-Ltn" type="quote">ba ra ta ka</foreign> as a
+                  transliteration of the Sanskrit *<foreign xml:lang="Sa-Ltn" type="quote">vrataka</foreign>.</note>
+                            </l>
+              <l>And perform 108 mantra recitations </l>
+              <l>Three times each day. </l>
+              <l>All one’s hopes will be fulfilled, and</l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-82"/>
+            <lg tid="38">
+              <l>Everything one wishes will come to pass. </l>
+              <l>Place the glorious and auspicious syllable <mantra xml:lang="Sa-Ltn" type="syllable">oṃ</mantra>
+                            </l>
+              <l>At the beginning of the mantra.</l>
+              <l>Place <term ref="UT22084-091-063-314">the syllable that grants siddhi</term>
+                            </l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-83"/>
+            <lg tid="39">
+              <l>Like a wish-fulfilling jewel</l>
+              <l>Next in line.</l>
+              <l>Recite <term ref="UT22084-091-063-315">the syllable that is</term>
+                            </l>
+              <l>
+                                <term ref="UT22084-091-063-315">Like the sun</term> after that.</l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-84"/>
+            <lg tid="40">
+              <l>Use the first syllable</l>
+              <l>Of the Tathāgata’s name.</l>
+              <l>Recite the first consonant </l>
+              <l>At the end of that. </l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-85"/>
+            <lg tid="41">
+              <l>Recite the precious syllable <mantra xml:lang="Sa-Ltn" type="syllable">svā</mantra>
+              </l>
+              <l>And the activating syllable <mantra xml:lang="Sa-Ltn" type="syllable">hā</mantra>.</l>
+              <l>This is how<note place="end" xml:id="UT22084-091-063-86"> The phrase “this is how”
+                  has been added to the English translation for the sake of clarity. No equivalent
+                  of this phrase appears in the Tibetan witnesses. </note> one who seeks siddhi <ref cRef="F.194.a" type="folio" xml:id="UT22084-091-063-378"/>
+              </l>
+              <l>Should recite the secret mantra.</l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-87"/>
+            <trailer tid="42">This is chapter 2 in “<title xml:lang="en">The Siddhi Practice of the
+                Great Deity</title>,”<note place="end" xml:id="UT22084-091-063-88"> Following D and
+                S: <foreign xml:lang="Bo-Ltn" type="quote">lha chen dngos grub sgrub pa</foreign>.
+                Readers should note that the term <foreign xml:lang="Bo-Ltn" type="term">lha
+                  chen</foreign> translates the Sanskrit <foreign xml:lang="Sa-Ltn" type="term">mahādeva</foreign>, which is a common epithet for the Hindu deity Śiva. In this
+                case, however, it most likely refers to Gaṇapati.</note> “Instruction on the Mantra
+              for the Deity’s Siddhi.” </trailer>
+          </div>
+          <div type="chapter" xml:id="UT22084-091-063-section-1-3">
+            <head tid="43" type="chapter">Chapter 3: A Description of Gaṇapati</head>
+            <milestone unit="chunk" xml:id="UT22084-091-063-89"/>
+            <lg tid="44">
+              <l>Ganapaṭi is described as follows:</l>
+              <l>Gaṇapati’s body is white,</l>
+              <l>He has the head of an elephant, </l>
+              <l>And one of his tusks is broken.</l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-90"/>
+            <lg tid="45">
+              <l>He holds a radish in his right hand,</l>
+              <l>He is mounted upon a rat, </l>
+              <l>His body is adorned with jewels, and</l>
+              <l>He is crowned with a crescent moon.<note place="end" xml:id="UT22084-091-063-91">
+                  Following D and S: <foreign xml:lang="Bo-Ltn" type="quote">zla ba tshes
+                    pa</foreign>. The Tibetan term <foreign xml:lang="Bo-Ltn" type="term">zla ba
+                    tshes pa </foreign>translates a number of Sanskrit terms such as “the new moon”
+                    (<foreign xml:lang="Sa-Ltn" type="term">navacandra</foreign>), “young moon”
+                    (<foreign xml:lang="Sa-Ltn" type="term">abhinavendu</foreign>), “lunar digit”
+                    (<foreign xml:lang="Sa-Ltn" type="term">candralekhā</foreign>), and “half moon”
+                    (<foreign xml:lang="Sa-Ltn" type="term">ardhacandra</foreign>). Here the term
+                  likely refers to the “new moon” as well as a “lunar digit,” or the individual
+                  phases that the moon passes through as it waxes and wanes. In this case, the
+                  description of Gaṇapati wearing a “lunar digit” in his crown describes the first
+                  lunar digit of the crescent waxing moon, which is a well-known iconographic
+                  component of deities like Gaṇapati who are directly related to the deity Śiva.
+                </note>
+                            </l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-92"/>
+            <lg tid="46">
+              <l>He is radiant and sends forth rays of light.</l>
+              <l>He has a beautiful complexion and color, a big belly, and is clad in jewelry.</l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-93"/>
+            <trailer tid="47">This is chapter 3 in “<title xml:lang="en">The Tantra of Accomplishing
+                Siddhi”</title>, “A Description of Gaṇapati.”</trailer>
+          </div>
+          <div type="chapter" xml:id="UT22084-091-063-section-1-4">
+            <head tid="48" type="chapter">Chapter 4: The Practice of One-Faced, Four-Armed
+              Gaṇapati</head>
+            <milestone unit="chunk" xml:id="UT22084-091-063-94"/>
+            <p tid="49">A skilled person should pick white flowers on a day during the lunar month
+              Puṣya and draw the image of Gaṇapati, depicting him with a white complexion and the
+              head of an elephant, holding a radish in his right hand and a precious jewel in his
+              left hand, with a big belly, adorned with all his ornaments, and seated on his throne
+              atop a rat and a lunar disk. Then one should place the image in the center of the
+              maṇḍala facing oneself, adopt the form of Vināyaka, and perform the offering.</p>
+            <milestone unit="chunk" xml:id="UT22084-091-063-95"/>
+            <trailer tid="50">This is chapter 4, “The Practice of One-Faced, Four-Armed
+              Gaṇapati.”</trailer>
+          </div>
+          <div type="chapter" xml:id="UT22084-091-063-section-1-5">
+            <head tid="51" type="chapter">Chapter 5: A Teaching on Gaṇapati’s Mudrā</head>
+            <milestone unit="chunk" xml:id="UT22084-091-063-96"/>
+            <p tid="52">Gaṇapati is in the northeast. He has a white complexion, the head of an
+              elephant, a rat for his mount, and three eyes. He wears a crescent moon. His right
+              hands hold a radish and battle-axe, and his left hands hold a trident and skull
+              bowl.</p>
+            <milestone unit="chunk" xml:id="UT22084-091-063-97"/>
+            <p tid="53">For the Gaṇapati mudrā, the left hand is clenched in a fist with the
+              forefinger and middle finger extended and the forefinger is bent so that it grasps the
+              joint of the middle finger. </p>
+            <milestone unit="chunk" xml:id="UT22084-091-063-98"/>
+            <trailer tid="54">This is chapter 5, “A Teaching on Gaṇapati’s Mudrā.”</trailer>
+          </div>
+          <div type="chapter" xml:id="UT22084-091-063-section-1-6">
+            <head type="chapter" tid="55">Chapter 6: A Teaching on Great Gaṇapati’s Mantra</head>
+            <milestone unit="chunk" xml:id="UT22084-091-063-99"/>
+            <lg tid="56">
+              <l>The mantra is taught as follows:</l>
+              <l>Place the glorious syllable <mantra xml:lang="Sa-Ltn" type="syllable">oṃ</mantra>
+                at the beginning.</l>
+              <l>Write<note place="end" xml:id="UT22084-091-063-100"> Although it is not explicitly
+                  stated here, elsewhere in this “selection of mantra syllables” chapter we see that
+                  these instructions pertain to <emph>mentally</emph> writing Gaṇapati’s mantra,
+                  though it is also possible that these instructions would accompany the physical
+                  process of writing the mantra.</note> the precious wish-fulfilling</l>
+              <l>Jewel syllable after that.</l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-101"/>
+            <lg tid="57">
+              <l>The first consonant of the first class</l>
+              <l>Should be written after that. </l>
+              <l>Adorn the first letter of the Tathāgata’s</l>
+              <l>Name <ref cRef="F.194.b" type="folio" xml:id="UT22084-091-063-379"/> with the
+                eighth vowel.</l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-102"/>
+            <lg tid="58">
+              <l>Bring the first consonant syllable</l>
+              <l>To mind and mentally write it. </l>
+              <l>Write the third member of the third class<note place="end" xml:id="UT22084-091-063-103"> Following Y, N, H, and S: <foreign xml:lang="Bo-Ltn" type="quote">gsum pa’i gsum pa</foreign>. D: <foreign xml:lang="Bo-Ltn" type="quote">gsum pas gsum pa</foreign>.</note>
+              </l>
+              <l>And the fourth of the first class.</l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-104"/>
+            <lg tid="59">
+              <l>Write the third member of the seventh class, </l>
+              <l>And add it after the first member of the third.</l>
+              <l>The fifth member of the fourth class accompanies</l>
+              <l>The wish-fulfilling jewel syllable, and is</l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-105"/>
+            <lg tid="60">
+              <l>Adorned with the third vowel. </l>
+              <l>Then, pronounce the third of the fourth group,</l>
+              <l>And write the <term ref="UT22084-091-063-313">syllable for</term>
+              </l>
+              <l>
+                                <term ref="UT22084-091-063-313">Attaining siddhi</term> after that.</l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-106"/>
+            <lg tid="61">
+              <l>The fierce mantra syllable </l>
+              <l>Is pronounced at the end of all of them. </l>
+              <l>Lokeśvara himself grants </l>
+              <l>The siddhi of this secret mantra.</l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-107"/>
+            <lg tid="62">
+              <l>It will fulfill every need.</l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-108"/>
+            <trailer tid="63">This is chapter 6, “A Teaching on Great Gaṇapati’s Mantra.” </trailer>
+          </div>
+          <div type="chapter" xml:id="UT22084-091-063-section-1-7">
+            <head type="chapter" tid="64">Chapter 7: A Teaching on the Name Mantra</head>
+            <milestone unit="chunk" xml:id="UT22084-091-063-109"/>
+            <lg tid="65">
+              <l>Now there is the additional teaching on</l>
+              <l>The heart mantra for accomplishing siddhi</l>
+              <l>Called <distinct>the name mantra that</distinct>
+                            </l>
+              <l>
+                                <distinct>Accomplishes all the siddhis</distinct>.</l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-110"/>
+            <lg tid="66">
+              <l>Take <mantra xml:lang="Sa-Ltn" type="syllable">śrī</mantra> and the syllable
+                  <mantra xml:lang="Sa-Ltn" type="syllable">yaṃ</mantra> and place</l>
+              <l>Them at the beginning where it says <mantra xml:lang="Sa-Ltn" type="syllable">oṃ</mantra>.</l>
+              <l>Write the wish-fulfilling jewel syllable and</l>
+              <l>Adorn it with the solar syllable after that.</l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-111"/>
+            <lg tid="67">
+              <l>Write the sixth vowel next and </l>
+              <l>Ornament it with a <distinct>nāda</distinct> and <distinct>bindu</distinct>.</l>
+              <l>Pronounce the first syllable </l>
+              <l>Of the name after that. </l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-112"/>
+            <lg tid="68">
+              <l>Write the fifth member of the fourth group</l>
+              <l>And then the first member of the fifth group. </l>
+              <l>Write the first syllable of the Tathāgata’s name,</l>
+              <l>The wind element syllable, and</l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-113"/>
+            <lg tid="69">
+              <l>Ornament it with the eighth vowel</l>
+              <l>After that. </l>
+              <l>Pronounce the <term ref="UT22084-091-063-319">two pacification</term>
+                            </l>
+              <l>
+                                <term ref="UT22084-091-063-319">Seed syllables</term> at the end.</l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-114"/>
+            <lg tid="70">
+              <l>
+                                <distinct>The name mantra</distinct>
+                            </l>
+              <l>Accomplishes all one desires.</l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-115"/>
+            <trailer tid="71">This is chapter 7, “A Teaching on the Name Mantra.”</trailer>
+          </div>
+          <div type="chapter" xml:id="UT22084-091-063-section-1-8">
+            <head type="chapter" tid="72">Chapter 8: The Gaṇapati Offering</head>
+            <milestone unit="chunk" xml:id="UT22084-091-063-116"/>
+            <lg tid="73">
+              <l>Now I will explain further.</l>
+              <l>Pluck some white flowers by the root</l>
+              <l>On a day during the lunar month of Puṣya.</l>
+              <l>The statue of Gaṇapati should be</l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-117"/>
+            <lg tid="74">
+              <l>Made by a skilled person </l>
+              <l>Out of pure white sandalwood. </l>
+              <l>It should be one thumb-length high,</l>
+              <l>Have a big belly, four arms, <ref cRef="F.195.a" type="folio" xml:id="UT22084-091-063-380"/> and be well made.</l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-118"/>
+            <lg tid="75">
+              <l>Place it in a container made of precious materials.</l>
+              <l>When the full moon is out, one should</l>
+              <l>Clean the area inside, where the image is located,<note place="end" xml:id="UT22084-091-063-119"> Following D and S: <foreign xml:lang="Bo-Ltn" type="quote">nang gi cha ris sku khrus gsol</foreign>. This translation is
+                  tentative. </note>
+                            </l>
+              <l>So that it is clean, sparkling, and beautiful.</l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-120"/>
+            <lg tid="76">
+              <l>Wash it with a vase<note place="end" xml:id="UT22084-091-063-121"> Following Y, J,
+                  N, C, H, and S: <foreign xml:lang="Bo-Ltn" type="quote">bum pa yis</foreign>. D:
+                    <foreign xml:lang="Bo-Ltn" type="quote">bum pa yi.</foreign>
+                                </note> containing </l>
+              <l>Scented water and a cleaning solution</l>
+              <l>Of perfume made of white flowers.</l>
+              <l>Immediately after, </l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-122"/>
+            <lg tid="77">
+              <l>Invite him into the center of the maṇḍala </l>
+              <l>And present the white flowers to him. </l>
+              <l>Present him with a large <distinct>bali</distinct> offering</l>
+              <l>Of radishes and <distinct>laḍḍus</distinct>,</l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-123"/>
+            <lg tid="78">
+              <l>And then perform an offering with incense, </l>
+              <l>Perfume, lamps, and divine foods.</l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-124"/>
+            <p tid="79">For the mantra, one should present a <distinct>bali</distinct> offering to
+              Gaṇapati consisting of radishes, <distinct>laḍḍus</distinct>, water, and the three
+              white offerings, and also offer incense and flowers. After it is performed in this
+              way, nothing can pose an obstacle. </p>
+            <milestone unit="chunk" xml:id="UT22084-091-063-125"/>
+            <trailer tid="80">This is chapter 8, “The Gaṇapati Offering.”</trailer>
+          </div>
+          <div type="chapter" xml:id="UT22084-091-063-section-1-9">
+            <head type="chapter" tid="81">Chapter 9: A Description of the Food for Attaining
+              Siddhi</head>
+            <milestone unit="chunk" xml:id="UT22084-091-063-126"/>
+            <lg tid="82">
+              <l>The term <distinct>radish</distinct> refers to</l>
+              <l>A mustard root with eight flavors</l>
+              <l>That is the best of all foods</l>
+              <l>And has the best flavors.</l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-127"/>
+            <lg tid="83">
+              <l>These are bitter, sour, astringent, </l>
+              <l>Sweet, spicy, and salty flavors, </l>
+              <l>As well as juicy and savory.<note place="end" xml:id="UT22084-091-063-128"> D:
+                    <foreign xml:lang="Bo-Ltn" type="quote">bzhun dang bro mchog che ba
+                    yin</foreign>. S: <foreign xml:lang="Bo-Ltn" type="quote">bzhun dang bro mchog
+                    che ba yang</foreign>. The translation of these two flavors is tentative.
+                </note>
+              </l>
+              <l>They are antidotes to the eight types of illness. </l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-129"/>
+            <lg tid="84">
+              <l>They are helpful for all diseases and illnesses </l>
+              <l>Related to bile, phlegm, a mixture of the two,</l>
+              <l>Blood, lymph, indigestion, and wind.</l>
+              <l>No other food compares to it. </l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-130"/>
+            <lg tid="85">
+              <l>It can make even the lips of the gods quiver.</l>
+              <l>It is the food that grants siddhi and</l>
+              <l>One should offer it to Gaṇapati. </l>
+              <l>The term <distinct>laḍḍu</distinct> refers to a type of food</l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-131"/>
+            <lg tid="86">
+              <l>Containing the three sweets and the three fruits, </l>
+              <l>That is sprinkled with a delicious fragrance,</l>
+              <l>Rolled into a dough ball,</l>
+              <l>Boiled in milk and butter, and</l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-132"/>
+            <lg tid="87">
+              <l>Used as a great <distinct>bali</distinct> offering to the gaṇas.</l>
+              <l>Offer it to Gaṇapati along with </l>
+              <l>Various common foods such as </l>
+              <l>Butter, pastries, and the three sweets.</l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-133"/>
+            <lg tid="88">
+              <l>These are the offerings to Gaṇapati. </l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-134"/>
+            <p tid="89">Place the statue of Gaṇapati in the palm of your right hand and recite the
+              mantra one hundred thousand times without allowing your mind to wander. <ref cRef="F.195.b" type="folio" xml:id="UT22084-091-063-381"/> If one incants the radish
+              with the mantra and offers it to Gaṇapati, one’s merit in this lifetime will equal to
+              that of a universal emperor. If one offers white flowers, one will not be defeated by
+              kings and the like. One will gain a high rank such as king, and kings, ministers, and
+              others will be brought under one’s control. </p>
+            <milestone unit="chunk" xml:id="UT22084-091-063-135"/>
+            <trailer tid="90">This is chapter 9 on “A Description of the Food That Grants
+              Siddhi.”</trailer>
+          </div>
+          <div type="chapter" xml:id="UT22084-091-063-section-1-10">
+            <head type="chapter" tid="91">Chapter 10: Practices for Becoming a King and the
+              Like</head>
+            <milestone unit="chunk" xml:id="UT22084-091-063-136"/>
+            <lg tid="92">
+              <l>Now I will present the ritual instructions. </l>
+              <l>Make a statue of Great Gaṇapati </l>
+              <l>Holding a wish-fulfilling jewel in his hands</l>
+              <l>Out of the precious material known as silver.</l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-137"/>
+            <lg tid="93">
+              <l>Make a maṇḍala measuring one cubit across </l>
+              <l>And scatter precious stones and white flowers on it.</l>
+              <l>Recite the mantra one hundred thousand times, </l>
+              <l>And illness and suffering will be pacified. </l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-138"/>
+            <lg tid="94">
+              <l>A skilled person should make a Gaṇapati statue out of crystal</l>
+              <l>And conch shell according to the following procedure.</l>
+              <l>It will remove all types of suffering. </l>
+              <l>Make the Gaṇapati statue </l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-139"/>
+            <lg tid="95">
+              <l>One thumb-length in height </l>
+              <l>Out of precious crystal, and</l>
+              <l>Recite the <foreign xml:lang="Sa-Ltn">senapra</foreign>… vidyāmantra </l>
+              <l>One hundred thousand times,</l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-140"/>
+            <lg tid="96">
+              <l>While polishing the crystal statue.</l>
+              <l>Then, on a day during the lunar month</l>
+              <l>Of Puṣya, one should face east, </l>
+              <l>Put on white robes, wash, place one’s</l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-141"/>
+            <lg tid="97">
+              <l>Hands together, and mentally supplicate the deity. </l>
+              <l>If some obstructing being is causing one harm,</l>
+              <l>One should place the crystal statue on top of </l>
+              <l>A mirror so that it does not move or wobble. </l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-142"/>
+            <lg tid="98">
+              <l>Then one should bathe, face east, </l>
+              <l>And the robber or spy<note place="end" xml:id="UT22084-091-063-143"> Following D
+                  and S: <foreign xml:lang="Bo-Ltn" type="quote">dza ra pa dang rkun ma
+                  ni</foreign>. This translation is tentative and reads the Tibetan <foreign xml:lang="Bo-Ltn" type="quote">dza ra pa </foreign>as a transliteration of the
+                  Sanskrit term <foreign xml:lang="Sa-Ltn" type="term">cārapāla</foreign>.</note>
+                            </l>
+              <l>Will appear in the mirror,</l>
+              <l>And be identified.</l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-144"/>
+            <lg tid="99">
+              <l>If one recites the <foreign xml:lang="Sa-Ltn">nāga kuru</foreign> vidyā</l>
+              <l>One hundred thousand times </l>
+              <l>While making offerings and illuminating</l>
+              <l>The crystal statue of Gaṇapati, </l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-145"/>
+            <lg tid="100">
+              <l>Simply showing this statue to someone</l>
+              <l>Afflicted by illness and suffering</l>
+              <l>Will cure them of any illness </l>
+              <l>And free them from suffering. </l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-146"/>
+            <lg tid="101">
+              <l>That is the great pacification ritual.</l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-147"/>
+            <lg tid="102">
+              <l>Make a statue of Great Gaṇapati</l>
+              <l>Out of the precious gold.</l>
+              <l>Open its eyes on a day during Puṣya,</l>
+              <l>Make offerings to it and consecrate it. <ref cRef="F.196.a" type="folio" xml:id="UT22084-091-063-382"/>
+              </l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-148"/>
+            <lg tid="103">
+              <l>Recite the <foreign xml:lang="Sa-Ltn" type="term">vara</foreign> mantra</l>
+              <l>One hundred thousand times,</l>
+              <l>And all the wealth of the household in which</l>
+              <l>The statue resides will increase. </l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-149"/>
+            <lg tid="104">
+              <l>When they see the golden Gaṇapati,</l>
+              <l>Obstructing beings will give you riches.</l>
+              <l>Obstructing beings will be unable to cause harm,</l>
+              <l>And will present offerings fit for a king. </l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-150"/>
+            <lg tid="105">
+              <l>A rain of precious substances will fall in the </l>
+              <l>Location where the golden Gaṇapati resides. </l>
+              <l>All kings of obstructing beings will<note place="end" xml:id="UT22084-091-063-151">
+                  Following D and S: <foreign xml:lang="Bo-Ltn" type="quote">bgegs kyi rgyal po
+                    thams cad kyis</foreign>. While the term <foreign xml:lang="Bo-Ltn" type="term">bgegs kyi rgyal po</foreign> (Skt. <foreign xml:lang="Sa-Ltn" type="term">vighnarāja</foreign>) can function as an alternate name of Gaṇapati, in this
+                  case it likely refers to both human kings who act as obstacles and other non-human
+                  “kings of obstructing beings” who, like Gaṇapati, rule over retinues of non-human
+                  beings that bring about obstacles and misfortune. </note>
+              </l>
+              <l>Give all their wealth </l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-152"/>
+            <lg tid="106">
+              <l>To the golden Gaṇapati, </l>
+              <l>And one will become wealthy. </l>
+              <l>The qualities that constitute a </l>
+              <l>Superior Gaṇapati statue are </l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-153"/>
+            <lg tid="107">
+              <l>That it reveals treasures concealed by yakṣas, </l>
+              <l>It will ensure one’s possessions always increase</l>
+              <l>In this life and in future lives, and </l>
+              <l>It causes the lord of wealth, Vaiśravaṇa,</l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-154"/>
+            <lg tid="108">
+              <l>To honor one like a king. </l>
+              <l>Place the statue of glorious Gaṇapati</l>
+              <l>In a square maṇḍala.</l>
+              <l>Recite the <foreign xml:lang="Sa-Ltn" type="term">bhaga</foreign> mantra</l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-155"/>
+            <lg tid="109">
+              <l>One hundred thousand times, and </l>
+              <l>One will attain siddhi in this life.</l>
+              <l>It will grant whatever one desires, </l>
+              <l>And the power of the king of gods</l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-156"/>
+            <lg tid="110">
+              <l>Will be bestowed upon the practitioner.</l>
+              <l>The compassionate glorious Gaṇapati and his</l>
+              <l>Multitude of compassionate ones will protect one</l>
+              <l>From poverty with their compassionate nature.</l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-157"/>
+            <lg tid="111">
+              <l>Draw the Great God of Wealth</l>
+              <l>On a piece of silk or a piece of cloth,</l>
+              <l>Open its eyes on a day during Puṣya,</l>
+              <l>And good fortune will come to the location</l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-158"/>
+            <lg tid="112">
+              <l>Of the household in which it is placed.</l>
+              <l>A skilled person should make a well-crafted</l>
+              <l>Gaṇapati statue out of copper.</l>
+              <l>Place it on top of a maṇḍala</l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-159"/>
+            <lg tid="113">
+              <l>On ground that has been smeared with red sandalwood. </l>
+              <l>Make an offering of bandhūka flowers, </l>
+              <l>Rubies, and all manner of red flowers</l>
+              <l>While reciting the <foreign xml:lang="Sa-Ltn" type="term">bruṃ
+                </foreign>vidyāmantra,</l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-160"/>
+            <lg tid="114">
+              <l>And one will enthrall a king’s daughter,</l>
+              <l>A goddess, a female nāga,</l>
+              <l>A kinnara’s daughter, <ref cRef="F.196.b" type="folio" xml:id="UT22084-091-063-383"/>
+                            </l>
+              <l>Or a reputable brahmin’s daughter.</l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-161"/>
+            <lg tid="115">
+              <l>She will be extremely beautiful, respectful,</l>
+              <l>And will obey your command like a servant.</l>
+              <l>Relying upon immeasurably superior </l>
+              <l>Statues such as these can allow one to</l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-162"/>
+            <lg tid="116">
+              <l>Gain siddhis simply by making offerings. </l>
+              <l>Make a statue of Gaṇapati </l>
+              <l>Out of precious materials</l>
+              <l>And place it on top of the maṇḍala. </l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-163"/>
+            <lg tid="117">
+              <l>Recite the <foreign xml:lang="Sa-Ltn" type="term">ratnasiddhi </foreign>vidyā</l>
+              <l>One hundred thousand times,</l>
+              <l>And it will allow one to discover buried treasures</l>
+              <l>And indulge in whatever one desires. </l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-164"/>
+            <trailer tid="118">This is chapter 10 in “<title xml:lang="en">The Tantra of Great
+                Gaṇapati</title>,” “Practices for Becoming a King and the Like.”</trailer>
+          </div>
+          <div type="chapter" xml:id="UT22084-091-063-section-1-11">
+            <head type="chapter" tid="119">Chapter 11: Great Gaṇapati’s Maṇdala</head>
+            <milestone unit="chunk" xml:id="UT22084-091-063-165"/>
+            <lg tid="120">
+              <l>Glorious Great Gaṇapati is</l>
+              <l>Very fierce with a fierce grimace. </l>
+              <l>He has the heart of a buddha, the head of an animal,</l>
+              <l>And the face of a young elephant</l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-166"/>
+            <lg tid="121">
+              <l>With three eyes and four tusks.</l>
+              <l>He has four arms, four feet, and bears a large nāga. </l>
+              <l>The first hand holds a white tusk, and</l>
+              <l>The hand below it holds a noose. The left hands</l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-167"/>
+            <lg tid="122">
+              <l>Hold a battle-axe and three-pointed khaṭvāṅga.</l>
+              <l>He is dark blue and has a huge belly. </l>
+              <l>This statue of Gaṇapati should be cast</l>
+              <l>In molten bell metal and bronze.</l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-168"/>
+            <lg tid="123">
+              <l>Consecrate it on a day during Puṣya. </l>
+              <l>For the meditation and practice, </l>
+              <l>Choose a location to construct the maṇḍala</l>
+              <l>And draw a maṇḍala with nine sections.</l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-169"/>
+            <lg tid="124">
+              <l>Include the gates and porticos.</l>
+              <l>Draw a lotus with eight petals in the middle on which</l>
+              <l>Gaṇapati tramples the target of the rite. </l>
+              <l>He is seated on a moon disk </l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-170"/>
+            <lg tid="125">
+              <l>In nondual union with his consort.</l>
+              <l>Her name is Arcikarī,</l>
+              <l>And she is known as the Vajra Sow-Faced One. </l>
+              <l>She holds a battle-axe and a cup</l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-171"/>
+            <lg tid="126">
+              <l>Filled with blood that she offers to her lord. </l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-172"/>
+            <p tid="127">The Lord of the Three Realms is in the eastern section, which is yellow. He
+              holds a radish and a sword. </p>
+            <milestone unit="chunk" xml:id="UT22084-091-063-173"/>
+            <p tid="128">The great yakṣa Vajratuṇḍa is in the southern section, which is blue. He
+              has the face of Mahādeva,<note place="end" xml:id="UT22084-091-063-174"> Following Y,
+                K, J, C, and S: <foreign xml:lang="Bo-Ltn" type="quote">ma hA de ba</foreign>. D:
+                  <foreign xml:lang="Bo-Ltn" type="quote">ma he de ba</foreign>. .</note> holds a
+              mace and hammer, and is black.</p>
+            <milestone unit="chunk" xml:id="UT22084-091-063-175"/>
+            <p tid="129">The yakṣa king Lord of Clouds is in the western section, which is red. He
+              is red and holds a noose and a billowing cloud full of water. <ref cRef="F.197.a" type="folio" xml:id="UT22084-091-063-384"/>
+            </p>
+            <milestone unit="chunk" xml:id="UT22084-091-063-176"/>
+            <p tid="130">The yakṣa lord Abode of Wealth is in the northern section, which is green.
+              He is green and holds a mace and a jeweled khaṭvāṅga. </p>
+            <milestone unit="chunk" xml:id="UT22084-091-063-177"/>
+            <p tid="131">Vināyaka,<note place="end" xml:id="UT22084-091-063-178"> D: <foreign xml:lang="Bo-Ltn" type="quote">byi na ya ka</foreign>; Y, J, K, N, C, U, H, and S:
+                  <foreign xml:lang="Bo-Ltn" type="quote">bi na ya ka</foreign>. This
+                transliteration amends the reading in the Tibetan witnesses to the proper Sanskrit
+                spelling of this name, <foreign xml:lang="Sa-Ltn">vināyaka</foreign>. </note> the
+              Lord of Obstructing Beings, is in the northeastern section, which is white. He has the
+              face of an elephant, holds a trident and a radish, and is black. </p>
+            <milestone unit="chunk" xml:id="UT22084-091-063-179"/>
+            <p tid="132">Rudra, Lord of Pretas, is in the southeast section, which is red. He holds
+              an axe and an intact skull, and he is black.</p>
+            <milestone unit="chunk" xml:id="UT22084-091-063-180"/>
+            <p tid="133">Cloud Light is in the southwest section, which is black. He holds a
+              billowing cloud with a flashing thunderbolt beneath it with both hands. </p>
+            <milestone unit="chunk" xml:id="UT22084-091-063-181"/>
+            <p tid="134">Curved Trunk Vināyaka, the King of Obstructing Beings, has an elephant
+              trunk and is in the northwest section, which is black. He holds a trident and a dry
+              skull that has a radish inside and is full of flesh. </p>
+            <milestone unit="chunk" xml:id="UT22084-091-063-182"/>
+            <p tid="135">The eight nāga kings who obey these deities are the nāga kings Abala,
+              Varuṇa, Śaṅkhapāla, Takṣaka, Kulika, Ananta, Padma, and Mahāpadma. </p>
+            <milestone unit="chunk" xml:id="UT22084-091-063-183"/>
+            <p tid="136">The great king Dhṛtarāṣṭra is at the eastern gate, Virūḍhaka is at the
+              southern gate, Virūpākṣa is at the western gate, and Vaiśravaṇa is at the northern
+              gate. The colors of their bodies are white, blue, red, and green, respectively, and
+              each of them holds a precious jewel and a sword. Their consorts are not depicted. </p>
+            <milestone unit="chunk" xml:id="UT22084-091-063-184"/>
+            <p tid="137">Make a wax effigy of the enemy that is thin, black, and has disheveled
+                hair,<note place="end" xml:id="UT22084-091-063-185"> Following N, U, and H: <foreign xml:lang="Bo-Ltn" type="quote">skra zing ba</foreign>. D: <foreign xml:lang="Bo-Ltn" type="quote">skra zed pa</foreign>.</note> and place it inside a
+              triangular killing maṇḍala to the northeast of the drawing. Smear it with sesame oil,
+              write the family name in the center, place it there, and tie a cord made from the hair
+              of a corpse around its neck. </p>
+            <milestone unit="chunk" xml:id="UT22084-091-063-186"/>
+            <p tid="138">After you have done that, set up <distinct>bali</distinct> offerings of
+                <distinct>laḍḍu</distinct> and radishes for each of the eight great yakṣas as well
+              as red bali offerings that contain fish and onions for each of the eight great yakṣas.
+              Prepare a single large <distinct>bali</distinct> offering for the eight great nāgas
+              and one for each of the four great kings. If one cannot afford that, prepare a single
+              large <distinct>bali</distinct>. Present divine food offerings to each of them. One
+              should also set out wrathful substances such as <ref cRef="F.197.b" type="folio" xml:id="UT22084-091-063-385"/> a wolf’s skull, black cumin, mustard seed, white
+              mustard seed, and black mustard seed.</p>
+            <milestone unit="chunk" xml:id="UT22084-091-063-187"/>
+            <trailer tid="139">This is chapter 11, “Great Gaṇapati’s Maṇdala.”</trailer>
+          </div>
+          <div type="chapter" xml:id="UT22084-091-063-section-1-12">
+            <head type="chapter" tid="140">Chapter 12: The Meditation System</head>
+            <milestone unit="chunk" xml:id="UT22084-091-063-188"/>
+            <lg tid="141">
+              <l>Now I will explain further.</l>
+              <l>A meditation system like this has never</l>
+              <l>Appeared before and will not appear again—</l>
+              <l>It is a well-kept secret, and one should practice it. </l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-189"/>
+            <lg tid="142">
+              <l>The nature of <mantra xml:lang="Sa-Ltn" type="syllable">yaṃ</mantra> is emptiness.
+                  <mantra xml:lang="Sa-Ltn" type="syllable">Hūṁ</mantra>
+                            </l>
+              <l>Arises out of that and its nature is appearance.</l>
+              <l>
+                                <mantra xml:lang="Sa-Ltn" type="syllable">Ya</mantra> is the seed syllable of the
+                eight gaṇas,</l>
+              <l>Who are generated from their name mantras.</l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-190"/>
+            <lg tid="143">
+              <l>The wrathful one’s emanations fill the three-thousandfold world.</l>
+              <l>Light rays gather and coalesce in the initial syllable <mantra xml:lang="Sa-Ltn" type="syllable">hūṁ</mantra>. </l>
+              <l>Then, one generates Great Gaṇapati, who</l>
+              <l>Appears for the benefit of beings in his complete</l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-191"/>
+            <lg tid="144">
+              <l>Form as a terrifying great wrathful being</l>
+              <l>With his consort and retinue. </l>
+              <l>One generates the eight nāgas out of eight <mantra xml:lang="Sa-Ltn" type="syllable">phuḥ</mantra> syllables</l>
+              <l>And the wrathful kings are likewise </l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-192"/>
+            <lg tid="145">
+              <l>Generated from the syllable <mantra xml:lang="Sa-Ltn" type="syllable">bhai</mantra>
+                and their names.</l>
+              <l>Draw them in with light rays, and use</l>
+              <l>
+                                <mantra xml:lang="Sa-Ltn" type="syllable">Jaḥ</mantra> and <mantra xml:lang="Sa-Ltn" type="syllable">jaḥ</mantra>’s expanding and contracting light
+                rays, </l>
+              <l>
+                                <mantra xml:lang="Sa-Ltn" type="syllable">Hūṁ</mantra> and the <mantra xml:lang="Sa-Ltn" type="syllable">hūṁ</mantra> mantra, </l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-193"/>
+            <lg tid="146">
+              <l>And the hook mudrā to draw them in.</l>
+              <l>Have them assume their full power. </l>
+              <l>Perform the offering and the <distinct>bali</distinct> offering.</l>
+              <l>Augment their heart mantras with </l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-194"/>
+            <lg tid="147">
+              <l>The mantra <mantra xml:lang="Sa-Ltn">baliṃ gṛhṇa kha</mantra>. </l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-195"/>
+            <trailer tid="148">This is chapter 12, “The Meditation System.”</trailer>
+          </div>
+          <div type="chapter" xml:id="UT22084-091-063-section-1-13">
+            <head type="chapter" tid="149">Chapter 13: The Arising of the Secret Mantras of the
+              Great Yakṣas</head>
+            <milestone unit="chunk" xml:id="UT22084-091-063-196"/>
+            <lg tid="150">
+              <l>The king of mantras is as follows:</l>
+              <l>For its vowels and consonants, </l>
+              <l>Write the first followed by the fourth.</l>
+              <l>Place the fifth member of the fourth next.</l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-197"/>
+            <lg tid="151">
+              <l>Imagine the wish-fulfilling </l>
+              <l>Jewel syllable after that,</l>
+              <l>And recite the first syllable of </l>
+              <l>The Tathāgata’s name after that.</l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-198"/>
+            <lg tid="152">
+              <l>Ornament it with the eighth vowel.</l>
+              <l>Add the second vowel to </l>
+              <l>The attracting syllables </l>
+              <l>And the wind element syllable </l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-199"/>
+            <lg tid="153">
+              <l>That is called <distinct>the victorious king</distinct>.</l>
+              <l>Add the second vowel </l>
+              <l>To the wish-fulfilling jewel syllable. </l>
+              <l>Write the sun syllable</l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-200"/>
+            <lg tid="154">
+              <l>And then the fifth of the fourth class.</l>
+              <l>Ornament that with the eighth vowel. </l>
+              <l>Adorn the fourth syllable of the second <ref cRef="F.198.a" type="folio" xml:id="UT22084-091-063-386"/>
+              </l>
+              <l>Class with the fourth vowel.</l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-201"/>
+            <lg tid="155">
+              <l>Add the fourth of the fifth syllable</l>
+              <l>And the fifth of the third syllable.</l>
+              <l>Ornament the first syllable of the fourth </l>
+              <l>Class with the fourth vowel. </l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-202"/>
+            <lg tid="156">
+              <l>Add the wind element </l>
+              <l>Syllable after that. </l>
+              <l>Pronounce the precious syllable</l>
+              <l>And the action syllable at the end.</l>
+              <l>Great Gaṇapati’s root mantra</l>
+              <l>Grants everything one desires.</l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-203"/>
+            <lg tid="157">
+              <l>The mantras of the eight yakṣas</l>
+              <l>Are <mantra xml:lang="Sa-Ltn" type="syllable">ya</mantra> and so forth, </l>
+              <l>
+                                <mantra xml:lang="Sa-Ltn" type="syllable">Yaya</mantra> and so forth, </l>
+              <l>
+                                <mantra xml:lang="Sa-Ltn" type="syllable">Vaṃ</mantra>
+                                <note place="end" xml:id="UT22084-091-063-204"> The text breaks meter at this point and briefly
+                  resumes meter for the nāga mantra section that concludes this chapter. </note> and
+                so forth, </l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-205"/>
+            <lg tid="158">
+              <l>
+                                <mantra xml:lang="Sa-Ltn" type="syllable">Vināyaka</mantra> and so forth, <mantra xml:lang="Sa-Ltn" type="syllable">bhaira</mantra> and so forth, <mantra xml:lang="Sa-Ltn" type="syllable">hūṁ</mantra>, and <mantra xml:lang="Sa-Ltn" type="syllable">tri</mantra>. The eight are flanked by <mantra xml:lang="Sa-Ltn" type="syllable">hūṁ</mantra> and <mantra xml:lang="Sa-Ltn" type="syllable">phaṭ</mantra>, which makes them vital energy heart mantras.<note place="end" xml:id="UT22084-091-063-206"> D: <foreign xml:lang="Bo-Ltn" type="quote">brgyad la
+                    hUM dang phaT kyis mtha’ brten pas srog gi snying po’i</foreign>. Y, K: <foreign xml:lang="Bo-Ltn" type="quote">brgyad la hUM dang phaT kyis mtha’ brten pa’i
+                    srog gi snying po’i</foreign>. S: <foreign xml:lang="Bo-Ltn" type="quote">brgyad
+                    po la hUM dang phaT kyis mtha’ rten pas srog gi snying po’i</foreign>. The
+                  translation of this entire passage on the eight yakṣa mantras is tentative. The
+                  text shows some signs of corruption, and only lists seven of the eight opening
+                  mantra syllables. </note>
+                            </l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-207"/>
+            <lg tid="159">
+              <l>One generates the nāga mantras </l>
+              <l>From their names and adds <mantra xml:lang="Sa-Ltn" type="syllable">oṃ</mantra> and
+                  <mantra xml:lang="Sa-Ltn" type="syllable">hūṁ phaṭ</mantra>. </l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-208"/>
+            <lg tid="160">
+              <l>The mantras of the great kings are the mantras <mantra xml:lang="Sa-Ltn">bhai</mantra>, <mantra xml:lang="Sa-Ltn">bhi</mantra>, and <mantra xml:lang="Sa-Ltn">bha</mantra>.<note place="end" xml:id="UT22084-091-063-209">
+                  There are four great kings but the text only provides three mantra syllables.
+                </note>
+              </l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-210"/>
+            <trailer tid="161">This is chapter 13, “The Arising of the Secret Mantras of the Great
+              Yakṣas.”</trailer>
+          </div>
+          <div type="chapter" xml:id="UT22084-091-063-section-1-14">
+            <head type="chapter" tid="162">Chapter 14: The Fierce Killing Mantra</head>
+            <milestone unit="chunk" xml:id="UT22084-091-063-211"/>
+            <lg tid="163">
+              <l>For the mantra to attract a target,</l>
+              <l>Recite <mantra xml:lang="Sa-Ltn" type="syllable">śatrūṃ nṛja nija</mantra>
+                            </l>
+              <l>With <mantra xml:lang="Sa-Ltn" type="syllable">ya</mantra>, <mantra xml:lang="Sa-Ltn" type="syllable">kṣa</mantra>, <mantra xml:lang="Sa-Ltn" type="syllable">ka</mantra>, <mantra xml:lang="Sa-Ltn" type="syllable">la</mantra>
+                            </l>
+              <l>
+                                <mantra xml:lang="Sa-Ltn" type="syllable">Ma</mantra>, <mantra xml:lang="Sa-Ltn" type="syllable">hā</mantra>, <mantra xml:lang="Sa-Ltn" type="syllable">bhairabhe</mantra>,</l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-212"/>
+            <lg tid="164">
+              <l>
+                                <mantra xml:lang="Sa-Ltn" type="syllable">Tri</mantra>, <mantra xml:lang="Sa-Ltn" type="syllable">rā</mantra>, and <mantra xml:lang="Sa-Ltn" type="syllable">ca</mantra>
+              </l>
+              <l>Many times. </l>
+              <l>One should use the eight yakṣa mantra </l>
+              <l>To excavate an enemy’s soul stone.<note place="end" xml:id="UT22084-091-063-213">
+                  This reference to a “soul stone” (<foreign xml:lang="Bo-Ltn" type="term">bla
+                    rdo</foreign>), a term commonly associated with Tibetan mythology and sorcery
+                  that does not have any clear Indic correlate, suggests that this section of the
+                  text might derive from a non-Indic source. </note>
+              </l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-214"/>
+            <lg tid="165">
+              <l>Then, one should burn the soul stone</l>
+              <l>And trample the soul stone.</l>
+              <l>For the king of impelling<note place="end" xml:id="UT22084-091-063-215"> Following
+                  N, H, and S: <foreign xml:lang="Bo-Ltn" type="quote">rbad pa</foreign>. D:
+                    <foreign xml:lang="Bo-Ltn" type="quote">sbad pa</foreign>. </note> mantras,</l>
+              <l>Recite the invocation </l>
+              <l>
+                                <mantra xml:lang="Sa-Ltn" type="syllable">Ya</mantra>, <mantra xml:lang="Sa-Ltn" type="syllable">kṣa</mantra>, <mantra xml:lang="Sa-Ltn" type="syllable">ka</mantra>, <mantra xml:lang="Sa-Ltn" type="syllable">la</mantra>,</l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-216"/>
+            <lg tid="166">
+              <l>
+                                <mantra xml:lang="Sa-Ltn" type="syllable">Ma</mantra>, <mantra xml:lang="Sa-Ltn" type="syllable">hā</mantra>, <mantra xml:lang="Sa-Ltn" type="syllable">bhairabhe</mantra>,<note place="end" xml:id="UT22084-091-063-217"> Following U:
+                    <foreign xml:lang="Bo-Ltn" type="quote">bhai ra b+he</foreign>. D and S:
+                    <foreign xml:lang="Bo-Ltn" type="quote">b+he ra b+he</foreign>.</note>
+                            </l>
+              <l>
+                                <mantra xml:lang="Sa-Ltn" type="syllable">Deva</mantra>, <mantra xml:lang="Sa-Ltn" type="syllable">yakṣa</mantra>, <mantra xml:lang="Sa-Ltn" type="syllable">yama</mantra>, </l>
+              <l>
+                                <mantra xml:lang="Sa-Ltn" type="syllable">Nāga nāga thumrilaya</mantra>,<note place="end" xml:id="UT22084-091-063-218"> Following C: <foreign xml:lang="Bo-Ltn" type="quote">thum rila ya</foreign>. D and S: <foreign xml:lang="Bo-Ltn" type="quote">thum ril yang</foreign>.</note>
+              </l>
+              <l>The target’s name, <mantra xml:lang="Sa-Ltn" type="syllable">thumrilaya</mantra>
+                            </l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-219"/>
+            <lg tid="167">
+              <l>And <mantra xml:lang="Sa-Ltn" type="syllable">yaya</mantra>. </l>
+              <l>For the killing mantra, </l>
+              <l>Recite the phrase as above </l>
+              <l>Beginning with <mantra xml:lang="Sa-Ltn" type="syllable">ma</mantra>, <mantra xml:lang="Sa-Ltn" type="syllable">hā</mantra>, </l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-220"/>
+            <lg tid="168">
+              <l>
+                                <mantra xml:lang="Sa-Ltn" type="syllable">Bhairabhe</mantra>,<note place="end" xml:id="UT22084-091-063-221"> D and S: <foreign xml:lang="Bo-Ltn" type="quote">b+he ra b+he</foreign>. The transliteration is corrected here based on the
+                  standard spelling of this term. </note>
+                <mantra xml:lang="Sa-Ltn" type="syllable">yakṣa</mantra>, and the like</l>
+              <l>Followed by two </l>
+              <l>
+                                <mantra xml:lang="Sa-Ltn" type="syllable">Nāśaya nāśaya</mantra>, </l>
+              <l>
+                                <mantra xml:lang="Sa-Ltn" type="syllable">Cūrnaya cūrnaya</mantra>,<note place="end" xml:id="UT22084-091-063-222"> D: <foreign xml:lang="Bo-Ltn" type="quote">nA sha ya na lan gnyis so/ /sha ya tsUr na tsUr na ya</foreign>.
+                  The transliteration and word order in these verses is corrupted and has been
+                  restored in this transliteration to the proper duplicate forms of <foreign xml:lang="Sa-Ltn" type="quote">nāśaya nāśaya </foreign>(“destroy destroy”) and
+                    <foreign xml:lang="Sa-Ltn" type="quote">cūrṇaya cūrṇaya </foreign>(“pulverize
+                  pulverize”). </note>
+                            </l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-223"/>
+            <lg tid="169">
+              <l>
+                                <mantra xml:lang="Sa-Ltn" type="syllable">Nāga­yakatra māraya</mantra>,</l>
+              <l>
+                                <mantra xml:lang="Sa-Ltn" type="syllable">Hana</mantra> and <mantra xml:lang="Sa-Ltn" type="syllable">cakra</mantra> twice, </l>
+              <l>
+                                <mantra xml:lang="Sa-Ltn" type="syllable">Vināyaka</mantra>
+                                <note place="end" xml:id="UT22084-091-063-224"> Following S: <foreign xml:lang="Bo-Ltn" type="quote">bi nA ya ka</foreign>. D: <foreign xml:lang="Bo-Ltn" type="quote">bi na ya
+                    ga</foreign>. </note>
+                <mantra xml:lang="Sa-Ltn" type="syllable">ji bhindha</mantra>,</l>
+              <l>And <mantra xml:lang="Sa-Ltn" type="syllable">tantakara</mantra>, <ref cRef="F.198.b" type="folio" xml:id="UT22084-091-063-387"/>
+                            </l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-225"/>
+            <lg tid="170">
+              <l>The target’s name, <mantra xml:lang="Sa-Ltn" type="syllable">māraya</mantra>,</l>
+              <l>And then <mantra xml:lang="Sa-Ltn" type="syllable">hūṁ hūṁ phaṭ phaṭ</mantra>.</l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-226"/>
+            <trailer tid="171">This is chapter 14, “The Fierce<note place="end" xml:id="UT22084-091-063-227"> Following N and H: <foreign xml:lang="Bo-Ltn" type="quote">drag po</foreign>. D and S: <foreign xml:lang="Bo-Ltn" type="quote">drag pos</foreign>.</note> Killing Mantra.”</trailer>
+          </div>
+          <div type="chapter" xml:id="UT22084-091-063-section-1-15">
+            <head type="chapter" tid="172">Chapter 15: Praising Gaṇapati</head>
+            <milestone unit="chunk" xml:id="UT22084-091-063-228"/>
+            <p tid="173">There is also the following fierce mantra:</p>
+            <milestone unit="chunk" xml:id="UT22084-091-063-229"/>
+            <p rend="mantra" tid="174">
+                            <mantra xml:lang="Sa-Ltn">oṃ bhi­ghābhi­vabhyi
+                sarva­vidyāviśaya­hṛdam itaya | hūṁ citu vatu | traṃ pramarutāya | hana hana | gṛhṇa
+                gṛhṇa | paca paca | bhrahma bhrahma | bhrahmaya bhrahmaya | hūṁ hūṁ phaṭ phaṭ
+                |</mantra>
+                        </p>
+            <milestone unit="chunk" xml:id="UT22084-091-063-230"/>
+            <lg tid="175">
+              <l>Make a statue of Great Vināyaka </l>
+              <l>Out of bell metal or pure copper, </l>
+              <l>Consecrate it, and make offerings to it. </l>
+              <l>Place it on top of an effigy of the enemy </l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-231"/>
+            <lg tid="176">
+              <l>So that it acts as Gaṇapati’s seat, </l>
+              <l>And the enemy will surely die.</l>
+              <l>Rites that employ it are also</l>
+              <l>Said to be highly effective. </l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-232"/>
+            <p tid="177">Make a statue of Gaṇapati out of sandalwood or jewels, consecrate it, and
+              make offerings to it. If one wants to stop a hailstorm, make a statue of Vāyu and
+                <term ref="UT22084-091-063-361">Varuṇa</term>, the Lords of Hail. Make an effigy of
+              a cloud and a statue of a dragon and press it down as Gaṇapati’s seat. Imagine
+              yourself trampling it as well while reciting the mantra that begins <foreign xml:lang="Sa-Ltn">hika candra</foreign> and the hail will stop. One should scatter
+              white mustard seeds in the directions.</p>
+            <milestone unit="chunk" xml:id="UT22084-091-063-233"/>
+            <p tid="178">If one wants to cause hail, make a clear drawing of a water and cloud
+              maṇḍala, visualize Gaṇapati riding a dragon, and imagine them as one’s servants. </p>
+            <milestone unit="chunk" xml:id="UT22084-091-063-234"/>
+            <lg tid="179">
+              <l>To prepare the secret substances,</l>
+              <l>Make a dough using powdered iron, </l>
+              <l>Gold, copper, rainwater, and rice flour. </l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-235"/>
+            <p tid="180">Form it into hailstones the size and shape you desire, anoint them with
+              blood, and do this many times over for forty-nine days. Place them inside a crow’s
+                skull,<note place="end" xml:id="UT22084-091-063-236"> D and S: <foreign xml:lang="Bo-Ltn" type="quote">ka ka ki ku’i thod pa’i nang du blugs te</foreign>.
+                This translation “crow’s skull” for the Tibetan <foreign xml:lang="Bo-Ltn" type="quote">ka ka ki ku’i thod pa</foreign> is tentative. </note> cover the
+              crow’s skull with clouds, and write the mantra on it. </p>
+            <milestone unit="chunk" xml:id="UT22084-091-063-237"/>
+            <p tid="181">For the third stage, set out the materials to support the rite. Recite the
+              mantra that begins <foreign xml:lang="Sa-Ltn">bruṃ bruṃ bhariśaya</foreign> one
+              hundred thousand times. Three, seven, or eight of the hailstones inside the crow’s
+              skull will emerge. One should bring them to the enemy’s territory. <ref cRef="F.199.a" type="folio" xml:id="UT22084-091-063-388"/> Recite the mantra after the repelling
+              mantra and it will fall on the enemy. If it does not hail, hide the Gaṇapati statue in
+              the middle of the enemy’s territory with its head facing down and its feet facing up,
+              and it will immediately hail. Hail the size of kalandaka bird eggs and red-colored
+              hail the size of deer testicles will fall for a long time. This will happen because
+                <mantra xml:lang="Sa-Ltn" type="syllable">bruṃ</mantra> is a mantra that destroys
+              crops. </p>
+            <milestone unit="chunk" xml:id="UT22084-091-063-238"/>
+            <p tid="182">If you want to eliminate them, do not remove the statue and the crow skull.
+              It will hail every day, and they will leave. Present offerings to the Gaṇapati statue.
+              Perform one hundred and eight mantra recitations that are flawless from start to
+              finish using a jewel rosary. Bathe, and ask Gaṇapati to be present in the center of
+              one’s own maṇḍala. </p>
+            <milestone unit="chunk" xml:id="UT22084-091-063-239"/>
+            <lg tid="183">
+              <l>Gaṇapati accomplishes limitless</l>
+              <l>Supreme acts such as that. </l>
+              <l>Homage to joyous, glorious Gaṇapati!</l>
+              <l>Homage to great, glorious Gaṇapati!</l>
+              <l>Homage to the glorious, great, peaceful, and wrathful one!</l>
+            </lg>
+            <milestone unit="chunk" xml:id="UT22084-091-063-240"/>
+            <trailer tid="184">This is chapter 15 in “<title xml:lang="en">The Arising of Siddhi
+                Tantra</title>,” “Praising Gaṇapati.”</trailer>
+            <milestone unit="chunk" xml:id="UT22084-091-063-241"/>
+            <trailer tid="185">This concludes “<title xml:lang="en">The Gaṇapati Tantra: Arising of
+                Siddhi.”</title>
+                        </trailer>
+          </div>
+        </div>
+        <div type="colophon" xml:id="UT22084-091-063-colophon">
+          <head type="colophon" tid="186">Colophon</head>
+          <milestone unit="chunk" xml:id="UT22084-091-063-242"/>
+          <lg tid="187">
+            <l>The Indian preceptor Dīpaṁkaraśrījñāna </l>
+            <l>Arrived from India carrying this</l>
+            <l>For the sake of worldly siddhis.</l>
+            <l>He entrusted it to Gyalwé Jungné.</l>
+          </lg>
+          <milestone unit="chunk" xml:id="UT22084-091-063-243"/>
+          <lg tid="188">
+            <l>This tantra fulfills wishes.</l>
+          </lg>
+        </div>
+
+      </div>
+    </body>
+    <back>
+      <div type="notes">
+        <head type="notes" tid="196">Notes</head>
+        <list type="abbreviations">
+          <head tid="197">Abbreviations</head>
+          <item xml:id="UT22084-091-063-367">
+                        <abbr>D</abbr>
+                        <expan>Degé (<foreign xml:lang="Bo-Ltn">sde dge bka’ ’gyur</foreign>)</expan>
+                    </item>
+          <item xml:id="UT22084-091-063-368">
+                        <abbr>C</abbr>
+                        <expan>Choné (<foreign xml:lang="Bo-Ltn">co ne</foreign>)</expan>
+                    </item>
+          <item xml:id="UT22084-091-063-369">
+                        <abbr>H</abbr>
+                        <expan>Lhasa (<foreign xml:lang="Bo-Ltn">lha sa/zhol</foreign>)</expan>
+                    </item>
+          <item xml:id="UT22084-091-063-370">
+                        <abbr>J</abbr>
+                        <expan>Lithang (<foreign xml:lang="Bo-Ltn">li thang</foreign>)</expan>
+                    </item>
+          <item xml:id="UT22084-091-063-371">
+                        <abbr>K</abbr>
+                        <expan>Kanxi (<foreign xml:lang="Bo-Ltn">kang shi</foreign>)</expan>
+                    </item>
+          <item xml:id="UT22084-091-063-372">
+                        <abbr>N</abbr>
+                        <expan>Narthang (<foreign xml:lang="Bo-Ltn">snar thang</foreign>)</expan>
+                    </item>
+          <item xml:id="UT22084-091-063-373">
+                        <abbr>U</abbr>
+                        <expan>Urga (<foreign xml:lang="Bo-Ltn">phyi sog khu re</foreign>)</expan>
+                    </item>
+          <item xml:id="UT22084-091-063-374">
+                        <abbr>Y</abbr>
+                        <expan>Yongle (<foreign xml:lang="Bo-Ltn">g.yong lo</foreign>)</expan>
+                    </item>
+          <item xml:id="UT22084-091-063-375">
+                        <abbr>S</abbr>
+                        <expan>Stok Palace (<foreign xml:lang="Bo-Ltn">stog pho ’brang</foreign>)</expan>
+                    </item>
+        </list>
+      </div>
+      <div type="listBibl">
+        <head type="listBibl" tid="192">Bibliography</head>
+        <div type="section" xml:id="UT22084-091-063-listBibl-1">
+          <head type="section" tid="193">Source Texts</head>
+          <bibl xml:id="UT22084-091-063-255">
+                        <title xml:lang="Bo-Ltn">tshogs kyi bdag po chen po’i
+              rgyud </title>(<title xml:lang="Sa-Ltn">Mahā­gana­pati­tantra</title>). Toh 666, Degé
+            Kangyur vol. 91 (rgyud ’bum, ba), folios 193.a–199.a.</bibl>
+          <bibl xml:id="UT22084-091-063-256">
+                        <title xml:lang="Bo-Ltn">tshogs kyi bdag po chen po’i
+              rgyud </title>(<title xml:lang="Sa-Ltn">Mahā­gana­pati­tantra</title>). Stok Palace
+            Kangyur vol. 105 (rgyud, pha), folios 168.a–175.b.</bibl>
+          <bibl xml:id="UT22084-091-063-257">
+                        <title xml:lang="Bo-Ltn">tshogs kyi bdag po chen po’i
+              rgyud</title> (<title xml:lang="Sa-Ltn">Mahā­gaṇa­pati­tantra</title>). bka’ ’gyur
+            (dpe bsdur ma) [Comparative Edition of the Kangyur], krung go’i bod rig pa zhib ’jug ste
+            gnas kyi bka’ bstan dpe sdur khang (The Tibetan Tripitaka Collation Bureau of the China
+            Tibetology Research Center). 108 volumes. Beijing: krung go’i bod rig pa dpe skrun khang
+            (China Tibetology Publishing House) 2006–9, vol. 91, pp. 707–25.</bibl>
+        </div>
+        <div type="section" xml:id="UT22084-091-063-listBibl-2">
+          <head type="section" tid="198">Reference Works</head>
+          <bibl xml:id="UT22084-091-063-259">Butön Rinchen Drup (bu ston rin chen grub). <title xml:lang="Bo-Ltn">gsang sngags rgyud sde bzhi’i gzungs ’bum</title>. In <title xml:lang="Bo-Ltn">gsung ’bum/ rin chen grub/</title> (<title xml:lang="Bo-Ltn">zhol
+              par ma/ ldi lir bskyar par brgyab pa/</title>) vol. 16/ma. New Delhi: International
+            Academy of Indian Culture, 1965–71.</bibl>
+          <bibl xml:id="UT22084-091-063-260">Denkarma (<title xml:lang="Bo-Ltn">pho brang stod thang
+              ldan dkar gyi chos kyi ’gyur ro cog gi dkar chag</title>). Toh 4364, Degé Tengyur vol.
+            206 (sna tshogs, jo), folios 294.b–310.a.</bibl>
+          <bibl xml:id="UT22084-091-063-261">
+                        <title xml:lang="Bo-Ltn">dkar chag ’phang thang
+              ma</title>. Pe cin: mi rigs dpe skrun khang, 2003.</bibl>
+          <bibl xml:id="UT22084-091-063-262">Edgerton, Franklin. <title xml:lang="en">Buddhist
+              Hybrid Sanskrit Grammar and Dictionary</title>. Delhi: Motilal Banarsidass Publishers,
+            2004.</bibl>
+          <bibl xml:id="UT22084-091-063-263">Lancaster, Lewis R. <title xml:lang="en">The Korean
+              Buddhist Canon</title>, accessed May 31, 2019, <ref target="http://www.acmuller.net/descriptive_catalogue/index.html">http://www.acmuller.net/descriptive_catalogue/index.html</ref>.</bibl>
+          <bibl xml:id="UT22084-091-063-264">Monier-Williams, Sir Monier. <title xml:lang="en">A
+              Sanskrit-English Dictionary Etymologically and Philologically Arranged with Special
+              Reference to Cognate Indo-European Languages</title>. Delhi: Motilal Banarsidass
+            Publishers, 2005.</bibl>
+          <bibl xml:id="UT22084-091-063-265">Negi, J.S. <title xml:lang="en">Tibetan-Sanskrit
+              Dictionary </title>(<title xml:lang="Bo-Ltn">Bod skad legs sbyar gyi tshig mdzod chen
+              mo</title>). Sarnath: Dictionary Unit, Central Institute of Higher Tibetan Studies,
+            1993. </bibl>
+          <bibl xml:id="UT22084-091-063-266">
+                        <title xml:lang="en">Resources for Kanjur &amp; Tenjur
+              Studies</title>, Universität Wien, accessed May 31, 2019. <ref target="https://www.istb.univie.ac.at/kanjur/rktsneu/sub/index.php">https://www.istb.univie.ac.at/kanjur/rktsneu/sub/index.php</ref>.</bibl>
+          <bibl xml:id="UT22084-091-063-267">
+                        <title xml:lang="en">The Buddhist Canons Research
+              Database</title>. American Institute of Buddhist Studies and Columbia University
+            Center for Buddhist Studies. Accessed May 31, 2019. <ref target="http://databases.aibs.columbia.edu/">http://databases.aibs.columbia.edu</ref>. </bibl>
+          <bibl xml:id="UT22084-091-063-268">Tulku, Tarthang. <title xml:lang="en">The Nyingma
+              Edition of the sDe-dge bKa’-’gyur/bsTan-’gyur Research Catalogue and
+              Bibliography</title>, vol. 2. Oakland, CA: Dharma Press, 1982.</bibl>
+          <bibl xml:id="UT22084-091-063-269">Yoshimuri, Shyuki. <title xml:lang="Bo-Ltn">bka’ bstan
+              dkar chag ldan dkar ma/ dbu can bris ma/</title>. Kyoto: Ryukoku University,
+            1950.</bibl>
+        </div>
+        <div type="section" xml:id="UT22084-091-063-listBibl-3">
+          <head type="section" tid="194">Western Languages </head>
+          <bibl xml:id="UT22084-091-063-270">Brancaccio, Pia. <title xml:lang="en">The Buddhist
+              Caves at Aurangabad: Transformations in Art and Religion</title>. Leiden: Brill
+            Publishers, 2011.</bibl>
+          <bibl xml:id="UT22084-091-063-271">Duquenne, Robert. “Gaṇapati Rituals in Chinese,” <title xml:lang="fr">Bulletin de l’École française d’Éxtrême-Orient, </title>77 (1988):
+            344–45.</bibl>
+          <bibl xml:id="UT22084-091-063-272">Wilkinson, Christopher. “The Tantric Gaṇeśa: Texts
+            Preserved in the Tibetan Canon.” In Robert L. Brown, ed. <title xml:lang="en">Gaṇeśa:
+              Studies of an Asian God</title>. Albany: State University of New York Press, 1991, pp.
+            235–75.</bibl>
+        </div>
+      </div>
+      <div type="glossary" status="excluded">
+        <list type="glossary">
+          <item>
+                        <gloss type="term" xml:id="UT22084-091-063-274">
+              <term type="translationMain">divine universal emperor</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">lha’i ’khor los sgyur ba</term>
+              <term xml:lang="bo" n="1">ལྷའི་འཁོར་ལོས་སྒྱུར་བ།</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="2">’khor los sgyur wa’i rgyal po </term>
+              <term xml:lang="bo" n="2">འཁོར་ལོས་སྒྱུར་ཝའི་རྒྱལ་པོ།</term>
+              <term xml:lang="Sa-Ltn" status="verified"/>
+              <term type="translationAlternative">universal emperor</term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-091-063-275">
+              <term type="translationMain">nāga</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">klu </term>
+              <term xml:lang="bo" n="1">ཀླུ།</term>
+              <term xml:lang="Sa-Ltn" status="verified" type="attestedOther">nāga</term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-091-063-276">
+              <term type="translationMain">yakṣa</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">gnod sbyin </term>
+              <term xml:lang="bo" n="1">གནོད་སྦྱིན།</term>
+              <term xml:lang="Sa-Ltn" status="verified" type="attestedOther">yakṣa</term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-091-063-277">
+              <term type="translationMain">bandhūka</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">ban+du ka </term>
+              <term xml:lang="bo" n="1">བནྡུ་ཀ</term>
+              <term xml:lang="Sa-Ltn" status="verified" type="reconstructedPhonetic">bandhūka</term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-091-063-278">
+              <term type="translationMain">brahmin</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">bram ze </term>
+              <term xml:lang="bo" n="1">བྲམ་ཟེ།</term>
+              <term xml:lang="Sa-Ltn" status="verified" type="attestedOther">brāhmaṇa</term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-091-063-279">
+              <term type="translationMain">khaṭvāṅga</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">kha TwAM </term>
+              <term xml:lang="bo" n="1">ཁ་ཊྭཱཾ།</term>
+              <term xml:lang="Sa-Ltn" status="verified" type="reconstructedPhonetic">khaṭvāṅga</term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-091-063-280">
+              <term type="translationMain">six-month observance</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">ba ra ta ka zla ba drug </term>
+              <term xml:lang="bo" n="1">བ་ར་ཏ་ཀ་ཟླ་བ་དྲུག</term>
+              <term xml:lang="Sa-Ltn" status="verified"/>
+              <note type="definition">
+                                <p>An ascetic observance (Tib.<foreign xml:lang="Bo-Ltn" type="term"> brtul zhugs</foreign>; Skt. <foreign xml:lang="Sa-Ltn" type="term">vrata</foreign>) that is adopted for a fixed period of six months. </p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-091-063-281">
+              <term type="translationMain">astringent</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">bska ba </term>
+              <term xml:lang="bo" n="1">བསྐ་བ།</term>
+              <term xml:lang="Sa-Ltn" status="verified" type="attestedDictionary">kaṣāya</term>
+              <note type="definition">
+                                <p>One of the eight supreme flavors. Also one of the six
+                  tastes of the Āyurveda and Tibetan medical traditions.</p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-091-063-282">
+              <term type="translationMain">bali offering</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">gtor ma </term>
+              <term xml:lang="bo" n="1">གཏོར་མ།</term>
+              <term xml:lang="Sa-Ltn" status="verified" type="attestedOther">bali</term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-091-063-283">
+              <term type="translationMain">bile</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">mkhris pa </term>
+              <term xml:lang="bo" n="1">མཁྲིས་པ།</term>
+              <term xml:lang="Sa-Ltn" status="verified" type="attestedOther">pitta</term>
+              <note type="definition">
+                                <p>One of the three humors (<foreign xml:lang="Sa-Ltn" type="term">doṣa</foreign>) in the Āyurveda medical tradition.</p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-091-063-284">
+              <term type="translationMain">bitter</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">kha </term>
+              <term xml:lang="bo" n="1">ཁ།</term>
+              <term xml:lang="Sa-Ltn" status="verified" type="attestedDictionary">tikta</term>
+              <note type="definition">
+                                <p>One of the eight supreme flavors. Also one of the six
+                  tastes of the Āyurveda and Tibetan medical traditions.</p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-091-063-285">
+              <term type="translationMain">class</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">sde tshan </term>
+              <term xml:lang="bo" n="1">སྡེ་ཚན།</term>
+              <term xml:lang="Sa-Ltn" status="verified" type="attestedOther">varga</term>
+              <note type="definition">
+                                <p>The term for the consonant classes of the Sanskrit
+                  alphabet. </p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-091-063-286">
+              <term type="translationMain">crescent moon</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">zla ba tshes pa </term>
+              <term xml:lang="bo" n="1">ཟླ་བ་ཚེས་པ།</term>
+              <term xml:lang="Sa-Ltn" status="verified"/>
+              <note type="definition">
+                                <p>A term for the first phase of the waxing moon. </p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-091-063-287">
+              <term type="translationMain">bindu</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">thig le </term>
+              <term xml:lang="bo" n="1">ཐིག་ལེ།</term>
+              <term xml:lang="Sa-Ltn" status="verified" type="attestedOther">bindu</term>
+              <note type="definition">
+                                <p>A term for the depiction of the superscribed nasal <foreign xml:lang="Sa-Ltn" type="term">anusvāra</foreign>.</p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-091-063-288">
+              <term type="translationMain">gaṇa</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">tshogs pa </term>
+              <term xml:lang="bo" n="1">ཚོགས་པ།</term>
+              <term xml:lang="Sa-Ltn" status="verified" type="attestedOther">gaṇa</term>
+              <note type="definition">
+                                <p>The name for the troops or classes of lower deities and
+                  beings, particularly those considered attendants of the god Śiva over whom Ganeśa
+                  (lit. “Lord of the Gaṇas”) has control. </p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-091-063-289">
+              <term type="translationMain">glorious and auspicious</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">bkra shis dpal dang ldan </term>
+              <term xml:lang="bo" n="1">བཀྲ་ཤིས་དཔལ་དང་ལྡན།</term>
+              <term xml:lang="Sa-Ltn" status="verified"/>
+              <note type="definition">
+                                <p>A phrase describing the mantra syllable <mantra xml:lang="Sa-Ltn" type="syllable">oṃ</mantra>.</p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-091-063-290">
+              <term type="translationMain">impelling mantra</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">sbad pa’i gsang sngags</term>
+              <term xml:lang="bo" n="1">སྦད་པའི་གསང་སྔགས།</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="2">rbad pa’i gsang sngags</term>
+              <term xml:lang="bo" n="2">རྦད་པའི་གསང་སྔགས།</term>
+              <term xml:lang="Sa-Ltn" status="verified"/>
+              <term type="translationAlternative">impelling </term>
+              <note type="definition">
+                                <p>A mantra that can be used to impel or incite beings to
+                  perform a particular action. </p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-091-063-291">
+              <term type="translationMain">kalandaka bird</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">bya ka lan+da ka </term>
+              <term xml:lang="bo" n="1">བྱ་ཀ་ལནྡ་ཀ</term>
+              <term xml:lang="Sa-Ltn" status="verified" type="reconstructedPhonetic">kalandaka</term>
+              <note type="definition">
+                                <p>A type of bird. </p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-091-063-292">
+              <term type="translationMain">killing maṇḍala</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">gsad pa’i dkyil ’khor </term>
+              <term xml:lang="bo" n="1">གསད་པའི་དཀྱིལ་འཁོར།</term>
+              <term xml:lang="Sa-Ltn" status="verified"/>
+              <note type="definition">
+                                <p>A maṇḍala that is used to perform the ritual action of
+                  killing.</p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-091-063-293">
+              <term type="translationMain">killing mantra</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">bsad pa’i gsang sngags </term>
+              <term xml:lang="bo" n="1">བསད་པའི་གསང་སྔགས།</term>
+              <term xml:lang="Sa-Ltn" status="verified"/>
+              <note type="definition">
+                                <p>A mantra that is used to perform the ritual action of
+                  killing.</p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-091-063-294">
+              <term type="translationMain">kinnara</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">mi’am ci </term>
+              <term xml:lang="bo" n="1">མིའམ་ཅི།</term>
+              <term xml:lang="Sa-Ltn" status="verified" type="attestedOther">kinnara</term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-091-063-295">
+              <term type="translationMain">laḍḍu</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">la du </term>
+              <term xml:lang="bo" n="1">ལ་དུ།</term>
+              <term xml:lang="Sa-Ltn" status="verified" type="reconstructedPhonetic">laḍḍu</term>
+              <note type="definition">
+                                <p>A round sweet ball. <title xml:lang="en">The Tantra of
+                    Great Gaṇapati</title> describes a <distinct>laḍḍu</distinct> as a type of food
+                  containing the three sweets and the three fruits that is sprinkled with a
+                  delicious fragrance, rolled into a ball, and boiled in milk and butter.</p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-091-063-297">
+              <term type="translationMain">female nāga</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">klu mo </term>
+              <term xml:lang="bo" n="1">ཀླུ་མོ།</term>
+              <term xml:lang="Sa-Ltn" status="verified" type="attestedOther">nāgī</term>
+              <term xml:lang="Sa-Ltn" status="verified" type="attestedOther">nāginī</term>
+              <note type="definition">
+                                <p>A female of the class of serpentine spirit beings (Tib.
+                    <foreign xml:lang="Bo-Ltn" type="term">klu</foreign> Skt. <foreign xml:lang="Sa-Ltn" type="term">nāga</foreign>), who are often the target of
+                  rituals for bringing (or stopping) rain. </p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-091-063-298">
+              <term type="translationMain">phlegm</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">bad kan </term>
+              <term xml:lang="bo" n="1">བད་ཀན།</term>
+              <term xml:lang="Sa-Ltn" status="verified" type="attestedOther">kapha</term>
+              <note type="definition">
+                                <p>One of the three humors (<foreign xml:lang="Sa-Ltn" type="term">doṣa</foreign>) in the Āyurveda medical tradition.</p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-091-063-299">
+              <term type="translationMain">practitioner</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">sgrub pa po </term>
+              <term xml:lang="bo" n="1">སྒྲུབ་པ་པོ།</term>
+              <term xml:lang="Sa-Ltn" status="verified" type="attestedOther">sādhaka</term>
+              <note type="definition">
+                                <p>A term for anyone who is authorized to perform a particular
+                  practice or <foreign xml:lang="Sa-Ltn" type="term">sādhana</foreign>.</p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-091-063-300">
+              <term type="translationMain">radish</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">la phug </term>
+              <term xml:lang="bo" n="1">ལ་ཕུག</term>
+              <term xml:lang="Sa-Ltn" status="verified" type="attestedDictionary">mūlaka</term>
+              <note type="definition">
+                                <p>
+                                    <title xml:lang="en">The Tantra of Great Gaṇapati
+                  </title>specifies that this is a type of mustard root (<foreign xml:lang="Bo-Ltn" type="term">yungs ma</foreign>) and describes it as “the most supreme of all
+                  foods,” that is said to contain the eight supreme flavors (bitter; sour;
+                  astringent; sweet; spicy; salty; juicy; and savory) that act as antidotes to eight
+                  classes of diseases. It is also used as one of the primary bali offerings
+                    (<foreign xml:lang="Bo-Ltn" type="term">gtor ma</foreign>, <foreign xml:lang="Sa-Ltn" type="term">bali</foreign>) that is offered to
+                Gaṇapati.</p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-091-063-301">
+              <term type="translationMain">red bali offering</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">dmar gyi gtor ma </term>
+              <term xml:lang="bo" n="1">དམར་གྱི་གཏོར་མ།</term>
+              <term xml:lang="Sa-Ltn" status="verified"/>
+              <note type="definition">
+                                <p>In <title xml:lang="en">The Tantra of Great
+                    Gaṇapati</title>, the red cast offerings are offered to the eight great yakṣas
+                  and contain fish and onions. </p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-091-063-302">
+              <term type="translationMain">salty</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">lan tshwa </term>
+              <term xml:lang="bo" n="1">ལན་ཚྭ།</term>
+              <term xml:lang="Sa-Ltn" status="verified" type="attestedDictionary">lavaṇa</term>
+              <note type="definition">
+                                <p>One of the eight supreme flavors. Also, one of the six
+                  tastes of the Āyurveda and Tibetan medical traditions.</p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-091-063-303">
+              <term type="translationMain">soul stone</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">bla rdo </term>
+              <term xml:lang="bo" n="1">བླ་རྡོ།</term>
+              <term xml:lang="Sa-Ltn" status="verified"/>
+              <note type="definition">
+                                <p>A stone that is believed to contain or be directly linked
+                  to the vital force of a particular being. </p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-091-063-304">
+              <term type="translationMain">sour</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">skyur </term>
+              <term xml:lang="bo" n="1">སྐྱུར།</term>
+              <term xml:lang="Sa-Ltn" status="verified" type="attestedDictionary">āmla</term>
+              <note type="definition">
+                                <p>One of the eight supreme flavors. Also, one of the six
+                  tastes of the Āyurveda and Tibetan medical traditions.</p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-091-063-305">
+              <term type="translationMain">spicy</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">tsha </term>
+              <term xml:lang="bo" n="1">ཚ།</term>
+              <term xml:lang="Sa-Ltn" status="verified" type="attestedDictionary">kaṭuka</term>
+              <note type="definition">
+                                <p>One of the eight supreme flavors. Also, one of the six
+                  tastes of the Āyurveda and Tibetan medical traditions.</p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-091-063-306">
+              <term type="translationMain">sweet</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">mngar </term>
+              <term xml:lang="bo" n="1">མངར།</term>
+              <term xml:lang="Sa-Ltn" status="verified" type="attestedDictionary">madhura</term>
+              <note type="definition">
+                                <p>One of the eight supreme flavors. Also, one of the six
+                  tastes of the Āyurveda and Tibetan medical traditions.</p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-091-063-307">
+              <term type="translationMain">the activating syllable</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">las kyi yi ge </term>
+              <term xml:lang="bo" n="1">ལས་ཀྱི་ཡི་གེ</term>
+              <term xml:lang="Sa-Ltn" status="verified"/>
+              <note type="definition">
+                                <p>A phrase describing the mantra syllable <mantra xml:lang="Sa-Ltn" type="syllable">hā </mantra>in the “presentation of mantra”
+                  (Tib. <foreign xml:lang="Bo-Ltn" type="term">sngags btu ba</foreign>; Skt.
+                    <foreign xml:lang="Sa-Ltn" type="term">mantroddhāra</foreign>) in <title xml:lang="en">The Tantra of Great Gaṇapati. </title>
+                                </p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-091-063-308">
+              <term type="translationMain">the eight supreme flavors</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">ro mchog brgyad </term>
+              <term xml:lang="bo" n="1">རོ་མཆོག་བརྒྱད།</term>
+              <term xml:lang="Sa-Ltn" status="verified"/>
+              <note type="definition">
+                                <p>The eight supreme flavors are bitter (Tib. <foreign xml:lang="Bo-Ltn" type="term">kha</foreign>, Skt. <foreign xml:lang="Sa-Ltn" type="term">tikta</foreign>), sour (<foreign xml:lang="Bo-Ltn" type="term">skyur</foreign>, <foreign xml:lang="Sa-Ltn" type="term">āmla</foreign>),
+                  astringent (<foreign xml:lang="Bo-Ltn" type="term">bska ba</foreign>, <foreign xml:lang="Sa-Ltn" type="term">kaṣāya</foreign>), sweet (<foreign xml:lang="Bo-Ltn" type="term">mngar</foreign>, <foreign xml:lang="Sa-Ltn" type="term">madhura</foreign>), spicy (<foreign xml:lang="Bo-Ltn" type="term">tsha</foreign>, <foreign xml:lang="Sa-Ltn" type="term">kaṭuka</foreign>), and
+                  salty (<foreign xml:lang="Bo-Ltn" type="term">lan tshwa</foreign>, <foreign xml:lang="Sa-Ltn" type="term">lavaṇa</foreign>), juicy (<foreign xml:lang="Bo-Ltn" type="term">bzhun</foreign>), and exceedingly savory (<foreign xml:lang="Bo-Ltn" type="term">bro mchog che ba</foreign>). The first six on this
+                  list constitute a known list of “flavors” or “tastes” that are common to the
+                  Āyurvedic and Tibetan medical systems. The Tibetan terms for the last two members
+                  of the list are obscure and only tentatively translated here. </p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-091-063-309">
+              <term type="translationMain">the first syllable of the Tathāgata’s name</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">de bzhin gshegs pa’i mtshan dang po </term>
+              <term xml:lang="bo" n="1">དེ་བཞིན་གཤེགས་པའི་མཚན་དང་པོ།</term>
+              <term xml:lang="Sa-Ltn" status="verified"/>
+              <note type="definition">
+                                <p>A phrase describing a mantra syllable in the “selection of
+                  mantra syllables” (Tib. <foreign xml:lang="Bo-Ltn" type="term">sngags btu
+                    ba</foreign>; Skt. <foreign xml:lang="Sa-Ltn" type="term">mantroddhāra</foreign>) instructions in <title xml:lang="en">The Tantra of Great
+                    Gaṇapati</title>. </p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-091-063-310">
+              <term type="translationMain">the lunar month Puṣya</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">rgyal ba </term>
+              <term xml:lang="bo" n="1">རྒྱལ་བ།</term>
+              <term xml:lang="Sa-Ltn" status="verified" type="attestedOther">puṣya</term>
+              <note type="definition">
+                                <p>A particularly auspicious time that is marked by the moon
+                  passing through the constellation <foreign xml:lang="Sa-Ltn" type="term">puṣya</foreign>. </p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-091-063-311">
+              <term type="translationMain">the precious syllable</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">rin chen yi ge </term>
+              <term xml:lang="bo" n="1">རིན་ཆེན་ཡི་གེ</term>
+              <term xml:lang="Sa-Ltn" status="verified"/>
+              <note type="definition">
+                                <p>A phrase describing the mantra syllable <mantra xml:lang="Sa-Ltn" type="syllable">svā </mantra>in the “selection of mantra
+                  syllables” (Tib. <foreign xml:lang="Bo-Ltn" type="term">sngags btu ba</foreign>;
+                  Skt. <foreign xml:lang="Sa-Ltn" type="term">mantroddhāra</foreign>) instructions
+                  in <title xml:lang="en">The Tantra of Great Gaṇapati</title>. </p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-091-063-312">
+              <term type="translationMain">the solar syllable</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">nyi ma’i yi ge </term>
+              <term xml:lang="bo" n="1">ཉི་མའི་ཡི་གེ</term>
+              <term xml:lang="Sa-Ltn" status="verified"/>
+              <note type="definition">
+                                <p>A phrase describing a mantra syllable in the “selection of
+                  mantra syllables” (Tib. <foreign xml:lang="Bo-Ltn" type="term">sngags btu
+                    ba</foreign>; Skt. <foreign xml:lang="Sa-Ltn" type="term">mantroddhāra</foreign>) instructions in <title xml:lang="en">The Tantra of Great
+                    Gaṇapati</title>. </p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss mode="marked" type="term" xml:id="UT22084-091-063-313">
+              <term type="translationMain">the syllable for attaining siddhi</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">dngos grub bsgrub pa’i yi ge </term>
+              <term xml:lang="bo" n="1">དངོས་གྲུབ་བསྒྲུབ་པའི་ཡི་གེ</term>
+              <term xml:lang="Sa-Ltn" status="verified"/>
+              <term type="translationAlternative">syllable for</term>
+              <term type="translationAlternative">Attaining siddhi</term>
+              <note type="definition">
+                                <p>A phrase describing the mantra syllable <mantra xml:lang="Sa-Ltn" type="syllable">hūṁ </mantra>in the “selection of mantra
+                  syllables” (Tib. <foreign xml:lang="Bo-Ltn" type="term">sngags btu ba</foreign>;
+                  Skt. <foreign xml:lang="Sa-Ltn" type="term">mantroddhāra</foreign>) instructions
+                  in <title xml:lang="en">The Tantra of Great Gaṇapati</title>.</p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss mode="marked" type="term" xml:id="UT22084-091-063-314">
+              <term type="translationMain">the syllable that grants siddhi like a wish fulfilling
+                jewel</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">yid bzhin nor bu lta bu yi/ dngon grub
+                ster byed yi ge</term>
+              <term xml:lang="bo" n="1" status="verified">ཡིད་བཞིན་ནོར་བུ་ལྟ་བུ་ཡི།
+                དངོན་གྲུབ་སྟེར་བྱེད་ཡི་གེ</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="2">yid bzhin nor bu</term>
+              <term xml:lang="bo" n="2" status="verified">ཡིད་བཞིན་ནོར་བུ།</term>
+              <term type="translationAlternative">the syllable that grants siddhi</term>
+              <note type="definition">
+                                <p>A phrase describing the mantra syllable <mantra xml:lang="Sa-Ltn" type="syllable">ha</mantra> in the “selection of mantra
+                  syllables” (Tib. <foreign xml:lang="Bo-Ltn" type="term">sngags btu ba</foreign>;
+                  Skt. <foreign xml:lang="Sa-Ltn" type="term">mantroddhāra</foreign>) instructions
+                  in <title xml:lang="en">The Tantra of Great Gaṇapati</title>.</p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss mode="marked" type="term" xml:id="UT22084-091-063-315">
+              <term type="translationMain">the syllable that is like the sun</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">nyi ma lta bu’i yi ge </term>
+              <term xml:lang="bo" n="1">ཉི་མ་ལྟ་བུའི་ཡི་གེ</term>
+              <term xml:lang="Sa-Ltn" status="verified"/>
+              <term type="translationAlternative">the syllable that is</term>
+              <term type="translationAlternative">Like the sun</term>
+              <note type="definition">
+                                <p>A phrase describing a mantra syllable in the “selection of
+                  mantra syllables” (Tib. <foreign xml:lang="Bo-Ltn" type="term">sngags btu
+                    ba</foreign>; Skt. <foreign xml:lang="Sa-Ltn" type="term">mantroddhāra</foreign>) instructions in <title xml:lang="en">The Tantra of Great
+                    Gaṇapati</title>. </p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-091-063-316">
+              <term type="translationMain">the three fruits</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">’bras bu gsum </term>
+              <term xml:lang="bo" n="1">འབྲས་བུ་གསུམ།</term>
+              <term xml:lang="Sa-Ltn" status="verified" type="attestedDictionary">triphalā</term>
+              <term xml:lang="Sa-Ltn" status="verified" type="attestedDictionary">phalatrika</term>
+              <note type="definition">
+                                <p>The various configurations of the three fruits are 1) the
+                  three myrobalan fruits (Terminalia Chebula, Terminalia Bellerica, and Phyllanthus
+                  Emblica); 2) grape, pomegranate, and date; 3) nutmeg, areca-nut, and cloves.
+                </p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-091-063-317">
+              <term type="translationMain">the three sweets</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">mngar gsum </term>
+              <term xml:lang="bo" n="1">མངར་གསུམ།</term>
+              <term xml:lang="Sa-Ltn" status="verified" type="attestedDictionary">trimadhura</term>
+              <note type="definition">
+                                <p>The three sweets are sugar, honey, and ghee. </p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-091-063-318">
+              <term type="translationMain">the three white offerings</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">dkar gsum </term>
+              <term xml:lang="bo" n="1">དཀར་གསུམ།</term>
+              <term xml:lang="Sa-Ltn" status="verified"/>
+              <note type="definition">
+                                <p>The three white offerings are traditionally curd, milk, and
+                  butter. </p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss mode="marked" type="term" xml:id="UT22084-091-063-319">
+              <term type="translationMain">the two pacification seed syllables</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">zhi ba’i yig ’bru gnyis pa </term>
+              <term xml:lang="bo" n="1">ཞི་བའི་ཡིག་འབྲུ་གཉིས་པ།</term>
+              <term xml:lang="Sa-Ltn" status="verified"/>
+              <term type="translationAlternative">two pacification</term>
+              <term type="translationAlternative">Seed syllables</term>
+              <note type="definition">
+                                <p>A phrase describing a mantra syllable in the “selection of
+                  mantra syllables” (Tib. <foreign xml:lang="Bo-Ltn" type="term">sngags btu
+                    ba</foreign>; Skt. <foreign xml:lang="Sa-Ltn" type="term">mantroddhāra</foreign>) instructions in <title xml:lang="en">The Tantra of Great
+                    Gaṇapati</title>. </p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-091-063-320">
+              <term type="translationMain">the fierce mantra syllable</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">gsang sngags drag po’i yi ge </term>
+              <term xml:lang="bo" n="1">གསང་སྔགས་དྲག་པོའི་ཡི་གེ</term>
+              <term xml:lang="Sa-Ltn" status="verified"/>
+              <note type="definition">
+                                <p>A phrase describing the mantra syllable <mantra xml:lang="Sa-Ltn">phaṭ</mantra> in the “selection of mantra syllables” (Tib.
+                    <foreign xml:lang="Bo-Ltn" type="term">sngags btu ba</foreign>; Skt. <foreign xml:lang="Sa-Ltn" type="term">mantroddhāra</foreign>) instructions in <title xml:lang="en">The Tantra of Great Gaṇapati</title>.</p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-091-063-321">
+              <term type="translationMain">vital energy heart mantra</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">srog gi snying po </term>
+              <term xml:lang="bo" n="1">སྲོག་གི་སྙིང་པོ།</term>
+              <term xml:lang="Sa-Ltn" status="verified"/>
+              <note type="definition">
+                                <p>A phrase describing a mantra syllable in the “selection of
+                  mantra syllables” (Tib. <foreign xml:lang="Bo-Ltn" type="term">sngags btu
+                    ba</foreign>; Skt. <foreign xml:lang="Sa-Ltn" type="term">mantroddhāra</foreign>) instructions in <title xml:lang="en">The Tantra of Great
+                    Gaṇapati</title>. </p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-091-063-322">
+              <term type="translationMain">the wind element syllable</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">’byung ba rlung gi yi ge </term>
+              <term xml:lang="bo" n="1">འབྱུང་བ་རླུང་གི་ཡི་གེ</term>
+              <term xml:lang="Sa-Ltn" status="verified"/>
+              <note type="definition">
+                                <p>A phrase describing a mantra syllable in the “selection of
+                  mantra syllables” (Tib. <foreign xml:lang="Bo-Ltn" type="term">sngags btu
+                    ba</foreign>; Skt. <foreign xml:lang="Sa-Ltn" type="term">mantroddhāra</foreign>) instructions in <title xml:lang="en">The Tantra of Great
+                    Gaṇapati</title>. </p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-091-063-323">
+              <term type="translationMain">nāda </term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">nA da </term>
+              <term xml:lang="bo" n="1">ནཱ་ད།</term>
+              <term xml:lang="Sa-Ltn" status="verified" type="reconstructedPhonetic">nāda</term>
+              <note type="definition">
+                                <p>A term for the concave line shaped like an upturned
+                  crescent moon that is drawn beneath a superscribed nasal <foreign xml:lang="Sa-Ltn" type="term">anusvāra</foreign>.</p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-091-063-324">
+              <term type="translationMain">wind</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">rlung </term>
+              <term xml:lang="bo" n="1">རླུང་།</term>
+              <term xml:lang="Sa-Ltn" status="verified" type="attestedDictionary">vāyu</term>
+              <note type="definition">
+                                <p>One of the three humors (<foreign xml:lang="Sa-Ltn" type="term">doṣa</foreign>) in the Āyurveda medical tradition.</p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-091-063-325">
+              <term type="translationMain">wish-fulfilling jewel</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">yid bzhin </term>
+              <term xml:lang="bo" n="1">ཡིད་བཞིན།</term>
+              <term xml:lang="Sa-Ltn" status="verified"/>
+              <note type="definition">
+                                <p>A magical jewel that instantly grants whatever one may
+                  wish.</p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="person" xml:id="UT22084-091-063-327">
+              <term type="translationMain">Abala</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">a ba la </term>
+              <term xml:lang="bo" n="1">ཨ་བ་ལ།</term>
+              <term xml:lang="Sa-Ltn" status="verified" type="reconstructedPhonetic">abala</term>
+              <note type="definition">
+                                <p>The name of one of the eight nāga kings who obey the eight
+                  deities in Gaṇapati’s nine-section maṇḍala.</p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="person" xml:id="UT22084-091-063-328">
+              <term type="translationMain">Abode of Wealth</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">nor gnas </term>
+              <term xml:lang="bo" n="1">ནོར་གནས།</term>
+              <term xml:lang="Sa-Ltn" status="verified"/>
+              <note type="definition">
+                                <p>The name of a yakṣa king. </p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="person" xml:id="UT22084-091-063-329">
+              <term type="translationMain">Ananta</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">mtha’ yas </term>
+              <term xml:lang="bo" n="1">མཐའ་ཡས།</term>
+              <term xml:lang="Sa-Ltn" status="verified" type="attestedDictionary">ananta</term>
+              <note type="definition">
+                                <p>The name of one of the eight nāga kings who obey the eight
+                  deities in Gaṇapati’s nine-section maṇḍala.</p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="person" xml:id="UT22084-091-063-330">
+              <term type="translationMain">Arcikarī</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">a rtsi ka ri </term>
+              <term xml:lang="bo" n="1">ཨ་རྩི་ཀ་རི།</term>
+              <term xml:lang="Sa-Ltn" status="verified" type="reconstructedPhonetic">arcikarī</term>
+              <note type="definition">
+                                <p>The name of Gaṇapati’s consort. Lit. “the
+                light-maker.”</p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="person" xml:id="UT22084-091-063-332">
+              <term type="translationMain">Cloud Light</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">sprin gyi sgron ma </term>
+              <term xml:lang="bo" n="1">སྤྲིན་གྱི་སྒྲོན་མ།</term>
+              <term xml:lang="Sa-Ltn" status="verified"/>
+              <note type="definition">
+                                <p>The name of a deity in the southwest section of Gaṇapati’s
+                  maṇḍala. </p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="person" xml:id="UT22084-091-063-333">
+              <term type="translationMain">Curved Trunk Vināyaka</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">log ’dren sna yon </term>
+              <term xml:lang="bo" n="1">ལོག་འདྲེན་སྣ་ཡོན།</term>
+              <term xml:lang="Sa-Ltn" status="verified"/>
+              <note type="definition">
+                                <p>The name of a form of Vināyaka, a form of Gaṇapati.
+                </p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="person" xml:id="UT22084-091-063-334">
+              <term type="translationMain">King of Obstructing Beings</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">bgegs kyi rgyal po </term>
+              <term xml:lang="bo" n="1">བགེགས་ཀྱི་རྒྱལ་པོ།</term>
+              <term xml:lang="Sa-Ltn" status="verified"/>
+              <note type="definition">
+                                <p>An epithet for Curved Trunk Vināyaka.</p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="person" xml:id="UT22084-091-063-335">
+              <term type="translationMain">Dhṛtarāṣṭra</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">yul ’khor srung </term>
+              <term xml:lang="bo" n="1">ཡུལ་འཁོར་སྲུང་།</term>
+              <term xml:lang="Sa-Ltn" status="verified" type="attestedOther">dhṛtarāṣṭra</term>
+              <note type="definition">
+                                <p>One of the four great kings who guard the cardinal
+                  directions.</p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="person" xml:id="UT22084-091-063-336">
+              <term type="translationMain">Dīpaṁkaraśrījñāna</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">dI paM ka ra shrI dz+nyA nas </term>
+              <term xml:lang="bo" n="1">དཱི་པཾ་ཀ་ར་ཤྲཱི་ཛྙཱ་ནས།</term>
+              <term xml:lang="Sa-Ltn" status="verified" type="reconstructedPhonetic">dīpaṁkara­śrījñāna</term>
+              <term type="translationAlternative">Atiśa; Atiśa Dīpaṁkaraśrījñāna</term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="person" xml:id="UT22084-091-063-337">
+              <term type="translationMain">Gaṇapati</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">tshogs kyi bdag po</term>
+              <term xml:lang="bo" n="1">ཚོགས་ཀྱི་བདག་པོ།</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="2">tshogs bdag </term>
+              <term xml:lang="bo" n="2">ཚོགས་བདག</term>
+              <note type="definition">
+                                <p>Gaṇeśa or Gaṇapati, both of which mean “lord of <foreign xml:lang="Sa-Ltn">gaṇas</foreign>” are names of the elephant headed deity, where
+                    <foreign xml:lang="Sa-Ltn">gaṇa</foreign> refer to his communities of
+                  followers.</p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="person" xml:id="UT22084-091-063-338">
+              <term type="translationMain">Glorious Gaṇapati</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">dpal ldan tshogs bdag </term>
+              <term xml:lang="bo" n="1">དཔལ་ལྡན་ཚོགས་བདག</term>
+              <term xml:lang="Sa-Ltn" status="verified" type="attestedDictionary">śrimadgaṇapati</term>
+              <note type="definition">
+                                <p>An epithet of the elephant headed deity
+                Gaṇapati.</p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="person" xml:id="UT22084-091-063-339">
+              <term type="translationMain">Glorious Great Gaṇapati</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">dpal ldan tshogs bdag che </term>
+              <term xml:lang="bo" n="1">དཔལ་ལྡན་ཚོགས་བདག་ཆེ།</term>
+              <term xml:lang="Sa-Ltn" status="verified" type="attestedDictionary">śrīmanmahā­gaṇapati</term>
+              <note type="definition">
+                                <p>An epithet of the elephant headed deity
+                Gaṇapati.</p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="person" xml:id="UT22084-091-063-340">
+              <term type="translationMain">Great Gaṇapati</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">tshogs kyi bdag po chen po </term>
+              <term xml:lang="bo" n="1">ཚོགས་ཀྱི་བདག་པོ་ཆེན་པོ།</term>
+              <term xml:lang="Sa-Ltn" status="verified" type="attestedDictionary">mahāgaṇapati</term>
+              <note type="definition">
+                                <p>An epithet of the elephant headed deity
+                Gaṇapati.</p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="person" xml:id="UT22084-091-063-341">
+              <term type="translationMain">Great God of Wealth</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">nor lha chen po </term>
+              <term xml:lang="bo" n="1">ནོར་ལྷ་ཆེན་པོ།</term>
+              <term xml:lang="Sa-Ltn" status="verified"/>
+              <note type="definition">
+                                <p>An epithet of the elephant headed deity
+                Gaṇapati.</p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="person" xml:id="UT22084-091-063-342">
+              <term type="translationMain">Great Vināyaka</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">log ’dren chen po </term>
+              <term xml:lang="bo" n="1">ལོག་འདྲེན་ཆེན་པོ།</term>
+              <term xml:lang="Sa-Ltn" status="verified" type="attestedDictionary">mahāvināyaka</term>
+              <note type="definition">
+                                <p>Lit. “Great Remover,” an epithet of the elephant headed
+                  deity Gaṇapati.</p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="person" xml:id="UT22084-091-063-343">
+              <term type="translationMain">Gyalwé Jungné</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">rgyal ba’i ’byung gnas </term>
+              <term xml:lang="bo" n="1">རྒྱལ་བའི་འབྱུང་གནས།</term>
+              <term xml:lang="Sa-Ltn" status="verified"/>
+              <note type="definition">
+                                <p>Dromtön Gyalwé Jungné (1004/5–1064) was one of Atiśa’s
+                  Tibetan disciples and a founding patriarch of the Kadampa school.</p>
+                            </note>
+              <term type="translationAlternative">Dromtön; Dromtön Gyalwé Jungné</term>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="person" xml:id="UT22084-091-063-344">
+              <term type="translationMain">Kulika</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">rigs ldan </term>
+              <term xml:lang="bo" n="1">རིགས་ལྡན།</term>
+              <term xml:lang="Sa-Ltn" status="verified" type="attestedDictionary">kulika</term>
+              <note type="definition">
+                                <p>The name of one of the eight nāga kings who obey the eight
+                  deities in Gaṇapati’s nine-section maṇḍala.</p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="person" xml:id="UT22084-091-063-345">
+              <term type="translationMain">Lokeśvara</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">’jig rten dbang phyug </term>
+              <term xml:lang="bo" n="1">འཇིག་རྟེན་དབང་ཕྱུག</term>
+              <term xml:lang="Sa-Ltn" status="verified" type="attestedDictionary">lokeśvara</term>
+              <note type="definition">
+                                <p>Often an alternate name for the bodhisattva Avalokiteśvara.
+                  Lokeśvara, literally meaning “lord of the world,” can also be a general epithet
+                  for a number of bodhisattvas and is also commonly used as a name for more
+                  localized protector deities. </p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="person" xml:id="UT22084-091-063-346">
+              <term type="translationMain">Lord of Clouds</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">sprin gyi bdag </term>
+              <term xml:lang="bo" n="1">སྤྲིན་གྱི་བདག</term>
+              <term xml:lang="Sa-Ltn" status="verified"/>
+              <note type="definition">
+                                <p>The name of a yakṣa king. </p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="person" xml:id="UT22084-091-063-347">
+              <term type="translationMain">Lord of Obstructing Beings</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">bgegs kyi rgyal po </term>
+              <term xml:lang="bo" n="1">བགེགས་ཀྱི་རྒྱལ་པོ།</term>
+              <term xml:lang="Sa-Ltn" status="verified" type="attestedDictionary">vighnarāja</term>
+              <note type="definition">
+                                <p>An epithet of Vināyaka, a form of Gaṇapati. </p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="person" xml:id="UT22084-091-063-348">
+              <term type="translationMain">Lord of Pretas</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">yi dags kyi bdag po </term>
+              <term xml:lang="bo" n="1">ཡི་དགས་ཀྱི་བདག་པོ།</term>
+              <term xml:lang="Sa-Ltn" status="verified"/>
+              <note type="definition">
+                                <p>An epithet for Rudra. </p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="person" xml:id="UT22084-091-063-349">
+              <term type="translationMain">Lord of the Three Realms</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">khams gsum gyi bdag po </term>
+              <term xml:lang="bo" n="1">ཁམས་གསུམ་གྱི་བདག་པོ།</term>
+              <term xml:lang="Sa-Ltn" status="verified"/>
+              <note type="definition">
+                                <p>The name of a deity in Gaṇapati’s maṇḍala.</p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="person" xml:id="UT22084-091-063-350">
+              <term type="translationMain">Mahādeva</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">ma hA de ba </term>
+              <term xml:lang="bo" n="1">མ་ཧཱ་དེ་བ།</term>
+              <term xml:lang="Sa-Ltn" status="verified" type="reconstructedPhonetic">mahādeva </term>
+            <note type="definition">
+                                <p>A wrathful form of Śiva.</p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="person" xml:id="UT22084-091-063-351">
+              <term type="translationMain">Mahāpadma</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">pad+ma chen po </term>
+              <term xml:lang="bo" n="1">པདྨ་ཆེན་པོ།</term>
+              <term xml:lang="Sa-Ltn" status="verified" type="attestedDictionary">mahāpadma</term>
+              <note type="definition">
+                                <p>The name of one of the eight nāga kings who obey the eight
+                  deities in Gaṇapati’s nine-section maṇḍala.</p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="person" xml:id="UT22084-091-063-352">
+              <term type="translationMain">Padma</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">pad+ma </term>
+              <term xml:lang="bo" n="1">པདྨ།</term>
+              <term xml:lang="Sa-Ltn" status="verified" type="reconstructedPhonetic">padma</term>
+              <note type="definition">
+                                <p>The name of one of the eight nāga kings who obey the eight
+                  deities in Gaṇapati’s nine-section maṇḍala.</p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="person" xml:id="UT22084-091-063-353">
+              <term type="translationMain">Rudra</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">drag po </term>
+              <term xml:lang="bo" n="1">དྲག་པོ།</term>
+              <term xml:lang="Sa-Ltn" status="verified" type="attestedDictionary">rudra</term>
+              <note type="definition">
+                                <p>A name of the god Śiva. </p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="person" xml:id="UT22084-091-063-354">
+              <term type="translationMain">Śaṅkhapāla</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">dung skyong </term>
+              <term xml:lang="bo" n="1">དུང་སྐྱོང་།</term>
+              <term xml:lang="Sa-Ltn" status="verified" type="attestedDictionary">śaṅkhapāla</term>
+              <note type="definition">
+                                <p>The name of one of the eight nāga kings who obey the eight
+                  deities in Gaṇapati’s nine-section maṇḍala.</p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="person" xml:id="UT22084-091-063-355">
+              <term type="translationMain">Takṣaka</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">’jog po </term>
+              <term xml:lang="bo" n="1">འཇོག་པོ།</term>
+              <term xml:lang="Sa-Ltn" status="verified" type="attestedDictionary">takṣaka</term>
+              <note type="definition">
+                                <p>The name of one of the eight nāga kings who obey the eight
+                  deities in Gaṇapati’s nine-section maṇḍala.</p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="person" xml:id="UT22084-091-063-356">
+              <term type="translationMain">the eight gaṇas</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">tshogs brgyad </term>
+              <term xml:lang="bo" n="1">ཚོགས་བརྒྱད།</term>
+              <term xml:lang="Sa-Ltn" status="verified"/>
+              <note type="definition">
+                                <p>In <title xml:lang="en">The Tantra of Great
+                    Gaṇapati</title> this term signifies a group of eight beings that are emanated
+                  in the initial phase of the generation stage yoga before being gathered and
+                  subsumed into the syllable <mantra xml:lang="Sa-Ltn" type="syllable">hūṁ</mantra>
+                  and manifesting Gaṇapati. </p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="person" xml:id="UT22084-091-063-357">
+              <term type="translationMain">The Vajra Sow-Faced One</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">rdo rje phag gdong ma </term>
+              <term xml:lang="bo" n="1">རྡོ་རྗེ་ཕག་གདོང་མ།</term>
+              <term xml:lang="Sa-Ltn" status="verified"/>
+              <note type="definition">
+                                <p>An epithet for Arcikarī, Gaṇapati’s consort. </p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="person" xml:id="UT22084-091-063-358">
+              <term type="translationMain">Vaiśravaṇa</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">rnam thos bu</term>
+              <term xml:lang="bo" n="1">རྣམ་ཐོས་བུ།</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="2">rnam thos sras </term>
+              <term xml:lang="bo" n="2">རྣམ་ཐོས་སྲས།</term>
+              <term xml:lang="Sa-Ltn" status="verified" type="attestedDictionary">vaiśravaṇa</term>
+              <note type="definition">
+                                <p>The name of the lord of wealth and one of the four great
+                  kings who guard the cardinal directions.</p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="person" xml:id="UT22084-091-063-359">
+              <term type="translationMain">Vajratuṇḍa</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">rdo rje mchu </term>
+              <term xml:lang="bo" n="1">རྡོ་རྗེ་མཆུ།</term>
+              <term xml:lang="Sa-Ltn" status="verified" type="attestedDictionary">vajratuṇḍa</term>
+              <note type="definition">
+                                <p>The name of a great yakṣa in Gaṇapati’s maṇḍala.
+                  Vajratuṇḍa, which literally means “vajra-beaked,” is more commonly an epithet for
+                  Garuḍa. </p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="person" xml:id="UT22084-091-063-360">
+              <term type="translationMain">Varuṇa</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">ba ru Na </term>
+              <term xml:lang="bo" n="1">བ་རུ་ཎ།</term>
+              <term xml:lang="Sa-Ltn" status="verified" type="reconstructedPhonetic">varuṇa</term>
+              <note type="definition">
+                                <p>The name of one of the eight nāga kings who obey the eight
+                  deities in Gaṇapati’s nine-section maṇḍala.</p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss mode="marked" type="person" xml:id="UT22084-091-063-361">
+              <term type="translationMain">Varuṇa</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">chu lha </term>
+              <term xml:lang="bo" n="1">ཆུ་ལྷ།</term>
+              <term xml:lang="Sa-Ltn" status="verified" type="attestedDictionary">varuṇa</term>
+              <note type="definition">
+                                <p>The name of the god of the waters. </p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="person" xml:id="UT22084-091-063-362">
+              <term type="translationMain">Vāyu</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">rlung lha </term>
+              <term xml:lang="bo" n="1">རླུང་ལྷ།</term>
+              <term xml:lang="Sa-Ltn" status="verified" type="attestedDictionary">vāyu</term>
+              <note type="definition">
+                                <p>The name of the god of wind. </p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="person" xml:id="UT22084-091-063-363">
+              <term type="translationMain">Lords of Hail</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">ser ba’i bdag po </term>
+              <term xml:lang="bo" n="1">སེར་བའི་བདག་པོ།</term>
+              <term xml:lang="Sa-Ltn" status="verified"/>
+              <note type="definition">
+                                <p>An epithet for both Vāyu and Varuṇa. </p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="person" xml:id="UT22084-091-063-364">
+              <term type="translationMain">Vināyaka</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">log ’dren</term>
+              <term xml:lang="bo" n="1">ལོག་འདྲེན།</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="2">vi na ya ka</term>
+              <term xml:lang="bo" n="2">བི༹་ན་ཡ་ཀ</term>
+              <term type="reconstructedPhonetic" xml:lang="Sa-Ltn">vināyaka</term>
+              <note type="definition">
+                                <p>Lit. “Remover.” Used as an epithet for the deity Gaṇeśa in his role as a remover of obstacles.</p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="person" xml:id="UT22084-091-063-365">
+              <term type="translationMain">Virūḍhaka</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">’phags skyes po </term>
+              <term xml:lang="bo" n="1">འཕགས་སྐྱེས་པོ།</term>
+              <term xml:lang="Sa-Ltn" status="verified" type="attestedDictionary">virūḍhaka</term>
+              <note type="definition">
+                                <p>One of the four great kings who guard the cardinal
+                  directions.</p>
+                            </note>
+            </gloss>
+                    </item>
+          <item>
+                        <gloss type="person" xml:id="UT22084-091-063-366">
+              <term type="translationMain">Virūpākṣa</term>
+              <term xml:lang="Bo-Ltn" status="verified" n="1">spyan mi bzang </term>
+              <term xml:lang="bo" n="1">སྤྱན་མི་བཟང་།</term>
+              <term xml:lang="Sa-Ltn" status="verified" type="attestedDictionary">virūpākṣa</term>
+              <note type="definition">
+                                <p>One of the four great kings who guard the cardinal
+                  directions.</p>
+                            </note>
+            </gloss>
+                    </item>
+        </list>
+      </div>
+    </back>
+  </text>
+</TEI>
