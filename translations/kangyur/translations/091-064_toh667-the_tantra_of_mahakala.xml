@@ -23,7 +23,7 @@
         <editor role="finalReviewer" xml:id="UT22084-091-064-265">Andreas Doctor</editor>
       </titleStmt>
       <editionStmt>
-                <edition>v 1.0.6 <date>2023</date>
+                <edition>v 1.0.7 <date>2023</date>
                 </edition>
             </editionStmt>
       <publicationStmt>
@@ -174,6 +174,9 @@
                 </change>
                 <change who="#martina-cotter" when="2023-11-27T18:32:38.556Z" type="text-version" status="1.0.6" xml:id="UT22084-091-064-277">
                     <desc>Added pending links.</desc>
+                </change>
+                <change who="#andre" when="2023-11-28T22:02:02.851Z" type="text-version" status="1.0.7" xml:id="UT22084-091-064-278">
+                    <desc>glossary integration in CG revised - activated in CG</desc>
                 </change>
       </revisionDesc>
     </fileDesc>
@@ -871,7 +874,7 @@
             of Ritual Blessings and Tantric Medicine.” PhD diss., Columbia University, 1976.</bibl>
         </div>
       </div>
-      <div type="glossary" status="excluded">
+      <div type="glossary">
         <list type="glossary">
           <item>
                         <gloss type="term" xml:id="UT22084-091-064-183">
@@ -1133,15 +1136,14 @@
             </gloss>
                     </item>
           <item>
-                        <gloss type="term" xml:id="UT22084-091-064-208">
-              <term type="translationMain">the Black One’s sādhana</term>
-              <term xml:lang="Bo-Ltn" status="verified" n="1">nag po’i sgrub thabs </term>
-              <term xml:lang="bo" n="1">ནག་པོའི་སྒྲུབ་ཐབས།</term>
-              <term xml:lang="Sa-Ltn" status="verified"/>
-              <note type="definition">
+                        <gloss xml:id="UT22084-091-064-208" type="term" mode="match">
+                            <term type="translationMain">Black One’s sādhana</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">nag po’i sgrub thabs</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">ནག་པོའི་སྒྲུབ་ཐབས།</term>
+                            <note type="definition">
                                 <p>A term for the Mahākāla practice (<foreign xml:lang="Bo-Ltn" type="term">sgrub thabs</foreign>, <foreign xml:lang="Sa-Ltn" type="term">sādhana</foreign>). </p>
                             </note>
-            </gloss>
+                        </gloss>
                     </item>
           <item>
                         <gloss type="term" xml:id="UT22084-091-064-209">
@@ -1384,12 +1386,12 @@
             </gloss>
                     </item>
           <item>
-                        <gloss type="person" xml:id="UT22084-091-064-234">
-              <term type="translationMain">the Four Great Kings</term>
-              <term xml:lang="Bo-Ltn" status="verified" n="1">rgyal po chen po bzhi </term>
-              <term xml:lang="bo" n="1">རྒྱལ་པོ་ཆེན་པོ་བཞི།</term>
-              <term xml:lang="Sa-Ltn" status="verified">caturmahārāja</term>
-            </gloss>
+                        <gloss xml:id="UT22084-091-064-234" type="person" mode="match">
+                            <term type="translationMain">Four Great Kings</term>
+                            <term xml:lang="Sa-Ltn" type="attestedSource" status="verified">caturmahārāja</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">rgyal po chen po bzhi</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">རྒྱལ་པོ་ཆེན་པོ་བཞི།</term>
+                        </gloss>
                     </item>
           <item>
                         <gloss type="person" xml:id="UT22084-091-064-236">
@@ -1449,31 +1451,25 @@
             </gloss>
                     </item>
           <item>
-                        <gloss type="place" xml:id="UT22084-091-064-242">
-              <term type="translationMain">the western world system</term>
-              <term xml:lang="Bo-Ltn" status="verified" n="1">nub phyogs kyi ’jig rten gyi khams </term>
-              <term xml:lang="bo" n="1">ནུབ་ཕྱོགས་ཀྱི་འཇིག་རྟེན་གྱི་ཁམས།</term>
-              <term xml:lang="Sa-Ltn" status="verified"/>
-              <note type="definition">
-                                <p>This likely refers to the world system of the Buddha
-                  Amitābha, Sukhāvatī. Hayagrīva, referred to here as the “King of Horses,” is a
-                  member of the lotus family and the wrathful emanation of the bodhisattva
-                  Avalokiteśvara.</p>
+                        <gloss xml:id="UT22084-091-064-242" type="place" mode="match">
+                            <term type="translationMain">western world system</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">nub phyogs kyi ’jig rten gyi khams</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">ནུབ་ཕྱོགས་ཀྱི་འཇིག་རྟེན་གྱི་ཁམས།</term>
+                            <note type="definition">
+                                <p>This likely refers to the world system of the Buddha Amitābha, Sukhāvatī. Hayagrīva, referred to here as the “King of Horses,” is a member of the lotus family and the wrathful emanation of the bodhisattva Avalokiteśvara.</p>
                             </note>
-            </gloss>
+                        </gloss>
                     </item>
           <item>
-                        <gloss type="text" xml:id="UT22084-091-064-244">
-              <term type="translationMain">The Tantra of Glorious Mahākāla</term>
-              <term xml:lang="Bo-Ltn" status="verified" n="1">dpal nag po chen po’i rgyud </term>
-              <term xml:lang="bo" n="1">དཔལ་ནག་པོ་ཆེན་པོའི་རྒྱུད།</term>
-              <term xml:lang="Sa-Ltn" status="verified" type="reconstructedPhonetic">śrīmahākāla­tantra</term>
-              <term type="translationAlternative">The Tantra of the Black Lord</term>
-              <note type="definition">
-                                <p>The name of a work in the various recensions of the Kangyur
-                  detailing a number of rites for the deity Mahākāla.</p>
+                        <gloss xml:id="UT22084-091-064-244" type="text" mode="match">
+                            <term type="translationMain">Tantra of Glorious Mahākāla</term>
+                            <term xml:lang="Sa-Ltn" type="reconstructedPhonetic" status="verified">śrīmahākāla­tantra</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">dpal nag po chen po’i rgyud</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">དཔལ་ནག་པོ་ཆེན་པོའི་རྒྱུད།</term>
+                            <note type="definition">
+                                <p>The name of a work in the various recensions of the Kangyur detailing a number of rites for the deity Mahākāla.</p>
                             </note>
-            </gloss>
+                        </gloss>
                     </item>
           <item>
             <gloss type="person" xml:id="UT22084-091-064-267">
