@@ -22,7 +22,7 @@
                 <consultant role="dharmaMaster" xml:id="UT22084-091-063-403">Chokyi Nyima Rinpoche</consultant>
             </titleStmt>
       <editionStmt>
-                <edition>v 1.0.4 <date>2023</date>
+                <edition>v 1.0.5 <date>2023</date>
                 </edition>
             </editionStmt>
       <publicationStmt>
@@ -155,6 +155,9 @@
                 </change>
                 <change who="#martina-cotter" when="2023-11-27T18:30:21.009Z" type="text-version" status="1.0.4" xml:id="UT22084-091-063-411">
                     <desc>Added pending links.</desc>
+                </change>
+                <change who="#andre" when="2023-11-28T21:39:31.732Z" type="text-version" status="1.0.5" xml:id="UT22084-091-063-412">
+                    <desc>glossary integration in CG revised - activated in CG</desc>
                 </change>
       </revisionDesc>
     </fileDesc>
@@ -1500,18 +1503,16 @@
             235–75.</bibl>
         </div>
       </div>
-      <div type="glossary" status="excluded">
+      <div type="glossary">
         <list type="glossary">
           <item>
-                        <gloss type="term" xml:id="UT22084-091-063-274">
-              <term type="translationMain">divine universal emperor</term>
-              <term xml:lang="Bo-Ltn" status="verified" n="1">lha’i ’khor los sgyur ba</term>
-              <term xml:lang="bo" n="1">ལྷའི་འཁོར་ལོས་སྒྱུར་བ།</term>
-              <term xml:lang="Bo-Ltn" status="verified" n="2">’khor los sgyur wa’i rgyal po </term>
-              <term xml:lang="bo" n="2">འཁོར་ལོས་སྒྱུར་ཝའི་རྒྱལ་པོ།</term>
-              <term xml:lang="Sa-Ltn" status="verified"/>
-              <term type="translationAlternative">universal emperor</term>
-            </gloss>
+                        <gloss xml:id="UT22084-091-063-274" type="term" mode="match">
+                            <term type="translationMain">universal emperor</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">’khor los sgyur ba</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">འཁོར་ལོས་སྒྱུར་བ།</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="2" status="verified">’khor los sgyur wa’i rgyal po</term>
+                            <term xml:lang="bo" type="attestedSource" n="2" status="verified">འཁོར་ལོས་སྒྱུར་ཝའི་རྒྱལ་པོ།</term>
+                        </gloss>
                     </item>
           <item>
                         <gloss type="term" xml:id="UT22084-091-063-275">
@@ -1866,205 +1867,158 @@
             </gloss>
                     </item>
           <item>
-                        <gloss type="term" xml:id="UT22084-091-063-307">
-              <term type="translationMain">the activating syllable</term>
-              <term xml:lang="Bo-Ltn" status="verified" n="1">las kyi yi ge </term>
-              <term xml:lang="bo" n="1">ལས་ཀྱི་ཡི་གེ</term>
-              <term xml:lang="Sa-Ltn" status="verified"/>
-              <note type="definition">
-                                <p>A phrase describing the mantra syllable <mantra xml:lang="Sa-Ltn" type="syllable">hā </mantra>in the “presentation of mantra”
-                  (Tib. <foreign xml:lang="Bo-Ltn" type="term">sngags btu ba</foreign>; Skt.
-                    <foreign xml:lang="Sa-Ltn" type="term">mantroddhāra</foreign>) in <title xml:lang="en">The Tantra of Great Gaṇapati. </title>
+                        <gloss xml:id="UT22084-091-063-307" type="term" mode="match">
+                            <term type="translationMain">activating syllable</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">las kyi yi ge</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">ལས་ཀྱི་ཡི་གེ</term>
+                            <note type="definition">
+                                <p>A phrase describing the mantra syllable <mantra xml:lang="Sa-Ltn" type="syllable">hā </mantra>in the “presentation of mantra” (Tib. <foreign xml:lang="Bo-Ltn" type="term">sngags btu ba</foreign>; Skt. <foreign xml:lang="Sa-Ltn" type="term">mantroddhāra</foreign>) in <title xml:lang="en">The Tantra of Great Gaṇapati. </title>
                                 </p>
                             </note>
-            </gloss>
+                        </gloss>
                     </item>
           <item>
-                        <gloss type="term" xml:id="UT22084-091-063-308">
-              <term type="translationMain">the eight supreme flavors</term>
-              <term xml:lang="Bo-Ltn" status="verified" n="1">ro mchog brgyad </term>
-              <term xml:lang="bo" n="1">རོ་མཆོག་བརྒྱད།</term>
-              <term xml:lang="Sa-Ltn" status="verified"/>
-              <note type="definition">
-                                <p>The eight supreme flavors are bitter (Tib. <foreign xml:lang="Bo-Ltn" type="term">kha</foreign>, Skt. <foreign xml:lang="Sa-Ltn" type="term">tikta</foreign>), sour (<foreign xml:lang="Bo-Ltn" type="term">skyur</foreign>, <foreign xml:lang="Sa-Ltn" type="term">āmla</foreign>),
-                  astringent (<foreign xml:lang="Bo-Ltn" type="term">bska ba</foreign>, <foreign xml:lang="Sa-Ltn" type="term">kaṣāya</foreign>), sweet (<foreign xml:lang="Bo-Ltn" type="term">mngar</foreign>, <foreign xml:lang="Sa-Ltn" type="term">madhura</foreign>), spicy (<foreign xml:lang="Bo-Ltn" type="term">tsha</foreign>, <foreign xml:lang="Sa-Ltn" type="term">kaṭuka</foreign>), and
-                  salty (<foreign xml:lang="Bo-Ltn" type="term">lan tshwa</foreign>, <foreign xml:lang="Sa-Ltn" type="term">lavaṇa</foreign>), juicy (<foreign xml:lang="Bo-Ltn" type="term">bzhun</foreign>), and exceedingly savory (<foreign xml:lang="Bo-Ltn" type="term">bro mchog che ba</foreign>). The first six on this
-                  list constitute a known list of “flavors” or “tastes” that are common to the
-                  Āyurvedic and Tibetan medical systems. The Tibetan terms for the last two members
-                  of the list are obscure and only tentatively translated here. </p>
+                        <gloss xml:id="UT22084-091-063-308" type="term" mode="match">
+                            <term type="translationMain">eight supreme flavors</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">ro mchog brgyad</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">རོ་མཆོག་བརྒྱད།</term>
+                            <note type="definition">
+                                <p>The eight supreme flavors are bitter (Tib. <foreign xml:lang="Bo-Ltn" type="term">kha</foreign>, Skt. <foreign xml:lang="Sa-Ltn" type="term">tikta</foreign>), sour (<foreign xml:lang="Bo-Ltn" type="term">skyur</foreign>, <foreign xml:lang="Sa-Ltn" type="term">āmla</foreign>), astringent (<foreign xml:lang="Bo-Ltn" type="term">bska ba</foreign>, <foreign xml:lang="Sa-Ltn" type="term">kaṣāya</foreign>), sweet (<foreign xml:lang="Bo-Ltn" type="term">mngar</foreign>, <foreign xml:lang="Sa-Ltn" type="term">madhura</foreign>), spicy (<foreign xml:lang="Bo-Ltn" type="term">tsha</foreign>, <foreign xml:lang="Sa-Ltn" type="term">kaṭuka</foreign>), and salty (<foreign xml:lang="Bo-Ltn" type="term">lan tshwa</foreign>, <foreign xml:lang="Sa-Ltn" type="term">lavaṇa</foreign>), juicy (<foreign xml:lang="Bo-Ltn" type="term">bzhun</foreign>), and exceedingly savory (<foreign xml:lang="Bo-Ltn" type="term">bro mchog che ba</foreign>). The first six on this list constitute a known list of “flavors” or “tastes” that are common to the Āyurvedic and Tibetan medical systems. The Tibetan terms for the last two members of the list are obscure and only tentatively translated here. </p>
                             </note>
-            </gloss>
+                        </gloss>
                     </item>
           <item>
-                        <gloss type="term" xml:id="UT22084-091-063-309">
-              <term type="translationMain">the first syllable of the Tathāgata’s name</term>
-              <term xml:lang="Bo-Ltn" status="verified" n="1">de bzhin gshegs pa’i mtshan dang po </term>
-              <term xml:lang="bo" n="1">དེ་བཞིན་གཤེགས་པའི་མཚན་དང་པོ།</term>
-              <term xml:lang="Sa-Ltn" status="verified"/>
-              <note type="definition">
-                                <p>A phrase describing a mantra syllable in the “selection of
-                  mantra syllables” (Tib. <foreign xml:lang="Bo-Ltn" type="term">sngags btu
-                    ba</foreign>; Skt. <foreign xml:lang="Sa-Ltn" type="term">mantroddhāra</foreign>) instructions in <title xml:lang="en">The Tantra of Great
-                    Gaṇapati</title>. </p>
+                        <gloss xml:id="UT22084-091-063-309" type="term" mode="match">
+                            <term type="translationMain">first syllable of the Tathāgata’s name</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">de bzhin gshegs pa’i mtshan dang po</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">དེ་བཞིན་གཤེགས་པའི་མཚན་དང་པོ།</term>
+                            <note type="definition">
+                                <p>A phrase describing a mantra syllable in the “selection of mantra syllables” (Tib. <foreign xml:lang="Bo-Ltn" type="term">sngags btu ba</foreign>; Skt. <foreign xml:lang="Sa-Ltn" type="term">mantroddhāra</foreign>) instructions in <title xml:lang="en">The Tantra of Great Gaṇapati</title>. </p>
                             </note>
-            </gloss>
+                        </gloss>
                     </item>
           <item>
-                        <gloss type="term" xml:id="UT22084-091-063-310">
-              <term type="translationMain">the lunar month Puṣya</term>
-              <term xml:lang="Bo-Ltn" status="verified" n="1">rgyal ba </term>
-              <term xml:lang="bo" n="1">རྒྱལ་བ།</term>
-              <term xml:lang="Sa-Ltn" status="verified" type="attestedOther">puṣya</term>
-              <note type="definition">
-                                <p>A particularly auspicious time that is marked by the moon
-                  passing through the constellation <foreign xml:lang="Sa-Ltn" type="term">puṣya</foreign>. </p>
+                        <gloss xml:id="UT22084-091-063-310" type="term" mode="match">
+                            <term type="translationMain">lunar month Puṣya</term>
+                            <term xml:lang="Sa-Ltn" type="attestedOther" status="verified">puṣya</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">rgyal ba</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">རྒྱལ་བ།</term>
+                            <note type="definition">
+                                <p>A particularly auspicious time that is marked by the moon passing through the constellation <foreign xml:lang="Sa-Ltn" type="term">puṣya</foreign>. </p>
                             </note>
-            </gloss>
+                        </gloss>
                     </item>
           <item>
-                        <gloss type="term" xml:id="UT22084-091-063-311">
-              <term type="translationMain">the precious syllable</term>
-              <term xml:lang="Bo-Ltn" status="verified" n="1">rin chen yi ge </term>
-              <term xml:lang="bo" n="1">རིན་ཆེན་ཡི་གེ</term>
-              <term xml:lang="Sa-Ltn" status="verified"/>
-              <note type="definition">
-                                <p>A phrase describing the mantra syllable <mantra xml:lang="Sa-Ltn" type="syllable">svā </mantra>in the “selection of mantra
-                  syllables” (Tib. <foreign xml:lang="Bo-Ltn" type="term">sngags btu ba</foreign>;
-                  Skt. <foreign xml:lang="Sa-Ltn" type="term">mantroddhāra</foreign>) instructions
-                  in <title xml:lang="en">The Tantra of Great Gaṇapati</title>. </p>
+                        <gloss xml:id="UT22084-091-063-311" type="term" mode="match">
+                            <term type="translationMain">precious syllable</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">rin chen yi ge</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">རིན་ཆེན་ཡི་གེ</term>
+                            <note type="definition">
+                                <p>A phrase describing the mantra syllable <mantra xml:lang="Sa-Ltn" type="syllable">svā </mantra>in the “selection of mantra syllables” (Tib. <foreign xml:lang="Bo-Ltn" type="term">sngags btu ba</foreign>; Skt. <foreign xml:lang="Sa-Ltn" type="term">mantroddhāra</foreign>) instructions in <title xml:lang="en">The Tantra of Great Gaṇapati</title>. </p>
                             </note>
-            </gloss>
+                        </gloss>
                     </item>
           <item>
-                        <gloss type="term" xml:id="UT22084-091-063-312">
-              <term type="translationMain">the solar syllable</term>
-              <term xml:lang="Bo-Ltn" status="verified" n="1">nyi ma’i yi ge </term>
-              <term xml:lang="bo" n="1">ཉི་མའི་ཡི་གེ</term>
-              <term xml:lang="Sa-Ltn" status="verified"/>
-              <note type="definition">
-                                <p>A phrase describing a mantra syllable in the “selection of
-                  mantra syllables” (Tib. <foreign xml:lang="Bo-Ltn" type="term">sngags btu
-                    ba</foreign>; Skt. <foreign xml:lang="Sa-Ltn" type="term">mantroddhāra</foreign>) instructions in <title xml:lang="en">The Tantra of Great
-                    Gaṇapati</title>. </p>
+                        <gloss xml:id="UT22084-091-063-312" type="term" mode="match">
+                            <term type="translationMain">solar syllable</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">nyi ma’i yi ge</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">ཉི་མའི་ཡི་གེ</term>
+                            <note type="definition">
+                                <p>A phrase describing a mantra syllable in the “selection of mantra syllables” (Tib. <foreign xml:lang="Bo-Ltn" type="term">sngags btu ba</foreign>; Skt. <foreign xml:lang="Sa-Ltn" type="term">mantroddhāra</foreign>) instructions in <title xml:lang="en">The Tantra of Great Gaṇapati</title>. </p>
                             </note>
-            </gloss>
+                        </gloss>
                     </item>
           <item>
-                        <gloss mode="marked" type="term" xml:id="UT22084-091-063-313">
-              <term type="translationMain">the syllable for attaining siddhi</term>
-              <term xml:lang="Bo-Ltn" status="verified" n="1">dngos grub bsgrub pa’i yi ge </term>
-              <term xml:lang="bo" n="1">དངོས་གྲུབ་བསྒྲུབ་པའི་ཡི་གེ</term>
-              <term xml:lang="Sa-Ltn" status="verified"/>
-              <term type="translationAlternative">syllable for</term>
-              <term type="translationAlternative">Attaining siddhi</term>
-              <note type="definition">
-                                <p>A phrase describing the mantra syllable <mantra xml:lang="Sa-Ltn" type="syllable">hūṁ </mantra>in the “selection of mantra
-                  syllables” (Tib. <foreign xml:lang="Bo-Ltn" type="term">sngags btu ba</foreign>;
-                  Skt. <foreign xml:lang="Sa-Ltn" type="term">mantroddhāra</foreign>) instructions
-                  in <title xml:lang="en">The Tantra of Great Gaṇapati</title>.</p>
+                        <gloss xml:id="UT22084-091-063-313" type="term" mode="marked">
+                            <term type="translationMain">syllable for attaining siddhi</term>
+                            <term type="translationAlternative">syllable for</term>
+                            <term type="translationAlternative">Attaining siddhi</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">dngos grub bsgrub pa’i yi ge</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">དངོས་གྲུབ་བསྒྲུབ་པའི་ཡི་གེ</term>
+                            <note type="definition">
+                                <p>A phrase describing the mantra syllable <mantra xml:lang="Sa-Ltn" type="syllable">hūṁ </mantra>in the “selection of mantra syllables” (Tib. <foreign xml:lang="Bo-Ltn" type="term">sngags btu ba</foreign>; Skt. <foreign xml:lang="Sa-Ltn" type="term">mantroddhāra</foreign>) instructions in <title xml:lang="en">The Tantra of Great Gaṇapati</title>.</p>
                             </note>
-            </gloss>
+                        </gloss>
                     </item>
           <item>
-                        <gloss mode="marked" type="term" xml:id="UT22084-091-063-314">
-              <term type="translationMain">the syllable that grants siddhi like a wish fulfilling
-                jewel</term>
-              <term xml:lang="Bo-Ltn" status="verified" n="1">yid bzhin nor bu lta bu yi/ dngon grub
-                ster byed yi ge</term>
-              <term xml:lang="bo" n="1" status="verified">ཡིད་བཞིན་ནོར་བུ་ལྟ་བུ་ཡི།
-                དངོན་གྲུབ་སྟེར་བྱེད་ཡི་གེ</term>
-              <term xml:lang="Bo-Ltn" status="verified" n="2">yid bzhin nor bu</term>
-              <term xml:lang="bo" n="2" status="verified">ཡིད་བཞིན་ནོར་བུ།</term>
-              <term type="translationAlternative">the syllable that grants siddhi</term>
-              <note type="definition">
-                                <p>A phrase describing the mantra syllable <mantra xml:lang="Sa-Ltn" type="syllable">ha</mantra> in the “selection of mantra
-                  syllables” (Tib. <foreign xml:lang="Bo-Ltn" type="term">sngags btu ba</foreign>;
-                  Skt. <foreign xml:lang="Sa-Ltn" type="term">mantroddhāra</foreign>) instructions
-                  in <title xml:lang="en">The Tantra of Great Gaṇapati</title>.</p>
+                        <gloss xml:id="UT22084-091-063-314" type="term" mode="marked">
+                            <term type="translationMain">syllable that grants siddhi like a wish fulfilling jewel</term>
+                            <term type="translationAlternative">syllable that grants siddhi</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">yid bzhin nor bu lta bu yi/ dngon grub ster byed yi ge</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">ཡིད་བཞིན་ནོར་བུ་ལྟ་བུ་ཡི། དངོན་གྲུབ་སྟེར་བྱེད་ཡི་གེ</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="2" status="verified">yid bzhin nor bu</term>
+                            <term xml:lang="bo" type="attestedSource" n="2" status="verified">ཡིད་བཞིན་ནོར་བུ།</term>
+                            <note type="definition">
+                                <p>A phrase describing the mantra syllable <mantra xml:lang="Sa-Ltn" type="syllable">ha</mantra> in the “selection of mantra syllables” (Tib. <foreign xml:lang="Bo-Ltn" type="term">sngags btu ba</foreign>; Skt. <foreign xml:lang="Sa-Ltn" type="term">mantroddhāra</foreign>) instructions in <title xml:lang="en">The Tantra of Great Gaṇapati</title>.</p>
                             </note>
-            </gloss>
+                        </gloss>
                     </item>
           <item>
-                        <gloss mode="marked" type="term" xml:id="UT22084-091-063-315">
-              <term type="translationMain">the syllable that is like the sun</term>
-              <term xml:lang="Bo-Ltn" status="verified" n="1">nyi ma lta bu’i yi ge </term>
-              <term xml:lang="bo" n="1">ཉི་མ་ལྟ་བུའི་ཡི་གེ</term>
-              <term xml:lang="Sa-Ltn" status="verified"/>
-              <term type="translationAlternative">the syllable that is</term>
-              <term type="translationAlternative">Like the sun</term>
-              <note type="definition">
-                                <p>A phrase describing a mantra syllable in the “selection of
-                  mantra syllables” (Tib. <foreign xml:lang="Bo-Ltn" type="term">sngags btu
-                    ba</foreign>; Skt. <foreign xml:lang="Sa-Ltn" type="term">mantroddhāra</foreign>) instructions in <title xml:lang="en">The Tantra of Great
-                    Gaṇapati</title>. </p>
+                        <gloss xml:id="UT22084-091-063-315" type="term" mode="marked">
+                            <term type="translationMain">syllable that is like the sun</term>
+                            <term type="translationAlternative">the syllable that is</term>
+                            <term type="translationAlternative">Like the sun</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">nyi ma lta bu’i yi ge</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">ཉི་མ་ལྟ་བུའི་ཡི་གེ</term>
+                            <note type="definition">
+                                <p>A phrase describing a mantra syllable in the “selection of mantra syllables” (Tib. <foreign xml:lang="Bo-Ltn" type="term">sngags btu ba</foreign>; Skt. <foreign xml:lang="Sa-Ltn" type="term">mantroddhāra</foreign>) instructions in <title xml:lang="en">The Tantra of Great Gaṇapati</title>. </p>
                             </note>
-            </gloss>
+                        </gloss>
                     </item>
           <item>
-                        <gloss type="term" xml:id="UT22084-091-063-316">
-              <term type="translationMain">the three fruits</term>
-              <term xml:lang="Bo-Ltn" status="verified" n="1">’bras bu gsum </term>
-              <term xml:lang="bo" n="1">འབྲས་བུ་གསུམ།</term>
-              <term xml:lang="Sa-Ltn" status="verified" type="attestedDictionary">triphalā</term>
-              <term xml:lang="Sa-Ltn" status="verified" type="attestedDictionary">phalatrika</term>
-              <note type="definition">
-                                <p>The various configurations of the three fruits are 1) the
-                  three myrobalan fruits (Terminalia Chebula, Terminalia Bellerica, and Phyllanthus
-                  Emblica); 2) grape, pomegranate, and date; 3) nutmeg, areca-nut, and cloves.
-                </p>
+                        <gloss xml:id="UT22084-091-063-316" type="term" mode="match">
+                            <term type="translationMain">three fruits</term>
+                            <term xml:lang="Sa-Ltn" type="attestedDictionary" status="verified">triphalā</term>
+                            <term xml:lang="Sa-Ltn" type="attestedDictionary" status="verified">phalatrika</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">’bras bu gsum</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">འབྲས་བུ་གསུམ།</term>
+                            <note type="definition">
+                                <p>The various configurations of the three fruits are 1) the three myrobalan fruits (Terminalia Chebula, Terminalia Bellerica, and Phyllanthus Emblica); 2) grape, pomegranate, and date; 3) nutmeg, areca-nut, and cloves. </p>
                             </note>
-            </gloss>
+                        </gloss>
                     </item>
           <item>
-                        <gloss type="term" xml:id="UT22084-091-063-317">
-              <term type="translationMain">the three sweets</term>
-              <term xml:lang="Bo-Ltn" status="verified" n="1">mngar gsum </term>
-              <term xml:lang="bo" n="1">མངར་གསུམ།</term>
-              <term xml:lang="Sa-Ltn" status="verified" type="attestedDictionary">trimadhura</term>
-              <note type="definition">
+                        <gloss xml:id="UT22084-091-063-317" type="term" mode="match">
+                            <term type="translationMain">three sweets</term>
+                            <term xml:lang="Sa-Ltn" type="attestedDictionary" status="verified">trimadhura</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">mngar gsum</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">མངར་གསུམ།</term>
+                            <note type="definition">
                                 <p>The three sweets are sugar, honey, and ghee. </p>
                             </note>
-            </gloss>
+                        </gloss>
                     </item>
           <item>
-                        <gloss type="term" xml:id="UT22084-091-063-318">
-              <term type="translationMain">the three white offerings</term>
-              <term xml:lang="Bo-Ltn" status="verified" n="1">dkar gsum </term>
-              <term xml:lang="bo" n="1">དཀར་གསུམ།</term>
-              <term xml:lang="Sa-Ltn" status="verified"/>
-              <note type="definition">
-                                <p>The three white offerings are traditionally curd, milk, and
-                  butter. </p>
+                        <gloss xml:id="UT22084-091-063-318" type="term" mode="match">
+                            <term type="translationMain">three white offerings</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">dkar gsum</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">དཀར་གསུམ།</term>
+                            <note type="definition">
+                                <p>The three white offerings are traditionally curd, milk, and butter. </p>
                             </note>
-            </gloss>
+                        </gloss>
                     </item>
           <item>
-                        <gloss mode="marked" type="term" xml:id="UT22084-091-063-319">
-              <term type="translationMain">the two pacification seed syllables</term>
-              <term xml:lang="Bo-Ltn" status="verified" n="1">zhi ba’i yig ’bru gnyis pa </term>
-              <term xml:lang="bo" n="1">ཞི་བའི་ཡིག་འབྲུ་གཉིས་པ།</term>
-              <term xml:lang="Sa-Ltn" status="verified"/>
-              <term type="translationAlternative">two pacification</term>
-              <term type="translationAlternative">Seed syllables</term>
-              <note type="definition">
-                                <p>A phrase describing a mantra syllable in the “selection of
-                  mantra syllables” (Tib. <foreign xml:lang="Bo-Ltn" type="term">sngags btu
-                    ba</foreign>; Skt. <foreign xml:lang="Sa-Ltn" type="term">mantroddhāra</foreign>) instructions in <title xml:lang="en">The Tantra of Great
-                    Gaṇapati</title>. </p>
+                        <gloss xml:id="UT22084-091-063-319" type="term" mode="marked">
+                            <term type="translationMain">two pacification seed syllables</term>
+                            <term type="translationAlternative">two pacification</term>
+                            <term type="translationAlternative">Seed syllables</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">zhi ba’i yig ’bru gnyis pa</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">ཞི་བའི་ཡིག་འབྲུ་གཉིས་པ།</term>
+                            <note type="definition">
+                                <p>A phrase describing a mantra syllable in the “selection of mantra syllables” (Tib. <foreign xml:lang="Bo-Ltn" type="term">sngags btu ba</foreign>; Skt. <foreign xml:lang="Sa-Ltn" type="term">mantroddhāra</foreign>) instructions in <title xml:lang="en">The Tantra of Great Gaṇapati</title>. </p>
                             </note>
-            </gloss>
+                        </gloss>
                     </item>
           <item>
-                        <gloss type="term" xml:id="UT22084-091-063-320">
-              <term type="translationMain">the fierce mantra syllable</term>
-              <term xml:lang="Bo-Ltn" status="verified" n="1">gsang sngags drag po’i yi ge </term>
-              <term xml:lang="bo" n="1">གསང་སྔགས་དྲག་པོའི་ཡི་གེ</term>
-              <term xml:lang="Sa-Ltn" status="verified"/>
-              <note type="definition">
-                                <p>A phrase describing the mantra syllable <mantra xml:lang="Sa-Ltn">phaṭ</mantra> in the “selection of mantra syllables” (Tib.
-                    <foreign xml:lang="Bo-Ltn" type="term">sngags btu ba</foreign>; Skt. <foreign xml:lang="Sa-Ltn" type="term">mantroddhāra</foreign>) instructions in <title xml:lang="en">The Tantra of Great Gaṇapati</title>.</p>
+                        <gloss xml:id="UT22084-091-063-320" type="term" mode="match">
+                            <term type="translationMain">fierce mantra syllable</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">gsang sngags drag po’i yi ge</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">གསང་སྔགས་དྲག་པོའི་ཡི་གེ</term>
+                            <note type="definition">
+                                <p>A phrase describing the mantra syllable <mantra xml:lang="Sa-Ltn">phaṭ</mantra> in the “selection of mantra syllables” (Tib. <foreign xml:lang="Bo-Ltn" type="term">sngags btu ba</foreign>; Skt. <foreign xml:lang="Sa-Ltn" type="term">mantroddhāra</foreign>) instructions in <title xml:lang="en">The Tantra of Great Gaṇapati</title>.</p>
                             </note>
-            </gloss>
+                        </gloss>
                     </item>
           <item>
                         <gloss type="term" xml:id="UT22084-091-063-321">
@@ -2081,18 +2035,14 @@
             </gloss>
                     </item>
           <item>
-                        <gloss type="term" xml:id="UT22084-091-063-322">
-              <term type="translationMain">the wind element syllable</term>
-              <term xml:lang="Bo-Ltn" status="verified" n="1">’byung ba rlung gi yi ge </term>
-              <term xml:lang="bo" n="1">འབྱུང་བ་རླུང་གི་ཡི་གེ</term>
-              <term xml:lang="Sa-Ltn" status="verified"/>
-              <note type="definition">
-                                <p>A phrase describing a mantra syllable in the “selection of
-                  mantra syllables” (Tib. <foreign xml:lang="Bo-Ltn" type="term">sngags btu
-                    ba</foreign>; Skt. <foreign xml:lang="Sa-Ltn" type="term">mantroddhāra</foreign>) instructions in <title xml:lang="en">The Tantra of Great
-                    Gaṇapati</title>. </p>
+                        <gloss xml:id="UT22084-091-063-322" type="term" mode="match">
+                            <term type="translationMain">wind element syllable</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">’byung ba rlung gi yi ge</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">འབྱུང་བ་རླུང་གི་ཡི་གེ</term>
+                            <note type="definition">
+                                <p>A phrase describing a mantra syllable in the “selection of mantra syllables” (Tib. <foreign xml:lang="Bo-Ltn" type="term">sngags btu ba</foreign>; Skt. <foreign xml:lang="Sa-Ltn" type="term">mantroddhāra</foreign>) instructions in <title xml:lang="en">The Tantra of Great Gaṇapati</title>. </p>
                             </note>
-            </gloss>
+                        </gloss>
                     </item>
           <item>
                         <gloss type="term" xml:id="UT22084-091-063-323">
@@ -2462,30 +2412,24 @@
             </gloss>
                     </item>
           <item>
-                        <gloss type="person" xml:id="UT22084-091-063-356">
-              <term type="translationMain">the eight gaṇas</term>
-              <term xml:lang="Bo-Ltn" status="verified" n="1">tshogs brgyad </term>
-              <term xml:lang="bo" n="1">ཚོགས་བརྒྱད།</term>
-              <term xml:lang="Sa-Ltn" status="verified"/>
-              <note type="definition">
-                                <p>In <title xml:lang="en">The Tantra of Great
-                    Gaṇapati</title> this term signifies a group of eight beings that are emanated
-                  in the initial phase of the generation stage yoga before being gathered and
-                  subsumed into the syllable <mantra xml:lang="Sa-Ltn" type="syllable">hūṁ</mantra>
-                  and manifesting Gaṇapati. </p>
+                        <gloss xml:id="UT22084-091-063-356" type="person" mode="match">
+                            <term type="translationMain">eight gaṇas</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">tshogs brgyad</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">ཚོགས་བརྒྱད།</term>
+                            <note type="definition">
+                                <p>In <title xml:lang="en">The Tantra of Great Gaṇapati</title> this term signifies a group of eight beings that are emanated in the initial phase of the generation stage yoga before being gathered and subsumed into the syllable <mantra xml:lang="Sa-Ltn" type="syllable">hūṁ</mantra> and manifesting Gaṇapati. </p>
                             </note>
-            </gloss>
+                        </gloss>
                     </item>
           <item>
-                        <gloss type="person" xml:id="UT22084-091-063-357">
-              <term type="translationMain">The Vajra Sow-Faced One</term>
-              <term xml:lang="Bo-Ltn" status="verified" n="1">rdo rje phag gdong ma </term>
-              <term xml:lang="bo" n="1">རྡོ་རྗེ་ཕག་གདོང་མ།</term>
-              <term xml:lang="Sa-Ltn" status="verified"/>
-              <note type="definition">
+                        <gloss xml:id="UT22084-091-063-357" type="person" mode="match">
+                            <term type="translationMain">Vajra Sow-Faced One</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">rdo rje phag gdong ma</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">རྡོ་རྗེ་ཕག་གདོང་མ།</term>
+                            <note type="definition">
                                 <p>An epithet for Arcikarī, Gaṇapati’s consort. </p>
                             </note>
-            </gloss>
+                        </gloss>
                     </item>
           <item>
                         <gloss type="person" xml:id="UT22084-091-063-358">
