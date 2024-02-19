@@ -7,10 +7,17 @@
                 <title type="mainTitle" xml:lang="Bo-Ltn">mdo sde/</title>
                 <title type="mainTitle" xml:lang="Sa-Ltn"/>
                 <title type="mainTitle" xml:lang="en">General Sūtra Section</title>
-            </titleStmt>
+            <title type="articleTitle" xml:lang="en">General Sūtra Section (Kangyur Section)</title>
+                </titleStmt>
+            <editionStmt>
+                <edition>v 0.1.1 <date>2023</date>
+                </edition>
+            </editionStmt>
             <publicationStmt>
                 <p>Published in 84000 Reading Room</p>
+                <availability status="1"/>
                 <idno xml:id="O1JC114941JC14668"/>
+                <idno type="eft-kb-id">general-sutra-section</idno>
                 <date>2010</date>
             </publicationStmt>
             <sourceDesc work="W22084" sort-index="9">
@@ -19,9 +26,13 @@
                     <idno parent-id="O1JC114941JC12924"/>
                 </bibl>
             </sourceDesc>
-            <notesStmt>
-                <note type="lastUpdated" date-time="2021-06-01T11:52:18.681Z" user="admin">01/06/2021 11:52:18</note>
-            </notesStmt>
+            <notesStmt/>
+            <revisionDesc>
+            
+                <change who="#admin" when="2023-07-30T22:39:48.323Z" type="text-version" status="0.1.1" xml:id="O1JC114941JC14668-9">
+                    <desc>TEI migrated to 2.19.0</desc>
+                </change>
+            </revisionDesc>
         </fileDesc>
     </teiHeader>
     <text>
@@ -31,14 +42,15 @@
             </div>
         </front>
         <body>
-            <div type="about">
-                <head type="about" tid="12">General Sūtra Section</head>
-                <div type="section" xml:id="O1JC114941JC14668-about-1">
+            <div type="article">
+                <head type="article" tid="12">General Sūtra Section</head>
+                <div type="section" xml:id="O1JC114941JC14668-article-1">
                     <milestone unit="chunk" xml:id="O1JC114941JC14668-1"/>
                     <p tid="2">This large section of the Kangyur is also sometimes called <title xml:lang="Bo-Ltn">mdo mang</title> (“the
                         many sūtras”) or <title xml:lang="Bo-Ltn">mdo sna tshogs</title> (“miscellaneous sūtras”). In the Degé
                         Kangyur it contains 266 works, while in other Kangyurs the contents and their order vary somewhat. The
                         texts range in length from a few lines to more than 2,000 pages.</p>
+                    <milestone xml:id="O1JC114941JC14668-10"/>
                     <p tid="3">It is thought that many of these works circulated in Tibet, during the centuries preceding the evolution
                         and establishment of the different Kangyurs, in the form of varying compilations of sūtra works called
                         <title xml:lang="Bo-Ltn">mdo mang</title>, some of which have survived.</p>
@@ -60,12 +72,12 @@
                         between the Buddha and individual disciples, whether bodhisattvas, kings, ordinary men and women, gods, or
                         nāgas. Some are teachings given by the Buddha at a particular occasion on particular topics. Sometimes
                         they relate miraculous manifestations, describe elevated states of <foreign type="term" xml:lang="Sa-Ltn">samādhi</foreign>, teachings given by buddhas in other realms, detailed lists of ethical or
-                        philosophical points for reflection, summaries of important doctrine, explanations of individuals' past
+                        philosophical points for reflection, summaries of important doctrine, explanations of individuals’ past
                         lives or predictions of their future awakening, and so forth—often including several such elements in a
                         single work.</p>
                     <milestone unit="chunk" xml:id="O1JC114941JC14668-4"/>
                     <p tid="6">Among the best known large sūtras are the <title xml:lang="Sa-Ltn">Bhadrakalpika</title> (Toh 94), which
-                        lists the names, vows, and other details of the thousand buddhas of the present eon; the <title xml:lang="Sa-Ltn">Lalitavistara</title> (Toh 95), the story of the Buddha's birth, youth, awakening,
+                        lists the names, vows, and other details of the thousand buddhas of the present eon; the <title xml:lang="Sa-Ltn">Lalitavistara</title> (Toh 95), the story of the Buddha’s birth, youth, awakening,
                         and first teachings; two versions of the <title xml:lang="Sa-Ltn">Laṅkāvatāra</title> (Toh 107 and 108,
                         from the Sanskrit and Chinese respectively); the two sūtras known as <title xml:lang="en">The White
                             Lotus</title>, the <title xml:lang="Sa-Ltn">Karuṇāpuṇḍarīka</title> (Toh 112) and the <title xml:lang="Sa-Ltn">Saddharmapuṇḍarīka</title> (Toh 113), often known as the “Lotus Sūtra” and highly
@@ -94,5 +106,17 @@
                 </div>
             </div>
         </body>
+        <back>
+            <div type="listBibl">
+                <head type="listBibl" tid="13">Bibliography</head>
+                <div type="section" xml:id="O1JC114941JC14668-listBibl-1">
+                    <head type="section" tid="14">Bibliography Section Heading</head>
+                    <bibl rend="default-text" xml:id="O1JC114941JC14668-8">This is a sample bibliographic reference with a <ref target="https://read.84000.co/translation/toh46.html">link example</ref>.</bibl>
+                </div>
+            </div>
+            <div type="glossary">
+                <list type="glossary"/>
+            </div>
+        </back>
     </text>
 </TEI>

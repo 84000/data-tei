@@ -7,10 +7,17 @@
                 <title type="mainTitle" xml:lang="Bo-Ltn">mdo/</title>
                 <title type="mainTitle" xml:lang="Sa-Ltn">Sūtra</title>
                 <title type="mainTitle" xml:lang="en">Discourses</title>
-            </titleStmt>
+            <title type="articleTitle" xml:lang="en">Discourses (Kangyur Section)</title>
+                </titleStmt>
+            <editionStmt>
+                <edition>v 0.1.1 <date>2023</date>
+                </edition>
+            </editionStmt>
             <publicationStmt>
                 <p>Published in 84000 Reading Room</p>
+                <availability status="1"/>
                 <idno xml:id="O1JC114941JC12924"/>
+                <idno type="eft-kb-id">discourses</idno>
                 <date>2010</date>
             </publicationStmt>
             <sourceDesc work="W22084" sort-index="4">
@@ -19,9 +26,13 @@
                     <idno parent-id="O1JC11494"/>
                 </bibl>
             </sourceDesc>
-            <notesStmt>
-                <note type="lastUpdated" date-time="2019-05-21T15:37:53.097Z" user="celso">21/05/2019 15:37:53</note>
-            </notesStmt>
+            <notesStmt/>
+            <revisionDesc>
+            
+                <change who="#admin" when="2023-07-30T22:39:48.323Z" type="text-version" status="0.1.1" xml:id="O1JC114941JC12924-8">
+                    <desc>TEI migrated to 2.19.0</desc>
+                </change>
+            </revisionDesc>
         </fileDesc>
     </teiHeader>
     <text>
@@ -32,13 +43,13 @@
             </div>
         </front>
         <body>
-            <div type="about">
-                <head type="about" tid="8">Discourses</head>
-                <div type="section">
+            <div type="article">
+                <head type="article" tid="8">Discourses</head>
+                <div type="section" xml:id="O1JC114941JC12924-article-1">
                     <milestone unit="chunk" xml:id="O1JC114941JC12924-1"/>
                     <p tid="2">In this broad category of canonical works we have grouped four of the traditional divisions of the Kangyur
                             (<title xml:lang="Sa-Ltn">Prajñāpāramitā</title>, <title xml:lang="Sa-Ltn">Buddhāvataṃsaka</title>,
-                            <title xml:lang="Sa-Ltn">Ratnakūta</title>, and the General Sūtra collection or <title xml:lang="Sa-Ltn">mdo sde</title>), together with a small set of “late translated” sūtras.</p>
+                            <title xml:lang="Sa-Ltn">Ratnakūta</title>, and the General Sūtra collection or <title xml:lang="Sa-Ltn">mdo sde</title>), together with a small set of “late-translated” sūtras.</p>
                     <milestone unit="chunk" xml:id="O1JC114941JC12924-2"/>
                     <p tid="3">The <label>Perfection of Wisdom</label> section (Toh 8-30) contains the sūtras specific to the <title xml:lang="Sa-Ltn">prajñāpāramitā</title> literature, ranging from extremely long to extremely
                         short.</p>
@@ -50,7 +61,7 @@
                     <p tid="5">The <label>General Sūtra section</label> (Toh 94-359) contains all the other sūtras that were translated
                         into Tibetan, mainly from Sanskrit but a few from other Indic languages and Chinese.</p>
                     <milestone unit="chunk" xml:id="O1JC114941JC12924-5"/>
-                    <p tid="6">The <label>Thirteen late translated sūtras</label> (Toh 31-43) are 14th century Tibetan translations of
+                    <p tid="6">The <label>Thirteen late-translated sūtras</label> (Toh 31-43) are 14th century Tibetan translations of
                         Theravāda sūtras from the Pāli Canon, located in many Kangyurs at the end of the Perfection of Wisdom
                         section but with no relation to it. To maintain the order of texts in the Degé Kangyur (and the Tōhoku
                         catalogue) this should be the second group of texts within the Discourses section, but on this page we
@@ -64,5 +75,17 @@
                 </div>
             </div>
         </body>
+        <back>
+            <div type="listBibl">
+                <head type="listBibl" tid="9">Bibliography</head>
+                <div type="section" xml:id="O1JC114941JC12924-listBibl-1">
+                    <head type="section" tid="10">Bibliography Section Heading</head>
+                    <bibl rend="default-text" xml:id="O1JC114941JC12924-7">This is a sample bibliographic reference with a <ref target="https://read.84000.co/translation/toh46.html">link example</ref>.</bibl>
+                </div>
+            </div>
+            <div type="glossary">
+                <list type="glossary"/>
+            </div>
+        </back>
     </text>
 </TEI>

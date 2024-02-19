@@ -7,9 +7,15 @@
                 <title type="mainTitle" xml:lang="Bo-Ltn"/>
                 <title type="mainTitle" xml:lang="Sa-Ltn"/>
                 <title type="mainTitle" xml:lang="en">Published Translations</title>
-            </titleStmt>
+            <title type="articleTitle" xml:lang="en">Published Translations (Tengyur Section)</title>
+                </titleStmt>
+            <editionStmt>
+                <edition>v 0.1.1 <date>2023</date>
+                </edition>
+            </editionStmt>
             <publicationStmt>
                 <p>Published in 84000 Reading Room</p>
+                <availability status="1"/>
                 <idno xml:id="ALL-TRANSLATED"/>
                 <date>2010</date>
             </publicationStmt>
@@ -19,9 +25,13 @@
                     <idno parent-id=""/>
                 </bibl>
             </sourceDesc>
-            <notesStmt>
-                <note type="lastUpdated" date-time="2023-02-07T18:11:35.904Z" user="john">07/02/2023 18:11:35</note>
-            </notesStmt>
+            <notesStmt/>
+            <revisionDesc>
+            
+                <change who="#admin" when="2023-07-30T22:39:48.323Z" type="text-version" status="0.1.1" xml:id="ALL-TRANSLATED-2">
+                    <desc>TEI migrated to 2.19.0</desc>
+                </change>
+            </revisionDesc>
         </fileDesc>
     </teiHeader>
     <text>
@@ -166,7 +176,12 @@
                 <p tid="31">Texts centered on buddhas of other realms and times</p>
                 <eft:filter text-id="UT22084-051-003"/>
                 <eft:filter text-id="UT22084-066-005"/>
+                <eft:filter text-id="UT22084-067-003"/>
+                <eft:filter text-id="UT22084-067-004"/>
+                <eft:filter text-id="UT22084-067-005"/>
                 <eft:filter text-id="UT22084-068-001"/>
+                <eft:filter text-id="UT22084-068-002"/>
+                <eft:filter text-id="UT22084-068-003"/>
                 <eft:filter text-id="UT22084-068-004"/>
                 <eft:filter text-id="UT22084-068-005"/>
                 <eft:filter text-id="UT22084-068-007"/>
@@ -215,6 +230,7 @@
             <div type="filter" xml:id="TEXTS-ABOUT-STUPAS">
                 <head type="filter" tid="37">Texts About Stūpas</head>
                 <p tid="38">Texts related to making, consecrating, and honoring stūpas.</p>
+                <eft:filter text-id="UT22084-061-015"/>
                 <eft:filter text-id="UT22084-062-012"/>
                 <eft:filter text-id="UT22084-088-004"/>
                 <eft:filter text-id="UT22084-090-043"/>
@@ -238,5 +254,17 @@
                 <eft:display key="sidebar"/>
             </div>-->
         </body>
+        <back>
+            <div type="listBibl">
+                <head type="listBibl" tid="39">Bibliography</head>
+                <div type="section" xml:id="ALL-TRANSLATED-listBibl-1">
+                    <head type="section" tid="40">Bibliography Section Heading</head>
+                    <bibl rend="default-text" xml:id="ALL-TRANSLATED-1">This is a sample bibliographic reference with a <ref target="https://read.84000.co/translation/toh46.html">link example</ref>.</bibl>
+                </div>
+            </div>
+            <div type="glossary">
+                <list type="glossary"/>
+            </div>
+        </back>
     </text>
 </TEI>

@@ -7,10 +7,17 @@
                 <title type="mainTitle" xml:lang="Bo-Ltn">rgyud/</title>
                 <title type="mainTitle" xml:lang="Sa-Ltn">Tantra</title>
                 <title type="mainTitle" xml:lang="en">Tantra</title>
-            </titleStmt>
+            <title type="articleTitle" xml:lang="en">Tantra (Tengyur Section)</title>
+                </titleStmt>
+            <editionStmt>
+                <edition>v 0.1.1 <date>2023</date>
+                </edition>
+            </editionStmt>
             <publicationStmt>
                 <p>Published in 84000 Reading Room</p>
+                <availability status="1"/>
                 <idno xml:id="O1JC76301JC7704"/>
+                <idno type="eft-kb-id">tantra-tengyur</idno>
                 <date>2010</date>
             </publicationStmt>
             <sourceDesc work="W23703" sort-index="3">
@@ -19,9 +26,13 @@
                     <idno parent-id="O1JC7630"/>
                 </bibl>
             </sourceDesc>
-            <notesStmt>
-                <note type="lastUpdated" date-time="2019-05-21T15:54:37.397Z" user="celso">21/05/2019 15:54:37</note>
-            </notesStmt>
+            <notesStmt/>
+            <revisionDesc>
+            
+                <change who="#admin" when="2023-07-30T22:39:48.323Z" type="text-version" status="0.1.1" xml:id="O1JC76301JC7704-6">
+                    <desc>TEI migrated to 2.19.0</desc>
+                </change>
+            </revisionDesc>
         </fileDesc>
     </teiHeader>
     <text>
@@ -31,9 +42,9 @@
             </div>
         </front>
         <body>
-            <div type="about">
-                <head type="about" tid="6">Tantra</head>
-                <div type="section">
+            <div type="article">
+                <head type="article" tid="6">Tantra</head>
+                <div type="section" xml:id="O1JC76301JC7704-article-1">
                     <milestone unit="chunk" xml:id="O1JC76301JC7704-1"/>
                     <p tid="2">This is by far the largest division of the Tengyur, containing no less than 2,626 works.</p>
                     <milestone unit="chunk" xml:id="O1JC76301JC7704-2"/>
@@ -58,5 +69,17 @@
                 </div>
             </div>
         </body>
+        <back>
+            <div type="listBibl">
+                <head type="listBibl" tid="7">Bibliography</head>
+                <div type="section" xml:id="O1JC76301JC7704-listBibl-1">
+                    <head type="section" tid="8">Bibliography Section Heading</head>
+                    <bibl rend="default-text" xml:id="O1JC76301JC7704-5">This is a sample bibliographic reference with a <ref target="https://read.84000.co/translation/toh46.html">link example</ref>.</bibl>
+                </div>
+            </div>
+            <div type="glossary">
+                <list type="glossary"/>
+            </div>
+        </back>
     </text>
 </TEI>

@@ -7,10 +7,17 @@
                 <title type="mainTitle" xml:lang="Bo-Ltn">'dul ba/</title>
                 <title type="mainTitle" xml:lang="Sa-Ltn">Vinaya</title>
                 <title type="mainTitle" xml:lang="en">Discipline</title>
-            </titleStmt>
+            <title type="articleTitle" xml:lang="en">Discipline (Kangyur Section)</title>
+                </titleStmt>
+            <editionStmt>
+                <edition>v 0.1.1 <date>2023</date>
+                </edition>
+            </editionStmt>
             <publicationStmt>
                 <p>Published in 84000 Reading Room</p>
+                <availability status="1"/>
                 <idno xml:id="O1JC114941JC11495"/>
+                <idno type="eft-kb-id">discipline-kangyur</idno>
                 <date>2010</date>
             </publicationStmt>
             <sourceDesc work="W22084" sort-index="2">
@@ -19,9 +26,13 @@
                     <idno parent-id="O1JC11494"/>
                 </bibl>
             </sourceDesc>
-            <notesStmt>
-                <note type="lastUpdated" date-time="2021-06-01T11:50:27.661Z" user="admin">01/06/2021 11:50:27</note>
-            </notesStmt>
+            <notesStmt/>
+            <revisionDesc>
+            
+                <change who="#admin" when="2023-07-30T22:39:48.323Z" type="text-version" status="0.1.1" xml:id="O1JC114941JC11495-6">
+                    <desc>TEI migrated to 2.19.0</desc>
+                </change>
+            </revisionDesc>
         </fileDesc>
     </teiHeader>
     <text>
@@ -31,10 +42,9 @@
             </div>
         </front>
         <body>
-            <div type="about">
-                <head type="about" tid="10">Discipline</head>
-                <div type="section" xml:id="O1JC114941JC11495-about-1">
-                    <head type="section" tid="11"/>
+            <div type="article">
+                <head type="article" tid="10">Discipline</head>
+                <div type="section" xml:id="O1JC114941JC11495-article-1">
                     <milestone unit="chunk" xml:id="O1JC114941JC11495-1"/>
                     <p tid="2">The texts of the Vinaya, or Discipline (<foreign xml:lang="Bo-Ltn">’dul ba</foreign>) comprise the monastic code, its history, and commentaries on it. As well as detailing all the rules to be kept by monks, nuns, male and female novices, and male and female lay practitioners, they include a wealth of history, biography, and narrative recording the circumstances under which each rule was originally introduced by the Buddha.</p>
                     <milestone unit="chunk" xml:id="O1JC114941JC11495-2"/>
@@ -43,22 +53,38 @@
                     <p tid="4">The works in this section of the Kangyur were translated into Tibetan from the Sanskrit texts of the Mūlasarvāstivāda-vinaya, the vinaya tradition held by the first monks to bring their ordination lineage to Tibet. Vinaya texts of other schools do not seem to have been translated into Tibetan. While scholars disagree about whether there was a Mūlasarvāstivādin school as such, distinct from the Sarvāstivādin school, the Mūlasarvāstivāda-vinaya is a distinct body of literature many times longer than any other vinaya. It has survived in Tibetan, Chinese, and partially in Sanskrit in the form of manuscripts found in Gilgit. The Tibetan translations represent a more complete version than the Chinese. The Mūlasarvāstivāda-vinaya literature is notable for its historical and narrative richness and contains material duplicated in, or paralleled by, a considerable number of sūtras, avadānas, and other works and passages elsewhere in the Kangyur; it almost constitutes a canonical collection in its own right.</p>
                     <milestone unit="chunk" xml:id="O1JC114941JC11495-4"/>
                     <p tid="5">The seven works listed here can be divided into the four major traditional divisions of the corpus:</p>
-                    <list>
+                    <list type="bullet" rend="numbers">
                         <item>
-                            <p tid="6">(1) <title xml:lang="Sa-Ltn">Vinayavibhaṅga</title>, the codified rules themselves and their commentarial texts. Toh 2 and 4 are the Prātimokṣa sūtras outlining the rules for monks and nuns, respectively, and each has a detailed commentary, Toh 3 and 5, in which the incidents that gave rise to the different rules are recounted.</p>
+                            <p tid="6">
+                                <title xml:lang="Sa-Ltn">Vinayavibhaṅga</title>, the codified rules themselves and their commentarial texts. Toh 2 and 4 are the Prātimokṣa sūtras outlining the rules for monks and nuns, respectively, and each has a detailed commentary, Toh 3 and 5, in which the incidents that gave rise to the different rules are recounted.</p>
                         </item>
                         <item>
-                            <p tid="7">(2) <title xml:lang="Sa-Ltn">Vinayavastu</title>, Toh 1, a single large text containing seventeen “chapters” or topics (<foreign xml:lang="Sa-Ltn">vastu</foreign>, Tib. <foreign xml:lang="Bo-Ltn">gzhi</foreign>) each delineating a specific aspect of monastic life.</p>
+                            <p tid="7">
+                                <title xml:lang="Sa-Ltn">Vinayavastu</title>, Toh 1, a single large text containing seventeen “chapters” or topics (<foreign xml:lang="Sa-Ltn">vastu</foreign>, Tib. <foreign xml:lang="Bo-Ltn">gzhi</foreign>) each delineating a specific aspect of monastic life.</p>
                         </item>
                         <item>
-                            <p tid="8">(3) <title xml:lang="Sa-Ltn">Vinayakṣudrakavastu</title>, Toh 6, a large additional “chapter” dealing with a wide range of miscellaneous topics not covered in the seventeen chapters of the <title xml:lang="Sa-Ltn">Vinayavastu</title>.</p>
+                            <p tid="8">
+                                <title xml:lang="Sa-Ltn">Vinayakṣudrakavastu</title>, Toh 6, a large additional “chapter” dealing with a wide range of miscellaneous topics not covered in the seventeen chapters of the <title xml:lang="Sa-Ltn">Vinayavastu</title>.</p>
                         </item>
                         <item>
-                            <p tid="9">(4) <title xml:lang="Sa-Ltn">Vinayottaragrantha</title>, Toh 7, a compilation of ten or so subsections, some of which may have been independent texts, providing amplified explanations of the monastic code and its history. Two versions of the Uttaragrantha have been preserved in Tibetan translation (here numbered Toh 7 and 7A), of which the second is more complete, the first consisting only of the <title xml:lang="en">Questions of Upāli</title> while the second contains the same text along with a number of others. The colophons and the catalogue of the Degé Kangyur suggest that both versions were retained because of different levels of authentication concerning their respective contents.</p>
+                            <p tid="9">
+                                <title xml:lang="Sa-Ltn">Vinayottaragrantha</title>, Toh 7, a compilation of ten or so subsections, some of which may have been independent texts, providing amplified explanations of the monastic code and its history. Two versions of the Uttaragrantha have been preserved in Tibetan translation (here numbered Toh 7 and 7A), of which the second is more complete, the first consisting only of the <title xml:lang="en">Questions of Upāli</title> while the second contains the same text along with a number of others. The colophons and the catalogue of the Degé Kangyur suggest that both versions were retained because of different levels of authentication concerning their respective contents.</p>
                         </item>
                     </list>
                 </div>
             </div>
         </body>
+        <back>
+            <div type="listBibl">
+                <head type="listBibl" tid="12">Bibliography</head>
+                <div type="section" xml:id="O1JC114941JC11495-listBibl-1">
+                    <head type="section" tid="13">Bibliography Section Heading</head>
+                    <bibl rend="default-text" xml:id="O1JC114941JC11495-5">This is a sample bibliographic reference with a <ref target="https://read.84000.co/translation/toh46.html">link example</ref>.</bibl>
+                </div>
+            </div>
+            <div type="glossary">
+                <list type="glossary"/>
+            </div>
+        </back>
     </text>
 </TEI>

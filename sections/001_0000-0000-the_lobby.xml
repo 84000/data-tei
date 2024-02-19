@@ -8,8 +8,13 @@
                 <title type="mainTitle" xml:lang="Sa-Ltn"/>
                 <title type="mainTitle" xml:lang="en">The Collection</title>
             </titleStmt>
+            <editionStmt>
+                <edition>v 0.1.1 <date>2023</date>
+                </edition>
+            </editionStmt>
             <publicationStmt>
                 <p>Published in 84000 Reading Room</p>
+                <availability status="2.a"/>
                 <idno xml:id="LOBBY"/>
                 <date>2010</date>
             </publicationStmt>
@@ -19,9 +24,13 @@
                     <idno parent-id=""/>
                 </bibl>
             </sourceDesc>
-            <notesStmt>
-                <note type="lastUpdated" date-time="2021-06-01T11:49:51.648Z" user="admin">01/06/2021 11:49:51</note>
-            </notesStmt>
+            <notesStmt/>
+            <revisionDesc>
+            
+                <change who="#admin" when="2023-07-30T22:39:48.323Z" type="text-version" status="0.1.1" xml:id="LOBBY-2">
+                    <desc>TEI migrated to 2.19.0</desc>
+                </change>
+            </revisionDesc>
         </fileDesc>
     </teiHeader>
     <text>
@@ -37,5 +46,17 @@
             </div>
         </front>
         <body/>
+        <back>
+            <div type="listBibl">
+                <head type="listBibl" tid="4">Bibliography</head>
+                <div type="section" xml:id="LOBBY-listBibl-1">
+                    <head type="section" tid="5">Bibliography Section Heading</head>
+                    <bibl rend="default-text" xml:id="LOBBY-1">This is a sample bibliographic reference with a <ref target="https://read.84000.co/translation/toh46.html">link example</ref>.</bibl>
+                </div>
+            </div>
+            <div type="glossary">
+                <list type="glossary"/>
+            </div>
+        </back>
     </text>
 </TEI>

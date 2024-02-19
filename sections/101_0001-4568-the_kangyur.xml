@@ -10,9 +10,15 @@
                 <title type="mainTitle" xml:lang="bo">བཀའ་འགྱུར།</title>
                 <title type="otherTitle" xml:lang="en">84000 Structural Outline v 2,0, based on Degé phar phud</title>
             </titleStmt>
+            <editionStmt>
+                <edition>v 0.1.1 <date>2023</date>
+                </edition>
+            </editionStmt>
             <publicationStmt>
                 <p>Published in 84000 Reading Room</p>
+                <availability status="1"/>
                 <idno xml:id="O1JC11494"/>
+                <idno type="eft-kb-id">kangyur</idno>
                 <date>2010</date>
             </publicationStmt>
             <sourceDesc work="W22084" sort-index="1">
@@ -21,9 +27,13 @@
                     <idno parent-id="LOBBY"/>
                 </bibl>
             </sourceDesc>
-            <notesStmt>
-                <note type="lastUpdated" date-time="2019-02-26T18:25:21.324Z" user="celso">26/02/2019 18:25:21</note>
-            </notesStmt>
+            <notesStmt/>
+            <revisionDesc>
+            
+                <change who="#admin" when="2023-07-30T22:39:48.323Z" type="text-version" status="0.1.1" xml:id="O1JC11494-13">
+                    <desc>TEI migrated to 2.19.0</desc>
+                </change>
+            </revisionDesc>
         </fileDesc>
     </teiHeader>
     <text>
@@ -33,9 +43,9 @@
             </div>
         </front>
         <body>
-            <div type="about">
-                <head type="about" tid="13">The Kangyur</head>
-                <div type="section">
+            <div type="article">
+                <head type="article" tid="13">The Kangyur</head>
+                <div type="section" xml:id="O1JC11494-article-1">
                     <head type="section" tid="14">The Kangyur and its divisions</head>
                     <milestone unit="chunk" xml:id="O1JC11494-1"/>
                     <p tid="2">The Kangyur is the principal collection of the Buddhist scriptures in Tibetan. It contains some 900 works in over 100 volumes, all translations into
@@ -55,7 +65,7 @@
                         <title xml:lang="en">A Complete Catalogue of the Tibetan
                             Buddhist Canons</title>. 1934: Sendai, Japan. Tōhoku Imperial University.)</p>
                 </div>
-                <div type="section">
+                <div type="section" xml:id="O1JC11494-article-2">
                     <head type="section" tid="15">History</head>
                     <milestone unit="chunk" xml:id="O1JC11494-4"/>
                     <p tid="5">The word Kangyur (<foreign type="term" xml:lang="Bo-Ltn">bka’ ’gyur</foreign>) literally means “the Word” (<foreign type="term" xml:lang="Bo-Ltn">bka’</foreign>) “translated”
@@ -88,15 +98,15 @@
                         texts.</p>
                     <milestone unit="chunk" xml:id="O1JC11494-7"/>
                     <p tid="8">Some scholars hold that most Kangyurs can be traced back to work done in the early 14th century at the Kadampa monastery of Narthang (<foreign type="term" xml:lang="Bo-Ltn">snar
-                        thang</foreign>) near Shigatsé, where Chomden Rigpai Raltri (<foreign type="person" xml:lang="Bo-Ltn">bcom ldan rig pa’i ral
-                            gri</foreign>) and his disciple Üpa Losal Sangye Bum (<foreign type="person" xml:lang="Bo-Ltn">dbus pa blo gsal sangs rgyas
+                        thang</foreign>) near Shigatsé, where Chomden Rigpai Raltri (<foreign type="term" xml:lang="Bo-Ltn">bcom ldan rig pa’i ral
+                            gri</foreign>) and his disciple Üpa Losal Sangye Bum (<foreign type="term" xml:lang="Bo-Ltn">dbus pa blo gsal sangs rgyas
                                 ’bum</foreign>) collected and copied the best available copies of texts from many monastery
                         libraries in the region. It may have been on the basis of this collection that two distinct
                         (though later intertwined) lineages or traditions of Kangyurs evolved. One of these started
                         with an edited version of the Kangyur produced at the monastery of Tshal Gungthang in
                         1347-1351, and is known as the Tshalpa (<foreign type="term" xml:lang="Bo-Ltn">tshal pa</foreign>) Kangyur tradition. The
                         other tradition is called the Thempangma (<foreign type="term" xml:lang="Bo-Ltn">them spangs ma</foreign>), from a
-                        manuscript so named that was produced at Gyantsé (<foreign type="place" xml:lang="Bo-Ltn">rgyal rtse</foreign>) in 1431
+                        manuscript so named that was produced at Gyantsé (<foreign type="term" xml:lang="Bo-Ltn">rgyal rtse</foreign>) in 1431
                         from sources in the locality; it may have had its roots in another edited and rearranged
                         version developed by the great scholar Butön Rinchen Drup (<foreign type="term" xml:lang="Bo-Ltn">bu ston rin chen
                             grub</foreign>, 1290-1364) and his followers at the monastery of Zhalu (<foreign type="term" xml:lang="Bo-Ltn">zha
@@ -132,5 +142,17 @@
                 </div> 
             </div>
         </body>
+        <back>
+            <div type="listBibl">
+                <head type="listBibl" tid="16">Bibliography</head>
+                <div type="section" xml:id="O1JC11494-listBibl-1">
+                    <head type="section" tid="17">Bibliography Section Heading</head>
+                    <bibl rend="default-text" xml:id="O1JC11494-12">This is a sample bibliographic reference with a <ref target="https://read.84000.co/translation/toh46.html">link example</ref>.</bibl>
+                </div>
+            </div>
+            <div type="glossary">
+                <list type="glossary"/>
+            </div>
+        </back>
     </text>
 </TEI>

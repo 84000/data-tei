@@ -4,14 +4,22 @@
     <teiHeader>
         <fileDesc type="section">
             <titleStmt>
-                <title type="mainTitle" xml:lang="Bo-Ltn">bya ba'i rgyud/</title>
-                <title type="mainTitle" xml:lang="Sa-Ltn">Kriyātantra</title>
+                <title type="articleTitle" xml:lang="en">Action tantras (Kangyur Section)</title>
                 <title type="mainTitle" xml:lang="en">Action tantras</title>
-                </titleStmt>
+                <title type="mainTitle" xml:lang="Sa-Ltn">Kriyātantra</title>
+                <title type="mainTitle" xml:lang="Bo-Ltn">bya ba'i rgyud/</title>
+            </titleStmt>
+            <editionStmt>
+                <edition>v 0.1.3 <date>2024</date>
+                </edition>
+            </editionStmt>
             <publicationStmt>
-                <p>Published in 84000 Reading Room</p>
+                
+                <availability status="1"/>
                 <idno xml:id="O1JC114941JC21415"/>
-                <date>2010</date>
+                <idno type="eft-kb-id">action-tantras</idno>
+                <date>2024-02-08</date>
+                <p>Published in 84000 Reading Room</p>
             </publicationStmt>
             <sourceDesc work="W22084" sort-index="16">
                 <p>Derived from previous outline file from TBRC</p>
@@ -19,9 +27,19 @@
                     <idno parent-id="O1JC114941JC20565"/>
                 </bibl>
             </sourceDesc>
-            <notesStmt>
-                <note type="lastUpdated" date-time="2021-06-01T09:06:19.037Z" user="admin">01/06/2021 09:06:19</note>
-            </notesStmt>
+            <notesStmt/>
+            <revisionDesc>
+            
+                <change who="#admin" when="2023-07-30T22:39:48.323Z" type="text-version" status="0.1.1" xml:id="O1JC114941JC21415-30">
+                    <desc>TEI migrated to 2.19.0</desc>
+                </change>
+                <change who="#john" when="2024-02-08T12:33:06.972Z" type="text-version" status="0.1.2" xml:id="O1JC114941JC21415-31">
+                    <desc>A few additions.</desc>
+                </change>
+                <change who="#john" when="2024-02-13T11:57:08.892Z" type="text-version" status="0.1.3" xml:id="O1JC114941JC21415-32">
+                    <desc>Added some items.</desc>
+                </change>
+            </revisionDesc>
         </fileDesc>
     </teiHeader>
     <text>
@@ -39,10 +57,10 @@
             </div>
         </front>
         <body>
-            <div type="about">
-                <head type="about" tid="32">Action tantras</head>
-                <xi:include href="/db/apps/84000-data/tei/knowledgebase/action_tantras_kangyur_section.xml" xpointer="EFT-KB-ACTION-TANTRAS-KANGYUR-SECTION-article-1"/>
-                <!--<div type="section" xml:id="O1JC114941JC21415-about-1">
+            <div type="article">
+                <head type="article" tid="32">Action tantras</head>
+                
+                <div type="section" xml:id="O1JC114941JC21415-article-1">
                     <milestone unit="chunk" xml:id="O1JC114941JC21415-1"/>
                     <p tid="3">This, the lowest of the three classes of outer tantra, constitutes the largest group of tantras in the
                         Kangyur, with 308 titles. Tantras of this class emphasize external purity and ritual, and are often aimed
@@ -56,56 +74,60 @@
                     <milestone unit="chunk" xml:id="O1JC114941JC21415-3"/>
                     <p tid="5">
                         <label>I. The Tathāgata family</label> (Toh 502-673), divided into 8 sections:</p>
-                    <list>
-                        <milestone unit="chunk" xml:id="O1JC114941JC21415-4"/>
+                    <list type="bullet">
                         <item>
+                            <milestone unit="chunk" xml:id="O1JC114941JC21415-4"/>
                             <p tid="6">(a) 41 works featuring the principal deity of the Tathāgata family (<foreign type="term" xml:lang="Bo-Ltn">gshegs rigs kyi tso bo</foreign>, Toh 502-542), including the Medicine
                                 Buddha (Toh 503-505); sūtras and incantations centered on other buddhas (Toh 510-513), and on
                                 dependent origination and its mantra (Toh 519-521); two essentialised Prajñāpāramitā works (Toh
                                 530-531), the second being the famous “Heart Sūtra;” the 108 names of the Buddha (Toh 532); and
                                 incantations of Buddha Śākyamuni and Vairocana (Toh 533-534).</p>
                         </item>
-                        <milestone unit="chunk" xml:id="O1JC114941JC21415-5"/>
                         <item>
+                            <milestone unit="chunk" xml:id="O1JC114941JC21415-5"/>
                             <p tid="7">(b) 10 works on the “Turner of the Wheel” of the Tathāgata family (<foreign type="term" xml:lang="Bo-Ltn">gshegs rigs kyi ’khor los sgyur ba</foreign>, Toh 543-552), all centered on
                                 Manjuśrī and starting with the important <title xml:lang="Sa-Ltn">Manjuśrīmūlatantra</title> (Toh
                                 543).</p>
                         </item>
-                        <milestone unit="chunk" xml:id="O1JC114941JC21415-6"/>
                         <item>
+                            <milestone unit="chunk" xml:id="O1JC114941JC21415-6"/>
                             <p tid="8">(c) 37 works on the “Mother” of the Tathāgata family (<foreign type="term" xml:lang="Bo-Ltn">gshegs
                                     rigs kyi yum</foreign>, Toh 553-589), many of them on the Prajñāpāramitā (Toh 553-554,
                                 576-581, and 583), but also including the three <title xml:lang="Sa-Ltn">Suvarṇaprabhā</title>
-                                works (Toh 555-557), works related to the <title xml:lang="Sa-Ltn">Pañcarakṣā</title> (Five
-                                Proctresses, Toh 558-563 and 587-588), and a series of incantations said to carry the essence of
-                                some well-known Mahāyāna sūtras such as the <title xml:lang="Sa-Ltn">Gaṇḍavyūha</title> and <title xml:lang="Sa-Ltn">Laṅkāvatāra</title> (Toh 583-586 and 589).</p>
+                                works (Toh 555-557); works related to the <title xml:lang="Sa-Ltn">Pañcarakṣā</title> (Five
+                                Proctresses, Toh 558-563 and 587-588); goddesses such as Mārīcī (Toh 564–566), Jayavatī (Toh 567–568), and others; 
+                                and a series of incantations said to carry the essence of
+                                some well-known Mahāyāna sūtras such as the <title xml:lang="Sa-Ltn">Gaṇḍavyūha</title> and 
+                                <title xml:lang="Sa-Ltn">Laṅkāvatāra</title> (Toh 583-586 and 589).</p>
                         </item>
-                        <milestone unit="chunk" xml:id="O1JC114941JC21415-7"/>
                         <item>
+                            <milestone unit="chunk" xml:id="O1JC114941JC21415-7"/>
                             <p tid="9">(d) 13 works on the Uṣṇīṣa of the Tathāgata family (<foreign type="term" xml:lang="Bo-Ltn">gshegs
                                     rigs kyi gtsug tor</foreign>, Toh 590-603), mostly centered on incantations of the deities
                                 Uṣṇīṣasitātapatrā (Toh 590-593) and Uṣṇīṣavijayā, male and female (Toh 594-600), but also 
                                 including incantations related to stūpas (Toh 601 and 602).</p>
                         </item>
-                        <milestone unit="chunk" xml:id="O1JC114941JC21415-8"/>
                         <item>
+                            <milestone unit="chunk" xml:id="O1JC114941JC21415-8"/>
                             <p tid="10">(e) 10 works on the wrathful male and female deities of the Tathāgata family (<foreign type="term" xml:lang="Bo-Ltn">gshegs rigs kyi khro bo khro mo</foreign>, Toh 604-613).</p>
                         </item>
-                        <milestone unit="chunk" xml:id="O1JC114941JC21415-9"/>
                         <item>
+                            <milestone unit="chunk" xml:id="O1JC114941JC21415-9"/>
                             <p tid="11">(f) 20 works on the “messenger goddesses” of the Tathāgata family (<title xml:lang="Bo-Ltn">gshegs
                                     rigs kyi pho nya mo</title>, Toh 614-633), many of which focus on the protection from ill
                                 health, diseases, and epidemics, including a duplicate of the Mahāsūtra “Entering the City of
-                                Vaiśali” (<title xml:lang="Sa-Ltn">Vaiśālipraveśamahāsūtra</title>), Toh 628.</p>
+                                Vaiśali” (<title xml:lang="Sa-Ltn">Vaiśālipraveśamahāsūtra</title>), Toh 628. Included in this group 
+                            as belonging to the entourage of “messengers” are three texts (Toh 631–633) under the rubric of “male and female attendants” 
+                            (<foreign xml:lang="Bo-Ltn">bka’ nyan pho mo</foreign>), the first of which (Toh 631) is a dhāraṇī of the wrathful deity Acala. </p>
                         </item>
-                        <milestone unit="chunk" xml:id="O1JC114941JC21415-10"/>
                         <item>
+                            <milestone unit="chunk" xml:id="O1JC114941JC21415-10"/>
                             <p tid="12">(g) 19 works on bodhisattvas “who are included in the Tathāgata family” (<title xml:lang="Bo-Ltn">de bzhin gshegs pa’i rigs su bsdu ba</title>, Toh 634-652), comprising texts on the 108 names
                                 of all the eight principal bodhisattvas (Toh 634-642) as well as works for removing obstacles, and
                                 incantations to help trainee bodhisattvas develop the qualities they need (Toh 650 and 651).</p>
                         </item>
-                        <milestone unit="chunk" xml:id="O1JC114941JC21415-11"/>
                         <item>
+                            <milestone unit="chunk" xml:id="O1JC114941JC21415-11"/>
                             <p tid="13">(h) 21 works “on gods of the pure places and so forth” (<title xml:lang="Bo-Ltn">gnas gtsang ma’i
                                     lha la sogs pa</title>, Toh 653-673), including two more of the Mahāsūtras (Toh 653 and 656),
                                 duplicates of the <title xml:lang="Sa-Ltn">Mahāmeghasūtra</title> (Toh 657) and a related work
@@ -116,30 +138,32 @@
                     <milestone unit="chunk" xml:id="O1JC114941JC21415-12"/>
                     <p tid="14">
                         <label>II. The Padma family</label> (Toh 674-742), divided into 5 sections:</p>
-                    <list>
-                        <milestone unit="chunk" xml:id="O1JC114941JC21415-13"/>
+                    <list type="bullet">
                         <item>
-                            <p tid="15">(a) 6 works featuring the principal deity of the family (<foreign type="term" xml:lang="Bo-Ltn">rigs kyi tso bo</foreign>, Toh 674-680), in the forms of Amitāyus (Toh 673A-676), and
-                                Amitābha and his buddhafield (Toh 674-680).</p>
+                            <milestone unit="chunk" xml:id="O1JC114941JC21415-13"/>
+                            <p tid="15">(a) 6 works featuring the principal deity of the family (<foreign type="term" xml:lang="Bo-Ltn">rigs kyi tso bo</foreign>, Toh 674-680) 
+                                in the forms of Amitāyus: in the sense of Aparimitāyus or Aparimitāyurjñāna of the buddhafield in the zenith (Toh 673A-675), and
+                                in the sense of Amitābha and his western buddhafield (Toh 676-680).</p>
                         </item>
-                        <milestone unit="chunk" xml:id="O1JC114941JC21415-14"/>
                         <item>
+                            <milestone unit="chunk" xml:id="O1JC114941JC21415-14"/>
                             <p tid="16">(b) 43 works on the “Turner of the Wheel” of the family (<foreign type="term" xml:lang="Bo-Ltn">rigs kyi ’khor los sgyur ba</foreign>, Toh 681-723), a large majority centered on
                                 Avalokiteśvara in his various forms.</p>
                         </item>
-                        <milestone unit="chunk" xml:id="O1JC114941JC21415-15"/>
+                        
                         <item>
+                            <milestone unit="chunk" xml:id="O1JC114941JC21415-15"/>
                             <p tid="17">(c) 9 works on the “Mother” of the family (<foreign type="term" xml:lang="Bo-Ltn">rigs kyi
                                     yum</foreign>, Toh 724-732), all focussing on forms of Tāra.</p>
                         </item>
-                        <milestone unit="chunk" xml:id="O1JC114941JC21415-16"/>
                         <item>
+                            <milestone unit="chunk" xml:id="O1JC114941JC21415-16"/>
                             <p tid="18">(d) 4 works on the wrathful male and female deities of the family (<foreign type="term" xml:lang="Bo-Ltn">rigs kyi khro bo khro mo</foreign>, Toh 733-736), centered on Hayagrīva (Toh
                                 733), Pratyaṅgirā (Toh 734), and the “Leaf-clad” goddess of the wilderness, Parṇaśabarī (Toh 735
                                 and 736), sometimes considered to be a form of Tāra.</p>
                         </item>
-                        <milestone unit="chunk" xml:id="O1JC114941JC21415-17"/>
                         <item>
+                            <milestone unit="chunk" xml:id="O1JC114941JC21415-17"/>
                             <p tid="19">(e) 6 works on the male and female attendant deities of the family (<foreign type="term" xml:lang="Bo-Ltn">rigs kyi bka’ nyan pho mo</foreign>, Toh 737-742), including works on
                                 Pratyaṅgirā (Toh 737), Sarasvatī (Toh 738), and Mahādevī (Toh 738-741). </p>
                         </item>
@@ -148,36 +172,36 @@
                     <milestone unit="chunk" xml:id="O1JC114941JC21415-18"/>
                     <p tid="20">
                         <label>III. The Vajra family</label> (Toh 743-763), also divided into 5 sections:</p>
-                    <list>
+                    <list type="bullet">
                         <item>
                             <p tid="21">(a) 1 work featuring the principal deity of the family (<foreign type="term" xml:lang="Bo-Ltn">rigs
                                     kyi tso bo</foreign>), an incantation of Akṣobhya (Toh 743).</p>
                         </item>
-                        <milestone unit="chunk" xml:id="O1JC114941JC21415-19"/>
                         <item>
+                            <milestone unit="chunk" xml:id="O1JC114941JC21415-19"/>
                             <p tid="22">(b) 7 works on the lord of the family (<foreign type="term" xml:lang="Bo-Ltn">rigs kyi bdag
                                     po</foreign>, Toh 744 and 746-751), all featuring different forms of Vajrapāṇi, including the
                                     <title xml:lang="en">Bhūtaḍāmara Tantra</title> (Toh 747), as well as the <title xml:lang="en">Incantation of Vajravidāraṇā</title> (Toh 750) and its explanatory tantra (Toh 751).</p>
                         </item>
-                        <milestone unit="chunk" xml:id="O1JC114941JC21415-20"/>
                         <item>
+                            <milestone unit="chunk" xml:id="O1JC114941JC21415-20"/>
                             <p tid="23">An eighth work, Toh 745, the <title xml:lang="en">Hundred and Eight Names of Tāra</title>, was
                                 added to the end of volume 94 in later printings of the Degé Kangyur, and presumably belongs to
                                 section II (c) above.</p>
                         </item>
-                        <milestone unit="chunk" xml:id="O1JC114941JC21415-21"/>
                         <item>
+                            <milestone unit="chunk" xml:id="O1JC114941JC21415-21"/>
                             <p tid="24">(c) 1 work on the “Mother” of the family (<foreign type="term" xml:lang="Bo-Ltn">rigs kyi
                                     yum</foreign>), an incantation of Vajrājitānalapramohanī (Toh 751).</p>
                         </item>
-                        <milestone unit="chunk" xml:id="O1JC114941JC21415-22"/>
                         <item>
+                            <milestone unit="chunk" xml:id="O1JC114941JC21415-22"/>
                             <p tid="25">(d) 3 works on the wrathful male and female deities of the family (<foreign type="term" xml:lang="Bo-Ltn">rigs kyi khro bo khro mo</foreign>, Toh 753-755), brief incantations related
                                 to Vajravidāraṇā (Toh 753), the names of ten forms of Vajrapāṇi (Toh 754), and the deity
                                 Kuṇḍalyamṛta (Toh 755).</p>
                         </item>
-                        <milestone unit="chunk" xml:id="O1JC114941JC21415-23"/>
                         <item>
+                            <milestone unit="chunk" xml:id="O1JC114941JC21415-23"/>
                             <p tid="26">(e) 8 works on the male and female messenger and attendant deities of the family (<foreign type="term" xml:lang="Bo-Ltn">rigs kyi pho nya dang bka’ nyan pho mo</foreign>, Toh 756-763),
                                 including works centered on the deities Bhurkuṃkūṭa (<foreign type="term" xml:lang="Bo-Ltn">sme ba
                                     brtsegs pa</foreign>, Toh 756), Mahābala (Toh 757), Vajraśṛṅkhala (Toh 758), Vajratuṇḍa (Toh
@@ -215,8 +239,20 @@
                         different Action tantra practices. The best known is probably the <title xml:lang="en">Tantra of the
                             Questions of Subāhu</title> (Toh 805, not to be confused with the <title xml:lang="en">Sūtra of the
                             Questions of Subāhu</title>, Toh 70).</p>
-                </div>-->
+                </div>
             </div>
         </body>
+        <back>
+            <div type="listBibl">
+                <head type="listBibl" tid="33">Bibliography</head>
+                <div type="section" xml:id="O1JC114941JC21415-listBibl-1">
+                    <head type="section" tid="34">Bibliography Section Heading</head>
+                    <bibl rend="default-text" xml:id="O1JC114941JC21415-29">This is a sample bibliographic reference with a <ref target="https://read.84000.co/translation/toh46.html">link example</ref>.</bibl>
+                </div>
+            </div>
+            <div type="glossary">
+                <list type="glossary"/>
+            </div>
+        </back>
     </text>
 </TEI>

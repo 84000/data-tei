@@ -7,10 +7,17 @@
                 <title type="mainTitle" xml:lang="Bo-Ltn"/>
                 <title type="mainTitle" xml:lang="Sa-Ltn"/>
                 <title type="mainTitle" xml:lang="en">Sūtra commentary and philosophy</title>
-            </titleStmt>
+            <title type="articleTitle" xml:lang="en">Sūtra commentary and philosophy (Tengyur Section)</title>
+                </titleStmt>
+            <editionStmt>
+                <edition>v 0.1.1 <date>2023</date>
+                </edition>
+            </editionStmt>
             <publicationStmt>
                 <p>Published in 84000 Reading Room</p>
+                <availability status="2.a"/>
                 <idno xml:id="O1JC76301JC11282"/>
+                <idno type="eft-kb-id">sutra-commentary-philosophy</idno>
                 <date>2010</date>
             </publicationStmt>
             <sourceDesc work="W23703" sort-index="28">
@@ -19,9 +26,13 @@
                     <idno parent-id="O1JC7630"/>
                 </bibl>
             </sourceDesc>
-            <notesStmt>
-                <note type="lastUpdated" date-time="2021-06-01T12:01:21.715Z" user="admin">01/06/2021 12:01:21</note>
-            </notesStmt>
+            <notesStmt/>
+            <revisionDesc>
+            
+                <change who="#admin" when="2023-07-30T22:39:48.323Z" type="text-version" status="0.1.1" xml:id="O1JC76301JC11282-4">
+                    <desc>TEI migrated to 2.19.0</desc>
+                </change>
+            </revisionDesc>
         </fileDesc>
     </teiHeader>
     <text>
@@ -31,6 +42,26 @@
                     Sūtra Commentary, and Mind Only <lb/>(Toh 3786-4085)</p>
             </div>
         </front>
-        <body/>
+        <body>
+            <div type="article">
+                <div type="section" xml:id="O1JC76301JC11282-article-1">
+                    <head type="section" tid="2">Article Section Heading</head>
+                    <milestone unit="chunk" xml:id="O1JC76301JC11282-1"/>
+                    <p rend="default-text" tid="3">Here's a paragraph to get you started. Replace this as you wish<note place="end" xml:id="O1JC76301JC11282-2">This is a ready-made footnote.</note>.</p>
+                </div>
+            </div>
+        </body>
+        <back>
+            <div type="listBibl">
+                <head type="listBibl" tid="4">Bibliography</head>
+                <div type="section" xml:id="O1JC76301JC11282-listBibl-1">
+                    <head type="section" tid="5">Bibliography Section Heading</head>
+                    <bibl rend="default-text" xml:id="O1JC76301JC11282-3">This is a sample bibliographic reference with a <ref target="https://read.84000.co/translation/toh46.html">link example</ref>.</bibl>
+                </div>
+            </div>
+            <div type="glossary">
+                <list type="glossary"/>
+            </div>
+        </back>
     </text>
 </TEI>

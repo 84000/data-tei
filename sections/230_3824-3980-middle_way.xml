@@ -7,10 +7,17 @@
                 <title type="mainTitle" xml:lang="Bo-Ltn">dbu ma/</title>
                 <title type="mainTitle" xml:lang="Sa-Ltn">Madhyamaka</title>
                 <title type="mainTitle" xml:lang="en">Middle Way</title>
-            </titleStmt>
+            <title type="articleTitle" xml:lang="en">Middle Way (Tengyur Section)</title>
+                </titleStmt>
+            <editionStmt>
+                <edition>v 0.1.1 <date>2023</date>
+                </edition>
+            </editionStmt>
             <publicationStmt>
                 <p>Published in 84000 Reading Room</p>
+                <availability status="2.a"/>
                 <idno xml:id="O1JC76301JC10474"/>
+                <idno type="eft-kb-id">middle-way</idno>
                 <date>2010</date>
             </publicationStmt>
             <sourceDesc work="W23703" sort-index="30">
@@ -19,9 +26,13 @@
                     <idno parent-id="O1JC76301JC11282"/>
                 </bibl>
             </sourceDesc>
-            <notesStmt>
-                <note type="lastUpdated">Last updated at 06/09/2018 at 11:21:42 by admin</note>
-            </notesStmt>
+            <notesStmt/>
+            <revisionDesc>
+            
+                <change who="#admin" when="2023-07-30T22:39:48.323Z" type="text-version" status="0.1.1" xml:id="O1JC76301JC10474-4">
+                    <desc>TEI migrated to 2.19.0</desc>
+                </change>
+            </revisionDesc>
         </fileDesc>
     </teiHeader>
     <text>
@@ -30,6 +41,26 @@
                 <p tid="1">The treatises by Nāgārjuna, Āryaveva, Candrakīrti, Buddhapālita, Śāntideva, and other Indian masters on the Madhyamaka (Middle Way) philosophical system (Toh 3824-3980)</p>
             </div>
         </front>
-        <body/>
+        <body>
+            <div type="article">
+                <div type="section" xml:id="O1JC76301JC10474-article-1">
+                    <head type="section" tid="2">Article Section Heading</head>
+                    <milestone unit="chunk" xml:id="O1JC76301JC10474-1"/>
+                    <p rend="default-text" tid="3">Here's a paragraph to get you started. Replace this as you wish<note place="end" xml:id="O1JC76301JC10474-2">This is a ready-made footnote.</note>.</p>
+                </div>
+            </div>
+        </body>
+        <back>
+            <div type="listBibl">
+                <head type="listBibl" tid="4">Bibliography</head>
+                <div type="section" xml:id="O1JC76301JC10474-listBibl-1">
+                    <head type="section" tid="5">Bibliography Section Heading</head>
+                    <bibl rend="default-text" xml:id="O1JC76301JC10474-3">This is a sample bibliographic reference with a <ref target="https://read.84000.co/translation/toh46.html">link example</ref>.</bibl>
+                </div>
+            </div>
+            <div type="glossary">
+                <list type="glossary"/>
+            </div>
+        </back>
     </text>
 </TEI>
