@@ -25,7 +25,7 @@
                 <editor role="finalReviewer" xml:id="UT22084-090-008-174">Rory Lindsay</editor>
             </titleStmt>
             <editionStmt>
-                <edition>v 1.0.0 <date>2024</date>
+                <edition>v 1.0.1 <date>2024</date>
                 </edition>
             </editionStmt>
 
@@ -46,7 +46,7 @@
                     logic.</note>
                 <date>2024-02-05</date>
             </publicationStmt>
-            <sourceDesc>
+            <tei:sourceDesc xmlns:tei="http://www.tei-c.org/ns/1.0">
                 <bibl key="toh564" type="text">
                     <ref>Toh 564</ref>
                     <biblScope>Degé Kangyur, vol. 90 (rgyud ’bum, pha), folios 157.a–158.b</biblScope>
@@ -69,7 +69,7 @@
                     <idno parent-id="O1JC114941JC20568" work="http://read.84000.co/sections"/>
                     <idno source-id="O1JC114941JC12751" work="W22084"/>
                 </bibl>
-            </sourceDesc>
+            </tei:sourceDesc>
             <notesStmt/>
             <revisionDesc>
                 <change who="#line-tofte" when="2020-03-24T11:38:36.272Z" type="text-version" status="0.0.1" xml:id="UT22084-090-008-7">
@@ -162,6 +162,9 @@
                 <change who="#sameer" when="2024-02-05T13:05:51.939Z" type="text-version" status="1.0.0" xml:id="UT22084-090-008-179">
                     <desc>First published version.</desc>
                 </change>
+                <change who="#andre" when="2024-02-22T16:31:28.753Z" type="text-version" status="1.0.1" xml:id="UT22084-090-008-180">
+                    <desc>Glossary integration revised, activated in CG</desc>
+                </change>
             </revisionDesc>
         </fileDesc>
     </teiHeader>
@@ -170,25 +173,25 @@
                     Outline to the text is quite complex, it is recommended that you paste the outlined contents from the DOCX here as a comment for
                     markup's reference. The actual table of contents will be generated in the Reading Room by the parser.-->
         <front>
-            <div type="summary">
+            <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="summary">
                 <head type="summary" tid="1">Summary</head>
                 <milestone unit="chunk" xml:id="UT22084-090-008-46"/>
                 <p tid="2">
                     <title xml:lang="en">The Mārīcī Dhāraṇī</title> opens at Prince Jeta’s Grove in Śrāvastī, where the Buddha Śākyamuni
                     introduces a saṅgha of monks and bodhisattvas to the goddess Mārīcī by listing her unique qualities and powers. The Buddha then
                     teaches the saṅgha six dhāraṇī mantras related to the goddess Mārīcī.</p>
-            </div>
-            <div type="acknowledgment">
+            </tei:div>
+            <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="acknowledgment">
                 <head type="acknowledgment" tid="3">Acknowledgements</head>
                 <milestone unit="chunk" xml:id="UT22084-090-008-47"/>
                 <p tid="4">This text was translated by the Dharmachakra Translation Committee under the supervision of Chokyi Nyima Rinpoche. The text
                     was translated, checked against the Sanskrit and Tibetan, and edited by Adam C. Krug.</p>
                 <milestone unit="chunk" xml:id="UT22084-090-008-48"/>
                 <p tid="5">The translation was completed under the patronage and supervision of 84000: Translating the Words of the Buddha.</p>
-            </div>
-            <div type="introduction">
+            </tei:div>
+            <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="introduction">
                 <head type="introduction" tid="8">Introduction</head>
-                <div type="section" xml:id="UT22084-090-008-introduction-1">
+                <tei:div type="section" xml:id="UT22084-090-008-introduction-1">
                     <milestone unit="chunk" xml:id="UT22084-090-008-51"/>
                     <p tid="10">
                         <title xml:lang="en">The Mārīcī Dhāraṇī</title> opens in Śrāvastī in Prince Jeta’s Grove, where the Buddha Śākyamuni
@@ -309,21 +312,19 @@
                         <title xml:lang="Sa-Ltn">Mārīcī­kalpa­tantra</title> (MBB II 112). All instances in which the English translation deviates
                         from the reading in the Degé Kangyur in favor of a reading in the Sanskrit witness or another Tibetan witness are noted in the
                         translation. </p>
-                </div>
-            </div>
+                </tei:div>
+            </tei:div>
         </front>
         <body>
-            <div type="translation">
+            <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="translation">
                 <head type="translation">The Translation</head>
                 <head type="titleHon" tid="17"/>
                 <head type="titleMain" tid="18">The Noble Mārīcī Dhāraṇī</head>
-                <div type="section" xml:id="UT22084-090-008-section-1">
+                <tei:div type="section" xml:id="UT22084-090-008-section-1">
                     <milestone unit="chunk" xml:id="UT22084-090-008-75"/>
                     <p tid="21">
                         <ref cRef="F.157.a" type="folio" key="toh564" xml:id="UT22084-090-008-152"/>
-                        <ref cRef="F.142.a" type="folio" key="toh988" xml:id="UT22084-090-008-153"/>
-                    </p>
-                    <p tid="22">Homage to all buddhas and bodhisattvas.<note place="end" xml:id="UT22084-090-008-77"> Skt. reads <foreign xml:lang="Sa-Ltn" type="quote">oṃ namo bhagavatyai āryamārīcīdevatāyai</foreign>. The alternate homage in the Sanskrit
+                        <ref cRef="F.142.a" type="folio" key="toh988" xml:id="UT22084-090-008-153"/> Homage to all buddhas and bodhisattvas.<note place="end" xml:id="UT22084-090-008-77"> Skt. reads <foreign xml:lang="Sa-Ltn" type="quote">oṃ namo bhagavatyai āryamārīcīdevatāyai</foreign>. The alternate homage in the Sanskrit
                             witnesses translates “<foreign xml:lang="Sa-Ltn">Oṃ</foreign> Homage to the blessed noble goddess Mārīcī.”</note>
                     </p>
                     <lb/>
@@ -411,16 +412,16 @@
                         praised the words of the Blessed One. </p>
                     <milestone unit="chunk" xml:id="UT22084-090-008-102"/>
                     <trailer tid="36">This concludes “<title xml:lang="en">The Noble Dhāraṇī of Mārīcī</title>.”</trailer>
-                </div>
-                <div type="colophon" xml:id="UT22084-090-008-colophon">
+                </tei:div>
+                <tei:div type="colophon" xml:id="UT22084-090-008-colophon">
                     <head type="colophon" tid="37">Colophon</head>
                     <milestone unit="chunk" xml:id="UT22084-090-008-103"/>
                     <p tid="38">This work was translated by the paṇḍita <term>Amoghavajra</term> and the lotsāwa-monk Bari Rinchen Drakpa.</p>
-                </div>
-            </div>
+                </tei:div>
+            </tei:div>
         </body>
         <back>
-            <div type="notes">
+            <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="notes">
                 <head type="notes" tid="39">Notes</head>
                 <list type="abbreviations">
                     <head tid="40">Abbreviations</head>
@@ -444,10 +445,10 @@
                             <title xml:lang="Sa-Ltn">Mārīcīkalpa</title> (NGMCP E 1480/9, Nepal National Archive, Kathmandu). This witness is identical to <title xml:lang="Sa-Ltn">Mārīcī­kalpa­tantra</title> (IASWR MBB-1973-112 [MBB II 112]).</expan>
                     </item>
                 </list>
-            </div>
-            <div type="listBibl">
+            </tei:div>
+            <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="listBibl">
                 <head type="listBibl" tid="41">Bibliography</head>
-                <div type="section" xml:id="UT22084-090-008-listBibl-1">
+                <tei:div type="section" xml:id="UT22084-090-008-listBibl-1">
                     <head type="section" tid="42">Tibetan Sources</head>
                     <bibl xml:id="UT22084-090-008-108">
                         <title xml:lang="Bo-Ltn">’od zer can zhes bya ba’i gzungs</title> (<title xml:lang="Sa-Ltn">Mārīcī­nāma­dhāraṇī</title>). Toh 564, Degé Kangyur vol. 90 (rgyud ’bum, pha), folios
@@ -479,8 +480,8 @@
                     <bibl xml:id="UT22084-090-008-115">
                         <ref target="https://gallica.bnf.fr/ark:/12148/btv1b8307296k.r=pelliot%20tibétain%20428?rk=21459;2">Pelliot tibétain 428</ref>.
                         Bibliothèque nationale de France, Paris.</bibl>
-                </div>
-                <div type="section" xml:id="UT22084-090-008-listBibl-2">
+                </tei:div>
+                <tei:div type="section" xml:id="UT22084-090-008-listBibl-2">
                     <head type="section" tid="43">Sanskrit Sources</head>
                     <bibl xml:id="UT22084-090-008-116">Abhayākaragupta. <title xml:lang="Sa-Ltn">Niṣpannayogāvalī</title>. Edited and translated by
                         Lokesh Chandra and Nirmala Sharma. New Delhi: International Academy of Indian Culture and Aditya Prakashan, 2015.</bibl>
@@ -491,8 +492,8 @@
                     <bibl xml:id="UT22084-090-008-119">
                         <title xml:lang="Sa-Ltn">Mārīcī­kalpa­tantra</title>. Institute for the Advanced Study of World
                         Religions (IASWR) no. MBB II 112.</bibl>
-                </div>
-                <div type="section" xml:id="UT22084-090-008-listBibl-3">
+                </tei:div>
+                <tei:div type="section" xml:id="UT22084-090-008-listBibl-3">
                     <head type="section" tid="44">Reference Works</head>
                     <bibl xml:id="UT22084-090-008-120">Bhattacharyya, Benoytosh, ed. <title xml:lang="Sa-Ltn">Sādhanamālā</title>. Vol. 1. Baroda:
                         Oriental Institute, 1968.</bibl>
@@ -520,8 +521,8 @@
                             <ref target="http://www.rkts.org/index.php">Resources for
                         Kanjur and Tanjur Studies</ref>
                         </title>. University of Vienna. Accessed November 9, 2018. </bibl>
-                </div>
-                <div type="section" xml:id="UT22084-090-008-listBibl-4">
+                </tei:div>
+                <tei:div type="section" xml:id="UT22084-090-008-listBibl-4">
                     <head type="section" tid="45">Secondary Sources</head>
                     <bibl xml:id="UT22084-090-008-130">Bhattacharyya, Dipakchandra. “An Interesting Image of the Godess [<distinct>sic</distinct>]
                         Marici.” <title xml:lang="en">Proceedings of the Indian History Congress</title> 26, part 1 (1964): 91–94.</bibl>
@@ -541,9 +542,9 @@
                             and Impact of Her Cult on the Japanese Warrior</title>. Boston: Global Oriental, 2014.</bibl>
                     <bibl xml:id="UT22084-090-008-135">Hummel, Siegbert. “Notizen zur Ikonographie der Mārīcī.” <title xml:lang="la">Monumenta
                             Serica</title> 37 (1986–87): 227–32.</bibl>
-                </div>
-            </div>
-            <div type="glossary" status="excluded">
+                </tei:div>
+            </tei:div>
+            <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="glossary">
                 <list type="glossary">
                     <item>
                         <gloss type="term" xml:id="UT22084-090-008-176">
@@ -638,7 +639,7 @@
                             <term type="translationMain">Bari Rinchen Drakpa</term>
                             <term xml:lang="Bo-Ltn" n="1">ba ri rin chen grags pa </term>
                             <term xml:lang="bo" n="1">བ་རི་རིན་ཆེན་གྲགས་པ།</term>
-                            <term xml:lang="Sa-Ltn"/>
+                            
                             <note type="definition">
                                 <p>1040–1112, a prominent teacher, translator, and early throne-holder of Sa skya monastery in
                                     Tibet.</p>
@@ -684,7 +685,7 @@
                         </gloss>
                     </item>
                 </list>
-            </div>
+            </tei:div>
         </back>
     </text>
 </TEI>
