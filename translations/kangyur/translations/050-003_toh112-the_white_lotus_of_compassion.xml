@@ -36,7 +36,7 @@
         <sponsor xml:id="UT22084-050-003-33122">anonymous</sponsor>
       </titleStmt>
       <editionStmt>
-                <edition>v 1.2.17 <date>2024</date>
+                <edition>v 1.2.18 <date>2024</date>
                 </edition>
             </editionStmt>
       <publicationStmt>
@@ -235,6 +235,9 @@
                 </change>
                 <change who="#sameer" when="2024-02-15T07:29:14.349Z" type="text-version" status="1.2.17" xml:id="UT22084-050-003-33224">
                     <desc>Removed mislabeled Sanskrit attestations from the glossary</desc>
+                </change>
+                <change who="#andre" when="2024-03-02T18:30:06.659Z" type="text-version" status="1.2.18" xml:id="UT22084-050-003-33226">
+                    <desc>Glossary integration revised, activated in CG</desc>
                 </change>
       </revisionDesc>
     </fileDesc>
@@ -10474,7 +10477,7 @@
               Kanjur and Tanjur Studies</ref>, Universität Wien.</bibl>
         </div>
       </div>
-      <div type="glossary" status="excluded">
+      <div type="glossary">
         <list type="glossary">
           <item>
             <gloss xml:id="UT22084-050-003-2126" type="term" mode="match">
@@ -10663,16 +10666,15 @@
             </gloss>
                     </item>
           <item>
-                        <gloss type="term" xml:id="UT22084-050-003-2827">
-              <term type="translationMain">bhikṣuṇī</term>
-              <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">bhikṣuṇī</term>
-              <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">dge slong
-                ma</term>
-              <term xml:lang="bo" type="attestedSource" n="1" status="verified">དགེ་སློང་མ།</term>
-              <note type="definition">
-                <p>Fully ordained Buddhist nun.</p>
-              </note>
-            </gloss>
+                        <gloss xml:id="UT22084-050-003-2827" type="term" mode="match">
+                            <term type="translationMain">bhikṣuṇī</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">bhikṣuṇī</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">dge slong ma</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">དགེ་སློང་མ།</term>
+                            <note type="definition" rend="override">
+                                <p>Fully ordained Buddhist nun.</p>
+                            </note>
+                        </gloss>
                     </item>
           <item>
                         <gloss type="term" xml:id="UT22084-050-003-2143">
@@ -11805,29 +11807,26 @@
             </gloss>
                     </item>
           <item>
-                        <gloss type="term" xml:id="UT22084-050-003-2236">
-              <term type="translationMain">the state of subjugation</term>
-              <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">abhi­bhavāyatana</term>
-              <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">zil gyis gnon
-                pa’i skye mched</term>
-              <term xml:lang="bo" type="attestedSource" n="1" status="verified">ཟིལ་གྱིས་གནོན་པའི་སྐྱེ་མཆེད།</term>
-              <note type="definition">
-                <p>State when the power of meditation is more powerful than any perception, which
-                  therefore cannot disturb it.</p>
-              </note>
-            </gloss>
+                        <gloss xml:id="UT22084-050-003-2236" type="term" mode="match">
+                            <term type="translationMain">state of subjugation</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">abhi­bhavāyatana</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">zil gyis gnon pa’i skye mched</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">ཟིལ་གྱིས་གནོན་པའི་སྐྱེ་མཆེད།</term>
+                            <note type="definition">
+                                <p>State when the power of meditation is more powerful than any perception, which therefore cannot disturb it.</p>
+                            </note>
+                        </gloss>
                     </item>
           <item>
-                        <gloss type="term" xml:id="UT22084-050-003-2237">
-              <term type="translationMain">the state of totality</term>
-              <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">kṛtsnāyatana</term>
-              <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">zad par gyi skye
-                mched</term>
-              <term xml:lang="bo" type="attestedSource" n="1" status="verified">ཟད་པར་གྱི་སྐྱེ་མཆེད།</term>
-              <note type="definition">
-                <p>State of meditation in which one can transform whatever is perceived.</p>
-              </note>
-            </gloss>
+                        <gloss xml:id="UT22084-050-003-2237" type="term" mode="match">
+                            <term type="translationMain">state of totality</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">kṛtsnāyatana</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">zad par gyi skye mched</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">ཟད་པར་གྱི་སྐྱེ་མཆེད།</term>
+                            <note type="definition">
+                                <p>State of meditation in which one can transform whatever is perceived.</p>
+                            </note>
+                        </gloss>
                     </item>
           <item>
                         <gloss type="term" xml:id="UT22084-050-003-2238">
@@ -11862,19 +11861,25 @@
           <item>
                         <gloss type="term" xml:id="UT22084-050-003-2242">
               <term type="translationMain">upāsaka</term>
-              <term type="translationAlternative">upāsikā</term>
               <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">upāsaka</term>
-              <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">upāsikā</term>
               <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">dge
                 bsnyan</term>
-              <term xml:lang="bo" type="attestedSource" n="1" status="verified">དགེ་བསྙན།</term>
-              <term xml:lang="Bo-Ltn" type="attestedSource" n="2" status="verified">dge bsnyan
-                ma</term>
-              <term xml:lang="bo" type="attestedSource" n="2" status="verified">དགེ་བསྙན་མ།</term>
-              <note type="definition">
-                <p>Someone who has taken the layperson’s vows.</p>
-              </note>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">དགེ་བསྙན།</term>
+            <note type="definition">
+                <p>An unordained male practitioner who observes the five precepts not to kill, lie, steal, be intoxicated, or commit sexual misconduct.</p>
+            </note>
             </gloss>
+                    </item>
+          <item>
+                        <gloss type="term" xml:id="UT22084-050-003-33225">
+            <term type="translationMain">upāsikā</term>
+            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">upāsikā</term>
+            <term xml:lang="Bo-Ltn" type="attestedSource" n="2" status="verified">dge bsnyan ma</term>
+            <term xml:lang="bo" type="attestedSource" n="2" status="verified">དགེ་བསྙན་མ།</term>
+            <note type="definition">
+              <p>An unordained female practitioner who observes the five precepts not to kill, lie, steal, be intoxicated, or commit sexual misconduct.</p>
+            </note>
+          </gloss>
                     </item>
           <item>
                         <gloss type="term" xml:id="UT22084-050-003-2243">
@@ -13283,16 +13288,15 @@
             </gloss>
                     </item>
           <item>
-                        <gloss type="person" xml:id="UT22084-050-003-2349">
-              <term type="translationMain">Gandhapadma</term>
-              <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">gandhapadma</term>
-              <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">spos kyi pad
-                ma</term>
-              <term xml:lang="bo" type="attestedSource" n="1" status="verified">སྤོས་ཀྱི་པད་མ།</term>
-              <note type="definition">
-                <p>A buddha in a previous eon when Jambudvīpa was called Arajamerujugupsita.</p>
-              </note>
-            </gloss>
+                        <gloss xml:id="UT22084-050-003-2349" type="person" mode="match">
+                            <term type="translationMain">Gandhapadma</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">gandhapadma</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">spos kyi pad ma</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">སྤོས་ཀྱི་པད་མ།</term>
+                            <note type="definition">
+                                <p>A buddha in a previous eon when the Sahā realm was called Arajamerujugupsita.</p>
+                            </note>
+                        </gloss>
                     </item>
           <item>
                         <gloss type="person" xml:id="UT22084-050-003-2350">
@@ -14545,23 +14549,15 @@
             </gloss>
                     </item>
           <item>
-                        <gloss type="person" xml:id="UT22084-050-003-2440">
-              <term type="translationMain">Mahāsthāmaprāpta</term>
-              <term type="translationAlternative">Mahāsthānaprāpta; gnas chen thob</term>
-              <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">mahāsthāmaprāpta</term>
-              <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">mthu chen
-                thob</term>
-              <term xml:lang="bo" type="attestedSource" n="1" status="verified">མཐུ་ཆེན་ཐོབ།</term>
-              <note type="definition">
-                <p>One of the two principal bodhisattvas in Sukhāvatī and prominent in Chinese
-                  Buddhism. In Tibetan Buddhism he is identified with Vajrapāṇi, though they are
-                  separate bodhisattvas in the sūtras. The second of the thousand sons of King
-                  Araṇemin, on becoming a bodhisattva, is given the name Mahāsthāmaprāpta, and as
-                  such in the future will be in Sukhāvatī as that bodhisattva when his father
-                  becomes the Buddha Amitābha. He will eventually become the Buddha
-                  Supra­tiṣṭhita­guṇa­maṇikūṭa­rāja in that realm.</p>
-              </note>
-            </gloss>
+                        <gloss xml:id="UT22084-050-003-2440" type="person" mode="match">
+                            <term type="translationMain">Mahāsthāmaprāpta</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">mahāsthāmaprāpta</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">mthu chen thob</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">མཐུ་ཆེན་ཐོབ།</term>
+                            <note type="definition">
+                                <p>One of the two principal bodhisattvas in Sukhāvatī and prominent in Chinese Buddhism. In Tibetan Buddhism he is identified with Vajrapāṇi, though they are separate bodhisattvas in the sūtras. The second of the thousand sons of King Araṇemin, on becoming a bodhisattva, is given the name Mahāsthāmaprāpta, and as such in the future will be in Sukhāvatī as that bodhisattva when his father becomes the Buddha Amitābha. He will eventually become the Buddha Supra­tiṣṭhita­guṇa­maṇikūṭa­rāja in that realm.</p>
+                            </note>
+                        </gloss>
                     </item>
           <item>
                         <gloss type="person" xml:id="UT22084-050-003-2441">
@@ -18877,16 +18873,15 @@
             </gloss>
           </item>
           <item>
-                        <gloss type="place" xml:id="UT22084-050-003-2763" mode="marked">
-              <term type="translationMain">Meruprabha</term>
-              <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">meruprabha</term>
-              <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">lhun po
-                ’od</term>
-              <term xml:lang="bo" type="attestedSource" n="1" status="verified">ལྷུན་པོ་འོད།</term>
-              <note type="definition">
-                <p>The name of an eastern buddha realm that Śākyamuni states he can see.</p>
-              </note>
-            </gloss>
+                        <gloss xml:id="UT22084-050-003-2763" type="place" mode="marked">
+                            <term type="translationMain">Meruprabha</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">meruprabha</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">lhun po ’od</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">ལྷུན་པོ་འོད།</term>
+                            <note type="definition">
+                                <p>The name of an eastern buddha realm that the Buddha Śākyamuni can see.</p>
+                            </note>
+                        </gloss>
                     </item>
           <item>
                         <gloss type="place" xml:id="UT22084-050-003-2764">
@@ -19087,17 +19082,15 @@
             </gloss>
                     </item>
           <item>
-                        <gloss type="place" xml:id="UT22084-050-003-2783">
-              <term type="translationMain">Rūḍhavaḍa</term>
-              <term type="translationAlternative">Vaḍa, Pravaḍa</term>
-              <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">rūḍhavaḍa</term>
-              <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">shing pa ta skye
-                ba</term>
-              <term xml:lang="bo" type="attestedSource" n="1" status="verified">ཤིང་པ་ཏ་སྐྱེ་བ།</term>
-              <note type="definition">
-                <p>A name of Jambudvīpa in an earlier eon.</p>
-              </note>
-            </gloss>
+                        <gloss xml:id="UT22084-050-003-2783" type="place" mode="match">
+                            <term type="translationMain">Rūḍhavaḍa</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">rūḍhavaḍa</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">shing pa ta skye ba</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">ཤིང་པ་ཏ་སྐྱེ་བ།</term>
+                            <note type="definition">
+                                <p>A name of Jambudvīpa in an earlier eon.</p>
+                            </note>
+                        </gloss>
                     </item>
           <item>
                         <gloss type="place" xml:id="UT22084-050-003-2784">
@@ -19380,16 +19373,15 @@
             </gloss>
                     </item>
           <item>
-                        <gloss type="place" xml:id="UT22084-050-003-2813">
-              <term type="translationMain">Vaḍa</term>
-              <term type="translationAlternative">Rūḍhavaḍa, Pravaḍa</term>
-              <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">vaḍa</term>
-              <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">dga’ ba</term>
-              <term xml:lang="bo" type="attestedSource" n="1" status="verified">དགའ་བ།</term>
-              <note type="definition">
-                <p>A name of Jambudvīpa in an earlier eon.</p>
-              </note>
-            </gloss>
+                        <gloss xml:id="UT22084-050-003-2813" type="place" mode="match">
+                            <term type="translationMain">Vaḍa</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">vaḍa</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">dga’ ba</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">དགའ་བ།</term>
+                            <note type="definition">
+                                <p>A name of a Jambudvīpa in an earlier eon.</p>
+                            </note>
+                        </gloss>
                     </item>
           <item>
                         <gloss type="place" xml:id="UT22084-050-003-2814">
@@ -19642,20 +19634,15 @@
             </gloss>
                     </item>
           <item>
-                        <gloss type="term" xml:id="UT22084-050-003-33179">
-              <term type="translationMain">eight unfavorable states </term>
-              <term xml:lang="Bo-Ltn" n="1">mi khom pa brgyad </term>
-                            <term xml:lang="bo" n="1">མི་ཁོམ་པ་བརྒྱད།</term>
-              <term xml:lang="Sa-Ltn">aṣṭākṣaṇa</term>
-              <note type="definition">
-                                <p>A set of circumstances that do not provide the freedom to
-                  practice the Buddhist path: being born in the realms of (1) the hells, (2) pretas,
-                  (3) animals, and (4) long-lived gods; in the human realm among (5) barbarians or
-                  (6) people with wrong views and (7) in places where the Buddhist teachings do not
-                  exist; and (8) without adequate faculties to understand the teachings where they
-                  do exist.</p>
+                        <gloss xml:id="UT22084-050-003-33179" type="term" mode="match">
+                            <term type="translationMain">eight unfavorable states</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified">aṣṭākṣaṇa</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">mi khom pa brgyad</term>
+                            <term xml:lang="bo" type="attestedSource" n="1">མི་ཁོམ་པ་བརྒྱད།</term>
+                            <note type="definition" rend="override">
+                                <p>A set of circumstances that do not provide the freedom to practice the Buddhist path: being born in the realms of (1) the hells, (2) pretas, (3) animals, and (4) long-lived gods; in the human realm among (5) barbarians or (6) people with wrong views and (7) in places where the Buddhist teachings do not exist; and (8) without adequate faculties to understand the teachings where they do exist.</p>
                             </note>
-            </gloss>
+                        </gloss>
                     </item>
           <item>
                         <gloss xml:id="UT22084-050-003-33180" type="term" mode="match">
