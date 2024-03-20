@@ -1,0 +1,967 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schema/current/translation.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+        <teiHeader>
+                <fileDesc>
+                        <titleStmt>
+                                <title type="mainTitle" xml:lang="Bo-Ltn">tshangs pa’i dpal lung
+                                        bstan pa</title>
+                                <title type="mainTitle" xml:lang="bo">ཚངས་པའི་དཔལ་ལུང་བསྟན་པ།</title>
+                                <title type="mainTitle" xml:lang="en">The Prediction for
+                                        Brahmaśrī</title>
+                                <title type="mainTitle" xml:lang="Sa-Ltn">Brahma­śrīvyākaraṇa</title>
+                                <title type="longTitle" xml:lang="bo">འཕགས་པ་ཚངས་པའི་དཔལ་ལུང་བསྟན་པ་ཞེས་བྱ་བ་ཐེག་པ་ཆེན་པོའི་མདོ།</title>
+                                <title type="longTitle" xml:lang="Bo-Ltn">’phags pa tshangs pa’i
+                                        dpal lung bstan pa zhes bya ba theg pa chen po’i mdo</title>
+                                <title type="longTitle" xml:lang="en">The Noble Mahāyāna Sūtra “The
+                                        Prediction for Brahmaśrī”</title>
+                                <title type="longTitle" xml:lang="Sa-Ltn">Ārya­brahma­śrīvyākaraṇa­nāma­mahāyāna­sūtra</title>
+                                <title type="otherTitle" xml:lang="zh"/>
+                                <author xml:id="UT22084-061-009-1" role="translatorMain"><!--Translated
+                                        by 84000 Translation Team<lb/>under the patronage and
+                                        supervision of 84000: Translating the Words of the
+                                        Buddha--></author>
+                                <author role="translatorEng" xml:id="UT22084-061-009-2">Sophie
+                                        McGrath</author>
+                                <editor role="projectEditor" xml:id="UT22084-061-009-3">David
+                                        Fiordalis</editor>
+                                <editor role="copyEditor" xml:id="UT22084-061-009-24">Dawn
+                                        Collins</editor>
+                                <editor role="projectEditor" xml:id="UT22084-061-009-34">George
+                                        FitzHerbert</editor>
+                                <editor role="TEImarkupEditor" xml:id="UT22084-061-009-45">Martina
+                                        Cotter</editor>
+                        </titleStmt>
+                        <editionStmt>
+                <edition>v 1.0.1 <date>2024</date>
+                </edition>
+            </editionStmt>
+                        <publicationStmt>
+                                <publisher>
+                    <name>84000: Translating the Words of the Buddha</name>
+                                        is a global non-profit initiative to translate all the
+                                        Buddha’s words into modern languages, and to make them
+                                        available to everyone. </publisher>
+                                <availability status="1.a">
+                                        <licence>
+                                                <graphic url="http://i.creativecommons.org/l/by-nc-nd/2.0/88x31.png"/>
+                                                <p>This work is provided under the protection of a
+                                                  Creative Commons CC BY-NC-ND (Attribution -
+                                                  Non-commercial - No-derivatives) 3.0 copyright. It
+                                                  may be copied or printed for fair use, but only
+                                                  with full attribution, and not for commercial
+                                                  advantage or personal compensation. For full
+                                                  details, see the Creative Commons license.</p>
+                                        </licence>
+                                </availability>
+                                <idno xml:id="UT22084-061-009"/>
+                                <note>An early mistake in the assigning of UT numbers within the
+                                        84000 project means that these ids diverge slightly from the
+                                        standard logic.</note>
+                                <date>2023-12-02</date>
+                        </publicationStmt>
+                        <sourceDesc>
+                                <bibl key="toh189" type="text">
+                                        <ref>Toh 189</ref>
+                                        <biblScope>Degé Kangyur, vol. 61 (mdo sde, tsa), folios
+                                                199.b–201.a</biblScope>
+                                        <location work="UT4CZ5369" count-pages="4">
+                                                <volume number="61" start-page="398" end-page="401"/>
+                                        </location>
+                                        <idno parent-id="O1JC114941JC14668" work="http://read.84000.co/sections"/>
+                                        <idno source-id="O1JC114941JC11809" work="W22084"/>
+                                </bibl>
+                        </sourceDesc>
+                        <notesStmt/>
+                        <revisionDesc>
+                                <change who="#admin" when="2019-12-20T12:56:48.575Z" type="text-version" status="v 0.0.1" xml:id="UT22084-061-009-4">
+                                        <desc>Automated version increment</desc>
+                                </change>
+                                <change who="#line-tofte" when="2023-03-22T14:10:50.859Z" type="translation-status" status="" xml:id="UT22084-061-009-5">
+                                        <desc/>
+                                </change>
+                                <change who="#line-tofte" when="2023-03-22T14:10:50.859Z" type="text-version" status="0.0.2" xml:id="UT22084-061-009-6">
+                                        <desc>Auto (update-publication-status)</desc>
+                                </change>
+                                <change who="#line-tofte" when="2023-03-22T14:11:42.636Z" type="text-version" status="0.0.3" xml:id="UT22084-061-009-7">
+                                        <desc>Auto (update-contributors)</desc>
+                                </change>
+                                <change who="#line-tofte" when="2023-04-17T07:14:53.544Z" type="translation-status" status="3" xml:id="UT22084-061-009-8">
+                                        <desc>3</desc>
+                                </change>
+                                <change who="#line-tofte" when="2023-04-17T07:14:53.544Z" type="text-version" status="0.0.4" xml:id="UT22084-061-009-9">
+                                        <desc>Auto (update-publication-status)</desc>
+                                </change>
+                                <change who="#line-tofte" when="2023-04-17T07:15:28.591Z" type="text-version" status="0.0.5" xml:id="UT22084-061-009-10">
+                                        <desc>Auto (update-contributors)</desc>
+                                </change>
+                                <change who="#line-tofte" when="2023-05-30T15:11:40.167Z" type="translation-status" status="2.h" xml:id="UT22084-061-009-11">
+                                        <desc>2.h</desc>
+                                </change>
+                                <change who="#line-tofte" when="2023-05-30T15:11:40.167Z" type="text-version" status="0.0.6" xml:id="UT22084-061-009-12">
+                                        <desc>Auto (update-publication-status)</desc>
+                                </change>
+                                <change who="#line-tofte" when="2023-06-13T14:13:38.254Z" type="translation-status" status="2.g" xml:id="UT22084-061-009-13">
+                                        <desc>2.g</desc>
+                                </change>
+                                <change who="#line-tofte" when="2023-06-13T14:13:38.254Z" type="text-version" status="0.0.7" xml:id="UT22084-061-009-14">
+                                        <desc>Auto (update-publication-status)</desc>
+                                </change>
+                                <change who="#line-tofte" when="2023-06-13T14:14:12.554Z" type="text-version" status="0.0.8" xml:id="UT22084-061-009-15">
+                                        <desc>Auto (update-contributors)</desc>
+                                </change>
+                                <change who="#line-tofte" when="2023-07-17T08:43:13.805Z" type="translation-status" status="2.f" xml:id="UT22084-061-009-16">
+                                        <desc>2.f</desc>
+                                </change>
+                                <change who="#line-tofte" when="2023-07-17T08:43:13.805Z" type="text-version" status="0.0.9" xml:id="UT22084-061-009-17">
+                                        <desc>Auto (update-publication-status)</desc>
+                                </change>
+                                <change who="#admin" when="2023-07-30T22:39:48.323Z" type="text-version" status="0.0.10" xml:id="UT22084-061-009-18">
+                                        <desc>TEI migrated to 2.19.0</desc>
+                                </change>
+                                <change who="#line-tofte" when="2023-09-08T09:54:11.88Z" type="translation-status" status="2.e" xml:id="UT22084-061-009-19">
+                                        <desc>2.e</desc>
+                                </change>
+                                <change who="#line-tofte" when="2023-09-08T09:54:11.88Z" type="text-version" status="0.0.11" xml:id="UT22084-061-009-20">
+                                        <desc>Auto (update-publication-status)</desc>
+                                </change>
+                                <change who="#line-tofte" when="2023-09-08T09:54:45.251Z" type="text-version" status="0.0.12" xml:id="UT22084-061-009-25">
+                                        <desc>Auto (update-contributors)</desc>
+                                </change>
+                                <change who="#line-tofte" when="2023-10-10T08:55:36.38Z" type="translation-status" status="2.d" xml:id="UT22084-061-009-26">
+                                        <desc>2.d</desc>
+                                </change>
+                                <change who="#line-tofte" when="2023-10-10T08:55:36.38Z" type="text-version" status="0.0.13" xml:id="UT22084-061-009-27">
+                                        <desc>Auto (update-publication-status)</desc>
+                                </change>
+                                <change who="#line-tofte" when="2023-10-16T08:39:49.636Z" type="translation-status" status="2.c" xml:id="UT22084-061-009-28">
+                                        <desc>2.c</desc>
+                                </change>
+                                <change who="#line-tofte" when="2023-10-16T08:39:49.636Z" type="text-version" status="0.0.14" xml:id="UT22084-061-009-29">
+                                        <desc>Auto (update-publication-status)</desc>
+                                </change>
+                                <change who="#line-tofte" when="2023-11-16T14:30:36.857Z" type="text-version" status="0.0.15" xml:id="UT22084-061-009-35">
+                                        <desc>Auto (update-contributors)</desc>
+                                </change>
+                                <change who="#line-tofte" when="2023-11-20T15:02:59.6Z" type="translation-status" status="2.b" xml:id="UT22084-061-009-36">
+                                        <desc>2.b</desc>
+                                </change>
+                                <change who="#line-tofte" when="2023-11-20T15:02:59.6Z" type="text-version" status="0.0.16" xml:id="UT22084-061-009-37">
+                                        <desc>Auto (update-publication-status)</desc>
+                                </change>
+                                <change who="#line-tofte" when="2023-12-01T12:05:25.814Z" type="translation-status" status="2.a" xml:id="UT22084-061-009-38">
+                                        <desc>2.a</desc>
+                                </change>
+                                <change who="#line-tofte" when="2023-12-01T12:05:25.814Z" type="text-version" status="0.0.17" xml:id="UT22084-061-009-39">
+                                        <desc>Auto (update-publication-status)</desc>
+                                </change>
+                                <change who="#line-tofte" when="2023-12-01T12:05:57.049Z" type="text-version" status="0.0.18" xml:id="UT22084-061-009-46">
+                                        <desc>Auto (update-contributors)</desc>
+                                </change>
+                <change who="#line-tofte" when="2023-12-05T12:54:41.369Z" type="translation-status" status="2" xml:id="UT22084-061-009-147">
+                    <desc>2</desc>
+                </change>
+                <change who="#line-tofte" when="2023-12-05T12:54:41.369Z" type="text-version" status="0.0.2" xml:id="UT22084-061-009-148">
+                    <desc>Auto (update-publication-status)</desc>
+                </change>
+                <change who="#andre" when="2024-03-20T16:54:37.075Z" type="translation-status" status="1.a" xml:id="UT22084-061-009-149">
+                    <desc>1.a</desc>
+                </change>
+                <change who="#andre" when="2024-03-20T16:54:37.075Z" type="text-version" status="1.0.0" xml:id="UT22084-061-009-150">
+                    <desc>First published version</desc>
+                </change>
+                <change who="#konchog" when="2024-03-20T19:27:45.534Z" type="text-version" status="1.0.1" xml:id="UT22084-061-009-151">
+                    <desc>Many fixes throughout all sections.</desc>
+                </change>
+                        </revisionDesc>
+                </fileDesc>
+        </teiHeader>
+        <text>
+                <!--Note the "Contents" outline from the Word DOCX has not been included in the script. If the 
+                    Outline to the text is quite complex, it is recommended that you paste the outlined contents from the DOCX here as a comment for
+                    markup's reference. The actual table of contents will be generated in the Reading Room by the parser.-->
+                <front>
+                        <div type="summary">
+                                <head type="summary" tid="1">Summary</head>
+                                <milestone unit="chunk" xml:id="UT22084-061-009-47"/>
+                                <p tid="2">
+                    <title xml:lang="en">The Prediction for Brahmaśrī</title>
+                                        features a brief encounter between the Buddha, out on his
+                                        daily alms round, and a group of children playing on the
+                                        outskirts of Śrāvastī. A boy named Brahmaśrī offers the
+                                        Buddha the pavilion he has made of sand or dirt. The Blessed
+                                        One accepts it and transforms it into one made of precious
+                                        metals and jewels. Seeing this wonder, Brahmaśrī makes a vow
+                                        to become a buddha himself in the future. This prompts the
+                                        Buddha to smile and predict Brahmaśrī’s future
+                                        awakening.</p>
+                        </div>
+                        <div type="acknowledgment">
+                                <head type="acknowledgment" tid="3">Acknowledgements</head>
+                                <milestone unit="chunk" xml:id="UT22084-061-009-48"/>
+                                <p tid="4">This publication was completed under the patronage and
+                                        supervision of 84000: Translating the Words of the
+                                        Buddha.</p>
+                                <milestone unit="chunk" xml:id="UT22084-061-009-49"/>
+                                <p tid="5">The text was translated, edited, and introduced by the
+                                        84000 translation team. Sophie McGrath produced a draft of
+                                        the translation and introduction with input from Laura
+                                        Goetz. David Fiordalis revised and edited the translation
+                                        and introduction. Dawn Collins copyedited the text. Martina
+                                        Cotter was in charge of the digital publication process.</p>
+                        </div>
+                        <div type="introduction">
+                                <head type="introduction" tid="8">Introduction</head>
+                                <div type="section" xml:id="UT22084-061-009-introduction-1">
+                                        <milestone unit="chunk" xml:id="UT22084-061-009-52"/>
+                                        <p tid="10">
+                        <title xml:lang="en">The Prediction for
+                                                  Brahmaśrī</title> is a short dialogue that
+                                                features an encounter between the Buddha, out on his
+                                                daily alms round, and a group of children playing on
+                                                the outskirts of Śrāvastī. One precocious boy named
+                                                Brahmaśrī offers the Buddha the pavilion he has made
+                                                of sand or dirt. The Blessed One accepts it and then
+                                                transforms it into one made of precious metals and
+                                                jewels. Seeing this wonder, the boy Brahmaśrī makes
+                                                a vow to become a buddha himself in the future, and
+                                                this prompts the Buddha to smile and give a
+                                                prediction of Brahmaśrī’s future awakening.</p>
+                                        <milestone unit="chunk" xml:id="UT22084-061-009-53"/>
+                                        <p tid="11">In the introduction to his translation of
+                                                this sūtra,<note place="end" xml:id="UT22084-061-009-54"> Skilling 2021, pp.
+                                                        279–80 and note 600. He also points to a stone
+                                                  relief from Gandhāra that is said to depict King
+                                                  Kaniṣka making an offering of sand. Skilling also
+                                                  notes that <title xml:lang="en">The Prediction for
+                                                  Brahmaśrī</title> was translated into French in
+                                                  the nineteenth century by the scholar Léon Feer
+                                                  and published, first in Feer 1865 and then again
+                                                  in Feer 1883. </note> Peter Skilling points out a
+                                                verse in the <title xml:lang="en">Lotus
+                                                  Sūtra</title> (Toh 113)<note place="end" xml:id="UT22084-061-009-142">
+                                                  <title xml:lang="en">
+                                <ref target="http://read.84000.co/translation/toh113.html">The White Lotus of the Good Dharma</ref>
+                            </title>,
+                                                  Toh 113, translated by Peter Alan Roberts
+                                                  (2023).</note> in which the Buddha seems to
+                                                describe similar events to those that occur in this
+                                                sūtra:</p>
+                                        <milestone unit="chunk" xml:id="UT22084-061-009-55"/>
+                                        <lg tid="12">
+                                                <l>“And those children playing here and there</l>
+                                                <l>Who pile up sand </l>
+                                                <l>So as to create stūpas of the jinas:</l>
+                                                <l>They will all of them attain enlightenment.”<note place="end" xml:id="UT22084-061-009-56">
+                                                  <title xml:lang="en">The White Lotus of the Good
+                                                  Dharma</title> (2018), <ptr target="#UT22084-051-001-523"/>.</note>
+                        </l>
+                                        </lg>
+                                        <milestone unit="chunk" xml:id="UT22084-061-009-57"/>
+                                        <p tid="13">The above verse is one of two that are quoted
+                                                together in Śāntideva’s compendium of Buddhist
+                                                doctrine, <title xml:lang="en">The Training
+                                                  Anthology</title> (<title xml:lang="Sa-Ltn">Śikṣāsamuccaya</title>), in the context of a
+                                                brief discussion about how simple acts of faith may
+                                                culminate in the incredible result of awakening as a
+                                                buddha. For Śāntideva, this illustrates that one
+                                                should be careful not to disrespect even ordinary
+                                                  people.<note place="end" xml:id="UT22084-061-009-58"> For an English
+                                                          translation, see Goodman 2016, pp. 95–96. </note>
+                                                In the narrative of <title xml:lang="en">The
+                                                  Prediction for Brahmaśrī</title>, the children are
+                                                not building stūpas out of sand, or, perhaps more
+                                                accurately, dirt (Tib. <foreign xml:lang="Bo-Ltn" type="term">sa rdul</foreign>, Skt. <foreign xml:lang="Sa-Ltn" type="term">pāṃsu</foreign>);<note place="end" xml:id="UT22084-061-009-59"> The verses in the
+                                                  <title xml:lang="en">Lotus Sūtra</title> preserved
+                                                  in Sanskrit contain words for both sand and dirt,
+                                                  <foreign xml:lang="Sa-Ltn" type="term">sikatā</foreign> and <foreign xml:lang="Sa-Ltn" type="term">pāṃsu</foreign> (or <foreign xml:lang="Sa-Ltn" type="term">pāṃśu</foreign>),
+                                                  respectively. The former term for sand is
+                                                  typically translated into Tibetan with <foreign xml:lang="Bo-Ltn" type="term">bye
+                                                  ma</foreign>, as it is in the case of the <title xml:lang="en">Lotus Sūtra</title>, whereas the
+                                                  Tibetan translation of <foreign xml:lang="Sa-Ltn" type="term">pāṃsu</foreign>, dirt or dust, is
+                                                  typically <foreign xml:lang="Bo-Ltn" type="term">sa rdul</foreign>, and it is this latter term
+                                                  that is used throughout <title xml:lang="en">The
+                                                  Prediction for Brahmaśrī</title>. In any case, the
+                                                  city of Śrāvastī is said to have been situated on
+                                                  the banks of the river Aciravatī, which ran dry
+                                                  during the hot season, making it easy to imagine
+                                                  the children in this sūtra playing in the sandy
+                                                  ground outside the city.</note> they are building
+                                                houses, surrounding walls, and pavilions. However,
+                                                the main theme of the narrative—and the image
+                                                brought to mind—is similar to that found in the
+                                                passage in the <title xml:lang="en">Lotus
+                                                  Sūtra</title>.</p>
+                                        <milestone unit="chunk" xml:id="UT22084-061-009-60"/>
+                                        <p tid="14">This theme of a simple act of generosity, faith,
+                                                and devotion to the Buddha generating incredible,
+                                                inconceivable results is a common one found in
+                                                narratives throughout various Buddhist traditions.
+                                                For instance, in <title xml:lang="en">The Hundred
+                                                  Buddhist Tales</title> (<title xml:lang="Sa-Ltn">Avadānaśataka</title>) there are numerous stories
+                                                that are quite similar to the one told in <title xml:lang="en">The Prediction for
+                                                Brahmaśrī</title>, which also feature the Buddha’s
+                                                extraordinary powers and his wondrous smile.<note place="end" xml:id="UT22084-061-009-61"> For a
+                                                  translation of one such story and on the theme of
+                                                  the Buddha’s smile, see Fiordalis 2021. For more
+                                                  translations from the same collection of stories,
+                                                  see Appleton 2020.</note> So, while its longer
+                                                title in the Kangyur describes it as a
+                                                Mahāyāna sūtra, the narrative type, its themes, and its
+                                                motifs are not unique to the Mahāyāna tradition.</p>
+                                        <milestone unit="chunk" xml:id="UT22084-061-009-62"/>
+                                        <p tid="15">
+                        <title xml:lang="en">The Prediction for
+                                                  Brahmaśrī</title> is found in the General Sūtra
+                                                section (<foreign xml:lang="Bo-Ltn" type="term">mdo
+                                                  sde</foreign>) of the various Kangyurs.
+                                                Most of its colophons indicate that it was
+                                                translated by the Indian scholar Viśuddhasiṃha and
+                                                the translator Bandé Gewa Pal and edited by
+                                                Vidyākarasiṃha and Devacandra, all of whom are known
+                                                to have been active during the height of the Tibetan
+                                                imperial patronage of Buddhism in the late eighth
+                                                and early ninth centuries.<note place="end" xml:id="UT22084-061-009-63"> The Phukdrak Kangyur
+                                                  version carries a variant colophon, which states
+                                                  that it was translated by Viśuddhasiṃha and Gélo
+                                                  (<foreign xml:lang="Bo-Ltn" type="term">dge
+                                                  blo</foreign>) and revised by Lhayi Dawa (<foreign xml:lang="Bo-Ltn" type="term">lha’i zla
+                                                  ba</foreign>). The name Lhayi Dawa is the Tibetan
+                                                  equivalent of Devacandra, so as Skilling has
+                                                  observed, “There is some degree of agreement among
+                                                  the records.” Skilling 2021, p. 278.</note> That it
+                                                was translated into Tibetan during the early
+                                                translation period is further supported by the fact
+                                                that its title is listed in the Phangthangma and
+                                                Denkarma imperial catalogs of translated texts.<note place="end" xml:id="UT22084-061-009-64">
+                                                  Herrmann-Pfandt 2008, p. 121.</note> There is no
+                                                known extant Sanskrit version of this sūtra and
+                                                there is no known Chinese translation. </p>
+                                        <milestone unit="chunk" xml:id="UT22084-061-009-65"/>
+                                        <p tid="16">This English translation is based on the Tibetan
+                                                translation in the Degé Kangyur in consultation with
+                                                the Pedurma (<title xml:lang="Bo-Ltn">dpe bsdur
+                                                  ma</title>) Comparative Edition. The Tibetan text
+                                                was also compared with the Stok Palace and Phukdrak
+                                                editions of the Kangyur, but none of the differences
+                                                found therein were deemed noteworthy. </p>
+                                </div>
+                        </div>
+                </front>
+                <body>
+                        <div type="translation">
+                                <head type="translation"> The Translation </head>
+                                <head type="titleHon" tid="17">The Noble Mahāyāna Sūtra</head>
+                                <head type="titleMain" tid="18">The Prediction for
+                                        Brahmaśrī</head>
+                                <div type="section" xml:id="UT22084-061-009-section-1">
+                                        <milestone unit="chunk" xml:id="UT22084-061-009-68"/>
+                                        <p tid="22">
+                        <ref cRef="F.199.b" type="folio" xml:id="UT22084-061-009-143"/> Homage to all
+                                                buddhas and bodhisattvas!</p>
+                                        <lb/>
+                                        <milestone unit="chunk" xml:id="UT22084-061-009-71"/>
+                                        <p tid="25">Thus did I hear at one time. The Blessed One was
+                                                dwelling in Prince Jeta’s Grove, Anāthapiṇḍada’s
+                                                Park, near Śrāvastī, together with a great assembly
+                                                of monks. At that time, one morning the Blessed One
+                                                put on his lower robe and his upper robe, took his
+                                                begging bowl, and walked toward the city of Śrāvastī
+                                                to collect alms. <ref cRef="F.200.a" type="folio" xml:id="UT22084-061-009-144"/>
+                    </p>
+                                        <milestone unit="chunk" xml:id="UT22084-061-009-72"/>
+                                        <p tid="26">At that same time, on the outskirts of Śrāvastī,
+                                                there was a group of children sitting and playing
+                                                with houses of sand, surrounding walls of sand, and
+                                                pavilions of sand. The group of children saw the
+                                                Blessed One approaching from afar. As soon as they
+                                                saw him, they were elated, delighted, and glad at
+                                                heart, and they continued sitting there and
+                                                playing.</p>
+                                        <milestone unit="chunk" xml:id="UT22084-061-009-73"/>
+                                        <p tid="27">Then, out of compassion for those children, the
+                                                Blessed One went over to where they were sitting and
+                                                playing. Among the children, there was one boy named
+                                                Brahmaśrī, who bowed at the feet of the Blessed One
+                                                and sat right down in front of him.</p>
+                                        <milestone unit="chunk" xml:id="UT22084-061-009-74"/>
+                                        <p tid="28">Even though he already knew what they would say,
+                                                the Blessed One asked the children, “What are you
+                                                doing, children?”</p>
+                                        <milestone unit="chunk" xml:id="UT22084-061-009-75"/>
+                                        <p tid="29">“Blessed One,” the children replied, “we are
+                                                sitting here playing with these houses of sand,
+                                                these surrounding walls of sand, and these pavilions
+                                                of sand.”</p>
+                                        <milestone unit="chunk" xml:id="UT22084-061-009-76"/>
+                                        <p tid="30">The boy Brahmaśrī then said to the Blessed One,
+                                                “Out of compassion for me, Blessed One, please
+                                                accept this pavilion of sand.”</p>
+                                        <milestone unit="chunk" xml:id="UT22084-061-009-77"/>
+                                        <p tid="31">The Blessed One knew the lofty ambition and
+                                                exuberance in the mind of the boy Brahmaśrī and
+                                                accepted the pavilion of sand out of compassion for
+                                                him.</p>
+                                        <milestone unit="chunk" xml:id="UT22084-061-009-78"/>
+                                        <p tid="32">Then, through the power of the Buddha, the
+                                                pavilion of sand was instantaneously transformed
+                                                into a pavilion made of the seven precious jewels,
+                                                and it stood there right in front of the Blessed
+                                                One. On its eastern side were 84,000 pillars of
+                                                gold; on its southern side were 84,000 pillars of
+                                                silver; on its western side were 84,000 pillars of
+                                                beryl; and on its northern side were 84,000 pillars
+                                                of crystal. <ref cRef="F.200.b" type="folio" xml:id="UT22084-061-009-145"/>
+                    </p>
+                                        <milestone unit="chunk" xml:id="UT22084-061-009-79"/>
+                                        <p tid="33">When the boy Brahmaśrī saw this wondrous display
+                                                of extraordinary power, he became even more elated.
+                                                The most immense joy welled up inside him, and he
+                                                addressed the Blessed One with these verses:</p>
+                                        <milestone unit="chunk" xml:id="UT22084-061-009-80"/>
+                                        <lg tid="34">
+                                                <l>“O, the World Protector has displayed</l>
+                                                <l>The immense expanse of his extraordinary
+                                                  power!</l>
+                                                <l>The Buddha has displayed his extraordinary
+                                                  power</l>
+                                                <l>Out of compassion for me alone!</l>
+                                        </lg>
+                                        <milestone unit="chunk" xml:id="UT22084-061-009-81"/>
+                                        <lg tid="35">
+                                                <l>“This offering of a pavilion of sand,</l>
+                                                <l>Which I made to the great sage, </l>
+                                                <l>Has become something made of jewels!</l>
+                                                <l>O, the Buddha is inconceivable!</l>
+                                        </lg>
+                                        <milestone unit="chunk" xml:id="UT22084-061-009-82"/>
+                                        <lg tid="36">
+                                                <l>“O, O, a field such as this one,</l>
+                                                <l>A field of a buddha, cannot be surpassed!</l>
+                                                <l>The blind, those with loss of vision, and</l>
+                                                <l>Those with little wisdom do not know it.</l>
+                                        </lg>
+                                        <milestone unit="chunk" xml:id="UT22084-061-009-83"/>
+                                        <lg tid="37">
+                                                <l>“Best of those who walk on two feet, </l>
+                                                <l>I aspire to achieve awakening, </l>
+                                                <l>Having obtained this field of beings, </l>
+                                                <l>This opportunity so hard to obtain.</l>
+                                        </lg>
+                                        <milestone unit="chunk" xml:id="UT22084-061-009-84"/>
+                                        <lg tid="38">
+                                                <l>“I, too, wish to train in the qualities </l>
+                                                <l>That you possess, O Leader, so that,</l>
+                                                <l>Having attained unsurpassable awakening,</l>
+                                                <l>I can use extraordinary powers such as
+                                                  yours!”</l>
+                                        </lg>
+                                        <milestone unit="chunk" xml:id="UT22084-061-009-85"/>
+                                        <p tid="39">Then, at that moment, the Blessed One displayed
+                                                a smile and various multicolored rays of light
+                                                issued from the Blessed One’s mouth in such a way
+                                                that blue, yellow, red, white, rose madder,
+                                                crystalline, and silvery rays of light spread
+                                                throughout endless, limitless world systems,
+                                                reaching as far as the Brahmā realm, and then they
+                                                returned, circled the Blessed One three times, and
+                                                disappeared into the Blessed One’s uṣṇīṣa.</p>
+                                        <milestone unit="chunk" xml:id="UT22084-061-009-86"/>
+                                        <p tid="40">The venerable Ānanda then addressed the Blessed
+                                                One with this verse:</p>
+                                        <milestone unit="chunk" xml:id="UT22084-061-009-87"/>
+                                        <lg tid="41">
+                                                <l>“The supreme victors, the leaders, the chiefs
+                                                  among beings</l>
+                                                <l>Do not display their smile without a reason.</l>
+                                                <l>Compassionate one, for the world’s benefit,</l>
+                                                <l>Please tell us why you displayed a smile just
+                                                  now.”</l>
+                                        </lg>
+                                        <milestone unit="chunk" xml:id="UT22084-061-009-88"/>
+                                        <p tid="42">When this had been said, the Blessed One
+                                                answered the venerable Ānanda, “Ānanda, do you see
+                                                this boy Brahmaśrī?”</p>
+                                        <p tid="43">“Yes, Blessed One, I see him,” he replied. <ref cRef="F.201.a" type="folio" xml:id="UT22084-061-009-146"/>
+                                        </p>
+                                        <milestone unit="chunk" xml:id="UT22084-061-009-90"/>
+                                        <p tid="44">“Ānanda,” said the Blessed One, “as a result of
+                                                this root of virtue and this aspiration in his mind,
+                                                this boy will not become a hell being for 3,200
+                                                eons, and then, once he has achieved awakening, he
+                                                will be a tathāgata, a worthy one, a perfect and
+                                                completely awakened buddha named The One Exalted
+                                                above All the Worlds.”</p>
+                                        <milestone unit="chunk" xml:id="UT22084-061-009-91"/>
+                                        <p tid="45">The Blessed One then addressed the venerable
+                                                Ānanda with these verses:</p>
+                                        <milestone unit="chunk" xml:id="UT22084-061-009-92"/>
+                                        <lg tid="46">
+                                                <l>“Faith in the Buddha generates</l>
+                                                <l>Merit in no small measure.</l>
+                                                <l>So, too, does hearing the supreme Dharma </l>
+                                                <l>And showing respect to the Sangha.</l>
+                                        </lg>
+                                        <milestone unit="chunk" xml:id="UT22084-061-009-93"/>
+                                        <lg tid="47">
+                                                <l>“For those with faith in the Buddha,</l>
+                                                <l>Attaining awakening is not difficult.</l>
+                                                <l>Hence, those who aspire for awakening</l>
+                                                <l>Should venerate the leaders of the world. </l>
+                                        </lg>
+                                        <milestone unit="chunk" xml:id="UT22084-061-009-94"/>
+                                        <lg tid="48">
+                                                <l>“Ānanda, this boy will become</l>
+                                                <l>A glorious one, best of those who walk on two
+                                                  feet, </l>
+                                                <l>A leader of the world, </l>
+                                                <l>Called The Exalted One.</l>
+                                        </lg>
+                                        <milestone unit="chunk" xml:id="UT22084-061-009-95"/>
+                                        <lg tid="49">
+                                                <l>“In this way, the buddhas are inconceivable</l>
+                                                <l>And so, too, are the qualities of the
+                                                  buddhas;</l>
+                                                <l>Faith in those who are inconceivable</l>
+                                                <l>Bears fruit that is like that as well.”<note place="end" xml:id="UT22084-061-009-96">This verse has parallels or close variants in other canonical texts, such as <title xml:lang="en">The Chapter on Medicines</title> (2021), <ptr target="#UT22084-001-006-3242"/>; <title xml:lang="en">The Threefold Ritual</title> (2020), <ptr target="#UT22084-100-002-8"/>; and the <title xml:lang="Sa-Ltn">Pradakṣiṇa­gāthā</title> (Toh
+                                                  321).<ref rend="pending" target="http://read.84000.co/translation/toh321.html"/>
+                            </note>
+                        </l>
+                                        </lg>
+                                        <milestone unit="chunk" xml:id="UT22084-061-009-97"/>
+                                        <p tid="50">After the Blessed One had spoken these words,
+                                                the venerable Ānanda and the boy Brahmaśrī were
+                                                delighted and they rejoiced at what the Blessed One
+                                                had said.</p>
+                                        <milestone unit="chunk" xml:id="UT22084-061-009-98"/>
+                                        <trailer tid="51">This concludes the noble Mahāyāna sūtra
+                                                  “<title xml:lang="en">The Prediction for
+                                                  Brahmaśrī</title>.”</trailer>
+                                </div>
+                                <div type="colophon" xml:id="UT22084-061-009-colophon">
+                                        <head type="colophon" tid="52">Colophon</head>
+                                        <milestone unit="chunk" xml:id="UT22084-061-009-99"/>
+                                        <p tid="53">Translated by the Indian preceptor Viśuddhasiṃha
+                                                and the translator Bandé Gewa Pal. Edited and
+                                                finalized by the Indian preceptor Vidyākarasiṃha and
+                                                the great editor and translator Bandé
+                                                Devacandra.</p>
+                                </div>
+                        </div>
+                </body>
+                <back>
+                        <div type="notes">
+                                <head type="notes" tid="54">Notes</head>
+                        </div>
+                        <div type="listBibl">
+                                <head type="listBibl" tid="56">Bibliography</head>
+                                <div type="section" xml:id="UT22084-061-009-listBibl-1">
+                                        <bibl xml:id="UT22084-061-009-100">
+                        <title xml:lang="Bo-Ltn">’phags pa tshangs pa’i dpal lung bstan pa zhe bya
+                                                  ba theg pa chen po’i mdo</title> (<title xml:lang="Sa-Ltn">Ārya­brahma­śrīvyākaraṇa­nāma­mahāyāna­sūtra</title>).
+                                                Toh 189, Degé Kangyur vol. 61 (mdo sde, tsa), folios
+                                                199.b–201.a.</bibl>
+                                        <bibl xml:id="UT22084-061-009-101">
+                        <title xml:lang="Bo-Ltn">’phags pa tshangs pa’i dpal lung bstan pa zhe bya
+                                                  ba theg pa chen po’i mdo</title>. bka’ ’gyur (dpe
+                                                bsdur ma) [Comparative Edition of the Kangyur],
+                                                krung go’i bod rig pa zhib ’jug ste gnas kyi bka’
+                                                bstan dpe sdur khang (The Tibetan Tripitaka
+                                                Collation Bureau of the China Tibetology Research
+                                                Center). 108 volumes. Beijing: krung go’i bod rig pa
+                                                dpe skrun khang (China Tibetology Publishing House),
+                                                2006–9, vol. 61, pp. 536–41.</bibl>
+                                        <bibl xml:id="UT22084-061-009-102">
+                        <title xml:lang="Bo-Ltn">’phags pa tshangs pa’i dpal lung bstan pa zhe bya
+                                                  ba theg pa chen po’i mdo</title>. Stok Palace
+                                                Kangyur vol. 57 (mdo sde, cha), folios
+                                                129.a–131.b.</bibl>
+                                        <bibl xml:id="UT22084-061-009-103">
+                        <title xml:lang="Bo-Ltn">’phags pa tshangs pa’i dpal lung bstan pa zhe bya
+                                                  ba theg pa chen po’i mdo</title>. Phukdrak Kangyur
+                                                vol. 87 (mdo sde, ke), folios 110.a–112.b.</bibl>
+                                        
+                                        <bibl xml:id="UT22084-061-009-105">Appleton, Naomi. <title xml:lang="en">Many Buddhas, One Buddha: A Study
+                                                  and Translation of Avadānaśataka 1-40</title>.
+                                                Sheffield: Equinox, 2020.</bibl>
+                                        <bibl xml:id="UT22084-061-009-106">Feer, Léon. “Études
+                                                bouddhiques: Des Vyakarana et de leur place dans la
+                                                littérature des bouddhistes.” <title xml:lang="fr">Revue orientale et américaine </title>10 (1865):
+                                                345–51.</bibl>
+                                        <bibl xml:id="UT22084-061-009-107">Feer, Léon. <title xml:lang="fr">Fragments extraits du
+                                                  Kandjour</title>. Paris: E. Leroux, 1883.</bibl>
+                                        <bibl xml:id="UT22084-061-009-108">Fiordalis, David V.
+                                                “Buddhas and Body Language: The Literary Trope of
+                                                the Buddha’s Smile.” In Natalie Gummer, ed., <title xml:lang="en">The Language of the Sūtras: Essays
+                                                        in Honor of Luis Gómez</title>, 59–103. Berkeley:
+                                                Mangalam Press, 2021.</bibl>
+                                        <bibl xml:id="UT22084-061-009-109">Goodman, Charles. <title xml:lang="en">The Training Anthology of Śāntideva:
+                                                  A Translation of the Śikṣā-samuccaya</title>. New
+                                                York: Oxford University Press, 2016.</bibl>
+                                        <bibl xml:id="UT22084-061-009-104">Herrmann-Pfandt,
+                                                Adelheid. <title xml:lang="de">Die lHan kar ma: ein
+                                                        früher Katalog der ins Tibetische übersetzten
+                                                        buddhistischen Texte</title>. Vienna: Verlag der
+                                                Österreichischen Akademie der Wissenschaften,
+                                                2008.</bibl>
+                                        <bibl xml:id="UT22084-061-009-110">Skilling, Peter. <title xml:lang="en">Questioning the Buddha: A Selection
+                                                  of Twenty-Five Sutras</title>. Boston: Wisdom
+                                                Publications, 2021.</bibl>
+                                </div>
+                        </div>
+                        <div type="glossary" status="excluded">
+                                <list type="glossary">
+                                        <item>
+                        <gloss type="term" xml:id="UT22084-061-009-112">
+                                                  <term type="translationMain">Best of those who
+                                                  walk on two feet</term>
+                                                  <term status="verified" xml:lang="Bo-Ltn" n="1">rkang gnyis dam pa </term>
+                                                  <term xml:lang="bo" n="1">རྐང་གཉིས་དམ་པ།</term>
+                                                  <term status="verified" xml:lang="Sa-Ltn" type="attestedOther">dvipadottama</term>
+                                                  <note type="definition">
+                                <p>A common epithet of the
+                                                  Buddha.</p>
+                            </note>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="term" xml:id="UT22084-061-009-113">
+                                                  <term type="translationMain">uṣṇīṣa</term>
+                                                  <term status="verified" xml:lang="Bo-Ltn" n="1">dbu’i gtsug tor </term>
+                                                  <term xml:lang="bo" n="1">དབུའི་གཙུག་ཏོར།</term>
+                                                  <term status="verified" xml:lang="Sa-Ltn" type="attestedOther">uṣṇīṣa</term>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="term" xml:id="UT22084-061-009-114">
+                                                  <term type="translationMain">pavilion</term>
+                                                  <term status="verified" xml:lang="Bo-Ltn" n="1">khang pa brtsegs pa </term>
+                                                  <term xml:lang="bo" n="1">ཁང་པ་བརྩེགས་པ།</term>
+                                                  <term status="verified" xml:lang="Sa-Ltn" type="attestedOther">kūṭāgāra</term>
+                                                  <note type="definition">
+                                <p>A hall or a type of
+                                                  building that may have a second floor and is often
+                                                  distinguished by a pinnacled or peaked
+                                                  roof.</p>
+                            </note>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="term" xml:id="UT22084-061-009-115">
+                                                  <term type="translationMain">seven precious
+                                                  jewels</term>
+                                                  <term status="verified" xml:lang="Bo-Ltn" n="1">rin po che sna bdun </term>
+                                                  <term xml:lang="bo" n="1">རིན་པོ་ཆེ་སྣ་བདུན།</term>
+                                                  <term status="verified" xml:lang="Sa-Ltn" type="attestedOther">saptaratna</term>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="term" xml:id="UT22084-061-009-116">
+                                                  <term type="translationMain">lower robe</term>
+                                                  <term status="verified" xml:lang="Bo-Ltn" n="1">sham thabs </term>
+                                                  <term xml:lang="bo" n="1">ཤམ་ཐབས།</term>
+                                                  <term status="verified" xml:lang="Sa-Ltn" type="attestedOther">antarvāsa</term>
+                                                  <note type="definition">
+                                                  <p>The garment covering the lower body. One
+                                                  of the three Dharma robes (<foreign xml:lang="Sa-Ltn">tricīvara</foreign>, <foreign xml:lang="Bo-Ltn">chos gos gsum</foreign>).</p>
+                                                  </note>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="term" xml:id="UT22084-061-009-117">
+                                                  <term type="translationMain">upper robe</term>
+                                                  <term status="verified" xml:lang="Bo-Ltn" n="1">chos gos </term>
+                                                  <term xml:lang="bo" n="1">ཆོས་གོས།</term>
+                                                  <term status="verified" xml:lang="Sa-Ltn" type="attestedOther">cīvara</term>
+                                                  <note type="definition">
+                                                  <p>In common parlance, this denotes the patched,
+                                                  yellow upper robe worn by renunciants.</p>
+                                                  </note>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="term" xml:id="UT22084-061-009-118">
+                                                  <term type="translationMain">sand </term>
+                                                  <term status="verified" xml:lang="Bo-Ltn" n="1">sa
+                                                  rdul </term>
+                                                  <term xml:lang="bo" n="1">ས་རྡུལ།</term>
+                                                  <term status="verified" xml:lang="Sa-Ltn" type="attestedOther">pāṃsu</term>
+                                                  <note type="definition">
+                                <p>A term that often
+                                                  refers to dust or dirt but may also refer to
+                                                  sand.</p>
+                            </note>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="term" xml:id="UT22084-061-009-119">
+                                                  <term type="translationMain">surrounding
+                                                  wall</term>
+                                                  <term status="verified" xml:lang="Bo-Ltn" n="1">ra
+                                                  ba </term>
+                                                  <term xml:lang="bo" n="1">ར་བ།</term>
+                                                  <term status="verified" xml:lang="Sa-Ltn"/>
+                                                  <note type="definition">
+                                <p>A term that can refer
+                                                  to a fence, an enclosure, a rampart, or the wall
+                                                  surrounding a courtyard or building.</p>
+                            </note>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="term" xml:id="UT22084-061-009-120">
+                                                  <term type="translationMain">Blessed One</term>
+                                                  <term status="verified" xml:lang="Bo-Ltn" n="1">bcom ldan ’das </term>
+                                                  <term xml:lang="bo" n="1">བཅོམ་ལྡན་འདས།</term>
+                                                  <term status="verified" xml:lang="Sa-Ltn" type="attestedOther">bhagavat</term>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="term" xml:id="UT22084-061-009-121">
+                                                  <term type="translationMain">monk</term>
+                                                  <term status="verified" xml:lang="Bo-Ltn" n="1">dge slong </term>
+                                                  <term xml:lang="bo" n="1">དགེ་སློང་།</term>
+                                                  <term status="verified" xml:lang="Sa-Ltn" type="attestedOther">bhikṣu</term>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="term" xml:id="UT22084-061-009-122">
+                                                  <term type="translationMain">wondrous display of
+                                                  extraordinary power</term>
+                                                  <term status="verified" xml:lang="Bo-Ltn" n="1">rdzu ’phrul gyi cho ’phrul </term>
+                                                  <term xml:lang="bo" n="1">རྫུ་འཕྲུལ་གྱི་ཆོ་འཕྲུལ།</term>
+                                                  <term status="verified" xml:lang="Sa-Ltn" type="attestedOther">ṛddhi­prātihārya</term>
+                                                  <note type="definition">
+                                <p>An expression used to
+                                                  refer to a display of extraordinary power
+                                                  (<foreign xml:lang="Sa-Ltn" type="term">ṛddhi</foreign>) that elicits wonder in an
+                                                  audience. In Buddhist literature, one of three
+                                                  types of wonders or miracles (<foreign xml:lang="Sa-Ltn" type="term">prātihārya</foreign>), the others being “reading
+                                                  others’ minds” and “teaching the
+                                                  Dharma.”</p>
+                            </note>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="term" xml:id="UT22084-061-009-123">
+                                                  <term type="translationMain">extraordinary
+                                                  power</term>
+                                                  <term status="verified" xml:lang="Bo-Ltn" n="1">rdzu ’phrul </term>
+                                                  <term xml:lang="bo" n="1">རྫུ་འཕྲུལ།</term>
+                                                  <term status="verified" xml:lang="Sa-Ltn" type="attestedOther">ṛddhi</term>
+                                                  <note type="definition">
+                                <p>A general term for an
+                                                  array of extraordinary or superhuman powers, the
+                                                  word for which derives from a verb meaning “to
+                                                  succeed” or “to flourish.”</p>
+                            </note>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="term" xml:id="UT22084-061-009-124">
+                                                  <term type="translationMain">tathāgata</term>
+                                                  <term status="verified" xml:lang="Bo-Ltn" n="1">de
+                                                  bzhin gshegs pa </term>
+                                                  <term xml:lang="bo" n="1">དེ་བཞིན་གཤེགས་པ།</term>
+                                                  <term status="verified" xml:lang="Sa-Ltn" type="attestedOther">tathāgata</term>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="term" xml:id="UT22084-061-009-125">
+                                                  <term type="translationMain">worthy one</term>
+                                                  <term status="verified" xml:lang="Bo-Ltn" n="1">dgra bcom pa </term>
+                                                  <term xml:lang="bo" n="1">དགྲ་བཅོམ་པ།</term>
+                                                  <term status="verified" xml:lang="Sa-Ltn" type="attestedOther">arhat</term>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="term" xml:id="UT22084-061-009-126">
+                                                  <term type="translationMain">field</term>
+                                                  <term status="verified" xml:lang="Bo-Ltn" n="1">zhing </term>
+                                                  <term xml:lang="bo" n="1">ཞིང་།</term>
+                                                  <term status="verified" xml:lang="Sa-Ltn" type="attestedOther">kṣetra</term>
+                                                  <note type="definition">
+                                <p>Literally, “a field” or
+                                                  “plot of arable land.” A term that comes to be
+                                                  used figuratively to refer to beings like the
+                                                  Buddha as a “field of merit,” that is, in the
+                                                  sense that offerings made to them bear great
+                                                  fruit. In what is a related use, the term also
+                                                  refers to domains of existence, such as those over
+                                                  which a buddha exerts authority. Both senses are
+                                                  used in this sūtra.</p>
+                            </note>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="term" xml:id="UT22084-061-009-127">
+                                                  <term type="translationMain">inconceivable</term>
+                                                  <term status="verified" xml:lang="Bo-Ltn" n="1">bsam mi khyab</term>
+                                                  <term xml:lang="bo" n="1">བསམ་མི་ཁྱབ།</term>
+                                                  <term status="verified" xml:lang="Sa-Ltn" type="attestedOther">acintya</term>
+                                                  <note type="definition">
+                                <p>A term that refers not
+                                                  only to something that cannot be imagined or
+                                                  conceived, generally speaking, but also to
+                                                  something of inconceivably great quantity or
+                                                  quality.</p>
+                            </note>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="person" xml:id="UT22084-061-009-129">
+                                                  <term type="translationMain">Brahmaśrī</term>
+                                                  <term status="verified" xml:lang="Bo-Ltn" n="1">tshangs pa’i dpal </term>
+                                                  <term xml:lang="bo" n="1">ཚངས་པའི་དཔལ།</term>
+                                                  <term status="verified" xml:lang="Sa-Ltn" type="reconstructedPhonetic">brahmaśrī</term>
+                                                  <note type="definition">
+                                <p>A young boy who offers
+                                                  a pavilion made of sand to the Buddha in this
+                                                  sūtra.</p>
+                            </note>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="person" xml:id="UT22084-061-009-130">
+                                                  <term type="translationMain">Ānanda</term>
+                                                  <term status="verified" xml:lang="Bo-Ltn" n="1">kun dga’ bo </term>
+                                                  <term xml:lang="bo" n="1">ཀུན་དགའ་བོ།</term>
+                                                  <term status="verified" xml:lang="Sa-Ltn" type="attestedOther">ānanda</term>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="person" xml:id="UT22084-061-009-131">
+                                                  <term type="translationMain">The One Exalted above
+                                                  All the Worlds</term>
+                                                  <term status="verified" xml:lang="Bo-Ltn" n="1">’jig rten thams cad las mngon par ’phags pa </term>
+                                                  <term xml:lang="bo" n="1">འཇིག་རྟེན་ཐམས་ཅད་ལས་མངོན་པར་འཕགས་པ།</term>
+                                                  <term status="verified" xml:lang="Sa-Ltn"/>
+                                                  <note type="definition">
+                                <p>The name of the buddha
+                                                  whom the boy Brahmaśrī will become in a future
+                                                  lifetime, as predicted by the Buddha in this
+                                                  sūtra.</p>
+                            </note>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="person" xml:id="UT22084-061-009-132">
+                                                  <term type="translationMain">The Exalted
+                                                  One</term>
+                                                  <term status="verified" xml:lang="Bo-Ltn" n="1">mngon par ’phags pa </term>
+                                                  <term xml:lang="bo" n="1">མངོན་པར་འཕགས་པ།</term>
+                                                  <term status="verified" xml:lang="Sa-Ltn"/>
+                                                  <note type="definition">
+                                <p>A shorter form of The
+                                                  One Exalted above All the Worlds, the name of the
+                                                  buddha whom the boy Brahmaśrī will become in a
+                                                  future lifetime, as predicted by the Buddha in
+                                                  this sūtra.</p>
+                            </note>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="person" xml:id="UT22084-061-009-133">
+                                                  <term type="translationMain">Bandé Gewa Pal</term>
+                                                  <term status="verified" xml:lang="Bo-Ltn" n="1">ban de dge ba dpal </term>
+                                                  <term xml:lang="bo" n="1">བན་དེ་དགེ་བ་དཔལ།</term>
+                                                  <term status="verified" xml:lang="Sa-Ltn"/>
+                                                  <note type="definition">
+                                <p>One of the scholars
+                                                  involved in the translation of this
+                                                  sūtra.</p>
+                            </note>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="person" xml:id="UT22084-061-009-134">
+                                                  <term type="translationMain">Viśuddhasiṃha</term>
+                                                  <term status="verified" xml:lang="Bo-Ltn" n="1">bi
+                                                  shud+d+ha sing+ha</term>
+                            <term xml:lang="bo" n="1" status="verified">བི་ཤུདྡྷ་སིངྷ།</term>
+                                                  <term status="verified" xml:lang="Sa-Ltn" type="reconstructedPhonetic">viśuddhasiṃha</term>
+                                                  <note type="definition">
+                                <p>One of the scholars
+                                                  involved in the translation of this
+                                                  sūtra.</p>
+                            </note>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="person" xml:id="UT22084-061-009-135">
+                                                  <term type="translationMain">Vidyākarasiṃha</term>
+                                                  <term status="verified" xml:lang="Bo-Ltn" n="1">bid+yA ka ra sing+ha</term>
+                            <term xml:lang="bo" n="1" status="verified">བིདྱཱ་ཀ་ར་སིངྷ།</term>
+                                                  <term status="verified" xml:lang="Sa-Ltn" type="reconstructedPhonetic">vidyākarasiṃha</term>
+                                                  <note type="definition">
+                                <p>One of the scholars
+                                                  involved in the translation of this
+                                                  sūtra.</p>
+                            </note>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="person" xml:id="UT22084-061-009-136">
+                                                  <term type="translationMain">Bandé
+                                                  Devacandra</term>
+                                                  <term status="verified" xml:lang="Bo-Ltn" n="1">ban de de ba tsan+d+ras</term>
+                                                  <term xml:lang="bo" n="1">བན་དེ་དེ་བ་ཙནྡྲས།</term>
+                                                  <term type="reconstructedPhonetic" xml:lang="Sa-Ltn"/>
+                                                  <!--There is an attestation code but no Sanskrit term:-->
+                                                  <note type="definition">
+                                <p>One of the scholars
+                                                  involved in the translation of this
+                                                  sūtra.</p>
+                            </note>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="place" xml:id="UT22084-061-009-138">
+                                                  <term type="translationMain">Śrāvastī</term>
+                                                  <term status="verified" xml:lang="Bo-Ltn" n="1">mnyan yod </term>
+                                                  <term xml:lang="bo" n="1">མཉན་ཡོད།</term>
+                                                  <term status="verified" xml:lang="Sa-Ltn" type="attestedOther">śrāvastī</term>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="place" xml:id="UT22084-061-009-139">
+                                                  <term type="translationMain">Prince Jeta’s
+                                                  Grove</term>
+                                                  <term status="verified" xml:lang="Bo-Ltn" n="1">rgyal bu rgyal byed </term>
+                                                  <term xml:lang="bo" n="1">རྒྱལ་བུ་རྒྱལ་བྱེད།</term>
+                                                  <term status="verified" xml:lang="Sa-Ltn" type="attestedOther">jetavana</term>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="place" xml:id="UT22084-061-009-140">
+                                                  <term type="translationMain">Anāthapiṇḍada’s
+                                                  Park</term>
+                                                  <term status="verified" xml:lang="Bo-Ltn" n="1">mgon med zas sbyin gyi kun dga’ ra ba </term>
+                                                  <term xml:lang="bo" n="1">མགོན་མེད་ཟས་སྦྱིན་གྱི་ཀུན་དགའ་ར་བ།</term>
+                                                  <term status="verified" xml:lang="Sa-Ltn" type="attestedOther">anātha­piṇḍa­dārāma</term>
+                                                </gloss>
+                    </item>
+                                        <item>
+                        <gloss type="place" xml:id="UT22084-061-009-141">
+                                                  <term type="translationMain">Brahmā realm</term>
+                                                  <term status="verified" xml:lang="Bo-Ltn" n="1">tshangs pa’i ’jig rten </term>
+                                                  <term xml:lang="bo" n="1">ཚངས་པའི་འཇིག་རྟེན།</term>
+                                                  <term status="verified" xml:lang="Sa-Ltn" type="attestedOther">brahmaloka</term>
+                                                  <note type="definition">
+                                                  <p>The heavenly realm of Brahmā, which in standard
+                                                  works like the <title xml:lang="Sa-Ltn">Abhidharmakośa</title> is described as being just
+                                                  above the desire realm (<foreign xml:lang="Sa-Ltn">kāmadhātu</foreign>) and comprising the first
+                                                  three levels of the form realm (<foreign xml:lang="Sa-Ltn">rūpadhātu</foreign>). It is also
+                                                  said to be the dwelling place of the god Brahmā
+                                                  and of the class of divinities called brahmās, and
+                                                  it is equated with the state that one achieves in
+                                                  the first level of meditative concentration
+                                                  (<foreign xml:lang="Sa-Ltn">dhyāna</foreign>).</p>
+                                                  </note>
+                                                </gloss>
+                    </item>
+                                </list>
+                        </div>
+                </back>
+        </text>
+</TEI>
