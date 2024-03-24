@@ -29,7 +29,7 @@
                                         Canti</editor>
                         </titleStmt>
                         <editionStmt>
-                <edition>v 1.0.3 <date>2023</date>
+                <edition>v 1.0.4 <date>2024</date>
                 </edition>
             </editionStmt>
                         <publicationStmt>
@@ -173,6 +173,9 @@
                 <change who="#sameer" when="2023-11-12T11:43:58.798Z" type="text-version" status="1.0.3" xml:id="UT22084-072-031-161">
                     <desc>Included in App v 3.8</desc>
                 </change>
+                <change who="#andre" when="2024-03-24T12:54:37.565Z" type="text-version" status="1.0.4" xml:id="UT22084-072-031-162">
+                    <desc>Glossary integration in the CG revised, activated in CG</desc>
+                </change>
                         </revisionDesc>
                 </fileDesc>
         </teiHeader>
@@ -181,7 +184,7 @@
                     Outline to the text is quite complex, it is recommended that you paste the outlined contents from the DOCX here as a comment for
                     markup's reference. The actual table of contents will be generated in the Reading Room by the parser.-->
                 <front>
-                        <div type="summary">
+                        <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="summary">
                                 <head type="summary" tid="1">Summary</head>
                                 <milestone unit="chunk" xml:id="UT22084-072-031-1"/>
                                 <p tid="2">
@@ -198,8 +201,8 @@
                                         emergence of buddhas. Besides being included in the Kangyur,
                                         in the Chinese Āgamas, and the Pali Nikāyas,<title xml:lang="en"> The Sūtra of the Moon (2)</title> was
                                         included in collections of texts recited for protection.</p>
-                        </div>
-                        <div type="acknowledgment">
+                        </tei:div>
+                        <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="acknowledgment">
                                 <head type="acknowledgment" tid="3">Acknowledgements</head>
                                 <milestone unit="chunk" xml:id="UT22084-072-031-2"/>
                                 <p tid="4">Translated by the Pema Yeshé Dé Translation Group. The
@@ -212,10 +215,10 @@
                                 <p tid="5">The translation was completed under the patronage and
                                         supervision of 84000: Translating the Words of the
                                         Buddha.</p>
-                        </div>
-                        <div type="introduction">
+                        </tei:div>
+                        <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="introduction">
                                 <head type="introduction" tid="8">Introduction</head>
-                                <div type="section" xml:id="UT22084-072-031-introduction-1">
+                                <tei:div type="section" xml:id="UT22084-072-031-introduction-1">
                                         <milestone unit="chunk" xml:id="UT22084-072-031-6"/>
                                         <p tid="10">
                         <title xml:lang="en">The Sūtra of the Moon
@@ -447,14 +450,14 @@
                                                 here in <title xml:lang="en">The Sūtra of the Moon
                                                   (2)</title> we find the expression that the moon
                                                 “was covered.”</p>
-                                </div>
-                        </div>
+                                </tei:div>
+                        </tei:div>
                 </front>
                 <body>
-                        <div type="translation">
+                        <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="translation">
                                 <head type="translation"> The Translation </head>
                                 <head type="titleMain" tid="23">The Sūtra of the Moon (2)</head>
-                                <div type="section" xml:id="UT22084-072-031-section-1">
+                                <tei:div type="section" xml:id="UT22084-072-031-section-1">
                                         <milestone unit="chunk" xml:id="UT22084-072-031-27"/>
                                         <p tid="27">
                         <ref cRef="F.259.b" type="folio" xml:id="UT22084-072-031-107"/> Homage to the Three
@@ -623,11 +626,11 @@
                                         <trailer tid="42">This concludes <title xml:lang="en">“The
                                                   Sūtra of the Moon.”</title>
                     </trailer>
-                                </div>
-                        </div>
+                                </tei:div>
+                        </tei:div>
                 </body>
                 <back>
-                        <div type="notes">
+                        <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="notes">
                                 <head type="notes" tid="45">Notes</head>
                                 <list type="abbreviations">
                                         <head tid="46">Abbreviations</head>
@@ -653,10 +656,10 @@
                         <expan>Hemis II Kangyur</expan>
                     </item>
                                 </list>
-                        </div>
-                        <div type="listBibl">
+                        </tei:div>
+                        <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="listBibl">
                                 <head type="listBibl" tid="47">Bibliography</head>
-                                <div type="section" xml:id="UT22084-072-031-listBibl-1">
+                                <tei:div type="section" xml:id="UT22084-072-031-listBibl-1">
                                         <head type="section" tid="48">Tibetan Canonical Texts</head>
                                         <bibl xml:id="UT22084-072-031-57">
                         <title xml:lang="Bo-Ltn">zla ba’i mdo </title>(<title xml:lang="Sa-Ltn">Candrasūtra</title>). Toh 331, Degé Kangyur vol.
@@ -687,8 +690,8 @@
                                                   ’dzin ma’i mdo’i ’bum ’grel</title> (<title xml:lang="Sa-Ltn">Mahā­mantrānudhāraṇī­sūtra­śatasahasra­ṭīkā</title>).
                                                 Toh 2692, Degé Tengyur vol. 72 (rgyud, du), folios
                                                 241.b–282.b.</bibl>
-                                </div>
-                                <div type="section" xml:id="UT22084-072-031-listBibl-2">
+                                </tei:div>
+                                <tei:div type="section" xml:id="UT22084-072-031-listBibl-2">
                                         <head type="section" tid="49">Related Primary Sources</head>
                                         <bibl xml:id="UT22084-072-031-64">
                         <title xml:lang="Pi-Ltn">Candimasutta</title>. Pali Canon, <ref target="https://suttacentral.net/sn2.9/pli/ms">Saṃyutta Nikāya 2.9</ref>. Texts in Pali on
@@ -715,8 +718,8 @@
                         <title xml:lang="Zh-Ltn">Za a han jing</title>
                                                 <title xml:lang="Zh-Ltn">雜阿含經</title> (<title xml:lang="Sa-Ltn">Saṃyuktāgama­sūtra</title>),
                                                 Taishō 99 (<ref target="https://cbetaonline.dila.edu.tw/en/T0099_022">CBETA</ref>; <ref target="https://21dzk.l.u-tokyo.ac.jp/SAT2018/T0099.html">SAT</ref>).</bibl>
-                                </div>
-                                <div type="section" xml:id="UT22084-072-031-listBibl-3">
+                                </tei:div>
+                                <tei:div type="section" xml:id="UT22084-072-031-listBibl-3">
                                         <head type="section" tid="50">Western Translations and
                                                 References</head>
                                         <bibl xml:id="UT22084-072-031-70">Bhikkhu Sujato, trans.
@@ -806,9 +809,9 @@
                                                   <title xml:lang="Sa-Ltn">Candrasūtra</title> nach
                                                 chinesisch-uigurischen Bilinguen.” <title xml:lang="de">Türk Dilleri Araştırmaları
                                                 </title>10 (2000): 65–80.</bibl>
-                                </div>
-                        </div>
-                        <div type="glossary" status="excluded">
+                                </tei:div>
+                        </tei:div>
+                        <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="glossary">
                                 <list type="glossary">
                                         <item>
                         <gloss type="term" xml:id="UT22084-072-031-90">
@@ -979,7 +982,7 @@
                                                 </gloss>
                     </item>
                                 </list>
-                        </div>
+                        </tei:div>
                 </back>
         </text>
 </TEI>
