@@ -33,7 +33,7 @@
                                         Cotter</editor>
                         </titleStmt>
                         <editionStmt>
-                <edition>v 1.0.2 <date>2024</date>
+                <edition>v 1.0.3 <date>2024</date>
                 </edition>
             </editionStmt>
                         <publicationStmt>
@@ -176,6 +176,9 @@
                 <change who="#konchog" when="2024-03-20T20:00:35.438Z" type="text-version" status="1.0.2" xml:id="UT22084-061-009-152">
                     <desc>Replaced the second "Feer" in the bibliography with a 3-em dash.</desc>
                 </change>
+                <change who="#andre" when="2024-03-24T12:30:24.403Z" type="text-version" status="1.0.3" xml:id="UT22084-061-009-153">
+                    <desc>Glossary integration revised, activated in CG</desc>
+                </change>
                         </revisionDesc>
                 </fileDesc>
         </teiHeader>
@@ -184,7 +187,7 @@
                     Outline to the text is quite complex, it is recommended that you paste the outlined contents from the DOCX here as a comment for
                     markup's reference. The actual table of contents will be generated in the Reading Room by the parser.-->
                 <front>
-                        <div type="summary">
+                        <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="summary">
                                 <head type="summary" tid="1">Summary</head>
                                 <milestone unit="chunk" xml:id="UT22084-061-009-47"/>
                                 <p tid="2">
@@ -198,8 +201,8 @@
                                         to become a buddha himself in the future. This prompts the
                                         Buddha to smile and predict Brahmaśrī’s future
                                         awakening.</p>
-                        </div>
-                        <div type="acknowledgment">
+                        </tei:div>
+                        <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="acknowledgment">
                                 <head type="acknowledgment" tid="3">Acknowledgements</head>
                                 <milestone unit="chunk" xml:id="UT22084-061-009-48"/>
                                 <p tid="4">This publication was completed under the patronage and
@@ -212,10 +215,10 @@
                                         Goetz. David Fiordalis revised and edited the translation
                                         and introduction. Dawn Collins copyedited the text. Martina
                                         Cotter was in charge of the digital publication process.</p>
-                        </div>
-                        <div type="introduction">
+                        </tei:div>
+                        <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="introduction">
                                 <head type="introduction" tid="8">Introduction</head>
-                                <div type="section" xml:id="UT22084-061-009-introduction-1">
+                                <tei:div type="section" xml:id="UT22084-061-009-introduction-1">
                                         <milestone unit="chunk" xml:id="UT22084-061-009-52"/>
                                         <p tid="10">
                         <title xml:lang="en">The Prediction for
@@ -348,16 +351,16 @@
                                                 was also compared with the Stok Palace and Phukdrak
                                                 editions of the Kangyur, but none of the differences
                                                 found therein were deemed noteworthy. </p>
-                                </div>
-                        </div>
+                                </tei:div>
+                        </tei:div>
                 </front>
                 <body>
-                        <div type="translation">
+                        <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="translation">
                                 <head type="translation"> The Translation </head>
                                 <head type="titleHon" tid="17">The Noble Mahāyāna Sūtra</head>
                                 <head type="titleMain" tid="18">The Prediction for
                                         Brahmaśrī</head>
-                                <div type="section" xml:id="UT22084-061-009-section-1">
+                                <tei:div type="section" xml:id="UT22084-061-009-section-1">
                                         <milestone unit="chunk" xml:id="UT22084-061-009-68"/>
                                         <p tid="22">
                         <ref cRef="F.199.b" type="folio" xml:id="UT22084-061-009-143"/> Homage to all
@@ -540,8 +543,8 @@
                                         <trailer tid="51">This concludes the noble Mahāyāna sūtra
                                                   “<title xml:lang="en">The Prediction for
                                                   Brahmaśrī</title>.”</trailer>
-                                </div>
-                                <div type="colophon" xml:id="UT22084-061-009-colophon">
+                                </tei:div>
+                                <tei:div type="colophon" xml:id="UT22084-061-009-colophon">
                                         <head type="colophon" tid="52">Colophon</head>
                                         <milestone unit="chunk" xml:id="UT22084-061-009-99"/>
                                         <p tid="53">Translated by the Indian preceptor Viśuddhasiṃha
@@ -549,16 +552,16 @@
                                                 finalized by the Indian preceptor Vidyākarasiṃha and
                                                 the great editor and translator Bandé
                                                 Devacandra.</p>
-                                </div>
-                        </div>
+                                </tei:div>
+                        </tei:div>
                 </body>
                 <back>
-                        <div type="notes">
+                        <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="notes">
                                 <head type="notes" tid="54">Notes</head>
-                        </div>
-                        <div type="listBibl">
+                        </tei:div>
+                        <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="listBibl">
                                 <head type="listBibl" tid="56">Bibliography</head>
-                                <div type="section" xml:id="UT22084-061-009-listBibl-1">
+                                <tei:div type="section" xml:id="UT22084-061-009-listBibl-1">
                                         <bibl xml:id="UT22084-061-009-100">
                         <title xml:lang="Bo-Ltn">’phags pa tshangs pa’i dpal lung bstan pa zhe bya
                                                   ba theg pa chen po’i mdo</title> (<title xml:lang="Sa-Ltn">Ārya­brahma­śrīvyākaraṇa­nāma­mahāyāna­sūtra</title>).
@@ -610,9 +613,9 @@
                                         <bibl xml:id="UT22084-061-009-110">Skilling, Peter. <title xml:lang="en">Questioning the Buddha: A Selection
                                                   of Twenty-Five Sutras</title>. Boston: Wisdom
                                                 Publications, 2021.</bibl>
-                                </div>
-                        </div>
-                        <div type="glossary" status="excluded">
+                                </tei:div>
+                        </tei:div>
+                        <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="glossary">
                                 <list type="glossary">
                                         <item>
                         <gloss type="term" xml:id="UT22084-061-009-112">
@@ -964,7 +967,7 @@
                                                 </gloss>
                     </item>
                                 </list>
-                        </div>
+                        </tei:div>
                 </back>
         </text>
 </TEI>
