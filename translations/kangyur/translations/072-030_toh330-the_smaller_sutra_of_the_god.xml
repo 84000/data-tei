@@ -24,7 +24,7 @@
                 <editor role="finalReviewer" xml:id="UT22084-072-030-195">Andreas Doctor</editor>
             </titleStmt>
                         <editionStmt>
-                <edition>v 1.0.4 <date>2024</date>
+                <edition>v 1.0.6 <date>2024</date>
                 </edition>
             </editionStmt>
                         <publicationStmt>
@@ -174,6 +174,12 @@
                 <change who="#sameer" when="2024-01-08T10:57:18.535Z" type="text-version" status="1.0.4" xml:id="UT22084-072-030-203">
                     <desc>Included in App v 3.10</desc>
                 </change>
+                <change who="#celso" when="2024-02-27T22:24:16.173Z" type="text-version" status="1.0.5" xml:id="UT22084-072-030-204">
+                    <desc>updated Kangyur sigla to match rKTS</desc>
+                </change>
+                <change who="#andre" when="2024-03-24T12:42:23.884Z" type="text-version" status="1.0.6" xml:id="UT22084-072-030-205">
+                    <desc>Glossary integration revised, activated in CG</desc>
+                </change>
                         </revisionDesc>
                 </fileDesc>
         </teiHeader>
@@ -182,7 +188,7 @@
                     Outline to the text is quite complex, it is recommended that you paste the outlined contents from the DOCX here as a comment for
                     markup's reference. The actual table of contents will be generated in the Reading Room by the parser.-->
                 <front>
-                        <div type="summary">
+                        <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="summary">
                                 <head type="summary" tid="1">Summary</head>
                                 <milestone unit="chunk" xml:id="UT22084-072-030-47"/>
                                 <p tid="2">While staying in Śrāvastī, the Buddha is approached by an
@@ -195,8 +201,8 @@
                                         covetousness, ill will, and wrong views—and embracing their
                                         opposites, the ten virtues, will lead to rebirth in the
                                         higher realms.</p>
-                        </div>
-                        <div type="acknowledgment">
+                        </tei:div>
+                        <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="acknowledgment">
                                 <head type="acknowledgment" tid="3">Acknowledgements</head>
                                 <milestone unit="chunk" xml:id="UT22084-072-030-48"/>
                                 <p tid="4">The sūtra was translated by Giuliano Proença, who also
@@ -211,10 +217,10 @@
                                         Buddha. George FitzHerbert edited the translation and the introduction, and
                                         Dawn Collins copyedited the text. Martina Cotter was in charge of the digital
                                         publication process.</p>
-                        </div>
-                        <div type="introduction">
+                        </tei:div>
+                        <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="introduction">
                                 <head type="introduction" tid="8">Introduction</head>
-                                <div type="section" xml:id="UT22084-072-030-introduction-1">
+                                <tei:div type="section" xml:id="UT22084-072-030-introduction-1">
                                         <milestone unit="chunk" xml:id="UT22084-072-030-52"/>
                                         <p tid="10">
                         <title xml:lang="en">The Shorter Devatā
@@ -415,14 +421,14 @@
                                                 in the notes. Léon Feer’s French
                                                 translation, and Adelheid Mette’s partial German
                                                 translation were also consulted. </p>
-                                </div>
-                        </div>
+                                </tei:div>
+                        </tei:div>
                 </front>
                 <body>
-                        <div type="translation">
+                        <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="translation">
                                 <head type="translation"> The Translation </head>
                                 <head type="titleMain" tid="20">The Shorter Devatā Sūtra</head>
-                                <div type="section" xml:id="UT22084-072-030-section-1">
+                                <tei:div type="section" xml:id="UT22084-072-030-section-1">
                                         <milestone unit="chunk" xml:id="UT22084-072-030-73"/>
                                         <p tid="24">
                         <ref cRef="F.258.b" type="folio" xml:id="UT22084-072-030-180"/> Homage to all buddhas and bodhisattvas.</p>
@@ -638,17 +644,17 @@
                                         <trailer tid="43">Thus concludes <title xml:lang="en">“The
                                                   Shorter Devatā Sūtra.”</title>
                     </trailer>
-                                </div>
-                                <div type="colophon" xml:id="UT22084-072-030-colophon">
+                                </tei:div>
+                                <tei:div type="colophon" xml:id="UT22084-072-030-colophon">
                                         <head type="colophon" tid="44">Colophon</head>
                                         <milestone unit="chunk" xml:id="UT22084-072-030-105"/>
                                         <p tid="45">Translated, edited, and finalized by the senior
                                                 editor and translator Bandé Yeshé Dé.</p>
-                                </div>
-                        </div>
+                                </tei:div>
+                        </tei:div>
                 </body>
                 <back>
-                        <div type="notes">
+                        <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="notes">
                                 <head type="notes" tid="46">Notes</head>
                                 <list type="abbreviations">
                                         <head tid="47">Abbreviations</head>
@@ -687,7 +693,7 @@
                                                 Kangyur</expan>
                     </item>
                                         <item xml:id="UT22084-072-030-113">
-                        <abbr>K<hi rend="subscript">Y</hi> </abbr>
+                        <abbr>Y<!--KY--> </abbr>
                         <expan>Peking Yongle
                                                 Kangyur</expan>
                     </item>
@@ -701,10 +707,10 @@
                                                 Sanskrit edition (1983)</expan>
                     </item>
                                 </list>
-                        </div>
-                        <div type="listBibl">
+                        </tei:div>
+                        <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="listBibl">
                                 <head type="listBibl" tid="48">Bibliography</head>
-                                <div type="section" xml:id="UT22084-072-030-listBibl-1">
+                                <tei:div type="section" xml:id="UT22084-072-030-listBibl-1">
                                         <head type="section" tid="49">Tibetan</head>
                                         <bibl xml:id="UT22084-072-030-116">
                         <title xml:lang="Bo-Ltn">lha’i mdo nyung ngu</title>. (<title xml:lang="Sa-Ltn">Alpadevatāsūtra</title>). Toh
@@ -747,8 +753,8 @@
                                                   Works of Ngawang Losang Gyatso</title>]. Beijing:
                                                 krung go’i bod rig pa dpe skrun khang, 2009, vol. 8,
                                                 pp. 471–72. </bibl>
-                                </div>
-                                <div type="section" xml:id="UT22084-072-030-listBibl-2">
+                                </tei:div>
+                                <tei:div type="section" xml:id="UT22084-072-030-listBibl-2">
                                         <head type="section" tid="50">Sanskrit</head>
                                         <bibl xml:id="UT22084-072-030-125">Braarvig, Jens, ed.
                                                  “<ref target="https://www2.hf.uio.no/polyglotta/index.php?page=volume&amp;vid=263">Mahāvyutpatti with sGrasbyor bam po gñis pa</ref>.” Bibliotheca Polyglotta, University of
@@ -771,8 +777,8 @@
                                                 New Delhi: International Academy of Indian Culture.
                                                 Śata-Piṭaka Series 10, 1959–74. Part 7
                                                 (1974).</bibl>
-                                </div>
-                                <div type="section" xml:id="UT22084-072-030-listBibl-3">
+                                </tei:div>
+                                <tei:div type="section" xml:id="UT22084-072-030-listBibl-3">
                                         <head type="section" tid="51">Chinese</head>
                                         <bibl xml:id="UT22084-072-030-130">
                         <title xml:lang="Zh-Ltn">Za a han jing</title> <title xml:lang="zh">雜阿含經</title>
@@ -780,11 +786,11 @@
                                         <bibl xml:id="UT22084-072-030-131">
                         <title xml:lang="Zh-Ltn">Bie yi za a han jing</title>
                                                 <title xml:lang="zh">別譯雜阿含經</title> (Alternative Saṃyuktāgama), Taishō 100.</bibl>
-                                </div>
-                                <div type="section" xml:id="UT22084-072-030-listBibl-4">
+                                </tei:div>
+                                <tei:div type="section" xml:id="UT22084-072-030-listBibl-4">
                                         <head type="section" tid="52">Related Texts</head>
-                                </div>
-                                <div type="section" xml:id="UT22084-072-030-listBibl-5">
+                                </tei:div>
+                                <tei:div type="section" xml:id="UT22084-072-030-listBibl-5">
                                         <head type="section" tid="53">Western Languages</head>
                                         <bibl xml:id="UT22084-072-030-132">Bingenheimer, Marcus.
                                                   <title xml:lang="en">Studies in Āgama Literature
@@ -822,9 +828,9 @@
                                                   of the Tibetan Buddhist Canons with introductory
                                                   notes</title>. Kyoto: Ryukoku University,
                                                 1950.</bibl>
-                                </div>
-                        </div>
-                        <div type="glossary" status="excluded">
+                                </tei:div>
+                        </tei:div>
+                        <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="glossary">
                                 <list type="glossary">
                                         <item>
                         <gloss type="term" xml:id="UT22084-072-030-141">
@@ -1219,7 +1225,7 @@
                                                 </gloss>
                     </item>
                                 </list>
-                        </div>
+                        </tei:div>
                 </back>
         </text>
 </TEI>
