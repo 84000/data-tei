@@ -30,7 +30,7 @@
                 <editor role="finalReviewer" xml:id="UT22084-034-025-402">John Canti</editor>
             </titleStmt>
       <editionStmt>
-                <edition>v 0.0.6 <date>2024</date>
+                <edition>v 0.0.7 <date>2024</date>
                 </edition>
             </editionStmt>
       <publicationStmt>
@@ -157,6 +157,9 @@
                 <change who="#john" when="2024-03-26T20:30:12.713Z" type="text-version" status="0.0.6" xml:id="UT22084-034-025-1192">
                     <desc>Some substantial edits made during final review; more to follow.</desc>
                 </change>
+                <change who="#john" when="2024-03-27T21:44:27.514Z" type="text-version" status="0.0.7" xml:id="UT22084-034-025-1193">
+                    <desc>Further edits, more to come.</desc>
+                </change>
       </revisionDesc>
     </fileDesc>
   </teiHeader>
@@ -165,7 +168,7 @@
                     Outline to the text is quite complex, it is recommended that you paste the outlined contents from the DOCX here as a comment for
                     markup's reference. The actual table of contents will be generated in the Reading Room by the parser.-->
     <front>
-      <div type="summary">
+      <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="summary">
         <head type="summary" tid="1">Summary</head>
         <milestone unit="chunk" xml:id="UT22084-034-025-51"/>
         <p tid="2">In the first of the two parts of <title xml:lang="en">The Benefits of the Five Precepts</title>, a man and
@@ -176,8 +179,8 @@
           the sūtra, the Buddha gives a teaching on the five precepts, by which one renounces the five negative deeds—killing,
           stealing, sexual misconduct, speaking falsehood, and consuming intoxicants. The sufferings in various hells that are the consequence
           of those five negative deeds are described, as are the benefits experienced by those who renounce them.</p>
-      </div>
-      <div type="acknowledgment">
+      </tei:div>
+      <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="acknowledgment">
         <head type="acknowledgment" tid="3">Acknowledgements</head>
         <milestone unit="chunk" xml:id="UT22084-034-025-52"/>
         <p tid="4">This publication was completed under the patronage and supervision of 84000: Translating the Words of the Buddha.</p>
@@ -187,10 +190,10 @@
           George FitzHerbert edited the translation and the introduction, and
           Laura Goetz copyedited the text. Martina Cotter was in charge of the digital
           publication process.</p>
-      </div>
-      <div type="introduction">
+      </tei:div>
+      <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="introduction">
         <head type="introduction" tid="8">Introduction</head>
-        <div type="section" xml:id="UT22084-034-025-introduction-1">
+        <tei:div type="section" xml:id="UT22084-034-025-introduction-1">
           <milestone unit="chunk" xml:id="UT22084-034-025-56"/>
           <p tid="10">
                         <title xml:lang="en">The Sūtra on the Benefits of the Five Precepts</title>,
@@ -340,15 +343,15 @@
               (<foreign xml:lang="Bo-Ltn">dpe bsdur ma</foreign>) and the Stok Palace Kangyur.
             Variant readings that have been preferred over the Degé version or that offer plausible
             alternatives have also been recorded in notes. </p>
-        </div>
-      </div>
+        </tei:div>
+      </tei:div>
     </front>
     <body>
-      <div type="translation">
+      <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="translation">
         <head type="translation"> The Translation </head>
         <head type="titleHon" tid="123">The Sūtra on</head> 
         <head type="titleMain" tid="124">The Benefits of the Five Precepts</head>
-        <div type="section" xml:id="UT22084-034-025-section-1">
+        <tei:div type="section" xml:id="UT22084-034-025-section-1">
           <milestone unit="chunk" xml:id="UT22084-034-025-79"/>
           <p tid="22">
                         <ref cRef="F.271.a" type="folio" xml:id="UT22084-034-025-374"/> Homage, with
@@ -382,8 +385,7 @@
               dressed and taken up his bowl and outer robe”). </note> went to the dwelling of the
               householder<note place="end" xml:id="UT22084-034-025-89"> On the usage of the term
                 <distinct>householder</distinct> in canonical Pali texts, see Freiberger 2019, p.
-              72, and Cone 2010, p. 40, s.v. “gahapati”: “they whose business is trade or
-              agriculture (a member of the third class in society, after <foreign xml:lang="Sa-Ltn" type="term">khattiya</foreign> and <foreign xml:lang="Sa-Ltn" type="term">brahmaṇa</foreign>).” See also the glossary entry “householder.”</note> Nakulapitā
+              72, and Cone 2010, p. 40, s.v. “gahapati.”</note> Nakulapitā
             and, having approached, sat down on a prepared seat. Then the householders Nakulapitā
             and Nakulamātā<note place="end" xml:id="UT22084-034-025-90"> The suffixes -<foreign xml:lang="Sa-Ltn" type="term">pitā</foreign> and -<foreign xml:lang="Sa-Ltn" type="term">mātā</foreign> mean “father” and “mother” respectively. In Tibetan, the
               names are also rendered with the prefixes <foreign xml:lang="Bo-Ltn" type="term">pha</foreign> (“father”) and <foreign xml:lang="Bo-Ltn" type="term">ma</foreign>
@@ -458,7 +460,7 @@
             <l>“Will have abundant wealth</l>
             <l>And will be reborn in a good situation.</l>
             <l>Their enemies will become unhappy,<note place="end" xml:id="UT22084-034-025-103">Following the Pali <foreign xml:lang="Pi-Ltn">amittā dummanā honti</foreign>.
-                Tibetan <foreign xml:lang="Bo-Ltn">dgra ni de la dga’ ba dang</foreign>. “enemies
+                Tibetan <foreign xml:lang="Bo-Ltn">dgra ni de la dga’ ba dang</foreign>, “enemies
                 will like them.”</note>
             </l>
             <l>And when both are equal in ethical discipline,</l>
@@ -489,13 +491,7 @@
           <lb/>
           <milestone unit="chunk" xml:id="UT22084-034-025-110"/>
           <p tid="35">The monks then inquired about the benefits of the <term ref="UT22084-034-025-331">five disciplines</term>: “How else,
-            Venerable Bhagavān, should the karmic fruition<note place="end" xml:id="UT22084-034-025-111"> The Theravāda tradition usually defines the term
-                <foreign xml:lang="Pi-Ltn" type="term">vipāka</foreign> (Tib. <foreign xml:lang="Bo-Ltn" type="term">rnam par smin pa</foreign>) as strictly referring to
-              mental phenomena as results of past deeds. See Buswell and Lopez 2014, p. 977: “Vipāka
-              refers to any mental phenomenon that occurs as a result of a morally wholesome or
-              unwholesome volitional action performed by body, speech, or mind, either in this or
-              previous lives.” Here, however, the sūtra speaks of karmic results that are
-              experienced physically, i.e., through rebirth in any of the lower realms.</note> of
+            Venerable Bhagavān, should the karmic fruition of
             refraining from killing be understood? How should the karmic fruition of refraining from
             taking what has not been given be understood? How should the karmic fruition of
             refraining from sexual misconduct be understood? How should the karmic fruition of
@@ -717,7 +713,7 @@
             twelve earshots, with flames climbing up their bodies,<note place="end" xml:id="UT22084-034-025-148"> Translation tentative: <foreign xml:lang="Bo-Ltn" type="quote">lus po rgyang grags bcu gnyis dang ldan zhing lus la me gyen du ’bar
                 ba</foreign>. There may be a sentence missing here. As it stands it is unclear whose
               bodies (<foreign xml:lang="Bo-Ltn" type="term">lus po</foreign>) are being referred to
-              as “having twelve earshots distance (<foreign xml:lang="Bo-Ltn" type="quote">rgyang
+              as “having twelve earshots distance” (<foreign xml:lang="Bo-Ltn" type="quote">rgyang
                 grags</foreign>). The Pali <title xml:lang="Pi-Ltn">Pañcagatidīpanī</title>
               (translated in Hazlewood 1987) mentions huge-bodied fearsome females in this hell, who
               torment beings there: “Metal-toothed, huge bodied, blazing fearsome females, embracing
@@ -757,11 +753,11 @@
             <l>“What is the use of a temporary partner<note place="end" xml:id="UT22084-034-025-157"> Tib. <foreign xml:lang="Bo-Ltn" type="quote">dus kyi chung ma</foreign>; that is,
                 a sexual partner.</note> now,</l>
             <l>When stuck on the tips of those trees?”<note place="end" xml:id="UT22084-034-025-158"> Cp., however, Feer’s differing French translation (Feer 1883, p. 267): <lg>
-                  <l>Une montagne noire et, à la même hauteur que son sommet,</l>
+                  <l>“Une montagne noire et, à la même hauteur que son sommet,</l>
                   <l>un bois hérissé d’épines, des pointes de fer aiguës;</l>
                   <l>voilà le supplice de l’homme du monde.</l>
                   <l>(Que doit faire) celui qui réside sur la cime du bois?</l>
-                  <l>Que doit faire l’épouse de celui qui gémit?</l>
+                  <l>Que doit faire l’épouse de celui qui gémit?”</l>
                 </lg>
                             </note>
                         </l>
@@ -871,10 +867,10 @@
             <l>Should not go after other women</l>
             <l>But cleanse his mental stain instead.”<note place="end" xml:id="UT22084-034-025-177">
                 Or “the wives of others”; cf. Feer’s translation (1883, p. 238):<lg>
-                  <l>L’homme qui a des désirs</l>
+                  <l>“L’homme qui a des désirs</l>
                   <l>doit, de naissance en naissance,</l>
                   <l>s’abstenir d’aller vers les femmes d’autrui</l>
-                  <l>et nettoyer les souillures de son esprit.</l>
+                  <l>et nettoyer les souillures de son esprit.”</l>
                 </lg>
                             </note>
                         </l>
@@ -1156,8 +1152,8 @@
           <milestone unit="chunk" xml:id="UT22084-034-025-234"/>
           <trailer tid="106">This concludes “<title xml:lang="en">The Sūtra That Teaches the
               Benefits of the Five Disciplines</title>.”</trailer>
-        </div>
-        <div type="colophon" xml:id="UT22084-034-025-colophon">
+        </tei:div>
+        <tei:div type="colophon" xml:id="UT22084-034-025-colophon">
           <head type="colophon" tid="107">Colophon</head>
           <milestone unit="chunk" xml:id="UT22084-034-025-235"/>
           <p tid="108">This sūtra was translated, edited, and finalized by the learned translator,
@@ -1167,13 +1163,13 @@
               Skilling (1993, p. 132) translates this maṅgalam verse as “May the surface of the
               earth be like the sun and moon.”</note>
                     </p>
-        </div>
-      </div>
+        </tei:div>
+      </tei:div>
     </body>
     <back>
-      <div type="notes">
+      <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="notes">
         <head type="notes" tid="117">Notes</head>
-        <div type="section" xml:id="UT22084-034-025-notes-1">
+        <tei:div type="section" xml:id="UT22084-034-025-notes-1">
           <head type="section" tid="118">Kangyurs referenced in the comparative table of variant
             readings (<foreign xml:lang="Bo-Ltn">bsdur mchan</foreign>) in the Comparative Edition
             of the Kangyur</head>
@@ -1218,13 +1214,13 @@
                 </expan>
                         </item>
           </list>
-        </div>
-        <div type="section" xml:id="UT22084-034-025-notes-2">
+        </tei:div>
+        <tei:div type="section" xml:id="UT22084-034-025-notes-2">
           <head type="section" tid="120">Kangyur editions used directly for this translation</head>
           <list type="abbreviations">
             <item xml:id="UT22084-034-025-247">
                             <abbr>D</abbr>
-                            <expan>Degé printed Kangyur (<foreign xml:lang="Bo-Ltn">par phud</foreign>)</expan>
+                            <expan>Degé printed Kangyur (<foreign xml:lang="Bo-Ltn">par phud</foreign> facsimile)</expan>
                         </item>
             <item xml:id="UT22084-034-025-248">
                             <abbr>S</abbr>
@@ -1232,8 +1228,8 @@
                 Kangyur</expan>
                         </item>
           </list>
-        </div>
-        <div type="section" xml:id="UT22084-034-025-notes-3">
+        </tei:div>
+        <tei:div type="section" xml:id="UT22084-034-025-notes-3">
           <head type="section" tid="119">Other</head>
           <list type="abbreviations">
             <item xml:id="UT22084-034-025-249">
@@ -1273,12 +1269,12 @@
               1925</expan>
                         </item>
           </list>
-        </div>
-      </div>
-      <div type="listBibl">
+        </tei:div>
+      </tei:div>
+      <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="listBibl">
         <head type="listBibl" tid="113">Bibliography</head>
-        <div type="section" xml:id="UT22084-034-025-listBibl-1">
-          <div type="section" xml:id="UT22084-034-025-listBibl-1-1">
+        <tei:div type="section" xml:id="UT22084-034-025-listBibl-1">
+          <tei:div type="section" xml:id="UT22084-034-025-listBibl-1-1">
             <head type="section" tid="115">Canonical Sources</head>
             <bibl xml:id="UT22084-034-025-255">
                             <title xml:lang="Bo-Ltn">bslab pa lnga’i phan
@@ -1324,9 +1320,16 @@
                             </title> (<title xml:lang="Pi-Ltn">Jātaka-aṭṭhakathā-5</title>, <title xml:lang="Pi-Ltn">21.
                 asītipāto</title>). Based on the Chaṭṭha Saṅgāyana CD-ROM published by the Vipassana
               Research Institute, Dhamma Giri, India, <ref target="https://tipitaka.org/romn/">https://tipitaka.org/romn/</ref>, last accessed September 26, 2023.</bibl>
-          </div>
-          <div type="section" xml:id="UT22084-034-025-listBibl-1-2">
+          </tei:div>
+          <tei:div type="section" xml:id="UT22084-034-025-listBibl-1-2">
             <head type="section" tid="116">Other Sources</head>
+            <bibl xml:id="UT22084-034-025-269">84000: Translating the Words of the Buddha. 
+              <title xml:lang="en">
+                                <ref target="https://read.84000.co/translation/toh287.html">The
+              Application of Mindfulness of the Sacred Dharma</ref>
+                            </title> (<title xml:lang="Sa-Ltn">Saddharma­smṛtyupasthāna</title>, 
+              Toh 287). Translated by the Dharmacakra Translation Committee. Online publication, 84000: Translating the
+              Words of the Buddha, 2021.</bibl>
             <bibl xml:id="UT22084-034-025-264">Bhikkhu Bodhi. <title xml:lang="en">The Numerical
                 Discourses of the Buddha: A Translation of the Aṅguttara Nikāya</title>. Boston:
               Wisdom Publications, 2012. </bibl>
@@ -1344,11 +1347,6 @@
                 Tibetan Chinese) Annotated Translation and Introductory Study</title>. Tokyo:
               International Institute for Buddhist Studies of the International College for
               Postgraduate Buddhist Studies, 2006.</bibl>
-            <bibl xml:id="UT22084-034-025-269">Dharmacakra Translation Committee, trans. <title xml:lang="en">
-                                <ref target="https://read.84000.co/translation/toh287.html">The
-                  Application of Mindfulness of the Sacred Dharma</ref>
-                            </title> (<title xml:lang="Sa-Ltn">Saddharma­smṛtyupasthāna</title>, Toh 287). 84000: Translating the
-              Words of the Buddha, 2021.</bibl>
             <bibl xml:id="UT22084-034-025-270">
                             <title xml:lang="Bo-Ltn">dung dkar tshig mdzod chen
                 mo</title>. Beijing: krung go’i bod rig pa dpe skrun khang, 2002.</bibl>
@@ -1398,10 +1396,10 @@
             <bibl xml:id="UT22084-034-025-285">Zin, Monika. “Imagery of Hell in South, South East
               and Central Asia.” <title xml:lang="po">Rocznik Orientalistyczny</title> 67 (2014):
               269–96.</bibl>
-          </div>
-        </div>
-      </div>
-      <div type="glossary" status="excluded">
+          </tei:div>
+        </tei:div>
+      </tei:div>
+      <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="glossary" status="excluded">
         <list type="glossary">
           <item>
                         <gloss type="term" xml:id="UT22084-034-025-287">
@@ -1411,8 +1409,7 @@
               <term xml:lang="Pi-Ltn">gahapati</term>
               <term status="verified" type="attestedOther" xml:lang="Sa-Ltn">gṛhapati</term>
               <note type="definition">
-                                <p>Term for a male non-monastic householder or married man. In
-                  Buddhist sources, this term is often associated with the social class <foreign xml:lang="Sa-Ltn" type="term">vaiśya</foreign> (Pali <foreign xml:lang="Pi-Ltn" type="term">vessa</foreign>) of the brahmanical <foreign xml:lang="Sa-Ltn" type="term">varṇa</foreign> system. See also <ptr target="#UT22084-034-025-89"/>.</p>
+                                <p>Term for a male non-monastic householder or married man. See also <ptr target="#UT22084-034-025-89"/>.</p>
                             </note>
             </gloss>
                     </item>
@@ -1425,8 +1422,7 @@
               <term status="verified" type="attestedOther" xml:lang="Sa-Ltn">gṛhapatnī</term>
               <note type="definition">
                                 <p>Term for a female non-monastic householder or married
-                  woman. In Buddhist sources, this term is often associated with the social class
-                    <foreign xml:lang="Sa-Ltn" type="term">vaiśya</foreign> (Pali <foreign xml:lang="Pi-Ltn" type="term">vessa</foreign>) of the brahmanical <foreign xml:lang="Sa-Ltn" type="term">varṇa</foreign> system. See also <ptr target="#UT22084-034-025-89"/>.</p>
+                  woman. See also <ptr target="#UT22084-034-025-89"/>.</p>
                             </note>
             </gloss>
                     </item>
@@ -2593,7 +2589,7 @@
             </gloss>
                     </item>
         </list>
-      </div>
+      </tei:div>
     </back>
   </text>
 </TEI>
