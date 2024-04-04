@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../schema/current/translation.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<tei:TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -19,24 +19,24 @@
                 <title type="otherTitle" xml:lang="Bo-Ltn">yum gsum gnod ’joms / gnod ’joms che ba /</title>
                 <title type="otherTitle" xml:lang="bo">ཡུམ་གསུམ་གནོད་འཇོམས། གནོད་འཇོམས་ཆེ་བ།</title>
                 <!--<title type="shortcode" xml:lang="en">LCC</title>-->
-                <author role="translatorMain" ref="eft:team-60"/>
-                <author role="translatorEng" ref="eft:person-211">Gareth Sparham</author>
-                <editor role="projectEditor" ref="eft:person-289">Nathaniel Rich</editor>
-                <consultant role="projectManager" ref="eft:person-211">Gareth Sparham</consultant>
-                <editor role="copyEditor" ref="eft:person-249">Konchog Norbu</editor>
-                <editor role="projectEditor" ref="eft:person-139">John Canti</editor>
-                <sponsor ref="sponsors.xml#sponsor-206">Kelvin Lee, Doris Lim, Chang Chen Hsien, Lim Cheng Cheng, Ng Ah Chon &amp; family, Lee Hoi Lang &amp; family, Late Lee Tiang Chuan, Late Chang
+                <author role="translatorMain" xml:id="UT23703-000-000-73"/>
+                <author role="translatorEng" xml:id="UT23703-000-000-74">Gareth Sparham</author>
+                <editor role="projectEditor" xml:id="UT23703-000-000-75">Nathaniel Rich</editor>
+                <consultant role="projectManager" xml:id="UT23703-000-000-76">Gareth Sparham</consultant>
+                <editor role="copyEditor" xml:id="UT23703-000-000-77">Konchog Norbu</editor>
+                <editor role="projectEditor" xml:id="UT23703-000-000-78">John Canti</editor>
+                <sponsor xml:id="UT23703-000-000-79">Kelvin Lee, Doris Lim, Chang Chen Hsien, Lim Cheng Cheng, Ng Ah Chon &amp; family, Lee Hoi Lang &amp; family, Late Lee Tiang Chuan, Late Chang
                     Koo Cheng</sponsor>
             </titleStmt>
             <editionStmt>
-                <edition>v 1.0.0 <date>2022</date>
+                <edition>v 1.0.1 <date>2023</date>
                 </edition>
             </editionStmt>
-            <publicationStmt status="1">
+            <publicationStmt>
                 <publisher>
                     <name>84000: Translating the Words of the Buddha</name> is a global non-profit initiative to translate all the Buddha’s words into modern languages, and to make them available to
                     everyone. </publisher>
-                <availability>
+                <availability status="1">
                     <p type="tantricRestriction">
                         <emph rend="bold">Warning:</emph> Readers are reminded that according to Vajrayāna Buddhist tradition there are restrictions and commitments concerning tantra. Practitioners
                         who are not sure if they should read this translation are advised to consult the authorities of their lineage. The responsibility for reading this text or sharing it with
@@ -54,11 +54,11 @@
                 <bibl key="toh00c" type="text">
                     <ref>Toh 00c</ref>
                     <biblScope>Degé Tengyur, vol. 93 (sher phyin, pha), folios 1.b–292.b</biblScope>
-                    <author ref="eft:entity-18379" xml:lang="Sa-Ltn">Daṃṣṭrasena</author>
-                    <author ref="eft:entity-7082" xml:lang="Sa-Ltn" key="alternate">Vasubandhu</author>
-                    <author ref="eft:entity-18381" xml:lang="Sa-Ltn" key="alternate">Diṣṭasena</author>
-                    <author role="translatorTib" ref="eft:entity-18380" xml:lang="Sa-Ltn">Surendrabodhi</author>
-                    <author role="translatorTib" ref="eft:entity-18257" xml:lang="Bo-Ltn">zhu chen gyi lo tsA ba ban de ye shes sde</author>
+                    <author xml:lang="Sa-Ltn" xml:id="UT23703-000-000-80">Daṃṣṭrasena</author>
+                    <author xml:lang="Sa-Ltn" key="alternate" xml:id="UT23703-000-000-81">Vasubandhu</author>
+                    <author xml:lang="Sa-Ltn" key="alternate" xml:id="UT23703-000-000-82">Diṣṭasena</author>
+                    <author role="translatorTib" xml:lang="Sa-Ltn" xml:id="UT23703-000-000-83">Surendrabodhi</author>
+                    <author role="translatorTib" xml:lang="Bo-Ltn" xml:id="UT23703-000-000-84">zhu chen gyi lo tsA ba ban de ye shes sde</author>
                     <location work="UT23703" count-pages="582">
                         <volume number="93" start-page="4" end-page="586"/>
                     </location>
@@ -67,9 +67,12 @@
                 </bibl>
                 <link type="isCommentaryOf" target="toh00"/>
             </sourceDesc>
-            <notesStmt>
-                <note type="lastUpdated" date-time="2023-03-07T13:22:49.353Z" user="celso">07/03/2023 13:22:49</note>
-            </notesStmt>
+            <notesStmt/>
+            <revisionDesc>
+                <change who="#admin" when="2023-07-30T22:39:48.323Z" type="text-version" status="1.0.1" xml:id="UT23703-000-000-85">
+                    <desc>TEI migrated to 2.19.0</desc>
+                </change>
+            </revisionDesc>
         </fileDesc>
     </teiHeader>
     <text>
@@ -80,11 +83,14 @@
                 <p tid="3">References are made to the test TEI file Toh 00 (<title xml:lang="Sa-Ltn">The Diacritic Test of āḍḥīḷḹṃṇñṅṛṝṣśṭūṁ ĀḌḤĪḶḸṂṆÑṄṚṜṢŚṬŪṀ</title>), and all references should also
                     function as back references to this text e.g. a reference in this text to passage A should also function in passage A of the root text as a reference back to this commentary.</p>
                 <p tid="4">References are only made in the commentary text, not in the root.</p>
+                <p tid="10260">Note, that the commentary text requires the a &lt;link&gt; element in the &lt;sourceDesc&gt; which declares it is a commentary of another text. E.g.:
+                    <code>&lt;link type="isCommentaryOf" target="toh00"/&gt;</code>.</p>
+                <p tid="10261">The root text does not need such a declaration, but it does need a short code in it's &lt;titleStmt&gt;. (See <ptr target="#UT23703-000-000-68"/>)</p>
             </div>
         </front>
         <body>
             <div type="translation">
-                <head type="translation" tid="5">The Translation</head>
+                <head type="translation">The Translation</head>
                 <head type="titleHon" tid="6">The Noble 84000 Commentary Test</head>
                 <head type="titleMain" tid="7">The Main Title</head>
                 <div type="chapter" xml:id="UT23703-000-000-chapter-1">
@@ -184,7 +190,7 @@
                             <lg tid="140">
                                 <l>At first to renounce a householder’s concerns and go forth is hard.</l>
                                 <l>For a hedonist to be happy among renunciants is hard.</l>
-                                <l>For the joyful set on perfection to <term type="ignore">act</term> perfectly is hard.</l>
+                                <l>For the joyful set on perfection to <term rend="ignore">act</term> perfectly is hard.</l>
                                 <l>For a learned wearer of the saffron robes to fall is hard.</l>
                             </lg>
                         </q>
@@ -389,19 +395,32 @@
 
                     <div type="section" xml:id="UT23703-000-000-chapter-3-6">
                         <head type="section" tid="144">Linking a Quote to Multiple Source Texts</head>
-                      <milestone unit="chunk" xml:id="UT23703-000-000-71"/>
+                        <milestone unit="chunk" xml:id="UT23703-000-000-86"/>
                         <p tid="145">It is also possible that a single quote can refer to multiple source texts, in which case you can simply add multiple pointers.</p>
-                        <p tid="146">In this example the commentary quotes two source texts. All have the same translation.</p>
+                        <p tid="146">In this example the commentary quotes two source texts. Both have the same translation.</p>
                         <q>
                             <p tid="147">
                                 <ptr type="quote-ref" target="#UT22084-046-001-2327" rend="substring" xml:id="UT23703-000-000-61"/>
                                 <ptr type="quote-ref" target="#UT22084-000-000-446" rend="substring" xml:id="UT23703-000-000-62"/> The Thus-Gone One explained the causes </p>
                         </q>
-                        <p tid="148">However it is also possible that one or more of the target translations varies from the commentary text. In the following substring quote the first quote matches
+                        <p tid="10262">The order of quote links in the TEI should be maintained in the output. The following quote should be a duplicate of the preceding one but with the link order switched.</p>
+                        <q>
+                            <p tid="10263">
+                                <ptr type="quote-ref" target="#UT22084-000-000-446" rend="substring" xml:id="UT23703-000-000-87"/> 
+                                <ptr type="quote-ref" target="#UT22084-046-001-2327" rend="substring" xml:id="UT23703-000-000-88"/>
+                                The Thus-Gone One explained the causes </p>
+                        </q>
+                        <p tid="148">It is also possible that one or more of the target translations varies from the commentary text. In the following substring quote the first quote matches
                             the root text, but the second one uses <code>&lt;orig/&gt;</code> to specifiy alternative content.</p>
                         <q>
                             <p tid="149">
-                                <ptr type="quote-ref" target="#UT22084-046-001-2327" rend="substring" xml:id="UT23703-000-000-63"/> This is the teaching of the Great Ascetic </p>
+                                <ptr type="quote-ref" target="#UT22084-046-001-2327" rend="substring" xml:id="UT23703-000-000-63"/>
+                                <ptr type="quote-ref" target="#MISSING-TARGET" rend="substring" xml:id="UT23703-000-000-71"/><!-- Leave this to verify it doesn't cause a problem -->
+                                This is the teaching of the Great Ascetic
+                                <note place="end" xml:id="UT23703-000-000-72">
+                                    This note includes a pointer (<ptr target="#UT23703-000-000-1"/>) to verify that it doesn't cause a problem.
+                                </note>
+                            </p>
                             <orig>
                                 <ptr type="quote-ref" target="#UT22084-000-000-446" rend="substring" xml:id="UT23703-000-000-64"/> This is the teaching of the Great Renunciant </orig>
                         </q>
@@ -427,12 +446,14 @@
                 <list type="glossary">
                     <item>
                         <gloss type="term" mode="match" xml:id="UT23703-000-000-52">
-                            <term>References</term>
-                            <term type="definition">The word <emph>references</emph> is in the quotes in this text demostrating how the glossary highlighting and the quote referencing interact.</term>
+                            <term type="translationMain">References</term>
+                            <note type="definition">
+                                <p>The word <emph>references</emph> is in the quotes in this text demostrating how the glossary highlighting and the quote referencing interact.</p>
+                            </note>
                         </gloss>
                     </item>
                 </list>
             </div>
         </back>
     </text>
-</tei:TEI>
+</TEI>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar xmlns:rng="http://relaxng.org/ns/structure/1.0">
+<!--This is a stub to create the RNG schema files for the knowledgebase and sections.
+  Replace the element, "define name="teiHeader" with teh element below.-->
+
+  <define name="teiHeader">
+    <element name="teiHeader">
+      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(TEI header) supplies descriptive and declarative metadata associated with a digital resource or set of resources. [2.1.1. The TEI Header and Its Components 15.1. Varieties of Composite Text]</a:documentation>
+      <element name="fileDesc">
+        <optional>
+          <attribute name="type">
+            <choice>
+              <value>section</value>
+              <value>pseudo-section</value>
+              <value>grouping</value>
+            </choice>
+          </attribute>
+        </optional>
+        <ref name="titleStmt"/>
+        <ref name="editionStmt"/>
+        <element name="publicationStmt">
+          <!--Optional descriptive text-->
+          <optional>
+            <ref name="p"/>
+          </optional>
+          <optional>
+            <ref name="publisher"/>
+          </optional>
+          <element name="availability">
+            <attribute name="status">
+              <choice>
+                <value>1.a</value>
+                <value>1</value>
+                <value>2</value>
+                <value>2.a</value>
+                <value>2.b</value>
+                <value>2.c</value>
+                <value>2.d</value>
+                <value>2.e</value>
+                <value>2.f</value>
+                <value>2.g</value>
+                <value>2.h</value>
+                <value>3</value>
+                <value>4</value>
+                <value>0</value>
+              </choice>
+            </attribute>
+          </element>
+          <oneOrMore>
+            <ref name="idno"/>
+          </oneOrMore>
+          <ref name="date"/>
+        </element>
+        <element name="sourceDesc">
+          <optional>
+            <attribute name="work"/>
+            <attribute name="sort-index"/>
+          </optional>
+          <!--Optional descriptive text-->
+          <optional>
+            <ref name="p"/>
+          </optional>
+          <optional>
+            <element name="bibl">
+              <ref name="idno"/>
+            </element>
+          </optional>
+        </element>
+        <optional>
+          <ref name="notesStmt"/>
+        </optional>
+        <optional>
+          <ref name="revisionDesc"/>
+        </optional>
+      </element>
+      <optional>
+        <ref name="profileDesc"/>
+      </optional>
+      <optional>
+        <ref name="encodingDesc"/>
+      </optional>
+    </element>
+  </define>
+  
+</grammar>
