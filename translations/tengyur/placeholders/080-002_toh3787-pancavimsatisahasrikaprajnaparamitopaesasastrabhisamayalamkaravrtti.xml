@@ -11,10 +11,11 @@
                 <title xml:lang="en" type="longTitle">A Running Commentary on “The Ornament for Clear Realizations,” A Treatise of Personal Instructions on the Noble Perfection of Wisdom in Twenty-Five Thousand Lines</title>
             </titleStmt>
             <editionStmt>
-                <edition>v 0.0.10 <date>2021</date>
+                <edition>v 0.0.11 <date>2023</date>
                 </edition>
             </editionStmt>
-            <publicationStmt status="">
+            <publicationStmt>
+                <availability status=""/>
                 <idno xml:id="UT23703-080-002"/>
                 <date/>
             </publicationStmt>
@@ -22,9 +23,9 @@
                 <bibl key="toh3787" type="text">
                     <ref>Toh 3787</ref>
                     <biblScope>ff. 14v-212r</biblScope>
-                    <author ref="eft:entity-35143" xml:lang="Sa-Ltn">Ārya Vimuktisena</author>
-                    <author role="translatorTib" ref="eft:entity-18291" xml:lang="Sa-Ltn">Amaragomin</author>
-                    <author role="translatorTib" ref="eft:entity-17482" xml:lang="Bo-Ltn">lo tsa ba chen po shakya'i dge slong blo ldan shes rab</author>
+                    <author xml:lang="Sa-Ltn" xml:id="UT23703-080-002-1">Ārya Vimuktisena</author>
+                    <author role="translatorTib" xml:lang="Sa-Ltn" xml:id="UT23703-080-002-2">Amaragomin</author>
+                    <author role="translatorTib" xml:lang="Bo-Ltn" xml:id="UT23703-080-002-3">lo tsa ba chen po shakya'i dge slong blo ldan shes rab</author>
                     <location work="UT23703" count-pages="397">
                         <volume number="80" start-page="27" end-page="423"/>
                     </location>
@@ -34,20 +35,45 @@
                 <link type="isCommentaryOf" target="toh9"/>
                 <link type="isCommentaryOf" target="toh3786"/>
             </sourceDesc>
-            <notesStmt>
-                <note type="lastUpdated" date-time="2022-06-07T17:48:55.846Z" user="admin">07/06/2022 17:48:55</note>
-                <note type="updated" update="text-version" value="v 0.0.1" date-time="2019-12-20T12:56:48.575Z" user="admin">Automated version increment</note>
-                <note type="updated" update="text-version" value="v 0.0.2" date-time="2020-06-24T15:12:02.933Z" user="john">Titles added</note>
-                <note type="updated" update="publication-date" value="" date-time="2020-06-24T15:12:02.933Z" user="john">Titles added</note>
-                <note type="updated" update="text-version" value="v 0.0.3" date-time="2020-06-24T15:33:11.52Z" user="john">v 0.0.3</note>
-                <note type="updated" update="text-version" value="v 0.0.4" date-time="2020-06-24T15:45:09.026Z" user="john">Titles updated.</note>
-                <note type="updated" update="text-version" value="v 0.0.5" date-time="2020-06-25T10:29:48.813Z" user="john">v 0.0.5</note>
-                <note type="updated" update="text-version" value="v 0.0.6" date-time="2020-06-25T10:33:13.489Z" user="john">v 0.0.6</note>
-                <note type="updated" update="import" value="fileDesc" import="tengyur-data-3786-3823_PH_new_v2.4.xml" date-time="2021-11-02T14:12:33.078Z" user="admin"/>
-                <note type="updated" update="text-version" value="0.0.8" date-time="2022-06-07T17:32:09.296Z" user="john">Auto (update-locations)</note>
-                <note type="updated" update="text-version" value="0.0.9" date-time="2022-06-07T17:38:04.605Z" user="john">Auto (update-locations)</note>
-                <note type="updated" update="text-version" value="0.0.10" date-time="2022-06-07T17:48:52.092Z" user="john">Auto (update-locations)</note>
-            </notesStmt>
+            <notesStmt/>
+            <revisionDesc>
+                <change who="#admin" when="2019-12-20T12:56:48.575Z" type="text-version" status="v 0.0.1" xml:id="UT23703-080-002-4">
+                    <desc>Automated version increment</desc>
+                </change>
+                <change who="#john" when="2020-06-24T15:12:02.933Z" type="text-version" status="v 0.0.2" xml:id="UT23703-080-002-5">
+                    <desc>Titles added</desc>
+                </change>
+                <change who="#john" when="2020-06-24T15:12:02.933Z" type="publication-date" xml:id="UT23703-080-002-6">
+                    <desc>Titles added</desc>
+                </change>
+                <change who="#john" when="2020-06-24T15:33:11.52Z" type="text-version" status="v 0.0.3" xml:id="UT23703-080-002-7">
+                    <desc>v 0.0.3</desc>
+                </change>
+                <change who="#john" when="2020-06-24T15:45:09.026Z" type="text-version" status="v 0.0.4" xml:id="UT23703-080-002-8">
+                    <desc>Titles updated.</desc>
+                </change>
+                <change who="#john" when="2020-06-25T10:29:48.813Z" type="text-version" status="v 0.0.5" xml:id="UT23703-080-002-9">
+                    <desc>v 0.0.5</desc>
+                </change>
+                <change who="#john" when="2020-06-25T10:33:13.489Z" type="text-version" status="v 0.0.6" xml:id="UT23703-080-002-10">
+                    <desc>v 0.0.6</desc>
+                </change>
+                <change who="#admin" when="2021-11-02T14:12:33.078Z" type="import" xml:id="UT23703-080-002-11" source="tengyur-data-3786-3823_PH_new_v2.4.xml">
+                    <desc/>
+                </change>
+                <change who="#john" when="2022-06-07T17:32:09.296Z" type="text-version" status="0.0.8" xml:id="UT23703-080-002-12">
+                    <desc>Auto (update-locations)</desc>
+                </change>
+                <change who="#john" when="2022-06-07T17:38:04.605Z" type="text-version" status="0.0.9" xml:id="UT23703-080-002-13">
+                    <desc>Auto (update-locations)</desc>
+                </change>
+                <change who="#john" when="2022-06-07T17:48:52.092Z" type="text-version" status="0.0.10" xml:id="UT23703-080-002-14">
+                    <desc>Auto (update-locations)</desc>
+                </change>
+                <change who="#admin" when="2023-07-30T22:39:48.323Z" type="text-version" status="0.0.11" xml:id="UT23703-080-002-15">
+                    <desc>TEI migrated to 2.19.0</desc>
+                </change>
+            </revisionDesc>
         </fileDesc>
     </teiHeader>
     <text>

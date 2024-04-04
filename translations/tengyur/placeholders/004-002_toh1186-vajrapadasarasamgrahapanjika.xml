@@ -9,14 +9,15 @@
                 <title type="mainTitle" xml:lang="Bo-Ltn">rdo rje'i tshig gi snying po bsdus pa'i dka' 'grel/</title>
                 <title type="mainTitle" xml:lang="bo">རྡོ་རྗེའི་ཚིག་གི་སྙིང་པོ་བསྡུས་པའི་དཀའ་འགྲེལ།</title>
                 <title type="otherTitle" xml:lang="Bo-Ltn">nA ro'i dka' 'grel/</title>
-                <author role="translatorMain" ref="contributors.xml#team-55"/>
-                <author role="translatorEng" ref="contributors.xml#person-54">Thomas Doctor</author>
+                <author role="translatorMain" xml:id="UT23703-004-002-1"/>
+                <author role="translatorEng" xml:id="UT23703-004-002-2">Thomas Doctor</author>
             </titleStmt>
             <editionStmt>
-                <edition>v 0.0.6 <date>2020</date>
+                <edition>v 0.0.7 <date>2023</date>
                 </edition>
             </editionStmt>
-            <publicationStmt status="3">
+            <publicationStmt>
+                <availability status="3"/>
                 <idno xml:id="UT23703-004-002"/>
                 <date/>
             </publicationStmt>
@@ -24,10 +25,10 @@
                 <bibl key="toh1186" type="text">
                     <ref>Toh 1186</ref>
                     <biblScope>ff. 58v-146v</biblScope>
-                    <author ref="eft:entity-17552" xml:lang="Sa-Ltn">Kaśmīri Yaśobhadra</author>
-                    <author role="translatorTib" ref="eft:entity-17514" xml:lang="Sa-Ltn">Śākyaśrībhadra</author>
-                    <author role="translatorTib" ref="eft:entity-17551" xml:lang="Bo-Ltn">bod kyi lo tsa ba dpyal chos kyi bzang po</author>
-                    <editor role="reviser" ref="eft:entity-17532" xml:lang="Bo-Ltn">dpang lo tsA ba chen po dpal ldan blo gros brtan pa</editor>
+                    <author xml:lang="Sa-Ltn" xml:id="UT23703-004-002-3">Kaśmīri Yaśobhadra</author>
+                    <author role="translatorTib" xml:lang="Sa-Ltn" xml:id="UT23703-004-002-4">Śākyaśrībhadra</author>
+                    <author role="translatorTib" xml:lang="Bo-Ltn" xml:id="UT23703-004-002-5">bod kyi lo tsa ba dpyal chos kyi bzang po</author>
+                    <editor role="reviser" xml:lang="Bo-Ltn" xml:id="UT23703-004-002-6">dpang lo tsA ba chen po dpal ldan blo gros brtan pa</editor>
                     <location work="UT23703" count-pages="177">
                         <volume number="4" start-page="116" end-page="292"/>
                     </location>
@@ -37,16 +38,34 @@
                 <link type="isCommentaryOf" target="toh417"/>
             </sourceDesc>
             <notesStmt>
-                <note type="lastUpdated" date-time="2022-01-26T15:41:59.945Z" user="admin">26/01/2022 15:41:59</note>
-                <note type="updated" update="text-version" value="0.0.1" date-time="2020-02-21T09:59:08.457Z" user="andreas">0.0.1</note>
-                <note type="updated" update="translation-status" value="3" date-time="2020-02-21T09:59:08.457Z" user="andreas">3</note>
-                <note type="updated" update="text-version" value="0.0.2" date-time="2021-06-10T12:43:41.356Z" user="line-tofte">Auto (update-contributors)</note>
-                <note type="updated" update="text-version" value="0.0.3" date-time="2021-06-10T12:43:55.987Z" user="line-tofte">Auto (update-contributors)</note>
-                <note type="updated" update="import" value="fileDesc" import="tengyur-data-1180-1304_PH_new_v2.4.xml" date-time="2021-11-02T12:58:22.645Z" user="admin"/>
-                <note type="updated" update="attribution" import="tengyur-data-1180-1304_PH_new_v2.4.xml" date-time="2021-11-02T12:58:22.645Z" user="admin">Reviser attribution taken from Derge Dkar-chag.</note>
-                <note type="updated" update="text-version" value="0.0.5" date-time="2022-01-26T15:40:22.385Z" user="john">Note added about attribution.</note>
                 <note type="title" date-time="2022-01-26T15:41:52.604Z" user="john">By some Tibetan authors, the text is attributed to Nāropa (of whom, they say, Yaśobhadra is another name) but this is contested by others.</note>
             </notesStmt>
+            <revisionDesc>
+                <change who="#andreas" when="2020-02-21T09:59:08.457Z" type="text-version" status="0.0.1" xml:id="UT23703-004-002-7">
+                    <desc>0.0.1</desc>
+                </change>
+                <change who="#andreas" when="2020-02-21T09:59:08.457Z" type="translation-status" status="3" xml:id="UT23703-004-002-8">
+                    <desc>3</desc>
+                </change>
+                <change who="#line-tofte" when="2021-06-10T12:43:41.356Z" type="text-version" status="0.0.2" xml:id="UT23703-004-002-9">
+                    <desc>Auto (update-contributors)</desc>
+                </change>
+                <change who="#line-tofte" when="2021-06-10T12:43:55.987Z" type="text-version" status="0.0.3" xml:id="UT23703-004-002-10">
+                    <desc>Auto (update-contributors)</desc>
+                </change>
+                <change who="#admin" when="2021-11-02T12:58:22.645Z" type="import" xml:id="UT23703-004-002-11" source="tengyur-data-1180-1304_PH_new_v2.4.xml">
+                    <desc/>
+                </change>
+                <change who="#admin" when="2021-11-02T12:58:22.645Z" type="attribution" xml:id="UT23703-004-002-12" source="tengyur-data-1180-1304_PH_new_v2.4.xml">
+                    <desc>Reviser attribution taken from Derge Dkar-chag.</desc>
+                </change>
+                <change who="#john" when="2022-01-26T15:40:22.385Z" type="text-version" status="0.0.5" xml:id="UT23703-004-002-13">
+                    <desc>Note added about attribution.</desc>
+                </change>
+                <change who="#admin" when="2023-07-30T22:39:48.323Z" type="text-version" status="0.0.7" xml:id="UT23703-004-002-14">
+                    <desc>TEI migrated to 2.19.0</desc>
+                </change>
+            </revisionDesc>
         </fileDesc>
     </teiHeader>
     <text>

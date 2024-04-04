@@ -10,10 +10,11 @@
                 <title xml:lang="en" type="mainTitle">A Commentary on the Difficult Points called “The Water Lily”</title>
             </titleStmt>
             <editionStmt>
-                <edition>v 0.0.1 <date>2023</date>
+                <edition>v 0.0.2 <date>2023</date>
                 </edition>
             </editionStmt>
-            <publicationStmt status="4">
+            <publicationStmt>
+                <availability status="4"/>
                 <idno xml:id="UT23703-004-001"/>
                 <date/>
             </publicationStmt>
@@ -21,9 +22,9 @@
                 <bibl key="toh1185" type="text">
                     <ref>Toh 1185</ref>
                     <biblScope>ff. 1v-58v</biblScope>
-                    <author ref="eft:entity-17549" xml:lang="Sa-Ltn">Durjayacandra</author>
-                    <author role="translatorTib" ref="eft:entity-17548" xml:lang="Sa-Ltn">Prajñendraruci</author>
-                    <author role="translatorTib" ref="eft:entity-17550" xml:lang="Bo-Ltn">lo tsa ba dge slong shakya ye shes</author>
+                    <author xml:lang="Sa-Ltn" xml:id="UT23703-004-001-1">Durjayacandra</author>
+                    <author role="translatorTib" xml:lang="Sa-Ltn" xml:id="UT23703-004-001-2">Prajñendraruci</author>
+                    <author role="translatorTib" xml:lang="Bo-Ltn" xml:id="UT23703-004-001-3">lo tsa ba dge slong shakya ye shes</author>
                     <location work="UT23703" count-pages="115">
                         <volume number="4" start-page="2" end-page="116"/>
                     </location>
@@ -32,12 +33,21 @@
                 </bibl>
                 <link type="isCommentaryOf" target="toh417"/>
             </sourceDesc>
-            <notesStmt>
-                <note type="lastUpdated" date-time="2023-01-04T11:37:35.901Z" user="admin">04/01/2023 11:37:35</note>
-                <note type="updated" update="import" value="fileDesc" import="tengyur-data-1180-1304_PH_new_v2.4.xml" date-time="2021-11-02T12:58:22.645Z" user="admin"/>
-                <note type="updated" update="translation-status" value="4" date-time="2023-01-04T11:37:31.69Z" user="line-tofte">4</note>
-                <note type="updated" update="text-version" value="0.0.1" date-time="2023-01-04T11:37:31.69Z" user="line-tofte">0.0.1</note>
-            </notesStmt>
+            <notesStmt/>
+            <revisionDesc>
+                <change who="#admin" when="2021-11-02T12:58:22.645Z" type="import" xml:id="UT23703-004-001-4" source="tengyur-data-1180-1304_PH_new_v2.4.xml">
+                    <desc/>
+                </change>
+                <change who="#line-tofte" when="2023-01-04T11:37:31.69Z" type="translation-status" status="4" xml:id="UT23703-004-001-5">
+                    <desc>4</desc>
+                </change>
+                <change who="#line-tofte" when="2023-01-04T11:37:31.69Z" type="text-version" status="0.0.1" xml:id="UT23703-004-001-6">
+                    <desc>0.0.1</desc>
+                </change>
+                <change who="#admin" when="2023-07-30T22:39:48.323Z" type="text-version" status="0.0.2" xml:id="UT23703-004-001-7">
+                    <desc>TEI migrated to 2.19.0</desc>
+                </change>
+            </revisionDesc>
         </fileDesc>
     </teiHeader>
     <text>

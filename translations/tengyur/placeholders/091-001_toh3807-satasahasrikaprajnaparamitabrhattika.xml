@@ -11,14 +11,15 @@
                 <title type="otherTitle" xml:lang="en">[Commentary on] The One Hundred Thousand [Line Sūtra], Destroyer of Harms</title>
                 <title type="otherTitle" xml:lang="Bo-Ltn">gnod 'joms chung ba/</title>
                 <title type="otherTitle" xml:lang="Bo-Ltn">'bum kyi gnod 'joms/</title>
-                <author role="translatorMain" ref="eft:team-60"/>
-                <author role="translatorEng" ref="eft:person-211">Gareth Sparham</author>
+                <author role="translatorMain" xml:id="UT23703-091-001-1"/>
+                <author role="translatorEng" xml:id="UT23703-091-001-2">Gareth Sparham</author>
             </titleStmt>
             <editionStmt>
-                <edition>v 0.0.11 <date>2022</date>
+                <edition>v 0.0.12 <date>2023</date>
                 </edition>
             </editionStmt>
-            <publicationStmt status="3">
+            <publicationStmt>
+                <availability status="3"/>
                 <idno xml:id="UT23703-091-001"/>
                 <date/>
             </publicationStmt>
@@ -26,8 +27,7 @@
                 <bibl key="toh3807" type="text">
                     <ref>Toh 3807</ref>
                     <biblScope>vol 91 ff. 1v-331r, vol 92 ff. 1v-252r</biblScope>
-                    <author ref="eft:entity-18379" xml:lang="Sa-Ltn">Daṃṣṭrasena</author>
-                    <author xml:lang="en"/>
+                    <author xml:lang="Sa-Ltn" xml:id="UT23703-091-001-3">Daṃṣṭrasena</author>
                     <location work="UT23703" count-pages="1162">
                         <volume number="91" start-page="2" end-page="661"/>
                         <volume number="92" start-page="2" end-page="503"/>
@@ -37,18 +37,39 @@
                 </bibl>
                 <link type="isCommentaryOf" target="toh8"/>
             </sourceDesc>
-            <notesStmt>
-                <note type="lastUpdated" date-time="2023-01-20T13:18:15.147Z" user="admin">20/01/2023 13:18:15</note>
-                <note type="updated" update="import" value="fileDesc" import="tengyur-data-3786-3823_PH_new_v2.4.xml" date-time="2021-11-02T14:12:33.078Z" user="admin"/>
-                <note type="updated" update="text-version" value="0.0.4" date-time="2022-05-21T20:00:03.876Z" user="john">Auto (update-locations)</note>
-                <note type="updated" update="text-version" value="0.0.6" date-time="2022-05-21T22:38:45.274Z" user="john">Auto (update-locations)</note>
-                <note type="updated" update="text-version" value="0.0.7" date-time="2022-05-21T22:40:26.083Z" user="john">Titles corrected and completed</note>
-                <note type="updated" update="text-version" value="0.0.8" date-time="2022-05-22T10:54:11.265Z" user="john">Added public comment on titles.</note>
-                <note type="updated" update="text-version" value="0.0.9" date-time="2022-11-18T00:42:29.266Z" user="celso">Auto (update-titles)</note>
-                <note type="updated" update="translation-status" value="3" date-time="2023-01-20T13:17:28.451Z" user="line-tofte">3</note>
-                <note type="updated" update="text-version" value="0.0.10" date-time="2023-01-20T13:17:28.451Z" user="line-tofte">Auto (update-publication-status)</note>
-                <note type="updated" update="text-version" value="0.0.11" date-time="2023-01-20T13:18:09.543Z" user="line-tofte">Auto (update-contributors)</note>
-            </notesStmt>
+            <notesStmt/>
+            <revisionDesc>
+                <change who="#admin" when="2021-11-02T14:12:33.078Z" type="import" xml:id="UT23703-091-001-4" source="tengyur-data-3786-3823_PH_new_v2.4.xml">
+                    <desc/>
+                </change>
+                <change who="#john" when="2022-05-21T20:00:03.876Z" type="text-version" status="0.0.4" xml:id="UT23703-091-001-5">
+                    <desc>Auto (update-locations)</desc>
+                </change>
+                <change who="#john" when="2022-05-21T22:38:45.274Z" type="text-version" status="0.0.6" xml:id="UT23703-091-001-6">
+                    <desc>Auto (update-locations)</desc>
+                </change>
+                <change who="#john" when="2022-05-21T22:40:26.083Z" type="text-version" status="0.0.7" xml:id="UT23703-091-001-7">
+                    <desc>Titles corrected and completed</desc>
+                </change>
+                <change who="#john" when="2022-05-22T10:54:11.265Z" type="text-version" status="0.0.8" xml:id="UT23703-091-001-8">
+                    <desc>Added public comment on titles.</desc>
+                </change>
+                <change who="#celso" when="2022-11-18T00:42:29.266Z" type="text-version" status="0.0.9" xml:id="UT23703-091-001-9">
+                    <desc>Auto (update-titles)</desc>
+                </change>
+                <change who="#line-tofte" when="2023-01-20T13:17:28.451Z" type="translation-status" status="3" xml:id="UT23703-091-001-10">
+                    <desc>3</desc>
+                </change>
+                <change who="#line-tofte" when="2023-01-20T13:17:28.451Z" type="text-version" status="0.0.10" xml:id="UT23703-091-001-11">
+                    <desc>Auto (update-publication-status)</desc>
+                </change>
+                <change who="#line-tofte" when="2023-01-20T13:18:09.543Z" type="text-version" status="0.0.11" xml:id="UT23703-091-001-12">
+                    <desc>Auto (update-contributors)</desc>
+                </change>
+                <change who="#admin" when="2023-07-30T22:39:48.323Z" type="text-version" status="0.0.12" xml:id="UT23703-091-001-13">
+                    <desc>TEI migrated to 2.19.0</desc>
+                </change>
+            </revisionDesc>
         </fileDesc>
     </teiHeader>
     <text>

@@ -10,21 +10,22 @@
                 <title xml:lang="en" type="mainTitle">A Commentary on the Treatise of Twenty Verses</title>
             </titleStmt>
             <editionStmt>
-                <edition>v 0.0.9 <date/>
+                <edition>v 0.0.10 <date>2023</date>
                 </edition>
             </editionStmt>
-            <publicationStmt status="">
+            <publicationStmt>
+                <availability status=""/>
                 <idno xml:id="UT23703-136-011"/>
             </publicationStmt>
             <sourceDesc>
                 <bibl key="toh4065" type="text">
                     <ref>Toh 4065</ref>
                     <biblScope>ff. 171v-195v</biblScope>
-                    <author ref="eft:entity-18490" xml:lang="Bo-Ltn">slob dpon dul ba'i lha</author>
-                    <author role="translatorTib" ref="eft:entity-34601" xml:lang="Sa-Ltn">Jinamitra</author>
-                    <author role="translatorTib" ref="eft:entity-17468" xml:lang="Sa-Ltn">Śīlendrabodhi</author>
-                    <author role="translatorTib" ref="eft:entity-38146" xml:lang="Bo-Ltn">zhu chen gyi lo tsa ba ban+de ye shes sde</author>
-                    <author role="translatorTib" ref="eft:entity-18396" xml:lang="Sa-Ltn">Dānaśīla (I)</author>
+                    <author xml:lang="Bo-Ltn" xml:id="UT23703-136-011-1">slob dpon dul ba'i lha</author>
+                    <author role="translatorTib" xml:lang="Sa-Ltn" xml:id="UT23703-136-011-2">Jinamitra</author>
+                    <author role="translatorTib" xml:lang="Sa-Ltn" xml:id="UT23703-136-011-3">Śīlendrabodhi</author>
+                    <author role="translatorTib" xml:lang="Bo-Ltn" xml:id="UT23703-136-011-4">zhu chen gyi lo tsa ba ban+de ye shes sde</author>
+                    <author role="translatorTib" xml:lang="Sa-Ltn" xml:id="UT23703-136-011-5">Dānaśīla (I)</author>
                     <location work="UT23703" count-pages="49">
                         <volume number="136" start-page="342" end-page="390"/>
                     </location>
@@ -33,18 +34,39 @@
                 </bibl>
                 <link type="isCommentaryOf" target="toh4056"/>
             </sourceDesc>
-            <notesStmt>
-                <note type="lastUpdated" date-time="2022-09-30T16:24:53.699Z" user="admin">30/09/2022 16:24:53</note>
-                <note type="updated" update="text-version" value="0.0.2" date-time="2022-01-20T09:14:07.444Z" user="admin">Auto (correct-orphaned-attributions)</note>
-                <note type="updated" update="import" value="fileDesc" import="tengyur-data-4020-4085_PH_new_v2.4.xml" date-time="2022-01-28T10:32:05.149Z" user="admin"/>
-                <note type="updated" update="text-version" value="0.0.3" date-time="2022-03-10T07:43:47.284Z" user="sameer">Auto (entity-merge-attribution)</note>
-                <note type="updated" update="text-version" value="0.0.4" date-time="2022-04-18T08:53:55.118Z" user="andre">Auto (entity-merge-attribution)</note>
-                <note type="updated" update="text-version" value="0.0.5" date-time="2022-04-18T09:53:16.819Z" user="andre">Auto (entity-merge-attribution)</note>
-                <note type="updated" update="text-version" value="0.0.6" date-time="2022-05-22T20:30:05.109Z" user="sameer">Auto (entity-merge-attribution)</note>
-                <note type="updated" update="text-version" value="0.0.7" date-time="2022-06-07T06:48:13.515Z" user="sameer">Auto (entity-merge-attribution)</note>
-                <note type="updated" update="text-version" value="0.0.8" date-time="2022-09-03T13:21:54.154Z" user="andre">Auto (entity-merge-attribution)</note>
-                <note type="updated" update="text-version" value="0.0.9" date-time="2022-09-30T16:24:42.058Z" user="andre">Auto (entity-merge-attribution)</note>
-            </notesStmt>
+            <notesStmt/>
+            <revisionDesc>
+                <change who="#admin" when="2022-01-20T09:14:07.444Z" type="text-version" status="0.0.2" xml:id="UT23703-136-011-6">
+                    <desc>Auto (correct-orphaned-attributions)</desc>
+                </change>
+                <change who="#admin" when="2022-01-28T10:32:05.149Z" type="import" xml:id="UT23703-136-011-7" source="tengyur-data-4020-4085_PH_new_v2.4.xml">
+                    <desc/>
+                </change>
+                <change who="#sameer" when="2022-03-10T07:43:47.284Z" type="text-version" status="0.0.3" xml:id="UT23703-136-011-8">
+                    <desc>Auto (entity-merge-attribution)</desc>
+                </change>
+                <change who="#andre" when="2022-04-18T08:53:55.118Z" type="text-version" status="0.0.4" xml:id="UT23703-136-011-9">
+                    <desc>Auto (entity-merge-attribution)</desc>
+                </change>
+                <change who="#andre" when="2022-04-18T09:53:16.819Z" type="text-version" status="0.0.5" xml:id="UT23703-136-011-10">
+                    <desc>Auto (entity-merge-attribution)</desc>
+                </change>
+                <change who="#sameer" when="2022-05-22T20:30:05.109Z" type="text-version" status="0.0.6" xml:id="UT23703-136-011-11">
+                    <desc>Auto (entity-merge-attribution)</desc>
+                </change>
+                <change who="#sameer" when="2022-06-07T06:48:13.515Z" type="text-version" status="0.0.7" xml:id="UT23703-136-011-12">
+                    <desc>Auto (entity-merge-attribution)</desc>
+                </change>
+                <change who="#andre" when="2022-09-03T13:21:54.154Z" type="text-version" status="0.0.8" xml:id="UT23703-136-011-13">
+                    <desc>Auto (entity-merge-attribution)</desc>
+                </change>
+                <change who="#andre" when="2022-09-30T16:24:42.058Z" type="text-version" status="0.0.9" xml:id="UT23703-136-011-14">
+                    <desc>Auto (entity-merge-attribution)</desc>
+                </change>
+                <change who="#admin" when="2023-07-30T22:39:48.323Z" type="text-version" status="0.0.10" xml:id="UT23703-136-011-15">
+                    <desc>TEI migrated to 2.19.0</desc>
+                </change>
+            </revisionDesc>
         </fileDesc>
     </teiHeader>
     <text>
