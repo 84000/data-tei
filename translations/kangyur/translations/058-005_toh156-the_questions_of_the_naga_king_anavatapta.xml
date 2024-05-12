@@ -31,7 +31,7 @@
                 <sponsor xml:id="UT22084-058-005-7">Tian Pujun</sponsor>
             </titleStmt>
             <editionStmt>
-                <edition>v 1.0.1 <date>2024</date>
+                <edition>v 1.0.2 <date>2024</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -169,6 +169,9 @@
                 </change>
                 <change who="#sameer" when="2024-04-26T06:14:29.868Z" type="text-version" status="1.0.1" xml:id="UT22084-058-005-1637">
                     <desc>Fixed a typo in the introduction</desc>
+                </change>
+                <change who="#andre" when="2024-05-12T13:21:08.336Z" type="text-version" status="1.0.2" xml:id="UT22084-058-005-1638">
+                    <desc>Glossary matching revised, activated in CG</desc>
                 </change>
             </revisionDesc>
         </fileDesc>
@@ -708,7 +711,7 @@
                     <milestone unit="chunk" xml:id="UT22084-058-005-124"/>
                     <p tid="58">“Furthermore, lord of nāgas, when bodhisattvas who have developed
                         the mind of omniscience are ennobled by twelve banners, <ref cRef="F.210.a" type="folio" xml:id="UT22084-058-005-871"/> it will be very difficult
-                        for <term>māras</term> and their armies, indeed for any opponent, to
+                        for māras and their armies, indeed for any opponent, to
                         vanquish them. What are the twelve? They are the ennobling banner of
                         discipline; the ennobling banner of absorption; the ennobling banner of
                         insight; the ennobling banner of liberating wisdom; the ennobling banner of
@@ -722,7 +725,7 @@
                         discursiveness; and the ennobling banner of not forgetting the mind of
                         awakening. Lord of nāgas, when bodhisattvas who have developed the mind of
                         omniscience are ennobled by these twelve banners, it is very difficult for
-                            <term>māras</term> and their armies, indeed for any opponent, to subdue
+                            māras and their armies, indeed for any opponent, to subdue
                         them.</p>
                     <milestone unit="chunk" xml:id="UT22084-058-005-125"/>
                     <p tid="59">“Furthermore, lord of nāgas, the mind of omniscience has two
@@ -1011,7 +1014,7 @@
                         without distinct reference points, it is peaceful. Since this path neither
                         goes to nor comes from anywhere, it is without coming and going. Since this
                         path does not dwell on any affliction, it is well settled. On this path,
-                            <term>māras</term> do not tread. This path is not for non-Buddhists. On
+                            māras do not tread. This path is not for non-Buddhists. On
                         this path there is no opportunity for those with the pride of conceit. This
                         path is not embarked upon by those who do not have perseverance. This path
                         is very long and tiring for those who hold on to reference points. <ref cRef="F.215.a" type="folio" xml:id="UT22084-058-005-881"/> This path is
@@ -2187,7 +2190,7 @@
                                     pa</foreign> (“with wishes”), reading <foreign xml:lang="Bo-Ltn">smon lam ’das pa</foreign> found in other versions.</note> and
                             peaceful. </l>
                         <l>Inanimate matter like grass and trees</l>
-                        <l>Are not under the influence of <term>māras</term>.</l>
+                        <l>Are not under the influence of māras.</l>
                     </lg>
                     <milestone unit="chunk" xml:id="UT22084-058-005-311"/>
                     <lg tid="229">
@@ -4209,7 +4212,7 @@
                             Canons</title>. Kyoto: Ryukoku University, 1950.</tei:bibl>
                 </tei:div>
             </tei:div>
-            <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="glossary" status="excluded">
+            <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="glossary">
                 <list type="glossary">
                     <item>
                         <gloss type="term" xml:id="UT22084-058-005-636">
@@ -4462,18 +4465,13 @@
                         </gloss>
                     </item>
                     <item>
-                        <gloss type="term" xml:id="UT22084-058-005-660">
+                        <gloss xml:id="UT22084-058-005-660" type="term" mode="match">
                             <term type="translationMain">wisdom</term>
-                            <term xml:lang="Bo-Ltn" status="verified" n="1">ye shes</term>
-                            <term xml:lang="bo" n="1">ཡེ་ཤེས།</term>
-                            <term xml:lang="Bo-Ltn" status="verified" n="2">shes pa</term>
-                            <term xml:lang="bo" n="2">ཤེས་པ།</term>
                             <term xml:lang="Sa-Ltn" type="attestedDictionary">jñāna</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">ye shes</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">ཡེ་ཤེས།</term>
                             <note type="definition">
-                                <p>Although the Sanskrit term <foreign xml:lang="Sa-Ltn" type="term">jñāna</foreign> can refer to
-                                    knowledge in a general sense, it is also used in a Buddhist
-                                    context to refer to the nonconceptual, direct experience of
-                                    reality.</p>
+                                <p>Although the Sanskrit term <foreign xml:lang="Sa-Ltn" type="term">jñāna</foreign> can refer to knowledge in a general sense, it is also used in a Buddhist context to refer to the nonconceptual, direct experience of reality.</p>
                             </note>
                         </gloss>
                     </item>
@@ -4562,7 +4560,10 @@
                             <term xml:lang="Bo-Ltn" status="verified" n="1">byang chub kyi sems </term>
                             <term xml:lang="bo" n="1">བྱང་ཆུབ་ཀྱི་སེམས།</term>
                             <term xml:lang="Sa-Ltn" type="attestedDictionary">bodhicitta</term>
-                        </gloss>
+                        <tei:note type="definition">
+                            <tei:p>Also translated here as “mind intent on awakening” and “intention to reach awakening.”</tei:p>
+                        </tei:note>
+                    </gloss>
                     </item>
                     <!--<item><gloss type="term" xml:id="UT22084-058-005-670">
                             <term type="translationMain">intention to reach awakening</term>
@@ -4919,10 +4920,13 @@
                         </gloss>
                     </item>
                     <item>
-                        <gloss type="term" xml:id="UT22084-058-005-702" mode="marked">
+                        <gloss xml:id="UT22084-058-005-702" type="term" mode="marked">
                             <term type="translationMain">ascetic practice</term>
-                            <term xml:lang="Bo-Ltn" status="verified" n="1">sbyangs pa </term>
-                            <term xml:lang="bo" n="1">སྦྱངས་པ།</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">sbyangs pa</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">སྦྱངས་པ།</term>
+                            <note type="definition">
+                                <p>See “ascetic practice” (<foreign xml:lang="Bo-Ltn">sbyangs pa’i yon tan</foreign>).</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
@@ -5243,10 +5247,10 @@
                         <gloss xml:id="UT22084-058-005-728" type="term" mode="match">
                             <term type="translationMain">immeasurable attitudes</term>
                             <term xml:lang="Sa-Ltn" type="attestedDictionary">apramāṇa</term>
-                            <term xml:lang="Bo-Ltn" status="verified" type="attestedSource" n="1">tshad med pa</term>
-                            <term xml:lang="bo" type="attestedSource" n="1">ཚད་མེད་པ།</term>
-                            <note type="definition" rend="append">
-                                <p>See “four abodes of Brahmā.”</p>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">tshad med pa</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">ཚད་མེད་པ།</term>
+                            <note type="definition" rend="prepend">
+                                <p>See also “four abodes of Brahmā.”</p>
                             </note>
                         </gloss>
                     </item>
@@ -5815,8 +5819,7 @@
                             </note>
                         </gloss>
                     </item>
-                    <item>
-                        <gloss type="term" xml:id="UT22084-058-005-777" mode="marked">
+                    <!--<item><gloss type="term" xml:id="UT22084-058-005-777" mode="marked">
                             <term type="translationMain">māra</term>
                             <term xml:lang="Bo-Ltn" status="verified" n="1">bdud</term>
                             <term xml:lang="bo" n="1">བདུད།</term>
@@ -5831,8 +5834,7 @@
                                     up developing faith in the Buddha, as exemplified by Sārthavāha;
                                     see <title xml:lang="en">The Play in Full</title> (Toh 95), <ref target="https://read.84000.co/translation/toh95.html#UT22084-046-001-1461">21.14</ref> and <ref target="https://read.84000.co/translation/toh95.html#UT22084-046-001-1490">21.43</ref>. </p>
                             </note>
-                        </gloss>
-                    </item>
+                        </gloss></item>-->
                     <item>
                         <gloss type="term" xml:id="UT22084-058-005-778">
                             <term type="translationMain">saṅgha</term>
@@ -5901,14 +5903,13 @@
                         </gloss>
                     </item>
                     <item>
-                        <gloss type="term" xml:id="UT22084-058-005-786">
+                        <gloss xml:id="UT22084-058-005-786" type="term" mode="match">
                             <term type="translationMain">brahmā</term>
-                            <term xml:lang="Bo-Ltn" status="verified" n="1">tshangs pa </term>
-                            <term xml:lang="bo" n="1">ཚངས་པ།</term>
                             <term xml:lang="Sa-Ltn" type="attestedDictionary">brahmā</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">tshangs pa</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">ཚངས་པ།</term>
                             <note type="definition">
-                                <p>The brahmā deities inhabit the brahmā heavens of the form realm,
-                                    led by their supreme deity, Brahmā Sahāṃpati.</p>
+                                <p>The brahmā deities inhabit the brahmā heavens of the form realm, led by their supreme deity, Brahmā Sahāṃpati. See “<term>Brahmā</term>.”</p>
                             </note>
                         </gloss>
                     </item>
