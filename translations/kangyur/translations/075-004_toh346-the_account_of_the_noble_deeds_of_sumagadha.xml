@@ -4,13 +4,12 @@
         <teiHeader>
                 <fileDesc>
                         <titleStmt>
+                                <title type="mainTitle" xml:lang="en">The Exemplary Tale of
+                                        Sumāgadhā</title>
+                                <title type="mainTitle" xml:lang="Sa-Ltn">Sumāga­dhāvadāna</title>
+                                <title type="mainTitle" xml:lang="bo">མ་ག་དྷཱ་བཟང་མོའི་རྟོགས་པ་བརྗོད་པ།</title>
                                 <title type="mainTitle" xml:lang="Bo-Ltn">ma ga d+hA bzang mo’i
                                         rtogs pa brjod pa</title>
-                                <title type="mainTitle" xml:lang="bo">མ་ག་དྷཱ་བཟང་མོའི་རྟོགས་པ་བརྗོད་པ།</title>
-                                <title type="mainTitle" xml:lang="en">The Account of the Noble Deeds
-                                        of Sumāgadhā</title>
-                                <title type="mainTitle" xml:lang="Sa-Ltn">Sumāga­dhāvadāna</title>
-                                <title type="otherTitle" xml:lang="zh"/>
                                 <author role="translatorMain" xml:id="UT22084-075-004-1"><!--Sakya Pandita Translation Group--></author>
                                 <consultant role="projectManager" xml:id="UT22084-075-004-2">Chodrungma Kunga Chodron</consultant>
                                 <author role="translatorEng" xml:id="UT22084-075-004-3">Chodrungma
@@ -27,9 +26,11 @@
                                         Norbu</editor>
                                 <editor role="TEImarkupEditor" xml:id="UT22084-075-004-52">Martina
                                         Cotter</editor>
+                                <editor role="finalReviewer" xml:id="UT22084-075-004-369">Andreas
+                                        Doctor</editor>
                         </titleStmt>
                         <editionStmt>
-                <edition>v 0.0.2 <date>2024</date>
+                <edition>v 0.0.4 <date>2024</date>
                 </edition>
             </editionStmt>
                         <publicationStmt>
@@ -142,11 +143,17 @@
                                 <change who="#line-tofte" when="2024-01-17T10:24:50.903Z" type="text-version" status="0.0.15" xml:id="UT22084-075-004-53">
                                         <desc>Auto (update-contributors)</desc>
                                 </change>
-                <change who="#line-tofte" when="2024-01-31T08:21:19.125Z" type="translation-status" status="2" xml:id="UT22084-075-004-358">
-                    <desc>2</desc>
-                </change>
-                <change who="#line-tofte" when="2024-01-31T08:21:19.125Z" type="text-version" status="0.0.2" xml:id="UT22084-075-004-359">
-                    <desc>Auto (update-publication-status)</desc>
+                                <change who="#line-tofte" when="2024-01-31T08:21:19.125Z" type="translation-status" status="2" xml:id="UT22084-075-004-358">
+                                        <desc>2</desc>
+                                </change>
+                                <change who="#line-tofte" when="2024-01-31T08:21:19.125Z" type="text-version" status="0.0.2" xml:id="UT22084-075-004-359">
+                                        <desc>Auto (update-publication-status)</desc>
+                                </change>
+                                <change who="#line-tofte" when="2024-05-08T13:00:56.306Z" type="text-version" status="0.0.3" xml:id="UT22084-075-004-370">
+                                        <desc>Auto (update-contributors)</desc>
+                                </change>
+                <change who="#celso" when="2024-05-16T12:08:54.181Z" type="text-version" status="0.0.4" xml:id="UT22084-075-004-389">
+                    <desc>save changes before changing file name</desc>
                 </change>
                         </revisionDesc>
                 </fileDesc>
@@ -156,11 +163,11 @@
                     Outline to the text is quite complex, it is recommended that you paste the outlined contents from the DOCX here as a comment for
                     markup's reference. The actual table of contents will be generated in the Reading Room by the parser.-->
                 <front>
-                        <div type="summary">
+                        <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="summary">
                                 <head type="summary" tid="1">Summary</head>
                                 <milestone unit="chunk" xml:id="UT22084-075-004-54"/>
                                 <p tid="2">
-                    <title xml:lang="en">The Account of the Noble Deeds of
+                    <title xml:lang="en">The Exemplary Tale of
                                                 Sumāgadhā</title> opens at Anāthapiṇḍada’s Park in
                                         Śrāvastī, where the Buddha is staying. At the time,
                                         Anāthapiṇḍada’s daughter Sumāgadhā is married off to
@@ -173,23 +180,23 @@
                                         prepares an offering and calls out from the rooftop,
                                         inviting the Buddha and the saṅgha of monks for a meal. When
                                         Ānanda inquires about this invitation, the Buddha announces
-                                        that all monks with miraculous powers must take a tally
-                                        stick and travel to Puṇḍravardhana. As the śrāvakas arrive
-                                        with their miraculous displays, Sumāgadhā relates a brief
-                                        story about each of them. Finally, the Buddha arrives and
-                                        converts the people of Puṇḍravardhana with his own
-                                        miraculous display. When the monks ask how Sumāgadhā’s
-                                        marriage has benefited so many beings, the Buddha relates
-                                        the story of her past life as the princess Kāñcanamālā
-                                        during the time of the Buddha Kāśyapa and, in turn,
-                                        Kāñcanamālā’s past life as the virtuous wife of a farmer,
-                                        explaining that she has performed buddha activity in the
-                                        past and continues to do so. This sūtra also contains the
-                                        popular account of the ten dreams of King Kṛkin, which are
-                                        interpreted by the Buddha as foretelling the future decline
-                                        of the Dharma. </p>
-                        </div>
-                        <div type="acknowledgment">
+                                        that all monks with <term rend="ignore">miraculous
+                                                powers</term> must take a tally stick and travel to
+                                        Puṇḍravardhana. As the śrāvakas arrive with their miraculous
+                                        displays, Sumāgadhā relates a brief story about each of
+                                        them. Finally, the Buddha arrives and converts the people of
+                                        Puṇḍravardhana with his own miraculous display. When the
+                                        monks ask how Sumāgadhā’s marriage has benefited so many
+                                        beings, the Buddha relates the story of her past life as the
+                                        princess Kāñcanamālā during the time of the Buddha Kāśyapa
+                                        and, in turn, Kāñcanamālā’s past life as the virtuous wife
+                                        of a farmer, explaining that she has performed buddha
+                                        activity in the past and continues to do so. This sūtra also
+                                        contains the popular account of the ten dreams of King
+                                        Kṛkin, which are interpreted by the Buddha as foretelling
+                                        the future decline of the Dharma. </p>
+                        </tei:div>
+                        <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="acknowledgment">
                                 <head type="acknowledgment" tid="3">Acknowledgements</head>
                                 <milestone unit="chunk" xml:id="UT22084-075-004-55"/>
                                 <p tid="4">A draft of the translation was made from the Tibetan by
@@ -201,36 +208,36 @@
                                 <milestone unit="chunk" xml:id="UT22084-075-004-334"/>
                                 <p tid="139">The translation was completed under the patronage and
                                         supervision of 84000: Translating the Words of the Buddha.
-                                        David Fiordalis edited the translation and the introduction, and
-                                        Ven. Konchog Norbu copyedited the text. Martina Cotter was
-                                        in charge of the digital publication process.</p>
-                        </div>
-                        <div type="introduction">
+                                        David Fiordalis edited the translation and the introduction,
+                                        and Ven. Konchog Norbu copyedited the text. Martina Cotter
+                                        was in charge of the digital publication process.</p>
+                        </tei:div>
+                        <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="introduction">
                                 <head type="introduction" tid="5">Introduction</head>
-                                <div type="section" xml:id="UT22084-075-004-introduction-1">
+                                <tei:div type="section" xml:id="UT22084-075-004-introduction-1">
                                         <milestone unit="chunk" xml:id="UT22084-075-004-56"/>
                                         <p tid="7">
-                        <title xml:lang="en">The Account of the Noble
-                                                  Deeds of Sumāgadhā</title> opens at
-                                                Anāthapiṇḍada’s Park in Śrāvastī, where the Buddha
-                                                is staying. At the time, Anāthapiṇḍada’s daughter
-                                                Sumāgadhā is married off to Vṛṣabhadatta, the son of
-                                                a nirgrantha merchant in the distant city of
-                                                Puṇḍravardhana. After arriving at the home of her
-                                                in-laws, Sumāgadhā is disheartened on encountering
-                                                the nirgrantha mendicants. When her mother-in-law
-                                                asks why she seems despondent, Sumāgadhā tells her
-                                                about the Buddha. At her mother-in-law’s request,
-                                                she prepares an offering and calls out from the
-                                                rooftop, inviting the Buddha and the saṅgha of monks
-                                                for a meal. When Ānanda inquires about this
-                                                invitation, the Buddha announces that all monks with
-                                                miraculous powers must take a tally stick and travel
-                                                to Puṇḍravardhana. As the śrāvakas arrive on
-                                                different extraordinary vehicles that they have
-                                                created with their miraculous powers, Sumāgadhā
-                                                relates a brief story about each of them, with these
-                                                stories alluding to other tales about the śrāvakas. </p>
+                        <title xml:lang="en">The Exemplary Tale of
+                                                  Sumāgadhā</title> opens at Anāthapiṇḍada’s Park in
+                                                Śrāvastī, where the Buddha is staying. At the time,
+                                                Anāthapiṇḍada’s daughter Sumāgadhā is married off to
+                                                Vṛṣabhadatta, the son of a nirgrantha merchant in
+                                                the distant city of Puṇḍravardhana. After arriving
+                                                at the home of her in-laws, Sumāgadhā is
+                                                disheartened on encountering the nirgrantha
+                                                mendicants. When her mother-in-law asks why she
+                                                seems despondent, Sumāgadhā tells her about the
+                                                Buddha. At her mother-in-law’s request, she prepares
+                                                an offering and calls out from the rooftop, inviting
+                                                the Buddha and the saṅgha of monks for a meal. When
+                                                Ānanda inquires about this invitation, the Buddha
+                                                announces that all monks with <term rend="ignore">miraculous powers</term> must take a tally stick
+                                                and travel to Puṇḍravardhana. As the śrāvakas arrive
+                                                on different extraordinary vehicles that they have
+                                                created with their <term rend="ignore">miraculous
+                                                  powers</term>, Sumāgadhā relates a brief story
+                                                about each of them, with these stories alluding to
+                                                other tales about the śrāvakas. </p>
                                         <milestone unit="chunk" xml:id="UT22084-075-004-57"/>
                                         <p tid="8">Finally, the Buddha arrives in the company of a
                                                 retinue of gods and gandharvas and converts the
@@ -263,8 +270,8 @@
                                                 formulations in a variety of texts, and even finding
                                                 its way into Persian, Arabic, and Slavic
                                                   literature.<note place="end" xml:id="UT22084-075-004-60"> Silk (2018, p. 429)
-                                                          lists “several Abhidharma commentaries, the <title xml:lang="Sa-Ltn">Abhi­dharmakośa­bhāṣyaṭīkā
-                                                                  Tattvārtha</title> of Sthiramati,<ref rend="pending" target="http://read.84000.co/translation/toh4421.html"/> the <title xml:lang="Sa-Ltn">Abhi­dharma­kośavyākhyā</title> of Yaśomitra<ref rend="pending" target="http://read.84000.co/translation/toh4092.html"/> and the <title xml:lang="Sa-Ltn">Abhidharma­kośopāyikā</title> of Śamathadeva<ref rend="pending" target="http://read.84000.co/translation/toh4094.html"/> […] and in the <title xml:lang="Sa-Ltn">Bodhisattvāvadāna­kalpalātā</title> of
+                                                  lists “several Abhidharma commentaries, the <title xml:lang="Sa-Ltn">Abhi­dharmakośa­bhāṣyaṭīkā
+                                                  Tattvārtha</title> of Sthiramati,<ref rend="pending" target="http://read.84000.co/translation/toh4421.html"/> the <title xml:lang="Sa-Ltn">Abhi­dharma­kośavyākhyā</title> of Yaśomitra<ref rend="pending" target="http://read.84000.co/translation/toh4092.html"/> and the <title xml:lang="Sa-Ltn">Abhidharma­kośopāyikā</title> of Śamathadeva<ref rend="pending" target="http://read.84000.co/translation/toh4094.html"/> […] and in the <title xml:lang="Sa-Ltn">Bodhisattvāvadāna­kalpalātā</title> of
                                                   Kṣemendra.”<ref rend="pending" target="http://read.84000.co/translation/toh4155.html"/> He also cites “both a <title xml:lang="en">Sūtra of the Seven Dreams of Ānanda</title> […],
                                                   and another text complex concerning the <title xml:lang="en">Dreams of King Prasenajit</title>,
                                                   in quite a number of versions, which vary in
@@ -278,9 +285,9 @@
                                                 into eighteen schools after the death of the Buddha
                                                 Śākyamuni, during the reign of King Aśoka. In
                                                 particular, Gö Lotsāwa highlights the passage in
-                                                  <title xml:lang="en">The Account of the Noble
-                                                  Deeds of Sumāgadhā</title> concerning the dream of
-                                                the cloth remaining untorn though being pulled by
+                                                  <title xml:lang="en">The Exemplary Tale of
+                                                  Sumāgadhā</title> concerning the dream of the
+                                                cloth remaining untorn though being pulled by
                                                 eighteen men, explaining that although the teaching
                                                 of the Buddha was divided, each of the eighteen
                                                 schools provided a viable path to liberation.<note place="end" xml:id="UT22084-075-004-61">
@@ -313,29 +320,29 @@
                                                 Strasburg published in 1918.<note place="end" xml:id="UT22084-075-004-65"> Tsurumatsu (Gyōyū)
                                                   Tokiwai, <title xml:lang="en">The Sumāgadhāvadāna:
                                                   A Buddhist Legend</title> (Isshinden,
-                                                  1918).</note> This was followed by Yukata
+                                                  1918).</note> This was followed in 1968 by Yukata
                                                 Iwamoto’s edition of several Sanskrit manuscripts
                                                 from Nepal dated to the seventeenth century, which
                                                 he compared with a thirteenth-century “Calcutta”
-                                                manuscript. This volume also included an edition of
-                                                Kṣemendra’s poetic retelling<note place="end" xml:id="UT22084-075-004-66"> Kudo 2016, p.
-                                                  320.</note> and English translations of four
-                                                Chinese versions. In 1993, Markus Görtz completed an
-                                                (unpublished) MA thesis containing a new edition of
-                                                the Sanskrit,<note place="end" xml:id="UT22084-075-004-67"> Markus Görtz,
+                                                  manuscript.<tei:note place="end" xml:id="UT22084-075-004-371">Iwamoto
+                                                  1968.</tei:note> This publication also included
+                                                English translations of four Chinese versions. In
+                                                1993, Markus Görtz completed an (unpublished) MA
+                                                thesis containing a new edition of the
+                                                  Sanskrit,<note place="end" xml:id="UT22084-075-004-67"> Markus Görtz,
                                                   “Deutsche Übersetzung der beiden Sanskritfassungen
                                                   des Sumāgadhāvadāna und vergleichende Untersuchung
                                                   der bekannten Fassungen der Sumāgadhā-Legende”
-                                                  (master’s thesis, Marburg, 1993).</note> which
-                                                unfortunately was not accessible to us.</p>
+                                                  (master’s thesis, Marburg, 1993).</note> which was
+                                                not accessible to us.</p>
                                         <milestone unit="chunk" xml:id="UT22084-075-004-68"/>
                                         <p tid="12">More recently, in 2011, a new color facsimile of
                                                 the Gilgit Manuscripts discovered in 1931 was
                                                 published, allowing for the identification of three
                                                 Sanskrit fragments of <title xml:lang="en">The
-                                                  Account of the Noble Deeds of Sumāgadhā</title>
-                                                among them. Kudo estimates these manuscripts to date
-                                                to the sixth or seventh century at the latest.<note place="end" xml:id="UT22084-075-004-69"> Kudo
+                                                  Exemplary Tale of Sumāgadhā</title> among them.
+                                                Kudo estimates these manuscripts to date to the
+                                                sixth or seventh century at the latest.<note place="end" xml:id="UT22084-075-004-69"> Kudo
                                                   2016, p. 322.</note> With three manuscripts (A, B,
                                                 and C) of the Delhi collection, and fragments from
                                                 the Srinagar collection, Kudo was able to
@@ -344,33 +351,32 @@
                                                 been used for the Tibetan translation.</p>
                                         <milestone unit="chunk" xml:id="UT22084-075-004-70"/>
                                         <p tid="13">According to Kudo’s account, the story of
-                                                Sumāgadhā and the conversion of the non-Buddhists
-                                                circulated in the Gandhāra region in the second
-                                                century <hi rend="small-caps">ce</hi>, and by the
-                                                end of that century had been compiled, along with
-                                                the story of King Kṛkin’s dreams, as <title xml:lang="en">The Account of the Noble Deeds of
-                                                  Sumāgadhā</title>. One of these manuscripts
-                                                presumably made its way to Kashmir and then to
-                                                Tibet. Much later we have the seventeenth- or
-                                                eighteenth-century “Nepalese” manuscript, to which
-                                                material from the <title xml:lang="Sa-Ltn">Divyāvadāna</title>—which Kudo suggests may
+                                                Sumāgadhā and the conversion of the <term rend="ignore">non-Buddhists</term> circulated in
+                                                the Gandhāra region in the second century <hi rend="small-caps">ce</hi>, and by the end of that
+                                                century had been compiled, along with the story of
+                                                King Kṛkin’s dreams, as <title xml:lang="en">The
+                                                  Exemplary Tale of Sumāgadhā</title>. One of these
+                                                manuscripts presumably made its way to Kashmir and
+                                                then to Tibet. Much later we have the seventeenth-
+                                                or eighteenth-century “Nepalese” manuscript, to
+                                                which material from the <title xml:lang="Sa-Ltn">Divyāvadāna</title>—which Kudo suggests may
                                                 possibly date to the first half of the third
                                                   century—<note place="end" xml:id="UT22084-075-004-71"> Kudo 2016, p.
-                                                  323.</note> and so forth, had been added. This
-                                                Nepalese manuscript was edited by Iwamoto along with
-                                                the thirteenth-century “Calcutta” manuscript. We
-                                                also have Kṣemendra’s poetic retelling from the
-                                                eleventh century, which, like the Tibetan, was
-                                                probably based on a Kashmiri version.<note place="end" xml:id="UT22084-075-004-72"> Iwamoto
-                                                  1968, p. 105. For Iwamoto’s reconstruction of the
-                                                  textual history, see pp. 183–92.</note>
+                                                  323.</note> had been added. This Nepalese
+                                                manuscript was edited by Iwamoto along with the
+                                                thirteenth-century “Calcutta” manuscript. We also
+                                                have Kṣemendra’s poetic retelling from the eleventh
+                                                century, which, like the Tibetan, was probably based
+                                                on a Kashmiri version.<note place="end" xml:id="UT22084-075-004-72"> Iwamoto 1968, p. 105.
+                                                  For Iwamoto’s reconstruction of the textual
+                                                  history, see pp. 183–92.</note>
                     </p>
                                         <milestone unit="chunk" xml:id="UT22084-075-004-73"/>
                                         <p tid="14">In Pali literature, too, particularly in the
                                                 Pali commentary on the <title xml:lang="Pi-Ltn">Dhammapada</title>, we find the story of Cullā
                                                 Subhaddā, the virtuous daughter of Anāthapiṇḍika,
                                                 which shares several features of the story found in
-                                                the Sanskrit and Tibetan versions of <title xml:lang="en">The Account of the Noble Deeds of
+                                                the Sanskrit and Tibetan versions of <title xml:lang="en">The Exemplary Tale of
                                                   Sumāgadhā</title>.<note place="end" xml:id="UT22084-075-004-74"> Translation in
                                                   Burlingame 1921, vol. 30, pp. 184–87; see also
                                                   Iwamoto 1968, pp. 193–95.</note> The story of
@@ -391,18 +397,17 @@
                                                 the Chinese canon: <title xml:lang="Zh-Ltn">San mo
                                                   jie jing</title>
                                                 <title xml:lang="zh">三摩竭經</title> (Taishō 129),
-                                                translated by Zhu Lü-yan in 230 <hi rend="small-caps">ce</hi>
-                        <note place="end" xml:id="UT22084-075-004-78"> Lewis R. Lancaster,
+                                                translated by Zhu Lü-yan in 230 <hi rend="small-caps">ce</hi>;<note place="end" xml:id="UT22084-075-004-78"> Lewis R. Lancaster,
                                                   “<ref target="http://www.acmuller.net/descriptive_catalogue/files/k0790.html">K 790</ref>,” <title xml:lang="en">The Korean
                                                   Buddhist Canon: A Descriptive Catalogue</title>,
-                                                  accessed February 13, 2023. </note>; <title xml:lang="Zh-Ltn">Xu mo ti nu jing</title>
+                                                  accessed February 13, 2023. </note>
+                                                <title xml:lang="Zh-Ltn">Xu mo ti nu jing</title>
                                                 <title xml:lang="Zh-Ltn">Xu mo ti nu jing</title>
                                                 (Taishō 128), translated by Zhi qian<note place="end" xml:id="UT22084-075-004-79"> Lewis R.
                                                   Lancaster, “<ref target="http://www.acmuller.net/descriptive_catalogue/files/k0723.html">K 723</ref>,” <title xml:lang="en">The Korean
                                                   Buddhist Canon: A Descriptive Catalogue</title>,
-                                                  accessed February 13, 2023.</note> in 240 <hi rend="small-caps">ce</hi>
-                        <note place="end" xml:id="UT22084-075-004-80"> Date based on Iwamoto
-                                                  1968, p. 131.</note>; and <title xml:lang="Zh-Ltn">Gei gu chang zhe nu de du yin lu jing</title>
+                                                  accessed February 13, 2023.</note> in 240 <hi rend="small-caps">ce</hi>;<note place="end" xml:id="UT22084-075-004-80"> Date based on Iwamoto
+                                                  1968, p. 131.</note> and <title xml:lang="Zh-Ltn">Gei gu chang zhe nu de du yin lu jing</title>
                                                 <title xml:lang="zh">給孤長者女得度因綠經</title> (Taishō
                                                 130), translated by Dānapāla.<note place="end" xml:id="UT22084-075-004-81"> Lewis R. Lancaster,
                                                   “<ref target="http://www.acmuller.net/descriptive_catalogue/files/k1428.html">K 1428</ref>,” <title xml:lang="en">The Korean
@@ -420,10 +425,9 @@
                                                   1968, p. 131.</note>
                                         </p>
                                         <milestone unit="chunk" xml:id="UT22084-075-004-84"/>
-                                        <p tid="16">There is also a version of <title xml:lang="en">The Account of the Noble Deeds of
-                                                  Sumāgadhā</title> found in the Mongolian Kangyur,
-                                                titled <title xml:lang="Mn-Ltn">Sayin magada-yin
-                                                  domuγ-i ögülegči kemekü</title>.<note place="end" xml:id="UT22084-075-004-85"> In Lokesh Chandra,
+                                        <p tid="16">There is also a version of <title xml:lang="en">The Exemplary Tale of Sumāgadhā</title> found in
+                                                the Mongolian Kangyur, titled <title xml:lang="Mn-Ltn">Sayin magada-yin domuγ-i
+                                                  ögülegči kemekü</title>.<note place="end" xml:id="UT22084-075-004-85"> In Lokesh Chandra,
                                                   ed., <title xml:lang="en">Mongolian Kanjur</title>
                                                   (New Delhi: Sharada Rani, 1973–79), vol. 91, pp.
                                                   741–50.</note>
@@ -437,7 +441,7 @@
                                                 Sangpo (<foreign xml:lang="Bo-Ltn">rin chen bzang
                                                   po</foreign>, 958–1055). Given that
                                                 Dharmaśrībhadra is also said to have lived sometime
-                                                during the late tenth to mid-eleventh century, one
+                                                during the late tenth to the mid-eleventh century, one
                                                 may tentatively date the translation to the early
                                                 eleventh century.<note place="end" xml:id="UT22084-075-004-87"> Kudo (2016, pp. 321
                                                   and 322) says that it was translated into Tibetan
@@ -450,9 +454,9 @@
                                                   estimated to have lived in the tenth to eleventh
                                                   centuries and, along with Rinchen Zangpo,
                                                   contributed to the later phase (Tib. <foreign xml:lang="Bo-Ltn" type="term">phyi dar</foreign>)
-                                                  of translation in Tibet.</note> In keeping with
-                                                this dating, the sūtra is not listed in the Denkarma
-                                                  (<foreign xml:lang="Bo-Ltn">ldan</foreign>/<foreign xml:lang="Bo-Ltn">lhan
+                                                  of translation in Tibet.</note> In support of this
+                                                dating is the fact that the sūtra is not listed in
+                                                the Denkarma (<foreign xml:lang="Bo-Ltn">ldan</foreign>/<foreign xml:lang="Bo-Ltn">lhan
                                                   dkar ma</foreign>) or Phangthangma (<foreign xml:lang="Bo-Ltn">’phang thang ma</foreign>)
                                                 imperial catalogs from the ninth century.</p>
                                         <milestone unit="chunk" xml:id="UT22084-075-004-88"/>
@@ -461,34 +465,32 @@
                                                 translation—at least one that is not based on
                                                 reconstruction—we have translated the sūtra based
                                                 primarily on the Degé edition of the Tibetan
-                                                Kangyur. In cases where the Tibetan was not clear to
-                                                us and in order to recover Sanskrit names for
-                                                persons and places, we first consulted the Sanskrit
-                                                as edited by Kudo from the Gilgit manuscripts and
-                                                secondarily the edition by Iwamoto reconstructed
-                                                from the later manuscripts. Through this process we
-                                                found that the Tibetan aligns quite closely but by
-                                                no means perfectly with what is found in the Gilgit
+                                                Kangyur. We have, however, consulted the Sanskrit as
+                                                edited by Kudo from the Gilgit manuscripts and the
+                                                edition by Iwamoto reconstructed from the later
+                                                manuscripts. Through this process we found that the
+                                                Tibetan aligns quite closely but by no means
+                                                perfectly with what is found in the Gilgit
                                                   manuscripts.<note place="end" xml:id="UT22084-075-004-89"> The discrepancy is
                                                   also noted by Kudo (2016, p. 333).</note>
                     </p>
-                                </div>
-                        </div>
+                                </tei:div>
+                        </tei:div>
                 </front>
                 <body>
-                        <div type="translation">
+                        <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="translation">
                                 <head type="translation"> The Translation </head>
                                 <head type="titleHon" tid="19"/>
-                                <head type="titleMain" tid="20">The Account of the Noble Deeds of
+                                <head type="titleMain" tid="20">The Exemplary Tale of
                                         Sumāgadhā</head>
                                 <!--In the rare case that there is initial text before the first chapter begins, the script will place the
                         text here. However, this will cause the two headings for the "Honorific Title" and "Main Title" to be duplicated below
                         as <p> elements. Markup Editors, please delete these initial duplicated <p> elements along with their milestones and delete this comment.-->
-                                <div type="section" xml:id="UT22084-075-004-section-1">
+                                <tei:div type="section" xml:id="UT22084-075-004-section-1">
                                         <milestone unit="chunk" xml:id="UT22084-075-004-92"/>
                                         <p tid="24">
-                        <ref cRef="F.291.b" type="folio" xml:id="UT22084-075-004-339"/> Homage to all buddhas and
-                                                bodhisattvas.</p>
+                        <ref cRef="F.291.b" type="folio" xml:id="UT22084-075-004-339"/> Homage to all
+                                                buddhas and bodhisattvas.</p>
                                         <lb/>
                                         <p tid="27">Thus did I hear at one time. The blessed Buddha
                                                 was dwelling in Śrāvastī, in Prince Jeta’s Grove,
@@ -532,7 +534,7 @@
                                                 pleasing to behold, and graceful, the most beautiful
                                                 woman in the land.”<note place="end" xml:id="UT22084-075-004-102"> The translation of
                                                   this final clause (<foreign xml:lang="Bo-Ltn" type="quote">skye bo dam pa rnams dang ’dra
-                                                          ba</foreign>) is tentative. See <ptr target="#UT22084-075-004-145"/>.</note>
+                                                  ba</foreign>) is tentative. See <ptr target="#UT22084-075-004-145"/>.</note>
                                         </p>
                                         <milestone unit="chunk" xml:id="UT22084-075-004-103"/>
                                         <p tid="31">As soon as he heard that, Vṛṣabhadatta assumed
@@ -563,14 +565,14 @@
                                                 city of Puṇḍravardhana. There he spoke to his
                                                 father, who accepted the girl. </p>
                                         <milestone unit="chunk" xml:id="UT22084-075-004-106"/>
-                                        <p tid="33">Anāthapiṇḍada <ref cRef="F.292.a" type="folio" xml:id="UT22084-075-004-340"/> asked the Blessed One
-                                                about this, and the Blessed One replied, “Actually,
-                                                if Sumāgadhā goes to Puṇḍravardhana, she will
-                                                perform the activity of renunciants and the activity
-                                                of a buddha.” </p>
+                                        <p tid="33">Anāthapiṇḍada <ref cRef="F.292.a" type="folio" xml:id="UT22084-075-004-340"/> asked the Blessed
+                                                One about this, and the Blessed One replied,
+                                                “Actually, if Sumāgadhā goes to Puṇḍravardhana, she
+                                                will perform the activity of renunciants and the
+                                                activity of a buddha.” </p>
                                         <milestone unit="chunk" xml:id="UT22084-075-004-107"/>
                                         <p tid="34">So the householder Anāthapiṇḍada informed her
-                                                relatives and she she was betrothed and conveyed to
+                                                relatives and she was betrothed and conveyed to
                                                 the city of Puṇḍravardhana.</p>
                                         <lb/>
                                         <milestone unit="chunk" xml:id="UT22084-075-004-109"/>
@@ -591,18 +593,21 @@
                                                 pigeon squabs, Sumāgadhā was embarrassed and averted
                                                 her face. Her mother-in-law asked, “Daughter, why
                                                 are you displeased?” </p>
+                                        <milestone unit="chunk" xml:id="UT22084-075-004-373"/>
                                         <p tid="39">She replied, “If ones such as these are objects
                                                 of veneration, who would not be considered a
                                                 venerable one?” </p>
                                         <milestone unit="chunk" xml:id="UT22084-075-004-114"/>
                                         <p tid="40">Her mother-in-law asked her, “Do you have
                                                 teachers who are superior to these?”</p>
+                                        <milestone unit="chunk" xml:id="UT22084-075-004-374"/>
                                         <p tid="41">The girl replied, “In my father’s monastery,
                                                 Prince Jeta’s Grove, there is a teacher known as the
                                                 Buddha. He is the object of veneration of the entire
                                                 animate and inanimate world.”</p>
                                         <milestone unit="chunk" xml:id="UT22084-075-004-115"/>
                                         <p tid="42">“What is your teacher like?” she asked.</p>
+                                        <milestone unit="chunk" xml:id="UT22084-075-004-372"/>
                                         <p tid="43">The girl replied:</p>
                                         <milestone unit="chunk" xml:id="UT22084-075-004-117"/>
                                         <lg tid="44">
@@ -618,7 +623,7 @@
                                                   ltar ser</foreign>, perhaps “golden like a mass of
                                                   refined substance.” This could be a reflection of
                                                   the following compound in the Calcutta manuscript,
-                                                          <foreign xml:lang="Sa-Ltn" type="quote">nirdhāntahema­pratimaḥ</foreign> (“like refined
+                                                  <foreign xml:lang="Sa-Ltn" type="quote">nirdhāntahema­pratimaḥ</foreign> (“like refined
                                                   gold”), which is followed by <foreign xml:lang="Sa-Ltn" type="quote">kanakāvadātaḥ</foreign> (“dazzling white like
                                                   gold”). Iwamoto 1968, p. 46; see also Kudo 2016,
                                                   p. 334, n. 48.</note>
@@ -632,9 +637,10 @@
                                         <p tid="45">Upon hearing this, her mother-in-law was
                                                 overjoyed, and she asked, “Daughter, can you show us
                                                 that Blessed One tomorrow?” </p>
+                                        <milestone unit="chunk" xml:id="UT22084-075-004-375"/>
                                         <p tid="46">Sumāgadhā replied, “Prepare offerings of food,
-                                                <ref cRef="F.292.b" type="folio" xml:id="UT22084-075-004-341"/> and tomorrow I will invite the Blessed
-                                                One.” </p>
+                                                  <ref cRef="F.292.b" type="folio" xml:id="UT22084-075-004-341"/> and tomorrow I will
+                                                invite the Blessed One.” </p>
                                         <milestone unit="chunk" xml:id="UT22084-075-004-121"/>
                                         <p tid="47">Sometime later they said, “The offerings of food
                                                 have been prepared, so you should invite the Blessed
@@ -667,6 +673,7 @@
                                                 animal I have come to this frontier, separated from
                                                 the Three Jewels. Please care for me, and with your
                                                 saṅgha of monks please come to this place!”</p>
+                                        <milestone unit="chunk" xml:id="UT22084-075-004-388"/>
                                         <p tid="50">And she spoke these words:</p>
                                         <milestone unit="chunk" xml:id="UT22084-075-004-127"/>
                                         <lg tid="51">
@@ -695,8 +702,8 @@
                                                 yojanas from the city of Puṇḍravardhana. Ānanda, as
                                                 that city is held by non-Buddhists, we must go there
                                                 with an extraordinary display of miraculous power.
-                                                <ref cRef="F.293.a" type="folio" xml:id="UT22084-075-004-342"/> Therefore, distribute the tally sticks to
-                                                the monks.”</p>
+                                                  <ref cRef="F.293.a" type="folio" xml:id="UT22084-075-004-342"/> Therefore,
+                                                distribute the tally sticks to the monks.”</p>
                                         <milestone unit="chunk" xml:id="UT22084-075-004-131"/>
                                         <p tid="55">Right away, the venerable Ānanda distributed the
                                                 tally sticks, starting with the most senior monk. He
@@ -708,20 +715,19 @@
                                                 starting with the most senior monk. </p>
                                         <milestone unit="chunk" xml:id="UT22084-075-004-132"/>
                                         <p tid="56">Among them was the elder known as <term ref="UT22084-075-004-285">Pūrṇa</term>.<note place="end" xml:id="UT22084-075-004-133"> The
-                                                  Narthang, Lhasa, and Stok Palace Kangyurs seem to
-                                                  identify this figure as the elder <term rend="ignore">Pūrṇa</term> from
-                                                  Kuṇḍopadāna (Narthang: <foreign xml:lang="Bo-Ltn" type="quote">pUr na kun da ud pa da na</foreign>;
-                                                  Lhasa: <foreign xml:lang="Bo-Ltn" type="quote">pU                                                  ra nu kun da ud pa da na</foreign>; Stok: <foreign xml:lang="Bo-Ltn" type="quote">pūr na kun da u pa
-                                                  da na</foreign>), who is probably different from
-                                                the (probably younger) <term rend="ignore">PUrṇa</term> who later flies to
-                                                  Puṇḍravardhana on a garuḍa. There the Sanskrit (A)
-                                                  gives <foreign xml:lang="Sa-Ltn" type="quote">pūrṇo maitrāyaṇī­putraḥ</foreign> (Kudo 2016, p.
-                                                  336).</note> Although he had not attained
-                                                miraculous power, he reached out his hand to take a
-                                                tally stick. The venerable Ānanda said to him,
-                                                “Elder, we are not going to the home of
-                                                Anāthapiṇḍada, but we must travel to a place 163
-                                                yojanas from here known as Puṇḍravardhana.” </p>
+                                                  Narthang, Lhasa, and Stok Palace Kangyurs identify
+                                                  this figure as the elder <term rend="ignore">Pūrṇa</term> from Kuṇḍopadāna (Narthang: <foreign xml:lang="Bo-Ltn" type="quote">pUr na kun da ud pa
+                                                  da na</foreign>; Lhasa: <foreign xml:lang="Bo-Ltn" type="quote">pU ra nu kun da ud pa da
+                                                  na</foreign>; Stok: <foreign xml:lang="Bo-Ltn" type="quote">pūr na kun da u pa da na</foreign>).
+                                                  He is different from the other <term rend="ignore">Pūrṇa</term> who later flies to Puṇḍravardhana on
+                                                  a garuḍa. There the Sanskrit (A) gives <foreign xml:lang="Sa-Ltn" type="quote">pūrṇo
+                                                  maitrāyaṇī­putraḥ</foreign> (Kudo 2016, p. 336).
+                                                </note> Although he had not attained miraculous
+                                                power, he reached out his hand to take a tally
+                                                stick. The venerable Ānanda said to him, “Elder, we
+                                                are not going to the home of Anāthapiṇḍada, but we
+                                                must travel to a place 163 yojanas from here known
+                                                as Puṇḍravardhana.” </p>
                                         <milestone unit="chunk" xml:id="UT22084-075-004-134"/>
                                         <p tid="57">The elder thought, “I have abandoned the
                                                 defilements to which I had been habituated since
@@ -740,7 +746,7 @@
                                                 Puṇḍravardhana.”</p>
                                         <lb/>
                                         <milestone unit="chunk" xml:id="UT22084-075-004-137"/>
-                                        <p tid="60">Then on the second day at daybreak, the monks
+                                        <p tid="60">Then on the second day, at daybreak, the monks
                                                 prepared by perfecting their displays of miraculous
                                                 power. The Four Great Kings also set out in the
                                                 direction of Śrāvastī. As they did so, the one known
@@ -751,18 +757,20 @@
                                         <milestone unit="chunk" xml:id="UT22084-075-004-140"/>
                                         <p tid="61">Sumāgadhā’s master<note place="end" xml:id="UT22084-075-004-139"> Tib. <foreign xml:lang="Bo-Ltn" type="term">bdag po</foreign>;
                                                   Skt. <foreign xml:lang="Sa-Ltn" type="term">svāmin</foreign>. This could refer to Sumāgadhā’s
-                                                husband or perhaps her father-in-law. Later this figure
-                                                  referred to as the “master of the house” (Tib.
-                                                  <foreign xml:lang="Bo-Ltn" type="term">khyim
+                                                  husband or perhaps her father-in-law. Later this
+                                                  figure referred to as the “master of the house”
+                                                  (Tib. <foreign xml:lang="Bo-Ltn" type="term">khyim
                                                   bdag</foreign>; Skt. <foreign xml:lang="Sa-Ltn" type="term">gṛhapati</foreign>).</note> saw this
                                                 and asked, “Sumāgadhā, is this your teacher?” </p>
-                                        <p tid="62">She replied, <ref cRef="F.293.b" type="folio" xml:id="UT22084-075-004-343"/> “This one is known as
-                                                Ājñātakauṇḍinya. He is arriving first since he was
-                                                the first to realize that there is no self after the
-                                                Blessed One first turned the wheel of Dharma.”<note place="end" xml:id="UT22084-075-004-141">
-                                                  Following Skt. (B) <foreign xml:lang="Sa-Ltn" type="quote">prathamataḥ dharmmacakraṃ
-                                                  pravarttitaṃ</foreign>. Degé reads <foreign xml:lang="Bo-Ltn" type="quote">chos kyi ’khor lo
-                                                  dang po bskor ba</foreign>.</note>
+                                        <milestone unit="chunk" xml:id="UT22084-075-004-376"/>
+                                        <p tid="62">She replied, <ref cRef="F.293.b" type="folio" xml:id="UT22084-075-004-343"/> “This one is known
+                                                as Ājñātakauṇḍinya. He is arriving first since he
+                                                was the first to realize that there is no self after
+                                                the Blessed One first turned the wheel of
+                                                  Dharma.”<note place="end" xml:id="UT22084-075-004-141"> Following Skt. (B)
+                                                  <foreign xml:lang="Sa-Ltn" type="quote">prathamataḥ dharmmacakraṃ pravarttitaṃ</foreign>.
+                                                  Degé reads <foreign xml:lang="Bo-Ltn" type="quote">chos kyi ’khor lo dang po bskor
+                                                  ba</foreign>.</note>
                                         </p>
                                         <milestone unit="chunk" xml:id="UT22084-075-004-142"/>
                                         <p tid="63">Then the elder Mahākāśyapa made his entrance
@@ -774,6 +782,7 @@
                                         <milestone unit="chunk" xml:id="UT22084-075-004-143"/>
                                         <p tid="64">The master of the house saw that and asked,
                                                 “Sumāgadhā, is this your teacher?” </p>
+                                        <milestone unit="chunk" xml:id="UT22084-075-004-377"/>
                                         <p tid="65">She replied, “This one who now arrives is known
                                                 as Mahākāśyapa. The Blessed One pronounced him chief
                                                 among the preachers for his abiding in ascetic
@@ -785,7 +794,7 @@
                                                   pa</foreign> (“equal to virtuous people”). This
                                                   probably corresponds to the Sanskrit (N, B)
                                                   (Iwamoto 1968, p. 8; Kudo 2017, p. 289) compound
-                                                          <foreign xml:lang="Sa-Ltn" type="quote">janapada­kalyāṇīsadṛśīṃ</foreign> (“like the most
+                                                  <foreign xml:lang="Sa-Ltn" type="quote">janapada­kalyāṇīsadṛśīṃ</foreign> (“like the most
                                                   beautiful woman in the land”).</note> and great
                                                 wealth and much gold, and went forth and became a
                                                 renunciant.”</p>
@@ -797,6 +806,7 @@
                                         <p tid="67">The master of the house saw that and asked,
                                                 “Sumāgadhā, is this one who arrives in a lion
                                                 chariot your teacher?” </p>
+                                        <milestone unit="chunk" xml:id="UT22084-075-004-378"/>
                                         <p tid="68">She replied, “This is the monk known as
                                                 Śāriputra. The Blessed One pronounced him chief
                                                 among those endowed with wisdom. As soon as he
@@ -817,14 +827,14 @@
                                                 Sumāgadhā, “Is this one who arrives on an elephant
                                                 that is like Airāvaṇa, the king of elephants, your
                                                 teacher?”</p>
+                                        <milestone unit="chunk" xml:id="UT22084-075-004-379"/>
                                         <p tid="71">She replied, “This is the monk known as
-                                                Mahāmaudgalyāyana. The Blessed One <ref cRef="F.294.a" type="folio" xml:id="UT22084-075-004-344"/>
-                                                pronounced him chief among those with miraculous
-                                                power. With his miraculous power, he shook
-                                                Vaijayanta, the mansion of Śakra, the lord of the
-                                                gods, with his big toe, and he tamed the nāga kings
-                                                Nanda and Upananda. It is he who arrives on an
-                                                elephant chariot.”</p>
+                                                Mahāmaudgalyāyana. The Blessed One <ref cRef="F.294.a" type="folio" xml:id="UT22084-075-004-344"/> pronounced him
+                                                chief among those with miraculous power. With his
+                                                miraculous power, he shook Vaijayanta, the mansion
+                                                of Śakra, the lord of the gods, with his big toe,
+                                                and he tamed the nāga kings Nanda and Upananda. It
+                                                is he who arrives on an elephant chariot.”</p>
                                         <milestone unit="chunk" xml:id="UT22084-075-004-152"/>
                                         <p tid="72">Next, the venerable Aniruddha made his entrance
                                                 from the sky using his miraculous power, having
@@ -834,7 +844,7 @@
                                         <milestone unit="chunk" xml:id="UT22084-075-004-153"/>
                                         <p tid="73">Seeing that, the master of the house asked,
                                                 “Sumāgadhā, is this your teacher?” </p>
-                                        <p tid="74">She replied to him, “This one is the monk known
+                                        <p tid="74">She replied, “This one is the monk known
                                                 as Aniruddha. The Blessed One pronounced him chief
                                                 among those possessed of the divine eye. He conducts
                                                 himself such that by the power of his merit five
@@ -844,13 +854,14 @@
                                                 medicines for illness, and all necessities arise. It
                                                 is he who arrives on a lotus chariot.” </p>
                                         <milestone unit="chunk" xml:id="UT22084-075-004-155"/>
-                                        <p tid="75">Then the venerable Pūrṇa<note place="end" xml:id="UT22084-075-004-156"> See <ptr target="#UT22084-075-004-133"/>.</note>
-                                                made his entrance from the sky above, having
-                                                magically created a garuḍa chariot. </p>
+                                        <p tid="75">Then the venerable Pūrṇa<note place="end" xml:id="UT22084-075-004-156"> See <ptr target="#UT22084-075-004-133"/>.</note> made his
+                                                entrance from the sky above, having magically
+                                                created a garuḍa chariot. </p>
                                         <milestone unit="chunk" xml:id="UT22084-075-004-157"/>
                                         <p tid="76">The master of the house asked, “Sumāgadhā, is
                                                 the one arriving on a garuḍa chariot your
                                                 teacher?”</p>
+                                        <milestone unit="chunk" xml:id="UT22084-075-004-380"/>
                                         <p tid="77">She replied, “This one is the monk known as
                                                 Pūrṇa. The Blessed One pronounced him chief among
                                                 the teachers of Dharma. It is he who arrives on a
@@ -861,13 +872,14 @@
                                         <p tid="79">The master of the house asked, “Sumāgadhā, is
                                                 this one who arrives in such a tranquil manner,
                                                 holding an alms bowl, your teacher?”</p>
+                                        <milestone unit="chunk" xml:id="UT22084-075-004-381"/>
                                         <p tid="80">She replied, “This is the monk known as Aśvajit.
                                                 With his tranquil manner, he tamed a mad elephant.
                                                 Seeing his tranquil manner, the noble Śāriputra saw
                                                 the truth, went forth and became a renunciant in the
                                                 teaching of the Blessed One, and, having become a
-                                                renunciant, attained arhathood. <ref cRef="F.294.b" type="folio" xml:id="UT22084-075-004-345"/> It is he
-                                                who arrives in a tranquil manner.”</p>
+                                                renunciant, attained arhathood. <ref cRef="F.294.b" type="folio" xml:id="UT22084-075-004-345"/> It is
+                                                he who arrives in a tranquil manner.”</p>
                                         <milestone unit="chunk" xml:id="UT22084-075-004-162"/>
                                         <p tid="81">Then the venerable Upāli made his entrance from
                                                 the sky above using his miraculous power, having
@@ -876,6 +888,7 @@
                                         <p tid="82">The master of the house asked, “Sumāgadhā, is
                                                 this one who arrives in a forest of golden palm
                                                 trees your teacher?”</p>
+                                        <milestone unit="chunk" xml:id="UT22084-075-004-382"/>
                                         <p tid="83">She replied, “This is the monk known as Upāli.
                                                 The Blessed One pronounced him chief among the
                                                 holders of the Vinaya. As many as five hundred Śākya
@@ -896,6 +909,7 @@
                                         <p tid="85">The master of the house asked, “Sumāgadhā, is
                                                 this one who arrives seated in a pinnacled temple
                                                 made of beryl your teacher?”</p>
+                                        <milestone unit="chunk" xml:id="UT22084-075-004-383"/>
                                         <p tid="86">She replied, “This is the monk known as
                                                 Mahākātyāyanaputra. The Blessed One pronounced him
                                                 chief among the Sautrāntika and Vaibhāṣika teachers.
@@ -909,6 +923,7 @@
                                         <p tid="88">The master of the house asked, “Sumāgadhā, is
                                                 this one who arrives riding on a bull chariot your
                                                 teacher?”</p>
+                                        <milestone unit="chunk" xml:id="UT22084-075-004-384"/>
                                         <p tid="89">She replied, “This is the monk known as
                                                 Kauṣṭhila. The Blessed One pronounced him chief
                                                 among those who have attained analytical knowledge.
@@ -922,21 +937,22 @@
                                         <p tid="91">The master of the house asked, “Sumāgadhā, is
                                                 this one who arrives riding a swan chariot your
                                                 teacher?”</p>
+                                        <milestone unit="chunk" xml:id="UT22084-075-004-385"/>
                                         <p tid="92">She replied, “This is the monk known as
                                                 Pilindavatsa. The Blessed One pronounced him chief
                                                 among those who abide in compassion. When he wished
-                                                to cross the Ganges River, he commanded, “Stay,
-                                                servant woman!” As soon as he spoke those words, she
+                                                to cross the Ganges River, he commanded, ‘Stay,
+                                                servant woman!’ As soon as he spoke those words, she
                                                 remained like a mountain peak, not flowing at all.
                                                 It is he who arrives on a swan chariot.”</p>
                                         <milestone unit="chunk" xml:id="UT22084-075-004-174"/>
                                         <p tid="93">Next, the venerable Koṭīviṃśakarṇa made his
-                                                entrance on foot, walking and resting in a mountain
-                                                forest.</p>
+                                                entrance on foot, walking in a mountain forest.</p>
                                         <milestone unit="chunk" xml:id="UT22084-075-004-175"/>
                                         <p tid="94">The master of the house asked, “Sumāgadhā, is
-                                                this one who arrives walking in a forest covered
-                                                with hundreds of trees your teacher?”</p>
+                                                this one who arrives walking in a forest that is
+                                                filled with hundreds of trees your teacher?”</p>
+                                        <milestone unit="chunk" xml:id="UT22084-075-004-386"/>
                                         <p tid="95">She replied, “This is the monk known as Karṇika.
                                                 The Blessed One pronounced him chief among those who
                                                 exert themselves in diligence. As soon as he was
@@ -994,26 +1010,27 @@
                                         <p tid="97">The master of the house asked, “Sumāgadhā, is
                                                 this one who arrives in the image of a universal
                                                 monarch your teacher?”</p>
+                                        <milestone unit="chunk" xml:id="UT22084-075-004-387"/>
                                         <p tid="98">She replied, “This is the son of the Blessed
                                                 One. The Blessed One pronounced him chief among
                                                 those who hold the precepts. He gloriously
                                                 demonstrates what was relinquished by his father,
                                                 and in the appearance of a universal monarch he is
-                                                <ref cRef="F.295.b" type="folio" xml:id="UT22084-075-004-347"/> possessed of the seven treasures and
-                                                surrounded by thousands of youths. He is the one who
-                                                arrives like the moon surrounded by a host of
-                                                planets, constellations, and stars; like a lord of
-                                                humans who has entered the royal road; like an ocean
-                                                filled by the cascading of a thousand rivers; like a
-                                                great protector of beings who dispels fear, illness,
-                                                and misery; like a lion among beasts; like a garuḍa
-                                                among birds; like the all-clearing sun; like a
-                                                universal monarch ruling the four continents; it is
-                                                he who arrives like the thousand-eyed protector of
-                                                the Dharma in the assembly hall of Sudharma.”<note place="end" xml:id="UT22084-075-004-182"> This
-                                                  last analogy refers to the god Śakra and the
-                                                  assembly hall in the Heaven of the
-                                                  Thirty-Three.</note>
+                                                  <ref cRef="F.295.b" type="folio" xml:id="UT22084-075-004-347"/> possessed of the
+                                                seven treasures and surrounded by thousands of
+                                                youths. He is the one who arrives like the moon
+                                                surrounded by a host of planets, constellations, and
+                                                stars; like a lord of humans who has entered the
+                                                royal road; like an ocean filled by the cascading of
+                                                a thousand rivers; like a great protector of beings
+                                                who dispels fear, illness, and misery; like a lion
+                                                among beasts; like a garuḍa among birds; like the
+                                                all-clearing sun; and like a universal monarch ruling
+                                                the four continents. It is he who arrives like the
+                                                thousand-eyed protector of the Dharma in the
+                                                assembly hall of Sudharma.”<note place="end" xml:id="UT22084-075-004-182"> This last analogy
+                                                  refers to the god Śakra and the assembly hall in
+                                                  the Heaven of the Thirty-Three.</note>
                                         </p>
                                         <milestone unit="chunk" xml:id="UT22084-075-004-183"/>
                                         <p tid="99">Likewise, the others made their entrances
@@ -1035,7 +1052,7 @@
                                                 from Śrāvastī all the way to Puṇḍravardhana, nowhere
                                                 was there anything that could not be seen by the
                                                 eyes; thus was there total visibility. The Blessed
-                                                One too, proceeded through the sky, with Vajrapāṇi
+                                                One too proceeded through the sky, with Vajrapāṇi
                                                   following<note place="end" xml:id="UT22084-075-004-186"> Following Yongle,
                                                   Peking, and Narthang <foreign xml:lang="Bo-Ltn" type="quote">’breng</foreign>, Stok <foreign xml:lang="Bo-Ltn" type="quote">’brang</foreign>,
                                                   and the Sanskrit (A) <foreign xml:lang="Sa-Ltn" type="term">pṛṣṭhato</foreign> (Kudo 2016, p.
@@ -1048,20 +1065,20 @@
                                                 Supriya, and Eye Gift traveled in great numbers,
                                                 playing pleasant, diverse melodies on lutes, flutes,
                                                 paṇava drums,<note place="end" xml:id="UT22084-075-004-188"> Based on the
-                                                        Sanskrit (A) <foreign xml:lang="Sa-Ltn" type="quote">paṇava</foreign> (Iwamoto 2016, p.
-                                                        337). The Tibetan simply reads <foreign xml:lang="Bo-Ltn" type="term">rnga</foreign>
-                                                  (“drum”).</note> clay drums, and the like and
+                                                  Sanskrit (A) <foreign xml:lang="Sa-Ltn" type="quote">paṇava</foreign> (Iwamoto 2016, p.
+                                                  337). The Tibetan simply reads <foreign xml:lang="Bo-Ltn" type="term">rnga</foreign>
+                                                  (“drum”).</note> clay drums, and the like, and
                                                 strewing flowers, incense, perfumes, and
                                                 garlands.</p>
                                         <milestone unit="chunk" xml:id="UT22084-075-004-189"/>
-                                        <p tid="102">Meanwhile the Blessed One established
+                                        <p tid="102">Meanwhile, the Blessed One established
                                                 seventy-seven thousand beings in the truth for the
-                                                first time, having done so, arrived at the city of
-                                                Puṇḍravardhana. The city had eighteen gates, at
-                                                which the Blessed One emanated eighteen buddhas,
-                                                <ref cRef="F.296.a" type="folio" xml:id="UT22084-075-004-348"/> a buddha appearing at each of the gates.
-                                                Then the Blessed One arrived at Sumāgadhā’s
-                                                house.</p>
+                                                first time and, having done so, he arrived at the
+                                                city of Puṇḍravardhana. The city had eighteen
+                                                gates, at which the Blessed One emanated eighteen
+                                                buddhas, <ref cRef="F.296.a" type="folio" xml:id="UT22084-075-004-348"/> a buddha appearing
+                                                at each of the gates. Then the Blessed One arrived
+                                                at Sumāgadhā’s house.</p>
                                         <milestone unit="chunk" xml:id="UT22084-075-004-190"/>
                                         <p tid="103">Since they could not see the blessed Buddha,
                                                 the great crowd of people became angry and started
@@ -1103,15 +1120,15 @@
                                                 golden garland, and so they named her
                                                 Kāñcanamālā.</p>
                                         <milestone unit="chunk" xml:id="UT22084-075-004-194"/>
-                                        <p tid="107">Later, when the girl had grown up, went
+                                        <p tid="107">Later, when the girl had grown up, she went
                                                 together with a retinue of young ladies, in all five
-                                                hundred young girls of the same age, <ref cRef="F.296.b" type="folio" xml:id="UT22084-075-004-349"/> to
-                                                pay her respects to the perfectly complete Buddha
-                                                Kāśyapa. Because they had faith in him, for as long
-                                                as they lived they continued to serve that perfectly
-                                                complete buddha, the blessed Kāśyapa, providing him
-                                                with robes, alms, food, bedding, medicines for
-                                                curing illness, and other necessities. </p>
+                                                hundred young girls of the same age, <ref cRef="F.296.b" type="folio" xml:id="UT22084-075-004-349"/> to pay her respects
+                                                to the perfectly complete Buddha Kāśyapa. Because
+                                                they had faith in him, for as long as they lived
+                                                they continued to serve that perfectly complete
+                                                buddha, the blessed Kāśyapa, providing him with
+                                                robes, alms, food, bedding, medicines for curing
+                                                illness, and other necessities. </p>
                                         <milestone unit="chunk" xml:id="UT22084-075-004-195"/>
                                         <p tid="108">During that time, one night, King Kṛkin dreamed
                                                 ten dreams. As he recalled, “I dreamed of a king of
@@ -1142,7 +1159,7 @@
                                                 fighting, and criticizing one another.”</p>
                                         <milestone unit="chunk" xml:id="UT22084-075-004-198"/>
                                         <p tid="109">Then the king awoke, distraught with fear and
-                                                apprehension, thinking, “has my life been
+                                                apprehension, thinking, “Has my life been
                                                 threatened, or am I to fall from power?” So he
                                                 gathered some brahmins who were learned in the
                                                 interpretation of dream signs, and he described his
@@ -1171,12 +1188,12 @@
                                                 with Kāñcanamālā and a retinue of many hundreds of
                                                 thousands, he went to where the Blessed One was.
                                                 There, they bowed their heads to the feet of the
-                                                Blessed One <ref cRef="F.297.a" type="folio" xml:id="UT22084-075-004-350"/> and sat before the Blessed One
-                                                in order to listen to the Dharma. </p>
+                                                Blessed One <ref cRef="F.297.a" type="folio" xml:id="UT22084-075-004-350"/> and sat before the
+                                                Blessed One in order to listen to the Dharma. </p>
                                         <milestone unit="chunk" xml:id="UT22084-075-004-203"/>
                                         <p tid="114">After some time, King Kṛkin rose from his seat
                                                 and approached the Blessed One. He bowed with his
-                                                hands folded, and told the Blessed One, “O Blessed
+                                                hands folded and told the Blessed One, “O Blessed
                                                 One, in a single night I witnessed ten dreams. An
                                                 elephant, emerging from a window, was caught by its
                                                 tail…” and so forth as before.<note place="end" xml:id="UT22084-075-004-204"> Here the reader is
@@ -1250,10 +1267,10 @@
                                                 time deluded ones will be consecrated as kings.</p>
                                         <milestone unit="chunk" xml:id="UT22084-075-004-213"/>
                                         <p tid="123">“Great King, your dream of a piece of cloth not
-                                                being torn though it was pulled<note place="end" xml:id="UT22084-075-004-214"> See <ptr target="#UT22084-075-004-196"/>.</note>
-                                                by eighteen men is a premonition that although the
+                                                being torn though it was pulled<note place="end" xml:id="UT22084-075-004-214"> See <ptr target="#UT22084-075-004-196"/>.</note> by
+                                                eighteen men is a premonition that although the
                                                 teaching on reality will be split into eighteen
-                                                factions, that the cloth of liberation cannot be
+                                                factions, the cloth of liberation cannot be
                                                 torn.</p>
                                         <milestone unit="chunk" xml:id="UT22084-075-004-215"/>
                                         <p tid="124">“Great King, your dream of a great crowd of
@@ -1266,7 +1283,7 @@
                                                 to pass in the future.”</p>
                                         <p tid="126">And with these words, King Kṛkin and
                                                 Kāñcanamālā generated roots of virtue toward the
-                                                perfectly and completely awakened Buddha Kāśyapa,
+                                                perfectly and completely awakened Buddha Kāśyapa
                                                 that made them conducive to liberation. </p>
                                         <milestone unit="chunk" xml:id="UT22084-075-004-218"/>
                                         <p tid="127">“Monks, what do you think? The one known at
@@ -1276,7 +1293,7 @@
                                                 again performed buddha activity.”</p>
                                         <milestone unit="chunk" xml:id="UT22084-075-004-219"/>
                                         <p tid="128">Then the monks, with doubts arising, inquired
-                                                of the blessed Buddha, “Reverend One, by due to what
+                                                of the blessed Buddha, “Reverend One, due to what
                                                 former action was Kāñcanamālā born tied with a
                                                 golden garland?” </p>
                                         <milestone unit="chunk" xml:id="UT22084-075-004-220"/>
@@ -1297,10 +1314,9 @@
                                                 thoroughly praised the words of the Blessed One. </p>
                                         <milestone unit="chunk" xml:id="UT22084-075-004-222"/>
                                         <trailer tid="131">This completes “<title xml:lang="en">The
-                                                  Account of the Noble Deeds of
-                                                Sumāgadhā</title>.”</trailer>
-                                </div>
-                                <div type="colophon" xml:id="UT22084-075-004-colophon">
+                                                  Exemplary Tale of Sumāgadhā</title>.”</trailer>
+                                </tei:div>
+                                <tei:div type="colophon" xml:id="UT22084-075-004-colophon">
                                         <head type="colophon" tid="132">Colophon</head>
                                         <milestone unit="chunk" xml:id="UT22084-075-004-223"/>
                                         <p tid="133">Translated by the Indian preceptor
@@ -1308,13 +1324,13 @@
                                                 translator, the monk Tsültrim Yönten. Corrected and
                                                 finalized by the great translator, the monk Rinchen
                                                 Sangpo. </p>
-                                </div>
-                        </div>
+                                </tei:div>
+                        </tei:div>
                 </body>
                 <back>
-                        <div type="notes">
+                        <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="notes">
                                 <head type="notes" tid="134">Notes</head>
-                                <div type="section" xml:id="UT22084-075-004-notes-1">
+                                <tei:div type="section" xml:id="UT22084-075-004-notes-1">
                                         <head type="section" tid="136">Sanskrit manuscripts
                                                 consulted</head>
                                         <list type="abbreviations">
@@ -1339,22 +1355,22 @@
                         </item>
                                                 <item xml:id="UT22084-075-004-337">
                             <abbr>Calcutta</abbr>
-                            <expan> 13th-century
+                            <expan> Thirteenth-century
                                                   manuscript (B), Asiatic Society of Bengal no. 57,
                                                   edited in Iwamoto 1968.</expan>
                         </item>
                                                 <item xml:id="UT22084-075-004-338">
                             <abbr>N/Nepal</abbr>
-                            <expan> 17th-century
+                            <expan> Seventeenth-century
                                                   manuscript (C), Cambridge University Add. 1585,
                                                   edited in Iwamoto 1968.</expan>
                         </item>
                                         </list>
-                                </div>
-                        </div>
-                        <div type="listBibl">
+                                </tei:div>
+                        </tei:div>
+                        <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="listBibl">
                                 <head type="listBibl" tid="137">Bibliography</head>
-                                <div type="section" xml:id="UT22084-075-004-listBibl-1">
+                                <tei:div type="section" xml:id="UT22084-075-004-listBibl-1">
                                         <bibl xml:id="UT22084-075-004-225">
                         <title xml:lang="Bo-Ltn">ma ga d+hA bzang mo’i rtogs pa brjod pa</title>
                                                   (<title xml:lang="Sa-Ltn">Sumāgadhāvadāna</title>). Toh 346, Degé Kangyur
@@ -1377,7 +1393,7 @@
                                                   gyi chos kyi ’gyur ro cog gi dkar chag</title>).
                                                 Toh 4364, Degé Tengyur vol. 206 (sna tshogs, jo),
                                                 folios 294.b–310.a.</bibl>
-                                        <bibl xml:id="UT22084-075-004-229">Phangthangma (<title xml:lang="Bo-Ltn">dkar chag ʼphang thang
+                                        <bibl xml:id="UT22084-075-004-229">Phangthangma (<title xml:lang="Bo-Ltn">dkar chag ’phang thang
                                                   ma</title>). Beijing: mi rigs dpe skrun khang,
                                                 2003.</bibl>
                                         <bibl xml:id="UT22084-075-004-230">Burlingame, Eugene
@@ -1425,9 +1441,9 @@
                                                 Criegern, Gundrun Melzer, and Johannes Schneider,
                                                 427–39. Vienna: Arbeitskreis für Tibetische und
                                                 Buddhistische Studien Universität Wien, 2018.</bibl>
-                                </div>
-                        </div>
-                        <div type="glossary" status="excluded">
+                                </tei:div>
+                        </tei:div>
+                        <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="glossary" status="excluded">
                                 <list type="glossary">
                                         <item>
                         <gloss type="term" xml:id="UT22084-075-004-238">
@@ -1441,11 +1457,12 @@
                                         <item>
                         <gloss type="term" xml:id="UT22084-075-004-239">
                                                   <term type="translationMain">non-Buddhist</term>
-                                                  <term status="verified" xml:lang="Bo-Ltn" n="1">mu stegs pa </term>
+                                                  <term status="verified" xml:lang="Bo-Ltn" n="1">mu
+                                                  stegs pa </term>
                                                   <term xml:lang="bo" n="1">མུ་སྟེགས་པ།</term>
                                                   <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">tīrthika</term>
-                                                <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">tīrtha</term>
-                                                <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">tīrthya</term>
+                                                  <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">tīrtha</term>
+                                                  <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">tīrthya</term>
                                                   <note type="definition">
                                 <p>Those of religious or
                                                   philosophical orders that were contemporary with
@@ -1505,8 +1522,8 @@
                                                   tower, or spire, it contains at least one
                                                   additional upper room within the structure.
                                                   <foreign xml:lang="Sa-Ltn" type="term">Kūṭāgāra</foreign> literally means “upper
-                                                  chamber.” The Mahābodhi temple in
-                                                  Bodhgaya is an example of a kūṭāgāra.</p>
+                                                  chamber.” The Mahābodhi temple in Bodhgaya is an
+                                                  example of a kūṭāgāra.</p>
                             </note>
                                                 </gloss>
                     </item>
@@ -1694,14 +1711,12 @@
                                                   che</foreign>) or the precious sword (<foreign xml:lang="Sa-Ltn" type="term">khaḍgaratna</foreign>; <foreign xml:lang="Bo-Ltn" type="term">ral gri rin po che</foreign>). A more
                                                   detailed description of these seven can be found
                                                   in Toh 95, <title xml:lang="en">The Play in
-                                                  Full</title>, <ptr target="#UT22084-046-001-92">3.2</ptr>–<ptr target="#UT22084-046-001-103">3.12</ptr>. There is also a detailed description
-                                                  of the seven treasures and the corresponding
-                                                  causal conditions for obtaining them in Toh 4087,
-                                                  the <title xml:lang="Sa-Ltn">Kāraṇa­prajñapti</title>, folio
-                                                          111.b.<ref rend="pending" inst="add ptr tag linking to f.111.b from Toh 4087" target="http://read.84000.co/translation/toh4087.html"/> The term
-                                                  should not be confused with seven precious
-                                                  substances, a varying set of seven precious stones
-                                                  or minerals.</p>
+                                                  Full</title>, <ptr target="#UT22084-046-001-92"/><!--3.2-->–<ptr target="#UT22084-046-001-103"/><!--3.12-->. There is also a detailed
+                                                  description of the seven treasures and the
+                                                  corresponding causal conditions for obtaining them
+                                                  in Toh 4087, the <title xml:lang="Sa-Ltn">Kāraṇa­prajñapti</title>, folio 111.b.<ref rend="pending" inst="add ptr tag linking to f.111.b from Toh 4087" target="http://read.84000.co/translation/toh4087.html"/> The term should not be confused with seven
+                                                  precious substances, a varying set of seven
+                                                  precious stones or minerals.</p>
                             </note>
                                                 </gloss>
                     </item>
@@ -1717,8 +1732,7 @@
                         <gloss type="term" xml:id="UT22084-075-004-257">
                                                   <term type="translationMain">endowed with perfect
                                                   knowledge and conduct</term>
-                                                  <term status="verified" xml:lang="Bo-Ltn" n="1">rig pa dang zhabs su
-                                                  ldan pa </term>
+                                                  <term status="verified" xml:lang="Bo-Ltn" n="1">rig pa dang zhabs su ldan pa </term>
                                                   <term xml:lang="bo" n="1">རིག་པ་དང་ཞབས་སུ་ལྡན་པ།</term>
                                                   <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">vidyācaraṇasampanna</term>
                                                   <note type="definition">
@@ -1775,6 +1789,12 @@
                                                   <term status="verified" xml:lang="Bo-Ltn" n="1">shes rab </term>
                                                   <term xml:lang="bo" n="1">ཤེས་རབ།</term>
                                                   <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">prajñā</term>
+                                                  <note type="definition">
+                                                  <p>The sixth of the six perfections, it refers to
+                                                  the profound understanding of the emptiness of all
+                                                  phenomena, the realization of ultimate
+                                                  reality.</p>
+                                                  </note>
                                                 </gloss>
                     </item>
                                         <item>
@@ -1822,10 +1842,9 @@
                     </item>
                                         <item>
                         <gloss type="term" xml:id="UT22084-075-004-265">
-                                                  <term type="translationMain">precious branches of
+                                                  <term type="translationMain">branches of
                                                   awakening</term>
-                                                  <term status="verified" xml:lang="Bo-Ltn" n="1">byang chub kyi yan
-                                                  lag </term>
+                                                  <term status="verified" xml:lang="Bo-Ltn" n="1">byang chub kyi yan lag </term>
                                                   <term xml:lang="bo" n="1">བྱང་ཆུབ་ཀྱི་ཡན་ལག</term>
                                                   <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">bodhyaṅga</term>
                                                 </gloss>
@@ -1860,15 +1879,17 @@
                     </item>
                                         <item>
                         <gloss type="term" xml:id="UT22084-075-004-354">
-                                                <term type="translationMain">object of veneration</term>
-                                                <term status="verified" xml:lang="Bo-Ltn" n="1">mchod gnas </term>
-                                                <term xml:lang="bo" n="1">མཆོད་གནས།</term>
-                                                <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">dakṣiṇīya</term>
-                                                <term type="translationAlternative">objects of veneration</term>
-                                                <note type="definition">
-                                                        <p>See “venerable one.”</p>
-                                                </note>
-                                        </gloss>
+                                                  <term type="translationMain">object of
+                                                  veneration</term>
+                                                  <term status="verified" xml:lang="Bo-Ltn" n="1">mchod gnas </term>
+                                                  <term xml:lang="bo" n="1">མཆོད་གནས།</term>
+                                                  <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">dakṣiṇīya</term>
+                                                  <term type="translationAlternative">objects of
+                                                  veneration</term>
+                                                  <note type="definition">
+                                                  <p>See “venerable one.”</p>
+                                                  </note>
+                                                </gloss>
                     </item>
                                         <item>
                         <gloss type="term" xml:id="UT22084-075-004-269">
@@ -1891,7 +1912,7 @@
                                                   <term status="verified" xml:lang="Bo-Ltn" n="1">bye brag tu smra ba </term>
                                                   <term xml:lang="bo" n="1">བྱེ་བྲག་ཏུ་སྨྲ་བ།</term>
                                                   <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">vaibhaṅgaka</term>
-                                                <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">vaibhaṅgika</term>
+                                                  <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">vaibhaṅgika</term>
                                                   <note type="definition">
                                 <p>An early Buddhist
                                                   philosophical school that was part of the
@@ -1910,7 +1931,7 @@
                     </item>
                                         <item>
                         <gloss type="term" xml:id="UT22084-075-004-272">
-                                                  <term type="translationMain">account of the noble deeds</term>
+                                                  <term type="translationMain">Exemplary Tale</term>
                                                   <term status="verified" xml:lang="Bo-Ltn" n="1">rtogs pa brjod pa </term>
                                                   <term xml:lang="bo" n="1">རྟོགས་པ་བརྗོད་པ།</term>
                                                   <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">avadāna</term>
@@ -1918,14 +1939,14 @@
                     </item>
                                         <item>
                         <gloss type="term" xml:id="UT22084-075-004-353">
-                                                <term type="translationMain">avadāna</term>
-                                                <term status="verified" xml:lang="Bo-Ltn" n="1">rtogs pa brjod pa </term>
-                                                <term xml:lang="bo" n="1">རྟོགས་པ་བརྗོད་པ།</term>
-                                                <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">avadāna</term>
-                                                <note type="definition">
-                                                        <p>See “account of the noble deeds.”</p>
-                                                </note>
-                                        </gloss>
+                                                  <term type="translationMain">avadāna</term>
+                                                  <term status="verified" xml:lang="Bo-Ltn" n="1">rtogs pa brjod pa </term>
+                                                  <term xml:lang="bo" n="1">རྟོགས་པ་བརྗོད་པ།</term>
+                                                  <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">avadāna</term>
+                                                  <note type="definition">
+                                                  <p>See “Exemplary Tale.”</p>
+                                                  </note>
+                                                </gloss>
                     </item>
                                         <item>
                         <gloss type="term" xml:id="UT22084-075-004-275">
@@ -1941,7 +1962,7 @@
                                                   <term status="verified" xml:lang="Bo-Ltn" n="1">dgra bcom pa nyid </term>
                                                   <term xml:lang="bo" n="1">དགྲ་བཅོམ་པ་ཉིད།</term>
                                                   <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">arhatva</term>
-                                                <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">arhattva</term>
+                                                  <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">arhattva</term>
                                                   <note type="definition">
                                 <p>See “arhat.”</p>
                             </note>
@@ -1963,7 +1984,7 @@
                                                   <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">vipāka</term>
                                                   <note type="definition">
                                 <p>In the theory of karma
-                                                  (action) and its effects, ripening refers to the
+                                                          (action) and its effects, <distinct>ripening</distinct> refers to the
                                                   manifestation of the effects of a past action,
                                                   often in a time and a place far removed from the
                                                   action itself.</p>
@@ -1979,33 +2000,33 @@
                                                 </gloss>
                     </item>
                                         <item>
-                        <gloss type="person" xml:id="UT22084-075-004-281">
+                                                <gloss xml:id="UT22084-075-004-281" type="person" mode="match">
                                                   <term type="translationMain">Sumāgadhā</term>
-                                                  <term status="verified" xml:lang="Bo-Ltn" n="1">su ma ga d+hA </term>
-                                                  <term xml:lang="bo" n="1">སུ་མ་ག་དྷཱ།</term>
-                                                  <term type="attestedDictionary" xml:lang="Sa-Ltn">sumāgadhā</term>
-                                                <term type="reconstructedPhonetic" xml:lang="Sa-Ltn">sumagadhā</term>
+                                                  <term xml:lang="Sa-Ltn" type="attestedSource" status="verified">sumāgadhā</term>
+                                                  <term xml:lang="Sa-Ltn" type="attestedSource" status="verified">sumagadhā</term>
+                                                  <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">ma ga d+hA bzang mo</term>
+                                                  <term xml:lang="bo" type="attestedSource" n="1" status="verified">མ་ག་དྷཱ་བཟང་མོ།</term>
                                                   <note type="definition">
-                                <p>A daughter of
-                                                  Anāthapiṇḍada and the heroine in <title xml:lang="en">The Account of the Noble Deeds of
+                                                  <p>A daughter of Anāthapiṇḍada and the heroine in
+                                                  <title xml:lang="en">The Exemplary Tale of
                                                   Sumāgadhā</title>. After being married off to the
                                                   non-Buddhist city of Puṇḍravardhana, she summons
                                                   the Buddha and his disciples, who convert the
                                                   nirgrantha inhabitants of the city.</p>
-                            </note>
+                                                  </note>
                                                 </gloss>
-                    </item>
+                                        </item>
                                         <item>
                         <gloss type="person" xml:id="UT22084-075-004-282">
                                                   <term type="translationMain">Vṛṣabhadatta</term>
                                                   <term status="verified" xml:lang="Bo-Ltn" n="1">khyu mchog byin </term>
                                                   <term xml:lang="bo" n="1">ཁྱུ་མཆོག་བྱིན།</term>
                                                   <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">vṛṣabhadatta</term>
-                                                <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">vṛṣadatta</term>
+                                                  <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">vṛṣadatta</term>
                                                   <note type="definition">
                                 <p>A son of a merchant in
                                                   the city of Puṇḍravardhana, he marries
-                                                  Anāthapiṇḍada’s daughter Sumāgadhā in <title xml:lang="en">The Account of the Noble Deeds of
+                                                  Anāthapiṇḍada’s daughter Sumāgadhā in <title xml:lang="en">The Exemplary Tale of
                                                   Sumāgadhā</title>.</p>
                             </note>
                                                 </gloss>
@@ -2024,7 +2045,7 @@
                                                   <term status="verified" xml:lang="Bo-Ltn" n="1">gang po </term>
                                                   <term xml:lang="bo" n="1">གང་པོ།</term>
                                                   <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">pūrṇa</term>
-                                                <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">pūrṇa­maitrāyaṇī­putra</term>
+                                                  <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">pūrṇa­maitrāyaṇī­putra</term>
                                                   <note type="definition">
                                 <p>At least five different
                                                   disciples of the Buddha in the canonical texts
@@ -2032,7 +2053,7 @@
                                                   disciple of the Buddha from Kapilavastu, nephew of
                                                   Ājñātakauṇḍinya who ordained him, described as the
                                                   foremost disciple in explaining the doctrine. Also
-                                                  known as Pūrṇa Maitrāyaṇīputra. </p>
+                                                  known as Pūrṇa Maitrāyaṇīputra. See <tei:ref target="https://read.84000.co/knowledgebase/EFT-KB-PURNA.html#article">84000 Knowledge Base</tei:ref>.</p>
                             </note>
                                                 </gloss>
                     </item>
@@ -2044,12 +2065,11 @@
                                                   <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">pūrṇa</term>
                                                   <note type="definition">
                                 <p>The elder Pūrṇa from
-                                                          Kuṇḍopadāna. See <ptr target="#UT22084-075-004-133"/>. He is also mentioned in
-                                                  <title xml:lang="en">The Deeds of Pūrṇa</title>
-                                                  (<title xml:lang="Sa-Ltn">Pūrṇāvadāna</title>) in
-                                                  the <title xml:lang="Sa-Ltn">Divyāvadāna</title>
-                                                  as one of the monks in the Buddha’s airborne
-                                                  entourage.</p>
+                                                  Kuṇḍopadāna. See <ptr target="#UT22084-075-004-133"/>. He is also
+                                                  mentioned in <title xml:lang="en">The Exemplary
+                                                  Tale of Pūrṇa</title> (<title xml:lang="Sa-Ltn">Pūrṇāvadāna</title>) in the <title xml:lang="Sa-Ltn">Divyāvadāna</title> as one of
+                                                  the monks in the Buddha’s airborne entourage. See
+                                                  <tei:ref target="https://read.84000.co/knowledgebase/EFT-KB-PURNA.html#article">84000 Knowledge Base</tei:ref>.</p>
                             </note>
                                                 </gloss>
                     </item>
@@ -2057,19 +2077,17 @@
                         <gloss type="person" xml:id="UT22084-075-004-286">
                                                   <term type="translationMain">Four Great
                                                   Kings</term>
-                                                  <term status="verified" xml:lang="Bo-Ltn" n="1">rgyal po chen po
-                                                  bzhi </term>
+                                                  <term status="verified" xml:lang="Bo-Ltn" n="1">rgyal po chen po bzhi </term>
                                                   <term xml:lang="bo" n="1">རྒྱལ་པོ་ཆེན་པོ་བཞི།</term>
-                                                <term status="verified" xml:lang="Sa-Ltn">caturmahā­rājika</term>
+                                                  <term status="verified" xml:lang="Sa-Ltn">caturmahā­rājika</term>
                                                 </gloss>
                     </item>
                                         <item>
                         <gloss type="person" xml:id="UT22084-075-004-287">
                                                   <term type="translationMain">Ājñātakauṇḍinya</term>
-                                                  <term status="verified" xml:lang="Bo-Ltn" n="1">kun shes kauN+Di
-                                                  n+ya </term>
+                                                  <term status="verified" xml:lang="Bo-Ltn" n="1">kun shes kauN+Di n+ya </term>
                                                   <term xml:lang="bo" n="1">ཀུན་ཤེས་ཀཽཎྜི་ནྱ།</term>
-                                                <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">ājñāta­kauṇḍinya</term>
+                                                  <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">ājñāta­kauṇḍinya</term>
                                                   <note type="definition">
                                 <p>An arhat and disciple
                                                   the Buddha Śākyamuni. He is counted among the five
@@ -2113,22 +2131,22 @@
                                                   <term status="verified" xml:lang="Bo-Ltn" n="1">shA ri’i bu </term>
                                                   <term xml:lang="bo" n="1">ཤཱ་རིའི་བུ།</term>
                                                   <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">śāriputra</term>
-                                                <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">śāriputtra</term>
+                                                  <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">śāriputtra</term>
                                                 </gloss>
                     </item>
                                         <item>
                         <gloss type="person" xml:id="UT22084-075-004-291">
                                                   <term type="translationMain">Mahāmaudgalyāyana</term>
-                                                  <term status="verified" xml:lang="Bo-Ltn" n="1">maud gal gyi bu chen
-                                                  po </term>
+                                                  <term status="verified" xml:lang="Bo-Ltn" n="1">maud gal gyi bu chen po </term>
                                                   <term xml:lang="bo" n="1">མཽད་གལ་གྱི་བུ་ཆེན་པོ།</term>
-                                                <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">mahā­maudgalyāyana</term>
+                                                  <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">mahā­maudgalyāyana</term>
                                                 </gloss>
                     </item>
                                         <item>
                         <gloss type="person" xml:id="UT22084-075-004-292">
                                                   <term type="translationMain">Airāvaṇa</term>
-                                                  <term status="verified" xml:lang="Bo-Ltn" n="1">sa srung </term>
+                                                  <term status="verified" xml:lang="Bo-Ltn" n="1">sa
+                                                  srung </term>
                                                   <term xml:lang="bo" n="1">ས་སྲུང་།</term>
                                                   <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">airāvaṇa</term>
                                                   <note type="definition">
@@ -2174,7 +2192,8 @@
                                         <item>
                         <gloss type="person" xml:id="UT22084-075-004-296">
                                                   <term type="translationMain">Aniruddha</term>
-                                                  <term status="verified" xml:lang="Bo-Ltn" n="1">ma ’gags pa </term>
+                                                  <term status="verified" xml:lang="Bo-Ltn" n="1">ma
+                                                  ’gags pa </term>
                                                   <term xml:lang="bo" n="1">མ་འགགས་པ།</term>
                                                   <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">aniruddha</term>
                                                 </gloss>
@@ -2207,10 +2226,10 @@
                                         <item>
                         <gloss type="person" xml:id="UT22084-075-004-299">
                                                   <term type="translationMain">Mahākātyāyanaputra</term>
-                                                  <term status="verified" xml:lang="Bo-Ltn" n="1">kA t+yA ya na’i bu
-                                                  chen po </term>
+                                                  <term status="verified" xml:lang="Bo-Ltn" n="1">kA
+                                                  t+yA ya na’i bu chen po </term>
                                                   <term xml:lang="bo" n="1">ཀཱ་ཏྱཱ་ཡ་ནའི་བུ་ཆེན་པོ།</term>
-                                                <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">mahā­kātyāyana­putra</term>
+                                                  <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">mahā­kātyāyana­putra</term>
                                                   <note type="definition">
                                 <p>One of the ten
                                                   principal pupils of the Buddha, he was renowned
@@ -2255,8 +2274,7 @@
                                         <item>
                         <gloss type="person" xml:id="UT22084-075-004-302">
                                                   <term type="translationMain">Koṭīviṃśakarṇa</term>
-                                                  <term status="verified" xml:lang="Bo-Ltn" n="1">rna ba bye ba nyi
-                                                  shu </term>
+                                                  <term status="verified" xml:lang="Bo-Ltn" n="1">rna ba bye ba nyi shu </term>
                                                   <term xml:lang="bo" n="1">རྣ་བ་བྱེ་བ་ཉི་ཤུ།</term>
                                                   <term type="reconstructedSemantic" xml:lang="Sa-Ltn">koṭīviṃśakarṇa</term>
                                                   <note type="definition">
@@ -2274,10 +2292,10 @@
                                                   <term type="translationMain">Karṇika</term>
                                                   <term status="verified" xml:lang="Bo-Ltn" n="1">rna can </term>
                                                   <term xml:lang="bo" n="1">རྣ་ཅན།</term>
-                                                <term type="reconstructedSemantic" xml:lang="Sa-Ltn">karṇika</term>
+                                                  <term type="reconstructedSemantic" xml:lang="Sa-Ltn">karṇika</term>
                                                   <note type="definition">
                                 <p>See
-                                                          “Koṭīviṃśakarṇa.”</p>
+                                                  “Koṭīviṃśakarṇa.”</p>
                             </note>
                                                 </gloss>
                     </item>
@@ -2411,13 +2429,12 @@
                                         <item>
                         <gloss type="person" xml:id="UT22084-075-004-315">
                                                   <term type="translationMain">Dharmaśrībhadra</term>
-                                                  <term status="verified" xml:lang="Bo-Ltn" n="1">d+har+ma shrI b+ha
-                                                  dra </term>
+                                                  <term status="verified" xml:lang="Bo-Ltn" n="1">d+har+ma shrI b+ha dra </term>
                                                   <term xml:lang="bo" n="1">དྷརྨ་ཤྲཱི་བྷ་དྲ།</term>
-                                                <term type="reconstructedPhonetic" xml:lang="Sa-Ltn">dharma­śrībhadra</term>
+                                                  <term type="reconstructedPhonetic" xml:lang="Sa-Ltn">dharma­śrībhadra</term>
                                                   <note type="definition">
                                 <p>The Indian scholar who
-                                                  assisted with the translation of <title xml:lang="en">The Account of the Noble Deeds of
+                                                  assisted with the translation of <title xml:lang="en">The Exemplary Tale of
                                                   Sumāgadhā</title> and other works into Tibetan. He
                                                   lived sometime during the late tenth century to
                                                   the middle of the eleventh century.</p>
@@ -2433,10 +2450,10 @@
                                                   <term status="verified" xml:lang="Sa-Ltn"/>
                                                   <note type="definition">
                                 <p>The Tibetan translator
-                                                  of <title xml:lang="en">The Account of the Noble
-                                                  Deeds of Sumāgadhā</title> and other works. He
-                                                  lived sometime during the late tenth century to
-                                                  the middle of the eleventh century.</p>
+                                                  of <title xml:lang="en">The Exemplary Tale of
+                                                  Sumāgadhā</title> and other works. He lived
+                                                  sometime during the late tenth century to the
+                                                  middle of the eleventh century.</p>
                             </note>
                                                 </gloss>
                     </item>
@@ -2478,8 +2495,7 @@
                         <gloss type="place" xml:id="UT22084-075-004-320">
                                                   <term type="translationMain">Prince Jeta’s
                                                   Grove</term>
-                                                  <term status="verified" xml:lang="Bo-Ltn" n="1">rgyal bu rgyal byed
-                                                  kyi tshal </term>
+                                                  <term status="verified" xml:lang="Bo-Ltn" n="1">rgyal bu rgyal byed kyi tshal </term>
                                                   <term xml:lang="bo" n="1">རྒྱལ་བུ་རྒྱལ་བྱེད་ཀྱི་ཚལ།</term>
                                                   <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">jetavana</term>
                                                 </gloss>
@@ -2488,22 +2504,23 @@
                         <gloss type="place" xml:id="UT22084-075-004-321">
                                                   <term type="translationMain">Anāthapiṇḍada’s
                                                   Park</term>
-                                                  <term status="verified" xml:lang="Bo-Ltn" n="1">mgon med zas sbyin
-                                                  gyi kun dga’ ra ba </term>
+                                                  <term status="verified" xml:lang="Bo-Ltn" n="1">mgon med zas sbyin gyi kun dga’ ra ba </term>
                                                   <term xml:lang="bo" n="1">མགོན་མེད་ཟས་སྦྱིན་གྱི་ཀུན་དགའ་ར་བ།</term>
-                                                <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">anātha­piṇḍadasya āramaḥ</term>
+                                                  <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">anātha­piṇḍadasya
+                                                  āramaḥ</term>
                                                 </gloss>
                     </item>
                                         <item>
                         <gloss type="place" xml:id="UT22084-075-004-322">
                                                   <term type="translationMain">Puṇḍravardhana</term>
-                                                  <term status="verified" xml:lang="Bo-Ltn" n="1">bu ram shing ’phel </term>
+                                                  <term status="verified" xml:lang="Bo-Ltn" n="1">bu
+                                                  ram shing ’phel </term>
                                                   <term xml:lang="bo" n="1">བུ་རམ་ཤིང་འཕེལ།</term>
                                                   <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">puṇḍravardhana</term>
-                                                <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">pūrṇavardhana</term>  
-                                                <note type="definition">
+                                                  <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">pūrṇavardhana</term>
+                                                  <note type="definition">
                                 <p>Literally “Abundant in
-                                                  Sugar Cane,” an ancient city in Bengal, marking
+                                                  Sugarcane,” an ancient city in Bengal, marking
                                                   the eastern limit of Madhyadeśa and noted for its
                                                   many nirgrantha (Jain) temples.</p>
                             </note>
@@ -2515,7 +2532,7 @@
                                                   <term status="verified" xml:lang="Bo-Ltn" n="1">bzang byed </term>
                                                   <term xml:lang="bo" n="1">བཟང་བྱེད།</term>
                                                   <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">bhadrika</term>
-                                                <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">bhadraka</term>
+                                                  <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">bhadraka</term>
                                                   <note type="definition">
                                 <p>A city outside of
                                                   Śrāvastī held principally by
@@ -2600,7 +2617,8 @@
                                         <item>
                         <gloss type="place" xml:id="UT22084-075-004-331">
                                                   <term type="translationMain">Vārāṇasī</term>
-                                                  <term status="verified" xml:lang="Bo-Ltn" n="1">bA rA Na sI </term>
+                                                  <term status="verified" xml:lang="Bo-Ltn" n="1">bA
+                                                  rA Na sI </term>
                                                   <term xml:lang="bo" n="1">བཱ་རཱ་ཎ་སཱི།</term>
                                                   <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">vārāṇasī</term>
                                                 </gloss>
@@ -2629,7 +2647,8 @@
                                         <item>
                         <gloss type="place" xml:id="UT22084-075-004-333">
                                                   <term type="translationMain">Deer Park</term>
-                                                  <term status="verified" xml:lang="Bo-Ltn" n="1">ri dags rgyu ba </term>
+                                                  <term status="verified" xml:lang="Bo-Ltn" n="1">ri
+                                                  dags rgyu ba </term>
                                                   <term xml:lang="bo" n="1">རི་དགས་རྒྱུ་བ།</term>
                                                   <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">mṛgadāva</term>
                                                   <note type="definition">
@@ -2640,7 +2659,7 @@
                                                 </gloss>
                     </item>
                                 </list>
-                        </div>
+                        </tei:div>
                 </back>
         </text>
 </TEI>
