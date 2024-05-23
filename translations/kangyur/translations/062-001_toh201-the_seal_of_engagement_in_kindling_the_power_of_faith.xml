@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../../../schema/current/translation.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<tei:TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -13,7 +13,7 @@
                 <title type="longTitle" xml:lang="Bo-Ltn">’phags pa dad pa’i stobs bskyed pa la ’jug pa’i phyag rgya zhes bya ba theg pa chen po’i mdo</title>
                 <title type="longTitle" xml:lang="bo">འཕགས་པ་དད་པའི་སྟོབས་བསྐྱེད་པ་ལ་འཇུག་པའི་ཕྱག་རྒྱ་ཞེས་བྱ་བ་ཐེག་པ་ཆེན་པོའི་མདོ།</title>
                 <title type="otherTitle" xml:lang="zh">《信力入印法門經》</title>
-                <author role="translatorMain" xml:id="UT22084-062-001-856">Translated by Dharmachakra Translation Committee<lb/> under the patronage and
+                <author role="translatorMain" xml:id="UT22084-062-001-856">Translated by the Dharmachakra Translation Committee<lb/> under the patronage and
                     supervision of 84000: Translating the Words of the Buddha</author>
                 <editor role="externalReviewer" xml:id="UT22084-062-001-857">David Higgins</editor>
                 <editor role="copyEditor" xml:id="UT22084-062-001-858">Konchog Norbu</editor>
@@ -28,7 +28,7 @@
                 <sponsor xml:id="UT22084-062-001-867">Shakya Dewa</sponsor>
             </titleStmt>
             <editionStmt>
-                <edition>v 1.1.10 <date>2023</date>
+                <edition>v 1.1.12 <date>2024</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -49,7 +49,7 @@
             <sourceDesc>
                 <bibl key="toh201" type="text">
                     <ref>Toh 201</ref>
-                    <biblScope>Degé Kangyur, vol. 62 (mdo sde, tsha), Folios 1b–63a</biblScope><!--vol.62, ff.1r-63r(pp.1-125)-->
+                    <biblScope>Degé Kangyur, vol. 62 (mdo sde, tsha), folios 1.b–63.a</biblScope><!--vol.62, ff.1r-63r(pp.1-125)-->
                     <author role="translatorTib" xml:id="UT22084-062-001-904">Surendrabodhi</author>
                     <author role="translatorTib" xml:id="UT22084-062-001-905">Yeshé Dé</author>
                     <location work="UT4CZ5369" count-pages="124">
@@ -172,6 +172,12 @@
                 <change who="#celso" when="2023-09-19T14:55:25.895Z" type="text-version" status="1.1.10" xml:id="UT22084-062-001-906">
                     <desc>minor typo</desc>
                 </change>
+                <change who="#celso" when="2023-10-13T11:48:10.305Z" type="text-version" status="1.1.11" xml:id="UT22084-062-001-907">
+                    <desc>reapplied capital letters in Wylie and covert to TibUni-glossary</desc>
+                </change>
+                <change who="#laura" when="2024-05-23T08:25:21.64Z" type="text-version" status="1.1.12" xml:id="UT22084-062-001-908">
+                    <desc>Cleaned up some errors in ancillaries</desc>
+                </change>
             </revisionDesc>
         </fileDesc>
     </teiHeader>
@@ -259,7 +265,7 @@
                     <milestone unit="chunk" xml:id="UT22084-062-001-852"/>
                     <p tid="590">The inclusion of the sūtra in the
                     <title xml:lang="Sa-Ltn">Sūtrasamuccaya</title> might tentatively suggest that the text was in circulation by Nāgārjuna’s lifetime
-                    (often thought to be circa 150-250 <hi rend="small-caps">CE</hi>), but given the uncertainty over the 
+                    (often thought to be circa 150-250 <hi rend="small-caps">ce</hi>), but given the uncertainty over the 
                     <title xml:lang="Sa-Ltn">Sūtrasamuccaya</title>’s authorship no such
                     dating could be conclusive.<note place="end" xml:id="UT22084-062-001-8"> Skilling 2013, p. 216.</note> The sūtra is also briefly
                     quoted four times by Śāntideva (seventh century) in his <title xml:lang="Sa-Ltn">Śikṣāsamuccaya</title> and twice in 
@@ -268,7 +274,7 @@
                         Sanskrit passages in the <title xml:lang="Sa-Ltn">Śikṣāsamuccaya</title> were consulted. We have
                         identified these passages in notes to the translation. The edited Sanskrit of these four
                         passages are found in Bendall 1971. See also Mahoney (et al.) 2003.</note> In Chinese, we find a
-                    complete translation (T. 305, <title xml:lang="Zh-Ltn">Hsin li ju yin fa men ching</title>, <title xml:lang="zh">信力入印法門經</title>), dated to 504 <hi rend="small-caps">CE</hi>, by
+                    complete translation (T. 305, <title xml:lang="Zh-Ltn">Hsin li ju yin fa men ching</title>, <title xml:lang="zh">信力入印法門經</title>), dated to 504 <hi rend="small-caps">ce</hi>, by
                     the Kashmiri translator Dharmaruci. The Tibetan translation is attributed to the Indian preceptor
                     Surendrabodhi and the prolific translator Yeshé Dé, who were both active in Tibet in the late eighth
                     and early ninth centuries. We can therefore date the Tibetan translation to this period, a dating that is also attested by the text’s inclusion in the early ninth century
@@ -3606,37 +3612,32 @@
                     <bibl xml:id="UT22084-062-001-590">
                         <title xml:lang="Bo-Ltn">’phags pa dad pa’i stobs bskyed pa la ’jug pa’i phyag rgya zhes bya
                             ba theg pa chen po’i mdo</title>. Toh 201, Degé Kangyur vol. 62 (mdo sde, tsha),
-                        folios 1b–63a.</bibl>
+                        folios 1.b–63.a.</bibl>
                     <bibl xml:id="UT22084-062-001-591">
                         <title xml:lang="Bo-Ltn">’phags pa dad pa’i stobs bskyed pa la ’jug pa’i phyag rgya zhes bya
                             ba theg pa chen po’i mdo</title>. bka’ ’gyur (dpe bsdur ma) [Comparative Edition of the
                         Kangyur], krung go’i bod rig pa zhib ’jug ste gnas kyi bka’ bstan dpe sdur khang (The Tibetan
                         Tripitaka Collation Bureau of the China Tibetology Research Center). 108 volumes. Beijing: krung
                         go’i bod rig pa dpe skrun khang (China Tibetology Publishing House), 2006–9, vol. 62,
-                        3–145.</bibl>
+                        pp. 3–145.</bibl>
                     <bibl xml:id="UT22084-062-001-592">Denkarma (<title xml:lang="Bo-Ltn">pho brang stod thang ldan [/ lhan] dkar gyi chos ’gyur ro cog gi dkar
-                        chag</title>). Degé Tengyur, vol. 206 (sna tshogs, jo), folios 294.b–310.a.</bibl>
+                        chag</title>). Toh 4364, Degé Tengyur,vol. 206 (sna tshogs, jo), folios 294.b–310.a.</bibl>
                 </div>
                 <div type="section" xml:id="UT22084-062-001-listBibl-2">
                     <head type="section" tid="587">Secondary Sources </head>
-                    <bibl xml:id="UT22084-062-001-593">Bendall, Cecil, and W.H.D. Rouse, eds. <title xml:lang="en">Śiksā Samuccaya: A Compendium of
-                        </title>
-                    </bibl>
-                    <bibl xml:id="UT22084-062-001-594">
-                        <title xml:lang="en">Buddhist Doctrine</title>. Delhi: Motilal Barnarsidass,
+                    <bibl xml:id="UT22084-062-001-593">Bendall, Cecil, and W.H.D. Rouse, eds. <title xml:lang="en">Śiksā Samuccaya: A Compendium of Buddhist Doctrine</title>. Delhi: Motilal Barnarsidass,
                         1971.</bibl>
                     <bibl xml:id="UT22084-062-001-595">Clayton, Barbra R. <title xml:lang="en">Moral Theory in Śāntideva’s Śikṣāsamuccaya</title>.
                         Abingdon: Routledge, 2006.</bibl>
                     <bibl xml:id="UT22084-062-001-596">Edgerton, Franklin. <title xml:lang="en">Buddhist Hybrid Sanskrit Grammar and
-                            Dictionary</title>. New Haven: Yale Univ. Press, 1953.</bibl>
+                            Dictionary</title>. New Haven: Yale University Press, 1953.</bibl>
                     <bibl xml:id="UT22084-062-001-597">Herrmann-Pfandt, Adelheid. <title xml:lang="de">Die lHan kar ma: ein früher Katalog der ins Tibetische
-                            übersetzten buddhistischen Texte</title>. Wien: Verlag der österreichischen Akademie der
+                            übersetzten buddhistischen Texte</title>. Vienna: Verlag der österreichischen Akademie der
                         Wissenschaften, 2008.</bibl>
-                    <bibl xml:id="UT22084-062-001-598">Mahoney, Richard, and Jens Braarvig, and Cecil Bendall, eds. <title xml:lang="en">Śikṣāsamuccaya of Śāntideva: Sanskrit Text</title>. Oxford: Indica et Buddhica,
+                    <bibl xml:id="UT22084-062-001-598">Mahoney, Richard, Jens Braarvig, and Cecil Bendall, eds. <title xml:lang="en">Śikṣāsamuccaya of Śāntideva: Sanskrit Text</title>. Oxford: Indica et Buddhica,
                         2003.</bibl>
-                    <bibl xml:id="UT22084-062-001-599">Skilling Peter, and Saerji. “The Circulation of the Buddhāvataṃsaka in India.” Annual Report
-                        of The International Research Institute for Advanced Buddhology at Soka University for the
-                        Academic Year 2012, Volume XVI, 2013, pp. 193–216.</bibl>
+                    <bibl xml:id="UT22084-062-001-599">Skilling, Peter, and Saerji. “The Circulation of the Buddhāvataṃsaka in India.” <title xml:lang="en">Annual Report
+                        of te International Research Institute for Advanced Buddhology at Soka University</title> 16 (2013): 193–216.</bibl>
                 </div>
             </div>
             <div type="glossary">
@@ -3717,7 +3718,7 @@
                             <term xml:lang="Sa-Ltn" type="sourceUnspecified">samādhi</term>
                             <term xml:lang="Bo-Ltn" type="attestedSource" n="1">ting nge ’dzin</term>
                             <term xml:lang="bo" type="attestedSource" n="1">ཏིང་ངེ་འཛིན།</term>
-                            <note type="definition">
+                            <note type="definition" rend="override">
                                 <p>A state of deep meditative immersion. </p>
                             </note>
                         </gloss>
@@ -3730,7 +3731,7 @@
                             <term xml:lang="bo" type="attestedSource" n="1">འཚོ་བ་པ།</term>
                             <note type="definition">
                                 <p>A follower of a non-Buddhist mendicant movement founded by Makkhali Gosāla
-                    (fifth century <hi rend="small-caps">BCE</hi>). The Ājīvikas adhered to a fatalist world-view according to which all beings
+                    (fifth century <hi rend="small-caps">bce</hi>). The Ājīvikas adhered to a fatalist world-view according to which all beings
                     eventually reach spiritual accomplishment by fate, rather than their own actions.</p>
                             </note>
                         </gloss>
@@ -3762,8 +3763,8 @@
                         <gloss xml:id="UT22084-062-001-605" type="term" mode="match">
                             <term type="translationMain">beryl</term>
                             <term xml:lang="Sa-Ltn" type="sourceUnspecified">vaiḍūrya</term>
-                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">bai durya</term>
-                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">བཻ་དུརྱ།</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">bai dUrya</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">བཻ་དཱུརྱ།</term>
                             <note type="definition">
                                 <p>A precious stone frequently used in Buddhist analogies.</p>
                             </note>
@@ -4160,7 +4161,7 @@
                             <term xml:lang="Sa-Ltn" type="sourceUnspecified">tri­sāhasra­mahā­sāhasra­loka­dhātu</term>
                             <term xml:lang="Bo-Ltn" type="attestedSource" n="1">stong gsum gyi stong chen po</term>
                             <term xml:lang="bo" type="attestedSource" n="1">སྟོང་གསུམ་གྱི་སྟོང་ཆེན་པོ།</term>
-                            <note type="definition">
+                            <note type="definition" rend="override">
                                 <p>The largest universe spoken of in Buddhist cosmology, consisting of one billion
                     smaller world systems. </p>
                             </note>
@@ -4184,7 +4185,7 @@
                             <term xml:lang="Sa-Ltn" type="sourceUnspecified">śrāvaka</term>
                             <term xml:lang="Bo-Ltn" type="attestedSource" n="1">nyan thos</term>
                             <term xml:lang="bo" type="attestedSource" n="1">ཉན་ཐོས།</term>
-                            <note type="definition">
+                            <note type="definition" rend="override">
                                 <p>The term is most simply interpreted as “those who hear” the Buddha’s teaching, i.e. his disciples, but the additional element that they then “make it heard” to others is often present in canonical glosses. In a Mahāyāna context it refers to those disciples of the Buddha who aspire to attain the state of an arhat, and not to embark on the path of a bodhisattva (with buddhahood as its ultimate goal).</p>
                             </note>
                         </gloss>
@@ -4244,7 +4245,7 @@
                             <term xml:lang="Sa-Ltn" type="sourceUnspecified">karman</term>
                             <term xml:lang="Bo-Ltn" type="attestedSource" n="1">las</term>
                             <term xml:lang="bo" type="attestedSource" n="1">ལས།</term>
-                            <note type="definition">
+                            <note type="definition" rend="override">
                                 <p>Meaning “action” in its most basic sense, <foreign xml:lang="Sa-Ltn">karma</foreign> is an important
                     concept in Buddhist philosophy as the cumulative force of previous physcial, verbal, and mental
                     acts, which determines present experience and will determine future existences.</p>
@@ -4645,7 +4646,7 @@
                             <term xml:lang="Sa-Ltn" type="sourceUnspecified">pratyekabuddha</term>
                             <term xml:lang="Bo-Ltn" type="attestedSource" n="1">rang sangs rgyas</term>
                             <term xml:lang="bo" type="attestedSource" n="1">རང་སངས་རྒྱས།</term>
-                            <note type="definition">
+                            <note type="definition" rend="override">
                                 <p>An individual who, in his or her last life, attains realization by realizing the
                     nature of interdependent origination without relying upon a spiritual guide.</p>
                             </note>
@@ -4945,7 +4946,7 @@
                             <term xml:lang="Sa-Ltn" type="sourceUnspecified">śakra</term>
                             <term xml:lang="Bo-Ltn" type="attestedSource" n="1">brgya byin</term>
                             <term xml:lang="bo" type="attestedSource" n="1">བརྒྱ་བྱིན།</term>
-                            <note type="definition">
+                            <note type="definition" rend="override">
                                 <p>A powerful deity who rules the Heaven of the Thirty-Three. Another name for
                     Indra.</p>
                             </note>
@@ -4967,9 +4968,9 @@
             <gloss type="person" xml:id="UT22084-062-001-700">
                             <term type="translationMain">Śāriputra</term>
                             <term xml:lang="Sa-Ltn" type="sourceUnspecified">śāriputra</term>
-                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">sha ri’i bu</term>
-                            <term xml:lang="bo" type="attestedSource" n="1">ཤ་རིའི་བུ།</term>
-                            <note type="definition">
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">shA ri’i bu</term>
+                            <term xml:lang="bo" type="attestedSource" n="1">ཤཱ་རིའི་བུ།</term>
+                            <note type="definition" rend="override">
                                 <p>One of the closest disciples of the Buddha, known for his pure observance of
                     discipline.</p>
                             </note>
@@ -5027,7 +5028,7 @@
                             <term xml:lang="Sa-Ltn" type="sourceUnspecified">tuṣita</term>
                             <term xml:lang="Bo-Ltn" type="attestedSource" n="1">dga’ ldan gyi gnas</term>
                             <term xml:lang="bo" type="attestedSource" n="1">དགའ་ལྡན་གྱི་གནས།</term>
-                            <note type="definition">
+                            <note type="definition" rend="override">
                                 <p>A divine world located in the desire realm. In Great Vehicle Buddhist thought,
                     it is where all future buddhas dwell prior to their awakening.</p>
                             </note>
@@ -5094,4 +5095,4 @@
             </div>
         </back>
     </text>
-</tei:TEI>
+</TEI>
