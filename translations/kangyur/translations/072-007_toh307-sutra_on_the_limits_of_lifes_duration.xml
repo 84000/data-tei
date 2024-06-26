@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../../../schema/current/translation.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<tei:TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -26,7 +26,7 @@
                 <editor role="finalReviewer" xml:id="UT22084-072-007-522">Rory Lindsay</editor>
             </titleStmt>
             <editionStmt>
-                <edition>v 1.0.17 <date>2023</date>
+                <edition>v 1.0.18 <date>2024</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -185,6 +185,9 @@
                 </change>
                 <change who="#martina-cotter" when="2023-10-23T21:15:14.829Z" type="text-version" status="1.0.17" xml:id="UT22084-072-007-562">
                     <desc>updated ellipsis.</desc>
+                </change>
+                <change who="#andre" when="2024-06-26T19:09:41.279Z" type="text-version" status="1.0.18" xml:id="UT22084-072-007-564">
+                    <desc>Approved rendering "Jetavana, Anāthapiṇḍada’s Park" applied</desc>
                 </change>
             </revisionDesc>
         </fileDesc>
@@ -429,8 +432,7 @@
                             sūtras may also be translated as, “This I have heard: At one time the Bhagavān was staying at…,” etc. (Skt. <foreign xml:lang="Sa-Ltn">evam mayā śrutaṃ. ekaṃ samayaṃ bhagavā</foreign>…, etc.) The matter continues to be debated by
                             scholars. However, our translation follows the punctuation as found in the Tib. translation of the Āps, and in the
                             majority of the Tib. translations of Skt. sūtras.</note>
-                        <ref type="sanskrit">{S75}</ref> The Bhagavān was staying in Śrāvastī, in Prince Jeta’s grove, the cloistered garden donated
-                        by Anāthapiṇḍada. There the Bhagavān addressed the monks: “Monks, do you wish to learn about the lifespans of beings?” </p>
+                        <ref type="sanskrit">{S75}</ref> The Bhagavān was staying in Śrāvastī, in Prince Jeta’s grove, Anāthapiṇḍada’s Park. There the Bhagavān addressed the monks: “Monks, do you wish to learn about the lifespans of beings?” </p>
 
                     <milestone unit="chunk" xml:id="UT22084-072-007-49"/>
                     <p tid="37">“Yes, Bhagavān, this is the right time for it! Sugata, the time is right for the Bhagavān to teach the monks the
@@ -2417,7 +2419,7 @@
                             <term xml:lang="Sa-Ltn" type="sourceUnspecified">sugata</term>
                             <term xml:lang="Bo-Ltn" type="attestedSource" n="1">bde bar gshegs pa</term>
                             <term xml:lang="bo" type="attestedSource" n="1">བདེ་བར་གཤེགས་པ།</term>
-                            <note type="definition">
+                            <note type="definition" rend="override">
                                 <p>An epithet of the buddhas meaning “well-gone one.”</p>
                             </note>
                         </gloss>
@@ -2500,18 +2502,6 @@
                         </gloss>
                     </item>
                     <item>
-                        <gloss type="person" xml:id="UT22084-072-007-418">
-                            <term type="translationMain">Anāthapiṇḍada</term>
-                            <term xml:lang="Sa-Ltn" type="sourceUnspecified">anāthapiṇḍada</term>
-                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">mgon med zas sbyin</term>
-                            <term xml:lang="bo" type="attestedSource" n="1">མགོན་མེད་ཟས་སྦྱིན།</term>
-                            <note type="definition">
-                                <p>A wealthy merchant of Śrāvastī who became an early follower of the Buddha and an important donor;
-                                the spelling in Pali texts is Anāthapiṇḍika. </p>
-                            </note>
-                        </gloss>
-                    </item>
-                    <item>
                         <gloss type="person" xml:id="UT22084-072-007-419">
                             <term type="translationMain">Devadatta</term>
                             <term xml:lang="Sa-Ltn" type="sourceUnspecified">devadatta</term>
@@ -2566,7 +2556,7 @@
                             <term xml:lang="Sa-Ltn" type="sourceUnspecified"/>
                             <term xml:lang="Bo-Ltn" type="attestedSource" n="1">ban de dpal brtsegs</term>
                             <term xml:lang="bo" type="attestedSource" n="1">བན་དེ་དཔལ་བརྩེགས།</term>
-                            <note type="definition">
+                            <note type="definition" rend="override">
                                 <p>A Tibetan translator (fl. late eighth–early ninth centuries).</p>
                             </note>
                         </gloss>
@@ -3029,16 +3019,12 @@
                         </gloss>
                     </item>
                     <item>
-                        <gloss type="place" xml:id="UT22084-072-007-463">
-                            <term type="translationMain">Prince Jeta’s grove</term>
-                            <term xml:lang="Sa-Ltn" type="sourceUnspecified">jetavana</term>
-                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">rgyal bu rgyal byed kyi tshal</term>
-                            <term xml:lang="bo" type="attestedSource" n="1">རྒྱལ་བུ་རྒྱལ་བྱེད་ཀྱི་ཚལ།</term>
-                            <note type="definition">
-                                <p>A grove that was bought by the Buddha’s wealthy follower and supporter Anāthapiṇḍada from a prince
-                                named Jeta and donated to the Buddha and his saṅgha (the story of the purchase and the events leading to it is told in
-                                the Cullavagga of the Pāli Vinaya).</p>
-                            </note>
+                        <gloss xml:id="UT22084-072-007-563" type="place" mode="match">
+                            <term type="translationMain">Prince Jeta’s Grove, Anāthapiṇḍada’s Park</term>
+                            <term type="translationAlternative">Prince Jeta’s Grove</term>
+                            <term xml:lang="Sa-Ltn" type="attestedOther" status="verified">jetavanam anāthapiṇḍadasyārāmaḥ</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">rgyal bu rgyal byed kyi tshal mgon med zas sbyin gyi kun dga’ ra ba</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">རྒྱལ་བུ་རྒྱལ་བྱེད་ཀྱི་ཚལ་མགོན་མེད་ཟས་སྦྱིན་གྱི་ཀུན་དགའ་ར་བ།</term>
                         </gloss>
                     </item>
                     <item>
@@ -3240,4 +3226,4 @@
             </div>
         </back>
     </text>
-</tei:TEI>
+</TEI>
