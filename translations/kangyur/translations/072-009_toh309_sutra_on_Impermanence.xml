@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../../../schema/current/translation.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<tei:TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -16,7 +16,7 @@
                 <editor role="TEImarkupEditor" xml:id="UT22084-072-009-39">Simeon Joffe</editor>
             </titleStmt>
             <editionStmt>
-                <edition>v 1.22.14 <date>2023</date>
+                <edition>v 1.22.16 <date>2024</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -25,10 +25,10 @@
                 <availability status="1">
                     <licence>
                         <graphic url="http://i.creativecommons.org/l/by-nc-nd/2.0/88x31.png"/>
-                        <tei:p>This work is provided under the protection of a Creative Commons CC BY-NC-ND (Attribution -
+                        <p>This work is provided under the protection of a Creative Commons CC BY-NC-ND (Attribution -
                             Non-commercial - No-derivatives) 3.0 copyright. It may be copied or printed for fair use, but only
                             with full attribution, and not for commercial advantage or personal compensation. For full details,
-                            see the Creative Commons license.</tei:p>
+                            see the Creative Commons license.</p>
                     </licence>
                 </availability>
                 <idno xml:id="UT22084-072-009"/>
@@ -36,7 +36,7 @@
             </publicationStmt>
             <sourceDesc>
                 <bibl key="toh309" type="text">
-                    <tei:ref>Toh 309</tei:ref>
+                    <ref>Toh 309</ref>
                     <biblScope>Degé Kangyur, vol 72 (mdo sde, sa), folios 155.a–155.b</biblScope>
                     <author role="translatorTib" xml:id="UT22084-072-009-57">Surendrabodhi</author>
                     <author role="translatorTib" xml:id="UT22084-072-009-58">Zhang Yeshé Dé</author>
@@ -104,6 +104,12 @@
                 <change who="#andre" when="2023-08-24T15:00:49.064Z" type="text-version" status="1.22.14" xml:id="UT22084-072-009-59">
                     <desc>Glossary TEI fixes</desc>
                 </change>
+                <change who="#celso" when="2023-10-13T11:48:10.305Z" type="text-version" status="1.22.15" xml:id="UT22084-072-009-60">
+                    <desc>reapplied capital letters in Wylie and covert to TibUni-glossary</desc>
+                </change>
+                <change who="#andre" when="2024-06-26T19:02:59.96Z" type="text-version" status="1.22.16" xml:id="UT22084-072-009-62">
+                    <desc>Approved rendering "Jetavana, Anāthapiṇḍada’s Park" applied</desc>
+                </change>
             </revisionDesc>
         </fileDesc>
     </teiHeader>
@@ -119,27 +125,27 @@
         <front>
             <div type="summary">
                 <head type="summary" tid="19">Summary</head>
-                <tei:milestone unit="chunk" xml:id="UT22084-072-009-1"/>
-                <tei:p tid="1">In this brief sūtra, the Buddha reminds his followers of one of the principal characteristics of
+                <milestone unit="chunk" xml:id="UT22084-072-009-1"/>
+                <p tid="1">In this brief sūtra, the Buddha reminds his followers of one of the principal characteristics of
                     saṃsāric existence: the reality of impermanence. The four things cherished most in this world, the Buddha
                     says—namely, good health, youth, prosperity, and life—are all impermanent. He closes his teaching with a verse,
                     asking how beings, afflicted as they are by impermanence, can take delight in anything desirable, and
-                    indirectly urging his disciples to practice the path of liberation.</tei:p>
+                    indirectly urging his disciples to practice the path of liberation.</p>
             </div>
             <div type="acknowledgment">
                 <head type="acknowledgment" tid="20">Acknowledgments</head>
-                <tei:milestone unit="chunk" xml:id="UT22084-072-009-2"/>
-                <tei:p tid="2">Translation by the Sakya Pandita Translation Group (International Buddhist Academy Division,
+                <milestone unit="chunk" xml:id="UT22084-072-009-2"/>
+                <p tid="2">Translation by the Sakya Pandita Translation Group (International Buddhist Academy Division,
                     Kathmandu). This sūtra was translated from the Tibetan into English by Christian Bernert and edited by Vivian
-                    Paganuzzi.</tei:p>
-                <tei:p tid="3">This translation has been completed under the patronage and supervision of 84000: Translating the Words
-                    of the Buddha.</tei:p>
+                    Paganuzzi.</p>
+                <p tid="3">This translation has been completed under the patronage and supervision of 84000: Translating the Words
+                    of the Buddha.</p>
             </div>
             <div type="introduction">
                 <head type="introduction" tid="21">Introduction</head>
                 <div type="section" xml:id="UT22084-072-009-introduction-1">
-                    <tei:milestone unit="chunk" xml:id="UT22084-072-009-3"/>
-                    <tei:p tid="4"> This sūtra highlights one of the most fundamental teachings of the Buddha—recognizing the
+                    <milestone unit="chunk" xml:id="UT22084-072-009-3"/>
+                    <p tid="4"> This sūtra highlights one of the most fundamental teachings of the Buddha—recognizing the
                         impermanence (<foreign type="term" xml:lang="Sa-Ltn">anityatā</foreign>) of conditioned phenomena. The
                         fact that such phenomena are impermanent (<foreign type="term" xml:lang="Sa-Ltn">anitya</foreign>) is
                         listed as the first of the three principal characteristics of existence, the other two being the
@@ -152,31 +158,31 @@
                         these three characteristics of existence and a fourth principle, that nirvāṇa is peace), often described
                         as summarizing or epitomizing the Buddhadharma, and more particularly as the criteria that together enable
                         the variety of Buddhist philosophical views to be distinguished from non-Buddhist ones.<note place="end" xml:id="UT22084-072-009-29">See, for example, <title xml:lang="en">The Questions of the Nāga
-                                King Sāgara</title> (Toh <tei:ref target="UT22084-058-002.html">155</tei:ref>). </note>
-                    </tei:p>
+                                King Sāgara</title> (Toh <ref target="UT22084-058-002.html">155</ref>). </note>
+                    </p>
                 </div>
                 <div type="section" xml:id="UT22084-072-009-introduction-2">
                     <head type="section" tid="22">Sūtras on impermanence</head>
-                    <tei:milestone unit="chunk" xml:id="UT22084-072-009-4"/>
-                    <tei:p tid="5">The Tibetan canon contains two sūtras with the title <title xml:lang="en">Sūtra on Impermanence
+                    <milestone unit="chunk" xml:id="UT22084-072-009-4"/>
+                    <p tid="5">The Tibetan canon contains two sūtras with the title <title xml:lang="en">Sūtra on Impermanence
                             </title>(<title xml:lang="Bo-Ltn">mi rtag pa nyid kyi mdo</title>), both found in the same section of
                         the Kangyur (mdo sde, Toh 309 and 310<note place="end" xml:id="UT22084-072-009-34">See DiSimone, Charles and Choi, Jin Kyoung. trans., <title xml:lang="en">
-                                <tei:ref target="https://read.84000.co/translation/toh310.html">The Sūtra on Impermanence (2)</tei:ref>
+                                <ref target="https://read.84000.co/translation/toh310.html">The Sūtra on Impermanence (2)</ref>
                             </title>, Toh 310. </note>). The sūtra translated here is the first, the shorter of the two.
                         Sūtras with equivalent titles are also found in other Buddhist canons, but their contents differ
                         substantially from the one translated here. The Chinese Tripiṭaka, for instance, contains two sūtras so
                         entitled (Taishō nos. 801 and 759), and in the Samyutta Nikāya of the Pāli canon, the collection of
                         discourses grouped by themes, there are a number of different texts with the title <title xml:lang="en">Sutta on Impermanence</title> (P. <title xml:lang="Sa-Ltn">Aniccasutta</title>).<note place="end" xml:id="UT22084-072-009-30">For instance Samyutta Nikaya 22.45 and 46, and Samyutta Nikaya
                             36.9.</note>
-                    </tei:p>
+                    </p>
                 </div>
                 <div type="section" xml:id="UT22084-072-009-introduction-3">
                     <head type="section" tid="23">Note on the translation</head>
-                    <tei:milestone unit="chunk" xml:id="UT22084-072-009-5"/>
-                    <tei:p tid="6">The content of this sūtra is rather straightforward and its interpretation does not pose any major
+                    <milestone unit="chunk" xml:id="UT22084-072-009-5"/>
+                    <p tid="6">The content of this sūtra is rather straightforward and its interpretation does not pose any major
                         difficulties. One particular term, however, did present a problem of translation: the Tibetan <foreign type="term" xml:lang="Bo-Ltn">dben pa</foreign>, which commonly translates the Sanskrit <foreign type="term" xml:lang="Sa-Ltn">viveka</foreign>/<foreign type="term" xml:lang="Sa-Ltn">vivikta </foreign>and is usually related to concepts of
                         isolation and seclusion. Here it seems to refer more specifically to the act of picking something out,
-                        separating it from other things and thus singling it out from them as special.</tei:p>
+                        separating it from other things and thus singling it out from them as special.</p>
                 </div>
             </div>
         </front>
@@ -185,42 +191,41 @@
                 <head type="translation">The Translation</head>
                 <head type="titleMain" tid="25">The Sūtra on Impermanence (1)</head>
                 <div type="section" xml:id="UT22084-072-009-section-1">
-                    <tei:milestone unit="chunk" xml:id="UT22084-072-009-6"/>
-                    <tei:p tid="7">
-                        <tei:ref cRef="F.155.a" type="folio" xml:id="UT22084-072-009-32"/>
+                    <milestone unit="chunk" xml:id="UT22084-072-009-6"/>
+                    <p tid="7">
+                        <ref cRef="F.155.a" type="folio" xml:id="UT22084-072-009-32"/>
                         <!--<modularPassage type="homage">-->Homage to all buddhas and bodhisattvas!<!--</modularPassage>-->
-                    </tei:p>
+                    </p>
                     <lb/>
-                    <tei:milestone unit="chunk" xml:id="UT22084-072-009-7"/>
-                    <tei:p tid="8">Thus did I hear at one time. The Bhagavān was dwelling in Anāthapiṇḍada’s park, in the Jeta Grove
-                        in Śrāvastī, along with a large monastic assembly. The Bhagavān addressed the monks as follows:</tei:p>
+                    <milestone unit="chunk" xml:id="UT22084-072-009-7"/>
+                    <p tid="8">Thus did I hear at one time. The Bhagavān was dwelling in Śrāvastī, in Jeta’s Grove, Anāthapiṇḍada’s Park, along with a large monastic assembly. The Bhagavān addressed the monks as follows:</p>
                     <lb/>
-                    <tei:milestone unit="chunk" xml:id="UT22084-072-009-8"/>
-                    <tei:p tid="9">“Monks, four things are appealing, singled out, considered valuable, pleasant, and highly
-                        appreciated by everyone. What are those four? </tei:p>
-                    <tei:milestone unit="chunk" xml:id="UT22084-072-009-9"/>
-                    <tei:p tid="10">“Monks, good health is appealing, singled out, considered valuable, pleasant, and highly
+                    <milestone unit="chunk" xml:id="UT22084-072-009-8"/>
+                    <p tid="9">“Monks, four things are appealing, singled out, considered valuable, pleasant, and highly
+                        appreciated by everyone. What are those four? </p>
+                    <milestone unit="chunk" xml:id="UT22084-072-009-9"/>
+                    <p tid="10">“Monks, good health is appealing, singled out, considered valuable, pleasant, and highly
                         appreciated by everyone. Good health, however, ends with sickness. Monks, sickness is neither appealing,
-                        nor is it singled out, considered valuable, pleasant, or highly appreciated by anyone.</tei:p>
-                    <tei:milestone unit="chunk" xml:id="UT22084-072-009-10"/>
-                    <tei:p tid="11">“Monks, youth is appealing, singled out, considered valuable, pleasant, and highly appreciated by
+                        nor is it singled out, considered valuable, pleasant, or highly appreciated by anyone.</p>
+                    <milestone unit="chunk" xml:id="UT22084-072-009-10"/>
+                    <p tid="11">“Monks, youth is appealing, singled out, considered valuable, pleasant, and highly appreciated by
                         everyone. Youth, however, ends with the aging of the body. Monks, the aging of the body is neither
-                        appealing, nor is it singled out, considered valuable, pleasant, or highly appreciated by anyone.</tei:p>
-                    <tei:milestone unit="chunk" xml:id="UT22084-072-009-11"/>
-                    <tei:p tid="12">“Monks, prosperity is appealing, singled out, considered valuable, pleasant, and highly
+                        appealing, nor is it singled out, considered valuable, pleasant, or highly appreciated by anyone.</p>
+                    <milestone unit="chunk" xml:id="UT22084-072-009-11"/>
+                    <p tid="12">“Monks, prosperity is appealing, singled out, considered valuable, pleasant, and highly
                         appreciated by everyone. Prosperity, however, ends with its decline. Monks, the decline of prosperity is
                         neither appealing, nor is it singled out, considered valuable, pleasant, or highly appreciated by
-                        anyone. <tei:ref cRef="F.155.b" type="folio" xml:id="UT22084-072-009-33"/>
-                    </tei:p>
-                    <tei:milestone unit="chunk" xml:id="UT22084-072-009-12"/>
-                    <tei:p tid="13">“Monks, life is appealing, singled out, considered valuable, pleasant, and highly appreciated by
+                        anyone. <ref cRef="F.155.b" type="folio" xml:id="UT22084-072-009-33"/>
+                    </p>
+                    <milestone unit="chunk" xml:id="UT22084-072-009-12"/>
+                    <p tid="13">“Monks, life is appealing, singled out, considered valuable, pleasant, and highly appreciated by
                         everyone. Life, however, ends in death. Monks, death is neither appealing, nor is it singled out,
-                        considered valuable, pleasant, or highly appreciated by anyone.”</tei:p>
-                    <tei:milestone unit="chunk" xml:id="UT22084-072-009-13"/>
+                        considered valuable, pleasant, or highly appreciated by anyone.”</p>
+                    <milestone unit="chunk" xml:id="UT22084-072-009-13"/>
                     <lb/>
-                    <tei:p tid="14">Thus spoke the Bhagavān, the Sugata, and having spoken the Teacher added these words:</tei:p>
+                    <p tid="14">Thus spoke the Bhagavān, the Sugata, and having spoken the Teacher added these words:</p>
                     <lb/>
-                    <tei:milestone unit="chunk" xml:id="UT22084-072-009-14"/>
+                    <milestone unit="chunk" xml:id="UT22084-072-009-14"/>
                     <lg tid="15">
                         <l>“Good health is impermanent, </l>
                         <l>Youth does not last. </l>
@@ -229,17 +234,17 @@
                         <l>How can beings, afflicted as they are by impermanence,</l>
                         <l>Take delight in desirable things like these?”</l>
                     </lg>
-                    <tei:milestone unit="chunk" xml:id="UT22084-072-009-15"/>
-                    <tei:p tid="16">When the Bhagavān had thus spoken, the monks rejoiced and praised his words. </tei:p>
+                    <milestone unit="chunk" xml:id="UT22084-072-009-15"/>
+                    <p tid="16">When the Bhagavān had thus spoken, the monks rejoiced and praised his words. </p>
                     <lb/>
-                    <tei:milestone unit="chunk" xml:id="UT22084-072-009-16"/>
+                    <milestone unit="chunk" xml:id="UT22084-072-009-16"/>
                     <trailer tid="17"> This completes “<title xml:lang="en">The Sūtra on Impermanence</title>.” </trailer>
                 </div>
                 <div type="colophon" xml:id="UT22084-072-009-colophon">
                     <head type="colophon" tid="26">Colophon</head>
-                    <tei:milestone unit="chunk" xml:id="UT22084-072-009-31"/>
-                    <tei:p tid="18">Translated and edited by the Indian preceptor Surendrabodhi and the principal editor-translator, Bandé Zhang Yeshé Dé. It was then also reviewed and finalized in accordance with current language
-                        reforms.</tei:p>
+                    <milestone unit="chunk" xml:id="UT22084-072-009-31"/>
+                    <p tid="18">Translated and edited by the Indian preceptor Surendrabodhi and the principal editor-translator, Bandé Zhang Yeshé Dé. It was then also reviewed and finalized in accordance with current language
+                        reforms.</p>
                 </div>
             </div>
         </body>
@@ -260,13 +265,13 @@
                         Center). 108 volumes. Beijing: krung go’i bod rig pa dpe skrun khang (China Tibetology Publishing House),
                         2006–9, vol. 72, 434–36.</bibl>
                     <bibl xml:id="UT22084-072-009-35">DiSimone, Charles and Choi, Jin Kyoung, trans. <title xml:lang="en">
-                            <tei:ref target="https://read.84000.co/translation/toh310.html">The Sūtra on Impermanence (2)</tei:ref>
+                            <ref target="https://read.84000.co/translation/toh310.html">The Sūtra on Impermanence (2)</ref>
                         </title> (<title xml:lang="Sa-Ltn">Anityatāsūtra</title>, Toh 310). </bibl>
                     <bibl xml:id="UT22084-072-009-19">Nyanaponika Thera, transl.<title xml:lang="en"> Anicca Sutta:
                             Impermanent</title> (SN 36.9), translated from the Pali. <title xml:lang="en">Access to
-                            Insight</title>, 30 June 2010, <tei:ref target="http://www.accesstoinsight.org/tipitaka/sn/sn36/sn36.009.nypo.html">www.accesstoinsight.org</tei:ref>. Retrieved on 10 May 2013.</bibl>
+                            Insight</title>, 30 June 2010, <ref target="http://www.accesstoinsight.org/tipitaka/sn/sn36/sn36.009.nypo.html">www.accesstoinsight.org</ref>. Retrieved on 10 May 2013.</bibl>
                     <bibl xml:id="UT22084-072-009-20">“The Three Basic Facts of Existence: I. Impermanence (Anicca), with a
-                        preface by Nyanaponika Thera.” <title xml:lang="en">Access to Insight</title>, 2 December 2011, <tei:ref target="http://www.accesstoinsight.org/lib/authors/various/wheel186.html">www.accesstoinsight.org</tei:ref>. Retrieved on 10 May 2013.</bibl>
+                        preface by Nyanaponika Thera.” <title xml:lang="en">Access to Insight</title>, 2 December 2011, <ref target="http://www.accesstoinsight.org/lib/authors/various/wheel186.html">www.accesstoinsight.org</ref>. Retrieved on 10 May 2013.</bibl>
                 </div>
             </div>
             <div type="glossary">
@@ -343,6 +348,14 @@
                             <term xml:lang="bo" type="attestedSource" n="1">དབེན་པ།</term>
                         </gloss>
                     </item>
+                    <item>
+                        <gloss xml:id="UT22084-072-009-61" type="place" mode="match">
+                            <term type="translationMain">Jeta’s Grove, Anāthapiṇḍada’s Park</term>
+                            <term xml:lang="Sa-Ltn" type="attestedOther" status="verified">jetavanam anāthapiṇḍadasyārāmaḥ</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">rgyal bu rgyal byed kyi tshal mgon med zas sbyin gyi kun dga’ ra ba</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">རྒྱལ་བུ་རྒྱལ་བྱེད་ཀྱི་ཚལ་མགོན་མེད་ཟས་སྦྱིན་གྱི་ཀུན་དགའ་ར་བ།</term>
+                        </gloss>
+                    </item>
                 </list>
             </div>
         </back>
@@ -351,4 +364,4 @@
     
     
     
-    </tei:TEI>
+    </TEI>
