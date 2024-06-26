@@ -24,7 +24,7 @@
                 <editor role="finalReviewer" xml:id="UT22084-072-003-100">Rory Lindsay</editor>
             </titleStmt>
             <editionStmt>
-                <edition>v 1.0.10 <date>2024</date>
+                <edition>v 1.0.12 <date>2024</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -175,6 +175,12 @@
                 <change who="#andre" when="2024-01-03T10:17:37.685Z" type="text-version" status="1.0.10" xml:id="UT22084-072-003-136">
                     <desc>dge slong entry - number of vows of nuns corrected</desc>
                 </change>
+                <change who="#celso" when="2024-02-27T22:24:16.173Z" type="text-version" status="1.0.11" xml:id="UT22084-072-003-137">
+                    <desc>updated Kangyur sigla to match rKTS</desc>
+                </change>
+                <change who="#andre" when="2024-06-26T19:22:12.069Z" type="text-version" status="1.0.12" xml:id="UT22084-072-003-139">
+                    <desc>Approved rendering "Jetavana, Anāthapiṇḍada’s Park" applied</desc>
+                </change>
             </revisionDesc>
         </fileDesc>
     </teiHeader>
@@ -285,7 +291,7 @@
                         <ref cRef="F.127.a" type="folio" xml:id="UT22084-072-003-86"/> Homage to the Omniscient One!</p>
                     <lb/>
                     <milestone unit="chunk" xml:id="UT22084-072-003-18"/>
-                    <p tid="20">Thus did I hear at one time. The Blessed One was dwelling in Anāthapiṇḍada’s park, Prince Jeta’s Grove in Śrāvastī,
+                    <p tid="20">Thus did I hear at one time. The Blessed One was dwelling in Śrāvastī, in Prince Jeta’s Grove, Anāthapiṇḍada’s Park,
                         together with a great saṅgha of 1,250 monks.</p>
                     <milestone unit="chunk" xml:id="UT22084-072-003-19"/>
                     <p tid="21">At that time, the Blessed One said to the monks, “Monks,<note place="end" xml:id="UT22084-072-003-20"> Sanskrit begins
@@ -347,7 +353,7 @@
                                 absent in S.</note>
                         </l>
                         <l>Those who maintain moral discipline attain nirvāṇa.<note place="end" xml:id="UT22084-072-003-35"> This line absent in
-                                Sanskrit and C, J, K, K<hi rend="subscript">Y</hi>, N, and S.</note>
+                                Sanskrit and C, J, K, Y<!--KY-->, N, and S.</note>
                         </l>
                     </lg>
                     <milestone unit="chunk" xml:id="UT22084-072-003-36"/>
@@ -640,35 +646,13 @@
                             </note>
                         </gloss>
                     </item>
-
                     <item>
-                        <gloss type="place" xml:id="UT22084-072-003-75">
-                            <term type="translationMain">Anāthapiṇḍada’s Park</term>
-                            <term xml:lang="Sa-Ltn" type="sourceUnspecified">anāthapiṇḍadasya ārāmaḥ</term>
-                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">mgon med zas sbyin gyi kun dga’ ra ba</term>
-                            <term xml:lang="bo" type="attestedSource" n="1">མགོན་མེད་ཟས་སྦྱིན་གྱི་ཀུན་དགའ་ར་བ།</term>
-                            <note type="definition">
-                                <p>A name of one of the first Buddhist monasteries, which is located outside of Śrāvastī. The
-                                monastery is also known as Prince Jeta’s Grove. Anāthapiṇḍada, a merchant and benefactor of the Buddha, bought the land from
-                                Prince Jeta and donated it to the saṅgha. It is said that both names are used to acknowledge their mutual efforts in
-                                building the monastery. It was there that the Buddha spent several rainy seasons and gave discourses that were later
-                                recorded as sūtras.</p>
-                            </note>
-                        </gloss>
-                    </item>
-                    <item>
-                        <gloss type="place" xml:id="UT22084-072-003-76">
-                            <term type="translationMain">Prince Jeta’s Grove</term>
-                            <term xml:lang="Sa-Ltn" type="sourceUnspecified">jetavana</term>
-                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">rgyal bu rgyal byed kyi tshal</term>
-                            <term xml:lang="bo" type="attestedSource" n="1">རྒྱལ་བུ་རྒྱལ་བྱེད་ཀྱི་ཚལ།</term>
-                            <note type="definition">
-                                <p>One of the first Buddhist monasteries, it is located outside of Śrāvastī and is also known as
-                                Anāthapiṇḍada’s Park. Anāthapiṇḍada, a merchant and benefactor of the Buddha, bought the land from Prince Jeta and
-                                donated it to the saṅgha. It is said that both names are mentioned to acknowledge their mutual efforts in building the
-                                monastery. It was there that the Buddha spent several rainy seasons and gave discourses that were later recorded as
-                                sūtras.</p>
-                            </note>
+                        <gloss xml:id="UT22084-072-003-138" type="place" mode="match">
+                            <term type="translationMain">Prince Jeta’s Grove, Anāthapiṇḍada’s Park</term>
+                            <term type="translationAlternative">Prince Jeta’s Grove</term>
+                            <term xml:lang="Sa-Ltn" type="attestedOther" status="verified">jetavanam anāthapiṇḍadasyārāmaḥ</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">rgyal bu rgyal byed kyi tshal mgon med zas sbyin gyi kun dga’ ra ba</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">རྒྱལ་བུ་རྒྱལ་བྱེད་ཀྱི་ཚལ་མགོན་མེད་ཟས་སྦྱིན་གྱི་ཀུན་དགའ་ར་བ།</term>
                         </gloss>
                     </item>
                     <item>
