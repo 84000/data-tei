@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../../../schema/current/translation.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<tei:TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -15,32 +15,32 @@
                 <title type="otherTitle" xml:lang="Sa-Ltn">Pañca­pāramitā­nirdeśasūtra</title>
                 <title type="otherTitle" xml:lang="zh">《五波羅蜜多經》（大正藏：《大般若波羅蜜多經第十一分至第十五分》）</title>
                 <title type="otherTitle" xml:lang="Bo-Ltn">phar phyin lnga bstan pa’i mdo</title>
-                <author role="translatorMain" ref="contributors.xml#team-9">Translated by the Dharmachakra Translation Committee<lb/> under the
+                <author role="translatorMain" xml:id="UT22084-061-001-740">Translated by the Dharmachakra Translation Committee<lb/> under the
                     patronage and supervision of 84000: Translating the Words of the Buddha </author>
-                <editor role="externalReviewer" ref="contributors.xml#person-262">David Higgins</editor>
-                <editor role="copyEditor" ref="contributors.xml#person-249">Konchog Norbu</editor>
-                <author role="translatorEng" ref="contributors.xml#person-50">Andreas Doctor</author>
-                <consultant role="projectManager" ref="contributors.xml#person-50">Andreas Doctor</consultant>
-                <editor role="projectEditor" ref="contributors.xml#person-51">James Duncan Gentry</editor>
-                <author role="translatorEng" ref="contributors.xml#person-78">Zachary Beer</author>
-                <consultant role="dharmaMaster" ref="contributors.xml#person-40">Chokyi Nyima Rinpoche</consultant>
-                <editor role="projectEditor" ref="contributors.xml#person-289">Nathaniel Rich</editor>
-                <editor role="TEImarkupEditor" ref="contributors.xml#person-108">André Rodrigues</editor>
-                <consultant role="advisor" ref="contributors.xml#person-48">Lama Tenzin Zangpo</consultant>
-                <consultant role="advisor" ref="contributors.xml#person-49">Karma Oser</consultant>
-                <editor role="finalReviewer" ref="contributors.xml#person-274">Adam Krug</editor>
-                <sponsor ref="sponsors.xml#sponsor-30">Liu Fan and family</sponsor>
+                <editor role="externalReviewer" xml:id="UT22084-061-001-741">David Higgins</editor>
+                <editor role="copyEditor" xml:id="UT22084-061-001-742">Konchog Norbu</editor>
+                <author role="translatorEng" xml:id="UT22084-061-001-743">Andreas Doctor</author>
+                <consultant role="projectManager" xml:id="UT22084-061-001-744">Andreas Doctor</consultant>
+                <editor role="projectEditor" xml:id="UT22084-061-001-745">James Duncan Gentry</editor>
+                <author role="translatorEng" xml:id="UT22084-061-001-746">Zachary Beer</author>
+                <consultant role="dharmaMaster" xml:id="UT22084-061-001-747">Chokyi Nyima Rinpoche</consultant>
+                <editor role="projectEditor" xml:id="UT22084-061-001-748">Nathaniel Rich</editor>
+                <editor role="TEImarkupEditor" xml:id="UT22084-061-001-749">André Rodrigues</editor>
+                <consultant role="advisor" xml:id="UT22084-061-001-750">Lama Tenzin Zangpo</consultant>
+                <consultant role="advisor" xml:id="UT22084-061-001-751">Karma Oser</consultant>
+                <editor role="finalReviewer" xml:id="UT22084-061-001-752">Adam Krug</editor>
+                <sponsor xml:id="UT22084-061-001-753">Liu Fan and family</sponsor>
             </titleStmt>
             <editionStmt>
-                <edition>v 1.1.9 <date>2022</date>
+                <edition>v 1.1.12 <date>2024</date>
                 </edition>
             </editionStmt>
 
-            <publicationStmt status="1">
+            <publicationStmt>
                 <publisher>
                     <name>84000: Translating the Words of the Buddha</name> is a global non-profit initiative to translate all the Buddha’s words into
                     modern languages, and to make them available to everyone. </publisher>
-                <availability>
+                <availability status="1">
                     <licence>
                         <graphic url="http://i.creativecommons.org/l/by-nc-nd/2.0/88x31.png"/>
                         <p>This work is provided under the protection of a Creative Commons CC BY-NC-ND (Attribution - Non-commercial -
@@ -55,8 +55,8 @@
                 <bibl key="toh181" type="text">
                     <ref>Toh 181</ref>
                     <biblScope>Degé Kangyur vol. 61 (mdo sde, tsa), folios 1.b–76.b</biblScope>
-                    <author role="translatorTib">Jinamitra</author>
-                    <author role="translatorTib">Bandé Yeshé Dé</author>
+                    <author role="translatorTib" xml:id="UT22084-061-001-791">Jinamitra</author>
+                    <author role="translatorTib" xml:id="UT22084-061-001-792">Bandé Yeshé Dé</author>
                     <location work="UT4CZ5369" count-pages="151">
                         <volume number="61" start-page="2" end-page="152"/>
                     </location>
@@ -64,61 +64,143 @@
                     <idno source-id="O1JC114941JC11796" work="W22084"/>
                 </bibl>
             </sourceDesc>
-            <notesStmt>
-                <note type="lastUpdated" date-time="2023-01-18T15:35:49.008Z" user="celso">18/01/2023 15:35:49</note>
-                <note type="updated" update="text-version" value="v 0.0.1" date-time="2019-12-20T12:56:48.575Z" user="admin">Automated version
-                    increment</note>
-                <note type="updated" update="translation-status" value="2.d" date-time="2020-01-28T06:15:57.936Z" user="mike">2.d</note>
-                <note type="updated" update="translation-status" value="2.c" date-time="2021-02-05T14:14:47.351Z" user="line-tofte">2.c</note>
-                <note type="updated" update="text-version" value="0.0.2" date-time="2021-02-05T14:14:47.351Z" user="line-tofte">Auto
-                    (update-publication-status)</note>
-                <note type="updated" update="text-version" value="0.0.3" date-time="2021-02-08T09:45:45.707Z" user="line-tofte">Auto
-                    (update-contributors)</note>
-                <note type="updated" update="text-version" value="0.0.4" date-time="2021-03-08T08:36:13.235Z" user="line-tofte">Auto
-                    (update-contributors)</note>
-                <note type="updated" update="text-version" value="0.0.5" date-time="2021-03-08T08:36:28.036Z" user="line-tofte">Auto
-                    (update-contributors)</note>
-                <note type="updated" update="text-version" value="0.0.6" date-time="2021-03-08T08:36:45.921Z" user="line-tofte">Auto
-                    (update-contributors)</note>
-                <note type="updated" update="text-version" value="0.0.7" date-time="2021-08-06T11:01:38.569Z" user="line-tofte">Auto
-                    (update-contributors)</note>
-                <note type="updated" update="translation-status" value="2.b" date-time="2021-08-25T06:47:41.524Z" user="line-tofte">2.b</note>
-                <note type="updated" update="text-version" value="0.0.8" date-time="2021-08-25T06:47:41.524Z" user="line-tofte">Auto
-                    (update-publication-status)</note>
-                <note type="updated" update="text-version" value="0.0.9" date-time="2021-08-25T06:49:45.924Z" user="line-tofte">Auto
-                    (update-contributors)</note>
-                <note type="updated" update="text-version" value="0.0.10" date-time="2021-08-25T06:51:02.112Z" user="line-tofte">Auto
-                    (update-contributors)</note>
-                <note type="updated" update="text-version" value="0.0.11" date-time="2021-08-25T06:51:24.882Z" user="line-tofte">Auto
-                    (update-contributors)</note>
-                <note type="updated" update="translation-status" value="2.a" date-time="2021-08-25T06:54:14.7Z" user="line-tofte">2.a</note>
-                <note type="updated" update="text-version" value="0.0.12" date-time="2021-08-25T06:54:14.7Z" user="line-tofte">Auto
-                    (update-publication-status)</note>
-                <note type="updated" update="text-version" value="0.0.13" date-time="2021-08-27T13:42:18.086Z" user="andre">Auto
-                    (update-titles)</note>
-                <note type="updated" update="text-version" value="0.0.14" date-time="2021-08-30T09:06:48.471Z" user="andre">Auto
-                    (update-titles)</note>
-                <note type="updated" update="text-version" value="0.0.15" date-time="2021-09-15T08:35:14.066Z" user="line-tofte">Auto
-                    (update-contributors)</note>
-                <note type="updated" update="translation-status" value="2" date-time="2021-09-16T10:25:34.149Z" user="line-tofte">2</note>
-                <note type="updated" update="text-version" value="0.0.16" date-time="2021-09-16T10:25:34.149Z" user="line-tofte">Auto
-                    (update-publication-status)</note>
-                <note type="updated" update="text-version" value="0.0.17" date-time="2021-10-01T14:47:30.664Z" user="line-tofte">Auto
-                    (update-contributors)</note>
-                <note type="updated" update="translation-status" value="1" date-time="2021-10-19T16:54:20.972Z" user="mike">1</note>
-                <note type="updated" update="text-version" value="1.0.0" date-time="2021-10-19T16:54:20.972Z" user="mike">First published version</note>
-                <note type="updated" update="text-version" value="1.0.1" date-time="2021-10-21T19:35:39.458Z" user="john">Edits to two passages about Meru in space.</note>
-                <note type="updated" update="text-version" value="1.1.0" date-time="2021-10-22T18:55:42.8Z" user="john">Edits to first paragraph to separate hearers from bodhisattvas.</note>
-                <note type="updated" update="text-version" value="1.1.1" date-time="2021-10-25T10:45:14.398Z" user="john">Further edits to opening paragraphs.</note>
-                <note type="updated" update="text-version" value="1.1.2" date-time="2021-10-25T18:36:59.674Z" user="john">Edits to note 6.</note>
-                <note type="updated" update="text-version" value="1.1.3" date-time="2021-10-26T17:26:08.328Z" user="john">Edits to opening and note 6.</note>
-                <note type="updated" update="text-version" value="1.1.4" date-time="2022-03-02T19:11:46.383Z" user="celso">test if version update fixes uncached note</note>
-                <note type="updated" update="text-version" value="1.1.5" date-time="2022-03-02T19:19:15.314Z" user="celso">removed one glossary link</note>
-                <note type="updated" update="text-version" value="1.1.6" date-time="2022-07-26T06:25:19.405Z" user="cabie-sim">Auto (update-titles)</note>
-                <note type="updated" update="text-version" value="1.1.7" date-time="2022-12-08T00:23:42.863Z" user="konchog">Minor fixes rendering names of non-Buddhist ascetics lower case.</note>
-                <note type="updated" update="text-version" value="1.1.8" date-time="2023-01-16T16:58:52.361Z" user="celso">Auto (script-increment-version-published)</note>
-                <note type="updated" update="text-version" value="1.1.9" date-time="2023-01-18T14:48:43.396Z" user="celso">Auto (removing-tid-from-back-list-items)</note>
-            </notesStmt>
+            <notesStmt/>
+            <revisionDesc>
+                <change who="#admin" when="2019-12-20T12:56:48.575Z" type="text-version" status="v 0.0.1" xml:id="UT22084-061-001-754">
+                    <desc>Automated version
+                    increment</desc>
+                </change>
+                <change who="#mike" when="2020-01-28T06:15:57.936Z" type="translation-status" status="2.d" xml:id="UT22084-061-001-755">
+                    <desc>2.d</desc>
+                </change>
+                <change who="#line-tofte" when="2021-02-05T14:14:47.351Z" type="translation-status" status="2.c" xml:id="UT22084-061-001-756">
+                    <desc>2.c</desc>
+                </change>
+                <change who="#line-tofte" when="2021-02-05T14:14:47.351Z" type="text-version" status="0.0.2" xml:id="UT22084-061-001-757">
+                    <desc>Auto
+                    (update-publication-status)</desc>
+                </change>
+                <change who="#line-tofte" when="2021-02-08T09:45:45.707Z" type="text-version" status="0.0.3" xml:id="UT22084-061-001-758">
+                    <desc>Auto
+                    (update-contributors)</desc>
+                </change>
+                <change who="#line-tofte" when="2021-03-08T08:36:13.235Z" type="text-version" status="0.0.4" xml:id="UT22084-061-001-759">
+                    <desc>Auto
+                    (update-contributors)</desc>
+                </change>
+                <change who="#line-tofte" when="2021-03-08T08:36:28.036Z" type="text-version" status="0.0.5" xml:id="UT22084-061-001-760">
+                    <desc>Auto
+                    (update-contributors)</desc>
+                </change>
+                <change who="#line-tofte" when="2021-03-08T08:36:45.921Z" type="text-version" status="0.0.6" xml:id="UT22084-061-001-761">
+                    <desc>Auto
+                    (update-contributors)</desc>
+                </change>
+                <change who="#line-tofte" when="2021-08-06T11:01:38.569Z" type="text-version" status="0.0.7" xml:id="UT22084-061-001-762">
+                    <desc>Auto
+                    (update-contributors)</desc>
+                </change>
+                <change who="#line-tofte" when="2021-08-25T06:47:41.524Z" type="translation-status" status="2.b" xml:id="UT22084-061-001-763">
+                    <desc>2.b</desc>
+                </change>
+                <change who="#line-tofte" when="2021-08-25T06:47:41.524Z" type="text-version" status="0.0.8" xml:id="UT22084-061-001-764">
+                    <desc>Auto
+                    (update-publication-status)</desc>
+                </change>
+                <change who="#line-tofte" when="2021-08-25T06:49:45.924Z" type="text-version" status="0.0.9" xml:id="UT22084-061-001-765">
+                    <desc>Auto
+                    (update-contributors)</desc>
+                </change>
+                <change who="#line-tofte" when="2021-08-25T06:51:02.112Z" type="text-version" status="0.0.10" xml:id="UT22084-061-001-766">
+                    <desc>Auto
+                    (update-contributors)</desc>
+                </change>
+                <change who="#line-tofte" when="2021-08-25T06:51:24.882Z" type="text-version" status="0.0.11" xml:id="UT22084-061-001-767">
+                    <desc>Auto
+                    (update-contributors)</desc>
+                </change>
+                <change who="#line-tofte" when="2021-08-25T06:54:14.7Z" type="translation-status" status="2.a" xml:id="UT22084-061-001-768">
+                    <desc>2.a</desc>
+                </change>
+                <change who="#line-tofte" when="2021-08-25T06:54:14.7Z" type="text-version" status="0.0.12" xml:id="UT22084-061-001-769">
+                    <desc>Auto
+                    (update-publication-status)</desc>
+                </change>
+                <change who="#andre" when="2021-08-27T13:42:18.086Z" type="text-version" status="0.0.13" xml:id="UT22084-061-001-770">
+                    <desc>Auto
+                    (update-titles)</desc>
+                </change>
+                <change who="#andre" when="2021-08-30T09:06:48.471Z" type="text-version" status="0.0.14" xml:id="UT22084-061-001-771">
+                    <desc>Auto
+                    (update-titles)</desc>
+                </change>
+                <change who="#line-tofte" when="2021-09-15T08:35:14.066Z" type="text-version" status="0.0.15" xml:id="UT22084-061-001-772">
+                    <desc>Auto
+                    (update-contributors)</desc>
+                </change>
+                <change who="#line-tofte" when="2021-09-16T10:25:34.149Z" type="translation-status" status="2" xml:id="UT22084-061-001-773">
+                    <desc>2</desc>
+                </change>
+                <change who="#line-tofte" when="2021-09-16T10:25:34.149Z" type="text-version" status="0.0.16" xml:id="UT22084-061-001-774">
+                    <desc>Auto
+                    (update-publication-status)</desc>
+                </change>
+                <change who="#line-tofte" when="2021-10-01T14:47:30.664Z" type="text-version" status="0.0.17" xml:id="UT22084-061-001-775">
+                    <desc>Auto
+                    (update-contributors)</desc>
+                </change>
+                <change who="#mike" when="2021-10-19T16:54:20.972Z" type="translation-status" status="1" xml:id="UT22084-061-001-776">
+                    <desc>1</desc>
+                </change>
+                <change who="#admin" when="2021-10-19T16:54:20.972Z" type="translation-status" status="1.a" xml:id="UT22084-061-001-777">
+                    <desc>Note added retrospectively based on date of status '1'</desc>
+                </change>
+                <change who="#mike" when="2021-10-19T16:54:20.972Z" type="text-version" status="1.0.0" xml:id="UT22084-061-001-778">
+                    <desc>First published version</desc>
+                </change>
+                <change who="#john" when="2021-10-21T19:35:39.458Z" type="text-version" status="1.0.1" xml:id="UT22084-061-001-779">
+                    <desc>Edits to two passages about Meru in space.</desc>
+                </change>
+                <change who="#john" when="2021-10-22T18:55:42.8Z" type="text-version" status="1.1.0" xml:id="UT22084-061-001-780">
+                    <desc>Edits to first paragraph to separate hearers from bodhisattvas.</desc>
+                </change>
+                <change who="#john" when="2021-10-25T10:45:14.398Z" type="text-version" status="1.1.1" xml:id="UT22084-061-001-781">
+                    <desc>Further edits to opening paragraphs.</desc>
+                </change>
+                <change who="#john" when="2021-10-25T18:36:59.674Z" type="text-version" status="1.1.2" xml:id="UT22084-061-001-782">
+                    <desc>Edits to note 6.</desc>
+                </change>
+                <change who="#john" when="2021-10-26T17:26:08.328Z" type="text-version" status="1.1.3" xml:id="UT22084-061-001-783">
+                    <desc>Edits to opening and note 6.</desc>
+                </change>
+                <change who="#celso" when="2022-03-02T19:11:46.383Z" type="text-version" status="1.1.4" xml:id="UT22084-061-001-784">
+                    <desc>test if version update fixes uncached note</desc>
+                </change>
+                <change who="#celso" when="2022-03-02T19:19:15.314Z" type="text-version" status="1.1.5" xml:id="UT22084-061-001-785">
+                    <desc>removed one glossary link</desc>
+                </change>
+                <change who="#cabie-sim" when="2022-07-26T06:25:19.405Z" type="text-version" status="1.1.6" xml:id="UT22084-061-001-786">
+                    <desc>Auto (update-titles)</desc>
+                </change>
+                <change who="#konchog" when="2022-12-08T00:23:42.863Z" type="text-version" status="1.1.7" xml:id="UT22084-061-001-787">
+                    <desc>Minor fixes rendering names of non-Buddhist ascetics lower case.</desc>
+                </change>
+                <change who="#celso" when="2023-01-16T16:58:52.361Z" type="text-version" status="1.1.8" xml:id="UT22084-061-001-788">
+                    <desc>Auto (script-increment-version-published)</desc>
+                </change>
+                <change who="#celso" when="2023-01-18T14:48:43.396Z" type="text-version" status="1.1.9" xml:id="UT22084-061-001-789">
+                    <desc>Auto (removing-tid-from-back-list-items)</desc>
+                </change>
+                <change who="#admin" when="2023-07-30T22:39:48.323Z" type="text-version" status="1.1.10" xml:id="UT22084-061-001-790">
+                    <desc>TEI migrated to 2.19.0</desc>
+                </change>
+                <change who="#celso" when="2023-10-13T11:48:10.305Z" type="text-version" status="1.1.11" xml:id="UT22084-061-001-793">
+                    <desc>reapplied capital letters in Wylie and covert to TibUni-glossary</desc>
+                </change>
+                <change who="#andre" when="2024-06-27T18:33:43.77Z" type="text-version" status="1.1.12" xml:id="UT22084-061-001-797">
+                    <desc>Approved rendering "Jetavana, Anāthapiṇḍada’s Park" applied and correction to setting at 5.2</desc>
+                </change>
+            </revisionDesc>
         </fileDesc>
     </teiHeader>
     <text>
@@ -208,7 +290,7 @@
         </front>
         <body>
             <div type="translation">
-                <head type="translation" tid="14"> The Translation </head>
+                <head type="translation"> The Translation </head>
                 <head type="titleHon" tid="15">The Noble Great Vehicle Sūtra</head>
                 <head type="titleMain" tid="16">Teaching the Five Perfections</head>
 
@@ -220,7 +302,7 @@
                     <div type="chapter" xml:id="UT22084-061-001-section-1-1">
                         <head type="chapter" tid="21">Chapter 1: Rejoicing</head>
                         <milestone unit="chunk" xml:id="UT22084-061-001-18"/>
-                        <p tid="22">Thus did I hear at one time. The Blessed One was staying in the Jeta Grove, Anāthapiṇḍada’s park at Śrāvastī,
+                        <p tid="22">Thus did I hear at one time. The Blessed One was staying in Śrāvastī, in Jeta’s Grove, Anāthapiṇḍada’s Park,
                             attended by a great saṅgha of 1,250 monks, all of whom were worthy ones who had exhausted their defilements, 
                             were without afflictions, self-controlled, their minds liberated, and their insight liberated; were of noble
                             birth, great elephants who had accomplished their tasks, completed their work, laid down their
@@ -579,7 +661,7 @@
                         <p tid="76">“Venerable Pūrṇa, think of gold: the more it is heated, smelted, melted, and refined, the more it shines.
                             Venerable Pūrṇa, in the same way, the more bodhisattva great beings dedicate the merit and virtue that they have created
                             toward the state of omniscience, the more their roots of virtue will enable them to excel. The more they excel by means of
-                            their roots of virtue, the more <term type="ignore">worthy</term> they will become as recipients of others’ service, and
+                            their roots of virtue, the more <term rend="ignore">worthy</term> they will become as recipients of others’ service, and
                             that much more will their splendor increase in terms of their luster, shine, and charisma.</p>
                         <milestone unit="chunk" xml:id="UT22084-061-001-73"/>
                         <p tid="77">“Venerable Pūrṇa, <ref cRef="F.11.a" type="folio" xml:id="UT22084-061-001-570"/> when a woman polishes a mirror,
@@ -939,7 +1021,7 @@
                             omniscience from which they cannot possibly regress. There is no chance or basis for regressing from it; <ref cRef="F.20.b" type="folio" xml:id="UT22084-061-001-589"/> it has never happened and it never will. Śāradvatīputra,
                             whenever bodhisattva great beings sit at the seat of awakening, the world, with its gods, demons, Brahmā, divine beings,
                             humans, and asuras, is aware that the Thus-Gone One sits at the seat of awakening. Why is that? Because at that time
-                            bodhisattva great beings are fulfilling their goal and have become <term type="ignore">worthy</term> of awakening to
+                            bodhisattva great beings are fulfilling their goal and have become <term rend="ignore">worthy</term> of awakening to
                             unsurpassed and perfect buddhahood.”</p>
                         <milestone unit="chunk" xml:id="UT22084-061-001-129"/>
                         <p tid="135">Through the Buddha’s power, Venerable Śāradvatīputra and all the hearers witnessed how, in all the worlds in the
@@ -1324,7 +1406,7 @@
                             country. At that point <ref cRef="F.30.a" type="folio" xml:id="UT22084-061-001-608"/> he will look at his old servants,
                             thinking, ‘These people stayed by me when I was a prince. At that time, I trained them and cared for them. But they also
                             trained me and cared for me. So now I should grant them all types of benefits. I will install some of my servants as heads
-                            of villages, others as foremen, market managers, and city <term type="ignore">elders</term>, and other in high posts in
+                            of villages, others as foremen, market managers, and city <term rend="ignore">elders</term>, and other in high posts in
                             the villages.’</p>
                         <milestone unit="chunk" xml:id="UT22084-061-001-203"/>
                         <p tid="212">“Venerable Pūrṇa, in the same way, bodhisattva great beings who wish to awaken to unsurpassed and perfect
@@ -1386,7 +1468,7 @@
                     <div type="chapter" xml:id="UT22084-061-001-section-2-1">
                         <head type="chapter" tid="220">Chapter 1</head>
                         <milestone unit="chunk" xml:id="UT22084-061-001-210"/>
-                        <p tid="221">Thus did I hear at one time. The Blessed One was staying in the Jeta Grove, Anāthapiṇḍada’s park at Śrāvastī,
+                        <p tid="221">Thus did I hear at one time. The Blessed One was staying in Śrāvastī, in Jeta’s Grove, Anāthapiṇḍada’s Park,
                             along with a great saṅgha of 1,250 monks. All of the monks were worthy ones who had exhausted their defilements. They were
                             without afflictions and self-controlled. Their minds were liberated and their insight was liberated. They were of noble
                             birth. They were great elephants. They had accomplished their tasks and completed their work. They had laid down their
@@ -1920,7 +2002,7 @@
                             dedicate merit, yet other bodhisattvas do not.’ Such an improper attitude is a fault in their discipline. Venerable Pūrṇa,
                             moreover, it is improper for bodhisattvas to think, ‘With just a single offering of a meal and a single arousal of the
                             mind of awakening I can surpass all other bodhisattvas, even if they were to live for as many eons as there are grains of
-                            sand in the Ganges, constantly offering food <term type="ignore">worthy</term> of a universal monarch.’ Such an improper
+                            sand in the Ganges, constantly offering food <term rend="ignore">worthy</term> of a universal monarch.’ Such an improper
                             attitude is a fault in their discipline. Even though such bodhisattvas may generally be skilled in means, they should not
                             be described in that way as long as they have such thoughts. Why is that? Because bodhisattvas do not conflict with other
                             bodhisattvas. Bodhisattvas do not despise other bodhisattvas. Bodhisattvas do not mistreat other bodhisattvas.
@@ -2136,7 +2218,7 @@
                             awaken to unsurpassed and perfect buddhahood within the era of the one thousand buddhas of this excellent eon, and
                             moreover can make aspirations such as, ‘Whatever it takes, may the lower realms be emptied,’ and ‘When my hearers first
                             assemble, may there be billions of worthy ones,’ then, Śāradvatīputra, I promise that their awakening will be accomplished
-                            within one thousand eons. By delighting in such aspirations, there will be signs, indications, and <term type="ignore">marks</term> that they will be fulfilled within five hundred eons. Thus, they shall be known as nonregressing
+                            within one thousand eons. By delighting in such aspirations, there will be signs, indications, and <term rend="ignore">marks</term> that they will be fulfilled within five hundred eons. Thus, they shall be known as nonregressing
                             bodhisattvas.”</p>
                         <milestone unit="chunk" xml:id="UT22084-061-001-331"/>
                         <p tid="348">Venerable Śāradvatīputra said, “Blessed One, when bodhisattva great beings hear this teaching on the perfections,
@@ -2236,7 +2318,7 @@
                     <div type="chapter" xml:id="UT22084-061-001-section-3-1">
                         <head type="chapter" tid="363">Chapter 1</head>
                         <milestone unit="chunk" xml:id="UT22084-061-001-345"/>
-                        <p tid="364">Thus did I hear at one time. The Blessed One was staying in the Jeta Grove, Anāthapiṇḍada’s park at Śrāvastī,
+                        <p tid="364">Thus did I hear at one time. The Blessed One was staying in Śrāvastī, in Jeta’s Grove, Anāthapiṇḍada’s Park,
                             along with a great saṅgha of 1,250 monks. At that time the Blessed One said to Venerable Pūrṇa Maitrāyaṇīputra, “Pūrṇa,
                             could you please elucidate the perfection of patience practiced by those bodhisattva great beings who seek to awaken to
                             unsurpassed and perfect buddhahood.”</p>
@@ -2444,7 +2526,7 @@
                     <div type="chapter" xml:id="UT22084-061-001-section-4-1">
                         <head type="chapter" tid="401">Chapter 1</head>
                         <milestone unit="chunk" xml:id="UT22084-061-001-379"/>
-                        <p tid="402">Thus did I hear at one time. The Blessed One was staying in the Jeta Grove, Anāthapiṇḍada’s park at Śrāvastī,
+                        <p tid="402">Thus did I hear at one time. The Blessed One was staying in Śrāvastī, in Jeta’s Grove, Anāthapiṇḍada’s Park,
                             along with a great saṅgha of 1,250 monks. At that time Venerable Pūrṇa Maitrāyaṇīputra said to the Blessed One, “Blessed
                             One, when bodhisattva great beings strive to awaken to unsurpassed and perfect buddhahood, how should they practice the
                             perfection of diligence?”</p>
@@ -2633,7 +2715,7 @@
                     <div type="chapter" xml:id="UT22084-061-001-section-5-1">
                         <head type="chapter" tid="428">Chapter 1</head>
                         <milestone unit="chunk" xml:id="UT22084-061-001-404"/>
-                        <p tid="429">Thus did I hear at one time. The Blessed One was staying in the Jeta Grove, Anāthapiṇḍada’s park at Śrāvastī,
+                        <p tid="429">Thus did I hear at one time. The Blessed One was staying in Rājagṛha, on Vulture Peak Mountain,
                             along with a great saṅgha of 1,250 monks. At that time Venerable Śāradvatīputra asked the Blessed One, “Blessed One, when
                             bodhisattva great beings strive to awaken to unsurpassed and perfect buddhahood, how should they train in the perfection
                             of concentration? Blessed One, how should they practice the perfection of concentration?”</p>
@@ -3145,150 +3227,177 @@
                     </item>-->
                     <item>
                         <gloss xml:id="UT22084-061-001-737" type="term" mode="match">
-                            <term>Follower of the Dharma</term>
-                            <term xml:lang="Bo-Ltn" status="verified">chos kyi rjes su ’brang ba</term>
-                            <term xml:lang="bo">ཆོས་ཀྱི་རྗེས་སུ་འབྲང་བ།</term>
-                            <term xml:lang="Sa-Ltn" status="verified">dharmānusārin</term>
-                            <term type="alternative">followers of the Dharma</term>
-                            <term type="definition">According to the Mahāyāna, one of the seven types of noble beings (<foreign xml:lang="Sa-Ltn">āryapudgala</foreign>), and also one of the twenty types of members of the saṅgha (<foreign xml:lang="Sa-Ltn">viṃśatiprabhedasaṃgha</foreign>).</term>
+                            <term type="translationMain">Follower of the Dharma</term>
+                            <term type="translationAlternative">followers of the Dharma</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">dharmānusārin</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">chos kyi rjes su ’brang ba</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">ཆོས་ཀྱི་རྗེས་སུ་འབྲང་བ།</term>
+                            <note type="definition">
+                                <p>According to the Mahāyāna, one of the seven types of noble beings (<foreign xml:lang="Sa-Ltn">āryapudgala</foreign>), and also one of the twenty types of members of the saṅgha (<foreign xml:lang="Sa-Ltn">viṃśatiprabhedasaṃgha</foreign>).</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="term" xml:id="UT22084-061-001-738">
-                            <term>faithful one</term>
-                            <term status="verified" xml:lang="Bo-Ltn">dad pas rjes su ’brang ba</term>
-                            <term status="verified" xml:lang="bo">དད་པས་རྗེས་སུ་འབྲང་བ།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">śraddhānusārin</term>
-                            <term type="definition">According to the Mahāyāna, one of the seven types of noble beings (<foreign xml:lang="Sa-Ltn">āryapudgala</foreign>), and also one of the twenty types of members of the saṅgha (<foreign xml:lang="Sa-Ltn">viṃśatiprabhedasaṃgha</foreign>).</term>
+                            <term type="translationMain">faithful one</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">śraddhānusārin</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">dad pas rjes su ’brang ba</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">དད་པས་རྗེས་སུ་འབྲང་བ།</term>
+                            <note type="definition">
+                                <p>According to the Mahāyāna, one of the seven types of noble beings (<foreign xml:lang="Sa-Ltn">āryapudgala</foreign>), and also one of the twenty types of members of the saṅgha (<foreign xml:lang="Sa-Ltn">viṃśatiprabhedasaṃgha</foreign>).</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="term" xml:id="UT22084-061-001-736">
-                            <term>mark</term>
-                            <term status="verified" xml:lang="Bo-Ltn">mtshan</term>
-                            <term status="verified" xml:lang="bo">མཚན།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">lakṣaṇa</term>
-                            <term type="definition">The thirty-two primary physical characteristics of a “<term type="ignore">great being</term>,”
-                                    <foreign xml:lang="Sa-Ltn">mahāpuruṣa</foreign>, which every buddha and cakravartin possesses.</term>
+                            <term type="translationMain">mark</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">lakṣaṇa</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">mtshan</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">མཚན།</term>
+                            <note type="definition">
+                                <p>The thirty-two primary physical characteristics of a “<term rend="ignore">great being</term>,”
+                                    <foreign xml:lang="Sa-Ltn">mahāpuruṣa</foreign>, which every buddha and cakravartin possesses.</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="term" xml:id="UT22084-061-001-734">
-                            <term>ten powers</term>
-                            <term status="verified" xml:lang="Bo-Ltn">stobs bcu</term>
-                            <term status="verified" xml:lang="bo">སྟོབས་བཅུ།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">daśabala</term>
-                            <term type="definition">One set among the different qualities of a thus-gone one. The ten powers can be listed as: (1) the
+                            <term type="translationMain">ten powers</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">daśabala</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">stobs bcu</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">སྟོབས་བཅུ།</term>
+                            <note type="definition">
+                                <p>One set among the different qualities of a thus-gone one. The ten powers can be listed as: (1) the
                                 knowledge of what is possible and not possible, (2) the knowledge of the ripening of karma, (3) the knowledge of the
                                 variety of aspirations, (4) the knowledge of the variety of natures, (5) the knowledge of the supreme and lesser
                                 faculties of sentient beings, (6) the knowledge of the destinations of all paths, (7) the knowledge of various states
                                 of meditation, (8) the knowledge of remembering previous lives, (9) the knowledge of deaths and rebirths, and (10) the
-                                knowledge of the cessation of defilements.</term>
+                                knowledge of the cessation of defilements.</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="term" xml:id="UT22084-061-001-735">
-                            <term>four types of fearlessness</term>
-                            <term status="verified" xml:lang="Bo-Ltn">mi ’jigs pa bzhi</term>
-                            <term status="verified" xml:lang="bo">མི་འཇིགས་པ་བཞི།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">caturabhaya</term>
-                            <term status="verified" xml:lang="Sa-Ltn">caturvaiśāradya</term>
-                            <term type="definition">Fearlessness in declaring that one has (1) awakened, (2) ceased all defilements, (3) taught the
-                                obstacles to awakening, and (4) shown the way to liberation.</term>
+                            <term type="translationMain">four types of fearlessness</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">caturabhaya</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">caturvaiśāradya</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">mi ’jigs pa bzhi</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">མི་འཇིགས་པ་བཞི།</term>
+                            <note type="definition">
+                                <p>Fearlessness in declaring that one has (1) awakened, (2) ceased all defilements, (3) taught the
+                                obstacles to awakening, and (4) shown the way to liberation.</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="term" xml:id="UT22084-061-001-733">
-                            <term>four concentrations</term>
-                            <term status="verified" xml:lang="Bo-Ltn">bsam gtan bzhi</term>
-                            <term status="verified" xml:lang="bo">བསམ་གཏན་བཞི།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">caturdhyāna</term>
-                            <term type="definition">The four progressive levels of concentration of the form realm that culminate in pure
+                            <term type="translationMain">four concentrations</term>
+                            <term type="translationAlternative">four states of concentration</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">caturdhyāna</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">bsam gtan bzhi</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">བསམ་གཏན་བཞི།</term>
+                            <note type="definition">
+                                <p>The four progressive levels of concentration of the form realm that culminate in pure
                                 one-pointedness of mind, and are a requirement for cultivation of the five or six superknowledges, and so on. These
-                                are part of the nine gradual attainments.</term>
-                            <term type="alternative">four states of concentration</term>
+                                are part of the nine gradual attainments.</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="term" xml:id="UT22084-061-001-732">
-                            <term>once-returner</term>
-                            <term status="verified" xml:lang="Bo-Ltn">lan cig phyir ’ong ba</term>
-                            <term status="verified" xml:lang="bo">ལན་ཅིག་ཕྱིར་འོང་བ།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">sakṛdāgāmin</term>
-                            <term type="definition">One who has achieved the second level of attainment on the path of the hearers, and who will only
-                                be reborn in saṃsāra once more. </term>
+                            <term type="translationMain">once-returner</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">sakṛdāgāmin</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">lan cig phyir ’ong ba</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">ལན་ཅིག་ཕྱིར་འོང་བ།</term>
+                            <note type="definition">
+                                <p>One who has achieved the second level of attainment on the path of the hearers, and who will only
+                                be reborn in saṃsāra once more. </p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="term" xml:id="UT22084-061-001-727">
-                            <term>field of limitless space</term>
-                            <term status="verified" xml:lang="Bo-Ltn">nam mkha’ mtha’ yas skye mched</term>
-                            <term status="verified" xml:lang="bo">ནམ་མཁའ་མཐའ་ཡས་སྐྱེ་མཆེད།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">ākāśānantyāyatana</term>
-                            <term type="definition">Name of the first of the four formless realms and of the first formless meditative absorption, so
-                                termed because in its preparatory phase limitless space is the object of meditation.</term>
+                            <term type="translationMain">field of limitless space</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">ākāśānantyāyatana</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">nam mkha’ mtha’ yas skye mched</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">ནམ་མཁའ་མཐའ་ཡས་སྐྱེ་མཆེད།</term>
+                            <note type="definition">
+                                <p>Name of the first of the four formless realms and of the first formless meditative absorption, so
+                                termed because in its preparatory phase limitless space is the object of meditation.</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="term" xml:id="UT22084-061-001-728">
-                            <term>field of limitless consciousness</term>
-                            <term status="verified" xml:lang="Bo-Ltn">rnam shes mtha’ yas skye mched</term>
-                            <term status="verified" xml:lang="bo">རྣམ་ཤེས་མཐའ་ཡས་སྐྱེ་མཆེད།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">vi­jñānānantyāyatana</term>
-                            <term type="definition">Name of the second of the four formless realms and of the second formless meditative absorption,
-                                so termed because in its preparatory phase limitless consciousness is the object of meditation.</term>
+                            <term type="translationMain">field of limitless consciousness</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">vi­jñānānantyāyatana</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">rnam shes mtha’ yas skye mched</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">རྣམ་ཤེས་མཐའ་ཡས་སྐྱེ་མཆེད།</term>
+                            <note type="definition">
+                                <p>Name of the second of the four formless realms and of the second formless meditative absorption,
+                                so termed because in its preparatory phase limitless consciousness is the object of meditation.</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="term" xml:id="UT22084-061-001-729">
-                            <term>field of nothing whatsoever</term>
-                            <term status="verified" xml:lang="Bo-Ltn">ci yang med pa’i skye mched</term>
-                            <term status="verified" xml:lang="bo">ཅི་ཡང་མེད་པའི་སྐྱེ་མཆེད།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">a­kiñ­canyāyatana</term>
-                            <term type="definition">Name of the third of the four formless realms and of the third formless meditative absorption, so
-                                termed because in its preparatory phase absolute nothingness is the object of meditation.</term>
+                            <term type="translationMain">field of nothing whatsoever</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">a­kiñ­canyāyatana</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">ci yang med pa’i skye mched</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">ཅི་ཡང་མེད་པའི་སྐྱེ་མཆེད།</term>
+                            <note type="definition">
+                                <p>Name of the third of the four formless realms and of the third formless meditative absorption, so
+                                termed because in its preparatory phase absolute nothingness is the object of meditation.</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="term" xml:id="UT22084-061-001-730">
-                            <term>field of neither perception nor non-perception</term>
-                            <term status="verified" xml:lang="Bo-Ltn">’du shes med ’du shes med min skye mched</term>
-                            <term status="verified" xml:lang="bo">འདུ་ཤེས་མེད་འདུ་ཤེས་མེད་མིན་སྐྱེ་མཆེད།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">naiva­saṃ­jñānāsaṃ­jñāyatana</term>
-                            <term type="definition">Name of the fourth of the four formless realms and of the fourth formless meditative absorption,
-                                so termed because conceptions are weak in it, but not entirely absent.</term>
+                            <term type="translationMain">field of neither perception nor non-perception</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">naiva­saṃ­jñānāsaṃ­jñāyatana</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">’du shes med ’du shes med min skye mched</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">འདུ་ཤེས་མེད་འདུ་ཤེས་མེད་མིན་སྐྱེ་མཆེད།</term>
+                            <note type="definition">
+                                <p>Name of the fourth of the four formless realms and of the fourth formless meditative absorption,
+                                so termed because conceptions are weak in it, but not entirely absent.</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="term" xml:id="UT22084-061-001-726">
-                            <term>four attainments of the formless realm</term>
-                            <term status="verified" xml:lang="Bo-Ltn">gzugs med pa’i snyoms par ’jug pa bzhi</term>
-                            <term status="verified" xml:lang="bo">གཟུགས་མེད་པའི་སྙོམས་པར་འཇུག་པ་བཞི།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">caturārūpyasamāpatti</term>
-                            <term type="definition">These are typically listed as follows: (1) the <term>attainment</term> of the sense field of
+                            <term type="translationMain">four attainments of the formless realm</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">caturārūpyasamāpatti</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">gzugs med pa’i snyoms par ’jug pa bzhi</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">གཟུགས་མེད་པའི་སྙོམས་པར་འཇུག་པ་བཞི།</term>
+                            <note type="definition">
+                                <p>These are typically listed as follows: (1) the <term>attainment</term> of the sense field of
                                 limitless space, (2) the <term>attainment</term> of the sense field of limitless consciousness, (3) the
                                     <term>attainment</term> of the sense field of nothing whatsoever, and (4) the <term>attainment</term> of the sense
-                                field of neither perception nor non-perception.</term>
+                                field of neither perception nor non-perception.</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="term" xml:id="UT22084-061-001-725">
-                            <term>five superknowledges</term>
-                            <term status="verified" xml:lang="Bo-Ltn">mngon par shes pa lnga</term>
-                            <term status="verified" xml:lang="bo">མངོན་པར་ཤེས་པ་ལྔ།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">pañcābhijñā</term>
-                            <term type="definition">Five extraordinary abilities that result from meditative concentration: divine sight, divine
+                            <term type="translationMain">five superknowledges</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">pañcābhijñā</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">mngon par shes pa lnga</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">མངོན་པར་ཤེས་པ་ལྔ།</term>
+                            <note type="definition">
+                                <p>Five extraordinary abilities that result from meditative concentration: divine sight, divine
                                 hearing, knowing others’ minds, recollecting past lives, and the ability to perform miracles. See also “six
-                                superknowledges.”</term>
+                                superknowledges.”</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="term" xml:id="UT22084-061-001-724">
-                            <term>eighteen unique features of a buddha</term>
-                            <term status="verified" xml:lang="Bo-Ltn">sangs rgyas kyi chos ma ’dres pa bcwa brgyad</term>
-                            <term status="verified" xml:lang="bo">སངས་རྒྱས་ཀྱི་ཆོས་མ་འདྲེས་པ་བཅྭ་བརྒྱད།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">aṣṭā­daśāveṇika­buddha­dharma</term>
-                            <term type="definition">They are as follows: (1) he never makes a mistake; (2) he is never boisterous; (3) he never
+                            <term type="translationMain">eighteen unique features of a buddha</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">aṣṭā­daśāveṇika­buddha­dharma</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">sangs rgyas kyi chos ma ’dres pa bcwa brgyad</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">སངས་རྒྱས་ཀྱི་ཆོས་མ་འདྲེས་པ་བཅྭ་བརྒྱད།</term>
+                            <note type="definition" rend="override">
+                                <p>They are as follows: (1) he never makes a mistake; (2) he is never boisterous; (3) he never
                                 forgets; (4) his concentration never falters; (5) he has no notion of distinctness; (6) his equanimity is not due to
                                 lack of consideration; (7) his motivation never falters; (8) his endeavor never fails; (9) his mindfulness never
                                 falters; (10) he never abandons his concentration; (11) his insight (<foreign xml:lang="Sa-Ltn">prajñā</foreign>)
@@ -3296,297 +3405,324 @@
                                     (<foreign xml:lang="Sa-Ltn">jñāna</foreign>); (14) all his verbal actions are preceded and followed by wisdom;
                                 (15) all his mental actions are preceded and followed by wisdom; (16) his wisdom (<foreign xml:lang="Sa-Ltn">jñāna</foreign>) and vision perceive the past without any attachment or hindrance; (17) his wisdom and vision
                                 perceive the future without any attachment or hindrance; and (18) his wisdom and vision perceive the present without
-                                any attachment or hindrance.</term>
+                                any attachment or hindrance.</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="term" xml:id="UT22084-061-001-723">
-                            <term>four assemblies</term>
-                            <term status="verified" xml:lang="Bo-Ltn">’khor bzhi po</term>
-                            <term status="verified" xml:lang="bo">འཁོར་བཞི་པོ།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">catuḥ­pari­ṣad</term>
-                            <term type="definition">The assemblies of monks (Skt. <foreign xml:lang="Sa-Ltn">bhikṣu</foreign>) and nuns (Skt. <foreign xml:lang="Sa-Ltn">bhikṣuṇī</foreign>), along with laymen (Skt. <foreign xml:lang="Sa-Ltn">upāsaka</foreign>) and
-                                laywomen (Skt. <foreign xml:lang="Sa-Ltn">upāsikā</foreign>).</term>
+                            <term type="translationMain">four assemblies</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">catuḥ­pari­ṣad</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">’khor bzhi po</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">འཁོར་བཞི་པོ།</term>
+                            <note type="definition">
+                                <p>The assemblies of monks (Skt. <foreign xml:lang="Sa-Ltn">bhikṣu</foreign>) and nuns (Skt. <foreign xml:lang="Sa-Ltn">bhikṣuṇī</foreign>), along with laymen (Skt. <foreign xml:lang="Sa-Ltn">upāsaka</foreign>) and
+                                laywomen (Skt. <foreign xml:lang="Sa-Ltn">upāsikā</foreign>).</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
-                        <gloss type="term" xml:id="UT22084-061-001-722">
-                            <term>universal monarch</term>
-                            <term status="verified" xml:lang="Bo-Ltn">’khor los sgyur ba</term>
-                            <term status="verified" xml:lang="bo">འཁོར་ལོས་སྒྱུར་བ།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">cakravartin</term>
-                            <term type="definition">The term “universal monarch” denotes a just and pious king who rules over the universe according
-                                to the laws of Dharma. Such a monarch is called a cakravartin because he wields a wheel (<foreign xml:lang="Sa-Ltn">cakra</foreign>) that rolls (<foreign xml:lang="Sa-Ltn">vartana</foreign>) over continents, worlds, and world
-                                systems, bringing them under his power. </term>
+                        <gloss xml:id="UT22084-061-001-722" type="term" mode="match">
+                            <term type="translationMain">universal monarch</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">cakravartin</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">’khor los sgyur ba</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">འཁོར་ལོས་སྒྱུར་བ།</term>
+                            <note type="definition" rend="override">
+                                <p>The term “universal monarch” denotes a just and pious king who rules over the universe according to the laws of Dharma. Such a monarch is called a cakravartin because he wields a wheel (<foreign xml:lang="Sa-Ltn">cakra</foreign>) that rolls (<foreign xml:lang="Sa-Ltn">vartana</foreign>) over continents, worlds, and world systems, bringing them under his power. </p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="term" xml:id="UT22084-061-001-714">
-                            <term>go forth</term>
-                            <term status="verified" xml:lang="Bo-Ltn">rab tu ’byung ba</term>
-                            <term status="verified" xml:lang="bo">རབ་ཏུ་འབྱུང་བ།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">pra + √vraj</term>
-                            <term type="definition">To renounce settled, household life (“going forth from home into homelessness”) to become a monk
-                                or nun, or a wandering spiritual practitioner.</term>
+                            <term type="translationMain">go forth</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">pra + √vraj</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">rab tu ’byung ba</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">རབ་ཏུ་འབྱུང་བ།</term>
+                            <note type="definition" rend="override">
+                                <p>To renounce settled, household life (“going forth from home into homelessness”) to become a monk
+                                or nun, or a wandering spiritual practitioner.</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss xml:id="UT22084-061-001-715" type="place" mode="match">
-                            <term>Realm of the Lord of Death</term>
-                            <term xml:lang="Bo-Ltn" status="verified">gshin rje’i ’jig rten</term>
-                            <term xml:lang="bo">གཤིན་རྗེའི་འཇིག་རྟེན།</term>
-                            <term xml:lang="Sa-Ltn" status="verified">yamaloka</term>
-                            <term type="definition">The realm of the Lord of Death is another name for the realm of hungry ghosts or <foreign xml:lang="Sa-Ltn">pretas</foreign>. This term is also the name of the Vedic afterlife inhabited by the ancestors (<foreign xml:lang="Sa-Ltn">pitṛ</foreign>).</term>
+                            <term type="translationMain">Realm of the Lord of Death</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">yamaloka</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">gshin rje’i ’jig rten</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">གཤིན་རྗེའི་འཇིག་རྟེན།</term>
+                            <note type="definition">
+                                <p>The realm of the Lord of Death is another name for the realm of hungry ghosts or <foreign xml:lang="Sa-Ltn">pretas</foreign>. This term is also the name of the Vedic afterlife inhabited by the ancestors (<foreign xml:lang="Sa-Ltn">pitṛ</foreign>).</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="term" xml:id="UT22084-061-001-716">
-                            <term>great being</term>
-                            <term status="verified" xml:lang="Bo-Ltn">sems dpa’ chen po</term>
-                            <term status="verified" xml:lang="bo">སེམས་དཔའ་ཆེན་པོ།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">mahāsattva</term>
-                            <term type="definition">An epithet of advanced bodhisattvas, often defined as having attained at least the seventh bhūmi
+                            <term type="translationMain">great being</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">mahāsattva</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">sems dpa’ chen po</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">སེམས་དཔའ་ཆེན་པོ།</term>
+                            <note type="definition">
+                                <p>An epithet of advanced bodhisattvas, often defined as having attained at least the seventh bhūmi
                                 and the path of vision. These bodhisattvas have several special qualities that bodhisattvas on the lower bhūmis do not
-                                have.</term>
+                                have.</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="term" xml:id="UT22084-061-001-717">
-                            <term>well-gone one</term>
-                            <term status="verified" xml:lang="Bo-Ltn">bde bar gshegs pa</term>
-                            <term status="verified" xml:lang="bo">བདེ་བར་གཤེགས་པ།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">sugata</term>
-                            <term type="definition">One of the standard epithets of the buddhas. A recurrent explanation offers three different
+                            <term type="translationMain">well-gone one</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">sugata</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">bde bar gshegs pa</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">བདེ་བར་གཤེགས་པ།</term>
+                            <note type="definition" rend="override">
+                                <p>One of the standard epithets of the buddhas. A recurrent explanation offers three different
                                 meanings for <foreign xml:lang="Sa-Ltn">su-</foreign> that are meant to show the special qualities of accomplishment
                                 of one’s own purpose (<foreign xml:lang="Sa-Ltn">svārthasampat</foreign>) for a complete buddha. Thus, the Sugata is
                                 “well” gone, as in the expression <foreign xml:lang="Sa-Ltn">su-rūpa</foreign> (“having a good form”); he is gone “in
                                 a way that he shall not come back,” as in the expression <foreign xml:lang="Sa-Ltn">su-naṣṭa-jvara</foreign> (“a fever
-                                that has utterly gone”); he has gone “without any remainder” as in the expression <foreign xml:lang="Sa-Ltn">su-<term type="ignore">pūrṇa</term>-ghaṭa</foreign> (“a pot that is completely full”). According to Buddhaghosa, the term means that the way
-                                the Buddha went (Skt. <foreign xml:lang="Sa-Ltn">gata</foreign>) is good (Skt. <foreign xml:lang="Sa-Ltn">su</foreign>) and where he went (Skt. <foreign xml:lang="Sa-Ltn">gata</foreign>) is good (Skt. <foreign xml:lang="Sa-Ltn">su</foreign>).</term>
+                                that has utterly gone”); he has gone “without any remainder” as in the expression <foreign xml:lang="Sa-Ltn">su-<term rend="ignore">pūrṇa</term>-ghaṭa</foreign> (“a pot that is completely full”). According to Buddhaghosa, the term means that the way
+                                the Buddha went (Skt. <foreign xml:lang="Sa-Ltn">gata</foreign>) is good (Skt. <foreign xml:lang="Sa-Ltn">su</foreign>) and where he went (Skt. <foreign xml:lang="Sa-Ltn">gata</foreign>) is good (Skt. <foreign xml:lang="Sa-Ltn">su</foreign>).</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
-                        <gloss type="term" xml:id="UT22084-061-001-718">
-                            <term>piśāca</term>
-                            <term status="verified" xml:lang="Bo-Ltn">sha za</term>
-                            <term status="verified" xml:lang="bo">ཤ་ཟ།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">piśāca</term>
-                            <term type="definition">A flesh-eating demon, or a demon who can possess the body of a human and cause various illnesses
-                                or insanity. They are often depicted as red-eyed, dark-skinned, bulging-eyed creatures, although they seem to be able
-                                to assume many shapes.</term>
+                        <gloss xml:id="UT22084-061-001-718" type="term" mode="match">
+                            <term type="translationMain">piśāca</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">piśāca</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">sha za</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">ཤ་ཟ།</term>
+                            <note type="definition" rend="override">
+                                <p>A flesh-eating demon, or a demon who can possess the body of a human and cause various illnesses or insanity. They are often depicted as red-eyed, dark-skinned, bulging-eyed creatures, although they seem to be able to assume many shapes.</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
-                        <gloss type="term" xml:id="UT22084-061-001-719">
-                            <term>blessed one</term>
-                            <term status="verified" xml:lang="Bo-Ltn">bcom ldan ’das</term>
-                            <term status="verified" xml:lang="bo">བཅོམ་ལྡན་འདས།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">bhagavat</term>
-                            <term status="verified" xml:lang="Sa-Ltn">bhagavān</term>
-                            <term type="definition">A common epithet in Buddhist literature for Śākyamuni or any other
-                                buddha.<!--In Buddhist literature, an epithet applied to buddhas, most often to Śākyamuni. The Sanskrit term
-                                generally means “possessing fortune,” but in specifically Buddhist contexts implies that a buddha is in possession of
-                                six auspicious qualities (<foreign xml:lang="Sa-Ltn" type="term">bhaga</foreign>) associated with complete awakening.
-                                The Tibetan term—where <foreign xml:lang="Sa-Ltn" type="term">bcom</foreign> is said to refer to “subduing” the four
-                                māras, <foreign xml:lang="Sa-Ltn" type="term">ldan</foreign> to “possessing” the great qualities of buddhahood, and
-                                    <foreign xml:lang="Sa-Ltn" type="term">’das</foreign> to “going beyond” saṃsāra and nirvāṇa—possibly reflects the
-                                commentarial tradition where the Sanskrit <foreign xml:lang="Sa-Ltn" type="term">bhagavat</foreign> is interpreted, in
-                                addition, as “one who destroys the four māras.” This is achieved either by reading <foreign xml:lang="Sa-Ltn"
-                                    type="term">bhagavat</foreign> as <foreign xml:lang="Sa-Ltn" type="term">bhagnavat</foreign> (“one who broke”), or
-                                by tracing the word <foreign xml:lang="Sa-Ltn" type="term">bhaga</foreign> to the root <foreign xml:lang="Sa-Ltn"
-                                    type="term">√bhañj</foreign>, “to break.”-->
-                            </term>
-                            <term type="alternative">blessed</term>
+                        <gloss type="place" mode="match" xml:id="UT22084-061-001-795">
+                            <term type="translationMain">Rājagṛha</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified">rājagṛha</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">rgyal po’i khab</term>
+                            <term xml:lang="bo" type="attestedSource" n="1">རྒྱལ་པོའི་ཁབ།</term>
                         </gloss>
                     </item>
                     <item>
-                        <gloss type="term" xml:id="UT22084-061-001-720">
-                            <term>thus-gone one</term>
-                            <term status="verified" xml:lang="Bo-Ltn">de bzhin gshegs pa</term>
-                            <term status="verified" xml:lang="bo">དེ་བཞིན་གཤེགས་པ།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">tathāgata</term>
-                            <term type="definition">A frequently used synonym for <foreign xml:lang="Sa-Ltn">buddha</foreign>. According to different
-                                explanations, it can be read as <foreign xml:lang="Sa-Ltn" type="term">tathā-gata</foreign>, literally meaning “one
-                                who has thus gone,” or as <foreign xml:lang="Sa-Ltn" type="term">tathā-āgata</foreign>, “one who has thus come.”
-                                    <foreign xml:lang="Sa-Ltn" type="term">Gata</foreign>, though literally meaning “gone,” is a past passive
-                                participle used to describe a state or condition of existence. <foreign xml:lang="Sa-Ltn" type="term">Tatha</foreign>­(<foreign xml:lang="Sa-Ltn" type="term">tā</foreign>), often rendered as “suchness” or
-                                “thusness,” is the quality or condition of things as they really are, which cannot be conveyed in conceptual,
-                                dualistic terms. Therefore, this epithet is interpreted in different ways, but in general it implies one who has gone
-                                in the same way that the buddhas of the past have gone, or one who has manifested the supreme awakening dependent on
-                                the reality that does not abide in the two extremes of existence and quiescence. </term>
-                            <term type="definition">Here also used as a specific epithet of the Buddha Śākyamuni.</term>
-                            <term type="alternative">thus-gone</term>
+                        <gloss type="place" mode="match" xml:id="UT22084-061-001-796">
+                            <term type="translationMain">Vulture Peak Mountain</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified">gṛdhra­kūṭa­parvata</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">bya rgod kyi phung po’i ri</term>
+                            <term xml:lang="bo" type="attestedSource" n="1">བྱ་རྒོད་ཀྱི་ཕུང་པོའི་རི།</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss xml:id="UT22084-061-001-719" type="term" mode="match">
+                            <term type="translationMain">blessed one</term>
+                            <term type="translationAlternative">blessed</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">bhagavat</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">bhagavān</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">bcom ldan ’das</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">བཅོམ་ལྡན་འདས།</term>
+                            <note type="definition" rend="override">
+                                <p>A common epithet in Buddhist literature for Śākyamuni or any other buddha.</p>
+                            </note>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss xml:id="UT22084-061-001-720" type="term" mode="match">
+                            <term type="translationMain">thus-gone one</term>
+                            <term type="translationAlternative">thus-gone</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">tathāgata</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">de bzhin gshegs pa</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">དེ་བཞིན་གཤེགས་པ།</term>
+                            <note type="definition" rend="override">
+                                <p>A frequently used synonym for <foreign xml:lang="Sa-Ltn">buddha</foreign>. According to different explanations, it can be read as <foreign xml:lang="Sa-Ltn" type="term">tathā-gata</foreign>, literally meaning “one who has thus gone,” or as <foreign xml:lang="Sa-Ltn" type="term">tathā-āgata</foreign>, “one who has thus come.” <foreign xml:lang="Sa-Ltn" type="term">Gata</foreign>, though literally meaning “gone,” is a past passive participle used to describe a state or condition of existence. <foreign xml:lang="Sa-Ltn" type="term">Tatha</foreign>­(<foreign xml:lang="Sa-Ltn" type="term">tā</foreign>), often rendered as “suchness” or “thusness,” is the quality or condition of things as they really are, which cannot be conveyed in conceptual, dualistic terms. Therefore, this epithet is interpreted in different ways, but in general it implies one who has gone in the same way that the buddhas of the past have gone, or one who has manifested the supreme awakening dependent on the reality that does not abide in the two extremes of existence and quiescence. </p>
+                                <p>Here also used as a specific epithet of the Buddha Śākyamuni.</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="term" xml:id="UT22084-061-001-712">
-                            <term>disturbing emotion</term>
-                            <term status="verified" xml:lang="Bo-Ltn">nyon mongs</term>
-                            <term status="verified" xml:lang="bo">ཉོན་མོངས།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">kleśa</term>
-                            <term type="definition">See “affliction.”</term>
+                            <term type="translationMain">disturbing emotion</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">kleśa</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">nyon mongs</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">ཉོན་མོངས།</term>
+                            <note type="definition">
+                                <p>See “affliction.”</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="term" xml:id="UT22084-061-001-721">
-                            <term>nonregression</term>
-                            <term status="verified" xml:lang="Bo-Ltn">phyir mi ldog pa</term>
-                            <term status="verified" xml:lang="bo">ཕྱིར་མི་ལྡོག་པ།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">avaivartika</term>
-                            <term type="definition">A stage on the bodhisattva path where the practitioner will never turn back, or be turned back,
-                                from progress toward the full awakening of a buddha.</term>
-                            <term type="alternative">nonregressing</term>
+                            <term type="translationMain">nonregression</term>
+                            <term type="translationAlternative">nonregressing</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">avaivartika</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">phyir mi ldog pa</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">ཕྱིར་མི་ལྡོག་པ།</term>
+                            <note type="definition">
+                                <p>A stage on the bodhisattva path where the practitioner will never turn back, or be turned back,
+                                from progress toward the full awakening of a buddha.</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss xml:id="UT22084-061-001-713" type="term" mode="match">
-                            <term>Affliction</term>
-                            <term status="verified" xml:lang="Bo-Ltn">nyon mongs</term>
-                            <term status="verified" xml:lang="bo">ཉོན་མོངས།</term>
-
-                            <term status="verified" xml:lang="Sa-Ltn">kleśa</term>
-
-                            <term type="definition">Literally “pain,” “torment,” or “affliction.” In Buddhist Hybrid Sanskrit it literally means
+                            <term type="translationMain">Affliction</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">kleśa</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">nyon mongs</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">ཉོན་མོངས།</term>
+                            <note type="definition">
+                                <p>Literally “pain,” “torment,” or “affliction.” In Buddhist Hybrid Sanskrit it literally means
                                 “impurity” or “depravity.” In its technical use in Buddhism it means any negative quality in the mind that causes
                                 continued existence in saṃsāra. There are said to be 84,000 of these negative mental qualities for which the 84,000
                                 categories of the Buddha’s teachings serve as the antidote. These mental disturbances can be subsumed into the three
                                 or five poisons of attachment, anger, and ignorance plus arrogance and jealousy. Also translated here as “disturbing
-                                emotions.”</term>
+                                emotions.”</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
-                        <gloss type="term" xml:id="UT22084-061-001-708">
-                            <term>mahoraga</term>
-                            <term status="verified" xml:lang="Bo-Ltn">lto ’phye chen po</term>
-                            <term status="verified" xml:lang="bo">ལྟོ་འཕྱེ་ཆེན་པོ།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">mahoraga</term>
-                            <term type="definition">Literally “large serpent.” A subterranean semidivine being that takes the form of a large serpent,
-                                sometimes with a human torso and head.</term>
+                        <gloss xml:id="UT22084-061-001-708" type="term" mode="match">
+                            <term type="translationMain">mahoraga</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">mahoraga</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">lto ’phye chen po</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">ལྟོ་འཕྱེ་ཆེན་པོ།</term>
+                            <note type="definition" rend="override">
+                                <p>Literally “large serpent.” A subterranean semidivine being that takes the form of a large serpent, sometimes with a human torso and head.</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss xml:id="UT22084-061-001-709" type="term" mode="match">
-                            <term>Kinnara</term>
-                            <term xml:lang="Bo-Ltn" status="verified">mi ’am ci</term>
-                            <term xml:lang="bo">མི་འམ་ཅི།</term>
-                            <term xml:lang="Sa-Ltn" status="verified">kinnara</term>
-                            <term type="definition">A class of semidivine beings that resemble humans to the degree that their very name‍—which means
-                                “Is that a man?”‍—suggests some confusion as to their divine status. Kinnaras are mythological beings found in both
-                                Buddhist and Hindu literature, where they are portrayed as creatures half human, half animal (horse or bird). They are
-                                also usually depicted as highly skilled celestial musicians.</term>
+                            <term type="translationMain">Kinnara</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">kinnara</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">mi ’am ci</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">མི་འམ་ཅི།</term>
+                            <note type="definition" rend="override">
+                                <p>A class of semidivine beings that resemble humans to the degree that their very name‍—which means “Is that a man?”‍—suggests some confusion as to their divine status. Kinnaras are mythological beings found in both Buddhist and Hindu literature, where they are portrayed as creatures half human, half animal (horse or bird). They are also usually depicted as highly skilled celestial musicians.</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
-                        <gloss type="term" xml:id="UT22084-061-001-710">
-                            <term>garuḍa</term>
-                            <term status="verified" xml:lang="Bo-Ltn">mkha’ lding</term>
-                            <term status="verified" xml:lang="bo">མཁའ་ལྡིང་།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">garuḍa</term>
-                            <term type="definition">In Indian religious mythology, the garuḍa is an eagle-like sun bird with an enormous wingspan that
-                                is regarded as the king of all birds. They are traditionally enemies of the nāgas. In the Vedas, they are said to have
-                                brought nectar from the heavens to earth.</term>
+                        <gloss xml:id="UT22084-061-001-710" type="term" mode="match">
+                            <term type="translationMain">garuḍa</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">garuḍa</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">mkha’ lding</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">མཁའ་ལྡིང་།</term>
+                            <note type="definition" rend="override">
+                                <p>In Indian religious mythology, the garuḍa is an eagle-like sun bird with an enormous wingspan that is regarded as the king of all birds. They are traditionally enemies of the nāgas. In the Vedas, they are said to have brought nectar from the heavens to earth.</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
-                        <gloss type="term" xml:id="UT22084-061-001-711">
-                            <term>gandharva</term>
-                            <term status="verified" xml:lang="Bo-Ltn">dri za</term>
-                            <term status="verified" xml:lang="bo">དྲི་ཟ།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">gandharva</term>
-                            <term type="definition">The term generally refers to a class of non-human beings sometimes known as “celestial musicians.”
-                                In Abhidharma cosmology, the term is also used to refer to the mental body assumed by any sentient being in the realm
-                                of desire (<foreign xml:lang="Sa-Ltn">kāma­dhātu</foreign>) during the intermediate state between death and rebirth.
-                                Gandharvas are said to live on fragrances in the desire realm, hence the Tibetan translation <foreign xml:lang="Bo-Ltn">dri za</foreign>, meaning “scent eater.”</term>
+                        <gloss xml:id="UT22084-061-001-711" type="term" mode="match">
+                            <term type="translationMain">gandharva</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">gandharva</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">dri za</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">དྲི་ཟ།</term>
+                            <note type="definition" rend="override">
+                                <p>The term generally refers to a class of non-human beings sometimes known as “celestial musicians.” In Abhidharma cosmology, the term is also used to refer to the mental body assumed by any sentient being in the realm of desire (<foreign xml:lang="Sa-Ltn">kāma­dhātu</foreign>) during the intermediate state between death and rebirth. Gandharvas are said to live on fragrances in the desire realm, hence the Tibetan translation <foreign xml:lang="Bo-Ltn">dri za</foreign>, meaning “scent eater.”</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="term" xml:id="UT22084-061-001-707">
-                            <term>yakṣa</term>
-                            <term status="verified" xml:lang="Bo-Ltn">gnod sbyin</term>
-                            <term status="verified" xml:lang="bo">གནོད་སྦྱིན།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">yakṣa</term>
-                            <term type="definition">A class of semidivine beings said to dwell in the north, under the jurisdiction of the Great King
+                            <term type="translationMain">yakṣa</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">yakṣa</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">gnod sbyin</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">གནོད་སྦྱིན།</term>
+                            <note type="definition">
+                                <p>A class of semidivine beings said to dwell in the north, under the jurisdiction of the Great King
                                 Vaiśravaṇa. They are associated with water, trees, fertility, and treasures, and are said to haunt or protect natural
                                 places as well as towns. Yakṣas can be malevolent or benevolent, and are known for bestowing wealth and other
-                                boons.</term>
+                                boons.</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="term" xml:id="UT22084-061-001-706">
-                            <term>nāga</term>
-                            <term status="verified" xml:lang="Bo-Ltn">klu</term>
-                            <term status="verified" xml:lang="bo">ཀླུ།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">nāga</term>
-                            <term type="definition">A semidivine class of beings who live in subterranean aquatic environments and who are known to
-                                hoard wealth and esoteric teachings. They are associated with snakes and serpents.</term>
+                            <term type="translationMain">nāga</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">nāga</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">klu</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">ཀླུ།</term>
+                            <note type="definition" rend="override">
+                                <p>A semidivine class of beings who live in subterranean aquatic environments and who are known to
+                                hoard wealth and esoteric teachings. They are associated with snakes and serpents.</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
-                        <gloss type="term" xml:id="UT22084-061-001-704">
-                            <term>asura</term>
-                            <term status="verified" xml:lang="Bo-Ltn">lha ma yin</term>
-                            <term status="verified" xml:lang="bo">ལྷ་མ་ཡིན།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">asura</term>
-                            <term type="definition">One of the six classes of sentient beings. The asuras are dominated by envy, ambition, and
-                                hostility and are incessantly embroiled in disputes with the gods. They are frequently portrayed in brahmanical and
-                                Buddhist mythology as having a disruptive effect on cosmic and social harmony.</term>
+                        <gloss xml:id="UT22084-061-001-704" type="term" mode="match">
+                            <term type="translationMain">asura</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">asura</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">lha ma yin</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">ལྷ་མ་ཡིན།</term>
+                            <note type="definition" rend="override">
+                                <p>One of the six classes of sentient beings. The asuras are dominated by envy, ambition, and hostility and are incessantly embroiled in disputes with the gods. They are frequently portrayed in brahmanical and Buddhist mythology as having a disruptive effect on cosmic and social harmony.</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="term" xml:id="UT22084-061-001-705">
-                            <term>defilement</term>
-                            <term status="verified" xml:lang="Bo-Ltn">zag pa</term>
-                            <term status="verified" xml:lang="bo">ཟག་པ།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">āsrava</term>
-                            <term type="definition">Literally, “to flow” or “to ooze.” Mental defilements or contaminations that “flow out” toward the
+                            <term type="translationMain">defilement</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">āsrava</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">zag pa</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">ཟག་པ།</term>
+                            <note type="definition" rend="override">
+                                <p>Literally, “to flow” or “to ooze.” Mental defilements or contaminations that “flow out” toward the
                                 objects of cyclic existence, binding us to them. Vasubandhu offers two alternative explanations of this term: “They
                                 cause beings to remain (<foreign xml:lang="Sa-Ltn" type="term">āsayanti</foreign>) within saṃsāra” and “They flow from
                                 the Summit of Existence down to the Unwavering, out of the six wounds that are the entrances” (<foreign xml:lang="Sa-Ltn" type="quote">āsayanti saṃsāre āsravanti bhavāgrādyāvadavīciṃ ṣaḍbhir āyatana­vraṇair
                                     ityāsravāḥ</foreign>, <title xml:lang="Sa-Ltn">Abhidharma­kośa­bhāṣya</title> on 5.40,<ref rend="pending" target="https://read.84000.co/translation/toh4090.html"/><!--5.40--> Pradhan 1967, p. 308). The “Summit of
                                 Existence” is the highest point within saṃsāra, while the hell called “Unwavering” is the lowest; the six entrances
                                 here refer to the five sense faculties plus the mind, i.e., the six internal entrances in the scheme of twelve
-                                entrances.</term>
+                                entrances.</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="term" xml:id="UT22084-061-001-490">
-                            <term>aggregate</term>
-                            <term status="verified" xml:lang="Bo-Ltn">phung po </term>
-                            <term status="verified" xml:lang="bo">ཕུང་པོ།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">skandha</term>
-                            <term type="definition">Five collections of similar phenomena, under which all compounded dharmas may be included: form,
+                            <term type="translationMain">aggregate</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">skandha</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">phung po</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">ཕུང་པོ།</term>
+                            <note type="definition">
+                                <p>Five collections of similar phenomena, under which all compounded dharmas may be included: form,
                                 feeling, perception, formation, and consciousness. On the individual level the five aggregates refer to the basis upon
-                                which the mistaken idea of a self is projected.</term>
+                                which the mistaken idea of a self is projected.</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss xml:id="UT22084-061-001-491" type="term" mode="marked">
-                            <term>attainment</term>
-                            <term status="verified" xml:lang="Bo-Ltn">snyoms par ’jug pa</term>
-                            <term status="verified" xml:lang="bo">སྙོམས་པར་འཇུག་པ།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">samāpatti</term>
-                            <term type="definition">A technical term referring to a meditative state attained through the practice of concentration.
+                            <term type="translationMain">attainment</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">samāpatti</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">snyoms par ’jug pa</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">སྙོམས་པར་འཇུག་པ།</term>
+                            <note type="definition">
+                                <p>A technical term referring to a meditative state attained through the practice of concentration.
                                 (The word “attainment” is also used here to translate non-technical words that have the sense of “obtain” or
-                                “acquire.”)</term>
+                                “acquire.”)</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="term" xml:id="UT22084-061-001-492">
-                            <term>dependent origination</term>
-                            <term status="verified" xml:lang="Bo-Ltn">rten cing ’brel par ’byung ba </term>
-                            <term status="verified" xml:lang="bo">རྟེན་ཅིང་འབྲེལ་པར་འབྱུང་བ།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">pratītyasamutpāda</term>
-                            <term type="definition">The relative nature of phenomena, which arises in dependence upon causes and conditions. Together
-                                with the four truths of the noble ones, this was one of the first teachings given by the Buddha.</term>
+                            <term type="translationMain">dependent origination</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">pratītyasamutpāda</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">rten cing ’brel par ’byung ba</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">རྟེན་ཅིང་འབྲེལ་པར་འབྱུང་བ།</term>
+                            <note type="definition">
+                                <p>The relative nature of phenomena, which arises in dependence upon causes and conditions. Together
+                                with the four truths of the noble ones, this was one of the first teachings given by the Buddha.</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss xml:id="UT22084-061-001-493" type="term" mode="match">
-                            <term>Eight liberations</term>
-                            <term xml:lang="Bo-Ltn" status="verified">rnam par thar pa brgyad</term>
-                            <term xml:lang="bo">རྣམ་པར་ཐར་པ་བརྒྱད།</term>
-                            <term xml:lang="Sa-Ltn" status="verified">aṣṭavimokṣa</term>
-                            <term type="definition">A series of progressively more subtle states of meditative realization or attainment. There are
+                            <term type="translationMain">Eight liberations</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">aṣṭavimokṣa</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">rnam par thar pa brgyad</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">རྣམ་པར་ཐར་པ་བརྒྱད།</term>
+                            <note type="definition">
+                                <p>A series of progressively more subtle states of meditative realization or attainment. There are
                                 several presentations of these found in the canonical literature. One of the most common is as follows: (1) One
                                 observes form while the mind dwells at the level of the form realm. (2) One observes forms externally while discerning
                                 formlessness internally. (3) One dwells in the direct experience of the body’s pleasant aspect. (4) One dwells in the
@@ -3595,16 +3731,18 @@
                                 Transcending the sphere of infinite consciousness, one dwells in the realization of the sphere of nothingness. (7)
                                 Transcending the sphere of nothingness, one dwells in the realization of the sphere of neither perception nor
                                 nonperception. (8) Transcending the sphere of neither perception and nonperception, one dwells in the realization of
-                                the cessation of conception and feeling.</term>
+                                the cessation of conception and feeling.</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="term" xml:id="UT22084-061-001-494">
-                            <term>eighth-lowest level</term>
-                            <term status="verified" xml:lang="Bo-Ltn">brgyad pa </term>
-                            <term status="verified" xml:lang="bo">བརྒྱད་པ།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">aṣṭamaka</term>
-                            <term type="definition">A person who is eight steps away in the arc of their development from becoming an arhat (Tib.
+                            <term type="translationMain">eighth-lowest level</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">aṣṭamaka</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">brgyad pa</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">བརྒྱད་པ།</term>
+                            <note type="definition">
+                                <p>A person who is eight steps away in the arc of their development from becoming an arhat (Tib.
                                     <foreign xml:lang="Bo-Ltn">dgra bcom pa</foreign>). Specifically, this term refers to one who is on the cusp of
                                 becoming a stream-enterer (Skt. <foreign xml:lang="Sa-Ltn">srotaāpanna</foreign>; Tib. <foreign xml:lang="Bo-Ltn">rgyun du zhugs pa</foreign>), and is the first and lowest stage in a list of eight stages or classes of a noble
                                 person (Skt. <foreign xml:lang="Sa-Ltn">āryapudgala</foreign>). The person at this lowest stage in the sequence is
@@ -3616,172 +3754,205 @@
                                 Not to be confused with the ten stages of the bodhisattva’s path, these ten stages mark the progress of one who
                                 sequentially follows the paths of a śrāvaka, pratyekabuddha, and then bodhisattva on their way to complete buddhahood.
                                 In this set of ten stages a person “on the eighth stage” is similarly one who is on the cusp of becoming a
-                                stream-enterer.</term>
+                                stream-enterer.</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="term" xml:id="UT22084-061-001-495">
-                            <term>elder</term>
-                            <term status="verified" xml:lang="Bo-Ltn">gnas brtan </term>
-                            <term status="verified" xml:lang="bo">གནས་བརྟན།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">sthavira</term>
-                            <term type="definition">A senior student of the Buddha.</term>
+                            <term type="translationMain">elder</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">sthavira</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">gnas brtan</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">གནས་བརྟན།</term>
+                            <note type="definition">
+                                <p>A senior student of the Buddha.</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="term" xml:id="UT22084-061-001-496">
-                            <term>elements</term>
-                            <term status="verified" xml:lang="Bo-Ltn">khams </term>
-                            <term status="verified" xml:lang="bo">ཁམས།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">dhātu</term>
-                            <term type="definition">One way of describing experience and the world in terms of eighteen elements (eye, form, and eye
+                            <term type="translationMain">elements</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">dhātu</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">khams</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">ཁམས།</term>
+                            <note type="definition">
+                                <p>One way of describing experience and the world in terms of eighteen elements (eye, form, and eye
                                 consciousness; ear, sound, and ear consciousness; nose, odor, and nose consciousness; tongue, taste, and tongue
-                                consciousness; body, touch, and body consciousness; mind, mental objects, and mind consciousness). </term>
+                                consciousness; body, touch, and body consciousness; mind, mental objects, and mind consciousness). </p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="term" xml:id="UT22084-061-001-497">
-                            <term>emptiness</term>
-                            <term status="verified" xml:lang="Bo-Ltn">stong pa nyid </term>
-                            <term status="verified" xml:lang="bo">སྟོང་པ་ཉིད།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">śūnyatā</term>
-                            <term type="definition">One of the three gateways to liberation; the empty nature of phenomena.</term>
+                            <term type="translationMain">emptiness</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">śūnyatā</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">stong pa nyid</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">སྟོང་པ་ཉིད།</term>
+                            <note type="definition" rend="override">
+                                <p>One of the three gateways to liberation; the empty nature of phenomena.</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="term" xml:id="UT22084-061-001-499">
-                            <term>formative factor</term>
-                            <term status="verified" xml:lang="Bo-Ltn">mngon par ’du byed pa </term>
-                            <term status="verified" xml:lang="bo">མངོན་པར་འདུ་བྱེད་པ།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">abhisaṃskāra</term>
-                            <term type="definition">Mental factors that perpetuate karmic activity.</term>
+                            <term type="translationMain">formative factor</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">abhisaṃskāra</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">mngon par ’du byed pa</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">མངོན་པར་འདུ་བྱེད་པ།</term>
+                            <note type="definition">
+                                <p>Mental factors that perpetuate karmic activity.</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="term" xml:id="UT22084-061-001-500">
-                            <term>foundations for training</term>
-                            <term status="verified" xml:lang="Bo-Ltn">bslab pa’i gzhi </term>
-                            <term status="verified" xml:lang="bo">བསླབ་པའི་གཞི།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">śikṣāpada</term>
-                            <term type="definition">A basic precept observed as the foundation for one’s spiritual life. Here it refers to the five
-                                precepts of abstaining from killing, stealing, sexual misconduct, lying, and using intoxicants.</term>
+                            <term type="translationMain">foundations for training</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">śikṣāpada</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">bslab pa’i gzhi</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">བསླབ་པའི་གཞི།</term>
+                            <note type="definition">
+                                <p>A basic precept observed as the foundation for one’s spiritual life. Here it refers to the five
+                                precepts of abstaining from killing, stealing, sexual misconduct, lying, and using intoxicants.</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="term" xml:id="UT22084-061-001-501">
-                            <term>hearer</term>
-                            <term status="verified" xml:lang="Bo-Ltn">nyan thos </term>
-                            <term status="verified" xml:lang="bo">ཉན་ཐོས།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">śrāvaka</term>
-                            <term type="definition">A person who practices according to the vehicle of the hearers, or the vehicle focusing on
+                            <term type="translationMain">hearer</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">śrāvaka</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">nyan thos</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">ཉན་ཐོས།</term>
+                            <note type="definition">
+                                <p>A person who practices according to the vehicle of the hearers, or the vehicle focusing on
                                 individual liberation from cyclic existence through attaining the state of a worthy one the monastic lifestyle and
-                                one’s own liberation from cyclic existence.</term>
+                                one’s own liberation from cyclic existence.</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="term" xml:id="UT22084-061-001-502">
-                            <term>limit of reality</term>
-                            <term status="verified" xml:lang="Bo-Ltn">yang dag pa’i mtha’ </term>
-                            <term status="verified" xml:lang="bo">ཡང་དག་པའི་མཐའ།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">bhūtakoṭi</term>
-                            <term type="definition">This term has several meanings, depending on the context: (1) the dividing line between saṃsāra
+                            <term type="translationMain">limit of reality</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">bhūtakoṭi</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">yang dag pa’i mtha’</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">ཡང་དག་པའི་མཐའ།</term>
+                            <note type="definition">
+                                <p>This term has several meanings, depending on the context: (1) the dividing line between saṃsāra
                                 and nirvāṇa, (2) the inferior realization of the hearers and solitary buddhas, (3) the nature of phenomena
                                 (emptiness), and (4) full realization of the ultimate truth. In this text it is the second meaning that should be
-                                understood.</term>
+                                understood.</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="term" xml:id="UT22084-061-001-503">
-                            <term>Mīmāṃsaka</term>
-                            <term status="verified" xml:lang="Bo-Ltn">spyod pa pa </term>
-                            <term status="verified" xml:lang="bo">སྤྱོད་པ་པ།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">mīmāṃsaka</term>
-                            <term type="definition">The follower of the Mīmāṃsā non-Buddhist philosophical school in ancient India. The term <foreign type="term" xml:lang="Sa-Ltn">mīmāṃsā</foreign> means “thoroughgoing analysis or investigation.” The school is
+                            <term type="translationMain">Mīmāṃsaka</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">mīmāṃsaka</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">spyod pa pa</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">སྤྱོད་པ་པ།</term>
+                            <note type="definition">
+                                <p>The follower of the Mīmāṃsā non-Buddhist philosophical school in ancient India. The term <foreign type="term" xml:lang="Sa-Ltn">mīmāṃsā</foreign> means “thoroughgoing analysis or investigation.” The school is
                                 commonly divided into two groups, the first of which (<foreign type="term" xml:lang="Sa-Ltn">pūrvamīmāṃsā</foreign>,
                                     <foreign type="term" xml:lang="Sa-Ltn">karmamīmāṃsa</foreign>) focuses on the correct interpretation of the Vedic
-                                hymns and rituals, and the second of which (<foreign type="term" xml:lang="Sa-Ltn">uttaramīmāṃsā</foreign>, <foreign type="term" xml:lang="Sa-Ltn">brahmamīmāṃsā</foreign>, etc.) focuses on the nature of universal reality.</term>
+                                hymns and rituals, and the second of which (<foreign type="term" xml:lang="Sa-Ltn">uttaramīmāṃsā</foreign>, <foreign type="term" xml:lang="Sa-Ltn">brahmamīmāṃsā</foreign>, etc.) focuses on the nature of universal reality.</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="term" xml:id="UT22084-061-001-504">
-                            <term>nine gradual attainments</term>
-                            <term status="verified" xml:lang="Bo-Ltn">mthar gyis gnas pa’i snyoms par ’jug pa dgu </term>
-                            <term status="verified" xml:lang="bo">མཐར་གྱིས་གནས་པའི་སྙོམས་པར་འཇུག་པ་དགུ</term>
-                            <term status="verified" xml:lang="Sa-Ltn">navānupūrvavihārasamāpatti</term>
-                            <term type="definition">Nine states of concentration that one may attain during a human life, corresponding to the four
+                            <term type="translationMain">nine gradual attainments</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">navānupūrvavihārasamāpatti</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">mthar gyis gnas pa’i snyoms par ’jug pa dgu</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">མཐར་གྱིས་གནས་པའི་སྙོམས་པར་འཇུག་པ་དགུ</term>
+                            <note type="definition">
+                                <p>Nine states of concentration that one may attain during a human life, corresponding to the four
                                 concentrations found in the form realm, the four concentrations found in the formless realm, and the
-                                    <term>attainment</term><!-- snyoms par ’jug pa --> of the state of cessation.</term>
+                                    <term>attainment</term><!-- snyoms par ’jug pa --> of the state of cessation.</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="term" xml:id="UT22084-061-001-505">
-                            <term>Nirgrantha</term>
-                            <term status="verified" xml:lang="Bo-Ltn">gcer bu pa </term>
-                            <term status="verified" xml:lang="bo">གཅེར་བུ་པ།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">nirgrantha</term>
-                            <term type="definition">In Buddhist literature this term often refers to followers of the Jain religion, but it can also
-                                refer to members of any other “naked ascetic” order.</term>
+                            <term type="translationMain">Nirgrantha</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">nirgrantha</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">gcer bu pa</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">གཅེར་བུ་པ།</term>
+                            <note type="definition">
+                                <p>In Buddhist literature this term often refers to followers of the Jain religion, but it can also
+                                refer to members of any other “naked ascetic” order.</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="term" xml:id="UT22084-061-001-506">
-                            <term>non-Buddhist</term>
-                            <term status="verified" xml:lang="Bo-Ltn">mu stegs can </term>
-                            <term status="verified" xml:lang="bo">མུ་སྟེགས་ཅན།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">tīrthika</term>
-                            <term type="definition">An ascetic or mendicant follower of a non-Buddhist philosophy or religion.</term>
+                            <term type="translationMain">non-Buddhist</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">tīrthika</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">mu stegs can</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">མུ་སྟེགས་ཅན།</term>
+                            <note type="definition">
+                                <p>An ascetic or mendicant follower of a non-Buddhist philosophy or religion.</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="term" xml:id="UT22084-061-001-507">
-                            <term>non-returner</term>
-                            <term status="verified" xml:lang="Bo-Ltn">phyir mi ’ong ba </term>
-                            <term status="verified" xml:lang="bo">ཕྱིར་མི་འོང་བ།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">anāgāmin</term>
-                            <term type="definition">One who has achieved the third level of attainment on the path of the hearers, and who is free
-                                from further rebirth in the desire realm.</term>
+                            <term type="translationMain">non-returner</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">anāgāmin</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">phyir mi ’ong ba</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">ཕྱིར་མི་འོང་བ།</term>
+                            <note type="definition">
+                                <p>One who has achieved the third level of attainment on the path of the hearers, and who is free
+                                from further rebirth in the desire realm.</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="term" xml:id="UT22084-061-001-508">
-                            <term>Parivrājaka</term>
-                            <term status="verified" xml:lang="Bo-Ltn">kun tu rgyu ba </term>
-                            <term status="verified" xml:lang="bo">ཀུན་ཏུ་རྒྱུ་བ།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">parivrājaka</term>
-                            <term type="definition">A class of traveling ascetics (both male and female) who held a variety of differing non-Buddhist
-                                views.</term>
+                            <term type="translationMain">Parivrājaka</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">parivrājaka</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">kun tu rgyu ba</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">ཀུན་ཏུ་རྒྱུ་བ།</term>
+                            <note type="definition">
+                                <p>A class of traveling ascetics (both male and female) who held a variety of differing non-Buddhist
+                                views.</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="term" xml:id="UT22084-061-001-509">
-                            <term>perfection </term>
-                            <term status="verified" xml:lang="Bo-Ltn">pha rol tu phyin pa </term>
-                            <term status="verified" xml:lang="bo">ཕ་རོལ་ཏུ་ཕྱིན་པ།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">pāramitā</term>
-                            <term type="definition">This term is used to refer to the main trainings of a bodhisattva. Because these trainings, when
+                            <term type="translationMain">perfection</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">pāramitā</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">pha rol tu phyin pa</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">ཕ་རོལ་ཏུ་ཕྱིན་པ།</term>
+                            <note type="definition">
+                                <p>This term is used to refer to the main trainings of a bodhisattva. Because these trainings, when
                                 brought to perfection, lead one to transcend saṃsāra and reach the full awakening of a buddha, they receive the
                                 Sanskrit name <foreign xml:lang="Sa-Ltn">pāramitā</foreign>, meaning “perfection” or “gone to the farther shore.” Most
-                                commonly listed as six: generosity, discipline, patience, diligence, concentration, and insight. </term>
+                                commonly listed as six: generosity, discipline, patience, diligence, concentration, and insight. </p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="term" xml:id="UT22084-061-001-510">
-                            <term>roots of virtue</term>
-                            <term status="verified" xml:lang="Bo-Ltn">dge ba’i rtsa ba </term>
-                            <term status="verified" xml:lang="bo">དགེ་བའི་རྩ་བ།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">kuśalamūla</term>
-                            <term type="definition">Wholesome actions that are conducive to happiness.</term>
+                            <term type="translationMain">roots of virtue</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">kuśalamūla</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">dge ba’i rtsa ba</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">དགེ་བའི་རྩ་བ།</term>
+                            <note type="definition">
+                                <p>Wholesome actions that are conducive to happiness.</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="term" xml:id="UT22084-061-001-511">
-                            <term>seat of awakening</term>
-                            <term status="verified" xml:lang="Bo-Ltn">byang chub kyi snying po </term>
-                            <term status="verified" xml:lang="bo">བྱང་ཆུབ་ཀྱི་སྙིང་པོ།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">bodhimaṇḍa</term>
-                            <term type="definition">The place where the Buddha Śākyamuni achieved awakening and where countless other buddhas are said
+                            <term type="translationMain">seat of awakening</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">bodhimaṇḍa</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">byang chub kyi snying po</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">བྱང་ཆུབ་ཀྱི་སྙིང་པོ།</term>
+                            <note type="definition">
+                                <p>The place where the Buddha Śākyamuni achieved awakening and where countless other buddhas are said
                                 to have achieved awakening. This is understood to be located under the bodhi tree in present-day Bodhgaya, India. It
-                                can also metaphorically refer to the state of awakening itself.</term>
+                                can also metaphorically refer to the state of awakening itself.</p>
+                            </note>
                         </gloss>
                     </item>
                     <!--<item>
@@ -3795,267 +3966,321 @@
                 </item>-->
                     <item>
                         <gloss type="term" xml:id="UT22084-061-001-513">
-                            <term>sense field</term>
-                            <term status="verified" xml:lang="Bo-Ltn">skye mched </term>
-                            <term status="verified" xml:lang="bo">སྐྱེ་མཆེད།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">āyatana</term>
-                            <term type="definition">One way of describing experience and the world in terms of twelve sense fields (eye and form, ear
-                                and sound, nose and odor, tongue and taste, body and touch, mind and mental objects).</term>
+                            <term type="translationMain">sense field</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">āyatana</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">skye mched</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">སྐྱེ་མཆེད།</term>
+                            <note type="definition">
+                                <p>One way of describing experience and the world in terms of twelve sense fields (eye and form, ear
+                                and sound, nose and odor, tongue and taste, body and touch, mind and mental objects).</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="term" xml:id="UT22084-061-001-514">
-                            <term>signlessness</term>
-                            <term status="verified" xml:lang="Bo-Ltn">mtshan ma med pa </term>
-                            <term status="verified" xml:lang="bo">མཚན་མ་མེད་པ།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">animitta</term>
-                            <term type="definition">One of the three gateways to liberation; the ultimate absence of <term type="ignore">marks</term>
-                                and signs in perceived objects.</term>
+                            <term type="translationMain">signlessness</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">animitta</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">mtshan ma med pa</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">མཚན་མ་མེད་པ།</term>
+                            <note type="definition">
+                                <p>One of the three gateways to liberation; the ultimate absence of <term rend="ignore">marks</term>
+                                and signs in perceived objects.</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="term" xml:id="UT22084-061-001-515">
-                            <term>six superknowledges</term>
-                            <term status="verified" xml:lang="Bo-Ltn">mngon par shes pa drug </term>
-                            <term status="verified" xml:lang="bo">མངོན་པར་ཤེས་པ་དྲུག</term>
-                            <term status="verified" xml:lang="Sa-Ltn">ṣaḍabhijñā</term>
-                            <term type="definition">The same as the five superknowledges—divine sight, divine hearing, knowledge of the minds of
+                            <term type="translationMain">six superknowledges</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">ṣaḍabhijñā</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">mngon par shes pa drug</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">མངོན་པར་ཤེས་པ་དྲུག</term>
+                            <note type="definition">
+                                <p>The same as the five superknowledges—divine sight, divine hearing, knowledge of the minds of
                                 others, remembrance of past lives, ability to perform miracles—plus the ability to destroy all mental
-                                defilements.</term>
+                                defilements.</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="term" xml:id="UT22084-061-001-516">
-                            <term>solitary buddha </term>
-                            <term status="verified" xml:lang="Bo-Ltn">rang sangs rgyas </term>
-                            <term status="verified" xml:lang="bo">རང་སངས་རྒྱས།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">pratyekabuddha</term>
-                            <term type="definition">An individual who, in his or her last life, attains realization by realizing the nature of
-                                interdependent origination without relying upon a spiritual guide.</term>
+                            <term type="translationMain">solitary buddha</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">pratyekabuddha</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">rang sangs rgyas</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">རང་སངས་རྒྱས།</term>
+                            <note type="definition" rend="override">
+                                <p>An individual who, in his or her last life, attains realization by realizing the nature of
+                                interdependent origination without relying upon a spiritual guide.</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="term" xml:id="UT22084-061-001-517">
-                            <term>stream enterer</term>
-                            <term status="verified" xml:lang="Bo-Ltn">rgyun du zhugs pa </term>
-                            <term status="verified" xml:lang="bo">རྒྱུན་དུ་ཞུགས་པ།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">srotaāpanna</term>
-                            <term type="definition">One who has achieved the first level of attainment on the path of the hearers, and who has entered
-                                the “stream” of practice that leads to nirvāṇa.</term>
+                            <term type="translationMain">stream enterer</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">srotaāpanna</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">rgyun du zhugs pa</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">རྒྱུན་དུ་ཞུགས་པ།</term>
+                            <note type="definition">
+                                <p>One who has achieved the first level of attainment on the path of the hearers, and who has entered
+                                the “stream” of practice that leads to nirvāṇa.</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="term" xml:id="UT22084-061-001-518">
-                            <term>ten virtuous actions</term>
-                            <term status="verified" xml:lang="Bo-Ltn">dge ba bcu </term>
-                            <term status="verified" xml:lang="bo">དགེ་བ་བཅུ།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">daśakuśala </term>
-                            <term type="definition">Abstaining from killing, taking what is not given, sexual misconduct, lying, uttering divisive
-                                talk, speaking harsh words, gossiping, covetousness, ill will, and wrong views.</term>
+                            <term type="translationMain">ten virtuous actions</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">daśakuśala</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">dge ba bcu</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">དགེ་བ་བཅུ།</term>
+                            <note type="definition">
+                                <p>Abstaining from killing, taking what is not given, sexual misconduct, lying, uttering divisive
+                                talk, speaking harsh words, gossiping, covetousness, ill will, and wrong views.</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="term" xml:id="UT22084-061-001-519">
-                            <term>three groups of beings</term>
-                            <term status="verified" xml:lang="Bo-Ltn">phung po gsum </term>
-                            <term status="verified" xml:lang="bo">ཕུང་པོ་གསུམ།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">triskandha</term>
-                            <term type="definition">A division of all beings into three groups: noble beings, evil beings, and those in
-                                between.</term>
+                            <term type="translationMain">three groups of beings</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">triskandha</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">phung po gsum</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">ཕུང་པོ་གསུམ།</term>
+                            <note type="definition">
+                                <p>A division of all beings into three groups: noble beings, evil beings, and those in
+                                between.</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="term" xml:id="UT22084-061-001-520">
-                            <term>trichiliocosm</term>
-                            <term status="verified" xml:lang="Bo-Ltn">stong gsum </term>
-                            <term status="verified" xml:lang="bo">སྟོང་གསུམ།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">trisāhasralokadhātu</term>
-                            <term type="definition">A universe containing one billion worlds.</term>
+                            <term type="translationMain">trichiliocosm</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">trisāhasralokadhātu</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">stong gsum</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">སྟོང་གསུམ།</term>
+                            <note type="definition">
+                                <p>A universe containing one billion worlds.</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="term" xml:id="UT22084-061-001-521">
-                            <term>wishlessness</term>
-                            <term status="verified" xml:lang="Bo-Ltn">smon pa med pa </term>
-                            <term status="verified" xml:lang="bo">སྨོན་པ་མེད་པ།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">apraṇihita</term>
-                            <term type="definition">One of the three gateways to liberation; the absence of conceptual modes of mind.</term>
+                            <term type="translationMain">wishlessness</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">apraṇihita</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">smon pa med pa</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">སྨོན་པ་མེད་པ།</term>
+                            <note type="definition">
+                                <p>One of the three gateways to liberation; the absence of conceptual modes of mind.</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="term" xml:id="UT22084-061-001-522">
-                            <term>worthy one</term>
-                            <term status="verified" xml:lang="Bo-Ltn">dgra bcom pa </term>
-                            <term status="verified" xml:lang="bo">དགྲ་བཅོམ་པ།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">arhat</term>
-                            <term type="definition">One who has achieved the fourth and final level of attainment on the path of the hearers, and who
+                            <term type="translationMain">worthy one</term>
+                            <term type="translationAlternative">worthy</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">arhat</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">dgra bcom pa</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">དགྲ་བཅོམ་པ།</term>
+                            <note type="definition">
+                                <p>One who has achieved the fourth and final level of attainment on the path of the hearers, and who
                                 has attained liberation with the cessation of all mental afflictions. It is also used as an epithet of the buddhas.
-                                The Skt. means either “worthy one” or “one who has killed their foes” (i.e., afflictions).</term>
-                            <term type="alternative">worthy</term>
+                                The Skt. means either “worthy one” or “one who has killed their foes” (i.e., afflictions).</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
-                        <gloss type="person" xml:id="UT22084-061-001-523">
-                            <term>Ānanda</term>
-                            <term status="verified" xml:lang="Bo-Ltn">kun dga’ bo </term>
-                            <term status="verified" xml:lang="bo">ཀུན་དགའ་བོ།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">Ānanda</term>
-                            <term type="definition">The Buddha’s cousin and principal attendant.</term>
+                        <gloss xml:id="UT22084-061-001-523" type="person" mode="match">
+                            <term type="translationMain">Ānanda</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">ānanda</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">kun dga’ bo</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">ཀུན་དགའ་བོ།</term>
+                            <note type="definition" rend="override">
+                                <p>The Buddha’s cousin and principal attendant.</p>
+                            </note>
                         </gloss>
                     </item>
-                    <item>
+                    <!--<item>
                         <gloss type="person" xml:id="UT22084-061-001-524">
-                            <term>Anāthapiṇḍada</term>
-                            <term status="verified" xml:lang="Bo-Ltn">mgon med zas sbyin </term>
-                            <term status="verified" xml:lang="bo">མགོན་མེད་ཟས་སྦྱིན།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">Anāthapiṇḍada</term>
-                            <term type="definition">A wealthy merchant in the town of Śrāvastī, famous for his generosity to the poor, who became a
+                            <term type="translationMain">Anāthapiṇḍada</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">anāthapiṇḍada</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">mgon med zas sbyin</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">མགོན་མེད་ཟས་སྦྱིན།</term>
+                            <note type="definition" rend="override">
+                                <p>A wealthy merchant in the town of Śrāvastī, famous for his generosity to the poor, who became a
                                 patron of the Buddha Śākyamuni. He bought Prince Jeta’s Grove (Skt. <foreign xml:lang="Sa-Ltn">Jetavana</foreign>), to
                                 be the Buddha’s first monastery, a place where the monks could stay during the monsoon. Although his Sanskrit name is
                                 Anāthapiṇḍada, he is better known in the West by the Pāli form of his name, Anāthapiṇḍika. Both mean “the one who
-                                gives food to the destitute.”</term>
+                                gives food to the destitute.”</p>
+                            </note>
                         </gloss>
-                    </item>
+                    </item>-->
                     <item>
                         <gloss type="person" xml:id="UT22084-061-001-525">
-                            <term>Brahmā</term>
-                            <term status="verified" xml:lang="Bo-Ltn">tshangs pa </term>
-                            <term status="verified" xml:lang="bo">ཚངས་པ།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">Brahmā</term>
-                            <term type="definition">A divine being who rules the Brahmā realm.</term>
+                            <term type="translationMain">Brahmā</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">brahmā</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">tshangs pa</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">ཚངས་པ།</term>
+                            <note type="definition" rend="override">
+                                <p>A divine being who rules the Brahmā realm.</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="person" xml:id="UT22084-061-001-527">
-                            <term>Great Assemblage</term>
-                            <term status="verified" xml:lang="Bo-Ltn">phung po chen po </term>
-                            <term status="verified" xml:lang="bo">ཕུང་པོ་ཆེན་པོ།</term>
-                            <term xml:lang="Sa-Ltn"/>
-                            <term type="definition">A buddha in the world known as <term>Illusory</term>.</term>
+                            <term type="translationMain">Great Assemblage</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified"/>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">phung po chen po</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">ཕུང་པོ་ཆེན་པོ།</term>
+                            <note type="definition">
+                                <p>A buddha in the world known as <term>Illusory</term>.</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="person" xml:id="UT22084-061-001-528" mode="marked">
-                            <term>Head</term>
-                            <term status="verified" xml:lang="Bo-Ltn">mgo </term>
-                            <term status="verified" xml:lang="bo">མགོ</term>
-                            <term xml:lang="Sa-Ltn"/>
-                            <term type="definition">The name of one of the hearers in the world known as Torch.</term>
+                            <term type="translationMain">Head</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified"/>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">mgo</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">མགོ</term>
+                            <note type="definition">
+                                <p>The name of one of the hearers in the world known as Torch.</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="person" xml:id="UT22084-061-001-529">
-                            <term>Jinamitra</term>
-                            <term status="verified" xml:lang="Bo-Ltn">dzi na mi tra </term>
-                            <term status="verified" xml:lang="bo">ཛི་ན་མི་ཏྲ།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">Jinamitra</term>
-                            <term type="definition">A Kashmiri paṇḍita who was resident in Tibet during the late eighth and early ninth centuries. He
-                                worked with several Tibetan translators on the translation of several sūtras. He is also the author of the <foreign xml:lang="Sa-Ltn">Nyāya­bindu­piṇḍārtha</foreign> (Degé no. 4233), which is contained in the Tengyur (<foreign xml:lang="Bo-Ltn">bstan ’gyur</foreign>).</term>
+                            <term type="translationMain">Jinamitra</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">jinamitra</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">dzi na mi tra</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">ཛི་ན་མི་ཏྲ།</term>
+                            <note type="definition">
+                                <p>A Kashmiri paṇḍita who was resident in Tibet during the late eighth and early ninth centuries. He
+                                worked with several Tibetan translators on the translation of several sūtras. He is also the author of the <foreign xml:lang="Sa-Ltn">Nyāya­bindu­piṇḍārtha</foreign> (Degé no. 4233), which is contained in the Tengyur (<foreign xml:lang="Bo-Ltn">bstan ’gyur</foreign>).</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="person" xml:id="UT22084-061-001-530">
-                            <term>Mahāmaudgalyāyana</term>
-                            <term status="verified" xml:lang="Bo-Ltn">maud gal gyi bu chen po </term>
-                            <term status="verified" xml:lang="bo">མཽད་གལ་གྱི་བུ་ཆེན་པོ།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">Mahāmaudgalyāyana</term>
-                            <term type="definition">One of the closest disciples of the Buddha, known for his miraculous abilities.</term>
+                            <term type="translationMain">Mahāmaudgalyāyana</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">mahāmaudgalyāyana</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">maud gal gyi bu chen po</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">མཽད་གལ་གྱི་བུ་ཆེན་པོ།</term>
+                            <note type="definition">
+                                <p>One of the closest disciples of the Buddha, known for his miraculous abilities.</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="person" xml:id="UT22084-061-001-531">
-                            <term>Māra</term>
-                            <term status="verified" xml:lang="Bo-Ltn">bdud </term>
-                            <term status="verified" xml:lang="bo">བདུད།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">Māra</term>
-                            <term type="definition">A demonic being often bearing the epithet of the “Evil One” (<foreign xml:lang="Sa-Ltn">pāpīyān</foreign>, <foreign xml:lang="Bo-Ltn">sdig can</foreign>), sometimes said to be the principal deity in
+                            <term type="translationMain">Māra</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">māra</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">bdud</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">བདུད།</term>
+                            <note type="definition">
+                                <p>A demonic being often bearing the epithet of the “Evil One” (<foreign xml:lang="Sa-Ltn">pāpīyān</foreign>, <foreign xml:lang="Bo-Ltn">sdig can</foreign>), sometimes said to be the principal deity in
                                 the Heaven of Making Use of Others’ Emanations, the highest paradise in the desire realm; also one of the names of the
-                                god of desire, Kāma in the Vedic tradition. He is portrayed as attempting to prevent the Buddha’s awakening. </term>
+                                god of desire, Kāma in the Vedic tradition. He is portrayed as attempting to prevent the Buddha’s awakening. </p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="person" xml:id="UT22084-061-001-532">
-                            <term>Moonlight</term>
-                            <term status="verified" xml:lang="Bo-Ltn">zla ’od </term>
-                            <term status="verified" xml:lang="bo">ཟླ་འོད།</term>
-                            <term xml:lang="Sa-Ltn"/>
-                            <term type="definition">A buddha in a far-away world.</term>
+                            <term type="translationMain">Moonlight</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified"/>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">zla ’od</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">ཟླ་འོད།</term>
+                            <note type="definition">
+                                <p>A buddha in a far-away world.</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="person" xml:id="UT22084-061-001-533">
-                            <term>Pūrṇa</term>
-                            <term status="verified" xml:lang="Bo-Ltn">gang po </term>
-                            <term status="verified" xml:lang="bo">གང་པོ།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">Pūrṇa</term>
-                            <term type="definition">Same as Pūrṇa Maitrāyaṇīputra.</term>
+                            <term type="translationMain">Pūrṇa</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">pūrṇa</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">gang po</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">གང་པོ།</term>
+                            <note type="definition">
+                                <p>Same as Pūrṇa Maitrāyaṇīputra.</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="person" xml:id="UT22084-061-001-534">
-                            <term>Pūrṇa Maitrāyaṇīputra</term>
-                            <term status="verified" xml:lang="Bo-Ltn">byams ma’i bu gang po </term>
-                            <term status="verified" xml:lang="bo">བྱམས་མའི་བུ་གང་པོ།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">Pūrṇa Maitrāyaṇīputra</term>
-                            <term type="definition">One of the closest disciples of the Buddha, known as the foremost in his ability to teach.</term>
+                            <term type="translationMain">Pūrṇa Maitrāyaṇīputra</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">pūrṇa maitrāyaṇīputra</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">byams ma’i bu gang po</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">བྱམས་མའི་བུ་གང་པོ།</term>
+                            <note type="definition">
+                                <p>One of the closest disciples of the Buddha, known as the foremost in his ability to teach.</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="person" xml:id="UT22084-061-001-535">
-                            <term>Śakra</term>
-                            <term status="verified" xml:lang="Bo-Ltn">brgya byin </term>
-                            <term status="verified" xml:lang="bo">བརྒྱ་བྱིན།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">Śakra</term>
-                            <term type="definition">The lord of the gods. Alternatively known as Indra, the deity that is called “lord of the gods”
+                            <term type="translationMain">Śakra</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">śakra</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">brgya byin</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">བརྒྱ་བྱིན།</term>
+                            <note type="definition">
+                                <p>The lord of the gods. Alternatively known as Indra, the deity that is called “lord of the gods”
                                 dwells on the summit of Mount Sumeru and wields the thunderbolt. The Tibetan translation <foreign xml:lang="Bo-Ltn">brgya byin</foreign> (meaning “one hundred sacrifices”) is based on an etymology that <foreign xml:lang="Sa-Ltn">śakra</foreign> is an abbreviation of <foreign xml:lang="Sa-Ltn">śata-kratu</foreign>, one who has performed a
-                                hundred sacrifices. Each world with a central Sumeru has a Śakra.</term>
+                                hundred sacrifices. Each world with a central Sumeru has a Śakra.</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="person" xml:id="UT22084-061-001-536">
-                            <term>Śākyamuni</term>
-                            <term status="verified" xml:lang="Bo-Ltn">shAkya thub pa </term>
-                            <term status="verified" xml:lang="bo">ཤཱཀྱ་ཐུབ་པ།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">Śākyamuni</term>
-                            <term type="definition">The current buddha of this age.</term>
+                            <term type="translationMain">Śākyamuni</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">śākyamuni</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">shAkya thub pa</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">ཤཱཀྱ་ཐུབ་པ།</term>
+                            <note type="definition" rend="override">
+                                <p>The current buddha of this age.</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="person" xml:id="UT22084-061-001-537">
-                            <term>Śāradvatīputra</term>
-                            <term status="verified" xml:lang="Bo-Ltn">sha ra dwa ti’i bu </term>
-                            <term status="verified" xml:lang="bo">ཤ་ར་དྭ་ཏིའི་བུ།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">Śāradvatīputra</term>
-                            <term type="definition">Lit. “Son of Śāradvatī or Śāri,” more widely known as Śāriputra‍—the contracted version of his
+                            <term type="translationMain">Śāradvatīputra</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">śāradvatīputra</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">sha ra dwa ti’i bu</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">ཤ་ར་དྭ་ཏིའི་བུ།</term>
+                            <note type="definition" rend="override">
+                                <p>Lit. “Son of Śāradvatī or Śāri,” more widely known as Śāriputra‍—the contracted version of his
                                 name‍—he was one of the Buddha’s foremost hearer disciples. Renowned for unparalleled wisdom and knowledge of the
-                                teachings.</term>
+                                teachings.</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="person" xml:id="UT22084-061-001-538">
-                            <term>Unhindered</term>
-                            <term status="verified" xml:lang="Bo-Ltn">thogs pa med pa </term>
-                            <term status="verified" xml:lang="bo">ཐོགས་པ་མེད་པ།</term>
-                            <term xml:lang="Sa-Ltn"/>
-                            <term type="definition">A bodhisattva from the world known as Illusory.</term>
+                            <term type="translationMain">Unhindered</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified"/>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">thogs pa med pa</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">ཐོགས་པ་མེད་པ།</term>
+                            <note type="definition">
+                                <p>A bodhisattva from the world known as Illusory.</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss xml:id="UT22084-061-001-539" type="person" mode="match">
-                            <term>Yeshé Dé</term>
-                            <term status="verified" xml:lang="Bo-Ltn">ye shes sde</term>
-                            <term status="verified" xml:lang="bo">ཡེ་ཤེས་སྡེ།</term>
-                            <term xml:lang="Sa-Ltn"/>
-                            <term type="definition">A prolific Tibetan translator active during the late eighth and early ninth centuries.</term>
+                            <term type="translationMain">Yeshé Dé</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified"/>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">ye shes sde</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">ཡེ་ཤེས་སྡེ།</term>
+                            <note type="definition" rend="override">
+                                <p>A prolific Tibetan translator active during the late eighth and early ninth centuries.</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="place" xml:id="UT22084-061-001-541">
-                            <term>Heaven of Joy</term>
-                            <term status="verified" xml:lang="Bo-Ltn">dga’ ldan </term>
-                            <term status="verified" xml:lang="bo">དགའ་ལྡན།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">Tuṣita</term>
-                            <term type="definition">One of the six heavens of the desire realm.</term>
+                            <term type="translationMain">Heaven of Joy</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">tuṣita</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">dga’ ldan</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">དགའ་ལྡན།</term>
+                            <note type="definition" rend="override">
+                                <p>One of the six heavens of the desire realm.</p>
+                            </note>
                         </gloss>
                     </item>
                     <!--<item>
@@ -4068,103 +4293,90 @@
                 </item>-->
                     <item>
                         <gloss type="place" xml:id="UT22084-061-001-543" mode="marked">
-                            <term>Illusory</term>
-                            <term status="verified" xml:lang="Bo-Ltn">sgyu ma </term>
-                            <term status="verified" xml:lang="bo">སྒྱུ་མ།</term>
-                            <term xml:lang="Sa-Ltn"/>
-                            <term type="definition">A buddha realm to the east.</term>
+                            <term type="translationMain">Illusory</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified"/>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">sgyu ma</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">སྒྱུ་མ།</term>
+                            <note type="definition">
+                                <p>A buddha realm to the east.</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="place" xml:id="UT22084-061-001-544">
-                            <term>Jambu</term>
-                            <term status="verified" xml:lang="Bo-Ltn">’dzam bu </term>
-                            <term status="verified" xml:lang="bo">འཛམ་བུ།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">Jambu</term>
-                            <term type="definition">A mythical, divine river.</term>
+                            <term type="translationMain">Jambu</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">jambu</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">’dzam bu</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">འཛམ་བུ།</term>
+                            <note type="definition">
+                                <p>A mythical, divine river.</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
-                        <gloss type="place" xml:id="UT22084-061-001-545">
-                            <term>Jeta Grove</term>
-                            <term status="verified" xml:lang="Bo-Ltn">rgyal bu rgyal byed kyi tshal </term>
-                            <term status="verified" xml:lang="bo">རྒྱལ་བུ་རྒྱལ་བྱེད་ཀྱི་ཚལ།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">Jetavana</term>
-                            <term type="definition">A park in Śrāvastī, the capital of the ancient kingdom of Kośala in northern India. It was owned
-                                by Prince Jeta, and the wealthy merchant Anāthapiṇḍada, wishing to offer it to the Buddha, bought it from him by
-                                covering the entire property with gold coins. It was to become the place where the monks could be housed during the
-                                monsoon season, thus creating the first Buddhist monastery. It is therefore the setting for many of the Buddha’s
-                                discourses.</term>
-                            <!-- new? -->
-                            <term type="alternative">Jetavana</term>
+                        <gloss xml:id="UT22084-061-001-794" type="place" mode="match">
+                            <term type="translationMain">Jeta’s Grove, Anāthapiṇḍada’s Park</term>
+                            <term xml:lang="Sa-Ltn" type="attestedOther" status="verified">jetavanam anāthapiṇḍadasyārāmaḥ</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">rgyal bu rgyal byed kyi tshal mgon med zas sbyin gyi kun dga’ ra ba</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">རྒྱལ་བུ་རྒྱལ་བྱེད་ཀྱི་ཚལ་མགོན་མེད་ཟས་སྦྱིན་གྱི་ཀུན་དགའ་ར་བ།</term>
                         </gloss>
                     </item>
                     <item>
-                        <gloss type="place" xml:id="UT22084-061-001-546">
-                            <term>Meru</term>
-                            <term status="verified" xml:lang="Bo-Ltn">ri rab </term>
-                            <term status="verified" xml:lang="bo">རི་རབ།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">Meru </term>
-                            <term type="definition">According to ancient Indian cosmology, Meru is the great mountain forming the axis of the
-                                universe. At its summit lies Sudarśana, home of Śakra and his thirty-two gods, and on its flanks live the asuras. Meru
-                                has four sides facing the cardinal directions, each of which is made of a different precious stone. Surrounding it are
-                                several mountain ranges and the great ocean where the four great island continents lie: in the south, Jambudvīpa (our
-                                world); in the west, Godānīya; in the north, Uttarakuru; in the east, Pūrvavideha. Above it are the abodes of the gods
-                                of the realm of desire.</term>
+                        <gloss xml:id="UT22084-061-001-546" type="place" mode="match">
+                            <term type="translationMain">Meru</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">meru</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">ri rab</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">རི་རབ།</term>
                             <!-- new -->
                         </gloss>
                     </item>
                     <item>
-                        <gloss type="place" xml:id="UT22084-061-001-547">
-                            <term>Jambu continent</term>
-                            <term status="verified" xml:lang="Bo-Ltn">’dzam bu’i gling </term>
-                            <term status="verified" xml:lang="bo">འཛམ་བུའི་གླིང་།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">Jambudvīpa</term>
-                            <term type="definition">The name of the southern continent in Buddhist cosmology, which can signify either the known human
-                                world, or more specifically the Indian subcontinent, literally “the <term type="ignore">jambu</term>
-                                island/continent.” <foreign xml:lang="Sa-Ltn">
-                                    <term type="ignore">jambu</term>
-                                </foreign> is the name used for a range
-                                of plum-like fruits from trees belonging to the genus <foreign xml:lang="la">Szygium</foreign>, particularly <foreign xml:lang="la">Szygium jambos</foreign> and <foreign xml:lang="la">Szygium cumini</foreign>, and has commonly been
-                                rendered “rose apple” although “black plum” may be a less misleading term. Among various explanations given for the
-                                continent being so named, one (in the <title xml:lang="Sa-Ltn">Abhidharmakośa</title>) is that a <term type="ignore">jambu</term> tree grows in its northern mountains beside Lake Anavatapta, mythically considered the source of the
-                                four great rivers of India, and that the continent is therefore named after the tree or the fruit. Jambudvīpa has the
-                                vajrāsana at its center and is the only continent upon which buddhas attain awakening.</term>
+                        <gloss xml:id="UT22084-061-001-547" type="place" mode="match">
+                            <term type="translationMain">Jambu continent</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">jambudvīpa</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">’dzam bu’i gling</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">འཛམ་བུའི་གླིང་།</term>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="place" xml:id="UT22084-061-001-548">
-                            <term>Śrāvastī</term>
-                            <term status="verified" xml:lang="Bo-Ltn">mnyan yod </term>
-                            <term status="verified" xml:lang="bo">མཉན་ཡོད།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">Śrāvastī</term>
-                            <term type="definition">The capital of the ancient Indian kingdom of Kośala, and the setting for many sūtras, as the
+                            <term type="translationMain">Śrāvastī</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">śrāvastī</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">mnyan yod</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">མཉན་ཡོད།</term>
+                            <note type="definition">
+                                <p>The capital of the ancient Indian kingdom of Kośala, and the setting for many sūtras, as the
                                 Buddha spent most rainy seasons in a park outside the city called the Jeta Grove. The city has been identified with
-                                the present-day Sāhet Māhet in Uttar Pradesh on the banks of the river Rapti.</term>
+                                the present-day Sāhet Māhet in Uttar Pradesh on the banks of the river Rapti.</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="place" xml:id="UT22084-061-001-549">
-                            <term>Torch</term>
-                            <term status="verified" xml:lang="Bo-Ltn">sgron ma </term>
-                            <term status="verified" xml:lang="bo">སྒྲོན་མ།</term>
-                            <term xml:lang="Sa-Ltn"/>
-                            <term type="definition">A distant world.</term>
+                            <term type="translationMain">Torch</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified"/>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">sgron ma</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">སྒྲོན་མ།</term>
+                            <note type="definition">
+                                <p>A distant world.</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="place" xml:id="UT22084-061-001-550">
-                            <term>Unpleasant Sound</term>
-                            <term status="verified" xml:lang="Bo-Ltn">sgra mi snyan </term>
-                            <term status="verified" xml:lang="bo">སྒྲ་མི་སྙན།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">Uttara­kuru</term>
-                            <term status="verified" xml:lang="Sa-Ltn">Kurava</term>
-                            <term type="definition">The continent to the north of Mount Meru according to Buddhist cosmology. In the <title xml:lang="Sa-Ltn">Abhidharmakośa</title>, it is described as square in shape and its human inhabitants enjoy a
-                                fixed lifespan, namely a thousand years, and do not hold personal property or marry.</term>
+                            <term type="translationMain">Unpleasant Sound</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">uttara­kuru</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">kurava</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">sgra mi snyan</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">སྒྲ་མི་སྙན།</term>
+                            <note type="definition">
+                                <p>The continent to the north of Mount Meru according to Buddhist cosmology. In the <title xml:lang="Sa-Ltn">Abhidharmakośa</title>, it is described as square in shape and its human inhabitants enjoy a
+                                fixed lifespan, namely a thousand years, and do not hold personal property or marry.</p>
+                            </note>
                         </gloss>
                     </item>
                 </list>
             </div>
         </back>
     </text>
-</tei:TEI>
+</TEI>
