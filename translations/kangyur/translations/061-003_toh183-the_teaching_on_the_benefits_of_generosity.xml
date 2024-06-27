@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../../../schema/current/translation.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<tei:TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
         <teiHeader>
                 <fileDesc>
                         <titleStmt>
@@ -13,27 +13,27 @@
                                 <title type="longTitle" xml:lang="bo">འཕགས་པ་སྦྱིན་པའི་ཕན་ཡོན་བསྟན་པ།</title>
                                 <title type="longTitle" xml:lang="Bo-Ltn">’phags pa sbyin pa’i phan yon bstan pa</title>
                                 <title type="otherTitle" xml:lang="zh">《布施利益經》（大正藏：《佛說布施經》）</title>
-                                <author role="translatorMain" ref="contributors.xml#team-27">
+                                <author role="translatorMain" xml:id="UT22084-061-003-99">
                                         Translated by the Sakya Pandita Translation Group<lb/>
                                         under the patronage and supervision of 84000: Translating the Words of the Buddha</author>
-                                <consultant role="dharmaMaster" ref="contributors.xml#person-173">Ven. Khenpo Kalsang Gyaltsen</consultant>
-                                <author role="translatorEng" ref="contributors.xml#person-175">Chodrungma Kunga Chodron</author>
-                                <editor role="projectEditor" ref="contributors.xml#person-289">Nathaniel Rich</editor>
-                                <editor role="copyEditor" ref="contributors.xml#person-92">Laura Goetz</editor>
-                                <editor role="projectEditor" ref="contributors.xml#person-50">Andreas Doctor</editor>
-                                <editor role="TEImarkupEditor" ref="contributors.xml#person-95">Celso Wilkinson</editor>
-                                <editor role="finalReviewer" ref="contributors.xml#person-50">Andreas Doctor</editor>
-                                <consultant role="advisor" ref="contributors.xml#person-364">Venerable Bhiksuni Heng-Ching Shih</consultant>
+                                <consultant role="dharmaMaster" xml:id="UT22084-061-003-100">Ven. Khenpo Kalsang Gyaltsen</consultant>
+                                <author role="translatorEng" xml:id="UT22084-061-003-101">Chodrungma Kunga Chodron</author>
+                                <editor role="projectEditor" xml:id="UT22084-061-003-102">Nathaniel Rich</editor>
+                                <editor role="copyEditor" xml:id="UT22084-061-003-103">Laura Goetz</editor>
+                                <editor role="projectEditor" xml:id="UT22084-061-003-104">Andreas Doctor</editor>
+                                <editor role="TEImarkupEditor" xml:id="UT22084-061-003-105">Celso Wilkinson</editor>
+                                <editor role="finalReviewer" xml:id="UT22084-061-003-106">Andreas Doctor</editor>
+                                <consultant role="advisor" xml:id="UT22084-061-003-107">Venerable Bhiksuni Heng-Ching Shih</consultant>
                         </titleStmt>
                         <editionStmt>
-                <edition>v 1.1.6 <date>2021</date>
+                <edition>v 1.1.9 <date>2024</date>
                 </edition>
             </editionStmt>
-                        <publicationStmt status="1">
+                        <publicationStmt>
                 <publisher>
                     <name>84000: Translating the Words of the Buddha</name> is a global non-profit initiative to translate all the
                                         Buddha’s words into modern languages, and to make them available to everyone. </publisher>
-                <availability>
+                <availability status="1">
                                         <licence>
                                                 <graphic url="http://i.creativecommons.org/l/by-nc-nd/2.0/88x31.png"/>
                                                 <p>This work is provided under the protection of a Creative Commons CC BY-NC-ND (Attribution - Non-commercial -
@@ -51,8 +51,8 @@
                                 <bibl key="toh183" type="text">
                                         <ref>Toh 183</ref>
                                         <biblScope>Degé Kangyur, vol. 61 (mdo sde, tsa), folios 95.b–96.b</biblScope>
-                                        <author role="translatorTib">Surendrabodhi</author>
-                                        <author role="translatorTib">Yeshé Dé</author>
+                                        <author role="translatorTib" xml:id="UT22084-061-003-143">Surendrabodhi</author>
+                                        <author role="translatorTib" xml:id="UT22084-061-003-144">Yeshé Dé</author>
                                         <location work="UT4CZ5369" count-pages="3">
                                                 <volume number="61" start-page="190" end-page="192"/>
                                         </location>
@@ -60,54 +60,132 @@
                                         <idno source-id="O1JC114941JC11800" work="W22084"/>
                                 </bibl>
                         </sourceDesc>
-                        <notesStmt>
-                                <note type="lastUpdated" date-time="2023-01-18T17:05:26.058Z" user="celso">18/01/2023 17:05:26</note>
-                                <note type="updated" update="text-version" value="v 0.0.1" date-time="2019-12-20T12:44:26.954Z" user="admin">Automated version
-                                        increment</note>
-                                <note type="updated" update="text-version" value="v 0.0.1" date-time="2020-03-06T13:15:21.681Z" user="line-tofte">v 0.0.1</note>
-                                <note type="updated" update="translation-status" value="2.h" date-time="2020-05-11T14:41:43.472Z" user="line-tofte">2.h</note>
-                                <note type="updated" update="translation-status" value="2.g" date-time="2021-04-22T13:04:54.764Z" user="line-tofte">2.g</note>
-                                <note type="updated" update="text-version" value="0.0.2" date-time="2021-04-22T13:04:54.764Z" user="line-tofte">Auto
-                                        (update-publication-status)</note>
-                                <note type="updated" update="text-version" value="0.0.3" date-time="2021-04-22T13:11:07.73Z" user="line-tofte">Auto
-                                        (update-contributors)</note>
-                                <note type="updated" update="translation-status" value="2.f" date-time="2021-04-30T09:06:58.459Z" user="line-tofte">2.f</note>
-                                <note type="updated" update="text-version" value="0.0.4" date-time="2021-04-30T09:06:58.459Z" user="line-tofte">Auto
-                                        (update-publication-status)</note>
-                                <note type="updated" update="translation-status" value="2.e" date-time="2021-04-30T09:07:23.316Z" user="line-tofte">2.e</note>
-                                <note type="updated" update="text-version" value="0.0.5" date-time="2021-04-30T09:07:23.316Z" user="line-tofte">Auto
-                                        (update-publication-status)</note>
-                                <note type="updated" update="text-version" value="0.0.6" date-time="2021-04-30T09:07:45.599Z" user="line-tofte">Auto
-                                        (update-contributors)</note>
-                                <note type="updated" update="translation-status" value="2.d" date-time="2021-05-03T06:55:23.586Z" user="line-tofte">2.d</note>
-                                <note type="updated" update="text-version" value="0.0.7" date-time="2021-05-03T06:55:23.586Z" user="line-tofte">Auto
-                                        (update-publication-status)</note>
-                                <note type="updated" update="translation-status" value="2.b" date-time="2021-05-03T09:27:14.007Z" user="line-tofte">2.b</note>
-                                <note type="updated" update="text-version" value="0.0.8" date-time="2021-05-03T09:27:14.007Z" user="line-tofte">Auto
-                                        (update-publication-status)</note>
-                                <note type="updated" update="text-version" value="0.0.9" date-time="2021-05-03T09:27:38.763Z" user="line-tofte">Auto
-                                        (update-contributors)</note>
-                                <note type="updated" update="text-version" value="0.0.10" date-time="2021-05-26T09:07:56.041Z" user="mike">Auto
-                                        (update-contributors)</note>
-                                <note type="updated" update="translation-status" value="2.a" date-time="2021-05-26T09:08:23.113Z" user="mike">2.a</note>
-                                <note type="updated" update="text-version" value="0.0.11" date-time="2021-05-26T09:08:23.113Z" user="mike">Auto
-                                        (update-publication-status)</note>
-                                <note type="updated" update="translation-status" value="2" date-time="2021-05-31T05:29:09.402Z" user="mike">2</note>
-                                <note type="updated" update="text-version" value="0.0.2" date-time="2021-05-31T05:29:09.402Z" user="mike">Auto (update-publication-status)</note>
-                                <note type="updated" update="text-version" value="0.0.3" date-time="2021-08-04T12:50:01.604Z" user="line-tofte">Auto (update-contributors)</note>
-                                <note type="updated" update="text-version" value="0.0.4" date-time="2021-08-04T12:51:40.269Z" user="line-tofte">Auto (update-contributors)</note>
-                                <note type="updated" update="translation-status" value="1" date-time="2021-08-06T12:08:50.366Z" user="mike">1</note>
-                                <note type="updated" update="text-version" value="1.0.0" date-time="2021-08-06T12:08:50.366Z" user="mike">First published version </note>
-                                <note type="updated" update="text-version" value="1.0.1" date-time="2021-09-22T05:53:34.197Z" user="mike">typo corrected </note>
-                                <note type="updated" update="text-version" value="1.0.2" date-time="2021-11-18T23:27:08.147Z" user="john">Added references to the Sanskrit texts and to corresponding translations.</note>
-                                <note type="updated" update="text-version" value="1.1.1" date-time="2021-11-21T20:16:57.137Z" user="john">Further small edits</note>
-                                <note type="updated" update="text-version" value="1.1.2" date-time="2021-11-22T16:04:19.203Z" user="celso">added references to Peter Skillings 2021 anthology</note>
-                                <note type="updated" update="text-version" value="1.1.3" date-time="2022-06-27T10:06:48.1Z" user="admin">Auto (script-increment-version-published)</note>
-                            <note type="updated" update="text-version" value="1.1.4" date-time="2022-07-26T06:27:08.48Z" user="cabie-sim">Auto (update-titles)</note>
-                            <note type="updated" update="text-version" value="1.1.5" date-time="2023-01-16T16:58:52.361Z" user="celso">Auto (script-increment-version-published)</note>
-                            <note type="updated" update="text-version" value="1.1.6" date-time="2023-01-18T16:58:06.914Z" user="celso">Auto (remove-tid-from-back-list-items)</note>
-                        </notesStmt>
-                </fileDesc>
+                        <notesStmt/>
+                    <revisionDesc>
+                <change who="#admin" when="2019-12-20T12:44:26.954Z" type="text-version" status="v 0.0.1" xml:id="UT22084-061-003-108">
+                    <desc>Automated version
+                                        increment</desc>
+                </change>
+                <change who="#line-tofte" when="2020-03-06T13:15:21.681Z" type="text-version" status="v 0.0.1" xml:id="UT22084-061-003-109">
+                    <desc>v 0.0.1</desc>
+                </change>
+                <change who="#line-tofte" when="2020-05-11T14:41:43.472Z" type="translation-status" status="2.h" xml:id="UT22084-061-003-110">
+                    <desc>2.h</desc>
+                </change>
+                <change who="#line-tofte" when="2021-04-22T13:04:54.764Z" type="translation-status" status="2.g" xml:id="UT22084-061-003-111">
+                    <desc>2.g</desc>
+                </change>
+                <change who="#line-tofte" when="2021-04-22T13:04:54.764Z" type="text-version" status="0.0.2" xml:id="UT22084-061-003-112">
+                    <desc>Auto
+                                        (update-publication-status)</desc>
+                </change>
+                <change who="#line-tofte" when="2021-04-22T13:11:07.73Z" type="text-version" status="0.0.3" xml:id="UT22084-061-003-113">
+                    <desc>Auto
+                                        (update-contributors)</desc>
+                </change>
+                <change who="#line-tofte" when="2021-04-30T09:06:58.459Z" type="translation-status" status="2.f" xml:id="UT22084-061-003-114">
+                    <desc>2.f</desc>
+                </change>
+                <change who="#line-tofte" when="2021-04-30T09:06:58.459Z" type="text-version" status="0.0.4" xml:id="UT22084-061-003-115">
+                    <desc>Auto
+                                        (update-publication-status)</desc>
+                </change>
+                <change who="#line-tofte" when="2021-04-30T09:07:23.316Z" type="translation-status" status="2.e" xml:id="UT22084-061-003-116">
+                    <desc>2.e</desc>
+                </change>
+                <change who="#line-tofte" when="2021-04-30T09:07:23.316Z" type="text-version" status="0.0.5" xml:id="UT22084-061-003-117">
+                    <desc>Auto
+                                        (update-publication-status)</desc>
+                </change>
+                <change who="#line-tofte" when="2021-04-30T09:07:45.599Z" type="text-version" status="0.0.6" xml:id="UT22084-061-003-118">
+                    <desc>Auto
+                                        (update-contributors)</desc>
+                </change>
+                <change who="#line-tofte" when="2021-05-03T06:55:23.586Z" type="translation-status" status="2.d" xml:id="UT22084-061-003-119">
+                    <desc>2.d</desc>
+                </change>
+                <change who="#line-tofte" when="2021-05-03T06:55:23.586Z" type="text-version" status="0.0.7" xml:id="UT22084-061-003-120">
+                    <desc>Auto
+                                        (update-publication-status)</desc>
+                </change>
+                <change who="#line-tofte" when="2021-05-03T09:27:14.007Z" type="translation-status" status="2.b" xml:id="UT22084-061-003-121">
+                    <desc>2.b</desc>
+                </change>
+                <change who="#line-tofte" when="2021-05-03T09:27:14.007Z" type="text-version" status="0.0.8" xml:id="UT22084-061-003-122">
+                    <desc>Auto
+                                        (update-publication-status)</desc>
+                </change>
+                <change who="#line-tofte" when="2021-05-03T09:27:38.763Z" type="text-version" status="0.0.9" xml:id="UT22084-061-003-123">
+                    <desc>Auto
+                                        (update-contributors)</desc>
+                </change>
+                <change who="#mike" when="2021-05-26T09:07:56.041Z" type="text-version" status="0.0.10" xml:id="UT22084-061-003-124">
+                    <desc>Auto
+                                        (update-contributors)</desc>
+                </change>
+                <change who="#mike" when="2021-05-26T09:08:23.113Z" type="translation-status" status="2.a" xml:id="UT22084-061-003-125">
+                    <desc>2.a</desc>
+                </change>
+                <change who="#mike" when="2021-05-26T09:08:23.113Z" type="text-version" status="0.0.11" xml:id="UT22084-061-003-126">
+                    <desc>Auto
+                                        (update-publication-status)</desc>
+                </change>
+                <change who="#mike" when="2021-05-31T05:29:09.402Z" type="translation-status" status="2" xml:id="UT22084-061-003-127">
+                    <desc>2</desc>
+                </change>
+                <change who="#mike" when="2021-05-31T05:29:09.402Z" type="text-version" status="0.0.2" xml:id="UT22084-061-003-128">
+                    <desc>Auto (update-publication-status)</desc>
+                </change>
+                <change who="#line-tofte" when="2021-08-04T12:50:01.604Z" type="text-version" status="0.0.3" xml:id="UT22084-061-003-129">
+                    <desc>Auto (update-contributors)</desc>
+                </change>
+                <change who="#line-tofte" when="2021-08-04T12:51:40.269Z" type="text-version" status="0.0.4" xml:id="UT22084-061-003-130">
+                    <desc>Auto (update-contributors)</desc>
+                </change>
+                <change who="#mike" when="2021-08-06T12:08:50.366Z" type="translation-status" status="1" xml:id="UT22084-061-003-131">
+                    <desc>1</desc>
+                </change>
+                <change who="#admin" when="2021-08-06T12:08:50.366Z" type="translation-status" status="1.a" xml:id="UT22084-061-003-132">
+                    <desc>Note added retrospectively based on date of status '1'</desc>
+                </change>
+                <change who="#mike" when="2021-08-06T12:08:50.366Z" type="text-version" status="1.0.0" xml:id="UT22084-061-003-133">
+                    <desc>First published version </desc>
+                </change>
+                <change who="#mike" when="2021-09-22T05:53:34.197Z" type="text-version" status="1.0.1" xml:id="UT22084-061-003-134">
+                    <desc>typo corrected </desc>
+                </change>
+                <change who="#john" when="2021-11-18T23:27:08.147Z" type="text-version" status="1.0.2" xml:id="UT22084-061-003-135">
+                    <desc>Added references to the Sanskrit texts and to corresponding translations.</desc>
+                </change>
+                <change who="#john" when="2021-11-21T20:16:57.137Z" type="text-version" status="1.1.1" xml:id="UT22084-061-003-136">
+                    <desc>Further small edits</desc>
+                </change>
+                <change who="#celso" when="2021-11-22T16:04:19.203Z" type="text-version" status="1.1.2" xml:id="UT22084-061-003-137">
+                    <desc>added references to Peter Skillings 2021 anthology</desc>
+                </change>
+                <change who="#admin" when="2022-06-27T10:06:48.1Z" type="text-version" status="1.1.3" xml:id="UT22084-061-003-138">
+                    <desc>Auto (script-increment-version-published)</desc>
+                </change>
+                <change who="#cabie-sim" when="2022-07-26T06:27:08.48Z" type="text-version" status="1.1.4" xml:id="UT22084-061-003-139">
+                    <desc>Auto (update-titles)</desc>
+                </change>
+                <change who="#celso" when="2023-01-16T16:58:52.361Z" type="text-version" status="1.1.5" xml:id="UT22084-061-003-140">
+                    <desc>Auto (script-increment-version-published)</desc>
+                </change>
+                <change who="#celso" when="2023-01-18T16:58:06.914Z" type="text-version" status="1.1.6" xml:id="UT22084-061-003-141">
+                    <desc>Auto (remove-tid-from-back-list-items)</desc>
+                </change>
+                <change who="#admin" when="2023-07-30T22:39:48.323Z" type="text-version" status="1.1.7" xml:id="UT22084-061-003-142">
+                    <desc>TEI migrated to 2.19.0</desc>
+                </change>
+                <change who="#celso" when="2023-10-13T11:48:10.305Z" type="text-version" status="1.1.8" xml:id="UT22084-061-003-145">
+                    <desc>reapplied capital letters in Wylie and covert to TibUni-glossary</desc>
+                </change>
+                <change who="#andre" when="2024-06-27T19:20:24.215Z" type="text-version" status="1.1.9" xml:id="UT22084-061-003-147">
+                    <desc>Approved rendering "Jetavana, Anāthapiṇḍada’s Park" applied</desc>
+                </change>
+            </revisionDesc>
+        </fileDesc>
         </teiHeader>
         <text>
                 <front>
@@ -133,7 +211,7 @@
                                 <head type="introduction" tid="8">Introduction</head>
                                 <div type="section" xml:id="UT22084-061-003-introduction-1">
                                         <milestone unit="chunk" xml:id="UT22084-061-003-6"/>
-                                        <p tid="10">The setting for this discourse is the Park of Anāthapiṇḍada in the Jetavana, where the Buddha spent many
+                                        <p tid="10">The setting for this discourse is the Jetavana, Anāthapiṇḍada’s Park, where the Buddha spent many
                                                 rainy-season retreats and where many of the Buddha’s discourses are said to have been delivered. In this
                                                 particular discourse, the Buddha succinctly describes thirty-seven ways in which the wise give gifts, as well as
                                                 the results that ripen from their gift giving. More specifically, the first five ways in which the wise give
@@ -200,13 +278,13 @@
                                         </p>
                                         <milestone unit="chunk" xml:id="UT22084-061-003-13"/>
                                         <p tid="69">The present translation is based on the version in the Degé Kangyur, with reference to the Comparative
-                                                Edition (<foreign xml:lang="Bo-Ltn">dpe sdur ma</foreign>). </p>
+                                                Edition (<foreign xml:lang="Bo-Ltn">dpe bsdur ma</foreign>). </p>
                                 </div>
                         </div>
                 </front>
                 <body>
                         <div type="translation">
-                                <head type="translation" tid="14"> The Translation </head>
+                                <head type="translation"> The Translation </head>
                                 <head type="titleHon" tid="15">The Noble</head>
                                 <head type="titleMain" tid="16">Teaching the Benefits of Generosity</head>
                                 <div type="section" xml:id="UT22084-061-003-section-1">
@@ -216,8 +294,7 @@
                                         
                                         <lb/>
                                         
-                                        <p tid="21">Thus did I hear at one time. The Blessed One was dwelling in Śrāvastī in the Jetavana, in the park of
-                                                Anāthapiṇḍada. Then the Blessed One said to the monks, “Monks, the wise give gifts in thirty-seven ways. What
+                                        <p tid="21">Thus did I hear at one time. The Blessed One was dwelling in Śrāvastī, in the Jetavana, Anāthapiṇḍada’s Park. Then the Blessed One said to the monks, “Monks, the wise give gifts in thirty-seven ways. What
                                                 are those thirty-seven? They are as follows:</p>
                                         <milestone unit="chunk" xml:id="UT22084-061-003-18"/>
                                         <p tid="22">“They give gifts with faith in order to rid themselves of stinginess.</p>
@@ -382,147 +459,162 @@
                         <div type="glossary">
                                 <list type="glossary">
                                         <item>
-                        <gloss type="term" xml:id="UT22084-061-003-69">
-                                                        <term>blessed one</term>
-                                                        <term xml:lang="Bo-Ltn">bcom ldan ’das </term>
-                                                        <term xml:lang="bo">བཅོམ་ལྡན་འདས།</term>
-                                                        <term xml:lang="Sa-Ltn">bhagavat</term>
-                                                        <term type="definition">In Buddhist literature, an epithet applied to buddhas, most often to Śākyamuni.
-                                                                The Sanskrit term generally means “possessing fortune,” but in specifically Buddhist contexts it
-                                                                implies that a buddha is in possession of six auspicious qualities (<foreign xml:lang="Sa-Ltn" type="term">bhaga</foreign>) associated with complete awakening. The Tibetan
-                                                                        term‍—where <foreign xml:lang="Bo-Ltn" type="term">bcom</foreign> is said to refer to
-                                                                “subduing” the four māras, <foreign xml:lang="Bo-Ltn" type="term">ldan</foreign> to “possessing”
-                                                                the great qualities of buddhahood, and <foreign xml:lang="Bo-Ltn" type="term">’das</foreign> to
-                                                                “going beyond” saṃsāra and nirvāṇa‍—possibly reflects the commentarial tradition where the
-                                                                        Sanskrit <foreign xml:lang="Sa-Ltn" type="term">bhagavat</foreign> is interpreted as
-                                                                “one who destroys the four māras.” This is achieved either by reading <foreign xml:lang="Sa-Ltn" type="term">bhagavat</foreign> as <foreign xml:lang="Sa-Ltn" type="term">bhagnavat</foreign> (“one who broke”), or by tracing the word <foreign xml:lang="Sa-Ltn" type="term">bhaga</foreign> to the root <foreign xml:lang="Sa-Ltn" type="term">√bhañj</foreign> (“to break”).</term>
-                                                </gloss>
+                        <gloss xml:id="UT22084-061-003-69" type="term" mode="match">
+                            <term type="translationMain">blessed one</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified">bhagavat</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">bcom ldan ’das</term>
+                            <term xml:lang="bo" type="attestedSource" n="1">བཅོམ་ལྡན་འདས།</term>
+                        </gloss>
                     </item>
                                         <item>
-                        <gloss type="term" xml:id="UT22084-061-003-70">
-                                                        <term>thus-gone one</term>
-                                                        <term xml:lang="Bo-Ltn">de bzhin gshegs pa </term>
-                                                        <term xml:lang="bo">དེ་བཞིན་གཤེགས་པ།</term>
-                                                        <term xml:lang="Sa-Ltn">tathāgata</term>
-                                                        <term type="definition">A frequently used synonym for buddha. In Sanskrit, <foreign xml:lang="Sa-Ltn" type="term">gata</foreign>, though literally meaning “gone,” is a past passive
-                                                                participle used to describe a state or condition of existence. <foreign xml:lang="Sa-Ltn" type="term">Tatha</foreign>(<foreign type="term" xml:lang="Sa-Ltn">tā</foreign>) is the quality or condition of things as they really
-                                                                are, which cannot be conveyed in conceptual, dualistic terms, and is often rendered as “suchness” or “thusness.” Therefore, this epithet is interpreted in different ways
-                                                                but general implies one who has departed in the wake of the buddhas of the past, or one who has
-                                                                manifested the supreme awakening dependent on the reality (<foreign xml:lang="Sa-Ltn">dharmatā</foreign>) that does not abide in the two extremes of existence and
-                                                                quiescence.</term>
-                                                </gloss>
+                        <gloss xml:id="UT22084-061-003-70" type="term" mode="match">
+                            <term type="translationMain">thus-gone one</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified">tathāgata</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">de bzhin gshegs pa</term>
+                            <term xml:lang="bo" type="attestedSource" n="1">དེ་བཞིན་གཤེགས་པ།</term>
+                            <note type="definition" rend="override">
+                                <p>A frequently used synonym for buddha. In Sanskrit, <foreign xml:lang="Sa-Ltn" type="term">gata</foreign>, though literally meaning “gone,” is a past passive participle used to describe a state or condition of existence. <foreign xml:lang="Sa-Ltn" type="term">Tatha</foreign>(<foreign type="term" xml:lang="Sa-Ltn">tā</foreign>) is the quality or condition of things as they really are, which cannot be conveyed in conceptual, dualistic terms, and is often rendered as “suchness” or “thusness.” Therefore, this epithet is interpreted in different ways but general implies one who has departed in the wake of the buddhas of the past, or one who has manifested the supreme awakening dependent on the reality (<foreign xml:lang="Sa-Ltn">dharmatā</foreign>) that does not abide in the two extremes of existence and quiescence.</p>
+                            </note>
+                        </gloss>
                     </item>
                                         <item>
                         <gloss type="term" xml:id="UT22084-061-003-71">
-                                                        <term>four bases of miraculous power</term>
-                                                        <term xml:lang="Bo-Ltn">rdzu ’phrul gyi rkang pa bzhi </term>
-                                                        <term xml:lang="bo">རྫུ་འཕྲུལ་གྱི་རྐང་པ་བཞི།</term>
-                                                <term xml:lang="Sa-Ltn">catvāra­ṛddhi­pādā</term>
-                                                        <term type="definition">Determination, discernment, diligence, and concentration.</term>
-                                                <term type="alternative">miraculous power</term>
-                                                </gloss>
+                            <term type="translationMain">four bases of miraculous power</term>
+                            <term type="translationAlternative">miraculous power</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified">catvāra­ṛddhi­pādā</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">rdzu ’phrul gyi rkang pa bzhi</term>
+                            <term xml:lang="bo" type="attestedSource" n="1">རྫུ་འཕྲུལ་གྱི་རྐང་པ་བཞི།</term>
+                            <note type="definition">
+                                <p>Determination, discernment, diligence, and concentration.</p>
+                            </note>
+                        </gloss>
                     </item>
                                         <item>
                         <gloss type="term" xml:id="UT22084-061-003-72">
-                                                        <term>branches of awakening</term>
-                                                        <term xml:lang="Bo-Ltn">byang chub kyi yan lag </term>
-                                                        <term xml:lang="bo">བྱང་ཆུབ་ཀྱི་ཡན་ལག</term>
-                                                        <term xml:lang="Sa-Ltn">bodhyaṅga</term>
-                                                        <term type="definition">Mindfulness, discrimination, diligence, joy, pliability, absorption, and
-                                                                equanimity.</term>
-                                                </gloss>
+                            <term type="translationMain">branches of awakening</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified">bodhyaṅga</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">byang chub kyi yan lag</term>
+                            <term xml:lang="bo" type="attestedSource" n="1">བྱང་ཆུབ་ཀྱི་ཡན་ལག</term>
+                            <note type="definition">
+                                <p>Mindfulness, discrimination, diligence, joy, pliability, absorption, and
+                                                                equanimity.</p>
+                            </note>
+                        </gloss>
                     </item>
                                         <item>
                         <gloss type="term" xml:id="UT22084-061-003-73">
-                                                        <term>ripening</term>
-                                                        <term xml:lang="Bo-Ltn">rnam par smin pa </term>
-                                                        <term xml:lang="bo">རྣམ་པར་སྨིན་པ།</term>
-                                                        <term xml:lang="Sa-Ltn">vipāka</term>
-                                                        <term type="definition">The manifest result of a former action.</term>
-                                                </gloss>
+                            <term type="translationMain">ripening</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified">vipāka</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">rnam par smin pa</term>
+                            <term xml:lang="bo" type="attestedSource" n="1">རྣམ་པར་སྨིན་པ།</term>
+                            <note type="definition">
+                                <p>The manifest result of a former action.</p>
+                            </note>
+                        </gloss>
                     </item>
                                         <item>
                         <gloss xml:id="UT22084-061-003-74" type="term" mode="match">
-                            <term>thirty-two marks of a great being</term>
-                            <term xml:lang="Bo-Ltn">skyes bu chen po’i mtshan sum cu rtsa gnyis</term>
-                            <term xml:lang="bo">སྐྱེས་བུ་ཆེན་པོའི་མཚན་སུམ་ཅུ་རྩ་གཉིས།</term>
-                            <term xml:lang="Sa-Ltn">dvātriṃśa­mahā­puruṣa­lakṣaṇa</term>
-                            <term type="alternative">thirty-two marks</term>
-                            <term type="definition">The main identifying physical characteristics of both buddhas and universal monarchs, to which are added the eighty excellent signs.</term>
+                            <term type="translationMain">thirty-two marks of a great being</term>
+                            <term type="translationAlternative">thirty-two marks</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified">dvātriṃśa­mahā­puruṣa­lakṣaṇa</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">skyes bu chen po’i mtshan sum cu rtsa gnyis</term>
+                            <term xml:lang="bo" type="attestedSource" n="1">སྐྱེས་བུ་ཆེན་པོའི་མཚན་སུམ་ཅུ་རྩ་གཉིས།</term>
+                            <note type="definition">
+                                <p>The main identifying physical characteristics of both buddhas and universal monarchs, to which are added the eighty excellent signs.</p>
+                            </note>
                         </gloss>
                     </item>
                                         <item>
                         <gloss xml:id="UT22084-061-003-75" type="term" mode="match">
-                            <term>Eighty excellent signs</term>
-                            <term xml:lang="Bo-Ltn" status="verified">dpe byad bzang po brgyad cu</term>
-                            <term xml:lang="bo">དཔེ་བྱད་བཟང་པོ་བརྒྱད་ཅུ།</term>
-                            <term xml:lang="Sa-Ltn">aśītyanuvyañjana</term>
-                            <term type="definition">A set of eighty bodily characteristics and insignia borne by both buddhas and universal emperors. They are considered “minor” in terms of being secondary to the thirty-two marks of a great being.</term>
+                            <term type="translationMain">Eighty excellent signs</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified">aśītyanuvyañjana</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">dpe byad bzang po brgyad cu</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">དཔེ་བྱད་བཟང་པོ་བརྒྱད་ཅུ།</term>
+                            <note type="definition">
+                                <p>A set of eighty bodily characteristics and insignia borne by both buddhas and universal emperors. They are considered “minor” in terms of being secondary to the thirty-two marks of a great being.</p>
+                            </note>
                         </gloss>
                     </item>
-                                        <item>
-                        <gloss type="person" xml:id="UT22084-061-003-77">
-                                                        <term>Anāthapiṇḍada</term>
-                                                        <term xml:lang="Bo-Ltn">mgon med zas sbyin </term>
-                            <term xml:lang="bo">མགོན་མེད་ཟས་སྦྱིན།</term>
-                                                        <term xml:lang="Sa-Ltn">Anāthapiṇḍada</term>
-                                                        <term type="definition">A wealthy layman and famous benefactor of the Buddha who purchased the Jetavana
+                                        <!--<item><gloss type="person" xml:id="UT22084-061-003-77">
+                            <term type="translationMain">Anāthapiṇḍada</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified">anāthapiṇḍada</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">mgon med zas sbyin</term>
+                            <term xml:lang="bo" type="attestedSource" n="1">མགོན་མེད་ཟས་སྦྱིན།</term>
+                            <note type="definition" rend="override">
+                                <p>A wealthy layman and famous benefactor of the Buddha who purchased the Jetavana
                                                                 and donated it to the Buddhist community. He is better known in the West by the alternative Pāli
-                                                                form Anāthapiṇḍika.</term>
-                                                </gloss>
-                    </item>
+                                                                form Anāthapiṇḍika.</p>
+                            </note>
+                        </gloss></item>-->
                                         <item>
                         <gloss type="person" xml:id="UT22084-061-003-78">
-                                                        <term>Brahmā</term>
-                                                        <term xml:lang="Bo-Ltn">tshangs pa </term>
-                                                        <term xml:lang="bo">ཚངས་པ།</term>
-                                                        <term xml:lang="Sa-Ltn">Brahmā</term>
-                                                        <term type="definition">A high-ranking deity who presides over a divine world where other beings
+                            <term type="translationMain">Brahmā</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified">brahmā</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">tshangs pa</term>
+                            <term xml:lang="bo" type="attestedSource" n="1">ཚངས་པ།</term>
+                            <note type="definition" rend="override">
+                                <p>A high-ranking deity who presides over a divine world where other beings
                                                                 consider him the creator; he is also considered to be the lord of the Sahā world (our
-                                                                universe).</term>
-                                                </gloss>
+                                                                universe).</p>
+                            </note>
+                        </gloss>
                     </item>
                                         <item>
                         <gloss type="place" xml:id="UT22084-061-003-80">
-                                                        <term>Jetavana</term>
-                                                        <term xml:lang="Bo-Ltn">rgyal bu rgyal byed kyi tshal </term>
-                                                        <term xml:lang="bo">རྒྱལ་བུ་རྒྱལ་བྱེད་ཀྱི་ཚལ།</term>
-                                                        <term xml:lang="Sa-Ltn">Jetavana</term>
-                                                        <term type="definition">“Prince Jeta’s Grove,” a grove near Śrāvastī that was given to the Buddha by the
-                                                                householder Anāthapiṇḍada. The Buddha is said to have spent most rainy seasons there, and it is
-                                                                therefore the setting for many discourses.</term>
-                                                </gloss>
+                            <term type="translationMain">Jetavana</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified">jetavana</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">rgyal bu rgyal byed kyi tshal</term>
+                            <term xml:lang="bo" type="attestedSource" n="1">རྒྱལ་བུ་རྒྱལ་བྱེད་ཀྱི་ཚལ།</term>
+                            <note type="definition">
+                                    <p>See “Jetavana, Anāthapiṇḍada’s Park.”</p>
+                            </note>
+                        </gloss>
                     </item>
                                         <item>
+                        <gloss xml:id="UT22084-061-003-146" type="place" mode="match">
+                            <term type="translationMain">Jetavana, Anāthapiṇḍada’s Park</term>
+                            <term xml:lang="Sa-Ltn" type="attestedOther" status="verified">jetavanam anāthapiṇḍadasyārāmaḥ</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">rgyal bu rgyal byed kyi tshal mgon med zas sbyin gyi kun dga’ ra ba</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">རྒྱལ་བུ་རྒྱལ་བྱེད་ཀྱི་ཚལ་མགོན་མེད་ཟས་སྦྱིན་གྱི་ཀུན་དགའ་ར་བ།</term>
+                        </gloss>
+                    </item>
+                                        
+                                        <item>
                         <gloss type="place" xml:id="UT22084-061-003-81">
-                                                        <term>Śrāvastī</term>
-                                                        <term xml:lang="Bo-Ltn">mnyan yod </term>
-                            <term xml:lang="bo">མཉན་ཡོད།</term>
-                                                        <term xml:lang="Sa-Ltn">Śrāvastī</term>
-                                                        <term type="definition">The capital of the ancient Indian kingdom of Kośala, and the setting for many
+                            <term type="translationMain">Śrāvastī</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified">śrāvastī</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">mnyan yod</term>
+                            <term xml:lang="bo" type="attestedSource" n="1">མཉན་ཡོད།</term>
+                            <note type="definition" rend="override">
+                                <p>The capital of the ancient Indian kingdom of Kośala, and the setting for many
                                                                 sūtras, as the Buddha spent most rainy seasons outside the city. It has been identified with the
-                                                                present-day Sāhet Māhet in Uttar Pradesh on the banks of the river Rapti.</term>
-                                                </gloss>
+                                                                present-day Sāhet Māhet in Uttar Pradesh on the banks of the river Rapti.</p>
+                            </note>
+                        </gloss>
                     </item>
                                         <item>
                         <gloss type="person" xml:id="UT22084-061-003-87">
-                                                <term>Surendrabodhi</term>
-                                                <term xml:lang="Bo-Ltn">su ren dra bo d+hi</term>
-                                                <term xml:lang="bo">སུ་རེན་དྲ་བོ་དྷི།</term>
-                                                <term xml:lang="Sa-Ltn">Surendrabodhi</term>
-                                                <term type="definition">One of the Indian teachers invited to Tibet at the time of the emperor Ralpacan (early ninth century). He was one of the great Indian pandits who assisted the Tibetan translators such as Yeshé Dé with the translation of Buddhist texts from Sanskrit.</term>
+                            <term type="translationMain">Surendrabodhi</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified">surendrabodhi</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">su ren dra bo d+hi</term>
+                            <term xml:lang="bo" type="attestedSource" n="1">སུ་རེན་དྲ་བོ་དྷི།</term>
+                            <note type="definition">
+                                <p>One of the Indian teachers invited to Tibet at the time of the emperor Ralpacan (early ninth century). He was one of the great Indian pandits who assisted the Tibetan translators such as Yeshé Dé with the translation of Buddhist texts from Sanskrit.</p>
+                            </note>
                         </gloss>
                     </item>
                                                 <item>
-                        <gloss type="person" xml:id="UT22084-061-003-88">
-                                                        <term>Yeshé Dé</term>
-                                                        <term xml:lang="Bo-Ltn">ye shes sde</term>
-                                                        <term xml:lang="bo">ཡེ་ཤེས་སྡེ།</term>
-                                                        <term type="definition">A prolific Tibetan translator active during the late eighth and early ninth centuries.</term>
+                        <gloss xml:id="UT22084-061-003-88" type="person" mode="match">
+                            <term type="translationMain">Yeshé Dé</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">ye shes sde</term>
+                            <term xml:lang="bo" type="attestedSource" n="1">ཡེ་ཤེས་སྡེ།</term>
+                            <note type="definition" rend="override">
+                                <p>A prolific Tibetan translator active during the late eighth and early ninth centuries.</p>
+                            </note>
                         </gloss>
                     </item>
                                 </list>
                         </div>
                 </back>
         </text>
-</tei:TEI>
+</TEI>
