@@ -17,8 +17,8 @@
                     Arising”</title>
                 <title type="otherTitle" xml:lang="Bo-Ltn">rten cing ’brel bar ’byung ba’i snying
                     po/</title>
-                <author role="translatorMain" xml:id="UT22084-088-015-1">84000 Associate
-                    Translators</author>
+                <author role="translatorMain" xml:id="UT22084-088-015-1"><!--84000 Associate
+                    Translators--></author>
                 <author role="translatorEng" xml:id="UT22084-088-015-2">Bruno Galasek-Hul</author>
                 <editor role="projectEditor" xml:id="UT22084-088-015-13">Ryan Damron</editor>
                 <editor role="copyEditor" xml:id="UT22084-088-015-22">Konchog Norbu</editor>
@@ -26,7 +26,7 @@
                 <editor role="TEImarkupEditor" xml:id="UT22084-088-015-43">Sameer Dhingra</editor>
             </titleStmt>
             <editionStmt>
-                <edition>v 0.0.2 <date>2024</date>
+                <edition>v 1.0.0 <date>2024</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -34,7 +34,7 @@
                     <name>84000: Translating the Words of the Buddha</name> is a global
                     non-profit initiative to translate all the Buddha’s words into modern languages,
                     and to make them available to everyone. </publisher>
-                <availability status="2">
+                <availability status="1.a">
                     <licence>
                         <graphic url="http://i.creativecommons.org/l/by-nc-nd/2.0/88x31.png"/>
                         <p>This work is provided under the protection of a Creative Commons CC
@@ -47,7 +47,7 @@
                 <idno xml:id="UT22084-088-015"/>
                 <note>An early mistake in the assigning of UT numbers within the 84000 project means
                     that these ids diverge slightly from the standard logic.</note>
-                <date>2024-03-05</date>
+                <date>2024-08-05</date>
             </publicationStmt>
             <sourceDesc>
                 <bibl key="toh521" type="text">
@@ -149,14 +149,17 @@
                 <change who="#line-tofte" when="2024-03-14T15:28:40.447Z" type="text-version" status="0.0.2" xml:id="UT22084-088-015-106">
                     <desc>Auto (update-publication-status)</desc>
                 </change>
+                <change who="#sameer" when="2024-08-05T06:32:16.883Z" type="translation-status" status="1.a" xml:id="UT22084-088-015-108">
+                    <desc>1.a</desc>
+                </change>
+                <change who="#sameer" when="2024-08-05T06:32:16.883Z" type="text-version" status="1.0.0" xml:id="UT22084-088-015-109">
+                    <desc>First published version.</desc>
+                </change>
             </revisionDesc>
         </fileDesc>
     </teiHeader>
     <text>
-        <!--Note the "Contents" outline from the Word DOCX has not been included in the script. If the 
-                    Outline to the text is quite complex, it is recommended that you paste the outlined contents from the DOCX here as a comment for
-                    markup’s reference. The actual table of contents will be generated in the Reading Room by the parser.-->
-        <front>
+         <front>
             <div type="summary">
                 <head type="summary" tid="1">Summary</head>
                 <milestone unit="chunk" xml:id="UT22084-088-015-45"/>
@@ -254,8 +257,8 @@
                     </p>
                     <milestone unit="chunk" xml:id="UT22084-088-015-56"/>
                     <p tid="12">The topic of dependent arising is explained at length in sūtras such
-                        as <title xml:lang="en">The Rice Seedling Sūtra</title> (<title xml:lang="Sa-Ltn">Śālistambha­sūtra</title>, Toh 210) and <title xml:lang="en">The Sūtra Teaching the Fundamental Exposition and Detailed
-                            Analysis of Dependent Arising</title> (<title xml:lang="Sa-Ltn">Pratītya­samutpādādivibhaṅga­nirdeśa­sūtra</title>, Toh 211), which detail
+                        as <title xml:lang="en">The Rice Seedling Sūtra</title> (<title xml:lang="Sa-Ltn">Śālistambha­sūtra</title>, <ref target="https://read.84000.co/translation/toh210.html">Toh 210</ref>) and <title xml:lang="en">The Sūtra Teaching the Fundamental Exposition and Detailed
+                            Analysis of Dependent Arising</title> (<title xml:lang="Sa-Ltn">Pratītya­samutpādādivibhaṅga­nirdeśa­sūtra</title>, <ref target="https://read.84000.co/translation/toh211.html">Toh 211</ref>), which detail
                         the twelve links of dependent arising. Additional presentations of the
                             <foreign xml:lang="Sa-Ltn">ye dharma</foreign> verse as a dhāraṇī
                         formula can be found in works such as <title xml:lang="en">The Sūtra on
@@ -298,7 +301,7 @@
                                 <!--THE FOLLOWING ONLY NEEDED FOR TEXTS WITH MULTIPLE TOH VERSIONS OTHERWISE OMIT AND REMOVE THE <p> ELEMENT-->
                                 <p key="toh521">Note that there is a discrepancy among various databases
                                     for cataloging the Toh 981 version of this text within vol. 101 or
-                                    102 of the Degé Kangyur. See Toh 981, <ref target="https://read.84000.co/translation/toh981.html#end-note-UT22084-088-015-103">note 6</ref>, for details.</p>
+                                    102 of the Degé Kangyur. See Toh 981, <ptr target="toh981.html#UT22084-088-015-100"/>, for details.</p>
                                 <!--REPLICATE PREVIOUS NOTE IF THERE ARE THREE OR MORE TOH VERSIONS-->
                             </note> It is likewise included in both the Tantra and Compendium of
                         Dhāraṇīs sections in the other Tshalpa Kangyurs that have a separate Dhāraṇī
@@ -326,13 +329,10 @@
                             Dependent Arising</title>, along with <title xml:lang="en">The Sūtra on
                             Dependent Arising</title> have been published in Peter Skilling’s
                         anthology <title xml:lang="en">Questioning the Buddha</title>.<note place="end" xml:id="UT22084-088-015-62"> See Skilling 2021, pp.
-                            247273.</note> The English translation presented here is based on the
+                            247, and 273.</note> The English translation presented here is based on the
                         two Degé witnesses (Toh 521 and Toh 981) in consultation with the variant
                         readings recorded in the Comparative Edition (<title xml:lang="Bo-Ltn">dpe
-                            sdur ma</title>). No significant differences between the two Degé
-                        witnesses were found. We have additionally consulted the version in the
-                        Narthang Kangyur, which contains a significantly different reading of the
-                        last line of the Tibetan translation of the dhāraṇī. </p>
+                            sdur ma</title>) and the Narthang Kangyur. </p>
                 </div>
             </div>
         </front>
@@ -363,7 +363,7 @@
                                 discrepancy in the folio numbering between the 1737 <foreign xml:lang="Bo-Ltn">par phud</foreign> printings and the late
                                 (post <foreign xml:lang="Bo-Ltn">par phud</foreign>) printings of
                                 the Degé Kangyur. Although the discrepancy is irrelevant here,
-                                further details concerning this may be found in <ref target="https://read.84000.co/translation/toh521.html#end-note-UT22084-088-015-105">note 10</ref> of the Toh 521 version of this text.</p>
+                                further details concerning this may be found in <ptr target="toh521.html#UT22084-088-015-103"/> of the Toh 521 version of this text.</p>
                             <!--REPLICATE PREVIOUS NOTE IF THERE ARE THREE OR MORE TOH VERSIONS-->
                         </note>
                         <note place="end" xml:id="UT22084-088-015-65"> Toh 981 does not give the
@@ -372,10 +372,11 @@
                     </p>
                 <lb/>
                     <lg tid="21">
-                        <l>“The Tathāgata taught the cause</l>
+                        <l>“The Tathāgata explained the cause</l>
                         <l>Of dharmas that arise from causes,</l>
                         <l>And he taught their cessation.</l>
-                        <l>Thus the Great Śramaṇa teaches.</l>
+                        <l>Thus the Great Śramaṇa has instructed.<note place="end" xml:id="UT22084-088-015-107">The Nartang Kangyur reads: <foreign xml:lang="Bo-Ltn">de skad gsungs pa dge sbyong che</foreign>.</note>
+                        </l>
                     </lg>
                     <milestone unit="chunk" xml:id="UT22084-088-015-68"/>
                     <p rend="mantra" tid="22">
@@ -383,7 +384,7 @@
                             teṣāṃ tathāgato hy avadat | teṣāṃ ca yo nirodha evaṃvādī mahāśramaṇaḥ ||</mantra>
                     </p>
                     <milestone unit="chunk" xml:id="UT22084-088-015-69"/>
-                    <p tid="23">By reciting this essence dhāraṇī once, all negative actions will be
+                    <p tid="23">By reciting this essence once, all negative actions will be
                         purified and all adverse conditions will be pacified and averted. Any object
                         that one envisions<note place="end" xml:id="UT22084-088-015-70"> Tib.
                                 <foreign xml:lang="Bo-Ltn" type="quote">dngos po gang la dmigs
@@ -391,8 +392,7 @@
                                 take something as an object of thought or perception, so this could
                                 be a physical object or an imagined one.</note> while
                         reciting it will become the body of the Buddha or a stūpa, and any offering
-                        one imagines<note place="end" xml:id="UT22084-088-015-71"> Tib. <foreign xml:lang="Bo-Ltn" type="term">dmigs</foreign>, see note
-                            above.</note> while reciting it will be offered as if they fill an
+                        one envisions while reciting it will be offered as if they fill an
                         entire world realm. </p>
                     <milestone unit="chunk" xml:id="UT22084-088-015-72"/>
                     <trailer tid="24">
@@ -488,7 +488,7 @@
                         Dharmachakra Translation Committee. Online publication, 84000: Translating
                         the Words of the Buddha, 2020.</bibl>
                     <bibl xml:id="UT22084-088-015-86">
-                        <ref target="http://www.rkts.org/rktsneu/sub/index.php">Resources for Kanjur
+                        <ref target="http://www.rkts.org/index.php">Resources for Kanjur
                             &amp; Tanjur Studies</ref>. Universität Wien. Accessed April 17,
                         2023.</bibl>
                     <bibl xml:id="UT22084-088-015-87">
@@ -548,8 +548,8 @@
                             <term xml:lang="Bo-Ltn" n="1">dge sbyong chen po </term>
                             <term xml:lang="bo" n="1">དགེ་སྦྱོང་ཆེན་པོ།</term>
                             <term xml:lang="Sa-Ltn" type="reconstructedPhonetic">mahāśramaṇa</term>
-                            <note type="definition">
-                                <p>An epithet of the Buddha.</p>
+                        <note type="definition">
+                                <p>An epithet of the Buddha. See also definition for “śramaṇa.”</p>
                             </note>
                         </gloss>
                     </item>
