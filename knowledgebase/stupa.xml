@@ -9,7 +9,7 @@
                 <title type="otherTitle" xml:lang="Bo-Ltn">mchod rten</title>
             </titleStmt>
             <editionStmt>
-                <edition>v 1.2.3 <date>2024</date>
+                <edition>v 1.2.4 <date>2024</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -48,13 +48,16 @@
                 <change who="#celso" when="2024-07-08T14:53:07.795Z" type="text-version" status="1.2.3" xml:id="EFT-KB-STUPA-43">
                     <desc>added links to 321, 322 </desc>
                 </change>
+                <change who="#john" when="2024-09-05T09:41:32.035Z" type="text-version" status="1.2.4" xml:id="EFT-KB-STUPA-44">
+                    <desc>Added references.</desc>
+                </change>
             </revisionDesc>
         </fileDesc>
     </teiHeader>
     <text>
         <front/>
         <body>
-            <div type="article">
+            <div type="article" xml:id="EFT-KB-STUPA-article">
                 <head type="article" tid="80">Stūpa</head>
                 <div type="section" xml:id="EFT-KB-STUPA-article-1">
                     <head type="section" tid="71">Introduction</head>
@@ -130,7 +133,7 @@
                     <p tid="11">
                         <label>2) Benefits of venerating stūpas:</label>
                     </p>
-                    <p tid="12">This is the main theme of:</p>
+                    <p tid="12">This is among the main themes of:</p>
                     <list type="bullet" rend="dots">
                         <item>
                             <p tid="13">
@@ -141,17 +144,27 @@
                         </item>
                         <item>
                             <p tid="81">
-                                <title xml:lang="en">The Marvelous Dharma Discourse</title>
+                                <title xml:lang="en">
+                                    <ref target="https://read.84000.co/translation/toh319.html">The Marvelous Dharma Discourse</ref>
+                                </title>
                                 (<title xml:lang="Sa-Ltn">Adbhutadharmaparyāya</title>, Toh
                                 319)</p>
                         </item>
                         <item>
-                            <p tid="82">
+                            <p tid="84">
                                 <title xml:lang="en">
                                     <ref target="https://read.84000.co/translation/toh321.html">The Verses on Circumambulating Shrines</ref>
                                 </title>
                                     (<title xml:lang="Sa-Ltn">Caityapradakṣiṇagāthā</title>, Toh
                                 321)</p>
+                        </item>
+                        <item>
+                            <p tid="85">
+                                <title xml:lang="en">
+                                    <ref target="https://read.84000.co/translation/toh322.html">Verses for Prasenajit</ref>
+                                </title>
+                                (<title xml:lang="Sa-Ltn">Prasenajidgāthā</title>, Toh
+                                322)</p>
                         </item>
                     </list>
                     <p tid="15">It is mentioned in passages in:</p>
@@ -444,7 +457,7 @@
             </div>
         </body>
         <back>
-            <div type="listBibl">
+            <div type="listBibl" xml:id="EFT-KB-STUPA-listBibl">
                 <head type="listBibl" tid="70">Bibliography</head>
                 <div type="section" xml:id="EFT-KB-STUPA-listBibl-1">
                     <bibl xml:id="EFT-KB-STUPA-4">Schopen, Gregory. “The Phrase <foreign xml:lang="Sa-Ltn" type="quote">sa pṛthivīpradeśaś caityabhūto
