@@ -19,7 +19,7 @@
                 <editor role="finalReviewer" xml:id="UT22084-088-003-142">Andreas Doctor</editor>
             </titleStmt>
             <editionStmt>
-                <edition>v 1.0.4 <date>2024</date>
+                <edition>v 1.0.5 <date>2024</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -45,8 +45,7 @@
             <sourceDesc>
                 <bibl key="toh509" type="text">
                     <ref>Toh 509</ref>
-                    <biblScope>Degé Kangyur, vol. 88 (rgyud ’bum, na), folios 24.b–25.b (in
-                            <foreign xml:lang="Bo-Ltn">par phud</foreign> printings), 41.b–42.b (in later
+                    <biblScope>Degé Kangyur, vol. 88 (rgyud ’bum, na), folios 24.b–25.b (in <foreign xml:lang="Bo-Ltn">par phud</foreign> printings), 41.b–42.b (in later
                         printings)</biblScope>
                     <location work="UT4CZ5369" count-pages="2">
                         <!--<volume number="88" start-page="14" end-page="15"/>-->
@@ -173,6 +172,9 @@
                 <change who="#sameer" when="2024-07-15T20:30:09.269Z" type="text-version" status="1.0.4" xml:id="UT22084-088-003-155">
                     <desc>Included in App v 3.16</desc>
                 </change>
+                <change who="#john" when="2024-09-11T10:02:09.353Z" type="text-version" status="1.0.5" xml:id="UT22084-088-003-156">
+                    <desc>Minor edits to introduction.</desc>
+                </change>
             </revisionDesc>
         </fileDesc>
     </teiHeader>
@@ -181,7 +183,7 @@
                     Outline to the text is quite complex, it is recommended that you paste the outlined contents from the DOCX here as a comment for
                     markup's reference. The actual table of contents will be generated in the Reading Room by the parser.-->
         <front>
-            <div type="summary">
+            <div type="summary" xml:id="UT22084-088-003-summary">
                 <head type="summary" tid="1">Summary</head>
                 <milestone unit="chunk" xml:id="UT22084-088-003-45"/>
                 <p tid="2">This short text presents a set of mantras that, when placed inside a
@@ -189,7 +191,7 @@
                     These dhāraṇīs are specifically said to be of benefit to future generations
                     whose merit will be weak.</p>
             </div>
-            <div type="acknowledgment">
+            <div type="acknowledgment" xml:id="UT22084-088-003-acknowledgment">
                 <head type="acknowledgment" tid="3">Acknowledgements</head>
                 <milestone unit="chunk" xml:id="UT22084-088-003-46"/>
                 <p tid="4">This publication was completed under the patronage and supervision of
@@ -201,7 +203,7 @@
                     copyedited the text. Martina Cotter was in charge of the digital publication
                     process.</p>
             </div>
-            <div type="introduction">
+            <div type="introduction" xml:id="UT22084-088-003-introduction">
                 <head type="introduction" tid="7">Introduction</head>
                 <div type="section" xml:id="UT22084-088-003-introduction-1">
                     <milestone unit="chunk" xml:id="UT22084-088-003-49"/>
@@ -215,25 +217,31 @@
                             this dhāraṇī text was extracted.<ref rend="pending" target="http://read.84000.co/translation/toh508.html"/>
                         </note>
                         Instead, the text begins abruptly with a presentation of the mantras,
-                        including a long root mantra (<foreign xml:lang="Bo-Ltn" type="term">rtsa ba’i sngags</foreign>; <foreign xml:lang="Sa-Ltn" type="term">mūlamantra</foreign>),<note place="end" xml:id="UT22084-088-003-51"> Toh 508<ref rend="pending" target="http://read.84000.co/translation/toh508.html"/> identifies
+                        including a long root mantra (<foreign xml:lang="Bo-Ltn" type="term">rtsa
+                            ba’i sngags</foreign>; <foreign xml:lang="Sa-Ltn" type="term">mūlamantra</foreign>),<note place="end" xml:id="UT22084-088-003-51">
+                            Toh 508<ref rend="pending" target="http://read.84000.co/translation/toh508.html"/> identifies
                             this dhāraṇī or root mantra as “the dhāraṇī called <distinct>one hundred
                                 thousand ornaments of the essence of awakening</distinct>, the king
-                            of ritual manuals” (<foreign xml:lang="Bo-Ltn" type="quote">rtog pa’i rgyal po byang chub snying
-                                po’i rgyan ’bum zhes bya ba’i gzungs</foreign>).</note> a
-                        shorter essence mantra (<foreign xml:lang="Bo-Ltn" type="term">snying po</foreign>; <foreign xml:lang="Sa-Ltn" type="term">hṛdaya</foreign>), an ancillary essence mantra (<foreign xml:lang="Bo-Ltn" type="term">nye ba’i snying po</foreign>; <foreign xml:lang="Sa-Ltn" type="term">upahṛdaya</foreign>), and an additional undesignated mantra. A
-                        short prose section follows that explains the special function of these:
-                        anyone who writes them down and puts them inside a stūpa will see the
-                        effects of that deed multiply so that it will be as if they built one
-                        hundred thousand stūpas instead of just one. Making extensive offerings to
-                        that stūpa is likewise said to be tantamount to making offerings to the
-                        Three Jewels. The Buddha next addresses Nanda to explain that this teaching
-                        will be of specific benefit to beings in the future who will have little
-                        merit, weak faith, and bad karma because they have failed to read the sūtra
-                        and make extensive offerings. However, by simply relying on this dhāraṇī,
-                        the Buddha assures Nanda, “one will have made eighty-four thousand offerings
-                        adorned with the Dharma” and their merit will become inexhaustible. At the
-                        end it is stated that this dhāraṇī has the same effect as reading and
-                        reciting <title xml:lang="en">The Stem Array</title> (<title xml:lang="Sa-Ltn">Gaṇḍavyūha</title>, Toh 44-45),<note place="end" xml:id="UT22084-088-003-135">
+                            of ritual manuals” (<foreign xml:lang="Bo-Ltn" type="quote">rtog pa’i
+                                rgyal po byang chub snying po’i rgyan ’bum zhes bya ba’i
+                                gzungs</foreign>).</note> a shorter essence mantra (<foreign xml:lang="Bo-Ltn" type="term">snying po</foreign>; <foreign xml:lang="Sa-Ltn" type="term">hṛdaya</foreign>), an ancillary essence
+                        mantra (<foreign xml:lang="Bo-Ltn" type="term">nye ba’i snying po</foreign>;
+                            <foreign xml:lang="Sa-Ltn" type="term">upahṛdaya</foreign>), and an
+                        additional undesignated mantra. A short prose section follows that explains
+                        the special function of these: anyone who writes them down and puts them
+                        inside a stūpa will see the effects of that deed multiply so that it will be
+                        as if they built one hundred thousand stūpas instead of just one. Making
+                        extensive offerings to that stūpa is likewise said to be tantamount to
+                        making offerings to the Three Jewels. The Buddha next addresses Nanda to
+                        explain that this teaching will be of specific benefit to beings in the
+                        future who will have little merit, weak faith, and bad karma because they
+                        have failed to read the sūtra and make extensive offerings. However, by
+                        simply relying on this dhāraṇī, the Buddha assures Nanda, “one will have
+                        made eighty-four thousand offerings adorned with the Dharma” and their merit
+                        will become inexhaustible. At the end it is stated that this dhāraṇī has the
+                        same effect as reading and reciting <title xml:lang="en">The Stem
+                            Array</title> (<title xml:lang="Sa-Ltn">Gaṇḍavyūha</title>, Toh
+                            44-45),<note place="end" xml:id="UT22084-088-003-135">
                             <title xml:lang="en">
                                 <ref target="http://read.84000.co/translation/toh44-45.html">The Stem
                                     Array</ref>
@@ -247,24 +255,26 @@
                         Degé Kangyur (Toh 508). For a long time this longer version was considered
                         lost, as stated by Butön Rinchen Drup in the early fourteenth century.<note place="end" xml:id="UT22084-088-003-53"> Butön, <title xml:lang="Bo-Ltn">rgyud ’bum gyi dkar chag</title>, 382. Khedrub Jé also makes
                             reference to an earlier translation that was no longer extant in Tibet
-                            in the fifteenth century (Schopen 2005, pp. 318–19).</note> As such, the
+                            in the fifteenth century (Schopen 2005, pp. 318–19).</note> The
                         longer version is not found in any Kangyurs of the Tshalpa recensional
-                        lineage that were produced before the Degé, which include only the short
+                        lineage that were produced before the Degé; they include only the short
                         version translated here. Nor was the longer version included in the first
-                        printing of the Degé Kangyur itself, the so-called <foreign xml:lang="Bo-Ltn">par
-                            phud</foreign> (first printed in 1737), or in the Choné Kangyur
-                        which was based on the Degé.  Rather, as stated in its lengthy colophon, Toh
-                        508 was only translated into Tibetan as late as 1743, when a translation
-                        from Chinese was made by the great Qing dynasty Mongolian scholar and
-                        translator Gönpo Kyab (<foreign xml:lang="Bo-Ltn">mgon po skyabs</foreign>).<note place="end" xml:id="UT22084-088-003-54"> Toh 508, folio 28.b.<ref inst="put folio 28.b" rend="pending" target="http://read.84000.co/translation/toh508.html"/> On Gönpo
-                            Kyab, see his entry (under the name Gonbujab) at <ref target="https://treasuryoflives.org/biographies/view/mgon-po-skyabs/7473">The Treasury of Lives</ref>, published July 2020. The Chinese
+                        printing of the Degé Kangyur itself, the so-called <foreign xml:lang="Bo-Ltn">par phud</foreign> (first printed in 1737), or in the
+                        Choné Kangyur which was based on the Degé.  Rather, as stated in its lengthy
+                        colophon, Toh 508 was only translated into Tibetan as late as 1743, when a
+                        translation from Chinese was made by the great Qing dynasty Mongolian
+                        scholar and translator Gönpo Kyab (<foreign xml:lang="Bo-Ltn">mgon po
+                            skyabs</foreign>).<note place="end" xml:id="UT22084-088-003-54"> Toh
+                            508, folio 28.b.<ref inst="put folio 28.b" rend="pending" target="http://read.84000.co/translation/toh508.html"/> On Gönpo
+                            Kyab, see his entry (under the name Gonbujab) at 
+                                <ref target="https://treasuryoflives.org/biographies/view/mgon-po-skyabs/7473">The Treasury of Lives</ref>, published July 2020. The Chinese
                             version used by Gönpo Kyab for his Tibetan translation has the title
                                 <title xml:lang="Zh-Ltn">puti chang zhuangyan tuoluoni jing</title>
                                 (<title xml:lang="zh">菩提場莊嚴陀羅尼經</title>, Taishō 1008) and was
                             translated by Amoghavajra in the third quarter of the eighth
                             century.</note> This was then included in later prints of the Degé
                         Kangyur from the 1762 print onwards and in this way is also found in more
-                        recent Kangyurs such as the Lhasa (H478). It was included in order to
+                        recent Kangyurs such as the Lhasa (H 478). It was included in order to
                         replace the text that Butön had considered to be lost, which was listed in
                         the Denkarma imperial-period catalog from the early ninth century.<note place="end" xml:id="UT22084-088-003-55"> See Herrmann-Pfandt 2008, p.
                             190. The Denkarma lists a text called <title xml:lang="Bo-Ltn">’phags pa
@@ -293,20 +303,24 @@
                             inscription is unknown. </note> Other witnesses of the root mantra,
                         essence mantra, and ancillary essence mantra have been found among
                         terracotta tablets dating from the sixth to the ninth century that were
-                        discovered at the site of Nālanda in northern India. The contemporary Tibetan tradition counts the <title xml:lang="en">One Hundred Thousand Ornaments of the Essence
-                            of Awakening</title> among the “the five great dhāraṇīs” (<foreign xml:lang="Bo-Ltn">gzungs chen sde lnga</foreign>) that
-                        are placed inside newly consecrated stūpas.
-                        <note place="end" xml:id="UT22084-088-003-152">The other four dhāraṇīs in the set are 
-                            <title xml:lang="en">
-                                <ref target="http://read.84000.co/translation/toh597.html">The Uṣṇīṣavijāyā Dhāraṇī</ref>
-                            </title>, 
-                            <title xml:lang="en">
-                                <ref rend="pending" target="http://read.84000.co/translation/toh599.html">The Dhāraṇī of Vimaloṣṇīṣa</ref>
-                            </title>, 
-                            <title xml:lang="en">
-                                <ref target="http://read.84000.co/translation/toh507.html">The Dhāraṇī for Secret Relics</ref>
-                            </title>, and the “essence of dependent arising” (<foreign xml:lang="Bo-Ltn">rten ’brel snying po</foreign>) 
-                            the frequently cited formula that begins <mantra xml:lang="Sa-Ltn">oṁ ye dharma</mantra>…</note> </p>
+                        discovered at the site of Nālanda in northern India. The contemporary
+                        Tibetan tradition counts the <title xml:lang="en">One Hundred Thousand
+                            Ornaments of the Essence of Awakening</title> among the “the five great
+                        dhāraṇīs” (<foreign xml:lang="Bo-Ltn">gzungs chen sde lnga</foreign>) that
+                        are placed inside newly consecrated stūpas. <note place="end" xml:id="UT22084-088-003-152">The other four dhāraṇīs in the set are
+                                <title xml:lang="en">
+                                <ref target="http://read.84000.co/translation/toh597.html">The
+                                    Uṣṇīṣavijāyā Dhāraṇī</ref>
+                            </title>, <title xml:lang="en">
+                                <ref rend="pending" target="http://read.84000.co/translation/toh599.html">The
+                                    Dhāraṇī of Vimaloṣṇīṣa</ref>
+                            </title>, <title xml:lang="en">
+                                <ref target="http://read.84000.co/translation/toh507.html">The
+                                    Dhāraṇī for Secret Relics</ref>
+                            </title>, and the “essence of
+                            dependent arising” (<foreign xml:lang="Bo-Ltn">rten ’brel snying
+                                po</foreign>) the frequently cited formula that begins <mantra xml:lang="Sa-Ltn">oṁ ye dharma</mantra>…</note>
+                    </p>
                     <milestone unit="chunk" xml:id="UT22084-088-003-61"/>
                     <p tid="13">Gregory Schopen has published the most detailed study to date of the
                         Tibetan and Sanskrit witnesses of the <title xml:lang="en">One Hundred
@@ -320,24 +334,24 @@
                     <p tid="14">This English translation was prepared based on the two Degé
                         witnesses of the text (Toh 509 and Toh 920), <note place="end" xml:id="UT22084-088-003-146">
                             <p key="toh920">This text, Toh 920, and all those contained in this same
-                                volume (<foreign xml:lang="Bo-Ltn">gzungs, e</foreign>), are listed as being
-                                located in volume 100 of the Degé Kangyur by the Buddhist Digital
-                                Resource Center (BDRC). However, several other Kangyur
+                                volume (<foreign xml:lang="Bo-Ltn">gzungs, e</foreign>), are listed
+                                as being located in volume 100 of the Degé Kangyur by the Buddhist
+                                Digital Resource Center (BDRC). However, several other Kangyur
                                 databases—including the eKangyur that supplies the digital input
                                 version displayed by the 84000 Reading Room—list this work as being
                                 located in volume 101. This discrepancy is partly due to the fact
                                 that the two volumes of the <foreign xml:lang="Bo-Ltn">gzungs
-                                    ’dus</foreign> section are an added supplement not mentioned
-                                in the original catalog, and also hinges on the fact that the
-                                compilers of the Tōhoku catalog placed another text—which forms a
-                                whole, very large volume—the <title xml:lang="Sa-Ltn">Vimala­prabhā­nāma­kālacakra­tantra­ṭīkā</title> (<title xml:lang="Bo-Ltn">dus ’khor ’grel bshad dri med ’od</title>, Toh
+                                    ’dus</foreign> section are an added supplement not mentioned in
+                                the original catalog, and also hinges on the fact that the compilers
+                                of the Tōhoku catalog placed another text—which forms a whole, very
+                                large volume—the <title xml:lang="Sa-Ltn">Vimala­prabhā­nāma­kālacakra­tantra­ṭīkā</title> (<title xml:lang="Bo-Ltn">dus ’khor ’grel bshad dri med ’od</title>, Toh
                                 845), before the volume 100 of the Degé Kangyur, numbering it as
                                 vol. 100, although it is almost certainly intended to come right at
                                 the end of the Degé Kangyur texts as volume 102; indeed its final
                                 fifth chapter is often carried over and wrapped in the same volume
-                                as the Kangyur <foreign xml:lang="Bo-Ltn">dkar chags</foreign> (catalog). Please
-                                note this discrepancy when using the eKangyur viewer in this
-                                translation.</p>
+                                as the Kangyur <foreign xml:lang="Bo-Ltn">dkar chags</foreign>
+                                (catalog). Please note this discrepancy when using the eKangyur
+                                viewer in this translation.</p>
                             <!--THE FOLLOWING ONLY NEEDED FOR TEXTS WITH MULTIPLE TOH VERSIONS OTHERWISE OMIT AND REMOVE THE <p> ELEMENT-->
                             <p key="toh509">Note that there is a discrepancy among various databases
                                 for cataloging the Toh 920 version of this text within vol. 100 or
@@ -351,7 +365,7 @@
             </div>
         </front>
         <body>
-            <div type="translation">
+            <div type="translation" xml:id="UT22084-088-003-translation">
                 <head type="translation"> The Translation </head>
                 <head type="titleHon" tid="15"/>
                 <head type="titleMain" tid="16">The Dhāraṇī “One Hundred Thousand Ornaments of the
@@ -366,29 +380,28 @@
                             <p key="toh509">Two sets of
                                 folio references have been included in this translation due to a
                                 discrepancy in volume 88 (<foreign xml:lang="Bo-Ltn">rgyud
-                                    ’bum</foreign>, <foreign xml:lang="Bo-Ltn">na</foreign>) of the Degé Kangyur between the 1737
-                                    <foreign xml:lang="Bo-Ltn">par phud</foreign> printings and the late
-                                (post <foreign xml:lang="Bo-Ltn">par phud</foreign>) printings. In the
-                                latter case, an extra work, <title xml:lang="Sa-Ltn">Bodhi­maṇḍasyālaṃkāra­lakṣa­dhāraṇī</title> (<title xml:lang="Bo-Ltn">byang chub snying po’i rgyan ’bum gyi
+                                    ’bum</foreign>, <foreign xml:lang="Bo-Ltn">na</foreign>) of the
+                                Degé Kangyur between the 1737 <foreign xml:lang="Bo-Ltn">par
+                                    phud</foreign> printings and the late (post <foreign xml:lang="Bo-Ltn">par phud</foreign>) printings. In the latter
+                                case, an extra work, <title xml:lang="Sa-Ltn">Bodhi­maṇḍasyālaṃkāra­lakṣa­dhāraṇī</title> (<title xml:lang="Bo-Ltn">byang chub snying po’i rgyan ’bum gyi
                                     gzungs</title>, Toh 508), was added as the second text in the
                                 volume, thereby displacing the pagination of all the following texts
                                 in the same volume by 17 folios. Since the eKangyur follows the
                                 later printing, both references have been provided, with the
                                 highlighted one linking to the eKangyur viewer.</p>
                             <p key="toh920">In the Toh 509 version of the text there is a slight
-                                discrepancy in the folio numbering between the 1737 <foreign xml:lang="Bo-Ltn">par
-                                    phud</foreign> printings and the late (post <foreign xml:lang="Bo-Ltn">par
-                                    phud</foreign>) printings of the Degé Kangyur. Although the
-                                discrepancy is irrelevant here, further details concerning this may
-                                be found in <ptr target="toh509.html#UT22084-088-003-149"/> of the
-                                Toh 509 version of this text.</p>
+                                discrepancy in the folio numbering between the 1737 <foreign xml:lang="Bo-Ltn">par phud</foreign> printings and the late
+                                (post <foreign xml:lang="Bo-Ltn">par phud</foreign>) printings of
+                                the Degé Kangyur. Although the discrepancy is irrelevant here,
+                                further details concerning this may be found in <ptr target="toh509.html#UT22084-088-003-149"/> of the Toh 509
+                                version of this text.</p>
                         </note> Homage to all buddhas and bodhisattvas. </p>
                     <lb/>
                     <milestone unit="chunk" xml:id="UT22084-088-003-71"/>
                     <p tid="23">The root mantra:<note place="end" xml:id="UT22084-088-003-70"> Toh
-                            509 <foreign xml:lang="Bo-Ltn" type="term">rtsa ba’i sngags</foreign>; Toh
-                            920 <foreign xml:lang="Bo-Ltn" type="term">mU la
-                        ma+ntraM</foreign>.</note>
+                            509 <foreign xml:lang="Bo-Ltn" type="term">rtsa ba’i sngags</foreign>;
+                            Toh 920 <foreign xml:lang="Bo-Ltn" type="term">mU la
+                            ma+ntraM</foreign>.</note>
                     </p>
                     <p rend="mantra" tid="24">
                         <mantra xml:lang="Sa-Ltn">oṁ namo bhagavate
@@ -411,16 +424,17 @@
                     </p>
                     <milestone unit="chunk" xml:id="UT22084-088-003-73"/>
                     <p tid="26">The essence mantra:<note place="end" xml:id="UT22084-088-003-74">
-                            Toh 509 <foreign xml:lang="Bo-Ltn" type="term">snying po</foreign>; Toh 920
-                                <foreign xml:lang="Bo-Ltn" type="term">hri da yaM</foreign>.</note>
+                            Toh 509 <foreign xml:lang="Bo-Ltn" type="term">snying po</foreign>; Toh
+                            920 <foreign xml:lang="Bo-Ltn" type="term">hri da
+                        yaM</foreign>.</note>
                     </p>
                     <p rend="mantra" tid="27">
                         <mantra xml:lang="Sa-Ltn">oṁ
                             sarva­tathāgatavyava­lokite | jaya jaya svāhā ||</mantra>
                         <note place="end" xml:id="UT22084-088-003-76"> This could be translated as
                                 “<mantra xml:lang="mixed">
-                                <foreign xml:lang="Sa-Ltn">oṁ</foreign>, beheld by all tathāgatas, victory, victory,
-                                    <foreign xml:lang="Sa-Ltn">svāhā</foreign>
+                                <foreign xml:lang="Sa-Ltn">oṁ</foreign>,
+                                beheld by all tathāgatas, victory, victory, <foreign xml:lang="Sa-Ltn">svāhā</foreign>
                             </mantra>.”</note>
                     </p>
                     <milestone unit="chunk" xml:id="UT22084-088-003-77"/>
@@ -430,9 +444,10 @@
                         <mantra xml:lang="Sa-Ltn">oṁ hulu hulu jayamukhe
                             svāhā</mantra> ||<note place="end" xml:id="UT22084-088-003-80"> This
                             could be translated as, “<mantra xml:lang="mixed">
-                                <foreign xml:lang="Sa-Ltn">oṁ,
-                                    hulu hulu</foreign>, Face of Victory, <foreign xml:lang="Sa-Ltn">svāhā</foreign>
-                            </mantra>.” </note>
+                                <foreign xml:lang="Sa-Ltn">oṁ, hulu hulu</foreign>, Face of Victory,
+                                    <foreign xml:lang="Sa-Ltn">svāhā</foreign>
+                            </mantra>.”
+                        </note>
                     </p>
                     <milestone unit="chunk" xml:id="UT22084-088-003-81"/>
                     <p tid="30">And:</p>
@@ -467,11 +482,12 @@
                         and renunciants and householders alike will suffer. This being the case,
                         when one builds a stūpa after making offerings to the Buddha and hearing
                         this dhāraṇī,<note place="end" xml:id="UT22084-088-003-88"> This translation
-                            follows the Lhasa, Narthang, and Stok Kangyurs in reading <foreign xml:lang="Bo-Ltn" type="term">’di la nyan</foreign>. The Degé reads <foreign xml:lang="Bo-Ltn" type="term">’di las nyan</foreign>.</note> one will have made
-                        eighty-four thousand offerings adorned with the Dharma. Moreover, one’s
-                        accumulation of merit will be inexhaustible, and it will be as if one had
-                        read and recited <title xml:lang="en">The Stem Array</title>. One will enter
-                        the mundane and transcendent maṇḍalas. <ref key="toh509" cRef="F.25.b" work="W22084"/>
+                            follows the Lhasa, Narthang, and Stok Kangyurs in reading <foreign xml:lang="Bo-Ltn" type="term">’di la nyan</foreign>. The Degé reads
+                                <foreign xml:lang="Bo-Ltn" type="term">’di las
+                            nyan</foreign>.</note> one will have made eighty-four thousand offerings
+                        adorned with the Dharma. Moreover, one’s accumulation of merit will be
+                        inexhaustible, and it will be as if one had read and recited <title xml:lang="en">The Stem Array</title>. One will enter the mundane and
+                        transcendent maṇḍalas. <ref key="toh509" cRef="F.25.b" work="W22084"/>
                         <ref cRef="F.42.b" type="folio" key="toh509" xml:id="UT22084-088-003-130"/>
                     </p>
                     <milestone unit="chunk" xml:id="UT22084-088-003-89"/>
@@ -484,10 +500,10 @@
             </div>
         </body>
         <back>
-            <div type="notes">
+            <div type="notes" xml:id="UT22084-088-003-notes">
                 <head type="notes" tid="38">Notes</head>
             </div>
-            <div type="listBibl">
+            <div type="listBibl" xml:id="UT22084-088-003-listBibl">
                 <head type="listBibl" tid="40">Bibliography</head>
                 <div type="section" xml:id="UT22084-088-003-listBibl-1">
                     <head type="section" tid="41">Tibetan Sources</head>
@@ -551,13 +567,13 @@
                     <bibl xml:id="UT22084-088-003-104">Strauch, Ingo. “Two Stamps with the
                         Bodhigarbhālaṃkāralakṣa Dhāraṇī from Afghanistan and Some Further Remarks on
                         the Classification of Objects with the <foreign xml:lang="Sa-Ltn">ye
-                            dharmā</foreign> Formula.” In <title xml:lang="en">Prajñādhara:
-                            Essays on Asian Art History Epigraphy and Culture in Honour of Gouriswar
+                            dharmā</foreign> Formula.” In <title xml:lang="en">Prajñādhara: Essays
+                            on Asian Art History Epigraphy and Culture in Honour of Gouriswar
                             Bhattacharya</title>, edited by G. Bhattacharya, Gerd J. R. Mevissen,
                         and Arundhati Banerji, 37–58. New Delhi: Kaveri Books, 2009.</bibl>
                 </div>
             </div>
-            <div type="glossary">
+            <div type="glossary" xml:id="UT22084-088-003-glossary">
                 <list type="glossary">
                     <item>
                         <gloss type="term" xml:id="UT22084-088-003-106">
@@ -639,7 +655,7 @@
                                     integrity. Thus, someone who enters the Buddha’s saṅgha is
                                     called a “son or daughter of noble family” and is in this sense
                                     “good” or “noble” and considered born again (<foreign xml:lang="Sa-Ltn" type="term">dvija</foreign>, or “twice
-                                born”).</p>
+                                    born”).</p>
                             </note>
                         </gloss>
                     </item>
@@ -657,7 +673,7 @@
                                     integrity. Thus, someone who enters the Buddha’s saṅgha is
                                     called a “son or daughter of noble family” and is in this sense
                                     “good” or “noble” and considered born again (<foreign xml:lang="Sa-Ltn" type="term">dvija</foreign>, or “twice
-                                born”).</p>
+                                    born”).</p>
                             </note>
                         </gloss>
                     </item>
@@ -756,9 +772,11 @@
                             <note type="definition">
                                 <p>1385–1438. A famous Tibetan scholar trained
                                     in the Sakya school and the Kadampa lineage. He later became one
-                                    of the foremost disciples of Tsongkhapa (<foreign xml:lang="Bo-Ltn">tsong kha pa</foreign>; 1357–1419). He became the third
-                                    throne holder of Ganden monastery after Tsongkhapa, and
-                                    posthumously was declared the first Paṇchen Lama (<foreign xml:lang="Bo-Ltn">paN chen bla ma</foreign>). </p>
+                                    of the foremost disciples of Tsongkhapa (<foreign xml:lang="Bo-Ltn">tsong kha pa</foreign>; 1357–1419). He
+                                    became the third throne holder of Ganden monastery after
+                                    Tsongkhapa, and posthumously was declared the first Paṇchen Lama
+                                        (<foreign xml:lang="Bo-Ltn">paN chen bla ma</foreign>).
+                                </p>
                             </note>
                         </gloss>
                     </item>
