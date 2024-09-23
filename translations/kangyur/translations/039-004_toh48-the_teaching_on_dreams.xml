@@ -17,8 +17,8 @@
                 <title type="otherTitle" xml:lang="Sa-Ltn">Svapnanirdeśasūtra</title>
                 <title type="otherTitle" xml:lang="Bo-Ltn">rmi lam bstan pa'i mdo/</title>
                 <title type="otherTitle" xml:lang="zh">《說夢經》（大正藏：《大寶積經淨居天子會第四》）</title>
-                <author role="translatorMain" xml:id="UT22084-039-004-1">University of
-                    Toronto</author>
+                <author role="translatorMain" xml:id="UT22084-039-004-1"/><!--University of
+                    Toronto</author>-->
                 <editor role="externalReviewer" xml:id="UT22084-039-004-2">James Duncan
                     Gentry</editor>
                 <editor role="projectEditor" xml:id="UT22084-039-004-3">Tom Tillemans</editor>
@@ -38,7 +38,7 @@
                     Sucharitakul and Pema Choeden Namgyal Abrahams</sponsor>
             </titleStmt>
             <editionStmt>
-                <edition>v 1.0.0 <date>2024</date>
+                <edition>v 1.0.1 <date>2024</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -164,6 +164,9 @@
                 </change>
                 <change who="#admin" when="2024-09-23T08:09:35.058Z" type="text-version" status="1.0.0" xml:id="UT22084-039-004-645">
                     <desc>User set version to 1.0.0</desc>
+                </change>
+                <change who="#andre" when="2024-09-23T15:45:38.507Z" type="text-version" status="1.0.1" xml:id="UT22084-039-004-646">
+                    <desc>Glossary integration revised, activated in CG, and a couple of adjustment there.</desc>
                 </change>
             </revisionDesc>
         </fileDesc>
@@ -3076,7 +3079,7 @@
 
                 </div>
             </div>
-            <div type="glossary" status="excluded" xml:id="UT22084-039-004-glossary">
+            <div type="glossary" xml:id="UT22084-039-004-glossary">
                 <list type="glossary">
                     <item>
                         <gloss type="term" xml:id="UT22084-039-004-604">
@@ -3585,7 +3588,7 @@
                             <term xml:lang="bo" type="attestedSource" n="2">བདེན་པའི་བྱིན་གྱི་རླབས།</term>
                             <note type="definition">
                                 <p>A blessing enacted by evoking the power of truth. See for example
-                                    Toh 54, 1.10.</p>
+                                    Toh 54, <ptr target="#UT22084-040-005-278"/>–<ptr target="#UT22084-040-005-280"/>.</p>
                             </note>
                         </gloss>
                     </item>
@@ -3638,6 +3641,9 @@
                             <term xml:lang="Sa-Ltn" type="attestedDictionary" status="verified">pāramitā</term>
                             <term xml:lang="Bo-Ltn" status="verified" type="attestedSource" n="1">pha rol tu phyin pa</term>
                             <term xml:lang="bo" type="attestedSource" n="1">ཕ་རོལ་ཏུ་ཕྱིན་པ།</term>
+                            <note type="definition">
+                                <p>This term is used to refer to the main trainings of a bodhisattva. Because these trainings, when brought to perfection, lead one to transcend saṃsāra and reach the full awakening of a buddha, they receive the Sanskrit name <foreign xml:lang="Sa-Ltn">pāramitā</foreign>, meaning “perfection” or “gone to the farther shore.” Here listed as six: generosity, discipline, patience, diligence, meditation, and insight.</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
@@ -3772,7 +3778,7 @@
                             <term xml:lang="bo" type="attestedSource" n="1">ཚངས་པ་དག</term>
                             <note type="definition">
                                 <p>In this text the term is used in the plural, likely to indicate
-                                    brahmās from different world systems. See Brahmā.</p>
+                                    <term rend="ignore">brahmās</term> from different world systems. See Brahmā.</p>
                             </note>
                         </gloss>
                     </item>
@@ -3989,6 +3995,7 @@
                             <term xml:lang="Sa-Ltn" type="attestedDictionary" status="verified">vipaśyanā</term>
                             <term xml:lang="Bo-Ltn" status="verified" type="attestedSource" n="1">lhag mthong</term>
                             <term xml:lang="bo" type="attestedSource" n="1">ལྷག་མཐོང་།</term>
+
                         </gloss>
                     </item>
                     <item>
@@ -4416,7 +4423,7 @@
                     <item>
                         <gloss xml:id="UT22084-039-004-615" type="term" mode="match">
                             <term type="translationMain">wisdom</term>
-                            <term xml:lang="Sa-Ltn" type="sourceUnspecified">jñāna</term>
+                            <term xml:lang="Sa-Ltn" type="attestedDictionary">jñāna</term>
                             <term xml:lang="Bo-Ltn" type="attestedSource" n="1">ye shes</term>
                             <term xml:lang="bo" type="attestedSource" n="1">ཡེ་ཤེས།</term>
                             <note type="definition">
@@ -4434,6 +4441,7 @@
                             <term type="translationMain">insight</term>
                             <term xml:lang="Bo-Ltn" type="attestedSource" n="1">shes rab</term>
                             <term xml:lang="bo" type="attestedSource" n="1">ཤེས་རབ།</term>
+                            <term xml:lang="Sa-Ltn" type="attestedDictionary" status="verified">prajñā</term>
                             <note type="definition">
                                 <p>As the sixth of the six perfections, it refers to the profound
                                     understanding of the emptiness of all phenomena, the realization
