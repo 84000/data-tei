@@ -4,25 +4,25 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="mainTitle" xml:lang="Bo-Ltn">byams pas dam bcas pa’i gzungs</title>
-                <title type="mainTitle" xml:lang="bo">བྱམས་པས་དམ་བཅས་པའི་གཟུངས།</title>
-                <title type="mainTitle" xml:lang="en">The Dhāraṇī of Maitreya’s Pledge</title>
+                <title type="mainTitle" xml:lang="en">The Dhāraṇī “Maitreya’s Pledge”</title>
                 <title type="mainTitle" xml:lang="Sa-Ltn">Maitreya­pratijñā­dhāraṇī</title>
+                <title type="mainTitle" xml:lang="bo">བྱམས་པས་དམ་བཅས་པ་ཞེས་བྱ་བའི་གཟུངས།</title>
+                <title type="mainTitle" xml:lang="Bo-Ltn">byams pas dam bcas pa zhes bya ba’i gzungs</title>
+                <title type="longTitle" xml:lang="en">The Noble Dhāraṇī “Maitreya’s Pledge”</title>
+                <title type="longTitle" xml:lang="Sa-Ltn">Ārya­maitreya­pratijñānāma­dhāraṇī</title>
                 <title type="longTitle" xml:lang="bo">འཕགས་པ་བྱམས་པས་དམ་བཅས་པ་ཞེས་བྱ་བའི་གཟུངས།</title>
                 <title type="longTitle" xml:lang="Bo-Ltn">’phags pa byams pas dam bcas pa zhes bya
                     ba’i gzungs</title>
-                <title type="longTitle" xml:lang="en">The Noble Dhāraṇī “Maitreya’s Pledge”</title>
-                <title type="longTitle" xml:lang="Sa-Ltn">Ārya­maitreya­pratijñānāma­dhāraṇī</title>
-                <title type="otherTitle" xml:lang="zh"/>
                 <author role="translatorMain" xml:id="UT22084-091-040-1"><!--84000 Associate Translators--></author>
                 <author role="translatorEng" xml:id="UT22084-091-040-2">Lowell Cook</author>
                 <editor role="projectEditor" xml:id="UT22084-091-040-13">Rory Lindsay</editor>
                 <editor role="copyEditor" xml:id="UT22084-091-040-22">Dawn Collins</editor>
                 <editor role="projectEditor" xml:id="UT22084-091-040-32">Nathaniel Rich</editor>
                 <editor role="TEImarkupEditor" xml:id="UT22084-091-040-43">Martina Cotter</editor>
+                <editor role="finalReviewer" xml:id="UT22084-091-040-123">Andreas Doctor</editor>
             </titleStmt>
             <editionStmt>
-                <edition>v 0.0.2 <date>2024</date>
+                <edition>v 1.0.0 <date>2024</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -30,7 +30,7 @@
                     <name>84000: Translating the Words of the Buddha</name> is a global
                     non-profit initiative to translate all the Buddha’s words into modern languages,
                     and to make them available to everyone. </publisher>
-                <availability status="2">
+                <availability status="1.a">
                     <licence>
                         <graphic url="http://i.creativecommons.org/l/by-nc-nd/2.0/88x31.png"/>
                         <p>This work is provided under the protection of a Creative Commons CC
@@ -43,14 +43,14 @@
                 <idno xml:id="UT22084-091-040"/>
                 <note>An early mistake in the assigning of UT numbers within the 84000 project means
                     that these ids diverge slightly from the standard logic.</note>
-                <date>2024-04-17</date>
+                <date>2024-09-30</date>
             </publicationStmt>
             <sourceDesc>
                 <bibl key="toh643" type="text">
                     <ref>Toh 643</ref>
                     <biblScope>Degé Kangyur, vol. 91 (rgyud ’bum, ba), folios 127.b–128.a </biblScope>
                     <author role="translatorTib" xml:id="UT22084-091-040-105">Vajrapāṇi</author>
-                    <author role="translatorTib" xml:id="UT22084-091-040-106">Chökyi Sherap</author>                    
+                    <author role="translatorTib" xml:id="UT22084-091-040-106">Chökyi Sherap</author>
                     <location work="UT4CZ5369" count-pages="2">
                         <volume number="91" start-page="254" end-page="255"/>
                     </location>
@@ -150,6 +150,15 @@
                 <change who="#line-tofte" when="2024-05-02T08:34:03.003Z" type="text-version" status="0.0.2" xml:id="UT22084-091-040-116">
                     <desc>Auto (update-publication-status)</desc>
                 </change>
+                <change who="#line-tofte" when="2024-09-26T08:07:12.986Z" type="text-version" status="0.0.3" xml:id="UT22084-091-040-124">
+                    <desc>Auto (update-contributors)</desc>
+                </change>
+                <change who="#martina-cotter" when="2024-09-30T20:55:45.221Z" type="translation-status" status="1.a" xml:id="UT22084-091-040-126">
+                    <desc>1.a</desc>
+                </change>
+                <change who="#martina-cotter" when="2024-09-30T20:55:45.221Z" type="text-version" status="1.0.0" xml:id="UT22084-091-040-127">
+                    <desc>First published version.</desc>
+                </change>
             </revisionDesc>
         </fileDesc>
     </teiHeader>
@@ -158,20 +167,20 @@
                     Outline to the text is quite complex, it is recommended that you paste the outlined contents from the DOCX here as a comment for
                     markup's reference. The actual table of contents will be generated in the Reading Room by the parser.-->
         <front>
-            <div type="summary">
+            <div type="summary" xml:id="UT22084-091-040-summary">
                 <head type="summary" tid="1">Summary</head>
                 <milestone unit="chunk" xml:id="UT22084-091-040-45"/>
                 <p tid="2">
-                    <title xml:lang="en">The Dhāraṇī of Maitreya’s Pledge</title> is a short dhāraṇī
-                    centered on Maitreya, the bodhisattva who will, as alluded to in this text,
-                    awaken as the next buddha in our world. Its dhāraṇī consists of a root mantra,
-                    heart mantra, and auxiliary heart mantra and is followed by Maitreya’s vow to
-                    benefit beings. The benefits of the dhāraṇī range from receiving prophecies for
-                    awakening to acquiring one’s desired material enjoyments. Since these benefits
-                    also extend to animals, the text advocates reciting its dhāraṇī so that animals
-                    may hear it as well.</p>
+                    <title xml:lang="en">The Dhāraṇī “Maitreya’s Pledge”</title> is a short
+                    dhāraṇī centered on Maitreya, the bodhisattva who will, as alluded to in this
+                    text, awaken as the next buddha in our world. Its dhāraṇī consists of a root
+                    mantra, heart mantra, and auxiliary heart mantra and is followed by Maitreya’s
+                    vow to benefit beings. The benefits of the dhāraṇī range from receiving
+                    prophecies for awakening to acquiring one’s desired material enjoyments. Since
+                    these benefits also extend to animals, the text advocates reciting its dhāraṇī
+                    so that animals may hear it as well.</p>
             </div>
-            <div type="acknowledgment">
+            <div type="acknowledgment" xml:id="UT22084-091-040-acknowledgment">
                 <head type="acknowledgment" tid="3">Acknowledgements</head>
                 <milestone unit="chunk" xml:id="UT22084-091-040-46"/>
                 <p tid="4">This publication was completed under the patronage and supervision of
@@ -182,34 +191,43 @@
                     Lindsay edited the translation and the introduction, and Dawn Collins copyedited
                     the text. Martina Cotter was in charge of the digital publication process. </p>
             </div>
-            <div type="introduction">
+            <div type="introduction" xml:id="UT22084-091-040-introduction">
                 <head type="introduction" tid="7">Introduction</head>
                 <div type="section" xml:id="UT22084-091-040-introduction-1">
                     <milestone unit="chunk" xml:id="UT22084-091-040-49"/>
                     <p tid="9">
-                        <title xml:lang="en">The Dhāraṇī of Maitreya’s Pledge</title> is one of two dhāraṇī
-                        works in the Degé Kangyur<note place="end" xml:id="UT22084-091-040-114">
-                            <p key="toh890">This text, Toh 890, and all those contained in this same volume (<foreign xml:lang="Bo-Ltn">
-                                (gzungs ’dus, e)
-                            </foreign>), are listed as being located in volume 100 of the Degé Kangyur by the Buddhist
-                                Digital Resource Center (BDRC). However, several other Kangyur databases—including the eKangyur that supplies the digital input version
-                                displayed by the 84000 Reading Room—list this work as being located in volume 101. This discrepancy is partly due to the fact that
-                                the two volumes of the <foreign xml:lang="Bo-Ltn">gzungs ’dus</foreign> section are an added supplement not mentioned in the original catalog,
-                                and also hinges on the fact that the compilers of the Tōhoku catalog placed another text—which forms a whole, very large volume—the <title xml:lang="Sa-Ltn">Vimala­prabhā­nāma­kālacakra­tantra­ṭīkā</title> (<title xml:lang="Bo-Ltn">dus ’khor ’grel bshad dri med ’od</title>, Toh
-                                845), before the volume 100 of the Degé Kangyur, numbering it as vol. 100, although it is almost certainly intended to come right at the end
-                                of the Degé Kangyur texts as volume 102; indeed its final fifth chapter is often carried over and wrapped in the same volume as the Kangyur
-                                <foreign xml:lang="Bo-Ltn">dkar chags</foreign> (catalog). Please note this discrepancy when using the eKangyur viewer in this
-                                translation.</p>
+                        <title xml:lang="en">The Dhāraṇī “Maitreya’s Pledge”</title> is one
+                        of two dhāraṇī works in the Degé Kangyur<note place="end" xml:id="UT22084-091-040-114">
+                            <p key="toh890">This text, Toh 890, and all those contained in this same
+                                volume (<foreign xml:lang="Bo-Ltn"> (gzungs ’dus, e) </foreign>),
+                                are listed as being located in volume 100 of the Degé Kangyur by the
+                                Buddhist Digital Resource Center (BDRC). However, several other
+                                Kangyur databases—including the eKangyur that supplies the digital
+                                input version displayed by the 84000 Reading Room—list this work as
+                                being located in volume 101. This discrepancy is partly due to the
+                                fact that the two volumes of the <foreign xml:lang="Bo-Ltn">gzungs
+                                    ’dus</foreign> section are an added supplement not mentioned in
+                                the original catalog, and also hinges on the fact that the compilers
+                                of the Tōhoku catalog placed another text—which forms a whole, very
+                                large volume—the <title xml:lang="Sa-Ltn">Vimala­prabhā­nāma­kālacakra­tantra­ṭīkā</title> (<title xml:lang="Bo-Ltn">dus ’khor ’grel bshad dri med ’od</title>, Toh
+                                845), before the volume 100 of the Degé Kangyur, numbering it as
+                                vol. 100, although it is almost certainly intended to come right at
+                                the end of the Degé Kangyur texts as volume 102; indeed its final
+                                fifth chapter is often carried over and wrapped in the same volume
+                                as the Kangyur <foreign xml:lang="Bo-Ltn">dkar chags</foreign>
+                                (catalog). Please note this discrepancy when using the eKangyur
+                                viewer in this translation.</p>
                             <!--THE FOLLOWING ONLY NEEDED FOR TEXTS WITH MULTIPLE TOH VERSIONS OTHERWISE OMIT AND REMOVE THE <p> ELEMENT-->
-                            <p key="toh643">Note that there is a discrepancy among various databases for cataloging the Toh 890 version
-                                of this text within vol. 100 or 101 of the Degé Kangyur. See Toh 890, <ptr target="890.html#UT22084-091-040-114"/>, for details.</p>
+                            <p key="toh643">Note that there is a discrepancy among various databases
+                                for cataloging the Toh 890 version of this text within vol. 100 or
+                                101 of the Degé Kangyur. See Toh 890, <ptr target="890.html#UT22084-091-040-114"/>, for details.</p>
                             <!--REPLICATE PREVIOUS NOTE IF THERE ARE THREE OR MORE TOH VERSIONS-->
-                        </note> that center on Maitreya, the bodhisattva who will,
-                        as alluded to in this text, awaken as the next buddha in our world. This
-                        text appears twice in the Degé Kangyur, first in the Action or Kriyātantra
-                        section and later in the Compendium of Dhāraṇīs section. In the Kriyātantra
-                        section, it is classified as an individual <foreign xml:lang="Sa-Ltn" type="term">kriyātantra</foreign> (<foreign xml:lang="Bo-Ltn" type="term">bya ba so so’i rgyud</foreign>) belonging to the
-                        tathāgata family.</p>
+                        </note> that center on Maitreya, the bodhisattva who will, as alluded to in
+                        this text, awaken as the next buddha in our world. This text appears twice
+                        in the Degé Kangyur, first in the Action Tantra (<foreign xml:lang="Sa-Ltn">kriyātantra</foreign>) section and later in
+                        the Compendium of Dhāraṇīs section. In the Action Tantra section, it is
+                        classified as an individual action tantra (<foreign xml:lang="Bo-Ltn" type="term">bya ba so
+                            so’i rgyud</foreign>) belonging to the tathāgata family.</p>
                     <milestone unit="chunk" xml:id="UT22084-091-040-50"/>
                     <p tid="10">According to Buddhist tradition, Maitreya currently dwells in Tuṣita
                         Heaven and, after the decline of Śākyamuni’s teachings, will appear in this
@@ -217,91 +235,89 @@
                         develop a devoted following in India, starting at least as early as the
                         first centuries of the Common Era. Later, particularly in Central and East
                         Asia, the cult of Maitreya would flourish widely from the fourth century. It
-                        was within this milieu that the text <title xml:lang="en">The Dhāraṇī of Maitreya’s Pledge</title> first emerged.</p>
+                        was within this milieu that the text <title xml:lang="en">The Dhāraṇī “Maitreya’s Pledge”</title> first emerged.</p>
                     <milestone unit="chunk" xml:id="UT22084-091-040-51"/>
                     <p tid="11">
-                        <title xml:lang="en">The Dhāraṇī of Maitreya’s Pledge</title> is comprised of two
-                        sections: the dhāraṇī and the pledge. The dhāraṇī formula is presented in
-                        three progressively essentialized formulas: the root mantra, the heart
-                        mantra, and the auxiliary heart mantra. While terms like dhāraṇī, mantra,
-                        and vidyāmantra have different connotations and various usages throughout
-                        Buddhist literature, they can also be used interchangeably to a certain
-                        extent. In the case of this work, it appears that <foreign xml:lang="Sa-Ltn" type="term">dhāraṇī</foreign> refers to the three formulas together
-                        while <foreign xml:lang="Sa-Ltn" type="term">mantra</foreign> refers to the
-                        individual formulas themselves. This is corroborated by how the entire
-                        formula is presented as a single “dhāraṇī” in later compendiums. Following
-                        the dhāraṇī, Maitreya voices his pledge in which he describes the benefits
-                        of hearing, chanting, and contemplating the dhāraṇī and reciting it for
-                        others. The benefits primarily concern receiving a prophecy, and hence a
-                        guarantee of awakening, from Maitreya himself, which locates this dhāraṇī
-                        within a Mahāyāna-centric worldview. In addition to this, Maitreya also
-                        describes benefits of a more mundane nature, such as acquiring one’s desired
-                        material enjoyments. Maitreya makes clear that the benefits extend to any
-                        animals who hear the dhāraṇī and, thus, advocates reciting it into the ears
-                        of animals. This suggests that the efficacy of the dhāraṇī is not
-                        necessarily predicated on the comprehension of the meaning of its words, but
-                        rather solely on its sound. </p>
+                        <title xml:lang="en">The Dhāraṇī “Maitreya’s Pledge”</title> is
+                        comprised of two sections: the dhāraṇī and the pledge. The dhāraṇī formula
+                        is presented in three formulas: the root mantra,
+                        the heart mantra, and the auxiliary heart mantra. While terms like dhāraṇī,
+                        mantra, and vidyāmantra have different connotations and various usages
+                        throughout Buddhist literature, they can also be used interchangeably to a
+                        certain extent. In the case of this work, it appears that <foreign xml:lang="Sa-Ltn" type="term">dhāraṇī</foreign> refers to the three
+                        formulas together while <foreign xml:lang="Sa-Ltn" type="term">mantra</foreign> refers to the individual formulas themselves. This is
+                        corroborated by how the entire formula is presented as a single “dhāraṇī” in
+                        later compendiums. Following the dhāraṇī, Maitreya voices his pledge in
+                        which he describes the benefits of hearing, chanting, and contemplating the
+                        dhāraṇī and reciting it for others. The benefits primarily concern receiving
+                        a prophecy, and hence a guarantee of awakening, from Maitreya himself, which
+                        locates this dhāraṇī within a Mahāyāna-centric worldview. In addition to
+                        this, Maitreya also describes benefits of a more mundane nature, such as
+                        acquiring one’s desired material enjoyments. Maitreya makes clear that the
+                        benefits extend to any animals that hear the dhāraṇī and, thus, advocates
+                        reciting it into the ears of animals.</p>
                     <milestone unit="chunk" xml:id="UT22084-091-040-52"/>
                     <p tid="12">
-                        <title xml:lang="en">The Dhāraṇī of Maitreya’s Pledge</title> is extant in Sanskrit
-                        in a number of <foreign xml:lang="Sa-Ltn" type="term">dhāraṇīsaṃ­graha</foreign> or “Dhāraṇī Compendiums.” Gergely Hidas
-                        identifies at least ten <foreign xml:lang="Sa-Ltn" type="term">dhāraṇīsaṃ­grahas</foreign> that contain <title xml:lang="en">Maitreya’s
-                            Pledge</title>.<note place="end" xml:id="UT22084-091-040-53"> See: Hidas
-                            2021. The ten manuscripts of <title xml:lang="en">Matireya’s
-                                Pledge</title> in Sanskrit are:A.4 University of Tokyo Library, Ms.
-                            2015A.6 Private collection Ms., Kathmandu = NGMPP E 1774–310A.7 National
-                            Archives, Kathmandu, Ms. NAK 5/31 = NGMPP B 107–1411A.8 Unspecified
-                            collection Ms. and Asha Archives, Kathmandu, Ms. 250713A.10 Asha
-                            Archives, Kathmandu, Ms. No. 2566A.11 Bibliothèque Nationale, Paris, Ms.
-                            No. 6224A.13 Private collection Ms., Kathmandu = NGMPP E 614–327A.14
-                            University of Tokyo Library, Ms. 41929A.16 Toyo Bunko, Tokyo, Ms. No.
-                            1334A.18 National Archives, Kathmandu, Ms. NAK 3/641 = NGMPP A
-                            131–1044</note> This implies that the dhāraṇī did not circulate in India
-                        as an autonomous text but as one among many other texts in larger
-                        collections. </p>
+                        <title xml:lang="en">The Dhāraṇī “Maitreya’s Pledge”</title> is
+                        extant in Sanskrit in a number of <foreign xml:lang="Sa-Ltn" type="term">dhāraṇīsaṃ­graha</foreign> or “Dhāraṇī Compendiums.” Gergely Hidas
+                        identifies at least ten <foreign xml:lang="Sa-Ltn" type="term">dhāraṇīsaṃ­grahas</foreign> that contain <title xml:lang="en">Maitreya’s Pledge</title>.<note place="end" xml:id="UT22084-091-040-53"> See: Hidas 2021. The ten manuscripts of <title xml:lang="en">Matireya’s Pledge</title> in Sanskrit are: 
+                            <list type="bullet">
+                                <item>A.4 University of Tokyo Library, Ms. 2015</item>
+                                <item>A.6 Private collection Ms., Kathmandu = NGMPP E 1774–310</item>
+                                <item>A.7 National Archives, Kathmandu, Ms. NAK 5/31 = NGMPP B 107–1411</item>
+                                <item>A.8 Unspecified collection Ms. and Asha Archives, Kathmandu, Ms. 250713</item>
+                                <item>A.10 Asha Archives, Kathmandu, Ms. No. 2566</item>
+                                <item>A.11 Bibliothèque Nationale, Paris, Ms. No. 6224</item>
+                                <item>A.13 Private collection Ms., Kathmandu = NGMPP E 614–327</item>
+                                <item>A.14 University of Tokyo Library, Ms. 41929</item>
+                                <item>A.16 Toyo Bunko, Tokyo, Ms. No. 1334</item>
+                                <item>A.18 National Archives, Kathmandu, Ms. NAK 3/641 = NGMPP A 131–1044</item>
+                            </list>
+                            </note>
+                    </p>
                     <milestone unit="chunk" xml:id="UT22084-091-040-54"/>
                     <p tid="13">The dhāraṇī was also translated into Chinese by Faxian (<foreign xml:lang="zh">法賢</foreign> 337–422).<note place="end" xml:id="UT22084-091-040-55">
-                            <title xml:lang="Zh-Ltn">Cishi pusa shiyuan tuoluoni
-                                jing</title> <title xml:lang="zh">慈氏菩薩誓願陀羅尼經</title> (<title xml:lang="Sa-Ltn">Maitreya­pratijñā­dhāraṇī</title>), Taishō 1143 (<ref target="https://cbetaonline.dila.edu.tw/en/T1143">CBETA</ref>; <ref target="https://21dzk.l.u-tokyo.ac.jp/SAT2018/T1143.html">SAT</ref>).</note> The Chinese version diverges in several ways. It
-                        begins with a narrative opening (<foreign xml:lang="Sa-Ltn" type="term">nidāna</foreign>) and includes dialogue between the Buddha and
+                            <title xml:lang="Zh-Ltn">Cishi pusa shiyuan tuoluoni jing</title>
+                            <title xml:lang="zh">慈氏菩薩誓願陀羅尼經</title> (<title xml:lang="Sa-Ltn">Maitreya­pratijñā­dhāraṇī</title>), Taishō 1143 (<ref target="https://cbetaonline.dila.edu.tw/en/T1143">CBETA</ref>; <ref target="https://21dzk.l.u-tokyo.ac.jp/SAT2018/T1143.html">SAT</ref>).</note> The Chinese version diverges in several ways. It
+                        begins with a narrative opening (<foreign xml:lang="Sa-Ltn" type="term">nidāna</foreign>) and includes a dialogue between the Buddha Śākyamuni and
                         Maitreya. It would seem that these variations are unique to the version of
                         the dhāraṇī transmitted to China since they do not appear in the Tibetan or
                         the (albeit, much later) Sanskrit recensions. </p>
                     <milestone unit="chunk" xml:id="UT22084-091-040-56"/>
-                    <p tid="14">The colophon to the Tibetan translation of <title xml:lang="en">The Dhāraṇī of Maitreya’s Pledge</title> states that it was translated by the Indian
-                        paṇḍita Vajrapāṇi and the Tibetan translator Chökyi Sherap. According to Gö
-                        Lotsawa, Vajrapāṇi traveled to Tibet in 1066 at the age of sixty,<note place="end" xml:id="UT22084-091-040-57"> Schaeffer 2005, p. 63.</note>
-                        which would situate the translation in the latter half of the eleventh
-                        century. As should be expected, this work is not listed in any of the extant
-                        catalogs from the Imperial Period (629–841) since it was translated during
-                        the Later Dissemination of Buddhism in Tibet (<foreign xml:lang="Bo-Ltn" type="term">bstan pa phyi dar</foreign>).</p>
+                    <p tid="14">The colophon to the Tibetan translation of <title xml:lang="en">The Dhāraṇī “Maitreya’s Pledge”</title> states that it was translated by
+                        the Indian paṇḍita Vajrapāṇi and the Tibetan translator Chökyi Sherap.
+                        According to Gö Lotsawa, Vajrapāṇi traveled to Tibet in 1066 at the age of
+                            sixty,<note place="end" xml:id="UT22084-091-040-57"> Schaeffer 2005, p.
+                            63.</note> which would situate the translation in the latter half of the
+                        eleventh century. As should be expected, this work is not listed in any of
+                        the extant catalogs from the Imperial Period (629–841) since it was
+                        translated during the Later Dissemination of Buddhism in Tibet (<foreign xml:lang="Bo-Ltn" type="term">bstan pa phyi dar</foreign>).</p>
                     <milestone unit="chunk" xml:id="UT22084-091-040-58"/>
                     <p tid="15">
-                        <title xml:lang="en">The Dhāraṇī of Maitreya’s Pledge</title> had a small but
-                        unmistakable presence in the later Tibetan tradition. In the fourteenth
-                        century, the dhāraṇī was reproduced by Butön Rinchen Drup (bu ston rin chen
-                        grub, 1290–1364) in his <title xml:lang="en">Grand Anthology of Dhāraṇīs
-                            from the Four Classes of Secret Mantra Tantras </title>(<title xml:lang="Bo-Ltn">gsang sngags rgyud sde bzhi’i gzungs rnams gcig tu
-                            bsdus pa’i gzungs ’bum chen mo</title>). Later, in the eighteenth
-                            century, the dhāraṇī was included in the
-                        quadrilingual imperial collection of <foreign xml:lang="Sa-Ltn" type="term">dhāraṇīmantras</foreign> produced by the court of the Qianlong Emperor
-                            (1711–99). <title xml:lang="en">The Dhāraṇī of Maitreya’s Pledge</title> has also been included in various liturgy collections,
-                        particularly among the Geluk, a school that shares a close affinity with
-                        Maitreya. As such, the way in which this text was transmitted in Tibet as
-                        one part of larger bodies of texts is remarkably similar to how it was
-                        transmitted in <foreign xml:lang="Sa-Ltn" type="term">dhāraṇīsaṃ­graha</foreign> compilations in India. </p>
+                        <title xml:lang="en">The Dhāraṇī “Maitreya’s Pledge”</title> had a
+                        small but unmistakable presence in the later Tibetan tradition. In the
+                        fourteenth century, the dhāraṇī was reproduced by Butön Rinchen Drup (bu
+                        ston rin chen grub, 1290–1364) in his <title xml:lang="en">Grand Anthology
+                            of Dhāraṇīs from the Four Classes of Secret Mantra Tantras
+                            </title>(<title xml:lang="Bo-Ltn">gsang sngags rgyud sde bzhi’i gzungs
+                            rnams gcig tu bsdus pa’i gzungs ’bum chen mo</title>). Later, in the
+                        eighteenth century, the dhāraṇī was included in the quadrilingual imperial
+                        collection of <foreign xml:lang="Sa-Ltn" type="term">dhāraṇīmantras</foreign> produced by the court of the Qianlong Emperor
+                        (1711–99). <title xml:lang="en">The Dhāraṇī “Maitreya’s Pledge”</title> has also been included in several other Tibetan liturgy collections, particularly among the Geluk School.</p>
                     <milestone unit="chunk" xml:id="UT22084-091-040-59"/>
                     <p tid="16">
-                        <title xml:lang="en">The Dhāraṇī of Maitreya’s Pledge</title> was not only subject
-                        to rote reproduction in Tibet; it also inspired original composition. Most
-                        notably, the fifth Dalai Lama, Ngawang Losang Gyatso (1617–82), authored an
-                        aspiration prayer to be chanted after the recitation of <title xml:lang="en">The Dhāraṇī of Maitreya’s Pledge</title>.<note place="end" xml:id="UT22084-091-040-60"> Fifth Dalai Lama, Ngawang Losang Gyatso (tA la’I bla ma sku phreng
-                            lnga pa ngag dbang blo bzang rgya mtsho). <title xml:lang="Bo-Ltn">byams
-                                pas dam bcas pa’i gzungs kyi rjes su ’don rgyu’i smon lam tshigs
-                                bcad </title>[An Aspiration in Verse to Accompany the Recitation of
-                            “The Dhāraṇī of Maitreya’s Pledge”]. In <title xml:lang="Bo-Ltn">gsung
-                                ’bum ngag dbang blo bzang rgya mtsho</title>, vol. 24, Beijing:
-                            krung go’i bod rig pa dpe skrun khang, 2009, pp. 332–33. <ref target="https://library.bdrc.io/show/bdr:MW1PD107937_C8131D">BDRC
+                        <title xml:lang="en">The Dhāraṇī “Maitreya’s Pledge”</title> was
+                        not only subject to devotional reproduction in Tibet; it also inspired original
+                        composition. Most notably, the fifth Dalai Lama, Ngawang Losang Gyatso
+                        (1617–82), authored an aspiration prayer to be chanted after the recitation
+                        of <title xml:lang="en">The Dhāraṇī “Maitreya’s Pledge”</title>.<note place="end" xml:id="UT22084-091-040-60"> Fifth Dalai Lama, Ngawang
+                            Losang Gyatso (tA la’I bla ma sku phreng lnga pa ngag dbang blo bzang
+                            rgya mtsho). <title xml:lang="Bo-Ltn">byams pas dam bcas pa’i gzungs kyi
+                                rjes su ’don rgyu’i smon lam tshigs bcad </title>[An Aspiration in
+                            Verse to Accompany the Recitation of “The Dhāraṇī of Maitreya’s
+                            Pledge”]. In <title xml:lang="Bo-Ltn">gsung ’bum ngag dbang blo bzang
+                                rgya mtsho</title>, vol. 24, Beijing: krung go’i bod rig pa dpe
+                            skrun khang, 2009, pp. 332–33. <ref target="https://library.bdrc.io/show/bdr:MW1PD107937_C8131D">BDRC
                                 MW1PD107937_C8131D</ref>.</note> In the eighteenth century, the
                         third Zimok, Champa Tenzin Trinlé, penned verses to be inserted before and
                         after (<foreign xml:lang="Bo-Ltn" type="term">mgo mjug gi tshig[s]
@@ -313,113 +329,110 @@
                                 ’bum</title>, vol. 6, Lhasa: bod ljongs bod yig dpe rnying dpe skrun
                             khang, 2016, pp. 205–6. <ref target="https://library.bdrc.io/show/bdr:MW3CN3418_2AF43E">BDRC
                                 MW3CN3418_2AF43E</ref>.</note> The meaning of the dhāraṇī’s words
-                        was explained by Ngawang Nyima (1907–90), a Mongolian geshé who was an abbot
+                        was also commented on by Ngawang Nyima (1907–90), a Mongolian geshé who was an abbot
                         of the Gomang college at Drepung Monastery.<note place="end" xml:id="UT22084-091-040-62"> Ngawang Nyima (ngag dbang nyi ma). <title xml:lang="Bo-Ltn">byams pas dam bca’ pa’i gzungs kyi sngags don
                             </title>[The Meaning of the Mantras in “The Dhāraṇī of Maitreya’s
                             Pledge”]. In <title xml:lang="Bo-Ltn">gsung ’bum ngag dbang nyi
                                 ma</title>, vol. 3, Drepung Gomang Library, 2003, pp. 595–96. <ref target="https://library.bdrc.io/show/bdr:MW28809_8FC1BA">BDRC
-                                MW28809_8FC1BA</ref>.</note> While his short work does not
-                        constitute a full-fledged commentary, it does underscore the benefits of
-                        reciting <title xml:lang="en">The Dhāraṇī of Maitreya’s Pledge</title> and encourages its
-                        readers to take up these profound means for forging a karmic link with
-                        Maitreya. That this short dhāraṇī text inspired a number of notable masters
-                        to write on it speaks to the relative prominence it maintained in Tibetan
-                        monasteries throughout history. Beyond these, there are numerous references
-                        to the dhāraṇī as a part of larger liturgies, as a member of records of
-                        transmissions received (<foreign xml:lang="Bo-Ltn" type="term">gsan
-                            yig</foreign>, <foreign xml:lang="Bo-Ltn" type="term">thob
-                        yig</foreign>), and in other textual records.</p>
+                                MW28809_8FC1BA</ref>.</note> That this short dhāraṇī text inspired a number of
+                        notable masters to write on it speaks to the relative prominence it
+                        maintained in Tibetan monasteries throughout history. Beyond these, there
+                        are numerous references to the dhāraṇī as a part of larger liturgies, as a
+                        member of records of transmissions received (<foreign xml:lang="Bo-Ltn" type="term">gsan yig</foreign>, <foreign xml:lang="Bo-Ltn" type="term">thob yig</foreign>), and in other textual records.</p>
                     <milestone unit="chunk" xml:id="UT22084-091-040-63"/>
-                    <p tid="17">To the best of our knowledge, <title xml:lang="en">The Dhāraṇī of Maitreya’s Pledge</title> has not been the subject of any in-depth academic studies
-                        in modern times. Zsuzsa Majer does, however, observe that the
-                        nineteenth-century Russian explorer A. M. Pozdneev records in his travelog
-                        of the Khalkha Mongol lands that<title xml:lang="en"> The Dhāraṇī of Maitreya’s Pledge</title> was performed in funerary rites. Despite this, Majer
-                        writes that she never witnessed its performance during her fieldwork, which
-                        was undertaken on modern Mongolian Buddhist postmortem rites between 2016
-                        and 2017.<note place="end" xml:id="UT22084-091-040-64"> Majer 2017, p.
-                            71.</note> Uranchimeg Tsultemin also mentions in her examination of the
-                        iconography of Maitreya in Mongolian art that Agwaankhaidav (ngag dbang
-                        mkhas grub, 1779–1839), the Mongolian abbot of Ikh Khüree, taught a
-                        longevity and transference (<foreign xml:lang="Bo-Ltn" type="term">’pho
-                            ba</foreign>) practice predicated on extensive accumulations of the
-                        dhāraṇī.</p>
+                    <p tid="17">To the best of our knowledge, <title xml:lang="en">The Dhāraṇī “Maitreya’s Pledge”</title> has not been the subject of any in-depth
+                        academic studies in modern times. Zsuzsa Majer does, however, observe that
+                        the nineteenth-century Russian explorer A. M. Pozdneev records in his
+                        travelog of the Khalkha Mongol lands that<title xml:lang="en"> The Dhāraṇī “Maitreya’s Pledge”</title> was performed in funerary rites. Despite
+                        this, Majer writes that she never witnessed its performance during her
+                        fieldwork, which was undertaken on modern Mongolian Buddhist postmortem
+                        rites between 2016 and 2017.<note place="end" xml:id="UT22084-091-040-64">
+                            Majer 2017, p. 71.</note> Uranchimeg Tsultemin also mentions in her
+                        examination of the iconography of Maitreya in Mongolian art that
+                        Agwaankhaidav (ngag dbang mkhas grub, 1779–1839), the Mongolian abbot of Ikh
+                        Khüree, taught a longevity and transference (<foreign xml:lang="Bo-Ltn" type="term">’pho ba</foreign>) practice predicated on extensive
+                        accumulations of the dhāraṇī.</p>
                     <milestone unit="chunk" xml:id="UT22084-091-040-65"/>
                     <p tid="18">Our translation used the versions of the dhāraṇī preserved in the
                         Degé Kangyur as our source text. We also consulted the variant readings
                         found in the Comparative Edition (<title xml:lang="Bo-Ltn">dpe bsdur
-                            ma</title>) of the Kangyur. Since these recensions of the Kangyur belong
-                        predominantly to the Tshalpa line, we additionally consulted the version of
-                        this dhāraṇī preserved in the Stok Palace Manuscript Kangyur to provide a
-                        witness from the Themphangma line. Nevertheless, we did not note any
-                        variations of major significance between these witnesses for this short
-                        text. </p>
+                            ma</title>) of the Kangyur and the Stok Palace Manuscript Kangyur. </p>
                 </div>
             </div>
         </front>
         <body>
-            <div type="translation">
+            <div type="translation" xml:id="UT22084-091-040-translation">
                 <head type="translation"> The Translation </head>
                 <head type="titleHon" tid="19">The Noble Dhāraṇī</head>
                 <head type="titleMain" tid="20">Maitreya’s Pledge</head>
                 <div type="section" xml:id="UT22084-091-040-section-1">
                     <milestone unit="chunk" xml:id="UT22084-091-040-67"/>
                     <p tid="23">
-                        <ref cRef="F.127.b" type="folio" key="toh643" xml:id="UT22084-091-040-110"/> <ref cRef="F.165.b" type="folio" key="toh890" xml:id="UT22084-091-040-111"/> Homage to the Three Jewels. Homage to Maitreya the
-                        Victorious One. </p>
+                        <ref cRef="F.127.b" type="folio" key="toh643" xml:id="UT22084-091-040-110"/>
+                        <ref cRef="F.165.b" type="folio" key="toh890" xml:id="UT22084-091-040-111"/>
+                        Homage to the Three Jewels. </p>
                     <lb/>
+                    <milestone unit="chunk" xml:id="UT22084-091-040-125"/>
+                    <p tid="37">Homage to Maitreya the Victorious One.</p>
                     <milestone unit="chunk" xml:id="UT22084-091-040-69"/>
-                    <p tid="24">Root mantra:</p>
+                    <lb/>
                     <p rend="mantra" tid="25">
                         <mantra xml:lang="Sa-Ltn">namo ratna trayāya | namo
-                        bhagavate | śākyamunaye | tathāgatāya | arhate samyaksaṃ­buddhāya |
+                            bhagavate | śākyamunaye | tathāgatāya | arhate samyaksaṃ­buddhāya |
                             tadyathā | oṃ ajite ajite | aparājite<note place="end" xml:id="UT22084-091-040-70"> Toh 643: <foreign xml:lang="Sa-Ltn" type="quote">aparājite</foreign> is absent in C, K, K<hi rend="subscript">Y</hi>, and L. Toh 890: <foreign xml:lang="Sa-Ltn" type="quote">aparājite</foreign> is absent in
                                 C, K, K<hi rend="subscript">Y</hi>, and L.</note> | ajitaṃ jaya |
-                        hara hara | maitri avalokite | kara kara | mahā­samaya­siddhe | bhara
-                        bhara | mahābodhi­maṇḍabīje | smara smara | asmakaṃ samaya bodhi bodhi |
+                            hara hara | maitri avalokite | kara kara | mahā­samaya­siddhe | bhara
+                            bhara | mahābodhi­maṇḍabīje | smara smara | asmakaṃ samaya bodhi bodhi |
                             mahābodhi svāhā | |</mantra>
                         <note place="end" xml:id="UT22084-091-040-71"> Provisional English
-                            translation:  “Homage to the Three Jewels. Homage to the blessed, thus-gone, worthy, perfect Buddha Śākyamuni. It is thus: <foreign xml:lang="Sa-Ltn" type="term">Oṃ</foreign>. Invincible One, Invincible One.
-                            Indomitable One. Conquer the unconquered. Capture, capture. Loving One.
-                            All-Seeing One. Bestow, bestow. The accomplishment of the great pledge.
-                            Increase, increase. The essence seed of great awakening. Remember,
-                            remember. Our pledge, awakening, awakening,  great awakening. <foreign xml:lang="Sa-Ltn" type="term">Svāhā</foreign>.”</note>
+                            translation: “Homage to the Three Jewels. Homage to the blessed,
+                            thus-gone, worthy, perfect Buddha Śākyamuni. It is thus: <foreign xml:lang="Sa-Ltn" type="term">Oṃ</foreign>. Invincible One,
+                            Invincible One. Indomitable One. Conquer the unconquered. Capture,
+                            capture. Loving One. All-Seeing One. Bestow, bestow. The accomplishment
+                            of the great pledge. Increase, increase. The essence seed of great
+                            awakening. Remember, remember. Our pledge, awakening, awakening, great
+                            awakening. <foreign xml:lang="Sa-Ltn" type="term">Svāhā</foreign>.”</note>
                     </p>
+                    <p tid="24">This was the root mantra.</p>
                     <lb/>
                     <milestone unit="chunk" xml:id="UT22084-091-040-73"/>
-                    <p tid="26">Heart mantra:</p>
                     <p rend="mantra" tid="27">
                         <mantra xml:lang="Sa-Ltn">oṃ mohi mohi | mahāmohi svāhā | |</mantra>
                         <note place="end" xml:id="UT22084-091-040-74"> Provisional English
                             translation: “<foreign xml:lang="Sa-Ltn" type="term">Oṃ</foreign>.
                             Deluder, deluder. Great deluder. Cleared away. <foreign xml:lang="Sa-Ltn" type="term">Svāhā</foreign>.”</note>
                     </p>
+                    <p tid="39">This was the heart mantra.</p>
                     <lb/>
                     <milestone unit="chunk" xml:id="UT22084-091-040-76"/>
-                    <p tid="28">Auxiliary heart mantra:</p>
                     <p rend="mantra" tid="29">
                         <mantra xml:lang="Sa-Ltn">oṃ muni muni smara svāhā | |</mantra>
                         <note place="end" xml:id="UT22084-091-040-77"> Provisional English
                             translation: “<foreign xml:lang="Sa-Ltn" type="term">Oṃ</foreign>. Sage,
                             sage. Recollect. <foreign xml:lang="Sa-Ltn" type="term">Svāhā</foreign>.”</note>
                     </p>
+                    <p tid="28">This was the auxiliary heart mantra.</p>
+                    <lb/>
                     <milestone unit="chunk" xml:id="UT22084-091-040-78"/>
                     <p tid="30">“Once I have fully awakened to unsurpassed and perfectly complete
                         enlightenment, I will be certain to search out any being who simply hears,
                         recites, chants, correctly contemplates, or meditates on this dhāraṇī and
                         offer them a prophecy for unsurpassed and perfectly complete enlightenment.
-                        <ref cRef="F.166.a" type="folio" key="toh890" xml:id="UT22084-091-040-112"/> Even if this dhāraṇī is recited into the ear of a deer or bird from
-                        the animal realm, they will also receive a prophecy for unsurpassed and
-                        perfectly complete enlightenment. Whoever merely hears this will never go to
-                        the lower realms, nor will they be stained by the dirt of the lower realms.
-                        They will not be reborn in a mother’s womb. They will become a universal
-                        monarch for a thousand divine eons. <ref cRef="F.128.a" type="folio" key="toh643" xml:id="UT22084-091-040-113"/> They will inhabit the path of
-                        the ten virtuous actions. Whichever material enjoyments they wish for and
-                        seek will appear for them. I, a blessed one, will never forget that being.
-                        Having reached the seat of awakening, I will absolutely provide them, no
-                        matter who they are, a prophecy for unsurpassed and perfectly complete
+                            <ref cRef="F.166.a" type="folio" key="toh890" xml:id="UT22084-091-040-112"/> Even if this dhāraṇī is recited into the
+                        ear of a deer or bird from the animal realm, they will also receive a
+                        prophecy for unsurpassed and perfectly complete enlightenment. Whoever
+                        merely hears this will never go to the lower realms, nor will they be
+                        stained by the dirt of the lower realms. They will not be reborn in a
+                        mother’s womb. They will become a universal monarch for a thousand divine
+                        eons. <ref cRef="F.128.a" type="folio" key="toh643" xml:id="UT22084-091-040-113"/> They will inhabit the path of the ten
+                        virtuous actions. Whichever material enjoyments they wish for and seek will
+                        appear for them. I, a blessed one, will never forget that being. Having
+                        reached the seat of awakening, I will absolutely provide them, no matter who
+                        they are, a prophecy for unsurpassed and perfectly complete
                         enlightenment.”</p>
                     <milestone unit="chunk" xml:id="UT22084-091-040-79"/>
-                    <trailer tid="31">This completes the noble dhāraṇī “<title xml:lang="en">Maitreya’s Pledge</title>.”</trailer>
+                    <trailer tid="31">This completes <title xml:lang="en">The Noble Dhāraṇī “Maitreya’s Pledge.”</title>
+                    </trailer>
                 </div>
                 <div type="colophon" xml:id="UT22084-091-040-colophon">
                     <head type="colophon" tid="32">Colophon</head>
@@ -430,19 +443,19 @@
             </div>
         </body>
         <back>
-            <div type="notes">
+            <div type="notes" xml:id="UT22084-091-040-notes">
                 <head type="notes" tid="34">Notes</head>
             </div>
-            <div type="listBibl">
+            <div type="listBibl" xml:id="UT22084-091-040-listBibl">
                 <head type="listBibl" tid="36">Bibliography</head>
                 <div type="section" xml:id="UT22084-091-040-listBibl-1">
                     <bibl xml:id="UT22084-091-040-81">
                         <title xml:lang="Bo-Ltn">’phags pa byams pas
-                        dam bcas pa zhes bya ba’i gzungs</title> (<title xml:lang="Sa-Ltn">Ārya­maitreya­pratijñānāma­dhāraṇī</title>). Toh 653, Degé Kangyur vol. 91
-                        (rgyud ’bum, ba), folios 127.b–128.a.</bibl>
+                            dam bcas pa zhes bya ba’i gzungs</title> (<title xml:lang="Sa-Ltn">Ārya­maitreya­pratijñānāma­dhāraṇī</title>). Toh 653, Degé Kangyur vol.
+                        91 (rgyud ’bum, ba), folios 127.b–128.a.</bibl>
                     <bibl xml:id="UT22084-091-040-82">
                         <title xml:lang="Bo-Ltn">’phags pa byams pas
-                        dam bcas pa zhes bya ba’i gzungs</title> (<title xml:lang="Sa-Ltn">Ārya­maitreya­pratijñānāma­dhāraṇī</title>). Toh 890, Degé Kangyur vol.
+                            dam bcas pa zhes bya ba’i gzungs</title> (<title xml:lang="Sa-Ltn">Ārya­maitreya­pratijñānāma­dhāraṇī</title>). Toh 890, Degé Kangyur vol.
                         100 (gzungs, e), folios 165.b–166.a.</bibl>
                     <bibl xml:id="UT22084-091-040-83">
                         <title xml:lang="Bo-Ltn">’phags pa byams pas
@@ -465,9 +478,9 @@
                             dam bcas pa zhes bya ba’i gzungs</title>. Stok Palace Kangyur vol. 105
                         (rgyud ’bum, pha), folios 86.a–87.b.</bibl>
                     <bibl xml:id="UT22084-091-040-86">Butön Rinchen Drup (bu ston rin chen grub).
-                            <title xml:lang="Bo-Ltn">byams pa’i dam bcas pa’i sngags</title>. In
-                            The Collected Works of Bu-Ston, vol. 16 (ma), pp.
-                        365–99. New Delhi: International Academy of Indian Culture, 1965–71. <ref target="https://library.bdrc.io/show/bdr:W22106">BDRC W22106</ref>. </bibl>
+                            <title xml:lang="Bo-Ltn">byams pa’i dam bcas pa’i sngags</title>. In The
+                        Collected Works of Bu-Ston, vol. 16 (ma), pp. 365–99. New Delhi:
+                        International Academy of Indian Culture, 1965–71. <ref target="https://library.bdrc.io/show/bdr:W22106">BDRC W22106</ref>. </bibl>
                     <bibl xml:id="UT22084-091-040-87">Chandra, Lokesh, ed. <title xml:lang="en">Sanskrit Texts from the Imperial Palace at Peking in the Manchurian
                             Chinese Mongolian and Tibetan Scripts</title>. New Delhi: Institute for
                         the Advancement of Science and Culture, 1966.</bibl>
@@ -479,8 +492,8 @@
                         Institute of Higher Tibetan Studies, 2001.</bibl>
                     <bibl xml:id="UT22084-091-040-90">Majer, Zsuzsa. “On After-Death Ritual Texts
                         Mentioned by Travellers (A. M. Pozdneev and Bálint Gábor of Szentkatolna).”
-                        In <title xml:lang="la">Mongolica Pragensia</title>, 2017, vol.
-                        1, pp. 65–92.</bibl>
+                        In <title xml:lang="la">Mongolica Pragensia</title>, 2017, vol. 1, pp.
+                        65–92.</bibl>
                     <bibl xml:id="UT22084-091-040-91">Schaeffer, Kurtis R. <title xml:lang="en">Dreaming the Great Brahmin: Tibetan Traditions of the Buddhist
                             Poet-Saint Saraha</title>. New York: Oxford University Press,
                         2005.</bibl>
@@ -490,7 +503,7 @@
                         University Press, 2015.</bibl>
                 </div>
             </div>
-            <div type="glossary" status="excluded">
+            <div type="glossary" status="excluded" xml:id="UT22084-091-040-glossary">
                 <list type="glossary">
                     <item>
                         <gloss type="term" xml:id="UT22084-091-040-94">
@@ -513,11 +526,14 @@
                             <term type="translationMain">ten virtuous actions</term>
                             <term status="verified" xml:lang="Bo-Ltn" n="1">dge ba bcu’i las </term>
                             <term xml:lang="bo" n="1">དགེ་བ་བཅུའི་ལས།</term>
-                        <term status="verified" xml:lang="Sa-Ltn">daśakuśala­karman</term>
-                        <note type="definition">
-                            <p>Abstaining from the ten nonvirtuous actions. Namely, abstaining from killing, taking what is not given, sexual misconduct, lying, uttering divisive talk, speaking harsh words, gossiping, covetousness, ill will, and wrong views.</p>
-                        </note>
-                    </gloss>
+                            <term status="verified" xml:lang="Sa-Ltn">daśakuśala­karman</term>
+                            <note type="definition">
+                                <p>Abstaining from the ten nonvirtuous actions. Namely, abstaining
+                                    from killing, taking what is not given, sexual misconduct,
+                                    lying, uttering divisive talk, speaking harsh words, gossiping,
+                                    covetousness, ill will, and wrong views.</p>
+                            </note>
+                        </gloss>
                     </item>
                     <item>
                         <gloss type="person" xml:id="UT22084-091-040-98">
@@ -557,11 +573,13 @@
                             <term status="verified" xml:lang="Bo-Ltn" n="1">dud ’gro </term>
                             <term xml:lang="bo" n="1">དུད་འགྲོ།</term>
                             <term status="verified" xml:lang="Sa-Ltn">tiryak</term>
-                        <term status="verified" xml:lang="Sa-Ltn">tiryañc</term>
-                        <note type="definition">
-                            <p>One of the five or six classes of sentient beings, who suffer from gross ignorance or bewilderment (<foreign xml:lang="Bo-Ltn">gti mug</foreign>, <foreign xml:lang="Sa-Ltn">moha</foreign>). They inhabit the realm of desire along with human beings.</p>
-                        </note>
-                    </gloss>
+                            <term status="verified" xml:lang="Sa-Ltn">tiryañc</term>
+                            <note type="definition">
+                                <p>One of the five or six classes of sentient beings, who suffer
+                                    from gross ignorance or bewilderment (<foreign xml:lang="Bo-Ltn">gti mug</foreign>, <foreign xml:lang="Sa-Ltn">moha</foreign>). They inhabit the realm of desire along
+                                    with human beings.</p>
+                            </note>
+                        </gloss>
                     </item>
                     <item>
                         <gloss type="place" xml:id="UT22084-091-040-103">
@@ -569,11 +587,12 @@
                             <term status="verified" xml:lang="Bo-Ltn" n="1">ngan song </term>
                             <term xml:lang="bo" n="1">ངན་སོང་།</term>
                             <term status="verified" xml:lang="Sa-Ltn">apāya</term>
-                        <term status="verified" xml:lang="Sa-Ltn">durgati</term>
-                        <note type="definition">
-                            <p>A collective name for the realms of animals, hungry ghosts, and denizens of the hells.</p>
-                        </note>
-                    </gloss>
+                            <term status="verified" xml:lang="Sa-Ltn">durgati</term>
+                            <note type="definition">
+                                <p>A collective name for the realms of animals, hungry ghosts, and
+                                    denizens of the hells.</p>
+                            </note>
+                        </gloss>
                     </item>
                     <item>
                         <gloss type="place" xml:id="UT22084-091-040-104">
