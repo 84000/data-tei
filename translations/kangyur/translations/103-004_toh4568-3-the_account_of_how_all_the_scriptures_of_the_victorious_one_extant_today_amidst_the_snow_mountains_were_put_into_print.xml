@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../../../schema/current/translation.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<tei:TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -34,7 +34,7 @@
                     Yu Lin, Zhong Sheng jian, Lin Miao Jun.</sponsor>
             </titleStmt>
             <editionStmt>
-                <edition>v 1.1.3 <date>2024</date>
+                <edition>v 1.1.4 <date>2024</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -54,7 +54,7 @@
                     logic.</note>
                 <date>2024-01-23</date>
             </publicationStmt>
-            <sourceDesc>
+            <tei:sourceDesc>
                 <bibl key="toh4568-3" type="chapter">
                     <ref>Toh 4568-3</ref>
                     <biblScope>Degé Kangyur, vol. 103 (lakṣmī), folios 98.a–112.a</biblScope>
@@ -65,7 +65,7 @@
                     <idno parent-id="O1JC114941JC12882" work="http://read.84000.co/sections"/>
                     <idno source-id="O1JC114941JC12885" work="W22084"/>
                 </bibl>
-            </sourceDesc>
+            </tei:sourceDesc>
             <notesStmt/>
             <revisionDesc>
                 <change who="#line-tofte" when="2020-08-17T14:45:05.214Z" type="text-version" status="0.0.1" xml:id="UT22084-103-004-8">
@@ -206,6 +206,9 @@
                 <change who="#celso" when="2024-05-17T10:39:48.271Z" type="text-version" status="1.1.3" xml:id="UT22084-103-004-1654">
                     <desc>formated quote in quote at 1.1.5</desc>
                 </change>
+                <change who="#celso" when="2024-10-02T16:55:21.08Z" type="text-version" status="1.1.4" xml:id="UT22084-103-004-1655">
+                    <desc>regenerate milestones with overided prefixes</desc>
+                </change>
             </revisionDesc>
         </fileDesc>
     </teiHeader>
@@ -227,7 +230,7 @@
                     while the final two give an account of all the texts included in the canon and
                     an explanation of the merits of producing a Kangyur edition.</p>
             </div>-->
-            <div type="summary">
+            <tei:div type="summary" xml:id="UT22084-103-004-summary">
                 <head type="summary" tid="1">Summary</head>
                 <milestone unit="chunk" xml:id="UT22084-103-004-54"/>
                 <p tid="2">This is the third chapter of the <title xml:lang="en">Degé Kangyur Catalog</title>, which describes the publication history
@@ -237,8 +240,8 @@
                     Monastery, who was the project’s main sponsor. After that is an erudite history of previous collections of translated Buddhist
                     scriptures in Tibet since the time of the earliest translations during the Tibetan imperial period, and finally it describes the
                     editorial process and practical challenges involved in producing a xylograph Kangyur of such quality.</p>
-            </div>
-            <div type="acknowledgment">
+            </tei:div>
+            <tei:div type="acknowledgment" xml:id="UT22084-103-004-acknowledgment">
                 <head type="acknowledgment" tid="3">Acknowledgements</head>
                 <milestone unit="chunk" xml:id="UT22084-103-004-55"/>
                 <p tid="4">Translated by the Subhāṣita Translation Group. The translation, along with all ancillary materials, was produced by Lowell
@@ -252,10 +255,10 @@
                 <lb/>
                 <p tid="7">The translation of this text has been made possible through the generous sponsorship of Chan Wing Fai, Lam Wai Ling, Chan
                     Oi Yi, Chan Tung Mei, Chan Yu Ka, Chan Sui Li, Chan Ya Ho, Chan Yu Lin, Zhong Sheng Jian, and Lin Miao Jun.</p>
-            </div>
-            <div type="introduction">
+            </tei:div>
+            <tei:div type="introduction" xml:id="UT22084-103-004-introduction">
                 <head type="introduction" tid="8">Introduction</head>
-                <div type="section" xml:id="UT22084-103-004-introduction-1">
+                <tei:div type="section" xml:id="UT22084-103-004-introduction-1">
                     <milestone unit="chunk" xml:id="UT22084-103-004-59"/>
                     <p tid="10">Much more than just a table of contents, what is known as the <title xml:lang="en">Degé Kangyur Catalog</title>
                         <note place="end" xml:id="UT22084-103-004-668">
@@ -285,16 +288,14 @@
                         historian Pawo Tsuklak Trengwa, and in a way that both echoes and supplements that work, interweaves his discussion with
                         citations from scriptural prophecies and canonical commentaries on the Indian epics. </p>
                     <milestone unit="chunk" xml:id="UT22084-103-004-62"/>
-                    <p tid="13">“Family Lineage” traces the genealogy of the royal house of Degé to the mythic “pure divine tribe of Go,”
-                            (<foreign xml:lang="Bo-Ltn" type="quote">sgo lha sde dkar po</foreign>),
-                        many generations before Tenpa Tsering. As stated by Situ Paṇchen, this section was largely based on a family record drawn up
-                        by the secretary of the Degé royal family at the time. Among the many notable forebears of Tenpa Tsering were, for example,
-                        one who, it says, served Drogön Chögyal Phakpa as his chamberlain (Tib. <foreign xml:lang="Bo-Ltn">gsol dpon</foreign>), received his own official seal from Kublai Khan, and appears to have been
-                        instrumental in the merging of religious and secular authority that characterized various scions of the Degé family in later
-                        generations. While the Sakya affiliation of many of these figures is apparent, Situ Paṇchen also notes the numerous Kagyü and
-                        Nyingma lineage connections of this illustrious family line, and the support that Tenpa Tsering’s antecedents had given the
-                        Dharma without sectarian bias (Tib. <foreign xml:lang="Bo-Ltn" type="term">ris
-                            med</foreign>).<note place="end" xml:id="UT22084-103-004-63">
+                    <p tid="13">“Family Lineage” traces the genealogy of the royal house of Degé to the mythic “pure divine tribe of Go,” (<foreign xml:lang="Bo-Ltn" type="quote">sgo lha sde dkar po</foreign>), many generations before Tenpa Tsering. As stated by Situ
+                        Paṇchen, this section was largely based on a family record drawn up by the secretary of the Degé royal family at the time.
+                        Among the many notable forebears of Tenpa Tsering were, for example, one who, it says, served Drogön Chögyal Phakpa as his
+                        chamberlain (Tib. <foreign xml:lang="Bo-Ltn">gsol dpon</foreign>), received his own official seal from Kublai Khan, and
+                        appears to have been instrumental in the merging of religious and secular authority that characterized various scions of the
+                        Degé family in later generations. While the Sakya affiliation of many of these figures is apparent, Situ Paṇchen also notes
+                        the numerous Kagyü and Nyingma lineage connections of this illustrious family line, and the support that Tenpa Tsering’s
+                        antecedents had given the Dharma without sectarian bias (Tib. <foreign xml:lang="Bo-Ltn" type="term">ris med</foreign>).<note place="end" xml:id="UT22084-103-004-63">
                             <title xml:lang="en">The Royal Genealogy of Degé</title> (<title xml:lang="Bo-Ltn">sde dge’i rgyal rabs</title>
                             <title xml:lang="en"/>), a history of the Degé royal family that was written nearly a century later in the 1820s by one of
                             Tenpa Tsering’s successors, gives rather more emphasis to the Sakya affiliations of this royal family. <title xml:lang="en">The Royal Genealogy of Degé</title> overlaps in many of its details with the family history given in the
@@ -306,17 +307,16 @@
                         described as both the “palace of the kingdom” and as an exemplary monastery.</p>
                     <milestone unit="chunk" xml:id="UT22084-103-004-64"/>
                     <p tid="14">The subsection “Qualities” is an effusive praise of the personal qualities of Tenpa Tsering himself. Tenpa Tsering was
-                        both the ruler (Tib. <foreign xml:lang="Bo-Ltn" type="term">sa
-                            skyong</foreign>, <foreign xml:lang="Bo-Ltn" type="term">mi’i dbang
-                            po</foreign>) of the Degé kingdom, and the hereditary throne holder (<foreign xml:lang="Bo-Ltn" type="term">khri chen</foreign>) of Lhundrup Teng monastery,
-                        a position he inherited from his uncle. In this section, Situ Paṇchen portrays Tenpa Tsering very much as an ideal Tibetan
-                        religious king who supported the Dharma and protected his subjects without exploitation or oppression. He begins by listing
-                        Tenpa Tsering’s generous sponsorship activities, such as commissioning statues, supporting construction projects at nearby
-                        monasteries (including the main assembly hall at Situ Paṇchen’s own Palpung monastery), and the production of texts, and then
-                        moves on to describe his qualities as an archetypal benevolent Dharma king. Here Situ Paṇchen cites a number of texts from the
-                        classical Indian genre known as <foreign xml:lang="Sa-Ltn" type="term">nītiśāstra</foreign>, or “ethical treatises,” which prescribe proper ethical behavior in the world, and the proper
-                        conduct of rulers in particular. Citing such treatises, Situ Paṇchen portrays Tenpa Tsering and his entire royal court as
-                        embodying an idealized vision of moral rulership reminiscent of the great Indian emperor and patron of the Dharma, Aśoka. </p>
+                        both the ruler (Tib. <foreign xml:lang="Bo-Ltn" type="term">sa skyong</foreign>, <foreign xml:lang="Bo-Ltn" type="term">mi’i
+                            dbang po</foreign>) of the Degé kingdom, and the hereditary throne holder (<foreign xml:lang="Bo-Ltn" type="term">khri
+                            chen</foreign>) of Lhundrup Teng monastery, a position he inherited from his uncle. In this section, Situ Paṇchen portrays
+                        Tenpa Tsering very much as an ideal Tibetan religious king who supported the Dharma and protected his subjects without
+                        exploitation or oppression. He begins by listing Tenpa Tsering’s generous sponsorship activities, such as commissioning
+                        statues, supporting construction projects at nearby monasteries (including the main assembly hall at Situ Paṇchen’s own
+                        Palpung monastery), and the production of texts, and then moves on to describe his qualities as an archetypal benevolent
+                        Dharma king. Here Situ Paṇchen cites a number of texts from the classical Indian genre known as <foreign xml:lang="Sa-Ltn" type="term">nītiśāstra</foreign>, or “ethical treatises,” which prescribe proper ethical behavior in the world, and the
+                        proper conduct of rulers in particular. Citing such treatises, Situ Paṇchen portrays Tenpa Tsering and his entire royal court
+                        as embodying an idealized vision of moral rulership reminiscent of the great Indian emperor and patron of the Dharma, Aśoka. </p>
                     <milestone unit="chunk" xml:id="UT22084-103-004-65"/>
                     <p tid="15">The second part of chapter 3 deals with the Degé Kangyur project itself. This, again, is divided into three
                         subsections: “The Time of the Production of the Kangyur,” “The Manner in Which Source Texts Were Collected and Edited,” and
@@ -346,21 +346,23 @@
                             districts of eastern Tibet. While the regions of Kham west of the Drichu River (Ch. Jinshajiang) were recognized to be
                             under the authority of the government at Lhasa, the territories east of the Drichu were to be formally incorporated within
                             the Qing’s imperial bureaucracy. Practical local governance over these areas, however, was to be left in the hands of what
-                            were referred to in imperial documents as “local rulers” (Ch. <foreign xml:lang="Zh-Ltn" type="term">tuzi</foreign>). Tenpa Tsering, as the ruler of the largest and most prestigious
-                            Tibetan kingdom east of the Drichu, which had recently expanded its territories to the north and east, and had favorable
-                            relations with the Seventh Dalai Lama, was granted imperial titles by the Qing and made the titular ruler of much of
-                            eastern Tibet. On the imperial titles conferred, see Tenpa Tsering’s <ref target="https://treasuryoflives.org/biographies/view/Tenpa-Tsering/6499">entry at The Treasury of Lives</ref>. Also
-                            Kolmaš 1968, pp. 37–39.</note>
+                            were referred to in imperial documents as “local rulers” (Ch. <foreign xml:lang="Zh-Ltn" type="term">tuzi</foreign>).
+                            Tenpa Tsering, as the ruler of the largest and most prestigious Tibetan kingdom east of the Drichu, which had recently
+                            expanded its territories to the north and east, and had favorable relations with the Seventh Dalai Lama, was granted
+                            imperial titles by the Qing and made the titular ruler of much of eastern Tibet. On the imperial titles conferred, see
+                            Tenpa Tsering’s <ref target="https://treasuryoflives.org/biographies/view/Tenpa-Tsering/6499">entry at The Treasury of
+                                Lives</ref>. Also Kolmaš 1968, pp. 37–39.</note>
                         <title xml:lang="en">The Royal Genealogy of Degé</title> says that when Tenpa Tsering was granted imperial titles by the Qing
                         (first in 1728 and then in 1733), he was “empowered to act as general ruler of Dokham,” and received large quantities of silk
                         and silver as gifts.<note place="end" xml:id="UT22084-103-004-69">
                             <title xml:lang="en">The Royal Genealogy of Degé</title> states that he was “empowered to act as general ruler of Dokham
-                            and granted a golden seal, a hundred rolls of silk, and five thousand ‘ounces’ (Tib. <foreign xml:lang="Bo-Ltn" type="term">srang</foreign>) of silver.” <title xml:lang="en">The Royal Genealogy of Degé</title>, fol. 27.a. Kolmaš 1968, pp. 118, 38.</note> Such events are only
-                        hinted at in the <title xml:lang="en">Catalog</title> itself, as when, for example, Situ Paṇchen mentions that “his reserves
-                        of wealth increased sizably.”<note place="end" xml:id="UT22084-103-004-70"> This is mentioned at folio 103.b, <ptr target="#UT22084-103-004-166"/>.</note> A little later he also mentions in passing that “even when the divinely
-                        mandated emperor Mañjughoṣa gained dominion over these Tibetan lands”— a reference to Qing emperor Yongzheng—Tenpa Tsering’s
-                        subjects continued to praise him as before.<note place="end" xml:id="UT22084-103-004-71"> This is mentioned at folio 105.a,
-                                <ptr target="#UT22084-103-004-195"/>.</note>
+                            and granted a golden seal, a hundred rolls of silk, and five thousand ‘ounces’ (Tib. <foreign xml:lang="Bo-Ltn" type="term">srang</foreign>) of silver.” <title xml:lang="en">The Royal Genealogy of Degé</title>, fol. 27.a. Kolmaš
+                            1968, pp. 118, 38.</note> Such events are only hinted at in the <title xml:lang="en">Catalog</title> itself, as when, for
+                        example, Situ Paṇchen mentions that “his reserves of wealth increased sizably.”<note place="end" xml:id="UT22084-103-004-70">
+                            This is mentioned at folio 103.b, <ptr target="#UT22084-103-004-166"/>.</note> A little later he also mentions in passing
+                        that “even when the divinely mandated emperor Mañjughoṣa gained dominion over these Tibetan lands”— a reference to Qing
+                        emperor Yongzheng—Tenpa Tsering’s subjects continued to praise him as before.<note place="end" xml:id="UT22084-103-004-71">
+                            This is mentioned at folio 105.a, <ptr target="#UT22084-103-004-195"/>.</note>
                     </p>
                     <milestone unit="chunk" xml:id="UT22084-103-004-72"/>
                     <p tid="18">In “The Manner in Which Source Texts Were Collected and Edited,” the focus moves away from the subject of patronage,
@@ -396,19 +398,17 @@
                             while the Sutra and Tantra section colophons were summarized by Situ Paṇchen in the <title xml:lang="en">Catalog</title>.</note> Situ Paṇchen then describes how this Old Narthang Kangyur provided the basis for the Tshalpa
                         Kangyur, which in turn provided the basis for what became known as the Lithang Kangyur, produced in xylograph in the early
                         seventeenth century in the eastern Tibetan kingdom of Jang Satham.<note place="end" xml:id="UT22084-103-004-77"> The Kangyur
-                            known as the Lithang Kangyur was produced between 1610 and 1614 under the supervision of the Sixth Shamar (<foreign xml:lang="Bo-Ltn" type="term">zhwa dmar</foreign>) Rinpoché, with
-                            patronage from the king of Jang Satham. It was later moved to Lithang monastery during the upheavals of the 1640s. See
-                            Jampa Samten and Jeremy Russell 1987. </note>
+                            known as the Lithang Kangyur was produced between 1610 and 1614 under the supervision of the Sixth Shamar (<foreign xml:lang="Bo-Ltn" type="term">zhwa dmar</foreign>) Rinpoché, with patronage from the king of Jang Satham. It was later
+                            moved to Lithang monastery during the upheavals of the 1640s. See Jampa Samten and Jeremy Russell 1987. </note>
                     </p>
                     <milestone unit="chunk" xml:id="UT22084-103-004-78"/>
                     <p tid="20">This subsection also offers a remarkably transparent window into Situ Paṇchen’s own editorial and philological
                         process. He tells us that although the Lithang Kangyur was used as the primary basis for the Degé edition, three other Kangyur
-                        collections were also consulted. These included what he calls the “authentic Kangyur”<note place="end" xml:id="UT22084-103-004-79"> Tib. <foreign xml:lang="Bo-Ltn" type="quote">bka’
-                                ’gyur shin tu dag pa</foreign>, folio 109.a.</note> used by Anyen Pakṣi, a thirteenth-century disciple of Sakya
-                        Pandita, and the Lhodzong Kangyur, which belongs to the Thempanga recensional branch.<note place="end" xml:id="UT22084-103-004-80"> As Situ Paṇchen says, the Lhodzong Kangyur was compiled on the advice of the Fifth Dalai Lama
-                            by his regent Sönam Rabten (<foreign xml:lang="Bo-Ltn" type="term">bsod nams
-                                rab brtan</foreign>) (1595–1658) on the basis of the Gyantsé Themphangma (<foreign xml:lang="Bo-Ltn" type="term">rgyal rtse them spang ma</foreign>)
-                            recension and stored at Lhodzong (<foreign xml:lang="Bo-Ltn" type="term">lho
+                        collections were also consulted. These included what he calls the “authentic Kangyur”<note place="end" xml:id="UT22084-103-004-79"> Tib. <foreign xml:lang="Bo-Ltn" type="quote">bka’ ’gyur shin tu dag pa</foreign>, folio
+                            109.a.</note> used by Anyen Pakṣi, a thirteenth-century disciple of Sakya Pandita, and the Lhodzong Kangyur, which belongs
+                        to the Thempanga recensional branch.<note place="end" xml:id="UT22084-103-004-80"> As Situ Paṇchen says, the Lhodzong Kangyur
+                            was compiled on the advice of the Fifth Dalai Lama by his regent Sönam Rabten (<foreign xml:lang="Bo-Ltn" type="term">bsod
+                                nams rab brtan</foreign>) (1595–1658) on the basis of the Gyantsé Themphangma (<foreign xml:lang="Bo-Ltn" type="term">rgyal rtse them spang ma</foreign>) recension and stored at Lhodzong (<foreign xml:lang="Bo-Ltn" type="term">lho
                                 rdzong</foreign>).</note> This latter point is notable because in the centuries after the Old Narthang manuscript
                         Kangyur was compiled, two major recensional branches developed, the Tshalpa line and the Thempangma line, with their own
                         distinct aspects. In consulting both the Lithang and Lhodzong, members of the former and latter respectively, Situ Paṇchen
@@ -451,33 +451,31 @@
                         which have a great deal of overlap with the subsection “The Manner in Which Source Texts Were Collected and Edited.” The
                         subsection “Family Lineage” also has considerable overlap with the <title xml:lang="en">The Royal Genealogy of Degé</title>,
                         an early nineteenth-century text examined by Josef Kolmaš.</p>
-                </div>
-            </div>
+                </tei:div>
+            </tei:div>
         </front>
         <body>
-            <div type="translation">
+            <tei:div type="translation" xml:id="UT22084-103-004-translation">
                 <head type="translation"> The Translation </head>
                 <head type="titleMain" tid="28">The Third Well-Spoken Branch:</head>
                 <head type="sub" tid="212">An Exact Account of How All the Victorious One’s Teachings Extant Today in the Land of Snow Mountains Were
                     Put into Print</head>
-                <div type="prologue" xml:id="UT22084-103-004-prologue">
+                <tei:div type="prologue" xml:id="UT22084-103-004-prologue">
                     <head type="prologue" tid="213">Prologue</head>
                     <milestone unit="chunk" xml:id="UT22084-103-004-89"/>
                     <p tid="30">
-                        <ref cRef="F.98.b" type="folio" xml:id="UT22084-103-004-669"/> The following stanza is in the <foreign xml:lang="Sa-Ltn" type="term">anuṣṭubh</foreign> meter, which has eight
-                        syllables per verse quarter, and it is bound by a <foreign xml:lang="Sa-Ltn" type="term">prastāra</foreign> known as <foreign xml:lang="Sa-Ltn" type="term">pathyā</foreign>, a particular <foreign xml:lang="Sa-Ltn" type="term">viṣamavṛtta</foreign>.</p>
+                        <ref cRef="F.98.b" type="folio" xml:id="UT22084-103-004-669"/> The following stanza is in the <foreign xml:lang="Sa-Ltn" type="term">anuṣṭubh</foreign> meter, which has eight syllables per verse quarter, and it is bound by a
+                            <foreign xml:lang="Sa-Ltn" type="term">prastāra</foreign> known as <foreign xml:lang="Sa-Ltn" type="term">pathyā</foreign>, a particular <foreign xml:lang="Sa-Ltn" type="term">viṣamavṛtta</foreign>.</p>
                     <milestone unit="chunk" xml:id="UT22084-103-004-91"/>
                     <lg tid="32">
                         <l>
-                            <foreign xml:lang="Sa-Ltn">jātāj jāteṣu satkāryaṃ ratnā rajāḥ
-                                sucāyanāt |</foreign>
+                            <foreign xml:lang="Sa-Ltn">jātāj jāteṣu satkāryaṃ ratnā rajāḥ sucāyanāt |</foreign>
                         </l>
                         <l>
-                            <foreign xml:lang="Sa-Ltn">śubhradharmasamākhātam abhūn
-                                narendramerutā ||</foreign>
-                            <note place="end" xml:id="UT22084-103-004-699">These two lines, presented on the
-                                chapter title page in the source text as a stanza of Sanskrit verse (with the note decribing their meter in small
-                                writing at the top of the page), are then rendered in Tibetan as the first of the five stanzas that follow.</note>
+                            <foreign xml:lang="Sa-Ltn">śubhradharmasamākhātam abhūn narendramerutā ||</foreign>
+                            <note place="end" xml:id="UT22084-103-004-699">These two lines, presented on the chapter title page in the source text as a stanza of
+                                Sanskrit verse (with the note decribing their meter in small writing at the top of the page), are then rendered in
+                                Tibetan as the first of the five stanzas that follow.</note>
                         </l>
                     </lg>
                     <milestone unit="chunk" xml:id="UT22084-103-004-92"/>
@@ -520,19 +518,18 @@
                     <p tid="38">This account, which describes how all those source texts still extant today of all the genuine scriptures of our
                         teacher—the peerless, perfect, and complete Buddha, the Lord of the Śākyas—that have appeared in this Cool Land since the
                         first introduction of the holy Dharma until the present were put into print through the sponsorship of the Lord of Men, Tenpa
-                        Tsering, and family, is divided into two sections: an account of the history of the main initiator,<note place="end" xml:id="UT22084-103-004-98"> Tib. <foreign xml:lang="Bo-Ltn">bdag rkyen byed
-                                pa po</foreign>. Lit. “producer of the primary condition.” While the general meaning could be rendered as
-                            “sponsor” or “patron,” Situ Paṇchen does not use the more common word for a material supporter of Dharmic activity,
-                                <foreign xml:lang="Bo-Ltn" type="term">sbyin bdag</foreign>, and
-                            instead employs this more unusual formulation, which emphasizes that the project was initiated by Tenpa Tsering himself.
-                        </note> and an account of the virtuous activities undertaken.</p>
-                </div>
-                <div type="section" xml:id="UT22084-103-004-section-1">
+                        Tsering, and family, is divided into two sections: an account of the history of the main initiator,<note place="end" xml:id="UT22084-103-004-98"> Tib. <foreign xml:lang="Bo-Ltn">bdag rkyen byed pa po</foreign>. Lit. “producer of the
+                            primary condition.” While the general meaning could be rendered as “sponsor” or “patron,” Situ Paṇchen does not use the
+                            more common word for a material supporter of Dharmic activity, <foreign xml:lang="Bo-Ltn" type="term">sbyin
+                            bdag</foreign>, and instead employs this more unusual formulation, which emphasizes that the project was initiated by
+                            Tenpa Tsering himself. </note> and an account of the virtuous activities undertaken.</p>
+                </tei:div>
+                <tei:div type="section" xml:id="UT22084-103-004-section-1">
                     <head type="section" tid="216">Part 1</head>
                     <head type="chapterTitle" tid="39">The History of the Patron, King Tenpa Tsering</head>
 
                     <p tid="40">The first is discussed from three perspectives: location, family lineage, and qualities.</p>
-                    <div prefix="1.1" type="section" xml:id="UT22084-103-004-section-1-1">
+                    <tei:div prefix="1.1" type="section" xml:id="UT22084-103-004-section-1-1">
                         <head type="section" tid="41">1.1 Location</head>
                         <milestone unit="chunk" xml:id="UT22084-103-004-100"/>
                         <p tid="42">The location in general is Tibet, the land of the north, encircled by ranges of snowy mountains. <title xml:lang="en">The Root Manual of the Rites of Mañjuśrī</title> states:</p>
@@ -542,8 +539,8 @@
                                 <l>After the lake has receded from the Land of Snows </l>
                                 <l>It will be covered by groves of sāla trees.<note place="end" xml:id="UT22084-103-004-102"> These lines could not be
                                         found verbatim in the Degé Kangyur edition of <title xml:lang="en">The Root Manual of the Rites of
-                                            Mañjuśrī</title> as quoted here, but the following lines are found: <foreign xml:lang="Bo-Ltn">kha ba can gyi nang dag tu/ /sA la’i nags ni
-                                            yang dag ’byung</foreign>.</note>
+                                            Mañjuśrī</title> as quoted here, but the following lines are found: <foreign xml:lang="Bo-Ltn">kha ba can
+                                            gyi nang dag tu/ /sA la’i nags ni yang dag ’byung</foreign>.</note>
                                 </l>
                             </lg>
                         </q>
@@ -558,39 +555,38 @@
                             <p tid="211">“Viṣṇu is known to have annihilated the family of Duryodhana and others.”<note place="end" xml:id="UT22084-103-004-1653">The first line of this quote is the root text from Śaṃkarasvāmin’s <title xml:lang="Sa-Ltn">Devātiśayastotra</title> (Toh 1112),<ref target="http://read.84000.co/translation/toh1112.html" rend="pending"/> whereas the subsequent text is
                                     Prajñāvarman’s commentary on it from <title xml:lang="Sa-Ltn">Devātiśaya­stotra­ṭīkā</title> (Toh 1113)<ref target="http://read.84000.co/translation/toh1113.html" rend="pending"/>. </note>
                             </p>
-                           
                             <milestone unit="chunk" xml:id="UT22084-103-004-1652"/>
-                                <q>
+                            <q>
                                 <p tid="218">“Viṣṇu asked Duryodhana, ‘Would you rather bring the eighteen armies or Vāsudeva alone?’ <ref cRef="F.99.b" type="folio" xml:id="UT22084-103-004-698"/>
-                                            <lb/> “He replied, ‘I will bring the armies,’ thus becoming Viṣṇu’s enemy. <lb/> “Then, when Viṣṇu arrived
-                                            at the battleground on the side of Pāṇḍu, Arjuna looked around and said, ‘I could never kill my own
-                                            kinsmen, so how could I kill these armies of my kinsmen, even if they wish to capture the kingdom?’ <lb/>
-                                            “When Arjuna turned his back on the battle, Viṣṇu cried out, ‘You are a fool!</p>
-                                        <milestone unit="chunk" xml:id="UT22084-103-004-110"/>
-                                        <lg tid="51">
-                                            <l> “ ‘Neither he who kills </l>
-                                            <l> Nor he who is killed</l>
-                                            <l> Has any perceptible basis;</l>
-                                            <l> Killer and killed do not exist.</l>
-                                        </lg>
-                                        <milestone unit="chunk" xml:id="UT22084-103-004-111"/>
-                                        <lg tid="52">
-                                            <l> “ ‘Those of superior learning and discipline,</l>
-                                            <l> Brahmins, cows, and oxen,</l>
-                                            <l> Dogs, outcastes, paṇḍitas, and the like—</l>
-                                            <l> All should be viewed as the same.’</l>
-                                        </lg>
-                                        <milestone unit="chunk" xml:id="UT22084-103-004-112"/>
-                                        <p tid="53">“Teaching him with these and many other verses of nihilist views, Viṣṇu deceived him by displaying
-                                            various forms, and, taking the form of Arjuna’s charioteer, the family of Duryodhana and its eighteen
-                                            armies were wiped out. As this battle was being fought, a king by the name of Rūpati, along with a single
-                                            contingent of troops, dressed up as women and escaped to the snowy mountains. Their descendants remain
-                                            there today and are known as the Tibetans.”<note place="end" xml:id="UT22084-103-004-113"> The same
-                                                section of Prajñāvarman’s commentary, concerning the figure of Rūpati as the putative ancestor of the
-                                                Tibetans, is also cited (and eventually dismissed) by Pawo Tsuklak Trengwa in his <title xml:lang="en">Feast for Scholars</title>, p. 158.</note>
+                                    <lb/> “He replied, ‘I will bring the armies,’ thus becoming Viṣṇu’s enemy. <lb/> “Then, when Viṣṇu arrived at the
+                                    battleground on the side of Pāṇḍu, Arjuna looked around and said, ‘I could never kill my own kinsmen, so how could
+                                    I kill these armies of my kinsmen, even if they wish to capture the kingdom?’ <lb/> “When Arjuna turned his back
+                                    on the battle, Viṣṇu cried out, ‘You are a fool!</p>
+                                <milestone unit="chunk" xml:id="UT22084-103-004-110"/>
+                                <lg tid="51">
+                                    <l> “ ‘Neither he who kills </l>
+                                    <l> Nor he who is killed</l>
+                                    <l> Has any perceptible basis;</l>
+                                    <l> Killer and killed do not exist.</l>
+                                </lg>
+                                <milestone unit="chunk" xml:id="UT22084-103-004-111"/>
+                                <lg tid="52">
+                                    <l> “ ‘Those of superior learning and discipline,</l>
+                                    <l> Brahmins, cows, and oxen,</l>
+                                    <l> Dogs, outcastes, paṇḍitas, and the like—</l>
+                                    <l> All should be viewed as the same.’</l>
+                                </lg>
+                                <milestone unit="chunk" xml:id="UT22084-103-004-112"/>
+                                <p tid="53">“Teaching him with these and many other verses of nihilist views, Viṣṇu deceived him by displaying various
+                                    forms, and, taking the form of Arjuna’s charioteer, the family of Duryodhana and its eighteen armies were wiped
+                                    out. As this battle was being fought, a king by the name of Rūpati, along with a single contingent of troops,
+                                    dressed up as women and escaped to the snowy mountains. Their descendants remain there today and are known as the
+                                        Tibetans.”<note place="end" xml:id="UT22084-103-004-113"> The same section of Prajñāvarman’s commentary,
+                                        concerning the figure of Rūpati as the putative ancestor of the Tibetans, is also cited (and eventually
+                                        dismissed) by Pawo Tsuklak Trengwa in his <title xml:lang="en">Feast for Scholars</title>, p.
+                                158.</note>
                                 </p>
                             </q>
-                            
                         </q>
                         <milestone unit="chunk" xml:id="UT22084-103-004-114"/>
                         <p tid="54">So, with this and other accounts, there are a variety of different ways to explain [the origins of the Tibetan
@@ -620,16 +616,17 @@
                                 <l>Where the handprints of ḍākinīs can be found.</l>
                                 <l>Lake Mapham is the abode of a bodhisattva nāga king,</l>
                                 <l>And its rivers possess immense qualities too. </l>
-                                <l>Bodhisattva nāga ministers reside in Lake Tri Shö,<note place="end" xml:id="UT22084-103-004-119"> Tib. <foreign xml:lang="Bo-Ltn" type="quote">khri bshos rgya mtsho’i klu blon
-                                            byang chub sems</foreign>. In <title xml:lang="en">Feast for Scholars</title> this line reads
-                                            <foreign xml:lang="Bo-Ltn" type="quote">khri shod rgyal mo’i
-                                            klu sman byang chub sems</foreign>, or “bodhisattva nāga maidens of the queen of Tri Shö.”</note>
+                                <l>Bodhisattva nāga ministers reside in Lake Tri Shö,<note place="end" xml:id="UT22084-103-004-119"> Tib. <foreign xml:lang="Bo-Ltn" type="quote">khri bshos rgya mtsho’i klu blon byang chub sems</foreign>. In <title xml:lang="en">Feast for Scholars</title> this line reads <foreign xml:lang="Bo-Ltn" type="quote">khri shod
+                                            rgyal mo’i klu sman byang chub sems</foreign>, or “bodhisattva nāga maidens of the queen of Tri
+                                        Shö.”</note>
                                 </l>
                                 <l>Bringing benefit to all with its great rivers. </l>
                                 <l>In Lake Namtso Chukmo dwell bodhisattvas, </l>
                                 <l>While on the Thanglha range are five hundred arhats.</l>
-                                <l>On an island in Lake Nuptso<note place="end" xml:id="UT22084-103-004-120"> Reading <foreign xml:lang="Bo-Ltn">snubs mtsho</foreign> from <title xml:lang="en">Feast for Scholars</title> instead of <foreign xml:lang="Bo-Ltn">sbubs mtsho</foreign>.</note> lives a bodhisattva nāga king,</l>
-                                <l>While on Mount Hawo<note place="end" xml:id="UT22084-103-004-121"> Reading <foreign xml:lang="Bo-Ltn">ha bo’i gangs</foreign> from <title xml:lang="en">Feast for Scholars</title> instead of <foreign xml:lang="Bo-Ltn">kha’u’i gangs</foreign>.</note> are many arhats.</l>
+                                <l>On an island in Lake Nuptso<note place="end" xml:id="UT22084-103-004-120"> Reading <foreign xml:lang="Bo-Ltn">snubs
+                                            mtsho</foreign> from <title xml:lang="en">Feast for Scholars</title> instead of <foreign xml:lang="Bo-Ltn">sbubs mtsho</foreign>.</note> lives a bodhisattva nāga king,</l>
+                                <l>While on Mount Hawo<note place="end" xml:id="UT22084-103-004-121"> Reading <foreign xml:lang="Bo-Ltn">ha bo’i
+                                            gangs</foreign> from <title xml:lang="en">Feast for Scholars</title> instead of <foreign xml:lang="Bo-Ltn">kha’u’i gangs</foreign>.</note> are many arhats.</l>
                                 <l>With high peaks and pure earth, Tibet is fully encircled by snowy mountains.</l>
                                 <l>Its speech is pure and its language melodious, comparable to Sanskrit.</l>
                                 <l>The language of its people is fully capable of translating the Dharma.</l>
@@ -654,9 +651,9 @@
                         <milestone unit="chunk" xml:id="UT22084-103-004-125"/>
                         <p tid="60">So it has been described, as replete with ten virtues. In particular, it is a land thoroughly protected by the
                             blessings of bodhisattvas who have dwelt on it—learned and realized masters, as well as emanated Dharma kings, and the
-                            incarnations of countless well-gone ones. As in the Teacher’s prophecy, it is a perfect place<note place="end" xml:id="UT22084-103-004-126"> The term “perfect place” is the fourth of the five perfections (<foreign xml:lang="Bo-Ltn" type="term">phun tshogs lnga</foreign>), a category
-                                used in tantric contexts. The five perfections are perfect teachings, perfect time, perfect teacher, perfect place,
-                                and perfect company.</note> for the teachings of the Victorious One to shine brightly in this degenerate age. </p>
+                            incarnations of countless well-gone ones. As in the Teacher’s prophecy, it is a perfect place<note place="end" xml:id="UT22084-103-004-126"> The term “perfect place” is the fourth of the five perfections (<foreign xml:lang="Bo-Ltn" type="term">phun tshogs lnga</foreign>), a category used in tantric contexts. The five
+                                perfections are perfect teachings, perfect time, perfect teacher, perfect place, and perfect company.</note> for the
+                            teachings of the Victorious One to shine brightly in this degenerate age. </p>
                         <milestone unit="chunk" xml:id="UT22084-103-004-127"/>
                         <p tid="61">According to the Secret Mantra Vajrayāna, in the <title xml:lang="Sa-Ltn">Vajraḍāka Tantra</title>, it says:</p>
                         <milestone unit="chunk" xml:id="UT22084-103-004-128"/>
@@ -668,9 +665,9 @@
                                 <l>And dwells on the rocky cliffs as her home,</l>
                                 <l>Bearing the womb of spontaneous arising.”<note place="end" xml:id="UT22084-103-004-129"> The quotation here varies
                                         slightly from the Degé Kangyur version of the <title xml:lang="Sa-Ltn">Vajraḍāka Tantra</title>, which reads
-                                            <foreign xml:lang="Bo-Ltn" type="quote">bod yul du ni lhan
-                                            skyes te// rang byung gi nis kye gnas byung// chu srin rgyal mtshan lag na thogs// zhi zhing gsal ba’i
-                                            gzugs can te// yul der gnas pa’i lha mo de// brag gi khyim la brten te gnas</foreign>.</note>
+                                            <foreign xml:lang="Bo-Ltn" type="quote">bod yul du ni lhan skyes te// rang byung gi nis kye gnas byung//
+                                            chu srin rgyal mtshan lag na thogs// zhi zhing gsal ba’i gzugs can te// yul der gnas pa’i lha mo de// brag
+                                            gi khyim la brten te gnas</foreign>.</note>
                                     <ref cRef="F.100.b" type="folio" xml:id="UT22084-103-004-673"/>
                                 </l>
                             </lg>
@@ -682,28 +679,26 @@
                         <milestone unit="chunk" xml:id="UT22084-103-004-131"/>
                         <p tid="64">Imbued with the aforementioned qualities, this Cool Land, or the “land of the red-faced ones” as it is described
                             in the sūtra <title xml:lang="en">The Questions of Vimalaprabha</title>,<note place="end" xml:id="UT22084-103-004-132">
-                                <foreign xml:lang="Bo-Ltn" type="quote">lha mo dri ma med pa’i ’od lung
-                                    bstan pa’i mdo</foreign> seems to be an alternative title for the <title xml:lang="Sa-Ltn">Vimalaprabha­paripṛcchā</title> (Toh 168),<ref rend="pending" target="http://read.84000.co/translation/toh168.html"/> based on its reference in the Dungkar Dictionary, which
-                                describes it as being in volume <foreign xml:lang="Bo-Ltn">ba</foreign> of the Kangyur, four fascicles in length, and lacking a colophon.</note> is said to comprise
-                            “Tibet” and “Greater Tibet.” As for the region of Greater Tibet, a set of similes is given for Tibet at large: the three
-                            districts of Ngari up in the west are like a reservoir; the four horns of Ütsang in the center are like an irrigation
-                            channel; and the six ranges of Dokham down in the east are like a field.<note place="end" xml:id="UT22084-103-004-133">
-                                This image, of the Tibetan plateau from the far west to the far east as a single irrigation system, is found in
-                                similar terms in Pawo Tsuklak’s <title xml:lang="en">Feast for Scholars</title>, p. 149.</note> This location, which
-                            is called the land of Ling, falls in lower Dokham, amid what is known as the Zalmo range, one of the six mountain ranges,
-                            and between the Drichu and Shardachu<note place="end" xml:id="UT22084-103-004-134">Tib. <foreign xml:lang="Bo-Ltn">shar zla chu</foreign>. The Dachu (<foreign xml:lang="Bo-Ltn">zla chu</foreign>) is one of the names by which the
-                                upper Mekong River, formed by the joining of the Dzachu (<foreign xml:lang="Bo-Ltn">rdza chu</foreign>) and Ngomchu (<foreign xml:lang="Bo-Ltn">ngom chu</foreign>) Rivers at Chamdo (<foreign xml:lang="Bo-Ltn">chab mdo</foreign>) is known. However, the Shardachu likely here refers to the eastern
-                                Dzachu (<foreign xml:lang="Bo-Ltn">rdza chu</foreign>), which flows
-                                through Sershu and Lingtsang to the east of Degé, and is known in Chinese as the Yalong. A historical kingdom of Ling
-                                or Lingtsang (<foreign xml:lang="Bo-Ltn">gling tshang</foreign>) in
-                                Kham is attested in many sources, particularly from the fourteenth century. In folklore, it is strongly associated
-                                with the legends of the Gesar epic (Tib. <foreign xml:lang="Bo-Ltn">gling
-                                    sgrung</foreign>). Often this kingdom is localized by reference to the Drichu and the eastern Dzachu or Yalong
-                                River. Since Degé is located between the Drichu and this eastern Dzachu, it seems likely that Shardachu here refers to
-                                the eastern Dzachu (Yalong), rather than the Dachu (Mekong).</note> Rivers among the four great rivers. Many great
-                            accomplished vajra masters—such as Deshek Phakmo Drup, the one bearing the name of Kathokpa Dampa, the siddha Saltong
-                            Shogom, the accomplished lord Karma Pakṣi, the bodhisattva Pomdrak, and others—consciously took rebirth in this area and
-                            continue to watch over it. </p>
+                                <foreign xml:lang="Bo-Ltn" type="quote">lha mo dri ma med pa’i ’od lung bstan pa’i mdo</foreign> seems to be an
+                                alternative title for the <title xml:lang="Sa-Ltn">Vimalaprabha­paripṛcchā</title> (Toh 168),<ref rend="pending" target="http://read.84000.co/translation/toh168.html"/> based on its reference in the Dungkar Dictionary, which
+                                describes it as being in volume <foreign xml:lang="Bo-Ltn">ba</foreign> of the Kangyur, four fascicles in length, and
+                                lacking a colophon.</note> is said to comprise “Tibet” and “Greater Tibet.” As for the region of Greater Tibet, a set
+                            of similes is given for Tibet at large: the three districts of Ngari up in the west are like a reservoir; the four horns
+                            of Ütsang in the center are like an irrigation channel; and the six ranges of Dokham down in the east are like a
+                                field.<note place="end" xml:id="UT22084-103-004-133"> This image, of the Tibetan plateau from the far west to the far
+                                east as a single irrigation system, is found in similar terms in Pawo Tsuklak’s <title xml:lang="en">Feast for
+                                    Scholars</title>, p. 149.</note> This location, which is called the land of Ling, falls in lower Dokham, amid what
+                            is known as the Zalmo range, one of the six mountain ranges, and between the Drichu and Shardachu<note place="end" xml:id="UT22084-103-004-134">Tib. <foreign xml:lang="Bo-Ltn">shar zla chu</foreign>. The Dachu (<foreign xml:lang="Bo-Ltn">zla chu</foreign>) is one of the names by which the upper Mekong River, formed by the joining of
+                                the Dzachu (<foreign xml:lang="Bo-Ltn">rdza chu</foreign>) and Ngomchu (<foreign xml:lang="Bo-Ltn">ngom chu</foreign>)
+                                Rivers at Chamdo (<foreign xml:lang="Bo-Ltn">chab mdo</foreign>) is known. However, the Shardachu likely here refers
+                                to the eastern Dzachu (<foreign xml:lang="Bo-Ltn">rdza chu</foreign>), which flows through Sershu and Lingtsang to the
+                                east of Degé, and is known in Chinese as the Yalong. A historical kingdom of Ling or Lingtsang (<foreign xml:lang="Bo-Ltn">gling tshang</foreign>) in Kham is attested in many sources, particularly from the fourteenth
+                                century. In folklore, it is strongly associated with the legends of the Gesar epic (Tib. <foreign xml:lang="Bo-Ltn">gling sgrung</foreign>). Often this kingdom is localized by reference to the Drichu and the eastern Dzachu or
+                                Yalong River. Since Degé is located between the Drichu and this eastern Dzachu, it seems likely that Shardachu here
+                                refers to the eastern Dzachu (Yalong), rather than the Dachu (Mekong).</note> Rivers among the four great rivers. Many
+                            great accomplished vajra masters—such as Deshek Phakmo Drup, the one bearing the name of Kathokpa Dampa, the siddha
+                            Saltong Shogom, the accomplished lord Karma Pakṣi, the bodhisattva Pomdrak, and others—consciously took rebirth in this
+                            area and continue to watch over it. </p>
                         <milestone unit="chunk" xml:id="UT22084-103-004-135"/>
                         <p tid="65">With so many learned and accomplished bodhisattvas who have graced this land with their feet and conferred their
                             blessings upon it, the inhabitants are naturally inclined toward virtue. The land is protected by great bhūtas who have
@@ -719,21 +714,19 @@
                         <milestone unit="chunk" xml:id="UT22084-103-004-137"/>
                         <p tid="67">The monastic community is in the lineage of the venerable great Sakyapas, father and sons, and excellently upholds
                             the immaculate lineage of all the key points of the definitive secret as taught by the venerable and omniscient Vajradhara
-                            Künga Sangpo. Spending time in both the wheel of study and reflection, and the wheel of diligent practice,<note place="end" xml:id="UT22084-103-004-138"> These are two of the “three wheels” (<foreign xml:lang="Bo-Ltn" type="term">’khor lo gsum</foreign>), that is, the
-                                wheel of study and contemplation (<foreign xml:lang="Bo-Ltn" type="term">klog pa thos bsam gyi ’khor lo</foreign>), the renunciation wheel of meditation (<foreign xml:lang="Bo-Ltn" type="term">spong ba bsam gtan gyi ’khor
-                                    lo</foreign>), and the action wheel of practical deeds (<foreign xml:lang="Bo-Ltn" type="term">bya ba las kyi ’khor lo</foreign>).</note> they uphold and do not let fade the
-                            light of the profound yogas of generation and completion, the infinite activities of the maṇḍalas, and the profound
-                            instructions of ripening and liberating and so on, and are worthy of many tributes of praise. </p>
+                            Künga Sangpo. Spending time in both the wheel of study and reflection, and the wheel of diligent practice,<note place="end" xml:id="UT22084-103-004-138"> These are two of the “three wheels” (<foreign xml:lang="Bo-Ltn" type="term">’khor lo gsum</foreign>), that is, the wheel of study and contemplation (<foreign xml:lang="Bo-Ltn" type="term">klog pa thos bsam gyi ’khor lo</foreign>), the renunciation wheel of meditation (<foreign xml:lang="Bo-Ltn" type="term">spong ba bsam gtan gyi ’khor lo</foreign>), and the action wheel of practical deeds (<foreign xml:lang="Bo-Ltn" type="term">bya ba las kyi ’khor lo</foreign>).</note> they uphold and do not let fade the light
+                            of the profound yogas of generation and completion, the infinite activities of the maṇḍalas, and the profound instructions
+                            of ripening and liberating and so on, and are worthy of many tributes of praise. </p>
                         <milestone unit="chunk" xml:id="UT22084-103-004-139"/>
                         <p tid="68">This great palace of the kingdom, filled to overflowing with priceless collections of precious items—cast statues
                             and painted images of the well-gone ones, many volumes of the three scriptural baskets, and more—is a great temple,
                             evidently comparable to how the ratnakūṭa vihāras<note place="end" xml:id="UT22084-103-004-751">Though it is not entirely
-                                clear what <foreign xml:lang="Sa-Ltn" type="term">ratnakūṭa
-                                    vihāra</foreign> refers to here or why Situ Paṇchen wrote it in transliterated Sanskrit, we assume it refers
-                                to its literal meaning of "temples heaped high with jewels." It could, however, also possibly refer to a specific
-                                temple complex in India, though we know of no such place.</note> were said to be in the noble land of India. </p>
-                    </div>
-                    <div prefix="1.2" type="section" xml:id="UT22084-103-004-section-1-2">
+                                clear what <foreign xml:lang="Sa-Ltn" type="term">ratnakūṭa vihāra</foreign> refers to here or why Situ Paṇchen wrote
+                                it in transliterated Sanskrit, we assume it refers to its literal meaning of "temples heaped high with jewels." It
+                                could, however, also possibly refer to a specific temple complex in India, though we know of no such place.</note>
+                            were said to be in the noble land of India. </p>
+                    </tei:div>
+                    <tei:div prefix="1.2" type="section" xml:id="UT22084-103-004-section-1-2">
                         <head type="section" tid="69">1.2 Family Lineage</head>
                         <milestone unit="chunk" xml:id="UT22084-103-004-140"/>
                         <p tid="70">I will now present the particularities of the family lineage of the Lord of Men, Tenpa Tsering, who came from this
@@ -761,11 +754,10 @@
                             spread there before, he inculcated faith in the people with his miraculous powers and skillful means. After he laid the
                             foundation for Phulung Rinchen Ling monastery, he passed away. Then his nephew Orgyen, along with some others, came from
                             Kham to oversee its continuation. A family lineage<note place="end" xml:id="UT22084-103-004-146"> The Degé Kangyur print
-                                appears to read <foreign xml:lang="Bo-Ltn" type="term">dbon
-                                    rgyud</foreign>, indicating religious transmission lineage passed from uncle to nephew. However, the
-                                Comparative Edition (<title xml:lang="Bo-Ltn">dpe bsdur ma</title>) reads this as <foreign xml:lang="Bo-Ltn" type="term">dpon rgyud</foreign>, indicating a
-                                lineage of local rulers. </note> thereby gradually emerged known as the Phulung Dépa Thokawa, which continued in later
-                            times.</p>
+                                appears to read <foreign xml:lang="Bo-Ltn" type="term">dbon rgyud</foreign>, indicating religious transmission lineage
+                                passed from uncle to nephew. However, the Comparative Edition (<title xml:lang="Bo-Ltn">dpe bsdur ma</title>) reads
+                                this as <foreign xml:lang="Bo-Ltn" type="term">dpon rgyud</foreign>, indicating a lineage of local rulers. </note>
+                            thereby gradually emerged known as the Phulung Dépa Thokawa, which continued in later times.</p>
                         <milestone unit="chunk" xml:id="UT22084-103-004-147"/>
                         <p tid="75">As for Garchen Yeshé Sangpo, he became ruler of the Langdodruk area. One of his two sons, Sönam Rinchen, served at
                             the lotus feet of Drogön Chögyal Phakpa and was made his chamberlain. He was also granted an official seal and edict and
@@ -773,18 +765,17 @@
                             Sönam Rinchen looked after some one thousand monks at the Samar Yangön monastery.<note place="end" xml:id="UT22084-103-004-148"> Kolmaš observes that it was during the time of Sönam Rinchen of the twenty-fifth
                                 generation that the secular and spiritual powers in the Degé royal family were first merged together. Kolmaš 1968, p.
                                 34.</note> His nephew, Ngu Guru, had nine sons, one of whom was Tongpön Dawa Sangpo, who as a result of the
-                                priest-patron<note place="end" xml:id="UT22084-103-004-149"> Tib. <foreign xml:lang="Bo-Ltn" type="term">mchod yon</foreign>. This traditional concept in Buddhist societies, often
-                                translated as the “priest-patron” relationship, became a dominant trope in Tibetan history, particularly from the
-                                thirteenth century, to describe the relations between Tibetan lamas and their secular, often imperial, patrons. For a
-                                survey of this concept’s origins in Indian Buddhist social history and the shortcomings of translating it as
-                                “priest-patron,” see Ruegg 2014, pp. 67–75.</note> relationship with the emperor ascended to the position of
-                                <foreign xml:lang="Bo-Ltn" type="term">tongpön</foreign> of
-                                Samar.<note place="end" xml:id="UT22084-103-004-150"> Kolmaš notes that the Chinese title used for the office in
-                                charge of eastern Tibet during the Yuan period appears to have been named after Samar monastery. Kolmaš 1968, p. 66,
-                                n. 34.</note> One of Tongpön Dawa Sangpo’s two sons, Ngu Gyalwa Sangpo, had a son called Pema Tensung. He, in turn,
-                            had a son named Karchen Jangchup Bum, whose son, Ngu Chödorwa, was a mahāsiddha in the great esoteric Nyingma tradition.
-                            His brother, Gendün Gyaltsen, had a son named Gönpo Sung, whose family lineage in the Samar area remains unbroken until
-                            today. <ref cRef="F.102.a" type="folio" xml:id="UT22084-103-004-676"/>
+                                priest-patron<note place="end" xml:id="UT22084-103-004-149"> Tib. <foreign xml:lang="Bo-Ltn" type="term">mchod
+                                    yon</foreign>. This traditional concept in Buddhist societies, often translated as the “priest-patron”
+                                relationship, became a dominant trope in Tibetan history, particularly from the thirteenth century, to describe the
+                                relations between Tibetan lamas and their secular, often imperial, patrons. For a survey of this concept’s origins in
+                                Indian Buddhist social history and the shortcomings of translating it as “priest-patron,” see Ruegg 2014, pp.
+                                67–75.</note> relationship with the emperor ascended to the position of <foreign xml:lang="Bo-Ltn" type="term">tongpön</foreign> of Samar.<note place="end" xml:id="UT22084-103-004-150"> Kolmaš notes that the Chinese title used
+                                for the office in charge of eastern Tibet during the Yuan period appears to have been named after Samar monastery.
+                                Kolmaš 1968, p. 66, n. 34.</note> One of Tongpön Dawa Sangpo’s two sons, Ngu Gyalwa Sangpo, had a son called Pema
+                            Tensung. He, in turn, had a son named Karchen Jangchup Bum, whose son, Ngu Chödorwa, was a mahāsiddha in the great
+                            esoteric Nyingma tradition. His brother, Gendün Gyaltsen, had a son named Gönpo Sung, whose family lineage in the Samar
+                            area remains unbroken until today. <ref cRef="F.102.a" type="folio" xml:id="UT22084-103-004-676"/>
                         </p>
                         <milestone unit="chunk" xml:id="UT22084-103-004-151"/>
                         <p tid="76">A son of Karchen Jangchup Bum by the name of Dechen Sönam Sangpo traveled to Kathok Dorjeden to perform funerary
@@ -792,12 +783,12 @@
                             Karmapa Chödrak Gyatso and his student Ngu Chödorwa prophesied, “He may not return, but he will eventually rule a sacred
                             site, blessed by a mahāsiddha, constructed in the shape of the eight auspicious symbols. His descendants will be all the
                             greater for it.” This prophecy came to pass exactly as foretold when Sönam Sangpo eventually went before the great lord of
-                            Ling in Jakra.<note place="end" xml:id="UT22084-103-004-152"> Tib. <foreign xml:lang="Bo-Ltn" type="quote">rims gyis lcags ra na gling gi chen po bdag drung gi spyan sngar
-                                    ’byor</foreign>. The implication seems to be that Sönam Sangpo moved to Jakra and performed a ministerial
-                                function for the lord of Ling. In the next generation, as described in <title xml:lang="en">The Royal Genealogy of
-                                    Ling</title>, his son Bothar would expand their family’s territories at the expense of the kingdom of Ling, and
-                                establish the family center around the present site of Degé town.</note> It was also around this time that the name
-                            Degé is said to have come into usage.</p>
+                            Ling in Jakra.<note place="end" xml:id="UT22084-103-004-152"> Tib. <foreign xml:lang="Bo-Ltn" type="quote">rims gyis lcags
+                                    ra na gling gi chen po bdag drung gi spyan sngar ’byor</foreign>. The implication seems to be that Sönam Sangpo
+                                moved to Jakra and performed a ministerial function for the lord of Ling. In the next generation, as described in
+                                    <title xml:lang="en">The Royal Genealogy of Ling</title>, his son Bothar would expand their family’s territories
+                                at the expense of the kingdom of Ling, and establish the family center around the present site of Degé town.</note> It
+                            was also around this time that the name Degé is said to have come into usage.</p>
                         <milestone unit="chunk" xml:id="UT22084-103-004-153"/>
                         <p tid="77">The second of Sönam Sangpo’s four sons, Bothar,<note place="end" xml:id="UT22084-103-004-154"> On Bothar’s
                                 acquisition of territory from the kingdom of Ling in exchange for the marriage of his beautiful daughter, as told in
@@ -818,11 +809,10 @@
                         <milestone unit="chunk" xml:id="UT22084-103-004-156"/>
                         <p tid="79">Gyaltsen Bum’s brother Yagyal Phel had three sons, one of whom, Degé Künga Rinchen, initiated a period of
                             flourishing prosperity by constructing a temple<note place="end" xml:id="UT22084-103-004-157"> Likely the Zungdrel temple
-                                    (<foreign xml:lang="Bo-Ltn">zung ’brel lha
-                                khang</foreign>).</note> for the monastic estate of Lhundrup Teng. Once, while in the midst of a practice session,
-                            his entire bedchamber was transformed into a mass of flames that could be clearly seen by all. He had two younger
-                            brothers, Pön Namkha and Dorjé Lhundrup. The current Lama Tashi Gyatso and others descend directly from the latter of
-                            these two, while the former had a son named Lhunthup, who in turn had six sons. </p>
+                                    (<foreign xml:lang="Bo-Ltn">zung ’brel lha khang</foreign>).</note> for the monastic estate of Lhundrup Teng.
+                            Once, while in the midst of a practice session, his entire bedchamber was transformed into a mass of flames that could be
+                            clearly seen by all. He had two younger brothers, Pön Namkha and Dorjé Lhundrup. The current Lama Tashi Gyatso and others
+                            descend directly from the latter of these two, while the former had a son named Lhunthup, who in turn had six sons. </p>
                         <milestone unit="chunk" xml:id="UT22084-103-004-158"/>
                         <p tid="80">The eldest of these six was the siddha Künga Gyatso, who was renowned as being an emanated display of Rikzin
                             Gödemchen. He gained signs of accomplishment through both new and old tantric systems in general and, in particular,
@@ -834,11 +824,12 @@
                             meritorious karma ever increasing, he primarily held positions of political power and gained authority over a great number
                             of religious communities irrespective of lineage.<note place="end" xml:id="UT22084-103-004-160"> According to <title xml:lang="en">The Royal Genealogy of Degé</title> (folios 10.b–11.a), Jampa Phuntsok was revered by Guśri Khan and
                                 thereby the territories of Degé were greatly expanded. See Kolmaš 1968, pp. 33, 94, 167–68.</note> The fifth son was
-                            Lama Lhasung,<note place="end" xml:id="UT22084-103-004-161"> Also spelled <foreign xml:lang="Bo-Ltn">bla ma lha drung</foreign> elsewhere.</note> who
-                            devoted himself exclusively to his religious vows. The sixth son was Lama Karma Samdrup, a devotee of the Karma Kaṃtsang
-                            tradition who lived at Wönpo Tö. The second and fourth sons presided over Lhunthup’s estate and the sons of the former,
-                            that is of Pön Luphel, included Pönchen Künga Phuntsok. When Sakyong Dampa Jampa Phuntsok passed away, Pönchen Künga
-                            Phuntsok ascended to the throne and upheld the wholesome ways of both religious and secular traditions.</p>
+                            Lama Lhasung,<note place="end" xml:id="UT22084-103-004-161"> Also spelled <foreign xml:lang="Bo-Ltn">bla ma lha
+                                    drung</foreign> elsewhere.</note> who devoted himself exclusively to his religious vows. The sixth son was Lama
+                            Karma Samdrup, a devotee of the Karma Kaṃtsang tradition who lived at Wönpo Tö. The second and fourth sons presided over
+                            Lhunthup’s estate and the sons of the former, that is of Pön Luphel, included Pönchen Künga Phuntsok. When Sakyong Dampa
+                            Jampa Phuntsok passed away, Pönchen Künga Phuntsok ascended to the throne and upheld the wholesome ways of both religious
+                            and secular traditions.</p>
                         <milestone unit="chunk" xml:id="UT22084-103-004-162"/>
                         <p tid="82">Trichen Sangyé Tenpa, <ref cRef="F.103.a" type="folio" xml:id="UT22084-103-004-678"/> who is said to have been an
                             emanated display of Chokro Lui Gyaltsen in several treasure texts, gained unparalleled authority through the vast power of
@@ -855,8 +846,8 @@
                                 Lama’s biography. Petech 1972, p. 22; Kolmaš 1968, pp. 36, 110.</note> His brother Pön Wangchen Gönpo’s son is the
                             Lord of Men, Tenpa Tsering, who currently holds the throne and reigns over the kingdom. It is he who was the patron for
                             accomplishing this vast virtuous activity [of producing the Kangyur].</p>
-                    </div>
-                    <div prefix="1.3" type="section" xml:id="UT22084-103-004-section-1-3">
+                    </tei:div>
+                    <tei:div prefix="1.3" type="section" xml:id="UT22084-103-004-section-1-3">
                         <head type="section" tid="84">1.3 Qualities</head>
                         <milestone unit="chunk" xml:id="UT22084-103-004-165"/>
                         <p tid="85">In this section, I will describe the qualities of the patron, King Tenpa Tsering, exactly as I have witnessed
@@ -1258,14 +1249,14 @@
                         </q>
                         <milestone unit="chunk" xml:id="UT22084-103-004-227"/>
                         <p tid="142">In short, he is well endowed with all aspects of a king in accord with the treatises.</p>
-                    </div>
-                </div>
-                <div type="section" xml:id="UT22084-103-004-section-2">
+                    </tei:div>
+                </tei:div>
+                <tei:div type="section" xml:id="UT22084-103-004-section-2">
                     <head type="section" tid="217">Part 2</head>
                     <head type="chapterTitle" tid="143">The Virtuous Activity of Publishing the Victorious One’s Teachings</head>
                     <p tid="144">The virtuous activity of publishing the Victorious One’s teachings will be explained according to the time of
                         production, the process of collecting and editing the manuscripts, <ref cRef="F.106.a" type="folio" xml:id="UT22084-103-004-684"/> and the practicalities of printing. </p>
-                    <div prefix="2.1" type="section" xml:id="UT22084-103-004-section-2-1">
+                    <tei:div prefix="2.1" type="section" xml:id="UT22084-103-004-section-2-1">
                         <head type="section" tid="145">2.1 The Time of the Production of the Kangyur</head>
                         <milestone unit="chunk" xml:id="UT22084-103-004-229"/>
                         <p tid="146">In general, this great Fortunate Eon is made up of three phases: the age of formation, the age of remaining, and
@@ -1292,17 +1283,15 @@
                         <milestone unit="chunk" xml:id="UT22084-103-004-232"/>
                         <p tid="149">Regardless, the production of this Kangyur began seven years after the powerful sovereign, <ref cRef="F.106.b" type="folio" xml:id="UT22084-103-004-685"/> the great, divinely mandated emperor Yongzheng, assumed the golden throne.
                             This was when the Lord of Men, Tenpa Tsering, had reached fifty-two years of age. According to <title xml:lang="en">The
-                                Follow-Up Tantra to the Cakrasaṃvara</title>, this year is called <foreign xml:lang="Sa-Ltn" type="term">saumya</foreign>, meaning “gentle.” In the eastern kingdom of China,<note place="end" xml:id="UT22084-103-004-233"> Tib. <foreign xml:lang="Bo-Ltn">shar phyogs tong ku’i rgyal khams</foreign>. Lit. “the eastern land of Tongku.” It is believed that the term
-                                “Tongku” is derived from the Chinese <foreign xml:lang="Zh-Ltn">dong
-                                    jing</foreign> (<foreign xml:lang="zh">東京</foreign>) or
-                                “Eastern capital” but came to refer to the Chinese lands east of Tibet. Use of this term is attested as early as 960
-                                    <hi rend="small-caps">ce</hi>, before the creation of the modern political designation “China,” but it was used as
-                                an epithet for various Chinese empires over the course of centuries. For more on this term, see van Schaik
-                                2013.</note> it is called the year of the earth rooster,<note place="end" xml:id="UT22084-103-004-234"> Tib.
-                                    <foreign xml:lang="Bo-Ltn">gyi ye’ur</foreign>. Ch. <foreign xml:lang="Zh-Ltn">jī yǒu</foreign>
-                                <foreign xml:lang="zh">雞酉</foreign>.</note> and in the Tibetan
-                            calendar, it is known as the female earth bird year (1729) in the first inner cycle, when three elements are in
-                            convergence, and when Jupiter is at its nadir.</p>
+                                Follow-Up Tantra to the Cakrasaṃvara</title>, this year is called <foreign xml:lang="Sa-Ltn" type="term">saumya</foreign>, meaning “gentle.” In the eastern kingdom of China,<note place="end" xml:id="UT22084-103-004-233">
+                                Tib. <foreign xml:lang="Bo-Ltn">shar phyogs tong ku’i rgyal khams</foreign>. Lit. “the eastern land of Tongku.” It is
+                                believed that the term “Tongku” is derived from the Chinese <foreign xml:lang="Zh-Ltn">dong jing</foreign> (<foreign xml:lang="zh">東京</foreign>) or “Eastern capital” but came to refer to the Chinese lands east of Tibet. Use of this
+                                term is attested as early as 960 <hi rend="small-caps">ce</hi>, before the creation of the modern political
+                                designation “China,” but it was used as an epithet for various Chinese empires over the course of centuries. For more
+                                on this term, see van Schaik 2013.</note> it is called the year of the earth rooster,<note place="end" xml:id="UT22084-103-004-234"> Tib. <foreign xml:lang="Bo-Ltn">gyi ye’ur</foreign>. Ch. <foreign xml:lang="Zh-Ltn">jī
+                                    yǒu</foreign>
+                                <foreign xml:lang="zh">雞酉</foreign>.</note> and in the Tibetan calendar, it is known as the female earth bird year
+                            (1729) in the first inner cycle, when three elements are in convergence, and when Jupiter is at its nadir.</p>
                         <milestone unit="chunk" xml:id="UT22084-103-004-235"/>
                         <p tid="150">Furthermore, between the southward and northward declinations of the sun, this work was begun during the former.
                             Among the four seasons of summer, winter, autumn, and spring, it was autumn, the season when all desirable things are in
@@ -1312,12 +1301,12 @@
                         <milestone unit="chunk" xml:id="UT22084-103-004-236"/>
                         <p tid="151">It was on the second day of the period when the moon was waxing in the constellation Droshin, which is known as
                             Śrāvaṇa in the noble land of India. It was when Friday’s<note place="end" xml:id="UT22084-103-004-237">
-                                <foreign xml:lang="Bo-Ltn">res gza’ mnga’ lha</foreign>. According to
-                                Khenpo Tashi Pal, this term refers to the day of Venus, or Friday.</note> friendly smile was shining on the lotus face
-                            of the goddess of the constellation Anurādhā. The conjunction of the day was “immortality.”</p>
+                                <foreign xml:lang="Bo-Ltn">res gza’ mnga’ lha</foreign>. According to Khenpo Tashi Pal, this term refers to the day of
+                                Venus, or Friday.</note> friendly smile was shining on the lotus face of the goddess of the constellation Anurādhā.
+                            The conjunction of the day was “immortality.”</p>
                         <milestone unit="chunk" xml:id="UT22084-103-004-238"/>
-                        <p tid="152">In the tradition of the <title xml:lang="Sa-Ltn">Kālacakra</title>, the vowel was <foreign xml:lang="Sa-Ltn">o</foreign>, the consonant was <foreign xml:lang="Sa-Ltn">pho</foreign>, the element was water, and the sense
-                            object was form. In the tradition of the <title xml:lang="Sa-Ltn">Svarodaya</title>, the vowel was <foreign xml:lang="Sa-Ltn">e,</foreign> the consonant was <foreign xml:lang="Sa-Ltn">ra</foreign>, the element was wind, the sense object was
+                        <p tid="152">In the tradition of the <title xml:lang="Sa-Ltn">Kālacakra</title>, the vowel was <foreign xml:lang="Sa-Ltn">o</foreign>, the consonant was <foreign xml:lang="Sa-Ltn">pho</foreign>, the element was water, and the sense object
+                            was form. In the tradition of the <title xml:lang="Sa-Ltn">Svarodaya</title>, the vowel was <foreign xml:lang="Sa-Ltn">e,</foreign> the consonant was <foreign xml:lang="Sa-Ltn">ra</foreign>, the element was wind, the sense object was
                             touch. It was a perfect time when all of these astrological signs appeared.</p>
                         <milestone unit="chunk" xml:id="UT22084-103-004-239"/>
                         <p tid="153">This great ruler has accrued so many good deeds since beginningless time that their enormous power has come to
@@ -1329,8 +1318,8 @@
                             Having cast away such thoughts, he donned the armor of courageous spirit and, with the unrelenting resolve of his great
                             intelligence, he initiated the work on this great project, heedless of the obstacles that Māra and his armies would erect,
                             directly and indirectly, and the variety of methods they would use to cause delays.</p>
-                    </div>
-                    <div prefix="2.2" type="section" xml:id="UT22084-103-004-section-2-2">
+                    </tei:div>
+                    <tei:div prefix="2.2" type="section" xml:id="UT22084-103-004-section-2-2">
                         <head type="section" tid="154">2.2 The Manner in Which Source Texts Were Collected and Edited</head>
                         <milestone unit="chunk" xml:id="UT22084-103-004-240"/>
                         <p tid="155">This great wheel of activity began with the collection and subsequent editing of authentic source texts.
@@ -1343,8 +1332,8 @@
                             the monastery of Phangthang Kamé. Counting eight syllables as a line, four lines as a stanza, and three hundred stanzas as
                             a fascicle, they were able to establish the length of given Dharma scriptures based on an accurate system of accounting.
                             This became known as the Phangthangma catalog and is widely understood to be the first time that the translated words of
-                            the Victorious One were gathered into a single collection<note place="end" xml:id="UT22084-103-004-242"> Tib. <foreign xml:lang="Bo-Ltn" type="quote">rgyal ba’i bka’ ’gyur ro cog phyogs gcig tu
-                                    bsgrigs pa</foreign>. Situ Paṇchen uses the term <foreign xml:lang="Bo-Ltn">kangyur</foreign> (lit. “translated words”) here to describe the collection at the
+                            the Victorious One were gathered into a single collection<note place="end" xml:id="UT22084-103-004-242"> Tib. <foreign xml:lang="Bo-Ltn" type="quote">rgyal ba’i bka’ ’gyur ro cog phyogs gcig tu bsgrigs pa</foreign>. Situ Paṇchen uses
+                                the term <foreign xml:lang="Bo-Ltn">kangyur</foreign> (lit. “translated words”) here to describe the collection at the
                                 Phangthang palace.</note> in this Land of Snows.</p>
                         <milestone unit="chunk" xml:id="UT22084-103-004-243"/>
                         <p tid="157">Later, the translators Paltsek, Khön Nāgendra Rakṣita, and others collected those scriptures that had already
@@ -1392,7 +1381,7 @@
                         <milestone unit="chunk" xml:id="UT22084-103-004-252"/>
                         <p tid="162">When these great inventories were being prepared, <ref cRef="F.108.a" type="folio" xml:id="UT22084-103-004-688"/>
                             the profound inner tantras of the Secret Mantra were not publicly recorded since they concerned esoteric practices.</p>
-                        <div type="section" xml:id="UT22084-103-004-section-2-2-1">
+                        <tei:div type="section" xml:id="UT22084-103-004-section-2-2-1">
                             <head type="section" tid="163">On the Creation of the Narthang Kangyur</head>
                             <milestone unit="chunk" xml:id="UT22084-103-004-253"/>
                             <p tid="164">During the period of the later diffusion of the teachings, the great emanated translators continued to
@@ -1433,8 +1422,9 @@
                             <milestone unit="chunk" xml:id="UT22084-103-004-258"/>
                             <p tid="167">As for <title xml:lang="en">The Perfection of Wisdom in One Hundred Thousand Lines</title>, it is said that
                                 there were some six versions, which include <title xml:lang="en">The Red Manuscript</title> and <title xml:lang="en">The Blue Manuscript</title> at the time of Tri Songdetsen, and among others evolving from them <title xml:lang="Bo-Ltn">The Long Imperial Hundred Thousand</title> during the reign of Tri Desongtsen, <title xml:lang="Bo-Ltn">Tri Detsuk’s Monochrome Imperial Hundred Thousand</title>, <title xml:lang="en">Jingyön’s
-                                    Innermost Hundred Thousand</title>, <title xml:lang="en">Tsangma’s Demarcated Hundred Thousand</title>,<note place="end" xml:id="UT22084-103-004-259"> We are reading this as <foreign xml:lang="Bo-Ltn">gtsang ma’i</foreign> in place of <foreign xml:lang="Bo-Ltn">gtsang mi</foreign> to accord with the known
-                                    name of this individual.</note>
+                                    Innermost Hundred Thousand</title>, <title xml:lang="en">Tsangma’s Demarcated Hundred Thousand</title>,<note place="end" xml:id="UT22084-103-004-259"> We are reading this as <foreign xml:lang="Bo-Ltn">gtsang ma’i</foreign>
+                                    in place of <foreign xml:lang="Bo-Ltn">gtsang mi</foreign> to accord with the known name of this
+                                    individual.</note>
                                 <title xml:lang="en">Ralpachen’s Six Volume Hundred Thousand</title>, <title xml:lang="en">Prince Namdé’s Red-Faced
                                     Version</title>, and <title xml:lang="en">Darma’s Yellow-Paper Version</title>, as well as nineteen versions of
                                 the <title xml:lang="en">Hundred Thousand Lines</title> produced by the king’s subjects.<note place="end" xml:id="UT22084-103-004-1258">Situ Panchen provides another more detailed account of these early translations and
@@ -1456,8 +1446,8 @@
                             <p tid="169">Additionally, source texts not mentioned above that were of excellent provenance and had been analyzed using
                                 the three kinds of reasoning were compared. In this way, at the great temple of glorious Narthang, the catalog
                                 produced by the monk of the Śākyas Jampaiyang came to be known as the Narthang Kangyur.</p>
-                        </div>
-                        <div type="section" xml:id="UT22084-103-004-section-2-2-2">
+                        </tei:div>
+                        <tei:div type="section" xml:id="UT22084-103-004-section-2-2-2">
                             <head type="section" tid="170">On the Creation of the Tshalpa Kangyur</head>
                             <milestone unit="chunk" xml:id="UT22084-103-004-262"/>
                             <p tid="171">Using the Narthang Kangyur as the primary source text, Tshalpa Situ Gewé Lodrö produced at the Tsal Gungthang
@@ -1466,8 +1456,8 @@
                                 thoroughly scrutinized and examined this collection, made corrections, and added annotations. This collection thus
                                 became the supremely authoritative master copy of the Kangyur, surpassing all others in the land of Tibet. It is
                                 stored at Taktsé Palace in Chingwa.</p>
-                        </div>
-                        <div type="section" xml:id="UT22084-103-004-section-2-2-3">
+                        </tei:div>
+                        <tei:div type="section" xml:id="UT22084-103-004-section-2-2-3">
                             <head type="section" tid="172">On the Creation of the Lithang Kangyur</head>
                             <milestone unit="chunk" xml:id="UT22084-103-004-263"/>
                             <p tid="173">Later, through the power of past meritorious deeds, the king of Jang, Karma Mipham Sönam Rapten, sent for the
@@ -1476,8 +1466,8 @@
                                 Taklung. Over time, it came to be housed at the monastic complex of Lithang Jamchen Nampar Gyalwa,<note place="end" xml:id="UT22084-103-004-264"> As discussed by Jampa Samten, the blocks appear to have been moved to Lithang
                                     monastery during the upheavals of the 1640s. Jampa Samten and Russell 1987, p. 19.</note> and this [Degé Kangyur]
                                 is based on it. </p>
-                        </div>
-                        <div type="section" xml:id="UT22084-103-004-section-2-2-4">
+                        </tei:div>
+                        <tei:div type="section" xml:id="UT22084-103-004-section-2-2-4">
                             <head type="section" tid="174">On the Other Editions Used for the Degé Kangyur</head>
                             <milestone unit="chunk" xml:id="UT22084-103-004-265"/>
                             <p tid="175">Additionally, [for the production of this Kangyur,] a number of other editions were sought, such as the
@@ -1529,8 +1519,8 @@
                                 as Drāviḍa, Paiśāca, Apabhraṃśa, secret symbolic language, or others. The mantras that were actually written in
                                 Sanskrit were brought into accordance with grammar treatises through our own understanding. Those that we could not
                                 discern were left as they were. </p>
-                        </div>
-                        <div type="section" xml:id="UT22084-103-004-section-2-2-5">
+                        </tei:div>
+                        <tei:div type="section" xml:id="UT22084-103-004-section-2-2-5">
                             <head type="section" tid="180">On the Editing of Orthography</head>
                             <milestone unit="chunk" xml:id="UT22084-103-004-273"/>
                             <p tid="181">In the textual traditions of the past, there have been many dissimilar styles of orthography. It is said that
@@ -1544,10 +1534,9 @@
                                 Those variations that were deemed not to be erroneous were left as they stood. Thus, there was no attempt to create a
                                 singular uniform style. We eliminated any lapses into well-known dialects such as using <foreign xml:lang="Bo-Ltn" type="term">mya</foreign> for <foreign xml:lang="Bo-Ltn" type="term">ma</foreign>, <foreign xml:lang="Bo-Ltn" type="term">stsogs</foreign> for <foreign xml:lang="Bo-Ltn" type="term">sa</foreign>, and <foreign xml:lang="Bo-Ltn" type="term">ral gyi</foreign> for <foreign xml:lang="Bo-Ltn" type="term">ral tri</foreign>
                                 <note place="end" xml:id="UT22084-103-004-274">
-                                    <foreign xml:lang="Bo-Ltn" type="quote">ma mya dang sa stsogs dang ral
-                                        gri la ral gyi</foreign>. These are given as examples of spelling and pronunciation variations between
-                                    regional Tibetan dialects.</note>, and so on, because these are not accepted by scholars. Even though the
-                                    <foreign xml:lang="Bo-Ltn" type="term">da-drag</foreign>
+                                    <foreign xml:lang="Bo-Ltn" type="quote">ma mya dang sa stsogs dang ral gri la ral gyi</foreign>. These are given
+                                    as examples of spelling and pronunciation variations between regional Tibetan dialects.</note>, and so on, because
+                                these are not accepted by scholars. Even though the <foreign xml:lang="Bo-Ltn" type="term">da-drag</foreign>
                                 post-suffix was part of the system of <title xml:lang="en">The Thirty Verses</title> and <title xml:lang="en">The
                                     Application of Gender Signs</title>, later scholars such as Loden Sherab treated it as if it were assumed [and
                                 omitted it], in order to simplify the language. </p>
@@ -1555,11 +1544,10 @@
                             <p tid="182">The central Indic languages were all emended to accord exclusively with Sanskrit, while a few texts with
                                 Apabhraṃśa as their basis were left alone. When the names of places, flowers, and animals were given in Sanskrit, in
                                 some sūtras, the translators of the past had rendered Sanskrit words for ease of reading by Tibetans, for example
-                                writing <foreign xml:lang="Bo-Ltn">go’u ta ma</foreign> for
-                                    <foreign xml:lang="Sa-Ltn">Gautama</foreign>, and so on. Elsewhere
-                                words were spelled precisely according to the Sanskrit. These were all left just as they appeared, though a few
-                                instances that could not be left uncorrected were corrected. In the tantric collections, that which could be analyzed
-                                was brought into conformity with Sanskrit. </p>
+                                writing <foreign xml:lang="Bo-Ltn">go’u ta ma</foreign> for <foreign xml:lang="Sa-Ltn">Gautama</foreign>, and so on.
+                                Elsewhere words were spelled precisely according to the Sanskrit. These were all left just as they appeared, though a
+                                few instances that could not be left uncorrected were corrected. In the tantric collections, that which could be
+                                analyzed was brought into conformity with Sanskrit. </p>
                             <milestone unit="chunk" xml:id="UT22084-103-004-276"/>
                             <p tid="183">In brief, the Degé Kangyur was edited in accordance with texts such as the <title xml:lang="Sa-Ltn">Mahāvyutpatti</title>, <ref cRef="F.111.a" type="folio" xml:id="UT22084-103-004-694"/>
                                 <title xml:lang="en">The Two-Volume Lexicon</title>, Thönmi’s <title xml:lang="en">Thirty Verses</title> and <title xml:lang="en">The Application of Gender Signs</title>, <title xml:lang="en">The Weapon-Like Gateway to
@@ -1575,9 +1563,9 @@
                                 Nevertheless, I do believe that it is superior in comparison to earlier editions, such as that printed in the land of
                                 China under the auspices of the great Ming emperor Yongle, and that produced by the King of Satham, which formed the
                                 basis for this, and others. Indeed, it should be considered trustworthy by discerning individuals.</p>
-                        </div>
-                    </div>
-                    <div prefix="2.3" type="section" xml:id="UT22084-103-004-section-2-3">
+                        </tei:div>
+                    </tei:div>
+                    <tei:div prefix="2.3" type="section" xml:id="UT22084-103-004-section-2-3">
                         <head type="section" tid="185">2.3 The Practicalities of Printing the Kangyur</head>
                         <milestone unit="chunk" xml:id="UT22084-103-004-278"/>
                         <p tid="186">As far as the practicalities of printing this Kangyur are concerned, all of the materials needed for printing,
@@ -1616,10 +1604,10 @@
                             of Old Tantras, such as the wages for each department—including the daily rations of food and drink, occasional feasts,
                             and bonuses for their enjoyment, all of which was of high quality and bountiful beyond accounting—as well as the cost of
                             the materials like woodblocks, was reckoned as 7,622 cases of good tea.<note place="end" xml:id="UT22084-103-004-285">
-                                Tib. <foreign xml:lang="Bo-Ltn" type="quote">bzang ja sbob
-                                    rtse</foreign>. Bricks of tea were packed in long bamboo baskets known as <foreign xml:lang="Ja-Ltn" type="term">japobtse</foreign> or <foreign xml:lang="Ja-Ltn" type="term">jakhordruk</foreign>. The value of these
-                                were used as the benchmark for calculating wages and expenses. See Chaix, p. 67, n. 7.</note> This demonstrates how
-                            the outstretched hand of constant and unfailing great generosity rendered everyone happy, content, and joyful.</p>
+                                Tib. <foreign xml:lang="Bo-Ltn" type="quote">bzang ja sbob rtse</foreign>. Bricks of tea were packed in long bamboo
+                                baskets known as <foreign xml:lang="Ja-Ltn" type="term">japobtse</foreign> or <foreign xml:lang="Ja-Ltn" type="term">jakhordruk</foreign>. The value of these were used as the benchmark for calculating wages and expenses. See
+                                Chaix, p. 67, n. 7.</note> This demonstrates how the outstretched hand of constant and unfailing great generosity
+                            rendered everyone happy, content, and joyful.</p>
                         <milestone unit="chunk" xml:id="UT22084-103-004-286"/>
                         <p tid="192">After the wood blocks had been carved, they were checked many times and determined to be reliable. Immediately
                             thereafter, the great scholar Maṅgala, present incumbent on the great lion throne of the omniscient Vajradhara Künga
@@ -1629,21 +1617,20 @@
                             their entirety and without confusing the order. With that, this unrivaled object of worship for all beings and gods, this
                             great precious gem that grants an abundance of everything desirable and positive, the happiness of living beings, and the
                             great roots and branches of the Buddha’s teachings, was complete.</p>
-                    </div>
-                </div>
-                <div type="section" xml:id="UT22084-103-004-section-3">
+                    </tei:div>
+                </tei:div>
+                <tei:div type="section" xml:id="UT22084-103-004-section-3">
                     <head type="section" tid="193">Concluding Verses</head>
                     <milestone unit="chunk" xml:id="UT22084-103-004-287"/>
                     <lg tid="194">
                         <l>When the great Brahmā of this land, the Ruler of Men,</l>
-                        <l>Brought forth this <foreign xml:lang="Sa-Ltn" type="term">veda</foreign>
-                            through his virtuous activity,<note place="end" xml:id="UT22084-103-004-288"> This verse relates Tenpa Tsering and his
-                                sponsorship of this Kangyur to the Hindu deity Brahmā. According to tradition, the four foundational texts of
-                                traditional Hinduism, the Vedas, emerged from Brahmā’s four mouths.</note>
+                        <l>Brought forth this <foreign xml:lang="Sa-Ltn" type="term">veda</foreign> through his virtuous activity,<note place="end" xml:id="UT22084-103-004-288"> This verse relates Tenpa Tsering and his sponsorship of this Kangyur to the Hindu deity
+                                Brahmā. According to tradition, the four foundational texts of traditional Hinduism, the Vedas, emerged from Brahmā’s
+                                four mouths.</note>
                         </l>
                         <l>Emerging from his four heads of duty, prosperity, pleasures, and liberation,<note place="end" xml:id="UT22084-103-004-289">
-                                This is a list of the four pursuits of noble beings, or <foreign xml:lang="Sa-Ltn" type="term">puruṣārtha</foreign>. An important concept in Hinduism, these four traditionally
-                                encompass the proper goals of a human life.</note>
+                                This is a list of the four pursuits of noble beings, or <foreign xml:lang="Sa-Ltn" type="term">puruṣārtha</foreign>.
+                                An important concept in Hinduism, these four traditionally encompass the proper goals of a human life.</note>
                         </l>
                         <l>Vasudhārā was overjoyed.</l>
                     </lg>
@@ -1705,16 +1692,16 @@
                             the Youthful Moonlight to the Delight of the Wise: The Excellent History of How All the Source Texts of the Well-Gone
                             One’s Teachings Extant in the Language of the Land of Snows Were Put into Print.</title>
                     </trailer>
-                </div>
-            </div>
+                </tei:div>
+            </tei:div>
         </body>
         <back>
-            <div type="notes">
+            <tei:div type="notes" xml:id="UT22084-103-004-notes">
                 <head type="notes" tid="207">Notes</head>
-            </div>
-            <div type="listBibl">
+            </tei:div>
+            <tei:div type="listBibl" xml:id="UT22084-103-004-listBibl">
                 <head type="listBibl" tid="209">Bibliography</head>
-                <div type="section" xml:id="UT22084-103-004-listBibl-1">
+                <tei:div type="section" xml:id="UT22084-103-004-listBibl-1">
                     <head type="section" tid="214">Tibetan Language Sources</head>
                     <bibl xml:id="UT22084-103-004-300">
                         <title xml:lang="Bo-Ltn">gsum pa/ rgyal ba’i gsung rab gangs ri’i khrod du deng sang ji tsam
@@ -1739,8 +1726,8 @@
                         ljongs mi dmangs dpe skrun khang, 2009. </bibl>
                     <bibl xml:id="UT22084-103-004-306">Tsuklak Trengwa (gtsug lag ’phreng ba). <title xml:lang="Bo-Ltn">chos ’byung mkhas pa’i dga’
                             ston</title>. 2 vols. Beijing: mi rigs dpe skrun khang, 1986. </bibl>
-                </div>
-                <div type="section" xml:id="UT22084-103-004-listBibl-2">
+                </tei:div>
+                <tei:div type="section" xml:id="UT22084-103-004-listBibl-2">
                     <head type="section" tid="215">Other Sources</head>
                     <bibl xml:id="UT22084-103-004-308">Almogi, Orna. “The Old sNar thang Tibetan Buddhist Canon Revisited, with Special Reference to
                         dBus pa blo gsal’s bsTan ’gyur Catalogue.” <title xml:lang="fr">Revue d’Etudes Tibétaines</title> 58 (2021): 165–207. </bibl>
@@ -1801,10 +1788,9 @@
                     <bibl xml:id="UT22084-103-004-730">Schaeffer, Kurtis R., et al., eds. <title xml:lang="en">Sources of Tibetan Tradition</title>.
                         New York: Columbia University Press, 2013.</bibl>
                     <bibl xml:id="UT22084-103-004-731">Schaeffer, Kurtis R. and Leonard W.J. van der Kuijp. <title xml:lang="en">An Early Tibetan
-                            Survey of Buddhist Literature: The <foreign xml:lang="Bo-Ltn">bstan pa rgyas
-                                pa rgyan gyi nyi ’od of Bcom ldan ral gri</foreign>
-                        </title>. Harvard Oriental Series 64. Cambridge, MA: Harvard
-                        University Press, 2009.</bibl>
+                            Survey of Buddhist Literature: The <foreign xml:lang="Bo-Ltn">bstan pa rgyas pa rgyan gyi nyi ’od of Bcom ldan ral
+                                gri</foreign>
+                        </title>. Harvard Oriental Series 64. Cambridge, MA: Harvard University Press, 2009.</bibl>
                     <bibl xml:id="UT22084-103-004-732">Scherrer-Schaub, Cristina, “Enacting Words: A Diplomatic Analysis of the Imperial Decrees (bkas
                         bcad) and their Application in the sGra sbyor bam po gñis pa Tradition”, <title xml:lang="en">JIABS</title> 25/1-2 (2002):
                         263–340.</bibl>
@@ -1833,9 +1819,9 @@
                     <bibl xml:id="UT22084-103-004-741">Vetturnini, Gianpaolo. “The bKa’ gdams pa School of Tibetan Buddhism.” PhD diss, SOAS, 2007.
                         http://himalaya.socanth.cam.ac.uk/collections/rarebooks/dow 349 nloads/Gianpaolo_Vetturini_PhD.pdf (revised 2013).</bibl>
 
-                </div>
-            </div>
-            <div type="glossary">
+                </tei:div>
+            </tei:div>
+            <tei:div type="glossary" xml:id="UT22084-103-004-glossary">
                 <list type="glossary">
                     <item>
                         <gloss type="term" xml:id="UT22084-103-004-323">
@@ -1879,7 +1865,8 @@
                             <term xml:lang="bo" n="1">བསིལ་ལྡན་གྱིས་ལྗོངས།</term>
                             <term status="verified" xml:lang="Sa-Ltn"/>
                             <note type="definition">
-                                <p>An epithet of Tibet. Similar to Land of Snows (<foreign xml:lang="Bo-Ltn">gangs can ljongs</foreign>).</p>
+                                <p>An epithet of Tibet. Similar to Land of Snows (<foreign xml:lang="Bo-Ltn">gangs can
+                                        ljongs</foreign>).</p>
                             </note>
                         </gloss>
                     </item>
@@ -1926,8 +1913,8 @@
                             <term xml:lang="bo" n="1">ཁ་སྒོ་ཕན་པ།</term>
                             <term status="verified" xml:lang="Sa-Ltn">pathyā</term>
                             <note type="definition">
-                                <p>In metrics, <foreign xml:lang="Sa-Ltn" type="term">pathyā</foreign> refers to the “normal,” as opposed to the “extended” (<foreign xml:lang="Sa-Ltn" type="term">vipula</foreign>), variety of
-                                        <foreign xml:lang="Sa-Ltn" type="term">anuṣṭubh</foreign>.</p>
+                                <p>In metrics, <foreign xml:lang="Sa-Ltn" type="term">pathyā</foreign> refers to the “normal,” as
+                                    opposed to the “extended” (<foreign xml:lang="Sa-Ltn" type="term">vipula</foreign>), variety of <foreign xml:lang="Sa-Ltn" type="term">anuṣṭubh</foreign>.</p>
                             </note>
                         </gloss>
                     </item>
@@ -1939,7 +1926,8 @@
                             <term status="verified" xml:lang="Sa-Ltn">viṣamavṛtta</term>
                             <note type="definition">
                                 <p>A type of meter with a fixed sequence of short and long syllables that varies in each quarter.
-                                    Many scholars regard <foreign xml:lang="Sa-Ltn" type="term">anuṣṭubh</foreign> as an example of such meter.</p>
+                                    Many scholars regard <foreign xml:lang="Sa-Ltn" type="term">anuṣṭubh</foreign> as an example of such
+                                meter.</p>
                             </note>
                         </gloss>
                     </item>
@@ -2045,8 +2033,8 @@
                             <term status="verified" xml:lang="Bo-Ltn" n="1">gnam skos </term>
                             <term xml:lang="bo" n="1">གནམ་སྐོས།</term>
                             <note type="definition">
-                                <p>Here the “divine mandate” or “mandate of heaven” (<foreign xml:lang="zh" type="term">天命</foreign>) refers to the political
-                                    and religious concept used in China to characterize the divine right to rule of emperors. </p>
+                                <p>Here the “divine mandate” or “mandate of heaven” (<foreign xml:lang="zh" type="term">天命</foreign>) refers to the political and religious concept used in China to characterize the divine right to
+                                    rule of emperors. </p>
                             </note>
                         </gloss>
                     </item>
@@ -2153,8 +2141,8 @@
                             <term xml:lang="bo" n="1">འདུལ་བ།</term>
                             <term status="verified" xml:lang="Sa-Ltn">vinaya</term>
                             <note type="definition">
-                                <p>Of the three <foreign xml:lang="Sa-Ltn" type="term">piṭakas</foreign>, or “baskets,” of the Buddhist canon, the one dealing specifically with the code of
-                                    monastic discipline.</p>
+                                <p>Of the three <foreign xml:lang="Sa-Ltn" type="term">piṭakas</foreign>, or “baskets,” of the
+                                    Buddhist canon, the one dealing specifically with the code of monastic discipline.</p>
                             </note>
                         </gloss>
                     </item>
@@ -2237,7 +2225,8 @@
                             <term xml:lang="bo" n="1">ཀོ་བི་ད་ར།</term>
                             <term status="verified" xml:lang="Sa-Ltn">kovidāra</term>
                             <note type="definition">
-                                <p>A tree that is said to have been grown in the heavens, possibly <foreign xml:lang="la">Bauhinia variegata</foreign>. </p>
+                                <p>A tree that is said to have been grown in the heavens, possibly <foreign xml:lang="la">Bauhinia
+                                        variegata</foreign>. </p>
                             </note>
                         </gloss>
                     </item>
@@ -2320,9 +2309,8 @@
                             <term xml:lang="bo" n="1">ས་ག</term>
                             <term status="verified" xml:lang="Sa-Ltn">viśakhā</term>
                             <note type="definition">
-                                <p>The sixteenth of the twenty-seven major constellations, or <foreign xml:lang="Sa-Ltn" type="term">nakṣatras</foreign>, in Vedic
-                                    astrology. Here it corresponds to the fourth month of the Tibetan calendar, when the moon is full in the
-                                    constellation Saga (Tib.), or Viśakhā (Skt.).</p>
+                                <p>The sixteenth of the twenty-seven major constellations, or <foreign xml:lang="Sa-Ltn" type="term">nakṣatras</foreign>, in Vedic astrology. Here it corresponds to the fourth month of the Tibetan
+                                    calendar, when the moon is full in the constellation Saga (Tib.), or Viśakhā (Skt.).</p>
                             </note>
                         </gloss>
                     </item>
@@ -2333,9 +2321,9 @@
                             <term xml:lang="bo" n="1">རྒྱལ།</term>
                             <term status="verified" xml:lang="Sa-Ltn">puṣya</term>
                             <note type="definition">
-                                <p>The eighth of the twenty-seven constellations, or <foreign xml:lang="Sa-Ltn" type="term">nakṣatras</foreign>, in Vedic
-                                    astrology. Vedic astrology divides the day into thirty periods of forty-eight minutes called <foreign xml:lang="Sa-Ltn" type="term">muhūrtas</foreign>; Puṣya is the
-                                    period that corresponds to 8:24 to 9:12 p.m.</p>
+                                <p>The eighth of the twenty-seven constellations, or <foreign xml:lang="Sa-Ltn" type="term">nakṣatras</foreign>, in Vedic astrology. Vedic astrology divides the day into thirty periods of forty-eight
+                                    minutes called <foreign xml:lang="Sa-Ltn" type="term">muhūrtas</foreign>; Puṣya is the period that corresponds to
+                                    8:24 to 9:12 p.m.</p>
                             </note>
                         </gloss>
                     </item>
@@ -2358,9 +2346,8 @@
                             <term xml:lang="bo" n="1">ཆུ་སྟོད།</term>
                             <term status="verified" xml:lang="Sa-Ltn">pūrvāṣādhā</term>
                             <note type="definition">
-                                <p>The twentieth of the twenty-seven constellations, or <foreign xml:lang="Sa-Ltn" type="term">nakṣatras</foreign>, in Vedic
-                                    astrology. Here it corresponds to the sixth month of the Tibetan calendar, when the moon is full in the
-                                    constellation.</p>
+                                <p>The twentieth of the twenty-seven constellations, or <foreign xml:lang="Sa-Ltn" type="term">nakṣatras</foreign>, in Vedic astrology. Here it corresponds to the sixth month of the Tibetan calendar, when
+                                    the moon is full in the constellation.</p>
                             </note>
                         </gloss>
                     </item>
@@ -2395,8 +2382,8 @@
                             <term xml:lang="bo" n="1">གྲོ་བཞིན།</term>
                             <term status="verified" xml:lang="Sa-Ltn">śrāvaṇa</term>
                             <note type="definition">
-                                <p>The twenty-second of the twenty-seven constellations, or <foreign xml:lang="Sa-Ltn" type="term">nakṣatras</foreign>, in Vedic
-                                    astrology. Here it corresponds to the seventh month of the Tibetan calendar.</p>
+                                <p>The twenty-second of the twenty-seven constellations, or <foreign xml:lang="Sa-Ltn" type="term">nakṣatras</foreign>, in Vedic astrology. Here it corresponds to the seventh month of the Tibetan
+                                    calendar.</p>
                             </note>
                         </gloss>
                     </item>
@@ -2407,8 +2394,7 @@
                             <term xml:lang="bo" n="1">ཤྲ་བ་ཎ།</term>
                             <term status="verified" xml:lang="Sa-Ltn">śrāvaṇa</term>
                             <note type="definition">
-                                <p>The twenty-second of the twenty-seven constellations, or <foreign xml:lang="Sa-Ltn" type="term">nakṣatras</foreign>, in Vedic
-                                    astrology. </p>
+                                <p>The twenty-second of the twenty-seven constellations, or <foreign xml:lang="Sa-Ltn" type="term">nakṣatras</foreign>, in Vedic astrology. </p>
                             </note>
                         </gloss>
                     </item>
@@ -2419,8 +2405,8 @@
                             <term xml:lang="bo" n="1">ཨ་ནུ་རཱ་དྷཱ།</term>
                             <term status="verified" xml:lang="Sa-Ltn">anurādhā</term>
                             <note type="definition">
-                                <p>The seventeenth of the twenty-seven constellations, or <foreign xml:lang="Sa-Ltn" type="term">nakṣatras</foreign>, in Vedic
-                                    astrology. In Tibetan it is known as Lhatsam (<foreign xml:lang="Bo-Ltn">lha mtshams</foreign>). This constellation is symbolized by the lotus.</p>
+                                <p>The seventeenth of the twenty-seven constellations, or <foreign xml:lang="Sa-Ltn" type="term">nakṣatras</foreign>, in Vedic astrology. In Tibetan it is known as Lhatsam (<foreign xml:lang="Bo-Ltn">lha
+                                        mtshams</foreign>). This constellation is symbolized by the lotus.</p>
                             </note>
                         </gloss>
                     </item>
@@ -2442,8 +2428,8 @@
                             <term xml:lang="bo" n="1">དབོ།</term>
                             <term status="verified" xml:lang="Sa-Ltn">uttaraphalgunī</term>
                             <note type="definition">
-                                <p>The twelfth of the twenty-seven constellations, or <foreign xml:lang="Sa-Ltn" type="term">nakṣatras</foreign>, in Vedic
-                                    astrology. Here it corresponds to the second month of the Tibetan calendar.</p>
+                                <p>The twelfth of the twenty-seven constellations, or <foreign xml:lang="Sa-Ltn" type="term">nakṣatras</foreign>, in Vedic astrology. Here it corresponds to the second month of the Tibetan
+                                calendar.</p>
                             </note>
                         </gloss>
                     </item>
@@ -3023,8 +3009,8 @@
                             <term status="verified" xml:lang="Sa-Ltn"/>
                             <note type="definition">
                                 <p>Kathokpa Dampa Deshek (1122–92) was the founder of Kathok monastery. His elder brother was
-                                    Pakmodrupa Dorjé Gyalpo. He is one of the “three men from Kham” (<foreign xml:lang="Bo-Ltn">khams pa mi gsum</foreign>), three famous
-                                    students of Gampopa from eastern Tibet.</p>
+                                    Pakmodrupa Dorjé Gyalpo. He is one of the “three men from Kham” (<foreign xml:lang="Bo-Ltn">khams pa mi
+                                        gsum</foreign>), three famous students of Gampopa from eastern Tibet.</p>
                             </note>
                         </gloss>
                     </item>
@@ -3036,8 +3022,8 @@
                             <term status="verified" xml:lang="Sa-Ltn"/>
                             <note type="definition">
                                 <p>Saltong Shogom (twelfth century) was a student of Gampopa who founded a minor sect that has
-                                    since disappeared. He is one of the “three men from Kham” (<foreign xml:lang="Bo-Ltn">khams pa mi gsum</foreign>), three famous students of Gampopa from eastern
-                                Tibet.</p>
+                                    since disappeared. He is one of the “three men from Kham” (<foreign xml:lang="Bo-Ltn">khams pa mi gsum</foreign>),
+                                    three famous students of Gampopa from eastern Tibet.</p>
                             </note>
                         </gloss>
                     </item>
@@ -3063,8 +3049,8 @@
                             <note type="definition">
                                 <p>Pomdrakpa Sönam Dorjé (1170–1249) is credited with recognizing Karma Pakṣi as the reincarnation
                                     of Dusum Khyenpa (1110–93), thus beginning the lineage of the Karmapas. His monastic seat was Trashö Pomdrak
-                                        (<foreign xml:lang="Bo-Ltn">khra shod spom brag</foreign>),
-                                    from where he received his shorthand title of Pomdrak.</p>
+                                        (<foreign xml:lang="Bo-Ltn">khra shod spom brag</foreign>), from where he received his shorthand title of
+                                    Pomdrak.</p>
                             </note>
                         </gloss>
                     </item>
@@ -3099,10 +3085,10 @@
                             <term xml:lang="bo" n="1">སྦྲ།</term>
                             <term status="verified" xml:lang="Sa-Ltn"/>
                             <note type="definition">
-                                <p>The people of the Sekhyung Dra clan are said to have originated from Shangshung (<foreign xml:lang="Bo-Ltn">zhang zhung</foreign>), an ancient kingdom
-                                    corresponding roughly to the province of greater Ngari that was later absorbed by the Tibetan empire. According to
-                                        <title xml:lang="en">The Treasure of the Ancestral Clans of Tibet</title>, they are known for being astute and
-                                    hence rich and prosperous. Their element is iron, and their spirit animal (<foreign xml:lang="Bo-Ltn" type="term">bla zog</foreign>) is the
+                                <p>The people of the Sekhyung Dra clan are said to have originated from Shangshung (<foreign xml:lang="Bo-Ltn">zhang zhung</foreign>), an ancient kingdom corresponding roughly to the province of greater
+                                    Ngari that was later absorbed by the Tibetan empire. According to <title xml:lang="en">The Treasure of the
+                                        Ancestral Clans of Tibet</title>, they are known for being astute and hence rich and prosperous. Their element
+                                    is iron, and their spirit animal (<foreign xml:lang="Bo-Ltn" type="term">bla zog</foreign>) is the
                                 mare.</p>
                             </note>
                         </gloss>
@@ -3114,10 +3100,11 @@
                             <term xml:lang="bo" n="1">བྲུ།</term>
                             <term status="verified" xml:lang="Sa-Ltn"/>
                             <note type="definition">
-                                <p>The people of the Athang Dru clan are said to have originated from Sumpa (<foreign xml:lang="Bo-Ltn">sum pa</foreign>), an ancient land that
-                                    corresponds roughly to the province of Amdo that was later absorbed by the Tibetan empire. According to <title xml:lang="en">The Treasure of the Ancestral Clans of Tibet</title>, they are known for being people of action
-                                    and hence fierce toward their enemies. Their element is water, and their spirit animal (<foreign xml:lang="Bo-Ltn" type="term">bla zog</foreign>) is the
-                                yak.</p>
+                                <p>The people of the Athang Dru clan are said to have originated from Sumpa (<foreign xml:lang="Bo-Ltn">sum pa</foreign>), an ancient land that corresponds roughly to the province of Amdo that was
+                                    later absorbed by the Tibetan empire. According to <title xml:lang="en">The Treasure of the Ancestral
+                                        Clans of Tibet</title>, they are known for being people of action and hence fierce toward their enemies. Their
+                                    element is water, and their spirit animal (<foreign xml:lang="Bo-Ltn" type="term">bla zog</foreign>) is the
+                                    yak.</p>
                             </note>
                         </gloss>
                     </item>
@@ -3128,10 +3115,9 @@
                             <term xml:lang="bo" n="1">སྡོང་།</term>
                             <term status="verified" xml:lang="Sa-Ltn"/>
                             <note type="definition">
-                                <p>The people of the Apo Dong clan are said to have originated from Minyak (<foreign xml:lang="Bo-Ltn">mi nyag</foreign>), an ancient empire known to
-                                    the Mongols as Tangut and to the Chinese as Xixia. According to <title xml:lang="en">The Treasure of the Ancestral
-                                        Clans of Tibet</title>, they are known for possessing great might and hence for being rulers. Their element is
-                                    earth, and their spirit animal (<foreign xml:lang="Bo-Ltn" type="term">bla zog</foreign>) is the deer.</p>
+                                <p>The people of the Apo Dong clan are said to have originated from Minyak (<foreign xml:lang="Bo-Ltn">mi nyag</foreign>), an ancient empire known to the Mongols as Tangut and to the Chinese as
+                                    Xixia. According to <title xml:lang="en">The Treasure of the Ancestral Clans of Tibet</title>, they are known for
+                                    possessing great might and hence for being rulers. Their element is earth, and their spirit animal (<foreign xml:lang="Bo-Ltn" type="term">bla zog</foreign>) is the deer.</p>
                             </note>
                         </gloss>
                     </item>
@@ -3142,10 +3128,10 @@
                             <term xml:lang="bo" n="1">སྒ།</term>
                             <term status="verified" xml:lang="Sa-Ltn"/>
                             <note type="definition">
-                                <p>The people of the Mutsa Ga clan are said to have originated from Azha (<foreign xml:lang="Bo-Ltn">’a zha</foreign>), also known as Tuyuhun.
-                                    According to <title xml:lang="en">The Treasure of the Ancestral Clans of Tibet</title>, they are known for being
-                                    studious and hence erudite in matters of learning. Their element is wood, and their spirit animal (<foreign xml:lang="Bo-Ltn" type="term">bla zog</foreign>) is the
-                                goat.</p>
+                                <p>The people of the Mutsa Ga clan are said to have originated from Azha (<foreign xml:lang="Bo-Ltn">’a zha</foreign>), also known as Tuyuhun. According to <title xml:lang="en">The Treasure of
+                                        the Ancestral Clans of Tibet</title>, they are known for being studious and hence erudite in matters of
+                                    learning. Their element is wood, and their spirit animal (<foreign xml:lang="Bo-Ltn" type="term">bla
+                                    zog</foreign>) is the goat.</p>
                             </note>
                         </gloss>
                     </item>
@@ -3156,10 +3142,8 @@
                             <term xml:lang="bo" n="1">སྒོ།</term>
                             <term status="verified" xml:lang="Sa-Ltn"/>
                             <note type="definition">
-                                <p>The people of the Go Lharik clan are said to be the native inhabitants of Dokham (<foreign xml:lang="Bo-Ltn">mdo khams</foreign>) or eastern Tibet. They are
-                                    said to be a “divine” lineage in that they descended from the skies on a miraculous rope. Their element is fire,
-                                    and their spirit animal (<foreign xml:lang="Bo-Ltn" type="term">bla
-                                        zog</foreign>) is the goat.</p>
+                                <p>The people of the Go Lharik clan are said to be the native inhabitants of Dokham (<foreign xml:lang="Bo-Ltn">mdo khams</foreign>) or eastern Tibet. They are said to be a “divine” lineage in that they
+                                    descended from the skies on a miraculous rope. Their element is fire, and their spirit animal (<foreign xml:lang="Bo-Ltn" type="term">bla zog</foreign>) is the goat.</p>
                             </note>
                         </gloss>
                     </item>
@@ -3184,9 +3168,8 @@
                                 <p>According to the <title xml:lang="en">Catalog</title>, an ancestral figure of the Degé royal
                                     family who went to central Tibet and studied tantra with Jikten Gönpo at Drigung. He later moved to Powo where he
                                     established Phulung Rinchen Ling monastery. Other sources indicate he spent time at the court of the Tangut empire
-                                    (Tib. <foreign xml:lang="Bo-Ltn" type="term">mi nyag</foreign>,
-                                    Ch. <foreign xml:lang="Zh-Ltn" type="term">xi
-                                xia</foreign>)</p>
+                                    (Tib. <foreign xml:lang="Bo-Ltn" type="term">mi nyag</foreign>, Ch. <foreign xml:lang="Zh-Ltn" type="term">xi
+                                        xia</foreign>)</p>
                             </note>
                             <term type="translationAlternative">Gar Dampa</term>
                         </gloss>
@@ -3354,8 +3337,9 @@
                             <term status="verified" xml:lang="Sa-Ltn"/>
                             <note type="definition">
                                 <p>Kublai Khan (1215–94) reigned over the Mongol empire from 1260 to 1294 and founded the Yuan
-                                    dynasty in China. Based on his priest-patron (<foreign xml:lang="Bo-Ltn" type="term">mchod yon</foreign>) relationship, he entrusted both political and religious
-                                    authority over Tibet to the head of the Sakya school of Tibetan Buddhism, Drogön Chögyal Phakpa.</p>
+                                    dynasty in China. Based on his priest-patron (<foreign xml:lang="Bo-Ltn" type="term">mchod yon</foreign>)
+                                    relationship, he entrusted both political and religious authority over Tibet to the head of the Sakya school of
+                                    Tibetan Buddhism, Drogön Chögyal Phakpa.</p>
                             </note>
                         </gloss>
                     </item>
@@ -3753,9 +3737,8 @@
                             <term status="verified" xml:lang="Sa-Ltn"/>
                             <note type="definition">
                                 <p>The fortieth emperor of Tibet. Reigned ca. 800–15 <hi rend="small-caps">ce</hi>. Also known as
-                                    Tri Désongtsen (<foreign xml:lang="Bo-Ltn">khri lde srong
-                                        btsan</foreign>), he was youngest son of King Tri Songdetsen (<foreign xml:lang="Bo-Ltn">khri srong lde btsan</foreign>,
-                                742–97).</p>
+                                    Tri Désongtsen (<foreign xml:lang="Bo-Ltn">khri lde srong btsan</foreign>), he was youngest son of King Tri
+                                    Songdetsen (<foreign xml:lang="Bo-Ltn">khri srong lde btsan</foreign>, 742–97).</p>
                             </note>
                         </gloss>
                     </item>
@@ -3778,9 +3761,7 @@
                             <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">dpal brtsegs rak+shi ta</term>
                             <term xml:lang="bo" type="attestedSource" n="1" status="verified">དཔལ་བརྩེགས་རཀྴི་ཏ།</term>
                             <note type="definition" rend="override">
-                                <p>Kawa Paltsek (<foreign xml:lang="Bo-Ltn">ska ba dpal
-                                        brtsegs</foreign>, eighth century <hi rend="small-caps">ce</hi>) was one of the three main junior
-                                    translators at Samyé Translation Institute (<foreign xml:lang="Bo-Ltn">bsam yas lo tsa+a gling</foreign>) along with Chokro Lui Gyaltsen and Zhang Yeshe Dé.</p>
+                                <p>Kawa Paltsek (<foreign xml:lang="Bo-Ltn">ska ba dpal brtsegs</foreign>, eighth century <hi rend="small-caps">ce</hi>) was one of the three main junior translators at Samyé Translation Institute (<foreign xml:lang="Bo-Ltn">bsam yas lo tsa+a gling</foreign>) along with Chokro Lui Gyaltsen and Zhang Yeshe Dé.</p>
                             </note>
                         </gloss>
                     </item>
@@ -3836,8 +3817,7 @@
                             <term status="verified" xml:lang="Sa-Ltn"/>
                             <note type="definition">
                                 <p>The forty-first emperor of Tibet and third of the three Dharma Kings, he reigned ca. 815–36.
-                                    Also known as Tritsuk Detsen (<foreign xml:lang="Bo-Ltn">khri gtsug
-                                        lde btsan</foreign>).</p>
+                                    Also known as Tritsuk Detsen (<foreign xml:lang="Bo-Ltn">khri gtsug lde btsan</foreign>).</p>
                             </note>
                         </gloss>
                     </item>
@@ -3848,8 +3828,8 @@
                             <term xml:lang="bo" n="1">ཁྲི་གཙུག</term>
                             <term status="verified" xml:lang="Sa-Ltn"/>
                             <note type="definition">
-                                <p>The thirty-seventh king of Tibet, Tri Detsuktsen (<foreign xml:lang="Bo-Ltn">khri lde gtsug brtsan</foreign>,
-                                705–55).</p>
+                                <p>The thirty-seventh king of Tibet, Tri Detsuktsen (<foreign xml:lang="Bo-Ltn">khri lde gtsug
+                                        brtsan</foreign>, 705–55).</p>
                             </note>
                         </gloss>
                     </item>
@@ -3944,8 +3924,7 @@
                             <term status="verified" xml:lang="Sa-Ltn">Jñānasena</term>
                             <note type="definition">
                                 <p>Eighth- to ninth-century Tibetan monk, preceptor, and translator commonly known by his Tibetan
-                                    name, Yeshé Dé (<foreign xml:lang="Bo-Ltn">ye shes
-                                    sde</foreign>).</p>
+                                    name, Yeshé Dé (<foreign xml:lang="Bo-Ltn">ye shes sde</foreign>).</p>
                             </note>
                         </gloss>
                     </item>
@@ -3968,8 +3947,7 @@
                             <term status="verified" xml:lang="Sa-Ltn">mañjuśrīvarman</term>
                             <note type="definition">
                                 <p>Eighth- to ninth-century Tibetan translator also known by his Tibetan name, Gajam Gocha
-                                        (<foreign xml:lang="Bo-Ltn">dba ’jam dpal go
-                                    cha</foreign>).</p>
+                                        (<foreign xml:lang="Bo-Ltn">dba ’jam dpal go cha</foreign>).</p>
                             </note>
                         </gloss>
                     </item>
@@ -4026,8 +4004,8 @@
                             <term xml:lang="bo" n="1">ཡེ་ཤེས་དབང་པོ།</term>
                             <term status="verified" xml:lang="Sa-Ltn"/>
                             <note type="definition">
-                                <p>Full name Ba Yeshé Wangpo (<foreign xml:lang="Bo-Ltn">dba’ ye shes dbang po</foreign>), he was a Tibetan monk and translator active in the
-                                    eighth century and a disciple of Śāntarakṣita.</p>
+                                <p>Full name Ba Yeshé Wangpo (<foreign xml:lang="Bo-Ltn">dba’ ye shes dbang po</foreign>), he was
+                                    a Tibetan monk and translator active in the eighth century and a disciple of Śāntarakṣita.</p>
                             </note>
                         </gloss>
                     </item>
@@ -4121,10 +4099,11 @@
                             <term xml:lang="bo" n="2">རིག་པའི་རལ་གྲི།</term>
                             <term status="verified" xml:lang="Sa-Ltn"/>
                             <note type="definition">
-                                <p>Chomden Rikpai Raldri (<foreign xml:lang="Bo-Ltn">bcom ldan rig pa’i ral gri</foreign>, 1227–1305) was a prominent scholar based at Narthang monastery who
-                                    compiled an inventory of translated Buddhist texts and guided the compilation of the Old Narthang manuscript
-                                    Kangyur (no longer extant), which is considered the first Kangyur compiled in Tibet. He was a student of Chim
-                                    Chenpo Namkha Drak and the teacher of Jamgak Pakṣi.</p>
+                                <p>Chomden Rikpai Raldri (<foreign xml:lang="Bo-Ltn">bcom ldan rig pa’i ral gri</foreign>,
+                                    1227–1305) was a prominent scholar based at Narthang monastery who compiled an inventory of translated Buddhist
+                                    texts and guided the compilation of the Old Narthang manuscript Kangyur (no longer extant), which is considered
+                                    the first Kangyur compiled in Tibet. He was a student of Chim Chenpo Namkha Drak and the teacher of Jamgak
+                                    Pakṣi.</p>
                             </note>
                         </gloss>
                     </item>
@@ -4163,9 +4142,10 @@
                             <term xml:lang="bo" n="3">ཤཀྱའི་དགེ་སློང་འཇམ་པའི་དབྱངས།</term>
                             <term status="verified" xml:lang="Sa-Ltn"/>
                             <note type="definition">
-                                <p>Also known as Chim Jampaiyang (<foreign xml:lang="Bo-Ltn">mchims ’jam pa’i dbyangs</foreign>). A student of Chomden Rikpai Raldri who served as
-                                    preceptor at the court of the Yuan emperor Buyantu Khan (known in Chinese as Renzong, r. 1311–20). He provided
-                                    material assistance for the compilation of the Old Narthang manuscript Kangyur. </p>
+                                <p>Also known as Chim Jampaiyang (<foreign xml:lang="Bo-Ltn">mchims ’jam pa’i dbyangs</foreign>).
+                                    A student of Chomden Rikpai Raldri who served as preceptor at the court of the Yuan emperor Buyantu Khan (known in
+                                    Chinese as Renzong, r. 1311–20). He provided material assistance for the compilation of the Old Narthang
+                                    manuscript Kangyur. </p>
                             </note>
                         </gloss>
                     </item>
@@ -4210,8 +4190,8 @@
                             <term xml:lang="bo" n="1">རྒྱ་འདུལ་བ་འཛིན་པ།</term>
                             <term status="verified" xml:lang="Sa-Ltn"/>
                             <note type="definition">
-                                <p>Full name Wangchuk Tsultrim (<foreign xml:lang="Bo-Ltn">dbang phyug tshul khrims</foreign>, 1047–1131), he was a holder of the lower Vinaya
-                                    lineage (<foreign xml:lang="Bo-Ltn">smad ’dul</foreign>) and a
+                                <p>Full name Wangchuk Tsultrim (<foreign xml:lang="Bo-Ltn">dbang phyug tshul khrims</foreign>,
+                                    1047–1131), he was a holder of the lower Vinaya lineage (<foreign xml:lang="Bo-Ltn">smad ’dul</foreign>) and a
                                     member of the Gya clan.</p>
                             </note>
                         </gloss>
@@ -4234,9 +4214,8 @@
                             <term xml:lang="bo" n="1">བནྡེ་ཆེན་པོ་ཡོན་ཏན།</term>
                             <term status="verified" xml:lang="Sa-Ltn"/>
                             <note type="definition">
-                                <p>Also known as Drenka Palkyi Yönten (<foreign xml:lang="Bo-Ltn">bran ka dpal gyi yon tan</foreign>, ninth century), he was the first to hold the
-                                    position of grand monk (<foreign xml:lang="Bo-Ltn">ban de chen
-                                        po</foreign>), a title given to the highest-ranking monks in the imperial court.</p>
+                                <p>Also known as Drenka Palkyi Yönten (<foreign xml:lang="Bo-Ltn">bran ka dpal gyi yon
+                                        tan</foreign>, ninth century), he was the first to hold the position of grand monk (<foreign xml:lang="Bo-Ltn">ban de chen po</foreign>), a title given to the highest-ranking monks in the imperial court.</p>
                             </note>
                         </gloss>
                     </item>
@@ -4247,9 +4226,9 @@
                             <term xml:lang="bo" n="1">བནྡེ་ཆེན་པོ་ཡོན་ཏན།</term>
                             <term status="verified" xml:lang="Sa-Ltn"/>
                             <note type="definition">
-                                <p>Myangben Tingdzin Sangpo (<foreign xml:lang="Bo-Ltn">myang ban ting ’dzin bzang po</foreign>, eighth–ninth century) served as a guardian of
-                                    the young emperor Senalek and also as a minister of state in the emperor’s court. He was very influential in the
-                                    courts of both Senalek and Ralpachen.</p>
+                                <p>Myangben Tingdzin Sangpo (<foreign xml:lang="Bo-Ltn">myang ban ting ’dzin bzang po</foreign>,
+                                    eighth–ninth century) served as a guardian of the young emperor Senalek and also as a minister of state in the
+                                    emperor’s court. He was very influential in the courts of both Senalek and Ralpachen.</p>
                             </note>
                         </gloss>
                     </item>
@@ -4284,8 +4263,8 @@
                             <term xml:lang="bo" n="1">དགེ་བའི་བཤེས་གཉེན་འདར་ཕྱར།</term>
                             <term status="verified" xml:lang="Sa-Ltn"/>
                             <note type="definition">
-                                <p>This likely refers to Darchar Rinchen Sangpo (<foreign xml:lang="Bo-Ltn">’dar ’phyar rin chen bzang po</foreign>,
-                                    twelfth/thirteenth century), but this could not be confirmed.</p>
+                                <p>This likely refers to Darchar Rinchen Sangpo (<foreign xml:lang="Bo-Ltn">’dar ’phyar rin chen
+                                        bzang po</foreign>, twelfth/thirteenth century), but this could not be confirmed.</p>
                             </note>
                         </gloss>
                     </item>
@@ -4404,9 +4383,8 @@
                             <term status="verified" xml:lang="Sa-Ltn"/>
                             <note type="definition">
                                 <p>The fourth Shamarpa (1453–1524), an important reincarnation lineage in the Kagyü sect. Also
-                                    known as Chödrak Yeshé (<foreign xml:lang="Bo-Ltn">chos grags ye
-                                        shes</foreign>), he was an important religious and political figure in central Tibet at the turn of the
-                                    sixteenth century.</p>
+                                    known as Chödrak Yeshé (<foreign xml:lang="Bo-Ltn">chos grags ye shes</foreign>), he was an important religious
+                                    and political figure in central Tibet at the turn of the sixteenth century.</p>
                             </note>
                         </gloss>
                     </item>
@@ -4440,9 +4418,9 @@
                             <term xml:lang="bo" n="1">ཞྭ་དམར།</term>
                             <term status="verified" xml:lang="Sa-Ltn"/>
                             <note type="definition">
-                                <p>The sixth Shamar Rinpoché, Shamar Chökyi Wangchuk (<foreign xml:lang="Bo-Ltn">shwa dmar chos kyi dbang phyug</foreign>,
-                                    1584–1630), at the request of the king of Jang Satham in eastern Tibet, led the compilation of what became known
-                                    as the Lithang Kangyur.</p>
+                                <p>The sixth Shamar Rinpoché, Shamar Chökyi Wangchuk (<foreign xml:lang="Bo-Ltn">shwa dmar chos
+                                        kyi dbang phyug</foreign>, 1584–1630), at the request of the king of Jang Satham in eastern Tibet, led the
+                                    compilation of what became known as the Lithang Kangyur.</p>
                             </note>
                         </gloss>
                     </item>
@@ -4464,8 +4442,8 @@
                             <term xml:lang="bo" n="1">ཨ་གཉེན་པཀྵི།</term>
                             <term status="verified" xml:lang="Sa-Ltn"/>
                             <note type="definition">
-                                <p>Also known as Ga Anyen Dampa Künga Drakpa (<foreign xml:lang="Bo-Ltn">rga a gnyan dam pa kun dga’ grags pa</foreign>, 1230–1303), he was a student of Sakya
-                                    Paṇḍita.</p>
+                                <p>Also known as Ga Anyen Dampa Künga Drakpa (<foreign xml:lang="Bo-Ltn">rga a gnyan dam pa kun
+                                        dga’ grags pa</foreign>, 1230–1303), he was a student of Sakya Paṇḍita.</p>
                             </note>
                         </gloss>
                     </item>
@@ -4487,9 +4465,8 @@
                             <term xml:lang="bo" n="1">བུ་སྟོན་རིན་པོ་ཆེ།</term>
                             <term status="verified" xml:lang="Sa-Ltn"/>
                             <note type="definition">
-                                <p>Buton Rinchen Drub (<foreign xml:lang="Bo-Ltn">bu
-                                        ston rin chen grub</foreign>, 1290–1364) was the abbot of Zhalu monastery and one of Tibet’s most famous
-                                    scholars and historians.</p>
+                                <p>Buton Rinchen Drub (<foreign xml:lang="Bo-Ltn">bu ston rin chen grub</foreign>, 1290–1364) was
+                                    the abbot of Zhalu monastery and one of Tibet’s most famous scholars and historians.</p>
                             </note>
                         </gloss>
                     </item>
@@ -4512,8 +4489,9 @@
                             <term xml:lang="bo" n="1">བསོད་ནམས་རབ་བརྟན།</term>
                             <term status="verified" xml:lang="Sa-Ltn"/>
                             <note type="definition">
-                                <p>Also known as Sönam Chöphel (<foreign xml:lang="Bo-Ltn">bsod nams chos ’phel</foreign>, 1595–1658), he was an important political figure in the
-                                    time of the Fourth and Fifth Dalai Lamas, acting as the de facto ruler of Tibet between 1641 and 1658.</p>
+                                <p>Also known as Sönam Chöphel (<foreign xml:lang="Bo-Ltn">bsod nams chos ’phel</foreign>,
+                                    1595–1658), he was an important political figure in the time of the Fourth and Fifth Dalai Lamas, acting as the de
+                                    facto ruler of Tibet between 1641 and 1658.</p>
                             </note>
                         </gloss>
                     </item>
@@ -4538,8 +4516,8 @@
                             <term xml:lang="bo" n="1">བློ་ལྡན་ཤེས་རབ།</term>
                             <term status="verified" xml:lang="Sa-Ltn"/>
                             <note type="definition">
-                                <p>Ngok Lotsāwa Loden Sherab (<foreign xml:lang="Bo-Ltn">rngog lo tsA ba blo ldan shes rab</foreign>, 1059–1109) was an important translator of
-                                    Indic Buddhist texts into Tibetan.</p>
+                                <p>Ngok Lotsāwa Loden Sherab (<foreign xml:lang="Bo-Ltn">rngog lo tsA ba blo ldan shes
+                                        rab</foreign>, 1059–1109) was an important translator of Indic Buddhist texts into Tibetan.</p>
                             </note>
                         </gloss>
                     </item>
@@ -4614,9 +4592,9 @@
                             <term xml:lang="bo" n="1">རྡོ་རྗེ་འཆང་ཀུན་དགའ་བཟང་པོ།</term>
                             <term status="verified" xml:lang="Sa-Ltn"/>
                             <note type="definition">
-                                <p>Also known as Ngorchen Künga Sangpo (<foreign xml:lang="Bo-Ltn">ngor chen kun dga’ bzang po</foreign>, 1382–1456), he was an important Sakya master and
-                                    founder of the Ngor tradition. He also commissioned the production of a Kangyur catalog in Mustang written in gold
-                                    lettering.</p>
+                                <p>Also known as Ngorchen Künga Sangpo (<foreign xml:lang="Bo-Ltn">ngor chen kun dga’ bzang
+                                        po</foreign>, 1382–1456), he was an important Sakya master and founder of the Ngor tradition. He also
+                                    commissioned the production of a Kangyur catalog in Mustang written in gold lettering.</p>
                             </note>
                         </gloss>
                     </item>
@@ -4627,9 +4605,9 @@
                             <term xml:lang="bo" n="1">མངྒ་ལ།</term>
                             <term status="verified" xml:lang="Sa-Ltn"/>
                             <note type="definition">
-                                <p>This seems to be referring to Tashi Lhundrup (<foreign xml:lang="Bo-Ltn">bkra shis lhun grub</foreign>, 1672–1739), the
-                                    thirty-first abbot of Ngor monastery, whose name, Tashi, corresponds to the Sanskrit <foreign xml:lang="Sa-Ltn" type="term">maṅgala</foreign>, or “good
-                                    fortune.”</p>
+                                <p>This seems to be referring to Tashi Lhundrup (<foreign xml:lang="Bo-Ltn">bkra shis lhun
+                                        grub</foreign>, 1672–1739), the thirty-first abbot of Ngor monastery, whose name, Tashi, corresponds to the
+                                    Sanskrit <foreign xml:lang="Sa-Ltn" type="term">maṅgala</foreign>, or “good fortune.”</p>
                             </note>
                         </gloss>
                     </item>
@@ -4640,7 +4618,8 @@
                             <term xml:lang="bo" n="1">ཚལ་པ་སི་ཏུ་དགེ་བའི་བློ་གྲོས།</term>
                             <term status="verified" xml:lang="Sa-Ltn"/>
                             <note type="definition">
-                                <p>Also known as Tshalpa Situ Künga Dorjé (<foreign xml:lang="Bo-Ltn">tshal pa si tu kun dga’ rdo rje</foreign>, 1309–64).</p>
+                                <p>Also known as Tshalpa Situ Künga Dorjé (<foreign xml:lang="Bo-Ltn">tshal pa si tu kun dga’ rdo
+                                        rje</foreign>, 1309–64).</p>
                             </note>
                         </gloss>
                     </item>
@@ -4733,8 +4712,7 @@
                             <term xml:lang="bo" n="1">མདོ་སྟོད།</term>
                             <term status="verified" xml:lang="Sa-Ltn"/>
                             <note type="definition">
-                                <p>The region of Dotö, or “upper Do” usually refers to the Kham (<foreign xml:lang="Bo-Ltn">khams</foreign>) region of eastern
-                                Tibet.</p>
+                                <p>The region of Dotö, or “upper Do” usually refers to the Kham (<foreign xml:lang="Bo-Ltn">khams</foreign>) region of eastern Tibet.</p>
                             </note>
                         </gloss>
                     </item>
@@ -4803,8 +4781,9 @@
                             <term status="verified" xml:lang="Sa-Ltn">kailāśa</term>
                             <note type="definition">
                                 <p>Also known as Mount Kailāśa, Mount Tisé is one of Tibet’s three famous mountains. Located in
-                                    present-day Purang county in Ngari prefecture. The name Tisé is a Shangshung (<foreign xml:lang="Bo-Ltn">zhang zhung</foreign>) word for “water deity,”
-                                    since the mountain is said to be the source of four rivers.</p>
+                                    present-day Purang county in Ngari prefecture. The name Tisé is a Shangshung (<foreign xml:lang="Bo-Ltn">zhang
+                                        zhung</foreign>) word for “water deity,” since the mountain is said to be the source of four
+                                rivers.</p>
                             </note>
                         </gloss>
                     </item>
@@ -4844,8 +4823,8 @@
                                     province, west of Xining. There appears to be a wide variety of alternative spellings for the lake’s name, which
                                     suggests its origin in pre-written oral culture. According to the <title xml:lang="en">Dungkar Dictionary</title>,
                                     the name Tri Shö derives from an oral legend that the families living in that area numbered in the tens of
-                                    thousands (<foreign xml:lang="Bo-Ltn" type="term">khri</foreign>)
-                                    and as the lake appeared out of the earth they fell (<foreign xml:lang="Bo-Ltn" type="term">shor</foreign>) inside.</p>
+                                    thousands (<foreign xml:lang="Bo-Ltn" type="term">khri</foreign>) and as the lake appeared out of the earth they
+                                    fell (<foreign xml:lang="Bo-Ltn" type="term">shor</foreign>) inside.</p>
                             </note>
                         </gloss>
                     </item>
@@ -4856,8 +4835,8 @@
                             <term xml:lang="bo" n="1">གནམ་མཚོ་ཕྱུག་མོ།</term>
                             <term status="verified" xml:lang="Sa-Ltn"/>
                             <note type="definition">
-                                <p>One of the four famous lakes of Tibet. Located in Damshung (<foreign xml:lang="Bo-Ltn">’dam gzhung</foreign>) county, not far from
-                                    Lhasa.</p>
+                                <p>One of the four famous lakes of Tibet. Located in Damshung (<foreign xml:lang="Bo-Ltn">’dam
+                                        gzhung</foreign>) county, not far from Lhasa.</p>
                             </note>
                         </gloss>
                     </item>
@@ -4880,9 +4859,10 @@
                             <term xml:lang="bo" n="1" status="verified">སྣུབས་མཚོ།</term>
                             <term status="verified" xml:lang="Sa-Ltn"/>
                             <note type="definition">
-                                <p>Also known as Yardrok Yumtso (<foreign xml:lang="Bo-Ltn">yar ’brog g.yu mtsho</foreign>), Lake Nuptso is located in present-day Nakartse
-                                        (<foreign xml:lang="Bo-Ltn">sna dkar rtse</foreign>) county in
-                                    Tibet. Its name derives from the Nub (<foreign xml:lang="Bo-Ltn">snubs</foreign>) clan that inhabited the surrounding regions.</p>
+                                <p>Also known as Yardrok Yumtso (<foreign xml:lang="Bo-Ltn">yar ’brog g.yu mtsho</foreign>), Lake
+                                    Nuptso is located in present-day Nakartse (<foreign xml:lang="Bo-Ltn">sna dkar rtse</foreign>) county in Tibet.
+                                    Its name derives from the Nub (<foreign xml:lang="Bo-Ltn">snubs</foreign>) clan that inhabited the surrounding
+                                    regions.</p>
                             </note>
                         </gloss>
                     </item>
@@ -4895,8 +4875,8 @@
                             <term xml:lang="bo" n="2">ཁའུའི་གངས།</term>
                             <term status="verified" xml:lang="Sa-Ltn"/>
                             <note type="definition">
-                                <p>Also known as Nöjin Gangsang (<foreign xml:lang="Bo-Ltn">gnod sbying gangs bzang</foreign>), Mount Hawo is located in present-day Nakartse
-                                        (<foreign xml:lang="Bo-Ltn">sna dkar rtse</foreign>) county in
+                                <p>Also known as Nöjin Gangsang (<foreign xml:lang="Bo-Ltn">gnod sbying gangs bzang</foreign>),
+                                    Mount Hawo is located in present-day Nakartse (<foreign xml:lang="Bo-Ltn">sna dkar rtse</foreign>) county in
                                     Tibet. According to the <title xml:lang="en">Nyang History</title> (<title xml:lang="Bo-Ltn">myang chos
                                         ’byung</title>) attributed to Tāranātha (1575–1634), the area around this mountain is associated with
                                     Padmasaṃbhava, who practiced and hid treasures there.</p>
@@ -4978,12 +4958,10 @@
                             <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">sgang drug</term>
                             <term xml:lang="bo" type="attestedSource" n="1" status="verified">སྒང་དྲུག</term>
                             <note type="definition">
-                                <p>The six mountain ranges of eastern Tibet are listed as the Zalmo range (<foreign xml:lang="Bo-Ltn">zal mo sgang</foreign>), Tsawa range
-                                        (<foreign xml:lang="Bo-Ltn">tsha ba sgang</foreign>), Markham
-                                    range (<foreign xml:lang="Bo-Ltn">smar khams sgang</foreign>),
-                                    Minyak-Rab range (<foreign xml:lang="Bo-Ltn">mi nyag rab
-                                        sgang</foreign>), Pobor range (<foreign xml:lang="Bo-Ltn">spo
-                                        ’bor sgang</foreign>), and Mardza range (<foreign xml:lang="Bo-Ltn">dmar rdza sgang</foreign>).</p>
+                                <p>The six mountain ranges of eastern Tibet are listed as the Zalmo range (<foreign xml:lang="Bo-Ltn">zal mo
+                                        sgang</foreign>), Tsawa range (<foreign xml:lang="Bo-Ltn">tsha ba sgang</foreign>), Markham range (<foreign xml:lang="Bo-Ltn">smar khams sgang</foreign>), Minyak-Rab range (<foreign xml:lang="Bo-Ltn">mi nyag rab
+                                        sgang</foreign>), Pobor range (<foreign xml:lang="Bo-Ltn">spo ’bor sgang</foreign>), and Mardza range
+                                        (<foreign xml:lang="Bo-Ltn">dmar rdza sgang</foreign>).</p>
                             </note>
                         </gloss>
                     </item>
@@ -5009,10 +4987,9 @@
                             <term status="verified" xml:lang="Sa-Ltn"/>
                             <note type="definition">
                                 <p>A river name in Kham, mentioned in the <title xml:lang="en">Catalog</title> in reference to the
-                                    “land of Ling.” While the Dachu (<foreign xml:lang="Bo-Ltn">zla
-                                        chu</foreign>) is a name used for the upper Mekong river that flows to the west of Degé, the Shardachu
-                                    (“eastern Dachu”) here likely refers to the eastern Dzachu, which is one of the four great rivers of eastern Tibet
-                                    known in Chinese as the Yalong (Ch. <foreign xml:lang="Zh-Ltn">Yalongjiang</foreign>), a major tributary of the Yangtze.</p>
+                                    “land of Ling.” While the Dachu (<foreign xml:lang="Bo-Ltn">zla chu</foreign>) is a name used for the upper Mekong
+                                    river that flows to the west of Degé, the Shardachu (“eastern Dachu”) here likely refers to the eastern Dzachu,
+                                    which is one of the four great rivers of eastern Tibet known in Chinese as the Yalong (Ch. <foreign xml:lang="Zh-Ltn">Yalongjiang</foreign>), a major tributary of the Yangtze.</p>
                             </note>
                         </gloss>
                     </item>
@@ -5022,7 +4999,8 @@
                             <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">chu bo chen po bzhi</term>
                             <term xml:lang="bo" type="attestedSource" n="1" status="verified">ཆུ་བོ་ཆེན་པོ་བཞི།</term>
                             <note type="definition">
-                                <p>The four great rivers of Kham are the Drichu (<foreign xml:lang="Bo-Ltn">’bri chu</foreign>), Machu (<foreign xml:lang="Bo-Ltn">rma chu</foreign>), Ngulchu (<foreign xml:lang="Bo-Ltn">rgyal mo dngul chu</foreign>), and Dzachu (<foreign xml:lang="Bo-Ltn">rdza chu</foreign>).</p>
+                                <p>The four great rivers of Kham are the Drichu (<foreign xml:lang="Bo-Ltn">’bri chu</foreign>), Machu (<foreign xml:lang="Bo-Ltn">rma chu</foreign>), Ngulchu (<foreign xml:lang="Bo-Ltn">rgyal mo dngul chu</foreign>), and
+                                    Dzachu (<foreign xml:lang="Bo-Ltn">rdza chu</foreign>).</p>
                             </note>
                         </gloss>
                     </item>
@@ -5084,9 +5062,8 @@
                             <term xml:lang="bo" n="1">ཁམས།</term>
                             <term status="verified" xml:lang="Sa-Ltn"/>
                             <note type="definition">
-                                <p>Located in eastern Tibet, Kham is today considered one of the three main provinces
-                                        (<foreign xml:lang="Bo-Ltn">chol kha gsum</foreign>) of Tibet.
-                                    Referred to in some earlier sources as “Lower Dokham” (<foreign xml:lang="Bo-Ltn" type="term">mdo khams smad</foreign>).</p>
+                                <p>Located in eastern Tibet, Kham is today considered one of the three main provinces (<foreign xml:lang="Bo-Ltn">chol kha gsum</foreign>) of Tibet. Referred to in some earlier sources as “Lower Dokham”
+                                        (<foreign xml:lang="Bo-Ltn" type="term">mdo khams smad</foreign>).</p>
                             </note>
                         </gloss>
                     </item>
@@ -5126,8 +5103,7 @@
                                 <p>Lhundrup Teng is a monastery in Degé, also known as Degé Gonchen. It houses the renowned Degé
                                     printing house established by Tenpa Tsering. Originally a royal palace and temple, from the seventeenth century
                                     Lhundrup Teng became closely associated with the Ngor branch of the Sakya tradition. Until the mid-nineteenth
-                                    century the kings of Degé were also often, as in the case of Tenpa Tsering, the throne holders (<foreign xml:lang="Bo-Ltn">khri chen</foreign>) or abbots of Lhundrup
-                                    Teng.</p>
+                                    century the kings of Degé were also often, as in the case of Tenpa Tsering, the throne holders (<foreign xml:lang="Bo-Ltn">khri chen</foreign>) or abbots of Lhundrup Teng.</p>
                             </note>
                             <term type="translationAlternative">Palden Lhundrup Teng</term>
                         </gloss>
@@ -5312,8 +5288,7 @@
                             <term xml:lang="bo" n="1">ས་དམར་ཡང་དགོན།</term>
                             <term status="verified" xml:lang="Sa-Ltn"/>
                             <note type="definition">
-                                <p>A monastery in the area of Samar. During the Yuan dynasty, a chiliarch (<foreign xml:lang="Bo-Ltn" type="term">stong dpon</foreign>) position was
-                                    associated with this monastery. </p>
+                                <p>A monastery in the area of Samar. During the Yuan dynasty, a chiliarch (<foreign xml:lang="Bo-Ltn" type="term">stong dpon</foreign>) position was associated with this monastery. </p>
                             </note>
                         </gloss>
                     </item>
@@ -5415,8 +5390,7 @@
                             <term status="verified" xml:lang="Sa-Ltn"/>
                             <note type="definition">
                                 <p>A historical kingdom in the southeast of Tibet, in the present-day Chinese province of Yunnan.
-                                    Also known as Jang Satham (<foreign xml:lang="Bo-Ltn">’jang sa
-                                        tham</foreign>), Naxi, or Lijiang.</p>
+                                    Also known as Jang Satham (<foreign xml:lang="Bo-Ltn">’jang sa tham</foreign>), Naxi, or Lijiang.</p>
                             </note>
                         </gloss>
                     </item>
@@ -5439,7 +5413,8 @@
                             <term status="verified" xml:lang="Sa-Ltn"/>
                             <note type="definition">
                                 <p>A large and historically important Gelukpa monastery in eastern Tibet founded in 1580 by the
-                                    Third Dalai Lama. Also known as Litang Chökhor Ling (<foreign xml:lang="Bo-Ltn">li thang chos ’khor gling</foreign>).</p>
+                                    Third Dalai Lama. Also known as Litang Chökhor Ling (<foreign xml:lang="Bo-Ltn">li thang chos ’khor
+                                        gling</foreign>).</p>
                             </note>
                             <term type="translationAlternative">Lithang Jamchen Nampar Gyalwa</term>
                         </gloss>
@@ -5463,8 +5438,8 @@
                             <term xml:lang="bo" n="1">ཐང་པོ་ཆེ།</term>
                             <term status="verified" xml:lang="Sa-Ltn"/>
                             <note type="definition">
-                                <p>Also known as Solnak Thangpoché (<foreign xml:lang="Bo-Ltn">sol nag thang po che</foreign>), a monastery in central Tibet that was founded in
-                                    1017.</p>
+                                <p>Also known as Solnak Thangpoché (<foreign xml:lang="Bo-Ltn">sol nag thang po che</foreign>), a
+                                    monastery in central Tibet that was founded in 1017.</p>
                             </note>
                         </gloss>
                     </item>
@@ -5486,9 +5461,9 @@
                             <term xml:lang="bo" n="1">ཏོང་ཀུ</term>
                             <term status="verified" xml:lang="Sa-Ltn"/>
                             <note type="definition">
-                                <p>It is believed that the term “Tongku” is derived from the Chinese <foreign xml:lang="Zh-Ltn">dong jing</foreign> (<foreign xml:lang="zh">東京</foreign>) or “Eastern capital” but came to refer
-                                    to the Chinese lands east of Tibet. Use of this term is attested as early as 960 <hi rend="small-caps">ce</hi>,
-                                    before the creation of the modern political designation “China,” but it was used as an epithet for various Chinese
+                                <p>It is believed that the term “Tongku” is derived from the Chinese <foreign xml:lang="Zh-Ltn">dong jing</foreign> (<foreign xml:lang="zh">東京</foreign>) or “Eastern capital” but came to refer to the
+                                    Chinese lands east of Tibet. Use of this term is attested as early as 960 <hi rend="small-caps">ce</hi>, before
+                                    the creation of the modern political designation “China,” but it was used as an epithet for various Chinese
                                     empires over the course of centuries. For more on this term, see van Schaik 2013.</p>
                             </note>
                         </gloss>
@@ -5501,10 +5476,9 @@
                             <term status="verified" xml:lang="Sa-Ltn"/>
                             <note type="definition">
                                 <p>
-                                    <foreign xml:lang="Bo-Ltn">Tengyur</foreign>
-                                    literally means “translated treatises,” and refers to the canonical collection of treatises by mostly Indian
-                                    masters in Tibetan translation. Along with the Kangyur, it forms a central part of the Tibetan Buddhist
-                                canon.</p>
+                                    <foreign xml:lang="Bo-Ltn">Tengyur</foreign> literally means “translated treatises,” and refers
+                                    to the canonical collection of treatises by mostly Indian masters in Tibetan translation. Along with the Kangyur,
+                                    it forms a central part of the Tibetan Buddhist canon.</p>
                             </note>
                         </gloss>
                     </item>
@@ -5514,9 +5488,9 @@
                             <term status="verified" xml:lang="Bo-Ltn" n="1">’bum </term>
                             <term xml:lang="bo" n="1">འབུམ།</term>
                             <term status="verified" xml:lang="Sa-Ltn"/>
-                            <note type="definition">
+                        <note type="definition">
                                 <p>
-                                    <title xml:lang="en">The Perfection of Wisdom in One Hundred Thousand Lines</title> (<title xml:lang="Sa-Ltn">Śatasāhasrikāprajñāpāramitā</title>, Toh 8) comprises twelve volumes, three hundred and one
+                                    <title xml:lang="en">The Perfection of Wisdom in One Hundred Thousand Lines</title> (<title xml:lang="Sa-Ltn">Śata­sāhasrikā­prajñā­pāramitā</title>, Toh 8) comprises twelve volumes, three hundred and one
                                     fascicles, and seventy-two chapters.</p>
                             </note>
                         </gloss>
@@ -5631,8 +5605,9 @@
                             <term xml:lang="bo" n="1">པད་དཀར་ཞལ་ལུང་བ།</term>
                             <term status="verified" xml:lang="Sa-Ltn"/>
                             <note type="definition">
-                                <p>An important astrological text by Phukpa Lhundrup Gyatso (<foreign xml:lang="Bo-Ltn">phug pa lhun grub rgya mtsho</foreign>,
-                                    fifteenth century) from which originated the calendar that is most commonly used in Tibet to this day.</p>
+                                <p>An important astrological text by Phukpa Lhundrup Gyatso (<foreign xml:lang="Bo-Ltn">phug pa
+                                        lhun grub rgya mtsho</foreign>, fifteenth century) from which originated the calendar that is most commonly
+                                    used in Tibet to this day.</p>
                             </note>
                         </gloss>
                     </item>
@@ -5822,8 +5797,8 @@
                             <note type="definition">
                                 <p>A manuscript translation of <title xml:lang="en">The Perfection of Wisdom in One Hundred
                                         Thousand Lines</title> that appears to have been named after Prince Tsangma, the eldest son of King Senalek,
-                                    who took monastic ordination. The Tibetan <foreign xml:lang="Bo-Ltn">bye</foreign> in this name, tentatively rendered “demarcated,” could also be understood to mean “sand” or
-                                    “million.”</p>
+                                    who took monastic ordination. The Tibetan <foreign xml:lang="Bo-Ltn">bye</foreign> in this name, tentatively
+                                    rendered “demarcated,” could also be understood to mean “sand” or “million.”</p>
                             </note>
                         </gloss>
                     </item>
@@ -5860,9 +5835,9 @@
                             <term status="verified" xml:lang="Sa-Ltn"/>
                             <note type="definition">
                                 <p>A manuscript translation of <title xml:lang="en">The Perfection of Wisdom in One Hundred
-                                        Thousand Lines</title> that appears to have been named after Langdarma (<foreign xml:lang="Bo-Ltn">glang dar ma u dum btsan</foreign>), the king of
-                                    Tibet who succeeded his brother Ralpachen and is traditionally blamed for the decline of Buddhism in Tibet in the
-                                    late ninth century.</p>
+                                        Thousand Lines</title> that appears to have been named after Langdarma (<foreign xml:lang="Bo-Ltn">glang dar
+                                        ma u dum btsan</foreign>), the king of Tibet who succeeded his brother Ralpachen and is traditionally blamed
+                                    for the decline of Buddhism in Tibet in the late ninth century.</p>
                             </note>
                         </gloss>
                     </item>
@@ -6070,7 +6045,7 @@
                         </gloss>
                     </item>
                 </list>
-            </div>
+            </tei:div>
         </back>
     </text>
-</TEI>
+</tei:TEI>
