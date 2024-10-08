@@ -1,33 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../../../schema/current/translation.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<tei:TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="mainTitle" xml:lang="Bo-Ltn">dpal lha mo nag mo’i bstod pa rgyal po’i
-                    rgyud</title>
-                <title type="mainTitle" xml:lang="bo">དཔལ་ལྷ་མོ་ནག་མོའི་བསྟོད་པ་རྒྱལ་པོའི་རྒྱུད།</title>
-                <title type="mainTitle" xml:lang="en">The Royal Tantra “Praises to Śrīdevī
+                <title type="mainTitle" xml:lang="en">The Sovereign Tantra “Praises to Śrīdevī
                     Kālī”</title>
                 <title type="mainTitle" xml:lang="Sa-Ltn">Śrīdevī­kālī­praśaṃsārāja­tantra</title>
-                <title type="otherTitle" xml:lang="zh"/>
+                <title type="mainTitle" xml:lang="bo">དཔལ་ལྷ་མོ་ནག་མོའི་བསྟོད་པ་རྒྱལ་པོའི་རྒྱུད།</title>
+                <title type="mainTitle" xml:lang="Bo-Ltn">dpal lha mo nag mo’i bstod pa rgyal po’i
+                    rgyud</title>
                 <title type="otherTitle" xml:lang="Bo-Ltn">dpal lha mo nag mo’i bstod pa rgyal po’i
                     rgyud/</title>
                 <author role="translatorMain" xml:id="UT22084-091-068-1"><!--Dharmachakra Translation Committee--></author>
-                <consultant role="projectManager" xml:id="UT22084-091-068-2">Andreas
-                    Doctor</consultant>
+                <consultant role="projectManager" xml:id="UT22084-091-068-2">Andreas Doctor</consultant>
                 <author role="translatorEng" xml:id="UT22084-091-068-3">Adam Krug</author>
                 <editor role="reviser" xml:id="UT22084-091-068-4">Ryan Conlon</editor>
-                <consultant role="dharmaMaster" xml:id="UT22084-091-068-5">Chokyi Nyima
-                    Rinpoche</consultant>
+                <consultant role="dharmaMaster" xml:id="UT22084-091-068-5">Chokyi Nyima Rinpoche</consultant>
                 <editor role="projectEditor" xml:id="UT22084-091-068-22">Ryan Damron</editor>
                 <editor role="copyEditor" xml:id="UT22084-091-068-32">Dawn Collins</editor>
                 <editor role="TEImarkupEditor" xml:id="UT22084-091-068-45">Martina Cotter</editor>
                 <editor role="projectEditor" xml:id="UT22084-091-068-55">Andreas Doctor</editor>
+                <editor role="finalReviewer" xml:id="UT22084-091-068-356">Andreas Doctor</editor>
                 <sponsor xml:id="UT22084-091-068-13">Dakki</sponsor>
             </titleStmt>
             <editionStmt>
-                <edition>v 0.0.2 <date>2024</date>
+                <edition>v 0.0.4 <date>2024</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -130,6 +128,12 @@
                 <change who="#line-tofte" when="2024-09-02T14:36:42.464Z" type="text-version" status="0.0.2" xml:id="UT22084-091-068-346">
                     <desc>Auto (update-publication-status)</desc>
                 </change>
+                <change who="#line-tofte" when="2024-10-02T13:34:21.843Z" type="text-version" status="0.0.3" xml:id="UT22084-091-068-357">
+                    <desc>Auto (update-contributors)</desc>
+                </change>
+                <change who="#konchog" when="2024-10-08T22:48:14.049Z" type="text-version" status="0.0.4" xml:id="UT22084-091-068-358">
+                    <desc>Numerous fixes throughout all sections.</desc>
+                </change>
             </revisionDesc>
         </fileDesc>
     </teiHeader>
@@ -138,11 +142,11 @@
                     Outline to the text is quite complex, it is recommended that you paste the outlined contents from the DOCX here as a comment for
                     markup's reference. The actual table of contents will be generated in the Reading Room by the parser.-->
         <front>
-            <div type="summary" xml:id="UT22084-091-068-summary">
+            <tei:div type="summary" xml:id="UT22084-091-068-summary">
                 <head type="summary" tid="1">Summary</head>
                 <milestone unit="chunk" xml:id="UT22084-091-068-57"/>
                 <p tid="2">
-                    <title xml:lang="en">The Royal Tantra “Praises to Śrīdevī Kālī”</title>
+                    <title xml:lang="en">The Sovereign Tantra “Praises to Śrīdevī Kālī”</title>
                     opens in the Pāruṣyaka grove on the summit of Mount Sumeru, where the
                     bodhisattva Vajrapāṇi has assembled with a large retinue of divine and demonic
                     beings. Vajrapāṇi introduces the goddess Śrīdevī Kālī and implores the members
@@ -150,8 +154,8 @@
                     assembly then praise Śrīdevī Kālī in turn, with each praise providing a fresh
                     perspective on how the goddess’s physical features and virtuous qualities
                     reflect her status as a distinctively Buddhist deity.</p>
-            </div>
-            <div type="acknowledgment" xml:id="UT22084-091-068-acknowledgment">
+            </tei:div>
+            <tei:div type="acknowledgment" xml:id="UT22084-091-068-acknowledgment">
                 <head type="acknowledgment" tid="3">Acknowledgements</head>
                 <milestone unit="chunk" xml:id="UT22084-091-068-58"/>
                 <p tid="4">Translated by the Dharmachakra Translation Committee under the
@@ -167,38 +171,38 @@
                     sponsorship of Dakki, with special dedication to the long life and good health
                     of Dzongsar Khyentse Rinpoche and Orgyen Tobgyal Rinpoche, and for the benefit
                     of all beings.</p>
-            </div>
-            <div type="introduction" xml:id="UT22084-091-068-introduction">
+            </tei:div>
+            <tei:div type="introduction" xml:id="UT22084-091-068-introduction">
                 <head type="introduction" tid="7">Introduction</head>
-                <div type="section" xml:id="UT22084-091-068-introduction-1">
+                <tei:div type="section" xml:id="UT22084-091-068-introduction-1">
                     <milestone unit="chunk" xml:id="UT22084-091-068-61"/>
                     <p tid="9">
-                        <title xml:lang="en">The Royal Tantra “Praises to Śrīdevī
-                            Kālī”</title> (<title xml:lang="Sa-Ltn">Śrī­devī­kālī­praśaṃsārāja­tantra</title>)<note place="end" xml:id="UT22084-091-068-62"> D, S] <foreign xml:lang="Bo-Ltn" type="quote">shrI de bI kA li pra ma rA dza tan+tra kA li</foreign>.
-                            F] <foreign xml:lang="Bo-Ltn" type="quote">ShrI de wa ka pra sraM ra ca
+                        <title xml:lang="en">The Sovereign Tantra “Praises to Śrīdevī
+                            Kālī”</title> (<title xml:lang="Sa-Ltn">Śrī­devī­kālī­praśaṃsārāja­tantra</title>)<note place="end" xml:id="UT22084-091-068-62"> D, S: <foreign xml:lang="Bo-Ltn" type="quote">shrI de bI kA li pra ma rA dza tan+tra kA li</foreign>;
+                            F: <foreign xml:lang="Bo-Ltn" type="quote">ShrI de wa ka pra sraM ra ca
                                 tan tra ka li</foreign>. There is no known attestation of the
                             Sanskrit title for this text. In the Tibetan transliteration of the
                             Sanskrit title, we have tentatively emended <foreign xml:lang="Bo-Ltn" type="quote">pra ma</foreign> to <foreign xml:lang="Sa-Ltn" type="term">praśaṁsā </foreign>to reflect a common Sanskrit
                             correlate to the Tibetan term <foreign xml:lang="Bo-Ltn" type="term">bstod pa</foreign>. The Tibetan transliteration also includes the
                             term <foreign xml:lang="Bo-Ltn" type="term">kA li</foreign> (<foreign xml:lang="Sa-Ltn" type="term">kāli</foreign>) at the end of the
-                            Sanskrit title, but as this is likely an error it has been removed.
+                            Sanskrit title, but as this appears to be an error it has been removed.
                         </note> opens in the Pāruṣyaka grove on the summit of Mount Sumeru, where
                         the bodhisattva Vajrapāṇi has assembled with a large retinue of divine and
                         demonic beings. Vajrapāṇi introduces the goddess Śrīdevī Kālī<note place="end" xml:id="UT22084-091-068-63"> For a presentation of Śrīdevī
                             Kālī and the relationship between the texts in the Kangyur that focus on
                             this protector, see the introduction in <title xml:lang="en">
-                                <ref target="https://read.84000.co/translation/UT22084-101-146.html">Praising the Lady Who Rules Disease</ref>
+                                <ptr target="#UT22084-101-146-introduction">Praising the Lady Who Rules Disease</ptr>
                             </title> (<title xml:lang="Bo-Ltn">nad kyi bdag mo la bstod pa</title>, Toh
                             1090/1777).</note> and implores the members of his retinue to praise and
                         make offerings to her, prompting twelve members of the retinue to praise the
                         goddess in turn. </p>
                     <milestone unit="chunk" xml:id="UT22084-091-068-64"/>
-                    <p tid="10">Each praise to the goddess provides a fresh perspective on how her
+                    <p tid="10">Each praise to the goddess provides a distinct perspective on how her
                         physical features and virtuous qualities reflect her status as a distinctly
                         Buddhist deity and protector of the Buddha Śākyamuni’s teachings. Śakra,
-                        Lord of the Gods, begins by praising Śrīdevī Kālī in terms of the ten
+                        the lord of the gods, begins by praising Śrīdevī Kālī in terms of the ten
                         virtuous actions, noting how the goddess’s practice of the ten virtuous
-                        actions led her to abandon all forms of non-virtuous action. The yakṣa king
+                        actions led her to abandon all forms of nonvirtuous action. The yakṣa king
                         Vaiśravaṇa then praises Śrīdevī Kālī in terms of her progression on the
                         fivefold path, indicating that she is understood in this tantra to be a
                         highly advanced bodhisattva. We next hear from the kinnara king Druma, the
@@ -206,7 +210,7 @@
                         the various leaders of “eight classes of divine and demonic beings” in
                         Vajrapāṇi’s retinue. Each figure’s praise of Kālī draws out numerous
                         connections between the goddess’s various qualities and the Buddhist
-                        teachings on non-duality, the performance of ritual actions, ultimate truth,
+                        teachings on nonduality, the performance of ritual actions, ultimate truth,
                         and the bodhisattva path, providing an entirely Buddhist interpretive
                         framework for understanding and visualizing the goddess. At times, the
                         beings praising Kālī explicitly acknowledge her association with other,
@@ -217,11 +221,13 @@
                         Death. His praise is noteworthy for the fact that it also appears, in a
                         slightly modified standalone form, as <title xml:lang="en">Praising the Lady
                             Who Rules Disease</title>,<note place="end" xml:id="UT22084-091-068-66">
-                            For another discussion of this textual relationship see the introduction
-                            in <title xml:lang="en">Praising the Lady Who Rules Disease</title>
-                                (<title xml:lang="Bo-Ltn">nad kyi bdag mo la bstod pa</title>, <ref target="http://read.84000.co/translation/toh1090.html">Toh
-                                1090</ref>/<ref target="http://read.84000.co/translation/toh1777.html">Toh
-                                1777</ref>)).</note> a text found in both the Kangyur (Toh 1090) and
+                            For another discussion of this textual relationship, see the introduction
+                            in <title xml:lang="en">
+                                <ptr target="#UT22084-101-146-introduction">Praising the Lady Who Rules Disease</ptr>
+                            </title>
+                                (<title xml:lang="Bo-Ltn">nad kyi bdag mo la bstod pa</title>, Toh
+                                1090/Toh
+                                1777).</note> a text found in both the Kangyur (Toh 1090) and
                         the Tengyur (Toh 1777). Both versions are attributed to “the brahmin
                         Vararuci,” who, here in <title xml:lang="en">Praises to Śrīdevī
                         Kālī</title>, speaks the praise immediately following the praise spoken by
@@ -233,9 +239,9 @@
                     <milestone unit="chunk" xml:id="UT22084-091-068-67"/>
                     <p tid="12">There is currently no known Sanskrit witness to this text, and the
                         text does not include a translator’s colophon. It also does not appear in
-                        either of the ninth century, royal Tibetan catalogs of translated works and
+                        either of the ninth-century royal Tibetan catalogs of translated works and
                         is not found in the Chinese canon. All of these factors make it difficult to
-                        determine the provenance of the text, and it is perhaps for these reasons
+                        determine the provenance of the text, and it is perhaps partly for these reasons
                         that Butön Rinchen Drup and others have called into question the
                         authenticity of this work as an Indian text.<note place="end" xml:id="UT22084-091-068-68"> Tarthang Tulku 1982, p. 273. </note>
                     </p>
@@ -245,14 +251,14 @@
                         Comparative Edition of the Degé Kangyur (<title xml:lang="Bo-Ltn">dpe bsdur
                             ma</title>). The version of the text preserved in the Nyingma Gyübum
                         also informed this translation.</p>
-                </div>
-            </div>
+                </tei:div>
+            </tei:div>
         </front>
         <body>
-            <div type="translation" xml:id="UT22084-091-068-translation">
+            <tei:div type="translation" xml:id="UT22084-091-068-translation">
                 <head type="translation">The Translation</head>
-                <head type="titleMain" tid="14">The Royal Tantra “Praises to Śrīdevī Kālī”</head>
-                <div type="section" xml:id="UT22084-091-068-section-1">
+                <head type="titleMain" tid="14">The Sovereign Tantra “Praises to Śrīdevī Kālī”</head>
+                <tei:div type="section" xml:id="UT22084-091-068-section-1">
                     <milestone unit="chunk" xml:id="UT22084-091-068-71"/>
                     <p tid="18">
                         <ref cRef="F.202.b" type="folio" xml:id="UT22084-091-068-330"/>
@@ -270,7 +276,7 @@
                         known as the mother of the demon<note place="end" xml:id="UT22084-091-068-74"> Tib. <foreign xml:lang="Bo-Ltn" type="quote">bdud kyi ma</foreign>. Elsewhere she is always named
                             “the wife of the demon” (<foreign xml:lang="Bo-Ltn" type="quote">bdud
                                 kyi yum</foreign>). For details see <title xml:lang="en">Praising
-                                the Lady who Rules Disease</title>
+                                the Lady Who Rules Disease</title>,
                             <ref target="https://read.84000.co/translation/UT22084-101-146.html#UT22084-101-146-223">i.3</ref>.</note> and Yama’s sister. She upholds the teachings of
                         all the buddhas, so you should make offerings to her and praise her. I give
                         you my blessing!”</p>
@@ -290,8 +296,8 @@
                     <lg tid="23">
                         <l>“You gave up killing beings long ago,</l>
                         <l>Attained a long life and wondrous form,</l>
-                        <l>And are free from karmic debt to others, the cause of harm.<note place="end" xml:id="UT22084-091-068-78"> D, S] <foreign xml:lang="Bo-Ltn" type="quote">gzhan gyi lan chags gnod pa’i
-                                    rkyen dang ldan</foreign>; F] <foreign xml:lang="Bo-Ltn" type="quote">gzhan gyi lan chags gnod pa’i rkyen dang
+                        <l>And are free from karmic debt to others, the cause of harm.<note place="end" xml:id="UT22084-091-068-78"> D, S: <foreign xml:lang="Bo-Ltn" type="quote">gzhan gyi lan chags gnod pa’i
+                                    rkyen dang ldan</foreign>; F: <foreign xml:lang="Bo-Ltn" type="quote">gzhan gyi lan chags gnod pa’i rkyen dang
                                     bral</foreign>. This translation is tentative and follows F,
                                 which is also supported by the reading in the Nyingma Gyübum.
                             </note>
@@ -300,7 +306,7 @@
                     </lg>
                     <milestone unit="chunk" xml:id="UT22084-091-068-79"/>
                     <lg tid="24">
-                        <l>“Because you gave up taking what is not given,<note place="end" xml:id="UT22084-091-068-80"> D] <foreign xml:lang="Bo-Ltn" type="quote">ma byin len spangs tshul la</foreign>; F, H, N, S]
+                        <l>“Because you gave up taking what is not given,<note place="end" xml:id="UT22084-091-068-80"> D: <foreign xml:lang="Bo-Ltn" type="quote">ma byin len spangs tshul la</foreign>; F, H, N, S:
                                     <foreign xml:lang="Bo-Ltn" type="quote">ma byin len pa’i tshul
                                     la</foreign>. This translation follows the reading in F, H, N,
                                 and S. </note>
@@ -319,7 +325,7 @@
                     <milestone unit="chunk" xml:id="UT22084-091-068-82"/>
                     <lg tid="26">
                         <l>“As the result of abandoning the affliction of false words, </l>
-                        <l>You are a leader who tames the world with the siddhi of speech,</l>
+                        <l>You are a leader who tames the world with the accomplishment of speech,</l>
                         <l>And have the nature of one who has attained pure, supreme speech. </l>
                         <l>Homage and praise to you who speak the truth. <ref cRef="F.203.b" type="folio" xml:id="UT22084-091-068-332"/>
                         </l>
@@ -371,7 +377,7 @@
                     <milestone unit="chunk" xml:id="UT22084-091-068-89"/>
                     <lg tid="33">
                         <l>“There are two types of action in this world: pure and impure.</l>
-                        <l>The ten impure, non-virtuous actions lead to the lower realms. </l>
+                        <l>The ten impure, nonvirtuous actions lead to the lower realms. </l>
                         <l>The pure, virtuous actions lead to higher birth.</l>
                         <l>Because you first trained in the virtuous actions,</l>
                     </lg>
@@ -401,7 +407,7 @@
                         <l>That you specifically possess, </l>
                         <l>Show that you perfectly gathered the accumulations from the first </l>
                         <l>And attained the samādhi related to the application from the first
-                                stage.<note place="end" xml:id="UT22084-091-068-94"> D, S] <foreign xml:lang="Bo-Ltn" type="quote">dang po’i sa las</foreign>. F]
+                                stage.<note place="end" xml:id="UT22084-091-068-94"> D, S: <foreign xml:lang="Bo-Ltn" type="quote">dang po’i sa las</foreign>; F:
                                     <foreign xml:lang="Bo-Ltn" type="quote">dang po’i las
                                     la</foreign>. The English translation follows D and S. This line
                                 refers to the first stage of the path of accumulation, not the first
@@ -414,7 +420,7 @@
                     <milestone unit="chunk" xml:id="UT22084-091-068-95"/>
                     <lg tid="38">
                         <l>“You saw the ultimate on the ground of Utter Joy</l>
-                        <l>As non-conceptual and unarisen. </l>
+                        <l>As nonconceptual and unarisen. </l>
                         <l>Then, with the unique qualities of a glorious bodhisattva,</l>
                         <l>Relying on your own mind and the pure second ground, </l>
                     </lg>
@@ -447,11 +453,11 @@
                     </lg>
                     <milestone unit="chunk" xml:id="UT22084-091-068-100"/>
                     <p tid="43">Next, the horse-headed kinnara king Druma praised Śrīdevī Mahākālī
-                        in terms of non-duality:</p>
+                        in terms of nonduality:</p>
                     <milestone unit="chunk" xml:id="UT22084-091-068-101"/>
                     <lg tid="44">
-                        <l>“Śrīdevī, you are non-dual;</l>
-                        <l>You are found within this ultimate, non-conceptual, basic reality. </l>
+                        <l>“Śrīdevī, you are nondual;</l>
+                        <l>You are found within this ultimate, nonconceptual basic reality. </l>
                         <l>You are true because the ultimate and relative are not two.</l>
                         <l>You are profound because saṃsāra and nirvāṇa are not two. </l>
                     </lg>
@@ -464,8 +470,8 @@
                     <milestone unit="chunk" xml:id="UT22084-091-068-103"/>
                     <lg tid="46">
                         <l>“You are the single state, the nonduality of subject and object,</l>
-                        <l>The ultimate space that subsumes conceptuality and its absence.<note place="end" xml:id="UT22084-091-068-104"> D, S] <foreign xml:lang="Bo-Ltn" type="quote">spros dang spros med don dam
-                                    dbyings kyis bsdus</foreign>; F] <foreign xml:lang="Bo-Ltn" type="quote">spros dang spros med don dam gnyis kyis
+                        <l>The ultimate space that subsumes conceptuality and its absence.<note place="end" xml:id="UT22084-091-068-104"> D, S: <foreign xml:lang="Bo-Ltn" type="quote">spros dang spros med don dam
+                                    dbyings kyis bsdus</foreign>; F: <foreign xml:lang="Bo-Ltn" type="quote">spros dang spros med don dam gnyis kyis
                                     bsdus</foreign>. This translation, which follows D and S, is
                                 tentative. </note>
                         </l>
@@ -487,8 +493,8 @@
                             nonduality,</l>
                         <l>The mind itself in which mind and the aggregates are not separate,</l>
                         <l>The state in which one attains the nonduality of practice and its goal. </l>
-                        <l>I praise you<note place="end" xml:id="UT22084-091-068-107"> F, H, K, S]
-                                    <foreign xml:lang="Bo-Ltn" type="quote">bstod</foreign>; D]
+                        <l>I praise you<note place="end" xml:id="UT22084-091-068-107"> F, H, K, S:
+                                    <foreign xml:lang="Bo-Ltn" type="quote">bstod</foreign>; D:
                                     <foreign xml:lang="Bo-Ltn" type="quote">bskyod</foreign>. This
                                 translation follows F, H, K, and S. </note> as the supreme
                             expression of the nonduality of self and other.</l>
@@ -511,7 +517,7 @@
                     <lg tid="51">
                         <l>“Since there is one system in which Buddhists and non-Buddhists are not
                             two,</l>
-                        <l>You have realized that phenomenal world<note place="end" xml:id="UT22084-091-068-111"> Here we understand <foreign xml:lang="Bo-Ltn" type="term">dbyings</foreign> to be short for
+                        <l>You have realized that the phenomenal world<note place="end" xml:id="UT22084-091-068-111"> Here we understand <foreign xml:lang="Bo-Ltn" type="term">dbyings</foreign> to be short for
                                     <foreign xml:lang="Bo-Ltn" type="term">chos kyi
                                     dbyings</foreign> and in this context to refer to the appearance
                                 of the various phenomena of conventional reality.</note> and wisdom
@@ -547,63 +553,63 @@
                     </lg>
                     <milestone unit="chunk" xml:id="UT22084-091-068-116"/>
                     <lg tid="56">
-                        <l>“Glorious pacifying Goddess who is widely extolled,</l>
+                        <l>“Glorious pacifying goddess who is widely extolled,</l>
                         <l>You pacify, are pacifying, and have a pacifying nature. <ref cRef="F.205.a" type="folio" xml:id="UT22084-091-068-335"/>
                         </l>
                         <l>You are a queen surrounded by a peaceful retinue </l>
-                        <l>And have white physical marks that shine brightly.<note place="end" xml:id="UT22084-091-068-117"> D, S] <foreign xml:lang="Bo-Ltn" type="quote">rtags kyi sku mdog dkar mo shin tu dngas</foreign>;
-                                F] <foreign xml:lang="Bo-Ltn" type="quote">rtags kyi sku mdog dkar
+                        <l>And have white physical marks that shine brightly.<note place="end" xml:id="UT22084-091-068-117"> D, S: <foreign xml:lang="Bo-Ltn" type="quote">rtags kyi sku mdog dkar mo shin tu dngas</foreign>;
+                                F: <foreign xml:lang="Bo-Ltn" type="quote">rtags kyi sku mdog dkar
                                     zhing rab tu dngas</foreign> This translation is tentative.
                             </note>
                         </l>
                     </lg>
                     <milestone unit="chunk" xml:id="UT22084-091-068-118"/>
                     <lg tid="57">
-                        <l>“Homage and praise to you, all-pacifying Goddess.</l>
+                        <l>“Homage and praise to you, all-pacifying goddess.</l>
                         <l>Please pacify my enemies and illnesses.</l>
                     </lg>
                     <milestone unit="chunk" xml:id="UT22084-091-068-119"/>
                     <lg tid="58">
-                        <l>“Glorious enriching Goddess who is widely extolled,</l>
+                        <l>“Glorious enriching goddess who is widely extolled,</l>
                         <l>You enrich, are enriching, and have an enriching nature. </l>
                         <l>You are a queen surrounded by an enriching retinue</l>
                         <l>And have golden physical marks that are intensely majestic. </l>
                     </lg>
                     <milestone unit="chunk" xml:id="UT22084-091-068-120"/>
                     <lg tid="59">
-                        <l>“Homage and praise to you, all-enriching Goddess.</l>
+                        <l>“Homage and praise to you, all-enriching goddess.</l>
                         <l>Please increase my merit and wisdom.</l>
                     </lg>
                     <milestone unit="chunk" xml:id="UT22084-091-068-121"/>
                     <lg tid="60">
-                        <l>“Glorious enthralling Goddess who is widely extolled,</l>
+                        <l>“Glorious enthralling goddess who is widely extolled,</l>
                         <l>You enthrall, are enthralling, and have an enthralling nature. </l>
                         <l>You are a queen surrounded by an enthralling retinue</l>
                         <l>And have red physical marks that are intensely majestic. </l>
                     </lg>
                     <milestone unit="chunk" xml:id="UT22084-091-068-122"/>
                     <lg tid="61">
-                        <l>“Homage and praise to you, all-enthralling Goddess.</l>
+                        <l>“Homage and praise to you, all-enthralling goddess.</l>
                         <l>Please bring my illnesses and enemies under your control.</l>
                     </lg>
                     <milestone unit="chunk" xml:id="UT22084-091-068-123"/>
                     <lg tid="62">
-                        <l>“Glorious wrathful Goddess who is widely extolled,</l>
+                        <l>“Glorious wrathful goddess who is widely extolled,</l>
                         <l>You bring wrath, are wrathful, and have a wrathful nature. </l>
                         <l>You are a queen surrounded by a wrathful retinue </l>
                         <l>And have dark physical marks that are intensely majestic.</l>
                     </lg>
                     <milestone unit="chunk" xml:id="UT22084-091-068-124"/>
                     <lg tid="63">
-                        <l>“Homage and praise to you, all-wrathful Goddess.</l>
+                        <l>“Homage and praise to you, all-wrathful goddess.</l>
                         <l>Please kill my illnesses and enemies with your wrath.</l>
                     </lg>
                     <milestone unit="chunk" xml:id="UT22084-091-068-125"/>
                     <lg tid="64">
                         <l>“Your true nature is not established in any way, </l>
-                        <l>But you can appear with any of these characteristics.<note place="end" xml:id="UT22084-091-068-126"> D] <foreign xml:lang="Bo-Ltn" type="quote">’di ltar ’dzin nyid cir yang snang ba ni</foreign>;
-                                F, H] <foreign xml:lang="Bo-Ltn" type="quote">’di ltar mtshan nyid
-                                    cir yang snang ba ni</foreign>; S] <foreign xml:lang="Bo-Ltn" type="quote">ji ltar ’dzin nyid cir yang snang ba ni</foreign>.
+                        <l>But you can appear with any of these characteristics.<note place="end" xml:id="UT22084-091-068-126"> D: <foreign xml:lang="Bo-Ltn" type="quote">’di ltar ’dzin nyid cir yang snang ba ni</foreign>;
+                                F, H: <foreign xml:lang="Bo-Ltn" type="quote">’di ltar mtshan nyid
+                                    cir yang snang ba ni</foreign>; S: <foreign xml:lang="Bo-Ltn" type="quote">ji ltar ’dzin nyid cir yang snang ba ni</foreign>.
                                 This translation follows F and H. </note>
                         </l>
                         <l>This is what allows the four ritual activities to benefit beings. </l>
@@ -616,7 +622,7 @@
                         physical features: </p>
                     <milestone unit="chunk" xml:id="UT22084-091-068-128"/>
                     <lg tid="66">
-                        <l>“You are identical with the accomplishment mantra-yoga.</l>
+                        <l>“You are identical with the accomplishment of <term rend="ignore">mantra</term>-yoga.</l>
                         <l>The colors and forms of your physical attributes</l>
                         <l>Are insubstantial but, in order to tame beings,</l>
                         <l>Are taught using these symbolic features:</l>
@@ -665,12 +671,12 @@
                         <l>You are adorned with a whirlwind to indicate your swift wrath. </l>
                         <l>You stand within a blazing fire because you have burned up the
                             afflictions </l>
-                        <l>And you lean against the Pāriyātraka tree because you protect the desire
+                        <l>And you lean against the pāriyātraka tree because you protect the desire
                             realm. </l>
                     </lg>
                     <milestone unit="chunk" xml:id="UT22084-091-068-135"/>
                     <lg tid="72">
-                        <l>“You are the impenetrable goddess of the fortress<note place="end" xml:id="UT22084-091-068-136"> D] <foreign xml:lang="Bo-Ltn" type="quote">rdzon gi dka’ zlog ma</foreign>. This epithet
+                        <l>“You are the impenetrable goddess of the fortress<note place="end" xml:id="UT22084-091-068-136"> D: <foreign xml:lang="Bo-Ltn" type="quote">rdzon gi dka’ zlog ma</foreign>. This epithet
                                 clearly evokes Kālī’s appearance in the form of Durgā (<foreign xml:lang="Bo-Ltn" type="term">dka’ zlog ma</foreign>), but it
                                 also appears to refer to the story mentioned below in this text
                                 where Kālī is said to have provided a fortress for the gods when the
@@ -690,7 +696,7 @@
                     <milestone unit="chunk" xml:id="UT22084-091-068-138"/>
                     <lg tid="74">
                         <l>“You ring a bell, symbolizing the impermanence of compounded phenomena. </l>
-                        <l>Because you stoke rage towards attachment, you drink waves of blood.<note place="end" xml:id="UT22084-091-068-139"> This translation is
+                        <l>Because you stoke rage toward attachment, you drink waves of blood.<note place="end" xml:id="UT22084-091-068-139"> This translation is
                                 tentative.</note>
                         </l>
                         <l>You wear tree bark as adornment because you guard your samaya</l>
@@ -704,7 +710,7 @@
                         <l>You stand firm in the northeast, the supreme natural abode.<note place="end" xml:id="UT22084-091-068-141"> This translation is
                                 tentative. </note>
                         </l>
-                        <l>You ride a donkey because you abide in the middle way<note place="end" xml:id="UT22084-091-068-142"> D] <foreign xml:lang="Bo-Ltn" type="quote">dbu ma’i sa</foreign>. This translation is
+                        <l>You ride a donkey because you abide in the middle way<note place="end" xml:id="UT22084-091-068-142"> D: <foreign xml:lang="Bo-Ltn" type="quote">dbu ma’i sa</foreign>. This translation is
                                 tentative. </note>
                         </l>
                         <l>And you take the guise of a mother because you tame the wicked
@@ -712,9 +718,9 @@
                         <l>Homage and praise to you, mother of ḍākinīs!” </l>
                     </lg>
                     <milestone unit="chunk" xml:id="UT22084-091-068-143"/>
-                    <p tid="76">Next, the kumbhāṇḍa king Nine-Headed Snake praised Śrīdevī<note place="end" xml:id="UT22084-091-068-144"> D] <foreign xml:lang="Bo-Ltn" type="quote">dpal lha mo nag mo</foreign>; C, F, H J, K, N, S, Y]
+                    <p tid="76">Next, the kumbhāṇḍa king Nine-Headed Snake praised Śrīdevī<note place="end" xml:id="UT22084-091-068-144"> D: <foreign xml:lang="Bo-Ltn" type="quote">dpal lha mo nag mo</foreign>; C, F, H J, K, N, S, Y:
                                 <foreign xml:lang="Bo-Ltn" type="quote">dpal lha mo</foreign>. This
-                            translation follows C, F, H J, K, N, S, and Y in omitting <foreign xml:lang="Bo-Ltn" type="term">nag mo</foreign> (<foreign xml:lang="Sa-Ltn" type="term">kālī</foreign>). </note> in terms of
+                            translation follows C, F, H, J, K, N, S, and Y in omitting <foreign xml:lang="Bo-Ltn" type="term">nag mo</foreign> (<foreign xml:lang="Sa-Ltn" type="term">kālī</foreign>). </note> in terms of
                         body, speech, and mind: </p>
                     <milestone unit="chunk" xml:id="UT22084-091-068-145"/>
                     <lg tid="77">
@@ -732,11 +738,11 @@
                     </lg>
                     <milestone unit="chunk" xml:id="UT22084-091-068-147"/>
                     <lg tid="79">
-                        <l>“Glorious Remaju<note place="end" xml:id="UT22084-091-068-148"> D]
+                        <l>“Glorious Remaju<note place="end" xml:id="UT22084-091-068-148"> D:
                                     <foreign xml:lang="Bo-Ltn" type="quote">re ma dzu</foreign>; C,
-                                J] <foreign xml:lang="Bo-Ltn" type="quote">re ma ’dzi</foreign>; F,
-                                H, K, Y] <foreign xml:lang="Bo-Ltn" type="quote">re ma ti</foreign>;
-                                N] <foreign xml:lang="Bo-Ltn" type="quote">re ma Ti</foreign>; S]
+                                J: <foreign xml:lang="Bo-Ltn" type="quote">re ma ’dzi</foreign>; F,
+                                H, K, Y: <foreign xml:lang="Bo-Ltn" type="quote">re ma ti</foreign>;
+                                N: <foreign xml:lang="Bo-Ltn" type="quote">re ma Ti</foreign>; S:
                                     <foreign xml:lang="Bo-Ltn" type="quote">na ma
                                 ti</foreign>.</note> is her body emanation.</l>
                         <l>She arises within a triangular, dark yellow expanse.</l>
@@ -778,21 +784,21 @@
                     <milestone unit="chunk" xml:id="UT22084-091-068-153"/>
                     <lg tid="84">
                         <l>“But any praise based on words and letters,</l>
-                        <l>Directed to you, who is fixed upon the Victor’s truth,<note place="end" xml:id="UT22084-091-068-154"> D] <foreign xml:lang="Bo-Ltn" type="quote">rgyal ba’i don yang thugs chud khyod nyid
-                                    la</foreign>; C, J, K, Y] <foreign xml:lang="Bo-Ltn" type="quote">rgyal ba’i don spangs thugs chud khyod nyid
-                                    la</foreign>; F] <foreign xml:lang="Bo-Ltn" type="quote">rgyal
-                                    ba’i dgongs pa thugs chud khyod nyid la</foreign> N, S] <foreign xml:lang="Bo-Ltn" type="quote">rgyal ba’i don yangs thugs chud
+                        <l>Directed to you, who is fixed upon the Victor’s truth,<note place="end" xml:id="UT22084-091-068-154"> D: <foreign xml:lang="Bo-Ltn" type="quote">rgyal ba’i don yang thugs chud khyod nyid
+                                    la</foreign>; C, J, K, Y: <foreign xml:lang="Bo-Ltn" type="quote">rgyal ba’i don spangs thugs chud khyod nyid
+                                    la</foreign>; F: <foreign xml:lang="Bo-Ltn" type="quote">rgyal
+                                    ba’i dgongs pa thugs chud khyod nyid la</foreign> N, S: <foreign xml:lang="Bo-Ltn" type="quote">rgyal ba’i don yangs thugs chud
                                     khyod nyid la</foreign>. This translation follows D, but the
                                 wide variation across sources suggests that other interpretations
                                 may be viable.</note>
                         </l>
                         <l>Is never the true reality of liberation.</l>
-                        <l>When primordial nondual great bliss has not been realized,<note place="end" xml:id="UT22084-091-068-155"> D, F] <foreign xml:lang="Bo-Ltn" type="quote">gdod nas gnyis med bde chen ma
-                                    rtogs par</foreign>; H, N, S] <foreign xml:lang="Bo-Ltn" type="quote">gdod nas gnyis med bde chen ma gtogs par</foreign>.
+                        <l>When primordial nondual great bliss has not been realized,<note place="end" xml:id="UT22084-091-068-155"> D, F: <foreign xml:lang="Bo-Ltn" type="quote">gdod nas gnyis med bde chen ma
+                                    rtogs par</foreign>; H, N, S: <foreign xml:lang="Bo-Ltn" type="quote">gdod nas gnyis med bde chen ma gtogs par</foreign>.
                                 This translation follows D.</note>
                         </l>
-                        <l>Praise inspired by you will always fall short,<note place="end" xml:id="UT22084-091-068-156"> D, F] <foreign xml:lang="Bo-Ltn" type="quote">khyod la brten nas thams cad ltung bar
-                                    ’gyur</foreign>; H, N, S] <foreign xml:lang="Bo-Ltn" type="quote">khyod la brten nas thams cad ltung bar
+                        <l>Praise inspired by you will always fall short,<note place="end" xml:id="UT22084-091-068-156"> D, F: <foreign xml:lang="Bo-Ltn" type="quote">khyod la brten nas thams cad ltung bar
+                                    ’gyur</foreign>; H, N, S: <foreign xml:lang="Bo-Ltn" type="quote">khyod la brten nas thams cad ltung bar
                                     ’gyur</foreign>. This translation follows D. </note>
                         </l>
                         <l>When it takes you to be a symbolic emanation of your aspirations.<note place="end" xml:id="UT22084-091-068-157"> The translation of this
@@ -825,15 +831,15 @@
                         <l>“A fool who has accomplished your practice </l>
                         <l>Through the virtues of body and speech will always forsake you,</l>
                         <l>While one who worships you with a mind that rejects body and speech</l>
-                        <l>Will attain the treasure of siddhi when they worship.</l>
+                        <l>Will attain the treasure of accomplishment when they worship.</l>
                     </lg>
                     <lg tid="155">
-                        <l>“You epitomize the qualities of the multitudes of victors<note place="end" xml:id="UT22084-091-068-162"> D] <foreign xml:lang="Bo-Ltn" type="quote">rgyal po mang po</foreign>; C, F,
-                                H, J, N, K, S, Y] <foreign xml:lang="Bo-Ltn" type="quote">rgyal ba
-                                    mang po</foreign>. This translation follows C, F H, J, N, K, S,
+                        <l>“You epitomize the qualities of the multitudes of victors<note place="end" xml:id="UT22084-091-068-162"> D: <foreign xml:lang="Bo-Ltn" type="quote">rgyal po mang po</foreign>; C, F,
+                                H, J, N, K, S, Y: <foreign xml:lang="Bo-Ltn" type="quote">rgyal ba
+                                    mang po</foreign>. This translation follows C, F, H, J, N, K, S,
                                 and Y.</note>
                         </l>
-                        <l>And commune<note place="end" xml:id="UT22084-091-068-163"> D] <foreign xml:lang="Bo-Ltn" type="quote">mjal</foreign>; H, K, N, Y, S]
+                        <l>And commune<note place="end" xml:id="UT22084-091-068-163"> D: <foreign xml:lang="Bo-Ltn" type="quote">mjal</foreign>; H, K, N, Y, S:
                                     <foreign xml:lang="Bo-Ltn" type="quote">mol</foreign>; F]
                                     <foreign xml:lang="Bo-Ltn" type="quote">rol</foreign>. This
                                 translation follows D. </note> with the victors in the dharmadhātu. </l>
@@ -852,7 +858,7 @@
                     <lg tid="90">
                         <l>“To praise you in this way counts as a form of praise,</l>
                         <l>And though you are not an object of praise, </l>
-                        <l>I praise you like this to guide naïve people.”</l>
+                        <l>I praise you like this to guide naive people.”</l>
                     </lg>
                     <milestone unit="chunk" xml:id="UT22084-091-068-166"/>
                     <p tid="91">Next, the king of garuḍas Vajra Golden Eyes praised Śrīdevī: </p>
@@ -867,7 +873,7 @@
                     <lg tid="93">
                         <l>“Though you are untainted by the offerings I make,</l>
                         <l>May objects pleasing to the senses fall from the sky like rain, </l>
-                        <l>Glorious One, so that the sublime siddhi may be attained—</l>
+                        <l>Glorious One, so that the sublime accomplishment may be attained—</l>
                         <l>And may these abundant offerings conquer the senses.</l>
                     </lg>
                     <milestone unit="chunk" xml:id="UT22084-091-068-169"/>
@@ -904,7 +910,7 @@
                         <l>“May the virtue from this homage, confession, </l>
                         <l>Rejoicing, encouragement, and requesting </l>
                         <l>Empty the lower realms—I dedicate it so that all </l>
-                        <l>Will perfect the accumulations and reach great awakening. </l>
+                        <l>Will perfect the accumulations and reach great awakening.” </l>
                     </lg>
                     <milestone unit="chunk" xml:id="UT22084-091-068-174"/>
                     <p tid="99">Next, the attendants of the sky god praised Śrīdevī:</p>
@@ -916,8 +922,7 @@
                         <l>You emerge as the sole mother, sovereign goddess of the desire realm,</l>
                         <l>The mother of the demon, and Yama’s only sister.<note place="end" xml:id="UT22084-091-068-176"> For details on the meaning and origin
                                 of these three epithets of Kālī, see <title xml:lang="en">Praising
-                                    the Lady who Rules Disease </title>
-                                <ref target="https://read.84000.co/translation/UT22084-101-146.html#UT22084-101-146-223">i.3</ref>.</note>
+                                    the Lady Who Rules Disease</title>, <ref target="https://read.84000.co/translation/UT22084-101-146.html#UT22084-101-146-223">i.3</ref>.</note>
                         </l>
                     </lg>
                     <milestone unit="chunk" xml:id="UT22084-091-068-177"/>
@@ -929,14 +934,14 @@
                     <milestone unit="chunk" xml:id="UT22084-091-068-178"/>
                     <lg tid="102">
                         <l>“Your appearance with a black body </l>
-                        <l>Symbolizes not being agitated by ultimate space. </l>
+                        <l>Symbolizes not being agitated by <term rend="ignore">ultimate</term> space. </l>
                         <l>The leftward curl of your hair</l>
                         <l>Symbolizes sending emanations into a mother’s womb. </l>
                     </lg>
                     <milestone unit="chunk" xml:id="UT22084-091-068-179"/>
                     <lg tid="103">
                         <l>“The locks on your head are braided as one,</l>
-                        <l>Symbolizing that you combine recognition of the ultimate with action.</l>
+                        <l>Symbolizing that you combine recognition of the <term rend="ignore">ultimate</term> with action.</l>
                         <l>The sparks that fly from your locks</l>
                         <l>Symbolize sending mind emanations throughout the ten directions. </l>
                     </lg>
@@ -1026,7 +1031,7 @@
                     </lg>
                     <milestone unit="chunk" xml:id="UT22084-091-068-192"/>
                     <lg tid="115">
-                        <l>“You exude drops of fat that symbolize the nectar of the ultimate,</l>
+                        <l>“You exude drops of fat that symbolize the nectar of the <term rend="ignore">ultimate</term>,</l>
                         <l>Are ornamented with drops of blood symbolizing your fondness for
                             compassion,</l>
                         <l>And are imprinted with an ash mark symbolizing your activities to tame
@@ -1062,7 +1067,7 @@
                             have emended <foreign xml:lang="Bo-Ltn" type="quote">khyod la
                                 ni</foreign> to <foreign xml:lang="Bo-Ltn" type="term">khyod nyid
                                 ni</foreign> as suggested by the version of the text preserved in
-                            the Nyingma Gyüdbum. This line is not reported in Toh 1090/1777.</note>
+                            the Nyingma Gyübum. This line is not reported in Toh 1090/1777.</note>
                         your single braid is perpetually saturated with sesame oil. You are poised
                         seductively wearing lead earrings and you bear many ornaments. A single iron
                         shackle beautifully adorns your feet as anklets. You are known as Kālī, the
@@ -1081,7 +1086,7 @@
                         around your broad hips and you brandish a spear and standard in your hand.
                         Your eyes are bloodshot from being intoxicated with the liquor of blood and
                         you are watched by the host of bhūtas who wander cremation <term rend="ignore">ground</term>s at night. Your leggings are made from fresh
-                            hides<note place="end" xml:id="UT22084-091-068-200"> D] <foreign xml:lang="Bo-Ltn" type="quote">rkang pa’i gos ni ko rlon mtshan pas
+                            hides<note place="end" xml:id="UT22084-091-068-200"> D: <foreign xml:lang="Bo-Ltn" type="quote">rkang pa’i gos ni ko rlon mtshan pas
                                 drangs pas</foreign>. This translation is tentative.</note>and you
                         are wrapped in a felt shawl. Your moon-like face is graced with a hood of
                         fresh human intestines and your forehead mark is made of a clump of blood
@@ -1093,11 +1098,11 @@
                         māras, rākṣasīs, and mātṛkās who see you now for the first time quiver and
                         bulge as they bow to you. Beautiful Goddess, your body is black and you are
                         so overwhelming even I, Yamarāja, praised by Śakra and the rest, always bow
-                        to you. Because you bring an end to all gods and beings,<note place="end" xml:id="UT22084-091-068-202"> D] <foreign xml:lang="Bo-Ltn" type="quote">lha rnams dang ni ’gro ba ma lus ’jug brtul bas na</foreign>; F]
+                        to you. Because you bring an end to all gods and beings,<note place="end" xml:id="UT22084-091-068-202"> D: <foreign xml:lang="Bo-Ltn" type="quote">lha rnams dang ni ’gro ba ma lus ’jug brtul bas na</foreign>; F:
                                 <foreign xml:lang="Bo-Ltn" type="quote">lha rnams dang ni ’gro ba ma
-                                lus ’jug sdug bsngal gnas nas</foreign>; C, J, K, Y] <foreign xml:lang="Bo-Ltn" type="quote">lha rnams dang ni ’gro ba ma lus mjug
-                                brtul bas</foreign>; H, N] <foreign xml:lang="Bo-Ltn" type="quote">lha rnams dang ni ’gro ba ma lus pa rnams ’jug phyir rab rtul
-                                bas</foreign>; S] <foreign xml:lang="Bo-Ltn" type="quote">lha rnams
+                                lus ’jug sdug bsngal gnas nas</foreign>; C, J, K, Y: <foreign xml:lang="Bo-Ltn" type="quote">lha rnams dang ni ’gro ba ma lus mjug
+                                brtul bas</foreign>; H, N: <foreign xml:lang="Bo-Ltn" type="quote">lha rnams dang ni ’gro ba ma lus pa rnams ’jug phyir rab rtul
+                                bas</foreign>; S: <foreign xml:lang="Bo-Ltn" type="quote">lha rnams
                                 dang ni ’gro ba ma lus pa rnams ’jug phyir rab brtul bas</foreign>.
                             This translation follows C, J, K, and Y.</note> an uraga with a thousand
                         hooded heads adorns one of your ears from behind and an incomparable lion is
@@ -1108,9 +1113,9 @@
                     <p tid="122">You are the all-pacifying woman who is able to dry up all waters
                         with the fire that blazes from the vast ocean. Black Durgā, whose form
                         resembles that of Mahādeva,<note place="end" xml:id="UT22084-091-068-204">
-                            D] <foreign xml:lang="Bo-Ltn" type="quote">lha chen sku dang ’tsham par
-                                bzhugs pa’i dka’ zlog</foreign>. In Praising the Lady Who Rules
-                            Disease <ref target="https://read.84000.co/translation/UT22084-101-146.html#UT22084-101-146-206">1.7</ref>, this line reads “You are present as half of Mahādeva’s
+                            D: <foreign xml:lang="Bo-Ltn" type="quote">lha chen sku dang ’tsham par
+                                bzhugs pa’i dka’ zlog</foreign>. In <title xml:lang="en">Praising the Lady Who Rules
+                                    Disease</title>, <ref target="https://read.84000.co/translation/UT22084-101-146.html#UT22084-101-146-206">1.7</ref>, this line reads “You are present as half of Mahādeva’s
                             body” (<foreign xml:lang="Bo-Ltn" type="quote">lha chen sku yi phyed du
                                 bzhugs</foreign>).</note> you do not fear any human or animal
                         disease. </p>
@@ -1140,11 +1145,11 @@
                     <lg tid="127">
                         <l>“You are dressed in blue silk,</l>
                         <l>Wear adornments both beautiful and hideous, </l>
-                        <l>Have eyes that are hideous and enraged,<note place="end" xml:id="UT22084-091-068-210"> D, S] <foreign xml:lang="Bo-Ltn" type="quote">spyan mig mthong na mi sdug kun du sdang</foreign>;
-                                F] <foreign xml:lang="Bo-Ltn" type="quote">spyan mig ’thong na kun
-                                    tu sngag</foreign> Y] <foreign xml:lang="Bo-Ltn" type="quote">spyan mig mi sdug kun du sdang / dad cing tshogs pa’i mi rnams
+                        <l>Have eyes that are hideous and enraged,<note place="end" xml:id="UT22084-091-068-210"> D, S: <foreign xml:lang="Bo-Ltn" type="quote">spyan mig mthong na mi sdug kun du sdang</foreign>;
+                                F: <foreign xml:lang="Bo-Ltn" type="quote">spyan mig ’thong na kun
+                                    tu sngag</foreign>; Y: <foreign xml:lang="Bo-Ltn" type="quote">spyan mig mi sdug kun du sdang / dad cing tshogs pa’i mi rnams
                                     sdud</foreign>. Because the reading in D and S is hypermetrical,
-                                this tentative translation follows the reading in the Y.</note>
+                                this tentative translation follows the reading in Y.</note>
                         </l>
                         <l>Are faithful, and gather people in the assembly. <ref cRef="F.209.a" type="folio" xml:id="UT22084-091-068-343"/>
                         </l>
@@ -1194,7 +1199,7 @@
                     <milestone unit="chunk" xml:id="UT22084-091-068-217"/>
                     <lg tid="134">
                         <l>“You are supreme among women, </l>
-                        <l> Like the world-protecting Vāgīśvarī.<note place="end" xml:id="UT22084-091-068-218"> D, S] <foreign xml:lang="Bo-Ltn" type="quote">tshig dbang ’jig rten mgon po ’dra</foreign>. This
+                        <l> Like the world-protecting Vāgīśvarī.<note place="end" xml:id="UT22084-091-068-218"> D, S: <foreign xml:lang="Bo-Ltn" type="quote">tshig dbang ’jig rten mgon po ’dra</foreign>. This
                                 translation is tentative. </note>
                         </l>
                         <l>You are like a lotus in a king’s palace.</l>
@@ -1259,24 +1264,24 @@
                         <l>May all that is desired be attained.”</l>
                     </lg>
                     <milestone unit="chunk" xml:id="UT22084-091-068-228"/>
-                    <p tid="144">Then, glorious Vajrapāṇi addressed the gathering. “Your praises to
+                    <p tid="144">Then, glorious Vajrapāṇi addressed the gathering: “Your praises to
                         Śrīdevī are wonderful. I too will reflect on the meaning of these praises
                         and constantly recite them mentally. To praise this goddess is to praise me
-                        and to praise all the buddhas. The Goddess protects and defends such a
-                        person and grants whatever siddhis they desire.” </p>
+                        and to praise all the buddhas. The goddess protects and defends such a
+                        person and grants whatever accomplishments they desire.” </p>
                     <milestone unit="chunk" xml:id="UT22084-091-068-229"/>
                     <p tid="145">When he finished speaking, the assembly was delighted and a great
-                        torrent of ornaments rained down on Blessed Vajrapāṇi. They then returned to
+                        torrent of ornaments rained down on blessed Vajrapāṇi. They then returned to
                         their respective abodes. </p>
                     <milestone unit="chunk" xml:id="UT22084-091-068-230"/>
-                    <trailer tid="146">This concludes <title xml:lang="en">“The Royal Tantra of
+                    <trailer tid="146">This concludes <title xml:lang="en">“The Sovereign Tantra of
                             Praises.”</title>
                     </trailer>
-                </div>
-            </div>
+                </tei:div>
+            </tei:div>
         </body>
         <back>
-            <div type="notes" xml:id="UT22084-091-068-notes">
+            <tei:div type="notes" xml:id="UT22084-091-068-notes">
                 <head type="notes" tid="149">Notes</head>
                 <list type="abbreviations">
                     <head tid="150">Abbreviations</head>
@@ -1317,10 +1322,10 @@
                         <expan>Stok Palace (<foreign xml:lang="Bo-Ltn">stog pho ’brang</foreign>)</expan>
                     </item>
                 </list>
-            </div>
-            <div type="listBibl" xml:id="UT22084-091-068-listBibl">
+            </tei:div>
+            <tei:div type="listBibl" xml:id="UT22084-091-068-listBibl">
                 <head type="listBibl" tid="151">Bibliography</head>
-                <div type="section" xml:id="UT22084-091-068-listBibl-1">
+                <tei:div type="section" xml:id="UT22084-091-068-listBibl-1">
                     <head type="section" tid="152">Tibetan Sources</head>
                     <bibl xml:id="UT22084-091-068-244">
                         <title xml:lang="Bo-Ltn">dpal lha mo nag mo’i
@@ -1346,8 +1351,8 @@
                         <title xml:lang="Bo-Ltn">dpal lha mo nag mo’i bstod pa’i rgyal po’i
                             rgyud</title>. Nyingma Gyübum (<title xml:lang="Bo-Ltn">mtshams brag
                             dgon pa’i bris ma</title>) vol. 42 (ni), folios 475.a–487.a. </bibl>
-                </div>
-                <div type="section" xml:id="UT22084-091-068-listBibl-2">
+                </tei:div>
+                <tei:div type="section" xml:id="UT22084-091-068-listBibl-2">
                     <head type="section" tid="153">Reference Works</head>
                     <bibl xml:id="UT22084-091-068-250">84000. <title xml:lang="en">
                             <ref target="https://read.84000.co/translation/UT22084-101-146.html">Praising the Lady Who Rules Disease</ref>
@@ -1358,13 +1363,13 @@
                             Nyingma Edition of the sDe-dge bKa’-’gyur/bsTan-’gyur Research Catalogue
                             and Bibliography</title>, vol. 2. Oakland, CA: Dharma Press,
                         1982.</bibl>
-                </div>
-            </div>
-            <div type="glossary" status="excluded" xml:id="UT22084-091-068-glossary">
+                </tei:div>
+            </tei:div>
+            <tei:div type="glossary" status="excluded" xml:id="UT22084-091-068-glossary">
                 <list type="glossary">
                     <item>
                         <gloss type="term" xml:id="UT22084-091-068-253">
-                            <term type="translationMain">Mongoose</term>
+                            <term type="translationMain">mongoose</term>
                             <term status="verified" xml:lang="Bo-Ltn" n="1">ne’u le </term>
                             <term xml:lang="bo" n="1">ནེའུ་ལེ།</term>
                             <note type="definition">
@@ -1447,7 +1452,7 @@
                     </item>
                     <item>
                         <gloss type="term" xml:id="UT22084-091-068-259">
-                            <term type="translationMain">God</term>
+                            <term type="translationMain">god</term>
                             <term status="verified" xml:lang="Bo-Ltn" n="1">lha </term>
                             <term xml:lang="bo" n="1">ལྷ།</term>
                             <term status="verified" xml:lang="Sa-Ltn" type="attestedDictionary">deva</term>
@@ -1489,7 +1494,7 @@
                             <term status="verified" xml:lang="Sa-Ltn" type="reconstructedPhonetic">khaṭvāṅga</term>
                             <note type="definition">
                                 <p>A staff with a single tip or one with three
-                                    points tip and a freshly decapitated head, a rotting head, and a
+                                    points and a freshly decapitated head, a rotting head, and a
                                     skull skewered on its shaft.</p>
                             </note>
                         </gloss>
@@ -1520,11 +1525,6 @@
                             <term status="verified" xml:lang="Bo-Ltn" n="1">mu stegs pa </term>
                             <term xml:lang="bo" n="1">མུ་སྟེགས་པ།</term>
                             <term status="verified" xml:lang="Sa-Ltn" type="attestedDictionary">tīrthika</term>
-                            <note type="definition">
-                                <p>An umbrella term for any religious group
-                                    practicing a system or tradition that is recognized as in
-                                    contradiction with the Buddhist teachings.</p>
-                            </note>
                         </gloss>
                     </item>
                     <item>
@@ -1578,7 +1578,7 @@
                     <item>
                         <gloss type="term" xml:id="UT22084-091-068-272">
                             <term type="translationMain">fire that blazes from the vast
-                                ocean.</term>
+                                ocean</term>
                             <term status="verified" xml:lang="Bo-Ltn" n="1">rgya mtsho klong nas me
                                 ’bar </term>
                             <term xml:lang="bo" n="1">རྒྱ་མཚོ་ཀློང་ནས་མེ་འབར།</term>
@@ -1655,18 +1655,6 @@
                         </gloss>
                     </item>
                     <item>
-                        <gloss type="term" xml:id="UT22084-091-068-278">
-                            <term type="translationMain">ultimate truth</term>
-                            <term status="verified" xml:lang="Bo-Ltn" n="1">don dam </term>
-                            <term xml:lang="bo" n="1">དོན་དམ།</term>
-                            <term status="verified" xml:lang="Sa-Ltn" type="attestedDictionary">paramārtha</term>
-                            <note type="definition">
-                                <p>The ultimate reality that is the domain of awakened beings.</p>
-                            </note>
-                            <term type="translationAlternative">ultimate</term>
-                        </gloss>
-                    </item>
-                    <item>
                         <gloss type="term" xml:id="UT22084-091-068-279">
                             <term type="translationMain">vidyā</term>
                             <term status="verified" xml:lang="Bo-Ltn" n="1">rig sngags </term>
@@ -1675,7 +1663,7 @@
                             <note type="definition">
                                 <p>A term that at once refers to a type of
                                     mantra or dhāraṇī and to the deity it invokes, thereby
-                                    reflecting their inseparability. A <foreign xml:lang="Sa-Ltn" type="term">vidyā</foreign> is typically applied to female
+                                    reflecting their inseparability. A vidyā is typically applied to female
                                     deities, and is often, but not exclusively, used for worldly
                                     goals in esoteric ritual.</p>
                             </note>
@@ -1729,8 +1717,8 @@
                             <note type="definition">
                                 <p>A general term for the features and behaviors
                                     that invoke fear and danger. The term is also used in this text
-                                    to refer to the body of rites otherwise known as <foreign xml:lang="Sa-Ltn" type="term">abhicāra</foreign> (<foreign xml:lang="Bo-Ltn" type="term">mngon spyod</foreign>) that
-                                    includes rites for aggressively overcoming adversarial
+                                    to refer to the body of rites otherwise known as <foreign xml:lang="Sa-Ltn" type="term">abhicāra</foreign> (<foreign xml:lang="Bo-Ltn" type="term">mngon spyod</foreign>), which
+                                    include rites for aggressively overcoming adversarial
                                     influences, both human and nonhuman.</p>
                             </note>
                         </gloss>
@@ -1766,7 +1754,7 @@
                                 <p>A Tibetan class of female nonhuman beings
                                     that are perhaps related to medicine (<foreign xml:lang="Bo-Ltn" type="term">sman</foreign>) and medical rites. There are
                                     numerous subcategories and specific groupings of
-                                        <distinct>menmo</distinct> in Tibetan literature.
+                                        menmo in Tibetan literature.
                                 </p>
                             </note>
                         </gloss>
@@ -1922,7 +1910,7 @@
                             <term status="verified" xml:lang="Bo-Ltn" n="1">re ma ti </term>
                             <term xml:lang="bo" n="1">རེ་མ་ཏི།</term>
                             <note type="definition">
-                                <p>The name of a Goddess who accompanies
+                                <p>The name of a goddess who accompanies
                                     Mahākālī. At times, the two goddesses appear to be conflated
                                     into one, but at other times they are clearly two distinct
                                     goddesses. In this text Remati is also said to be Mahākālī’s
@@ -1960,7 +1948,7 @@
                             <term xml:lang="bo" n="2">དཀའ་ཟློག་མ།</term>
                             <note type="definition">
                                 <p>A form of Mahākālī in <title xml:lang="en">Praises to Śrīdevī Kālī</title>. She is also a popular
-                                    goddess within the brahmanical and Hindu traditions, where she
+                                    goddess within the Brahmanical and Hindu traditions, where she
                                     is identified as Pārvatī, the wife of Śiva.</p>
                             </note>
                         </gloss>
@@ -2025,7 +2013,7 @@
                             <term xml:lang="bo" n="1">གཤིན་རྗེའི་རྒྱལ་པོ།</term>
                             <term status="verified" xml:lang="Sa-Ltn" type="attestedDictionary">yamarāja</term>
                             <note type="definition">
-                                <p>Another name for Yama the lord of
+                                <p>Another name for Yama, the lord of
                                 death.</p>
                             </note>
                         </gloss>
@@ -2129,8 +2117,8 @@
                                 <p>A fearsome, wrathful goddess who in the
                                     Buddhist tradition is a protector of the teachings. In Tibet,
                                     she is widely propitiated and takes on many forms, many of which
-                                    are known through the Tibetan name <distinct>Palden
-                                        Lhamo</distinct> (<foreign xml:lang="Bo-Ltn" type="term">dpal ldan lha mo</foreign>), which translates the Sanskrit
+                                    are known through the Tibetan name Palden
+                                        Lhamo (<foreign xml:lang="Bo-Ltn" type="term">dpal ldan lha mo</foreign>), which translates the Sanskrit
                                         <foreign xml:lang="Sa-Ltn" type="term">śrīdevī</foreign>.
                                     She is most often portrayed riding on a donkey and adorned with
                                     various wrathful ornaments and hand implements.</p>
@@ -2155,7 +2143,7 @@
                             <term xml:lang="bo" n="1">ཚིག་དབང་།</term>
                             <term status="verified" xml:lang="Sa-Ltn" type="attestedDictionary">vāgīśvarī</term>
                             <note type="definition">
-                                <p>“Goddess of speech,” is the name of a goddess
+                                <p>“Goddess of Speech”; the name of a goddess
                                     in both Buddhist and non-Buddhist sources.</p>
                             </note>
                         </gloss>
@@ -2168,7 +2156,7 @@
                             <term status="verified" xml:lang="Sa-Ltn" type="attestedDictionary">vaiśravaṇa</term>
                             <note type="definition">
                                 <p>The name of a yakṣa king who is typically
-                                    included among the four great kings of the four cardinal
+                                    included among the Four Great Kings of the four cardinal
                                     directions. </p>
                             </note>
                         </gloss>
@@ -2216,10 +2204,6 @@
                             <term status="verified" xml:lang="Bo-Ltn" n="1">ri rab </term>
                             <term xml:lang="bo" n="1">རི་རབ།</term>
                             <term status="verified" xml:lang="Sa-Ltn" type="attestedDictionary">sumeru</term>
-                            <note type="definition">
-                                <p>The name of the great mountain located at the
-                                    center of the world in Buddhist cosmographs.</p>
-                            </note>
                         </gloss>
                     </item>
                     <item>
@@ -2230,8 +2214,8 @@
                             <term status="verified" xml:lang="Sa-Ltn" type="attestedDictionary">pāruṣyaka</term>
                             <note type="definition">
                                 <p>The name of one of the groves of the deities
-                                    of the Heaven of the Thirty-three. In <title xml:lang="en">Praises to Śrīdevī Kālī </title>(Toh 671), Pāruṣyaka is
-                                    identified as a vast grove (<foreign xml:lang="Bo-Ltn" type="term">tshal chen po</foreign>) on the summit of Mt.
+                                    of the Heaven of the Thirty-Three. In <title xml:lang="en">Praises to Śrīdevī Kālī </title>, Pāruṣyaka is
+                                    identified as a vast grove (<foreign xml:lang="Bo-Ltn" type="term">tshal chen po</foreign>) on the summit of Mount
                                     Sumeru.</p>
                             </note>
                         </gloss>
@@ -2271,10 +2255,6 @@
                             <term status="verified" xml:lang="Bo-Ltn" n="1">mi mjed ’jig rten </term>
                             <term xml:lang="bo" n="1">མི་མཇེད་འཇིག་རྟེན།</term>
                             <term status="verified" xml:lang="Sa-Ltn" type="attestedDictionary">sahāloka</term>
-                            <note type="definition">
-                                <p>The name of the world system of the Buddha
-                                    Śākyamuni.</p>
-                            </note>
                         </gloss>
                     </item>
                     <item>
@@ -2293,7 +2273,7 @@
                         </gloss>
                     </item>
                 </list>
-            </div>
+            </tei:div>
         </back>
     </text>
-</TEI>
+</tei:TEI>
