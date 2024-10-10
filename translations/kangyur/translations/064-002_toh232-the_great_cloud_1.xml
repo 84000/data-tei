@@ -25,7 +25,7 @@
                 <sponsor xml:id="UT22084-064-002-1690">anonymous</sponsor>
             </titleStmt>
             <editionStmt>
-                <edition>v 1.1.20 <date>2024</date>
+                <edition>v 1.1.21 <date>2024</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -212,6 +212,9 @@
                 <change who="#john" when="2024-07-14T16:49:40.734Z" type="text-version" status="1.1.20" xml:id="UT22084-064-002-1745">
                     <desc>Corrected rendering of Kalandakanivāpa</desc>
                 </change>
+                <change who="#celso" when="2024-10-10T19:19:58.39Z" type="text-version" status="1.1.21" xml:id="UT22084-064-002-1750">
+                    <desc>Activated pending links</desc>
+                </change>
             </revisionDesc>
         </fileDesc>
     </teiHeader>
@@ -220,7 +223,7 @@
             <!--<div type="summary" xml:lang="zh">
                         <p tid="3">在《大雲經》中，佛陀度化眾生的事業與功德被比喻為雲雨一般籠罩一切。佛陀宣說此經時有許多龍族在場，而因為雨水與龍族之間的密切關係，自古以來這部經典在旱災時常用來作為祈請佛陀加持降雨之用。</p>
                     </div>This acknowledgement was in the placeholder file-->
-            <div type="summary">
+            <div type="summary" xml:id="UT22084-064-002-summary">
                 <head type="summary" tid="1">Summary</head>
                 <milestone unit="chunk" xml:id="UT22084-064-002-1"/>
                 <p tid="2">
@@ -236,7 +239,7 @@
                     future attainment of buddhahood, and he further explains the benefits and powers that can be obtained through the practice of this
                     sūtra itself.</p>
             </div>
-            <div type="acknowledgment">
+            <div type="acknowledgment" xml:id="UT22084-064-002-acknowledgment">
                 <head type="acknowledgment" tid="3">Acknowledgements</head>
                 <milestone unit="chunk" xml:id="UT22084-064-002-2"/>
                 <p tid="4">This translation was produced by Joshua Capitanio for the Mahamegha Translation Team. The translator is grateful to
@@ -247,7 +250,7 @@
                 <p tid="6">The translation of this text has been made possible through the generous sponsorship of an anonymous donor, who would like
                     to dedicate it in memory of Lin, Zai-He and Lin Lee, Wan-Zhi.</p>
             </div>
-            <div type="introduction">
+            <div type="introduction" xml:id="UT22084-064-002-introduction">
                 <head type="introduction" tid="8">Introduction</head>
                 <div type="section" xml:id="UT22084-064-002-introduction-1">
                     <milestone unit="chunk" xml:id="UT22084-064-002-6"/>
@@ -278,8 +281,10 @@
                     <milestone unit="chunk" xml:id="UT22084-064-002-1678"/>
                     <p tid="914">
                         <title xml:lang="en">The Great Cloud</title> is also thematically related to <title xml:lang="en">The Golden
-                            Light</title> (<title xml:lang="Sa-Ltn">Suvarṇa­prabhāsa</title>, <ref rend="pending" target="http://read.84000.co/translation/toh556.html">Toh 555</ref>
-                        <ref rend="pending" target="http://read.84000.co/translation/toh556.html" inst="maybe a note with the links would be best after we publish them"/>–<ref rend="pending" target="http://read.84000.co/translation/toh557.html">557</ref>), and a dialogue that occurs in chapter 37 between the
+                        Light</title> (<title xml:lang="Sa-Ltn">Suvarṇa­prabhāsa</title>, Toh 555–557),<note place="end" xml:id="UT22084-064-002-1746">
+                            See Peter Alan Roberts, trans., <title xml:lang="en">The Sūtra of the Sublime Golden Light</title> (<title xml:lang="Sa-Ltn">Suvarṇa­prabhāsottamasūtra</title>), <ref target="https://read.84000.co/translation/toh555.html">Toh 555</ref>, <ref target="https://read.84000.co/translation/toh556.html">556</ref>, and <ref target="https://read.84000.co/translation/toh557.html">557</ref> (84000: Translating the Words of the Buddha, 2023–24).
+                        
+                        </note> and a dialogue that occurs in chapter 37 between the
                         brahmin Kauṇḍinya and a Licchavi youth is also found in the various Tibetan and Chinese recensions of that discourse.<note place="end" xml:id="UT22084-064-002-8"> Suzuki (1996) has suggested that <title xml:lang="en">The Great Cloud</title> may
                             in fact be the source of the interpolated passage in the <title xml:lang="Sa-Ltn">Suvarṇa­prabhāsa</title>.</note>
                     </p>
@@ -359,9 +364,9 @@
                         texts all present themselves as individual chapters that belong to <title xml:lang="en">The Great Cloud</title>. This may
                         perhaps be a reference to Toh 232, but the exact relationship and history of the four texts nevertheless remains unclear. </p>
                     <milestone unit="chunk" xml:id="UT22084-064-002-1672"/>
-                    <p tid="909">Toh. 233 presents itself as the “thirty-seventh chapter” of <title xml:lang="en">The Great Cloud</title>, even though
+                    <p tid="909">Toh 233 presents itself as the “thirty-seventh chapter” of <title xml:lang="en">The Great Cloud</title>, even though
                         Toh 232 as contained in the Dégé Kangyur already contains a chapter 37 that is altogether different. While Toh 233 contains
-                        thematic <term rend="ignore">elements</term> that connect it to Toh. 232, such as the presence of the bodhisattva Great Cloud
+                        thematic <term rend="ignore">elements</term> that connect it to Toh 232, such as the presence of the bodhisattva Great Cloud
                         Essence and references to the Dharma gateways contained within <title xml:lang="en">The Great Cloud</title>, it largely
                         consists of original material.</p>
                     <milestone unit="chunk" xml:id="UT22084-064-002-1673"/>
@@ -386,15 +391,15 @@
                         but there are several discrepancies, and the Tibetan version is much more detailed in certain sections, particularly in the
                         opening description of the audience that was present when the discourse was spoken. The fact that there is an extant Sanskrit
                         manuscript of this sūtra, which preserves about 80% of the text, only came to our attention after completing the
-                            translation.<note place="end" xml:id="UT22084-064-002-1739">For a brief description of this manuscript, see Ye
-                            2023a and 2023b.</note> At present, this manuscript remains inaccessible to us. The English translation presented here was based
+                            translation.<note place="end" xml:id="UT22084-064-002-1739">For a brief description of this manuscript, see Ye 2023a and
+                            2023b.</note> At present, this manuscript remains inaccessible to us. The English translation presented here was based
                         primarily on the Tibetan Degé edition, in consultation with the Comparative Edition (<foreign xml:lang="Bo-Ltn" type="term">dpe bsdur ma</foreign>) and the Stok Palace manuscript edition. Dharmakṣema’s Chinese translation was also consulted
                         throughout.</p>
                 </div>
             </div>
         </front>
         <body>
-            <div type="translation">
+            <div type="translation" xml:id="UT22084-064-002-translation">
                 <head type="translation">The Translation</head>
                 <head type="titleHon" tid="19">The Noble Mahāyāna Sūtra</head>
                 <head type="titleMain" tid="20">The Great Cloud</head>
@@ -679,16 +684,16 @@
                     <milestone unit="chunk" xml:id="UT22084-064-002-65"/>
                     <p tid="68">At that time, there were also hundreds of thousands of Brahmā youths such as Jewel Garland-Bearing Brahmā and
                         Topknot-Bearing Brahmā. Through their great supernormal powers, they completely adorned the areas of Rājagṛha, Vulture Peak,
-                        and the Kalandkanivāpa in the Veṇuvana. After noon, they set forth from their respective abodes and went to where the Bhagavān was
-                        staying. <ref cRef="F.120.b" type="folio" xml:id="UT22084-064-002-1479"/> Having arrived there, they all prostrated, touching
-                        their heads to his feet. Playing cymbals, they scattered flower blossoms over the Tathāgata, covering the entire area, and
-                        they then sprinkled sandalwood powder and various incenses. All around the great fields of merit—the areas of Rājagṛha,
-                        Vulture Peak, and the Kalandkanivāpa in the Veṇuvana—and all the great lands that are the abodes of non-Buddhists, divine garments
-                        of wool, cotton, silk, and fine linen, which were perfumed by divine powder, beautified with sandalwood, and fumigated with
-                        divine incense, were conjured and arranged in a circle. Letting fall a great shower of flowers, they set out a lion throne for
-                        the Bhagavān, adorned with various divine jewels, which they proceeded to circumambulate three million times. Afterward, they
-                        each removed their upper robes and arrayed them on the Bhagavān’s body. With palms joined, they bowed toward the Bhagavān and
-                        sat down to one side.</p>
+                        and the Kalandkanivāpa in the Veṇuvana. After noon, they set forth from their respective abodes and went to where the Bhagavān
+                        was staying. <ref cRef="F.120.b" type="folio" xml:id="UT22084-064-002-1479"/> Having arrived there, they all prostrated,
+                        touching their heads to his feet. Playing cymbals, they scattered flower blossoms over the Tathāgata, covering the entire
+                        area, and they then sprinkled sandalwood powder and various incenses. All around the great fields of merit—the areas of
+                        Rājagṛha, Vulture Peak, and the Kalandkanivāpa in the Veṇuvana—and all the great lands that are the abodes of non-Buddhists,
+                        divine garments of wool, cotton, silk, and fine linen, which were perfumed by divine powder, beautified with sandalwood, and
+                        fumigated with divine incense, were conjured and arranged in a circle. Letting fall a great shower of flowers, they set out a
+                        lion throne for the Bhagavān, adorned with various divine jewels, which they proceeded to circumambulate three million times.
+                        Afterward, they each removed their upper robes and arrayed them on the Bhagavān’s body. With palms joined, they bowed toward
+                        the Bhagavān and sat down to one side.</p>
                     <milestone unit="chunk" xml:id="UT22084-064-002-66"/>
                     <p tid="69">At that time there were also hundreds of thousands of goddesses, daughters of Māra, such as Māra’s daughter Fully
                         Absorbing. After noon, they all set forth from their respective abodes and went to where the Bhagavān was staying. Having
@@ -725,13 +730,15 @@
                         they all set forth from their respective abodes and went to where the Bhagavān was staying. Having arrived there, they each
                         joined their wings together like palms and prostrated to the Bhagavān, touching their heads to his feet. They then let loose a
                         harmonious cry like the melody of a thousand well-made cymbals crafted by masters and their disciples. To show their reverence
-                        for the Bhagavān, the entire assembly of geese circumambulated him three times. Then they all took their places in the Kalandkanivāpa in the Veṇuvana.</p>
+                        for the Bhagavān, the entire assembly of geese circumambulated him three times. Then they all took their places in the
+                        Kalandkanivāpa in the Veṇuvana.</p>
                     <milestone unit="chunk" xml:id="UT22084-064-002-72"/>
                     <p tid="75">Also, at that time, there were hundreds of thousands of peacocks, including the peacock king <term ref="UT22084-064-002-1362">Radiant Appearance</term>. After noon, they all set forth from their respective abodes and went
                         to where the Bhagavān was staying. Having arrived there, they each joined their wings together like palms and prostrated to
                         the Bhagavān, touching their heads to his feet. Then, filling their throats, they issued a harmonious cry like the melody of a
                         thousand well-made cymbals crafted by gandharva masters and their disciples. To show their reverence for the Bhagavān, the
-                        entire assembly of peacocks circumambulated him three times. Then they all took their places in the Kalandkanivāpa in the Veṇuvana.</p>
+                        entire assembly of peacocks circumambulated him three times. Then they all took their places in the Kalandkanivāpa in the
+                        Veṇuvana.</p>
                     <milestone unit="chunk" xml:id="UT22084-064-002-73"/>
                     <p tid="76">At that time, there were also hundreds of thousands of cuckoos, including the cuckoo king <term ref="UT22084-064-002-1363">Leader</term>. After noon, they all set forth from their respective abodes and went to where
                         the Bhagavān was staying. Having arrived there, they each joined their wings together like palms and prostrated to the
@@ -744,7 +751,8 @@
                         including the kalaviṅka king Lotus-Like Eyes. After noon, they all set forth from their respective abodes and went to where
                         the Bhagavān was staying. Having arrived there, they each joined their wings together like palms and prostrated to the
                         Bhagavān, touching their heads to his feet. Then, to show their reverence for the Bhagavān, the entire assembly of kalaviṅka
-                        birds circumambulated him three times while making beautiful sounds. Then they all took their places in the Kalandkanivāpa in the Veṇuvana.</p>
+                        birds circumambulated him three times while making beautiful sounds. Then they all took their places in the Kalandkanivāpa in
+                        the Veṇuvana.</p>
                     <milestone unit="chunk" xml:id="UT22084-064-002-75"/>
                     <p tid="78">At that time, there were also hundreds of thousands of bird kings called jīvañjīva. After noon, they all set forth
                         from their respective abodes and went to where the Bhagavān was staying. Having arrived there, they each joined their wings
@@ -6068,10 +6076,10 @@
             </div>
         </body>
         <back>
-            <div type="notes">
+            <div type="notes" xml:id="UT22084-064-002-notes">
                 <head type="notes" tid="905">Notes</head>
             </div>
-            <div type="listBibl">
+            <div type="listBibl" xml:id="UT22084-064-002-listBibl">
                 <head type="listBibl" tid="907">Bibliography</head>
                 <div type="section" xml:id="UT22084-064-002-listBibl-1">
                     <bibl xml:id="UT22084-064-002-930">
@@ -6090,7 +6098,8 @@
                         (sna tshogs, jo), folios 294.b–310.a.</bibl>
                     <bibl xml:id="UT22084-064-002-935">Phangthangma (<title xml:lang="Bo-Ltn">dkar chag ’phang thang ma</title>). Beijing: mi rigs dpe
                         skrun khang, 2003.</bibl>
-                    <bibl xml:id="UT22084-064-002-1680">Anesaki, Masaharu. “Docetism (Buddhist).” In <title xml:lang="en">Encyclopaedia of Religion and Ethics</title>, edited by J. Hastings, 835–40. (Available on <ref target="https://ia600701.us.archive.org/14/items/EncyclopaediaReligionsEthics.hastings.13vols.1908-1914.1926/04.EncycReligEthics.v4.Con-Dram.HastingsJ.SelbieJA.GrayLA.NY.ChScrib.1908.1914..pdf">Internet Archive</ref>). Edinburgh: Clark, 1911.</bibl>
+                    <bibl xml:id="UT22084-064-002-1680">Anesaki, Masaharu. “Docetism (Buddhist).” In <title xml:lang="en">Encyclopaedia of Religion
+                            and Ethics</title>, edited by J. Hastings, 835–40. (Available on <ref target="https://ia600701.us.archive.org/14/items/EncyclopaediaReligionsEthics.hastings.13vols.1908-1914.1926/04.EncycReligEthics.v4.Con-Dram.HastingsJ.SelbieJA.GrayLA.NY.ChScrib.1908.1914..pdf">Internet Archive</ref>). Edinburgh: Clark, 1911.</bibl>
                     <bibl xml:id="UT22084-064-002-1676">Brunnhölzl, Karl. <title xml:lang="en">When the Clouds Part: The Uttaratantra and Its
                             Meditative Tradition as a Bridge Between Sūtra and Tantra</title>. Hamburg: Hamburg University Press, 2015.</bibl>
                     <bibl xml:id="UT22084-064-002-936">Forte, Antonino. <title xml:lang="en">Political Propaganda and Ideology in China at the End of
@@ -6098,6 +6107,18 @@
                             Annotated Translation</title>. Naples: Instituto Universitario Orientale, Seminario di Studi Asiatici, 1976.</bibl>
                     <bibl xml:id="UT22084-064-002-937">Radich, Michael. <title xml:lang="en">The Mahāparinirvāṇa-mahāsūtra and the Emergence of
                             Tathāgatagarbha Doctrine</title>. Hamburg Buddhist Studies 5. Hamburg: Hamburg University Press, 2015.</bibl>
+                    <bibl xml:id="UT22084-064-002-1747">Roberts, Peter Alan., trans. (2023). <title xml:lang="en">
+                            <ref target="https://read.84000.co/translation/toh555.html">The Sūtra of the Sublime Golden Light (1)</ref>
+                        </title> 
+                        (<title xml:lang="Sa-Ltn">Suvarṇa­prabhāsottama­sūtra</title>, Toh 555). 84000: Translating the Words of the Buddha, 2023.</bibl>
+                    <bibl xml:id="UT22084-064-002-1748">———(2024a), trans. <title xml:lang="en">
+                            <ref target="https://read.84000.co/translation/toh556.html">The Sūtra of the Sublime Golden Light (2)</ref>
+                        </title> 
+                        (<title xml:lang="Sa-Ltn">Suvarṇa­prabhāsottama­sūtra</title>, Toh 556). 84000: Translating the Words of the Buddha, 2024.</bibl>
+                    <bibl xml:id="UT22084-064-002-1749">———(2024b), trans. <title xml:lang="en">
+                            <ref target="https://read.84000.co/translation/toh557.html">The Sūtra of the Sublime Golden Light (3)</ref>
+                        </title> 
+                        (<title xml:lang="Sa-Ltn">Suvarṇa­prabhāsottama­sūtra</title>, Toh 557). 84000: Translating the Words of the Buddha, 2024.</bibl>
                     <bibl xml:id="UT22084-064-002-1681">Seyfort-Ruegg, David. “Docetism in Mahāyāna Sūtras.” In <title xml:lang="en">The Symbiosis of
                             Buddhism with Brahmanism/Hinduism in South Asia and of Buddhism with “Local Cults” in Tibet and the Himalayan
                             Region</title>, 31–34. Vienna: Austrian Academy of Sciences Press, 2008.</bibl>
@@ -6106,17 +6127,21 @@
                     <bibl xml:id="UT22084-064-002-939">Suzuki Takayasu. “The <title xml:lang="Sa-Ltn">Mahāmeghasūtra</title> as an Origin of an
                         Interpolated Part of the Present <title xml:lang="Sa-Ltn">Suvarṇa­prabhāsa</title>.” <title xml:lang="en">Journal of Indian
                             and Buddhist Studies</title> 45, no. 1 (1996): 28–30.</bibl>
-                    <bibl xml:id="UT22084-064-002-940">Thurman, Robert A. F., trans. <title xml:lang="en">The Teaching of Vimalakīrti</title> (<title xml:lang="Sa-Ltn">Vimalakīrti­nirdeśa</title>, Toh 176). 84000: Translating the Words of the Buddha, 2017.</bibl>
+                    <bibl xml:id="UT22084-064-002-940">Thurman, Robert A. F., trans. <title xml:lang="en">
+                            <ref target="https://read.84000.co/translation/toh176.html">The Teaching of Vimalakīrti</ref>
+                        </title> (<title xml:lang="Sa-Ltn">Vimalakīrti­nirdeśa</title>, Toh 176). 84000: Translating the Words of the Buddha, 2017.</bibl>
                     <bibl xml:id="UT22084-064-002-1740">Ye Shaoyong (2023a). “Phun tshogs Tshe brtan, Dngos grub Tshe ring: A Preliminary Report on
-                        the ‘Burnt Manuscripts’ from Retreng Monastery; Bundle A.” In <title xml:lang="en">Śāntamatiḥ: Manuscripts for Life; Essays in Memory of Seishi
-                        Karashima</title>, edited by Noriyuki Kudo, 447–65. Tokyo: International Research Institute for Advanced Buddhology at Soka University, 2023.</bibl>
-                    <bibl xml:id="UT22084-064-002-1742">———(2023b). “The Prophecy about Nāgārjuna in the Mahāmeghasūtra: A Perspective Based on the Sanskrit Manuscript Preserved in
-                        the Potala Palace.” <title xml:lang="en">Journal of Indian and Buddhist Studies</title> 71, no. 3 (2023): 62–67.</bibl>
+                        the ‘Burnt Manuscripts’ from Retreng Monastery; Bundle A.” In <title xml:lang="en">Śāntamatiḥ: Manuscripts for Life; Essays in
+                            Memory of Seishi Karashima</title>, edited by Noriyuki Kudo, 447–65. Tokyo: International Research Institute for Advanced
+                        Buddhology at Soka University, 2023.</bibl>
+                    <bibl xml:id="UT22084-064-002-1742">———(2023b). “The Prophecy about Nāgārjuna in the Mahāmeghasūtra: A Perspective Based on the
+                        Sanskrit Manuscript Preserved in the Potala Palace.” <title xml:lang="en">Journal of Indian and Buddhist Studies</title> 71,
+                        no. 3 (2023): 62–67.</bibl>
                     <bibl xml:id="UT22084-064-002-941">Yoshimura Shuki. <title xml:lang="en">The Denkar-ma: An Oldest Catalogue of the Tibetan
                             Buddhist Canons</title>. Kyoto: Ryukoku University, 1950.</bibl>
                 </div>
             </div>
-            <div type="glossary">
+            <div type="glossary" xml:id="UT22084-064-002-glossary">
                 <list type="glossary">
                     <item>
                         <gloss type="term" xml:id="UT22084-064-002-943">
@@ -6181,7 +6206,7 @@
                             <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">kleśa</term>
                             <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">nyon mongs pa</term>
                             <term xml:lang="bo" type="attestedSource" n="1" status="verified">ཉོན་མོངས་པ།</term>
-                            <note type="definition">
+                            <note type="definition" rend="override">
                                 <p>Defiled mental or emotional states that disturb the mind. Said to number eighty-four thousand.</p>
                             </note>
                         </gloss>
@@ -11507,7 +11532,7 @@
                         <gloss type="place" xml:id="UT22084-064-002-1429">
                             <term type="translationMain">Jambudvīpa</term>
                             <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">jambudvīpa</term>
-                        <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">’dzam bu’i gling</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">’dzam bu’i gling</term>
                             <term xml:lang="bo" type="attestedSource" n="1" status="verified">འཛམ་བུའི་གླིང་།</term>
                             <note type="definition" rend="override">
                                 <p>The southern continent of the human realm according to Buddhist cosmology.</p>
@@ -11571,11 +11596,11 @@
                             <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">’od ma’i tshal bya ka lan da ka gnas pa</term>
                             <term xml:lang="bo" type="attestedSource" n="1" status="verified">འོད་མའི་ཚལ་བྱ་ཀ་ལན་ད་ཀ་གནས་པ།</term>
                             <note type="definition">
-                                <p>Kalandaka­nivāpa means “feeding place of the kalandakas,” and
-                                    kalandaka may refer either to a flying squirrel or to a bird, as explained by differing sources. 
-                                    The Kalandakanivāpa was a place within the bamboo grove near Rājagṛha where the Buddha regularly stayed and gave teachings. It was situated on land
-                                    donated by King Śreṇya Bimbisāra of Magadha and, as such, was the first of several landholdings donated to the
-                                    Buddhist community during the time of the Buddha. </p>
+                                <p>Kalandaka­nivāpa means “feeding place of the kalandakas,” and kalandaka may refer either to a flying squirrel or to
+                                    a bird, as explained by differing sources. The Kalandakanivāpa was a place within the bamboo grove near Rājagṛha
+                                    where the Buddha regularly stayed and gave teachings. It was situated on land donated by King Śreṇya Bimbisāra of
+                                    Magadha and, as such, was the first of several landholdings donated to the Buddhist community during the time of
+                                    the Buddha. </p>
                             </note>
                         </gloss>
                     </item>
