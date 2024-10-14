@@ -35,10 +35,9 @@
                 <editor role="finalReviewer" xml:id="UT22084-061-018-337">Ryan Damron</editor>
             </titleStmt>
             <editionStmt>
-                <edition>v 1.0.16 <date>2024</date>
+                <edition>v 1.0.17 <date>2024</date>
                 </edition>
             </editionStmt>
-
             <publicationStmt>
                 <publisher>
                     <name>84000: Translating the Words of the Buddha</name> is a global
@@ -218,12 +217,15 @@
                 <change who="#andre" when="2024-06-27T17:20:07.854Z" type="text-version" status="1.0.16" xml:id="UT22084-061-018-390">
                     <desc>Approved rendering "Jetavana, Anāthapiṇḍada’s Park" applied</desc>
                 </change>
+                <change who="#celso" when="2024-10-14T21:20:15.088Z" type="text-version" status="1.0.17" xml:id="UT22084-061-018-393">
+                    <desc>Activated pending links</desc>
+                </change>
             </revisionDesc>
         </fileDesc>
     </teiHeader>
     <text>
         <front>
-            <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="summary">
+            <div type="summary" xml:id="UT22084-061-018-summary">
                 <head type="summary" tid="1">Summary</head>
                 <milestone unit="chunk" xml:id="UT22084-061-018-1"/>
                 <p tid="2">In <title xml:lang="en">Maitreya’s Setting Out</title>, the Buddha
@@ -234,8 +236,8 @@
                     narratives are interspersed with a series of Dharma teachings emphasizing the
                     unborn nature of phenomena and the need to develop the view that transcends all
                     reference points.</p>
-            </tei:div>
-            <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="acknowledgment">
+            </div>
+            <div type="acknowledgment" xml:id="UT22084-061-018-acknowledgment">
                 <head type="acknowledgment" tid="3">Acknowledgements</head>
                 <milestone unit="chunk" xml:id="UT22084-061-018-2"/>
                 <p tid="4">Translated by the Dharmachakra Translation Committee under the guidance
@@ -245,10 +247,10 @@
                     from Pullahari Monastery, Khenpo Tsöndrü Sangpo from Ka-Nying Shedrub Ling
                     Monastery, and James Gentry assisted by resolving several difficult
                     passages.</p>
-            </tei:div>
-            <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="introduction">
+            </div>
+            <div type="introduction" xml:id="UT22084-061-018-introduction">
                 <head type="introduction" tid="5">Introduction</head>
-                <tei:div type="section" xml:id="UT22084-061-018-introduction-1">
+                <div type="section" xml:id="UT22084-061-018-introduction-1">
                     <milestone unit="chunk" xml:id="UT22084-061-018-3"/>
                     <p tid="6">
                         <title xml:lang="en">Maitreya’s Setting Out</title> narrates the
@@ -327,12 +329,10 @@
                         reborn close to him at that time. Other sūtras in which previous lives of
                         the bodhisattva Maitreya are recounted include <title xml:lang="en">The
                             White Lotus of the Good Dharma</title>, <title xml:lang="en">The Sublime
-                            Golden Light</title> (Toh 555,<note place="end" xml:id="UT22084-061-018-325">Roberts, Peter Alan. trans., <title xml:lang="en">
-                                <ref target="http://read.84000.co/translation/toh555.html">The Sūtra
-                                    of the Sublime Golden Light (1)</ref>
-                            </title>, Toh 555 (84000:
-                            Translating the Words of the Buddha, 2023).</note> Toh 556, Toh 557)<ref rend="pending" target="https://read.84000.co/translation/toh556.html"/>
-                        <ref rend="pending" target="https://read.84000.co/translation/toh557.html"/>, and <title xml:lang="en">The Question of Maitreya</title> (Toh 85).<note place="end" xml:id="UT22084-061-018-13"> Interestingly, the bodhisattva
+                                Golden Light</title> (Toh 555, Toh 556, Toh 557),<note place="end" xml:id="UT22084-061-018-325">Roberts, Peter Alan. trans., 
+                                    <title xml:lang="en">The Sūtra
+                                        of the Sublime Golden Light (1–3)</title>, three versions found in <ref target="https://read.84000.co/translation/toh555.html">Toh 555</ref>, <ref target="https://read.84000.co/translation/toh556.html">Toh 556</ref>, and <ref target="https://read.84000.co/translation/toh557.html">Toh 557</ref> (84000:
+                                    Translating the Words of the Buddha, 2023–24).</note> and <title xml:lang="en">The Question of Maitreya</title> (Toh 85).<note place="end" xml:id="UT22084-061-018-13"> Interestingly, the bodhisattva
                             qualities listed in <title xml:lang="en">Maitreya’s Setting Out</title>
                             are comparable to those found in <title xml:lang="en">
                                 <ref target="https://read.84000.co/translation/toh85.html">The
@@ -384,26 +384,24 @@
                     <p tid="11">As this sūtra today appears to exist only in Tibetan, we have
                         produced our translation exclusively from the versions contained in the
                         Tibetan Kangyur, basing ourselves on the Degé block print with reference to
-                        the Comparative Edition (<tei:foreign xml:lang="Bo-Ltn">dpe bsdur
-                            ma</tei:foreign>). The colophon to the Tibetan translation states that
-                        it was prepared by Yeshé Dé in collaboration with the Indian paṇḍitas
-                        Prajñāvarman, Jinamitra, and Surendrabodhi. We can therefore date the
-                        Tibetan translation to the late eighth to early ninth centuries, a dating
-                        that is also attested by the text’s inclusion in the early ninth-century
-                        Denkarma (<tei:foreign xml:lang="Bo-Ltn">ldan dkar ma</tei:foreign>)
-                            catalogue.<note place="end" xml:id="UT22084-061-018-19"> The Denkarma
-                            catalogue is dated to c. 812 <hi rend="small-caps">ce</hi>. Denkarma,
-                            298.a.5. See also Herrmann-Pfandt 2008, pp. 76–77, no. 140.</note>
+                        the Comparative Edition (<foreign xml:lang="Bo-Ltn">dpe bsdur ma</foreign>).
+                        The colophon to the Tibetan translation states that it was prepared by Yeshé
+                        Dé in collaboration with the Indian paṇḍitas Prajñāvarman, Jinamitra, and
+                        Surendrabodhi. We can therefore date the Tibetan translation to the late
+                        eighth to early ninth centuries, a dating that is also attested by the
+                        text’s inclusion in the early ninth-century Denkarma (<foreign xml:lang="Bo-Ltn">ldan dkar ma</foreign>) catalogue.<note place="end" xml:id="UT22084-061-018-19"> The Denkarma catalogue is dated to c. 812
+                                <hi rend="small-caps">ce</hi>. Denkarma, 298.a.5. See also
+                            Herrmann-Pfandt 2008, pp. 76–77, no. 140.</note>
                     </p>
-                </tei:div>
-            </tei:div>
+                </div>
+            </div>
         </front>
         <body>
-            <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="translation">
+            <div type="translation" xml:id="UT22084-061-018-translation">
                 <head type="translation"> The Translation </head>
                 <head type="titleHon" tid="13">The Noble Great Vehicle Sūtra</head>
                 <head type="titleMain" tid="14">Maitreya’s Setting Out</head>
-                <tei:div type="section" xml:id="UT22084-061-018-section-1">
+                <div type="section" xml:id="UT22084-061-018-section-1">
                     <milestone unit="chunk" xml:id="UT22084-061-018-22"/>
                     <p tid="18">
                         <ref cRef="F.274.b" type="folio" xml:id="UT22084-061-018-259"/>
@@ -1389,9 +1387,9 @@
                         <l>Are not for me.<note place="end" xml:id="UT22084-061-018-123"> This is a
                                 tentative translation based on the general context of the verse. We
                                 have not been able to make sense of the Tibetan, which reads
-                                    <tei:foreign xml:lang="Bo-Ltn" type="quote">yon tan mnga’ ba
-                                    grags chen ’dra ba ni / lha mi gzhan la bdag gis dbang ma
-                                    mchis</tei:foreign>.</note>
+                                    <foreign xml:lang="Bo-Ltn" type="quote">yon tan mnga’ ba grags
+                                    chen ’dra ba ni / lha mi gzhan la bdag gis dbang ma
+                                    mchis</foreign>.</note>
                         </l>
                     </lg>
                     <milestone unit="chunk" xml:id="UT22084-061-018-124"/>
@@ -1826,23 +1824,23 @@
                     <milestone unit="chunk" xml:id="UT22084-061-018-173"/>
                     <trailer tid="156">This concludes the noble Great Vehicle sūtra “Maitreya’s
                         Setting Out.”</trailer>
-                </tei:div>
-                <tei:div type="colophon" xml:id="UT22084-061-018-colophon">
+                </div>
+                <div type="colophon" xml:id="UT22084-061-018-colophon">
                     <head type="colophon" tid="157">Colophon</head>
                     <milestone unit="chunk" xml:id="UT22084-061-018-174"/>
                     <p tid="158">This was translated, edited, and finalized by the Indian preceptors
                         Prajñāvarman, Jinamitra, and Surendrabodhi, and the translator-editor Bandé
                         Yeshé Dé and others.</p>
-                </tei:div>
-            </tei:div>
+                </div>
+            </div>
         </body>
         <back>
-            <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="notes">
+            <div type="notes" xml:id="UT22084-061-018-notes">
                 <head type="notes" tid="159">Notes</head>
-            </tei:div>
-            <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="listBibl">
+            </div>
+            <div type="listBibl" xml:id="UT22084-061-018-listBibl">
                 <head type="listBibl" tid="161">Bibliography</head>
-                <tei:div type="section" xml:id="UT22084-061-018-listBibl-1">
+                <div type="section" xml:id="UT22084-061-018-listBibl-1">
                     <bibl xml:id="UT22084-061-018-175">
                         <title xml:lang="Bo-Ltn">’phags pa byams pa
                             ’jug pa zhes bya ba theg pa chen po’i mdo </title>(<title xml:lang="Sa-Ltn">Ārya­maitreya­prasthāna­nāma­mahāyāna­sūtra</title>).
@@ -1928,6 +1926,16 @@
                                 the Sublime Golden Light (1)</ref>
                         </title> (<title xml:lang="Sa-Ltn">Suvarṇa­prabhāsottamasūtra</title>, Toh
                         555). 84000: Translating the Words of the Buddha.</bibl>
+                    <bibl xml:id="UT22084-061-018-391">———, trans. (2024a) <title xml:lang="en">
+                        <ref target="https://read.84000.co/translation/toh556.html">The Sūtra of
+                            the Sublime Golden Light (2)</ref>
+                    </title> (<title xml:lang="Sa-Ltn">Suvarṇa­prabhāsottamasūtra</title>, Toh
+                        556). 84000: Translating the Words of the Buddha.</bibl>
+                    <bibl xml:id="UT22084-061-018-392">———, trans. (2024b) <title xml:lang="en">
+                        <ref target="https://read.84000.co/translation/toh557.html">The Sūtra of
+                            the Sublime Golden Light (3)</ref>
+                    </title> (<title xml:lang="Sa-Ltn">Suvarṇa­prabhāsottamasūtra</title>, Toh
+                        557). 84000: Translating the Words of the Buddha.</bibl>
                     <bibl xml:id="UT22084-061-018-186">Sponberg, Alan, and Helen Hardacre, eds.
                             <title xml:lang="en">Maitreya, the Future Buddha</title>. New York:
                         Cambridge University Press, 1988.</bibl>
@@ -1936,9 +1944,9 @@
                                 of Vimalakīrti</ref>
                         </title> (<title xml:lang="Sa-Ltn">Vimala­kīrti­nirdeśa</title>, Toh 176).
                         84000: Translating the Words of the Buddha, 2017.</bibl>
-                </tei:div>
-            </tei:div>
-            <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="glossary">
+                </div>
+            </div>
+            <div type="glossary" xml:id="UT22084-061-018-glossary">
                 <list type="glossary">
                     <item>
                         <gloss type="term" xml:id="UT22084-061-018-313">
@@ -1991,14 +1999,14 @@
                             <term xml:lang="bo" type="attestedSource" n="1">དེ་བཞིན་གཤེགས་པ།</term>
                             <note type="definition" rend="override">
                                 <p>A frequently used synonym for buddhas. According to different
-                                    explanations, it can be read as <tei:foreign xml:lang="Sa-Ltn">tathā-gata</tei:foreign>, literally meaning “one who has
-                                    thus gone,” or as <tei:foreign xml:lang="Sa-Ltn">tathā-agata</tei:foreign>, “one who has thus come.”
-                                        <tei:foreign xml:lang="Sa-Ltn">Gata</tei:foreign>, though
-                                    literally meaning “gone,” is a past passive participle used to
-                                    describe a state or condition of existence. <tei:foreign xml:lang="Sa-Ltn">Tatha­(tā)</tei:foreign>, often rendered
-                                    as “suchness” or “thusness,” is the quality or condition of
-                                    things as they really are, which cannot be conveyed in
-                                    conceptual, dualistic terms. Therefore, this epithet is
+                                    explanations, it can be read as <foreign xml:lang="Sa-Ltn">tathā-gata</foreign>, literally meaning “one who has thus
+                                    gone,” or as <foreign xml:lang="Sa-Ltn">tathā-agata</foreign>,
+                                    “one who has thus come.” <foreign xml:lang="Sa-Ltn">Gata</foreign>, though literally meaning “gone,” is a past
+                                    passive participle used to describe a state or condition of
+                                    existence. <foreign xml:lang="Sa-Ltn">Tatha­(tā)</foreign>,
+                                    often rendered as “suchness” or “thusness,” is the quality or
+                                    condition of things as they really are, which cannot be conveyed
+                                    in conceptual, dualistic terms. Therefore, this epithet is
                                     interpreted in different ways, but in general it implies one who
                                     has departed in the wake of the buddhas of the past, or one who
                                     has manifested the supreme enlightenment dependent on the
@@ -2029,10 +2037,10 @@
                             <note type="definition" rend="override">
                                 <p>One of the standard epithets of the buddhas. According to
                                     Buddhaghosa, the term means that the way the Buddha went (Skt.
-                                        <tei:foreign xml:lang="Sa-Ltn">gata</tei:foreign>) is good
-                                    (Skt. <tei:foreign xml:lang="Sa-Ltn">su</tei:foreign>) and where
-                                    he went (Skt. <tei:foreign xml:lang="Sa-Ltn">gata</tei:foreign>)
-                                    is good (Skt. <tei:foreign xml:lang="Sa-Ltn">su</tei:foreign>).</p>
+                                        <foreign xml:lang="Sa-Ltn">gata</foreign>) is good (Skt.
+                                        <foreign xml:lang="Sa-Ltn">su</foreign>) and where he went
+                                    (Skt. <foreign xml:lang="Sa-Ltn">gata</foreign>) is good (Skt.
+                                        <foreign xml:lang="Sa-Ltn">su</foreign>).</p>
                             </note>
                         </gloss>
                     </item>
@@ -2057,7 +2065,7 @@
                             <term xml:lang="bo" type="attestedSource" n="1">དགྲ་བཅོམ་པ།</term>
                             <note type="definition">
                                 <p>According to Buddhist tradition, one who has conquered the
-                                    enemies, i.e. mental afflictions or emotions, (<tei:foreign xml:lang="Sa-Ltn">kleśa-ari-hata</tei:foreign>) and reached
+                                    enemies, i.e. mental afflictions or emotions, (<foreign xml:lang="Sa-Ltn">kleśa-ari-hata</foreign>) and reached
                                     liberation from the cycle of rebirth and suffering. It’s the
                                     fourth and highest of the four fruits attainable by hearers.
                                     Also used as an epithet of the Buddha.</p>
@@ -2265,20 +2273,17 @@
                             <term xml:lang="bo" type="attestedSource" n="1">ལྟུང་བར་འགྱུར་བའི་ཆོས་བཞི།</term>
                             <note type="definition">
                                 <p>The four root downfalls are roughly synonymous with the four
-                                    transgressions (<tei:foreign xml:lang="Bo-Ltn" type="term">pham
-                                        pa</tei:foreign>, <tei:foreign xml:lang="Sa-Ltn" type="term">pārājika</tei:foreign>) that require expulsion from the
+                                    transgressions (<foreign xml:lang="Bo-Ltn" type="term">pham
+                                        pa</foreign>, <foreign xml:lang="Sa-Ltn" type="term">pārājika</foreign>) that require expulsion from the
                                     monastic community. These four transgressions are applicable to
                                     the maintenance of monastic and lay vows alike, though their
                                     interpretations might differ depending on context. The four
-                                    transgressions are (1) violating the vow of chastity
-                                        (<tei:foreign xml:lang="Bo-Ltn" type="term">mi tshangs pa
-                                        spyod pa</tei:foreign>, <tei:foreign xml:lang="Sa-Ltn" type="term">abrahmacarya</tei:foreign>); (2) stealing/taking
-                                    what is not given (<tei:foreign xml:lang="Bo-Ltn" type="term">mi
-                                        byin par len pa</tei:foreign>, <tei:foreign xml:lang="Sa-Ltn" type="term">adattadāna</tei:foreign>); (3)
-                                    taking a life (<tei:foreign xml:lang="Bo-Ltn" type="term">srog
-                                        gcod pa</tei:foreign>, <tei:foreign xml:lang="Sa-Ltn" type="term">prāṇātipāta</tei:foreign>); and (4) lying
-                                        (<tei:foreign xml:lang="Bo-Ltn" type="term">rdzun du smra
-                                        ba</tei:foreign>, <tei:foreign xml:lang="Sa-Ltn" type="term">mṛṣāvāda</tei:foreign>).</p>
+                                    transgressions are (1) violating the vow of chastity (<foreign xml:lang="Bo-Ltn" type="term">mi tshangs pa spyod
+                                        pa</foreign>, <foreign xml:lang="Sa-Ltn" type="term">abrahmacarya</foreign>); (2) stealing/taking what is not
+                                    given (<foreign xml:lang="Bo-Ltn" type="term">mi byin par len
+                                        pa</foreign>, <foreign xml:lang="Sa-Ltn" type="term">adattadāna</foreign>); (3) taking a life (<foreign xml:lang="Bo-Ltn" type="term">srog gcod pa</foreign>,
+                                        <foreign xml:lang="Sa-Ltn" type="term">prāṇātipāta</foreign>); and (4) lying (<foreign xml:lang="Bo-Ltn" type="term">rdzun du smra ba</foreign>,
+                                        <foreign xml:lang="Sa-Ltn" type="term">mṛṣāvāda</foreign>).</p>
                             </note>
                         </gloss>
                     </item>
@@ -2561,13 +2566,13 @@
                                     mindfulness never falters, (10) he never abandons his
                                     concentration, (11) his insight never decreases, (12) his
                                     liberation never fails, (13) all his physical actions are
-                                    preceded and followed by wisdom (<tei:foreign xml:lang="Sa-Ltn" type="term">jñāna</tei:foreign>), (14) all his verbal
-                                    actions are preceded and followed by wisdom, (15) all his mental
-                                    actions are preceded and followed by wisdom, (16) his wisdom and
-                                    vision perceive the past without any attachment or hindrance,
-                                    (17) his wisdom and vision perceive the future without any
-                                    attachment or hindrance, and (18) his wisdom and vision perceive
-                                    the present without any attachment or hindrance.</p>
+                                    preceded and followed by wisdom (<foreign xml:lang="Sa-Ltn" type="term">jñāna</foreign>), (14) all his verbal actions
+                                    are preceded and followed by wisdom, (15) all his mental actions
+                                    are preceded and followed by wisdom, (16) his wisdom and vision
+                                    perceive the past without any attachment or hindrance, (17) his
+                                    wisdom and vision perceive the future without any attachment or
+                                    hindrance, and (18) his wisdom and vision perceive the present
+                                    without any attachment or hindrance.</p>
                             </note>
                         </gloss>
                     </item>
@@ -2633,7 +2638,7 @@
                                     occupies an important place in Buddhism as one of two deities
                                     (the other being Śakra) that are said to have first exhorted
                                     Śākyamuni to teach the Dharma. Among his epithets is “Lord of
-                                    Sahā World” (<tei:foreign xml:lang="Sa-Ltn">Sahāṃpati</tei:foreign>).</p>
+                                    Sahā World” (<foreign xml:lang="Sa-Ltn">Sahāṃpati</foreign>).</p>
                             </note>
                         </gloss>
                     </item>
@@ -2702,7 +2707,7 @@
                                     author of the <title xml:lang="Sa-Ltn">
                                         <ref rend="pending" target="https://read.84000.co/translation/toh4233.html">Nyāya­bindu­piṇḍārtha</ref>
                                     </title> (Toh 4233),<ref rend="pending" target="https://read.84000.co/translation/toh4233.html"/>
-                                    which is contained in the Tibetan Tengyur (<tei:foreign xml:lang="Bo-Ltn">bstan ’gyur</tei:foreign>) collection.</p>
+                                    which is contained in the Tibetan Tengyur (<foreign xml:lang="Bo-Ltn">bstan ’gyur</foreign>) collection.</p>
                             </note>
                         </gloss>
                     </item>
@@ -2779,7 +2784,7 @@
                                     the Tibetan king, he assisted in the translation of numerous
                                     canonical scriptures. He is also the author of a few
                                     philosophical commentaries contained in the Tibetan Tengyur
-                                        (<tei:foreign xml:lang="Bo-Ltn">bstan ’gyur</tei:foreign>)
+                                        (<foreign xml:lang="Bo-Ltn">bstan ’gyur</foreign>)
                                     collection.</p>
                             </note>
                         </gloss>
@@ -2844,7 +2849,7 @@
                                     that is called “lord of the devas” dwells on the summit of Mount
                                     Sumeru and wields the thunderbolt. The Tibetan translation brgya
                                     byin (meaning “one hundred sacrifices”) is based on an etymology
-                                    that śakra is an abbreviation of <tei:foreign xml:lang="Sa-Ltn">śata-kratu</tei:foreign>, one who has performed a hundred
+                                    that śakra is an abbreviation of <foreign xml:lang="Sa-Ltn">śata-kratu</foreign>, one who has performed a hundred
                                     sacrifices. Each world with a central Sumeru has a Śakra. </p>
                             </note>
                         </gloss>
@@ -2971,8 +2976,10 @@
                     <item>
                         <gloss xml:id="UT22084-061-018-389" type="place" mode="match">
                             <term type="translationMain">Jeta’s Grove, Anāthapiṇḍada’s Park</term>
-                            <term xml:lang="Sa-Ltn" type="attestedOther" status="verified">jetavanam anāthapiṇḍadasyārāmaḥ</term>
-                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">rgyal bu rgyal byed kyi tshal mgon med zas sbyin gyi kun dga’ ra ba</term>
+                            <term xml:lang="Sa-Ltn" type="attestedOther" status="verified">jetavanam
+                                anāthapiṇḍadasyārāmaḥ</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">rgyal bu rgyal byed kyi tshal mgon med zas sbyin gyi kun dga’ ra
+                                ba</term>
                             <term xml:lang="bo" type="attestedSource" n="1" status="verified">རྒྱལ་བུ་རྒྱལ་བྱེད་ཀྱི་ཚལ་མགོན་མེད་ཟས་སྦྱིན་གྱི་ཀུན་དགའ་ར་བ།</term>
                         </gloss>
                     </item>
@@ -2999,14 +3006,14 @@
                                     sixth–fifth centuries <hi rend="small-caps">bce</hi> ruled by
                                     one of the Buddha’s royal patrons, King Prasenajit. It was the
                                     setting for many sūtras as the Buddha spent many rains retreats
-                                    outside the city, in Jeta’s Grove, Anāthapiṇḍada’s Park. It has been identified with
-                                    the present-day Sahet Mahet in Uttar Pradesh on the banks of the
-                                    river Rapti.</p>
+                                    outside the city, in Jeta’s Grove, Anāthapiṇḍada’s Park. It has
+                                    been identified with the present-day Sahet Mahet in Uttar
+                                    Pradesh on the banks of the river Rapti.</p>
                             </note>
                         </gloss>
                     </item>
                 </list>
-            </tei:div>
+            </div>
         </back>
     </text>
 </TEI>
