@@ -35,7 +35,7 @@
                     Herlintje, Ocean Widjaja, Asia Widjaja, Star Widjaja and Gold Widjaja.</sponsor>
             </titleStmt>
             <editionStmt>
-                <edition>v 1.0.19 <date>2024</date>
+                <edition>v 1.0.20 <date>2024</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -183,6 +183,9 @@
                 <change who="#andre" when="2024-04-10T14:07:33.927Z" type="text-version" status="1.0.19" xml:id="UT22084-090-005-1014">
                     <desc>Spelling brahmaṇa corrected to brāhmaṇa</desc>
                 </change>
+                <change who="#martina-cotter" when="2024-10-14T13:32:33.908Z" type="text-version" status="1.0.20" xml:id="UT22084-090-005-1015">
+                    <desc>updated Dharmacakra to Dharmachakra with respect to the translation group.</desc>
+                </change>
             </revisionDesc>
         </fileDesc>
     </teiHeader>
@@ -191,7 +194,7 @@
                     Outline to the text is quite complex, it is recommended that you paste the outlined contents from the DOCX here as a comment for
                     markup's reference. The actual table of contents will be generated in the Reading Room by the parser.-->
         <front>
-            <div type="summary">
+            <div type="summary" xml:id="UT22084-090-005-summary">
                 <head type="summary" tid="1">Summary</head>
                 <milestone unit="chunk" xml:id="UT22084-090-005-1"/>
                 <p tid="2">
@@ -210,7 +213,7 @@
                     merit even extends in one passage to an increase of mindfulness and liberation
                     from saṃsāra.</p>
             </div>
-            <div type="acknowledgment">
+            <div type="acknowledgment" xml:id="UT22084-090-005-acknowledgment">
                 <head type="acknowledgment" tid="3">Acknowledgements</head>
                 <milestone unit="chunk" xml:id="UT22084-090-005-2"/>
                 <p tid="4">Translated by the Dharmachakra Translation Committee under the guidance
@@ -221,11 +224,11 @@
                 <p tid="5">The translation was completed under the patronage and supervision of
                     84000: Translating the Words of the Buddha.</p>
                 <milestone unit="chunk" xml:id="UT22084-090-005-1011"/>
-                <p type="sponsor" tid="309">The translation of this text has been made possible through
-                    the generous sponsorship of DJKR, Herlintje, Hadi Widjaja, Lina Herlintje, Ocean
-                    Widjaja, Asia Widjaja, Star Widjaja and Gold Widjaja.</p>
+                <p type="sponsor" tid="309">The translation of this text has been made possible
+                    through the generous sponsorship of DJKR, Herlintje, Hadi Widjaja, Lina
+                    Herlintje, Ocean Widjaja, Asia Widjaja, Star Widjaja and Gold Widjaja.</p>
             </div>
-            <div type="introduction">
+            <div type="introduction" xml:id="UT22084-090-005-introduction">
                 <head type="introduction" tid="8">Introduction</head>
                 <div type="section" xml:id="UT22084-090-005-introduction-1">
                     <milestone unit="chunk" xml:id="UT22084-090-005-6"/>
@@ -234,7 +237,7 @@
                             Amulet</title> is the third scripture in a series of five works that are
                         widely popular in the Buddhist world for their power to bring about
                         practical and liberative benefit. In addition to <title xml:lang="en">The
-                            Great Amulet</title>, the other four texts are <title xml:lang="en">Destroyer of the Great Trichiliocosm</title> (<title xml:lang="Sa-Ltn">Mahā­sāhasrapramardanī­sūtra</title>, Toh 558),<note place="end" xml:id="UT22084-090-005-7"> Dharmacakra Translation Committee, trans.,
+                            Great Amulet</title>, the other four texts are <title xml:lang="en">Destroyer of the Great Trichiliocosm</title> (<title xml:lang="Sa-Ltn">Mahā­sāhasrapramardanī­sūtra</title>, Toh 558),<note place="end" xml:id="UT22084-090-005-7"> Dharmachakra Translation Committee, trans.,
                                 <title xml:lang="en">
                                 <ref target="http://read.84000.co/translation/toh558.html">Destroyer
                                     of the Great Trichiliocosm</ref>
@@ -252,7 +255,7 @@
                                     Grove </ref>
                             </title>, Toh 562 (84000: Translating the Words of
                             the  Buddha, 2023).</note> and <title xml:lang="en">Great Upholder of
-                            the Secret Mantra</title> (<title xml:lang="Sa-Ltn">Mahā­mantrānusāriṇī­sūtra</title>, Toh 563).<note place="end" xml:id="UT22084-090-005-8"> Dharmacakra Translation Committee, trans.,
+                            the Secret Mantra</title> (<title xml:lang="Sa-Ltn">Mahā­mantrānusāriṇī­sūtra</title>, Toh 563).<note place="end" xml:id="UT22084-090-005-8"> Dharmachakra Translation Committee, trans.,
                                 <title xml:lang="en">
                                 <ref target="http://read.84000.co/translation/toh563.html">Great
                                     Upholder of the Secret Mantra</ref>
@@ -459,7 +462,7 @@
             </div>
         </front>
         <body>
-            <div type="translation">
+            <div type="translation" xml:id="UT22084-090-005-translation">
                 <head type="translation"> The Translation </head>
                 <head type="titleHon" tid="21">The Noble Queen of Incantations</head>
                 <head type="titleMain" tid="22">The Great Amulet</head>
@@ -1097,8 +1100,9 @@
                             <foreign xml:lang="Sa-Ltn">svāhā</foreign>!</l>
                         <l>To he who is blessed by the essence of all thus-gone ones, <foreign xml:lang="Sa-Ltn">svāhā</foreign>!</l>
                         <l>To he who has fulfilled the commitments of all thus-gone ones,<note place="end" xml:id="UT22084-090-005-140"> We follow C, J, K, and
-                                    Y<!--KY--> in reading <foreign xml:lang="Bo-Ltn" type="quote">de bzhin gshegs pa thams cad
-                                    kyi</foreign>. The Degé reads <foreign xml:lang="Bo-Ltn" type="quote">de bzhin gshegs pa thams cad kyis</foreign>.</note>
+                                Y<!--KY--> in reading <foreign xml:lang="Bo-Ltn" type="quote">de
+                                    bzhin gshegs pa thams cad kyi</foreign>. The Degé reads <foreign xml:lang="Bo-Ltn" type="quote">de bzhin gshegs pa thams cad
+                                    kyis</foreign>.</note>
                             <foreign xml:lang="Sa-Ltn">svāhā</foreign>!</l>
                         <l>To he who is like Indra and is beheld by Indra, <foreign xml:lang="Sa-Ltn">svāhā</foreign>!<note place="end" xml:id="UT22084-090-005-141"> This translation is tentative. Here we
                                 interpret <foreign xml:lang="Sa-Ltn" type="quote">indravat</foreign>
@@ -1152,9 +1156,8 @@
                         <l>To the piśācas, <foreign xml:lang="Sa-Ltn">svāhā</foreign>! </l>
                         <l>To the apasmāras, <foreign xml:lang="Sa-Ltn">svāhā</foreign>! </l>
                         <l>To the ostārakas,<note place="end" xml:id="UT22084-090-005-144"> We
-                                follow H, K, Y<!--KY-->, N, and S in reading
-                                    <foreign xml:lang="Bo-Ltn" type="term">gnon po</foreign>. Degé
-                                reads <foreign xml:lang="Bo-Ltn" type="quote">gnod byed</foreign>.
+                                follow H, K, Y<!--KY-->, N, and S in reading <foreign xml:lang="Bo-Ltn" type="term">gnon po</foreign>. Degé reads
+                                    <foreign xml:lang="Bo-Ltn" type="quote">gnod byed</foreign>.
                                 This line is absent in the Sanskrit.</note>
                             <foreign xml:lang="Sa-Ltn">svāhā</foreign>!</l>
                         <l>To the kumbhāṇḍas, <foreign xml:lang="Sa-Ltn">svāhā</foreign>!</l>
@@ -1335,7 +1338,7 @@
                     <p tid="118">“Distressed, and with no recourse or protection, he wailed loudly.
                         Then, great brahmin,<note place="end" xml:id="UT22084-090-005-170"> In the
                             Sanskrit, the vocative address “great brahmin” is absent, and the term
-                            <foreign xml:lang="Sa-Ltn" type="term">brāhmaṇa</foreign> refers
+                                <foreign xml:lang="Sa-Ltn" type="term">brāhmaṇa</foreign> refers
                             instead to the local layman who intervenes to help the monk. </note> a
                         man with lay vows who lived in the area heard his wailing. He approached the
                         monk, wrote down the queen of incantations, <distinct>the great
@@ -2537,11 +2540,12 @@
                                 ākāśaviśuddhe sarvapāpavigate ākāśe gaganatale ākāśavicāriṇi
                                 jvalitaśikhare maṇimauktikakhacitamaulidhare sukeśe</foreign>
                             <note place="end" xml:id="UT22084-090-005-342"> We follow the Sanskrit, H,
-                                K, Y<!--KY-->, N, and S in omitting <foreign xml:lang="Bo-Ltn" type="quote">me ke she su sha</foreign>
-                                attested in the Degé.</note>
+                                K, Y<!--KY-->, N, and S in omitting <foreign xml:lang="Bo-Ltn" type="quote">me ke she su sha</foreign> attested in the
+                                Degé.</note>
                             <foreign xml:lang="Sa-Ltn">suvaktre sunetre suvarṇe suvarṇagauri atīte
                                 anutpanne anāgate pratyutpanne</foreign>
-                            <note place="end" xml:id="UT22084-090-005-343"> We follow the Sanskrit, K, Y<!--KY-->, N, and S in omitting <foreign xml:lang="Sa-Ltn" type="term">nama</foreign> following <foreign xml:lang="Sa-Ltn" type="term">pratyutpanne</foreign>. </note>
+                            <note place="end" xml:id="UT22084-090-005-343"> We follow the Sanskrit, K, Y<!--KY-->,
+                                N, and S in omitting <foreign xml:lang="Sa-Ltn" type="term">nama</foreign> following <foreign xml:lang="Sa-Ltn" type="term">pratyutpanne</foreign>. </note>
                             <foreign xml:lang="Sa-Ltn">namaḥ sarveṣāṃ buddhānāṃ jvalitatejaṣāṃ
                                 buddhe subuddhe bhagavati surakṣaṇi sukṣeme suprabhe sudame sudānte
                                 vare varte bhagavati bhadravati bhadre subhadre vimale jayabhadre
@@ -2762,7 +2766,7 @@
                                 corresponds closely to the title of one of the Pañcarakṣā texts,
                                     <title xml:lang="en">The Sūtra “Destroyer of the Great
                                     Trichiliocosm”</title> (Toh 558, <title xml:lang="Sa-Ltn">Mahāsāhasrapramardanīnāma­sūtra</title>). This is perhaps meant
-                                to indicate which oblation rite is to be performed. See Dharmacakra
+                                to indicate which oblation rite is to be performed. See Dharmachakra
                                 Translation Committee, trans., <title xml:lang="en">
                                     <ref target="http://read.84000.co/translation/toh558.html">Destroyer of the Great Trichiliocosm</ref>
                                 </title>, Toh 558
@@ -2892,7 +2896,7 @@
             </div>
         </body>
         <back>
-            <div type="notes">
+            <div type="notes" xml:id="UT22084-090-005-notes">
                 <head type="notes" tid="304">Notes</head>
                 <list type="abbreviations">
                     <head tid="305">Abbreviations</head>
@@ -2918,7 +2922,8 @@
                     </item>
                     <item xml:id="UT22084-090-005-391">
                         <abbr>Y<!--KY--></abbr>
-                        <expan>Peking Yongle Kangyur</expan>
+                        <expan>Peking Yongle
+                            Kangyur</expan>
                     </item>
                     <item xml:id="UT22084-090-005-392">
                         <abbr>N</abbr>
@@ -2932,7 +2937,7 @@
                     </item>
                 </list>
             </div>
-            <div type="listBibl">
+            <div type="listBibl" xml:id="UT22084-090-005-listBibl">
                 <head type="listBibl" tid="306">Bibliography</head>
                 <div type="section" xml:id="UT22084-090-005-listBibl-1">
                     <head type="section" tid="307">Primary Sources</head>
@@ -3020,7 +3025,7 @@
                         89–123.</bibl>
                 </div>
             </div>
-            <div type="glossary">
+            <div type="glossary" xml:id="UT22084-090-005-glossary">
                 <list type="glossary">
                     <item>
                         <gloss type="term" xml:id="UT22084-090-005-701">
