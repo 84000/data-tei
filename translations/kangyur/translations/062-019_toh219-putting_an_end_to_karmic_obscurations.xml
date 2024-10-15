@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../../../schema/current/translation.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<tei:TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -31,7 +31,7 @@
                 <editor role="copyEditor" xml:id="UT22084-062-019-433">Tracy Davis</editor>
             </titleStmt>
             <editionStmt>
-                <edition>v 1.0.3 <date>2024</date>
+                <edition>v 1.0.4 <date>2024</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -163,19 +163,22 @@
                 <change who="#andre" when="2024-09-26T15:04:24.406Z" type="text-version" status="1.0.3" xml:id="UT22084-062-019-439">
                     <desc>Glossary instance corrected</desc>
                 </change>
+                <change who="#martina-cotter" when="2024-10-15T17:01:51.648Z" type="text-version" status="1.0.4" xml:id="UT22084-062-019-442">
+                    <desc>activated pending links</desc>
+                </change>
             </revisionDesc>
         </fileDesc>
     </teiHeader>
     <text>
         <front>
-            <tei:div type="summary" xml:id="UT22084-062-019-summary">
+            <div type="summary" xml:id="UT22084-062-019-summary">
                 <head type="summary" tid="1">Summary</head>
                 <milestone unit="chunk" xml:id="UT22084-062-019-69"/>
                 <p tid="2">The Buddha teaches how to become free of karmic obscurations and accomplish aspirations through a recitation that should be
                     done three times during the day and three times at night. In that recitation one confesses one’s bad actions, rejoices in the good
                     actions of others, and requests the buddhas to teach the Dharma and to not pass into nirvāṇa.</p>
-            </tei:div>
-            <tei:div type="acknowledgment" xml:id="UT22084-062-019-acknowledgment">
+            </div>
+            <div type="acknowledgment" xml:id="UT22084-062-019-acknowledgment">
                 <head type="acknowledgment" tid="3">Acknowledgements</head>
                 <milestone unit="chunk" xml:id="UT22084-062-019-70"/>
                 <p tid="4">This text was translated by Peter Alan Roberts, who translated the text from Tibetan into English and wrote the
@@ -187,10 +190,10 @@
                     Lindsay edited the translation and the introduction, and Xiaolong Diao, Ting Lee Ling, and H. S. Sum Cheuk Shing checked the
                     translation against the Chinese sources. Ven. Konchog Norbu copyedited the text, and Celso Wilkinson was in charge of the digital
                     publication process. </p>
-            </tei:div>
-            <tei:div type="introduction" xml:id="UT22084-062-019-introduction">
+            </div>
+            <div type="introduction" xml:id="UT22084-062-019-introduction">
                 <head type="introduction" tid="6">Introduction</head>
-                <tei:div type="section" xml:id="UT22084-062-019-introduction-1">
+                <div type="section" xml:id="UT22084-062-019-introduction-1">
                     <milestone unit="chunk" xml:id="UT22084-062-019-72"/>
                     <p tid="8">
                         <title xml:lang="en">Putting an End to Karmic Obscurations</title> presents a prayer used for karmic purification, and
@@ -215,8 +218,8 @@
                         man until she became a buddha by the name of Ratnārci. At present, Ratnārci teaches in a realm a vast distance away in the
                         eastern direction, and the sūtra states that any woman who hears the name of this buddha will no longer be reborn as a woman.
                         The sūtra concludes with the Buddha naming the teachings, and all those who are present rejoice.</p>
-                </tei:div>
-                <tei:div type="section" xml:id="UT22084-062-019-introduction-2">
+                </div>
+                <div type="section" xml:id="UT22084-062-019-introduction-2">
                     <head type="section" tid="11">History of the Sūtra</head>
                     <milestone unit="chunk" xml:id="UT22084-062-019-76"/>
                     <p tid="12">While the time of its emergence is unknown, this sūtra possibly predates <title xml:lang="en">The Sūtra of the Sublime
@@ -237,7 +240,11 @@
                     <milestone unit="chunk" xml:id="UT22084-062-019-80"/>
                     <p tid="13">Methods to purify the obscuration of karma are a common topic in Mahāyāna sūtras, and this is certainly the case in
                             <title xml:lang="en">The Sūtra of the Sublime Golden Light</title>. There are three versions of <title xml:lang="en">The
-                            Sūtra of the Sublime Golden Light</title> in Tibetan: a twenty-one-chapter version (Toh 557),<ref rend="pending" target="https://read.84000.co/translation/toh557.html"/> a twenty-nine-chapter version (Toh 556),<note place="end" xml:id="UT22084-062-019-403">
+                                Sūtra of the Sublime Golden Light</title> in Tibetan: a twenty-one-chapter version (Toh 557),<note place="end" xml:id="UT22084-062-019-440">
+                            <title xml:lang="en">
+                                <ref target="https://read.84000.co/translation/toh557.html">
+                                    The Sūtra of the Sublime Golden Light (3)</ref>
+                            </title> (<title xml:lang="Sa-Ltn">Suvarṇa­prabhāsottama­sūtra</title>, Toh 557).</note> a twenty-nine-chapter version (Toh 556),<note place="end" xml:id="UT22084-062-019-403">
                             <title xml:lang="en">
                                 <ref target="https://read.84000.co/translation/toh556.html">The Sūtra of
                                     the Sublime Golden Light (2)</ref>
@@ -292,15 +299,15 @@
                             <title xml:lang="zh">大乘三聚懺悔經</title> (<title xml:lang="Sa-Ltn">Tri­skandhaka­pravartana­sūtra</title>), Taishō 1493 (<ref target="https://cbetaonline.dila.edu.tw/en/T1493_001">CBETA</ref>; <ref target="https://21dzk.l.u-tokyo.ac.jp/SAT2018/T1493.html">SAT</ref>).</note> is very similar to Yijing’s translation
                         of chapter 5. However, the language of chapter 5 in the Tibetan translation of Yijing’s version differs considerably from the
                         Tibetan translation from the Sanskrit of the twenty-nine-chapter version (Toh 556) and the present sūtra. </p>
-                </tei:div>
-            </tei:div>
+                </div>
+            </div>
         </front>
         <body>
-            <tei:div type="translation" xml:id="UT22084-062-019-translation">
+            <div type="translation" xml:id="UT22084-062-019-translation">
                 <head type="translation"> The Translation </head>
                 <head type="titleHon" tid="18">The Noble Mahāyāna Sūtra</head>
                 <head type="titleMain" tid="19">Putting an End to Karmic Obscurations</head>
-                <tei:div type="section" xml:id="UT22084-062-019-section-1">
+                <div type="section" xml:id="UT22084-062-019-section-1">
                     <milestone unit="chunk" xml:id="UT22084-062-019-89"/>
                     <p tid="24">
                         <ref cRef="F.297.b" type="folio" xml:id="UT22084-062-019-374"/> Homage to the buddhas and bodhisattvas.</p>
@@ -743,8 +750,8 @@
                     <trailer tid="111">
                         <title xml:lang="en">The Noble Mahāyāna Sūtra “Putting an End to Karmic Obscurations”</title> is
                         concluded.</trailer>
-                </tei:div>
-                <tei:div type="colophon" xml:id="UT22084-062-019-colophon">
+                </div>
+                <div type="colophon" xml:id="UT22084-062-019-colophon">
                     <head type="colophon" tid="112">Colophon</head>
                     <milestone unit="chunk" xml:id="UT22084-062-019-199"/>
                     <p tid="113">Translated and revised by the upādhyāyas Jinamitra and Dānaśīla, and by the lotsawa Yeshé Dé, the chief editor, and
@@ -752,16 +759,16 @@
                             spelling of written Tibetan, which included, for example, eliminating the second suffix <foreign xml:lang="Bo-Ltn">d</foreign>, was made in 816, during the reign of Tritsuk Detsen, a.k.a. Ralpachen (born circa 806, reigned
                             815–838).</note>
                     </p>
-                </tei:div>
-            </tei:div>
+                </div>
+            </div>
         </body>
         <back>
-            <tei:div type="notes" xml:id="UT22084-062-019-notes">
+            <div type="notes" xml:id="UT22084-062-019-notes">
                 <head type="notes" tid="114">Notes</head>
-            </tei:div>
-            <tei:div type="listBibl" xml:id="UT22084-062-019-listBibl">
+            </div>
+            <div type="listBibl" xml:id="UT22084-062-019-listBibl">
                 <head type="listBibl" tid="116">Bibliography</head>
-                <tei:div type="section" xml:id="UT22084-062-019-listBibl-1">
+                <div type="section" xml:id="UT22084-062-019-listBibl-1">
                     <head type="section" tid="117">Primary Sources in Tibetan and Chinese</head>
                     <bibl xml:id="UT22084-062-019-201">
                         <title xml:lang="Bo-Ltn">las kyi sgrib pa gcod pa zhes bya ba theg pa chen po’i mdo</title>
@@ -781,8 +788,8 @@
                     <bibl xml:id="UT22084-062-019-205">
                         <title xml:lang="Zh-Ltn">Jin guangming zuisheng wang jin</title>
                         <title xml:lang="zh">金光明最勝王經</title>. Taishō 665 (<ref target="https://cbetaonline.dila.edu.tw/en/T0665_001">CBETA</ref>, <ref target="https://21dzk.l.u-tokyo.ac.jp/SAT2018/T0665.html">SAT</ref>). (Translation of <title xml:lang="Sa-Ltn">Suvarṇa­prabhāsottama­sūtra</title> by Yijing <foreign xml:lang="zh">義淨</foreign>).</bibl>
-                </tei:div>
-                <tei:div type="section" xml:id="UT22084-062-019-listBibl-2">
+                </div>
+                <div type="section" xml:id="UT22084-062-019-listBibl-2">
                     <head type="section" tid="118">Secondary References—Kangyur</head>
                     <bibl xml:id="UT22084-062-019-207">
                         <title xml:lang="Bo-Ltn">dkyil ’khor thams cad kyi spyi’i cho ga gsang ba’i rgyud</title>
@@ -830,8 +837,8 @@
                             (<title xml:lang="Sa-Ltn">Akṣaya­mati­paripṛcchā­nāma­mahāyāna­sūtra</title>). Toh 89, Degé Kangyur vol. 44 (dkon brtsegs,
                         cha), folios 175.b–182.b.<ref rend="pending" target="https://read.84000.co/translation/toh89.html"/>
                     </bibl>
-                </tei:div>
-                <tei:div type="section" xml:id="UT22084-062-019-listBibl-3">
+                </div>
+                <div type="section" xml:id="UT22084-062-019-listBibl-3">
                     <head type="section" tid="119">Secondary References—Tengyur</head>
                     <bibl xml:id="UT22084-062-019-217">Ajitaśrībhadra. <title xml:lang="Bo-Ltn">dga’ ba’i bshes gnyen gyi rtogs pa</title> (<title xml:lang="Sa-Ltn">Nanda­mitrāvadāna</title>). Toh 4146, Degé Tengyur vol. 269 (’dul ba, su), folios 240.a–244.b.<ref rend="pending" target="https://read.84000.co/translation/toh4146.html"/>
                     </bibl>
@@ -948,8 +955,8 @@
                             po’i mdo’i ’grel pa de bzhin gshegs pa’i snying po’i rgyan</title> (<title xml:lang="Sa-Ltn">Laṅkāvatāra­nāma­mahā­yāna­sūtra­vṛtti­tathāgata­hṛdayālaṃkāra</title>), Toh 4019, Degé Tengyur vol. 224 (mdo ’grel, pi),
                         folios 1.a–310.a.<ref rend="pending" target="https://read.84000.co/translation/toh4019.html"/>
                     </bibl>
-                </tei:div>
-                <tei:div type="section" xml:id="UT22084-062-019-listBibl-4">
+                </div>
+                <div type="section" xml:id="UT22084-062-019-listBibl-4">
                     <head type="section" tid="120">Other References in Tibetan</head>
                     <bibl xml:id="UT22084-062-019-251">Kalzang Dolma (skal bzang sgrol ma). <title xml:lang="Bo-Ltn">lo tsA ba ’gos chos grub dang
                             khong gi ’gyur rtsom mdo mdzangs blun gyi lo tsA’i thabs rtsal skor la dpyad pa</title>. In <title xml:lang="Bo-Ltn">krung
@@ -963,8 +970,8 @@
                     <bibl xml:id="UT22084-062-019-254">Pema Karpo (pad ma dkar po). <title xml:lang="Bo-Ltn">gser ’od dam pa nas gsungs pa’i bshags
                             pa</title>. In <title xml:lang="en">The Collected Works of Kun-mkhyen padma dkar po</title>, vol. 9 (ta), pp. 519–24.
                         Darjeeling: kargyu sungrab nyamso khang, 1973–74.</bibl>
-                </tei:div>
-                <tei:div type="section" xml:id="UT22084-062-019-listBibl-5">
+                </div>
+                <div type="section" xml:id="UT22084-062-019-listBibl-5">
                     <head type="section" tid="122">Other References in English and Other Languages</head>
                     <bibl xml:id="UT22084-062-019-256">Bagchi, S., ed. <title xml:lang="Sa-Ltn">Suvarṇa­prabhāsa­sūtram</title>. Darbhanga: The
                         Mithila Institute, 1967. Digital Sanskrit Buddhist Canon.</bibl>
@@ -1002,8 +1009,8 @@
                     <bibl xml:id="UT22084-062-019-269">Yuama, Akira. “The Golden Light in Central Asia.” In <title xml:lang="en">Annual Report of the
                             International Research Institute for Advanced Buddhology at Soka University for the Academic Year 2003</title> (Tokyo:
                         Soka University, 2004): 3–32.</bibl>
-                </tei:div>
-                <tei:div type="section" xml:id="UT22084-062-019-listBibl-6">
+                </div>
+                <div type="section" xml:id="UT22084-062-019-listBibl-6">
                     <head type="section" tid="121">Translations</head>
 
                     <bibl xml:id="UT22084-062-019-411">84000. <title xml:lang="en">
@@ -1035,8 +1042,11 @@
                                 of the Sublime Golden Light (2)</ref>
                         </title> (<title xml:lang="Sa-Ltn">Suvarṇa­prabhāsottama­sūtra</title>, <title xml:lang="Bo-Ltn">gser ’od dam pa’i mdo</title>, Toh 556). Translated by Peter Alan Roberts and team. Online publication.
                         84000: Translating the Words of the Buddha, 2024.</bibl>
-
-
+                    <bibl xml:id="UT22084-062-019-441">———. <title xml:lang="en">
+                            <ref target="https://read.84000.co/translation/toh557.html">The Sūtra
+                        of the Sublime Golden Light (3)</ref>
+                        </title> (<title xml:lang="Sa-Ltn">Suvarṇa­prabhāsottama­sūtra</title>, <title xml:lang="Bo-Ltn">gser ’od dam pa’i mdo</title>, Toh 557). Translated by Peter Alan Roberts and team. Online publication.
+                        84000: Translating the Words of the Buddha, 2024.</bibl>
                     <bibl xml:id="UT22084-062-019-271">Emmerick, R. E. <title xml:lang="en">The Sūtra of Golden Light</title>. Oxford: The Pali Text
                         Society, 2004.</bibl>
                     <bibl xml:id="UT22084-062-019-272">Foundation for the Preservation of the Mahayana Tradition (FPMT). <title xml:lang="en">Sutra of
@@ -1044,9 +1054,9 @@
                     <bibl xml:id="UT22084-062-019-273">Nobel, Johannes. <title xml:lang="de">Suvarṇa­prabhāsottama­sūtra, Das Goldglanz-Sutra, ein
                             Sanskrittext des Mahayana Buddhismus. I-Tsing’s chinesische Version und ihre Übersetzung</title>. Leiden: E. J. Brill,
                         1958.</bibl>
-                </tei:div>
-            </tei:div>
-            <tei:div type="glossary" xml:id="UT22084-062-019-glossary">
+                </div>
+            </div>
+            <div type="glossary" xml:id="UT22084-062-019-glossary">
                 <list type="glossary">
                     <item>
                         <gloss type="term" xml:id="UT22084-062-019-400">
@@ -2163,7 +2173,7 @@
                     </item>
 
                 </list>
-            </tei:div>
+            </div>
         </back>
     </text>
-</tei:TEI>
+</TEI>
