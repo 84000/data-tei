@@ -4,24 +4,23 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="mainTitle" xml:lang="Bo-Ltn">seng ge sgra’i rgyud</title>
-                <title type="mainTitle" xml:lang="bo">སེང་གེ་སྒྲའི་རྒྱུད།</title>
                 <title type="mainTitle" xml:lang="en">The Siṃhanāda Tantra</title>
                 <title type="mainTitle" xml:lang="Sa-Ltn">Siṃhanāda­tantra</title>
+                <title type="mainTitle" xml:lang="bo">སེང་གེ་སྒྲའི་རྒྱུད།</title>
+                <title type="mainTitle" xml:lang="Bo-Ltn">seng ge sgra’i rgyud</title>
+                <title type="longTitle" xml:lang="Sa-Ltn">Siṃha­nāda­tantra­nāma</title>
                 <title type="longTitle" xml:lang="bo">སེང་གེ་སྒྲའི་རྒྱུད་ཅེས་བྱ་བ།</title>
                 <title type="longTitle" xml:lang="Bo-Ltn">seng ge sgra’i rgyud ces bya ba</title>
-                <title type="longTitle" xml:lang="en">The Siṃhanāda Tantra</title>
-                <title type="longTitle" xml:lang="Sa-Ltn">Siṃha­nāda­tantra­nāma</title>
-                <title type="otherTitle" xml:lang="zh"/>
                 <author role="translatorMain" xml:id="UT22084-093-017-1"><!--84000 Associate Translators--></author>
                 <author role="translatorEng" xml:id="UT22084-093-017-2">Catherine Dalton</author>
                 <editor role="projectEditor" xml:id="UT22084-093-017-13">Ryan Damron</editor>
                 <editor role="copyEditor" xml:id="UT22084-093-017-22">Dawn Collins</editor>
                 <editor role="projectEditor" xml:id="UT22084-093-017-32">John Canti</editor>
                 <editor role="TEImarkupEditor" xml:id="UT22084-093-017-43">Martina Cotter</editor>
+                <editor role="finalReviewer" xml:id="UT22084-093-017-148">Andreas Doctor</editor>
             </titleStmt>
             <editionStmt>
-                <edition>v 0.0.2 <date>2024</date>
+                <edition>v 1.0.0 <date>2024</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -29,7 +28,7 @@
                     <name>84000: Translating the Words of the Buddha</name> is a global
                     non-profit initiative to translate all the Buddha’s words into modern languages,
                     and to make them available to everyone. </publisher>
-                <availability status="2">
+                <availability status="1.a">
                     <p type="tantricRestriction">
                         <emph rend="bold">Warning:</emph> Readers are
                         reminded that according to Vajrayāna Buddhist tradition there are
@@ -50,7 +49,7 @@
                 <idno xml:id="UT22084-093-017"/>
                 <note>An early mistake in the assigning of UT numbers within the 84000 project means
                     that these ids diverge slightly from the standard logic.</note>
-                <date>2024-05-20</date>
+                <date>2024-10-23</date>
             </publicationStmt>
             <sourceDesc>
                 <bibl key="toh702" type="text">
@@ -143,6 +142,15 @@
                 <change who="#line-tofte" when="2024-06-05T09:39:59.267Z" type="text-version" status="0.0.2" xml:id="UT22084-093-017-141">
                     <desc>Auto (update-publication-status)</desc>
                 </change>
+                <change who="#line-tofte" when="2024-10-21T09:25:45.325Z" type="text-version" status="0.0.3" xml:id="UT22084-093-017-149">
+                    <desc>Auto (update-contributors)</desc>
+                </change>
+                <change who="#martina-cotter" when="2024-10-23T23:42:27.846Z" type="translation-status" status="1.a" xml:id="UT22084-093-017-150">
+                    <desc>1.a</desc>
+                </change>
+                <change who="#martina-cotter" when="2024-10-23T23:42:27.846Z" type="text-version" status="1.0.0" xml:id="UT22084-093-017-151">
+                    <desc>First published version.</desc>
+                </change>
             </revisionDesc>
         </fileDesc>
     </teiHeader>
@@ -151,15 +159,15 @@
                     Outline to the text is quite complex, it is recommended that you paste the outlined contents from the DOCX here as a comment for
                     markup's reference. The actual table of contents will be generated in the Reading Room by the parser.-->
         <front>
-            <div type="summary">
+            <div type="summary" xml:id="UT22084-093-017-summary">
                 <head type="summary" tid="1">Summary</head>
                 <milestone unit="chunk" xml:id="UT22084-093-017-45"/>
                 <p tid="2">
                     <title xml:lang="en">The Siṃhanāda Tantra</title> is a short tantra that
                     teaches the long mantra and a short practice of the form of Avalokiteśvara
-                    called Siṃhanāda, the “Lion’s Roar.”</p>
+                    called Siṃhanāda, “Lion’s Roar.”</p>
             </div>
-            <div type="acknowledgment">
+            <div type="acknowledgment" xml:id="UT22084-093-017-acknowledgment">
                 <head type="acknowledgment" tid="3">Acknowledgements</head>
                 <milestone unit="chunk" xml:id="UT22084-093-017-46"/>
                 <p tid="4">This publication was completed under the patronage and supervision of
@@ -170,7 +178,7 @@
                     Damron edited the translation and the introduction, and Dawn Collins copyedited
                     the text. Martina Cotter was in charge of the digital publication process.</p>
             </div>
-            <div type="introduction">
+            <div type="introduction" xml:id="UT22084-093-017-introduction">
                 <head type="introduction" tid="7">Introduction</head>
                 <div type="section" xml:id="UT22084-093-017-introduction-1">
                     <milestone unit="chunk" xml:id="UT22084-093-017-49"/>
@@ -182,14 +190,17 @@
                         Siṃhanāda form is recounted in detail in <title xml:lang="en">The Dhāraṇī of
                             Avalokiteśvara Siṃhanāda</title>, Toh 703.<note place="end" xml:id="UT22084-093-017-137">
                             <title xml:lang="en">
-                                <ref target="http://read.84000.co/translation/toh703.html">The Dhāraṇī of Avalokiteśvara Siṃhanāda</ref>
-                            </title> (translated 2024).</note> There we learn how, during a
-                        past-life adventure with his friend who became the bodhisattva Mañjuśrī,
-                        Avalokiteśvara came to take this particular form. In this form, he obtained
-                        the power to tame the nāgas and his famed curative powers. <title xml:lang="en">The Siṃhanāda Tantra</title> features the latter. After
-                        speaking Siṃhanāda’s secret mantra and teaching a short practice to
-                        accompany it, Padmeśvara concludes his discourse by describing the benefits
-                        of respecting and upholding the tantra and the detriments of deprecating it. </p>
+                                <ref target="http://read.84000.co/translation/toh703.html">The
+                                    Dhāraṇī of Avalokiteśvara Siṃhanāda</ref>
+                            </title> (translated
+                            2024).</note> There we learn how, during a past-life adventure with his
+                        friend who became the bodhisattva Mañjuśrī, Avalokiteśvara came to take this
+                        particular form. In this form, he obtained the power to tame the nāgas and
+                        his famed curative powers. <title xml:lang="en">The Siṃhanāda Tantra</title>
+                        features the latter. After speaking Siṃhanāda’s secret mantra and teaching a
+                        short practice to accompany it, Padmeśvara concludes his discourse by
+                        describing the benefits of respecting and upholding the tantra and the
+                        detriments of deprecating it. </p>
                     <milestone unit="chunk" xml:id="UT22084-093-017-50"/>
                     <p tid="10">In addition to <title xml:lang="en">The Siṃhanāda Tantra</title>,
                         there are two short dhāraṇī texts associated with Siṃhanāda in the Kangyur
@@ -215,11 +226,8 @@
                         Nearby and to the left sits what is variously described as a cup (<foreign xml:lang="Sa-Ltn" type="term">karoṭaka</foreign>), pot (<foreign xml:lang="Sa-Ltn" type="term">bhājana</foreign>, <foreign xml:lang="Bo-Ltn" type="term">snod</foreign>), or skull cup (<foreign xml:lang="Sa-Ltn" type="term">kapāla</foreign>, <foreign xml:lang="Bo-Ltn" type="term">thod pa</foreign>) filled with fragrant
                         flowers. This vessel often sits on a lotus or water lily.<note place="end" xml:id="UT22084-093-017-55"> The iconographic details of Siṃhanāda are
                             described with some variation and differing degrees of detail in Toh
-                            2858,<ref rend="pending" target="http://read.84000.co/translation/toh2858.html"/> 2859,<ref rend="pending" target="http://read.84000.co/translation/toh2859.html"/> 3155,<ref rend="pending" target="http://read.84000.co/translation/toh3155.html"/> 3157,<ref rend="pending" target="http://read.84000.co/translation/toh3157.html"/> 
-                            3329,<ref rend="pending" target="http://read.84000.co/translation/toh3329.html"/> 3414,<ref rend="pending" target="http://read.84000.co/translation/toh3414.html"/> 
-                            3417,<ref rend="pending" target="http://read.84000.co/translation/toh3417.html"/> 
-                            3418,<ref rend="pending" target="http://read.84000.co/translation/toh3418.html"/> 
-                            3419,<ref rend="pending" target="http://read.84000.co/translation/toh3419.html"/> and 3650.<ref rend="pending" target="http://read.84000.co/translation/toh3650.html"/>
+                                2858,<ref rend="pending" target="http://read.84000.co/translation/toh2858.html"/> 2859,<ref rend="pending" target="http://read.84000.co/translation/toh2859.html"/> 3155,<ref rend="pending" target="http://read.84000.co/translation/toh3155.html"/> 3157,<ref rend="pending" target="http://read.84000.co/translation/toh3157.html"/> 3329,<ref rend="pending" target="http://read.84000.co/translation/toh3329.html"/> 3414,<ref rend="pending" target="http://read.84000.co/translation/toh3414.html"/> 3417,<ref rend="pending" target="http://read.84000.co/translation/toh3417.html"/> 3418,<ref rend="pending" target="http://read.84000.co/translation/toh3418.html"/> 3419,<ref rend="pending" target="http://read.84000.co/translation/toh3419.html"/> and
+                                3650.<ref rend="pending" target="http://read.84000.co/translation/toh3650.html"/>
                             Descriptions in Sanskrit can be found in sādhana nos. 17, 20, 22, and 25
                             in volume one of the <title xml:lang="Sa-Ltn">Sādhanamālā</title>. For a
                             survey of Indo-Tibetan artistic depictions of Siṃhanāda, see the deity’s
@@ -229,16 +237,15 @@
                         sources leaves a number of specific points ambiguous. </p>
                     <milestone unit="chunk" xml:id="UT22084-093-017-56"/>
                     <p tid="12">The Siṃhanāda form of Avalokiteśvara continues to be practiced in
-                        contemporary Tibetan Buddhist traditions. Two arrangements of practices centered on Lokeśvara Siṃhanāda are found in the Compendium of Sādhanas 
-                        (<title xml:lang="Bo-Ltn">sgrub
-                            thabs kun btus</title>) compiled by Jamyang Loter Wangpo,<note place="end" xml:id="UT22084-093-017-57"> See
+                        contemporary Tibetan Buddhist traditions. Two arrangements of practices
+                        centered on Lokeśvara Siṃhanāda are found in the Compendium of Sādhanas
+                            (<title xml:lang="Bo-Ltn">sgrub thabs kun btus</title>) compiled by
+                        Jamyang Loter Wangpo,<note place="end" xml:id="UT22084-093-017-57"> See
                                 <title xml:lang="Bo-Ltn">sgrub thabs kun btus</title> vol. 6, folios
-                                252.a–297.b.</note> and the
-                        nineteenth-century scholar Mipham Gyatso wrote a short summary of the story
-                        of <title xml:lang="en">The Dhāraṇī of Avalokiteśvara
-                            Siṃhanāda</title>.<note place="end" xml:id="UT22084-093-017-58"> See
-                                <title xml:lang="Bo-Ltn">seng ge sgra’i gzungs kyi lo rgyus</title>.
-                        </note>
+                            252.a–297.b.</note> and the nineteenth-century scholar Mipham Gyatso
+                        wrote a short summary of the story of <title xml:lang="en">The Dhāraṇī of
+                            Avalokiteśvara Siṃhanāda</title>.<note place="end" xml:id="UT22084-093-017-58"> See <title xml:lang="Bo-Ltn">seng ge sgra’i
+                                gzungs kyi lo rgyus</title>. </note>
                     </p>
                     <milestone unit="chunk" xml:id="UT22084-093-017-59"/>
                     <p tid="13">
@@ -258,13 +265,14 @@
             </div>
         </front>
         <body>
-            <div type="translation">
+            <div type="translation" xml:id="UT22084-093-017-translation">
                 <head type="translation">The Translation</head>
                 <head type="titleMain" tid="15">The Siṃhanāda Tantra</head>
                 <div type="section" xml:id="UT22084-093-017-section-1">
                     <milestone unit="chunk" xml:id="UT22084-093-017-62"/>
                     <p tid="19">
-                        <ref cRef="F.164.b" type="folio" xml:id="UT22084-093-017-132"/> Homage to the blessed Lotus Lord of Speech.</p>
+                        <ref cRef="F.164.b" type="folio" xml:id="UT22084-093-017-132"/>
+                        Homage to the blessed Lotus Lord of Speech.</p>
                     <lb/>
                     <p tid="21">Thus did I hear at one time. The Blessed One, transformed into
                         Padmeśvara, was residing at Vajrāsana. The Lord of Guhyakas said to the
@@ -283,36 +291,38 @@
                     <milestone unit="chunk" xml:id="UT22084-093-017-68"/>
                     <p rend="mantra" tid="24">
                         <mantra xml:lang="Sa-Ltn">namo ratna trayāya | nama
-                            āryāvalokiteśvarāya bodhisattvāya mahasattvāya mahākāruṇikāya ||</mantra>
+                            āryāvalokiteśvarāya bodhisattvāya mahasattvāya
+                            mahākāruṇikāya ||</mantra>
                     </p>
                     <milestone unit="chunk" xml:id="UT22084-093-017-69"/>
                     <p rend="mantra" tid="25">
-                        <mantra rend="ignoreGlossary" xml:lang="Sa-Ltn">tadyathā | oṁ akaṭe vikaṭe
-                            nikaṭe kaṭaṃkaṭe karoṭe karokaṃṭe vīryai svāhā | oṁ āḥ hrīḥ siṃhanāda
-                            hūṁ | bruṁ āṁ jrīṁ khaṁ hūṁ | oṁ āḥ hūṃ | oṁ balīn<note place="end" xml:id="UT22084-093-017-70"> Emended. D reads <foreign xml:lang="Bo-Ltn" type="quote">ba li na</foreign>.</note> bhuñja
-                                jiva puśpe dhūpe hūṁ | sarvāmṛte hūṁ | oṁ vatali mahā­vatali <ref cRef="F.165.a" type="folio" xml:id="UT22084-093-017-133"/>
-                            hūṁ hūṁ hūṁ jaḥ svāhā | oṁ bhakṣa bhakṣa samaya tiṣṭha jaṃ hūṁ phaṭ
-                                svāhā | oṁ taprati<note place="end" xml:id="UT22084-093-017-71">
-                                Following F, K, N, S, and Y. D reads <foreign xml:lang="Bo-Ltn" type="quote">a ta pra ti</foreign>.</note> hūṁ phaṭ | sritikara
-                            hūṁ phaṭ | oṁ varuṇa āgacchaya āgacchaya mahānāga gisati sarve
-                            bhuraḥ<note place="end" xml:id="UT22084-093-017-72"> Following H, N,
-                                and S. D reads <foreign xml:lang="Bo-Ltn" type="quote">bhur</foreign>.</note> phuḥ phuḥ phuḥ svāhā | oṁ bhagavati
-                                    śruti­smṛti­samavati saramati siddhi svāhā | oṁ āḥ hrīḥ hūṃ svāhā | phuḥ
-                            hrīḥ | oṁ siṃhanāda hūṁ phaṭ phaṭ | nāgadupali<note place="end" xml:id="UT22084-093-017-73"> Following C, F, J, K, S, and Y. D reads
-                                    <foreign xml:lang="Bo-Ltn" type="quote">du pa la</foreign>.
-                            </note> māraya phaṭ | jvāla jvāla hūṁ phaṭ | oṁ āḥ<note place="end" xml:id="UT22084-093-017-74"> Emended. D reads <foreign xml:lang="Bo-Ltn" type="quote">a</foreign>. The word <foreign xml:lang="Sa-Ltn" type="term">avighnāntakṛt</foreign> also seems
-                                implausible. In his <title xml:lang="Sa-Ltn">Vajrāvalī </title>(Mori
-                                1997, p. 126), Abhayākaragupta gives a <foreign xml:lang="Sa-Ltn" type="term">kuṇḍalin </foreign>mantra as <mantra xml:lang="Sa-Ltn">oṁ āḥ vighnāntakṛt hūṁ
-                            phaṭ</mantra>.</note>vighnāntakṛt hūṁ | oṁ agnaye ativya abhisamayaviśa
-                                mahāśriye havyakavyam ahanīya<note place="end" xml:id="UT22084-093-017-75"> Emended. D reads <foreign xml:lang="Sa-Ltn" type="quote">havyakavyam ahāniya
+                        <mantra rend="ignoreGlossary" xml:lang="Sa-Ltn">tadyathā | oṁ akaṭe vikaṭe nikaṭe kaṭaṃkaṭe karoṭe karokaṃṭe vīryai
+                            svāhā | oṁ āḥ hrīḥ siṃhanāda hūṁ | bruṁ āṁ jrīṁ khaṁ hūṁ | oṁ āḥ hūṃ |
+                            oṁ balīn<note place="end" xml:id="UT22084-093-017-70"> Emended. D reads
+                                    <foreign xml:lang="Bo-Ltn" type="quote">ba li
+                                na</foreign>.</note> bhuñja jiva puśpe dhūpe hūṁ | sarvāmṛte hūṁ |
+                            oṁ vatali mahā­vatali <ref cRef="F.165.a" type="folio" xml:id="UT22084-093-017-133"/> hūṁ hūṁ hūṁ jaḥ svāhā | oṁ bhakṣa
+                            bhakṣa samaya tiṣṭha jaṃ hūṁ phaṭ svāhā | oṁ taprati<note place="end" xml:id="UT22084-093-017-71"> Following F, K, N, S, and Y. D reads
+                                    <foreign xml:lang="Bo-Ltn" type="quote">a ta pra
+                                ti</foreign>.</note> hūṁ phaṭ | sritikara hūṁ phaṭ | oṁ varuṇa
+                            āgacchaya āgacchaya mahānāga gisati sarve bhuraḥ<note place="end" xml:id="UT22084-093-017-72"> Following H, N, and S. D reads <foreign xml:lang="Bo-Ltn" type="quote">bhur</foreign>.</note> phuḥ phuḥ
+                            phuḥ svāhā | oṁ bhagavati śruti­smṛti­samavati saramati siddhi svāhā |
+                            oṁ āḥ hrīḥ hūṃ svāhā | phuḥ hrīḥ | oṁ siṃhanāda hūṁ phaṭ phaṭ |
+                                nāgadupali<note place="end" xml:id="UT22084-093-017-73"> Following
+                                C, F, J, K, S, and Y. D reads <foreign xml:lang="Bo-Ltn" type="quote">du pa la</foreign>. </note> māraya phaṭ | jvāla
+                            jvāla hūṁ phaṭ | oṁ āḥ<note place="end" xml:id="UT22084-093-017-74">
+                                Emended. D reads <foreign xml:lang="Bo-Ltn" type="quote">a</foreign>. The word <foreign xml:lang="Sa-Ltn" type="term">avighnāntakṛt</foreign> also seems implausible. In his <title xml:lang="Sa-Ltn">Vajrāvalī </title>(Mori 1997, p. 126),
+                                Abhayākaragupta gives a <foreign xml:lang="Sa-Ltn" type="term">kuṇḍalin </foreign>mantra as <mantra xml:lang="Sa-Ltn">oṁ āḥ
+                                    vighnāntakṛt hūṁ phaṭ</mantra>.</note>vighnāntakṛt hūṁ | oṁ
+                            agnaye ativya abhisamayaviśa mahāśriye havyakavyam ahanīya<note place="end" xml:id="UT22084-093-017-75"> Emended. D reads <foreign xml:lang="Sa-Ltn" type="quote">havyakavyam ahāniya
                                     </foreign>(<foreign xml:lang="Bo-Ltn" type="quote">ha bya ka bya
                                     ma hA ni ya</foreign>).</note> svāhā | oṁ bhavaka agnaye
-                                        śāntiṃ<note place="end" xml:id="UT22084-093-017-76"> This follows F,
-                                            H, N, K, S, and Y. D reads <foreign xml:lang="Sa-Ltn" type="quote">śānti</foreign> (shAn+ti).</note> kuru<note place="end" xml:id="UT22084-093-017-77"> This follows H, N, and S. D reads
+                                śāntiṃ<note place="end" xml:id="UT22084-093-017-76"> This follows F,
+                                H, N, K, S, and Y. D reads <foreign xml:lang="Sa-Ltn" type="quote">śānti</foreign> (shAn+ti).</note> kuru<note place="end" xml:id="UT22084-093-017-77"> This follows H, N, and S. D reads
                                     <foreign xml:lang="Sa-Ltn" type="quote">kuruya</foreign>.
-                                            </note> svāhā | oṁ hrīḥ siṃhanāda vajra­cakra­vartalokika bruṁ bruṁ bruṁ |
-                            lokottarāṇi siṃhanāda bruṁ bruṁ bruṁ hūṁ na hūṁ na siṃhanāda bruṁ bruṁ
-                            bruṁ hūṁ hūṁ hūṁ svāhā ||</mantra>
+                            </note> svāhā | oṁ hrīḥ siṃhanāda vajra­cakra­vartalokika bruṁ bruṁ
+                            bruṁ | lokottarāṇi siṃhanāda bruṁ bruṁ bruṁ hūṁ na hūṁ na siṃhanāda bruṁ
+                            bruṁ bruṁ hūṁ hūṁ hūṁ svāhā ||</mantra>
                     </p>
                     <milestone unit="chunk" xml:id="UT22084-093-017-78"/>
                     <p tid="26">“Lord of Guhyakas, this is called the <distinct>accomplishment of
@@ -335,10 +345,9 @@
                                 shoulder and has a blazing sword standing in its blossom. A skull
                                 cup or other vessel rests on a lotus flower nearby to his left, and
                                 is filled with fragrant flowers. Here, a lotus, skull cup, water
-                                lily, and
-                                sword are described together, but their location in relation to
-                                Siṃhanāda and their orientation to each other are not specified.
-                            </note>
+                                lily, and sword are described together, but their location in
+                                relation to Siṃhanāda and their orientation to each other are not
+                                specified. </note>
                         </l>
                     </lg>
                     <milestone unit="chunk" xml:id="UT22084-093-017-81"/>
@@ -352,21 +361,21 @@
                         </l>
                         <l>The three and five hang down in front,<note place="end" xml:id="UT22084-093-017-83">
                                 <foreign xml:lang="Bo-Ltn" type="quote">gsum dang lnga ni mdun du
-                                    ’phyang</foreign>. The Tibetan is ambiguous here,
-                                thus this translation is tentative. A sense of what is meant here is
-                                provided by a phrase from the <title xml:lang="Sa-Ltn">Siṃha­nāda­sādhana</title>, sādhana no. 17 of the <title xml:lang="Sa-Ltn">Sādhanamālā</title> (Bhattacharyya 1925, pp.
+                                    ’phyang</foreign>. The Tibetan is ambiguous here, thus this
+                                translation is tentative. A sense of what is meant here is provided
+                                by a phrase from the <title xml:lang="Sa-Ltn">Siṃha­nāda­sādhana</title>, sādhana no. 17 of the <title xml:lang="Sa-Ltn">Sādhanamālā</title> (Bhattacharyya 1925, pp.
                                 47–8). In this work, attributed to Advayavajra, we find the compound
-                            <foreign xml:lang="Sa-Ltn" type="term">aṃsalulita­pañcacīra</foreign>, “five locks hang from his
+                                    <foreign xml:lang="Sa-Ltn" type="term">aṃsalulita­pañcacīra</foreign>, “five locks hang from his
                                 shoulders.” The phrase “five locks” (<foreign xml:lang="Sa-Ltn" type="term">pañcacīra</foreign>) is commonly used to describe
                                 deities whose hair hangs loose over their shoulders. It should be
-                                noted that the Tibetan translation of this sādhana—Toh
-                                3414<ref rend="pending" target="http://read.84000.co/translation/toh3414.html"/>—translates this phrase with <foreign xml:lang="Bo-Ltn" type="quote">rol pa’i dpa’ bo lnga</foreign>,
-                                “the five playful heroes,” which would indicate the Sanskrit
-                                compound <foreign xml:lang="Sa-Ltn" type="term">lalita­pañca­vīra</foreign> (<foreign xml:lang="Sa-Ltn" type="term">aṃsa</foreign>, “shoulder,” is omitted). Thus it
-                                would appear that variants in the Sanskrit manuscript tradition or
-                                translator error resulted in reading <foreign xml:lang="Sa-Ltn" type="term">lalita</foreign> (“playful”) in place of <foreign xml:lang="Sa-Ltn" type="term">lulita</foreign> (“hang”), and
-                                    <foreign xml:lang="Sa-Ltn" type="term">pañcavīra</foreign>
-                                (“five heroes”) in place of <foreign xml:lang="Sa-Ltn" type="term">pañcacīra</foreign>.</note>
+                                noted that the Tibetan translation of this sādhana—Toh 3414<ref rend="pending" target="http://read.84000.co/translation/toh3414.html"/>—translates this phrase with <foreign xml:lang="Bo-Ltn" type="quote">rol pa’i dpa’ bo lnga</foreign>, “the five playful
+                                heroes,” which would indicate the Sanskrit compound <foreign xml:lang="Sa-Ltn" type="term">lalita­pañca­vīra</foreign>
+                                    (<foreign xml:lang="Sa-Ltn" type="term">aṃsa</foreign>,
+                                “shoulder,” is omitted). Thus it would appear that variants in the
+                                Sanskrit manuscript tradition or translator error resulted in
+                                reading <foreign xml:lang="Sa-Ltn" type="term">lalita</foreign>
+                                (“playful”) in place of <foreign xml:lang="Sa-Ltn" type="term">lulita</foreign> (“hang”), and <foreign xml:lang="Sa-Ltn" type="term">pañcavīra</foreign> (“five heroes”) in place of
+                                    <foreign xml:lang="Sa-Ltn" type="term">pañcacīra</foreign>.</note>
                         </l>
                         <l>And his crown is adorned with Amitābha.</l>
                         <l>He has arisen from the qualities of a lion. </l>
@@ -394,12 +403,12 @@
                     </lg>
                     <milestone unit="chunk" xml:id="UT22084-093-017-88"/>
                     <p tid="31">“Lord of Guhyakas, whoever deprecates this tantra deprecates all
-                        buddhas and bodhisattvas. <ref cRef="F.165.b" type="folio" xml:id="UT22084-093-017-134"/> Lords of Guhyakas, the gods of the Heaven of the
-                        Four Great Kings, the gods of the Heaven of the Thirty-Three, the
+                        buddhas and bodhisattvas. <ref cRef="F.165.b" type="folio" xml:id="UT22084-093-017-134"/> Lords of Guhyakas, the gods of the Heaven
+                        of the Four Great Kings, the gods of the Heaven of the Thirty-Three, the
                         brahmaputras, and the great brahmas will protect, guard, conceal, and always
                         accompany any being who hears this tantra, thinks of it, worships it,
-                        upholds it, or even just takes an interest in it. All the buddhas
-                        and bodhisattvas, who are greatly superior to those gods, will protect such
+                        upholds it, or even just takes an interest in it. All the buddhas and
+                        bodhisattvas, who are greatly superior to those gods, will protect such
                         beings just as a mother protects her child and the māras will never be able
                         to obstruct them. When they die, they will take birth in lotuses in the
                         western realm of Sukhāvatī, freed from the pain of the womb. In this life,
@@ -428,26 +437,25 @@
             </div>
         </body>
         <back>
-            <div type="notes">
+            <div type="notes" xml:id="UT22084-093-017-notes">
                 <head type="notes" tid="38">Notes</head>
             </div>
-            <div type="listBibl">
+            <div type="listBibl" xml:id="UT22084-093-017-listBibl">
                 <head type="listBibl" tid="40">Bibliography</head>
                 <div type="section" xml:id="UT22084-093-017-listBibl-1">
                     <head type="section" tid="41">Primary Sources</head>
                     <bibl xml:id="UT22084-093-017-94">
                         <title xml:lang="Bo-Ltn">seng ge sgra’i rgyud
-                        ces bya ba</title> (<title xml:lang="Sa-Ltn">Siṃha­nāda­tantra</title>).
+                            ces bya ba</title> (<title xml:lang="Sa-Ltn">Siṃha­nāda­tantra</title>).
                         Toh 702, Degé Kangyur vol. 93 (rgyud, rtsa), folios 163.b–164.b.</bibl>
                     <bibl xml:id="UT22084-093-017-95">
                         <title xml:lang="Bo-Ltn">seng ge’i sgra’i
-                        sgrub thabs </title>(<title xml:lang="Sa-Ltn">Siṃha­nāda­sādhana</title>).
-                        Toh. 3560, Degé Tengyur vol. 77 (rgyud ’grel, mu), folios
-                        262.a–262.b.</bibl>
+                            sgrub thabs </title>(<title xml:lang="Sa-Ltn">Siṃha­nāda­sādhana</title>). Toh. 3560, Degé Tengyur vol. 77 (rgyud ’grel,
+                        mu), folios 262.a–262.b.</bibl>
                     <bibl xml:id="UT22084-093-017-96">
                         <title xml:lang="Bo-Ltn">seng ge’i sgra’i
-                        sgrub thabs</title> (<title xml:lang="Sa-Ltn">Siṃha­nāda­sādhana</title>).
-                        Toh 3414, Degé Tengyur vol. 77 (rgyud ’grel, mu), folios 81.a–81.b.</bibl>
+                            sgrub thabs</title> (<title xml:lang="Sa-Ltn">Siṃha­nāda­sādhana</title>). Toh 3414, Degé Tengyur vol. 77 (rgyud ’grel,
+                        mu), folios 81.a–81.b.</bibl>
                     <bibl xml:id="UT22084-093-017-97">
                         <title xml:lang="Bo-Ltn">seng ge sgra’i rgyud
                             ces bya ba</title>. bka’ ’gyur (dpe bsdur ma) [Comparative Edition of
@@ -489,9 +497,12 @@
                 <div type="section" xml:id="UT22084-093-017-listBibl-2">
                     <head type="section" tid="42">Secondary Sources</head>
                     <bibl xml:id="UT22084-093-017-138">84000. <title xml:lang="en">
-                        <ref target="https://read.84000.co/translation/toh703.html">The Dhāraṇī of Avalokiteśvara Siṃhanāda</ref>
-                    </title> (<title xml:lang="Sa-Ltn">Āvalokiteśvarasiṃhanādadhāraṇī</title>, <title xml:lang="Bo-Ltn">spyan ras gzigs dbang phyug seng ge sgra’i gzungs</title>, Toh 703).
-                        Translated by Catherine Dalton. Online publication, 84000: Translating the Words of the Buddha, 2024.</bibl>
+                            <ref target="https://read.84000.co/translation/toh703.html">The Dhāraṇī
+                                of Avalokiteśvara Siṃhanāda</ref>
+                        </title> (<title xml:lang="Sa-Ltn">Āvalokiteśvarasiṃhanādadhāraṇī</title>,
+                            <title xml:lang="Bo-Ltn">spyan ras gzigs dbang phyug seng ge sgra’i
+                            gzungs</title>, Toh 703). Translated by Catherine Dalton. Online
+                        publication, 84000: Translating the Words of the Buddha, 2024.</bibl>
                     <bibl xml:id="UT22084-093-017-106">Holt, John C. <title xml:lang="en">Buddha in
                             the Crown: Avalokiteśvara in the Buddhist Traditions of Sri
                             Lanka</title>. New York: Oxford University Press, 1991. </bibl>
@@ -502,7 +513,7 @@
                         Willis, 8–28. London: The British Museum, 2021.</bibl>
                 </div>
             </div>
-            <div type="glossary" status="excluded">
+            <div type="glossary" status="excluded" xml:id="UT22084-093-017-glossary">
                 <list type="glossary">
                     <item>
                         <gloss type="term" xml:id="UT22084-093-017-108">
@@ -515,7 +526,7 @@
                     <item>
                         <gloss type="term" xml:id="UT22084-093-017-109">
                             <term type="translationMain">maṇḍala</term>
-                        <term status="verified" xml:lang="Bo-Ltn" n="1">maN+Da la</term>
+                            <term status="verified" xml:lang="Bo-Ltn" n="1">maN+Da la</term>
                             <term xml:lang="bo" n="1">མཎྜ་ལ།</term>
                             <term type="reconstructedPhonetic" status="verified" xml:lang="Sa-Ltn">maṇḍala</term>
                             <note type="definition">
@@ -531,7 +542,7 @@
                             <term type="translationMain">water lily</term>
                             <term status="verified" xml:lang="Bo-Ltn" n="1">ku mu da </term>
                             <term xml:lang="bo" n="1">ཀུ་མུ་ད།</term>
-                        <term type="reconstructedPhonetic" status="verified" xml:lang="Sa-Ltn">kumuda</term>
+                            <term type="reconstructedPhonetic" status="verified" xml:lang="Sa-Ltn">kumuda</term>
                         </gloss>
                     </item>
                     <item>
@@ -569,9 +580,10 @@
                     <item>
                         <gloss type="term" xml:id="UT22084-093-017-114">
                             <term type="translationMain">Gods of the Realm of Brahma</term>
-                        <term status="verified" xml:lang="Bo-Ltn" n="1">tshangs ris kyi lha</term>
+                            <term status="verified" xml:lang="Bo-Ltn" n="1">tshangs ris kyi
+                                lha</term>
                             <term xml:lang="bo" n="1">ཚངས་རིས་ཀྱི་ལྷ།</term>
-                        <term type="attestedDictionary" status="verified" xml:lang="Sa-Ltn">brahma­kāyika­deva</term>
+                            <term type="attestedDictionary" status="verified" xml:lang="Sa-Ltn">brahma­kāyika­deva</term>
                             <note type="definition">
                                 <p>Gods living in the Brahma Realm. </p>
                             </note>
@@ -599,7 +611,8 @@
                     <item>
                         <gloss type="person" xml:id="UT22084-093-017-118">
                             <term type="translationMain">Padmeśvara</term>
-                        <term status="verified" xml:lang="Bo-Ltn" n="1">pad+ma’i dbang phyug</term>
+                            <term status="verified" xml:lang="Bo-Ltn" n="1">pad+ma’i dbang
+                                phyug</term>
                             <term xml:lang="bo" n="1">པདྨའི་དབང་ཕྱུག</term>
                             <term type="attestedDictionary" status="verified" xml:lang="Sa-Ltn">padmeśvara</term>
                             <note type="definition">
@@ -668,11 +681,13 @@
                     </item>
                     <item>
                         <gloss type="person" xml:id="UT22084-093-017-139">
-                        <term type="translationMain">Jamyang Loter Wangpo</term>
-                        <term status="verified" xml:lang="Bo-Ltn" n="1">’jam dbyangs blo gter dbang po</term>
+                            <term type="translationMain">Jamyang Loter Wangpo</term>
+                            <term status="verified" xml:lang="Bo-Ltn" n="1">’jam dbyangs blo gter
+                                dbang po</term>
                             <term xml:lang="bo" n="1" status="verified">འཇམ་དབྱངས་བློ་གཏེར་དབང་པོ།</term>
-                        <note type="definition">
-                                <p>1847-1914. A master of the Sakya tradition.</p>
+                            <note type="definition">
+                                <p>1847-1914. A master of the Sakya
+                                    tradition.</p>
                             </note>
                         </gloss>
                     </item>
@@ -697,8 +712,7 @@
                             <note type="definition">
                                 <p>Sukhāvatī (Blissful) is the buddhafield to
                                     the west inhabited by the buddha Amitābha, who is also known as
-                                    Amitāyus. It is classically described in <title xml:lang="en">The Display of the Pure Land
-                                        of Sukhāvatī</title> (<title xml:lang="Sa-Ltn">
+                                    Amitāyus. It is classically described in <title xml:lang="en">The Display of the Pure Land of Sukhāvatī</title> (<title xml:lang="Sa-Ltn">
                                         <ref target="https://read.84000.co/translation/toh115.html">Sukhāvatīvyūha</ref>
                                     </title>).</p>
                             </note>
@@ -722,13 +736,13 @@
                             <term type="translationMain">Heaven of the Four Great Kings</term>
                             <term status="verified" xml:lang="Bo-Ltn" n="1">rgyal chen bzhi’i ris </term>
                             <term xml:lang="bo" n="1">རྒྱལ་ཆེན་བཞིའི་རིས།</term>
-                        <term type="attestedDictionary" status="verified" xml:lang="Sa-Ltn">cāturmahārā­jakāyika</term>
+                            <term type="attestedDictionary" status="verified" xml:lang="Sa-Ltn">cāturmahārā­jakāyika</term>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="place" xml:id="UT22084-093-017-131">
                             <term type="translationMain">Vajrāsana</term>
-                        <term status="verified" xml:lang="Bo-Ltn" n="1">rdo rje’i gdan</term>
+                            <term status="verified" xml:lang="Bo-Ltn" n="1">rdo rje’i gdan</term>
                             <term xml:lang="bo" n="1">རྡོ་རྗེའི་གདན།</term>
                             <term type="attestedDictionary" status="verified" xml:lang="Sa-Ltn">vajrāsana</term>
                             <note type="definition">
@@ -745,7 +759,8 @@
                             <term status="verified" xml:lang="Bo-Ltn" type="attestedSource" n="1">pradz+nyA kA ra</term>
                             <term xml:lang="bo" type="attestedSource" n="1">པྲཛྙཱ་ཀཱ་ར།</term>
                             <note type="definition">
-                                <p>The Indian preceptor who translated this sūtra in the eleventh century.</p>
+                                <p>The Indian preceptor who translated this sūtra in the eleventh
+                                    century.</p>
                             </note>
                         </gloss>
                     </item>
