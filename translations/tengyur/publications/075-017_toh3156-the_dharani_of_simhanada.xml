@@ -4,20 +4,20 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="mainTitle" xml:lang="Bo-Ltn">seng ge sgra’i gzungs</title>
-                <title type="mainTitle" xml:lang="bo">སེང་གེ་སྒྲའི་གཟུངས།</title>
                 <title type="mainTitle" xml:lang="en">The Dhāraṇī of Siṃhanāda</title>
                 <title type="mainTitle" xml:lang="Sa-Ltn">Siṃha­nāda­dhāraṇī</title>
-                <title type="otherTitle" xml:lang="zh"/>
+                <title type="mainTitle" xml:lang="bo">སེང་གེ་སྒྲའི་གཟུངས།</title>
+                <title type="mainTitle" xml:lang="Bo-Ltn">seng ge sgra’i gzungs</title>
                 <author role="translatorMain" xml:id="UT23703-075-017-1"><!--84000 Associate Translators--></author>
                 <author role="translatorEng" xml:id="UT23703-075-017-2">Catherine Dalton</author>
                 <editor role="projectEditor" xml:id="UT23703-075-017-16">Ryan Damron</editor>
                 <editor role="copyEditor" xml:id="UT23703-075-017-25">Dawn Collins</editor>
                 <editor role="projectEditor" xml:id="UT23703-075-017-35">John Canti</editor>
                 <editor role="TEImarkupEditor" xml:id="UT23703-075-017-46">Martina Cotter</editor>
+                <editor role="finalReviewer" xml:id="UT23703-075-017-114">Andreas Doctor</editor>
             </titleStmt>
             <editionStmt>
-                <edition>v 0.0.2 <date>2024</date>
+                <edition>v 1.0.0 <date>2024</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -25,7 +25,7 @@
                     <name>84000: Translating the Words of the Buddha</name> is a global
                     non-profit initiative to translate all the Buddha’s words into modern languages,
                     and to make them available to everyone. </publisher>
-                <availability status="2">
+                <availability status="1.a">
                     <p type="tantricRestriction">
                         <emph rend="bold">Warning:</emph> Readers are
                         reminded that according to Vajrayāna Buddhist tradition there are
@@ -44,11 +44,11 @@
                     </licence>
                 </availability>
                 <idno xml:id="UT23703-075-017"/>
-                <note>An early mistake in the assigning of UT numbers within the 84000 project means
-                    that these ids diverge slightly from the standard logic.</note>
-                <date>2024-05-28</date>
+                <tei:note xmlns:tei="http://www.tei-c.org/ns/1.0">An early mistake in the assigning of UT numbers within the 84000 project means
+                    that these ids diverge slightly from the standard logic.</tei:note>
+                <date>2024-10-23</date>
             </publicationStmt>
-            <sourceDesc>
+            <tei:sourceDesc xmlns:tei="http://www.tei-c.org/ns/1.0">
                 <bibl key="toh3156" type="text">
                     <ref>Toh 3156</ref>
                     <biblScope>Degé Tengyur, vol. 75 (rgyud ’grel, phu), folio 178.a</biblScope>
@@ -60,7 +60,7 @@
                     <idno parent-id="O1JC76301JC21628" work="http://read.84000.co/sections"/>
                     <idno source-id="O1JC76301JC9779" work="W23703"/>
                 </bibl>
-            </sourceDesc>
+            </tei:sourceDesc>
             <notesStmt/>
             <revisionDesc>
                 <change who="#admin" when="2021-11-02T14:02:09.954Z" type="import" xml:id="UT23703-075-017-5" source="tengyur-data-3140-3222_PH_new_v2.4.xml">
@@ -144,6 +144,15 @@
                 <change who="#line-tofte" when="2024-06-05T09:43:10.976Z" type="text-version" status="0.0.2" xml:id="UT23703-075-017-107">
                     <desc>Auto (update-publication-status)</desc>
                 </change>
+                <change who="#line-tofte" when="2024-10-21T09:38:42.225Z" type="text-version" status="0.0.3" xml:id="UT23703-075-017-115">
+                    <desc>Auto (update-contributors)</desc>
+                </change>
+                <change who="#martina-cotter" when="2024-10-23T23:57:37.698Z" type="translation-status" status="1.a" xml:id="UT23703-075-017-116">
+                    <desc>1.a</desc>
+                </change>
+                <change who="#martina-cotter" when="2024-10-23T23:57:37.698Z" type="text-version" status="1.0.0" xml:id="UT23703-075-017-117">
+                    <desc>First published version.</desc>
+                </change>
             </revisionDesc>
         </fileDesc>
     </teiHeader>
@@ -152,15 +161,15 @@
                     Outline to the text is quite complex, it is recommended that you paste the outlined contents from the DOCX here as a comment for
                     markup's reference. The actual table of contents will be generated in the Reading Room by the parser.-->
         <front>
-            <div type="summary">
+            <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="summary" xml:id="UT23703-075-017-summary">
                 <head type="summary" tid="1">Summary</head>
                 <milestone unit="chunk" xml:id="UT23703-075-017-49"/>
                 <p tid="2">
                     <title xml:lang="en">The Dhāraṇī of Siṃhanāda</title> is a short work
                     that teaches an Avalokiteśvara Siṃhanāda dhāraṇī and gives a short instruction
                     for using it to cure illness.</p>
-            </div>
-            <div type="acknowledgment">
+            </tei:div>
+            <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="acknowledgment" xml:id="UT23703-075-017-acknowledgment">
                 <head type="acknowledgment" tid="3">Acknowledgements</head>
                 <milestone unit="chunk" xml:id="UT23703-075-017-50"/>
                 <p tid="4">This publication was completed under the patronage and supervision of
@@ -170,10 +179,10 @@
                     team. Catherine Dalton produced the translation and wrote the introduction. Ryan
                     Damron edited the translation and the introduction, and Dawn Collins copyedited
                     the text. Martina Cotter was in charge of the digital publication process. </p>
-            </div>
-            <div type="introduction">
+            </tei:div>
+            <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="introduction" xml:id="UT23703-075-017-introduction">
                 <head type="introduction" tid="7">Introduction</head>
-                <div type="section" xml:id="UT23703-075-017-introduction-1">
+                <tei:div type="section" xml:id="UT23703-075-017-introduction-1">
                     <milestone unit="chunk" xml:id="UT23703-075-017-53"/>
                     <p tid="9">
                         <title xml:lang="en">The Dhāraṇī of Siṃhanāda</title> is a short
@@ -181,34 +190,42 @@
                         Avalokiteśvara and a brief instruction for a ritual that employs the dhāraṇī
                         to cure illness. Its contents closely parallel a section from the longer
                             <title xml:lang="en">Dhāraṇī of Avalokiteśvara Siṃhanāda</title> (Toh
-                        703),<note place="end" xml:id="UT23703-075-017-101">
+                            703),<tei:note place="end" xml:id="UT23703-075-017-101">
                             <title xml:lang="en">
-                                <ref target="http://read.84000.co/translation/toh703.html">The Dhāraṇī of Avalokiteśvara Siṃhanāda</ref>
-                            </title> (translated 2024).</note> where the dhāraṇī and ritual content of <title xml:lang="en">The
-                            Dhāraṇī of Siṃhanāda</title>—along with several other dhāraṇīs, mantras,
-                        and rituals—is incorporated into a narrative framework that describes how
-                        Siṃhanāda acquired his curative powers. The concise <title xml:lang="en">Dhāraṇī of Siṃhanāda</title>, in contrast, opens directly with the
-                        dhāraṇī proper, followed by instructions for making eight maṇḍalas with cow
-                        dung, and how to incant and smear the dung on a sick person to cure their
-                        illness. In the end, Avalokiteśvara states that if a curative result were
-                        not achieved through the practice, it would be as if he, the bodhisattva
-                        Avalokiteśvara, had performed the five deeds of immediate retribution. This
-                        set of acts includes patricide, matricide, killing an arhat, causing a rift
-                        in the saṅgha, and drawing the blood of a tathāgata with malicious intent.
-                        This forceful statement implies that it is as impossible for the ritual to
-                        not take effect as it would be for Avalokiteśvara—the very embodiment of
-                        compassion—to perform any of these heinous acts. In the longer <title xml:lang="en">Dhāraṇī of Avalokiteśvara Siṃhanāda</title> from which the
-                        content of this shorter text appears to be extracted, this promise is made
-                        even more explicit, with Śākyamuni telling Mañjuśrī, “Mañjuśrī, this is the
-                        Great Compassionate One’s own promise.”<note place="end" xml:id="UT23703-075-017-54"> See <title xml:lang="en">The Dhāraṇī of Avalokiteśvara Siṃhanāda</title> (Toh 703, <ptr target="#UT22084-093-018-90"/>).<!--folio 167.b.2.--> </note> This
-                        sentence from the longer dhāraṇī text provides the context for the title of
-                        one recension of the shorter work: <title xml:lang="en">The Dhāraṇī of
-                            Siṃhanāda’s Promise</title> (Toh 704/912).<note place="end" xml:id="UT23703-075-017-102">
+                                <ref target="http://read.84000.co/translation/toh703.html">The
+                                    Dhāraṇī of Avalokiteśvara Siṃhanāda</ref>
+                            </title> (translated
+                            2024).</tei:note> where the dhāraṇī and ritual content of <title xml:lang="en">The Dhāraṇī of Siṃhanāda</title>—along with several other
+                        dhāraṇīs, mantras, and rituals—is incorporated into a narrative framework
+                        that describes how Siṃhanāda acquired his curative powers. The concise
+                            <title xml:lang="en">Dhāraṇī of Siṃhanāda</title>, in contrast, opens
+                        directly with the dhāraṇī proper, followed by instructions for making eight
+                        maṇḍalas with cow dung, and how to incant and smear the dung on a sick
+                        person to cure their illness. In the end, Avalokiteśvara states that if a
+                        curative result were not achieved through the practice, it would be as if
+                        he, the bodhisattva Avalokiteśvara, had performed the five deeds of
+                        immediate retribution. This set of acts includes patricide, matricide,
+                        killing an arhat, causing a rift in the saṅgha, and drawing the blood of a
+                        tathāgata with malicious intent. This forceful statement implies that it is
+                        as impossible for the ritual not to take effect as it would be for
+                        Avalokiteśvara—the very embodiment of compassion—to perform any of these
+                        heinous acts. In the longer <title xml:lang="en">Dhāraṇī of Avalokiteśvara
+                            Siṃhanāda</title> from which the content of this shorter text appears to
+                        be extracted, this promise is made even more explicit, with Śākyamuni
+                        telling Mañjuśrī, “Mañjuśrī, this is the Great Compassionate One’s own
+                            promise.”<tei:note place="end" xml:id="UT23703-075-017-54"> See <title xml:lang="en">The Dhāraṇī of Avalokiteśvara Siṃhanāda</title> (Toh
+                            703, <ptr target="#UT22084-093-018-90"/>).<!--folio 167.b.2.-->
+                        </tei:note> This sentence from the longer dhāraṇī text provides the context for
+                        the title of one recension of the shorter work: <title xml:lang="en">The
+                            Dhāraṇī of Siṃhanāda’s Promise</title> (Toh 704/912).<tei:note place="end" xml:id="UT23703-075-017-102">
                             <title xml:lang="en">
-                                <ref target="http://read.84000.co/translation/toh704.html">The Dhāraṇī of Siṃhanāda</ref>
+                                <ref target="http://read.84000.co/translation/toh704.html">The
+                                    Dhāraṇī of Siṃhanāda</ref>
                             </title>, <title xml:lang="en">
-                                <ref target="http://read.84000.co/translation/toh912.html">The Dhāraṇī of Siṃhanāda’s Promise</ref>
-                            </title> (translated 2024).</note>
+                                <ref target="http://read.84000.co/translation/toh912.html">The
+                                    Dhāraṇī of Siṃhanāda’s Promise</ref>
+                            </title> (translated
+                            2024).</tei:note>
                     </p>
                     <milestone unit="chunk" xml:id="UT23703-075-017-55"/>
                     <p tid="10">Siṃhanāda, “Lion’s Roar,” also sometimes called Lokeśvara Siṃhanāda,
@@ -216,16 +233,16 @@
                         sādhanas and several other Siṃhanāda praises and ritual texts preserved in
                         the Tibetan Kangyur, attesting to his importance in India. Images of
                         Siṃhanāda have been found at the Mahābodhi temple in Bodh Gaya prior to that
-                        temple’s nineteenth-century renovation,<note place="end" xml:id="UT23703-075-017-56"> Losty 2021, p. 17.</note> and in Sri Lanka,
-                        where it seems Siṃhanāda was especially popular.<note place="end" xml:id="UT23703-075-017-57"> Holt 1991, p. 41.</note> The association of
+                        temple’s nineteenth-century renovation,<tei:note place="end" xml:id="UT23703-075-017-56"> Losty 2021, p. 17.</tei:note> and in Sri Lanka,
+                        where it seems Siṃhanāda was especially popular.<tei:note place="end" xml:id="UT23703-075-017-57"> Holt 1991, p. 41.</tei:note> The association of
                         Siṃhanāda with curative properties that we find in the present text appears
                         to be quite an old one, as a tenth-century Nepalese miniature painting kept
                         at Cambridge depicts Siṃhanāda and includes a caption reading, “Lokeśvara of
-                        the hospital on the island of Siṃhala.”<note place="end" xml:id="UT23703-075-017-58"> Holt 1991, p. 79.</note> While
+                        the hospital on the island of Siṃhala.”<tei:note place="end" xml:id="UT23703-075-017-58"> Holt 1991, p. 79.</tei:note> While
                         Avalokiteśvara in general has a close iconographical association with the
-                        deity Śiva, this is even more clear in the case of Siṃhanāda. In the <title xml:lang="en">Dhāraṇī of Avalokiteśvara Siṃhanāda</title> (Toh 703), Siṃhanāda—just like Śiva—holds a
-                        brahmin’s skull and a snake-wrapped trident, and wears a sacred thread made
-                        of a snake. </p>
+                        deity Śiva, this is even more clear in the case of Siṃhanāda. In the <title xml:lang="en">Dhāraṇī of Avalokiteśvara Siṃhanāda</title> (Toh 703),
+                        Siṃhanāda—just like Śiva—holds a brahmin’s skull and a snake-wrapped
+                        trident, and wears a sacred thread made of a snake. </p>
                     <milestone unit="chunk" xml:id="UT23703-075-017-59"/>
                     <p tid="11">Although it is not described in this text, Siṃhanāda’s iconography
                         is generally consistent across textual and artistic sources. In the
@@ -238,52 +255,51 @@
                         sword standing on the open lotus blossom. Nearby and to the left, sits what
                         is variously described as a cup (<foreign xml:lang="Sa-Ltn" type="term">karoṭaka</foreign>), pot (<foreign xml:lang="Sa-Ltn" type="term">bhājana</foreign>, <foreign xml:lang="Bo-Ltn" type="term">snod</foreign>), or skull cup (<foreign xml:lang="Sa-Ltn" type="term">kapāla</foreign>, <foreign xml:lang="Bo-Ltn" type="term">thod
                             pa</foreign>) filled with fragrant flowers. This vessel often sits on a
-                        lotus or water lily.<note place="end" xml:id="UT23703-075-017-60"> The
+                        lotus or water lily.<tei:note place="end" xml:id="UT23703-075-017-60"> The
                             iconographic details of Siṃhanāda are described with some variation and
                             differing degrees of detail in Toh 2858, 2859, 3155, 3157, 3329, 3414,
                             3417, 3418, 3419, and 3650. Descriptions in Sanskrit can be found in
                             sādhana nos. 17, 20, 22, and 25 in volume one of the <title xml:lang="Sa-Ltn">Sādhanamālā</title>. For a survey of Indo-Tibetan
                             artistic depictions of Siṃhanāda, see the deity’s main page at Himalayan
-                            Art Resources: <ref target="https://www.himalayanart.org/search/set.cfm?setID=472&amp;page=1">https://www.himalayanart.org/search/set.cfm?setID=472&amp;page=1</ref>.</note>
+                            Art Resources: <ref target="https://www.himalayanart.org/search/set.cfm?setID=472&amp;page=1">https://www.himalayanart.org/search/set.cfm?setID=472&amp;page=1</ref>.</tei:note>
                     </p>
                     <milestone unit="chunk" xml:id="UT23703-075-017-61"/>
                     <p tid="12">The Siṃhanāda form of Avalokiteśvara continues to be practiced in
-                        contemporary Tibetan Buddhist traditions. Two arrangements of practices centered on Lokeśvara Siṃhanāda are found in the Compendium of Sādhanas 
-                        (<title xml:lang="Bo-Ltn">sgrub
-                            thabs kun btus</title>) compiled by Jamyang Loter Wangpo,<note place="end" xml:id="UT22084-093-017-57"> See
+                        contemporary Tibetan Buddhist traditions. Two arrangements of practices
+                        centered on Lokeśvara Siṃhanāda are found in the Compendium of Sādhanas
+                            (<title xml:lang="Bo-Ltn">sgrub thabs kun btus</title>) compiled by
+                        Jamyang Loter Wangpo,<tei:note place="end" xml:id="UT22084-093-017-57"> See
                                 <title xml:lang="Bo-Ltn">sgrub thabs kun btus</title> vol. 6, folios
-                                252.a–297.b.</note>                        
-                        and the nineteenth-century scholar Mipham Gyatso wrote a short summary of the story
-                        of <title xml:lang="en">The Dhāraṇī of Avalokiteśvara
-                            Siṃhanāda</title>.<note place="end" xml:id="UT23703-075-017-63"> See
-                                <title xml:lang="Bo-Ltn">seng ge sgra’i gzungs kyi lo rgyus</title>.
-                        </note>
+                            252.a–297.b.</tei:note> and the nineteenth-century scholar Mipham Gyatso
+                        wrote a short summary of the story of <title xml:lang="en">The Dhāraṇī of
+                            Avalokiteśvara Siṃhanāda</title>.<tei:note place="end" xml:id="UT23703-075-017-63"> See <title xml:lang="Bo-Ltn">seng ge sgra’i
+                                gzungs kyi lo rgyus</title>. </tei:note>
                     </p>
                     <milestone unit="chunk" xml:id="UT23703-075-017-64"/>
                     <p tid="13">
                         <title xml:lang="en">The Dhāraṇī of Siṃhanāda</title> is extant in
-                        Sanskrit, as text number twenty-one in the <title xml:lang="Sa-Ltn">Sādhanamālā</title>,<note place="end" xml:id="UT23703-075-017-65">
-                            Bhattacharyya 1925 vol. 1, p. 52. </note> and as part of the dhāraṇī
-                        collection published by Gergely Hidas.<note place="end" xml:id="UT23703-075-017-66"> Hidas 2021, p. 138.</note> It does not
+                        Sanskrit, as text number twenty-one in the <title xml:lang="Sa-Ltn">Sādhanamālā</title>,<tei:note place="end" xml:id="UT23703-075-017-65">
+                            Bhattacharyya 1925 vol. 1, p. 52. </tei:note> and as part of the dhāraṇī
+                        collection published by Gergely Hidas.<tei:note place="end" xml:id="UT23703-075-017-66"> Hidas 2021, p. 138.</tei:note> It does not
                         appear to be extant in Chinese translation. Despite the fact that <title xml:lang="en">The Dhāraṇī of Siṃhanāda</title> is preserved in the
                         Tengyur, there is no attribution of authorship or other information to
                         contextualize the transmission of the text in India. A different translation
                         of <title xml:lang="en">The Dhāraṇī of Siṃhanāda</title> is also found in
                         the Kangyur, where it is included in both the Tantra section (Toh 704) and
-                        the Compendium of Dhāraṇīs section (Toh 912) of the Degé collection.<note place="end" xml:id="UT23703-075-017-67"> The two versions of this text
+                        the Compendium of Dhāraṇīs section (Toh 912) of the Degé collection.<tei:note place="end" xml:id="UT23703-075-017-67"> The two versions of this text
                             preserved in the Kangyur are identical in content but have different
                             titles. Toh 704 is titled <title xml:lang="en">
-                                <ref target="http://read.84000.co/translation/toh704.html">The Dhāraṇī of Siṃhanāda</ref>
-                            </title> (<title xml:lang="Bo-Ltn">seng ge sgra’i gzungs</title>),
-                            while Toh 912 is titled <title xml:lang="en">
-                                <ref target="http://read.84000.co/translation/toh912.html">The Dhāraṇī of Siṃhanāda’s Promise</ref>
-                            </title> (<title xml:lang="Bo-Ltn">seng ge sgras dam bcas
-                                pa’i gzungs</title>). </note> The Kangyur and Tengyur recensions of
-                        the work have several minor variants that suggest that, in addition to being
-                        translated by different translators, they were also based on different
-                        Sanskrit recensions of the text. Although the differences are minor, the
-                        Tengyur recension stands closer to the extant Sanskrit text as preserved in
-                        the <title xml:lang="Sa-Ltn">Sādhanamālā</title> than the Kangyur recension. </p>
+                                <ref target="http://read.84000.co/translation/toh704.html">The
+                                    Dhāraṇī of Siṃhanāda</ref>
+                            </title> (<title xml:lang="Bo-Ltn">seng ge sgra’i gzungs</title>), while Toh 912 is titled <title xml:lang="en">
+                                <ref target="http://read.84000.co/translation/toh912.html">The
+                                    Dhāraṇī of Siṃhanāda’s Promise</ref>
+                            </title> (<title xml:lang="Bo-Ltn">seng ge sgras dam bcas pa’i gzungs</title>).
+                        </tei:note> The Kangyur and Tengyur recensions of the work have several minor
+                        variants that suggest that, in addition to being translated by different
+                        translators, they were also based on different Sanskrit recensions of the
+                        text. Although the differences are minor, the Tengyur recension stands
+                        closer to the extant Sanskrit text as preserved in the <title xml:lang="Sa-Ltn">Sādhanamālā</title> than the Kangyur recension. </p>
                     <milestone unit="chunk" xml:id="UT23703-075-017-68"/>
                     <p tid="14">The Tengyur version of <title xml:lang="en">The Dhāraṇī of
                             Siṃhanāda</title> translated here was produced in the eleventh or
@@ -308,37 +324,37 @@
                         dhāraṇī itself very slightly on the basis of the Sanskrit text from the
                             <title xml:lang="Sa-Ltn">Sādhanamālā</title> and have noted those
                         emendations. </p>
-                </div>
-            </div>
+                </tei:div>
+            </tei:div>
         </front>
         <body>
-            <div type="translation">
+            <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="translation" xml:id="UT23703-075-017-translation">
                 <head type="translation">The Translation</head>
                 <head type="titleMain" tid="16">The Dhāraṇī of Siṃhanāda</head>
-                <div type="section" xml:id="UT23703-075-017-section-1">
+                <tei:div type="section" xml:id="UT23703-075-017-section-1">
                     <milestone unit="chunk" xml:id="UT23703-075-017-71"/>
                     <p tid="20">
                         <ref cRef="F.178.a" type="folio" xml:id="UT23703-075-017-100"/>
                     </p>
                     <lb/>
                     <p rend="mantra" tid="21">
-                        <mantra xml:lang="Sa-Ltn">namo ratnatrayāya | nama
-                            āryāvalokiteśvarāya bodhisattvāya mahāsattvāya mahākāruṇikāya | tadyathā | oṁ akaṭe vikaṭe nikaṭe kaṭaṃkaṭe karoṭe karoṭavīrye<note place="end" xml:id="UT23703-075-017-73"> Here we follow the Kangxi and Narthang
-                                versions by adding <foreign xml:lang="Sa-Ltn" type="quote">karoṭa</foreign> (<foreign xml:lang="Bo-Ltn" type="quote">ka ro
-                                    Ta</foreign>), which is absent in the Degé but attested in the
-                                Sanskrit text from the <title xml:lang="Sa-Ltn">Sādhanamālā</title>
-                                and in Hidas 2021. </note> svāhā ||</mantra>
+                        <mantra xml:lang="Sa-Ltn">namo ratna­trayāya | nama
+                        āryāvalokiteśvarāya bodhi­sattvāya mahā­sattvāya mahā­kāruṇikāya |
+                            tadyathā | oṁ akaṭe vikaṭe nikaṭe kaṭaṃkaṭe karoṭe karoṭavīrye<tei:note place="end" xml:id="UT23703-075-017-73"> Here we follow the Kangxi
+                                and Narthang versions by adding <foreign xml:lang="Sa-Ltn" type="quote">karoṭa</foreign> (<foreign xml:lang="Bo-Ltn" type="quote">ka ro Ta</foreign>), which is absent in the Degé
+                                but attested in the Sanskrit text from the <title xml:lang="Sa-Ltn">Sādhanamālā</title> and in Hidas 2021. </tei:note>
+                            svāhā ||</mantra>
                     </p>
                     <milestone unit="chunk" xml:id="UT23703-075-017-74"/>
                     <p tid="22">In the early morning, in front of the blessed, noble Lokeśvara, make
                         eight maṇḍalas out of cow dung that has not fallen to the ground. Recite
-                        this thirteen<note place="end" xml:id="UT23703-075-017-75"> Here we follow
+                        this thirteen<tei:note place="end" xml:id="UT23703-075-017-75"> Here we follow
                             the Kangxi and Narthang Kangyurs, which read <foreign xml:lang="Bo-Ltn" type="quote">bcu gsum</foreign>, “thirteen,” rather than the Degé,
                             which reads <foreign xml:lang="Bo-Ltn" type="quote">gsum</foreign>,
                             “three,” as this is in accordance with the reading in the parallel text
                             Toh 704/912, as well as in Toh 703, which seems to be the source text
-                            from which this work was extracted.</note> times at each maṇḍala, then
-                        incant the resulting<note place="end" xml:id="UT23703-075-017-76">
+                            from which this work was extracted.</tei:note> times at each maṇḍala, then
+                        incant the resulting<tei:note place="end" xml:id="UT23703-075-017-76">
                             <foreign xml:lang="Bo-Ltn" type="quote">lhag ma</foreign>. The parallel
                             passage from <title xml:lang="en">The Dhāraṇī of Avalokiteśvara
                                 Siṃhanāda</title> (Toh 703) includes an instruction to gather the
@@ -352,46 +368,46 @@
                             inscribed with maṇḍalas and incanted before being collected together,
                             incanted a second time, and applied to the patient. This would make
                             logical sense insofar as this process would infuse the dung with healing
-                            potency. This interpretation is nonetheless tentative.</note> dung with
+                            potency. This interpretation is nonetheless tentative.</tei:note> dung with
                         the mantra seven times. Smear it on the sick person and all of their
                         illnesses will be cured. </p>
                     <milestone unit="chunk" xml:id="UT23703-075-017-77"/>
                     <p tid="23">If this is not successful after seven, thirteen, or twenty-one days,
                         even if performed by someone who has carried out the five deeds of immediate
-                        retribution, then I<note place="end" xml:id="UT23703-075-017-78"> In the
+                        retribution, then I<tei:note place="end" xml:id="UT23703-075-017-78"> In the
                             section of the <title xml:lang="en">Dhāraṇī of Avalokiteśvara
                                 Siṃhanāda</title> (Toh 703), which closely parallels this text, it
                             is made clear that this is Avalokiteśvara Siṃhanāda’s promise. However,
                             in that text, it is Śākyamuni who articulates Siṃhanāda’s promise to
-                            Mañjuśrī.</note> myself will have carried out the five deeds of
+                            Mañjuśrī.</tei:note> myself will have carried out the five deeds of
                         immediate retribution, and I will have deceived the blessed buddhas. </p>
                     <milestone unit="chunk" xml:id="UT23703-075-017-79"/>
                     <trailer tid="24">This completes “<title xml:lang="en">The Dhāraṇī of
-                        Siṃhanāda</title>.”</trailer>
-                </div>
-                <div type="colophon" xml:id="UT23703-075-017-colophon">
+                            Siṃhanāda</title>.”</trailer>
+                </tei:div>
+                <tei:div type="colophon" xml:id="UT23703-075-017-colophon">
                     <head type="colophon" tid="25">Colophon</head>
                     <milestone unit="chunk" xml:id="UT23703-075-017-80"/>
                     <p tid="26">This was translated by the monk Tsultrim Gyaltsen.</p>
-                </div>
-            </div>
+                </tei:div>
+            </tei:div>
         </body>
         <back>
-            <div type="notes">
+            <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="notes" xml:id="UT23703-075-017-notes">
                 <head type="notes" tid="27">Notes</head>
-            </div>
-            <div type="listBibl">
+            </tei:div>
+            <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="listBibl" xml:id="UT23703-075-017-listBibl">
                 <head type="listBibl" tid="29">Bibliography</head>
-                <div type="section" xml:id="UT23703-075-017-listBibl-1">
+                <tei:div type="section" xml:id="UT23703-075-017-listBibl-1">
                     <head type="section" tid="32">Primary Sources</head>
                     <bibl xml:id="UT23703-075-017-81">
                         <title xml:lang="Bo-Ltn">seng ge sgra’i
-                        gzungs</title> (<title xml:lang="Sa-Ltn">Siṃha­nāda­dhāraṇī</title>). Toh 3156, Degé Tengyur vol. 75 (rgyud ’grel, phu), folio
-                        178.a.</bibl>
+                            gzungs</title> (<title xml:lang="Sa-Ltn">Siṃha­nāda­dhāraṇī</title>).
+                        Toh 3156, Degé Tengyur vol. 75 (rgyud ’grel, phu), folio 178.a.</bibl>
                     <bibl xml:id="UT23703-075-017-82">
                         <title xml:lang="Bo-Ltn">seng ge sgra’i
-                        gzungs</title> (<title xml:lang="Sa-Ltn">Siṃha­nāda­dhāraṇī</title>). Toh 704, Degé Kangyur vol. 93 (rgyud, rtsa),
-                        folios 171.a–171.b.</bibl>
+                            gzungs</title> (<title xml:lang="Sa-Ltn">Siṃha­nāda­dhāraṇī</title>).
+                        Toh 704, Degé Kangyur vol. 93 (rgyud, rtsa), folios 171.a–171.b.</bibl>
                     <bibl xml:id="UT23703-075-017-83">
                         <title xml:lang="Bo-Ltn">seng ge sgras dam
                             bcas pa’i gzungs</title>. Toh 912, Degé Kangyur vol. 101 (gzungs ’dus,
@@ -413,8 +429,8 @@
                         khang (China Tibetology Publishing House), 2006–9, vol. 97, pp. 723–24. </bibl>
                     <bibl xml:id="UT23703-075-017-86">
                         <title xml:lang="Bo-Ltn">seng ge sgra’i
-                            gzungs</title>. Stok Palace Kangyur vol. 107 (rgyud, ma),
-                        folios 45.b–46.a. </bibl>
+                            gzungs</title>. Stok Palace Kangyur vol. 107 (rgyud, ma), folios
+                        45.b–46.a. </bibl>
                     <bibl xml:id="UT23703-075-017-87">
                         <title xml:lang="Sa-Ltn">Siṃha­nāda­dhāraṇī</title>. In <title xml:lang="Sa-Ltn">Sādhanamālā,</title> vol. 1, edited by Benoytosh Bhattacharyya, 52.
                         Baroda: Central Library, 1925.</bibl>
@@ -423,21 +439,28 @@
                             Gyatso’s Collected Works</title> (<title xml:lang="Bo-Ltn">gsung ’bum/
                             mi pham rgya mtsho</title>), Chengdu: gangs can rig gzhung dpe rnying
                         myur skyobs lhan tshogs, 2007, vol. 25 (ra), folios 51.a–51.b.</bibl>
-                </div>
-                <div type="section" xml:id="UT23703-075-017-listBibl-2">
+                </tei:div>
+                <tei:div type="section" xml:id="UT23703-075-017-listBibl-2">
                     <head type="section" tid="31">Secondary Sources</head>
                     <bibl xml:id="UT22084-093-017-138">84000. <title xml:lang="en">
-                        <ref target="https://read.84000.co/translation/toh703.html">The Dhāraṇī of Avalokiteśvara Siṃhanāda</ref>
-                    </title> (<title xml:lang="Sa-Ltn">Āvalokiteśvara­siṃha­nāda­dhāraṇī</title>, <title xml:lang="Bo-Ltn">spyan ras gzigs dbang phyug seng ge sgra’i gzungs</title>, Toh 703).
-                        Translated by Catherine Dalton. Online publication, 84000: Translating the Words of the Buddha, 2024.</bibl>
+                            <ref target="https://read.84000.co/translation/toh703.html">The Dhāraṇī
+                                of Avalokiteśvara Siṃhanāda</ref>
+                        </title> (<title xml:lang="Sa-Ltn">Āvalokiteśvara­siṃha­nāda­dhāraṇī</title>, <title xml:lang="Bo-Ltn">spyan
+                            ras gzigs dbang phyug seng ge sgra’i gzungs</title>, Toh 703).
+                        Translated by Catherine Dalton. Online publication, 84000: Translating the
+                        Words of the Buddha, 2024.</bibl>
                     <bibl xml:id="UT23703-075-017-103">———. <title xml:lang="en">
-                        <ref target="https://read.84000.co/translation/toh704.html">The Dhāraṇī of Siṃhanāda</ref>
-                    </title> (<title xml:lang="Bo-Ltn">seng ge sgra’i gzungs</title>, Toh 704).
-                        Translated by Catherine Dalton. Online publication, 84000: Translating the Words of the Buddha, 2024.</bibl>
+                            <ref target="https://read.84000.co/translation/toh704.html">The Dhāraṇī
+                                of Siṃhanāda</ref>
+                        </title> (<title xml:lang="Bo-Ltn">seng ge sgra’i gzungs</title>, Toh 704).
+                        Translated by Catherine Dalton. Online publication, 84000: Translating the
+                        Words of the Buddha, 2024.</bibl>
                     <bibl xml:id="UT23703-075-017-104">———. <title xml:lang="en">
-                        <ref target="https://read.84000.co/translation/toh912.html">The Dhāraṇī of Siṃhanāda’s Promise</ref>
-                    </title> (<title xml:lang="Bo-Ltn">seng ge sgras dam bcas pa’i gzungs</title>, Toh 912).
-                        Translated by Catherine Dalton. Online publication, 84000: Translating the Words of the Buddha, 2024.</bibl>
+                            <ref target="https://read.84000.co/translation/toh912.html">The Dhāraṇī
+                                of Siṃhanāda’s Promise</ref>
+                        </title> (<title xml:lang="Bo-Ltn">seng ge sgras dam bcas pa’i
+                            gzungs</title>, Toh 912). Translated by Catherine Dalton. Online
+                        publication, 84000: Translating the Words of the Buddha, 2024.</bibl>
                     <bibl xml:id="UT23703-075-017-90">Hidas, Gergely. <title xml:lang="en">Powers of
                             Protection: The Buddhist Tradition of Spells in the Dhāraṇīsaṃgraha
                             Collections</title>. Boston: de Gruyter, 2021.</bibl>
@@ -449,9 +472,9 @@
                             Throne: Finds from the Site of the Buddha’s Enlightenment</title>,
                         edited by Sam van Schaik, Daniela De Simone, Gergeley Hidas, and Michael
                         Willis, 8–28. London: The British Museum, 2021.</bibl>
-                </div>
-            </div>
-            <div type="glossary" status="excluded">
+                </tei:div>
+            </tei:div>
+            <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="glossary" status="excluded" xml:id="UT23703-075-017-glossary">
                 <list type="glossary">
                     <item>
                         <gloss type="term" xml:id="UT23703-075-017-94">
@@ -459,19 +482,19 @@
                             <term status="verified" xml:lang="Bo-Ltn" n="1">mtshams med pa lnga </term>
                             <term xml:lang="bo" n="1">མཚམས་མེད་པ་ལྔ།</term>
                             <term type="attestedDictionary" status="verified" xml:lang="Sa-Ltn">pañcānantarya</term>
-                            <note type="definition">
+                            <tei:note type="definition">
                                 <p>Five acts said to lead to immediate and
                                     unavoidable birth in the hell realms: killing one’s father,
                                     killing one’s mother, killing an arhat, sowing discord within
                                     the saṅgha, and drawing the blood of a tathāgata with ill
                                     intent. </p>
-                            </note>
+                            </tei:note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="person" xml:id="UT23703-075-017-95">
                             <term type="translationMain">Mañjuśrī</term>
-                        <term status="verified" xml:lang="Bo-Ltn" n="1">’jam dpal </term>
+                            <term status="verified" xml:lang="Bo-Ltn" n="1">’jam dpal </term>
                             <term xml:lang="bo" n="1" status="verified">འཇམ་དཔལ།</term>
                             <term type="attestedDictionary" status="verified" xml:lang="Sa-Ltn">mañjuśrī</term>
                         </gloss>
@@ -482,10 +505,10 @@
                             <term status="verified" xml:lang="Bo-Ltn" n="1">seng ge’i sgra </term>
                             <term xml:lang="bo" n="1">སེང་གེའི་སྒྲ།</term>
                             <term type="attestedDictionary" status="verified" xml:lang="Sa-Ltn">siṃhanāda</term>
-                            <note type="definition">
+                            <tei:note type="definition">
                                 <p>Literally, “The Lion’s Roar.” The name of a
                                     form of Avalokiteśvara.</p>
-                            </note>
+                            </tei:note>
                         </gloss>
                     </item>
                     <item>
@@ -494,35 +517,37 @@
                             <term status="verified" xml:lang="Bo-Ltn" n="1">ngag gi dbang phyug </term>
                             <term xml:lang="bo" n="1">ངག་གི་དབང་ཕྱུག</term>
                             <term type="attestedDictionary" status="verified" xml:lang="Sa-Ltn">vāgīśvara</term>
-                            <note type="definition">
+                            <tei:note type="definition">
                                 <p>An Indian master active in the eleventh
                                     century. This may be a shortened name of Vāgīśvarakīrti, a
                                     renowned master of the Cakrasaṃvara who was a gate keeper at
                                     Vikramaśīla before spending the latter part of his life in the
                                     Kathmandu Valley.</p>
-                            </note>
+                            </tei:note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="person" xml:id="UT23703-075-017-98">
                             <term type="translationMain">Lokya Sherab Tsek</term>
-                        <term status="verified" xml:lang="Bo-Ltn" n="1">klog skya shes rab brtsegs </term>
+                            <term status="verified" xml:lang="Bo-Ltn" n="1">klog skya shes rab
+                                brtsegs </term>
                             <term xml:lang="bo" n="1">ཀློག་སྐྱ་ཤེས་རབ་བརྩེགས།</term>
-                            <note type="definition">
+                            <tei:note type="definition">
                                 <p>An eleventh-century Tibetan master and
                                     translator who is specifically known for his Cakrasaṃvara
                                     lineage, which he received from teachers in the Kathmandu
                                     Valley. </p>
-                            </note>
+                            </tei:note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="person" xml:id="UT23703-075-017-99">
                             <term type="translationMain">Patshab Lotsawa Tsultrim Gyaltsen</term>
-                            <term status="verified" xml:lang="Bo-Ltn" n="1">pa tshab lo tswa tshul khrims rgyal mtshan </term>
+                            <term status="verified" xml:lang="Bo-Ltn" n="1">pa tshab lo tswa tshul
+                                khrims rgyal mtshan </term>
                             <term xml:lang="bo" n="1">པ་ཚབ་ལོ་ཙྭ་ཚུལ་ཁྲིམས་རྒྱལ་མཚན།</term>
-                        <term type="translationAlternative">Tsultrim Gyaltsen</term>
-                            <note type="definition">
+                            <term type="translationAlternative">Tsultrim Gyaltsen</term>
+                            <tei:note type="definition">
                                 <p>A Tibetan translator who lived in the
                                     eleventh to twelfth century. He translated the collection of
                                     sādhanas referred to as “The ‘Hundred’ Sādhanas translated by
@@ -532,21 +557,23 @@
                                     presence of the paṇḍita Abhayākaragupta, who was a Bengali
                                     scholar and the abbot of Vikramaśīla. Patshab’s collection is
                                     included in the Tantra section of the Degé Tengyur.</p>
-                            </note>
+                            </tei:note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="person" xml:id="UT23703-075-017-105">
-                        <term type="translationMain">Jamyang Loter Wangpo</term>
-                        <term status="verified" xml:lang="Bo-Ltn" n="1">’jam dbyangs blo gter dbang po</term>
+                            <term type="translationMain">Jamyang Loter Wangpo</term>
+                            <term status="verified" xml:lang="Bo-Ltn" n="1">’jam dbyangs blo gter
+                                dbang po</term>
                             <term xml:lang="bo" n="1" status="verified">འཇམ་དབྱངས་བློ་གཏེར་དབང་པོ།</term>
-                        <note type="definition">
-                                <p>1847-1914. A master of the Sakya tradition.</p>
-                            </note>
-                    </gloss>
+                            <tei:note type="definition">
+                                <p>1847-1914. A master of the Sakya
+                                    tradition.</p>
+                            </tei:note>
+                        </gloss>
                     </item>
                 </list>
-            </div>
+            </tei:div>
         </back>
     </text>
 </TEI>
