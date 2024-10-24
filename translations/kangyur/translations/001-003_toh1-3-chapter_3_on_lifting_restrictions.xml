@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../../../schema/current/translation.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<tei:TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -27,7 +27,7 @@
                 <editor role="finalReviewer" xml:id="UT22084-001-003-634">John Canti</editor>
             </titleStmt>
             <editionStmt>
-                <edition>v 1.0.1 <date>2024</date>
+                <edition>v 1.0.2 <date>2024</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -151,12 +151,15 @@
                 <change who="#john" when="2024-10-23T18:50:39.829Z" type="text-version" status="1.0.1" xml:id="UT22084-001-003-4655">
                     <desc>User set version to 1.0.1</desc>
                 </change>
+                <change who="#john" when="2024-10-24T10:02:24.035Z" type="text-version" status="1.0.2" xml:id="UT22084-001-003-4656">
+                    <desc>Some minor additional revisions made.</desc>
+                </change>
             </revisionDesc>
         </fileDesc>
     </teiHeader>
     <text>
         <front>
-            <div type="summary" xml:id="UT22084-001-003-summary">
+            <tei:div type="summary" xml:id="UT22084-001-003-summary">
                 <head type="summary" tid="1">Summary</head>
                 <milestone unit="chunk" xml:id="UT22084-001-003-67"/>
                 <p tid="2">
@@ -187,8 +190,8 @@
                     Rites” at an officially demarcated monastic site is considered a crucial
                     component in ensuring the integrity of the monastics living there and nearby.
                 </p>
-            </div>
-            <div type="acknowledgment" xml:id="UT22084-001-003-acknowledgment">
+            </tei:div>
+            <tei:div type="acknowledgment" xml:id="UT22084-001-003-acknowledgment">
                 <head type="acknowledgment" tid="4">Acknowledgements</head>
                 <milestone unit="chunk" xml:id="UT22084-001-003-69"/>
                 <p tid="5">This text was translated from Tibetan and checked against the Sanskrit
@@ -202,10 +205,10 @@
                     84000: Translating the Words of the Buddha. Nathaniel Rich edited the
                     translation and the introduction, and Ven. Konchog Norbu copyedited the text.
                     André Rodrigues was in charge of the digital publication process. </p>
-            </div>
-            <div type="introduction" xml:id="UT22084-001-003-introduction">
+            </tei:div>
+            <tei:div type="introduction" xml:id="UT22084-001-003-introduction">
                 <head type="introduction" tid="8">Introduction</head>
-                <div type="section" xml:id="UT22084-001-003-introduction-1">
+                <tei:div type="section" xml:id="UT22084-001-003-introduction-1">
                     <head type="section" tid="284">Overview</head>
                     <milestone unit="chunk" xml:id="UT22084-001-003-72"/>
                         <p tid="285">
@@ -250,15 +253,15 @@
                             rite of lifting restrictions described here proceeds from the premise
                             that participating monks either willingly confess their offenses from
                             the start or willingly acknowledge them when their memory is prompted. </p>
-                </div>
-                    <div type="section" xml:id="UT22084-001-003-introduction-1-1">
+                </tei:div>
+                    <tei:div type="section" xml:id="UT22084-001-003-introduction-1-1">
                         <head type="section" tid="286">Structure and Contents</head>
                         <p tid="290">Like the other chapters of <title xml:lang="en">The Chapters on Monastic Discipline</title>, 
                             <title xml:lang="en">The Chapter on the Lifting Restrictions</title> starts with a “global summary” 
                             or <foreign xml:lang="Sa-Ltn">piṇḍoddāna</foreign>. In this case, the global summary groups the 
                             contents of the text into five sections. The first section sets out the procedures by which restrictions 
                             are lifted, and the remaining four describe the contingencies that may bear on how the rite is performed.</p>
-                        <div type="section" xml:id="UT22084-001-003-introduction-1-2">
+                        <tei:div type="section" xml:id="UT22084-001-003-introduction-1-2">
                             <head type="section" tid="287">Lifting Restrictions</head>
                             <milestone unit="chunk" xml:id="UT22084-001-003-77"/>
                         <p tid="12">The first section, after its own summary (<foreign xml:lang="Sa-Ltn">uddāna</foreign>), 
@@ -369,8 +372,8 @@
                             protocols are similar to those described in chapter 2, <title xml:lang="en">The Chapter on the Restoration Rite</title>, in which
                             an ill monk sends his profession of purity and consent for the
                             restoration rite.</p>
-                    </div>
-                    <div type="section" xml:id="UT22084-001-003-introduction-1-3">
+                    </tei:div>
+                    <tei:div type="section" xml:id="UT22084-001-003-introduction-1-3">
 
                         <head type="section" tid="19">Contingencies</head>
                         <milestone unit="chunk" xml:id="UT22084-001-003-92"/>
@@ -429,9 +432,9 @@
                             begging bowls, mend their ceremonial robes, offer them baths and oils,
                             offer them rich foods, and give them the opportunity to explain the
                             Dharma.</p>
-                    </div>
-                </div>
-                    <div type="section" xml:id="UT22084-001-003-introduction-1-4">
+                    </tei:div>
+                </tei:div>
+                    <tei:div type="section" xml:id="UT22084-001-003-introduction-1-4">
 
                         <head type="section" tid="24">Adaptations for Nuns</head>
                         <milestone unit="chunk" xml:id="UT22084-001-003-97"/>
@@ -513,8 +516,8 @@
                                 Restrictions</title> emphasizes not gender but the ability of
                             someone on site to lead <title xml:lang="en">The Prātimokṣa
                                 Sūtra</title> recitation.</p>
-                    </div>
-                    <div type="section" xml:id="UT22084-001-003-introduction-1-5">
+                    </tei:div>
+                    <tei:div type="section" xml:id="UT22084-001-003-introduction-1-5">
                         <head type="section" tid="30">The Etymology of <foreign xml:lang="Sa-Ltn" type="term">Pravāraṇa</foreign>
                     </head>
                         <milestone unit="chunk" xml:id="UT22084-001-003-107"/>
@@ -571,8 +574,8 @@
                                     ba las skabs phye bas na dgag dbye zhes
                             bya</foreign>.</note>
                     </p>
-                    </div>
-                    <div type="section" xml:id="UT22084-001-003-introduction-1-6">
+                    </tei:div>
+                    <tei:div type="section" xml:id="UT22084-001-003-introduction-1-6">
 
                         <head type="section" tid="35">The Text</head>
                         <milestone unit="chunk" xml:id="UT22084-001-003-114"/>
@@ -621,17 +624,17 @@
                             from discussion with the 84000 Vinaya Team. But these choices remain
                             provisional and may require revision as work on the Mūlasarvāstivāda
                             Vinaya progresses.</p>
-                    </div>
-                </div>
+                    </tei:div>
+                </tei:div>
             
         </front>
         <body>
-            <div type="translation" xml:id="UT22084-001-003-translation">
+            <tei:div type="translation" xml:id="UT22084-001-003-translation">
                 <head type="translation">The Translation</head>
                 <head type="titleHon" tid="39">From <title xml:lang="en">The Chapters on Monastic Discipline</title>
                 </head>
                 <head type="titleMain" tid="40">The Chapter on Lifting Restrictions</head>
-                <div type="prologue" xml:id="UT22084-001-003-prologue">
+                <tei:div type="prologue" xml:id="UT22084-001-003-prologue">
                     <head type="prologue" tid="283">Prologue</head>
                     <milestone unit="chunk" xml:id="UT22084-001-003-124"/>
                     <p tid="44">
@@ -678,8 +681,8 @@
                                 part of the rains.”</note>
                         </l>
                     </lg>
-                </div>
-                <div type="section" xml:id="UT22084-001-003-section-1">
+                </tei:div>
+                <tei:div type="section" xml:id="UT22084-001-003-section-1">
                     <!-- MAIN SECTION-->
                     <milestone unit="chunk" xml:id="UT22084-001-003-131"/>
                     <head type="section" tid="47">Lifting Restrictions</head>
@@ -699,7 +702,7 @@
                             <ptr type="subdivision" target="#UT22084-001-003-section-1-4">An act to
                                 tend the sick</ptr>.</l>
                     </lg>
-                    <div type="chapter" xml:id="UT22084-001-003-section-1-1">
+                    <tei:div type="chapter" xml:id="UT22084-001-003-section-1-1">
                         <head type="chapter" tid="50">Consent to Lift Restrictions</head>
                         <milestone unit="chunk" xml:id="UT22084-001-003-135"/>
                         <p tid="51">The Blessed Buddha pledged to settle for the rains<note place="end" xml:id="UT22084-001-003-136"> The phrase “pledged to
@@ -862,8 +865,8 @@
                             has pledged to settle for the rains should lift restrictions on the
                             saṅgha regarding the three grounds of what has been seen, heard, or
                             suspected.”</p>
-                    </div>
-                    <div type="chapter" xml:id="UT22084-001-003-section-1-2">
+                    </tei:div>
+                    <tei:div type="chapter" xml:id="UT22084-001-003-section-1-2">
                         <head type="chapter" tid="278">Appointing the Director of Lifting
                             Restrictions</head>
                         <milestone unit="chunk" xml:id="UT22084-001-003-160"/>
@@ -1242,8 +1245,8 @@
                                     las yol ba byung ngam/ gnod pa ’byung ba lta na dgag dbye go bar
                                     bya ba’i sngags lan gnyis bzla bar bya’o</foreign>.</note>
                         </p>
-                    </div>
-                    <div type="chapter" xml:id="UT22084-001-003-section-1-3">
+                    </tei:div>
+                    <tei:div type="chapter" xml:id="UT22084-001-003-section-1-3">
                         <head type="chapter" tid="98">Categorizing Proper and Improper</head>
                         <milestone unit="chunk" xml:id="UT22084-001-003-215"/>
                         <p tid="99">The venerable Upāli asked the Blessed Buddha, “Honorable One,
@@ -1256,8 +1259,8 @@
                             that is proper and with a quorum—that is the lifting of restrictions
                             with a quorum done properly.” <ref cRef="F.225.a" type="folio" xml:id="UT22084-001-003-565"/>
                         </p>
-                    </div>
-                    <div type="chapter" xml:id="UT22084-001-003-section-1-4">
+                    </tei:div>
+                    <tei:div type="chapter" xml:id="UT22084-001-003-section-1-4">
                         <head type="chapter" tid="101">An Act to Tend The Sick</head>
                         <milestone unit="chunk" xml:id="UT22084-001-003-218"/>
                         <p tid="102">On the fifteenth, the day of lifting restrictions, the Blessed One sat
@@ -1473,9 +1476,9 @@
                             a motion and perform the lifting of restrictions. A monk who directs the
                             lifting of restrictions should be appointed and a sick monk’s lifting of
                             restrictions should be received.”</p>
-                    </div>
-                </div>
-                <div type="section" xml:id="UT22084-001-003-section-2">
+                    </tei:div>
+                </tei:div>
+                <tei:div type="section" xml:id="UT22084-001-003-section-2">
                     <!-- MAIN SECTION-->
                     <head type="section" tid="131">Improper</head>
                     <milestone unit="chunk" xml:id="UT22084-001-003-259"/>
@@ -1501,7 +1504,7 @@
                                     ca</foreign>. </note>
                         </l>
                     </lg>
-                    <div type="chapter" xml:id="UT22084-001-003-section-2-1">
+                    <tei:div type="chapter" xml:id="UT22084-001-003-section-2-1">
                         <head type="chapter" tid="279">In Pledging to Settle, Suspending an Improper
                             Rite, A Lifting of Restrictions Recited Once, and When a Single
                             Repetition Should Be Done</head>
@@ -1587,9 +1590,9 @@
                                     gi tshe dge ’dun tshogs pa rnyed pa dag de’i tshe dge ’dun dang
                                     lhan cig dgag dbye brgya’o</foreign>.</note>
                         </p>
-                    </div>
-                </div>
-                <div type="section" xml:id="UT22084-001-003-section-3">
+                    </tei:div>
+                </tei:div>
+                <tei:div type="section" xml:id="UT22084-001-003-section-3">
                     <!-- MAIN SECTION-->
                     <head type="section" tid="141">Monk</head>
                     <milestone unit="chunk" xml:id="UT22084-001-003-272"/>
@@ -1616,7 +1619,7 @@
                             <ptr type="subdivision" target="#UT22084-001-003-section-3-6">A
                                 well-gathered assembly</ptr>.</l>
                     </lg>
-                    <div type="chapter" xml:id="UT22084-001-003-section-3-1">
+                    <tei:div type="chapter" xml:id="UT22084-001-003-section-3-1">
                         <head type="chapter" tid="145">Hemorrhoids</head>
                         <milestone unit="chunk" xml:id="UT22084-001-003-277"/>
                         <p tid="146">“On the fifteenth, the day of lifting restrictions, a great
@@ -1634,8 +1637,8 @@
                             reason for the lifting of restrictions recited
                             once.”<!--</modularPassage>-->
                         </p>
-                    </div>
-                    <div type="chapter" xml:id="UT22084-001-003-section-3-2">
+                    </tei:div>
+                    <tei:div type="chapter" xml:id="UT22084-001-003-section-3-2">
                         <head type="chapter" tid="148">Rains</head>
                         <milestone unit="chunk" xml:id="UT22084-001-003-280"/>
                         <p tid="149">“Another reason for the lifting of restrictions recited once:
@@ -1655,8 +1658,8 @@
                             reason for the lifting of restrictions recited
                             once.”<!--</modularPassage>-->
                         </p>
-                    </div>
-                    <div type="chapter" xml:id="UT22084-001-003-section-3-3">
+                    </tei:div>
+                    <tei:div type="chapter" xml:id="UT22084-001-003-section-3-3">
                         <head type="chapter" tid="151">King</head>
                         <milestone unit="chunk" xml:id="UT22084-001-003-283"/>
                         <p tid="152">“Another reason for the lifting of restrictions recited once:
@@ -1694,8 +1697,8 @@
                             reason for the lifting of restrictions recited
                             once.”<!--</modularPassage>-->
                         </p>
-                    </div>
-                    <div type="chapter" xml:id="UT22084-001-003-section-3-4">
+                    </tei:div>
+                    <tei:div type="chapter" xml:id="UT22084-001-003-section-3-4">
                         <head type="chapter" tid="154">The Ascertainment of Sweet Dharmas</head>
                         <milestone unit="chunk" xml:id="UT22084-001-003-288"/>
                         <p tid="155">“Another reason for the lifting of restrictions recited once:
@@ -1821,8 +1824,8 @@
                             reason for the lifting of restrictions recited
                             once.”<!--</modularPassage>-->
                         </p>
-                    </div>
-                    <div type="chapter" xml:id="UT22084-001-003-section-3-5">
+                    </tei:div>
+                    <tei:div type="chapter" xml:id="UT22084-001-003-section-3-5">
                         <head type="chapter" tid="163">Matters Considered to Act as an Obstacle to
                             the Saṅgha</head>
                         <milestone unit="chunk" xml:id="UT22084-001-003-301"/>
@@ -2096,8 +2099,8 @@
                             saṅgha’s lifting of restrictions, we will lift restrictions when we have
                             obtained a quorum of saṅgha.’ Then they should leave. This is the reason
                             for the lifting of restrictions as an assembly.”</p>
-                    </div>
-                    <div type="chapter" xml:id="UT22084-001-003-section-3-6">
+                    </tei:div>
+                    <tei:div type="chapter" xml:id="UT22084-001-003-section-3-6">
                         <head type="chapter" tid="199">A Well-Gathered Assembly</head>
                         <milestone unit="chunk" xml:id="UT22084-001-003-344"/>
                         <p tid="200">Upāli asked the Blessed Buddha, “Honorable One, if the monks
@@ -2158,8 +2161,8 @@
                             <l>The <ptr type="subdivision" target="#UT22084-001-003-section-3-10">seven for offenses</ptr>, and</l>
                             <l>The <ptr type="subdivision" target="#UT22084-001-003-section-3-11">seven for prompts</ptr>.</l>
                         </lg>
-                    </div>
-                    <div type="chapter" xml:id="UT22084-001-003-section-3-7">
+                    </tei:div>
+                    <tei:div type="chapter" xml:id="UT22084-001-003-section-3-7">
                         <head type="chapter" tid="213">The King Apprehends a Monk</head>
                         <milestone unit="chunk" xml:id="UT22084-001-003-362"/>
                         <p tid="214">“On the fifteenth, the day of lifting restrictions, if a monk
@@ -2173,8 +2176,8 @@
                             restrictions. On the following day, they should make efforts to secure
                             his emancipation. If efforts are made, it is well. If efforts are not
                             made, they will be guilty of a breach.”</p>
-                    </div>
-                    <div type="chapter" xml:id="UT22084-001-003-section-3-8">
+                    </tei:div>
+                    <tei:div type="chapter" xml:id="UT22084-001-003-section-3-8">
                         <head type="chapter" tid="215">The Ten Recollections</head>
                         <milestone unit="chunk" xml:id="UT22084-001-003-364"/>
                         <p tid="216">“On the fifteenth, the day of lifting restrictions, if a monk
@@ -2194,8 +2197,8 @@
                                 procedures to confess an offense just prior to the lifting of
                                 restrictions.</note>
                         </p>
-                    </div>
-                    <div type="chapter" xml:id="UT22084-001-003-section-3-9">
+                    </tei:div>
+                    <tei:div type="chapter" xml:id="UT22084-001-003-section-3-9">
                         <head type="chapter" tid="217">The Seven Arising from Offenses</head>
                         <milestone unit="chunk" xml:id="UT22084-001-003-367"/>
                         <p tid="218">“On the fifteenth, the day of lifting restrictions, a monk may
@@ -2288,8 +2291,8 @@
                             restrictions should be lifted. Those who say it is something that should
                             be curbed should make him pledge to curb the behavior and then
                             restrictions should be lifted.”</p>
-                    </div>
-                    <div type="chapter" xml:id="UT22084-001-003-section-3-10">
+                    </tei:div>
+                    <tei:div type="chapter" xml:id="UT22084-001-003-section-3-10">
                         <head type="chapter" tid="282">The Seven Arising from Prompts</head>
                         <milestone unit="chunk" xml:id="UT22084-001-003-379"/>
                         <p tid="224">“On the fifteenth, the day of lifting restrictions,
@@ -2449,9 +2452,9 @@
                             he acknowledges it to be a transgression, a confessable offense, or a
                             misdeed, <ref cRef="F.236.a" type="folio" xml:id="UT22084-001-003-587"/>
                             he should confess it and restrictions should then be lifted.”</p>
-                    </div>
-                </div>
-                <div type="section" xml:id="UT22084-001-003-section-4">
+                    </tei:div>
+                </tei:div>
+                <tei:div type="section" xml:id="UT22084-001-003-section-4">
                     <!-- MAIN SECTION-->
                     <head type="section" tid="241">Repetition</head>
                     <milestone unit="chunk" xml:id="UT22084-001-003-401"/>
@@ -2479,7 +2482,7 @@
                         guilty of a breach because of their fabricated attempts.” </p>
                     <milestone unit="chunk" xml:id="UT22084-001-003-407"/>
                     <p tid="246">The rest should be expressed as in <title xml:lang="en">The Chapter
-                            on the Restoration Rite’s </title> summary verse<note place="end" xml:id="UT22084-001-003-408"> In <title xml:lang="en">The Chapter
+                            on the Restoration Rite</title>’s summary verse<note place="end" xml:id="UT22084-001-003-408"> In <title xml:lang="en">The Chapter
                                     on the Restoration Rite</title>, see the “Several Repetitions” summary
                             verse (Tib. <foreign xml:lang="Bo-Ltn" type="term">sdom gyi tshig su
                                 bcad pa</foreign>; Skt. <foreign xml:lang="Sa-Ltn" type="term">uddānagāthā</foreign>) and 
@@ -2487,8 +2490,8 @@
                             <!--F.158.b–F.176.b-->.</note> yet with one difference: where <title xml:lang="en">The Chapter on the Restoration Rite</title> reads “four or
                         more resident monks may be seated and in a quorum,” and so forth, here one
                         should read “five or more.” </p>
-                </div>
-                <div type="section" xml:id="UT22084-001-003-section-5">
+                </tei:div>
+                <tei:div type="section" xml:id="UT22084-001-003-section-5">
                     <!-- MAIN SECTION-->
                     <head type="section" tid="247">Rains</head>
                     <milestone unit="chunk" xml:id="UT22084-001-003-410"/>
@@ -2515,7 +2518,7 @@
                         </l>
                         <l>Make a summary in verse.</l>
                     </lg>
-                    <div type="chapter" xml:id="UT22084-001-003-section-5-1">
+                    <tei:div type="chapter" xml:id="UT22084-001-003-section-5-1">
                         <head type="chapter" tid="250">Monks Known to Be Quarrelsome Who Have Pledged to Settle
                             for the Rains Should Be Welcomed on the Fourth Month</head>
                         <milestone unit="chunk" xml:id="UT22084-001-003-413"/>
@@ -2598,8 +2601,8 @@
                                 depart, leaving the harmonious group out of danger and free from
                                 adversaries.</note> Then, once the danger and adversaries have gone,
                             they should lift restrictions.”</p>
-                    </div>
-                    <div type="chapter" xml:id="UT22084-001-003-section-5-2">
+                    </tei:div>
+                    <tei:div type="chapter" xml:id="UT22084-001-003-section-5-2">
                         <head type="chapter" tid="259">The Ill</head>
                         <milestone unit="chunk" xml:id="UT22084-001-003-427"/>
                         <p tid="260">“If, on the fifteenth, the day of lifting restrictions, an ill
@@ -2628,8 +2631,8 @@
                             healthy monk sends a messenger to suspend the lifting of restrictions of
                             an ill monk, the messenger should be told, ‘Venerable one, he is ill and
                             cannot tolerate exertion, please come.’ ”</p>
-                    </div>
-                    <div type="chapter" xml:id="UT22084-001-003-section-5-3">
+                    </tei:div>
+                    <tei:div type="chapter" xml:id="UT22084-001-003-section-5-3">
                         <head type="chapter" tid="280">Matters</head>
                         <milestone unit="chunk" xml:id="UT22084-001-003-433"/>
                         <p tid="265">“On the fifteenth, the day of lifting restrictions, the matter
@@ -2701,12 +2704,12 @@
                                 </q>
                             </note>
                         </trailer>
-                    </div>
-                </div>
-            </div>
+                    </tei:div>
+                </tei:div>
+            </tei:div>
         </body>
         <back>
-            <div type="notes" xml:id="UT22084-001-003-notes">
+            <tei:div type="notes" xml:id="UT22084-001-003-notes">
                 <head type="notes" tid="271">Notes</head>
                 <list type="abbreviations">
                     <head type="abbreviations" tid="272">Abbreviations</head>
@@ -2751,10 +2754,10 @@
                         Kangyur</expan>
                     </item>
                 </list>
-            </div>
-            <div type="listBibl" xml:id="UT22084-001-003-listBibl">
+            </tei:div>
+            <tei:div type="listBibl" xml:id="UT22084-001-003-listBibl">
                 <head type="listBibl" tid="273">Bibliography</head>
-                <div type="section" xml:id="UT22084-001-003-listBibl-1">
+                <tei:div type="section" xml:id="UT22084-001-003-listBibl-1">
                     <head type="section" tid="274">Kangyur and Tengyur Sources</head>
                     <bibl xml:id="UT22084-001-003-448">
                         <title xml:lang="Bo-Ltn">dgag dbye’i
@@ -2787,8 +2790,8 @@
                     <bibl xml:id="UT22084-001-003-454">Viśeṣamitra. <title xml:lang="Bo-Ltn">’dul ba
                             bsdus pa</title> (<title xml:lang="Sa-Ltn">Vinayasaṃgraha</title>). Toh
                         4105, Degé Kangyur vol. 146 (’dul ba, nu), folios 88.a–255.b.</bibl>
-                </div>
-                <div type="section" xml:id="UT22084-001-003-listBibl-2">
+                </tei:div>
+                <tei:div type="section" xml:id="UT22084-001-003-listBibl-2">
                     <head type="section" tid="275">Sanskrit Sources</head>
                     <bibl xml:id="UT22084-001-003-455">Bagchi, Sitansusekhar. <title xml:lang="Sa-Ltn">Mūlasarvāstivādavinayavastu</title>, 2 vols.
                         Darbhanga: Mithila Research Institute, 1970.</bibl>
@@ -2801,15 +2804,15 @@
                         <ref target="https://gretil.sub.uni-goettingen.de/gretil/corpustei/sa_pravAraNAvastu.xml">GRETIL version 2020-07-31</ref>.</bibl>
                 <bibl xml:id="UT22084-001-003-457">Dutt, Nalinaksha, ed. <title xml:lang="en">Gilgit Manuscripts, Vol. III, Part IV</title>. 
                         Calcutta: Calcutta Oriental Press, 1950.</bibl>
-                    </div>
-                <div type="section" xml:id="UT22084-001-003-listBibl-3">
+                    </tei:div>
+                <tei:div type="section" xml:id="UT22084-001-003-listBibl-3">
                     <head type="section" tid="276">Chinese Sources</head>
                     <bibl xml:id="UT22084-001-003-460">Genben shuo yiqie youbu pinaye suiyi shi
                         根本說一切有部毘奈耶隨意事 (<title xml:lang="Sa-Ltn">Pravāraṇāvastu</title>), Taishō 1446
                             (<ref target="https://cbetaonline.dila.edu.tw/en/T1446_001">CBETA</ref>;
                             <ref target="https://21dzk.l.u-tokyo.ac.jp/SAT2018/master30.php?lang=en">SAT</ref>).</bibl>
-                </div>
-                <div type="section" xml:id="UT22084-001-003-listBibl-4">
+                </tei:div>
+                <tei:div type="section" xml:id="UT22084-001-003-listBibl-4">
                     <head type="section" tid="277">Secondary Sources </head>
                     <bibl xml:id="UT22084-001-003-461">84000. <title xml:lang="en">
                             <ref target="https://read.84000.co/translation/toh1-1.html">The Chapter
@@ -2908,9 +2911,9 @@
                         2020.</bibl>
                     <bibl xml:id="UT22084-001-003-482">Ṭhānissaro Bhikkhu. <title xml:lang="en">Buddhist Monastic Code II: The Khandaka Rules Translated &amp;
                             Explained</title>. Valley Center: Metta Forest Monastery, 2001.</bibl>
-                </div>
-            </div>
-            <div type="glossary" status="excluded" xml:id="UT22084-001-003-glossary">
+                </tei:div>
+            </tei:div>
+            <tei:div type="glossary" status="excluded" xml:id="UT22084-001-003-glossary">
                 <list type="glossary">
                     <item>
                         <gloss xml:id="UT22084-001-003-591" type="term" mode="match">
@@ -4217,7 +4220,7 @@
                     </item>
 
                 </list>
-            </div>
+            </tei:div>
         </back>
     </text>
-</TEI>
+</tei:TEI>
