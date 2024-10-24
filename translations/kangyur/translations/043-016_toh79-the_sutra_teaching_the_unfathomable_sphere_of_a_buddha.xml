@@ -32,7 +32,7 @@
                 <sponsor xml:id="UT22084-043-016-21">Aron Csondes</sponsor>
             </titleStmt>
                         <editionStmt>
-                <edition>v 1.0.0 <date>2024</date>
+                <edition>v 1.0.1 <date>2024</date>
                 </edition>
             </editionStmt>
                         <publicationStmt>
@@ -59,7 +59,7 @@
                                         standard logic.</note>
                                 <date>2024-10-16</date>
                         </publicationStmt>
-                        <sourceDesc>
+                        <tei:sourceDesc xmlns:tei="http://www.tei-c.org/ns/1.0">
                                 <bibl key="toh79" type="text">
                                         <ref>Toh 79</ref>
                                         <biblScope>Degé Kangyur, vol. 43 (dkon brtsegs, ca), folios
@@ -74,7 +74,7 @@
                                         <idno parent-id="O1JC114941JC14667" work="http://read.84000.co/sections"/>
                                         <idno source-id="O1JC114941JC11620" work="W22084"/>
                                 </bibl>
-                        </sourceDesc>
+                        </tei:sourceDesc>
                         <notesStmt/>
                         <revisionDesc>
                                 <change who="#line-tofte" when="2020-12-09T08:14:10.687Z" type="translation-status" status="3" xml:id="UT22084-043-016-4">
@@ -176,6 +176,9 @@
                 <change who="#martina-cotter" when="2024-10-16T22:56:13.587Z" type="text-version" status="1.0.0" xml:id="UT22084-043-016-476">
                     <desc>First published version.</desc>
                 </change>
+                <change who="#andre" when="2024-10-24T13:03:07.73Z" type="text-version" status="1.0.1" xml:id="UT22084-043-016-477">
+                    <desc>Glossary integration revised, activated in CG</desc>
+                </change>
                         </revisionDesc>
                 </fileDesc>
         </teiHeader>
@@ -184,7 +187,7 @@
                     Outline to the text is quite complex, it is recommended that you paste the outlined contents from the DOCX here as a comment for
                     markup's reference. The actual table of contents will be generated in the Reading Room by the parser.-->
                 <front>
-                        <div type="summary" xml:id="UT22084-043-016-summary">
+                        <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="summary" xml:id="UT22084-043-016-summary">
                                 <head type="summary" tid="1">Summary</head>
                                 <milestone unit="chunk" xml:id="UT22084-043-016-55"/>
                                 <p tid="2">During an assembly in Śrāvastī, the Buddha requests the
@@ -218,8 +221,8 @@
                                         Mañjuśrī miraculously illuminates this distant buddhafield
                                         and its buddha, Samantabhadra, to the great delight of all
                                         the bodhisattvas in both worlds.</p>
-                        </div>
-                        <div type="acknowledgment" xml:id="UT22084-043-016-acknowledgment">
+                        </tei:div>
+                        <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="acknowledgment" xml:id="UT22084-043-016-acknowledgment">
                                 <head type="acknowledgment" tid="4">Acknowledgements</head>
                                 <milestone unit="chunk" xml:id="UT22084-043-016-57"/>
                                 <p tid="5">This text was translated by Jed Forman and Erdene Baatar
@@ -235,10 +238,10 @@
                                 <milestone unit="chunk" xml:id="UT22084-043-016-59"/>
                                 <p tid="7">The translation of this text has been made possible
                                         through the generous sponsorship of Áron Csöndes.</p>
-                        </div>
-                        <div type="introduction" xml:id="UT22084-043-016-introduction">
+                        </tei:div>
+                        <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="introduction" xml:id="UT22084-043-016-introduction">
                                 <head type="introduction" tid="8">Introduction</head>
-                                <div type="section" xml:id="UT22084-043-016-introduction-1">
+                                <tei:div type="section" xml:id="UT22084-043-016-introduction-1">
                                         <milestone unit="chunk" xml:id="UT22084-043-016-60"/>
                                         <p tid="10">
                         <title xml:lang="en">The Teaching on the
@@ -443,11 +446,11 @@
                                                   Inconceivable State of Buddhahood” in Chang, Garma
                                                   et al. 1983, pp. 27–36.</note>
                     </p>
-                                </div>
-                        </div>
+                                </tei:div>
+                        </tei:div>
                 </front>
                 <body>
-                        <div type="translation" xml:id="UT22084-043-016-translation">
+                        <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="translation" xml:id="UT22084-043-016-translation">
                                 <head type="translation">The Translation</head>
                                 <head type="titleHon" tid="21">The Noble Mahāyāna Sūtra</head>
                                 <head type="titleMain" tid="22">“The Teaching on the Inconceivable
@@ -455,7 +458,7 @@
                                 <!--In the rare case that there is initial text before the first chapter begins, the script will place the
                         text here. However, this will cause the two headings for the "Honorific Title" and "Main Title" to be duplicated below
                         as <p> elements. Markup Editors, please delete these initial duplicated <p> elements along with their milestones and delete this comment.-->
-                                <div type="section" xml:id="UT22084-043-016-section-1">
+                                <tei:div type="section" xml:id="UT22084-043-016-section-1">
                                         <milestone unit="chunk" xml:id="UT22084-043-016-79"/>
                                         <p tid="25">
                         <ref cRef="B1" type="bampo"/>
@@ -2146,19 +2149,19 @@
                                                   Buddha</title>,” the thirty-fifth part of The
                                                 Noble Dharma Discourse, the Great Heap of Jewels, in
                                                 one hundred thousand parts.</trailer>
-                                </div>
-                                <div type="colophon" xml:id="UT22084-043-016-colophon">
+                                </tei:div>
+                                <tei:div type="colophon" xml:id="UT22084-043-016-colophon">
                                         <head type="colophon" tid="192">Colophon</head>
                                         <milestone unit="chunk" xml:id="UT22084-043-016-275"/>
                                         <p tid="193">Translated and edited by the Indian preceptors
                                                 Jinamitra, Dānaśīla, and Munivarman, and the great
                                                 editor-translator Bandé Yeshé Dé, and corrected and
                                                 finalized according to the revised terminology.</p>
-                                </div>
-                        </div>
+                                </tei:div>
+                        </tei:div>
                 </body>
                 <back>
-                        <div type="notes" xml:id="UT22084-043-016-notes">
+                        <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="notes" xml:id="UT22084-043-016-notes">
                                 <head type="notes" tid="194">Notes</head>
                                 <list type="abbreviations">
                                         <head tid="195">Abbreviations</head>
@@ -2201,10 +2204,10 @@
                                                 Kangyur</expan>
                     </item>
                                 </list>
-                        </div>
-                        <div type="listBibl" xml:id="UT22084-043-016-listBibl">
+                        </tei:div>
+                        <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="listBibl" xml:id="UT22084-043-016-listBibl">
                                 <head type="listBibl" tid="196">Bibliography</head>
-                                <div type="section" xml:id="UT22084-043-016-listBibl-1">
+                                <tei:div type="section" xml:id="UT22084-043-016-listBibl-1">
                                         <head type="section" tid="197">Source Text</head>
                                         <bibl xml:id="UT22084-043-016-284">
                         <title xml:lang="Bo-Ltn">’phags pa sangs rgyas kyi yul bsam gyis mi khyab
@@ -2229,8 +2232,8 @@
                                                   mdo</title> (<title xml:lang="Sa-Ltn">Āryācintya­buddha­viṣaya­nirdeśa­nāma­mahāyāna­sūtra</title>).
                                                 Stok Palace Kangyur vol. 39 (dkon brtsegs, ca),
                                                 folios 439.a–465.a.</bibl>
-                                </div>
-                                <div type="section" xml:id="UT22084-043-016-listBibl-2">
+                                </tei:div>
+                                <tei:div type="section" xml:id="UT22084-043-016-listBibl-2">
                                         <head type="section" tid="198">Chinese Translations</head>
                                         <bibl xml:id="UT22084-043-016-287">
                         <title xml:lang="Zh-Ltn">da bao chi jing (shan de tian zi hui)</title>
@@ -2240,8 +2243,8 @@
                         <title xml:lang="Zh-Ltn">wenshushili suoshuo busiyi fojingjie jing</title>
                                                 <title xml:lang="zh">文殊師利所說不思議佛境界經</title> (<title xml:lang="Sa-Ltn">Acintya­buddha­viṣaya­nirdeśa</title>), Taishō
                                                 340 (<ref target="https://cbetaonline.dila.edu.tw/en/T0340">CBETA</ref>).</bibl>
-                                </div>
-                                <div type="section" xml:id="UT22084-043-016-listBibl-3">
+                                </tei:div>
+                                <tei:div type="section" xml:id="UT22084-043-016-listBibl-3">
                                         <head type="section" tid="199">Other Canonical
                                                 Sources</head>
                                         <bibl xml:id="UT22084-043-016-289">
@@ -2263,8 +2266,8 @@
                                                   gyi chos kyi ’gyur ro cog gi dkar chag</title>).
                                                 Toh 4364, Degé Tengyur vol. 206 (sna tshogs, jo),
                                                 folios 294.b–310.a.</bibl>
-                                </div>
-                                <div type="section" xml:id="UT22084-043-016-listBibl-4">
+                                </tei:div>
+                                <tei:div type="section" xml:id="UT22084-043-016-listBibl-4">
                                         <head type="section" tid="200">Other Sources</head>
                                         <bibl xml:id="UT22084-043-016-294">Phangthangma (<title xml:lang="Bo-Ltn">dkar chag ’phang thang
                                                   ma</title>). Beijing: mi rigs dpe skrun khang,
@@ -2286,9 +2289,9 @@
                                                 16 Volumes. Sarnath, Varanasi: Dictionary Unit,
                                                 Central Institute of Higher Tibetan Studies,
                                                 2002.</bibl>
-                                </div>
-                        </div>
-                        <div type="glossary" status="excluded" xml:id="UT22084-043-016-glossary">
+                                </tei:div>
+                        </tei:div>
+                        <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="glossary" xml:id="UT22084-043-016-glossary">
                                 <list type="glossary">
                                         <item>
                         <gloss type="term" xml:id="UT22084-043-016-299">
@@ -3596,17 +3599,15 @@
                                                 </gloss>
                     </item>
                                         <item>
-                        <gloss type="person" xml:id="UT22084-043-016-399">
-                                                  <term type="translationMain">Maitreya</term>
-                                                  <term status="verified" xml:lang="Bo-Ltn" n="1">byam pa </term>
-                                                  <term xml:lang="bo" n="1">བྱམ་པ།</term>
-                                                  <term status="verified" xml:lang="Sa-Ltn" type="attestedDictionary">maitreya</term>
-                                                  <note type="definition">
-                                <p>A future buddha who
-                                                  will follow Śākyamuni in this Fortunate
-                                                  Eon</p>
+                        <gloss xml:id="UT22084-043-016-399" type="person" mode="match">
+                            <term type="translationMain">Maitreya</term>
+                            <term xml:lang="Sa-Ltn" type="attestedDictionary" status="verified">maitreya</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">byam pa</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">བྱམ་པ།</term>
+                            <note type="definition" rend="override">
+                                <p>A future buddha who will follow Śākyamuni in this Fortunate Eon</p>
                             </note>
-                                                </gloss>
+                        </gloss>
                     </item>
                                         <item>
                         <gloss type="person" xml:id="UT22084-043-016-400">
@@ -3916,7 +3917,7 @@
                                         </gloss>
                     </item>
                                 </list>
-                        </div>
+                        </tei:div>
                 </back>
         </text>
 </TEI>
