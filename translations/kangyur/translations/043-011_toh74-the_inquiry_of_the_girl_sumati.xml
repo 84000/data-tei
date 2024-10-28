@@ -26,7 +26,7 @@
                 <editor role="projectEditor" xml:id="UT22084-043-011-289">Rory Lindsay</editor>
             </titleStmt>
             <editionStmt>
-                <edition>v 1.0.0 <date>2024</date>
+                <edition>v 1.0.1 <date>2024</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -150,6 +150,9 @@
                 </change>
                 <change who="#martina-cotter" when="2024-10-24T14:34:09.391Z" type="text-version" status="1.0.0" xml:id="UT22084-043-011-292">
                     <desc>First published version.</desc>
+                </change>
+                <change who="#andre" when="2024-10-28T17:22:55.67Z" type="text-version" status="1.0.1" xml:id="UT22084-043-011-293">
+                    <desc>Glossary integration revised, activated in CG</desc>
                 </change>
             </revisionDesc>
         </fileDesc>
@@ -1054,7 +1057,7 @@
                             History of Sexuality </title>16.1 (2007): 14–39.</bibl>
                 </div>
             </div>
-            <div type="glossary" status="excluded" xml:id="UT22084-043-011-glossary">
+            <div type="glossary" xml:id="UT22084-043-011-glossary">
                 <list type="glossary">
                     <item>
                         <gloss type="term" xml:id="UT22084-043-011-200">
@@ -1113,15 +1116,13 @@
                         </gloss>
                     </item>
                     <item>
-                        <gloss type="term" xml:id="UT22084-043-011-206">
+                        <gloss xml:id="UT22084-043-011-206" type="term" mode="match">
                             <term type="translationMain">words of truth</term>
-                            <term status="verified" xml:lang="Bo-Ltn" n="1">bden pa’i tshig </term>
-                            <term xml:lang="bo" n="1">བདེན་པའི་ཚིག</term>
-                            <term status="verified" xml:lang="Sa-Ltn" type="attestedOther">Satyavacana</term>
+                            <term xml:lang="Sa-Ltn" type="attestedOther" status="verified">satyavacana</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">bden pa’i tshig</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">བདེན་པའི་ཚིག</term>
                             <note type="definition">
-                                <p>True words, the formal statement of which can
-                                    have a wondrous effect that confirms the truth of the
-                                    statement.</p>
+                                <p>True words, the formal statement of which can have a wondrous effect that confirms the truth of the statement.</p>
                             </note>
                         </gloss>
                     </item>
@@ -1272,14 +1273,11 @@
                     <item>
                         <gloss xml:id="UT22084-043-011-221" type="person" mode="match">
                             <term type="translationMain">Mañjuśrī Kumārabhūta</term>
-                            <term status="verified" xml:lang="Sa-Ltn" type="attestedOther">mañjuśrī­kumārabhūta</term>
-                            <term status="verified" xml:lang="Bo-Ltn" type="attestedSource" n="1">’jam dpal gzhon nur
-                                gyur pa</term>
-                            <term xml:lang="bo" type="attestedSource" n="1">འཇམ་དཔལ་གཞོན་ནུར་གྱུར་པ།</term>
-                            <note type="definition" rend="append">
-                                <p>Same as Mañjuśrī with the epithet Kumārabhūta interpreted to mean
-                                    that he is a “crown prince” of the Dharma, or that he is
-                                    perpetually young in appearance, or both.</p>
+                            <term xml:lang="Sa-Ltn" type="attestedOther" status="verified">mañjuśrī­kumārabhūta</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">’jam dpal gzhon nur gyur pa</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">འཇམ་དཔལ་གཞོན་ནུར་གྱུར་པ།</term>
+                            <note type="definition">
+                                <p>Same as <term rend="ignore">Mañjuśrī</term> with the epithet Kumārabhūta interpreted to mean that he is a “crown prince” of the Dharma, or that he is perpetually young in appearance, or both. See also Mañjuśrī.</p>
                             </note>
                         </gloss>
                     </item>
