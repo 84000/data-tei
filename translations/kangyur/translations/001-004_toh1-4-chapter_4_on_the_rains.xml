@@ -13,7 +13,7 @@
                 <title type="longTitle" xml:lang="Sa-Ltn">Vinayavastu Varṣāvastu</title>
                 <title type="longTitle" xml:lang="bo">འདུལ་བ་གཞི་ལས། དབྱར་གྱི་གཞི།</title>
                 <title type="longTitle" xml:lang="Bo-Ltn">’dul ba gzhi las/ dbyar gyi gzhi</title>
-                <author role="translatorMain" xml:id="UT22084-001-004-1">Robert Miller and team</author>
+                <author role="translatorMain" xml:id="UT22084-001-004-1"/><!--Robert Miller and team</author>-->
                 <author role="translatorEng" xml:id="UT22084-001-004-2">Robert Miller</author>
                 <consultant role="projectManager" xml:id="UT22084-001-004-4">Robert Miller</consultant>
                 <consultant role="dharmaMaster" xml:id="UT22084-001-004-5">Geshé Tséwang Nyima</consultant>
@@ -26,7 +26,7 @@
                 <editor role="finalReviewer" xml:id="UT22084-001-004-608">John Canti</editor>
             </titleStmt>
             <editionStmt>
-                <edition>v 1.0.2 <date>2024</date>
+                <edition>v 1.0.3 <date>2024</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -154,6 +154,9 @@
                 </change>
                 <change who="#sameer" when="2024-10-31T07:42:04.835Z" type="text-version" status="1.0.2" xml:id="UT22084-001-004-5485">
                     <desc>First published version.</desc>
+                </change>
+                <change who="#andre" when="2024-11-01T00:07:59.853Z" type="text-version" status="1.0.3" xml:id="UT22084-001-004-5486">
+                    <desc>Glossary integration revised, activated in CG</desc>
                 </change>
             </revisionDesc>
         </fileDesc>
@@ -2350,7 +2353,7 @@
                         University of New York Press, 1992.</bibl>
                 </div>
             </div>
-            <div type="glossary" status="excluded" xml:id="UT22084-001-004-glossary">
+            <div type="glossary" xml:id="UT22084-001-004-glossary">
                 <list type="glossary">
                     <item>
                         <gloss type="term" mode="match" xml:id="UT22084-001-004-588">
@@ -2418,24 +2421,12 @@
                         </gloss>
                     </item>
                     <item>
-                        <gloss type="term" mode="match" xml:id="UT22084-001-004-587">
+                        <gloss xml:id="UT22084-001-004-587" type="term" mode="match">
                             <term type="translationMain">Mūlasarvāstivāda</term>
                             <term type="translationAlternative">Mūlasarvāstivādin</term>
                             <term xml:lang="Sa-Ltn" type="attestedSource" status="verified">mūlasarvāstivāda</term>
-                            <term xml:lang="Bo-Ltn" status="verified" type="attestedSource" n="1">thams cad yod par smra ba’i sde</term>
-                            <term xml:lang="bo" type="attestedSource" n="1">ཐམས་ཅད་ཡོད་པར་སྨྲ་བའི་སྡེ།</term>
-                            <note type="definition" rend="override">
-                                <p>One of the eighteen Hīnayāna schools. They assert all phenomena
-                                    as included in the five categories, recite sūtras in Sanskrit,
-                                    their abbots are necessarily those belonging to the king’s
-                                    lineage, their multi-patched yellow upper shawl bears a wheel or
-                                    lotus symbol, their bikṣus bear surnames with bhadra or Hridhya,
-                                    they assert the three times as substantially existent, and they
-                                    propound that through meditation on the selflessness of person
-                                    and the accumulation of merits for three countless aeons an
-                                    individual gains full enlightenment. There are seven sub-schools
-                                    of this tradition. (Tsepak Rigdzin, 1997)</p>
-                            </note>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">thams cad yod par smra ba’i sde</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">ཐམས་ཅད་ཡོད་པར་སྨྲ་བའི་སྡེ།</term>
                         </gloss>
                     </item>
                     <item>
@@ -2494,28 +2485,24 @@
                         </gloss>
                     </item>
                     <item>
-                        <gloss type="term" xml:id="UT22084-001-004-492">
+                        <gloss xml:id="UT22084-001-004-492" type="term" mode="match">
                             <term type="translationMain">monk</term>
-                            <term xml:lang="Bo-Ltn" type="attestedSource" status="verified" n="1">dge slong </term>
-                            <term xml:lang="bo" n="1">དགེ་སློང་།</term>
                             <term xml:lang="Sa-Ltn" type="attestedSource" status="verified">bhikṣu</term>
-                            <note type="definition">
-                                <p>A male who has ordained (Tib. <foreign xml:lang="Bo-Ltn" type="term">bsnyen par rdzogs
-                                    pa</foreign>; Skt. <foreign xml:lang="Sa-Ltn" type="term">upasaṃpanna</foreign>). Monks in the Mūlasarvāstivādin
-                                    tradition take 253 vows.</p>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">dge slong</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">དགེ་སློང་།</term>
+                            <note type="definition" rend="override">
+                                <p>A male who has ordained (Tib. <foreign xml:lang="Bo-Ltn" type="term">bsnyen par rdzogs pa</foreign>; Skt. <foreign xml:lang="Sa-Ltn" type="term">upasaṃpanna</foreign>). Monks in the Mūlasarvāstivādin tradition take 253 vows.</p>
                             </note>
                         </gloss>
                     </item>
                     <item>
-                        <gloss type="term" xml:id="UT22084-001-004-493">
+                        <gloss xml:id="UT22084-001-004-493" type="term" mode="match">
                             <term type="translationMain">nun</term>
-                            <term xml:lang="Bo-Ltn" type="attestedSource" status="verified" n="1">dge slong ma </term>
-                            <term xml:lang="bo" n="1">དགེ་སློང་མ།</term>
                             <term xml:lang="Sa-Ltn" type="attestedSource" status="verified">bhikṣuṇī</term>
-                            <note type="definition">
-                                <p>A female who has ordained (Tib. <foreign xml:lang="Bo-Ltn" type="term">bsnyen par rdzogs
-                                    pa</foreign>; Skt. <foreign xml:lang="Sa-Ltn" type="term">upasaṃpanna</foreign>). Nuns in the Mūlasarvāstivādin
-                                    tradition take 364 vows.</p>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">dge slong ma</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">དགེ་སློང་མ།</term>
+                            <note type="definition" rend="override">
+                                <p>A female who has ordained (Tib. <foreign xml:lang="Bo-Ltn" type="term">bsnyen par rdzogs pa</foreign>; Skt. <foreign xml:lang="Sa-Ltn" type="term">upasaṃpanna</foreign>). Nuns in the Mūlasarvāstivādin tradition take 364 vows.</p>
                             </note>
                         </gloss>
                     </item>
@@ -2999,6 +2986,8 @@
                     <item>
                         <gloss xml:id="UT22084-001-004-521" type="term" mode="match">
                             <term type="translationMain">sanction</term>
+                            <term type="translationAlternative">sanctioned</term>
+                            <term type="translationAlternative">sanctioning</term>
                             <term xml:lang="Sa-Ltn" type="attestedSource" status="verified">adhi√sthā</term>
                             <term xml:lang="Bo-Ltn" type="attestedSource" status="verified" n="1">byin gyis brlabs</term>
                             <term xml:lang="bo" type="attestedSource" n="1">བྱིན་གྱིས་བརླབས།</term>
@@ -3469,11 +3458,14 @@
                         </gloss>
                     </item>
                     <item>
-                        <gloss type="place" xml:id="UT22084-001-004-552">
+                        <gloss xml:id="UT22084-001-004-552" type="place" mode="match">
                             <term type="translationMain">Hastibāla</term>
-                            <term xml:lang="Bo-Ltn" type="attestedSource" status="verified" n="1">glang po che skyong </term>
-                            <term xml:lang="bo" n="1">གླང་པོ་ཆེ་སྐྱོང་།</term>
                             <term xml:lang="Sa-Ltn" type="attestedSource" status="verified">hastibāla</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">glang po che skyong</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">གླང་པོ་ཆེ་སྐྱོང་།</term>
+                            <note type="definition">
+                                <p>A town.</p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
