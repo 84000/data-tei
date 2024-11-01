@@ -27,7 +27,7 @@
                 <editor role="finalReviewer" xml:id="UT22084-001-003-634">John Canti</editor>
             </titleStmt>
             <editionStmt>
-                <edition>v 1.0.6 <date>2024</date>
+                <edition>v 1.0.7 <date>2024</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -165,6 +165,9 @@
                 </change>
                 <change who="#sameer" when="2024-10-31T07:40:25.789Z" type="text-version" status="1.0.6" xml:id="UT22084-001-003-4660">
                     <desc>First published version.</desc>
+                </change>
+                <change who="#andre" when="2024-11-01T00:20:13.979Z" type="text-version" status="1.0.7" xml:id="UT22084-001-003-4661">
+                    <desc>Glossary integration revised, activated in CG</desc>
                 </change>
             </revisionDesc>
         </fileDesc>
@@ -2168,11 +2171,11 @@
                         <p tid="211">A summary:</p>
                         <milestone unit="chunk" xml:id="UT22084-001-003-360"/>
                         <lg tid="212" type="sdom">
-                            <l>The <ptr type="subdivision" target="#UT22084-001-003-section-3-8">king apprehends a monk</ptr>,</l>
-                            <l>The <ptr type="subdivision" target="#UT22084-001-003-section-3-9">ten
+                            <l>The <ptr type="subdivision" target="#UT22084-001-003-section-3-7">king apprehends a monk</ptr>,</l>
+                            <l>The <ptr type="subdivision" target="#UT22084-001-003-section-3-8">ten
                                     recollections</ptr>,</l>
-                            <l>The <ptr type="subdivision" target="#UT22084-001-003-section-3-10">seven for offenses</ptr>, and</l>
-                            <l>The <ptr type="subdivision" target="#UT22084-001-003-section-3-11">seven for prompts</ptr>.</l>
+                            <l>The <ptr type="subdivision" target="#UT22084-001-003-section-3-9">seven for offenses</ptr>, and</l>
+                            <l>The <ptr type="subdivision" target="#UT22084-001-003-section-3-10">seven for prompts</ptr>.</l>
                         </lg>
                     </tei:div>
                     <tei:div type="chapter" xml:id="UT22084-001-003-section-3-7">
@@ -2926,7 +2929,7 @@
                             Explained</title>. Valley Center: Metta Forest Monastery, 2001.</bibl>
                 </tei:div>
             </tei:div>
-            <tei:div type="glossary" status="excluded" xml:id="UT22084-001-003-glossary">
+            <tei:div type="glossary" xml:id="UT22084-001-003-glossary">
                 <list type="glossary">
                     <item>
                         <gloss xml:id="UT22084-001-003-591" type="term" mode="match">
@@ -2935,9 +2938,6 @@
                             <term xml:lang="Sa-Ltn" type="attestedSource" status="verified">mūlasarvāstivāda</term>
                             <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">thams cad yod par smra ba’i sde</term>
                             <term xml:lang="bo" type="attestedSource" n="1" status="verified">ཐམས་ཅད་ཡོད་པར་སྨྲ་བའི་སྡེ།</term>
-                            <note type="definition" rend="override">
-                                <p>One of the eighteen Hīnayāna schools. They assert all phenomena as included in the five categories, recite sūtras in Sanskrit, their abbots are necessarily those belonging to the king's lineage, their multi-patched yellow upper shawl bears a wheel or lotus symbol, their bikṣus bear surnames with bhadra or Hridhya, they assert the three times as substantially existent, and they propound that through meditation on the selflessness of person and the accumulation of merits for three countless aeons an individual gains full enlightenment. There are seven sub-schools of this tradition. (Tsepak Rigdzin, 1997)</p>
-                            </note>
                         </gloss>
                     </item>
                     <item>
@@ -3571,33 +3571,14 @@
                     </item>
                     <item>
                         <gloss xml:id="UT22084-001-003-510" type="term" mode="match">
-                            <term type="translationMain">excused</term>
-                            <term xml:lang="Sa-Ltn" status="verified" type="attestedSource">adhiṣṭhāya</term>
-                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">byin gyis brlabs te</term>
-                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">བྱིན་གྱིས་བརླབས་ཏེ།</term>
+                            <term type="translationMain">sanction</term>
+                            <term type="translationAlternative">sanctioned</term>
+                            <term type="translationAlternative">sanctioning</term>
+                            <term xml:lang="Sa-Ltn" type="attestedSource" status="verified">adhiṣṭhāya</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">byin gyis brlabs</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">བྱིན་གྱིས་བརླབས།</term>
                             <note type="definition">
-                                <p>When a monk cannot participate in a proper restoration rite, he
-                                    must sanction it. This is only a temporary “excusal” though,
-                                    since the monk pledges to attend the next restoration rite he
-                                    can. See Kalyāṇamitra F.318.a.2: <ref rend="pending" target="https://read.84000.co/translation/toh4113"/>
-                                    <foreign xml:lang="Bo-Ltn" type="quote">byin gyis brlab po zhes
-                                        bya ba ni dus gzhan du bya ba’i phyir dang/ gzhan par bya
-                                        ba’o</foreign>. Certain items (such as the three robes and
-                                    the begging bowl) must also be “sanctioned” by the preceptor at
-                                    ordination or later by the monk if he has left them
-                                    elsewhere overnight. And, citing a passage from <title xml:lang="en">The Chapter on the Restoration Rite</title>
-                                    (Toh 1, ch. 2, <!--F.151.b–152.a-->, <ptr target="#UT22084-001-002-629"/>–<ptr target="#UT22084-001-002-635"/>), Kalyāṇamitra (Toh 4113,
-                                        F.244.a)<ref rend="pending" target="https://read.84000.co/translation/toh4113"/>
-                                    explains that every fortnight before performing the restoration
-                                    rite, if they have not already done so, monastics should
-                                    scrutinize themselves for things that should be curbed (Tib.
-                                        <foreign xml:lang="Bo-Ltn" type="term">bsdam par bya
-                                        ba</foreign>; Skt. <foreign xml:lang="Sa-Ltn" type="term">saṃvarakaraṇīya</foreign>), that is, subtle mental faults;
-                                    things that should be confessed (Tib. <foreign xml:lang="Bo-Ltn" type="term">bshags par bya ba</foreign>; Skt. <foreign xml:lang="Sa-Ltn" type="term">deśanīya</foreign>), that is,
-                                    simple atonements, confessable offenses, and misdeeds; and
-                                    things that should be sanctioned (Tib. <foreign xml:lang="Bo-Ltn" type="term">byin gyis brlab pa</foreign>;
-                                    Skt. <foreign xml:lang="Sa-Ltn" type="term">adhiṣṭheya</foreign>), that is, saṅgha remnants and
-                                    transgressions requiring forfeiture.</p>
+                                <p>When a monk cannot participate in a proper restoration rite, he must sanction it. This is only a temporary “excusal” though, since the monk pledges to attend the next restoration rite he can. See Kalyāṇamitra F.318.a.2: <ref rend="pending" target="https://read.84000.co/translation/toh4113"/> <foreign xml:lang="Bo-Ltn" type="quote">byin gyis brlab po zhes bya ba ni dus gzhan du bya ba’i phyir dang/ gzhan par bya ba’o</foreign>. Certain items (such as the three robes and the begging bowl) must also be “sanctioned” by the preceptor at ordination or later by the monk if he has left them elsewhere overnight. And, citing a passage from <title xml:lang="en">The Chapter on the Restoration Rite</title> (Toh 1, ch. 2, <!--F.151.b–152.a-->, <ptr target="#UT22084-001-002-629"/>–<ptr target="#UT22084-001-002-635"/>), Kalyāṇamitra (Toh 4113, F.244.a)<ref rend="pending" target="https://read.84000.co/translation/toh4113"/> explains that every fortnight before performing the restoration rite, if they have not already done so, monastics should scrutinize themselves for things that should be curbed (Tib. <foreign xml:lang="Bo-Ltn" type="term">bsdam par bya ba</foreign>; Skt. <foreign xml:lang="Sa-Ltn" type="term">saṃvarakaraṇīya</foreign>), that is, subtle mental faults; things that should be confessed (Tib. <foreign xml:lang="Bo-Ltn" type="term">bshags par bya ba</foreign>; Skt. <foreign xml:lang="Sa-Ltn" type="term">deśanīya</foreign>), that is, simple atonements, confessable offenses, and misdeeds; and things that should be sanctioned (Tib. <foreign xml:lang="Bo-Ltn" type="term">byin gyis brlab pa</foreign>; Skt. <foreign xml:lang="Sa-Ltn" type="term">adhiṣṭheya</foreign>), that is, saṅgha remnants and transgressions requiring forfeiture.</p>
                             </note>
                         </gloss>
                     </item>
