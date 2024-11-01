@@ -4,21 +4,22 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
+                <title type="mainTitle" xml:lang="en">The Dhāraṇī “Pacifying All Suffering”</title>
+                <title type="mainTitle" xml:lang="Sa-Ltn">Sarva­duḥkha­praśamanakara­dhāraṇī</title>
+                <title type="mainTitle" xml:lang="bo">སྡུག་བསྔལ་ཐམས་ཅད་རབ་ཏུ་ཞི་བར་བྱེད་པ་ཞེས་བྱ་བའི་གཟུངས།</title>
                 <title type="mainTitle" xml:lang="Bo-Ltn">sdug bsngal thams cad rab tu zhi bar byed
                     pa zhes bya ba’i gzungs</title>
-                <title type="mainTitle" xml:lang="bo">སྡུག་བསྔལ་ཐམས་ཅད་རབ་ཏུ་ཞི་བར་བྱེད་པ་ཞེས་བྱ་བའི་གཟུངས།</title>
-                <title type="mainTitle" xml:lang="en">The Dhāraṇī “Pacifying All
-                    Suffering”</title>
-                <title type="mainTitle" xml:lang="Sa-Ltn">Sarva­duḥkha­praśamanakara­dhāraṇī</title>
                 <title type="longTitle" xml:lang="Sa-Ltn">Sarva­duḥkha­praśamanakara­nāma­dhāraṇī</title>
-                <title type="otherTitle" xml:lang="zh"/>
                 <author role="translatorMain" xml:id="UT22084-101-079-1"><!--84000 Associate Translators--></author>
                 <author role="translatorEng" xml:id="UT22084-101-079-2">Catherine Dalton</author>
                 <editor role="projectEditor" xml:id="UT22084-101-079-20">Ryan Damron</editor>
                 <editor role="copyEditor" xml:id="UT22084-101-079-30">Konchog Norbu</editor>
+                <editor role="projectEditor" xml:id="UT22084-101-079-88">Andreas Doctor</editor>
+                <editor role="TEImarkupEditor" xml:id="UT22084-101-079-89">Martina Cotter</editor>
+                <editor role="finalReviewer" xml:id="UT22084-101-079-97">John Canti</editor>
             </titleStmt>
             <editionStmt>
-                <edition>v 0.0.2 <date>2024</date>
+                <edition>v 1.0.0 <date>2024</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -26,7 +27,7 @@
                     <name>84000: Translating the Words of the Buddha</name> is a global
                     non-profit initiative to translate all the Buddha’s words into modern languages,
                     and to make them available to everyone. </publisher>
-                <availability status="2">
+                <availability status="1.a">
                     <licence>
                         <graphic url="http://i.creativecommons.org/l/by-nc-nd/2.0/88x31.png"/>
                         <p>This work is provided under the protection of a Creative Commons CC
@@ -39,7 +40,7 @@
                 <idno xml:id="UT22084-101-079"/>
                 <note>An early mistake in the assigning of UT numbers within the 84000 project means
                     that these ids diverge slightly from the standard logic.</note>
-                <date>2024-07-28</date>
+                <date>2024-11-01</date>
             </publicationStmt>
             <sourceDesc>
                 <bibl key="toh1024" type="text">
@@ -136,6 +137,18 @@
                 <change who="#line-tofte" when="2024-07-31T13:06:36.457Z" type="text-version" status="0.0.2" xml:id="UT22084-101-079-83">
                     <desc>Auto (update-publication-status)</desc>
                 </change>
+                <change who="#line-tofte" when="2024-08-05T10:30:49.725Z" type="text-version" status="0.0.3" xml:id="UT22084-101-079-90">
+                    <desc>Auto (update-contributors)</desc>
+                </change>
+                <change who="#line-tofte" when="2024-10-29T09:59:02.131Z" type="text-version" status="0.0.4" xml:id="UT22084-101-079-98">
+                    <desc>Auto (update-contributors)</desc>
+                </change>
+                <change who="#martina-cotter" when="2024-11-01T21:56:44.835Z" type="translation-status" status="1.a" xml:id="UT22084-101-079-692">
+                    <desc>1.a</desc>
+                </change>
+                <change who="#martina-cotter" when="2024-11-01T21:56:44.835Z" type="text-version" status="1.0.0" xml:id="UT22084-101-079-693">
+                    <desc>First published version.</desc>
+                </change>
             </revisionDesc>
         </fileDesc>
     </teiHeader>
@@ -144,7 +157,7 @@
                     Outline to the text is quite complex, it is recommended that you paste the outlined contents from the DOCX here as a comment for
                     markup's reference. The actual table of contents will be generated in the Reading Room by the parser.-->
         <front>
-            <div type="summary">
+            <div type="summary" xml:id="UT22084-101-079-summary">
                 <head type="summary" tid="1">Summary</head>
                 <milestone unit="chunk" xml:id="UT22084-101-079-37"/>
                 <p tid="2">
@@ -153,7 +166,7 @@
                     teaches a mantra associated with Mañjuśrī Vādisiṃha that serves as a method for
                     the pacification of suffering.</p>
             </div>
-            <div type="acknowledgment">
+            <div type="acknowledgment" xml:id="UT22084-101-079-acknowledgment">
                 <head type="acknowledgment" tid="3">Acknowledgements</head>
                 <milestone unit="chunk" xml:id="UT22084-101-079-38"/>
                 <p tid="4">This publication was completed under the patronage and supervision of
@@ -165,162 +178,170 @@
                     copyedited the text. Martina Cotter was in charge of the digital publication
                     process.</p>
             </div>
-            <div type="introduction">
+            <div type="introduction" xml:id="UT22084-101-079-introduction">
                 <head type="introduction" tid="7">Introduction</head>
                 <div type="section" xml:id="UT22084-101-079-introduction-1">
-                <milestone unit="chunk" xml:id="UT22084-101-079-41"/>
-                <p tid="8">
-                        <title xml:lang="en">The Dhāraṇī “Pacifying All Suffering”</title> is a
-                    short dhāraṇī text in which, at Vajrapāṇi’s request, the Buddha Śākyamuni
-                    teaches a mantra associated with Mañjuśrī Vādisiṃha that serves as a method for
-                    the pacification of suffering. The text opens in Vajrāsana, where the Buddha is
-                    teaching a large assembly. The bodhisattva Vajrapāṇi makes a request that the
-                    Blessed One pacify the suffering of all beings, prompting Śākyamuni to explain
-                    that a practitioner who wishes to pacify suffering should meditate on Mañjuśrī
-                    Vādisiṃha for six months and recite the mantra that the Buddha then proclaims.
-                    The remainder of the text describes the benefits of reciting the mantra, which
-                    include the complete pacification of suffering and a vision of a perfect buddha. </p>
-                <milestone unit="chunk" xml:id="UT22084-101-079-42"/>
-                <p tid="9">
-                        <title xml:lang="en">The Dhāraṇī “Pacifying All Suffering”</title> does
-                    not appear to be extant in Sanskrit, or in Chinese translation. It also lacks a
-                    translator’s colophon and does not appear in either of the surviving imperial
-                    catalogs, or at Dunhuang, so not much can be said about the work’s history in
-                    Tibet. </p>
-                <milestone unit="chunk" xml:id="UT22084-101-079-43"/>
-                <p tid="10">The text is included in the Compendium of Dhāraṇīs section of the Degé
-                    Kangyur and other Tshalpa lineage Kangyurs that include a separate Dhāraṇī
-                        section.<note place="end" xml:id="UT22084-101-079-44"> An explicitly
-                        named Compendium of Dhāraṇīs section is found in the Degé and Urga Kangyurs
-                        as well as in the peripheral Kangyurs of the Tshalpa lineage (Dodedrak,
-                        Phajoding, and Ragya). In contrast, the Berlin, Choné, Lithang, and Peking
-                        Qianlong Kangyurs include the same collection of dhāraṇīs in a separate part
-                        of their Tantra sections that has no distinct label. With or without the
-                        label, these collections of dhāraṇīs contain many duplicates of texts also
-                        found in the general sūtra or tantra sections, and in the latter group of
-                        Kangyurs many dhāraṇī texts therefore appear twice in different parts of the
-                        Tantra section.</note> In Tshalpa lineage Kangyurs that lack a section so
-                    named, the text is only found in the equivalent but unnamed dhāraṇī collection
-                    comprising part of the Tantra section. It is not included in any Thempangma
-                    lineage Kangyurs. </p>
-                <milestone unit="chunk" xml:id="UT22084-101-079-45"/>
-                <p tid="11">Notably, the dhāraṇī is one of only twelve works in the Compendium of
-                    Dhāraṇīs section that are not duplicated in other sections of the Kangyur.
-                    Therefore, it appears that these twelve texts found their way into the Tshalpa
-                    lineage Kangyurs specifically because of being part of the Compendium of
-                    Dhāraṇīs, which most likely was compiled based on earlier collections of
-                    dhāraṇīs and associated ritual texts.<note place="end" xml:id="UT22084-101-079-46"> The opening lines of the table of contents
-                            (<foreign xml:lang="Bo-Ltn" type="term">dkar chag</foreign>) of an
-                        independent dhāraṇī collection printed in Beijing in 1731, found in the
-                        Library of the Hungarian Academy of Sciences in Budapest and transcribed by
-                        Orosz, identify the source of all such dhāraṇī collections as the
-                        extracanonical collection edited by Tāranātha (Orosz 2010, pp. 67 and 100).
-                        This mention is also noted by Hidas 2021, p. 7, n. 56.</note> These
-                    collections, known in Sanskrit as , circulated throughout South Asia and
-                    Tibet—including at Dunhuang—as extracanonical dhāraṇī collections.<note place="end" xml:id="UT22084-101-079-47"> See J. Dalton 2016, and J. Dalton
-                        and S. van Schaik 2006, on the <title xml:lang="Sa-Ltn">dhāraṇī­saṃgraha</title> collections preserved at Dunhuang like the
-                        canonical collection, these contain praises and prayers as well as dhāraṇīs.<foreign xml:lang="Sa-Ltn" type="term">dhāraṇī­saṃgrahas</foreign>
-                        See Hidas 2021 for the catalogs of eighteen <title xml:lang="Sa-Ltn">dhāraṇī­saṃgraha</title> collections surviving in Sanskrit. </note>
+                    <milestone unit="chunk" xml:id="UT22084-101-079-41"/>
+                    <p tid="8">
+                        <title xml:lang="en">The Dhāraṇī “Pacifying All Suffering”</title> is
+                        a short dhāraṇī text in which, at Vajrapāṇi’s request, the Buddha Śākyamuni
+                        teaches a mantra associated with Mañjuśrī Vādisiṃha that serves as a method
+                        for the pacification of suffering. The text opens at the Vajrāsana, where the
+                        Buddha is teaching a large assembly. The bodhisattva Vajrapāṇi makes a
+                        request that the Blessed One pacify the suffering of all beings, prompting
+                        Śākyamuni to explain that a practitioner who wishes to pacify suffering
+                        should meditate on Mañjuśrī Vādisiṃha for six months and recite the mantra
+                        that the Buddha then proclaims. The remainder of the text describes the
+                        benefits of reciting the mantra, which include the complete pacification of
+                        suffering and a vision of a perfect buddha. </p>
+                    <milestone unit="chunk" xml:id="UT22084-101-079-42"/>
+                    <p tid="9">
+                        <title xml:lang="en">The Dhāraṇī “Pacifying All Suffering”</title>
+                        does not appear to be extant in Sanskrit, or in Chinese translation. It also
+                        lacks a translator’s colophon and does not appear in either of the surviving
+                        imperial catalogs, or among the texts found in Dunhuang, so not much can be said about the work’s
+                        history in Tibet. </p>
+                    <milestone unit="chunk" xml:id="UT22084-101-079-43"/>
+                    <p tid="10">The text is included in the Compendium of Dhāraṇīs section of the
+                        Degé Kangyur and other Tshalpa lineage Kangyurs that include a separate
+                        Dhāraṇī section.<note place="end" xml:id="UT22084-101-079-44"> An explicitly
+                            named Compendium of Dhāraṇīs section is found in the Degé and Urga
+                            Kangyurs as well as in the peripheral Kangyurs of the Tshalpa lineage
+                            (Dodedrak, Phajoding, and Ragya). In contrast, the Berlin, Choné,
+                            Lithang, and Peking Qianlong Kangyurs include the same collection of
+                            dhāraṇīs in a separate part of their Tantra sections that has no
+                            distinct label. With or without the label, these collections of dhāraṇīs
+                            contain many duplicates of texts also found in the general sūtra or
+                            tantra sections, and in the latter group of Kangyurs many dhāraṇī texts
+                            therefore appear twice in different parts of the Tantra section.</note>
+                        In Tshalpa lineage Kangyurs that lack a section so named, the text is only
+                        found in the equivalent but unnamed dhāraṇī collection comprising part of
+                        the Tantra section. It is not included in any Themphangma lineage Kangyurs. </p>
+                    <milestone unit="chunk" xml:id="UT22084-101-079-45"/>
+                    <p tid="11">Notably, the dhāraṇī is one of only twelve works in the Compendium
+                        of Dhāraṇīs section that are not duplicated in other sections of the
+                        Kangyur. Therefore, it appears that these twelve texts found their way into
+                        the Tshalpa lineage Kangyurs specifically because of being part of the
+                        Compendium of Dhāraṇīs, which most likely was compiled based on earlier
+                        collections of dhāraṇīs and associated ritual texts.<note place="end" xml:id="UT22084-101-079-46"> The opening lines of the table of contents
+                                (<foreign xml:lang="Bo-Ltn" type="term">dkar chag</foreign>) of an
+                            independent dhāraṇī collection printed in Beijing in 1731, found in the
+                            Library of the Hungarian Academy of Sciences in Budapest and transcribed
+                            by Orosz, identify the source of all such dhāraṇī collections as the
+                            extracanonical collection edited by Tāranātha (Orosz 2010, pp. 67 and
+                            100). This mention is also noted by Hidas 2021, p. 7, n. 56.</note>
+                        These collections, known in Sanskrit as <title xml:lang="Sa-Ltn">dhāraṇī­saṃgraha</title>, circulated throughout South Asia
+                        and Tibet—as well as in Dunhuang—as extracanonical dhāraṇī collections.<note place="end" xml:id="UT22084-101-079-47"> See J. Dalton 2016, and J.
+                            Dalton and S. van Schaik 2006, on the <title xml:lang="Sa-Ltn">dhāraṇī­saṃgraha</title> collections preserved among the Dunhuang finds.
+                            Like the canonical collection, they contain not only dhāraṇī texts but also praises and prayers. See Hidas 2021 for the catalogs of
+                            eighteen <title xml:lang="Sa-Ltn">dhāraṇī­saṃgraha</title> collections
+                            surviving in Sanskrit. </note>
                     </p>
-                <milestone unit="chunk" xml:id="UT22084-101-079-48"/>
-                <p tid="12">The present English translation of <title xml:lang="en">The Dhāraṇī
-                    “Pacifying All Suffering”</title> was made based on the Degé Kangyur<note place="end" xml:id="UT22084-101-079-79">
-                        <p key="toh1024">This text, Toh 1024, and all those contained in this same volume (<foreign xml:lang="Bo-Ltn">gzungs ’dus, waM</foreign>), are listed as being located in volume 101 of the Degé Kangyur by the Buddhist
-                            Digital Resource Center (BDRC). However, several other Kangyur databases—including the eKangyur that supplies the digital input version
-                            displayed by the 84000 Reading Room—list this work as being located in volume 102. This discrepancy is partly due to the fact that
-                            the two volumes of the <foreign xml:lang="Bo-Ltn">gzungs ’dus</foreign> section are an added supplement not mentioned in the original catalog,
-                            and also hinges on the fact that the compilers of the Tōhoku catalog placed another text—which forms a whole, very large volume—the <title xml:lang="Sa-Ltn">Vimala­prabhā­nāma­kālacakra­tantra­ṭīkā</title> (<title xml:lang="Bo-Ltn">dus ’khor ’grel bshad dri med ’od</title>, Toh
-                            845), before the volume 100 of the Degé Kangyur, numbering it as vol. 100, although it is almost certainly intended to come right at the end
-                            of the Degé Kangyur texts as volume 102; indeed its final fifth chapter is often carried over and wrapped in the same volume as the Kangyur
-                            <foreign xml:lang="Bo-Ltn">dkar chags</foreign> (catalog). Please note this discrepancy when using the eKangyur viewer in this
-                            translation.</p>
-                    </note> recension of this work, with additional reference to the notes from the <title xml:lang="en">Comparative Edition</title> (<title xml:lang="Bo-Ltn">dpe sdur
-                        ma</title>). The text is stable across all recensions consulted, with only
-                    minor variants. The mantra is rendered in the translation exactly as it appears
-                    in the Degé recension of the work. </p>
-            </div>
+                    <milestone unit="chunk" xml:id="UT22084-101-079-48"/>
+                    <p tid="12">The present English translation of <title xml:lang="en">The Dhāraṇī
+                            “Pacifying All Suffering”</title> was made based on the Degé
+                            Kangyur<note place="end" xml:id="UT22084-101-079-79">
+                            <p key="toh1024">This text, Toh 1024, and all those contained in this
+                                same volume (<foreign xml:lang="Bo-Ltn">gzungs ’dus, waM</foreign>),
+                                are listed as being located in volume 101 of the Degé Kangyur by the
+                                Buddhist Digital Resource Center (BDRC). However, several other
+                                Kangyur databases—including the eKangyur that supplies the digital
+                                input version displayed by the 84000 Reading Room—list this work as
+                                being located in volume 102. This discrepancy reflects a difference between 
+                                the recognizably intended order of texts at the end of the Degé Kangyur and the 
+                                order established by the compilers of the 1934 Tōhoku catalog. The
+                                two volumes of the <foreign xml:lang="Bo-Ltn">gzungs
+                                    ’dus</foreign> section constitute what seems to be an added supplement that, in Situ Panchen’s
+                                original Degé <foreign xml:lang="Bo-Ltn">dkar chags</foreign>, are nevertheless 
+                                mentioned—if very briefly and without their content being detailed—
+                                <emph>before</emph> the final text, the <title xml:lang="Sa-Ltn">Vimala­prabhā­nāma­kālacakra­tantra­ṭīkā</title> 
+                                (<title xml:lang="Bo-Ltn">dus ’khor ’grel bshad dri med ’od</title>); see Degé <foreign xml:lang="Bo-Ltn">dkar chags</foreign>
+                                (Toh 4568), F.156.b–157.a, and also the version in vol. 9 of Situ Panchen’s <foreign xml:lang="Bo-Ltn">gsung ’bum</foreign>,
+                                F.246.b–247.a. The Tōhoku compilers, however, number this Kālacakra commentary Toh 845 and give its volume 
+                                (<foreign xml:lang="Bo-Ltn">sh+rI</foreign>) the number 100, thus placing it,
+                                in both text number and volume order, before the two <foreign xml:lang="Bo-Ltn">gzungs ’dus</foreign> volumes 
+                                <foreign xml:lang="Bo-Ltn">e</foreign> and <foreign xml:lang="Bo-Ltn">waM</foreign>. 
+                                Further evidence that this Kālacakra commentary is almost certainly intended to come right at
+                                the end of the Degé Kangyur texts is the fact that its final
+                                fifth chapter is carried over into a final, 103rd volume (<foreign xml:lang="Bo-Ltn">lak+S+mI</foreign>) 
+                                which it shares with the Kangyur <foreign xml:lang="Bo-Ltn">dkar chags</foreign>—an arrangement
+                                mentioned in the <foreign xml:lang="Bo-Ltn">dkar chags</foreign> itself (but omitted in the Tōhoku catalog,
+                                which gives only volume <foreign xml:lang="Bo-Ltn">sh+rI</foreign> for the whole of Toh 845
+                                and places volume <foreign xml:lang="Bo-Ltn">lak+S+mI</foreign> at the end of the Tengyur). Please note this discrepancy when using the eKangyur
+                                viewer in this translation.</p>
+                        </note> recension of this work, with additional reference to the notes from
+                        the <title xml:lang="en">Comparative Edition</title> (<title xml:lang="Bo-Ltn">dpe sdur ma</title>). The text is stable across all
+                        recensions consulted, with only minor variants. The mantra is rendered in
+                        the translation exactly as it appears in the Degé recension of the work.
+                    </p>
+                </div>
             </div>
         </front>
         <body>
-            <div type="translation">
+            <div type="translation" xml:id="UT22084-101-079-translation">
                 <head type="translation">The Translation</head>
                 <head type="titleMain" tid="21">The Dhāraṇī “Pacifying All Suffering”</head>
                 <div type="section" xml:id="UT22084-101-079-section-1">
                     <milestone unit="chunk" xml:id="UT22084-101-079-69"/>
                     <p tid="23">
-                        <ref cRef="F.183.a" type="folio" xml:id="UT22084-101-079-80"/> Homage to Mañjuśrī Vādisiṃha.</p>
+                        <ref cRef="F.183.a" type="folio" xml:id="UT22084-101-079-80"/>
+                        Homage to Mañjuśrī Vādisiṃha.</p>
                     <lb/>
-                    <p tid="25">Thus did I hear at one time. <ref cRef="F.183.b" type="folio" xml:id="UT22084-101-079-81"/> The Blessed One
-                        was teaching the Dharma to his full assembly at
-                        Vajrāsana. The bodhisattva great being Vajrapāṇi
-                        said to him, “O Blessed One! Please pacify the
-                        suffering of beings.” </p>
+                    <milestone unit="chunk" xml:id="UT22084-101-079-691"/>
+                    <p tid="25">Thus did I hear at one time. <ref cRef="F.183.b" type="folio" xml:id="UT22084-101-079-81"/> The Blessed One was teaching the Dharma to
+                        his full assembly at the Vajrāsana. The bodhisattva great being Vajrapāṇi said
+                        to him, “O Blessed One! Please pacify the suffering of beings.” </p>
                     <milestone unit="chunk" xml:id="UT22084-101-079-72"/>
-                    <p tid="26">The Blessed One replied, “Sons or daughters of noble
-                        family who wish to pacify outer, inner, and secret
-                        suffering should apply themselves to meditation upon
-                        Mañjuśrī Vādisiṃha for six months while reciting
-                        this mantra, which is derived from the vowels and
-                        consonants of the alphabet:</p>
+                    <p tid="26">The Blessed One replied, “Sons or daughters of noble family who wish
+                        to pacify outer, inner, and secret suffering should apply themselves to
+                        meditation upon Mañjuśrī Vādisiṃha for six months while reciting this
+                        mantra, which is derived from the vowels and consonants of the alphabet:</p>
                     <milestone unit="chunk" xml:id="UT22084-101-079-73"/>
                     <p rend="mantra" tid="27">
-                        <mantra xml:lang="Sa-Ltn">namo ratnatrayāya
-                        | namo mañjunāthāya | namo yamāntakāya
-                        |</mantra>
+                        <mantra xml:lang="Sa-Ltn">namo ratnatrayāya | namo
+                            mañjunāthāya | namo yamāntakāya |</mantra>
                     </p>
                     <milestone unit="chunk" xml:id="UT22084-101-079-74"/>
                     <p rend="mantra" tid="28">
-                        <mantra xml:lang="Sa-Ltn">tadyathā | oṁ
-                        mañjubhara mañjughoṣa hana hana hana daha daha
-                        paca paca vece vece bhita bhita iphuta iphuta
-                        herate sottani namaḥ sottani pripiśale tang
-                        pritahasa prabhinata jaya hūṁ hūṁ hūṁ hūṁ herate
-                        sottani hūṁ phaṭ svāhā | oṁ vāgīśvari muṁ
-                        mañjughoṣa hana vatisidhoharini svāhā
-                        ||</mantra>
+                        <mantra xml:lang="Sa-Ltn">tadyathā | oṁ mañjubhara
+                            mañjughoṣa hana hana hana daha daha paca paca vece vece bhita bhita
+                            iphuta iphuta herate sottani namaḥ sottani pripiśale tang pritahasa
+                            prabhinata jaya hūṁ hūṁ hūṁ hūṁ herate sottani hūṁ phaṭ svāhā | oṁ
+                            vāgīśvari muṁ mañjughoṣa hana vatisidhoharini svāhā ||</mantra>
                     </p>
                     <milestone unit="chunk" xml:id="UT22084-101-079-75"/>
-                    <p tid="29">“By reciting this mantra just once, they will obtain the
-                        dhāraṇī of longevity. If they recite it ten times,
-                        they will be able to impartially elucidate
-                        wisdom.<note place="end" xml:id="UT22084-101-079-76"> This translation follows
-                            the Choné Kangyur in reading <foreign xml:lang="Bo-Ltn" type="quote">shes rab phyogs med
-                                du ’grel</foreign>. Degé and most of the other
-                            recensions read <foreign xml:lang="Bo-Ltn" type="quote">shes rab phyogs med du
-                                ’grol</foreign>., which could mean “they will be
-                            liberated in impartial wisdom” Lithang and Yongle
-                            read <foreign xml:lang="Bo-Ltn" type="quote">shes
-                                rab phyogs med du ’gral</foreign>. </note> If they
-                        recite it a hundred times, the whole world system
-                        will tremble. If they recite it a thousand times,
-                        all desires will be fulfilled. If they recite it ten
-                        thousand times, all suffering will be pacified. If
-                        they recite it a hundred thousand times, they will
-                        behold the face of a perfect buddha.”</p>
+                    <p tid="29">“By reciting this mantra just once, they will obtain the dhāraṇī of
+                        longevity. If they recite it ten times, they will be able to impartially
+                        elucidate wisdom.<note place="end" xml:id="UT22084-101-079-76"> This
+                            translation follows the Choné Kangyur in reading <foreign xml:lang="Bo-Ltn" type="quote">shes rab phyogs med du
+                                ’grel</foreign>. Degé and most of the other recensions read <foreign xml:lang="Bo-Ltn" type="quote">shes rab phyogs med du
+                                ’grol</foreign>, which could mean “they will be liberated in
+                            impartial wisdom.” Lithang and Yongle read <foreign xml:lang="Bo-Ltn" type="quote">shes rab phyogs med du ’gral</foreign>. </note> If they
+                        recite it a hundred times, the whole world system will tremble. If they
+                        recite it a thousand times, all desires will be fulfilled. If they recite it
+                        ten thousand times, all suffering will be pacified. If they recite it a
+                        hundred thousand times, they will behold the face of a perfect buddha.”</p>
                     <milestone unit="chunk" xml:id="UT22084-101-079-77"/>
-                    <p tid="30">When the Blessed One finished speaking, the entire
-                        assembly, led by the bodhisattva great being
-                        Vajrapāṇi, were delighted, and respectfully joined
-                        their palms together and praised what the Blessed
-                        One had said. </p>
+                    <p tid="30">When the Blessed One had finished speaking, the bodhisattva great being Vajrapāṇi
+                        along with all in the assembly were delighted, and respectfully
+                        joined their palms together and praised what the Blessed One had said. </p>
                     <milestone unit="chunk" xml:id="UT22084-101-079-78"/>
-                    <trailer tid="31">This completes <title xml:lang="en">The Dhāraṇī
-                        “Pacifying All Suffering”</title>, which was
-                        taught by the Blessed Śākyamuni.</trailer>
+                    <trailer tid="31">This completes <title xml:lang="en">The Dhāraṇī “Pacifying All
+                            Suffering”</title> taught by the Blessed Śākyamuni.</trailer>
                 </div>
             </div>
         </body>
         <back>
-            <div type="notes">
+            <div type="notes" xml:id="UT22084-101-079-notes">
                 <head type="notes" tid="15">Notes</head>
             </div>
-            <div type="listBibl">
+            <div type="listBibl" xml:id="UT22084-101-079-listBibl">
                 <head type="listBibl" tid="17">Bibliography</head>
                 <div type="section" xml:id="UT22084-101-079-listBibl-1">
                     <head type="section" tid="18">Primary Sources</head>
                     <bibl xml:id="UT22084-101-079-49">
                         <title xml:lang="Bo-Ltn">sdug bsngal thams cad
-                        rab tu zhi bar byed pa zhes bya ba’i gzungs</title> (<title xml:lang="Sa-Ltn">Sarva­duḥkha­praśamanakara­nāma­dhāraṇī</title>). Toh
+                            rab tu zhi bar byed pa zhes bya ba’i gzungs</title> (<title xml:lang="Sa-Ltn">Sarva­duḥkha­praśamanakara­nāma­dhāraṇī</title>). Toh
                         1024, Degé Kangyur vol. 101 (gzungs ’dus, waM), folios 183.a–183.b.</bibl>
                     <bibl xml:id="UT22084-101-079-50">
                         <title xml:lang="Bo-Ltn">sdug bsngal thams cad
@@ -348,28 +369,25 @@
                     <bibl xml:id="UT22084-101-079-54">Kawagoe, Eishin, ed. <title xml:lang="Bo-Ltn">dKar chag ’Phang thang ma</title>. Tōhoku Indo Chibetto Kenkyū Sōsho 3.
                         Sendai: Tohoku Society for Indo-Tibetan Studies, 2005.</bibl>
                     <bibl xml:id="UT22084-101-079-55">Lalou, Marcelle. “Les textes Bouddhiques au
-                        tempes du Roi Khri-sroṅ-lde-bcan.” <title xml:lang="en">Journal</title>
-                    </bibl>
-                    <bibl xml:id="UT22084-101-079-56">
-                        <title xml:lang="en">Asiatique</title> 241
+                        tempes du Roi Khri-sroṅ-lde-bcan.” <title xml:lang="en">Journal Asiatique</title> 241
                         (1953): 313–53.</bibl>
                     <bibl xml:id="UT22084-101-079-57">Negi, J. S. <title xml:lang="en">Tibetan-Sanskrit Dictionary</title> (<title xml:lang="Bo-Ltn">bod skad
                             legs sbyar gyi tshig mdzod chen mo</title>). 16 vols. Sarnath:
                         Dictionary Unit, Central Institute of Higher Tibetan Studies, 1993.</bibl>
-                    <bibl xml:id="UT22084-101-079-58">Orosz, Gergely. <title xml:lang="en">A Catalogue of the
-                            Tibetan Manuscripts and Block Prints in the Library of the Hungarian
-                            Academy of Sciences</title>. Budapest: Library of the Hungarian Academy of
-                        Sciences, 2010.</bibl>
+                    <bibl xml:id="UT22084-101-079-58">Orosz, Gergely. <title xml:lang="en">A
+                            Catalogue of the Tibetan Manuscripts and Block Prints in the Library of
+                            the Hungarian Academy of Sciences</title>. Budapest: Library of the
+                        Hungarian Academy of Sciences, 2010.</bibl>
                 </div>
             </div>
-            <div type="glossary" status="excluded">
+            <div type="glossary" status="excluded" xml:id="UT22084-101-079-glossary">
                 <list type="glossary">
                     <item>
                         <gloss type="term" xml:id="UT22084-101-079-60">
                             <term type="translationMain">Blessed One</term>
                             <term xml:lang="Bo-Ltn" n="1">bcom ldan ’das </term>
                             <term xml:lang="bo" n="1">བཅོམ་ལྡན་འདས།</term>
-                            <term xml:lang="Sa-Ltn">bhagavat</term>
+                            <term status="verified" xml:lang="Sa-Ltn">bhagavat</term>
                         </gloss>
                     </item>
                     <item>
@@ -377,7 +395,7 @@
                             <term type="translationMain">Mañjuśrī</term>
                             <term xml:lang="Bo-Ltn" n="1">’jam dpal </term>
                             <term xml:lang="bo" n="1">འཇམ་དཔལ།</term>
-                            <term xml:lang="Sa-Ltn">mañjuśrī </term>
+                            <term status="verified" xml:lang="Sa-Ltn">mañjuśrī </term>
                         </gloss>
                     </item>
                     <item>
@@ -385,7 +403,7 @@
                             <term type="translationMain">Vajrapāṇi</term>
                             <term xml:lang="Bo-Ltn" n="1">phyag na rdo rje </term>
                             <term xml:lang="bo" n="1">ཕྱག་ན་རྡོ་རྗེ།</term>
-                            <term xml:lang="Sa-Ltn">vajrapāṇi</term>
+                            <term status="verified" xml:lang="Sa-Ltn">vajrapāṇi</term>
                         </gloss>
                     </item>
                     <item>
@@ -393,7 +411,7 @@
                             <term type="translationMain">Vādisiṃha</term>
                             <term xml:lang="Bo-Ltn" n="1">smra ba’i seng ge </term>
                             <term xml:lang="bo" n="1">སྨྲ་བའི་སེང་གེ</term>
-                            <term xml:lang="Sa-Ltn">vādisiṃha</term>
+                            <term status="verified" xml:lang="Sa-Ltn">vādisiṃha</term>
                             <note type="definition">
                                 <p>An epithet of Mañjuśrī meaning Lion of
                                     Speech.</p>
@@ -405,9 +423,9 @@
                             <term type="translationMain">Vajrāsana</term>
                             <term xml:lang="Bo-Ltn" n="1">rdo rje’i gdan</term>
                             <term xml:lang="bo" n="1">རྡོ་རྗེའི་གདན།</term>
-                        <term xml:lang="Bo-Ltn" n="2">rdo rje gdan </term>
+                            <term xml:lang="Bo-Ltn" n="2">rdo rje gdan </term>
                             <term xml:lang="bo" n="2">རྡོ་རྗེ་གདན།</term>
-                            <term xml:lang="Sa-Ltn">vajrāsana</term>
+                            <term status="verified" xml:lang="Sa-Ltn">vajrāsana</term>
                             <note type="definition">
                                 <p>The “vajra seat”; a name for the place in
                                     Bodhgaya where the Buddha Śākyamuni, and all buddhas, achieve
@@ -417,31 +435,32 @@
                     </item>
                     <item>
                         <gloss type="text" xml:id="UT22084-101-079-67">
-                            <term type="translationMain">Tsalpa Kangyur</term>
+                            <term type="translationMain">Tshalpa Kangyur</term>
                             <term xml:lang="Bo-Ltn" n="1">tshal pa bka’ ’gyur</term>
                             <term xml:lang="bo" n="1">ཚལ་པ་བཀའ་འགྱུརཾཨརྐུཔ༔་པླེཨསེ་ལིནཀ་ཐིས་ཨེནཏརཡ་ཏོ་ཨཉ་ཨིནསྟནཅེ་ཨོཕ༹་ཐེ་ཝོརད་ཊསལྤ།</term>
-                            <term type="translationAlternative">Tsalpa</term>
+                            <term type="translationAlternative">Tshalpa</term>
                             <note type="definition">
-                                <p>An edition of the Kangyur produced at
-                                    Gungthang (<foreign xml:lang="Bo-Ltn">gung thang</foreign>)
+                                <p>The name of one of the main textual lineages of Kangyurs. 
+                                It comes from an early version of the Kangyur produced at
+                                    Tshal Gungthang (<foreign xml:lang="Bo-Ltn">tshal gung thang</foreign>)
                                     monastery in central Tibet from 1347–51 under the sponsorship of
-                                    the local ruler, Tshalpa Künga Dorje (<foreign xml:lang="Bo-Ltn">tshal pa kun dga’ rdo rje</foreign>, 1309–64), which
-                                    provided the basis for a branch of subsequent Kangyur
-                                    editions.</p>
+                                    the local ruler, Tshalpa Künga Dorje (<foreign xml:lang="Bo-Ltn">tshal pa kun dga’ rdo rje</foreign>, 1309–64). 
+                                    Later Kangyurs derived wholly, mainly, or to a significant degree from this original Tshalpa Kangyur manuscript are identified
+                                    as belonging to the Tshalpa lineage of Kangyurs. They are almost all printed Kangyurs.</p>
                             </note>
                         </gloss>
                     </item>
                     <item>
                         <gloss type="text" xml:id="UT22084-101-079-68">
-                            <term type="translationMain">Thempangma Kangyur</term>
+                            <term type="translationMain">Themphangma Kangyur</term>
                             <term xml:lang="Bo-Ltn" n="1">them spangs ma bka’ ’gyur</term>
                             <term xml:lang="bo" n="1">ཐེམ་སྤངས་མ་བཀའ་འགྱུར།</term>
-                            <term type="translationAlternative">Thempangma</term>
+                            <term type="translationAlternative">Themphangma</term>
                             <note type="definition">
-                                <p>One of the two textual lineages of the
-                                    Kangyur, starting from a manuscript so named that was produced
+                                <p>One of the two textual lineages of 
+                                    Kangyurs, starting from a manuscript so named that was produced
                                     at Gyantsé (<foreign xml:lang="Bo-Ltn">rgyal rtse</foreign>) in
-                                    1431.</p>
+                                    1431. All the Themphangma Kangyurs are manuscript versions.</p>
                             </note>
                         </gloss>
                     </item>
