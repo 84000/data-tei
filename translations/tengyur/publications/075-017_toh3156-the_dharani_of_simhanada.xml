@@ -17,7 +17,7 @@
                 <editor role="finalReviewer" xml:id="UT23703-075-017-114">Andreas Doctor</editor>
             </titleStmt>
             <editionStmt>
-                <edition>v 1.0.0 <date>2024</date>
+                <edition>v 1.0.1 <date>2024</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -152,6 +152,9 @@
                 </change>
                 <change who="#martina-cotter" when="2024-10-23T23:57:37.698Z" type="text-version" status="1.0.0" xml:id="UT23703-075-017-117">
                     <desc>First published version.</desc>
+                </change>
+                <change who="#andre" when="2024-11-02T01:43:13.071Z" type="text-version" status="1.0.1" xml:id="UT23703-075-017-118">
+                    <desc>Glossary integration revised, activated in CG</desc>
                 </change>
             </revisionDesc>
         </fileDesc>
@@ -477,18 +480,14 @@
             <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="glossary" status="excluded" xml:id="UT23703-075-017-glossary">
                 <list type="glossary">
                     <item>
-                        <gloss type="term" xml:id="UT23703-075-017-94">
-                            <term type="translationMain">Five deeds of immediate retribution </term>
-                            <term status="verified" xml:lang="Bo-Ltn" n="1">mtshams med pa lnga </term>
-                            <term xml:lang="bo" n="1">མཚམས་མེད་པ་ལྔ།</term>
-                            <term type="attestedDictionary" status="verified" xml:lang="Sa-Ltn">pañcānantarya</term>
-                            <tei:note type="definition">
-                                <p>Five acts said to lead to immediate and
-                                    unavoidable birth in the hell realms: killing one’s father,
-                                    killing one’s mother, killing an arhat, sowing discord within
-                                    the saṅgha, and drawing the blood of a tathāgata with ill
-                                    intent. </p>
-                            </tei:note>
+                        <gloss xml:id="UT23703-075-017-94" type="term" mode="match">
+                            <term type="translationMain">five deeds of immediate retribution</term>
+                            <term xml:lang="Sa-Ltn" type="attestedDictionary" status="verified">pañcānantarya</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">mtshams med pa lnga</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">མཚམས་མེད་པ་ལྔ།</term>
+                            <note type="definition">
+                                <p>Five acts said to lead to immediate and unavoidable birth in the hell realms: killing one’s father, killing one’s mother, killing an arhat, sowing discord within the saṅgha, and drawing the blood of a tathāgata with ill intent. </p>
+                            </note>
                         </gloss>
                     </item>
                     <item>
