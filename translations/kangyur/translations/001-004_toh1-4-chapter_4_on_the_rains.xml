@@ -26,7 +26,7 @@
                 <editor role="finalReviewer" xml:id="UT22084-001-004-608">John Canti</editor>
             </titleStmt>
             <editionStmt>
-                <edition>v 1.0.5 <date>2024</date>
+                <edition>v 1.0.6 <date>2024</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -164,13 +164,16 @@
                 <change who="#celso" when="2024-11-01T20:00:06.435Z" type="text-version" status="1.0.5" xml:id="UT22084-001-004-5489">
                     <desc>rendered italics in verse summary</desc>
                 </change>
+                <change who="#celso" when="2024-11-05T16:21:04.872Z" type="text-version" status="1.0.6" xml:id="UT22084-001-004-5490">
+                    <desc>minor corrections</desc>
+                </change>
             </revisionDesc>
         </fileDesc>
     </teiHeader>
     <text>
         <!--Note the "Contents" outline from the Word DOCX has not been included in the script. If the 
                     Outline to the text is quite complex, it is recommended that you paste the outlined contents from the DOCX here as a comment for
-                    markup's reference. The actual table of contents will be generated in the Reading Room by the parser.-->
+                    markup’s reference. The actual table of contents will be generated in the Reading Room by the parser.-->
         <front>
             <div type="summary" xml:id="UT22084-001-004-summary">
                 <head type="summary" tid="1">Summary</head>
@@ -504,7 +507,7 @@
                             is presumably an alternative Tibetan translation of the Skt. <foreign xml:lang="Sa-Ltn" type="term">piṇḍoddāna</foreign>, 
                             or “global summary.” </note> of <title xml:lang="en">The Chapter on the Rains</title>:</p>
                     <milestone unit="chunk" xml:id="UT22084-001-004-120"/>
-                    <lg type="sdom" tid="33"><!--bsdus_pa'i_sdom-->
+                    <lg type="bsdus_pa’i_sdom" tid="33">
                         <l>
                             <ptr type="subdivision" target="#UT22084-001-004-section-1">Settling for
                                 the rains</ptr>, <ptr type="subdivision" target="#UT22084-001-004-section-2">food</ptr>,</l>
@@ -2364,7 +2367,7 @@
                             <term type="translationMain">Blessed One</term>
                             <term type="translationAlternative">Blessed</term>
                             <term xml:lang="Sa-Ltn" type="attestedSource" status="verified">bhagavān</term>
-                            <term xml:lang="Bo-Ltn" status="verified" type="attestedSource" n="1">bcom ldan 'das</term>
+                            <term xml:lang="Bo-Ltn" status="verified" type="attestedSource" n="1">bcom ldan ’das</term>
                             <term xml:lang="bo" type="attestedSource" n="1">བཅོམ་ལྡན་འདས།</term>
                         </gloss>
                     </item>
@@ -3050,7 +3053,7 @@
                             <term type="translationMain">Four Divisions of the Discourses</term>
                             <term xml:lang="Sa-Ltn" type="attestedSource" status="verified">catvāraḥ
                                 sūtranikāyāḥ</term>
-                            <term xml:lang="Bo-Ltn" type="attestedSource" status="verified" n="1">mdo sde'i ris bzhi</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" status="verified" n="1">mdo sde’i ris bzhi</term>
                             <term xml:lang="bo" type="attestedSource" n="1">མདོ་སྡེའི་རིས་བཞི།</term>
                             <term xml:lang="Bo-Ltn" type="attestedSource" status="verified" n="2">mdo sde ris bzhi</term>
                             <term xml:lang="bo" type="attestedSource" n="2">མདོ་སྡེ་རིས་བཞི།</term>
@@ -3135,7 +3138,7 @@
                                         (F.316.a):<ref rend="pending" target="https://read.84000.co/translation/toh4113.html"/>
                                     <foreign xml:lang="Bo-Ltn" type="quote">gnas mal bstabs pa zhes
                                         bya ba ni mal cha dang stan la sogs pa las mi dbral
-                                        ba'o</foreign>. The “residence caretaker” is one of five
+                                        ba’o</foreign>. The “residence caretaker” is one of five
                                     kinds of “caretaker” (Tib. <foreign xml:lang="Bo-Ltn" type="term">bstabs pa</foreign>; Skt. <foreign xml:lang="Sa-Ltn" type="term">parihāra</foreign>) introduced
                                     in <title xml:lang="en">The Chapter on the Restoration
                                         Rite</title> (Toh 1, ch. 2), <ptr target="#UT22084-001-002-568"/>: (1) “site caretaker” (Tib. <foreign xml:lang="Bo-Ltn" type="term">gnas bstabs pa</foreign>; Skt. <foreign xml:lang="Sa-Ltn" type="term">vastuparihāra</foreign>), (2)
@@ -3143,8 +3146,7 @@
                                     (3) “work caretaker” (Tib. <foreign xml:lang="Bo-Ltn" type="term">las bstabs pa</foreign>; Skt. <foreign xml:lang="Sa-Ltn" type="term">karmaparihāra</foreign>), (4)
                                     “supplies caretaker” (Tib. <foreign xml:lang="Bo-Ltn" type="term">rnyed pa bstabs pa</foreign>; Skt. <foreign xml:lang="Sa-Ltn" type="term">lābhaparihāra</foreign>), and
                                     (5) “attendant caretaker” (Tib. <foreign xml:lang="Bo-Ltn" type="term">bsnyen bkur ba bstabs pa</foreign>; Skt.
-                                        <foreign xml:lang="Sa-Ltn" type="term">upasthāyakaparihāra</foreign>). See also <ptr target="#UT22084-001-004-97"/>
-                                </p>
+                                        <foreign xml:lang="Sa-Ltn" type="term">upasthāyakaparihāra</foreign>). See also <ptr target="#UT22084-001-004-97"/>.</p>
                             </note>
                         </gloss>
                     </item>
@@ -3210,8 +3212,7 @@
                                 <p>Monks and nuns are expected to willingly confess (Tib. <foreign xml:lang="Bo-Ltn" type="term">spro ba mthol
                                     bshags</foreign>) or admit to any offenses they commit. If they
                                     fail to acknowledge wrongdoing when prompted by another monk or
-                                    nun to do, the saṅgha may suspend them for their recalcitrance.
-                                    pledged to settle for the rains </p>
+                                    nun to do, the saṅgha may suspend them for their recalcitrance.</p>
                             </note>
                         </gloss>
                     </item>
@@ -3245,7 +3246,7 @@
                             <term type="translationAlternative">pledged to settle for the
                                 rains</term>
                             <term xml:lang="Sa-Ltn" type="attestedSource" status="verified">varṣopagata</term>
-                            <term xml:lang="Bo-Ltn" type="attestedSource" status="verified" n="1">dbyar gnas par dam bca'</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" status="verified" n="1">dbyar gnas par dam bca’</term>
                             <term xml:lang="bo" type="attestedSource" n="1">དབྱར་གནས་པར་དམ་བཅའ།</term>
                             <note type="definition">
                                 <p>The phrase “pledge to settle for the rains” translates the Tib.
