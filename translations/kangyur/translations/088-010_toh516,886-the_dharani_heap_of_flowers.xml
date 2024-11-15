@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../../../schema/current/translation.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<tei:TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -9,7 +9,7 @@
                 <title type="mainTitle" xml:lang="bo">མེ་ཏོག་བརྩེགས་པའི་གཟུངས།</title>
                 <title type="mainTitle" xml:lang="Bo-Ltn">me tog brtsegs pa’i gzungs</title>
                 <title type="longTitle" xml:lang="en">The Noble Dhāraṇī “Heap of Flowers”</title>
-                <title type="longTitle" xml:lang="Sa-Ltn">Ārya­pūṣpakūṭa­nāma­dhāraṇī</title>
+                <title type="longTitle" xml:lang="Sa-Ltn">Ārya­puṣpakūṭa­nāma­dhāraṇī</title>
                 <title type="longTitle" xml:lang="bo">འཕགས་པ་མེ་ཏོག་བརྩེགས་པ་ཞེས་བྱ་བའི་གཟུངས།</title>
                 <title type="longTitle" xml:lang="Bo-Ltn">’phags pa me tog brtsegs pa zhes bya ba’i
                     gzungs</title>
@@ -25,7 +25,7 @@
                 <editor role="finalReviewer" xml:id="UT22084-088-010-168">John Canti</editor>
             </titleStmt>
             <editionStmt>
-                <edition>v 1.0.1 <date>2024</date>
+                <edition>v 1.0.2 <date>2024</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -173,6 +173,9 @@
                 <change who="#martina-cotter" when="2024-11-06T15:30:29.253Z" type="text-version" status="1.0.1" xml:id="UT22084-088-010-896">
                     <desc>minor updates.</desc>
                 </change>
+                <change who="#martina-cotter" when="2024-11-15T18:28:50.99Z" type="text-version" status="1.0.2" xml:id="UT22084-088-010-897">
+                    <desc>updated typo.</desc>
+                </change>
             </revisionDesc>
         </fileDesc>
     </teiHeader>
@@ -181,7 +184,7 @@
                     Outline to the text is quite complex, it is recommended that you paste the outlined contents from the DOCX here as a comment for
                     markup's reference. The actual table of contents will be generated in the Reading Room by the parser.-->
         <front>
-            <div type="summary" xml:id="UT22084-088-010-summary">
+            <tei:div type="summary" xml:id="UT22084-088-010-summary">
                 <head type="summary" tid="1">Summary</head>
                 <milestone unit="chunk" xml:id="UT22084-088-010-42"/>
                 <p tid="2">The text comprises a teaching given by the Buddha Śākyamuni to the bodhisattva
@@ -191,8 +194,8 @@
                     to face or in the form of a caitya, is also limitless. What truly matters is the
                     worshipper’s mental attitude. He then continues by teaching a dhāraṇī accompanied by a
                     short practice and describes its benefits.</p>
-            </div>
-            <div type="acknowledgment" xml:id="UT22084-088-010-acknowledgment">
+            </tei:div>
+            <tei:div type="acknowledgment" xml:id="UT22084-088-010-acknowledgment">
                 <head type="acknowledgment" tid="3">Acknowledgements</head>
                 <milestone unit="chunk" xml:id="UT22084-088-010-43"/>
                 <p tid="4">This text was translated and introduced by The Buddhapīṭha Translation Group
@@ -202,10 +205,10 @@
                     Translating the Words of the Buddha. Ryan Damron edited the translation and the
                     introduction, and Dawn Collins copyedited the text. Martina Cotter was in charge of the
                     digital publication process.</p>
-            </div>
-            <div type="introduction" xml:id="UT22084-088-010-introduction">
+            </tei:div>
+            <tei:div type="introduction" xml:id="UT22084-088-010-introduction">
                 <head type="introduction" tid="7">Introduction</head>
-                <div type="section" xml:id="UT22084-088-010-introduction-1">
+                <tei:div type="section" xml:id="UT22084-088-010-introduction-1">
                     <milestone unit="chunk" xml:id="UT22084-088-010-46"/>
                     <p tid="39">
                         <title xml:lang="en">The Dhāraṇī “Heap of Flowers”</title> is a text that has had
@@ -311,15 +314,15 @@
                     <p tid="12">This English translation was made principally on the basis of the Tibetan
                         translations of the text found in the Tantra Collection (<title xml:lang="Bo-Ltn">rgyud ’bum</title>) and the Compendium of Dhāraṇīs (<title xml:lang="Bo-Ltn">gzungs ’dus</title>) in the Degé Kangyur in consultation with the Stok Palace
                         Kangyur and the Dunhuang fragment. </p>
-                </div>
-            </div>
+                </tei:div>
+            </tei:div>
         </front>
         <body>
-            <div type="translation" xml:id="UT22084-088-010-translation">
+            <tei:div type="translation" xml:id="UT22084-088-010-translation">
                 <head type="translation">The Translation</head>
                 <head type="titleHon" tid="37">The Noble Dhāraṇī</head>
                 <head type="titleMain" tid="38">Heap of Flowers</head>
-                <div type="section" xml:id="UT22084-088-010-section-1">
+                <tei:div type="section" xml:id="UT22084-088-010-section-1">
                     <milestone unit="chunk" xml:id="UT22084-088-010-58"/>
                     <p tid="17">
                         <ref cRef="F.31.a" key="toh516" work="W22084"/>
@@ -505,16 +508,16 @@
                     <trailer tid="29">
                         <title xml:lang="en">The Dhāraṇī “Heap of Flowers”</title> is
                         complete.</trailer>
-                </div>
-            </div>
+                </tei:div>
+            </tei:div>
         </body>
         <back>
-            <div type="notes" xml:id="UT22084-088-010-notes">
+            <tei:div type="notes" xml:id="UT22084-088-010-notes">
                 <head type="notes" tid="30">Notes</head>
-            </div>
-            <div type="listBibl" xml:id="UT22084-088-010-listBibl">
+            </tei:div>
+            <tei:div type="listBibl" xml:id="UT22084-088-010-listBibl">
                 <head type="listBibl" tid="32">Bibliography</head>
-                <div type="section" xml:id="UT22084-088-010-listBibl-1">
+                <tei:div type="section" xml:id="UT22084-088-010-listBibl-1">
                     <head type="section" tid="35">Primary Sources</head>
                     <bibl xml:id="UT22084-088-010-131">
                         <title xml:lang="Bo-Ltn">’phags pa me tog brtsegs pa
@@ -547,8 +550,8 @@
                         <title xml:lang="Zh-Ltn">Hua ji louge tuoluoni jing
                         (</title>
                         <title xml:lang="zh">花積樓閣陀羅尼經</title>, <title xml:lang="Sa-Ltn">Puṣpa­kūṭa­dhāraṇī</title>), Taisho 1359 (<ref target="https://cbetaonline.dila.edu.tw/T1359">CBETA</ref>; <ref target="https://21dzk.l.u-tokyo.ac.jp/SAT2018/T1359.html">SAT</ref>).</bibl>
-                </div>
-                <div type="section" xml:id="UT22084-088-010-listBibl-2">
+                </tei:div>
+                <tei:div type="section" xml:id="UT22084-088-010-listBibl-2">
                     <head type="section" tid="36">Secondary Sources</head>
                     <bibl xml:id="UT22084-088-010-88">Bendall, Cecil, ed. <title xml:lang="en">Çikshāsamuccaya: A Compendium of Buddhistic Teaching Compiled by Çāntideva,
                             Chiefly from Earlier Mahāyāna-Sūtras</title>. Bibliotheca Buddhica 1. St.
@@ -607,9 +610,9 @@
                     <bibl xml:id="UT22084-088-010-102">Strickmann, Michel. <title xml:lang="fr">Mantras et
                             mandarins. Le bouddhisme tantrique en Chine</title>. Bibliothèque des sciences
                         humaines. Paris: Éditions Gallimard, 1996.</bibl>
-                </div>
-            </div>
-            <div type="glossary" status="excluded" xml:id="UT22084-088-010-glossary">
+                </tei:div>
+            </tei:div>
+            <tei:div type="glossary" status="excluded" xml:id="UT22084-088-010-glossary">
                 <list type="glossary">
                     <item>
                         <gloss type="term" xml:id="UT22084-088-010-106">
@@ -825,7 +828,7 @@
                         </gloss>
                     </item>
                 </list>
-            </div>
+            </tei:div>
         </back>
     </text>
-</TEI>
+</tei:TEI>
