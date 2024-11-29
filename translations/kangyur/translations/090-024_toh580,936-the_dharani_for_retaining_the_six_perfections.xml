@@ -22,7 +22,7 @@
                 <editor role="finalReviewer" xml:id="UT22084-090-024-103">Andreas Doctor</editor>
             </titleStmt>
             <editionStmt>
-                <edition>v 1.0.2 <date>2024</date>
+                <edition>v 1.0.3 <date>2024</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -158,6 +158,9 @@
                 <change who="#sameer" when="2024-08-21T06:44:09.362Z" type="text-version" status="1.0.2" xml:id="UT22084-090-024-111">
                     <desc>Included in App v 3.17</desc>
                 </change>
+                <change who="#andre" when="2024-11-29T13:57:44.44Z" type="text-version" status="1.0.3" xml:id="UT22084-090-024-112">
+                    <desc>Glossary integration revised, activated in CG</desc>
+                </change>
             </revisionDesc>
         </fileDesc>
     </teiHeader>
@@ -166,12 +169,13 @@
                     Outline to the text is quite complex, it is recommended that you paste the outlined contents from the DOCX here as a comment for
                     markup's reference. The actual table of contents will be generated in the Reading Room by the parser.-->
         <front>
-            <div type="summary">
+            <div type="summary" xml:id="UT22084-090-024-summary">
                 <head type="summary" tid="1">Summary</head>
                 <milestone unit="chunk" xml:id="UT22084-090-024-36"/>
-                <p tid="2">This text presents a series of dhāraṇīs for the attainment of each of the perfections.</p>
+                <p tid="2">This text presents a series of dhāraṇīs for the attainment of each of the
+                    perfections.</p>
             </div>
-            <div type="acknowledgment">
+            <div type="acknowledgment" xml:id="UT22084-090-024-acknowledgment">
                 <head type="acknowledgment" tid="3">Acknowledgements</head>
                 <milestone unit="chunk" xml:id="UT22084-090-024-37"/>
                 <p tid="4">This publication was completed under the patronage and supervision of
@@ -182,7 +186,7 @@
                     Lindsay edited the translation and the introduction, and Dawn Collins copyedited
                     the text. Sameer Dhingra was in charge of the digital publication process. </p>
             </div>
-            <div type="introduction">
+            <div type="introduction" xml:id="UT22084-090-024-introduction">
                 <head type="introduction" tid="9">Introduction</head>
                 <div type="section" xml:id="UT22084-090-024-introduction-1">
                     <milestone unit="chunk" xml:id="UT22084-090-024-41"/>
@@ -194,11 +198,9 @@
                             dhāraṇīs (<foreign xml:lang="Sa-Ltn" type="term">bodhisattva­kṣāntilābhāya­dhāraṇī</foreign>; <foreign xml:lang="Bo-Ltn" type="term">byang chub sems dpa’ bzod pa ’thob par
                                 byed pa’i gzungs</foreign>)—this text falls into the category of
                                 <foreign xml:lang="Sa-Ltn" type="term">bodhisattva­kṣāntilābhāya­dhāraṇīs</foreign>, which enable one to
-                            progress along the path through the acquisition of
-                            the six perfections. Cf. <distinct>Grounds of Bodhisattvas</distinct>
-                                (<foreign xml:lang="Sa-Ltn" type="term">Bodhisattva­bhūmi</foreign>;
-                                <foreign xml:lang="Bo-Ltn" type="term">byang chub sems dpa’i
-                                sa</foreign>; <ref target="https://read.84000.co/translation/toh4037.html" rend="pending">Toh 4037</ref>, folio 144.a). A discussion of various
+                            progress along the path through the acquisition of the six perfections.
+                            Cf. <distinct>Grounds of Bodhisattvas</distinct> (<foreign xml:lang="Sa-Ltn" type="term">Bodhisattva­bhūmi</foreign>; <foreign xml:lang="Bo-Ltn" type="term">byang chub sems dpa’i sa</foreign>;
+                                <ref target="https://read.84000.co/translation/toh4037.html" rend="pending">Toh 4037</ref>, folio 144.a). A discussion of various
                             classifications of dhāraṇīs is given in Pagel 2007.</note> for the
                         attainment of each of the perfections, with no additional explanation.
                         Although a common theme, there are no obvious parallels with other texts in
@@ -208,7 +210,8 @@
                     <p tid="12">This translation of the text into English relied primarily on the
                         Degé recension while making reference to variant readings in other
                         recensions as noted in the Comparative Edition (<title xml:lang="Bo-Ltn">dpe
-                            bsdur ma</title>) and validated in the source texts—notably Narthang—as well as the Stok Palace and Phukdrak recensions.<note place="end" xml:id="UT22084-090-024-88">
+                            bsdur ma</title>) and validated in the source texts—notably Narthang—as
+                        well as the Stok Palace and Phukdrak recensions.<note place="end" xml:id="UT22084-090-024-88">
                             <p key="toh936">This text, Toh 936, and all those contained in this same
                                 volume (<foreign xml:lang="Bo-Ltn">gzungs ’dus, e</foreign>), are
                                 listed as being located in volume 100 of the Degé Kangyur by the
@@ -235,13 +238,12 @@
                             <!--REPLICATE PREVIOUS NOTE IF THERE ARE THREE OR MORE TOH VERSIONS-->
                         </note> No previous translation of this text into a language outside the
                         Tibetan sphere of influence is known. Meisezahl (1957) provides a diplomatic
-                        edition of the dhāraṇīs
-                        found in the Linden Museum Tibetan collection. </p>
+                        edition of the dhāraṇīs found in the Linden Museum Tibetan collection. </p>
                 </div>
             </div>
         </front>
         <body>
-            <div type="translation">
+            <div type="translation" xml:id="UT22084-090-024-translation">
                 <head type="translation"> The Translation </head>
                 <head type="titleHon" tid="13"/>
                 <head type="titleMain" tid="14">The Dhāraṇī for Retaining the Six Perfections</head>
@@ -327,9 +329,9 @@
                     <milestone unit="chunk" xml:id="UT22084-090-024-67"/>
                     <p rend="mantra" tid="29">
                         <mantra xml:lang="Sa-Ltn">namaḥ sarvatathāgatānām | oṃ
-                            vimale nirmale dhyāne dhyāne dhyānapriye hūṃ phaṭ |<note place="end" xml:id="UT22084-090-024-68"> This dhāraṇī translates as, <mantra xml:lang="mixed">“Homage to all the tathāgatas. <foreign xml:lang="Sa-Ltn">oṃ</foreign>. Stainless.
-                                    Spotless. Concentration. Concentration. Beloved concentration.
-                                    <foreign xml:lang="Sa-Ltn">hūṃ phaṭ</foreign>.</mantra>”</note>
+                            vimale nirmale dhyāne dhyāne dhyānapriye hūṃ phaṭ |<note place="end" xml:id="UT22084-090-024-68"> This dhāraṇī translates as, <mantra xml:lang="mixed">“Homage to all the tathāgatas. <foreign xml:lang="Sa-Ltn">oṃ</foreign>. Stainless. Spotless.
+                                    Concentration. Concentration. Beloved concentration. <foreign xml:lang="Sa-Ltn">hūṃ
+                            phaṭ</foreign>.</mantra>”</note>
                         </mantra>
                     </p>
                     <milestone unit="chunk" xml:id="UT22084-090-024-69"/>
@@ -355,15 +357,15 @@
                     </p>
                     <milestone unit="chunk" xml:id="UT22084-090-024-73"/>
                     <trailer tid="32">This completes “<title xml:lang="en">The Dhāraṇī for Retaining
-                        the Six Perfections</title>.”</trailer>
+                            the Six Perfections</title>.”</trailer>
                 </div>
             </div>
         </body>
         <back>
-            <div type="notes">
+            <div type="notes" xml:id="UT22084-090-024-notes">
                 <head type="notes" tid="33">Notes</head>
             </div>
-            <div type="listBibl">
+            <div type="listBibl" xml:id="UT22084-090-024-listBibl">
                 <head type="listBibl" tid="35">Bibliography</head>
                 <div type="section" xml:id="UT22084-090-024-listBibl-1">
                     <bibl xml:id="UT22084-090-024-74">
@@ -398,22 +400,22 @@
                         International Institute for Buddhist Studies, 2007. </bibl>
                 </div>
             </div>
-            <div type="glossary" status="excluded">
+            <div type="glossary" xml:id="UT22084-090-024-glossary">
                 <list type="glossary">
                     <item>
-                        <gloss type="term" xml:id="UT22084-090-024-83">
+                        <gloss xml:id="UT22084-090-024-83" type="term" mode="match">
                             <term type="translationMain">ethics</term>
-                            <term xml:lang="Bo-Ltn" n="1">tshul ’khrims </term>
-                            <term xml:lang="bo" n="1">ཚུལ་འཁྲིམས།</term>
-                            <term xml:lang="Sa-Ltn" type="attestedDictionary">*śīla</term>
+                            <term xml:lang="Sa-Ltn" type="attestedDictionary">śīla</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">tshul ’khrims</term>
+                            <term xml:lang="bo" type="attestedSource" n="1">ཚུལ་འཁྲིམས།</term>
                         </gloss>
                     </item>
                     <item>
-                        <gloss type="term" xml:id="UT22084-090-024-84">
+                        <gloss xml:id="UT22084-090-024-84" type="term" mode="match">
                             <term type="translationMain">patience</term>
-                            <term xml:lang="Bo-Ltn" n="1">bzod pa </term>
-                            <term xml:lang="bo" n="1">བཟོད་པ།</term>
-                            <term xml:lang="Sa-Ltn" type="attestedDictionary">*kṣanti</term>
+                            <term xml:lang="Sa-Ltn" type="attestedDictionary">kṣanti</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">bzod pa</term>
+                            <term xml:lang="bo" type="attestedSource" n="1">བཟོད་པ།</term>
                         </gloss>
                     </item>
                     <item>
@@ -425,25 +427,13 @@
                         </gloss>
                     </item>
                     <item>
-                        <gloss type="term" xml:id="UT22084-090-024-87">
+                        <gloss xml:id="UT22084-090-024-87" type="term" mode="match">
                             <term type="translationMain">wisdom</term>
-                            <term xml:lang="Bo-Ltn" n="1">shes rab </term>
-                            <term xml:lang="bo" n="1">ཤེས་རབ།</term>
-                            <term xml:lang="Sa-Ltn" type="attestedDictionary">*prajñā</term>
+                            <term xml:lang="Sa-Ltn" type="attestedDictionary">prajñā</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">shes rab</term>
+                            <term xml:lang="bo" type="attestedSource" n="1">ཤེས་རབ།</term>
                             <note type="definition">
-                                <p>In the context‌ of the perfections, wisdom is the sixth of the
-                                    six perfections. The translation of <foreign xml:lang="Sa-Ltn">prajñā</foreign> (<foreign xml:lang="Bo-Ltn">shes rab</foreign>) by
-                                    “wisdom” here defers to the precedent established by Edward
-                                    Conze in his writings. It has a certain poetic resonance which
-                                    more accurate renderings‍—“discernment,” “discriminative
-                                    awareness,” or “intelligence”‍—unfortunately lack. It should be
-                                    remembered that in Abhidharma, <foreign xml:lang="Sa-Ltn">prajñā</foreign> is classed as one of the
-                                    five object-determining mental states (<foreign xml:lang="Sa-Ltn">pañca­viṣaya­niyata</foreign>, <foreign xml:lang="Bo-Ltn">yul
-                                    nges lnga</foreign>), alongside “will,” “resolve,” “mindfulness,” and
-                                    “meditative stability.” Following Asaṅga’s <title xml:lang="Sa-Ltn">Abhidharma­samuccaya</title>,
-                                    Jamgon Kongtrul (TOK, Book 6, Pt. 2, p. 498) defines <foreign xml:lang="Sa-Ltn">prajñā</foreign> as
-                                    “the discriminative awareness that analyzes specific and general
-                                    characteristics.”</p>
+                                <p>In the context‌ of the perfections, wisdom is the sixth of the six perfections. The translation of <foreign xml:lang="Sa-Ltn">prajñā</foreign> (<foreign xml:lang="Bo-Ltn">shes rab</foreign>) by “wisdom” here defers to the precedent established by Edward Conze in his writings. It has a certain poetic resonance which more accurate renderings‍—“discernment,” “discriminative awareness,” or “intelligence”‍—unfortunately lack. It should be remembered that in Abhidharma, <foreign xml:lang="Sa-Ltn">prajñā</foreign> is classed as one of the five object-determining mental states (<foreign xml:lang="Sa-Ltn">pañca­viṣaya­niyata</foreign>, <foreign xml:lang="Bo-Ltn">yul nges lnga</foreign>), alongside “will,” “resolve,” “mindfulness,” and “meditative stability.” Following Asaṅga’s <title xml:lang="Sa-Ltn">Abhidharma­samuccaya</title>, Jamgon Kongtrul (TOK, Book 6, Pt. 2, p. 498) defines <foreign xml:lang="Sa-Ltn">prajñā</foreign> as “the discriminative awareness that analyzes specific and general characteristics.”</p>
                             </note>
                         </gloss>
                     </item>
@@ -466,22 +456,22 @@
                         </gloss>
                     </item>
                     <item>
-                        <gloss type="term" xml:id="UT22084-090-024-105">
+                        <gloss xml:id="UT22084-090-024-105" type="term" mode="match">
                             <term type="translationMain">giving</term>
-                            <term xml:lang="Sa-Ltn" type="attestedDictionary">*dāna</term>
-                            <term xml:lang="Bo-Ltn" n="1">sbyin pa</term>
-                            <term xml:lang="bo" n="1">སྦྱིན་པ།</term>
+                            <term xml:lang="Sa-Ltn" type="attestedDictionary">dāna</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">sbyin pa</term>
+                            <term xml:lang="bo" type="attestedSource" n="1">སྦྱིན་པ།</term>
                             <note type="definition">
                                 <p>The first of the six or ten perfections, often explained as the essential starting point and training for the practice of the others.</p>
                             </note>
                         </gloss>
                     </item>
                     <item>
-                        <gloss type="term" xml:id="UT22084-090-024-106">
+                        <gloss xml:id="UT22084-090-024-106" type="term" mode="match">
                             <term type="translationMain">effort</term>
-                            <term xml:lang="Sa-Ltn" type="attestedDictionary">*vīrya</term>
-                            <term xml:lang="Bo-Ltn" n="1">brtson ’grus</term>
-                            <term xml:lang="bo" n="1">བརྩོན་འགྲུས།</term>
+                            <term xml:lang="Sa-Ltn" type="attestedDictionary">vīrya</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">brtson ’grus</term>
+                            <term xml:lang="bo" type="attestedSource" n="1">བརྩོན་འགྲུས།</term>
                             <note type="definition">
                                 <p>The fourth of the six or ten perfections, this refers to a state of mind characterized by joyful persistence when engaging in virtuous activity.</p>
                             </note>
