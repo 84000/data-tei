@@ -4,24 +4,21 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="mainTitle" xml:lang="Bo-Ltn">de bzhin gshegs pa sman gyi bla’i snying
-                    po’i gzungs</title>
-                <title type="mainTitle" xml:lang="bo">དེ་བཞིན་གཤེགས་པ་སྨན་གྱི་བླའི་སྙིང་པོའི་གཟུངས།</title>
                 <title type="mainTitle" xml:lang="en">The Essence Dhāraṇī of the Tathāgata
                     Bhaiṣajya­guru</title>
-                <title type="longTitle" xml:lang="bo">དེ་བཞིན་གཤེགས་པ་སྨན་གྱི་བླའི་སྙིང་པོའི་གཟུངས།</title>
-                <title type="longTitle" xml:lang="Bo-Ltn">de bzhin gshegs pa sman gyi bla’i snying
+                <title type="mainTitle" xml:lang="bo">དེ་བཞིན་གཤེགས་པ་སྨན་གྱི་བླའི་སྙིང་པོའི་གཟུངས།</title>
+                <title type="mainTitle" xml:lang="Bo-Ltn">de bzhin gshegs pa sman gyi bla’i snying
                     po’i gzungs</title>
-                <title type="longTitle" xml:lang="en">The Essence Dhāraṇī of the Tathāgata
-                    Bhaiṣajya­guru</title>
-                <title type="otherTitle" xml:lang="zh"/>
                 <author role="translatorMain" xml:id="UT22084-100-018-1"><!--84000 Associate Translators--></author>
                 <author role="translatorEng" xml:id="UT22084-100-018-2">Catherine Dalton</author>
                 <editor role="projectEditor" xml:id="UT22084-100-018-13">Ryan Damron</editor>
                 <editor role="copyEditor" xml:id="UT22084-100-018-22">Dawn Collins</editor>
+                <editor role="TEImarkupEditor" xml:id="UT22084-100-018-74">Martina Cotter</editor>
+                <editor role="projectEditor" xml:id="UT22084-100-018-81">Andreas Doctor</editor>
+                <editor role="finalReviewer" xml:id="UT22084-100-018-90">Andreas Doctor</editor>
             </titleStmt>
             <editionStmt>
-                <edition>v 0.0.2 <date>2024</date>
+                <edition>v 1.0.0 <date>2024</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -29,7 +26,7 @@
                     <name>84000: Translating the Words of the Buddha</name> is a global
                     non-profit initiative to translate all the Buddha’s words into modern languages,
                     and to make them available to everyone. </publisher>
-                <availability status="2">
+                <availability status="1.a">
                     <p type="tantricRestriction">
                         <emph rend="bold">Warning:</emph> Readers are
                         reminded that according to Vajrayāna Buddhist tradition there are
@@ -50,7 +47,7 @@
                 <idno xml:id="UT22084-100-018"/>
                 <note>An early mistake in the assigning of UT numbers within the 84000 project means
                     that these ids diverge slightly from the standard logic.</note>
-                <date>2024-07-24</date>
+                <date>2024-12-02</date>
             </publicationStmt>
             <sourceDesc>
                 <bibl key="toh862" type="text">
@@ -128,6 +125,24 @@
                 <change who="#line-tofte" when="2024-08-05T10:24:33.78Z" type="text-version" status="0.0.2" xml:id="UT22084-100-018-69">
                     <desc>Auto (update-publication-status)</desc>
                 </change>
+                <change who="#line-tofte" when="2024-08-05T10:25:07.08Z" type="text-version" status="0.0.3" xml:id="UT22084-100-018-75">
+                    <desc>Auto (update-contributors)</desc>
+                </change>
+                <change who="#line-tofte" when="2024-08-05T10:25:21.834Z" type="text-version" status="0.0.4" xml:id="UT22084-100-018-82">
+                    <desc>Auto (update-contributors)</desc>
+                </change>
+                <change who="#line-tofte" when="2024-08-05T10:26:17.249Z" type="text-version" status="0.0.5" xml:id="UT22084-100-018-83">
+                    <desc>Auto (update-contributors)</desc>
+                </change>
+                <change who="#line-tofte" when="2024-11-11T15:41:54.482Z" type="text-version" status="0.0.6" xml:id="UT22084-100-018-91">
+                    <desc>Auto (update-contributors)</desc>
+                </change>
+                <change who="#martina-cotter" when="2024-12-02T14:08:44.316Z" type="translation-status" status="1.a" xml:id="UT22084-100-018-92">
+                    <desc>1.a</desc>
+                </change>
+                <change who="#martina-cotter" when="2024-12-02T14:08:44.316Z" type="text-version" status="1.0.0" xml:id="UT22084-100-018-93">
+                    <desc>First published version.</desc>
+                </change>
             </revisionDesc>
         </fileDesc>
     </teiHeader>
@@ -137,13 +152,13 @@
                     Outline to the text is quite complex, it is recommended that you paste the outlined contents from the DOCX here as a comment for
                     markup's reference. The actual table of contents will be generated in the Reading Room by the parser.-->
         <front>
-            <div type="summary">
+            <div type="summary" xml:id="UT22084-100-018-summary">
                 <head type="summary" tid="1">Summary</head>
                 <milestone unit="chunk" xml:id="UT22084-100-018-29"/>
                 <p tid="2">This very short text gives the Essence Dhāraṇī of the Medicine Buddha,
                     Bhaiṣajya­guru­vaiḍūrya­prabha­rāja.</p>
             </div>
-            <div type="acknowledgment">
+            <div type="acknowledgment" xml:id="UT22084-100-018-acknowledgment">
                 <head type="acknowledgment" tid="3">Acknowledgements</head>
                 <milestone unit="chunk" xml:id="UT22084-100-018-30"/>
                 <p tid="4">This publication was completed under the patronage and supervision of
@@ -154,15 +169,15 @@
                     Damron edited the translation and the introduction, and Dawn Collins copyedited
                     the text. Martina Cotter was in charge of the digital publication process.</p>
             </div>
-            <div type="introduction">
+            <div type="introduction" xml:id="UT22084-100-018-introduction">
                 <head type="introduction" tid="7">Introduction</head>
                 <div type="section" xml:id="UT22084-100-018-introduction-1">
                     <milestone unit="chunk" xml:id="UT22084-100-018-33"/>
                     <p tid="8">This very short dhāraṇī text contains only an homage to the Medicine
                         Buddha Bhaiṣajyaguruvaiḍūryaprabha followed by his essence dhāraṇī (<foreign xml:lang="Bo-Ltn" type="term">snying po’i gzungs</foreign>). The dhāraṇī
                         taught here is nearly identical to a section of the longer Bhaiṣajyaguru
-                        dhāraṇī taught in <title xml:lang="en">The Dhāraṇī of
-                        Vaiḍūryaprabha</title> (Toh 505).<ref rend="pending" target="http://read.84000.co/translation/toh505.html"/>
+                        dhāraṇī taught in <title xml:lang="en">The Dhāraṇī of Vaiḍūryaprabha</title>
+                        (Toh 505).<ref rend="pending" target="http://read.84000.co/translation/toh505.html"/>
                     </p>
                     <milestone unit="chunk" xml:id="UT22084-100-018-34"/>
                     <p tid="9">
@@ -206,12 +221,14 @@
                             by Orosz, identify the source of all such dhāraṇī collections as the
                             extracanonical collection edited by Tāranātha (Orosz 2010, pp. 67 and
                             100). This mention is also noted by Hidas 2021, p. 7, n. 56.</note>
-                        These collections, known in Sanskrit as <foreign xml:lang="Sa-Ltn" type="term">dhāraṇī­saṃgrahas</foreign>, circulated throughout South Asia
-                        and Tibet—including at Dunhuang—as extracanonical dhāraṇī collections.<note place="end" xml:id="UT22084-100-018-39"> See J. Dalton 2016, and J.
-                            Dalton and S. van Schaik 2006, on the <title xml:lang="Sa-Ltn">dhāraṇī­saṃgraha</title> collections preserved at Dunhuang like the
-                            canonical collection, these contain praises and prayers as well as
-                            dhāraṇīs. See Hidas 2021 for the catalogs of eighteen <title xml:lang="Sa-Ltn">dhāraṇī­saṃgraha</title> collections surviving in
-                            Sanskrit. </note>
+                        These collections, known in Sanskrit as <foreign xml:lang="Sa-Ltn" type="term">dhāraṇī­saṃgrahas</foreign>, circulated throughout South
+                        Asia and Tibet—including at Dunhuang—as extracanonical dhāraṇī
+                            collections.<note place="end" xml:id="UT22084-100-018-39"> See J. Dalton
+                            2016, and J. Dalton and S. van Schaik 2006, on the <title xml:lang="Sa-Ltn">dhāraṇī­saṃgraha</title> collections preserved at
+                            Dunhuang like the canonical collection, these contain praises and
+                            prayers as well as dhāraṇīs. See Hidas 2021 for the catalogs of eighteen
+                                <title xml:lang="Sa-Ltn">dhāraṇī­saṃgraha</title> collections
+                            surviving in Sanskrit. </note>
                     </p>
                     <milestone unit="chunk" xml:id="UT22084-100-018-40"/>
                     <p tid="12">The present English translation of <title xml:lang="en">The Essence
@@ -244,7 +261,7 @@
             </div>
         </front>
         <body>
-            <div type="translation">
+            <div type="translation" xml:id="UT22084-100-018-translation">
                 <head type="translation">The Translation</head>
                 <head type="titleMain" tid="13">The Essence Dhāraṇī of the Tathāgata
                     Bhaiṣajyaguru</head>
@@ -252,12 +269,13 @@
                 <div type="section" xml:id="UT22084-100-018-section-1">
                     <milestone unit="chunk" xml:id="UT22084-100-018-42"/>
                     <p tid="17">
-                        <ref cRef="F.87.a" type="folio" xml:id="UT22084-100-018-63"/> Homage to the thus-gone, worthy, perfectly awakened
+                        <ref cRef="F.87.a" type="folio" xml:id="UT22084-100-018-63"/> Homage
+                        to the thus-gone, worthy, perfectly awakened
                         Bhaiṣajya­guru­vaiḍūrya­prabha­rāja.</p>
                     <lb/>
                     <p rend="mantra" tid="19">
                         <mantra xml:lang="Sa-Ltn">oṃ bhaiṣajye bhaiṣajye
-                        mahā­bhaiṣajye bhaiṣajyarāja­samudgate svāhā</mantra>
+                            mahā­bhaiṣajye bhaiṣajyarāja­samudgate svāhā</mantra>
                     </p>
                     <milestone unit="chunk" xml:id="UT22084-100-018-45"/>
                     <trailer tid="20">This completes “<title xml:lang="en">The Essence Dhāraṇī of
@@ -266,10 +284,10 @@
             </div>
         </body>
         <back>
-            <div type="notes">
+            <div type="notes" xml:id="UT22084-100-018-notes">
                 <head type="notes" tid="21">Notes</head>
             </div>
-            <div type="listBibl">
+            <div type="listBibl" xml:id="UT22084-100-018-listBibl">
                 <head type="listBibl" tid="25">Bibliography</head>
                 <div type="section" xml:id="UT22084-100-018-listBibl-1">
                     <head type="section" tid="26">Tibetan Sources</head>
@@ -314,18 +332,18 @@
                         Hungarian Academy of Sciences, 2010.</bibl>
                 </div>
             </div>
-            <div type="glossary" status="excluded">
+            <div type="glossary" status="excluded" xml:id="UT22084-100-018-glossary">
                 <list type="glossary">
                     <item>
                         <gloss type="person" xml:id="UT22084-100-018-58">
                             <term type="translationMain">Bhaiṣajya­guru­vaiḍūrya­prabha­rāja</term>
-                            <term status="verified" xml:lang="Bo-Ltn" n="1">sman gyi bla bai DUr+ya’i ’od kyi rgyal
-                                po</term>
+                            <term status="verified" xml:lang="Bo-Ltn" n="1">sman gyi bla bai
+                                DUr+ya’i ’od kyi rgyal po</term>
                             <term xml:lang="bo" n="1">སྨན་གྱི་བླ་བཻ་ཌཱུརྱའི་འོད་ཀྱི་རྒྱལ་པོ།</term>
-                        <term status="verified" xml:lang="Bo-Ltn" n="2">sman gyi bla </term>
+                            <term status="verified" xml:lang="Bo-Ltn" n="2">sman gyi bla </term>
                             <term xml:lang="bo" n="2">སྨན་གྱི་བླ།</term>
-                        <term status="verified" xml:lang="Sa-Ltn">bhaiṣajya­gurvaiḍūrya­prabhāsa­rāja</term>
-                        <term type="translationAlternative">Bhaiṣajyaguru</term>
+                            <term status="verified" xml:lang="Sa-Ltn">bhaiṣajya­gurvaiḍūrya­prabhāsa­rāja</term>
+                            <term type="translationAlternative">Bhaiṣajyaguru</term>
                             <note type="definition">
                                 <p>The Medicine Buddha; one of The Seven
                                     Tathāgatas. </p>
@@ -336,7 +354,8 @@
                         <gloss type="person" xml:id="UT22084-100-018-59">
                             <term type="translationMain">Atīśa Dīpaṅkaraśrījñāna</term>
                             <term status="verified" xml:lang="Bo-Ltn"/>
-                        <term status="verified" xml:lang="Sa-Ltn">atīśa dīpaṅkara­śrījñāna</term>
+                            <term status="verified" xml:lang="Sa-Ltn">atīśa
+                                dīpaṅkara­śrījñāna</term>
                             <note type="definition">
                                 <p>The famed Indian scholar who spent twelve
                                     years in Tibet from 1042–1054.</p>
@@ -348,7 +367,7 @@
                             <term type="translationMain">Tshalpa Kangyur</term>
                             <term status="verified" xml:lang="Bo-Ltn" n="1">tshal pa bka’ ’gyur </term>
                             <term xml:lang="bo" n="1">ཚལ་པ་བཀའ་འགྱུར།</term>
-                        <term type="translationAlternative">Tshalpa</term>
+                            <term type="translationAlternative">Tshalpa</term>
                             <note type="definition">
                                 <p>An edition of the Kangyur produced at
                                     Gungthang (<foreign xml:lang="Bo-Ltn" type="term">gung
@@ -363,9 +382,10 @@
                     <item>
                         <gloss type="text" xml:id="UT22084-100-018-61">
                             <term type="translationMain">Thempangma Kangyur</term>
-                            <term status="verified" xml:lang="Bo-Ltn" n="1">them spangs ma bka’ ’gyur </term>
+                            <term status="verified" xml:lang="Bo-Ltn" n="1">them spangs ma bka’
+                                ’gyur </term>
                             <term xml:lang="bo" n="1">ཐེམ་སྤངས་མ་བཀའ་འགྱུར།</term>
-                        <term type="translationAlternative">Thempangma</term>
+                            <term type="translationAlternative">Thempangma</term>
                             <note type="definition">
                                 <p>One of the two textual lineages of the
                                     Kangyur, starting from a manuscript so named that was produced
@@ -377,7 +397,8 @@
                     <item>
                         <gloss type="person" xml:id="UT22084-100-018-64">
                             <term type="translationMain">Bandé Yeshé Dé</term>
-                            <term status="verified" xml:lang="Bo-Ltn" type="attestedSource" n="1">ye shes sde</term>
+                            <term status="verified" xml:lang="Bo-Ltn" type="attestedSource" n="1">ye
+                                shes sde</term>
                             <term xml:lang="bo" type="attestedSource" n="1">ཡེ་ཤེས་སྡེ།</term>
                         </gloss>
                     </item>
@@ -391,10 +412,12 @@
                     <item>
                         <gloss type="person" xml:id="UT22084-100-018-66">
                             <term type="translationMain">Dānaśīla</term>
-                            <term status="verified" xml:lang="Bo-Ltn" type="attestedSource" n="1">dA na shI la</term>
+                            <term status="verified" xml:lang="Bo-Ltn" type="attestedSource" n="1">dA
+                                na shI la</term>
                             <term xml:lang="bo" type="attestedSource" n="1">དཱ་ན་ཤཱི་ལ།</term>
                             <note type="definition">
-                                <p>An Indian paṇḍita who was resident in Tibet during the late eighth and early ninth centuries.</p>
+                                <p>An Indian paṇḍita who was resident in Tibet during the late
+                                    eighth and early ninth centuries.</p>
                             </note>
                         </gloss>
                     </item>
@@ -404,7 +427,8 @@
                             <term status="verified" xml:lang="Bo-Ltn" type="attestedSource" n="1">shI len dra bo d+hi</term>
                             <term xml:lang="bo" type="attestedSource" n="1">ཤཱི་ལེན་དྲ་བོ་དྷི།</term>
                             <note type="definition">
-                                <p>An Indian paṇḍita resident in Tibet during the late eighth and early ninth centuries.</p>
+                                <p>An Indian paṇḍita resident in Tibet during the late eighth and
+                                    early ninth centuries.</p>
                             </note>
                         </gloss>
                     </item>
