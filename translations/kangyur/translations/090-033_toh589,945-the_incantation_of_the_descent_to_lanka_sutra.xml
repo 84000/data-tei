@@ -1,0 +1,778 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schema/current/translation.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="mainTitle" xml:lang="Bo-Ltn">’phags pa lang kar gshegs pa’i mdo thams
+                    cad bklags par ’gyur ba’i gzungs sngags</title>
+                <title type="mainTitle" xml:lang="bo">འཕགས་པ་ལང་ཀར་གཤེགས་པའི་མདོ་ཐམས་ཅད་བཀླགས་པར་འགྱུར་བའི་གཟུངས་སྔགས།</title>
+                <title type="mainTitle" xml:lang="en">The Dhāraṇī-Mantra to Have the Entire Noble
+                    “Sūtra of Descent into Laṅkā” Read</title>
+                <title type="otherTitle" xml:lang="zh"/>
+                <title type="otherTitle" xml:lang="Sa-Ltn">Ārya­laṅkāvatāra­nāma­dhāraṇī</title>
+                <author role="translatorMain" xml:id="UT22084-090-033-1"><!--Buddhapīṭha Translation Group--></author>
+                <consultant role="projectManager" xml:id="UT22084-090-033-2">Péter-Dániel
+                    Szántó</consultant>
+                <author role="translatorEng" xml:id="UT22084-090-033-3">Gergely Hidas</author>
+                <author role="translatorEng" xml:id="UT22084-090-033-4">Péter-Dániel Szántó</author>
+                <editor role="projectEditor" xml:id="UT22084-090-033-19">Andreas Doctor</editor>
+                <editor role="copyEditor" xml:id="UT22084-090-033-28">Laura Goetz</editor>
+                <editor role="TEImarkupEditor" xml:id="UT22084-090-033-38">Martina Cotter</editor>
+            </titleStmt>
+            <editionStmt>
+                <edition>v 0.0.2 <date>2024</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>
+                    <name>84000: Translating the Words of the Buddha</name> is a global
+                    non-profit initiative to translate all the Buddha’s words into modern languages,
+                    and to make them available to everyone. </publisher>
+                <availability status="2">
+                    <licence>
+                        <graphic url="http://i.creativecommons.org/l/by-nc-nd/2.0/88x31.png"/>
+                        <p>This work is provided under the protection of a Creative Commons CC
+                            BY-NC-ND (Attribution - Non-commercial - No-derivatives) 3.0 copyright.
+                            It may be copied or printed for fair use, but only with full
+                            attribution, and not for commercial advantage or personal compensation.
+                            For full details, see the Creative Commons license.</p>
+                    </licence>
+                </availability>
+                <idno xml:id="UT22084-090-033"/>
+                <note>An early mistake in the assigning of UT numbers within the 84000 project means
+                    that these ids diverge slightly from the standard logic.</note>
+                <date>2024-12-05</date>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl key="toh589" type="text">
+                    <ref>Toh 589</ref>
+                    <biblScope>Degé Kangyur, vol. 90 (rgyud, pha), folio 204.b</biblScope>
+                    <location work="UT4CZ5369" count-pages="1">
+                        <volume number="90" start-page="406" end-page="406"/>
+                    </location>
+                    <idno parent-id="O1JC114941JC21415" work="http://read.84000.co/sections"/>
+                    <idno source-id="O1JC114941JC12322" work="W22084"/>
+                </bibl>
+                <bibl key="toh945" type="text">
+                    <ref>Toh 945</ref>
+                    <biblScope>Degé Kangyur, vol. 100 (gzungs, e), folios 282.b–283.a</biblScope>
+                    <location work="UT4CZ5369" count-pages="2">
+                        <volume number="101" start-page="562" end-page="563"/>
+                    </location>
+                    <idno parent-id="O1JC114941JC20568" work="http://read.84000.co/sections"/>
+                    <idno source-id="O1JC114941JC12707" work="W22084"/>
+                </bibl>
+            </sourceDesc>
+            <notesStmt/>
+            <revisionDesc>
+                <change who="#line-tofte" when="2023-06-30T11:32:48.791Z" type="translation-status" status="4" xml:id="UT22084-090-033-5">
+                    <desc>4</desc>
+                </change>
+                <change who="#line-tofte" when="2023-06-30T11:32:48.791Z" type="text-version" status="0.0.1" xml:id="UT22084-090-033-6">
+                    <desc>0.0.1</desc>
+                </change>
+                <change who="#line-tofte" when="2023-07-24T11:45:13.803Z" type="translation-status" status="3" xml:id="UT22084-090-033-7">
+                    <desc>3</desc>
+                </change>
+                <change who="#line-tofte" when="2023-07-24T11:45:13.803Z" type="text-version" status="0.0.2" xml:id="UT22084-090-033-8">
+                    <desc>Auto (update-publication-status)</desc>
+                </change>
+                <change who="#line-tofte" when="2023-07-24T11:45:47.455Z" type="text-version" status="0.0.3" xml:id="UT22084-090-033-9">
+                    <desc>Auto (update-contributors)</desc>
+                </change>
+                <change who="#line-tofte" when="2023-07-24T11:46:10.54Z" type="text-version" status="0.0.4" xml:id="UT22084-090-033-10">
+                    <desc>Auto (update-contributors)</desc>
+                </change>
+                <change who="#admin" when="2023-07-30T22:39:48.323Z" type="text-version" status="0.0.5" xml:id="UT22084-090-033-11">
+                    <desc>TEI migrated to 2.19.0</desc>
+                </change>
+                <change who="#sameer" when="2024-05-01T05:52:49.599Z" type="text-version" status="0.0.6" xml:id="UT22084-090-033-12">
+                    <desc>Updated vol. 100 page numbers to match the ekangyur</desc>
+                </change>
+                <change who="#line-tofte" when="2024-09-20T07:36:02.771Z" type="translation-status" status="2.g" xml:id="UT22084-090-033-13">
+                    <desc>2.g</desc>
+                </change>
+                <change who="#line-tofte" when="2024-09-20T07:36:02.771Z" type="text-version" status="0.0.7" xml:id="UT22084-090-033-14">
+                    <desc>Auto (update-publication-status)</desc>
+                </change>
+                <change who="#line-tofte" when="2024-09-20T07:36:43.294Z" type="text-version" status="0.0.8" xml:id="UT22084-090-033-20">
+                    <desc>Auto (update-contributors)</desc>
+                </change>
+                <change who="#line-tofte" when="2024-10-04T09:07:19.427Z" type="translation-status" status="2.b" xml:id="UT22084-090-033-21">
+                    <desc>2.b</desc>
+                </change>
+                <change who="#line-tofte" when="2024-10-04T09:07:19.427Z" type="text-version" status="0.0.9" xml:id="UT22084-090-033-22">
+                    <desc>Auto (update-publication-status)</desc>
+                </change>
+                <change who="#line-tofte" when="2024-10-04T09:07:51.387Z" type="text-version" status="0.0.10" xml:id="UT22084-090-033-29">
+                    <desc>Auto (update-contributors)</desc>
+                </change>
+                <change who="#line-tofte" when="2024-11-28T11:44:24.064Z" type="translation-status" status="2.a" xml:id="UT22084-090-033-30">
+                    <desc>2.a</desc>
+                </change>
+                <change who="#line-tofte" when="2024-11-28T11:44:24.064Z" type="text-version" status="0.0.11" xml:id="UT22084-090-033-31">
+                    <desc>Auto (update-publication-status)</desc>
+                </change>
+                <change who="#line-tofte" when="2024-11-28T11:45:00.563Z" type="text-version" status="0.0.12" xml:id="UT22084-090-033-39">
+                    <desc>Auto (update-contributors)</desc>
+                </change>
+                <change who="#line-tofte" when="2024-12-09T14:59:30.961Z" type="translation-status" status="2" xml:id="UT22084-090-033-124">
+                    <desc>2</desc>
+                </change>
+                <change who="#line-tofte" when="2024-12-09T14:59:30.961Z" type="text-version" status="0.0.2" xml:id="UT22084-090-033-125">
+                    <desc>Auto (update-publication-status)</desc>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <!--Note the "Contents" outline from the Word DOCX has not been included in the script. If the 
+                    Outline to the text is quite complex, it is recommended that you paste the outlined contents from the DOCX here as a comment for
+                    markup's reference. The actual table of contents will be generated in the Reading Room by the parser.-->
+        <front>
+            <div type="summary" xml:id="UT22084-090-033-summary">
+                <head type="summary" tid="1">Summary</head>
+                <milestone unit="chunk" xml:id="UT22084-090-033-40"/>
+                <p tid="2">This text consists of a short dhāraṇī, the recitation of which is said to
+                    be equivalent to reciting one of the most famous sūtras in the Kangyur, <title xml:lang="en">The Descent into Laṅkā</title> (Toh 107), from which it is an
+                    extract.</p>
+            </div>
+            <div type="acknowledgment" xml:id="UT22084-090-033-acknowledgment">
+                <head type="acknowledgment" tid="3">Acknowledgements</head>
+                <milestone unit="chunk" xml:id="UT22084-090-033-41"/>
+                <p tid="4">The text was translated from Tibetan by the Buddhapīṭha Translation Group
+                    (Gergely Hidas and Péter-Dániel Szántó). We thank Dr. Shanshan Jia (Hamburg) for
+                    her kind help with bibliographic matters.</p>
+                <milestone unit="chunk" xml:id="UT22084-090-033-42"/>
+                <p tid="5">The translation was completed under the patronage and supervision of
+                    84000: Translating the Words of the Buddha. Andreas Doctor edited the
+                    translation and the introduction, and Laura Goetz copyedited the text. Martina Cotter was in charge of the digital publication process.</p>
+            </div>
+            <div type="introduction" xml:id="UT22084-090-033-introduction">
+                <head type="introduction" tid="7">Introduction</head>
+                <div type="section" xml:id="UT22084-090-033-introduction-1">
+                    <milestone unit="chunk" xml:id="UT22084-090-033-44"/>
+                    <p tid="9">This text consists of a short dhāraṇī, the recitation of which is
+                        said to be equivalent to reciting one of the most famous sūtras in the
+                        Kangyur, <title xml:lang="en">The Descent into Laṅkā</title>.<note place="end" xml:id="UT22084-090-033-45">
+                            <title xml:lang="Sa-Ltn">Laṅkāvatāra</title> (<title xml:lang="Bo-Ltn">lang kar gshegs pa</title>, Toh 107).<ref rend="pending" target="http://read.84000.co/translation/toh107.html"/>
+                        </note> In
+                        fact, it is not an independent text but an extract from Chapter 9 of the
+                            sūtra.<note place="end" xml:id="UT22084-090-033-46"> Ed. Nanjio 1923,
+                            pp. 261–63; for a translation, see Suzuki 1932, pp. 223–25. For the most
+                            up-to-date assessment of this sūtra, see Jia 2015. We are aware of a
+                            thesis dedicated to the study of dhāraṇīs in the <title xml:lang="Sa-Ltn">Laṅkāvatāra</title>, but we could not gain access
+                            to it: Lee-li Tay (<foreign xml:lang="zh">鄭麗莉</foreign>), “A Study of
+                            Dhāraṇī based on the Laṅkāvatāra Sūtra” (master’s thesis, Fo Guang
+                            University [<foreign xml:lang="zh">佛光大學</foreign>], Taiwan, 2011).
+                        </note>
+                    </p>
+                    <milestone unit="chunk" xml:id="UT22084-090-033-47"/>
+                    <p tid="10">Such short texts served a variety of purposes, the primary being
+                        that by reciting them one could acquire the positive karmic benefits of
+                        reciting an entire, sometimes extremely long, text. On a practical level,
+                        the recitation of these short texts also served as equivalent to the
+                        recitation of the parent text, should a prescribed ritual so require.</p>
+                    <milestone unit="chunk" xml:id="UT22084-090-033-48"/>
+                    <p tid="11">The text lacks both a Sanskrit title and a translator’s colophon. In
+                        South Asia, in addition to being copied within the sūtra itself, the text
+                        was transmitted within the <title xml:lang="en">Compendium of
+                            Dhāraṇīs</title> (<title xml:lang="Sa-Ltn">Dhāraṇī­saṃgraha</title>)
+                            collection.<note place="end" xml:id="UT22084-090-033-49"> Hidas 2021, p.
+                            82, the second dhāraṇī in item no. 12 in Cambridge University Library
+                            Ms. Add. 1326. </note>
+                    </p>
+                    <milestone unit="chunk" xml:id="UT22084-090-033-50"/>
+                    <p tid="12">This translation was made principally on the basis of the Tibetan
+                        translations of the text found in the Tantra Collection (<title xml:lang="Bo-Ltn">rgyud ’bum</title>) and the Compendium of Dhāraṇīs
+                        (<title xml:lang="Bo-Ltn">gzungs ’dus</title>)<note place="end" xml:id="UT22084-090-033-119">
+                            <p key="toh945">This text, Toh 945, and all those contained in this same volume (<foreign xml:lang="Bo-Ltn">gzungs, e</foreign>), are listed as being located in volume 100 of the Degé Kangyur by the Buddhist
+                                Digital Resource Center (BDRC). However, several other Kangyur databases—including the eKangyur that supplies the digital input version
+                                displayed by the 84000 Reading Room—list this work as being located in volume 101. This discrepancy is partly due to the fact that
+                                the two volumes of the <foreign xml:lang="Bo-Ltn">gzungs ’dus</foreign> section are an added supplement not mentioned in the original catalog,
+                                and also hinges on the fact that the compilers of the Tōhoku catalog placed another text—which forms a whole, very large volume—the <title xml:lang="Sa-Ltn">Vimala­prabhā­nāma­kālacakra­tantra­ṭīkā</title> (<title xml:lang="Bo-Ltn">dus ’khor ’grel bshad dri med ’od</title>, Toh
+                                845), before the volume 100 of the Degé Kangyur, numbering it as vol. 100, although it is almost certainly intended to come right at the end
+                                of the Degé Kangyur texts as volume 102; indeed its final fifth chapter is often carried over and wrapped in the same volume as the Kangyur
+                                <foreign xml:lang="Bo-Ltn">dkar chags</foreign> (catalog). Please note this discrepancy when using the eKangyur viewer in this
+                                translation.</p>
+                            <p key="toh589">Note that there is a discrepancy among various databases for cataloging the Toh 945 version
+                                of this text within vol. 100 or 101 of the Degé Kangyur. See Toh 945, <ptr target="toh945.html#UT22084-090-033-119"/>, for details.</p>
+                        </note> in the Degé Kangyur in
+                        consultation with the various Sanskrit sources mentioned above.</p>
+                </div>
+            </div>
+        </front>
+        <body>
+            <div type="translation" xml:id="UT22084-090-033-translation">
+                <head type="translation">The Translation</head>
+                <head type="titleMain" tid="13">The Dhāraṇī-Mantra to Have the Entire Noble “Sūtra
+                    of Descent into Laṅkā” Read</head>
+                <div type="section" xml:id="UT22084-090-033-section">
+                    <milestone unit="chunk" xml:id="UT22084-090-033-52"/>
+                    <p tid="17">
+                        <ref cRef="F.204.b" type="folio" key="toh589" xml:id="UT22084-090-033-121"/> <ref cRef="F.282.b" type="folio" key="toh945" xml:id="UT22084-090-033-122"/> Homage to the noble <title xml:lang="en">Descent into Laṅkā</title>.</p>
+                    <lb/>
+                    <milestone unit="chunk" xml:id="UT22084-090-033-55"/>
+                    <p tid="20">“Mahāmati, I shall speak these mantra-words: </p>
+                    <milestone unit="chunk" xml:id="UT22084-090-033-56"/>
+                    <p rend="mantra" tid="21">
+                        <mantra xml:lang="Sa-Ltn">tadyathā—padme
+                                padmadeve<note place="end" xml:id="UT22084-090-033-57"> The Tibetan
+                                reads <foreign xml:lang="Bo-Ltn" type="quote">padme devai</foreign>.
+                            </note> hine hine hine culu culu culu hule hule hule yule yule yule pale
+                            pale pale muñce chinde<note place="end" xml:id="UT22084-090-033-58"> The
+                                Tibetan reads <foreign xml:lang="Bo-Ltn" type="quote">muṃcche
+                                    danade</foreign>.</note> bhinde bhañje<note place="end" xml:id="UT22084-090-033-59"> The Tibetan reads <foreign xml:lang="Bo-Ltn" type="quote">bhanajva</foreign>.</note> marde
+                                pramarde<note place="end" xml:id="UT22084-090-033-60"> The Tibetan
+                                reads <foreign xml:lang="Bo-Ltn" type="quote">mande
+                                    pramade</foreign>.</note> dinakare svāhā!</mantra>
+                        <note place="end" xml:id="UT22084-090-033-61"> A highly tentative translation
+                                        might run as follows: “It is thus‍— O Lotus, O Lotus Goddess, <foreign xml:lang="Sa-Ltn">hine hine hine culu culu culu hule hule hule yule
+                                yule yule pale pale pale</foreign> O One Who Releases, O One Who
+                            Chops, O One Who Splits, O One Who Breaks, O One Who Crushes, O One Who
+                            Smashes, O Sun <foreign xml:lang="Sa-Ltn">svāhā</foreign>.” Whether
+                                <foreign xml:lang="Sa-Ltn" type="quote">padmadeve</foreign> is a
+                            vocative of a female noun is highly questionable. From “O One Who Chops”
+                            up to “O One Who Smashes,” the words might equally be quasi-imperatives.
+                            “Sun” is expressed with the common epithet “Day Maker.”</note>
+                    </p>
+                    <milestone unit="chunk" xml:id="UT22084-090-033-62"/>
+                    <p tid="22">“Mahāmati! If any son of good family or daughter of good family
+                            upholds<note place="end" xml:id="UT22084-090-033-63"> Instead of what we
+                            translate here as “to uphold” in order to capture the ambiguity of the
+                            original, Tatakaragupta, when discussing a similar dhāraṇī said to
+                            encapsulate <title xml:lang="en">The Perfection of Wisdom in One Hundred
+                                Thousand Lines</title> (see <title xml:lang="en">The Dhāraṇī of “The
+                                Perfection of Wisdom in One Hundred Thousand Lines</title>,<title xml:lang="en">”</title> Toh 576/932),<note place="end" xml:id="UT22084-090-033-120">
+                                <title xml:lang="Sa-Ltn">
+                                    <ref target="http://read.84000.co/translation/toh576.html">Śatasāhasrikā­prajñā­pāramitā­dhāraṇī</ref>
+                                </title> (Toh
+                                576/932).</note> is more explicit when he replaces the verb with
+                                <foreign xml:lang="Sa-Ltn" type="quote">kaṇṭhasthīkṛ</foreign> (“to
+                            place it in one’s throat”), which is the Sanskrit idiom for “to learn by
+                            heart.” He also spells out the benefit as the “meritorious karmic fruit”
+                                (<foreign xml:lang="Sa-Ltn" type="term">puṇyaphala</foreign>) of
+                            memorizing the parent text. This sentence is then followed by a
+                            fascinating short discussion, which merits to be quoted in full:
+                            “Surely, this is an exaggeration! No, one should not say this. For
+                            countless thus-gone ones have empowered this dhāraṇī to serve as a
+                            method for gaining the equipment of merit for women, immature people,
+                            and simpletons, as well as for learned people whose minds are confused,
+                            just like the pole of a snake-charmer[, which is preprepared by the
+                            expert snake charmer to be effective even when he is no longer present,]
+                            for removing poison; however, it is not a method for gaining the
+                            knowledge conveyed by <title xml:lang="en">The</title> [<title xml:lang="en">Perfection of Wisdom in</title>] <title xml:lang="en">One Hundred Thousand Lines</title>. This should be understood to
+                            apply in other cases [i.e., where the text is abbreviated into a
+                            dhāraṇī] as well” (<mantra xml:lang="Sa-Ltn">nanv atyuktir eveti. na
+                                caitad vaktavyam. yataḥ strībāla­mūrkhān paryākuli­tamatīn paṇḍitān
+                                praty api puṇya­saṃbhārasādhana­tvenā­saṃkhyeya­tathāgatair
+                                adhiṣṭhiteyaṃ dhāriṇī, yathā viṣaharatvena gāruḍikaṃ stambhaḥ; na tu
+                                lakṣāprati­pādita­jñāna­sādhana­tvena. evam anyatrāpi
+                                boddhavyaḥ</mantra>). In his note to this dhāraṇī, he reiterates the
+                            point about “to uphold” meaning “to memorize” and promises as the reward
+                            the fruit of reciting the text (<foreign xml:lang="Sa-Ltn" type="quote">pāṭhaphala</foreign>). </note> these mantra-words, retains them,
+                        <ref cRef="F.283.a" type="folio" key="toh945" xml:id="UT22084-090-033-123"/> recites them, and masters them, then no one will be able to find a
+                        weak point in them, be that a god or a goddess, a nāga or a nāgī, a yakṣa or
+                        a yakṣī, an asura or an asurī, a garuḍa or a garuḍī, a kinnara or a kinnarī,
+                        a mahoraga or a mahoragī, a gandharva or a gandharvī, a bhūta or a bhūtī, a
+                        kumbhāṇḍa or a kumbhāṇḍī, a piśāca or a piśācī, an ostārako or an ostārakī,
+                        an apasmāra or an apasmārī, a rākṣasa or a rākṣasī, a ḍāka or a ḍākī, an
+                        ojohāra or an ojohārī, a kaṭapūtana or a kaṭapūtanī, or a human man or a
+                            woman.<note place="end" xml:id="UT22084-090-033-64"> The Tibetan has
+                            “human or nonhuman,” but all Sanskrit sources indicate that this is a
+                            scribal error. </note> One who recites these mantra-words will have
+                        recited the entire <title xml:lang="en">Sūtra of Descent into Laṅkā</title>.
+                        The Blessed One taught these mantra-words so that rākṣasas and others<note place="end" xml:id="UT22084-090-033-65"> The word for “and others” is
+                            not transmitted in the Sanskrit, but it has an apposite meaning. </note>
+                        will be kept at bay.” </p>
+                    <milestone unit="chunk" xml:id="UT22084-090-033-66"/>
+                    <trailer tid="23">Here ends “<title xml:lang="en">The Dhāraṇī-Mantra to Have the
+                            Entire Noble ‘Sūtra of Descent into Laṅkā’ Read</title>.”</trailer>
+                </div>
+            </div>
+        </body>
+        <back>
+            <div type="notes" xml:id="UT22084-090-033-notes">
+                <head type="notes" tid="24">Notes</head>
+            </div>
+            <div type="listBibl" xml:id="UT22084-090-033-listBibl">
+                <head type="listBibl" tid="26">Bibliography</head>
+                <div type="section" xml:id="UT22084-090-033-listBibl-1">
+                    <head type="section" tid="27">Tibetan Sources</head>
+                    <bibl xml:id="UT22084-090-033-67">
+                        <title xml:lang="Bo-Ltn">’phags pa lang kar
+                            gshegs pa’i mdo thams cad bklags par ’gyur ba’i gzungs sngags.
+                            </title>Toh 589, Degé Kangyur vol. 90 (rgyud, pha), folio
+                        204.b.</bibl>
+                    <bibl xml:id="UT22084-090-033-68">
+                        <title xml:lang="Bo-Ltn">’phags pa lang kar
+                            gshegs pa’i mdo thams cad bklags par ’gyur ba’i gzungs sngags.
+                            </title>Toh 945, Degé Kangyur vol. 100 (gzungs, e), folios
+                        282.b–283.a.</bibl>
+                    <bibl xml:id="UT22084-090-033-69">
+                        <title xml:lang="Bo-Ltn">shes rab kyi pha rol
+                        tu phyin pa stong phrag brgya pa’i gzungs (</title>
+                        <title xml:lang="Sa-Ltn">Śatasāhasrikā­prajñā­pāramitā­dhāraṇī</title>
+                        <title xml:lang="Bo-Ltn">). </title>Toh 576, Degé Kangyur vol. 90 (rgyud, pha),
+                        folios 202.b–203.a; Toh 932, Degé Kangyur vol. 100 (gzungs, e), folio 280.b.
+                        English translation <title xml:lang="en">
+                            <ref target="http://read.84000.co/translation/toh576.html">The Dhāraṇī of
+                                “The Perfection of Wisdom in One Hundred Thousand
+                            Lines”</ref>
+                        </title> 2024.</bibl>
+                </div>
+                <div type="section" xml:id="UT22084-090-033-listBibl-2">
+                    <head type="section" tid="28">Other Sources</head>
+                    <bibl xml:id="UT22084-090-033-70">84000. <title xml:lang="en">
+                            <ref target="https://84000.co/translation/toh576.html">The Dhāraṇī of
+                                “The Perfection of Wisdom in One Hundred Thousand
+                                Lines”</ref>
+                        </title> (<title xml:lang="Sa-Ltn">Śatasāhasrikā­prajñā­pāramitā­dhāraṇī</title>, <title xml:lang="Bo-Ltn">shes rab kyi pha rol tu phyin pa stong phrag brgya pa’i gzungs</title>,
+                        Toh 576, 932). Translated by the Buddhapīṭha Translation Group (Gergely
+                        Hidas and Péter-Dániel Szántó). Online translation. 84000: Translating the
+                        Words of the Buddha, 2024.</bibl>
+                    <bibl xml:id="UT22084-090-033-71">Hidas, Gergely. <title xml:lang="en">Powers of
+                            Protection: The Buddhist Tradition of Spells in the Dhāraṇīsaṃgraha
+                            Collections</title>. Beyond Boundaries 9. Boston: de Gruyter,
+                        2021.</bibl>
+                    <bibl xml:id="UT22084-090-033-72">Jia, Shanshan. “Laṅkāvatārasūtra.” In <title xml:lang="en">Brill’s Encyclopedia of Buddhism</title>, edited by
+                        Jonathan A. Silk et al., vol. 1, <title xml:lang="en">Literature and
+                            Languages</title>, 138–43. Leiden: Brill 2015.</bibl>
+                    <bibl xml:id="UT22084-090-033-73">Nanjio, Bunyiu. <title xml:lang="en">The
+                            Laṅkāvatārasūtra</title>. Kyoto, 1923. </bibl>
+                    <bibl xml:id="UT22084-090-033-74">Suzuki, Daisetz Teitaro. <title xml:lang="en">The Lankavatara Sutra: A Mahayana Text</title>. London: Routledge,
+                        1932.</bibl>
+                </div>
+            </div>
+            <div type="glossary" status="excluded" xml:id="UT22084-090-033-glossary">
+                <list type="glossary">
+                    <item>
+                        <gloss type="term" xml:id="UT22084-090-033-76">
+                            <term type="translationMain">dhāraṇī</term>
+                            <term status="verified" xml:lang="Bo-Ltn" n="1">gzungs </term>
+                            <term xml:lang="bo" n="1">གཟུངས།</term>
+                            <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">dhāraṇī</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-090-033-77">
+                            <term type="translationMain">equipment of merit</term>
+                            <term status="verified" xml:lang="Bo-Ltn" n="1">bsod nams kyi tshogs </term>
+                            <term xml:lang="bo" n="1">བསོད་ནམས་ཀྱི་ཚོགས།</term>
+                            <term status="verified" xml:lang="Sa-Ltn" type="attestedOther">puṇyasaṃbhāra</term>
+                            <note type="definition">
+                                <p>The progressive increase of virtuous karma.
+                                    One of the two factors that come together in creating momentum
+                                    toward a practitioner’s spiritual awakening, the other being the
+                                    accumulation or equipment of wisdom.</p>
+                            </note>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-090-033-78">
+                            <term type="translationMain">thus-gone one</term>
+                            <term status="verified" xml:lang="Bo-Ltn" n="1">de bzhin gshegs pa </term>
+                            <term xml:lang="bo" n="1">དེ་བཞིན་གཤེགས་པ།</term>
+                            <term status="verified" xml:lang="Sa-Ltn" type="attestedOther">tathāgata</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-090-033-79">
+                            <term type="translationMain">Blessed One</term>
+                            <term status="verified" xml:lang="Bo-Ltn" n="1">bcom ldan ’das </term>
+                            <term xml:lang="bo" n="1">བཅོམ་ལྡན་འདས།</term>
+                            <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">bhagavat</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-090-033-80">
+                            <term type="translationMain">mantra-word</term>
+                            <term status="verified" xml:lang="Bo-Ltn" n="1">sngags kyi tshig </term>
+                            <term xml:lang="bo" n="1">སྔགས་ཀྱི་ཚིག</term>
+                            <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">mantrapada</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-090-033-81">
+                            <term type="translationMain">son of good family</term>
+                            <term status="verified" xml:lang="Bo-Ltn" n="1">rigs kyi bu </term>
+                            <term xml:lang="bo" n="1">རིགས་ཀྱི་བུ།</term>
+                            <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">kulaputra</term>
+                            <note type="definition">
+                                <p>Indian term of address used by a teacher
+                                    regarding a student. While originally related to family lineage,
+                                    in Mahāyāna sūtras the term is also sometimes interpreted as
+                                    implying that the person so addressed has entered the lineage of
+                                    the buddhas, i.e., is a follower of the bodhisattva
+                                path.</p>
+                            </note>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-090-033-82">
+                            <term type="translationMain">daughter of good family</term>
+                            <term status="verified" xml:lang="Bo-Ltn" n="1">rigs kyi bu mo </term>
+                            <term xml:lang="bo" n="1">རིགས་ཀྱི་བུ་མོ།</term>
+                            <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">kuladuhitṛ</term>
+                            <note type="definition">
+                                <p>Indian term of address used by a teacher
+                                    regarding a student. While originally related to family lineage,
+                                    in Mahāyāna sūtras the term is also sometimes interpreted as
+                                    implying that the person so addressed has entered the lineage of
+                                    the buddhas, i.e., is a follower of the bodhisattva
+                                path.</p>
+                            </note>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-090-033-83">
+                            <term type="translationMain">god</term>
+                            <term status="verified" xml:lang="Bo-Ltn" n="1">lha </term>
+                            <term xml:lang="bo" n="1">ལྷ།</term>
+                            <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">deva</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-090-033-84">
+                            <term type="translationMain">goddess</term>
+                            <term status="verified" xml:lang="Bo-Ltn" n="1">lha mo </term>
+                            <term xml:lang="bo" n="1">ལྷ་མོ།</term>
+                            <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">devī</term>
+                            <note type="definition">
+                                <p>See “god.”</p>
+                            </note>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-090-033-85">
+                            <term type="translationMain">nāga</term>
+                            <term status="verified" xml:lang="Bo-Ltn" n="1">klu </term>
+                            <term xml:lang="bo" n="1">ཀླུ།</term>
+                            <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">nāga</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-090-033-86">
+                            <term type="translationMain">nāgī</term>
+                            <term status="verified" xml:lang="Bo-Ltn" n="1">klu mo </term>
+                            <term xml:lang="bo" n="1">ཀླུ་མོ།</term>
+                            <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">nāgī</term>
+                            <note type="definition">
+                                <p>A female nāga.</p>
+                            </note>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-090-033-87">
+                            <term type="translationMain">yakṣa</term>
+                            <term status="verified" xml:lang="Bo-Ltn" n="1">gnod sbyin </term>
+                            <term xml:lang="bo" n="1">གནོད་སྦྱིན།</term>
+                            <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">yakṣa</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-090-033-88">
+                            <term type="translationMain">yakṣī</term>
+                            <term status="verified" xml:lang="Bo-Ltn" n="1">gnod sbyin mo </term>
+                            <term xml:lang="bo" n="1">གནོད་སྦྱིན་མོ།</term>
+                            <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">yakṣī</term>
+                            <note type="definition">
+                                <p>A female yakṣa.</p>
+                            </note>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-090-033-89">
+                            <term type="translationMain">asura</term>
+                            <term status="verified" xml:lang="Bo-Ltn" n="1">lha ma yin </term>
+                            <term xml:lang="bo" n="1">ལྷ་མ་ཡིན།</term>
+                            <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">asura</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-090-033-90">
+                            <term type="translationMain">asurī</term>
+                            <term status="verified" xml:lang="Bo-Ltn" n="1">lha ma yin mo </term>
+                            <term xml:lang="bo" n="1">ལྷ་མ་ཡིན་མོ།</term>
+                            <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">asurī</term>
+                            <note type="definition">
+                                <p>A female asura.</p>
+                            </note>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-090-033-91">
+                            <term type="translationMain">garuḍa</term>
+                            <term status="verified" xml:lang="Bo-Ltn" n="1">nam mkha’ lding </term>
+                            <term xml:lang="bo" n="1">ནམ་མཁའ་ལྡིང་།</term>
+                            <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">garuḍa</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-090-033-92">
+                            <term type="translationMain">garuḍī</term>
+                            <term status="verified" xml:lang="Bo-Ltn" n="1">nam mkha’ lding mo </term>
+                            <term xml:lang="bo" n="1">ནམ་མཁའ་ལྡིང་མོ།</term>
+                            <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">garuḍī</term>
+                            <note type="definition">
+                                <p>A female garuḍa.</p>
+                            </note>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-090-033-93">
+                            <term type="translationMain">kinnara</term>
+                            <term status="verified" xml:lang="Bo-Ltn" n="1">mi’am ci </term>
+                            <term xml:lang="bo" n="1">མིའམ་ཅི།</term>
+                            <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">kinnara</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-090-033-94">
+                            <term type="translationMain">kinnarī</term>
+                            <term status="verified" xml:lang="Bo-Ltn" n="1">mi’am ci mo </term>
+                            <term xml:lang="bo" n="1">མིའམ་ཅི་མོ།</term>
+                            <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">kinnarī</term>
+                            <note type="definition">
+                                <p>A female kinnara.</p>
+                            </note>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-090-033-95">
+                            <term type="translationMain">mahoraga</term>
+                            <term status="verified" xml:lang="Bo-Ltn" n="1">lto ’phye chen po </term>
+                            <term xml:lang="bo" n="1">ལྟོ་འཕྱེ་ཆེན་པོ།</term>
+                            <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">mahoraga</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-090-033-96">
+                            <term type="translationMain">mahoragī</term>
+                            <term status="verified" xml:lang="Bo-Ltn" n="1">lto ’phye chen mo </term>
+                            <term xml:lang="bo" n="1">ལྟོ་འཕྱེ་ཆེན་མོ།</term>
+                            <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">mahoragī</term>
+                            <note type="definition">
+                                <p>A female mahoraga.</p>
+                            </note>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-090-033-97">
+                            <term type="translationMain">gandharva</term>
+                            <term status="verified" xml:lang="Bo-Ltn" n="1">dri za </term>
+                            <term xml:lang="bo" n="1">དྲི་ཟ།</term>
+                            <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">gandharva</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-090-033-98">
+                            <term type="translationMain">gandharvī</term>
+                            <term status="verified" xml:lang="Bo-Ltn" n="1">dri za mo </term>
+                            <term xml:lang="bo" n="1">དྲི་ཟ་མོ།</term>
+                            <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">gandharvī</term>
+                            <note type="definition">
+                                <p>A female gandharva.</p>
+                            </note>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-090-033-99">
+                            <term type="translationMain">bhūta</term>
+                            <term status="verified" xml:lang="Bo-Ltn" n="1">’byung po </term>
+                            <term xml:lang="bo" n="1">འབྱུང་པོ།</term>
+                            <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">bhūta</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-090-033-100">
+                            <term type="translationMain">bhūtī</term>
+                            <term status="verified" xml:lang="Bo-Ltn" n="1">’byung mo </term>
+                            <term xml:lang="bo" n="1">འབྱུང་མོ།</term>
+                            <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">bhūtī</term>
+                            <note type="definition">
+                                <p>A female bhūta.</p>
+                            </note>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-090-033-101">
+                            <term type="translationMain">kumbhāṇḍa</term>
+                            <term status="verified" xml:lang="Bo-Ltn" n="1">grul bum </term>
+                            <term xml:lang="bo" n="1">གྲུལ་བུམ།</term>
+                            <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">kumbhāṇḍa</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-090-033-102">
+                            <term type="translationMain">kumbhāṇḍī</term>
+                            <term status="verified" xml:lang="Bo-Ltn" n="1">grul bum mo </term>
+                            <term xml:lang="bo" n="1">གྲུལ་བུམ་མོ།</term>
+                            <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">kumbhāṇḍī</term>
+                            <note type="definition">
+                                <p>A female kumbhāṇḍa.</p>
+                            </note>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-090-033-103">
+                            <term type="translationMain">piśāca</term>
+                            <term status="verified" xml:lang="Bo-Ltn" n="1">sha za </term>
+                            <term xml:lang="bo" n="1">ཤ་ཟ།</term>
+                            <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">piśāca</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-090-033-104">
+                            <term type="translationMain">piśācī</term>
+                            <term status="verified" xml:lang="Bo-Ltn" n="1">sha za mo </term>
+                            <term xml:lang="bo" n="1">ཤ་ཟ་མོ།</term>
+                            <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">piśācī</term>
+                            <note type="definition">
+                                <p>A female piśāca.</p>
+                            </note>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-090-033-105">
+                            <term type="translationMain">ostāraka</term>
+                            <term status="verified" xml:lang="Bo-Ltn" n="1">gnon po </term>
+                            <term xml:lang="bo" n="1">གནོན་པོ།</term>
+                            <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">ostāraka</term>
+                            <note type="definition">
+                                <p>A class of supernatural beings believed to
+                                    possess humans and cause physical and mental illness.</p>
+                            </note>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-090-033-106">
+                            <term type="translationMain">ostārakī</term>
+                            <term status="verified" xml:lang="Bo-Ltn" n="1">gnon mo </term>
+                            <term xml:lang="bo" n="1">གནོན་མོ།</term>
+                            <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">ostārakī</term>
+                            <note type="definition">
+                                <p>A female ostāraka.</p>
+                            </note>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-090-033-107">
+                            <term type="translationMain">apasmāra</term>
+                            <term status="verified" xml:lang="Bo-Ltn" n="1">brjed byed </term>
+                            <term xml:lang="bo" n="1">བརྗེད་བྱེད།</term>
+                            <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">apasmāra</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-090-033-108">
+                            <term type="translationMain">apasmārī</term>
+                            <term status="verified" xml:lang="Bo-Ltn" n="1">brjed byed mo </term>
+                            <term xml:lang="bo" n="1">བརྗེད་བྱེད་མོ།</term>
+                            <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">apasmārī</term>
+                            <note type="definition">
+                                <p>A female apasmāra.</p>
+                            </note>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-090-033-109">
+                            <term type="translationMain">rākṣasa</term>
+                            <term status="verified" xml:lang="Bo-Ltn" n="1">srin po </term>
+                            <term xml:lang="bo" n="1">སྲིན་པོ།</term>
+                            <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">rākṣasa</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-090-033-110">
+                            <term type="translationMain">rākṣasī</term>
+                            <term status="verified" xml:lang="Bo-Ltn" n="1">srin mo </term>
+                            <term xml:lang="bo" n="1">སྲིན་མོ།</term>
+                            <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">rākṣasī</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-090-033-111">
+                            <term type="translationMain">ḍāka</term>
+                            <term status="verified" xml:lang="Bo-Ltn" n="1">phra men pho</term>
+                            <term xml:lang="bo" n="1">ཕྲ་མེན་ཕོ།</term>
+                        <term status="verified" xml:lang="Bo-Ltn" n="2">phra man pho </term>
+                            <term xml:lang="bo" n="2">ཕྲ་མན་ཕོ།</term>
+                            <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">ḍāka</term>
+                            <note type="definition">
+                                <p>The male equivalent to a ḍākinī. The term can
+                                    refer to a mundane class of supernatural beings and to a class
+                                    of Buddhist deities.</p>
+                            </note>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-090-033-112">
+                            <term type="translationMain">ḍākinī</term>
+                            <term status="verified" xml:lang="Bo-Ltn" n="1">phra men mo</term>
+                            <term xml:lang="bo" n="1">ཕྲ་མེན་མོ།</term>
+                        <term status="verified" xml:lang="Bo-Ltn" n="2">phra man mo </term>
+                            <term xml:lang="bo" n="2">ཕྲ་མན་མོ།</term>
+                            <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">ḍākinī</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-090-033-113">
+                            <term type="translationMain">ojohara</term>
+                            <term status="verified" xml:lang="Bo-Ltn" n="1">mdangs ’phrog pho </term>
+                            <term xml:lang="bo" n="1">མདངས་འཕྲོག་ཕོ།</term>
+                            <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">ojohara</term>
+                            <note type="definition">
+                                <p>A class of supernatural beings who rob the
+                                    strength of other beings.</p>
+                            </note>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-090-033-114">
+                            <term type="translationMain">ojohāra</term>
+                            <term status="verified" xml:lang="Bo-Ltn" n="1">mdangs ’phrog mo </term>
+                            <term xml:lang="bo" n="1">མདངས་འཕྲོག་མོ།</term>
+                            <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">ojohāra</term>
+                            <note type="definition">
+                                <p>A female ojohara.</p>
+                            </note>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-090-033-115">
+                            <term type="translationMain">kaṭapūtana</term>
+                            <term status="verified" xml:lang="Bo-Ltn" n="1">lus srul po </term>
+                            <term xml:lang="bo" n="1">ལུས་སྲུལ་པོ།</term>
+                            <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">kaṭapūtana</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-090-033-116">
+                            <term type="translationMain">kaṭapūtanī</term>
+                            <term status="verified" xml:lang="Bo-Ltn" n="1">lus srul mo </term>
+                            <term xml:lang="bo" n="1">ལུས་སྲུལ་མོ།</term>
+                            <term status="verified" xml:lang="Sa-Ltn" type="attestedSource">kaṭapūtanī</term>
+                            <note type="definition">
+                                <p>A female kaṭapūtana.</p>
+                            </note>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="person" xml:id="UT22084-090-033-118">
+                            <term type="translationMain">Mahāmati</term>
+                            <term status="verified" xml:lang="Bo-Ltn" n="1">blo gros chen po </term>
+                            <term xml:lang="bo" n="1">བློ་གྲོས་ཆེན་པོ།</term>
+                            <term status="verified" xml:lang="Sa-Ltn">mahāmati</term>
+                            <note type="definition">
+                                <p>A bodhisattva, the protagonist of <title xml:lang="en">The Descent into Laṅkā</title>. <ref rend="pending" target="http://read.84000.co/translation/toh107.html"/>
+                                </p>
+                            </note>
+                        </gloss>
+                    </item>
+                </list>
+            </div>
+        </back>
+    </text>
+</TEI>
