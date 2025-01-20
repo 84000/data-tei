@@ -4,19 +4,19 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="mainTitle" xml:lang="Bo-Ltn">gtam rgyud kyi rtog pa</title>
-                <title type="mainTitle" xml:lang="bo">གཏམ་རྒྱུད་ཀྱི་རྟོག་པ།</title>
                 <title type="mainTitle" xml:lang="en">The Myth Chapter</title>
-                <title type="otherTitle" xml:lang="zh"/>
+                <title type="mainTitle" xml:lang="bo">གཏམ་རྒྱུད་ཀྱི་རྟོག་པ།</title>
+                <title type="mainTitle" xml:lang="Bo-Ltn">gtam rgyud kyi rtog pa</title>
                 <author role="translatorMain" xml:id="UT22084-083-019-1"><!--84000 Associate Translators--></author>
                 <author role="translatorEng" xml:id="UT22084-083-019-2">Bruno Galasek-Hul</author>
                 <editor role="projectEditor" xml:id="UT22084-083-019-14">Ryan Damron</editor>
                 <editor role="copyEditor" xml:id="UT22084-083-019-23">Dawn Collins</editor>
                 <editor role="projectEditor" xml:id="UT22084-083-019-33">Andreas Doctor</editor>
                 <editor role="TEImarkupEditor" xml:id="UT22084-083-019-44">Martina Cotter</editor>
+                <editor role="finalReviewer" xml:id="UT22084-083-019-142">Andreas Doctor</editor>
             </titleStmt>
             <editionStmt>
-                <edition>v 0.0.2 <date>2024</date>
+                <edition>v 1.0.0 <date>2025</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -24,7 +24,7 @@
                     <name>84000: Translating the Words of the Buddha</name> is a global
                     non-profit initiative to translate all the Buddha’s words into modern languages,
                     and to make them available to everyone. </publisher>
-                <availability status="2">
+                <availability status="1.a">
                     <p type="tantricRestriction">
                         <emph rend="bold">Warning:</emph> Readers are
                         reminded that according to Vajrayāna Buddhist tradition there are
@@ -45,7 +45,7 @@
                 <idno xml:id="UT22084-083-019"/>
                 <note>An early mistake in the assigning of UT numbers within the 84000 project means
                     that these ids diverge slightly from the standard logic.</note>
-                <date>2024-10-01</date>
+                <date>2025-01-20</date>
             </publicationStmt>
             <sourceDesc>
                 <bibl key="toh471" type="text">
@@ -149,6 +149,15 @@
                 <change who="#line-tofte" when="2024-10-08T08:48:42.6Z" type="text-version" status="0.0.2" xml:id="UT22084-083-019-135">
                     <desc>Auto (update-publication-status)</desc>
                 </change>
+                <change who="#line-tofte" when="2025-01-20T09:36:10.815Z" type="text-version" status="0.0.3" xml:id="UT22084-083-019-143">
+                    <desc>Auto (update-contributors)</desc>
+                </change>
+                <change who="#martina-cotter" when="2025-01-20T15:46:51.657Z" type="translation-status" status="1.a" xml:id="UT22084-083-019-144">
+                    <desc>1.a</desc>
+                </change>
+                <change who="#martina-cotter" when="2025-01-20T15:46:51.657Z" type="text-version" status="1.0.0" xml:id="UT22084-083-019-145">
+                    <desc>First published version.</desc>
+                </change>
             </revisionDesc>
         </fileDesc>
     </teiHeader>
@@ -157,7 +166,7 @@
                     Outline to the text is quite complex, it is recommended that you paste the outlined contents from the DOCX here as a comment for
                     markup's reference. The actual table of contents will be generated in the Reading Room by the parser.-->
         <front>
-            <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="summary" xml:id="UT22084-083-019-summary">
+            <div type="summary" xml:id="UT22084-083-019-summary">
                 <head type="summary" tid="1">Summary</head>
                 <milestone unit="chunk" xml:id="UT22084-083-019-46"/>
                 <p tid="2">
@@ -167,8 +176,8 @@
                     He then binds them under oath and empowers them to serve as protectors of his
                     teachings. The text also presents the root mantra of Vajrabhairava, which
                     encapsulates the essential life force of Yama and his followers.</p>
-            </tei:div>
-            <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="acknowledgment" xml:id="UT22084-083-019-acknowledgment">
+            </div>
+            <div type="acknowledgment" xml:id="UT22084-083-019-acknowledgment">
                 <head type="acknowledgment" tid="3">Acknowledgements</head>
                 <milestone unit="chunk" xml:id="UT22084-083-019-47"/>
                 <p tid="4">This publication was completed under the patronage and supervision of
@@ -179,10 +188,10 @@
                     Ryan Damron edited the translation and the introduction, and Dawn Collins
                     copyedited the text. Martina Cotter was in charge of the digital publication
                     process.</p>
-            </tei:div>
-            <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="introduction" xml:id="UT22084-083-019-introduction">
+            </div>
+            <div type="introduction" xml:id="UT22084-083-019-introduction">
                 <head type="introduction" tid="7">Introduction</head>
-                <tei:div type="section" xml:id="UT22084-083-019-introduction-1">
+                <div type="section" xml:id="UT22084-083-019-introduction-1">
                     <milestone unit="chunk" xml:id="UT22084-083-019-50"/>
                     <p tid="9">In <title xml:lang="en">The Myth Chapter</title>, Vajrabhairava, a
                         tantric deity considered to be the wrathful emanation of Mañjuśrī, travels
@@ -208,7 +217,7 @@
                         was only allowed to copy and take as much of the text with him back to India
                         as he was able to recite and memorize in seven days.<note place="end" xml:id="UT22084-083-019-52"> For the full account, see Gonsalez 2021, p.
                             309. See also Siklós 1990, p. 83.</note> The colophon of the <title xml:lang="en">Vajrabhairava Tantra</title>
-                        <ref rend="pending" target="http://read.84000.co/translation/toh4668.html"/>
+                        <ref rend="pending" target="http://read.84000.co/translation/toh468.html"/>
                         itself states that the tantras of the Vajrabhairava cycle are mere extracts
                         from a much more comprehensive tantra.<note place="end" xml:id="UT22084-083-019-53"> See Toh 468, folio 163.b.</note> That
                             <title xml:lang="en">The Myth Chapter</title> can be considered such an
@@ -260,14 +269,14 @@
                         witnesses (Toh 471 and 2006), in consultation with the Comparative Edition
                             (<title xml:lang="Bo-Ltn">dpe bsdur ma</title>) of the Degé Kangyur and
                         the version of the text that is preserved in the Stok Palace Kangyur. </p>
-                </tei:div>
-            </tei:div>
+                </div>
+            </div>
         </front>
         <body>
-            <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="translation" xml:id="UT22084-083-019-translation">
+            <div type="translation" xml:id="UT22084-083-019-translation">
                 <head type="translation">The Translation</head>
                 <head type="titleMain" tid="14">The Myth Chapter</head>
-                <tei:div type="section" xml:id="UT22084-083-019-section-1">
+                <div type="section" xml:id="UT22084-083-019-section-1">
                 <milestone unit="chunk" xml:id="UT22084-083-019-62"/>
                     <p tid="17">
                         <ref cRef="F.173.b" type="folio" key="toh471" xml:id="UT22084-083-019-131"/> <ref cRef="F.213.b" type="folio" key="toh2006" xml:id="UT22084-083-019-132"/> Homage to the glorious Vajrabhairava.</p>
@@ -356,14 +365,12 @@
                     <l>And it became impossible for them to fail.</l>
                     </lg>
                 <milestone unit="chunk" xml:id="UT22084-083-019-78"/>
-                <lg tid="25">
-                    <l>“ ‘<mantra xml:lang="Sa-Ltn">ya ma rā ja sa do me ya | ya me do ru ṇa yo da
-                            ya | ya da yo ni ra yakṣe ya | yakṣe yaccha ni rā ma ya</mantra>’ <note place="end" xml:id="UT22084-083-019-79"> This transliteration follows
-                            Toh 471 without emendation. Toh 2006 reads <foreign xml:lang="Bo-Ltn" type="quote">oṁ ya ma rā jaḥ sa do me ya | ya me do ru | ṇa yo da ya
-                                | ya da uo ni ra yakṣe ya | yakṣe yaccha ni rā ma ya | hūṁ hūṁ phaṭ
+                <p rend="mantra" tid="25">
+                     ‘<mantra xml:lang="Sa-Ltn">ya ma rā ja sa do me ya | ya me do ru ṇa yo da
+                            ya | ya da yo ni ra yakṣe ya | yakṣe yaccha ni rā ma ya</mantra>’ <note place="end" xml:id="UT22084-083-019-79"> This transliteration follows
+                            Toh 471 without emendation. Toh 2006 reads <foreign xml:lang="Bo-Ltn" type="quote">oṁ ya ma rā jaḥ sa do me ya | ya me do ru | ṇa yo da ya | ya da uo ni ra yakṣe ya | yakṣe yaccha ni rā ma ya | hūṁ hūṁ phaṭ
                                 phaṭ</foreign>.</note>
-                    </l>
-                </lg>
+                </p>
                 <milestone unit="chunk" xml:id="UT22084-083-019-80"/>
                 <lg tid="26">
                     <l>“After saying this,</l>
@@ -402,11 +409,11 @@
                 <trailer tid="29">
                         <title xml:lang="en">The Myth Chapter</title> is
                     complete.</trailer>
-                </tei:div>
-            </tei:div>
+                </div>
+            </div>
         </body>
         <back>
-            <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="notes" xml:id="UT22084-083-019-notes">
+            <div type="notes" xml:id="UT22084-083-019-notes">
                 <head type="notes" tid="30">Notes</head>
                 <list type="abbreviations">
                     <head tid="31">Abbreviations</head>
@@ -439,10 +446,10 @@
                         <expan>Yongle</expan>
                     </item>
                 </list>
-            </tei:div>
-            <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="listBibl" xml:id="UT22084-083-019-listBibl">
+            </div>
+            <div type="listBibl" xml:id="UT22084-083-019-listBibl">
                 <head type="listBibl" tid="32">Bibliography</head>
-                <tei:div type="section" xml:id="UT22084-083-019-listBibl-1">
+                <div type="section" xml:id="UT22084-083-019-listBibl-1">
                     <head type="section" tid="33">Tibetan Sources</head>
                     <bibl xml:id="UT22084-083-019-91">
                         <title xml:lang="Bo-Ltn">gtam rgyud kyi rtog
@@ -473,7 +480,7 @@
                         khang (China Tibetology Publishing House), 2006–9, vol. 83, pp.
                         560–61.</bibl>
                     <bibl xml:id="UT22084-083-019-97">Tāranātha (tā ra nā tha). <title xml:lang="Bo-Ltn">rgyud rgyal gshin rje gshed skor gyi chos ’byung rgyas
-                            pa yid ches ngo mtshar</title>. In <title xml:lang="Bo-Ltn">gsung ʼbum
+                            pa yid ches ngo mtshar</title>. In <title xml:lang="Bo-Ltn">gsung ’bum
                             tā ra nā tha</title> (<title xml:lang="Bo-Ltn">rtag brtan phun tshogs
                             gling gi par ma</title>). Leh: C namgyal ’tsewang taru, 1982–87. Vol.
                         10: 13–160. <ref target="http://purl.bdrc.io/resource/MW22277_720F25">BDRC
@@ -483,8 +490,8 @@
                             mdzod</title>). In <title xml:lang="en">The Collected Works of
                             Bu-Ston</title>, ed. by Lokesh Candra, vol. 24 (ya), pp. 633–1055. New
                         Delhi: International Academy of Indian Culture, 1965–71. <ref target="https://library.bdrc.io/show/bdr:MW22106_ECEBF8">BDRC W22106</ref>.</bibl>
-                </tei:div>
-                    <tei:div type="section" xml:id="UT22084-083-019-listBibl-2">
+                </div>
+                    <div type="section" xml:id="UT22084-083-019-listBibl-2">
                     <head type="section" tid="34">Secondary Literature</head>
                     <bibl xml:id="UT22084-083-019-100">Cuevas, Bryan J. <title xml:lang="en">The
                             “Rwa Pod” and Other ‘Lost’ Works of Rwa Lo Tsā Ba’s Vajrabhairava
@@ -508,9 +515,9 @@
                         pa yid ches ngo mtshar) by Jo nang pa Kun dga’ snying po, known as
                         Tāranātha. Translated from the original Tibetan and with an Introduction by
                         Gareth Sparham. Unpublished Manuscript, 2009.</bibl>
-                    </tei:div>
-            </tei:div>
-            <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="glossary" status="excluded" xml:id="UT22084-083-019-glossary">
+                    </div>
+            </div>
+            <div type="glossary" status="excluded" xml:id="UT22084-083-019-glossary">
                 <list type="glossary">
                     <item>
                         <gloss type="term" xml:id="UT22084-083-019-106">
@@ -529,7 +536,7 @@
                     </item>
                     <item>
                         <gloss type="term" xml:id="UT22084-083-019-107">
-                            <term type="translationMain">eight classes of non-human beings</term>
+                            <term type="translationMain">eight classes of beings</term>
                             <term status="verified" xml:lang="Bo-Ltn" n="1">sde brgyad </term>
                             <term xml:lang="bo" n="1">སྡེ་བརྒྱད།</term>
                             <note type="definition">
@@ -663,7 +670,7 @@
                         </gloss>
                     </item>
                 </list>
-            </tei:div>
+            </div>
         </back>
     </text>
 </TEI>
