@@ -1,30 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../../../schema/current/translation.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<tei:TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
         <teiHeader>
                 <fileDesc>
                         <titleStmt>
-                                <title type="mainTitle" xml:lang="Bo-Ltn">gza’ rnams kyi yum zhes
-                                        bya ba’i gzungs</title>
-                                <title type="mainTitle" xml:lang="bo">གཟའ་རྣམས་ཀྱི་ཡུམ་ཞེས་བྱ་བའི་གཟུངས།</title>
-                                <title type="mainTitle" xml:lang="en">The Dhāraṇī “The Mother of the
+                <title type="mainTitle" xml:lang="en">The Dhāraṇī “The Mother of the
                                         Grahas”</title>
-                                <title type="mainTitle" xml:lang="Sa-Ltn">Graha­mātṛkānāma­dhāraṇī</title>
-                                <title type="otherTitle" xml:lang="zh"/>
-                                <author role="translatorMain" xml:id="UT22084-091-058-1"><!--84000 Associate Translators--></author>
-                                <author role="translatorEng" xml:id="UT22084-091-058-2">Adam C.
-                                        Krug</author>
-                                <editor role="projectEditor" xml:id="UT22084-091-058-13">Rory
-                                        Lindsay</editor>
-                                <editor role="copyEditor" xml:id="UT22084-091-058-22">Dawn
-                                        Collins</editor>
-                                <editor role="projectEditor" xml:id="UT22084-091-058-37">Ryan
-                                        Damron</editor>
-                                <editor role="TEImarkupEditor" xml:id="UT22084-091-058-44">Martina
-                                        Cotter</editor>
-                        </titleStmt>
+                <title type="mainTitle" xml:lang="Sa-Ltn">Graha­mātṛkānāma­dhāraṇī</title>
+                <title type="mainTitle" xml:lang="bo">གཟའ་རྣམས་ཀྱི་ཡུམ་ཞེས་བྱ་བའི་གཟུངས།</title>
+                <title type="mainTitle" xml:lang="Bo-Ltn">gza’ rnams kyi yum zhes
+                                        bya ba’i gzungs</title>
+                <author role="translatorMain" xml:id="UT22084-091-058-1"><!--84000 Associate Translators--></author>
+                <author role="translatorEng" xml:id="UT22084-091-058-2">Adam C. Krug</author>
+                <editor role="projectEditor" xml:id="UT22084-091-058-13">Rory Lindsay</editor>
+                <editor role="copyEditor" xml:id="UT22084-091-058-22">Dawn Collins</editor>
+                <editor role="projectEditor" xml:id="UT22084-091-058-37">Ryan Damron</editor>
+                <editor role="TEImarkupEditor" xml:id="UT22084-091-058-44">Martina Cotter</editor>
+                <editor role="finalReviewer" xml:id="UT22084-091-058-186">Andreas Doctor</editor>
+            </titleStmt>
                         <editionStmt>
-                <edition>v 0.0.2 <date>2024</date>
+                <edition>v 1.0.0 <date>2025</date>
                 </edition>
             </editionStmt>
                         <publicationStmt>
@@ -33,7 +28,7 @@
                                         is a global non-profit initiative to translate all the
                                         Buddha’s words into modern languages, and to make them
                                         available to everyone. </publisher>
-                                <availability status="2">
+                                <availability status="1.a">
                                         <licence>
                                                 <graphic url="http://i.creativecommons.org/l/by-nc-nd/2.0/88x31.png"/>
                                                 <p>This work is provided under the protection of a
@@ -49,7 +44,7 @@
                                 <note>An early mistake in the assigning of UT numbers within the
                                         84000 project means that these ids diverge slightly from the
                                         standard logic.</note>
-                                <date>2024-09-14</date>
+                                <date>2025-01-24</date>
                         </publicationStmt>
                         <sourceDesc>
                                 <bibl key="toh661" type="text">
@@ -157,6 +152,15 @@
                 <change who="#line-tofte" when="2024-09-23T11:42:50.913Z" type="text-version" status="0.0.2" xml:id="UT22084-091-058-179">
                     <desc>Auto (update-publication-status)</desc>
                 </change>
+                <change who="#line-tofte" when="2025-01-22T10:10:02.362Z" type="text-version" status="0.0.3" xml:id="UT22084-091-058-187">
+                    <desc>Auto (update-contributors)</desc>
+                </change>
+                <change who="#martina-cotter" when="2025-01-24T13:05:15.215Z" type="translation-status" status="1.a" xml:id="UT22084-091-058-189">
+                    <desc>1.a</desc>
+                </change>
+                <change who="#martina-cotter" when="2025-01-24T13:05:15.215Z" type="text-version" status="1.0.0" xml:id="UT22084-091-058-190">
+                    <desc>First published version.</desc>
+                </change>
                         </revisionDesc>
                 </fileDesc>
         </teiHeader>
@@ -165,7 +169,7 @@
                     Outline to the text is quite complex, it is recommended that you paste the outlined contents from the DOCX here as a comment for
                     markup's reference. The actual table of contents will be generated in the Reading Room by the parser.-->
                 <front>
-                        <tei:div type="summary" xml:id="UT22084-091-058-summary">
+                        <div type="summary" xml:id="UT22084-091-058-summary">
                                 <head type="summary" tid="1">Summary</head>
                                 <milestone unit="chunk" xml:id="UT22084-091-058-46"/>
                                 <p tid="2">
@@ -178,8 +182,8 @@
                                         gain the favor of the celestial grahas that remain
                                         widespread across South Asia and the South Asian diaspora to
                                         the present day.</p>
-                        </tei:div>
-                        <tei:div type="acknowledgment" xml:id="UT22084-091-058-acknowledgment">
+                        </div>
+                        <div type="acknowledgment" xml:id="UT22084-091-058-acknowledgment">
                                 <head type="acknowledgment" tid="3">Acknowledgements</head>
                                 <milestone unit="chunk" xml:id="UT22084-091-058-47"/>
                                 <p tid="4">This publication was completed under the patronage and
@@ -192,10 +196,10 @@
                                         the translation and the introduction, and Dawn Collins
                                         copyedited the text. Martina Cotter was in charge of the
                                         digital publication process. </p>
-                        </tei:div>
-                        <tei:div type="introduction" xml:id="UT22084-091-058-introduction">
+                        </div>
+                        <div type="introduction" xml:id="UT22084-091-058-introduction">
                                 <head type="introduction" tid="7">Introduction</head>
-                                <tei:div type="section" xml:id="UT22084-091-058-introduction-1">
+                                <div type="section" xml:id="UT22084-091-058-introduction-1">
                                         <milestone unit="chunk" xml:id="UT22084-091-058-50"/>
                                         <p tid="9">
                         <title xml:lang="en">The Dhāraṇī “The Mother of
@@ -309,16 +313,16 @@
                                                 has not yet been digitized and was unfortunately not
                                                 available to us at the time that this translation
                                                 was prepared. </p>
-                                </tei:div>
-                        </tei:div>
+                                </div>
+                        </div>
                 </front>
                 <body>
-                        <tei:div type="translation" xml:id="UT22084-091-058-translation">
+                        <div type="translation" xml:id="UT22084-091-058-translation">
                                 <head type="translation">The Translation</head>
                                 <head type="titleMain" tid="14">The Dhāraṇī “The Mother of the
                                         Grahas”</head>
                                 <head type="titleMain" tid="15"/>
-                                <tei:div type="section" xml:id="UT22084-091-058-section">
+                                <div type="section" xml:id="UT22084-091-058-section">
                                         <milestone unit="chunk" xml:id="UT22084-091-058-59"/>
                                         <p tid="18">
                         <ref cRef="F.183.b" type="folio" key="toh661" xml:id="UT22084-091-058-165"/> <ref cRef="F.153.b" type="folio" key="toh998" xml:id="UT22084-091-058-166"/> Homage to all buddhas and bodhisattvas.</p>
@@ -564,11 +568,11 @@
                                                   Dhāraṇī “The Mother of the
                                                 Grahas.”</title>
                     </trailer>
-                                </tei:div>
-                        </tei:div>
+                                </div>
+                        </div>
                 </body>
                 <back>
-                        <tei:div type="notes" xml:id="UT22084-091-058-notes">
+                        <div type="notes" xml:id="UT22084-091-058-notes">
                                 <head type="notes" tid="42">Notes</head>
                                 <list type="abbreviations">
                                         <head tid="54">Abbreviations</head>
@@ -609,10 +613,10 @@
                         <expan>Stok Palace (<foreign xml:lang="Bo-Ltn">stog pho ’brang</foreign>)</expan>
                     </item>
                                 </list>
-                        </tei:div>
-                        <tei:div type="listBibl" xml:id="UT22084-091-058-listBibl">
+                        </div>
+                        <div type="listBibl" xml:id="UT22084-091-058-listBibl">
                                 <head type="listBibl" tid="44">Bibliography</head>
-                                <tei:div type="section" xml:id="UT22084-091-058-listBibl-1">
+                                <div type="section" xml:id="UT22084-091-058-listBibl-1">
                                         <bibl xml:id="UT22084-091-058-99">
                         <title xml:lang="Bo-Ltn">gza’ rnams kyi yum zhes bya ba’i gzungs</title>
                                                 (<title xml:lang="Sa-Ltn">Graha­mātṛkānāma­dhāraṇī</title>). Toh 661, Degé
@@ -682,9 +686,9 @@
                                                   bKa’-’gyur and bsTan-’gyur Research Catalogue and
                                                   Bibliography</title>, vol 2. Oakland, CA: Dharma
                                                 Publishing, 1981.</bibl>
-                                </tei:div>
-                        </tei:div>
-                        <tei:div type="glossary" status="excluded" xml:id="UT22084-091-058-glossary">
+                                </div>
+                        </div>
+                        <div type="glossary" status="excluded" xml:id="UT22084-091-058-glossary">
                                 <list type="glossary">
                                         <item>
                         <gloss type="term" xml:id="UT22084-091-058-112">
@@ -692,7 +696,6 @@
                                                   <term xml:lang="Bo-Ltn" n="1">gza’ </term>
                                                   <term xml:lang="bo" n="1">གཟའ།</term>
                                                   <term xml:lang="Sa-Ltn" type="attestedDictionary">graha</term>
-                                                <term type="translationAlternative">graha</term>
                                                   <note type="definition">
                                 <p>The set of nine
                                                   celestial phenomena and planets as well as the
@@ -1194,8 +1197,21 @@
                                                 <term type="attestedDictionary" xml:lang="Sa-Ltn" n="1">amanuṣya </term>
                                         </gloss>
                     </item>
+                                        <item>
+                        <gloss type="term" xml:id="UT22084-091-058-188">
+                                                <term type="translationMain">graha</term>
+                                                <term xml:lang="Bo-Ltn" n="1">gdon </term>
+                                                <term xml:lang="bo" n="1">གདོན།</term>
+                                                <term xml:lang="Sa-Ltn" type="attestedDictionary">graha</term>
+                                                <note type="definition">
+                                <p>A term that can be
+                                                        applied to any class of supernatural beings that
+                                                        cause mental and physical illness.</p>
+                            </note>
+                                        </gloss>
+                    </item>
                                 </list>
-                        </tei:div>
+                        </div>
                 </back>
         </text>
-</tei:TEI>
+</TEI>
