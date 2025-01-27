@@ -1,789 +1,704 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../../../schema/current/translation.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-        <teiHeader>
-                <fileDesc>
-                        <titleStmt>
-
-                                <title type="mainTitle" xml:lang="en">The Sūtra of King of the Inconceivable</title>
-
-                                <title type="mainTitle" xml:lang="Sa-Ltn">Acintya­rāja­sūtra</title>
-
-                                <title type="mainTitle" xml:lang="Bo-Ltn">bsam gyis mi khyab pa'i rgyal po'i mdo</title>
-
-                                <title type="mainTitle" xml:lang="bo">བསམ་གྱིས་མི་ཁྱབ་པའི་རྒྱལ་པོའི་མདོ།</title>
-
-                                <title type="longTitle" xml:lang="en">The Noble Mahāyāna Sūtra "The Sūtra of King of the Inconceivable"</title>
-
-                                <title type="longTitle" xml:lang="bo">འཕགས་པ་བསམ་གྱིས་མི་ཁྱབ་པའི་རྒྱལ་པོའི་མདོ་ཞེས་བྱ་བ་ཐེག་པ་ཆེན་པོའི་མདོ།</title>
-
-                                <title type="longTitle" xml:lang="Bo-Ltn">’phags pa bsam gyis mi khyab pa’i rgyal po’i mdo zhes bya ba theg pa chen po’i mdo</title>
-
-                                <title type="otherTitle" xml:lang="Sa-Ltn">Āryācintya­rāja­sūtra­nāma­mahāyāna­sūtra</title>
-
-                                <title type="otherTitle" xml:lang="zh">《不可思議王經》</title>
-
-                                <author role="translatorMain" ref="eft:team-49">Translated by the
-                                        Subhashita Translation Group<lb/>under the patronage and
-                                        supervision of 84000: Translating the Words of the
-                                        Buddha</author>
-
-                                <editor role="reviser" ref="eft:person-60">Benjamin Ewing</editor>
-
-                                <author role="translatorEng" ref="eft:person-67">Lowell Cook</author>
-
-                                <consultant role="projectManager" ref="eft:person-67">Lowell Cook</consultant>
-
-                                <editor role="projectEditor" ref="eft:person-74">Ryan Damron</editor>
-
-                                <editor role="copyEditor" ref="eft:person-249">Konchog Norbu</editor>
-
-                                <editor role="TEImarkupEditor" ref="eft:person-381">Martina Cotter</editor>
-
-                                <editor role="finalReviewer" ref="eft:person-289">Nathaniel Rich</editor>
-
-                                <editor role="TEImarkupEditor" ref="eft:person-391">Sameer Dhingra</editor>
-                        </titleStmt>
-
-
-                        <editionStmt>
-                <edition>v 1.0.8 <date>2022</date>
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="mainTitle" xml:lang="en">The Sūtra of King of the Inconceivable</title>
+                <title type="mainTitle" xml:lang="Sa-Ltn">Acintya­rāja­sūtra</title>
+                <title type="mainTitle" xml:lang="Bo-Ltn">bsam gyis mi khyab pa'i rgyal po'i mdo</title>
+                <title type="mainTitle" xml:lang="bo">བསམ་གྱིས་མི་ཁྱབ་པའི་རྒྱལ་པོའི་མདོ།</title>
+                <title type="longTitle" xml:lang="en">The Noble Mahāyāna Sūtra "The Sūtra of King of the
+                    Inconceivable"</title>
+                <title type="longTitle" xml:lang="bo">འཕགས་པ་བསམ་གྱིས་མི་ཁྱབ་པའི་རྒྱལ་པོའི་མདོ་ཞེས་བྱ་བ་ཐེག་པ་ཆེན་པོའི་མདོ།</title>
+                <title type="longTitle" xml:lang="Bo-Ltn">’phags pa bsam gyis mi khyab pa’i rgyal po’i mdo
+                    zhes bya ba theg pa chen po’i mdo</title>
+                <title type="otherTitle" xml:lang="Sa-Ltn">Āryācintya­rāja­sūtra­nāma­mahāyāna­sūtra</title>
+                <title type="otherTitle" xml:lang="zh">《不可思議王經》</title>
+                <author role="translatorMain" xml:id="UT22084-068-002-58">Translated by the Subhashita
+                    Translation Group<lb/>under the patronage and supervision of 84000: Translating the Words
+                    of the Buddha</author>
+                <editor role="reviser" xml:id="UT22084-068-002-59">Benjamin Ewing</editor>
+                <author role="translatorEng" xml:id="UT22084-068-002-60">Lowell Cook</author>
+                <consultant role="projectManager" xml:id="UT22084-068-002-61">Lowell Cook</consultant>
+                <editor role="projectEditor" xml:id="UT22084-068-002-62">Ryan Damron</editor>
+                <editor role="copyEditor" xml:id="UT22084-068-002-63">Konchog Norbu</editor>
+                <editor role="TEImarkupEditor" xml:id="UT22084-068-002-64">Martina Cotter</editor>
+                <editor role="finalReviewer" xml:id="UT22084-068-002-65">Nathaniel Rich</editor>
+                <editor role="TEImarkupEditor" xml:id="UT22084-068-002-66">Sameer Dhingra</editor>
+            </titleStmt>
+            <editionStmt>
+                <edition>v 1.0.11 <date>2025</date>
                 </edition>
             </editionStmt>
-
-
-                        <publicationStmt status="1">
+            <publicationStmt>
                 <publisher>
-                    <name>84000: Translating the Words of the Buddha</name>
-                                        is a global non-profit initiative to translate all the
-                                        Buddha’s words into modern languages, and to make them
-                                        available to everyone.</publisher>
-                <availability>
-                                        <licence>
-                                                <graphic url="http://i.creativecommons.org/l/by-nc-nd/2.0/88x31.png"/>
-                                                <p>This work is provided under the protection of a
-                                                  Creative Commons CC BY-NC-ND (Attribution -
-                                                  Non-commercial - No-derivatives) 3.0 copyright. It
-                                                  may be copied or printed for fair use, but only
-                                                  with full attribution, and not for commercial
-                                                  advantage or personal compensation. For full
-                                                  details, see the Creative Commons license.</p>
-                                        </licence>
-                                </availability>
+                    <name>84000: Translating the Words of the Buddha</name> is a global non-profit
+                    initiative to translate all the Buddha’s words into modern languages, and to make them
+                    available to everyone.</publisher>
+                <availability status="1">
+                    <licence>
+                        <graphic url="http://i.creativecommons.org/l/by-nc-nd/2.0/88x31.png"/>
+                        <p>This work is provided under the protection of a Creative Commons CC BY-NC-ND
+                            (Attribution - Non-commercial - No-derivatives) 3.0 copyright. It may be copied or
+                            printed for fair use, but only with full attribution, and not for commercial
+                            advantage or personal compensation. For full details, see the Creative Commons
+                            license.</p>
+                    </licence>
+                </availability>
                 <idno xml:id="UT22084-068-002"/>
-                <note>An early mistake in the assigning of UT numbers within the
-                                        84000 project means that these ids diverge slightly from the
-                                        standard logic.</note>
+                <note>An early mistake in the assigning of UT numbers within the 84000 project means that
+                    these ids diverge slightly from the standard logic.</note>
                 <date>2022-04-29</date>
             </publicationStmt>
+            <sourceDesc>
+                <bibl key="toh268" type="text">
+                    <ref>Toh 268</ref>
+                    <biblScope>Degé Kangyur, vol. 68, (mdo sde, ya), folios 5.b–7.a</biblScope>
+                    <location work="UT4CZ5369" count-pages="4">
+                        <volume number="68" start-page="10" end-page="13"/>
+                    </location>
+                    <idno parent-id="O1JC114941JC14668" work="http://read.84000.co/sections"/>
+                    <idno source-id="O1JC114941JC11926" work="W22084"/>
+                </bibl>
+            </sourceDesc>
+            <notesStmt/>
+            <revisionDesc>
+                <change who="#line-tofte" when="2020-11-12T11:14:44.365Z" type="translation-status" status="3" xml:id="UT22084-068-002-67">
+                    <desc>3</desc>
+                </change>
+                <change who="#line-tofte" when="2020-11-12T11:14:44.365Z" type="text-version" status="0.0.1" xml:id="UT22084-068-002-68">
+                    <desc>0.0.1</desc>
+                </change>
+                <change who="#line-tofte" when="2020-11-12T11:15:10.892Z" type="text-version" status="0.0.2" xml:id="UT22084-068-002-69">
+                    <desc>Auto (update-contributors)</desc>
+                </change>
+                <change who="#line-tofte" when="2020-12-15T10:19:31.456Z" type="translation-status" status="2.h" xml:id="UT22084-068-002-70">
+                    <desc>2.h</desc>
+                </change>
+                <change who="#line-tofte" when="2020-12-15T10:19:31.456Z" type="text-version" status="0.0.3" xml:id="UT22084-068-002-71">
+                    <desc>Auto (update-publication-status)</desc>
+                </change>
+                <change who="#line-tofte" when="2020-12-15T10:19:56.094Z" type="text-version" status="0.0.4" xml:id="UT22084-068-002-72">
+                    <desc>Auto (update-contributors)</desc>
+                </change>
+                <change who="#line-tofte" when="2021-04-29T10:48:43.095Z" type="translation-status" status="2.g" xml:id="UT22084-068-002-73">
+                    <desc>2.g</desc>
+                </change>
+                <change who="#line-tofte" when="2021-04-29T10:48:43.095Z" type="text-version" status="0.0.5" xml:id="UT22084-068-002-74">
+                    <desc>Auto (update-publication-status)</desc>
+                </change>
+                <change who="#line-tofte" when="2021-09-28T08:51:36.797Z" type="translation-status" status="2.f" xml:id="UT22084-068-002-75">
+                    <desc>2.f</desc>
+                </change>
+                <change who="#line-tofte" when="2021-09-28T08:51:36.797Z" type="text-version" status="0.0.6" xml:id="UT22084-068-002-76">
+                    <desc>Auto (update-publication-status)</desc>
+                </change>
+                <change who="#line-tofte" when="2021-09-28T08:51:59.066Z" type="text-version" status="0.0.7" xml:id="UT22084-068-002-77">
+                    <desc>Auto (update-contributors)</desc>
+                </change>
+                <change who="#line-tofte" when="2021-12-07T10:35:45.442Z" type="translation-status" status="2.d" xml:id="UT22084-068-002-78">
+                    <desc>2.d</desc>
+                </change>
+                <change who="#line-tofte" when="2021-12-07T10:35:45.442Z" type="text-version" status="0.0.8" xml:id="UT22084-068-002-79">
+                    <desc>Auto (update-publication-status)</desc>
+                </change>
+                <change who="#line-tofte" when="2021-12-07T11:08:03.594Z" type="text-version" status="0.0.9" xml:id="UT22084-068-002-80">
+                    <desc>Auto (update-contributors)</desc>
+                </change>
+                <change who="#line-tofte" when="2022-01-03T14:58:36.101Z" type="translation-status" status="2.b" xml:id="UT22084-068-002-81">
+                    <desc>2.b</desc>
+                </change>
+                <change who="#line-tofte" when="2022-01-03T14:58:36.101Z" type="text-version" status="0.0.10" xml:id="UT22084-068-002-82">
+                    <desc>Auto (update-publication-status)</desc>
+                </change>
+                <change who="#line-tofte" when="2022-01-18T16:26:24.473Z" type="text-version" status="0.0.11" xml:id="UT22084-068-002-83">
+                    <desc>Auto (update-contributors)</desc>
+                </change>
+                <change who="#line-tofte" when="2022-01-18T16:27:27.207Z" type="translation-status" status="2.a" xml:id="UT22084-068-002-84">
+                    <desc>2.a</desc>
+                </change>
+                <change who="#line-tofte" when="2022-01-18T16:27:27.207Z" type="text-version" status="0.0.12" xml:id="UT22084-068-002-85">
+                    <desc>Auto (update-publication-status)</desc>
+                </change>
+                <change who="#line-tofte" when="2022-01-28T13:34:42.483Z" type="translation-status" status="2" xml:id="UT22084-068-002-86">
+                    <desc>2</desc>
+                </change>
+                <change who="#line-tofte" when="2022-01-28T13:34:42.483Z" type="text-version" status="0.0.2" xml:id="UT22084-068-002-87">
+                    <desc>Auto (update-publication-status)</desc>
+                </change>
+                <change who="#line-tofte" when="2022-04-12T09:56:00.342Z" type="text-version" status="0.0.3" xml:id="UT22084-068-002-88">
+                    <desc>Auto (update-contributors)</desc>
+                </change>
+                <change who="#line-tofte" when="2022-04-13T07:15:11.626Z" type="text-version" status="0.0.4" xml:id="UT22084-068-002-89">
+                    <desc>Auto (update-contributors)</desc>
+                </change>
+                <change who="#line-tofte" when="2022-04-13T07:15:26.76Z" type="text-version" status="0.0.5" xml:id="UT22084-068-002-90">
+                    <desc>Auto (update-contributors)</desc>
+                </change>
+                <change who="#line-tofte" when="2022-04-21T08:32:22.235Z" type="text-version" status="0.0.6" xml:id="UT22084-068-002-91">
+                    <desc>Auto (update-contributors)</desc>
+                </change>
+                <change who="#sameer" when="2022-04-29T07:20:17.435Z" type="translation-status" status="1.a" xml:id="UT22084-068-002-92">
+                    <desc>1.a</desc>
+                </change>
+                <change who="#sameer" when="2022-04-29T07:20:17.435Z" type="text-version" status="1.0.0" xml:id="UT22084-068-002-93">
+                    <desc>First published version</desc>
+                </change>
+                <change who="#sameer" when="2022-04-29T07:25:11.541Z" type="text-version" status="1.0.1" xml:id="UT22084-068-002-94">
+                    <desc>1.0.1</desc>
+                </change>
+                <change who="#sameer" when="2022-04-29T07:31:51.166Z" type="text-version" status="1.0.2" xml:id="UT22084-068-002-95">
+                    <desc>1.0.2</desc>
+                </change>
+                <change who="#martina-cotter" when="2022-05-11T20:09:16.672Z" type="text-version" status="1.0.3" xml:id="UT22084-068-002-96">
+                    <desc>Added pending links.</desc>
+                </change>
+                <change who="#martina-cotter" when="2022-05-12T13:00:30.694Z" type="text-version" status="1.0.4" xml:id="UT22084-068-002-97">
+                    <desc>Added pending links.</desc>
+                </change>
+                <change who="#cabie-sim" when="2022-06-29T16:15:00.434Z" type="text-version" status="1.0.5" xml:id="UT22084-068-002-98">
+                    <desc>Auto (update-titles)</desc>
+                </change>
+                <change who="#celso" when="2023-01-16T16:58:52.361Z" type="text-version" status="1.0.6" xml:id="UT22084-068-002-99">
+                    <desc>Auto (script-increment-version-published)</desc>
+                </change>
+                <change who="#celso" when="2023-01-18T16:58:06.914Z" type="text-version" status="1.0.7" xml:id="UT22084-068-002-100">
+                    <desc>Auto (remove-tid-from-back-list-items)</desc>
+                </change>
+                <change who="#sameer" when="2023-06-20T06:48:03.767Z" type="translation-status" status="1" xml:id="UT22084-068-002-101">
+                    <desc>1</desc>
+                </change>
+                <change who="#sameer" when="2023-06-20T06:48:03.767Z" type="text-version" status="1.0.8" xml:id="UT22084-068-002-102">
+                    <desc>Included in App v 2.0</desc>
+                </change>
+                <change who="#admin" when="2023-07-30T22:39:48.323Z" type="text-version" status="1.0.9" xml:id="UT22084-068-002-103">
+                    <desc>TEI migrated to 2.19.0</desc>
+                </change>
+                <change who="#celso" when="2023-10-13T11:48:10.305Z" type="text-version" status="1.0.10" xml:id="UT22084-068-002-104">
+                    <desc>reapplied capital letters in Wylie and covert to TibUni-glossary</desc>
+                </change>
+                <change who="#celso" when="2025-01-27T14:57:45.608Z" type="text-version" status="1.0.11" xml:id="UT22084-068-002-105">
+                    <desc>changed dandas in Skt. to vertical bars</desc>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+    </teiHeader>
 
-                        <sourceDesc>
-                                <bibl key="toh268" type="text">
-                                        <ref>Toh 268</ref>
-                                        <biblScope>Degé Kangyur, vol. 68, (mdo sde, ya), folios
-                                                5.b–7.a</biblScope>
-                                        <location work="UT4CZ5369" count-pages="4">
-                                                <volume number="68" start-page="10" end-page="13"/>
-                                        </location>
-                                        <idno parent-id="O1JC114941JC14668" work="http://read.84000.co/sections"/>
-                                        <idno source-id="O1JC114941JC11926" work="W22084"/>
-                                </bibl>
-                        </sourceDesc>
-                        <notesStmt>
+    <text>
+        <front>
+            <div type="summary" xml:id="UT22084-068-002-summary">
+                <head type="summary" tid="1">Summary</head>
+                <milestone unit="chunk" xml:id="UT22084-068-002-1"/>
+                <p tid="2">While the Buddha is staying in the kingdom of Magadha with an assembly of countless
+                    bodhisattvas, the bodhisattva King of the Inconceivable gives a teaching on the relativity
+                    of time between different buddhafields. Eleven buddhafields are enumerated, with an eon in
+                    the first being equivalent to a day in the following buddhafield, where an eon is, in
+                    turn, the equivalent of a day in the next, and so forth.</p>
+            </div>
+            <div type="acknowledgment" xml:id="UT22084-068-002-acknowledgment">
+                <head type="acknowledgment" tid="3">Acknowledgements</head>
+                <milestone unit="chunk" xml:id="UT22084-068-002-2"/>
+                <p tid="4">Translated, edited, and finalized by the Subhashita Translation Group. The
+                    translation was produced by Lowell Cook, who also wrote the introduction. Benjamin Ewing
+                    checked the translation against the Tibetan and edited the text and introduction.</p>
 
-                                
+                <p tid="5">The translation was completed under the patronage and supervision of 84000:
+                    Translating the Words of the Buddha.</p>
+            </div>
 
-                                
+            <div type="introduction" xml:id="UT22084-068-002-introduction">
+                <head type="introduction" tid="8">Introduction</head>
+                <div type="section" xml:id="UT22084-068-002-introduction-1">
 
-                                <note type="updated" update="translation-status" value="3" date-time="2020-11-12T11:14:44.365Z" user="line-tofte">3</note>
-
-                                <note type="updated" update="text-version" value="0.0.1" date-time="2020-11-12T11:14:44.365Z" user="line-tofte">0.0.1</note>
-
-                                <note type="updated" update="text-version" value="0.0.2" date-time="2020-11-12T11:15:10.892Z" user="line-tofte">Auto
-                                        (update-contributors)</note>
-
-                                <note type="updated" update="translation-status" value="2.h" date-time="2020-12-15T10:19:31.456Z" user="line-tofte">2.h</note>
-
-                                <note type="updated" update="text-version" value="0.0.3" date-time="2020-12-15T10:19:31.456Z" user="line-tofte">Auto
-                                        (update-publication-status)</note>
-
-                                <note type="updated" update="text-version" value="0.0.4" date-time="2020-12-15T10:19:56.094Z" user="line-tofte">Auto
-                                        (update-contributors)</note>
-
-                                <note type="updated" update="translation-status" value="2.g" date-time="2021-04-29T10:48:43.095Z" user="line-tofte">2.g</note>
-
-                                <note type="updated" update="text-version" value="0.0.5" date-time="2021-04-29T10:48:43.095Z" user="line-tofte">Auto
-                                        (update-publication-status)</note>
-
-                                <note type="updated" update="translation-status" value="2.f" date-time="2021-09-28T08:51:36.797Z" user="line-tofte">2.f</note>
-
-                                <note type="updated" update="text-version" value="0.0.6" date-time="2021-09-28T08:51:36.797Z" user="line-tofte">Auto
-                                        (update-publication-status)</note>
-
-                                <note type="updated" update="text-version" value="0.0.7" date-time="2021-09-28T08:51:59.066Z" user="line-tofte">Auto
-                                        (update-contributors)</note>
-
-                                <note type="updated" update="translation-status" value="2.d" date-time="2021-12-07T10:35:45.442Z" user="line-tofte">2.d</note>
-
-                                <note type="updated" update="text-version" value="0.0.8" date-time="2021-12-07T10:35:45.442Z" user="line-tofte">Auto
-                                        (update-publication-status)</note>
-
-                                <note type="updated" update="text-version" value="0.0.9" date-time="2021-12-07T11:08:03.594Z" user="line-tofte">Auto
-                                        (update-contributors)</note>
-
-                                <note type="updated" update="translation-status" value="2.b" date-time="2022-01-03T14:58:36.101Z" user="line-tofte">2.b</note>
-
-                                <note type="updated" update="text-version" value="0.0.10" date-time="2022-01-03T14:58:36.101Z" user="line-tofte">Auto
-                                        (update-publication-status)</note>
-
-                                <note type="updated" update="text-version" value="0.0.11" date-time="2022-01-18T16:26:24.473Z" user="line-tofte">Auto
-                                        (update-contributors)</note>
-
-                                <note type="updated" update="translation-status" value="2.a" date-time="2022-01-18T16:27:27.207Z" user="line-tofte">2.a</note>
-
-                                <note type="updated" update="text-version" value="0.0.12" date-time="2022-01-18T16:27:27.207Z" user="line-tofte">Auto
-                                        (update-publication-status)</note>
-
-                                <note type="updated" update="translation-status" value="2" date-time="2022-01-28T13:34:42.483Z" user="line-tofte">2</note>
-
-                                <note type="updated" update="text-version" value="0.0.2" date-time="2022-01-28T13:34:42.483Z" user="line-tofte">Auto
-                                        (update-publication-status)</note>
-
-                                <note type="updated" update="text-version" value="0.0.3" date-time="2022-04-12T09:56:00.342Z" user="line-tofte">Auto
-                                        (update-contributors)</note>
-
-                                <note type="updated" update="text-version" value="0.0.4" date-time="2022-04-13T07:15:11.626Z" user="line-tofte">Auto (update-contributors)</note>
-
-                                <note type="updated" update="text-version" value="0.0.5" date-time="2022-04-13T07:15:26.76Z" user="line-tofte">Auto (update-contributors)</note>
-
-                                <note type="updated" update="text-version" value="0.0.6" date-time="2022-04-21T08:32:22.235Z" user="line-tofte">Auto (update-contributors)</note>
-
-                                <note type="updated" update="translation-status" value="1.a" date-time="2022-04-29T07:20:17.435Z" user="sameer">1.a</note>
-
-                                <note type="updated" update="text-version" value="1.0.0" date-time="2022-04-29T07:20:17.435Z" user="sameer">First published version</note>
-
-                                <note type="updated" update="text-version" value="1.0.1" date-time="2022-04-29T07:25:11.541Z" user="sameer">1.0.1</note>
-
-                                <note type="updated" update="text-version" value="1.0.2" date-time="2022-04-29T07:31:51.166Z" user="sameer">1.0.2</note>
-
-                                <note type="updated" update="text-version" value="1.0.3" date-time="2022-05-11T20:09:16.672Z" user="martina-cotter">Added pending links.</note>
-
-                                <note type="updated" update="text-version" value="1.0.4" date-time="2022-05-12T13:00:30.694Z" user="martina-cotter">Added pending links.</note>
-                        <note type="lastUpdated" date-time="2023-06-20T06:48:08.057Z" user="admin">20/06/2023 06:48:08</note>    <note type="updated" update="text-version" value="1.0.5" date-time="2022-06-29T16:15:00.434Z" user="cabie-sim">Auto (update-titles)</note>    <note type="updated" update="text-version" value="1.0.6" date-time="2023-01-16T16:58:52.361Z" user="celso">Auto (script-increment-version-published)</note>    <note type="updated" update="text-version" value="1.0.7" date-time="2023-01-18T16:58:06.914Z" user="celso">Auto (remove-tid-from-back-list-items)</note>    <note type="updated" update="translation-status" value="1" date-time="2023-06-20T06:48:03.767Z" user="sameer">1</note>    <note type="updated" update="text-version" value="1.0.8" date-time="2023-06-20T06:48:03.767Z" user="sameer">Included in App v 2.0</note>
-            </notesStmt>
-                </fileDesc>
-        </teiHeader>
-
-        <text>
-                <front>
-                        <div type="summary">
-                                <head type="summary" tid="1">Summary</head>
-                                <milestone unit="chunk" xml:id="UT22084-068-002-1"/>
-                                <p tid="2">While the Buddha is staying in the kingdom of Magadha
-                                        with an assembly of countless bodhisattvas, the bodhisattva
-                                        King of the Inconceivable gives a teaching on the relativity
-                                        of time between different buddhafields. Eleven buddhafields
-                                        are enumerated, with an eon in the first being equivalent to
-                                        a day in the following buddhafield, where an eon is, in
-                                        turn, the equivalent of a day in the next, and so forth.</p>
-                        </div>
-                        <div type="acknowledgment">
-                                <head type="acknowledgment" tid="3">Acknowledgements</head>
-                                <milestone unit="chunk" xml:id="UT22084-068-002-2"/>
-                                <p tid="4">Translated, edited, and finalized by the Subhashita
-                                        Translation Group. The translation was produced by Lowell
-                                        Cook, who also wrote the introduction. Benjamin Ewing checked
-                                        the translation against the Tibetan and edited the text and
-                                        introduction.</p>
-
-                                <p tid="5">The translation was completed under the patronage and
-                                        supervision of 84000: Translating the Words of the
-                                        Buddha.</p>
-                        </div>
-
-                        <div type="introduction">
-                                <head type="introduction" tid="8">Introduction</head>
-                                <div type="section" xml:id="UT22084-068-002-introduction-1">
-
-                                        <milestone unit="chunk" xml:id="UT22084-068-002-3"/>
-                                        <p tid="10">
-                        <title xml:lang="en">The Sūtra of King of the
-                                                  Inconceivable</title> takes place in the kingdom
-                                                of Magadha where the Buddha is dwelling amid an
-                                                incalculable assembly of bodhisattvas. Among the
-                                                bodhisattvas is the titular King of the
-                                                Inconceivable, who offers a discourse on the
-                                                relativity of time between buddhafields. He
-                                                enumerates eleven buddhafields, with an eon in the
-                                                first being equivalent to a day in the following
-                                                buddhafield, where an eon is, in turn, the
-                                                equivalent of a day in the next, and so forth. The
-                                                sūtra thus presents a hierarchy of buddhafields that
-                                                begins with our world and culminates with the
-                                                paramount buddhafield, Padmaśrī. This language of
-                                                incredibly vast scales of time has the effect of testing the
-                                                limits of human conception, thereby demonstrating
-                                                that the qualities of the buddhas and their
-                                                buddhafields are beyond quantification or
-                                                conceptualization. King of the Inconceivable
-                                                concludes his discourse by emphasizing its rarity,
-                                                stating that the names of the buddhas he enumerated
-                                                can only be heard by bodhisattvas with certain
-                                                unique qualities. Upon completion of the discourse,
-                                                the gathering of bodhisattvas and the entire world
-                                                praise the teaching, which is said to have been
-                                                taught by both the Blessed One and King of the
-                                                Inconceivable. </p>
-                                        <milestone unit="chunk" xml:id="UT22084-068-002-4"/>
-                                        <p tid="11">
-                        <title xml:lang="en">The Sūtra of King of the
-                                                  Inconceivable</title> is nearly identical to 
-                                                “The Chapter on the Scale of Life,” the thirty-seventh chapter of the <title xml:lang="en">Ornaments of the Buddhas</title>
-                                                (Toh 44, Skt. <title xml:lang="Sa-Ltn">Buddhāvataṃsaka</title>),
-                                                <note place="end" xml:id="UT22084-068-002-55">See Subhashita Translation Group, trans., <title xml:lang="en">
+                    <milestone unit="chunk" xml:id="UT22084-068-002-3"/>
+                    <p tid="10">
+                        <title xml:lang="en">The Sūtra of King of the Inconceivable</title> takes
+                        place in the kingdom of Magadha where the Buddha is dwelling amid an incalculable
+                        assembly of bodhisattvas. Among the bodhisattvas is the titular King of the
+                        Inconceivable, who offers a discourse on the relativity of time between buddhafields.
+                        He enumerates eleven buddhafields, with an eon in the first being equivalent to a day
+                        in the following buddhafield, where an eon is, in turn, the equivalent of a day in the
+                        next, and so forth. The sūtra thus presents a hierarchy of buddhafields that begins
+                        with our world and culminates with the paramount buddhafield, Padmaśrī. This language
+                        of incredibly vast scales of time has the effect of testing the limits of human
+                        conception, thereby demonstrating that the qualities of the buddhas and their
+                        buddhafields are beyond quantification or conceptualization. King of the Inconceivable
+                        concludes his discourse by emphasizing its rarity, stating that the names of the
+                        buddhas he enumerated can only be heard by bodhisattvas with certain unique qualities.
+                        Upon completion of the discourse, the gathering of bodhisattvas and the entire world
+                        praise the teaching, which is said to have been taught by both the Blessed One and
+                        King of the Inconceivable. </p>
+                    <milestone unit="chunk" xml:id="UT22084-068-002-4"/>
+                    <p tid="11">
+                        <title xml:lang="en">The Sūtra of King of the Inconceivable</title> is nearly
+                        identical to “The Chapter on the Scale of Life,” the thirty-seventh chapter of the
+                            <title xml:lang="en">Ornaments of the Buddhas</title> (Toh 44, Skt. <title xml:lang="Sa-Ltn">Buddhāvataṃsaka</title>), <note place="end" xml:id="UT22084-068-002-55">See Subhashita Translation Group, trans., <title xml:lang="en">
                                 <ref target="https://read.84000.co/translation/toh44-37.html">The Chapter on The Scale of Life</ref>
-                            </title>, Toh 44-37 (84000: Translating the Words of the Buddha, 2022).</note> 
-                                                and <title xml:lang="en">
-                                                  Expounding the Qualities of the Thus-Gone Ones’
-                                                  Buddhafields
-                                                </title> (Toh 104).<note place="end" xml:id="UT22084-068-002-57">See Subhashita Translation Group, trans., <title xml:lang="en">
-                                <ref target="https://read.84000.co/translation/toh104.html">Expounding the Qualities of the Thus-Gone Ones’ Buddhafields</ref>
-                            </title>, Toh 104 (84000: Translating the Words of the Buddha, 2022).</note> Of the three texts, <title xml:lang="en">The Sūtra of King of the
-                                                  Inconceivable</title> is more elaborate than
-                                                “The Chapter on the Scale of Life” in that it includes an opening narrative
-                                                (Skt. <foreign xml:lang="Sa-Ltn" type="term">nidāna</foreign>) and a conclusion. However,
-                                                whereas “The Chapter on the Scale of Life” and <title xml:lang="en">Expounding the Qualities of the Thus-Gone Ones’
-                                                  Buddhafields</title> explicitly reference the
-                                                names of the buddhafields and their buddhas, <title xml:lang="en">The Sūtra of King of the
-                                                  Inconceivable</title> gives only the names of the
-                                                buddhas in most instances. Though there is no extant
-                                                Sanskrit version of <title xml:lang="en">The Sūtra
-                                                  of King of the Inconceivable</title>, there is a
-                                                Sanskrit witness of <title xml:lang="en">Expounding the Qualities of the Thus-Gone Ones’
-                                                  Buddhafields</title> (Toh 104) titled <title xml:lang="Sa-Ltn">Ananta­buddha­kṣetra­guṇodbhāvana</title>, which
-                                                aligns closely with Toh 268 in terms of vocabulary
-                                                and structure.<note place="end" xml:id="UT22084-068-002-5"> This sūtra was
-                                                  edited and translated in Vinītā 2010.</note>
+                            </title>, Toh 44-37 (84000:
+                            Translating the Words of the Buddha, 2022).</note> and <title xml:lang="en">
+                            Expounding the Qualities of the Thus-Gone Ones’ Buddhafields </title> (Toh
+                            104).<note place="end" xml:id="UT22084-068-002-57">See Subhashita Translation
+                            Group, trans., <title xml:lang="en">
+                                <ref target="https://read.84000.co/translation/toh104.html">Expounding the
+                                    Qualities of the Thus-Gone Ones’ Buddhafields</ref>
+                            </title>, Toh 104
+                            (84000: Translating the Words of the Buddha, 2022).</note> Of the three texts,
+                            <title xml:lang="en">The Sūtra of King of the Inconceivable</title> is more
+                        elaborate than “The Chapter on the Scale of Life” in that it includes an opening
+                        narrative (Skt. <foreign xml:lang="Sa-Ltn" type="term">nidāna</foreign>) and a
+                        conclusion. However, whereas “The Chapter on the Scale of Life” and <title xml:lang="en">Expounding the Qualities of the Thus-Gone Ones’ Buddhafields</title>
+                        explicitly reference the names of the buddhafields and their buddhas, <title xml:lang="en">The Sūtra of King of the Inconceivable</title> gives only the names
+                        of the buddhas in most instances. Though there is no extant Sanskrit version of <title xml:lang="en">The Sūtra of King of the Inconceivable</title>, there is a Sanskrit
+                        witness of <title xml:lang="en">Expounding the Qualities of the Thus-Gone Ones’
+                            Buddhafields</title> (Toh 104) titled <title xml:lang="Sa-Ltn">Ananta­buddha­kṣetra­guṇodbhāvana</title>, which aligns closely with Toh 268 in
+                        terms of vocabulary and structure.<note place="end" xml:id="UT22084-068-002-5"> This
+                            sūtra was edited and translated in Vinītā 2010.</note>
                     </p>
-                                        <milestone unit="chunk" xml:id="UT22084-068-002-6"/>
-                                        <p tid="12">
-                        <title xml:lang="en">The Sūtra of King of the
-                                                  Inconceivable</title> lacks a colophon identifying
-                                                the translators, presenting a challenge to
-                                                establishing a date for the translation. The sūtra
-                                                is listed in both the Denkarma (Tib. <title xml:lang="Bo-Ltn">ldan/lhan dkar ma</title>) and
-                                                Phangthangma (Tib. <title xml:lang="Bo-Ltn">’phang
-                                                  thang ma</title>) catalogs, the two extant indexes
-                                                of translations from the Imperial Period (629–841
-                                                  <hi rend="small-caps">ce</hi>).<note place="end" xml:id="UT22084-068-002-7"> See Denkarma, folio
-                                                  299.b, and Herrmann-Pfandt, p. 116.</note> The
-                                                translation can thus be dated roughly to the early
-                                                ninth century, as the Denkarma catalog was first
-                                                compiled in 812, with additional titles added until
-                                                830. </p>
-                                        <milestone unit="chunk" xml:id="UT22084-068-002-8"/>
-                                        <p tid="13">The translation offered here is based on the
-                                                version found in the Degé Kangyur. Additionally, the
-                                                variant readings recorded in the Comparative Edition
-                                                (Tib. <title xml:lang="Bo-Ltn">dpe bsdur ma)</title>
-                                                and the Stok Palace Kangyurs were also consulted,
-                                                and “The Chapter on the Scale of Life” of the <title xml:lang="en">Ornaments of the Buddhas</title> and
-                                                  <title xml:lang="en">Expounding the Qualities of
-                                                  the Thus-Gone Ones’ Buddhafields</title> informed
-                                                the translation. <title xml:lang="en">The Sūtra of
-                                                  the Inconceivable King</title> has not been
-                                                translated into any Western language or received any
-                                                substantial scholarly attention. Where possible, the
-                                                Sanskrit names of buddhas and buddhafields have been
-                                                supplied by the <title xml:lang="Sa-Ltn">Ananta­buddha­kṣetra­guṇodbhāvana</title>.</p>
-                                </div>
-                        </div>
-                </front>
-                <body>
+                    <milestone unit="chunk" xml:id="UT22084-068-002-6"/>
+                    <p tid="12">
+                        <title xml:lang="en">The Sūtra of King of the Inconceivable</title> lacks a
+                        colophon identifying the translators, presenting a challenge to establishing a date
+                        for the translation. The sūtra is listed in both the Denkarma (Tib. <title xml:lang="Bo-Ltn">ldan/lhan dkar ma</title>) and Phangthangma (Tib. <title xml:lang="Bo-Ltn">’phang thang ma</title>) catalogs, the two extant indexes of
+                        translations from the Imperial Period (629–841 <hi rend="small-caps">ce</hi>).<note place="end" xml:id="UT22084-068-002-7"> See Denkarma, folio 299.b, and
+                            Herrmann-Pfandt, p. 116.</note> The translation can thus be dated roughly to the
+                        early ninth century, as the Denkarma catalog was first compiled in 812, with
+                        additional titles added until 830. </p>
+                    <milestone unit="chunk" xml:id="UT22084-068-002-8"/>
+                    <p tid="13">The translation offered here is based on the version found in the Degé
+                        Kangyur. Additionally, the variant readings recorded in the Comparative Edition (Tib.
+                            <title xml:lang="Bo-Ltn">dpe bsdur ma)</title> and the Stok Palace Kangyurs were
+                        also consulted, and “The Chapter on the Scale of Life” of the <title xml:lang="en">Ornaments of the Buddhas</title> and <title xml:lang="en">Expounding the
+                            Qualities of the Thus-Gone Ones’ Buddhafields</title> informed the translation.
+                            <title xml:lang="en">The Sūtra of the Inconceivable King</title> has not been
+                        translated into any Western language or received any substantial scholarly attention.
+                        Where possible, the Sanskrit names of buddhas and buddhafields have been supplied by
+                        the <title xml:lang="Sa-Ltn">Ananta­buddha­kṣetra­guṇodbhāvana</title>.</p>
+                </div>
+            </div>
+        </front>
+        <body>
 
 
 
-                        <div type="translation">
-                                <head type="translation" tid="14"> The Translation </head>
-                                <head type="titleHon" tid="15">The Noble Mahāyāna Sūtra</head>
-                                <head type="titleMain" tid="16">The Sūtra of King of the
-                                        Inconceivable</head>
+            <div type="translation" xml:id="UT22084-068-002-translation">
+                <head type="translation"> The Translation </head>
+                <head type="titleHon" tid="15">The Noble Mahāyāna Sūtra</head>
+                <head type="titleMain" tid="16">The Sūtra of King of the Inconceivable</head>
 
-                                <div type="section" xml:id="UT22084-068-002-section-1">
+                <div type="section" xml:id="UT22084-068-002-section-1">
 
-                                        <milestone unit="chunk" xml:id="UT22084-068-002-9"/>
-                                        <p tid="20">
-                                                <ref cRef="F.5.b" type="folio" xml:id="UT22084-068-002-10"/> Homage to all
-                                                buddhas and bodhisattvas.</p>
-                                        <lb/>
-                                        <p tid="22">Thus did I hear at one time. The Blessed One was
-                                                dwelling at the seat of awakening, a secluded
-                                                hermitage in the land of Magadha, where he was
-                                                seated upon a lion throne in the center of a lotus,
-                                                inlaid with vajras and precious jewels. He was
-                                                accompanied by a great bodhisattva assembly of as
-                                                many bodhisattva great beings as there are atoms in
-                                                the millions of billions of utterly indescribable
-                                                buddhafields throughout the ten directions. </p>
-                                        <milestone unit="chunk" xml:id="UT22084-068-002-11"/>
-                                        <p tid="23">The bodhisattva great being King of the
-                                                Inconceivable addressed those bodhisattva great
-                                                beings: “O children of the Victorious One, a single
-                                                eon in this Sahā world, the buddhafield of the blessed, 
-                                                thus-gone, worthy, and completely perfect
-                                                Buddha Śākyamuni, is but a single day in the realm
-                                                of Sukhāvatī, the buddhafield of the 
-                                                thus-gone, worthy, and completely perfect Buddha
-                                                Amitāyus. <ref cRef="F.6.a" type="folio" xml:id="UT22084-068-002-12"/>
+                    <milestone unit="chunk" xml:id="UT22084-068-002-9"/>
+                    <p tid="20">
+                        <ref cRef="F.5.b" type="folio" xml:id="UT22084-068-002-10"/> Homage to all buddhas and
+                        bodhisattvas.</p>
+                    <lb/>
+                    <p tid="22">Thus did I hear at one time. The Blessed One was dwelling at the seat of
+                        awakening, a secluded hermitage in the land of Magadha, where he was seated upon a
+                        lion throne in the center of a lotus, inlaid with vajras and precious jewels. He was
+                        accompanied by a great bodhisattva assembly of as many bodhisattva great beings as
+                        there are atoms in the millions of billions of utterly indescribable buddhafields
+                        throughout the ten directions. </p>
+                    <milestone unit="chunk" xml:id="UT22084-068-002-11"/>
+                    <p tid="23">The bodhisattva great being King of the Inconceivable addressed those
+                        bodhisattva great beings: “O children of the Victorious One, a single eon in this Sahā
+                        world, the buddhafield of the blessed, thus-gone, worthy, and completely perfect
+                        Buddha Śākyamuni, is but a single day in the realm of Sukhāvatī, the buddhafield of
+                        the thus-gone, worthy, and completely perfect Buddha Amitāyus. <ref cRef="F.6.a" type="folio" xml:id="UT22084-068-002-12"/>
                     </p>
-                                        <milestone unit="chunk" xml:id="UT22084-068-002-13"/>
-                                        <p tid="24">“O children of the Victorious One, a single eon
-                                                in the realm of Sukhāvatī, the buddhafield of the
-                                                thus-gone, worthy, and completely perfect
-                                                Buddha Amitāyus, is but a single day in the
-                                                buddhafield of the thus-gone, worthy, and
-                                                completely perfect Buddha Vajrapramardin. </p>
-                                        <milestone unit="chunk" xml:id="UT22084-068-002-14"/>
-                                        <p tid="25">“O children of the Victorious One, a single eon
-                                                in the buddhafield of the thus-gone,
-                                                worthy, and completely perfect Buddha Vajrapramardin
-                                                is but a single day in the buddhafield of the
-                                                thus-gone, worthy, and completely perfect
-                                                Buddha Lotus Body Blooming from Dense Light Rays. </p>
-                                        <milestone unit="chunk" xml:id="UT22084-068-002-15"/>
-                                        <p tid="26">“O children of the Victorious One, a single eon
-                                                in the buddhafield of the thus-gone,
-                                                worthy, and completely perfect Buddha Lotus Body
-                                                Blooming from Dense Light Rays is but a single day
-                                                in the buddhafield of the thus-gone,
-                                                worthy, and completely perfect Buddha
-                                                Dharmadhvaja.</p>
-                                        <milestone unit="chunk" xml:id="UT22084-068-002-16"/>
-                                        <p tid="27">“O children of the Victorious One, an eon in the
-                                                buddhafield of the thus-gone, worthy, and
-                                                completely perfect Buddha Dharmadhvaja is but a
-                                                single day in the buddhafield of the
-                                                thus-gone, worthy, and completely perfect Buddha
-                                                Siṃha.</p>
-                                        <milestone unit="chunk" xml:id="UT22084-068-002-17"/>
-                                        <p tid="28">“O children of the Victorious One, a single eon
-                                                in the buddhafield of the thus-gone,
-                                                worthy, and completely perfect Buddha Siṃha is but a
-                                                single day in the buddhafield of the
-                                                thus-gone, worthy, and completely perfect Buddha
-                                                Vairocana.</p>
-                                        <milestone unit="chunk" xml:id="UT22084-068-002-18"/>
-                                        <p tid="29">“O children of the Victorious One, a single eon
-                                                in the buddhafield of the thus-gone,
-                                                worthy, and completely perfect Buddha Vairocana is
-                                                but a single day in the buddhafield of the
-                                                thus-gone, worthy, and completely perfect Buddha
-                                                Flower Body Blooming from the Light of the Dharma.
-                                                  <ref cRef="F.6.b" type="folio" xml:id="UT22084-068-002-19"/>
+                    <milestone unit="chunk" xml:id="UT22084-068-002-13"/>
+                    <p tid="24">“O children of the Victorious One, a single eon in the realm of Sukhāvatī, the
+                        buddhafield of the thus-gone, worthy, and completely perfect Buddha Amitāyus, is but a
+                        single day in the buddhafield of the thus-gone, worthy, and completely perfect Buddha
+                        Vajrapramardin. </p>
+                    <milestone unit="chunk" xml:id="UT22084-068-002-14"/>
+                    <p tid="25">“O children of the Victorious One, a single eon in the buddhafield of the
+                        thus-gone, worthy, and completely perfect Buddha Vajrapramardin is but a single day in
+                        the buddhafield of the thus-gone, worthy, and completely perfect Buddha Lotus Body
+                        Blooming from Dense Light Rays. </p>
+                    <milestone unit="chunk" xml:id="UT22084-068-002-15"/>
+                    <p tid="26">“O children of the Victorious One, a single eon in the buddhafield of the
+                        thus-gone, worthy, and completely perfect Buddha Lotus Body Blooming from Dense Light
+                        Rays is but a single day in the buddhafield of the thus-gone, worthy, and completely
+                        perfect Buddha Dharmadhvaja.</p>
+                    <milestone unit="chunk" xml:id="UT22084-068-002-16"/>
+                    <p tid="27">“O children of the Victorious One, an eon in the buddhafield of the thus-gone,
+                        worthy, and completely perfect Buddha Dharmadhvaja is but a single day in the
+                        buddhafield of the thus-gone, worthy, and completely perfect Buddha Siṃha.</p>
+                    <milestone unit="chunk" xml:id="UT22084-068-002-17"/>
+                    <p tid="28">“O children of the Victorious One, a single eon in the buddhafield of the
+                        thus-gone, worthy, and completely perfect Buddha Siṃha is but a single day in the
+                        buddhafield of the thus-gone, worthy, and completely perfect Buddha Vairocana.</p>
+                    <milestone unit="chunk" xml:id="UT22084-068-002-18"/>
+                    <p tid="29">“O children of the Victorious One, a single eon in the buddhafield of the
+                        thus-gone, worthy, and completely perfect Buddha Vairocana is but a single day in the
+                        buddhafield of the thus-gone, worthy, and completely perfect Buddha Flower Body
+                        Blooming from the Light of the Dharma. <ref cRef="F.6.b" type="folio" xml:id="UT22084-068-002-19"/>
                     </p>
-                                        <milestone unit="chunk" xml:id="UT22084-068-002-20"/>
-                                        <p tid="30">“O children of the Victorious One, a single eon
-                                                in the buddhafield of the thus-gone,
-                                                worthy, and completely perfect Buddha Flower Body
-                                                Blooming from the Light of the Dharma is but a
-                                                single day in the buddhafield of the
-                                                thus-gone, worthy, and completely perfect Buddha
-                                                King of Wisdom Light. </p>
-                                        <milestone unit="chunk" xml:id="UT22084-068-002-21"/>
-                                        <p tid="31">“O children of the Victorious One, a single eon
-                                                in the buddhafield of the thus-gone,
-                                                worthy, and completely perfect Buddha King of Wisdom
-                                                Light is but a single day in the buddhafield of the
-                                                thus-gone, worthy, and completely perfect
-                                                Buddha Candrabuddhi.</p>
-                                        <milestone unit="chunk" xml:id="UT22084-068-002-22"/>
-                                        <p tid="32">“O children of the Victorious One, continuing
-                                                with this system of calculating eons, after a
-                                                distance equal to the total atoms in ten oceans of
-                                                buddhafield realms, we arrive at the equivalent of a single day in the
-                                                realm of Padmaśrī, the buddhafield where the
-                                                blessed, thus-gone, worthy, and completely perfect
-                                                buddha, the victorious Bhadraśrī resides.</p>
-                                        <milestone unit="chunk" xml:id="UT22084-068-002-23"/>
-                                        <p tid="33">“O children of the Victorious One, the names
-                                                of these thus-gone, worthy, and completely
-                                                perfect buddhas will be heard by bodhisattva great
-                                                beings who uphold the conduct of the bodhisattva great being Samantabhadra and who are under the care
-                                                of a spiritual teacher. They will not, however, be
-                                                heard by anyone else.”</p>
-                                        <milestone unit="chunk" xml:id="UT22084-068-002-24"/>
-                                        <p tid="34">After the Blessed One had spoken these
-                                                  words,<note place="end" xml:id="UT22084-068-002-25"> As indicated at the
-                                                  beginning of the sūtra, it was the bodhisattva
-                                                  King of the Inconceivable who delivered this
-                                                  discourse. Nonetheless, “the Blessed One” appears
-                                                  to refer to Śākyamuni here. </note> the
-                                                bodhisattva great being King of the Inconceivable,
-                                                and the entire retinue of bodhisattva great beings
-                                                and the whole world with its gods, humans, asuras,
-                                                and gandharvas, all rejoiced <ref cRef="F.7.a" type="folio" xml:id="UT22084-068-002-26"/> and
-                                                praised the words of the Blessed One and the
-                                                bodhisattva great being King of the
-                                                  Inconceivable.<note place="end" xml:id="UT22084-068-002-27"> Based on the Tibetan
-                                                  syntax, it does appear that King of the
-                                                  Inconceivable is praising his own words in this
-                                                  passage. </note>
+                    <milestone unit="chunk" xml:id="UT22084-068-002-20"/>
+                    <p tid="30">“O children of the Victorious One, a single eon in the buddhafield of the
+                        thus-gone, worthy, and completely perfect Buddha Flower Body Blooming from the Light
+                        of the Dharma is but a single day in the buddhafield of the thus-gone, worthy, and
+                        completely perfect Buddha King of Wisdom Light. </p>
+                    <milestone unit="chunk" xml:id="UT22084-068-002-21"/>
+                    <p tid="31">“O children of the Victorious One, a single eon in the buddhafield of the
+                        thus-gone, worthy, and completely perfect Buddha King of Wisdom Light is but a single
+                        day in the buddhafield of the thus-gone, worthy, and completely perfect Buddha
+                        Candrabuddhi.</p>
+                    <milestone unit="chunk" xml:id="UT22084-068-002-22"/>
+                    <p tid="32">“O children of the Victorious One, continuing with this system of calculating
+                        eons, after a distance equal to the total atoms in ten oceans of buddhafield realms,
+                        we arrive at the equivalent of a single day in the realm of Padmaśrī, the buddhafield
+                        where the blessed, thus-gone, worthy, and completely perfect buddha, the victorious
+                        Bhadraśrī resides.</p>
+                    <milestone unit="chunk" xml:id="UT22084-068-002-23"/>
+                    <p tid="33">“O children of the Victorious One, the names of these thus-gone, worthy, and
+                        completely perfect buddhas will be heard by bodhisattva great beings who uphold the
+                        conduct of the bodhisattva great being Samantabhadra and who are under the care of a
+                        spiritual teacher. They will not, however, be heard by anyone else.”</p>
+                    <milestone unit="chunk" xml:id="UT22084-068-002-24"/>
+                    <p tid="34">After the Blessed One had spoken these words,<note place="end" xml:id="UT22084-068-002-25"> As indicated at the beginning of the sūtra, it was
+                            the bodhisattva King of the Inconceivable who delivered this discourse.
+                            Nonetheless, “the Blessed One” appears to refer to Śākyamuni here. </note> the
+                        bodhisattva great being King of the Inconceivable, and the entire retinue of
+                        bodhisattva great beings and the whole world with its gods, humans, asuras, and
+                        gandharvas, all rejoiced <ref cRef="F.7.a" type="folio" xml:id="UT22084-068-002-26"/>
+                        and praised the words of the Blessed One and the bodhisattva great being King of the
+                            Inconceivable.<note place="end" xml:id="UT22084-068-002-27"> Based on the Tibetan
+                            syntax, it does appear that King of the Inconceivable is praising his own words in
+                            this passage. </note>
                     </p>
-                                        <milestone unit="chunk" xml:id="UT22084-068-002-28"/>
-                                        <trailer tid="35">This completes the noble Mahāyāna sūtra
-                                                  “<title xml:lang="en">The Sūtra of King of the
-                                                  Inconceivable</title>.”</trailer>
-                                </div>
+                    <milestone unit="chunk" xml:id="UT22084-068-002-28"/>
+                    <trailer tid="35">This completes the noble Mahāyāna sūtra “<title xml:lang="en">The Sūtra
+                            of King of the Inconceivable</title>.”</trailer>
+                </div>
 
 
 
-                        </div>
-                </body>
-                <back>
-                        <div type="notes">
-                                <head type="notes" tid="38">Notes</head>
+            </div>
+        </body>
+        <back>
+            <div type="notes" xml:id="UT22084-068-002-notes">
+                <head type="notes" tid="38">Notes</head>
 
-                        </div>
-                        <div type="listBibl">
-                                <head type="listBibl" tid="40">Bibliography</head>
-                                <div type="section" xml:id="UT22084-068-002-listBibl-1">
+            </div>
+            <div type="listBibl" xml:id="UT22084-068-002-listBibl">
+                <head type="listBibl" tid="40">Bibliography</head>
+                <div type="section" xml:id="UT22084-068-002-listBibl-1">
 
-                                        <bibl xml:id="UT22084-068-002-29">
-                        <title xml:lang="Bo-Ltn">’phags pa bsam gyis mi khyab pa’i rgyal po’i
-                                                  mdo</title> (<title xml:lang="Sa-Ltn">Āryācintya­rāja­sūtra­nāma­mahāyāna­sūtra</title>).
-                                                Toh 268, Degé Kangyur vol. 68 (mdo se, ya), folios
-                                                5.b–7.a.</bibl>
-                                        <bibl xml:id="UT22084-068-002-30">
-                        <title xml:lang="Bo-Ltn">’phags pa bsam gyis mi khyab pa’i rgyal po’i mdo
-                                                </title>(dpe bsdur ma) [Comparative Edition of the
-                                                Kangyur], krung go’i bod rig pa zhib ’jug ste gnas
-                                                kyi bka’ bstan dpe sdur khang (The Tibetan Tripitaka
-                                                Collation Bureau of the China Tibetology Research
-                                                Center). 108 volumes. Beijing: krung go’i bod rig pa
-                                                dpe skrun khang (China Tibetology Publishing House),
-                                                2006–9, vol. 68, pp. 13–16.</bibl>
-                                        <bibl xml:id="UT22084-068-002-31">
-                        <title xml:lang="Bo-Ltn">’phags pa bsam gyis mi khyab pa’i rgyal po’i
-                                                  mdo</title>. Stok 58. Stok Palace Kangyur (stog
-                                                pho brang bris ma). Leh: smanrtsis shesrig dpemzod,
-                                                1975–80, vol. 57 (mdo sde, cha), folios
-                                                151.a–153.a.</bibl>
-                                        <bibl xml:id="UT22084-068-002-32">Phangthangma (<title xml:lang="Bo-Ltn">dkar chag ’phang thang
-                                                  ma</title>). Beijing: mi rigs dpe skrun khang,
-                                                2003.</bibl>
-                                        <bibl xml:id="UT22084-068-002-33">Herrmann-Pfandt,
-                                                  Adelheid. <title xml:lang="de">Die lHan kar ma:
-                                                  ein früher Katalog der ins Tibetische übersetzten
-                                                  buddhistischen Texte</title>. Vienna: Verlag der
-                                                Österreichischen Akademie der Wissenschaften,
-                                                2008.</bibl>
-                                        <bibl xml:id="UT22084-068-002-34">Skilling, Peter and
-                                                Saerji. “ ‘O, Son of the Conqueror’: A note on
-                                                  <foreign xml:lang="Sa-Ltn" type="term">jinaputra</foreign> as a term of address in the
-                                                  <title xml:lang="Sa-Ltn">Buddhāvataṃsaka</title>
-                                                and in Mahāyāna sūtras.”<title xml:lang="en">Annual
-                                                  Report of The International Research Institute for
-                                                  Advanced Buddhology (ARIRIAB) at Soka
-                                                  University</title> 15 (2012): 127–30.</bibl>
-                                        <bibl xml:id="UT22084-068-002-56">Subhashita Translation Group, trans. <title xml:lang="en">
+                    <bibl xml:id="UT22084-068-002-29">
+                        <title xml:lang="Bo-Ltn">’phags pa bsam gyis mi khyab
+                            pa’i rgyal po’i mdo</title> (<title xml:lang="Sa-Ltn">Āryācintya­rāja­sūtra­nāma­mahāyāna­sūtra</title>). Toh 268, Degé Kangyur vol. 68
+                        (mdo se, ya), folios 5.b–7.a.</bibl>
+                    <bibl xml:id="UT22084-068-002-30">
+                        <title xml:lang="Bo-Ltn">’phags pa bsam gyis mi khyab
+                            pa’i rgyal po’i mdo </title>(dpe bsdur ma) [Comparative Edition of the Kangyur],
+                        krung go’i bod rig pa zhib ’jug ste gnas kyi bka’ bstan dpe sdur khang (The Tibetan
+                        Tripitaka Collation Bureau of the China Tibetology Research Center). 108 volumes.
+                        Beijing: krung go’i bod rig pa dpe skrun khang (China Tibetology Publishing House),
+                        2006–9, vol. 68, pp. 13–16.</bibl>
+                    <bibl xml:id="UT22084-068-002-31">
+                        <title xml:lang="Bo-Ltn">’phags pa bsam gyis mi khyab
+                            pa’i rgyal po’i mdo</title>. Stok 58. Stok Palace Kangyur (stog pho brang bris
+                        ma). Leh: smanrtsis shesrig dpemzod, 1975–80, vol. 57 (mdo sde, cha), folios
+                        151.a–153.a.</bibl>
+                    <bibl xml:id="UT22084-068-002-32">Phangthangma (<title xml:lang="Bo-Ltn">dkar chag ’phang
+                            thang ma</title>). Beijing: mi rigs dpe skrun khang, 2003.</bibl>
+                    <bibl xml:id="UT22084-068-002-33">Herrmann-Pfandt, Adelheid. <title xml:lang="de">Die lHan
+                            kar ma: ein früher Katalog der ins Tibetische übersetzten buddhistischen
+                            Texte</title>. Vienna: Verlag der Österreichischen Akademie der Wissenschaften,
+                        2008.</bibl>
+                    <bibl xml:id="UT22084-068-002-34">Skilling, Peter and Saerji. “ ‘O, Son of the Conqueror’:
+                        A note on <foreign xml:lang="Sa-Ltn" type="term">jinaputra</foreign> as a term of
+                        address in the <title xml:lang="Sa-Ltn">Buddhāvataṃsaka</title> and in Mahāyāna
+                            sūtras.”<title xml:lang="en">Annual Report of The International Research Institute
+                            for Advanced Buddhology (ARIRIAB) at Soka University</title> 15 (2012):
+                        127–30.</bibl>
+                    <bibl xml:id="UT22084-068-002-56">Subhashita Translation Group, trans. <title xml:lang="en">
                             <ref target="https://read.84000.co/translation/toh104.html">Expounding the Qualities of the Thus-Gone Ones’ Buddhafields</ref>
-                        </title> (Toh 104). 84000: Translating the Words of the Buddha, 2022.</bibl>
-                                        <bibl xml:id="UT22084-068-002-54">Subhashita Translation Group, trans. <title xml:lang="en">
-                            <ref target="https://read.84000.co/translation/toh44-37.html">The Chapter on the Scale of Life</ref>
                         </title>
-                                                (chapter 37 of the <title xml:lang="Sa-Ltn">Buddhāvataṃska</title>, Toh 44). 84000:
-                                                Translating the Words of the Buddha, 2022.</bibl>
-                                        <bibl xml:id="UT22084-068-002-35">Vinītā, Bhikṣuṇī, ed. and
-                                                trans. <title xml:lang="en">A Unique Collection of
-                                                  Twenty Sūtras in a Sanskrit Manuscript from the
-                                                  Potala</title>. Sanskrit Texts from the Tibetan
-                                                Autonomous Region 7/1. Beijing: China Tibetology
-                                                Publishing House; Vienna: Austrian Academy of
-                                                Sciences Press, 2010.</bibl>
-                                        
-                                </div>
-                        </div>
-                        <div type="glossary">
-                                <list type="glossary">
+                        (Toh 104). 84000: Translating the Words of the Buddha, 2022.</bibl>
+                    <bibl xml:id="UT22084-068-002-54">Subhashita Translation Group, trans. <title xml:lang="en">
+                            <ref target="https://read.84000.co/translation/toh44-37.html">The
+                                Chapter on the Scale of Life</ref>
+                        </title> (chapter 37 of the <title xml:lang="Sa-Ltn">Buddhāvataṃska</title>, Toh 44). 84000: Translating the Words of
+                        the Buddha, 2022.</bibl>
+                    <bibl xml:id="UT22084-068-002-35">Vinītā, Bhikṣuṇī, ed. and trans. <title xml:lang="en">A
+                            Unique Collection of Twenty Sūtras in a Sanskrit Manuscript from the
+                            Potala</title>. Sanskrit Texts from the Tibetan Autonomous Region 7/1. Beijing:
+                        China Tibetology Publishing House; Vienna: Austrian Academy of Sciences Press,
+                        2010.</bibl>
 
-                                        <item>
+                </div>
+            </div>
+            <div type="glossary" xml:id="UT22084-068-002-glossary">
+                <list type="glossary">
+
+                    <item>
                         <gloss type="term" xml:id="UT22084-068-002-36">
-                                                  <term>buddhafield</term>
-                                                  <term xml:lang="Bo-Ltn" status="verified">sangs
-                                                  rgyas kyi zhing </term>
-                                                  <term xml:lang="bo">སངས་རྒྱས་ཀྱི་ཞིང་།</term>
-                                                  <term xml:lang="Sa-Ltn" status="verified">
-                                                  buddhakṣetra</term>
-                                                  <term type="definition">A buddhafield is the
-                                                  particular world system over which a specific
-                                                  buddha presides. There are innumerable such fields
-                                                  in Mahāyāna Buddhist cosmology.</term>
-                                                </gloss>
+                            <term type="translationMain">buddhafield</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">buddhakṣetra</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">sangs rgyas
+                                kyi zhing</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">སངས་རྒྱས་ཀྱི་ཞིང་།</term>
+                            <note type="definition">
+                                <p>A buddhafield is the particular world system over which a specific buddha
+                                    presides. There are innumerable such fields in Mahāyāna Buddhist
+                                    cosmology.</p>
+                            </note>
+                        </gloss>
                     </item>
 
-                                        <item>
+                    <item>
                         <gloss type="person" xml:id="UT22084-068-002-37">
-                                                  <term>Amitāyus</term>
-                                                  <term xml:lang="Bo-Ltn" status="verified">tshe
-                                                  dpag med </term>
-                                                  <term xml:lang="bo">ཚེ་དཔག་མེད།</term>
-                                                  <term xml:lang="Sa-Ltn" status="verified">
-                                                  Amitāyus</term>
-                                                  <term type="definition">The buddha in the western
-                                                  realm of Sukhāvatī, also known as Amitābha.
-                                                  </term>
-                                                </gloss>
+                            <term type="translationMain">Amitāyus</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">amitāyus</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">tshe dpag
+                                med</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">ཚེ་དཔག་མེད།</term>
+                            <note type="definition">
+                                <p>The buddha in the western realm of Sukhāvatī, also known as Amitābha. </p>
+                            </note>
+                        </gloss>
                     </item>
-                                        <item>
+                    <item>
                         <gloss type="person" xml:id="UT22084-068-002-38">
-                                                  <term>Bhadraśrī</term>
-                                                  <term xml:lang="Bo-Ltn" status="verified">bzang
-                                                  po’i dpal </term>
-                                                  <term xml:lang="bo">བཟང་པོའི་དཔལ།</term>
-                                                  <term xml:lang="Sa-Ltn" status="verified">
-                                                  Bhadraśrī</term>
-                                                  <term type="definition">Bhadraśrī (Excellent
-                                                  Glory) is a buddha who inhabits the buddhafield
-                                                  Padmaśrī.</term>
-                                                </gloss>
+                            <term type="translationMain">Bhadraśrī</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">bhadraśrī</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">bzang po’i
+                                dpal</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">བཟང་པོའི་དཔལ།</term>
+                            <note type="definition">
+                                <p>Bhadraśrī (Excellent Glory) is a buddha who inhabits the buddhafield
+                                    Padmaśrī.</p>
+                            </note>
+                        </gloss>
                     </item>
-                                        <item>
+                    <item>
                         <gloss type="person" xml:id="UT22084-068-002-39">
-                                                  <term>Candrabuddhi</term>
-                                                  <term xml:lang="Bo-Ltn" status="verified">zla ba’i
-                                                  blo gros </term>
-                                                  <term xml:lang="bo">ཟླ་བའི་བློ་གྲོས།</term>
-                                                  <term xml:lang="Sa-Ltn" status="verified">
-                                                  Candrabuddhi</term>
-                                                  <term type="definition">Candrabuddhi (Moon-Like
-                                                  Intellect) is a buddha who inhabits a buddhafield.
-                                                  In <ref target="http://read.84000.co/translation/toh44-37.html#UT22084-036-008-60">Toh 44-37</ref> his buddhafield is named Color of
-                                                          the Mirror Disk, and in <ref target="http://read.84000.co/translation/toh104.html#UT22084-048-004-73">Toh 104</ref> it is named
-                                                  Ādarśa­maṇḍala­cakra­nirghoṣā.</term>
-                                                </gloss>
+                            <term type="translationMain">Candrabuddhi</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">candrabuddhi</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">zla ba’i blo
+                                gros</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">ཟླ་བའི་བློ་གྲོས།</term>
+                            <note type="definition">
+                                <p>Candrabuddhi (Moon-Like Intellect) is a buddha who inhabits a buddhafield.
+                                    In <ref target="http://read.84000.co/translation/toh44-37.html#UT22084-036-008-60">Toh 44-37</ref> his buddhafield is named Color of the Mirror Disk,
+                                    and in <ref target="http://read.84000.co/translation/toh104.html#UT22084-048-004-73">Toh 104</ref> it is named Ādarśa­maṇḍala­cakra­nirghoṣā.</p>
+                            </note>
+                        </gloss>
                     </item>
-                                        <item>
+                    <item>
                         <gloss type="person" xml:id="UT22084-068-002-40">
-                                                  <term>Dharmadhvaja</term>
-                                                  <term xml:lang="Bo-Ltn" status="verified">chos kyi
-                                                  rgyal mtshan </term>
-                                                  <term xml:lang="bo">ཆོས་ཀྱི་རྒྱལ་མཚན།</term>
-                                                  <term xml:lang="Sa-Ltn" status="verified">
-                                                  Dharmadhvaja</term>
-                                                  <term type="definition">Dharmadhvaja (Dharma
-                                                  Banner) is a buddha who inhabits a buddhafield.
-                                                  This buddhafield is specifically said to be
-                                                  <foreign xml:lang="Sa-Ltn">Virajā</foreign>
-                                                          (Dustless) in <ref target="http://read.84000.co/translation/toh44-37.html#UT22084-036-008-68">Toh 44-37</ref> and <ref target="http://read.84000.co/translation/toh104.html#UT22084-048-004-83">Toh 104.</ref>
-                                                  </term>
-                                                </gloss>
+                            <term type="translationMain">Dharmadhvaja</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">dharmadhvaja</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">chos kyi
+                                rgyal mtshan</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">ཆོས་ཀྱི་རྒྱལ་མཚན།</term>
+                            <note type="definition">
+                                <p>Dharmadhvaja (Dharma Banner) is a buddha who inhabits a buddhafield. This
+                                    buddhafield is specifically said to be <foreign xml:lang="Sa-Ltn">Virajā</foreign> (Dustless) in <ref target="http://read.84000.co/translation/toh44-37.html#UT22084-036-008-68">Toh 44-37</ref> and <ref target="http://read.84000.co/translation/toh104.html#UT22084-048-004-83">Toh 104.</ref>
+                                </p>
+                            </note>
+                        </gloss>
                     </item>
-                                        <item>
+                    <item>
                         <gloss type="person" xml:id="UT22084-068-002-41">
-                                                  <term>Flower Body Blooming from the Light of the
-                                                  Dharma</term>
-                                                  <term xml:lang="Bo-Ltn" status="verified">chos kyi
-                                                  ’od zer me tog rab tu rgyas pa’i sku </term>
-                                                  <term xml:lang="bo">ཆོས་ཀྱི་འོད་ཟེར་མེ་ཏོག་རབ་ཏུ་རྒྱས་པའི་སྐུ།</term>
-                                                  <term xml:lang="Sa-Ltn"/>
-                                                  <term type="definition">Flower Body Blooming from
-                                                  the Light of the Dharma is a buddha who inhabits a
-                                                  buddhafield. Buddhas with similar names are said
-                                                  to inhabit the buddhafield Duratikramā (Difficult
-                                                  to Transcend) (Tib. <foreign xml:lang="Bo-Ltn">’da’ bar dka’ ba</foreign>) in <ref target="http://read.84000.co/translation/toh44-37.html#UT22084-036-008-61">Toh 44-37</ref> and <ref target="http://read.84000.co/translation/toh104.html#UT22084-048-004-75">Toh 104.</ref>
-                                                  </term>
-                                                </gloss>
+                            <term type="translationMain">Flower Body Blooming from the Light of the
+                                Dharma</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified"/>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">chos kyi ’od
+                                zer me tog rab tu rgyas pa’i sku</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">ཆོས་ཀྱི་འོད་ཟེར་མེ་ཏོག་རབ་ཏུ་རྒྱས་པའི་སྐུ།</term>
+                            <note type="definition">
+                                <p>Flower Body Blooming from the Light of the Dharma is a buddha who inhabits
+                                    a buddhafield. Buddhas with similar names are said to inhabit the
+                                    buddhafield Duratikramā (Difficult to Transcend) (Tib. <foreign xml:lang="Bo-Ltn">’da’ bar dka’ ba</foreign>) in <ref target="http://read.84000.co/translation/toh44-37.html#UT22084-036-008-61">Toh 44-37</ref> and <ref target="http://read.84000.co/translation/toh104.html#UT22084-048-004-75">Toh 104.</ref>
+                                </p>
+                            </note>
+                        </gloss>
                     </item>
-                                        <item>
+                    <item>
                         <gloss type="person" xml:id="UT22084-068-002-42">
-                                                  <term>King of the Inconceivable</term>
-                                                  <term xml:lang="Bo-Ltn" status="verified">bsam
-                                                  gyis mi khyab pa’i rgyal po </term>
-                                                  <term xml:lang="bo">བསམ་གྱིས་མི་ཁྱབ་པའི་རྒྱལ་པོ།</term>
-
-                                                  <term xml:lang="Sa-Ltn" status="verified">
-                                                  Acintyarāja</term>
-                                                  <term type="definition">A bodhisattva who is the
-                                                  primary speaker in Toh 268. </term>
-                                                </gloss>
+                            <term type="translationMain">King of the Inconceivable</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">acintyarāja</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">bsam gyis mi
+                                khyab pa’i rgyal po</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">བསམ་གྱིས་མི་ཁྱབ་པའི་རྒྱལ་པོ།</term>
+                            <note type="definition">
+                                <p>A bodhisattva who is the primary speaker in Toh 268. </p>
+                            </note>
+                        </gloss>
                     </item>
-                                        <item>
+                    <item>
                         <gloss type="person" xml:id="UT22084-068-002-43">
-                                                  <term>King of Wisdom Light</term>
-                                                  <term xml:lang="Bo-Ltn" status="verified">ye shes
-                                                  ’od zer rgyal po </term>
-                                                  <term xml:lang="bo">ཡེ་ཤེས་འོད་ཟེར་རྒྱལ་པོ།</term>
-                                                  <term xml:lang="Sa-Ltn"/>
-                                                  <term type="definition">King of Wisdom Light is a
-                                                  buddha who inhabits a buddhafield.</term>
-                                                </gloss>
+                            <term type="translationMain">King of Wisdom Light</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified"/>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">ye shes ’od
+                                zer rgyal po</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">ཡེ་ཤེས་འོད་ཟེར་རྒྱལ་པོ།</term>
+                            <note type="definition">
+                                <p>King of Wisdom Light is a buddha who inhabits a buddhafield.</p>
+                            </note>
+                        </gloss>
                     </item>
-                                        <item>
+                    <item>
                         <gloss type="person" xml:id="UT22084-068-002-44">
-                                                  <term>Lotus Body Blooming from Dense Light
-                                                  Rays</term>
-                                                  <term xml:lang="Bo-Ltn" status="verified">’od zer
-                                                  shin tu stug po pad ma rab tu rgyas pa’i sku </term>
-                                                  <term xml:lang="bo">འོད་ཟེར་ཤིན་ཏུ་སྟུག་པོ་པད་མ་རབ་ཏུ་རྒྱས་པའི་སྐུ།</term>
-                                                  <term xml:lang="Sa-Ltn"/>
-                                                  <term type="definition">Lotus Body Blooming from
-                                                  Dense Light Rays is a buddha who inhabits a
-                                                  buddhafield. Buddhas with similar names are said
-                                                  to inhabit the buddhafield
-                                                  Avaivartika­cakra­nirghoṣā in <ref target="http://read.84000.co/translation/toh44-37.html#UT22084-036-008-59">Toh 44-37</ref> and <ref target="http://read.84000.co/translation/toh104.html#UT22084-048-004-74">Toh 104.</ref>
-                            </term>
-                                                </gloss>
+                            <term type="translationMain">Lotus Body Blooming from Dense Light Rays</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified"/>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">’od zer shin
+                                tu stug po pad ma rab tu rgyas pa’i sku</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">འོད་ཟེར་ཤིན་ཏུ་སྟུག་པོ་པད་མ་རབ་ཏུ་རྒྱས་པའི་སྐུ།</term>
+                            <note type="definition">
+                                <p>Lotus Body Blooming from Dense Light Rays is a buddha who inhabits a
+                                    buddhafield. Buddhas with similar names are said to inhabit the
+                                    buddhafield Avaivartika­cakra­nirghoṣā in <ref target="http://read.84000.co/translation/toh44-37.html#UT22084-036-008-59">Toh 44-37</ref> and <ref target="http://read.84000.co/translation/toh104.html#UT22084-048-004-74">Toh 104.</ref>
+                                </p>
+                            </note>
+                        </gloss>
                     </item>
-                                        <item>
+                    <item>
                         <gloss type="person" xml:id="UT22084-068-002-45">
-                                                  <term>Samantabhadra</term>
-                                                  <term xml:lang="Bo-Ltn" status="verified">kun tu
-                                                  bzang po </term>
-                                                  <term xml:lang="bo">ཀུན་ཏུ་བཟང་པོ།</term>
-                                                  <term xml:lang="Sa-Ltn" status="verified">
-                                                  Samantabhadra</term>
-                                                  <term type="definition">Samantabhadra (Entirely
-                                                  Excellent) is one of the eight principal
-                                                  bodhisattvas. He is known for embodying the
-                                                  conduct of bodhisattvas through his vast
-                                                  aspirations, offerings, and deeds for the
-                                                  benefit of beings.</term>
-                                                </gloss>
+                            <term type="translationMain">Samantabhadra</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">samantabhadra</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">kun tu bzang
+                                po</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">ཀུན་ཏུ་བཟང་པོ།</term>
+                            <note type="definition">
+                                <p>Samantabhadra (Entirely Excellent) is one of the eight principal
+                                    bodhisattvas. He is known for embodying the conduct of bodhisattvas
+                                    through his vast aspirations, offerings, and deeds for the benefit of
+                                    beings.</p>
+                            </note>
+                        </gloss>
                     </item>
-                                        <item>
+                    <item>
                         <gloss type="person" xml:id="UT22084-068-002-46">
-                                                  <term>Siṃha</term>
-                                                  <term xml:lang="Bo-Ltn" status="verified">seng ge </term>
-                                                  <term xml:lang="bo">སེང་གེ</term>
-                                                  <term xml:lang="Sa-Ltn" status="verified">
-                                                  Siṃha</term>
-                                                  <term type="definition">Siṃha (Lion) is a buddha
-                                                  who inhabits a buddhafield. This buddhafield is
-                                                  specifically said to be Excellent Lamp (Tib.
-                                                  <foreign xml:lang="Bo-Ltn">sgron ma bzang
-                                                          po</foreign>) in <ref target="http://read.84000.co/translation/toh44-37.html#UT22084-036-008-62">Toh 44-37</ref> and Pradīpā in <ref target="http://read.84000.co/translation/toh104.html#UT22084-048-004-79">Toh 104.</ref>
-                                                  </term>
-                                                </gloss>
+                            <term type="translationMain">Siṃha</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">siṃha</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">seng
+                                ge</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">སེང་གེ</term>
+                            <note type="definition">
+                                <p>Siṃha (Lion) is a buddha who inhabits a buddhafield. This buddhafield is
+                                    specifically said to be Excellent Lamp (Tib. <foreign xml:lang="Bo-Ltn">sgron ma bzang po</foreign>) in <ref target="http://read.84000.co/translation/toh44-37.html#UT22084-036-008-62">Toh 44-37</ref> and Pradīpā in <ref target="http://read.84000.co/translation/toh104.html#UT22084-048-004-79">Toh 104.</ref>
+                                </p>
+                            </note>
+                        </gloss>
                     </item>
-                                        <item>
+                    <item>
                         <gloss type="person" xml:id="UT22084-068-002-47">
-                                                  <term>Vairocana</term>
-                                                  <term xml:lang="Bo-Ltn" status="verified">rnam par
-                                                  snang mdzad </term>
-                                                  <term xml:lang="bo">རྣམ་པར་སྣང་མཛད།</term>
-                                                  <term xml:lang="Sa-Ltn" status="verified">
-                                                  Vairocana</term>
-                                                  <term type="definition">Vairocana is a buddha who
-                                                  inhabits a buddhafield. This buddhafield is
-                                                  specifically said to be Suprabhā in <ref target="http://read.84000.co/translation/toh44-37.html#UT22084-036-008-67">Toh 44-37</ref> and <ref target="http://read.84000.co/translation/toh104.html#UT22084-048-004-82">Toh 104</ref>. He also appears in Toh 44-37 with
-                                                  the name Vairocanagarbha. </term>
-                                                </gloss>
+                            <term type="translationMain">Vairocana</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">vairocana</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">rnam par
+                                snang mdzad</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">རྣམ་པར་སྣང་མཛད།</term>
+                            <note type="definition">
+                                <p>Vairocana is a buddha who inhabits a buddhafield. This buddhafield is
+                                    specifically said to be Suprabhā in <ref target="http://read.84000.co/translation/toh44-37.html#UT22084-036-008-67">Toh 44-37</ref> and <ref target="http://read.84000.co/translation/toh104.html#UT22084-048-004-82">Toh 104</ref>. He also appears in Toh 44-37 with the name
+                                    Vairocanagarbha. </p>
+                            </note>
+                        </gloss>
                     </item>
-                                        <item>
+                    <item>
                         <gloss type="person" xml:id="UT22084-068-002-48">
-                                                  <term>Vajrapramardin</term>
-                                                  <term xml:lang="Bo-Ltn" status="verified">rdo rje
-                                                  rab tu ’joms pa </term>
-                                                  <term xml:lang="bo">རྡོ་རྗེ་རབ་ཏུ་འཇོམས་པ།</term>
-                                                  <term xml:lang="Sa-Ltn" status="verified">
-                                                  Vajrapramardin</term>
-                                                  <term type="definition">Vajrapramardin (Vajra
-                                                  Vanquisher) is a buddha who inhabits a
-                                                  buddhafield. This buddhafield is specifically said
-                                                  to be <foreign xml:lang="Sa-Ltn">Kaṣāyadhvajā</foreign> in <ref target="http://read.84000.co/translation/toh44-37.html#UT22084-036-008-63">Toh 44-37</ref> and <ref target="http://read.84000.co/translation/toh104.html#UT22084-048-004-76">Toh 104</ref>. In Toh 104 he is named
-                                                  Vajrasārapramardin (Vajra Essence
-                                                  Vanquisher).</term>
-                                                </gloss>
+                            <term type="translationMain">Vajrapramardin</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">vajrapramardin</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">rdo rje rab
+                                tu ’joms pa</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">རྡོ་རྗེ་རབ་ཏུ་འཇོམས་པ།</term>
+                            <note type="definition">
+                                <p>Vajrapramardin (Vajra Vanquisher) is a buddha who inhabits a buddhafield.
+                                    This buddhafield is specifically said to be <foreign xml:lang="Sa-Ltn">Kaṣāyadhvajā</foreign> in <ref target="http://read.84000.co/translation/toh44-37.html#UT22084-036-008-63">Toh 44-37</ref> and <ref target="http://read.84000.co/translation/toh104.html#UT22084-048-004-76">Toh 104</ref>. In Toh 104 he is named Vajrasārapramardin (Vajra
+                                    Essence Vanquisher).</p>
+                            </note>
+                        </gloss>
                     </item>
 
-                                        <item>
+                    <item>
                         <gloss type="place" xml:id="UT22084-068-002-49">
-                                                  <term>Magadha</term>
-                                                  <term xml:lang="Bo-Ltn" status="verified">ma ga
-                                                  d+hA </term>
-                                                  <term xml:lang="bo">མ་ག་དྷཱ།</term>
-
-                                                  <term xml:lang="Sa-Ltn" status="verified">
-                                                  Magadha</term>
-                                                  <term type="definition">An ancient Indian kingdom
-                                                  that lay to the south of the Ganges River in what
-                                                  today is the state of Bihar. Magadha was the
-                                                  largest of the sixteen “great states” (<foreign xml:lang="Sa-Ltn" type="term">mahājanapada</foreign>) that flourished between
-                                                  the sixth and third centuries ʙᴄᴇ in northern
-                                                  India. During the life of the Buddha Śākyamuni, it
-                                                  was ruled by King Bimbisāra and was home to many
-                                                  of the most important Buddhist sites, including
-                                                  Bodh Gayā, Nālandā, and Rājagṛha. Its capital was
-                                                  initially Rājagṛha but was later moved to
-                                                  Pāṭaliputra (modern-day Patna) sometime after the
-                                                  reign of Bimbisāra's usurper son,
-                                                  Ajātaśatru.</term>
-                                                </gloss>
+                            <term type="translationMain">Magadha</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">magadha</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">ma ga
+                                d+hA</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">མ་ག་དྷཱ།</term>
+                            <note type="definition" rend="override">
+                                <p>An ancient Indian kingdom that lay to the south of the Ganges River in what
+                                    today is the state of Bihar. Magadha was the largest of the sixteen “great
+                                    states” (<foreign xml:lang="Sa-Ltn" type="term">mahājanapada</foreign>)
+                                    that flourished between the sixth and third centuries ʙᴄᴇ in northern
+                                    India. During the life of the Buddha Śākyamuni, it was ruled by King
+                                    Bimbisāra and was home to many of the most important Buddhist sites,
+                                    including Bodh Gayā, Nālandā, and Rājagṛha. Its capital was initially
+                                    Rājagṛha but was later moved to Pāṭaliputra (modern-day Patna) sometime
+                                    after the reign of Bimbisāra's usurper son, Ajātaśatru.</p>
+                            </note>
+                        </gloss>
                     </item>
-                                        <item>
+                    <item>
                         <gloss type="place" xml:id="UT22084-068-002-50">
-                                                  <term>Padmaśrī</term>
-                                                  <term xml:lang="Bo-Ltn" status="verified">pad ma’i
-                                                  dpal </term>
-                                                  <term xml:lang="bo">པད་མའི་དཔལ།</term>
-                                                  <term xml:lang="Sa-Ltn" status="verified">
-                                                  Padmaśrī</term>
-                                                  <term type="definition">Padmaśrī (Lotus Glory) is
-                                                  a buddhafield inhabited by the Buddha Bhadraśrī.
-                                                  </term>
-                                                </gloss>
+                            <term type="translationMain">Padmaśrī</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">padmaśrī</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">pad ma’i
+                                dpal</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">པད་མའི་དཔལ།</term>
+                            <note type="definition">
+                                <p>Padmaśrī (Lotus Glory) is a buddhafield inhabited by the Buddha Bhadraśrī.
+                                </p>
+                            </note>
+                        </gloss>
                     </item>
-                                        <item>
+                    <item>
                         <gloss type="place" xml:id="UT22084-068-002-51">
-                                                  <term>Sahā world</term>
-                                                  <term xml:lang="Bo-Ltn" status="verified">mi mjed </term>
-                                                  <term xml:lang="bo">མི་མཇེད།</term>
-                                                  <term xml:lang="Sa-Ltn" status="verified">
-                                                  sahā</term>
-                                                  <term type="definition">This universe of ours, or
-                                                  the trichiliocosm (but sometimes referring to just
-                                                  this world system of four continents), presided
-                                                  over by Brahmā. The term is variously interpreted
-                                                  as meaning the world of suffering, of endurance,
-                                                  of fearlessness, or of concomitance (of karmic
-                                                  cause and effect).</term>
-                                                </gloss>
+                            <term type="translationMain">Sahā world</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">sahā</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">mi
+                                mjed</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">མི་མཇེད།</term>
+                            <note type="definition" rend="override">
+                                <p>This universe of ours, or the trichiliocosm (but sometimes referring to
+                                    just this world system of four continents), presided over by Brahmā. The
+                                    term is variously interpreted as meaning the world of suffering, of
+                                    endurance, of fearlessness, or of concomitance (of karmic cause and
+                                    effect).</p>
+                            </note>
+                        </gloss>
                     </item>
-                                        <item>
+                    <item>
                         <gloss type="place" xml:id="UT22084-068-002-52">
-                                                  <term>seat of awakening</term>
-                                                  <term xml:lang="Bo-Ltn" status="verified">byang
-                                                  chub kyi snying po </term>
-                                                  <term xml:lang="bo">བྱང་ཆུབ་ཀྱི་སྙིང་པོ།</term>
-                                                  <term xml:lang="Sa-Ltn" status="verified">
-                                                  bodhimaṇḍa</term>
-                                                  <term type="definition">The exact place where
-                                                  every buddha in this world will manifest the
-                                                  attainment of buddhahood. Specifically, this is
-                                                  the place beneath the Bodhi tree in Bodh
-                                                  Gayā.</term>
-                                                </gloss>
+                            <term type="translationMain">seat of awakening</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">bodhimaṇḍa</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">byang chub
+                                kyi snying po</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">བྱང་ཆུབ་ཀྱི་སྙིང་པོ།</term>
+                            <note type="definition">
+                                <p>The exact place where every buddha in this world will manifest the
+                                    attainment of buddhahood. Specifically, this is the place beneath the
+                                    Bodhi tree in Bodh Gayā.</p>
+                            </note>
+                        </gloss>
                     </item>
-                                        <item>
+                    <item>
                         <gloss type="place" xml:id="UT22084-068-002-53">
-                                                  <term>Sukhāvatī</term>
-                                                  <term xml:lang="Bo-Ltn" status="verified">bde ba
-                                                  can </term>
-                                                  <term xml:lang="bo">བདེ་བ་ཅན།</term>
-                                                  <term xml:lang="Sa-Ltn" status="verified">
-                                                  Sukhāvatī</term>
-                                                  <term type="definition">Sukhāvatī (Blissful) is
-                                                  the buddhafield to the west inhabited by the
-                                                  Buddha Amitāyus, who is also known as Amitābha. It
-                                                  is classically described in <title xml:lang="en">The Display of the Pure Land of Sukhāvatī</title> (<title xml:lang="Sa-Ltn">
-                                    <ref target="http://read.84000.co/translation/toh115.html">Sukhāvatīvyūha Sūtra</ref>). </title>
-                                                  </term>
-                                                </gloss>
+                            <term type="translationMain">Sukhāvatī</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">sukhāvatī</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">bde ba
+                                can</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">བདེ་བ་ཅན།</term>
+                            <note type="definition">
+                                <p>Sukhāvatī (Blissful) is the buddhafield to the west inhabited by the Buddha
+                                    Amitāyus, who is also known as Amitābha. It is classically described in
+                                        <title xml:lang="en">The Display of the Pure Land of Sukhāvatī</title>
+                                        (<title xml:lang="Sa-Ltn">
+                                        <ref target="http://read.84000.co/translation/toh115.html">Sukhāvatīvyūha Sūtra</ref>). </title>
+                                </p>
+                            </note>
+                        </gloss>
                     </item>
 
-                                </list>
-                        </div>
-                </back>
-        </text>
+                </list>
+            </div>
+        </back>
+    </text>
 
 </TEI>
