@@ -24,7 +24,7 @@
                 <editor role="finalReviewer" xml:id="UT22084-079-036-128">Andreas Doctor</editor>
             </titleStmt>
             <editionStmt>
-                <edition>v 1.0.0 <date>2025</date>
+                <edition>v 1.0.1 <date>2025</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -150,6 +150,9 @@
                 </change>
                 <change who="#martina-cotter" when="2025-01-22T15:29:00.167Z" type="text-version" status="1.0.0" xml:id="UT22084-079-036-133">
                     <desc>First published version.</desc>
+                </change>
+                <change who="#andre" when="2025-01-29T11:33:36.148Z" type="text-version" status="1.0.1" xml:id="UT22084-079-036-134">
+                    <desc>Glossary integration revised, activated in CG</desc>
                 </change>
             </revisionDesc>
         </fileDesc>
@@ -491,7 +494,7 @@
                         1990.</bibl>
                 </div>
             </div>
-            <div type="glossary" status="excluded" xml:id="UT22084-079-036-glossary">
+            <div type="glossary" xml:id="UT22084-079-036-glossary">
                 <list type="glossary">
                     <item>
                         <gloss type="term" xml:id="UT22084-079-036-95">
@@ -535,20 +538,13 @@
                         </gloss>
                     </item>
                     <item>
-                        <gloss type="term" xml:id="UT22084-079-036-98">
-                            <term type="translationMain">the five
-                                wisdoms</term>
-                            <term status="verified" xml:lang="Bo-Ltn" n="1">ye shes lnga </term>
-                            <term xml:lang="bo" n="1">ཡེ་ཤེས་ལྔ།</term>
-                            <term status="verified" xml:lang="Sa-Ltn">pañcajñāna</term>
+                        <gloss xml:id="UT22084-079-036-98" type="term" mode="match">
+                            <term type="translationMain">five wisdoms</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">pañcajñāna</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">ye shes lnga</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">ཡེ་ཤེས་ལྔ།</term>
                             <note type="definition">
-                                <p>The five wisdoms that constitute a Buddha’s
-                                    awakened state of mind. The five wisdoms are the
-                                    transformations of the five afflictive emotions.
-                                    The wisdoms are as follows: mirror-like wisdom,
-                                    wisdom of discrimination, wisdom of equality,
-                                    all-accomplishing wisdom, and the wisdom of the
-                                    dharmadhātu.</p>
+                                <p>The five wisdoms that constitute a Buddha’s awakened state of mind. The five wisdoms are the transformations of the five afflictive emotions. The wisdoms are as follows: mirror-like wisdom, wisdom of discrimination, wisdom of equality, all-accomplishing wisdom, and the wisdom of the dharmadhātu.</p>
                             </note>
                         </gloss>
                     </item>
@@ -587,14 +583,13 @@
                         </gloss>
                     </item>
                     <item>
-                        <gloss type="term" xml:id="UT22084-079-036-102">
-                            <term type="translationMain">channels</term>
-                            <term status="verified" xml:lang="Bo-Ltn" n="1">rtsa </term>
-                            <term xml:lang="bo" n="1">རྩ།</term>
-                            <term status="verified" xml:lang="Sa-Ltn" type="attestedDictionary">nāḍī</term>
+                        <gloss xml:id="UT22084-079-036-102" type="term" mode="match">
+                            <term type="translationMain">channel</term>
+                            <term xml:lang="Sa-Ltn" type="attestedDictionary" status="verified">nāḍī</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">rtsa</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">རྩ།</term>
                             <note type="definition">
-                                <p>A channel in the subtle body conducting
-                                    <foreign xml:lang="Sa-Ltn" type="term">prāṇa</foreign>.</p>
+                                <p>A channel in the subtle body conducting <foreign xml:lang="Sa-Ltn" type="term">prāṇa</foreign>.</p>
                             </note>
                         </gloss>
                     </item>
@@ -611,15 +606,13 @@
                         </gloss>
                     </item>
                     <item>
-                        <gloss type="term" xml:id="UT22084-079-036-104">
-                            <term type="translationMain">drops</term>
-                            <term status="verified" xml:lang="Bo-Ltn" n="1">thig le </term>
-                            <term xml:lang="bo" n="1">ཐིག་ལེ།</term>
-                            <term status="verified" xml:lang="Sa-Ltn" type="attestedDictionary">bindu</term>
+                        <gloss xml:id="UT22084-079-036-104" type="term" mode="match">
+                            <term type="translationMain">drop</term>
+                            <term xml:lang="Sa-Ltn" type="attestedDictionary" status="verified">bindu</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">thig le</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">ཐིག་ལེ།</term>
                             <note type="definition">
-                                <p>A drop (as of liquids); a “drop” of
-                                    concentrated energy in the channels of the subtle
-                                    body.</p>
+                                <p>A drop (as of liquids); a “drop” of concentrated energy in the channels of the subtle body.</p>
                             </note>
                         </gloss>
                     </item>
