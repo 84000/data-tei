@@ -19,7 +19,7 @@
                 <editor role="finalReviewer" xml:id="UT22084-091-057-211">Andreas Doctor</editor>
             </titleStmt>
                         <editionStmt>
-                <edition>v 1.0.0 <date>2025</date>
+                <edition>v 1.0.1 <date>2025</date>
                 </edition>
             </editionStmt>
                         <publicationStmt>
@@ -160,6 +160,9 @@
                 </change>
                 <change who="#martina-cotter" when="2025-01-24T13:02:32.628Z" type="text-version" status="1.0.0" xml:id="UT22084-091-057-214">
                     <desc>First published version.</desc>
+                </change>
+                <change who="#andre" when="2025-01-30T11:01:02.688Z" type="text-version" status="1.0.1" xml:id="UT22084-091-057-215">
+                    <desc>Glossary integration revised, activated in CG</desc>
                 </change>
                         </revisionDesc>
                 </fileDesc>
@@ -815,7 +818,7 @@
                                                 Publishing, 1981.</bibl>
                                 </div>
                         </div>
-                        <div type="glossary" status="excluded" xml:id="UT22084-091-057-glossary">
+                        <div type="glossary" xml:id="UT22084-091-057-glossary">
                                 <list type="glossary">
                                         <item>
                         <gloss type="term" xml:id="UT22084-091-057-126">
@@ -1013,12 +1016,15 @@
                                                 </gloss>
                     </item>
                                         <item>
-                        <gloss type="person" xml:id="UT22084-091-057-147">
-                                                  <term type="translationMain">Yama</term>
-                                                  <term xml:lang="Bo-Ltn" n="1">gshin rje </term>
-                                                  <term xml:lang="bo" n="1">གཤིན་རྗེ།</term>
-                                                  <term xml:lang="Sa-Ltn" type="attestedDictionary">yama</term>
-                                                </gloss>
+                        <gloss xml:id="UT22084-091-057-147" type="person" mode="match">
+                            <term type="translationMain">Yama</term>
+                            <term xml:lang="Sa-Ltn" type="attestedDictionary">yama</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">gshin rje</term>
+                            <term xml:lang="bo" type="attestedSource" n="1">གཤིན་རྗེ།</term>
+                            <note type="definition">
+                                <p>Ruler of the hell realms.</p>
+                            </note>
+                        </gloss>
                     </item>
                                         <item>
                         <gloss type="person" xml:id="UT22084-091-057-148">
@@ -1118,18 +1124,15 @@
                                                 </gloss>
                     </item>
                                         <item>
-                        <gloss type="person" xml:id="UT22084-091-057-156">
-                                                  <term type="translationMain">Ketu</term>
-                                                <term xml:lang="Bo-Ltn" n="1">mjug rengs</term>
-                            <term xml:lang="bo" n="1">མཇུག་རེངས།</term>
-                                                  <term xml:lang="Sa-Ltn" type="attestedDictionary">ketu</term>
-                                                  <note type="definition">
-                                <p>Comets or meteors; the
-                                                  deity associated with comets or meteors.
-                                                  Alternatively, the term refers to the eclipse of
-                                                  the southern lunar node.</p>
+                        <gloss xml:id="UT22084-091-057-156" type="person" mode="match">
+                            <term type="translationMain">Ketu</term>
+                            <term xml:lang="Sa-Ltn" type="attestedDictionary">ketu</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">mjug rings</term>
+                            <term xml:lang="bo" type="attestedSource" n="1">མཇུག་རིངས།</term>
+                            <note type="definition">
+                                <p>Comets or meteors; the deity associated with comets or meteors. Alternatively, the term refers to the eclipse of the southern lunar node.</p>
                             </note>
-                                                </gloss>
+                        </gloss>
                     </item>
                                         <item>
                         <gloss type="person" xml:id="UT22084-091-057-157">
@@ -1333,36 +1336,48 @@
                                                 </gloss>
                     </item>
                                         <item>
-                        <gloss type="person" xml:id="UT22084-091-057-176">
-                                                  <term type="translationMain">Dhṛtarāṣṭra</term>
-                                                  <term xml:lang="Bo-Ltn" n="1">yul ’khor srung </term>
-                                                  <term xml:lang="bo" n="1">ཡུལ་འཁོར་སྲུང་།</term>
-                                                  <term xml:lang="Sa-Ltn" type="attestedDictionary">dhṛtarāstra</term>
-                                                </gloss>
+                        <gloss xml:id="UT22084-091-057-176" type="person" mode="match">
+                            <term type="translationMain">Dhṛtarāṣṭra</term>
+                            <term xml:lang="Sa-Ltn" type="attestedDictionary">dhṛtarāstra</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">yul ’khor srung</term>
+                            <term xml:lang="bo" type="attestedSource" n="1">ཡུལ་འཁོར་སྲུང་།</term>
+                            <note type="definition">
+                                <p>One of the Four Great Kings, he presides over the eastern quarter and rules over the gandharvas.</p>
+                            </note>
+                        </gloss>
                     </item>
                                         <item>
-                        <gloss type="person" xml:id="UT22084-091-057-177">
-                                                  <term type="translationMain">Virūḍhaka</term>
-                                                  <term xml:lang="Bo-Ltn" n="1">’phags skyes po </term>
-                                                  <term xml:lang="bo" n="1">འཕགས་སྐྱེས་པོ།</term>
-                                                  <term xml:lang="Sa-Ltn" type="attestedDictionary">virūḍhaka</term>
-                                                </gloss>
+                        <gloss xml:id="UT22084-091-057-177" type="person" mode="match">
+                            <term type="translationMain">Virūḍhaka</term>
+                            <term xml:lang="Sa-Ltn" type="attestedDictionary">virūḍhaka</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">’phags skyes po</term>
+                            <term xml:lang="bo" type="attestedSource" n="1">འཕགས་སྐྱེས་པོ།</term>
+                            <note type="definition">
+                                <p>One of the Four Mahārājas, he is the guardian of the southern direction and the lord of the kumbhāṇḍas.</p>
+                            </note>
+                        </gloss>
                     </item>
                                         <item>
-                        <gloss type="person" xml:id="UT22084-091-057-178">
-                                                  <term type="translationMain">Virūpākṣa</term>
-                                                  <term xml:lang="Bo-Ltn" n="1">mig mi bzang </term>
-                                                  <term xml:lang="bo" n="1">མིག་མི་བཟང་།</term>
-                                                  <term xml:lang="Sa-Ltn" type="attestedDictionary">virūpākṣa</term>
-                                                </gloss>
+                        <gloss xml:id="UT22084-091-057-178" type="person" mode="match">
+                            <term type="translationMain">Virūpākṣa</term>
+                            <term xml:lang="Sa-Ltn" type="attestedDictionary">virūpākṣa</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">mig mi bzang</term>
+                            <term xml:lang="bo" type="attestedSource" n="1">མིག་མི་བཟང་།</term>
+                            <note type="definition">
+                                <p>One of the Four Mahārājas, he is the guardian of the western direction and traditionally the lord of the nāgas.</p>
+                            </note>
+                        </gloss>
                     </item>
                                         <item>
-                        <gloss type="person" xml:id="UT22084-091-057-179">
-                                                  <term type="translationMain">Kubera</term>
-                                                  <term xml:lang="Bo-Ltn" n="1">lus ngan </term>
-                                                  <term xml:lang="bo" n="1">ལུས་ངན།</term>
-                                                  <term xml:lang="Sa-Ltn" type="attestedDictionary">kubera</term>
-                                                </gloss>
+                        <gloss xml:id="UT22084-091-057-179" type="person" mode="match">
+                            <term type="translationMain">Kubera</term>
+                            <term xml:lang="Sa-Ltn" type="attestedDictionary">kubera</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">lus ngan</term>
+                            <term xml:lang="bo" type="attestedSource" n="1">ལུས་ངན།</term>
+                            <note type="definition">
+                                <p>Another name for Vaiśravaṇa, one of the Four Great Kings. He is the guardian of the north and lord of the yakṣas and is traditionally regarded as a yakṣa himself.</p>
+                            </note>
+                        </gloss>
                     </item>
                                         <item>
                         <gloss type="person" xml:id="UT22084-091-057-180">
@@ -1419,17 +1434,14 @@
                                                 </gloss>
                     </item>
                                         <item>
-                        <gloss type="place" xml:id="UT22084-091-057-185">
-                                                  <term type="translationMain">the glorious
-                                                  hermitage of Sakya</term>
-                                                  <term xml:lang="Bo-Ltn" n="1">dpal ldan sa skya’i
-                                                  dben gnas </term>
-                                                  <term xml:lang="bo" n="1">དཔལ་ལྡན་ས་སྐྱའི་དབེན་གནས།</term>
-                                                  <note type="definition">
-                                <p>One of the primary
-                                                  seats of the Sakya lineage in Tibet. </p>
+                        <gloss xml:id="UT22084-091-057-185" type="place" mode="match">
+                            <term type="translationMain">glorious hermitage of Sakya</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1">dpal ldan sa skya’i dben gnas</term>
+                            <term xml:lang="bo" type="attestedSource" n="1">དཔལ་ལྡན་ས་སྐྱའི་དབེན་གནས།</term>
+                            <note type="definition">
+                                <p>One of the primary seats of the Sakya lineage in Tibet. </p>
                             </note>
-                                                </gloss>
+                        </gloss>
                     </item>
                                 </list>
                         </div>
