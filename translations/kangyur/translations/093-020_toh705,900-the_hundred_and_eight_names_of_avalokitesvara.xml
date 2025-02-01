@@ -24,7 +24,7 @@
         <editor role="finalReviewer" xml:id="UT22084-093-020-224">Andreas Doctor</editor>
       </titleStmt>
       <editionStmt>
-                <edition>v 1.0.0 <date>2025</date>
+                <edition>v 1.0.1 <date>2025</date>
                 </edition>
             </editionStmt>
       <publicationStmt>
@@ -169,6 +169,9 @@
                 </change>
                 <change who="#martina-cotter" when="2025-01-24T13:08:07.097Z" type="text-version" status="1.0.0" xml:id="UT22084-093-020-227">
                     <desc>First published version.</desc>
+                </change>
+                <change who="#andre" when="2025-02-01T09:58:00.52Z" type="text-version" status="1.0.1" xml:id="UT22084-093-020-228">
+                    <desc>Glossary integration revised, activated in CG</desc>
                 </change>
       </revisionDesc>
     </fileDesc>
@@ -676,7 +679,7 @@
           <bibl xml:id="UT22084-093-020-134">Pandanus Database of Plants. <ref target="http://iu.ff.cuni.cz/pandanus/database/">http://iu.ff.cuni.cz/pandanus/database/</ref>.</bibl>
         </div>
       </div>
-      <div type="glossary" status="excluded" xml:id="UT22084-093-020-glossary">
+      <div type="glossary" xml:id="UT22084-093-020-glossary">
         <list type="glossary">
           <item>
                         <gloss type="term" xml:id="UT22084-093-020-136">
@@ -1215,12 +1218,17 @@
             </gloss>
                     </item>
           <item>
-                        <gloss type="place" xml:id="UT22084-093-020-200">
-              <term type="translationMain">Sukhāvatī</term>
-              <term status="verified" xml:lang="Bo-Ltn" n="1">bde ba can </term>
-              <term xml:lang="bo" n="1">བདེ་བ་ཅན།</term>
-              <term xml:lang="Sa-Ltn">sukhāvatī</term>
-            </gloss>
+                        <gloss xml:id="UT22084-093-020-200" type="place" mode="match">
+                            <term type="translationMain">Sukhāvatī</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified">sukhāvatī</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">bde ba can</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">བདེ་བ་ཅན།</term>
+                            <note type="definition">
+                                <p>Sukhāvatī (Blissful) is the buddhafield to the west inhabited by the Buddha Amitāyus, more commonly known as Amitābha. It is classically described in <title xml:lang="en">The Display of the Pure Land of Sukhāvatī</title> (<title xml:lang="Sa-Ltn">
+                                        <ref target="http://read.84000.co/translation/toh115.html">Sukhāvatīvyūha Sūtra</ref>
+                                    </title>).</p>
+                            </note>
+                        </gloss>
                     </item>
           <item>
                         <gloss type="place" xml:id="UT22084-093-020-201">
