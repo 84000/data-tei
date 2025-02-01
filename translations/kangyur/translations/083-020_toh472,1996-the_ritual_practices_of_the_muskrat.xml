@@ -20,7 +20,7 @@
                 <editor role="finalReviewer" xml:id="UT22084-083-020-134">Andreas Doctor</editor>
             </titleStmt>
             <editionStmt>
-                <edition>v 1.0.1 <date>2025</date>
+                <edition>v 1.0.2 <date>2025</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -153,6 +153,9 @@
                 </change>
                 <change who="#martina-cotter" when="2025-01-20T15:48:52.379Z" type="text-version" status="1.0.1" xml:id="UT22084-083-020-137">
                     <desc>First published version.</desc>
+                </change>
+                <change who="#andre" when="2025-02-01T17:09:10.732Z" type="text-version" status="1.0.2" xml:id="UT22084-083-020-138">
+                    <desc>Glossary integration revised, activated in CG</desc>
                 </change>
             </revisionDesc>
         </fileDesc>
@@ -489,7 +492,7 @@
                         2020.</bibl>
                 </div>
             </div>
-            <div type="glossary" status="excluded" xml:id="UT22084-083-020-glossary">
+            <div type="glossary" xml:id="UT22084-083-020-glossary">
                 <list type="glossary">
                     <item>
                         <gloss type="term" xml:id="UT22084-083-020-101">
@@ -575,15 +578,13 @@
                         </gloss>
                     </item>
                     <item>
-                        <gloss type="term" xml:id="UT22084-083-020-108">
-                            <term type="translationMain">the three hot substances</term>
-                            <term status="verified" xml:lang="Bo-Ltn" n="1">tsha ba gsum </term>
-                            <term xml:lang="bo" n="1">ཚ་བ་གསུམ།</term>
-                            <term status="verified" xml:lang="Sa-Ltn" type="attestedDictionary">trikaṭuka</term>
+                        <gloss xml:id="UT22084-083-020-108" type="term" mode="match">
+                            <term type="translationMain">three hot substances</term>
+                            <term xml:lang="Sa-Ltn" type="attestedDictionary" status="verified">trikaṭuka</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">tsha ba gsum</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">ཚ་བ་གསུམ།</term>
                             <note type="definition">
-                                <p>Three spicy substances of traditional South
-                                    Asian medicine: black pepper, long pepper, and dry
-                                ginger.</p>
+                                <p>Three spicy substances of traditional South Asian medicine: black pepper, long pepper, and dry ginger.</p>
                             </note>
                         </gloss>
                     </item>
