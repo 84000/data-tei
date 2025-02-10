@@ -31,7 +31,7 @@
                 <editor role="finalReviewer" xml:id="UT22084-101-151-252">Andreas Doctor</editor>
             </titleStmt>
             <editionStmt>
-                <edition>v 1.0.0 <date>2025</date>
+                <edition>v 1.0.1 <date>2025</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -147,6 +147,9 @@
                 <change who="#martina-cotter" when="2025-02-04T12:50:51.721Z" type="text-version" status="1.0.0" xml:id="UT22084-101-151-255">
                     <desc>First published version.</desc>
                 </change>
+                <change who="#andre" when="2025-02-10T16:55:42.06Z" type="text-version" status="1.0.1" xml:id="UT22084-101-151-256">
+                    <desc>Glossary integration revised, activated in CG</desc>
+                </change>
             </revisionDesc>
         </fileDesc>
     </teiHeader>
@@ -155,7 +158,7 @@
                     Outline to the text is quite complex, it is recommended that you paste the outlined contents from the DOCX here as a comment for
                     markup's reference. The actual table of contents will be generated in the Reading Room by the parser.-->
         <front>
-            <div type="summary" xml:id="UT22084-101-151-summary">
+            <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="summary" xml:id="UT22084-101-151-summary">
                 <head type="summary" tid="1">Summary</head>
                 <milestone unit="chunk" xml:id="UT22084-101-151-1"/>
                 <p tid="2">
@@ -168,8 +171,8 @@
                     entreaty, supplication, and dedication—is regularly recited as part of many
                     practices in Tibetan Buddhism. There are numerous translations of the prayer in
                     many modern languages made from Tibetan, Sanskrit, and Chinese.</p>
-            </div>
-            <div type="acknowledgment" xml:id="UT22084-101-151-acknowledgment">
+            </tei:div>
+            <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="acknowledgment" xml:id="UT22084-101-151-acknowledgment">
                 <head type="acknowledgment" tid="3">Acknowledgements</head>
                 <milestone unit="chunk" xml:id="UT22084-101-151-2"/>
                 <p tid="4">This English translation was made by Peter Alan Roberts based on the
@@ -179,10 +182,10 @@
                 <p tid="5">The translation was completed under the patronage and supervision of
                     84000: Translating the Words of the Buddha. George FitzHerbert edited the introduction, and Ven. Konchog Norbu copyedited the text.
                     Martina Cotter was in charge of the digital publication process.</p>
-            </div>
-            <div type="introduction" xml:id="UT22084-101-151-introduction">
+            </tei:div>
+            <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="introduction" xml:id="UT22084-101-151-introduction">
                 <head type="introduction" tid="8">Introduction</head>
-                <div type="section" xml:id="UT22084-101-151-introduction-1">
+                <tei:div type="section" xml:id="UT22084-101-151-introduction-1">
                     <milestone unit="chunk" xml:id="UT22084-101-151-6"/>
                     <p tid="10">
                         <title xml:lang="en">The King of Prayers of Good Conduct</title> is among the few Kangyur texts
@@ -346,15 +349,15 @@
                         continues to be a frequent subject of oral teachings. With the exeption of the last verse of the prayer, 
                         this translation has been excerpted in its entirety from the 84000 translation of 
                         <title xml:lang="en">The Stem Array</title>. </p>
-                </div>
-            </div>
+                </tei:div>
+            </tei:div>
         </front>
         <body>
-            <div type="translation" xml:id="UT22084-101-151-translation">
+            <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="translation" xml:id="UT22084-101-151-translation">
                 <head type="translation"> The Translation </head>
                 <head type="titleHon" tid="23">The Noble King of</head>
                 <head type="titleMain" tid="24">Prayers of Good Conduct</head>
-                <div type="section" xml:id="UT22084-101-151-section-1">
+                <tei:div type="section" xml:id="UT22084-101-151-section-1">
                     <milestone unit="chunk" xml:id="UT22084-101-151-29"/>
                     <p tid="28">
                         <ref key="toh1095" cRef="F.262.b" type="folio" xml:id="UT22084-101-151-98"/>
@@ -920,16 +923,16 @@
                     <milestone unit="chunk" xml:id="UT22084-101-151-39"/>
                     <trailer tid="37">This concludes “<title xml:lang="en">The Noble King of Prayers
                             of Good Conduct</title>.”</trailer>
-                </div>
-            </div>
+                </tei:div>
+            </tei:div>
         </body>
         <back>
-            <div type="notes" xml:id="UT22084-101-151-notes">
+            <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="notes" xml:id="UT22084-101-151-notes">
                 <head type="notes" tid="40">Notes</head>
-            </div>
-            <div type="listBibl" xml:id="UT22084-101-151-listBibl">
+            </tei:div>
+            <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="listBibl" xml:id="UT22084-101-151-listBibl">
                 <head type="listBibl" tid="42">Bibliography</head>
-                <div type="section" xml:id="UT22084-101-151-listBibl-1">
+                <tei:div type="section" xml:id="UT22084-101-151-listBibl-1">
                     <head type="section" tid="43">Source Texts—Tibetan</head>
                     <bibl xml:id="UT22084-101-151-41">
                         <title xml:lang="Bo-Ltn">’phags pa bzang po
@@ -963,8 +966,8 @@
                         <ref target="http://idp.bl.uk/database/oo_scroll_h.a4d?uid=52995035515;recnum=58509;index=1">Pelliot tibétain 116</ref>. Bibliothèque nationale de France, Paris.
                         Accessed through <title xml:lang="en">The International Dunhuang Project:
                             The Silk Road Online</title>.</bibl>
-                </div>
-                <div type="section" xml:id="UT22084-101-151-listBibl-2">
+                </tei:div>
+                <tei:div type="section" xml:id="UT22084-101-151-listBibl-2">
                     <head type="section" tid="44">Source Texts—Sanskrit</head>
                     <bibl xml:id="UT22084-101-151-47">
                         <ref target="http://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/html/sa_gaNDavyUhasUtra.htm">Gaṇḍavyūhasūtra</ref>. GRETIL edition input by members of the Digital
@@ -974,8 +977,8 @@
                     <bibl xml:id="UT22084-101-151-48">Suzuki, D. T., and Hokei Idzumi, eds. <title xml:lang="en">The Gaṇḍavyūha Sūtra</title>. Rev. ed. Tokyo: Society for
                         the Publication of Sacred Books of the World, 1949.</bibl>
                     <bibl xml:id="UT22084-101-151-49">Vaidya, P. L., ed. <title xml:lang="Sa-Ltn">Gaṇḍavyūha­sūtra</title>. Darbhanga: Mithila Institute, 1960.</bibl>
-                </div>
-                <div type="section" xml:id="UT22084-101-151-listBibl-3">
+                </tei:div>
+                <tei:div type="section" xml:id="UT22084-101-151-listBibl-3">
                     <head type="section" tid="45">Source Texts—Chinese</head>
                     <bibl xml:id="UT22084-101-151-50">
                         <title xml:lang="Zh-Ltn">Da fangguang fohuayan
@@ -995,8 +998,8 @@
                             zan 普賢菩薩行願讚</title>
                         <title xml:lang="zh">普賢菩薩行願讚</title> (<title xml:lang="Sa-Ltn">Bhadra­carya­praṇidhāna­rāja</title>), translated by Amoghavajra.
                         Taishō 297 (<ref target="https://cbetaonline.dila.edu.tw/en/T0297_001">CBETA</ref>; <ref target="https://21dzk.l.u-tokyo.ac.jp/SAT2018/T0297.html">SAT</ref>).</bibl>
-                </div>
-                <div type="section" xml:id="UT22084-101-151-listBibl-4">
+                </tei:div>
+                <tei:div type="section" xml:id="UT22084-101-151-listBibl-4">
                     <head type="section" tid="46">Commentaries—Tibetan</head>
                     <bibl xml:id="UT22084-101-151-54">Nāgārjuna. <title xml:lang="Bo-Ltn">bzang po
                             spyod pa’i smon lam gyi rgyal po chen po’i bshad sbyar</title> (<title xml:lang="Sa-Ltn">Bhadra­carya­mahāpraṇi­dhāna­rājanibandhana</title>).
@@ -1016,8 +1019,8 @@
                     <bibl xml:id="UT22084-101-151-59">Yeshé Dé (ye shes sde). <title xml:lang="Bo-Ltn">bzang spyod kyi ’grel pa bzhi’i don bsdus nas brjed
                             byang du byas pa</title>. Toh 4359, Degé Tengyur vol. 206 (sna tshogs,
                         jo), folios 184.a–213.b.</bibl>
-                </div>
-                <div type="section" xml:id="UT22084-101-151-listBibl-5">
+                </tei:div>
+                <tei:div type="section" xml:id="UT22084-101-151-listBibl-5">
                     <head type="section" tid="47">Reference Materials—Tibetan</head>
                     <bibl xml:id="UT22084-101-151-60">Denkarma (<title xml:lang="Bo-Ltn">pho brang
                             stod thang ldan dkar gyi chos kyi ’gyur ro cog gi dkar chag</title>).
@@ -1029,8 +1032,8 @@
                         Jungné (si tu chos kyi ’byung gnas). <title xml:lang="Bo-Ltn">sde dge’i bka’
                             ’gyur dkar chag</title>. Toh 4568, Degé Kangyur vol. 103 (dkar chag,
                         lakṣmī); also Chengdu: Sichuan Mi rigs dpe skrun khang, 1989.</bibl>
-                </div>
-                <div type="section" xml:id="UT22084-101-151-listBibl-6">
+                </tei:div>
+                <tei:div type="section" xml:id="UT22084-101-151-listBibl-6">
                     <head type="section" tid="48">Western Languages</head>
                     <bibl xml:id="UT22084-101-151-68">84000. <title xml:lang="en">
                             <ref target="https://read.84000.co/translation/toh44-45.html">The Stem
@@ -1058,9 +1061,9 @@
                             Manuscripts, </title>edited by Michael Friedrich and Cosima Schwarke,
                         287–304. Vol. 9 of Studies in Manuscript Cultures. Berlin: De Gruyter,
                         2016.</bibl>
-                </div>
-            </div>
-            <div type="glossary" status="excluded" xml:id="UT22084-101-151-glossary">
+                </tei:div>
+            </tei:div>
+            <tei:div xmlns:tei="http://www.tei-c.org/ns/1.0" type="glossary" xml:id="UT22084-101-151-glossary">
                 <list type="glossary">
                     <item>
                         <gloss type="person" xml:id="UT22084-101-151-72">
@@ -1306,7 +1309,7 @@
                         </gloss>
                     </item>
                 </list>
-            </div>
+            </tei:div>
         </back>
     </text>
 </TEI>
