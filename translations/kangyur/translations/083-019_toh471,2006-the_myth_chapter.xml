@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schema/current/translation.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="mainTitle" xml:lang="en">The Myth Chapter</title>
+                <title type="mainTitle" xml:lang="bo">གཏམ་རྒྱུད་ཀྱི་རྟོག་པ།</title>
+                <title type="mainTitle" xml:lang="Bo-Ltn">gtam rgyud kyi rtog pa</title>
+                <author role="translatorMain" xml:id="UT22084-083-019-1"><!--84000 Associate Translators--></author>
+                <author role="translatorEng" xml:id="UT22084-083-019-2">Bruno Galasek-Hul</author>
+                <editor role="projectEditor" xml:id="UT22084-083-019-14">Ryan Damron</editor>
+                <editor role="copyEditor" xml:id="UT22084-083-019-23">Dawn Collins</editor>
+                <editor role="projectEditor" xml:id="UT22084-083-019-33">Andreas Doctor</editor>
+                <editor role="TEImarkupEditor" xml:id="UT22084-083-019-44">Martina Cotter</editor>
+                <editor role="finalReviewer" xml:id="UT22084-083-019-142">Andreas Doctor</editor>
+            </titleStmt>
+            <editionStmt>
+                <edition>v 1.0.1 <date>2025</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>
+                    <name>84000: Translating the Words of the Buddha</name> is a global
+                    non-profit initiative to translate all the Buddha’s words into modern languages,
+                    and to make them available to everyone. </publisher>
+                <availability status="1.a">
+                    <p type="tantricRestriction">
+                        <emph rend="bold">Warning:</emph> Readers are
+                        reminded that according to Vajrayāna Buddhist tradition there are
+                        restrictions and commitments concerning tantra. Practitioners who are not
+                        sure if they should read this translation are advised to consult the
+                        authorities of their lineage. The responsibility for reading this text or
+                        sharing it with others who may or may not fulfill the requirements lies in
+                        the hands of readers.</p>
+                    <licence>
+                        <graphic url="http://i.creativecommons.org/l/by-nc-nd/2.0/88x31.png"/>
+                        <p>This work is provided under the protection of a Creative Commons CC
+                            BY-NC-ND (Attribution - Non-commercial - No-derivatives) 3.0 copyright.
+                            It may be copied or printed for fair use, but only with full
+                            attribution, and not for commercial advantage or personal compensation.
+                            For full details, see the Creative Commons license.</p>
+                    </licence>
+                </availability>
+                <idno xml:id="UT22084-083-019"/>
+                <note>An early mistake in the assigning of UT numbers within the 84000 project means
+                    that these ids diverge slightly from the standard logic.</note>
+                <date>2025-01-20</date>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl key="toh471" type="text">
+                    <ref>Toh 471</ref>
+                    <biblScope>Degé Kangyur, vol. 83 (rgyud, ja), folios 173.b–174.a</biblScope>
+                    <location work="UT4CZ5369" count-pages="2">
+                        <volume number="83" start-page="346" end-page="347"/>
+                    </location>
+                    <idno parent-id="O1JC114941JC21412" work="http://read.84000.co/sections"/>
+                    <idno source-id="O1JC114941JC12183" work="W22084"/>
+                </bibl>
+                <bibl key="toh2006" type="text">
+                    <ref>Toh 2006</ref>
+                    <biblScope>Degé Tengyur, vol. 47 (rgyud ’grel, mi), folios
+                        213.b–214.a</biblScope>
+                    <author xml:lang="Sa-Ltn" xml:id="UT22084-083-019-26">Tathāgata­rakṣita</author>
+                    <location work="UT23703" count-pages="2">
+                        <volume number="47" start-page="424" end-page="425"/>
+                    </location>
+                    <idno parent-id="O1JC76301JC21622" work="http://read.84000.co/sections"/>
+                    <idno source-id="O1JC76301JC8579" work="W23703"/>
+                </bibl>
+            </sourceDesc>
+            <notesStmt/>
+            <revisionDesc>
+                <change who="#admin" when="2019-12-20T12:56:48.575Z" type="text-version" status="v 0.0.1" xml:id="UT22084-083-019-3">
+                    <desc>Automated version increment</desc>
+                </change>
+                <change who="#line-tofte" when="2022-06-30T13:06:52.251Z" type="translation-status" status="3" xml:id="UT22084-083-019-4">
+                    <desc>3</desc>
+                </change>
+                <change who="#line-tofte" when="2022-06-30T13:06:52.251Z" type="text-version" status="0.0.2" xml:id="UT22084-083-019-5">
+                    <desc>Auto (update-publication-status)</desc>
+                </change>
+                <change who="#line-tofte" when="2022-06-30T13:07:28.729Z" type="text-version" status="0.0.3" xml:id="UT22084-083-019-6">
+                    <desc>Auto (update-contributors)</desc>
+                </change>
+                <change who="#line-tofte" when="2023-05-11T07:52:23.328Z" type="translation-status" status="2.h" xml:id="UT22084-083-019-7">
+                    <desc>2.h</desc>
+                </change>
+                <change who="#line-tofte" when="2023-05-11T07:52:23.328Z" type="text-version" status="0.0.4" xml:id="UT22084-083-019-8">
+                    <desc>Auto (update-publication-status)</desc>
+                </change>
+                <change who="#admin" when="2023-07-30T22:39:48.323Z" type="text-version" status="0.0.5" xml:id="UT22084-083-019-9">
+                    <desc>TEI migrated to 2.19.0</desc>
+                </change>
+                <change who="#line-tofte" when="2024-07-12T12:16:10.569Z" type="translation-status" status="2.g" xml:id="UT22084-083-019-10">
+                    <desc>2.g</desc>
+                </change>
+                <change who="#line-tofte" when="2024-07-12T12:16:10.569Z" type="text-version" status="0.0.6" xml:id="UT22084-083-019-11">
+                    <desc>Auto (update-publication-status)</desc>
+                </change>
+                <change who="#line-tofte" when="2024-07-12T12:16:43.788Z" type="text-version" status="0.0.7" xml:id="UT22084-083-019-15">
+                    <desc>Auto (update-contributors)</desc>
+                </change>
+                <change who="#line-tofte" when="2024-08-07T14:14:59.263Z" type="translation-status" status="2.f" xml:id="UT22084-083-019-16">
+                    <desc>2.f</desc>
+                </change>
+                <change who="#line-tofte" when="2024-08-07T14:14:59.263Z" type="text-version" status="0.0.8" xml:id="UT22084-083-019-17">
+                    <desc>Auto (update-publication-status)</desc>
+                </change>
+                <change who="#line-tofte" when="2024-08-12T13:52:32.026Z" type="translation-status" status="2.e" xml:id="UT22084-083-019-18">
+                    <desc>2.e</desc>
+                </change>
+                <change who="#line-tofte" when="2024-08-12T13:52:32.026Z" type="text-version" status="0.0.9" xml:id="UT22084-083-019-19">
+                    <desc>Auto (update-publication-status)</desc>
+                </change>
+                <change who="#line-tofte" when="2024-08-12T13:53:12.139Z" type="text-version" status="0.0.10" xml:id="UT22084-083-019-24">
+                    <desc>Auto (update-contributors)</desc>
+                </change>
+                <change who="#celso" when="2024-08-12T15:51:51.999Z" type="text-version" status="0.0.11" xml:id="UT22084-083-019-25">
+                    <desc>merged with Toh 2006</desc>
+                </change>
+                <change who="#line-tofte" when="2024-08-30T11:32:41.842Z" type="translation-status" status="2.c" xml:id="UT22084-083-019-27">
+                    <desc>2.c</desc>
+                </change>
+                <change who="#line-tofte" when="2024-08-30T11:32:41.842Z" type="text-version" status="0.0.12" xml:id="UT22084-083-019-28">
+                    <desc>Auto (update-publication-status)</desc>
+                </change>
+                <change who="#line-tofte" when="2024-08-30T11:33:18.18Z" type="text-version" status="0.0.13" xml:id="UT22084-083-019-34">
+                    <desc>Auto (update-contributors)</desc>
+                </change>
+                <change who="#line-tofte" when="2024-09-19T14:32:08.718Z" type="translation-status" status="2.b" xml:id="UT22084-083-019-35">
+                    <desc>2.b</desc>
+                </change>
+                <change who="#line-tofte" when="2024-09-19T14:32:08.718Z" type="text-version" status="0.0.14" xml:id="UT22084-083-019-36">
+                    <desc>Auto (update-publication-status)</desc>
+                </change>
+                <change who="#line-tofte" when="2024-09-26T08:58:08.667Z" type="translation-status" status="2.a" xml:id="UT22084-083-019-37">
+                    <desc>2.a</desc>
+                </change>
+                <change who="#line-tofte" when="2024-09-26T08:58:08.667Z" type="text-version" status="0.0.15" xml:id="UT22084-083-019-38">
+                    <desc>Auto (update-publication-status)</desc>
+                </change>
+                <change who="#line-tofte" when="2024-09-26T08:58:43.141Z" type="text-version" status="0.0.16" xml:id="UT22084-083-019-45">
+                    <desc>Auto (update-contributors)</desc>
+                </change>
+                <change who="#line-tofte" when="2024-10-08T08:48:42.6Z" type="translation-status" status="2" xml:id="UT22084-083-019-134">
+                    <desc>2</desc>
+                </change>
+                <change who="#line-tofte" when="2024-10-08T08:48:42.6Z" type="text-version" status="0.0.2" xml:id="UT22084-083-019-135">
+                    <desc>Auto (update-publication-status)</desc>
+                </change>
+                <change who="#line-tofte" when="2025-01-20T09:36:10.815Z" type="text-version" status="0.0.3" xml:id="UT22084-083-019-143">
+                    <desc>Auto (update-contributors)</desc>
+                </change>
+                <change who="#martina-cotter" when="2025-01-20T15:46:51.657Z" type="translation-status" status="1.a" xml:id="UT22084-083-019-144">
+                    <desc>1.a</desc>
+                </change>
+                <change who="#martina-cotter" when="2025-01-20T15:46:51.657Z" type="text-version" status="1.0.0" xml:id="UT22084-083-019-145">
+                    <desc>First published version.</desc>
+                </change>
+                <change who="#martina-cotter" when="2025-02-12T21:10:42.81Z" type="text-version" status="1.0.1" xml:id="UT22084-083-019-146">
+                    <desc>typo in Sanskrit</desc>
+                </change>
+            </revisionDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <!--Note the "Contents" outline from the Word DOCX has not been included in the script. If the 
+                    Outline to the text is quite complex, it is recommended that you paste the outlined contents from the DOCX here as a comment for
+                    markup's reference. The actual table of contents will be generated in the Reading Room by the parser.-->
+        <front>
+            <div type="summary" xml:id="UT22084-083-019-summary">
+                <head type="summary" tid="1">Summary</head>
+                <milestone unit="chunk" xml:id="UT22084-083-019-46"/>
+                <p tid="2">
+                    <title xml:lang="en">The Myth Chapter</title> concisely relates the story
+                    of Vajrabhairava’s subjugation of Yama and his entourage. The text describes how
+                    Vajrabhairava crushes the city of Yama and forces its inhabitants to surrender.
+                    He then binds them under oath and empowers them to serve as protectors of his
+                    teachings. The text also presents the root mantra of Vajrabhairava, which
+                    encapsulates the essential life force of Yama and his followers.</p>
+            </div>
+            <div type="acknowledgment" xml:id="UT22084-083-019-acknowledgment">
+                <head type="acknowledgment" tid="3">Acknowledgements</head>
+                <milestone unit="chunk" xml:id="UT22084-083-019-47"/>
+                <p tid="4">This publication was completed under the patronage and supervision of
+                    84000: Translating the Words of the Buddha.</p>
+                <milestone unit="chunk" xml:id="UT22084-083-019-48"/>
+                <p tid="5">The text was translated, edited, and introduced by the 84000 translation
+                    team. Bruno Galasek-Hul produced the translation and wrote the introduction.
+                    Ryan Damron edited the translation and the introduction, and Dawn Collins
+                    copyedited the text. Martina Cotter was in charge of the digital publication
+                    process.</p>
+            </div>
+            <div type="introduction" xml:id="UT22084-083-019-introduction">
+                <head type="introduction" tid="7">Introduction</head>
+                <div type="section" xml:id="UT22084-083-019-introduction-1">
+                    <milestone unit="chunk" xml:id="UT22084-083-019-50"/>
+                    <p tid="9">In <title xml:lang="en">The Myth Chapter</title>, Vajrabhairava, a
+                        tantric deity considered to be the wrathful emanation of Mañjuśrī, travels
+                        to the city of Yama that lies beyond the southern ocean and easily crushes
+                        the iron city. This prompts Yama and his followers to surrender to him and
+                        offer him their life force, which takes the form of syllables constituting
+                        the thirty-two syllable mantra of Vajrabhairava. Vajrabhairava subsequently
+                        teaches the mantra and then empowers Yama and his followers to become
+                        servants of liberation. He also commands the female inhabitants of Yama’s
+                        city to uphold his teachings during the final five-hundred-year period of
+                        the Dharma by supporting the activities of yogins and vidyādharas. Once they
+                        all have given their word, Vajrabhairava releases them.</p>
+                    <milestone unit="chunk" xml:id="UT22084-083-019-51"/>
+                    <p tid="10">
+                        <title xml:lang="en">The Myth Chapter</title> begins rather abruptly
+                        and lacks the traditional introductory formulas of Buddhist scripture that
+                        establishes the time, location, and setting for the discourse. In common
+                        with many Buddhist tantras, the fact that the text omits this formula can be
+                        attributed to the text’s status as an extraction of a longer, complete text
+                        that is inaccessible in the human realm. One such account for the
+                        Vajrabhairava cycle states that the Indian siddha Lalitavajra received the
+                        transmission of the Vajrabhairava corpus from the ḍākinīs in Oḍḍiyāna and
+                        was only allowed to copy and take as much of the text with him back to India
+                        as he was able to recite and memorize in seven days.<note place="end" xml:id="UT22084-083-019-52"> For the full account, see Gonsalez 2021, p.
+                            309. See also Siklós 1990, p. 83.</note> The colophon of the <title xml:lang="en">Vajrabhairava Tantra</title>
+                        <ref rend="pending" target="http://read.84000.co/translation/toh468.html"/>
+                        itself states that the tantras of the Vajrabhairava cycle are mere extracts
+                        from a much more comprehensive tantra.<note place="end" xml:id="UT22084-083-019-53"> See Toh 468, folio 163.b.</note> That
+                            <title xml:lang="en">The Myth Chapter</title> can be considered such an
+                        extract is further indicated by its title, which identifies the text as a
+                            <foreign xml:lang="Bo-Ltn" type="term">rtog pa</foreign> (Skt. <foreign xml:lang="Sa-Ltn" type="term">kalpa</foreign>). While this term often
+                        refers to a “ritual” or “procedure,” it can also refer to a section or
+                        chapter of a larger work.<note place="end" xml:id="UT22084-083-019-54"> For
+                            example, the term <foreign xml:lang="Sa-Ltn" type="term">kalpa</foreign>/<foreign xml:lang="Bo-Ltn" type="term">rtog
+                                pa</foreign> is used in this way in <title xml:lang="en">The Tantra
+                                    of the Glorious Black Yamāri in Three Chapters</title>.<ref rend="pending" target="http://read.84000.co/translation/toh469.html"/>
+                        </note>
+                    </p>
+                    <milestone unit="chunk" xml:id="UT22084-083-019-55"/>
+                    <p tid="11">
+                        <title xml:lang="en">The Myth Chapter</title> sparked a degree of
+                        controversy in Tibet. According to Tāranātha, some scholars considered
+                            <title xml:lang="en">The Myth Chapter</title> to be a spurious tantra
+                            (<foreign xml:lang="Bo-Ltn" type="term">rdzun rgyud</foreign>)<note place="end" xml:id="UT22084-083-019-56"> Cf. Sparham 2009, p. 63 and
+                            Tāranātha, folio 17.b. Here, however, a Sanskrit title is preserved
+                            (<title xml:lang="Sa-Ltn">śrīkṛṣṇa­yamāritantratri­kalpa</title>) that
+                            contains the word <foreign xml:lang="Sa-Ltn" type="term">kalpa</foreign>, indicating that this may be a specialized meaning of
+                            the word.</note> because it contains content that suggests a Tibetan
+                        provenance. For example, the text includes a reference to non-human beings
+                        named <distinct>tsen</distinct> (<foreign xml:lang="Bo-Ltn" type="term">btsan</foreign>), an indigenous class of beings with no known Indic
+                            equivalent.<note place="end" xml:id="UT22084-083-019-57"> Another reason
+                            mentioned by Tāranātha (f. 17.b) is the allegedly wrong Tibetan
+                            transcription in the tantra of the Sanskrit word <foreign xml:lang="Bo-Ltn" type="term">dza la tsa</foreign>. However, none of
+                            the editions that we have consulted contain this word.</note> Tāranātha,
+                        however, contends that this verse alone was a later interpolation because it
+                        is not found in an old witness of this text and that the rest of the text is
+                        indeed authentic.</p>
+                    <milestone unit="chunk" xml:id="UT22084-083-019-58"/>
+                    <p tid="12">There are at present no known Sanskrit witnesses of <title xml:lang="en">The Myth Chapter</title>, nor is there an available extant
+                        recension of the source text from which it was extracted. The text is
+                        included twice in the Degé canon, once in the Unexcelled Yoga tantra section
+                        of the Kangyur (Toh 471), and once again in the Tengyur (Toh 2006). Neither
+                        of these versions includes a translator’s colophon, but a colophon is
+                        included in the versions preserved in the Kangxi and Lithang Kangyurs. These
+                        colophons are, however, quite terse and do not yield much useful data that
+                        could help determine the context of the text’s transmission and translation
+                        in Tibet.<note place="end" xml:id="UT22084-083-019-59"> The colophon in K
+                            reads <foreign xml:lang="Bo-Ltn" type="quote">thar chen rgyal rigs gyis
+                                zhus chen bgyis bas dag</foreign>, which can tentatively be
+                            translated “This was corrected by Tharchen Gyalrik in his capacity as
+                            editor.” The identity of Tharchen Gyalrik (<foreign xml:lang="Bo-Ltn" type="term">thar chen rgyal rigs</foreign>) is uncertain.</note>
+                    </p>
+                    <milestone unit="chunk" xml:id="UT22084-083-019-60"/>
+                    <p tid="13">This English translation was prepared on the basis of the two Degé
+                        witnesses (Toh 471 and 2006), in consultation with the Comparative Edition
+                            (<title xml:lang="Bo-Ltn">dpe bsdur ma</title>) of the Degé Kangyur and
+                        the version of the text that is preserved in the Stok Palace Kangyur. </p>
+                </div>
+            </div>
+        </front>
+        <body>
+            <div type="translation" xml:id="UT22084-083-019-translation">
+                <head type="translation">The Translation</head>
+                <head type="titleMain" tid="14">The Myth Chapter</head>
+                <div type="section" xml:id="UT22084-083-019-section-1">
+                <milestone unit="chunk" xml:id="UT22084-083-019-62"/>
+                    <p tid="17">
+                        <ref cRef="F.173.b" type="folio" key="toh471" xml:id="UT22084-083-019-131"/> <ref cRef="F.213.b" type="folio" key="toh2006" xml:id="UT22084-083-019-132"/> Homage to the glorious Vajrabhairava.</p>
+                <lb/>
+                <milestone unit="chunk" xml:id="UT22084-083-019-64"/>
+                <lg tid="19">
+                    <l>“Now, I will explain</l>
+                    <l>How the great Vajrabhairava—</l>
+                    <l>He who has emerged from the vajras</l>
+                    <l>Of the Blessed One’s body, speech, and mind—</l>
+                    <l>Crossed the southern ocean </l>
+                    <l>And reached the city of Yama.</l>
+                </lg>
+                <milestone unit="chunk" xml:id="UT22084-083-019-65"/>
+                <lg tid="20">
+                    <l>“With his overwhelming sixteen legs</l>
+                    <l>He trampled the sixteen gateless iron castles.</l>
+                    <l>With his organ<note place="end" xml:id="UT22084-083-019-66"> Tib. <foreign xml:lang="Bo-Ltn" type="quote">mtshan ma</foreign>, which is here
+                            understood to be equivalent to the Sanskrit <foreign xml:lang="Sa-Ltn" type="term">liṅga</foreign>. </note> of single-pointed wisdom </l>
+                    <l>He pounded the great central iron castle.</l>
+                </lg>
+                <milestone unit="chunk" xml:id="UT22084-083-019-67"/>
+                <lg tid="21">
+                    <l>“Once he gained victory over the great Māra,</l>
+                    <l>He roared <mantra xml:lang="Sa-Ltn" type="syllable">ha ha hi hi</mantra>.</l>
+                    <l>Yama Dharmarāja and the rest,</l>
+                    <l>Feeling overwhelmed, said to him:</l>
+                </lg>
+                <milestone unit="chunk" xml:id="UT22084-083-019-68"/>
+                <lg tid="22">
+                    <l>“ ‘Great hero, what is this? <ref cRef="F.214.a" type="folio" key="toh2006" xml:id="UT22084-083-019-133"/>
+                        </l>
+                    <l>We will do whatever you require, hero.<note place="end" xml:id="UT22084-083-019-69"> H, N, S and Toh 2006 read “we will follow
+                            your wishes” (<foreign xml:lang="Bo-Ltn" type="quote">dpa’ bo’i dgongs
+                                pa bdag gis bgyi</foreign>).</note>
+                        </l>
+                    <l>We likewise offer our essential life forces.</l>
+                    <l>Please accept them, hero.’</l>
+                </lg>
+                <milestone unit="chunk" xml:id="UT22084-083-019-70"/>
+                <lg tid="23">
+                    <l>“The eight classes of beings<note place="end" xml:id="UT22084-083-019-71">
+                            Neither Toh 471 nor Toh 2006 offers an entirely satisfactory reading of
+                            this line. Toh 471 reads <foreign xml:lang="Bo-Ltn" type="quote">lha ma
+                                srin ni sde brgyad kyis</foreign>, which could be interpreted to
+                            mean “The devas (<foreign xml:lang="Bo-Ltn" type="term">lha</foreign>),
+                            mātṛs (<foreign xml:lang="Bo-Ltn" type="term">ma</foreign>), rākṣasas
+                                (<foreign xml:lang="Bo-Ltn" type="term">srin</foreign>) [and others
+                            from] the eight classes of beings...” Alternatively, <foreign xml:lang="Bo-Ltn" type="quote">lha ma</foreign> could indicate devas
+                                (<foreign xml:lang="Bo-Ltn" type="term">lha</foreign>) and asuras
+                                (<foreign xml:lang="Bo-Ltn" type="term">lha ma yin</foreign>). Toh
+                            2006 reads (<foreign xml:lang="Bo-Ltn" type="quote">lha ma yin sde
+                                brgyad</foreign>), which could be interpreted as “the eight classes
+                            of asuras.” Since eight classes of beings are listed in the next four
+                            lines, we have rendered this simply as “the eight classes of
+                            beings.”</note> also offered their essential life forces:</l>
+                    <l>Yama offered <foreign xml:lang="Sa-Ltn">ya</foreign>, the <foreign xml:lang="Sa-Ltn">mātṛs</foreign>
+                        <foreign xml:lang="Sa-Ltn">ma</foreign>,<note place="end" xml:id="UT22084-083-019-72"> These eight syllables are part
+                            of Vajrabhairava’s root mantra.</note>
+                        </l>
+                    <l>The rākṣasas offered <foreign xml:lang="Sa-Ltn">ra</foreign>, the yakṣas <foreign xml:lang="Sa-Ltn">kṣe</foreign>,</l>
+                    <l>The humans offered <foreign xml:lang="Sa-Ltn">ṇi</foreign>,<note place="end" xml:id="UT22084-083-019-73"> Toh 2006
+                            reads “the humans offered <foreign xml:lang="Bo-Ltn" type="quote">na</foreign>” (<foreign xml:lang="Bo-Ltn" type="quote">mi yis na
+                                phul</foreign>).</note> the earth lords <foreign xml:lang="Sa-Ltn">sa</foreign>,</l>
+                    <l>The tsen offered <foreign xml:lang="Sa-Ltn">tsa</foreign>, and the māras<foreign xml:lang="Sa-Ltn"> da</foreign>.<note place="end" xml:id="UT22084-083-019-74"> Tāranātha believed this verse to be a later
+                            addition since the <distinct>tsen</distinct> are indigenous Tibetan
+                                deities. See Tāranātha, folio 17.b.</note>
+                        </l>
+                </lg>
+                <milestone unit="chunk" xml:id="UT22084-083-019-75"/>
+                <lg tid="24">
+                    <l>“They came together as one</l>
+                    <l>And promised to become his servants. </l>
+                    <l>Due to this great declaration,</l>
+                    <l>They were well-regarded by the wisdom deity<note place="end" xml:id="UT22084-083-019-76"> This translation follows Toh 2006 in
+                            reading <foreign xml:lang="Bo-Ltn" type="quote">ye shes lha yis dgongs
+                                pa</foreign>. Toh 471 reads <foreign xml:lang="Bo-Ltn" type="quote">ye shes lha yi dgongs pa</foreign>.</note>
+                        </l>
+                    <l>And gained a profound experience of service.<note place="end" xml:id="UT22084-083-019-77"> Translation tentative.</note>
+                        </l>
+                </lg>
+                    <milestone unit="chunk" xml:id="UT22084-083-019-130"/>
+                    <lg tid="36">
+                    <l>“After they gained this experience of serving the deity,</l>
+                    <l>They would never transgress their former oath </l>
+                    <l>And it became impossible for them to fail.</l>
+                    </lg>
+                <milestone unit="chunk" xml:id="UT22084-083-019-78"/>
+                <p rend="mantra" tid="25">
+                     ‘<mantra xml:lang="Sa-Ltn">ya ma rā ja sa do me ya | ya me do ru ṇa yo da
+                            ya | ya da yo ni ra yakṣe ya | yakṣe yaccha ni rā ma ya</mantra>’ <note place="end" xml:id="UT22084-083-019-79"> This transliteration follows
+                            Toh 471 without emendation. Toh 2006 reads <foreign xml:lang="Bo-Ltn" type="quote">oṁ ya ma rā jaḥ sa do me ya | ya me do ru | ṇa yo da ya | ya da yo ni ra yakṣe ya | yakṣe yaccha ni rā ma ya | hūṁ hūṁ phaṭ
+                                phaṭ</foreign>.</note>
+                </p>
+                <milestone unit="chunk" xml:id="UT22084-083-019-80"/>
+                <lg tid="26">
+                    <l>“After saying this,</l>
+                    <l>The great Vajrabhairava</l>
+                    <l>Empowered Yama Dharmarāja</l>
+                    <l>And all of Yama’s messengers</l>
+                    <l>To become servants of liberation.<note place="end" xml:id="UT22084-083-019-81"> According to Tāranātha (ff. 17.b–18.a),
+                            this means, “he blessed them as messengers of the lord of death”
+                                (<foreign xml:lang="Bo-Ltn" type="quote">bsod byed pho nyar byin
+                                gyis brlabs</foreign>).</note>
+                        </l>
+                </lg>
+                <milestone unit="chunk" xml:id="UT22084-083-019-82"/>
+                <lg tid="27">
+                    <l>“To their mothers, sisters, daughters,</l>
+                    <l>And their retinues, he gave this command:</l>
+                </lg>
+                    <milestone unit="chunk" xml:id="UT22084-083-019-129"/>
+                    <lg tid="35">
+                    <l>“ ‘In the final five hundred years<note place="end" xml:id="UT22084-083-019-83"> Likely referring to the final five hundred
+                            years in which the Dharma will remain in this world. This is generally
+                            considered a time of degeneration. </note>
+                        </l>
+                    <l>During which my teachings appear,</l>
+                    <l>You must correctly carry out activities</l>
+                    <l>Of yogins and vidyādharas.’</l>
+                    </lg>
+                <milestone unit="chunk" xml:id="UT22084-083-019-84"/>
+                <p tid="28">They took this oath and were released from the oppression that afflicted
+                        them.<note place="end" xml:id="UT22084-083-019-85"> This translation is
+                        tentative. Toh 2006 reads, tentatively, “They took this oath, and were freed
+                        from the oppression that oppressed them” (<foreign xml:lang="Bo-Ltn" type="quote">zhes byas dam bcas pa dang / mnan bzhin du mnan bor
+                            ro</foreign>). Both versions are syntactically ambiguous. </note>
+                    </p>
+                <milestone unit="chunk" xml:id="UT22084-083-019-86"/>
+                <trailer tid="29">
+                        <title xml:lang="en">The Myth Chapter</title> is
+                    complete.</trailer>
+                </div>
+            </div>
+        </body>
+        <back>
+            <div type="notes" xml:id="UT22084-083-019-notes">
+                <head type="notes" tid="30">Notes</head>
+                <list type="abbreviations">
+                    <head tid="31">Abbreviations</head>
+                    <item xml:id="UT22084-083-019-122">
+                        <abbr>C</abbr>
+                        <expan>Choné</expan>
+                    </item>
+                    <item xml:id="UT22084-083-019-123">
+                        <abbr>H</abbr>
+                        <expan>Lhasa Kangyur</expan>
+                    </item>
+                    <item xml:id="UT22084-083-019-124">
+                        <abbr>J</abbr>
+                        <expan>Lithang</expan>
+                    </item>
+                    <item xml:id="UT22084-083-019-125">
+                        <abbr>K</abbr>
+                        <expan>Kangxi</expan>
+                    </item>
+                    <item xml:id="UT22084-083-019-126">
+                        <abbr>N</abbr>
+                        <expan>Narthang Kangyur</expan>
+                    </item>
+                    <item xml:id="UT22084-083-019-127">
+                        <abbr>S</abbr>
+                        <expan>Stok Palace</expan>
+                    </item>
+                    <item xml:id="UT22084-083-019-128">
+                        <abbr>Y</abbr>
+                        <expan>Yongle</expan>
+                    </item>
+                </list>
+            </div>
+            <div type="listBibl" xml:id="UT22084-083-019-listBibl">
+                <head type="listBibl" tid="32">Bibliography</head>
+                <div type="section" xml:id="UT22084-083-019-listBibl-1">
+                    <head type="section" tid="33">Tibetan Sources</head>
+                    <bibl xml:id="UT22084-083-019-91">
+                        <title xml:lang="Bo-Ltn">gtam rgyud kyi rtog
+                            pa</title>. Toh 471, Degé Kangyur vol. 83 (rgyud, ja), folios
+                        173.b–174.a.</bibl>
+                    <bibl xml:id="UT22084-083-019-92">
+                        <title xml:lang="Bo-Ltn">gtam rgyud kyi rtog
+                            pa</title>. Toh 2006, Degé Tengyur vol. 47, (rgyud ’grel, mi), folios
+                        213.b–214.a.</bibl>
+                    <bibl xml:id="UT22084-083-019-93">
+                        <title xml:lang="Bo-Ltn">gtam rgyud kyi rtog
+                            pa</title>. Kangxi Kangyur vol. 4, (rgyud, ja), folios
+                        158.a–159.a.</bibl>
+                    <bibl xml:id="UT22084-083-019-94">
+                        <title xml:lang="Bo-Ltn">gtam rgyud kyi rtog
+                            pa</title>. Lithang Kangyur vol. 90, (rgyud ’bum, ja), folios
+                        154.b–155.a.</bibl>
+                    <bibl xml:id="UT22084-083-019-95">
+                        <title xml:lang="Bo-Ltn">gtam rgyud kyi rtog
+                            pa</title>. Stok Palace Kangyur vol. 97, (rgyud, cha), folios
+                        118.b–119.a.</bibl>
+                    <bibl xml:id="UT22084-083-019-96">
+                        <title xml:lang="Bo-Ltn">gtam rgyud kyi rtog
+                            pa</title>. bka’ ’gyur (dpe bsdur ma) [Comparative Edition of the
+                        Kangyur], krung go’i bod rig pa zhib ’jug ste gnas kyi bka’ bstan dpe sdur
+                        khang (The Tibetan Tripitaka Collation Bureau of the China Tibetology
+                        Research Center). 108 volumes. Beijing: krung go’i bod rig pa dpe skrun
+                        khang (China Tibetology Publishing House), 2006–9, vol. 83, pp.
+                        560–61.</bibl>
+                    <bibl xml:id="UT22084-083-019-97">Tāranātha (tā ra nā tha). <title xml:lang="Bo-Ltn">rgyud rgyal gshin rje gshed skor gyi chos ’byung rgyas
+                            pa yid ches ngo mtshar</title>. In <title xml:lang="Bo-Ltn">gsung ’bum
+                            tā ra nā tha</title> (<title xml:lang="Bo-Ltn">rtag brtan phun tshogs
+                            gling gi par ma</title>). Leh: C namgyal ’tsewang taru, 1982–87. Vol.
+                        10: 13–160. <ref target="http://purl.bdrc.io/resource/MW22277_720F25">BDRC
+                            bdr:MW22277_720F25</ref>.</bibl>
+                    <bibl xml:id="UT22084-083-019-98">Butön Rinchen Drup (<foreign xml:lang="Bo-Ltn" type="term">bu ston rin chen grub</foreign>). <title xml:lang="Bo-Ltn">chos ’byung</title> (<title xml:lang="Bo-Ltn">bde bar gshegs pa’i bstan
+                            pa’i gsal byed chos kyi ’byung gnas gsung rab rin po che’i gter
+                            mdzod</title>). In <title xml:lang="en">The Collected Works of
+                            Bu-Ston</title>, ed. by Lokesh Candra, vol. 24 (ya), pp. 633–1055. New
+                        Delhi: International Academy of Indian Culture, 1965–71. <ref target="https://library.bdrc.io/show/bdr:MW22106_ECEBF8">BDRC W22106</ref>.</bibl>
+                </div>
+                    <div type="section" xml:id="UT22084-083-019-listBibl-2">
+                    <head type="section" tid="34">Secondary Literature</head>
+                    <bibl xml:id="UT22084-083-019-100">Cuevas, Bryan J. <title xml:lang="en">The
+                            “Rwa Pod” and Other ‘Lost’ Works of Rwa Lo Tsā Ba’s Vajrabhairava
+                            Tradition: A Catalogue of Recently Acquired Tibetan Manuscripts from
+                            Mongolia and Khams and Their Significance</title>. Wien: Arbeitskreis
+                        für Tibetische und Buddhistische Studien Universität Wien, 2021.</bibl>
+                    <bibl xml:id="UT22084-083-019-101">Gonsalez, David, trans. <title xml:lang="en">The Roar of Thunder: Yamantaka Practice and Commentary</title>. The
+                        Dechen Ling Practice Series. Somerville, MA: Wisdom Publications, 2021. </bibl>
+                    <bibl xml:id="UT22084-083-019-102">Siklós, Bulcsu. <title xml:lang="en">The
+                            Vajrabhairava Tantras</title>. Tibetan and Mongolian Texts with
+                        Introduction, Translation and Notes. PhD thesis, University of London,
+                            1990.<note place="end" xml:id="UT22084-083-019-103"> Apparently, this
+                            later appeared as Siklós, Bulcsu. 1996. <title xml:lang="en">The
+                                Vajrabhairava Tantras</title>. Buddhica Britannica, Series continua.
+                            London: Institute of Buddhist Studies. We were unable to obtain a copy
+                            of this work.</note>
+                    </bibl>
+                    <bibl xml:id="UT22084-083-019-104">Sparham, Gareth. <title xml:lang="en">Long
+                            History of the Yamāntaka-Tantra-Rāja Cycle [Called Causing] Wondrous
+                            Belief</title>. (Rgyud rgyal gshin rje gshed skor gyi chos ’byung rgyas
+                        pa yid ches ngo mtshar) by Jo nang pa Kun dga’ snying po, known as
+                        Tāranātha. Translated from the original Tibetan and with an Introduction by
+                        Gareth Sparham. Unpublished Manuscript, 2009.</bibl>
+                    </div>
+            </div>
+            <div type="glossary" xml:id="UT22084-083-019-glossary">
+                <list type="glossary">
+                    <item>
+                        <gloss xml:id="UT22084-083-019-106" type="term" mode="match">
+                            <term type="translationMain">earth lord</term>
+                            <term xml:lang="Sa-Ltn" type="attestedDictionary" status="verified">bhūpati</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">sa bdag</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">ས་བདག</term>
+                            <note type="definition">
+                                <p>Soil-dwelling, non-human spirits who dominate certain locales (hills, mountains, certain regions). They are said to cause problems such as diseases and natural disasters, etc., when disturbed and irritated by human activities, such as the pollution of their environs, etc.</p>
+                            </note>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-083-019-107">
+                            <term type="translationMain">eight classes of beings</term>
+                            <term status="verified" xml:lang="Bo-Ltn" n="1">sde brgyad </term>
+                            <term xml:lang="bo" n="1">སྡེ་བརྒྱད།</term>
+                            <note type="definition">
+                                <p>A set of non-human beings that varies, but
+                                    often includes devas, nāgas, yakṣas, gandharvas, asuras,
+                                    garuḍas, kinnaras, and mahoragas. </p>
+                            </note>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss xml:id="UT22084-083-019-108" type="term" mode="match">
+                            <term type="translationMain">māra</term>
+                            <term xml:lang="Sa-Ltn" type="attestedDictionary" status="verified">māra</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">bdud</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">བདུད།</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss xml:id="UT22084-083-019-109" type="term" mode="match">
+                            <term type="translationMain">mātṛ</term>
+                            <term xml:lang="Sa-Ltn" type="attestedDictionary" status="verified">mātṛ</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">ma mo</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">མ་མོ།</term>
+                            <note type="definition">
+                                <p>“Mothers,” a class of female deities, typically seven or eight in number, who are common to both Buddhist and non-Buddhist traditions.</p>
+                            </note>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss xml:id="UT22084-083-019-110" type="term" mode="match">
+                            <term type="translationMain">rākṣasa</term>
+                            <term xml:lang="Sa-Ltn" type="attestedDictionary" status="verified">rākṣasa</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">srin po</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">སྲིན་པོ།</term>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss xml:id="UT22084-083-019-111" type="term" mode="match">
+                            <term type="translationMain">final five-hundred-year period</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">lnga brgya dus kyi tha ma</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">ལྔ་བརྒྱ་དུས་ཀྱི་ཐ་མ།</term>
+                            <note type="definition">
+                                <p>According to prophecy, the Buddha’s teachings will only remain for a certain amount of time in our world system before conditions deteriorate to such a degree that practicing the Dharma becomes impossible. The different phases of the predicted gradual decline and loss of the Dharma are usually given in 500-year increments.</p>
+                            </note>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="term" xml:id="UT22084-083-019-112">
+                            <term type="translationMain">tsen</term>
+                            <term status="verified" xml:lang="Bo-Ltn" n="1">btsan </term>
+                            <term xml:lang="bo" n="1">བཙན།</term>
+                            <note type="definition">
+                                <p>An indigenous Tibetan class of violent
+                                    primarily mountain-dwelling spirits who can cause diseases when
+                                    disturbed.</p>
+                            </note>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss xml:id="UT22084-083-019-113" type="term" mode="match">
+                            <term type="translationMain">vidyādhara</term>
+                            <term xml:lang="Sa-Ltn" type="sourceUnspecified" status="verified">vidyādhara</term>
+                            <term xml:lang="Bo-Ltn" type="attestedSource" n="1" status="verified">rig ’dzin ldan</term>
+                            <term xml:lang="bo" type="attestedSource" n="1" status="verified">རིག་འཛིན་ལྡན།</term>
+                            <note type="definition">
+                                <p>Meaning those who wield (<foreign xml:lang="Sa-Ltn" type="term">dhara</foreign>) spells (<foreign xml:lang="Sa-Ltn" type="term">vidyā</foreign>), the term can be used to refer to both a class of supernatural beings who wield magical power and human practitioners of the magical arts. The later Buddhist tradition, playing on the dual valences of <foreign xml:lang="Sa-Ltn" type="term">vidyā</foreign> as “spell” and “knowledge,” began to apply this term more broadly to realized figures in the Buddhist pantheon.</p>
+                            </note>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="person" xml:id="UT22084-083-019-116">
+                            <term type="translationMain">Yama</term>
+                            <term status="verified" xml:lang="Bo-Ltn" n="1">gshin rje </term>
+                            <term xml:lang="bo" n="1">གཤིན་རྗེ།</term>
+                            <term status="verified" xml:lang="Sa-Ltn" type="attestedDictionary">yama</term>
+                            <note type="definition">
+                                <p>The Lord of Death who judges the dead and
+                                    rules over the hells.</p>
+                            </note>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="person" xml:id="UT22084-083-019-117">
+                            <term type="translationMain">Yama Dharmarāja</term>
+                            <term status="verified" xml:lang="Bo-Ltn" n="1">chos kyi rgyal po </term>
+                            <term xml:lang="bo" n="1">ཆོས་ཀྱི་རྒྱལ་པོ།</term>
+                            <term status="verified" xml:lang="Sa-Ltn" type="attestedDictionary">dharmarāja</term>
+                            <note type="definition">
+                                <p>Literally “Dharma-king.” An epithet of Yama,
+                                    the Lord of Death, who judges the dead and rules over the hells.
+                                    He was converted and bound by oath to Vajrabhairava as the
+                                    special protector of the Vajrabhairavatantras.</p>
+                            </note>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss type="person" xml:id="UT22084-083-019-118">
+                            <term type="translationMain">Vajrabhairava</term>
+                            <term status="verified" xml:lang="Bo-Ltn" n="1">rdo rje ’jigs byed </term>
+                            <term xml:lang="bo" n="1">རྡོ་རྗེ་འཇིགས་བྱེད།</term>
+                            <term status="verified" xml:lang="Sa-Ltn" type="attestedDictionary">vajrabhairava</term>
+                            <note type="definition">
+                                <p>The main deity of the Vajrabhairava cycle of
+                                    tantras. He is an extremely wrathful manifestation of
+                                    Mañjuśrī.</p>
+                            </note>
+                        </gloss>
+                    </item>
+                    <item>
+                        <gloss xml:id="UT22084-083-019-121" type="place" mode="match">
+                            <term type="translationMain">Oḍḍiyāna</term>
+                            <term xml:lang="Sa-Ltn" type="attestedDictionary">oḍḍiyāna</term>
+                            <note type="definition">
+                                <p>An ancient kingdom, most likely located in the Swat Valley of present-day Pakistan.</p>
+                            </note>
+                        </gloss>
+                    </item>
+                </list>
+            </div>
+        </back>
+    </text>
+</TEI>
